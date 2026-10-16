@@ -1,0 +1,205 @@
+/* Generated verbatim from research/bukhari-opening-review.json. Do not edit translations here. */
+window.HadithContent = {
+  "created": "2026-10-16",
+  "scope": "Two opening entries only; no claim that the full collection has been verified.",
+  "selected_route": "Pinned Arabic text plus a new English working translation.",
+  "license": {
+    "id": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Sahih al-Bukhari by Muhammad ibn Ismail al-Bukhari; Arabic digital transcription by Arabic Wikisource contributors, revision 484874.",
+    "changes": "Two entries extracted without changing their Arabic paragraph text. New English translation, paragraph presentation and comparison notes produced with AI assistance. New derivative text is offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app."
+  },
+  "sources": [
+    {
+      "id": "arabic-base",
+      "url": "https://ar.wikisource.org/w/index.php?title=%D8%B5%D8%AD%D9%8A%D8%AD_%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A/%D9%83%D8%AA%D8%A7%D8%A8_%D8%A8%D8%AF%D8%A1_%D8%A7%D9%84%D9%88%D8%AD%D9%8A&oldid=484874",
+      "role": "Exact Arabic digital input; community-maintained, not assumed error-free.",
+      "sha256_download": "cad3964e2aaabe1d6655ec45b69a6e66d2f604ce3055a239699c101513e8270f"
+    },
+    {
+      "id": "darussalam-sample",
+      "url": "https://dar-us-salam.com/?controller=attachment&id_attachment=433",
+      "role": "Printed Arabic and Muhsin Khan English comparison, pages 45–46. Not redistributed here.",
+      "sha256_download": "dafb56c86101cb47f0830125428ca303b3a85e97f92948140825b33daa842ed6"
+    },
+    {
+      "id": "bewley",
+      "url": "https://aishabewley.org/bukhari1",
+      "role": "Second named English translator, entries 1–2. Comparison only; no full English text copied."
+    },
+    {
+      "id": "sunnah-1",
+      "url": "https://sunnah.com/bukhari:1",
+      "role": "Additional Arabic/reference check. English belongs to the Khan translation family, not an independent third translator."
+    },
+    {
+      "id": "sunnah-2",
+      "url": "https://sunnah.com/bukhari:2",
+      "role": "Additional Arabic/reference check."
+    },
+    {
+      "id": "brill-scan",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/%D8%B5%D8%AD%D9%8A%D8%AD_%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A_%D8%B11.pdf",
+      "role": "Historical Arabic print witness, listed as Brill 1862, PDF page 4. Read visually. Not proof that Wikisource was transcribed from this edition.",
+      "sha256_download": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+    }
+  ],
+  "findings": [
+    "The selected digital Arabic includes full chains of transmission; the working English retains them.",
+    "The Brill print abbreviates the first narrator to al-Humaydi while the selected digital text and Darussalam give his name. Honorific wording and orthography also differ. These are recorded as witness differences, not silently harmonized.",
+    "The first two narration bodies were visually compared against the Darussalam Arabic and the older print. No additional substantive body clause was identified in those comparisons. This is an AI review, not an independent human audit.",
+    "The sample and a digital edition are not presumed identical merely because their translator is the same.",
+    "A close translation still involves linguistic judgment; zero interpretation and infallibility cannot honestly be promised."
+  ],
+  "candidates": [
+    {
+      "name": "HadeethEnc",
+      "result": "Useful selected-hadith translation/API project; not established here as a complete, exact-numbered Bukhari edition with explicit redistribution and narration terms.",
+      "url": "https://hadeethenc.com/en/home/about"
+    },
+    {
+      "name": "Sunnah.com API",
+      "result": "Free API exists but requires a key. Useful for checking; no assumption that scraped mirrors confer permission to reuse translations.",
+      "url": "https://sunnah.com/developers"
+    },
+    {
+      "name": "Scraped GitHub English datasets",
+      "result": "Rejected as independent verification. Software/data wrapper licenses do not establish provenance or ownership of embedded translations.",
+      "url": "https://github.com/Jaguar16/open-hadith-data"
+    }
+  ],
+  "entries": [
+    {
+      "id": "bukhari:1",
+      "book": "The Beginning of Revelation",
+      "number": 1,
+      "arabic_blocks": [
+        "[1] حدثنا الحميدي عبد الله بن الزبير قال: حدثنا سفيان قال: حدثنا يحيى بن سعيد الأنصارى قال: أخبرني محمد بن إبراهيم التيمي أنه سمع علقمة بن وقاص الليثي يقول: سمعت عمر بن الخطاب رضى الله تعالى عنه على المنبر قال:",
+        "سمعت رسول الله ﷺ يقول: إنما الأعمال بالنيات وإنما لكل امرئ ما نوى فمن كانت هجرته إلى دنيا يصيبها أو إلى امرأة ينكحها فهجرته إلى ما هاجر إليه."
+      ],
+      "arabic_sha256": "3235630045f053d7beaf85d9a61b44f21f590db531283e14d0c8dc7cd6f9c5ff",
+      "english_blocks": [
+        "Al-Humaydi, ‘Abdullah ibn al-Zubayr, related to us: Sufyan related to us: Yahya ibn Sa‘id al-Ansari related to us: Muhammad ibn Ibrahim al-Taymi informed me that he heard ‘Alqamah ibn Waqqas al-Laythi say: I heard ‘Umar ibn al-Khattab, may Allah Most High be pleased with him, on the pulpit. He said:",
+        "I heard the Messenger of Allah, may Allah bless him and grant him peace, say: “Actions are only according to intentions, and each person will have only what they intended. Whoever’s migration is for worldly gain or to marry a woman, their migration is to that for which they migrated.”"
+      ],
+      "english_status": "AI-produced working translation; compared against two named English translators and the Arabic. Not independently certified.",
+      "checks": [
+        {
+          "arabic": "إنما الأعمال بالنيات",
+          "decision": "Preserve the restrictive force of إنما. Use a close English rendering; do not insert the explicit noun “reward”, which appears in Khan’s explanatory rendering but not in this Arabic clause.",
+          "comparators": "Khan and Bewley both relate the valuation of deeds to intentions. Their English wording differs.",
+          "status": "AI comparison completed; translation choice documented"
+        },
+        {
+          "arabic": "وإنما لكل امرئ ما نوى",
+          "decision": "Preserve each person and the intention-specific result. Gender-neutral English does not narrow the generic Arabic person to men.",
+          "comparators": "Both English comparators preserve individual intention.",
+          "status": "AI comparison completed"
+        },
+        {
+          "arabic": "إلى دنيا يصيبها أو إلى امرأة ينكحها",
+          "decision": "Keep both alternatives: obtaining worldly benefit and marrying a woman.",
+          "comparators": "Both comparators include both alternatives.",
+          "status": "AI comparison completed"
+        },
+        {
+          "arabic": "فهجرته إلى ما هاجر إليه",
+          "decision": "Preserve the conclusion without adding a separate moral explanation.",
+          "comparators": "Both comparators retain this conclusion.",
+          "status": "AI comparison completed"
+        },
+        {
+          "arabic": "على المنبر",
+          "decision": "Retain the pulpit setting in the full translated narrator introduction. Khan’s displayed abridged introduction does not include the full chain; Bewley includes the pulpit setting.",
+          "comparators": "Checked against the Arabic witnesses.",
+          "status": "AI comparison completed"
+        },
+        {
+          "arabic": "Variant boundary",
+          "decision": "Do not import the additional migration-to-Allah-and-His-Messenger clause from other transmissions of this hadith. It is absent from the selected opening entry in all Arabic witnesses inspected.",
+          "comparators": "Opening entries in Khan and Bewley also follow the shorter form.",
+          "status": "Variant guard recorded"
+        }
+      ],
+      "source_pages": {
+        "wikisource_revision": 484874,
+        "darussalam_sample_printed_page": 45,
+        "darussalam_sample_pdf_page": 5,
+        "brill_scan_pdf_page": 4
+      },
+      "audio_status": "Not generated; voice phrasing and spoken honorific policy remain to be settled."
+    },
+    {
+      "id": "bukhari:2",
+      "book": "The Beginning of Revelation",
+      "number": 2,
+      "arabic_blocks": [
+        "[2] حدثنا عبد الله بن يوسف قال: أخبرنا مالك عن هشام بن عروة عن أبيه عن عائشة أم المؤمنين رضى الله تعالى عنها أن الحارث بن هشام رضى الله تعالى عنه سأل رسول الله ﷺ،",
+        "فقال: يا رسول الله كيف يأتيك الوحي، فقال رسول الله ﷺ: أحيانا يأتيني مثل صلصلة الجرس وهو أشده علي فيفصم عني وقد وعيت عنه ما قال وأحيانا يتمثل لي الملك رجلا فيكلمني فأعي ما يقول: قالت عائشة رضى الله تعالى عنها ولقد رأيته ينزل عليه الوحي في اليوم الشديد البرد فيفصم عنه وإن جبينه ليتفصد عرقا."
+      ],
+      "arabic_sha256": "30093595e3ae7505884e642ed01365c51b221fa4193ea09192c0268796c81fd1",
+      "english_blocks": [
+        "‘Abdullah ibn Yusuf related to us: Malik informed us, from Hisham ibn ‘Urwah, from his father, from ‘A’ishah, the Mother of the Believers, may Allah Most High be pleased with her, that al-Harith ibn Hisham, may Allah Most High be pleased with him, asked the Messenger of Allah, may Allah bless him and grant him peace:",
+        "He said, “Messenger of Allah, how does revelation come to you?” The Messenger of Allah, may Allah bless him and grant him peace, said: “At times it comes to me like the ringing of a bell, and this is the hardest form for me. It then leaves me, and I have understood what he said. At other times the angel appears to me as a man and speaks to me, and I understand what he says.” ‘A’ishah, may Allah Most High be pleased with her, said: “I saw revelation descend upon him on a bitterly cold day. It then left him, while his forehead was streaming with sweat.”"
+      ],
+      "english_status": "AI-produced working translation; compared against two named English translators and the Arabic. Not independently certified.",
+      "checks": [
+        {
+          "arabic": "كيف يأتيك الوحي",
+          "decision": "Translate الوحي consistently as revelation. Preserve al-Harith’s question as a question.",
+          "comparators": "Bewley uses revelation; Sunnah.com’s Khan rendering uses Divine Inspiration, while the Darussalam sample uses Divine Revelation. Same underlying concept; not three independent translators.",
+          "status": "AI comparison completed"
+        },
+        {
+          "arabic": "مثل صلصلة الجرس",
+          "decision": "Preserve the comparison to a ringing bell; do not state that a physical bell was present.",
+          "comparators": "Both English translators preserve a comparison.",
+          "status": "AI comparison completed"
+        },
+        {
+          "arabic": "وهو أشده علي",
+          "decision": "Keep the superlative and its relation to the speaker; do not weaken it to merely difficult.",
+          "comparators": "Both translators preserve the comparative severity.",
+          "status": "AI comparison completed"
+        },
+        {
+          "arabic": "فيفصم عني وقد وعيت عنه ما قال",
+          "decision": "Keep the sequence: it leaves, and the message has been understood. The Arabic ما قال refers to what he said; retain the pronoun without inserting Gabriel’s name. وعيت includes understanding/retention; the draft uses understood rather than adding a separate interpretive sentence.",
+          "comparators": "Bewley makes understanding and retention explicit; Khan describes grasping the revealed content.",
+          "status": "Translation nuance recorded; no independent scholarly sign-off"
+        },
+        {
+          "arabic": "يتمثل لي الملك رجلا",
+          "decision": "Keep the angel appearing in a man’s form. Do not imply an ordinary man authored the revelation.",
+          "comparators": "Both translators preserve the angel and the human form.",
+          "status": "AI comparison completed"
+        },
+        {
+          "arabic": "فيكلمني فأعي ما يقول",
+          "decision": "Preserve speech to the Prophet and his understanding of that speech.",
+          "comparators": "Both English comparators retain both actions.",
+          "status": "AI comparison completed"
+        },
+        {
+          "arabic": "قالت عائشة",
+          "decision": "End the Prophet’s quoted answer before ‘A’ishah’s observation; do not merge the two speakers.",
+          "comparators": "Both comparators distinguish the speakers.",
+          "status": "Speaker boundary checked"
+        },
+        {
+          "arabic": "في اليوم الشديد البرد … وإن جبينه ليتفصد عرقا",
+          "decision": "Preserve both severe cold and sweat flowing from the forehead. Do not replace these details with a generalized description.",
+          "comparators": "Both English comparators retain the weather and forehead/sweat details.",
+          "status": "AI comparison completed"
+        }
+      ],
+      "source_pages": {
+        "wikisource_revision": 484874,
+        "darussalam_sample_printed_page": 46,
+        "darussalam_sample_pdf_page": 6,
+        "brill_scan_pdf_page": 4
+      },
+      "audio_status": "Not generated; voice phrasing and spoken honorific policy remain to be settled."
+    }
+  ]
+};
