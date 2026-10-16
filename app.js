@@ -1,9 +1,9 @@
 import { tracks } from './tracks.js';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
-const STORAGE = 'hadith-audio-pilot-v1';
-const CACHE = 'hadith-pilot-audio-v1';
-const audioPaths = [...tracks.map(t => t.src), './audio/continuous.m4a'];
+const STORAGE = 'hadith-audio-pilot-cedar-v2';
+const CACHE = 'hadith-pilot-audio-cedar-v2';
+const audioPaths = [...tracks.map(t => t.src), './audio/cedar-continuous-v1.m4a'];
 const checkItems = [
  ['locked','Audio continued while locked'], ['transitions','Heard all three recordings'],
  ['controls','Lock Screen pause / resume'], ['headphones','Headphone controls'],
@@ -55,7 +55,7 @@ function configureSession() {
 function metadata() {
  if (!sessionClaimed) return;
  if (!('mediaSession' in navigator) || !('MediaMetadata' in window)) return;
- navigator.mediaSession.metadata = new MediaMetadata({title:`Test recording ${index+1} of 3`,artist:'MindfulMod · Test speech only',album:mode==='queue'?'Separate recordings':'Continuous comparison',artwork:[{src:new URL('./icon-512.png',location.href).href,sizes:'512x512',type:'image/png'}]});
+ navigator.mediaSession.metadata = new MediaMetadata({title:`Test recording ${index+1} of 3`,artist:'Cedar · AI-generated test speech',album:mode==='queue'?'Separate recordings':'Continuous comparison',artwork:[{src:new URL('./icon-512.png',location.href).href,sizes:'512x512',type:'image/png'}]});
 }
 function releaseSession() {
  if (!sessionClaimed) return;
@@ -92,7 +92,7 @@ function seekTo(value) {
 }
 function load(shouldPlay=false,position=0) {
  playRequest++; completed=false; pendingSeek=position;
- audio.src = mode==='queue' ? tracks[index].src : './audio/continuous.m4a';
+ audio.src = mode==='queue' ? tracks[index].src : './audio/cedar-continuous-v1.m4a';
  audio.load(); metadata();render();
  $('play-state').textContent='Ready';
  if(shouldPlay)play();
@@ -153,7 +153,7 @@ $('notes').addEventListener('input',()=>{reportBucket().notes=$('notes').value;p
 const standalone=matchMedia('(display-mode: standalone)').matches || navigator.standalone===true;
 $('environment').textContent=`${standalone?'Home Screen app':'Browser tab'} · ${navigator.userAgent}`;
 $('copy').addEventListener('click',async()=>{
- const report=['Hadith listening pilot v1',new Date().toISOString(),$('environment').textContent,
+ const report=['Hadith listening pilot v2 · Cedar',new Date().toISOString(),$('environment').textContent,
   ...Object.entries(reports).flatMap(([key,r])=>['',key,...checkItems.map(([k,label])=>`${label}: ${r.checks[k]||'not tested'}`),`Notes: ${r.notes||'—'}`]),'','Playback log:',...logs.map(x=>JSON.stringify(x))].join('\n');
  try{await navigator.clipboard.writeText(report);$('copy-state').textContent='Copied. Paste the report into our chat.';}
  catch{$('report-fallback').hidden=false;$('report-fallback').value=report;$('report-fallback').select();$('copy-state').textContent='Select and copy the report below, then paste it into our chat.';}

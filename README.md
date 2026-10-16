@@ -1,6 +1,6 @@
 # Hadith · Listening Pilot
 
-A buildless GitHub Pages audio feasibility test for iPhone 17 / iOS 26. This is not the hadith reader and contains **no hadith text or narration**. All speech is explicitly labelled non-religious test content, generated using the installed macOS Daniel voice at 150 words/minute. Transcripts are in `audio/transcripts.json`.
+A buildless GitHub Pages audio feasibility test for iPhone 17 / iOS 26. This is not the hadith reader and contains **no hadith text or narration**. The active test is explicitly labelled non-religious AI-generated speech, narrated by the user-selected Cedar voice through OpenAI.fm. Transcripts are in `audio/transcripts.json`.
 
 ## Run
 
@@ -30,4 +30,10 @@ User confirmed transitions and locked-screen playback are satisfactory, and that
 
 `voices.html` offers Cedar and Marin samples generated through OpenAI.fm with the same ordinary script and a warm, calm, neutral North American delivery instruction. The original downloaded MP3s are preserved without filtering or re-encoding. `audio/auditions.json` records provenance, script and instructions. Auditions require a connection and are not part of the original offline test download. They are AI-generated and contain no hadith. The existing playback test and its tested player are preserved while the user selects the replacement narrator.
 
-Next: user listening preference, then regenerate the playback set with the selected voice. All eventual hadith audio still requires review against the verified source.
+Cedar was selected by the user and is now used for the full test. All eventual hadith audio still requires review against the verified source.
+
+## Cedar full test · v2
+
+All three active tracks and the continuous comparison now use Cedar, with the same delivery instructions as the approved audition. Source MP3s and provenance are retained. The first ordinary test script now identifies Cedar rather than calling the narrator temporary. No hadith text is involved.
+
+New versioned audio URLs and cache names prevent reuse of downloaded British recordings. Download again for offline testing. Progress and reports use a fresh Cedar storage key so older positions/results are not mistaken for the new recordings; the earlier local storage remains untouched. The tested playback flow is unchanged. Legacy Daniel files remain in repository history and as inactive diagnostic assets.

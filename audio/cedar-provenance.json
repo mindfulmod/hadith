@@ -1,0 +1,22 @@
+{
+  "source": "OpenAI.fm",
+  "model": "gpt-4o-mini-tts (as labelled by demo)",
+  "voice": "cedar",
+  "instructions": "Accent: neutral North American English. Voice: warm, natural, grounded, smooth and comfortable for sustained listening. Delivery: calm audiobook narration, around 145 words per minute, gentle sentence endings and natural pauses. Avoid theatrical delivery, whispering, exaggerated breathiness, and sharp or overemphasized consonants. Read the script exactly as written, without adding or omitting words.",
+  "date": "2026-10-16",
+  "sources": [
+    {
+      "file": "cedar-source-1-v1.mp3",
+      "sha256": "a283e80980404c4c39f54d353dc1213784d555a3b250825160206a050c048934"
+    },
+    {
+      "file": "cedar-source-2-v1.mp3",
+      "sha256": "5fb72f17b2349f6a9bea75c81761ce757edf22e3c7f989391e177ee21759c0ba"
+    },
+    {
+      "file": "cedar-source-3-v1.mp3",
+      "sha256": "cc6da2ae4d1234fb1e10bc9d5f0ecbf6382a11c20d3e1312698034938a1106d5"
+    }
+  ],
+  "encoding": "Source MP3s retained. Playback AAC at 128 kbps, mono 44.1 kHz; continuous version joins the decoded recordings without trimming or speech edits."
+}
