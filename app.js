@@ -20,11 +20,12 @@ let requestedPosition = Number.isFinite(saved.position) && saved.position >= 0 ?
 let lastSavedAt = 0;
 let completed = false;
 let playRequest = 0;
+if (saved.completed === true) { index = 0; requestedPosition = 0; }
 const initialPosition = requestedPosition;
 let pendingSeek = requestedPosition;
 function persist() {
  const position = pendingSeek !== null ? pendingSeek : audio.currentTime;
- try { localStorage.setItem(STORAGE, JSON.stringify({mode,index,position,reports,logs})); }
+ try { localStorage.setItem(STORAGE, JSON.stringify({mode,index,position,completed,reports,logs})); }
  catch { $('message').textContent = 'Your browser could not save progress. Playback still works.'; }
 }
 function log(event, extra = '') {
