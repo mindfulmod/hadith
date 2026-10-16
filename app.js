@@ -20,6 +20,7 @@ let requestedPosition = Number.isFinite(saved.position) && saved.position >= 0 ?
 let lastSavedAt = 0;
 let completed = false;
 let playRequest = 0;
+let sessionClaimed = false;
 if (saved.completed === true) { index = 0; requestedPosition = 0; }
 const initialPosition = requestedPosition;
 let pendingSeek = requestedPosition;
@@ -39,6 +40,8 @@ $('total-time').textContent = `${format(total)} · 3 recordings`;
 function chapterAt(time) { let sum = 0; for(let i=0;i<tracks.length;i++){sum+=tracks[i].duration;if(time < sum)return i;} return tracks.length-1; }
 function chapterStart(i) { return tracks.slice(0,i).reduce((sum,t)=>sum+t.duration,0); }
 function configureSession() {
+ sessionClaimed = true;
+ log('audio-session-requested');
  try { if ('audioSession' in navigator) navigator.audioSession.type = 'playback'; } catch {}
  if (!('mediaSession' in navigator)) return;
  const handlers = {
@@ -50,11 +53,19 @@ function configureSession() {
  for(const [name,handler] of Object.entries(handlers)) { try{navigator.mediaSession.setActionHandler(name,handler);}catch{} }
 }
 function metadata() {
+ if (!sessionClaimed) return;
  if (!('mediaSession' in navigator) || !('MediaMetadata' in window)) return;
  navigator.mediaSession.metadata = new MediaMetadata({title:`Test recording ${index+1} of 3`,artist:'MindfulMod · Test speech only',album:mode==='queue'?'Separate recordings':'Continuous comparison',artwork:[{src:new URL('./icon-512.png',location.href).href,sizes:'512x512',type:'image/png'}]});
 }
+function releaseSession() {
+ if (!sessionClaimed) return;
+ sessionClaimed = false;
+ try { if ('audioSession' in navigator) navigator.audioSession.type = 'auto'; } catch {}
+ if (navigator.mediaSession) { navigator.mediaSession.playbackState = 'none'; navigator.mediaSession.metadata = null; }
+ log('audio-session-released');
+}
 function positionState() {
- if (!navigator.mediaSession?.setPositionState || !Number.isFinite(audio.duration) || audio.duration <= 0) return;
+ if (!sessionClaimed || !navigator.mediaSession?.setPositionState || !Number.isFinite(audio.duration) || audio.duration <= 0) return;
  try {navigator.mediaSession.setPositionState({duration:audio.duration,playbackRate:audio.playbackRate,position:Math.min(audio.currentTime,audio.duration)});}catch{}
 }
 function render() {
@@ -91,7 +102,7 @@ async function play() {
  const request=++playRequest;
  $('message').textContent=''; configureSession();
  try {await audio.play(); if(request===playRequest) log('play-request-succeeded');}
- catch(error){if(request!==playRequest)return; $('play-state').textContent='Stopped'; $('message').textContent='Playback could not start. Tap Play test again. If this happened while locked, record that in your results.';log('play-rejected',error.name);render();}
+ catch(error){if(request!==playRequest)return; releaseSession(); $('play-state').textContent='Stopped'; $('message').textContent='Playback could not start. Tap Play test again. If this happened while locked, record that in your results.';log('play-rejected',error.name);render();}
 }
 function move(delta) {
  const next=Math.max(0,Math.min(tracks.length-1,index+delta));
@@ -109,7 +120,7 @@ $('seek').addEventListener('input',()=>seekTo(Number($('seek').value)));
 audio.addEventListener('loadedmetadata',()=>{if(pendingSeek!==null){const p=pendingSeek;pendingSeek=null;seekTo(p);}render();log('loaded');});
 audio.addEventListener('play',()=>{completed=false;$('play-state').textContent='Playing';if(navigator.mediaSession)navigator.mediaSession.playbackState='playing';metadata();render();log('play');});
 audio.addEventListener('playing',()=>{$('play-state').textContent='Playing';render();});
-audio.addEventListener('pause',()=>{$('play-state').textContent=completed?'Finished':'Paused';if(navigator.mediaSession)navigator.mediaSession.playbackState='paused';render();log('pause');});
+audio.addEventListener('pause',()=>{$('play-state').textContent=completed?'Finished':'Paused';if(sessionClaimed && navigator.mediaSession)navigator.mediaSession.playbackState='paused';render();log('pause');});
 audio.addEventListener('waiting',()=>{$('play-state').textContent='Loading…';log('waiting');});
 audio.addEventListener('stalled',()=>log('stalled'));
 audio.addEventListener('error',()=>{$('play-state').textContent='Audio unavailable';$('message').textContent='The recording could not load. Check your connection, or download the test before going offline.';log('audio-error',String(audio.error?.code));});
@@ -120,7 +131,7 @@ audio.addEventListener('timeupdate',()=>{
 audio.addEventListener('ended',()=>{
  log('ended');
  if(mode==='queue'&&index<tracks.length-1){index++;load(true);log('automatic-transition');}
- else{completed=true;$('play-state').textContent='Finished';$('message').textContent='Test finished. Record what you heard below.';if(navigator.mediaSession)navigator.mediaSession.playbackState='none';persist();render();log('session-finished');}
+ else{completed=true;$('play-state').textContent='Finished';$('message').textContent='Test finished. Record what you heard below.';releaseSession();persist();render();log('session-finished');}
 });
 document.addEventListener('visibilitychange',()=>log('visibility'));
 window.addEventListener('pagehide',persist);
@@ -177,4 +188,5 @@ $('download').addEventListener('click',async()=>{
 });
 let registrationPromise=null;
 if('serviceWorker' in navigator){registrationPromise=navigator.serviceWorker.register('./sw.js',{type:'module'});registrationPromise.catch(error=>log('offline-registration-failed',error.name));}
-configureSession();load(false,initialPosition);renderReport();showOfflineStatus();log('opened',standalone?'standalone':'browser');
+if (navigator.audioSession?.addEventListener) navigator.audioSession.addEventListener('statechange',()=>log('audio-session-state',navigator.audioSession.state));
+load(false,initialPosition);renderReport();showOfflineStatus();log('opened',standalone?'standalone':'browser');

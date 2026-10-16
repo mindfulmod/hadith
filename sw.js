@@ -1,5 +1,5 @@
 import {parseRange} from './range.mjs';
-const SHELL='hadith-pilot-shell-v2';
+const SHELL='hadith-pilot-shell-v3';
 const AUDIO='hadith-pilot-audio-v1';
 const shell=['./','./index.html','./style.css','./app.js','./tracks.js','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(SHELL).then(cache=>cache.addAll(shell)).then(()=>self.skipWaiting())));
