@@ -1,4 +1,4 @@
-import { tracks } from './tracks.js';
+import { tracks } from './tracks.js?v=cedar-v2';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 const STORAGE = 'hadith-audio-pilot-cedar-v2';
