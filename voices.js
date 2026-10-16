@@ -12,7 +12,10 @@ buttons.forEach(button=>button.addEventListener('click',async()=>{
  try{if(navigator.audioSession)navigator.audioSession.type='playback';}catch{}
  if('mediaSession' in navigator){navigator.mediaSession.metadata=new MediaMetadata({title:`${name} · Voice audition`,artist:'Hadith · AI-generated sample'});}
  try{await audio.play();if(id===request)status.textContent=`Listening to ${name}`;}
- catch{if(id===request){status.textContent='Could not start. Check your connection and try again.';release();}}
+ catch(error){if(error.name==='AbortError')return;if(id===request){status.textContent='Could not start. Check your connection and try again.';release();}}
 }));
 audio.addEventListener('ended',()=>{status.textContent='Sample finished. Try the other voice, or replay this one.';release();});
 audio.addEventListener('error',()=>{status.textContent='The sample could not load. Check your connection and try again.';release();});
+
+audio.addEventListener('playing',()=>{status.textContent=`Listening to ${current==='cedar'?'Cedar':'Marin'}`;});
+audio.addEventListener('pause',()=>{if(!audio.ended)status.textContent='Paused. Press play to continue.';});
