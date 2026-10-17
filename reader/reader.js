@@ -18,7 +18,7 @@ import {recording} from './recording.mjs';
   document.documentElement.style.setProperty('--leading',s.spacious?'2':'1.75');
   document.documentElement.style.setProperty('--reading',s.font==='sans'?'-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif':'"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif');
   document.body.classList.toggle('no-art',!s.art);
-  $('meta[name="theme-color"]').content=night?'#132824':'#f5f0e5';
+  $('meta[name="theme-color"]').content=getComputedStyle(document.documentElement).getPropertyValue('--bg').trim();
   for(const [attribute,key] of [['theme-choice','theme'],['size','size'],['font','font'],['minutes','minutes']])document.querySelectorAll('[data-'+attribute+']').forEach(b=>b.setAttribute('aria-pressed',String(b.getAttribute('data-'+attribute)===String(s[key]))));
   $('#more-space').checked=s.spacious;$('#show-art').checked=s.art;
  }

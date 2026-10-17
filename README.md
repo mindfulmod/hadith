@@ -94,3 +94,10 @@ The user selected **Cedar Take A — connected audiobook reading** after compari
 The user reported **both hadith played successfully** after the requested Home Screen download, airplane-mode and locked-screen test on their iPhone 17 / iOS 26. This records success for the continuous two-entry sample and the chapter boundary on reader commit `29adc03`, release `opening-aa83576a4c8e`, recording `cedar-opening-v1`. It does not certify separate-file queues, every iOS version or the earlier Mac/Safari interruption case. Pause/resume and reopening behavior were not separately reported in this response.
 
 The remaining content gate is an exact spoken-word/name audit and independent scholarly review of the working translations. Artwork remains a prototype candidate until separately accepted. Delivery selection and device feedback are recorded in `reader/audio/provenance.json`; the comparison page now reflects the selected take.
+
+
+## Reader palette · 17 October 2026
+
+The user rejected green as the primary interface colour. The proposed replacement is parchment and cocoa with muted rose controls by day, and warm plum with apricot controls by night. `reader/reader.css` owns the theme tokens; the browser theme colour reads the active background token. Source notes and reader icons use the same warm palette. This changes presentation only; the 21px default, artwork, hadith source blocks and Cedar recordings are preserved.
+
+Calculated sRGB contrast: body text against reading paper is 12.55:1 by day and 11.77:1 by night. Secondary text is at least 4.66:1 across background, paper and wash surfaces; primary button labels are 6.26:1 by day and 7.72:1 by night. Focus accents exceed 4.2:1 against these surfaces. These are palette checks, not a claim of a complete accessibility audit.
