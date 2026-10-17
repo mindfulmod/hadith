@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-16",
+  "status": "Prototype candidates; not promoted into the user-approved anchor bank",
+  "generator": "OpenAI built-in image generation",
+  "guide": "../../research/visual-world.json",
+  "anchorRoles": {
+    "welcome": {
+      "03": "terrace rhythm and foliage",
+      "07": "limestone and jade water"
+    },
+    "strip": {
+      "16": "flowers and lantern",
+      "07": "limestone and water"
+    },
+    "night": {
+      "16": "night lighting only"
+    }
+  },
+  "prompts": {
+    "welcome": "Create an original landscape for a peaceful reading app, Gardens of Warm Light. Refined oil-and-gouache painterly naturalism with tactile stone and richly observed foliage, soft atmospheric depth. Pleasant, sheltered, quietly extraordinary. Imagined environment, not an illustration of religious events or a claim about the appearance of paradise. No people, animals, lettering, calligraphy, logo, UI, furniture, beach, icy light or neon. Warm mineral colors and living greens with clear jade water. Preserve breathing room and asymmetry. Use attached images only in the specified reference roles. Reference 03 supplies flowing green terrace rhythms and delicate cream frangipani; reference 07 supplies warm pale limestone and jade spring water. NEW COMPOSITION: wide landscape 1536x1024. View from a comfortable low garden terrace beneath one lightly framing frangipani branch on the LEFT, over a broad quiet jade spring basin in the middle. On the RIGHT a distinctive rounded ivory limestone wall curves into a lush valley with just three broad green terrace contours in the distance. A low warm stone path follows the basin edge off-center, never a central river. Fresh pale honey morning light, not orange sunset. The dominant landmark is the soft curved limestone wall; no waterfall. A small unlit bronze lantern sits subtly by the foreground path, for a later matching night edit. Keep the central 65% legible in square desktop crop and wide phone crop; avoid essential details on the very top/bottom. Rich planted edges and quiet water surface.",
+    "strip": "Create an original landscape for a peaceful reading app, Gardens of Warm Light. Refined oil-and-gouache painterly naturalism with tactile stone and richly observed foliage, soft atmospheric depth. Pleasant, sheltered, quietly extraordinary. Imagined environment, not an illustration of religious events or a claim about the appearance of paradise. No people, animals, lettering, calligraphy, logo, UI, furniture, beach, icy light or neon. Warm mineral colors and living greens with clear jade water. Preserve breathing room and asymmetry. Use attached images only in the specified reference roles. Reference 07 supplies limestone texture and jade spring water; reference 16 supplies cream blossoms and a modest bronze lantern, but THIS IS DAYLIGHT. NEW COMPOSITION: panoramic close detail of a low warm limestone garden ledge beside still jade water. A small unlit bronze lantern on the LEFT THIRD, a few cream frangipani blossoms and leaves gently extending from left, calm water across right two thirds with subtle leaf reflections, restrained contrast. No horizon, no big landscape, no buildings, no waterfall. Intentional reading-header art, composed to remain clear in a very shallow 5:1 crop. Landscape 1536x1024, all important detail inside central horizontal band 35% of image height. Quiet soft honey daylight, not orange sunset.",
+    "night": "Edit the FIRST supplied image into a welcoming night companion. Keep EXACT camera angle, framing, terrain, water boundaries, all rocks, plants, flowers, lantern position and landscape geometry. Change only illumination: deep teal and green shadows, creamy flowers, gentle readable ambient night sky light, one modest warm amber pool from the EXISTING bronze lantern, its small natural reflection in water. No icy blue, no black voids, no orange filter over the whole picture, no extra objects, figures, lettering or UI. SECOND reference is for night palette and local warm illumination ONLY; do not copy its pavilion or change the first scene. Retain painterly naturalism and a calm pleasant temperature."
+  },
+  "delivery": "JPEG delivery copies; PNG originals preserved; no source text is embedded in art.",
+  "outputs": [
+    {
+      "role": "welcome",
+      "light": "day",
+      "original": "originals/garden-day.png",
+      "delivery": "garden-day.jpg",
+      "original_sha256": "5d0e5116b96da64e03102051492cb7e7af08734b35e1ac1105c585fc8dce24f6"
+    },
+    {
+      "role": "welcome",
+      "light": "night",
+      "original": "originals/garden-night.png",
+      "delivery": "garden-night.jpg",
+      "original_sha256": "1adfc6060efa2282eaf18df895f0ce80201a6cf5a27b5095bbf5b4a46f71c0c7"
+    },
+    {
+      "role": "readingStrip",
+      "light": "day",
+      "original": "originals/detail-day.png",
+      "delivery": "detail-day.jpg",
+      "original_sha256": "8e86bfddce8c97363686ec581e18f73117a4fab30eecea1a7358f0b1c19f840d"
+    },
+    {
+      "role": "readingStrip",
+      "light": "night",
+      "original": "originals/detail-night.png",
+      "delivery": "detail-night.jpg",
+      "original_sha256": "86b4dd1de52eb7807c2eff46ef71457ff97cdbefa4991eb1de4253c7a518c3d1"
+    }
+  ]
+}

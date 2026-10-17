@@ -1,0 +1,59 @@
+{
+  "instructionsA": "Accent: neutral North American English. You are an attentive, experienced audiobook reader speaking to one listener. Warm, grounded, rounded vocal tone, relaxed and natural. Read in connected phrases with smooth word-to-word flow; let syntax guide the emphasis. Moderate conversational pace, never over-slow or syllable-by-syllable. Take natural breaths at sentence boundaries, with a small pause between the narrator introduction and the quoted narration. Keep proper names clear without punching every consonant. No whispering, vocal fry, theatrical voices, sing-song rhythm, or exaggerated reverence. Do not add, omit, rephrase or repeat any words. Honorifics are already written in English: say them exactly as written. Read only the script.",
+  "instructionsB": "Neutral North American English. A warm, easy, natural audiobook reading for one person. Use fluid connected speech and gentle sentence-level intonation at a comfortable conversational pace. Read entire phrases rather than stressing separate words. Keep names clear. No whispering, theatrical delivery, or artificial slow pauses. Read every word of the script exactly, including the English honorifics; add nothing.",
+  "scripts": [
+    "Al-Humaydi, ‘Abdullah ibn al-Zubayr, related to us: Sufyan related to us: Yahya ibn Sa‘id al-Ansari related to us: Muhammad ibn Ibrahim al-Taymi informed me that he heard ‘Alqamah ibn Waqqas al-Laythi say: I heard ‘Umar ibn al-Khattab, may Allah Most High be pleased with him, on the pulpit. He said:\n\nI heard the Messenger of Allah, may Allah bless him and grant him peace, say: “Actions are only according to intentions, and each person will have only what they intended. Whoever’s migration is for worldly gain or to marry a woman, their migration is to that for which they migrated.”",
+    "‘Abdullah ibn Yusuf related to us: Malik informed us, from Hisham ibn ‘Urwah, from his father, from ‘A’ishah, the Mother of the Believers, may Allah Most High be pleased with her, that al-Harith ibn Hisham, may Allah Most High be pleased with him, asked the Messenger of Allah, may Allah bless him and grant him peace:\n\nHe said, “Messenger of Allah, how does revelation come to you?” The Messenger of Allah, may Allah bless him and grant him peace, said: “At times it comes to me like the ringing of a bell, and this is the hardest form for me. It then leaves me, and I have understood what he said. At other times the angel appears to me as a man and speaks to me, and I understand what he says.” ‘A’ishah, may Allah Most High be pleased with her, said: “I saw revelation descend upon him on a bitterly cold day. It then left him, while his forehead was streaming with sweat.”"
+  ],
+  "source": "https://www.openai.fm/",
+  "model_label": "GPT-4o mini TTS",
+  "voice": "Cedar",
+  "date": "2026-10-16",
+  "status": "AI-generated audition; exact spoken wording and names await listening review",
+  "script_check": "Both submitted scripts exactly equal all English source blocks joined by two newlines. This checks input, not the generated speech.",
+  "encoding": "Original MP3s retained. Main playback joins both decoded recordings in order, without trimming, filtering or speech edits; AAC 128kbps mono 44.1kHz.",
+  "signal_checks": [
+    {
+      "number": 1,
+      "duration": 37.51199546485261,
+      "peak": 21196,
+      "full_scale_samples": 0
+    },
+    {
+      "number": 2,
+      "duration": 49.84798185941043,
+      "peak": 24543,
+      "full_scale_samples": 0
+    }
+  ],
+  "chapters": [
+    {
+      "number": 1,
+      "start": 0,
+      "duration": 37.51199546485261
+    },
+    {
+      "number": 2,
+      "start": 37.51199546485261,
+      "duration": 49.84798185941043
+    }
+  ],
+  "files": [
+    {
+      "file": "opening-cedar-v1.m4a",
+      "sha256": "f52c79d53227837caf400dcfa1f1adc66130f88926ccc1e00787c286d09aa6c1"
+    },
+    {
+      "file": "hadith-1-cedar-v1.mp3",
+      "sha256": "058393ae06605aeff20ad53822495aa7a4a3acd22d469147010dbff2228b2b1e"
+    },
+    {
+      "file": "hadith-1-cedar-alternate-v1.mp3",
+      "sha256": "65bfa3245404165a0125173b70a66485ebf069da57e7b64594221656e82b69d7"
+    },
+    {
+      "file": "hadith-2-cedar-v1.mp3",
+      "sha256": "9309ec6efa66a3a907216fe188d37de7f85dd2fa720a1fdee7a9e0d4f765226f"
+    }
+  ]
+}

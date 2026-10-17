@@ -1,6 +1,6 @@
-# Hadith · Listening Pilot
+# Hadith · MindfulMod reader
 
-A buildless GitHub Pages audio feasibility test for iPhone 17 / iOS 26. This is not the hadith reader and contains **no hadith text or narration**. The active test is explicitly labelled non-religious AI-generated speech, narrated by the user-selected Cedar voice through OpenAI.fm. Transcripts are in `audio/transcripts.json`.
+The personal reader is at `reader/`: two complete Bukhari entries, unchanged source blocks, Cedar AI narration, and a verified offline bundle. It is an evaluation prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Run
 
@@ -40,7 +40,7 @@ New versioned audio URLs and cache names prevent reuse of downloaded British rec
 
 ## Reader preview · October 2026
 
-The actual two-entry reader is available at `reader/`. It has an illustrated welcome, day/night/device themes, adjustable typography, saved position, bookmarks, explicit read markers, expandable full narrator chains, and an Arabic/source dialog. It is a design and content preview; it has no hadith audio and does not yet register a reader offline worker. The original listening pilot remains at the root.
+The actual two-entry reader is available at `reader/`. It has an illustrated welcome, day/night/device themes, adjustable typography, saved position, bookmarks, explicit read markers, expandable full narrator chains, and an Arabic/source dialog. It now combines reading, Cedar audio and a reader-scoped offline worker. The recorded scripts include both complete English blocks and the honorific wording exactly as displayed; the speech itself is an audition, not a certified narration. The original listening pilot remains at the root.
 
 The current source route supersedes the initial Darussalam-only evaluation plan above: pinned Arabic Wikisource revision 484874 and new AI-assisted English working translations, cross-checked against the Darussalam sample and Aisha Bewley, with witness differences recorded. This is not independent scholarly certification. See `research/source-review.html` and `research/bukhari-opening-review.json`. The reader source bundle must match that JSON exactly.
 
@@ -48,4 +48,40 @@ Run `node reader/check-content.mjs` to verify the full copied record and Arabic 
 
 ## Shared visual world
 
-Future artwork follows `research/visual-world.json`, with an illustrated guide at `research/visual-world.html`. The user selected ten anchors from the landscape exploration to define one coherent imagined world of warm terraced valleys, stone gardens, oasis margins and ancient canopy groves. The full anchor record is `research/landscape-shortlist.json`. This supersedes the original island-veranda direction for future generation; it does not itself replace the current reader artwork or approve any scene-rotation behavior. Keep the original imagery and prompt provenance, and inspect the relevant anchors before each new generation.
+Future artwork follows `research/visual-world.json`, with an illustrated guide at `research/visual-world.html`. The user selected ten anchors from the landscape exploration to define one coherent imagined world of warm terraced valleys, stone gardens, oasis margins and ancient canopy groves. The full anchor record is `research/landscape-shortlist.json`. This supersedes the original island-veranda direction for future generation; the new reader artwork uses that direction as prototype candidates, without promoting those images into the approved reference bank or adding scene rotation. Keep the original imagery and prompt provenance, and inspect the relevant anchors before each new generation.
+
+
+## Combined reader prototype · 16 October 2026
+
+The comfortable 21px default remains. New day/night welcome scenes and a separate close-detail reading strip follow the shared visual-world guide. Originals and exact prompts are preserved in `reader/assets/originals/` and `reader/assets/garden-provenance.json`. The earlier veranda assets remain available as historical work.
+
+The app stays buildless. Responsibilities are separated:
+
+- `content.js` is a verbatim copy of the reviewed source record; `check-content.mjs` protects it. `source-record.json` and the full local comparison page are available offline. Publisher sites and PDFs still require a connection.
+- `reader.js` renders source blocks and handles navigation. `store.js` preserves the existing local preference/bookmark key. Reading marks, scroll positions, daily preference and audio position are separate fields. No reading is automatically marked complete by audio.
+- `session.mjs` plans approximately 5- or 10-minute sessions using whole entries in order, including finishing a first entry longer than the target. The current two-entry sample is shorter than either target; the UI saves a future daily preference and labels the sample honestly.
+- `audio.mjs` owns one persistent audio element outside route rendering. One continuous 87-second file contains both full recordings with chapter cues; no file change is needed at the boundary. Lock-screen metadata and audio-session requests begin only after a user play action. Merely opening a page does not start audio or claim a playback session.
+- `offline.mjs`, `integrity.mjs`, `sw.js` and generated `release.mjs` own the reader bundle. The worker has only the reader scope; it does not replace the legacy pilot worker or delete pilot caches. Each required file is checked by SHA-256 and byte length. Partial responses are rejected, interrupted saves can reuse verified files, and readiness is rechecked after returning. Cached audio supports single byte ranges. The current bundle is approximately 6.1 MB, including both delivery comparisons. Browser/OS storage eviction remains possible.
+- Updates wait for existing reader windows to close, so installing an update does not interrupt a playing session. A waiting update is shown in the offline status. Cache cleanup across old releases is not yet automated; current and legacy pilot caches are preserved.
+
+### Narration provenance and review
+
+OpenAI.fm, voice Cedar, model displayed as GPT-4o mini TTS. Two delivery prompts were auditioned on Hadith 1. Take A is used for both entries; Take B is available at `reader/audio-review.html`. Inputs and original MP3 hashes are in `reader/audio/provenance.json`. The main AAC joins decoded recordings without trimming, filtering, word edits or crossfades. English honorifics are read exactly as already written in the source translation, as requested by the user. The technical direction follows [OpenAI's text-to-speech documentation](https://developers.openai.com/api/docs/guides/text-to-speech).
+
+Input strings match every source block exactly. Decoded source recordings have no full-scale clipped samples. These checks do not certify naturalness, pronunciation, omissions or exact spoken wording. Both audio and translation are clearly labelled under review. Human listening and independent scholarly text review remain outstanding.
+
+### Release checks
+
+After any shipped file changes, run:
+
+```sh
+node reader/build-release.mjs
+node reader/check-content.mjs
+node --test tests/*.test.mjs
+```
+
+The release builder includes core files, local source notes, both theme artworks and all playback/review audio, while excluding large original artwork. Do not hand-edit generated `release.mjs`. Preserve the canonical source review record and the full narration scripts.
+
+Desktop browser checks: saved bundle reopened with the development server stopped; playback progressed naturally from Hadith 1 to Hadith 2 while browsing and opening sources; local comparison notes opened offline. Day/night, bookmarks, saved preferences, 320px narrow layout and the largest reading size were checked. These results do not establish locked-screen behavior on iPhone.
+
+On the iPhone, open the reader from its Home Screen icon, save there, wait for “Ready offline,” enable airplane mode, start the sample and lock the screen. Test the Hadith 1→2 boundary, lock-screen pause/resume, headphones, then reopening at the saved position. Safari and Home Screen installations may have separate saved data. Compare Take A and Take B for word-to-word flow and review every spoken word and name against the full scripts before approving narration.
