@@ -1,3 +1,4 @@
+// Reader release: opening-df04dd1379b1
 import {release} from './release.mjs';
 import {verifyResponse} from './integrity.mjs';
 import {parseRange} from '../range.mjs';
