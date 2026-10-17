@@ -20,7 +20,7 @@ function toggle(id){saved.has(id)?saved.delete(id):saved.add(id);try{localStorag
 function updateDialogButton(id){const button=document.querySelector('#dialog-save');button.dataset.id=id;button.setAttribute('aria-pressed',String(saved.has(id)));button.textContent=saved.has(id)?'✓ Shortlisted':'+ Shortlist'}
 cards.forEach(card=>{
   card.querySelector('.save').addEventListener('click',()=>toggle(card.dataset.id));
-  card.querySelector('.art').addEventListener('click',()=>{const img=card.querySelector('img');document.querySelector('#dialog-title').textContent=card.dataset.id+' · '+card.querySelector('h2').textContent;document.querySelector('#dialog-region').textContent=card.querySelector('.region').textContent;const large=document.querySelector('#dialog-image');large.src=img.src;large.alt=img.alt;updateDialogButton(card.dataset.id);dialog.showModal()});
+  card.querySelector('.art').addEventListener('click',()=>{const img=card.querySelector('img');document.querySelector('#dialog-title').textContent=card.dataset.id+' · '+card.querySelector('h2').textContent;document.querySelector('#dialog-region').textContent=card.querySelector('.region').textContent;const large=document.querySelector('#dialog-image');large.src=img.dataset.full||img.src;large.alt=img.alt;updateDialogButton(card.dataset.id);dialog.showModal()});
 });
 document.querySelector('#dialog-save').addEventListener('click',event=>toggle(event.currentTarget.dataset.id));
 document.querySelector('#close').addEventListener('click',()=>dialog.close());
