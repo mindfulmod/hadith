@@ -2,14 +2,17 @@ const key='mindfulmod-hadith-landscapes-v1';
 const cards=[...document.querySelectorAll('.card')];
 let saved=new Set();
 try{const ids=JSON.parse(localStorage.getItem(key)||'[]');if(Array.isArray(ids))saved=new Set(ids.filter(id=>cards.some(c=>c.dataset.id===id)))}catch{}
-let onlySaved=false;
+const earlier=new Set(['03','07','16','17','19']);
+let view='new';
 const dialog=document.querySelector('dialog');
 function render(){
-  cards.forEach(card=>{const selected=saved.has(card.dataset.id);card.hidden=onlySaved&&!selected;const button=card.querySelector('.save');button.setAttribute('aria-pressed',String(selected));button.textContent=selected?'✓ Shortlisted':'+ Shortlist'});
+  cards.forEach(card=>{const selected=saved.has(card.dataset.id);card.hidden=view==='saved'?!selected:view==='new'?Number(card.dataset.id)<21:view==='earlier'?!earlier.has(card.dataset.id):false;const button=card.querySelector('.save');button.setAttribute('aria-pressed',String(selected));button.textContent=selected?'✓ Shortlisted':'+ Shortlist'});
   document.querySelector('#saved-filter').textContent='Shortlist · '+saved.size;
-  document.querySelector('#all-filter').setAttribute('aria-pressed',String(!onlySaved));
-  document.querySelector('#saved-filter').setAttribute('aria-pressed',String(onlySaved));
-  document.querySelector('#empty').hidden=!onlySaved||saved.size>0;
+  document.querySelector('#all-filter').setAttribute('aria-pressed',String(view==='all'));
+  document.querySelector('#saved-filter').setAttribute('aria-pressed',String(view==='saved'));
+  document.querySelector('#new-filter').setAttribute('aria-pressed',String(view==='new'));
+  document.querySelector('#earlier-filter').setAttribute('aria-pressed',String(view==='earlier'));
+  document.querySelector('#empty').hidden=view!=='saved'||saved.size>0;
   document.querySelector('#status').textContent=saved.size?saved.size+' selected · saved on this browser':'Tap an image to explore; shortlist what draws you in.';
   document.querySelector('#selection').textContent=saved.size?'Your shortlist: '+[...saved].sort().join(', '):'Choose a few favourites, then share their numbers in our chat.';
 }
@@ -22,6 +25,8 @@ cards.forEach(card=>{
 document.querySelector('#dialog-save').addEventListener('click',event=>toggle(event.currentTarget.dataset.id));
 document.querySelector('#close').addEventListener('click',()=>dialog.close());
 dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close()}});
-document.querySelector('#all-filter').addEventListener('click',()=>{onlySaved=false;render()});
-document.querySelector('#saved-filter').addEventListener('click',()=>{onlySaved=true;render()});
+document.querySelector('#all-filter').addEventListener('click',()=>{view='all';render()});
+document.querySelector('#saved-filter').addEventListener('click',()=>{view='saved';render()});
+document.querySelector('#new-filter').addEventListener('click',()=>{view='new';render()});
+document.querySelector('#earlier-filter').addEventListener('click',()=>{view='earlier';render()});
 render();
