@@ -15,5 +15,5 @@ export const recording = {
       "duration": 49.84798185941043
     }
   ],
-  "status": "AI-generated audition; exact spoken wording and names await listening review"
+  "status": "Cedar Take A delivery selected; exact spoken wording and names await listening review"
 };

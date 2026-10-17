@@ -9,7 +9,7 @@
   "model_label": "GPT-4o mini TTS",
   "voice": "Cedar",
   "date": "2026-10-16",
-  "status": "AI-generated audition; exact spoken wording and names await listening review",
+  "status": "Cedar Take A delivery selected by the user; exact spoken wording and names await listening review",
   "script_check": "Both submitted scripts exactly equal all English source blocks joined by two newlines. This checks input, not the generated speech.",
   "encoding": "Original MP3s retained. Main playback joins both decoded recordings in order, without trimming, filtering or speech edits; AAC 128kbps mono 44.1kHz.",
   "signal_checks": [
@@ -55,5 +55,24 @@
       "file": "hadith-2-cedar-v1.mp3",
       "sha256": "9309ec6efa66a3a907216fe188d37de7f85dd2fa720a1fdee7a9e0d4f765226f"
     }
-  ]
+  ],
+  "delivery_selection": {
+    "date": "2026-10-17",
+    "take": "A",
+    "label": "Connected audiobook reading",
+    "evidence": "User selected Take A after comparing Take A and Take B.",
+    "scope": "Delivery preference only; not a word-for-word or pronunciation accuracy review."
+  },
+  "device_feedback": {
+    "date": "2026-10-17",
+    "reported_by": "user",
+    "device": "iPhone 17",
+    "os_family": "iOS 26",
+    "tested_reader_commit": "29adc03",
+    "tested_release": "opening-aa83576a4c8e",
+    "recording_id": "cedar-opening-v1",
+    "procedure": "Open the reader from its Home Screen icon, save the complete sample, wait for Ready offline, enable airplane mode, start playback and lock the screen.",
+    "result": "Both hadith played successfully.",
+    "scope": "User-reported success for the two-entry continuous sample and its chapter boundary. Lock-screen pause/resume, interruption recovery and saved-position reopening were not separately reported in this response."
+  }
 }
