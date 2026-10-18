@@ -14,8 +14,8 @@
     {
       "id": "source-coverage",
       "status": "in-progress",
-      "evidence": "content/sources/openiti-bukhari/manifest.json; content/staging/bukhari-ar/catalog.json",
-      "remaining": "Resolve 173 absent numbered records and 10 empty numbered records in the first candidate; compare another edition and printed witness; preserve chapter material and variant references."
+      "evidence": "content/sources/openiti-bukhari/manifest.json; content/staging/bukhari-ar/catalog.json; research/alternate-arabic-source-audit.json",
+      "remaining": "Resolve 173 absent numbered records and 10 empty numbered records in the first candidate; compare another edition and printed witness; preserve chapter material and variant references. A second edition has numeric markers 1–7124 but includes mislabeled chapter headings, suffixed records and a duplicate 3905; it needs its own inventory and reference map."
     },
     {
       "id": "english-full-collection",
@@ -63,17 +63,17 @@
       "id": "production-testing",
       "status": "in-progress",
       "evidence": "tests/; .github/workflows/reader-checks.yml",
-      "remaining": "Deploy checks, regression matrix, meaningful real-browser coverage, accessibility audit, keyboard/screen reader review, iPhone locked-screen and interruption acceptance after final architecture changes."
+      "remaining": "Meaningful real-browser coverage, accessibility audit, keyboard/screen reader review, iPhone restore and locked-screen/interruption acceptance after final architecture changes. Deploy checks now gate publishing."
     },
     {
       "id": "shipping-operations",
-      "status": "actions-source-active-awaiting-deployment",
-      "evidence": ".github/workflows/reader-checks.yml; scripts/build-site.mjs; tests/deployment.test.mjs; reader/about.html; README.md",
-      "remaining": "GitHub Actions is selected as the Pages source. Verify the first checked deployment and its public manifest. Source permissions and independent reviews remain separate requirements."
+      "status": "implemented-and-live-verified",
+      "evidence": ".github/workflows/reader-checks.yml; scripts/build-site.mjs; tests/deployment.test.mjs; reader/about.html; README.md; https://github.com/mindfulmod/hadith/actions/runs/39176522326",
+      "remaining": "Continue using the checked deployment path for future corrections; periodically exercise rollback and track source permissions/independent reviews separately."
     }
   ],
   "nextActions": [
-    "Activate and verify the checked Pages pipeline; retain the existing deployment until it succeeds.",
+    "Build an edition-specific inventory for the alternative Arabic witness and resolve its duplicated and suffixed labels before comparing coverage.",
     "Resolve the Arabic candidate gaps against another witness without silently combining editions.",
     "Obtain complete English source coverage and explicit offline/narration permissions; request #4160 is posted.",
     "Build book/chapter navigation and selective offline packs on the verified book loader.",
@@ -106,5 +106,13 @@
     "url": "https://github.com/sunnah-com/api/issues/4160",
     "record": "research/source-access-request.json",
     "permissionsGranted": false
+  },
+  "deploymentMigration": {
+    "mode": "GitHub Actions",
+    "verifiedRun": "https://github.com/mindfulmod/hadith/actions/runs/39176522326",
+    "commit": "1a1c7cbc8f8d80291c4b904c3933706eac789da6",
+    "readerRelease": "opening-bfb44e69b629",
+    "publicFiles": 167,
+    "verification": "Verify job and dependent deploy job both succeeded. Published site-release.json matched all local public-file hashes; representative live reader and legacy routes matched byte-for-byte."
   }
 }

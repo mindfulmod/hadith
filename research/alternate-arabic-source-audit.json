@@ -1,0 +1,76 @@
+{
+  "status": "preliminary-candidate-audit-not-reader-approved",
+  "upstreamURI": "0256Bukhari.Sahih.JK000110-ara1.completed",
+  "sourceURL": "https://raw.githubusercontent.com/OpenITI/0275AH/44e1c36738a2bf5c14dafa232a6ae1891e6171cd/data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.JK000110-ara1.completed",
+  "commit": "44e1c36738a2bf5c14dafa232a6ae1891e6171cd",
+  "sha256": "69e95684acfde24171d29dd7ba43ff2c8f9b54ade5e3ab0a73899c06671082b7",
+  "bytes": 5524762,
+  "editionMetadata": "Mustafa Dib al-Bugha, Dar Ibn Kathir / al-Yamama, Beirut, third edition, 1407/1987, six volumes; as recorded in the digital header.",
+  "method": "Count multiline markers matching ^# (\\d+) (?=\\S). This deliberately broad inventory includes mis-tagged chapter headings and suffixed records; it is not a hadith count.",
+  "audit": {
+    "numberedMarkers": 7135,
+    "distinctNumericLabels": 7124,
+    "observedRange": [
+      1,
+      7124
+    ],
+    "absentNumericLabels": [],
+    "repeatedLabels": [
+      {
+        "number": 2,
+        "count": 2
+      },
+      {
+        "number": 8,
+        "count": 2
+      },
+      {
+        "number": 23,
+        "count": 2
+      },
+      {
+        "number": 39,
+        "count": 2
+      },
+      {
+        "number": 192,
+        "count": 2
+      },
+      {
+        "number": 372,
+        "count": 2
+      },
+      {
+        "number": 619,
+        "count": 2
+      },
+      {
+        "number": 3905,
+        "count": 2
+      },
+      {
+        "number": 4537,
+        "count": 2
+      },
+      {
+        "number": 4626,
+        "count": 2
+      },
+      {
+        "number": 6705,
+        "count": 2
+      }
+    ],
+    "topLevelHeadings": 100
+  },
+  "findings": [
+    "The numeric label range differs from the current Shamela candidate. Do not use number equality as an edition mapping.",
+    "Six repeated numeric labels occur in mis-tagged chapter heading lines (2, 8, 23, 39, 192, 372).",
+    "Additional records use the Arabic suffix م at 619, 4537, 4626 and 6705. Preserve these as distinct candidates pending edition review.",
+    "Two different narrator introductions are labelled 3905. This needs comparison against the printed edition; do not deduplicate.",
+    "A continuous numeric range does not prove complete narration bodies, full chains, correct transcription or complete chapter context.",
+    "Next: build an edition-specific span inventory preserving headers, suffixed IDs, duplicate references and witness differences. Compare flagged areas against a printed witness before any reader import."
+  ],
+  "readerEligible": false,
+  "licenseEvidence": "https://kitab-project.org/docs/openITI"
+}
