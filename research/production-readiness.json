@@ -67,13 +67,13 @@
     },
     {
       "id": "shipping-operations",
-      "status": "pending",
-      "evidence": "Existing update.html and generated reader-version.json",
-      "remaining": "Checks must gate deployment rather than merely run alongside Pages; document rollback, source correction reporting, privacy/licensing, release history and ongoing content updates."
+      "status": "actions-source-active-awaiting-deployment",
+      "evidence": ".github/workflows/reader-checks.yml; scripts/build-site.mjs; tests/deployment.test.mjs; reader/about.html; README.md",
+      "remaining": "GitHub Actions is selected as the Pages source. Verify the first checked deployment and its public manifest. Source permissions and independent reviews remain separate requirements."
     }
   ],
   "nextActions": [
-    "Make verification a deployment prerequisite; retain the existing site during migration.",
+    "Activate and verify the checked Pages pipeline; retain the existing deployment until it succeeds.",
     "Resolve the Arabic candidate gaps against another witness without silently combining editions.",
     "Obtain complete English source coverage and explicit offline/narration permissions; request #4160 is posted.",
     "Build book/chapter navigation and selective offline packs on the verified book loader.",

@@ -1,0 +1,40 @@
+name: Source correction
+description: Report a wording, reference or narration concern with evidence.
+title: "Source concern: Hadith "
+body:
+  - type: markdown
+    attributes:
+      value: "Reports are public. Please do not attach personal backups or private reading information. A reported concern is a request for review, not an automatic change to the source text."
+  - type: input
+    id: reference
+    attributes:
+      label: Hadith reference
+      description: Include collection, hadith number and the app release if known.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where is the concern?
+      options:
+        - Arabic text
+        - English translation
+        - Narrator chain or chapter context
+        - Numbering or source reference
+        - Spoken audio
+    validations:
+      required: true
+  - type: textarea
+    id: wording
+    attributes:
+      label: Exact wording or audio timestamp
+      description: Quote the short passage in question, or give the audio time.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Comparison source and observed difference
+      description: Give an edition, volume/page or source link, and explain the discrepancy. Do not assume different editions or transmissions are interchangeable.
+    validations:
+      required: true
