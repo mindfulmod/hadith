@@ -1,7 +1,8 @@
+import {store} from './store.js';
 import {recording} from './recording.mjs';
 import {chapterAt,safePosition} from './session.mjs';
 const audio=document.querySelector('#narration'), player=document.querySelector('#player');
-const store=window.HadithStore, $=s=>document.querySelector(s);
+const $=s=>document.querySelector(s);
 let activated=false, pendingSeek=null, lastSaved=0, busy=false, prepared=false;
 const time=s=>`${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`;
 const chapter=()=>chapterAt(recording.chapters,pendingSeek??audio.currentTime);

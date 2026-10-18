@@ -1,0 +1,104 @@
+{
+  "updatedAt": "2026-10-18",
+  "objective": "Production-ready English-first Sahih al-Bukhari reader with the full collection, precise source access, Cedar narration, whole-hadith sessions and dependable offline iPhone use.",
+  "status": "in-progress",
+  "decisions": {
+    "search": "Exact words/phrases and reference numbers first; no semantic topics or inferred summaries.",
+    "personalData": "Downloadable local backup first. No accounts or cross-device server needed.",
+    "content": "Keep raw Arabic, published translation, narration script and generated speech as separately versioned artifacts. Translation and audio approvals must identify the exact text hashes reviewed.",
+    "numbering": "Namespace source IDs and edition references. Never assume one edition's book or hadith number equals another's.",
+    "architecture": "Keep the static PWA. Split collection metadata, book text packs, search index and audio packs; load text and download audio independently. Preserve the persistent media element and waiting-worker update behavior.",
+    "publication": "Candidate import is not reader approval. Resolve source coverage and rights, then review complete narrator chains, narration, chapter context and any source notes separately. Preserve repeated narrations; do not deduplicate by meaning."
+  },
+  "requirements": [
+    {
+      "id": "source-coverage",
+      "status": "in-progress",
+      "evidence": "content/sources/openiti-bukhari/manifest.json; content/staging/bukhari-ar/catalog.json",
+      "remaining": "Resolve 173 absent numbered records and 10 empty numbered records in the first candidate; compare another edition and printed witness; preserve chapter material and variant references."
+    },
+    {
+      "id": "english-full-collection",
+      "status": "pending",
+      "evidence": "research/bukhari-opening-review.json contains only two AI-assisted working translations",
+      "remaining": "Establish complete, reusable English text with full chains, or an explicitly reviewed translation workflow. Cross-comparison alone is not scholarly certification."
+    },
+    {
+      "id": "content-review-gates",
+      "status": "in-progress",
+      "evidence": "Pinned source hashes; reproducible inventory; candidate excluded from reader release",
+      "remaining": "Per-entry Arabic/English review ledger, exact-hash approvals, discrepancy resolution and a publisher that refuses incomplete records."
+    },
+    {
+      "id": "library-navigation-search",
+      "status": "in-progress",
+      "evidence": "reader/library.mjs; reader/search.mjs; tests/library.test.mjs",
+      "remaining": "Book and chapter browser, stable reference map, pagination and a full-library index over reviewed content. Current UI searches only two available entries."
+    },
+    {
+      "id": "session-planning",
+      "status": "partial",
+      "evidence": "reader/session.mjs",
+      "remaining": "Replace opening-sample copy and two-entry assumptions; start new sessions from the actual continuation point; handle collection end and unavailable book packs."
+    },
+    {
+      "id": "personal-backup",
+      "status": "implemented-desktop-verified",
+      "evidence": "reader/personal-state.mjs; reader/backup.mjs; reader/personal-tools.mjs",
+      "remaining": "iPhone acceptance for file download/restore and future edition-ID migration. Desktop export, merge, undo, rejection, full restore, correct continuation and offline reopening verified."
+    },
+    {
+      "id": "full-audio",
+      "status": "pending",
+      "evidence": "reader/audio/provenance.json covers two entries",
+      "remaining": "Cedar generation cost/workflow, exact spoken-word and name audit, per-session continuous packs, text-hash version binding and complete library coverage."
+    },
+    {
+      "id": "offline-at-scale",
+      "status": "partial",
+      "evidence": "Current bundle uses byte hashes and cached range responses",
+      "remaining": "Separate shell/text/audio packs; storage estimate, resumable per-pack downloads, explicit removal, release eviction policy and failure recovery."
+    },
+    {
+      "id": "production-testing",
+      "status": "in-progress",
+      "evidence": "tests/; .github/workflows/reader-checks.yml",
+      "remaining": "Deploy checks, regression matrix, meaningful real-browser coverage, accessibility audit, keyboard/screen reader review, iPhone locked-screen and interruption acceptance after final architecture changes."
+    },
+    {
+      "id": "shipping-operations",
+      "status": "pending",
+      "evidence": "Existing update.html and generated reader-version.json",
+      "remaining": "Checks must gate deployment rather than merely run alongside Pages; document rollback, source correction reporting, privacy/licensing, release history and ongoing content updates."
+    }
+  ],
+  "nextActions": [
+    "Publish and verify the exact search and backup release; then make checks a deployment prerequisite.",
+    "Resolve the Arabic candidate's gaps against another source without silently combining editions.",
+    "Evaluate a complete English source with explicit reuse and narration permissions; avoid mass scraping or a dataset license treated as ownership of a third-party translation.",
+    "Build book-pack loading and the review/publish ledger before expanding the public reading collection.",
+    "Make verification a deployment prerequisite; retain the existing site during migration."
+  ],
+  "sourceResearch": [
+    {
+      "url": "https://sunnah.com/about",
+      "finding": "The source explains numbering differences and restricts scraping and mass reproduction, directing snapshot requests to its API. Do not bulk copy the website."
+    },
+    {
+      "url": "https://hadeethenc.com/en/home",
+      "finding": "Translations may be redistributed unchanged with attribution, version information and update conditions. This is a selected hadith encyclopedia, not demonstrated complete ordered Bukhari coverage."
+    },
+    {
+      "url": "https://hadeethenc.com/en/browse/hadith/4560",
+      "finding": "The intentions entry includes a Muslim reference and an alternate Bukhari wording; it cannot be substituted for the exact opening Bukhari record or its full chain."
+    },
+    {
+      "url": "https://kitab-project.org/docs/openITI",
+      "finding": "OpenITI permits noncommercial share-alike reuse with attribution and warns that text fidelity varies. Its source ID and Git commit are pinned in the local candidate manifest."
+    },
+    {
+      "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري&oldid=484875",
+      "finding": "The linked top-level index lists 73 sections. This is insufficient evidence of full-collection coverage or equivalence to a 97-book numbering scheme."
+    }
+  ]
+}

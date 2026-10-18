@@ -1,3 +1,6 @@
+import {store} from './store.js';
+import {searchForm,mountSearch} from './library.mjs';
+import {initPersonalTools} from './personal-tools.mjs';
 import {listen,listenAlong,resumeListening,prepareListening,getPlaybackState} from './audio.mjs';
 import {refreshOffline} from './offline.mjs';
 import {resolveSession,followTarget} from './session.mjs';
@@ -5,7 +8,7 @@ import {recording} from './recording.mjs';
 import {sourceHTML} from './source-format.mjs';
 /* Source blocks are rendered verbatim. Personal session state never changes them. */
 (() => {
- const $=s=>document.querySelector(s), data=window.HadithContent, store=window.HadithStore;
+ const $=s=>document.querySelector(s), data=window.HadithContent;
  const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const media=matchMedia('(prefers-color-scheme: dark)');
  let current=null, mode='home', scrollTimer, restoring=false, startingAudio=false, autoDestination=null;
@@ -81,10 +84,10 @@ import {sourceHTML} from './source-format.mjs';
   $('#listening-support').innerHTML='';
   if(current){write({last:current,session:{...session(),cursor:current}});main.innerHTML=reader(entry(current));document.title=`Hadith ${current} · Sahih al-Bukhari`;}
   else if(mode==='listen'){prepareListening(Number(match[2]));main.innerHTML=listening();$('#listening-support').innerHTML=queue();document.title='Listen · Sahih al-Bukhari';}
-  else if(mode==='collection'||mode==='saved'){const saved=mode==='saved',entries=saved?data.entries.filter(e=>store.get().saved.includes(e.number)):data.entries;main.innerHTML=`<section class="collection"><p class="eyebrow">SAHIH AL-BUKHARI · BOOK 01</p><h1>${saved?'Saved for another moment.':'The Beginning of Revelation'}</h1><p class="intro">${saved?'Your personal bookmarks, kept on this device.':'The first two hadith, in book order. Only this opening sample is available.'}</p>${entries.length?entries.map(listEntry).join(''):'<p>No bookmarks yet. Use Save beside a hadith to keep it here.</p><a class="primary" href="#read/1">Begin with Hadith 1 →</a>'}</section>`;document.title=(saved?'Saved readings':'Opening collection')+' · Hadith';}
+  else if(mode==='collection'||mode==='saved'){const saved=mode==='saved',entries=saved?data.entries.filter(e=>store.get().saved.includes(e.number)):data.entries;main.innerHTML=`<section class="collection"><p class="eyebrow">SAHIH AL-BUKHARI · BOOK 01</p><h1>${saved?'Saved for another moment.':'The Beginning of Revelation'}</h1><p class="intro">${saved?'Your personal bookmarks, kept on this device.':'The first two hadith, in book order. Only this opening sample is available.'}</p>${saved?'':searchForm(data.entries.length)}<div id="collection-entries">${entries.length?entries.map(listEntry).join(''):'<p>No bookmarks yet. Use Save beside a hadith to keep it here.</p><a class="primary" href="#read/1">Begin with Hadith 1 →</a>'}</div></section>`;document.title=(saved?'Saved readings':'Opening collection')+' · Hadith';}
   else if(mode==='end'){main.innerHTML=end();document.title='A place to pause · Hadith';}
   else{main.innerHTML=home();document.title='Your session · Sahih al-Bukhari';}
-  $('#dock').innerHTML=dock();updateListening();refreshOffline();
+  $('#dock').innerHTML=dock();mountSearch(data.entries);updateListening();refreshOffline();
   if(current&&store.get().followAudio&&getPlaybackState().active&&getPlaybackState().number===current)$('.chain').open=true;
   restoring=true;requestAnimationFrame(()=>{main.focus({preventScroll:true});window.scrollTo(0,current?Number(store.get().positions[current])||0:0);if(automatic){$('#hadith-title').scrollIntoView({block:'start'});announce(`Following Hadith ${current}.`);}requestAnimationFrame(()=>{restoring=false;updateListening();});});
  }
@@ -123,6 +126,7 @@ import {sourceHTML} from './source-format.mjs';
  new ResizeObserver(()=>document.documentElement.style.setProperty('--dock-height',$('#dock').getBoundingClientRect().height+'px')).observe($('#dock'));
  media.addEventListener('change',appearance);window.addEventListener('hashchange',render);window.addEventListener('scroll',()=>{clearTimeout(scrollTimer);scrollTimer=setTimeout(capture,200);},{passive:true});window.addEventListener('pagehide',capture);
  document.addEventListener('hadith:audio',updateListening);
+ initPersonalTools({capture,refresh:()=>{restoring=true;appearance();render();},prepareReload:()=>{restoring=true;clearTimeout(scrollTimer);}});
  // The installed app's start URL opens the session; explicit links still open their hadith.
  appearance();render();if(!store.available())$('.site-footer>span').textContent='Reading works, but this browser cannot save your place.';
 })();

@@ -2,7 +2,7 @@
 import {readFileSync,writeFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
-const core=['index.html','reader.css','reader.js','store.js','content.js','source-format.mjs','session.mjs','audio.mjs','recording.mjs','offline.mjs','integrity.mjs','manifest.webmanifest','icon-192.png','icon-512.png','../range.mjs','source-review.html','source-record.json','audio-review.html','audio-review.mjs','audio/provenance.json'];
+const core=['index.html','reader.css','reader.js','store.js','personal-state.mjs','backup.mjs','search.mjs','library.mjs','personal-tools.mjs','content.js','source-format.mjs','session.mjs','audio.mjs','recording.mjs','offline.mjs','integrity.mjs','manifest.webmanifest','icon-192.png','icon-512.png','../range.mjs','source-review.html','source-record.json','audio-review.html','audio-review.mjs','audio/provenance.json'];
 const media=['assets/garden-day.jpg','assets/garden-night.jpg','assets/detail-day.jpg','assets/detail-night.jpg','audio/opening-cedar-v1.m4a','audio/hadith-1-cedar-v1.mp3','audio/hadith-2-cedar-v1.mp3','audio/hadith-1-cedar-alternate-v1.mp3'];
 const files=[...core,...media].map(path=>{const bytes=readFileSync(new URL(path,import.meta.url));return {path,bytes:bytes.length,sha256:hash(bytes),core:core.includes(path),audio:/\.(m4a|mp3)$/.test(path)};});
 const release={id:'opening-'+hash(JSON.stringify(files)).slice(0,12),bytes:files.reduce((s,f)=>s+f.bytes,0),files};

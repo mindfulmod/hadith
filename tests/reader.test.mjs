@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import vm from 'node:vm';
+import {createPersonalStore} from '../reader/personal-state.mjs';
 import {planSession,chapterAt,safePosition,resolveSession,followTarget} from '../reader/session.mjs';
 import {verifyResponse} from '../reader/integrity.mjs';
 import {recording} from '../reader/recording.mjs';
@@ -33,10 +34,9 @@ test('offline verifier rejects partial, truncated and changed responses',async()
 });
 test('existing preferences, bookmarks and reading positions survive the upgrade',()=>{
  const saved={theme:'night',last:2,saved:[1,2,999],finished:[1],positions:{2:323},size:24};
- const context={window:{HadithContent:{entries:[{number:1},{number:2}]}},localStorage:{getItem:()=>JSON.stringify(saved),setItem:()=>{}}};
- vm.runInNewContext(readFileSync(new URL('../reader/store.js',import.meta.url),'utf8'),context);
- const state=JSON.parse(JSON.stringify(context.window.HadithStore.get()));
- assert.deepEqual(state.saved,[1,2]);assert.equal(state.positions[2],323);assert.equal(state.theme,'night');assert.equal(state.last,2);assert.equal(state.size,24);assert.equal(state.minutes,5);
+ const store=createPersonalStore({getItem:()=>JSON.stringify(saved),setItem:()=>{}});
+ const state=store.get();
+ assert.deepEqual(state.saved,[1,2,999]);assert.equal(state.positions[2],323);assert.equal(state.theme,'night');assert.equal(state.last,2);assert.equal(state.size,24);assert.equal(state.minutes,5);
 });
 test('release bytes match every shipped file and audio scripts match the complete source',async()=>{
  for(const f of release.files)await verifyResponse(new Response(readFileSync(new URL('../reader/'+f.path,import.meta.url))),f);
@@ -100,9 +100,8 @@ test('follow advances whole hadith only while playing, and defers to source dial
 });
 test('legacy preferences default to following, while an explicit off choice survives reload',()=>{
  for(const enabled of [undefined,false,true]){
-  const context={window:{HadithContent:{entries:[{number:1},{number:2}]}},localStorage:{getItem:()=>JSON.stringify({followAudio:enabled,saved:[1],last:2}),setItem:()=>{}}};
-  vm.runInNewContext(readFileSync(new URL('../reader/store.js',import.meta.url),'utf8'),context);
-  assert.equal(context.window.HadithStore.get().followAudio,enabled!==false);
-  assert.equal(context.window.HadithStore.get().last,2);
+  const store=createPersonalStore({getItem:()=>JSON.stringify({followAudio:enabled,saved:[1],last:2}),setItem:()=>{}});
+  assert.equal(store.get().followAudio,enabled!==false);
+  assert.equal(store.get().last,2);
  }
 });
