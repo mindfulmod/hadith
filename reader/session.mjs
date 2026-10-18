@@ -16,3 +16,20 @@ export function chapterAt(chapters, seconds) {
 export function safePosition(seconds, duration) {
  return Number.isFinite(seconds) && seconds >= 0 && seconds < duration - .25 ? seconds : 0;
 }
+
+/* A saved session is finite and contiguous; adding content cannot lengthen it. */
+export function resolveSession(entries, saved, minutes = 5, last = entries[0]?.number) {
+ const all=entries.map(e=>e.number);
+ const numbers=saved?.numbers;
+ const start=Array.isArray(numbers)?all.indexOf(numbers[0]):-1;
+ const valid=start>=0 && numbers.length>0 && numbers.every((n,i)=>all[start+i]===n);
+ const selected=valid?[...numbers]:planSession(entries,all[0],minutes).numbers;
+ const cursor=selected.includes(saved?.cursor)?saved.cursor:selected.includes(last)?last:selected[0];
+ return {numbers:selected,cursor,ended:valid&&saved.ended===true};
+}
+export function advanceSession(session, number) {
+ const index=session.numbers.indexOf(number);
+ if(index<0)return session;
+ const next=session.numbers[index+1];
+ return {...session,cursor:next??number,ended:next===undefined};
+}

@@ -2,32 +2,34 @@ import {recording} from './recording.mjs';
 import {chapterAt,safePosition} from './session.mjs';
 const audio=document.querySelector('#narration'), player=document.querySelector('#player');
 const store=window.HadithStore, $=s=>document.querySelector(s);
-let activated=false, pendingSeek=null, lastSaved=0, busy=false;
+let activated=false, pendingSeek=null, lastSaved=0, busy=false, prepared=false;
 const time=s=>`${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`;
-const chapter=()=>chapterAt(recording.chapters,audio.currentTime);
+const chapter=()=>chapterAt(recording.chapters,pendingSeek??audio.currentTime);
 function session(type){try{if(navigator.audioSession)navigator.audioSession.type=type;}catch{}}
-function save(){if(!activated)return;store.set({audio:{release:recording.id,seconds:audio.ended?0:audio.currentTime}});}
+function save(){if(!activated)return;store.set({audio:{release:recording.id,seconds:audio.ended?0:(pendingSeek??audio.currentTime)}});}
 function metadata(){
  if(!activated||!('mediaSession' in navigator))return;
  const c=chapter();
  navigator.mediaSession.metadata=new MediaMetadata({title:`Hadith ${c.number} · Sahih al-Bukhari`,artist:'Cedar · AI narration under review',album:'The Beginning of Revelation',artwork:[{src:new URL('icon-512.png',import.meta.url).href,sizes:'512x512',type:'image/png'}]});
 }
+export function getPlaybackState(){return {number:chapter().number,seconds:pendingSeek??audio.currentTime,playing:!audio.paused,ended:audio.ended};}
 function update(){
  const c=chapter(),duration=Number.isFinite(audio.duration)?audio.duration:recording.duration;
  $('#audio-title').textContent=`Hadith ${c.number} of ${recording.chapters.length}`;
- $('#audio-reading').href=`#read/${c.number}`;
+ $('#audio-room').href=`#listen/${c.number}`;
  $('#audio-toggle').textContent=busy?'Loading…':audio.paused?'Play':'Pause';
  $('#audio-toggle').setAttribute('aria-label',audio.paused?'Play narration':'Pause narration');
- $('#audio-elapsed').textContent=time(audio.currentTime);$('#audio-total').textContent=time(duration);
- $('#audio-seek').max=duration;$('#audio-seek').value=audio.currentTime;
- $('#audio-seek').setAttribute('aria-valuetext',`${time(audio.currentTime)} of ${time(duration)}`);
- $('#audio-previous').disabled=c===recording.chapters[0]&&audio.currentTime<1;
+ $('#audio-elapsed').textContent=time(pendingSeek??audio.currentTime);$('#audio-total').textContent=time(duration);
+ $('#audio-seek').max=duration;$('#audio-seek').value=pendingSeek??audio.currentTime;
+ $('#audio-seek').setAttribute('aria-valuetext',`${time(pendingSeek??audio.currentTime)} of ${time(duration)}`);
+ $('#audio-previous').disabled=c===recording.chapters[0]&&(pendingSeek??audio.currentTime)<1;
  $('#audio-next').disabled=c===recording.chapters.at(-1);
  if(activated&&'mediaSession' in navigator){
   if($('#audio-title').dataset.chapter!==String(c.number)){metadata();$('#audio-title').dataset.chapter=c.number;}
   navigator.mediaSession.playbackState=audio.paused?'paused':'playing';
   try{navigator.mediaSession.setPositionState({duration,playbackRate:audio.playbackRate,position:Math.min(audio.currentTime,duration)});}catch{}
  }
+ document.dispatchEvent(new CustomEvent('hadith:audio'));
 }
 function setPosition(value){
  const duration=Number.isFinite(audio.duration)?audio.duration:recording.duration;
@@ -47,15 +49,28 @@ async function play(){
  finally{busy=false;update();}
 }
 export function listen(number){activate();const c=recording.chapters.find(c=>c.number===number)||recording.chapters[0];setPosition(c.start);play();}
-export function resumeListening(){activate();const saved=store.get().audio;setPosition(saved?.release===recording.id?safePosition(saved.seconds,recording.duration):0);play();}
+export function prepareListening(number){
+ player.hidden=false;document.body.classList.add('has-player');
+ if(!prepared&&!activated){
+  prepared=true;
+  const saved=store.get().audio;
+  const seconds=saved?.release===recording.id?safePosition(saved.seconds,recording.duration):0;
+  setPosition(chapterAt(recording.chapters,seconds).number===number?seconds:(recording.chapters.find(c=>c.number===number)?.start||0));
+ }
+ update();
+}
+export function resumeListening(){
+ if(!activated){const saved=store.get().audio;setPosition(saved?.release===recording.id?safePosition(saved.seconds,recording.duration):0);}
+ play();
+}
 function pause(){audio.pause();save();session('auto');update();}
 $('#audio-toggle').onclick=()=>audio.paused?play():pause();
-$('#audio-back').onclick=()=>setPosition(audio.currentTime-15);
-$('#audio-forward').onclick=()=>setPosition(audio.currentTime+15);
+$('#audio-back').onclick=()=>setPosition((pendingSeek??audio.currentTime)-15);
+$('#audio-forward').onclick=()=>setPosition((pendingSeek??audio.currentTime)+15);
 $('#audio-previous').onclick=()=>{const index=recording.chapters.indexOf(chapter());setPosition(recording.chapters[Math.max(0,index-1)].start);};
 $('#audio-next').onclick=()=>{const index=recording.chapters.indexOf(chapter());setPosition(recording.chapters[Math.min(recording.chapters.length-1,index+1)].start);};
 $('#audio-seek').addEventListener('input',e=>setPosition(Number(e.target.value)));
-$('#audio-close').onclick=()=>{pause();player.hidden=true;document.body.classList.remove('has-player');if('mediaSession' in navigator){navigator.mediaSession.metadata=null;navigator.mediaSession.playbackState='none';}activated=false;};
+$('#audio-close').onclick=()=>{pause();player.hidden=true;document.body.classList.remove('has-player');if('mediaSession' in navigator){navigator.mediaSession.metadata=null;navigator.mediaSession.playbackState='none';}activated=false;$('#dock a')?.focus({preventScroll:true});};
 $('#audio-speed').onchange=e=>{audio.playbackRate=Number(e.target.value);update();};
 audio.addEventListener('loadedmetadata',()=>{if(pendingSeek!==null)setPosition(pendingSeek);update();});
 audio.addEventListener('timeupdate',()=>{update();if(Date.now()-lastSaved>2000){save();lastSaved=Date.now();}});

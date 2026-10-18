@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import vm from 'node:vm';
-import {planSession,chapterAt,safePosition} from '../reader/session.mjs';
+import {planSession,chapterAt,safePosition,resolveSession,advanceSession} from '../reader/session.mjs';
 import {verifyResponse} from '../reader/integrity.mjs';
 import {recording} from '../reader/recording.mjs';
 import {release} from '../reader/release.mjs';
@@ -44,4 +44,31 @@ test('release bytes match every shipped file and audio scripts match the complet
  assert.deepEqual(provenance.scripts,source.entries.map(e=>e.english_blocks.join('\n\n')));
  for(const c of recording.chapters)assert(c.duration>0);
  assert.equal(recording.chapters.at(-1).start+recording.chapters.at(-1).duration,recording.duration);
+});
+
+test('returning reader migrates into a finite session without changing reading or audio state',()=>{
+ const entries=[entry(1,40),entry(2,50)];
+ const legacy={last:2,finished:[1],audio:{seconds:25},positions:{2:323}};
+ const session=resolveSession(entries,undefined,5,legacy.last);
+ assert.deepEqual(session,{numbers:[1,2],cursor:2,ended:false});
+ assert.deepEqual(legacy,{last:2,finished:[1],audio:{seconds:25},positions:{2:323}});
+ const expanded=[...entries,entry(3,400)];
+ assert.deepEqual(resolveSession(expanded,session,10,1),session);
+});
+test('session advances only by explicit completion, including skipped entries and revisits',()=>{
+ const first={numbers:[1,2],cursor:1,ended:false};
+ const second=advanceSession(first,1);
+ assert.deepEqual(first,{numbers:[1,2],cursor:1,ended:false});
+ assert.deepEqual(second,{numbers:[1,2],cursor:2,ended:false});
+ assert.deepEqual(advanceSession(second,2),{numbers:[1,2],cursor:2,ended:true});
+ assert.deepEqual(advanceSession(first,2),{numbers:[1,2],cursor:2,ended:true});
+ assert.deepEqual(advanceSession(first,999),first);
+ assert.deepEqual(advanceSession({...second,ended:true},1),second);
+});
+test('invalid saved sessions recover to an ordered whole-hadith plan',()=>{
+ const entries=[entry(1,20),entry(2,20)];
+ for(const bad of [null,{}, {numbers:[2,1]}, {numbers:[1,1]}, {numbers:[1,999]}, {numbers:[]}, {numbers:'12'}]) {
+  assert.deepEqual(resolveSession(entries,bad,5,2),{numbers:[1,2],cursor:2,ended:false});
+ }
+ assert.deepEqual(resolveSession(entries,{numbers:[1,2],cursor:999,ended:true},5,1),{numbers:[1,2],cursor:1,ended:true});
 });
