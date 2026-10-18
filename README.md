@@ -123,3 +123,15 @@ The production shell now has three coordinated surfaces: the finite session, a w
 `audio.mjs` remains the sole owner of the persistent audio element, playback position, system media controls and errors. It exposes playback state and a notification to the route shell. Route changes do not recreate the element. `offline.mjs`, range handling and the worker activation policy are unchanged. The source bundle, audio scripts, recording bytes, artwork and source dialog content are unchanged.
 
 Validation for this release is recorded in `research/reader-next/session-validation.html`. Browser checks cover exact equality of all eight rendered source blocks, explicit completion, bookmark persistence, source-dialog focus restoration, responsive layouts, route changes during playback, and the saved reader with the local server stopped. Automated tests cover legacy-state migration, finite session persistence, malformed saved sessions, skipped entries, whole-hadith planning, media ranges and release integrity. These checks do not replace another iPhone Home Screen / locked-screen acceptance pass after the shell update.
+
+## Safari update recovery · 18 October 2026
+
+The user reported still seeing the old layout in a Safari tab. The previous cache-first worker could download a release but wait indefinitely while older reader clients remained open; refreshing an in-scope tab did not necessarily release those clients.
+
+`update.html` intentionally lives outside the reader worker scope. It fetches generated `reader-version.json`, asks the reader registration to check for an update, and queries the active worker over a message port. The Open updated reader action appears only when that active worker reports the expected release. A waiting release gives explicit instructions to close other reader tabs while leaving the updater open. A failed network/version check never claims success. The page does not unregister workers, delete caches/localStorage, force activation, or navigate/reload other tabs.
+
+The reader now has an update notice when a release is waiting and a Check for app updates link under Aa. Returning to a foreground reader also requests an update check at most once per minute. The original rule of allowing active playback to finish is preserved.
+
+Validation: a local server initially served the previous release, then switched to the new one. A bookmarked hadith and active narration remained in the old tab while a second tab opened the updater. The updater displayed the waiting-tab explanation; old audio was still playing at 25.93 seconds. Closing that test tab allowed activation; the updater verified readiness and returned to the new reader, where the bookmark, Continue action and saved listening state remained. Thirteen automated tests pass, including generated-version equality and the worker release handshake. No source text, recordings or artwork changed. iPhone Safari recovery still needs user confirmation.
+
+Platform references: https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/update and https://web.dev/articles/service-worker-lifecycle .

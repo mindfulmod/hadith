@@ -2,11 +2,16 @@ import {release} from './release.mjs';
 import {verifyResponse} from './integrity.mjs';
 const CACHE='hadith-reader-'+release.id;
 const base=new URL('./',import.meta.url);
-let busy=false, ready=false, message='Checking this device…', workerReady=false, updateReady=false;
+let busy=false, ready=false, message='Checking this device…', workerReady=false, updateReady=false, registration=null, lastUpdateCheck=0;
+const notice=document.createElement('aside');
+notice.className='update-notice';notice.hidden=true;notice.setAttribute('aria-label','Reader update');
+notice.innerHTML='<span>A new reader version is ready.</span><a href="../update.html">Open update →</a>';
+document.querySelector('.topbar')?.after(notice);
 const supported='serviceWorker' in navigator && 'caches' in window && window.isSecureContext;
 function show(){
+ notice.hidden=!updateReady;
  document.querySelectorAll('[data-download]').forEach(b=>{b.disabled=busy||!supported||!workerReady;b.textContent=busy?'Saving…':ready?'Check saved copy':'Save for offline';});
- document.querySelectorAll('[data-offline-status]').forEach(el=>{el.textContent=message+(updateReady?' An update is ready; close all reader windows and reopen.':'');el.dataset.ready=String(ready);});
+ document.querySelectorAll('[data-offline-status]').forEach(el=>{el.textContent=message+(updateReady?' A new version is ready. Use Open update above.':'');el.dataset.ready=String(ready);});
 }
 export const refreshOffline=show;
 async function complete(cache,deep=false){
@@ -40,6 +45,7 @@ async function save(){
 document.addEventListener('click',e=>{if(e.target.closest('[data-download]'))save();});
 if(supported){
  navigator.serviceWorker.register('./sw.js',{type:'module',scope:'./',updateViaCache:'none'}).then(async reg=>{
+  registration=reg;
   const noticeUpdate=()=>{updateReady=!!reg.waiting;show();};
   reg.addEventListener('updatefound',()=>{reg.installing?.addEventListener('statechange',noticeUpdate);});
   noticeUpdate();
@@ -50,5 +56,9 @@ if(supported){
   noticeUpdate();
  }).catch(()=>{message='Offline setup did not finish. Reopen with a connection to try again.';show();});
 }else{message='Offline saving needs Safari or another supported browser over HTTPS.';show();}
-window.addEventListener('pageshow',()=>{if(workerReady)check();});
-document.addEventListener('visibilitychange',()=>{if(!document.hidden&&workerReady)check();});
+function checkForUpdate(){
+ if(!registration||Date.now()-lastUpdateCheck<60000)return;
+ lastUpdateCheck=Date.now();registration.update().catch(()=>{});
+}
+window.addEventListener('pageshow',()=>{if(workerReady)check();checkForUpdate();});
+document.addEventListener('visibilitychange',()=>{if(!document.hidden){if(workerReady)check();checkForUpdate();}});

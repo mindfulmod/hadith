@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f6f0e7"><title>Update your Hadith reader</title><style>
+:root{color-scheme:light;--bg:#f6f0e7;--ink:#392e32;--muted:#71606a;--paper:#fffaf3;--line:#d7c7c5;--accent:#ad4327}@media(prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#251f29;--ink:#f2e8df;--muted:#cbbac5;--paper:#302833;--line:#655364;--accent:#f2a568}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,sans-serif}main{max-width:570px;margin:8vh auto;padding:28px}h1{font:400 38px/1.15 Georgia,serif;margin:24px 0}p{margin:0 0 22px}small,.note{font-size:13px;color:var(--muted)}.brand{font:25px Georgia,serif;color:var(--ink);text-decoration:none}.status{padding:20px;border:1px solid var(--line);border-radius:12px;margin:28px 0}#status{margin:0}button,.primary{font:600 15px system-ui;border:1px solid var(--accent);border-radius:10px;padding:14px 20px;min-height:48px;display:inline-flex;align-items:center;justify-content:center;background:var(--accent);color:var(--paper);text-decoration:none;cursor:pointer;width:100%}button:disabled{opacity:.6;cursor:default}button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}#return{display:inline-flex;min-height:44px;align-items:center;color:var(--muted);margin-top:18px;font-size:13px}[hidden]{display:none!important}
+</style></head><body><main><a class="brand" href="reader/">✧ Hadith</a><h1>Your latest reader.</h1><p>This checks the published version and helps Safari leave its older saved copy.</p><div class="status"><p id="status" role="status" aria-live="polite">Checking for the latest version…</p></div><p id="help" class="note">Your bookmarks, reading place and downloaded recordings stay saved.</p><button id="retry" disabled>Checking…</button><a id="open" class="primary" href="reader/#home" hidden>Open the updated reader →</a><a id="return" href="reader/#home">Return without updating</a><p class="note" style="margin-top:28px">After updating, use Save for offline in the reader and wait for Ready offline before testing airplane mode.</p><noscript><p>Enable JavaScript to check for an update.</p></noscript></main>
+<script type="module">
+// This page intentionally lives outside /reader/. It never clears storage,
+// unregisters a worker, forces activation or reloads another reader tab.
+const status=document.querySelector('#status'),help=document.querySelector('#help'),retry=document.querySelector('#retry'),open=document.querySelector('#open');
+const base=new URL('./',location.href),readerURL=new URL('reader/',base);
+let run=0,timer;
+function releaseOf(worker){
+ return new Promise(resolve=>{
+  if(!worker)return resolve(null);
+  const channel=new MessageChannel();
+  const finish=value=>{clearTimeout(timeout);channel.port1.close();resolve(value);};
+  const timeout=setTimeout(()=>finish(null),1200);
+  channel.port1.onmessage=event=>finish(event.data?.release||null);
+  try{worker.postMessage({type:'GET_READER_RELEASE'},[channel.port2]);}catch{finish(null);}
+ });
+}
+async function check(){
+ const thisRun=++run;clearTimeout(timer);open.hidden=true;retry.hidden=false;retry.disabled=true;retry.textContent='Checking…';
+ status.textContent='Checking for the latest version…';
+ help.textContent='Your bookmarks, reading place and downloaded recordings stay saved.';
+ try{
+  if(!('serviceWorker' in navigator)||!window.isSecureContext)throw new Error('unsupported');
+  const response=await fetch(new URL('reader-version.json',base),{cache:'reload'});
+  if(!response.ok)throw new Error('offline');
+  const expected=(await response.json()).release;
+  if(!/^opening-[a-f0-9]{12}$/.test(expected))throw new Error('manifest');
+  const reg=await navigator.serviceWorker.register(new URL('reader/sw.js',base),{type:'module',scope:readerURL.href,updateViaCache:'none'});
+  await reg.update();
+  const deadline=Date.now()+120000;
+  async function inspect(){
+   if(thisRun!==run)return;
+   const active=reg.active,version=active?.state==='activated'?await releaseOf(active):null;
+   if(thisRun!==run)return;
+   if(version===expected&&reg.active===active&&active.state==='activated'){
+    status.textContent='The latest session reader is ready.';
+    help.textContent='Look for “A little time. Two hadith.” and the session path. Your saved place and bookmarks are preserved.';
+    retry.hidden=true;open.hidden=false;return;
+   }
+   if(reg.waiting){
+    status.textContent='The update has downloaded. Another reader tab is keeping the old version open.';
+    help.textContent='Close the Safari tabs showing the Hadith reader, leaving this update tab open. If a Home Screen reader is also open, close it too. This page will check again automatically.';
+   }else if(reg.installing){status.textContent='Downloading and checking the new reader…';}
+   else{status.textContent='Finishing the update…';}
+   retry.disabled=false;retry.textContent='Check again';
+   if(Date.now()<deadline)timer=setTimeout(inspect,2000);
+   else{status.textContent='The update is still waiting.';help.textContent='Close other Hadith reader tabs, keep this tab open with a connection, then tap Check again.';}
+  }
+  await inspect();
+ }catch{
+  if(thisRun!==run)return;
+  status.textContent='The latest version could not be confirmed.';
+  help.textContent='Keep this tab connected to the internet and try again. Your saved reader has not been removed.';
+  retry.disabled=false;retry.textContent='Try again';
+ }
+}
+retry.addEventListener('click',check);check();
+</script></body></html>

@@ -72,3 +72,19 @@ test('invalid saved sessions recover to an ordered whole-hadith plan',()=>{
  }
  assert.deepEqual(resolveSession(entries,{numbers:[1,2],cursor:999,ended:true},5,1),{numbers:[1,2],cursor:1,ended:true});
 });
+
+test('updater release manifest identifies the exact generated reader bundle',()=>{
+ const version=JSON.parse(readFileSync(new URL('../reader-version.json',import.meta.url),'utf8'));
+ assert.equal(version.release,release.id);
+});
+test('worker reports its release without forcing activation or changing stored data',()=>{
+ const handlers={},messages=[];
+ const context={release,URL,self:{location:{href:'https://example.com/hadith/reader/sw.js'},addEventListener:(name,handler)=>handlers[name]=handler}};
+ const source=readFileSync(new URL('../reader/sw.js',import.meta.url),'utf8').replace(/^import .*;\n/gm,'');
+ vm.runInNewContext(source,context);
+ handlers.message({data:{type:'GET_READER_RELEASE'},ports:[{postMessage:message=>messages.push(message)}]});
+ assert.equal(messages[0].release,release.id);
+ assert.equal(messages.length,1);
+ handlers.message({data:{type:'SKIP_WAITING'},ports:[]});
+ assert.equal(messages.length,1);
+});

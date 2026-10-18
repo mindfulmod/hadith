@@ -1,4 +1,4 @@
-// Reader release: opening-0f65cef6a433
+// Reader release: opening-551d02fbb96a
 import {release} from './release.mjs';
 import {verifyResponse} from './integrity.mjs';
 import {parseRange} from '../range.mjs';
@@ -17,6 +17,10 @@ self.addEventListener('install',event=>event.waitUntil((async()=>{
  await cache.put(urlFor('release.mjs'),manifest);
 })()));
 self.addEventListener('activate',event=>event.waitUntil(self.clients.claim()));
+// The update page verifies the active worker, not merely a successful download.
+self.addEventListener('message',event=>{
+ if(event.data?.type==='GET_READER_RELEASE')event.ports[0]?.postMessage({release:release.id});
+});
 // A new release waits for open reader windows to close. Never replace a playing page.
 self.addEventListener('fetch',event=>{
  const req=event.request, url=new URL(req.url);
