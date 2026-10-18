@@ -10,4 +10,4 @@ Artwork must not modify, paraphrase, illustrate or interpret the hadith source w
 
 ## Reader interface colours
 
-The user rejected green as the primary colour on 17 October 2026. Keep the reader interface free of green-dominant backgrounds, text and controls. The current proposal is parchment/cocoa with muted rose in day mode, and warm plum with apricot in night mode; it remains open to user feedback. Natural foliage in the existing artwork is separate from the interface palette. Preserve the comfortable 21px default reading size.
+The user rejected green as the primary colour on 17 October 2026. Keep the reader interface free of green-dominant backgrounds, text and controls. The user accepted parchment/cocoa by day and warm plum by night, but rejected the muted button colour. Use a more distinct copper action by day and vivid apricot by night. The user also requested bold structural exploration so this feels purpose-built for hadith rather than another book layout. Natural foliage in the existing artwork is separate from the interface palette. Preserve the comfortable 21px default reading size.

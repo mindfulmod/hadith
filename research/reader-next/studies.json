@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Apple Books",
+    "url": "https://support.apple.com/guide/iphone/read-books-iphc1af7c57/27/ios/27",
+    "title": "Return after exploration",
+    "observed": "Apple documents returning to the earlier reading location and distinguishes automatic place saving from bookmarks. Its reading menu also exposes typography and scrolling choices.",
+    "proposal": "Keep a saved reading position when Arabic or sources open. A bookmark should mean “return deliberately,” not “save my progress.”",
+    "limitations": "Documentation review, not an iPhone walkthrough. The linked guide is for iOS 27; no assumption that every control matches the user's iOS 26."
+  },
+  {
+    "id": 2,
+    "name": "Kindle",
+    "url": "https://www.aboutamazon.com/news/books-and-authors/kindle-accessibility-features-for-all-readers",
+    "title": "Flexible text, not a fixed page",
+    "observed": "Amazon documents font, margin, spacing, alignment and page-colour controls, alongside assistive reading tools.",
+    "proposal": "Preserve the comfortable 21px default and allow larger text without horizontal scrolling. Do not make reading depend on decorative canvas rendering.",
+    "limitations": "Official feature description. Accessibility benefits were not independently measured; synchronized highlighting needs real timing data."
+  },
+  {
+    "id": 3,
+    "name": "Kobo",
+    "url": "https://www.kobo.com/ca/en/p/apps",
+    "title": "One identity across formats",
+    "observed": "Kobo's app description presents ebook and audiobook reading with several visual themes and saved reading continuity.",
+    "proposal": "The current hadith should remain identifiable when the user moves between reading and listening; the theme should not change the information architecture.",
+    "limitations": "Public app description only. Region redirects and intermittent fetch failures limit reproduction; no native-app flow was tested."
+  },
+  {
+    "id": 5,
+    "name": "Libby",
+    "url": "https://help.libbyapp.com/en-us/6047.htm",
+    "title": "Progress at two scales",
+    "observed": "Libby's player documents overall progress, chapter progress and a timeline with chapter breaks and bookmarks. Its timer documentation includes an end-of-chapter option.",
+    "proposal": "Show the current hadith and the finite session separately. Finish on a whole entry; never cut off a narration to satisfy a nominal five minutes.",
+    "limitations": "Official help review. This supports an interaction pattern, not a claim of better completion rates."
+  },
+  {
+    "id": 18,
+    "name": "Foliate",
+    "url": "https://johnfactotum.github.io/foliate/",
+    "title": "Quiet chrome with a way back",
+    "observed": "Foliate describes automatically hidden window controls, page or scroll reading, a contents sidebar and navigation history.",
+    "proposal": "A direct reading view can be calm without removing source access. Keep explicit buttons for essential actions instead of relying on an undiscoverable gesture.",
+    "limitations": "Official feature page and its documented flow; no Linux installation tested."
+  },
+  {
+    "id": 23,
+    "name": "Readest",
+    "url": "https://web.readest.com/",
+    "title": "Reading and reference can coexist",
+    "observed": "The web library supplied sample books. Opening one exposed a dedicated reading surface, bookmark action and separate appearance/navigation controls. Parallel reading is described on the product site.",
+    "proposal": "Use a secondary source rail on wide screens. On the phone, open a full-width source panel and return to the unchanged reading location.",
+    "limitations": "Limited browser interaction. The sample opened at its cover; settings and all pagination states were not exhaustively exercised."
+  },
+  {
+    "id": 26,
+    "name": "Yomu",
+    "url": "https://www.yomu-reader.com/",
+    "title": "Defaults before customization",
+    "observed": "Yomu describes fluid text layout, font and colour choices, page or scroll modes, and defaults saved per book.",
+    "proposal": "Offer a short comfort panel and good defaults. Requiring the user to configure a reader before starting would defeat the purpose.",
+    "limitations": "Product description, not installed-app testing. Testimonials were not treated as independent evidence."
+  },
+  {
+    "id": 33,
+    "name": "Adobe Acrobat",
+    "url": "https://helpx.adobe.com/acrobat/mobile/view-manage-files/liquid-mode.html",
+    "title": "Reflow is different from a scan",
+    "observed": "Adobe documents a reading layout that reflows supported PDFs and exposes text and spacing adjustments without changing the original document.",
+    "proposal": "Use semantic, immutable source blocks as the reading layer and keep the print witness accessible separately. Do not use live OCR as the canonical text.",
+    "limitations": "Official workflow documentation. Reflow support is conditional and does not verify transcription accuracy."
+  },
+  {
+    "id": 34,
+    "name": "PDF Expert",
+    "url": "https://pdfexpert.com/",
+    "title": "Phone reading has different needs",
+    "observed": "PDF Expert's page describes text reflow for phone screens and reading themes, alongside a much larger editing feature set.",
+    "proposal": "Keep the reflow principle and discard editing-tool density. Reference pages can remain faithful while the main text adapts to the screen.",
+    "limitations": "Public feature description. No claim that every PDF or script reflows correctly."
+  },
+  {
+    "id": 40,
+    "name": "LiquidText",
+    "url": "https://www.liquidtext.net/",
+    "title": "Keep the route to the original",
+    "observed": "LiquidText describes connections from notes and observations back to source context, and relationships across pages and documents.",
+    "proposal": "Source inspection should retain the selected hadith and reading position. This does not justify adding a research canvas or extracted quote cards.",
+    "limitations": "Public interaction description; no installed iPad or desktop session tested."
+  },
+  {
+    "id": 46,
+    "name": "PDF.js",
+    "url": "https://mozilla.github.io/pdf.js/web/viewer.html",
+    "title": "A document viewer is not the same task",
+    "observed": "The live demo displays a printed research paper with page number, zoom, page navigation, search and editing tools. The paper's fixed two-column structure remains visible.",
+    "proposal": "Retain exact edition/page references in sources, but do not ask the daily reader to pan around a miniature print page.",
+    "limitations": "Desktop browser sample only; not a performance or accessibility benchmark of PDF.js."
+  },
+  {
+    "id": 57,
+    "name": "Quran.com",
+    "url": "https://quran.com/al-fatihah",
+    "title": "Separate reading density from study density",
+    "observed": "The verse-oriented view exposed repeated study controls and translation labels. Switching to Reading changed the presentation to a denser continuous Arabic view. A promotional overlay also competed for space.",
+    "proposal": "Separate quiet reading from source inspection; retain obvious mode controls. Avoid overlays and repeated action rows in the narration.",
+    "limitations": "Actual browser mode switch. Quran verse structure is different from hadith; do not split hadith into invented verse-like units."
+  },
+  {
+    "id": 58,
+    "name": "Sunnah.com",
+    "url": "https://sunnah.com/bukhari:1",
+    "title": "Identity and provenance are structural",
+    "observed": "The live entry places English and Arabic alongside book/chapter context and several reference systems. The reference footer distinguishes numbering conventions.",
+    "proposal": "Use stable Bukhari identifiers and transparent witnesses. Make sources close but secondary, with one English reading column on the phone.",
+    "limitations": "Visual browser inspection of the opening entry; no claim of permission to reuse its English translation."
+  },
+  {
+    "id": 64,
+    "name": "Greentech Hadith",
+    "url": "https://gtaf.org/apps/hadith/",
+    "title": "Hadith needs its own navigation",
+    "observed": "Greentech documents last-read access, bookmarks, chains, grades and list/page modes. Its public page also promotes goals, streaks and selected gems.",
+    "proposal": "Adopt hadith identity, full-chain access and continuity. Decline streak pressure and thematic selection because this user chose complete book-order reading.",
+    "limitations": "Official feature-page study, not a native-app test. Do not transfer grading labels without a documented basis."
+  },
+  {
+    "id": 75,
+    "name": "Sefaria",
+    "url": "https://help.sefaria.org/hc/en-us/articles/18472472138652-Quick-Guide-Meet-the-Sefaria-Library-Resource-Panel",
+    "title": "Sources next to the passage",
+    "observed": "The official guide documents passage-linked resources and edition information. In the browser, a translation panel opened alongside the selected text, keeping the reading visible.",
+    "proposal": "A modal source sheet on the phone and a rail on desktop can preserve context. Label the edition and translation status separately.",
+    "limitations": "Actual panel-opening interaction plus help documentation. The browser panel remained loading in this sample; its detailed translation list was not verified live."
+  },
+  {
+    "id": 78,
+    "name": "Readwise Reader",
+    "url": "https://docs.readwise.io/reader/docs/faqs/appearance",
+    "title": "Action density should follow the task",
+    "observed": "Readwise documents a quieter long-form view and vertical paged scrolling to avoid conflicts with selection and panel gestures. Its TTS help states that generated speech is unavailable offline.",
+    "proposal": "Keep continuous scrolling and a concise action bar. Preserve pre-generated, checked audio downloads instead of adopting on-demand speech.",
+    "limitations": "Official workflow documentation. Its product team's rationale is evidence of a tradeoff, not an independent usability study."
+  },
+  {
+    "id": 112,
+    "name": "BookPlayer",
+    "url": "https://github.com/TortugaPower/BookPlayer",
+    "title": "A persistent listening surface",
+    "observed": "BookPlayer's project documentation describes chapters, playback controls and listening outside the foreground app.",
+    "proposal": "Keep the audio element alive while opening reading and sources. Show chapter boundaries, and avoid changing the file at each hadith in this sample.",
+    "limitations": "Project README review; device-level behavior belongs to testing on the user's iPhone."
+  },
+  {
+    "id": 115,
+    "name": "Pocket Casts",
+    "url": "https://support.pocketcasts.com/knowledge-base/chapters/",
+    "title": "Make boundaries visible",
+    "observed": "Pocket Casts documents chapter lists, navigation and timeline markers. The same guide distinguishes platform limitations and creator-provided versus generated chapter data.",
+    "proposal": "Use only the existing measured hadith start times. Do not invent sentence timings or imply automatic chapter metadata is verified source structure.",
+    "limitations": "Official documentation; native and web behavior differ. No claim that its audio system is interchangeable with ours."
+  },
+  {
+    "id": 117,
+    "name": "Castro",
+    "url": "https://castro.fm/",
+    "title": "An explicit upcoming queue",
+    "observed": "Castro describes a queue whose items play sequentially and are downloaded for listening. It also offers skipping and silence processing.",
+    "proposal": "Show the ordered upcoming hadith and the stopping point. Reject auto-skipping parts of a narration and unreviewed audio processing.",
+    "limitations": "Public workflow description. Queue ownership transfers; content triage and episode skipping do not."
+  },
+  {
+    "id": 264,
+    "name": "Serial Reader",
+    "url": "https://www.serialreader.org/",
+    "title": "Give a session an end",
+    "observed": "Serial Reader offers daily portions of classic books with adjustable reading appearance.",
+    "proposal": "Create a small, finite session in book order, ending at a whole hadith. The two-entry sample remains explicitly shorter than five minutes.",
+    "limitations": "Public description, not a longitudinal habit study. Do not infer that daily locks, streaks or timed pressure improve this user's reading."
+  }
+]

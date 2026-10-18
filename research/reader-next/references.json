@@ -1,0 +1,2737 @@
+{
+  "date": "2026-10-17",
+  "candidate_count": 281,
+  "reviewed_count": 208,
+  "closer_count": 20,
+  "interaction_count": 5,
+  "references": [
+    {
+      "id": 1,
+      "name": "Apple Books",
+      "category": "Ebook",
+      "url": "https://www.apple.com/apple-books/",
+      "observed": "Reading and listening share a library; reading settings and return-to-location are documented separately.",
+      "implication": "Keep place recovery distinct from bookmarks; avoid a discovery-heavy home.",
+      "review": "Closer source study",
+      "reviewed": "2026-10-17",
+      "limitations": "Official description/documentation; product claims not independently validated."
+    },
+    {
+      "id": 2,
+      "name": "Kindle",
+      "category": "Ebook",
+      "url": "https://www.aboutamazon.com/news/books-and-authors/kindle-accessibility-features-for-all-readers",
+      "observed": "Kindle documents type, spacing and accessibility adjustments across reading surfaces.",
+      "implication": "Retain adjustable typography; avoid making an illustrated page a fixed canvas.",
+      "review": "Closer source study",
+      "reviewed": "2026-10-17",
+      "limitations": "Official description/documentation; product claims not independently validated."
+    },
+    {
+      "id": 3,
+      "name": "Kobo",
+      "category": "Ebook",
+      "url": "https://www.kobo.com/ca/en/p/apps",
+      "observed": "Kobo presents paired ebook/audiobook access and multiple reading themes.",
+      "implication": "Let day and night change the reading surface without changing navigation.",
+      "review": "Closer source study",
+      "reviewed": "2026-10-17",
+      "limitations": "Official description/documentation; product claims not independently validated."
+    },
+    {
+      "id": 4,
+      "name": "Google Play Books",
+      "category": "Ebook",
+      "url": "https://play.google.com/store/books",
+      "observed": "The public bookstore groups covers into genre and recommendation shelves.",
+      "implication": "Useful for a large catalogue, but excessive choice for continuing two ordered hadith.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 5,
+      "name": "Libby",
+      "category": "Ebook",
+      "url": "https://www.overdrive.com/apps/libby",
+      "observed": "Libby distinguishes book progress, chapter progress and timeline bookmarks.",
+      "implication": "Show current hadith and session boundary separately; offer an unhurried stopping point.",
+      "review": "Closer source study",
+      "reviewed": "2026-10-17",
+      "limitations": "Official description/documentation; product claims not independently validated."
+    },
+    {
+      "id": 7,
+      "name": "Everand",
+      "category": "Ebook",
+      "url": "https://www.everand.com/",
+      "observed": "The subscription page combines ebooks and audiobooks but foregrounds plans and unlocks.",
+      "implication": "Borrow format continuity; reject commercial discovery as the daily entry experience.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 9,
+      "name": "BookFusion",
+      "category": "Ebook",
+      "url": "https://www.bookfusion.com/",
+      "observed": "BookFusion emphasizes organization, bookmarks and cross-device position sync.",
+      "implication": "A saved reading place should be automatic and distinct from a deliberate bookmark.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 10,
+      "name": "ReadEra",
+      "category": "Ebook",
+      "url": "https://readera.org/",
+      "observed": "ReadEra presents a multi-format reader without registration or ads.",
+      "implication": "Immediate access is relevant; importing every document format is not.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 11,
+      "name": "Moon+ Reader",
+      "category": "Ebook",
+      "url": "https://www.moondownload.com/",
+      "observed": "Moon+ exposes extensive line, font, colour, gesture and scrolling options.",
+      "implication": "Choose sound defaults and a short settings panel rather than exposing every option.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 12,
+      "name": "FBReader",
+      "category": "Ebook",
+      "url": "https://fbreader.org/",
+      "observed": "FBReader separates customizable rendering from format and catalogue support.",
+      "implication": "Keep content records independent of visual presentation and navigation.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 13,
+      "name": "PocketBook Reader",
+      "category": "Ebook",
+      "url": "https://pocketbook.ch/en-ch/app",
+      "observed": "PocketBook connects reading position across devices and supports audio formats.",
+      "implication": "Read/listen continuity matters more here than a large file-import library.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 15,
+      "name": "Librera",
+      "category": "Ebook",
+      "url": "https://librera.mobi/",
+      "observed": "Librera lists recent reading with progress, bookmarks and configurable TTS.",
+      "implication": "Use recognizable resume status; avoid a dense toolbox above the narration.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 16,
+      "name": "Calibre",
+      "category": "Ebook",
+      "url": "https://calibre-ebook.com/",
+      "observed": "Calibre's public site centres ebook management and conversion.",
+      "implication": "Content management belongs behind the reader, not in its daily reading path.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 17,
+      "name": "Thorium Reader",
+      "category": "Ebook",
+      "url": "https://www.edrlab.org/software/thorium-reader/",
+      "observed": "Thorium explicitly covers reflow, fixed layout, audio and accessible publications.",
+      "implication": "Treat semantic text and accessible controls as core architecture.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 18,
+      "name": "Foliate",
+      "category": "Ebook",
+      "url": "https://johnfactotum.github.io/foliate/",
+      "observed": "Foliate documents hidden window chrome, scroll/page choice and navigation history.",
+      "implication": "Reduce persistent chrome while keeping a visible route back from source exploration.",
+      "review": "Closer source study",
+      "reviewed": "2026-10-17",
+      "limitations": "Official description/documentation; product claims not independently validated."
+    },
+    {
+      "id": 19,
+      "name": "Bookworm",
+      "category": "Ebook",
+      "url": "https://babluboy.github.io/bookworm/",
+      "observed": "Bookworm separates library and reader, with light, sepia and dark profiles.",
+      "implication": "Keep the reader visually quiet and put collection browsing on another surface.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 22,
+      "name": "Readium",
+      "category": "Ebook",
+      "url": "https://readium.org/",
+      "observed": "Readium presents reusable digital-publication components and standards.",
+      "implication": "Separate the verified content model from its reader shell; no new EPUB engine is needed now.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 23,
+      "name": "Readest",
+      "category": "Ebook",
+      "url": "https://readest.com/",
+      "observed": "Readest offers parallel reading and configurable presentation; its web sample opens without importing a book.",
+      "implication": "A source companion can sit beside text on wide screens; avoid two cramped phone columns.",
+      "review": "Interaction sample",
+      "reviewed": "2026-10-17",
+      "limitations": "Limited browser flow; not a complete usability or device test."
+    },
+    {
+      "id": 24,
+      "name": "Flow",
+      "category": "Ebook",
+      "url": "https://www.flowoss.com/",
+      "observed": "Flow describes an installable offline PWA and optional multiple-book grid.",
+      "implication": "Web distribution fits the project; a simultaneous multi-book grid does not fit this session.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 26,
+      "name": "Yomu",
+      "category": "Ebook",
+      "url": "https://www.yomu-reader.com/",
+      "observed": "Yomu emphasizes reading-first defaults, per-book settings and page/scroll choice.",
+      "implication": "Start with the saved hadith and let settings serve the reading rather than dominate it.",
+      "review": "Closer source study",
+      "reviewed": "2026-10-17",
+      "limitations": "Official description/documentation; product claims not independently validated."
+    },
+    {
+      "id": 30,
+      "name": "Bibi",
+      "category": "Ebook",
+      "url": "https://bibi.epub.link/",
+      "observed": "Bibi embeds EPUB reading directly in websites and exposes publication navigation.",
+      "implication": "Link directly into a stable reading location instead of forcing a library detour.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 32,
+      "name": "Palace Project",
+      "category": "Ebook",
+      "url": "https://thepalaceproject.org/",
+      "observed": "Palace brings multiple library content sources into one reading app.",
+      "implication": "Different source witnesses can share one consistent interface without losing provenance.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 33,
+      "name": "Adobe Acrobat",
+      "category": "PDF",
+      "url": "https://helpx.adobe.com/acrobat/mobile/view-manage-files/liquid-mode.html",
+      "observed": "Adobe Liquid Mode reflows supported PDF content and offers immediate spacing adjustments.",
+      "implication": "Store verified semantic text for reflow; retain the edition witness as a separate reference.",
+      "review": "Closer source study",
+      "reviewed": "2026-10-17",
+      "limitations": "Official description/documentation; product claims not independently validated."
+    },
+    {
+      "id": 34,
+      "name": "PDF Expert",
+      "category": "PDF",
+      "url": "https://pdfexpert.com/",
+      "observed": "PDF Expert presents phone reflow and day, night and sepia modes alongside editing tools.",
+      "implication": "Borrow reading adaptation; leave document editing out of the hadith experience.",
+      "review": "Closer source study",
+      "reviewed": "2026-10-17",
+      "limitations": "Official description/documentation; product claims not independently validated."
+    },
+    {
+      "id": 35,
+      "name": "Xodo",
+      "category": "PDF",
+      "url": "https://xodo.com/",
+      "observed": "Xodo groups document reading with many conversion and editing tasks.",
+      "implication": "A reader should not inherit the complexity of an all-purpose document suite.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 36,
+      "name": "Foxit",
+      "category": "PDF",
+      "url": "https://www.foxit.com/pdf-reader/",
+      "observed": "Foxit's public reader page bundles viewing, annotation and document workflow.",
+      "implication": "Keep basic reading actions distinct from specialist review tooling.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 37,
+      "name": "PDFgear",
+      "category": "PDF",
+      "url": "https://www.pdfgear.com/",
+      "observed": "PDFgear promotes editing, conversion and AI assistance around PDFs.",
+      "implication": "Its broad tool inventory is a counterexample to a narrowly focused reading surface.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 39,
+      "name": "PDF Viewer",
+      "category": "PDF",
+      "url": "https://pdfviewer.io/",
+      "observed": "PDF Viewer presents a dedicated document viewer with annotation features.",
+      "implication": "Use legible navigation and a restrained action set, not persistent markup tools.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 40,
+      "name": "LiquidText",
+      "category": "PDF",
+      "url": "https://www.liquidtext.net/",
+      "observed": "LiquidText links extracted notes back to original context and connects distant passages.",
+      "implication": "Open a source without losing the selected hadith; omit the analysis canvas.",
+      "review": "Closer source study",
+      "reviewed": "2026-10-17",
+      "limitations": "Official description/documentation; product claims not independently validated."
+    },
+    {
+      "id": 41,
+      "name": "MarginNote",
+      "category": "PDF",
+      "url": "https://www.marginnote.com/en/index.html",
+      "observed": "MarginNote connects documents, notes and review activities.",
+      "implication": "Source linkage is relevant; flashcards and paraphrased study content are outside this reader's scope.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 42,
+      "name": "Goodnotes",
+      "category": "PDF",
+      "url": "https://www.goodnotes.com/",
+      "observed": "Goodnotes frames documents as writable notebooks with study tools.",
+      "implication": "A page can feel tactile, but handwriting and AI study layers would change this product's purpose.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 43,
+      "name": "Notability",
+      "category": "PDF",
+      "url": "https://notability.com/",
+      "observed": "Notability combines notes, documents and recordings.",
+      "implication": "Keep audio and text associated with the same item; don't add a notebook workflow by default.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 44,
+      "name": "Flexcil",
+      "category": "PDF",
+      "url": "https://www.flexcil.com/",
+      "observed": "Flexcil combines PDF reading with linked note taking.",
+      "implication": "References should be reachable without a disruptive navigation round trip.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 45,
+      "name": "Drawboard PDF",
+      "category": "PDF",
+      "url": "https://www.drawboard.com/pdf/pdf",
+      "observed": "Drawboard emphasizes markup and collaboration on document surfaces.",
+      "implication": "Reject review-tool density for a personal five-minute reading session.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 46,
+      "name": "PDF.js",
+      "category": "PDF",
+      "url": "https://mozilla.github.io/pdf.js/web/viewer.html",
+      "observed": "PDF.js demo exposes page position, zoom, navigation and document tools in a fixed toolbar.",
+      "implication": "Keep stable reference locations; avoid forcing phone readers to zoom a printed page.",
+      "review": "Interaction sample",
+      "reviewed": "2026-10-17",
+      "limitations": "Limited browser flow; not a complete usability or device test."
+    },
+    {
+      "id": 47,
+      "name": "SumatraPDF",
+      "category": "PDF",
+      "url": "https://www.sumatrapdfreader.org/free-pdf-reader",
+      "observed": "SumatraPDF foregrounds a lightweight document reader and broad file support.",
+      "implication": "Fast entry and low interface overhead are useful design goals, not measured outcomes here.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 48,
+      "name": "Okular",
+      "category": "PDF",
+      "url": "https://okular.kde.org/",
+      "observed": "Okular supports multiple formats and accessibility/annotation capabilities.",
+      "implication": "Keep semantics and keyboard access even when the visual surface is minimal.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 50,
+      "name": "Skim",
+      "category": "PDF",
+      "url": "https://skim-app.sourceforge.io/",
+      "observed": "Skim presents PDF reading and annotation for research.",
+      "implication": "Separate everyday reading from deeper source inspection.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 51,
+      "name": "PDF-XChange",
+      "category": "PDF",
+      "url": "https://www.pdf-xchange.com/product/pdf-xchange-editor",
+      "observed": "PDF-XChange's public page presents an extensive editor feature set.",
+      "implication": "Specialist controls should not sit in the primary reading path.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 52,
+      "name": "Smallpdf",
+      "category": "PDF",
+      "url": "https://smallpdf.com/pdf-reader",
+      "observed": "Smallpdf organizes PDF tasks into direct tools.",
+      "implication": "Make actions clearly named; avoid offering unrelated conversion choices.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 53,
+      "name": "iLovePDF",
+      "category": "PDF",
+      "url": "https://www.ilovepdf.com/",
+      "observed": "iLovePDF uses a catalogue of document operations.",
+      "implication": "Task clarity is useful, but an app home made of tool tiles would repeat the current problem.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 54,
+      "name": "Sejda",
+      "category": "PDF",
+      "url": "https://www.sejda.com/",
+      "observed": "Sejda lists focused document operations with clear task entry points.",
+      "implication": "Reading, listening and checking a source should have distinct, understandable entry points.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 55,
+      "name": "PDF24",
+      "category": "PDF",
+      "url": "https://tools.pdf24.org/en/reader",
+      "observed": "PDF24 offers a browser PDF reader among a larger tools collection.",
+      "implication": "Opening a document should be straightforward; broad tools navigation is unnecessary here.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 57,
+      "name": "Quran.com",
+      "category": "Scripture",
+      "url": "https://quran.com/",
+      "observed": "Quran.com has distinct reading and verse-oriented modes with audio and study controls.",
+      "implication": "Let reading and investigation have different densities; do not copy verse fragmentation into hadith.",
+      "review": "Interaction sample",
+      "reviewed": "2026-10-17",
+      "limitations": "Limited browser flow; not a complete usability or device test."
+    },
+    {
+      "id": 58,
+      "name": "Sunnah.com",
+      "category": "Scripture",
+      "url": "https://sunnah.com/bukhari:1",
+      "observed": "Sunnah.com places book/chapter context, Arabic, English and numbered references together.",
+      "implication": "Preserve a stable hadith identifier and explicit source trail while reducing administrative density.",
+      "review": "Interaction sample",
+      "reviewed": "2026-10-17",
+      "limitations": "Limited browser flow; not a complete usability or device test."
+    },
+    {
+      "id": 59,
+      "name": "QuranReflect",
+      "category": "Scripture",
+      "url": "https://quranreflect.com/",
+      "observed": "QuranReflect centres reflections around referenced passages.",
+      "implication": "Keep interpretation visibly separate; this build does not add a reflection feed.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 60,
+      "name": "Quranly",
+      "category": "Scripture",
+      "url": "https://www.quranly.app/",
+      "observed": "Quranly promotes goals, streaks and competitive progress features.",
+      "implication": "A bounded session is relevant; streak pressure and leaderboards are not.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 63,
+      "name": "Greentech Al Quran",
+      "category": "Scripture",
+      "url": "https://gtaf.org/apps/quran/",
+      "observed": "Greentech Al Quran presents translation, tafsir and reading tools around scripture.",
+      "implication": "Source material and supporting layers need clear boundaries.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 64,
+      "name": "Greentech Hadith",
+      "category": "Scripture",
+      "url": "https://gtaf.org/apps/hadith/",
+      "observed": "Greentech Hadith documents last-read, bookmarks, chains, grades and list/page modes.",
+      "implication": "Use hadith-specific identity and continuity; defer topic feeds, gems and streaks.",
+      "review": "Closer source study",
+      "reviewed": "2026-10-17",
+      "limitations": "Official description/documentation; product claims not independently validated."
+    },
+    {
+      "id": 65,
+      "name": "Quran Majeed",
+      "category": "Scripture",
+      "url": "https://quranmajeed.com/",
+      "observed": "Quran Majeed presents reading, translation and audio in a larger devotional suite.",
+      "implication": "Keep the present product focused on the chosen collection rather than accumulating utilities.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 68,
+      "name": "Quranic Arabic Corpus",
+      "category": "Scripture",
+      "url": "https://corpus.quran.com/",
+      "observed": "The Quranic Arabic Corpus separates linguistic analysis and word-level reference tools.",
+      "implication": "Deep verification deserves its own surface; do not interleave analysis into the reading text.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 69,
+      "name": "YouVersion",
+      "category": "Scripture",
+      "url": "https://www.youversion.com/bible-app",
+      "observed": "YouVersion combines scripture access with plans and social participation.",
+      "implication": "A session can have a clear beginning and end without adding accounts or community pressure.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 70,
+      "name": "BibleGateway",
+      "category": "Scripture",
+      "url": "https://www.biblegateway.com/",
+      "observed": "BibleGateway foregrounds reference search, versions and passage access.",
+      "implication": "Make exact reference lookup easy as the collection grows; avoid hidden numbering conventions.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 71,
+      "name": "BibleProject",
+      "category": "Scripture",
+      "url": "https://bibleproject.com/app/",
+      "observed": "BibleProject organizes guided learning with visual material.",
+      "implication": "Art can establish atmosphere, but it must not become an invented illustration of a hadith's meaning.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 72,
+      "name": "Logos",
+      "category": "Scripture",
+      "url": "https://www.logos.com/?ssi=0",
+      "observed": "Logos presents a large interconnected study environment.",
+      "implication": "Keep a path into sources without turning a personal reader into a scholar's workstation.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 74,
+      "name": "Olive Tree",
+      "category": "Scripture",
+      "url": "https://www.olivetree.com/",
+      "observed": "Olive Tree presents a reading environment with study resources.",
+      "implication": "Supporting resources should follow the selected passage instead of replacing it.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 75,
+      "name": "Sefaria",
+      "category": "Scripture",
+      "url": "https://www.sefaria.org/texts",
+      "observed": "Sefaria opens a passage-linked resource panel with edition and translation information.",
+      "implication": "Keep source context next to the current hadith, using a full-width panel on phones.",
+      "review": "Interaction sample",
+      "reviewed": "2026-10-17",
+      "limitations": "Limited browser flow; not a complete usability or device test."
+    },
+    {
+      "id": 77,
+      "name": "DhammaTalks",
+      "category": "Scripture",
+      "url": "https://www.dhammatalks.org/",
+      "observed": "DhammaTalks exposes text and audio collections with clear download paths.",
+      "implication": "A transparent distinction between reading, listening and downloading is useful.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 78,
+      "name": "Readwise Reader",
+      "category": "Read-later",
+      "url": "https://readwise.io/read",
+      "observed": "Readwise Reader documents separate long-form chrome, vertical pagination and TTS navigation.",
+      "implication": "Reduce action clutter and preserve position; its on-demand TTS model does not meet our offline requirement.",
+      "review": "Closer source study",
+      "reviewed": "2026-10-17",
+      "limitations": "Official description/documentation; product claims not independently validated."
+    },
+    {
+      "id": 80,
+      "name": "Matter",
+      "category": "Read-later",
+      "url": "https://www.getmatter.com/",
+      "observed": "Matter presents saved reading and listening together.",
+      "implication": "A change of mode should not require finding the same item again.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 81,
+      "name": "GoodLinks",
+      "category": "Read-later",
+      "url": "https://goodlinks.app/",
+      "observed": "GoodLinks focuses on saving, organizing and reading links.",
+      "implication": "Keep a deliberate bookmark simple and separate from automatic progress.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 82,
+      "name": "Reeder",
+      "category": "Read-later",
+      "url": "https://reederapp.com/",
+      "observed": "Reeder emphasizes a synchronized timeline position rather than an unread-count race.",
+      "implication": "Continue from a meaningful place without presenting an accumulating backlog as failure.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 83,
+      "name": "Lire",
+      "category": "Read-later",
+      "url": "https://lireapp.com/",
+      "observed": "Lire describes full-text caching for feeds.",
+      "implication": "A saved item must contain its full reading text; don't leave an offline user at an excerpt.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 84,
+      "name": "NetNewsWire",
+      "category": "Read-later",
+      "url": "https://netnewswire.com/",
+      "observed": "NetNewsWire provides a feed list and article reading workflow.",
+      "implication": "Separate collection navigation from article space; avoid a feed-like hadith home.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 85,
+      "name": "Feedly",
+      "category": "Read-later",
+      "url": "https://feedly.com/",
+      "observed": "Feedly promotes organization and AI-assisted information monitoring.",
+      "implication": "Its triage density is suited to news work, not an unhurried complete narration.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 86,
+      "name": "Inoreader",
+      "category": "Read-later",
+      "url": "https://www.inoreader.com/",
+      "observed": "Inoreader combines feeds, filters and reading tools.",
+      "implication": "Useful retrieval patterns should not turn into a large configuration burden.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 87,
+      "name": "NewsBlur",
+      "category": "Read-later",
+      "url": "https://newsblur.com/",
+      "observed": "NewsBlur emphasizes personal news organization and filtering.",
+      "implication": "Reader control is valuable; automatic taste filtering would conflict with book order.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 88,
+      "name": "Feedbin",
+      "category": "Read-later",
+      "url": "https://feedbin.com/",
+      "observed": "Feedbin presents a consistent reading surface across subscribed sources.",
+      "implication": "Give varied metadata one calm shell without erasing attribution.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 89,
+      "name": "FreshRSS",
+      "category": "Read-later",
+      "url": "https://freshrss.org/",
+      "observed": "FreshRSS offers a self-hosted feed aggregator with reading management.",
+      "implication": "Local ownership is relevant; feed administration is not part of the personal reader.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 90,
+      "name": "Miniflux",
+      "category": "Read-later",
+      "url": "https://miniflux.app/",
+      "observed": "Miniflux presents a deliberately minimalist feed reader.",
+      "implication": "Remove controls that do not help the current reading task.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 91,
+      "name": "Readeck",
+      "category": "Read-later",
+      "url": "https://readeck.org/en/",
+      "observed": "Readeck stores readable copies of web content with collections and highlights.",
+      "implication": "A saved reading should remain available; content extraction must not replace verification here.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 92,
+      "name": "Wallabag",
+      "category": "Read-later",
+      "url": "https://wallabag.org/",
+      "observed": "Wallabag separates capture from later reading.",
+      "implication": "Source acquisition and review happen before content enters the daily reader.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 93,
+      "name": "Omnivore",
+      "category": "Read-later",
+      "url": "https://github.com/omnivore-app/omnivore",
+      "observed": "Omnivore's repository describes an open-source read-later workflow.",
+      "implication": "Use only as a repository reference; hosted availability was not established in this review.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 94,
+      "name": "Raindrop",
+      "category": "Read-later",
+      "url": "https://raindrop.io/",
+      "observed": "Raindrop organizes bookmarks with collections and retrieval tools.",
+      "implication": "Saved hadith can remain a simple list until the collection actually needs more structure.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 95,
+      "name": "Readwise",
+      "category": "Read-later",
+      "url": "https://readwise.io/",
+      "observed": "Readwise presents review of saved highlights as a separate activity.",
+      "implication": "Returning to a bookmark is useful; isolated quotations must not replace whole narrations.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 96,
+      "name": "Fabric",
+      "category": "Read-later",
+      "url": "https://fabric.so/features/reader",
+      "observed": "Fabric's reader page frames reading within a broader information workspace.",
+      "implication": "Avoid requiring the user to organize a workspace before they can read.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 97,
+      "name": "Cubox",
+      "category": "Read-later",
+      "url": "https://cubox.cc/",
+      "observed": "Cubox combines saved content, organization and AI features.",
+      "implication": "Keep retrieval simple; generated interpretation and summaries are excluded.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 98,
+      "name": "Eagle",
+      "category": "Read-later",
+      "url": "https://eagle.cool/",
+      "observed": "Eagle organizes visual assets rather than long-form text.",
+      "implication": "Useful for the internal art library, not as the reading interface.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 99,
+      "name": "ReadKit",
+      "category": "Read-later",
+      "url": "https://readkit.app/",
+      "observed": "ReadKit brings multiple read-later and feed services into one reader.",
+      "implication": "A consistent reading mode can sit above different content sources without copying every source's UI.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 103,
+      "name": "Audible",
+      "category": "Audio",
+      "url": "https://www.audible.com/",
+      "observed": "Audible's public storefront centres audiobook discovery and purchase.",
+      "implication": "Listening deserves a first-class surface; a recommendation carousel is unnecessary for this sample.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 104,
+      "name": "Libro.fm",
+      "category": "Audio",
+      "url": "https://libro.fm/",
+      "observed": "Libro.fm places audiobook listening within a clear catalogue and ownership model.",
+      "implication": "Show the recording and its availability clearly; this personal app needs no storefront.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 105,
+      "name": "Audiobooks.com",
+      "category": "Audio",
+      "url": "https://www.audiobooks.com/",
+      "observed": "Audiobooks.com presents catalogue discovery and listening access.",
+      "implication": "Borrow explicit audio identity, not the subscription-led entry path.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 109,
+      "name": "LibriVox",
+      "category": "Audio",
+      "url": "https://librivox.org/",
+      "observed": "LibriVox exposes volunteer recordings with source and download information.",
+      "implication": "Recording provenance and downloadable audio matter; voice consistency still needs its own review.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 111,
+      "name": "Prologue",
+      "category": "Audio",
+      "url": "https://prologue.audio/",
+      "observed": "Prologue presents a personal audiobook library and playback app.",
+      "implication": "A personal listening experience can prioritise resuming over discovery.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 112,
+      "name": "BookPlayer",
+      "category": "Audio",
+      "url": "https://github.com/TortugaPower/BookPlayer",
+      "observed": "BookPlayer documents chapter navigation, lock-screen playback and sleep-timer controls.",
+      "implication": "Use a persistent player with known chapter boundaries and clear pause/resume.",
+      "review": "Closer source study",
+      "reviewed": "2026-10-17",
+      "limitations": "Official description/documentation; product claims not independently validated."
+    },
+    {
+      "id": 115,
+      "name": "Pocket Casts",
+      "category": "Audio",
+      "url": "https://pocketcasts.com/",
+      "observed": "Pocket Casts documents chapter lists and marks on the playback timeline.",
+      "implication": "Show whole-hadith boundaries; don't fabricate word timings or generated section titles.",
+      "review": "Closer source study",
+      "reviewed": "2026-10-17",
+      "limitations": "Official description/documentation; product claims not independently validated."
+    },
+    {
+      "id": 116,
+      "name": "Overcast",
+      "category": "Audio",
+      "url": "https://overcast.fm/",
+      "observed": "Overcast centres podcast playback and audio processing features.",
+      "implication": "Readable transport controls are relevant; additional processing is not automatically an improvement to Cedar.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 117,
+      "name": "Castro",
+      "category": "Audio",
+      "url": "https://castro.fm/",
+      "observed": "Castro uses an explicit queue and sequential playback.",
+      "implication": "Make the upcoming hadith visible in book order; omit automatic content skipping.",
+      "review": "Closer source study",
+      "reviewed": "2026-10-17",
+      "limitations": "Official description/documentation; product claims not independently validated."
+    },
+    {
+      "id": 118,
+      "name": "AntennaPod",
+      "category": "Audio",
+      "url": "https://antennapod.org/",
+      "observed": "AntennaPod presents a user-controlled podcast library and downloads.",
+      "implication": "Download ownership and a visible queue are more useful here than a recommendation feed.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 120,
+      "name": "Apple Podcasts",
+      "category": "Audio",
+      "url": "https://www.apple.com/apple-podcasts/",
+      "observed": "Apple Podcasts presents audio with searchable transcripts and passage navigation.",
+      "implication": "Audio/text continuity is promising, but accurate alignment data must exist before highlighting words.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 121,
+      "name": "Spotify Audiobooks",
+      "category": "Audio",
+      "url": "https://www.spotify.com/us/audiobooks/",
+      "observed": "Spotify's audiobook offering sits inside a broader audio catalogue.",
+      "implication": "A distinct listening mode helps; music-style discovery would add noise.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 122,
+      "name": "Snipd",
+      "category": "Audio",
+      "url": "https://www.snipd.com/",
+      "observed": "Snipd promotes capturing and revisiting moments from podcasts.",
+      "implication": "A future headphone bookmark may help; AI summaries and extracted snippets are outside scope.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 123,
+      "name": "Voice Dream Reader",
+      "category": "Audio",
+      "url": "https://www.voicedream.com/",
+      "observed": "Voice Dream emphasizes accessible reading and configurable speech.",
+      "implication": "Pronunciation and text access need explicit review; a pleasant voice alone is insufficient.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 124,
+      "name": "Speechify",
+      "category": "Audio",
+      "url": "https://speechify.com/",
+      "observed": "Speechify foregrounds text-to-speech across content types.",
+      "implication": "Mode switching is useful; vendor voice-quality claims are not evidence for our recording.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 125,
+      "name": "NaturalReader",
+      "category": "Audio",
+      "url": "https://www.naturalreaders.com/",
+      "observed": "NaturalReader presents text input and voice-based listening.",
+      "implication": "Keep generation and listening separate so approved recordings are reproducible.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 126,
+      "name": "ElevenReader",
+      "category": "Audio",
+      "url": "https://elevenreader.io/",
+      "observed": "ElevenReader centres narrated written content.",
+      "implication": "Voice character belongs in the listening experience, but source wording remains immutable.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 127,
+      "name": "Speech Central",
+      "category": "Audio",
+      "url": "https://speechcentral.net/",
+      "observed": "Speech Central presents accessible text-to-speech across documents and web material.",
+      "implication": "Playback controls should remain usable without reading small metadata.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 128,
+      "name": "Dolphin EasyReader",
+      "category": "Audio",
+      "url": "https://yourdolphin.com/EasyReader",
+      "observed": "Dolphin EasyReader emphasizes accessible books and audio for print-disabled readers.",
+      "implication": "A readable font size is only one part of accessibility; navigation and controls also matter.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 129,
+      "name": "Bookshare",
+      "category": "Audio",
+      "url": "https://www.bookshare.org/",
+      "observed": "Bookshare describes accessible books in several reading formats.",
+      "implication": "Retain semantic text rather than making artwork or a PDF the only route to the words.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 130,
+      "name": "Perusall",
+      "category": "Study",
+      "url": "https://www.perusall.com/",
+      "observed": "Perusall organizes collaborative reading and discussion.",
+      "implication": "Linked context is useful; social annotations would create an unrequested layer over the text.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 131,
+      "name": "Hypothesis",
+      "category": "Study",
+      "url": "https://web.hypothes.is/",
+      "observed": "Hypothesis anchors annotations to source material.",
+      "implication": "Source pointers should be stable; public discussion is not part of this build.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 132,
+      "name": "Zotero",
+      "category": "Study",
+      "url": "https://www.zotero.org/",
+      "observed": "Zotero connects a research library, reader and citation workflow.",
+      "implication": "Keep bibliographic identity attached to each entry even when the interface is quiet.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 133,
+      "name": "Paperpile",
+      "category": "Study",
+      "url": "https://paperpile.com/",
+      "observed": "Paperpile places PDFs within reference management.",
+      "implication": "Reference management should support the reader without becoming its home screen.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 135,
+      "name": "Mendeley",
+      "category": "Study",
+      "url": "https://www.mendeley.com/",
+      "observed": "Mendeley presents research reading and reference organization.",
+      "implication": "A reliable source record matters more than a decorative credibility badge.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 137,
+      "name": "RemNote",
+      "category": "Study",
+      "url": "https://www.remnote.com/",
+      "observed": "RemNote joins notes and spaced repetition.",
+      "implication": "Do not turn hadith into generated study cards or paraphrased recall prompts.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 138,
+      "name": "Anki",
+      "category": "Study",
+      "url": "https://apps.ankiweb.net/",
+      "observed": "Anki centres deliberate retrieval through flashcards.",
+      "implication": "Its interaction model is a counterexample for reading complete source passages.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 140,
+      "name": "Brainscape",
+      "category": "Study",
+      "url": "https://www.brainscape.com/",
+      "observed": "Brainscape presents flashcard study and progress tracking.",
+      "implication": "Avoid a performance dashboard when the user's aim is calm daily reading.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 141,
+      "name": "Mochi",
+      "category": "Study",
+      "url": "https://mochi.cards/",
+      "observed": "Mochi combines notes and spaced repetition in a restrained interface.",
+      "implication": "Visual restraint is useful; the card-learning model would fragment the source.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 142,
+      "name": "LingQ",
+      "category": "Study",
+      "url": "https://www.lingq.com/en/",
+      "observed": "LingQ organizes language learning around texts and unfamiliar words.",
+      "implication": "Deep word tools can overwhelm a reading surface; keep verification in sources.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 143,
+      "name": "Readlang",
+      "category": "Study",
+      "url": "https://readlang.com/",
+      "observed": "Readlang adds word/phrase translation to reading.",
+      "implication": "Do not introduce on-the-fly translation into a text whose wording requires review.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 144,
+      "name": "Lingvist",
+      "category": "Study",
+      "url": "https://lingvist.com/",
+      "observed": "Lingvist emphasizes adaptive vocabulary learning.",
+      "implication": "Adaptive selection would conflict with the chosen book-order progression.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 146,
+      "name": "Memrise",
+      "category": "Study",
+      "url": "https://www.memrise.com/",
+      "observed": "Memrise presents language practice through short learning activities.",
+      "implication": "Short sessions are useful, but quizzes are not the user's requested experience.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 147,
+      "name": "Beelinguapp",
+      "category": "Study",
+      "url": "https://beelinguapp.com/",
+      "observed": "Beelinguapp pairs bilingual text and audio.",
+      "implication": "Use reading/audio continuity; parallel language columns are unsuitable for a narrow phone.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 148,
+      "name": "Linga",
+      "category": "Study",
+      "url": "https://linga.io/",
+      "observed": "Linga presents language-learning assistance within reading.",
+      "implication": "Keep assistance optional and distinct from the verified text layer.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 150,
+      "name": "Lingopie",
+      "category": "Study",
+      "url": "https://lingopie.com/",
+      "observed": "Lingopie centres language learning through video and subtitles.",
+      "implication": "Precise alignment is a prerequisite for synchronized highlighting, not a visual embellishment.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 152,
+      "name": "Headway",
+      "category": "Study",
+      "url": "https://makeheadway.com/",
+      "observed": "Headway sells condensed book ideas in short sessions.",
+      "implication": "Time-bounded entry is relevant; condensation is incompatible with complete hadith.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 153,
+      "name": "Shortform",
+      "category": "Study",
+      "url": "https://www.shortform.com/",
+      "observed": "Shortform combines book guides and explanation.",
+      "implication": "A readable guide is not the same as preserving primary source wording.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 154,
+      "name": "getAbstract",
+      "category": "Study",
+      "url": "https://www.getabstract.com/en/",
+      "observed": "getAbstract foregrounds summaries of long material.",
+      "implication": "Treat as a negative reference: this reader must never substitute a summary for its source.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 155,
+      "name": "Aeon",
+      "category": "Editorial",
+      "url": "https://aeon.co/",
+      "observed": "Aeon organizes essays with strong editorial identity and clear article entry points.",
+      "implication": "Borrow quiet hierarchy; don't make every hadith require a magazine cover screen.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 156,
+      "name": "Psyche",
+      "category": "Editorial",
+      "url": "https://psyche.co/",
+      "observed": "Psyche presents guides, ideas and films as distinct content types.",
+      "implication": "Make reading and listening recognizable without mixing their controls.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 157,
+      "name": "Emergence Magazine",
+      "category": "Editorial",
+      "url": "https://emergencemagazine.org/",
+      "observed": "Emergence Magazine pairs ecology-focused stories with immersive visual and audio material.",
+      "implication": "Let atmosphere frame entry and listening; keep the reading surface still and legible.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 158,
+      "name": "Atmos",
+      "category": "Editorial",
+      "url": "https://atmos.earth/",
+      "observed": "Atmos combines environmental editorial coverage with visual storytelling.",
+      "implication": "Art direction can be coherent without repeating one island composition.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 159,
+      "name": "The Marginalian",
+      "category": "Editorial",
+      "url": "https://www.themarginalian.org/",
+      "observed": "The Marginalian uses long editorial essays with references and artwork.",
+      "implication": "References and art can coexist, but dense interleaving is not appropriate inside the hadith text.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 160,
+      "name": "Quanta Magazine",
+      "category": "Editorial",
+      "url": "https://www.quantamagazine.org/",
+      "observed": "Quanta organizes technical editorial material with clear topic and story hierarchy.",
+      "implication": "Clear navigation and explanatory metadata need not compete with the main reading column.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 161,
+      "name": "Nautilus",
+      "category": "Editorial",
+      "url": "https://nautil.us/",
+      "observed": "Nautilus presents essays through a strongly illustrated magazine identity.",
+      "implication": "Use art as a distinct layer rather than making it compete with every paragraph.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 162,
+      "name": "The Pudding",
+      "category": "Editorial",
+      "url": "https://pudding.cool/",
+      "observed": "The Pudding centres interactive visual essays.",
+      "implication": "Interaction should explain a real relationship; ornamental interaction is unnecessary here.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 163,
+      "name": "Our World in Data",
+      "category": "Editorial",
+      "url": "https://ourworldindata.org/",
+      "observed": "Our World in Data links explanatory text, data and sources.",
+      "implication": "Evidence should be inspectable at the point it is needed; avoid unsupported credibility claims.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 164,
+      "name": "Distill",
+      "category": "Editorial",
+      "url": "https://distill.pub/",
+      "observed": "Distill presents research with diagrams and connected exposition.",
+      "implication": "Borrow proximity between a claim and its evidence, not interactive reinterpretation of the hadith.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 165,
+      "name": "Works in Progress",
+      "category": "Editorial",
+      "url": "https://worksinprogress.co/",
+      "observed": "Works in Progress emphasizes long-form editorial reading.",
+      "implication": "Strong hierarchy can come from typography and space without repeated card borders.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 166,
+      "name": "Asterisk",
+      "category": "Editorial",
+      "url": "https://asteriskmag.com/",
+      "observed": "Asterisk presents themed issues and individual essays.",
+      "implication": "Collection structure can live outside the reading surface.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 167,
+      "name": "Noema",
+      "category": "Editorial",
+      "url": "https://www.noemamag.com/",
+      "observed": "Noema organizes long-form ideas through editorial art and topic navigation.",
+      "implication": "Separate browsing atmosphere from the focused reading mode.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 168,
+      "name": "Longreads",
+      "category": "Editorial",
+      "url": "https://longreads.com/",
+      "observed": "Longreads curates long-form work and reading lists.",
+      "implication": "A useful library can curate access, but the daily hadith order is already determined.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 169,
+      "name": "The Atavist",
+      "category": "Editorial",
+      "url": "https://magazine.atavist.com/",
+      "observed": "The Atavist foregrounds individual long-form stories.",
+      "implication": "Give a reading a coherent beginning and end, without dramatic effects inside its source text.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 170,
+      "name": "The Paris Review",
+      "category": "Editorial",
+      "url": "https://www.theparisreview.org/",
+      "observed": "The Paris Review presents literary works, interviews and issue browsing.",
+      "implication": "Distinct typography can support identity without borrowing a conventional book-cover layout.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 172,
+      "name": "Poets.org",
+      "category": "Editorial",
+      "url": "https://poets.org/",
+      "observed": "Poets.org presents complete short literary works with attribution and related resources.",
+      "implication": "A complete work is a useful unit of reading; keep attribution attached to it.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 173,
+      "name": "Public Domain Review",
+      "category": "Editorial",
+      "url": "https://publicdomainreview.org/",
+      "observed": "The Public Domain Review connects historical imagery with essays and source collections.",
+      "implication": "Art provenance and textual provenance should remain inspectable and separate.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 174,
+      "name": "Lapham's Quarterly",
+      "category": "Editorial",
+      "url": "https://www.laphamsquarterly.org/",
+      "observed": "Lapham's Quarterly organizes historical material into themed editorial collections.",
+      "implication": "Thematic browsing is an optional future layer, not a replacement for source order.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 175,
+      "name": "London Review of Books",
+      "category": "Editorial",
+      "url": "https://www.lrb.co.uk/",
+      "observed": "The London Review of Books foregrounds article identity and long reading.",
+      "implication": "Use readable columns and stable article context; paywall flows are irrelevant here.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 176,
+      "name": "The New Yorker",
+      "category": "Editorial",
+      "url": "https://www.newyorker.com/",
+      "observed": "The New Yorker mixes editorial reading, audio and visual identity.",
+      "implication": "Offer format choice without filling the reading page with discovery modules.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 177,
+      "name": "National Geographic",
+      "category": "Editorial",
+      "url": "https://www.nationalgeographic.com/",
+      "observed": "National Geographic foregrounds place through photography and editorial stories.",
+      "implication": "A coherent sense of place can live at thresholds; it should not imply the hadith describes that scene.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 179,
+      "name": "The Guardian",
+      "category": "Editorial",
+      "url": "https://www.theguardian.com/international",
+      "observed": "The Guardian presents multiple article formats and extensive navigation.",
+      "implication": "Keep format identity clear; reject news-site chrome and promotional interruptions.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 182,
+      "name": "BBC Future",
+      "category": "Editorial",
+      "url": "https://www.bbc.com/future-planet",
+      "observed": "BBC Future organizes explanatory stories by subject.",
+      "implication": "Editorial hierarchy is useful, but the hadith should not be recast as an explanatory article.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 184,
+      "name": "Rest of World",
+      "category": "Editorial",
+      "url": "https://restofworld.org/",
+      "observed": "Rest of World foregrounds regional reporting and story identity.",
+      "implication": "Use a broader visual geography without reducing regions to interchangeable tropical imagery.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 185,
+      "name": "The Markup",
+      "category": "Editorial",
+      "url": "https://themarkup.org/",
+      "observed": "The Markup emphasizes evidence-led reporting and data projects.",
+      "implication": "Make the basis of a claim inspectable; verification status should be explicit.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 186,
+      "name": "The Conversation",
+      "category": "Editorial",
+      "url": "https://theconversation.com/ca",
+      "observed": "The Conversation identifies authors and academic context alongside articles.",
+      "implication": "Name the source and review status rather than implying authority through styling.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 187,
+      "name": "Standard Ebooks",
+      "category": "Library",
+      "url": "https://standardebooks.org/",
+      "observed": "Standard Ebooks describes editorial production, typography and source quality.",
+      "implication": "A polished reading surface should be backed by a documented production process.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 188,
+      "name": "Project Gutenberg",
+      "category": "Library",
+      "url": "https://www.gutenberg.org/",
+      "observed": "Project Gutenberg exposes multiple reading/download formats and bibliographic records.",
+      "implication": "Reading access and provenance can be straightforward without an account.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 189,
+      "name": "Open Library",
+      "category": "Library",
+      "url": "https://openlibrary.org/",
+      "observed": "Open Library distinguishes catalogue records and available reading access.",
+      "implication": "Don't label a content record as ready to read or listen until the actual asset is available.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 190,
+      "name": "Internet Archive BookReader",
+      "category": "Library",
+      "url": "https://openlibrary.org/dev/docs/bookreader",
+      "observed": "Internet Archive BookReader centres scanned-page navigation and publication context.",
+      "implication": "Keep scans as witnesses while providing a reflowable primary reading view.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 194,
+      "name": "British Library",
+      "category": "Library",
+      "url": "https://www.bl.uk/",
+      "observed": "The British Library presents collections and discovery routes.",
+      "implication": "Reference discovery belongs in a source layer rather than in front of every narration.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 196,
+      "name": "Digital Public Library of America",
+      "category": "Library",
+      "url": "https://dp.la/",
+      "observed": "DPLA organizes discovery across institutional collections.",
+      "implication": "Multiple witnesses need clear attribution rather than being flattened into one unnamed source.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 198,
+      "name": "Wellcome Collection",
+      "category": "Library",
+      "url": "https://wellcomecollection.org/",
+      "observed": "Wellcome Collection combines digital objects, stories and collection metadata.",
+      "implication": "Artwork and source records need their own identities and credits.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 200,
+      "name": "Perseus",
+      "category": "Library",
+      "url": "https://www.perseus.tufts.edu/hopper/",
+      "observed": "Perseus presents access to historical texts and reference material.",
+      "implication": "Preserve exact work and passage identifiers as the collection expands.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 202,
+      "name": "Wikisource",
+      "category": "Library",
+      "url": "https://en.wikisource.org/wiki/Main_Page",
+      "observed": "Wikisource organizes transcriptions, editions and proofreading-related information.",
+      "implication": "Record the exact revision; a readable transcription is not automatically a certified edition.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 203,
+      "name": "Wikimedia Commons",
+      "category": "Library",
+      "url": "https://commons.wikimedia.org/wiki/Main_Page",
+      "observed": "Wikimedia Commons attaches metadata and licensing to shared media.",
+      "implication": "Preserve artwork provenance instead of treating a downloaded image as rights-free.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 205,
+      "name": "arXiv",
+      "category": "Library",
+      "url": "https://arxiv.org/",
+      "observed": "arXiv distinguishes posted research from peer-reviewed certification.",
+      "implication": "A clear working-text status is better than a vague verified badge.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 206,
+      "name": "PubMed Central",
+      "category": "Library",
+      "url": "https://pmc.ncbi.nlm.nih.gov/",
+      "observed": "PubMed Central exposes full-text research with citation metadata.",
+      "implication": "Keep bibliographic references reachable without inserting them into the reading prose.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 209,
+      "name": "Pressbooks",
+      "category": "Library",
+      "url": "https://pressbooks.com/",
+      "observed": "Pressbooks presents web-based book publication and structured navigation.",
+      "implication": "Use semantic chapters but avoid recreating the same book template for every product.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 210,
+      "name": "LibreTexts",
+      "category": "Library",
+      "url": "https://libretexts.org/",
+      "observed": "LibreTexts organizes educational material in nested collections.",
+      "implication": "A large hierarchy helps retrieval; two sample hadith need a much lighter entry path.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 211,
+      "name": "Obsidian",
+      "category": "Knowledge",
+      "url": "https://obsidian.md/",
+      "observed": "Obsidian presents linked local notes and a personal knowledge base.",
+      "implication": "Local ownership is useful; a graph of ideas is not a daily reading requirement.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 212,
+      "name": "Notion",
+      "category": "Knowledge",
+      "url": "https://www.notion.com/",
+      "observed": "Notion organizes information into configurable pages and workspaces.",
+      "implication": "Avoid asking the reader to construct a dashboard before starting.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 213,
+      "name": "Bear",
+      "category": "Knowledge",
+      "url": "https://bear.app/",
+      "observed": "Bear foregrounds readable notes and simple organization.",
+      "implication": "Typography and restraint transfer; editable note semantics do not apply to source wording.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 214,
+      "name": "Craft",
+      "category": "Knowledge",
+      "url": "https://www.craft.do/",
+      "observed": "Craft combines documents with rich visual organization.",
+      "implication": "Use visual depth selectively; every paragraph need not become a block or card.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 215,
+      "name": "iA Writer",
+      "category": "Knowledge",
+      "url": "https://ia.net/writer",
+      "observed": "iA Writer emphasizes focus on the text with restrained editing chrome.",
+      "implication": "Reduce competing interface elements without dimming selected parts of the hadith.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 216,
+      "name": "Ulysses",
+      "category": "Knowledge",
+      "url": "https://ulysses.app/",
+      "observed": "Ulysses separates writing organization from the editor.",
+      "implication": "Collection management and reading should not compete for equal space on a phone.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 217,
+      "name": "Typora",
+      "category": "Knowledge",
+      "url": "https://typora.io/",
+      "observed": "Typora presents a continuous text-first editing surface.",
+      "implication": "A continuous column can feel modern without decorative page-turn effects.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 218,
+      "name": "Scrivener",
+      "category": "Knowledge",
+      "url": "https://www.literatureandlatte.com/scrivener/overview",
+      "observed": "Scrivener combines manuscript sections, research and composition tools.",
+      "implication": "Separate research infrastructure from the reader-facing experience.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 219,
+      "name": "Dabble",
+      "category": "Knowledge",
+      "url": "https://www.dabblewriter.com/",
+      "observed": "Dabble presents writing and planning in one environment.",
+      "implication": "Planning widgets are a counterexample to the narrow daily-reading task.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 220,
+      "name": "FocusWriter",
+      "category": "Knowledge",
+      "url": "https://gottcode.org/focuswriter/",
+      "observed": "FocusWriter minimizes interface distractions while writing.",
+      "implication": "Retain explicit controls that are needed; visual minimalism must not make sources undiscoverable.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 221,
+      "name": "Ghostwriter",
+      "category": "Knowledge",
+      "url": "https://ghostwriter.kde.org/",
+      "observed": "Ghostwriter offers a restrained editor with focus modes.",
+      "implication": "Keep the whole narration equally legible rather than fading surrounding sentences.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 223,
+      "name": "Hemingway",
+      "category": "Knowledge",
+      "url": "https://hemingwayapp.com/",
+      "observed": "Hemingway highlights and edits prose for readability.",
+      "implication": "Do not apply rewriting or simplification tools to approved hadith wording.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 226,
+      "name": "Heptabase",
+      "category": "Knowledge",
+      "url": "https://heptabase.com/",
+      "observed": "Heptabase centres visual organization of research notes.",
+      "implication": "The research workspace may be spatial; the phone reading flow should remain linear.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 228,
+      "name": "Capacities",
+      "category": "Knowledge",
+      "url": "https://capacities.io/",
+      "observed": "Capacities organizes knowledge as related objects.",
+      "implication": "A hadith can have structured sources and audio while preserving one stable identity.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 229,
+      "name": "Anytype",
+      "category": "Knowledge",
+      "url": "https://anytype.io/",
+      "observed": "Anytype presents linked objects and user-owned information.",
+      "implication": "Local state and explicit relationships are useful; the broad workspace UI is not.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 230,
+      "name": "Tana",
+      "category": "Knowledge",
+      "url": "https://tana.inc/",
+      "observed": "Tana emphasizes structured information and connected notes.",
+      "implication": "Use structured metadata behind the interface rather than exposing a database editor.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 231,
+      "name": "Milanote",
+      "category": "Knowledge",
+      "url": "https://milanote.com/",
+      "observed": "Milanote presents a visual board for creative planning.",
+      "implication": "Useful for internal art direction; not a replacement for a coherent reading sequence.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 232,
+      "name": "Are.na",
+      "category": "Knowledge",
+      "url": "https://www.are.na/",
+      "observed": "Are.na organizes references into collections and connections.",
+      "implication": "The landscape world can have a reference archive without becoming a reader-facing mood board.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 234,
+      "name": "Reflect",
+      "category": "Knowledge",
+      "url": "https://reflect.app/",
+      "observed": "Reflect presents connected notes and personal recall.",
+      "implication": "Retrieval of saved readings is useful; generated personal interpretation is outside scope.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 235,
+      "name": "Headspace",
+      "category": "Practice",
+      "url": "https://www.headspace.com/",
+      "observed": "Headspace organizes guided practices and content discovery.",
+      "implication": "A clear session entry can help; do not inherit a crowded wellness catalogue.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 236,
+      "name": "Calm",
+      "category": "Practice",
+      "url": "https://www.calm.com/",
+      "observed": "Calm presents an atmospheric audio-led experience.",
+      "implication": "Place can support listening, but ambient sound must not compete with the narration.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 237,
+      "name": "Waking Up",
+      "category": "Practice",
+      "url": "https://www.wakingup.com/",
+      "observed": "Waking Up organizes guided sessions and a broader learning library.",
+      "implication": "Keep the next session clear and separate from catalogue browsing.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 239,
+      "name": "Balance",
+      "category": "Practice",
+      "url": "https://themindcompany.com/apps/balance",
+      "observed": "Balance promotes tailored guided meditation.",
+      "implication": "Personal settings can be lightweight; an onboarding questionnaire is unnecessary for continuing hadith.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 240,
+      "name": "Medito",
+      "category": "Practice",
+      "url": "https://meditofoundation.org/medito-app/",
+      "observed": "Medito offers guided practices with accessible entry points.",
+      "implication": "Keep reading and listening available without a commercial funnel.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 241,
+      "name": "Plum Village",
+      "category": "Practice",
+      "url": "https://plumvillage.app/",
+      "observed": "Plum Village presents teachings and guided practices in a coherent environment.",
+      "implication": "A calm product can be grounded in a tradition without gamifying participation.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 243,
+      "name": "Smiling Mind",
+      "category": "Practice",
+      "url": "https://www.smilingmind.com.au/smiling-mind-app",
+      "observed": "Smiling Mind presents structured wellbeing programs.",
+      "implication": "A program hierarchy is useful at scale, but premature for two entries.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 244,
+      "name": "Ten Percent Happier",
+      "category": "Practice",
+      "url": "https://www.meditatehappier.com/",
+      "observed": "Ten Percent Happier presents courses and guided audio.",
+      "implication": "A clear duration can help users choose a session, without asserting a health benefit.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 246,
+      "name": "Othership",
+      "category": "Practice",
+      "url": "https://www.othership.us/app",
+      "observed": "Othership presents breathwork sessions and sensory art direction.",
+      "implication": "Atmosphere can be expressive outside the text; avoid timing or breathing animations while reading.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 247,
+      "name": "Endel",
+      "category": "Practice",
+      "url": "https://endel.io/",
+      "observed": "Endel foregrounds adaptive sound environments.",
+      "implication": "Do not layer generated sound under source narration merely to make it feel immersive.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 248,
+      "name": "Portal",
+      "category": "Practice",
+      "url": "https://portal.app/",
+      "observed": "Portal frames nature as a window into an environment.",
+      "implication": "Give listening and welcome screens a sense of place; keep art quiet during reading.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 250,
+      "name": "Day One",
+      "category": "Practice",
+      "url": "https://dayoneapp.com/",
+      "observed": "Day One presents personal journaling and memory capture.",
+      "implication": "A welcoming return experience is useful; journaling is not part of the current scope.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 251,
+      "name": "Stoic",
+      "category": "Practice",
+      "url": "https://www.getstoic.com/",
+      "observed": "Stoic combines reflection prompts and personal routines.",
+      "implication": "Reject added prompts that might imply an interpretation of the hadith.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 252,
+      "name": "Daylio",
+      "category": "Practice",
+      "url": "https://daylio.net/",
+      "observed": "Daylio emphasizes very short entry and self-tracking interactions.",
+      "implication": "Minimize decisions before resuming; avoid turning reading into mood scoring.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 253,
+      "name": "Journey",
+      "category": "Practice",
+      "url": "https://journey.cloud/",
+      "observed": "Journey organizes personal journal entries across devices.",
+      "implication": "Continuity and local context are useful, but a diary is a different product.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 254,
+      "name": "Reflectly",
+      "category": "Practice",
+      "url": "https://reflectlyapp.com/",
+      "observed": "Reflectly presents guided reflection with a conversational identity.",
+      "implication": "The app should not speak as an interpreter of the source.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 255,
+      "name": "Rosebud",
+      "category": "Practice",
+      "url": "https://www.rosebud.app/",
+      "observed": "Rosebud centres AI-supported journaling.",
+      "implication": "AI reflection and coaching are counterexamples for this tightly controlled source reader.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 256,
+      "name": "Fabulous",
+      "category": "Practice",
+      "url": "https://www.thefabulous.co/",
+      "observed": "Fabulous uses structured routines and coaching.",
+      "implication": "A finite session may help; habit pressure and prescribed routines are not required.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 257,
+      "name": "Streaks",
+      "category": "Practice",
+      "url": "https://streaks.app/",
+      "observed": "Streaks makes repeated tasks and streak tracking central.",
+      "implication": "Deliberately reject consecutive-day scoring for this personal reading experience.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 263,
+      "name": "Bookly",
+      "category": "Reading-habit",
+      "url": "https://getbookly.com/",
+      "observed": "Bookly tracks reading sessions and statistics.",
+      "implication": "Session boundaries are relevant; dashboards of productivity could distract from the text.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 264,
+      "name": "Serial Reader",
+      "category": "Reading-habit",
+      "url": "https://www.serialreader.org/",
+      "observed": "Serial Reader delivers classic books in daily portions with reading settings.",
+      "implication": "Borrow a clear session boundary but stop only at whole hadith, without daily locks.",
+      "review": "Closer source study",
+      "reviewed": "2026-10-17",
+      "limitations": "Official description/documentation; product claims not independently validated."
+    },
+    {
+      "id": 267,
+      "name": "Wattpad",
+      "category": "Serial",
+      "url": "https://www.wattpad.com/",
+      "observed": "Wattpad organizes serialized fiction, discovery and community.",
+      "implication": "Serial progression is relevant; social reactions and recommendation feeds are not.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 269,
+      "name": "Tapas",
+      "category": "Serial",
+      "url": "https://tapas.io/",
+      "observed": "Tapas presents episodic comics and fiction with collection discovery.",
+      "implication": "Make the next complete item clear; avoid artificial unlocks or monetized interruptions.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 270,
+      "name": "Substack",
+      "category": "Editorial",
+      "url": "https://substack.com/",
+      "observed": "Substack presents publication identity with posts, audio and subscriptions.",
+      "implication": "Read/listen continuity is useful; newsletter subscription prompts are not.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 272,
+      "name": "PressReader",
+      "category": "Editorial",
+      "url": "https://about.pressreader.com/",
+      "observed": "PressReader presents newspapers and magazines across digital reading surfaces.",
+      "implication": "Physical page fidelity and comfortable text reading are different tasks.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 274,
+      "name": "Readmoo",
+      "category": "Ebook",
+      "url": "https://readmoo.com/",
+      "observed": "Readmoo presents an ebook catalogue and reading ecosystem.",
+      "implication": "Learn from language-aware publishing, while keeping this English-first prototype focused.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 277,
+      "name": "Tolino",
+      "category": "Ebook",
+      "url": "https://mytolino.com/",
+      "observed": "Tolino describes connected ebook reading across devices.",
+      "implication": "Keep place recovery reliable before adding cross-device promises.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 278,
+      "name": "Vivlio",
+      "category": "Ebook",
+      "url": "https://www.vivlio.com/",
+      "observed": "Vivlio presents ebooks, audio and reading devices as one ecosystem.",
+      "implication": "Format continuity matters more than copying catalogue merchandising.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 279,
+      "name": "cloudLibrary",
+      "category": "Ebook",
+      "url": "https://www.yourcloudlibrary.com/en/home.html",
+      "observed": "cloudLibrary presents library borrowing and digital reading access.",
+      "implication": "Availability should be explicit; downloaded status needs real verification.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    },
+    {
+      "id": 281,
+      "name": "Bookclubs",
+      "category": "Reading-habit",
+      "url": "https://bookclubs.com/",
+      "observed": "Bookclubs supports group reading organization and discussion.",
+      "implication": "Useful as a contrast: this app is personal, so group logistics should not shape its home.",
+      "review": "Public-page scan",
+      "reviewed": "2026-10-17",
+      "limitations": "Public page text and information structure only; not an installed-app or full visual audit."
+    }
+  ],
+  "excluded": [
+    {
+      "id": 6,
+      "name": "Hoopla",
+      "url": "https://www.hoopladigital.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 8,
+      "name": "Bookmate",
+      "url": "https://bookmate.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 14,
+      "name": "KOReader",
+      "url": "https://koreader.rocks/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 20,
+      "name": "Cantook",
+      "url": "https://www.cantook.com/",
+      "reason": "Redirect, thin landing page, discontinued/historical destination, or bot challenge; not counted."
+    },
+    {
+      "id": 21,
+      "name": "Bluefire Reader",
+      "url": "https://www.bluefirereader.com/",
+      "reason": "Redirect, thin landing page, discontinued/historical destination, or bot challenge; not counted."
+    },
+    {
+      "id": 25,
+      "name": "Aquile Reader",
+      "url": "https://aquilereader.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 27,
+      "name": "MapleRead",
+      "url": "https://www.maplepop.com/web/mr/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 28,
+      "name": "Bookari",
+      "url": "https://www.bookari.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 29,
+      "name": "KyBook",
+      "url": "https://kybook-reader.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 31,
+      "name": "Sora",
+      "url": "https://soraapp.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 38,
+      "name": "UPDF",
+      "url": "https://updf.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 49,
+      "name": "Evince",
+      "url": "https://apps.gnome.org/Evince/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 56,
+      "name": "STDU Viewer",
+      "url": "https://www.stdutility.com/stduviewer.html",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 61,
+      "name": "Tarteel",
+      "url": "https://www.tarteel.ai/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 62,
+      "name": "Quran Android",
+      "url": "https://quran.com/apps",
+      "reason": "Redirect, thin landing page, discontinued/historical destination, or bot challenge; not counted."
+    },
+    {
+      "id": 66,
+      "name": "Quran Central",
+      "url": "https://qurancentral.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 67,
+      "name": "Tanzil",
+      "url": "https://tanzil.net/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 73,
+      "name": "Accordance",
+      "url": "https://www.accordancebible.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 76,
+      "name": "SuttaCentral",
+      "url": "https://suttacentral.net/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 79,
+      "name": "Instapaper",
+      "url": "https://www.instapaper.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 100,
+      "name": "Fiery Feeds",
+      "url": "https://cocoacake.net/apps/fiery/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 101,
+      "name": "Yomu RSS",
+      "url": "https://yomunews.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 102,
+      "name": "Mailbrew",
+      "url": "https://mailbrew.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 106,
+      "name": "Storytel",
+      "url": "https://www.storytel.com/",
+      "reason": "Redirect, thin landing page, discontinued/historical destination, or bot challenge; not counted."
+    },
+    {
+      "id": 107,
+      "name": "BookBeat",
+      "url": "https://www.bookbeat.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 108,
+      "name": "Chirp",
+      "url": "https://www.chirpbooks.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 110,
+      "name": "Audiobookshelf",
+      "url": "https://www.audiobookshelf.org/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 113,
+      "name": "ListenBook",
+      "url": "https://listenbook.app/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 114,
+      "name": "Bound",
+      "url": "https://bound.timbueno.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 119,
+      "name": "Podcast Addict",
+      "url": "https://podcastaddict.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 134,
+      "name": "ReadCube",
+      "url": "https://www.readcube.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 136,
+      "name": "Scholarcy",
+      "url": "https://www.scholarcy.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 139,
+      "name": "Quizlet",
+      "url": "https://quizlet.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 145,
+      "name": "Duolingo",
+      "url": "https://www.duolingo.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 149,
+      "name": "Language Reactor",
+      "url": "https://www.languagereactor.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 151,
+      "name": "Blinkist",
+      "url": "https://www.blinkist.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 171,
+      "name": "Poetry Foundation",
+      "url": "https://www.poetryfoundation.org/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 178,
+      "name": "Smithsonian Magazine",
+      "url": "https://www.smithsonianmag.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 180,
+      "name": "Financial Times",
+      "url": "https://www.ft.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 181,
+      "name": "New York Times",
+      "url": "https://www.nytimes.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 183,
+      "name": "Reuters Graphics",
+      "url": "https://www.reuters.com/graphics/",
+      "reason": "Redirect, thin landing page, discontinued/historical destination, or bot challenge; not counted."
+    },
+    {
+      "id": 191,
+      "name": "HathiTrust",
+      "url": "https://www.hathitrust.org/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 192,
+      "name": "Europeana",
+      "url": "https://www.europeana.eu/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 193,
+      "name": "Gallica",
+      "url": "https://gallica.bnf.fr/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 195,
+      "name": "Library of Congress Digital Collections",
+      "url": "https://www.loc.gov/collections/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 197,
+      "name": "NYPL Digital Collections",
+      "url": "https://digitalcollections.nypl.org/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 199,
+      "name": "Biodiversity Heritage Library",
+      "url": "https://www.biodiversitylibrary.org/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 201,
+      "name": "Scaife Viewer",
+      "url": "https://scaife.perseus.org/",
+      "reason": "Redirect, thin landing page, discontinued/historical destination, or bot challenge; not counted."
+    },
+    {
+      "id": 204,
+      "name": "JSTOR",
+      "url": "https://www.jstor.org/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 207,
+      "name": "DOAJ",
+      "url": "https://doaj.org/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 208,
+      "name": "OpenStax",
+      "url": "https://openstax.org/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 222,
+      "name": "MarkText",
+      "url": "https://www.marktext.cc/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 224,
+      "name": "WriteRoom",
+      "url": "https://www.hogbaysoftware.com/writeroom/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 225,
+      "name": "Muse",
+      "url": "https://museapp.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 227,
+      "name": "Scrintal",
+      "url": "https://www.scrintal.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 233,
+      "name": "Kosmik",
+      "url": "https://www.kosmik.app/",
+      "reason": "Redirect, thin landing page, discontinued/historical destination, or bot challenge; not counted."
+    },
+    {
+      "id": 238,
+      "name": "Insight Timer",
+      "url": "https://insighttimer.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 242,
+      "name": "Healthy Minds Program",
+      "url": "https://hminnovations.org/meditation-app",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 245,
+      "name": "Oak",
+      "url": "https://www.oakmeditation.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 249,
+      "name": "Finch",
+      "url": "https://finchcare.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 258,
+      "name": "Gentler Streak",
+      "url": "https://gentler.app/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 259,
+      "name": "Fable",
+      "url": "https://fable.co/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 260,
+      "name": "StoryGraph",
+      "url": "https://thestorygraph.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 261,
+      "name": "Hardcover",
+      "url": "https://hardcover.app/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 262,
+      "name": "Literal",
+      "url": "https://literal.club/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 265,
+      "name": "DailyLit",
+      "url": "https://dailylit.com/",
+      "reason": "Redirect, thin landing page, discontinued/historical destination, or bot challenge; not counted."
+    },
+    {
+      "id": 266,
+      "name": "Inkitt",
+      "url": "https://www.inkitt.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 268,
+      "name": "Royal Road",
+      "url": "https://www.royalroad.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 271,
+      "name": "Readly",
+      "url": "https://www.readly.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 273,
+      "name": "Magzter",
+      "url": "https://www.magzter.com/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 275,
+      "name": "HyRead",
+      "url": "https://www.hyread.com.tw/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 276,
+      "name": "BookWalker",
+      "url": "https://global.bookwalker.jp/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    },
+    {
+      "id": 280,
+      "name": "Read More",
+      "url": "https://readmore.app/",
+      "reason": "Insufficient accessible evidence in this pass; not counted."
+    }
+  ]
+}
