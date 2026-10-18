@@ -3,9 +3,10 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import vm from 'node:vm';
-import {planSession,chapterAt,safePosition,resolveSession,advanceSession} from '../reader/session.mjs';
+import {planSession,chapterAt,safePosition,resolveSession,followTarget} from '../reader/session.mjs';
 import {verifyResponse} from '../reader/integrity.mjs';
 import {recording} from '../reader/recording.mjs';
+import {sourceParts,sourceHTML,honorifics} from '../reader/source-format.mjs';
 import {release} from '../reader/release.mjs';
 const entry=(number,words)=>({number,english_blocks:['word '.repeat(words)]});
 test('session keeps order, completes a boundary entry and never splits a long hadith',()=>{
@@ -55,16 +56,6 @@ test('returning reader migrates into a finite session without changing reading o
  const expanded=[...entries,entry(3,400)];
  assert.deepEqual(resolveSession(expanded,session,10,1),session);
 });
-test('session advances only by explicit completion, including skipped entries and revisits',()=>{
- const first={numbers:[1,2],cursor:1,ended:false};
- const second=advanceSession(first,1);
- assert.deepEqual(first,{numbers:[1,2],cursor:1,ended:false});
- assert.deepEqual(second,{numbers:[1,2],cursor:2,ended:false});
- assert.deepEqual(advanceSession(second,2),{numbers:[1,2],cursor:2,ended:true});
- assert.deepEqual(advanceSession(first,2),{numbers:[1,2],cursor:2,ended:true});
- assert.deepEqual(advanceSession(first,999),first);
- assert.deepEqual(advanceSession({...second,ended:true},1),second);
-});
 test('invalid saved sessions recover to an ordered whole-hadith plan',()=>{
  const entries=[entry(1,20),entry(2,20)];
  for(const bad of [null,{}, {numbers:[2,1]}, {numbers:[1,1]}, {numbers:[1,999]}, {numbers:[]}, {numbers:'12'}]) {
@@ -87,4 +78,31 @@ test('worker reports its release without forcing activation or changing stored d
  assert.equal(messages.length,1);
  handlers.message({data:{type:'SKIP_WAITING'},ports:[]});
  assert.equal(messages.length,1);
+});
+
+test('smaller honorific spans preserve every character of the complete English source',()=>{
+ const source=JSON.parse(readFileSync(new URL('../research/bukhari-opening-review.json',import.meta.url)));
+ let count=0;
+ for(const entry of source.entries)for(const text of entry.english_blocks){
+  const parts=sourceParts(text);
+  assert.equal(parts.map(part=>part.text).join(''),text);
+  for(const part of parts.filter(p=>p.honorific)){assert(honorifics.includes(part.text));count++;}
+ }
+ assert.equal(count,7);
+ assert.equal(sourceHTML('<script>&"'), '&lt;script&gt;&amp;&quot;');
+ assert.equal(sourceHTML('An unmatched phrase remains complete.'),'An unmatched phrase remains complete.');
+});
+test('follow advances whole hadith only while playing, and defers to source dialogs and manual browsing',()=>{
+ const state={enabled:true,mode:'read',current:1,chapter:2,playing:true,blocked:false};
+ assert.equal(followTarget(state),2);
+ for(const patch of [{enabled:false},{mode:'listen'},{mode:'home'},{playing:false},{blocked:true},{chapter:1}])assert.equal(followTarget({...state,...patch}),null);
+ assert.equal(followTarget({...state,blocked:false}),2);
+});
+test('legacy preferences default to following, while an explicit off choice survives reload',()=>{
+ for(const enabled of [undefined,false,true]){
+  const context={window:{HadithContent:{entries:[{number:1},{number:2}]}},localStorage:{getItem:()=>JSON.stringify({followAudio:enabled,saved:[1],last:2}),setItem:()=>{}}};
+  vm.runInNewContext(readFileSync(new URL('../reader/store.js',import.meta.url),'utf8'),context);
+  assert.equal(context.window.HadithStore.get().followAudio,enabled!==false);
+  assert.equal(context.window.HadithStore.get().last,2);
+ }
 });

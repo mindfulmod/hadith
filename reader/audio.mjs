@@ -12,12 +12,14 @@ function metadata(){
  const c=chapter();
  navigator.mediaSession.metadata=new MediaMetadata({title:`Hadith ${c.number} · Sahih al-Bukhari`,artist:'Cedar · AI narration under review',album:'The Beginning of Revelation',artwork:[{src:new URL('icon-512.png',import.meta.url).href,sizes:'512x512',type:'image/png'}]});
 }
-export function getPlaybackState(){return {number:chapter().number,seconds:pendingSeek??audio.currentTime,playing:!audio.paused,ended:audio.ended};}
+export function getPlaybackState(){return {number:chapter().number,seconds:pendingSeek??audio.currentTime,playing:!audio.paused,active:activated,ended:audio.ended};}
 function update(){
  const c=chapter(),duration=Number.isFinite(audio.duration)?audio.duration:recording.duration;
- $('#audio-title').textContent=`Hadith ${c.number} of ${recording.chapters.length}`;
+ $('#audio-title').textContent=`Hadith ${c.number}`;
  $('#audio-room').href=`#listen/${c.number}`;
- $('#audio-toggle').textContent=busy?'Loading…':audio.paused?'Play':'Pause';
+ $('#audio-toggle .audio-label').textContent=busy?'Loading…':audio.paused?'Play':'Pause';
+ $('#audio-toggle .audio-symbol').textContent=busy?'…':audio.paused?'▶':'Ⅱ';
+ $('#audio-progress').max=duration;$('#audio-progress').value=pendingSeek??audio.currentTime;
  $('#audio-toggle').setAttribute('aria-label',audio.paused?'Play narration':'Pause narration');
  $('#audio-elapsed').textContent=time(pendingSeek??audio.currentTime);$('#audio-total').textContent=time(duration);
  $('#audio-seek').max=duration;$('#audio-seek').value=pendingSeek??audio.currentTime;
@@ -49,6 +51,13 @@ async function play(){
  finally{busy=false;update();}
 }
 export function listen(number){activate();const c=recording.chapters.find(c=>c.number===number)||recording.chapters[0];setPosition(c.start);play();}
+export function listenAlong(number){
+ if(activated&&!audio.ended&&chapter().number===number){play();return;}
+ const saved=store.get().audio;
+ const seconds=saved?.release===recording.id?safePosition(saved.seconds,recording.duration):0;
+ if(!activated&&chapterAt(recording.chapters,seconds).number===number){setPosition(seconds);play();}
+ else listen(number);
+}
 export function prepareListening(number){
  player.hidden=false;document.body.classList.add('has-player');
  if(!prepared&&!activated){

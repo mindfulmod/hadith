@@ -17,3 +17,27 @@ dialog{max-width:680px;width:calc(100% - 24px);max-height:85dvh;padding:26px;bor
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 
 .update-notice{max-width:690px;margin:8px auto 14px;padding:14px 24px;background:var(--wash);border-left:3px solid var(--accent);display:flex;align-items:center;justify-content:space-between;gap:16px;font-size:13px}.update-notice a{min-height:44px;display:flex;align-items:center;color:var(--accent);white-space:nowrap}.update-settings{border-top:1px solid var(--line);padding-top:18px;margin-top:18px;font-size:13px}.update-settings a{display:inline-flex;align-items:center;min-height:44px}@media(max-width:600px){.update-notice{margin:8px 20px 14px;padding:10px 14px;flex-wrap:wrap;gap:4px 16px}}
+
+/* Larger existing artwork; the source text stays on its own quiet surface. */
+.session-start{max-width:760px}.session-invitation{display:flex;flex-direction:column;align-items:stretch;gap:22px;margin:18px 0 24px}.session-art{order:-1;width:100%;height:clamp(210px,55vw,360px);border-radius:56px 56px 8px 8px;background-position:50% 50%}.session-invitation h1{font-size:clamp(34px,5vw,46px);margin-bottom:12px}.session-context{font-size:14px}.session-actions{margin-bottom:22px}.session-path{margin-bottom:16px}.reading>.reading-art{height:clamp(160px,46vw,260px);border-radius:12px;background-position:50% 50%;margin-bottom:22px}.listening-scene{height:clamp(240px,60vw,360px)}.prose .honorific{font-size:max(15px,.78em);font-weight:400;color:var(--muted)}.end-actions a:not(.primary){display:flex;align-items:center;min-height:48px;font-size:13px}.reading-end #finish{margin:18px 0 0;font-size:12px}.reading-end .sample-note{margin-top:10px}
+/* A single compact row above the navigation, using the same persistent audio. */
+html{scroll-padding-top:18px;scroll-padding-bottom:calc(var(--dock-height,64px) + var(--player-height,0px) + 24px)}
+body:not([data-view=listen]) .audio-player{bottom:var(--dock-height,64px);width:min(690px,100%);padding:8px 14px;grid-template-columns:minmax(0,1fr) auto auto 44px;gap:4px 6px;border-radius:0;border-width:1px 0 0;box-shadow:0 -5px 24px #0000000d}
+body:not([data-view=listen]) .player-heading{display:contents}
+body:not([data-view=listen]) #audio-room{grid-column:1;grid-row:1;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:3px;min-height:44px;line-height:1.2;min-width:0}
+#audio-room:after{content:none}#audio-room small{font-size:10px;color:var(--muted);font-weight:400}#audio-title{font-size:13px}
+body:not([data-view=listen]) #audio-follow{grid-column:2;grid-row:1;min-width:66px;padding:8px 7px;font-size:11px;border-radius:8px}
+body:not([data-view=listen]) .audio-controls{grid-column:3;grid-row:1}
+body:not([data-view=listen]) #audio-toggle{width:44px;min-width:44px;min-height:44px;padding:8px}
+body:not([data-view=listen]) #audio-close{grid-column:4;grid-row:1;min-width:44px;min-height:44px;border:0;padding:0;font-size:23px}
+.audio-symbol{display:inline;font-size:15px}.audio-label{display:none}
+body:not([data-view=read]) #audio-follow{display:none}
+body:not([data-view=listen]):not([data-view=read]) .audio-player{grid-template-columns:minmax(0,1fr) auto 44px}
+body:not([data-view=listen]):not([data-view=read]) .audio-controls{grid-column:2}
+body:not([data-view=listen]):not([data-view=read]) #audio-close{grid-column:3}
+[data-view=listen] .audio-label{display:inline}[data-view=listen] .audio-symbol{display:none}
+#audio-progress{position:absolute;bottom:0;left:0;width:100%;height:2px;border:0;appearance:none;background:var(--line);accent-color:var(--accent)}#audio-progress::-webkit-progress-bar{background:var(--line)}#audio-progress::-webkit-progress-value{background:var(--accent)}#audio-progress::-moz-progress-bar{background:var(--accent)}[data-view=listen] #audio-progress{display:none}
+.has-player:not([data-view=listen]){padding-bottom:calc(var(--dock-height,64px) + var(--player-height,62px) + 24px)}
+#dock [data-session-return]{display:none}.has-player #dock [data-session-return]{display:flex}.has-player #dock [data-reading-listen]{display:none}
+[data-view=read] #dock{gap:4px;padding-left:12px;padding-right:12px}[data-view=read] #dock a,[data-view=read] #dock button{max-width:168px;font-size:12px;gap:5px;padding:9px 5px}
+@media(max-width:360px){.session-invitation{gap:18px}.session-art{height:210px;border-radius:42px 42px 6px 6px}.session-invitation h1{font-size:33px}.session-context{font-size:12px}.reading>.reading-art{height:160px}.audio-player{font-size:12px}body:not([data-view=listen]) .audio-player{padding:7px 10px;gap:3px 4px}[data-view=read] #dock{padding-left:8px;padding-right:8px}[data-view=read] #dock a,[data-view=read] #dock button{font-size:11px}}

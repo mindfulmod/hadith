@@ -1,4 +1,4 @@
-// Reader release: opening-551d02fbb96a
+// Reader release: opening-221ba2dda403
 import {release} from './release.mjs';
 import {verifyResponse} from './integrity.mjs';
 import {parseRange} from '../range.mjs';

@@ -27,9 +27,7 @@ export function resolveSession(entries, saved, minutes = 5, last = entries[0]?.n
  const cursor=selected.includes(saved?.cursor)?saved.cursor:selected.includes(last)?last:selected[0];
  return {numbers:selected,cursor,ended:valid&&saved.ended===true};
 }
-export function advanceSession(session, number) {
- const index=session.numbers.indexOf(number);
- if(index<0)return session;
- const next=session.numbers[index+1];
- return {...session,cursor:next??number,ended:next===undefined};
+/* Follow whole entries only, and defer while a dialog or hidden page is in use. */
+export function followTarget({enabled,mode,current,chapter,playing,blocked}) {
+ return enabled && mode==='read' && playing && !blocked && chapter!==current ? chapter : null;
 }
