@@ -25,14 +25,14 @@
     },
     {
       "id": "content-review-gates",
-      "status": "in-progress",
-      "evidence": "Pinned source hashes; reproducible inventory; candidate excluded from reader release",
-      "remaining": "Per-entry Arabic/English review ledger, exact-hash approvals, discrepancy resolution and a publisher that refuses incomplete records."
+      "status": "implemented-for-opening-sample",
+      "evidence": "content/review/opening-ledger.json; scripts/publish-books.mjs; tests/content-library.test.mjs",
+      "remaining": "Obtain actual independent human reviews and reuse evidence. Current production publishing is deliberately refused. Extend edition/reference mapping before expanding beyond the evaluation namespace; audio review needs its own ledger."
     },
     {
       "id": "library-navigation-search",
       "status": "in-progress",
-      "evidence": "reader/library.mjs; reader/search.mjs; tests/library.test.mjs",
+      "evidence": "reader/library.mjs; reader/search.mjs; tests/library.test.mjs; reader/content-library.mjs; reader/books/catalog.json; verified per-book loading with complete-search failure handling",
       "remaining": "Book and chapter browser, stable reference map, pagination and a full-library index over reviewed content. Current UI searches only two available entries."
     },
     {
@@ -43,9 +43,9 @@
     },
     {
       "id": "personal-backup",
-      "status": "implemented-desktop-verified",
+      "status": "iphone-export-confirmed",
       "evidence": "reader/personal-state.mjs; reader/backup.mjs; reader/personal-tools.mjs",
-      "remaining": "iPhone acceptance for file download/restore and future edition-ID migration. Desktop export, merge, undo, rejection, full restore, correct continuation and offline reopening verified."
+      "remaining": "iPhone restore acceptance and future edition-ID migration. User confirmed Safari export to Files on 18 October 2026. Desktop export, merge, undo, rejection, full restore, correct continuation and offline reopening verified."
     },
     {
       "id": "full-audio",
@@ -57,7 +57,7 @@
       "id": "offline-at-scale",
       "status": "partial",
       "evidence": "Current bundle uses byte hashes and cached range responses",
-      "remaining": "Separate shell/text/audio packs; storage estimate, resumable per-pack downloads, explicit removal, release eviction policy and failure recovery."
+      "remaining": "Versioned text packs are implemented, but the sample worker still caches the complete two-entry text bundle. Add separate selective text/audio downloads, storage estimate, resumable per-pack saves, explicit removal, release eviction and failure recovery."
     },
     {
       "id": "production-testing",
@@ -73,11 +73,11 @@
     }
   ],
   "nextActions": [
-    "Publish and verify the exact search and backup release; then make checks a deployment prerequisite.",
-    "Resolve the Arabic candidate's gaps against another source without silently combining editions.",
-    "Evaluate a complete English source with explicit reuse and narration permissions; avoid mass scraping or a dataset license treated as ownership of a third-party translation.",
-    "Build book-pack loading and the review/publish ledger before expanding the public reading collection.",
-    "Make verification a deployment prerequisite; retain the existing site during migration."
+    "Make verification a deployment prerequisite; retain the existing site during migration.",
+    "Resolve the Arabic candidate gaps against another witness without silently combining editions.",
+    "Obtain complete English source coverage and explicit offline/narration permissions; request #4160 is posted.",
+    "Build book/chapter navigation and selective offline packs on the verified book loader.",
+    "Complete independent translation and generated-audio reviews before claiming production content."
   ],
   "sourceResearch": [
     {
@@ -100,5 +100,11 @@
       "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري&oldid=484875",
       "finding": "The linked top-level index lists 73 sections. This is insufficient evidence of full-collection coverage or equivalence to a 97-book numbering scheme."
     }
-  ]
+  ],
+  "sourceInquiry": {
+    "status": "posted-awaiting-response",
+    "url": "https://github.com/sunnah-com/api/issues/4160",
+    "record": "research/source-access-request.json",
+    "permissionsGranted": false
+  }
 }

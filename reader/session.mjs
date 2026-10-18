@@ -4,7 +4,7 @@ export function planSession(entries, startNumber, minutes = 5, wordsPerMinute = 
  const target = (minutes === 10 ? 10 : 5) * 60;
  const selected = []; let seconds = 0;
  for (const entry of entries.slice(start)) {
-  const duration = entry.english_blocks.join(' ').trim().split(/\s+/u).length / wordsPerMinute * 60;
+  const duration = (entry.englishWords ?? entry.english_blocks.join(' ').trim().split(/\s+/u).length) / wordsPerMinute * 60;
   selected.push(entry.number); seconds += duration;
   if (seconds >= target) break;
  }

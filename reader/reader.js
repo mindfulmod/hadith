@@ -1,3 +1,5 @@
+import {createContentLibrary} from './content-library.mjs';
+import {release} from './release.mjs';
 import {store} from './store.js';
 import {searchForm,mountSearch} from './library.mjs';
 import {initPersonalTools} from './personal-tools.mjs';
@@ -7,11 +9,11 @@ import {resolveSession,followTarget} from './session.mjs';
 import {recording} from './recording.mjs';
 import {sourceHTML} from './source-format.mjs';
 /* Source blocks are rendered verbatim. Personal session state never changes them. */
-(() => {
- const $=s=>document.querySelector(s), data=window.HadithContent;
+function startReader(library) {
+ const $=s=>document.querySelector(s), data=library.catalog;
  const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const media=matchMedia('(prefers-color-scheme: dark)');
- let current=null, mode='home', scrollTimer, restoring=false, startingAudio=false, autoDestination=null;
+ let current=null, mode='home', scrollTimer, restoring=false, startingAudio=false, autoDestination=null, renderVersion=0;
  const announce=text=>{$('#status').textContent=text;};
  const write=patch=>{store.set(patch);if(!store.available())announce('Your browser could not save your place. You can keep reading.');};
  const entry=n=>data.entries.find(e=>e.number===n);
@@ -30,7 +32,7 @@ import {sourceHTML} from './source-format.mjs';
   $('#more-space').checked=s.spacious;$('#show-art').checked=s.art;$('#follow-audio').checked=s.followAudio;
  }
  function listEntry(e){return `<a class="entry-link" href="#read/${e.number}"><span class="entry-num">${String(e.number).padStart(2,'0')}</span><span>Hadith ${e.number}<small>${escape(e.book)}</small></span><span>${store.get().finished.includes(e.number)?'Read ✓':'→'}</span></a>`;}
- function home(){const s=store.get(),plan=session(),begun=Object.keys(s.positions).length>0,ended=plan.ended;return `<section class="session-start" aria-labelledby="session-title"><p class="eyebrow">YOUR CURRENT SESSION · BOOK 01</p><div class="session-invitation"><div><h1 id="session-title">A little time.<br>Two hadith.</h1><p class="session-context">The Beginning of Revelation<br><span>Sahih al-Bukhari · in book order</span></p></div><div class="session-art" role="img" aria-label="An imagined warm limestone garden with quiet water."></div></div><div class="session-actions">${ended?'<button class="primary" data-restart>Read the session again <span aria-hidden="true">→</span></button>':`<a class="primary" href="#read/${plan.cursor}">${begun?'Continue':'Begin reading'} <span aria-hidden="true">→</span></a>`}<button data-listen-resume class="listen-choice">${getPlaybackState().playing?'Return to listening':s.audio?.seconds>0?'Resume listening':'Listen to both'} <span>${duration(recording.duration)} total</span></button></div><ol class="session-path">${plan.numbers.map(n=>`<li ${n===plan.cursor?'class="current"':''}><a href="#read/${n}" ${n===plan.cursor?'aria-current="step"':''}><span class="path-number">${String(n).padStart(2,'0')}</span><span><strong>Hadith ${n}</strong><small>${s.finished.includes(n)?'Marked as read':n===plan.cursor&&begun?'Your reading place':'Full narration and narrator chain'}</small></span><span class="path-time">${duration(recording.chapters.find(c=>c.number===n).duration)}<small>audio</small></span></a></li>`).join('')}</ol><p class="sample-note">Two complete hadith, at your pace. This sample is shorter than your ${s.minutes}-minute preference. <button class="text-button" data-open-settings>Change preference</button></p><p class="review-note">English working translation · Cedar AI narration<br>Text and pronunciation remain under review.</p><section class="offline-card" aria-labelledby="offline-title"><div class="offline-heading"><h2 id="offline-title">Take this session with you.</h2><button data-download>Save for offline</button></div><p class="offline-status" data-offline-status role="status">Checking this device…</p><details class="offline-help"><summary>Offline use on your iPhone</summary><p>In Safari, use Share → Add to Home Screen. Open the saved app and download there. Wait for “Ready offline” before enabling airplane mode.</p><p>Both hadith, the full narration, source notes and artwork are included. External source websites still need a connection. Safari and your Home Screen app may have separate saved copies.</p></details></section></section>`;}
+ function home(){const s=store.get(),plan=session(),begun=Object.keys(s.positions).length>0,ended=plan.ended;return `<section class="session-start" aria-labelledby="session-title"><p class="eyebrow">YOUR CURRENT SESSION · BOOK 01</p><div class="session-invitation"><div><h1 id="session-title">A little time.<br>Two hadith.</h1><p class="session-context">The Beginning of Revelation<br><span>Sahih al-Bukhari · in book order</span></p></div><div class="session-art" role="img" aria-label="An imagined warm limestone garden with quiet water."></div></div><div class="session-actions">${ended?'<button class="primary" data-restart>Read the session again <span aria-hidden="true">→</span></button>':`<a class="primary" href="#read/${plan.cursor}">${begun?'Continue':'Begin reading'} <span aria-hidden="true">→</span></a>`}<button data-listen-resume class="listen-choice">${getPlaybackState().playing?'Return to listening':s.audio?.seconds>0?'Resume listening':'Listen to both'} <span>${duration(recording.duration)} total</span></button></div><ol class="session-path">${plan.numbers.map(n=>`<li ${n===plan.cursor?'class="current"':''}><a href="#read/${n}" ${n===plan.cursor?'aria-current="step"':''}><span class="path-number">${String(n).padStart(2,'0')}</span><span><strong>Hadith ${n}</strong><small>${s.finished.includes(n)?'Marked as read':n===plan.cursor&&begun?'Your reading place':'Full narration and narrator chain'}</small></span><span class="path-time">${recording.chapters.some(c=>c.number===n)?duration(recording.chapters.find(c=>c.number===n).duration):'—'}<small>audio</small></span></a></li>`).join('')}</ol><p class="sample-note">Two complete hadith, at your pace. This sample is shorter than your ${s.minutes}-minute preference. <button class="text-button" data-open-settings>Change preference</button></p><p class="review-note">English working translation · Cedar AI narration<br>Text and pronunciation remain under review.</p><section class="offline-card" aria-labelledby="offline-title"><div class="offline-heading"><h2 id="offline-title">Take this session with you.</h2><button data-download>Save for offline</button></div><p class="offline-status" data-offline-status role="status">Checking this device…</p><details class="offline-help"><summary>Offline use on your iPhone</summary><p>In Safari, use Share → Add to Home Screen. Open the saved app and download there. Wait for “Ready offline” before enabling airplane mode.</p><p>Both hadith, the full narration, source notes and artwork are included. External source websites still need a connection. Safari and your Home Screen app may have separate saved copies.</p></details></section></section>`;}
  function sessionTrack(n){const plan=session();return `<div class="session-topline"><a href="#home">Opening session</a><nav class="session-track" aria-label="Hadith in this session">${plan.numbers.map((number,i)=>`${i?'<span aria-hidden="true"></span>':''}<a href="#read/${number}" ${n===number?'aria-current="step"':''} aria-label="Hadith ${number}">${number}</a>`).join('')}</nav></div>`;}
  function neighbors(number){const index=data.entries.findIndex(e=>e.number===number);return {previous:data.entries[index-1],next:data.entries[index+1]};}
  function nextControl(number,compact=false){const {next}=neighbors(number);return next?`<a class="primary" data-read-step href="#read/${next.number}" aria-label="Next hadith, Hadith ${next.number}">${compact?'Next':'Next hadith'} <span aria-hidden="true">→</span></a>`:`<button class="primary" data-end-session>${compact?'Finish':'End this session'}</button>`;}
@@ -38,9 +40,13 @@ import {sourceHTML} from './source-format.mjs';
  function listening(){return `<section class="listening-room" aria-labelledby="listening-title"><div class="listening-scene" role="img" aria-label="A still, imagined limestone garden in warm light."></div><div class="listening-heading"><p class="eyebrow">THE BEGINNING OF REVELATION</p><h1 id="listening-title">Hadith <span data-playing-number>1</span></h1><p>Two complete hadith · full narrator chains</p><p class="review-note">Cedar Take A · AI narration under review</p></div></section>`;}
  function queue(){return `<section class="listening-queue" aria-labelledby="queue-title"><h2 id="queue-title">In this session</h2>${recording.chapters.map(c=>`<button data-listen="${c.number}" aria-label="Play Hadith ${c.number}"><span><span class="queue-number">${String(c.number).padStart(2,'0')}</span> Hadith ${c.number}</span><span>${duration(c.duration)} <span aria-hidden="true">▷</span></span></button>`).join('')}<p class="sample-note">Both entries play in order, then stop. Listening does not change your reading marks.</p></section>`;}
  function end(){return `<section class="session-end"><div class="reading-art" aria-hidden="true"></div><p class="eyebrow">A PLACE TO PAUSE</p><h1>The opening session<br>ends here.</h1><p>Two complete hadith. You can return to either one whenever you wish.</p><div class="end-record">${session().numbers.map(n=>`<a href="#read/${n}">Hadith ${n}<span>${store.get().finished.includes(n)?'Marked as read ✓':'Not marked as read'}</span></a>`).join('')}</div><a class="primary" href="#home">Back to your session <span aria-hidden="true">→</span></a><a class="quiet-link" href="#saved">Open your bookmarks</a></section>`;}
- function sourceDialog(e){
+ async function sourceDialog(number){
+  const route=location.hash;
+  let pack;try{pack=await library.loadForNumber(number);}catch{announce('Sources could not load. Reconnect and try Arabic & sources again.');return;}
+  if(location.hash!==route)return;
+  const e=library.getEntry(number),source=pack.sourceRecord;
   $('#source-title').textContent=`Hadith ${e.number} · Arabic & sources`;
-  $('#source-content').innerHTML=`<p class="source-status"><strong>About this English translation</strong><br>${escape(e.english_status)} This is a new working translation, not the Darussalam translation.</p><p class="source-status"><strong>Listening status</strong><br>Cedar is an AI-generated voice. The submitted script includes every English source block and honorific, without changes. The generated speech still needs a word-by-word and pronunciation review. <a href="audio-review.html">Review the narration and compare two delivery styles ↗</a></p><h3>Arabic text</h3><div lang="ar" dir="rtl" class="arabic">${e.arabic_blocks.map((p,i)=>`<p data-source-block="arabic-${i}">${escape(p)}</p>`).join('')}</div><h3>Source trail</h3><p class="sample-note">The Arabic and comparison notes are saved with the app. External publisher and source websites require a connection.</p><ul class="source-list"><li><a target="_blank" rel="noopener" href="${escape(data.sources[0].url)}">Arabic Wikisource · fixed revision 484874 ↗</a><br>Arabic digital input, retained verbatim.</li><li><a target="_blank" rel="noopener" href="${escape(data.sources[1].url)}#page=${e.source_pages.darussalam_sample_pdf_page}">Darussalam publisher sample · printed page ${e.source_pages.darussalam_sample_printed_page} ↗</a><br>Arabic and Muhammad Muhsin Khan English used for comparison.</li><li><a target="_blank" rel="noopener" href="https://aishabewley.org/bukhari1">Aisha Bewley · opening entries ↗</a><br>A second named English translator used for comparison.</li><li><a target="_blank" rel="noopener" href="https://sunnah.com/bukhari:${e.number}">Sunnah.com · Bukhari ${e.number} ↗</a><br>Additional Arabic and numbering check.</li></ul><a href="source-review.html" target="_blank" rel="noopener">Read the full comparison notes and historical Arabic witness ↗</a><p class="source-licence">${escape(data.license.attribution)}<br><br>${escape(data.license.changes)} <a target="_blank" rel="noopener" href="${data.license.url}">CC BY-SA 4.0 ↗</a></p>`;
+  $('#source-content').innerHTML=`<p class="source-status"><strong>About this English translation</strong><br>${escape(e.english_status)} This is a new working translation, not the Darussalam translation.</p><p class="source-status"><strong>Listening status</strong><br>Cedar is an AI-generated voice. The submitted script includes every English source block and honorific, without changes. The generated speech still needs a word-by-word and pronunciation review. <a href="audio-review.html">Review the narration and compare two delivery styles ↗</a></p><h3>Arabic text</h3><div lang="ar" dir="rtl" class="arabic">${e.arabic_blocks.map((p,i)=>`<p data-source-block="arabic-${i}">${escape(p)}</p>`).join('')}</div><h3>Source trail</h3><p class="sample-note">The Arabic and comparison notes are saved with the app. External publisher and source websites require a connection.</p><ul class="source-list"><li><a target="_blank" rel="noopener" href="${escape(source.sources[0].url)}">Arabic Wikisource · fixed revision 484874 ↗</a><br>Arabic digital input, retained verbatim.</li><li><a target="_blank" rel="noopener" href="${escape(source.sources[1].url)}#page=${e.source_pages.darussalam_sample_pdf_page}">Darussalam publisher sample · printed page ${e.source_pages.darussalam_sample_printed_page} ↗</a><br>Arabic and Muhammad Muhsin Khan English used for comparison.</li><li><a target="_blank" rel="noopener" href="https://aishabewley.org/bukhari1">Aisha Bewley · opening entries ↗</a><br>A second named English translator used for comparison.</li><li><a target="_blank" rel="noopener" href="https://sunnah.com/bukhari:${e.number}">Sunnah.com · Bukhari ${e.number} ↗</a><br>Additional Arabic and numbering check.</li></ul><a href="source-review.html" target="_blank" rel="noopener">Read the full comparison notes and historical Arabic witness ↗</a><p class="source-licence">${escape(source.license.attribution)}<br><br>${escape(source.license.changes)} <a target="_blank" rel="noopener" href="${source.license.url}">CC BY-SA 4.0 ↗</a></p>`;
   $('#sources').showModal();
  }
  function capture(){if(current&&!restoring)write({positions:{...store.get().positions,[current]:window.scrollY}});}
@@ -65,13 +71,22 @@ import {sourceHTML} from './source-format.mjs';
  function dock(){
   if(mode==='read'){
    const {previous}=neighbors(current);
-   return `${previous?`<a data-read-step href="#read/${previous.number}" aria-label="Previous hadith, Hadith ${previous.number}">← Previous</a>`:'<button disabled aria-label="No previous hadith">← Previous</button>'}<button data-sources="${current}">Arabic & sources</button><button data-reading-listen data-listen="${current}">Listen ▷</button><a data-session-return href="#home">Session</a>${nextControl(current,true)}`;
+   return `${previous?`<a data-read-step href="#read/${previous.number}" aria-label="Previous hadith, Hadith ${previous.number}">← Previous</a>`:'<button disabled aria-label="No previous hadith">← Previous</button>'}<button data-sources="${current}">Arabic & sources</button>${recording.chapters.some(c=>c.number===current)?`<button data-reading-listen data-listen="${current}">Listen ▷</button>`:'<span>Audio not yet available</span>'}<a data-session-return href="#home">Session</a>${nextControl(current,true)}`;
   }
   return mode==='listen'?`<a href="#home">Session</a><a data-read-playing href="#read/1">Read Hadith 1</a><button data-sources-playing data-sources="1">Arabic & sources</button>`:`<a href="#home" ${mode==='home'||mode==='end'?'aria-current="page"':''}>Session</a><a href="#collection" ${mode==='collection'?'aria-current="page"':''}>Collection</a><a href="#saved" ${mode==='saved'?'aria-current="page"':''}>Saved <span id="saved-count">${store.get().saved.length||''}</span></a>`;
  }
- function render(){
+ async function render(){
+  const version=++renderVersion;
   capture();clearTimeout(scrollTimer);
-  const hash=location.hash||'#home',match=hash.match(/^#(read|listen)\/(\d+)$/),valid=match&&entry(Number(match[2]));
+  const hash=location.hash||'#home',match=hash.match(/^#(read|listen)\/(\d+)$/),valid=match&&entry(Number(match[2]))&&(match[1]==='read'||recording.chapters.some(c=>c.number===Number(match[2])));
+  const main=$('#main');
+  if(valid&&match[1]==='read'){
+   restoring=true;main.setAttribute('aria-busy','true');
+   if(!library.getEntry(Number(match[2]))){mode='loading';document.body.dataset.view='home';$('#dock').innerHTML='<a href="#home">Session</a><a href="#collection">Collection</a>';main.innerHTML='<section class="collection"><h1>Opening your hadith…</h1><p role="status">Loading the complete text and source references.</p></section>';}
+   try{await library.loadForNumber(Number(match[2]));}
+   catch{if(version!==renderVersion)return;current=null;mode='error';restoring=false;$('#listening-support').innerHTML='';document.body.dataset.view='home';main.removeAttribute('aria-busy');main.innerHTML='<section class="collection"><h1>This hadith could not open.</h1><p>The complete text could not be downloaded and checked. Reconnect and try again. Your saved place is unchanged.</p><button class="primary" data-retry-content>Try again</button><p><a href="#home">Back to your session</a></p></section>';$('#dock').innerHTML=dock();main.focus();return;}
+  }
+  if(version!==renderVersion)return;main.removeAttribute('aria-busy');
   mode=valid?match[1]:['#collection','#saved','#end'].includes(hash)?hash.slice(1):'home';
   current=mode==='read'?Number(match[2]):null;
   const automatic=current!==null&&autoDestination===current;autoDestination=null;
@@ -79,22 +94,22 @@ import {sourceHTML} from './source-format.mjs';
   if(current&&!automatic&&getPlaybackState().active&&getPlaybackState().number!==current)write({followAudio:false});
   if(automatic)write({positions:{...store.get().positions,[current]:0}});
   restoring=true;
-  const main=$('#main');
   document.body.dataset.view=mode;
   $('#listening-support').innerHTML='';
-  if(current){write({last:current,session:{...session(),cursor:current}});main.innerHTML=reader(entry(current));document.title=`Hadith ${current} · Sahih al-Bukhari`;}
+  if(current){write({last:current,session:{...session(),cursor:current}});main.innerHTML=reader(library.getEntry(current));document.title=`Hadith ${current} · Sahih al-Bukhari`;}
   else if(mode==='listen'){prepareListening(Number(match[2]));main.innerHTML=listening();$('#listening-support').innerHTML=queue();document.title='Listen · Sahih al-Bukhari';}
   else if(mode==='collection'||mode==='saved'){const saved=mode==='saved',entries=saved?data.entries.filter(e=>store.get().saved.includes(e.number)):data.entries;main.innerHTML=`<section class="collection"><p class="eyebrow">SAHIH AL-BUKHARI · BOOK 01</p><h1>${saved?'Saved for another moment.':'The Beginning of Revelation'}</h1><p class="intro">${saved?'Your personal bookmarks, kept on this device.':'The first two hadith, in book order. Only this opening sample is available.'}</p>${saved?'':searchForm(data.entries.length)}<div id="collection-entries">${entries.length?entries.map(listEntry).join(''):'<p>No bookmarks yet. Use Save beside a hadith to keep it here.</p><a class="primary" href="#read/1">Begin with Hadith 1 →</a>'}</div></section>`;document.title=(saved?'Saved readings':'Opening collection')+' · Hadith';}
   else if(mode==='end'){main.innerHTML=end();document.title='A place to pause · Hadith';}
   else{main.innerHTML=home();document.title='Your session · Sahih al-Bukhari';}
-  $('#dock').innerHTML=dock();mountSearch(data.entries);updateListening();refreshOffline();
+  $('#dock').innerHTML=dock();mountSearch(()=>library.loadAllEntries());updateListening();refreshOffline();
   if(current&&store.get().followAudio&&getPlaybackState().active&&getPlaybackState().number===current)$('.chain').open=true;
-  restoring=true;requestAnimationFrame(()=>{main.focus({preventScroll:true});window.scrollTo(0,current?Number(store.get().positions[current])||0:0);if(automatic){$('#hadith-title').scrollIntoView({block:'start'});announce(`Following Hadith ${current}.`);}requestAnimationFrame(()=>{restoring=false;updateListening();});});
+  restoring=true;requestAnimationFrame(()=>{if(version!==renderVersion)return;main.focus({preventScroll:true});window.scrollTo(0,current?Number(store.get().positions[current])||0:0);if(automatic){$('#hadith-title').scrollIntoView({block:'start'});announce(`Following Hadith ${current}.`);}requestAnimationFrame(()=>{if(version!==renderVersion)return;restoring=false;updateListening();});});
  }
  function markRead(number,done){const finished=store.get().finished;write({finished:done?[...new Set([...finished,number])]:finished.filter(n=>n!==number)});announce(done?'Marked as read':'Marked as unread');}
  document.addEventListener('click',event=>{
   const target=event.target.closest('button,a');if(!target)return;
   if(target.hasAttribute('data-listen')){
+   if(!recording.chapters.some(c=>c.number===Number(target.dataset.listen)))return;
    const n=Number(target.dataset.listen);startingAudio=true;
    try{if(mode==='read'){listenAlong(n);if(store.get().followAudio)$('.chain').open=true;}else{listen(n);location.hash=`#listen/${n}`;}}finally{startingAudio=false;}
    updateListening();
@@ -103,9 +118,10 @@ import {sourceHTML} from './source-format.mjs';
    stopFollowingForNavigation();
    if(target.hasAttribute('data-read-step')){const n=Number(target.hash.split('/')[1]);write({positions:{...store.get().positions,[n]:0}});}
   }
-  if(target.id==='audio-follow'){const enabled=!store.get().followAudio;setFollow(enabled);if(enabled&&current)$('.chain').open=true;announce(enabled?'Following the playing hadith.':'Follow is off. You can browse freely.');}
+  if(target.id==='audio-follow'){const enabled=!store.get().followAudio;setFollow(enabled);if(enabled&&current&&$('.chain'))$('.chain').open=true;announce(enabled?'Following the playing hadith.':'Follow is off. You can browse freely.');}
   if(target.hasAttribute('data-listen-resume')){resumeListening();location.hash=`#listen/${getPlaybackState().number}`;}
-  if(target.hasAttribute('data-sources'))sourceDialog(entry(Number(target.dataset.sources)));
+  if(target.hasAttribute('data-sources'))sourceDialog(Number(target.dataset.sources));
+  if(target.hasAttribute('data-retry-content'))render();
   if(target.hasAttribute('data-open-settings'))$('#settings').showModal();
   if(target.id==='bookmark'){const saved=store.get().saved.includes(current);write({saved:saved?store.get().saved.filter(n=>n!==current):[...store.get().saved,current]});target.textContent=saved?'Save':'Saved ✓';target.setAttribute('aria-pressed',String(!saved));announce(saved?'Bookmark removed':'Hadith saved');}
   if(target.id==='finish'){const done=!store.get().finished.includes(current);markRead(current,done);target.textContent=done?'Marked as read ✓':'Mark as read';target.setAttribute('aria-pressed',String(done));}
@@ -129,4 +145,12 @@ import {sourceHTML} from './source-format.mjs';
  initPersonalTools({capture,refresh:()=>{restoring=true;appearance();render();},prepareReload:()=>{restoring=true;clearTimeout(scrollTimer);}});
  // The installed app's start URL opens the session; explicit links still open their hadith.
  appearance();render();if(!store.available())$('.site-footer>span').textContent='Reading works, but this browser cannot save your place.';
-})();
+}
+async function boot(){
+ const preference=store.get().theme;document.documentElement.dataset.theme=preference==='night'||(preference==='device'&&matchMedia('(prefers-color-scheme:dark)').matches)?'night':'day';
+ const main=document.querySelector('#main');main.setAttribute('aria-busy','true');
+ main.innerHTML='<section class="collection"><h1>Your quiet moment.</h1><p role="status">Opening your collection…</p></section>';
+ try{const library=await createContentLibrary({files:release.files});main.removeAttribute('aria-busy');startReader(library);}
+ catch{main.removeAttribute('aria-busy');main.innerHTML='<section class="collection"><h1>Your collection could not open.</h1><p>Reconnect and try again. If the problem continues, use Check for app updates. Your bookmarks and reading place are kept.</p><button class="primary" id="retry-library">Try again</button><p><a href="../update.html">Check for app updates</a> · <a href="source-review.html">Read the source review</a></p></section>';document.querySelector('#retry-library').onclick=boot;}
+}
+boot();

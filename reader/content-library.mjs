@@ -1,0 +1,68 @@
+import {verifyResponse} from './integrity.mjs';
+const freeze=value=>{if(value&&typeof value==='object'){Object.values(value).forEach(freeze);Object.freeze(value);}return value;};
+const requireValue=(value,message)=>{if(!value)throw new Error(message);};
+function validateCatalog(catalog){
+ requireValue(catalog?.schemaVersion===1&&catalog.namespace==='bukhari-opening-v1','Unsupported collection');
+ requireValue(['evaluation','production'].includes(catalog.publication),'Unknown publication status');
+ requireValue(Array.isArray(catalog.books)&&catalog.books.length>0&&Array.isArray(catalog.entries)&&catalog.entries.length>0,'Empty collection');
+ const books=new Map(catalog.books.map(b=>[b.id,b]));
+ requireValue(books.size===catalog.books.length,'Duplicate book');
+ for(const b of catalog.books){
+  requireValue(/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(b.id)&&Number.isSafeInteger(b.number)&&b.number>0&&typeof b.title==='string','Invalid book');
+  requireValue(typeof b.sha256==='string'&&/^[a-f0-9]{64}$/.test(b.sha256)&&b.path===`books/${b.id}-${b.sha256.slice(0,16)}.json`&&Number.isSafeInteger(b.bytes)&&b.bytes>0,'Invalid book download');
+  requireValue(Array.isArray(b.entryNumbers)&&b.entryNumbers.length>0,'Empty book');
+ }
+ const numbers=new Set(),ids=new Set();
+ for(const e of catalog.entries){
+  requireValue(Number.isSafeInteger(e.number)&&e.number>0&&!numbers.has(e.number)&&typeof e.id==='string'&&!ids.has(e.id),'Duplicate or invalid reference');
+  requireValue(books.has(e.bookId)&&typeof e.book==='string'&&Number.isSafeInteger(e.englishWords)&&e.englishWords>0,'Invalid entry metadata');
+  numbers.add(e.number);ids.add(e.id);
+ }
+ requireValue(JSON.stringify(catalog.books.flatMap(b=>b.entryNumbers))===JSON.stringify(catalog.entries.map(e=>e.number)),'Book order mismatch');
+ for(const b of catalog.books)requireValue(JSON.stringify(catalog.entries.filter(e=>e.bookId===b.id).map(e=>e.number))===JSON.stringify(b.entryNumbers),'Book references mismatch');
+ return catalog;
+}
+export async function createContentLibrary({files,base=new URL('./',import.meta.url),fetcher=fetch,timeoutMs=15000}){
+ const descriptors=new Map(files.map(f=>[f.path,f]));
+ async function read(file){
+  const shipped=descriptors.get(file.path);
+  requireValue(shipped&&shipped.bytes===file.bytes&&shipped.sha256===file.sha256,'Book does not belong to this reader release');
+  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),timeoutMs);
+  try{const response=await fetcher(new URL(file.path,base),{signal:controller.signal});await verifyResponse(response,file);return await response.json();}
+  finally{clearTimeout(timer);}
+ }
+ const index=descriptors.get('books/catalog.json');requireValue(index,'Collection index unavailable');
+ const catalog=freeze(validateCatalog(await read(index))),pending=new Map(),loaded=new Map();
+ const summaries=new Map(catalog.entries.map(e=>[e.number,e]));
+ function loadBook(id){
+  if(loaded.has(id))return Promise.resolve(loaded.get(id));
+  if(pending.has(id))return pending.get(id);
+  const descriptor=catalog.books.find(b=>b.id===id);
+  if(!descriptor)return Promise.reject(new Error('Book not in this collection'));
+  const task=(async()=>{
+   const pack=await read(descriptor);
+   requireValue(pack.schemaVersion===catalog.schemaVersion&&pack.namespace===catalog.namespace&&pack.publication===catalog.publication,'Book version mismatch');
+   requireValue(pack.book?.id===id&&pack.book.number===descriptor.number&&pack.book.title===descriptor.title,'Book identity mismatch');
+   requireValue(pack.sourceRecord&&Array.isArray(pack.sourceRecord.sources)&&pack.sourceRecord.license,'Missing source trail');
+   requireValue(Array.isArray(pack.entries)&&JSON.stringify(pack.entries.map(e=>e.number))===JSON.stringify(descriptor.entryNumbers),'Incomplete book');
+   for(const entry of pack.entries){
+    const summary=summaries.get(entry.number);
+    requireValue(entry.id===summary.id&&entry.book===summary.book,'Entry identity mismatch');
+    for(const lang of ['english','arabic'])requireValue(Array.isArray(entry[lang+'_blocks'])&&entry[lang+'_blocks'].length>=2&&entry[lang+'_blocks'].every(b=>typeof b==='string'&&b.trim()),'Incomplete narration');
+    requireValue(entry.english_blocks.join(' ').trim().split(/\s+/u).length===summary.englishWords,'Entry metadata mismatch');
+   }
+   freeze(pack);loaded.set(id,pack);return pack;
+  })();
+  pending.set(id,task);
+  task.finally(()=>{if(pending.get(id)===task)pending.delete(id);}).catch(()=>{});
+  return task;
+ }
+ async function loadForNumber(number){const summary=summaries.get(number);requireValue(summary,'Hadith not in this collection');return loadBook(summary.bookId);}
+ function getEntry(number){const summary=summaries.get(number);return loaded.get(summary?.bookId)?.entries.find(e=>e.number===number);}
+ async function loadAllEntries(){
+  // On-demand exact search only. Do not silently search a partially loaded library.
+  for(const book of catalog.books)await loadBook(book.id);
+  return catalog.entries.map(e=>getEntry(e.number));
+ }
+ return Object.freeze({catalog,loadBook,loadForNumber,getEntry,loadAllEntries});
+}
