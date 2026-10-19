@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-18",
+  "readerRelease": "opening-9b5e73347b22",
+  "scope": "Book/chapter browsing, paged exact search, finite reading sessions and offline navigation. No source text, audio or artwork changes.",
+  "automated": {
+    "nodeTests": 45,
+    "pythonTests": 8,
+    "result": "passed",
+    "additionalChecks": [
+      "Canonical Arabic/English integrity",
+      "Published book packs reproduce unchanged",
+      "Pinned Arabic and English candidate inventories reproduce unchanged",
+      "Patch whitespace",
+      "Packaged public files and offline hashes"
+    ]
+  },
+  "realBrowser": [
+    "Both existing English and Arabic blocks rendered exactly as the canonical source: eight blocks compared.",
+    "Book page opens both available hadith, with accessible source actions and an honest notice that chapter headings are unavailable.",
+    "Starting a session at Hadith 2, browsing back to Hadith 1 and returning home preserves Continue to Hadith 2, including after reload.",
+    "The packaged reader saved successfully, then reopened after its local HTTP server was stopped. Book browsing and exact search for intentions succeeded.",
+    "With that server still stopped, Cedar played across the natural 37.512-second boundary into Hadith 2 and the reading view followed. Playback remained active with no media error at 47 seconds.",
+    "Day/night appearance and the largest reading size were exercised. No horizontal overflow at 320px; the compact dock also fits a synthetic entry with no available recording."
+  ],
+  "syntheticLibrary": {
+    "generator": "tests/create-browser-fixture.mjs",
+    "totalEntries": 97,
+    "syntheticEntries": 95,
+    "books": 3,
+    "publication": "Local temporary directory only; source candidates and synthetic fixtures are excluded from Pages.",
+    "checks": [
+      "Book selector and source-ordered chapter routes, including a 51-entry chapter split into 30 and 21 results.",
+      "All 95 matching synthetic records reachable across search pages of 30, 30, 30 and 5; returning from the last result restores page 4 and its query.",
+      "A five-minute plan beginning at 100 contains [100,103,106,109,112], correctly crossing a book boundary and nonconsecutive labels.",
+      "Browsing onward to 115 leaves the session continuation at 112. Finish preserves separate unread marks; Next session begins at 115.",
+      "Unknown bookmarks are retained, invalid routes are explicit, and empty or mismatched chapter maps are rejected by automated checks."
+    ]
+  },
+  "limitations": [
+    "Desktop browser checks do not establish iPhone locked-screen behavior for this release.",
+    "Only the existing two evaluation entries are published. Chapter metadata and full-collection source alignment remain pending.",
+    "This verifies application behavior and exact rendering, not translation accuracy or generated speech fidelity."
+  ]
+}

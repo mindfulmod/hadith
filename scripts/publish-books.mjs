@@ -3,6 +3,7 @@ import {readFileSync,writeFileSync,mkdirSync,readdirSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {pathToFileURL} from 'node:url';
 import assert from 'node:assert/strict';
+import {validateChapters} from '../reader/navigation.mjs';
 export const digest=value=>createHash('sha256').update(value).digest('hex');
 export const objectHash=value=>digest(JSON.stringify(value));
 const root=new URL('../',import.meta.url);
@@ -62,9 +63,10 @@ export function buildBooks(source,ledger,{production=false}={}){
  for(const book of ledger.books){
   assert(/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(book.id),'Invalid book ID');
   assert(Number.isSafeInteger(book.number)&&book.number>0&&typeof book.title==='string'&&book.title.trim(),'Missing book context');
+  validateChapters(book);
   const selected=book.entryNumbers.map(n=>entries.find(e=>e.number===n));
   assert(selected.length,'Empty book');
-  const pack={schemaVersion:1,namespace:ledger.namespace,publication:mode,book:{id:book.id,number:book.number,title:book.title},sourceRecord,entries:selected};
+  const pack={schemaVersion:1,namespace:ledger.namespace,publication:mode,book:{id:book.id,number:book.number,title:book.title,...(book.chapters?{chapters:book.chapters}:{})},sourceRecord,entries:selected};
   const bytes=JSON.stringify(pack,null,2)+'\n',sha256=digest(bytes),path=`books/${book.id}-${sha256.slice(0,16)}.json`;
   files.set(path,bytes);
   catalog.books.push({...book,path,bytes:Buffer.byteLength(bytes),sha256});

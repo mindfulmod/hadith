@@ -8,7 +8,8 @@
     "content": "Keep raw Arabic, published translation, narration script and generated speech as separately versioned artifacts. Translation and audio approvals must identify the exact text hashes reviewed.",
     "numbering": "Namespace source IDs and edition references. Never assume one edition's book or hadith number equals another's.",
     "architecture": "Keep the static PWA. Split collection metadata, book text packs, search index and audio packs; load text and download audio independently. Preserve the persistent media element and waiting-worker update behavior.",
-    "publication": "Candidate import is not reader approval. Resolve source coverage and rights, then review complete narrator chains, narration, chapter context and any source notes separately. Preserve repeated narrations; do not deduplicate by meaning."
+    "publication": "Candidate import is not reader approval. Resolve source coverage and rights, then review complete narrator chains, narration, chapter context and any source notes separately. Preserve repeated narrations; do not deduplicate by meaning.",
+    "browsing": "Browsing outside the current session leaves its plan and continuation point intact. Only Start a session here, Next session, or an explicit restart replaces/restarts the plan; the user confirmed this on 18 October 2026."
   },
   "requirements": [
     {
@@ -31,15 +32,15 @@
     },
     {
       "id": "library-navigation-search",
-      "status": "in-progress",
-      "evidence": "reader/library.mjs; reader/search.mjs; tests/library.test.mjs; reader/content-library.mjs; reader/books/catalog.json; verified per-book loading with complete-search failure handling",
-      "remaining": "Book and chapter browser, stable reference map, pagination and a full-library index over reviewed content. Current UI searches only two available entries."
+      "status": "book-browser-and-pagination-implemented",
+      "evidence": "reader/navigation.mjs; reader/library.mjs; tests/navigation.test.mjs; research/navigation-verification.json",
+      "remaining": "Publish verified source chapter metadata and edition-specific reference maps; support any headings without report assignments found in the selected edition. The live sample still contains two entries and no recorded chapter headings. A dedicated full-library search index remains to be built; current exact search loads all available book packs before returning results."
     },
     {
       "id": "session-planning",
-      "status": "partial",
-      "evidence": "reader/session.mjs",
-      "remaining": "Replace opening-sample copy and two-entry assumptions; start new sessions from the actual continuation point; handle collection end and unavailable book packs."
+      "status": "implemented-for-reviewed-catalog-order",
+      "evidence": "reader/session.mjs; reader/reader.js; tests/navigation.test.mjs; research/navigation-verification.json",
+      "remaining": "iPhone acceptance of the new browsing/session separation. Full-library audio sessions remain separate work. Browser verification used clearly labelled synthetic records to test cross-book plans and collection end without publishing unreviewed hadith."
     },
     {
       "id": "personal-backup",
@@ -62,7 +63,7 @@
     {
       "id": "production-testing",
       "status": "in-progress",
-      "evidence": "tests/; .github/workflows/reader-checks.yml",
+      "evidence": "53 automated checks (45 Node, 8 Python); research/navigation-verification.json; .github/workflows/reader-checks.yml",
       "remaining": "Meaningful real-browser coverage, accessibility audit, keyboard/screen reader review, optional iPhone full-place/settings restore and locked-screen/interruption acceptance after final architecture changes. Default iPhone backup export and merge restore are confirmed. Deploy checks gate publishing."
     },
     {
@@ -77,7 +78,7 @@
     "Build an edition-specific inventory for the alternative Arabic witness and resolve its duplicated and suffixed labels before comparing coverage.",
     "Resolve the Arabic candidate gaps against another witness without silently combining editions.",
     "Obtain complete English source coverage and explicit offline/narration permissions; request #4160 is posted.",
-    "Build book/chapter navigation and selective offline packs on the verified book loader.",
+    "Build selective offline text/audio packs on the verified book loader; apply the implemented navigation to reviewed collection metadata.",
     "Complete independent translation and generated-audio reviews before claiming production content."
   ],
   "sourceResearch": [

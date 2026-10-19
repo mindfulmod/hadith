@@ -1,20 +1,57 @@
 import {searchEntries} from './search.mjs';
-import {escapeHTML} from './source-format.mjs';
-export function searchForm(count){return `<form id="library-search" role="search"><label for="search-query">Find a hadith</label><div class="search-controls"><input id="search-query" type="search" maxlength="200" placeholder="A phrase or hadith number" autocomplete="off" spellcheck="false" aria-describedby="search-help"><button class="primary" type="submit">Search</button></div><p id="search-help" class="sample-note">Search the ${count} available hadith, including narrator chains. Phrases match in order; English ignores case.</p></form><section id="search-results" aria-label="Search results" hidden><p id="search-summary" role="status"></p><div id="search-matches"></div><button id="search-clear" class="text-button" type="button">Clear search</button></section>`;}
+import {escapeHTML as escape} from './source-format.mjs';
+import {pageItems,bookRoute} from './navigation.mjs';
+const countLabel=(count,singular,plural=singular+'s')=>`${count} ${count===1?singular:plural}`;
+export function entryLink(entry,state){return `<a class="entry-link" href="#read/${entry.number}"><span class="entry-num">${String(entry.number).padStart(2,'0')}</span><span>Hadith ${entry.number}<small>${escape(entry.book)}</small></span><span>${state.finished.includes(entry.number)?'Read ✓':'→'}</span></a>`;}
+export function pagination(page,base,label='entries'){
+ if(page.pages<2)return '';
+ return `<nav class="list-pages" aria-label="${label} pages">${page.page>1?`<a href="${base}/page/${page.page-1}" rel="prev">← Previous</a>`:'<span></span>'}<span>Page ${page.page} of ${page.pages}</span>${page.page<page.pages?`<a href="${base}/page/${page.page+1}" rel="next">Next →</a>`:'<span></span>'}</nav>`;
+}
+export function collectionView(catalog,state,requestedPage=1){
+ const page=pageItems(catalog.books,requestedPage,20),last=catalog.entries.find(e=>e.number===state.last);
+ return `<section class="collection library-home"><p class="eyebrow">SAHIH AL-BUKHARI</p><h1>A collection to<br>return to.</h1><p class="intro">Browse in book order, or find the exact words you remember.</p><p class="availability">${countLabel(catalog.entries.length,'hadith','hadith')} available · ${countLabel(catalog.books.length,'book')}</p>${last&&Object.hasOwn(state.positions,last.number)?`<aside class="collection-place" aria-label="Last reading place"><small>Your last reading place</small><a href="#read/${last.number}"><strong>Hadith ${last.number}</strong><span>Return to reading →</span></a><p>${escape(last.book)}</p></aside>`:''}${searchForm(catalog.entries.length)}<div id="collection-entries"><div class="library-section-heading"><h2>Books</h2><span>In source order</span></div>${catalog.books.length>1?`<form id="book-jump" class="book-jump"><label for="book-select">Go to a book</label><div class="search-controls"><select id="book-select" name="book">${catalog.books.map(b=>`<option value="${escape(b.id)}">${b.number}. ${escape(b.title)}</option>`).join('')}</select><button type="submit">Open</button></div></form>`:''}<ol class="book-list" start="${page.start}">${page.items.map(book=>{const read=book.entryNumbers.filter(n=>state.finished.includes(n)).length;return `<li><a class="book-link" href="${bookRoute(book)}"><span class="book-number">${String(book.number).padStart(2,'0')}</span><span><strong>${escape(book.title)}</strong><small>${countLabel(book.entryNumbers.length,'hadith','hadith')} available${read?' · '+read+' marked as read':''}</small></span><span aria-hidden="true">→</span></a></li>`;}).join('')}</ol>${pagination(page,'#collection','Book')}<p class="review-note">${catalog.publication==='evaluation'?'This opening sample is still under review. Further entries will appear after source verification.':'Only the text available in this release is listed.'}</p></div></section>`;
+}
+export function bookView(catalog,state,route){
+ const {book,chapter}=route,numbers=chapter?chapter.entryNumbers:book.entryNumbers;
+ const entries=numbers.map(n=>catalog.entries.find(e=>e.number===n)),page=pageItems(entries,route.page);
+ const chapters=book.chapters||[];
+ return `<section class="collection book-detail"><nav class="library-breadcrumb" aria-label="Collection location"><a href="#collection">← Collection</a>${chapter?`<a href="${bookRoute(book)}">Book ${book.number}</a>`:''}</nav><p class="eyebrow">BOOK ${String(book.number).padStart(2,'0')} · SAHIH AL-BUKHARI</p><h1>${escape(chapter?.title||book.title)}</h1>${chapter?`<p class="intro">${escape(book.title)}</p>`:''}<p class="availability">${countLabel(numbers.length,'hadith','hadith')} available${chapters.length?' · '+countLabel(chapters.length,'chapter'):''}</p><div class="book-actions"><a class="primary" href="#read/${numbers[0]}">Read from Hadith ${numbers[0]} <span aria-hidden="true">→</span></a><button data-start-session="${numbers[0]}">Start a session here</button></div><p class="sample-note">Browse freely. Starting a session sets a new ${state.minutes}-minute reading plan from this point, finishing at a complete hadith.</p>${chapters.length&&!chapter?`<details class="chapter-index"><summary>Chapters <span>${chapters.length}</span></summary><ol>${chapters.map(c=>`<li><a href="${bookRoute(book,c)}"><span>${escape(c.title)}</span><small>${countLabel(c.entryNumbers.length,'hadith','hadith')} →</small></a></li>`).join('')}</ol></details>`:''}<div class="library-section-heading"><h2>${chapter?'In this chapter':'Available hadith'}</h2><span>${page.start}–${page.end} of ${page.total}</span></div>${page.items.map(e=>entryLink(e,state)).join('')}${pagination(page,bookRoute(book,chapter),'Hadith')}${!chapters.length?'<p class="review-note">Chapter headings are not yet available in this sample. The complete source references remain with each hadith.</p>':''}</section>`;
+}
+export function savedView(catalog,state,requestedPage=1){
+ const entries=catalog.entries.filter(e=>state.saved.includes(e.number)),page=pageItems(entries,requestedPage);
+ const unavailable=state.saved.length-entries.length;
+ return `<section class="collection"><p class="eyebrow">YOUR BOOKMARKS</p><h1>Saved for<br>another moment.</h1><p class="intro">Kept on this device, in collection order.</p>${page.items.length?page.items.map(e=>entryLink(e,state)).join(''):'<p>No available bookmarks yet. Use Save beside a hadith to keep it here.</p><a class="primary" href="#collection">Browse the collection →</a>'}${pagination(page,'#saved','Bookmark')}${unavailable?`<p class="review-note">${countLabel(unavailable,'saved reference')} ${unavailable===1?'is':'are'} not available in this release. ${unavailable===1?'It remains':'They remain'} in your backup.</p>`:''}</section>`;
+}
+export function mountBookJump(){
+ const form=document.querySelector('#book-jump');
+ if(form)form.onsubmit=event=>{event.preventDefault();location.hash='#book/'+form.elements.book.value;};
+}
+export function searchForm(count){return `<form id="library-search" role="search"><label for="search-query">Find a hadith</label><div class="search-controls"><input id="search-query" type="search" maxlength="200" placeholder="A phrase or hadith number" autocomplete="off" spellcheck="false" aria-describedby="search-help"><button class="primary" type="submit">Search</button></div><p id="search-help" class="sample-note">Search the ${count} available hadith, including narrator chains. Phrases match in order; English ignores case.</p></form><section id="search-results" aria-label="Search results" hidden><p id="search-summary" role="status" tabindex="-1"></p><div id="search-matches"></div><nav id="search-pages" class="list-pages" aria-label="Search result pages" hidden><button type="button" id="search-previous">← Previous</button><span id="search-page"></span><button type="button" id="search-next">Next →</button></nav><button id="search-clear" class="text-button" type="button">Clear search</button></section>`;}
+// In-memory only: Back to Collection restores the last search; closing/reloading clears it.
+let rememberedSearch={query:'',page:1};
 export function mountSearch(loadEntries){
  const form=document.querySelector('#library-search');if(!form)return;
  const input=form.querySelector('input'),results=document.querySelector('#search-results'),summary=document.querySelector('#search-summary'),matches=document.querySelector('#search-matches'),browse=document.querySelector('#collection-entries');
- let request=0;
- const clear=()=>{request++;form.removeAttribute('aria-busy');input.value='';results.hidden=true;browse.hidden=false;input.focus();};
- document.querySelector('#search-clear').onclick=clear;
- input.addEventListener('input',()=>{request++;form.removeAttribute('aria-busy');if(!input.value){results.hidden=true;browse.hidden=false;}else if(!results.hidden){matches.innerHTML='';summary.textContent='Press Search to find the updated phrase.'}});
- form.addEventListener('submit',async event=>{
-  event.preventDefault();if(!input.value.trim()){clear();return;}
-  const query=input.value,version=++request;results.hidden=false;browse.hidden=true;matches.innerHTML='';summary.textContent='Loading the available text…';form.setAttribute('aria-busy','true');
+ const pager=document.querySelector('#search-pages'),previous=document.querySelector('#search-previous'),next=document.querySelector('#search-next');
+ let request=0,loaded=null,query='',page=1;
+ const clear=()=>{request++;rememberedSearch={query:'',page:1};form.removeAttribute('aria-busy');input.value='';results.hidden=true;browse.hidden=false;input.focus();};
+ const display=(focus=false)=>{
+  const found=searchEntries(loaded,query,30,(page-1)*30),pages=Math.max(1,Math.ceil(found.total/30));
+  if(page>pages){page=pages;display(focus);return;}
+  rememberedSearch={query,page};
+  summary.textContent=found.total?`${found.total} ${found.total===1?'hadith matches':'hadith match'}. Showing ${(page-1)*30+1}–${(page-1)*30+found.results.length}.`:'No matches in the available text. Try a shorter phrase or a hadith number.';
+  matches.innerHTML=found.results.map(({entry,language,text})=>`<a class="search-result" href="#read/${entry.number}"><strong>Hadith ${entry.number}<span aria-hidden="true"> →</span></strong><p ${language==='ar'?'lang="ar" dir="rtl"':''}>${escape(text)}</p><small>${escape(entry.book)} · Complete hadith and sources</small></a>`).join('');
+  pager.hidden=pages<=1;previous.disabled=page===1;next.disabled=page===pages;document.querySelector('#search-page').textContent=`Page ${page} of ${pages}`;
+  if(focus){summary.focus({preventScroll:true});summary.scrollIntoView({block:'start'});}
+ };
+ const search=async(value,requestedPage=1)=>{
+  const version=++request;query=value;page=requestedPage;results.hidden=false;browse.hidden=true;pager.hidden=true;matches.innerHTML='';summary.textContent='Loading the available text…';form.setAttribute('aria-busy','true');
   let entries;try{entries=await loadEntries();}catch{if(version===request&&form.isConnected){form.removeAttribute('aria-busy');summary.textContent='Search could not load all available text. Reconnect and press Search to try again.';}return;}
-  if(version!==request||!form.isConnected)return;form.removeAttribute('aria-busy');
-  const found=searchEntries(entries,query);
-  summary.textContent=found.total?`${found.total} ${found.total===1?'hadith matches':'hadith match'}${found.total>found.results.length?`; showing the first ${found.results.length}`:''}.`:'No matches in the available text. Try a shorter phrase or a hadith number.';
-  matches.innerHTML=found.results.map(({entry,language,text})=>`<a class="search-result" href="#read/${entry.number}"><strong>Hadith ${entry.number}<span aria-hidden="true"> →</span></strong><p ${language==='ar'?'lang="ar" dir="rtl"':''}>${escapeHTML(text)}</p><small>Open the complete hadith and sources</small></a>`).join('');
- });
+  if(version!==request||!form.isConnected)return;loaded=entries;form.removeAttribute('aria-busy');display();
+ };
+ document.querySelector('#search-clear').onclick=clear;
+ previous.onclick=()=>{page--;display(true);};next.onclick=()=>{page++;display(true);};
+ input.addEventListener('input',()=>{request++;form.removeAttribute('aria-busy');pager.hidden=true;if(!input.value){rememberedSearch={query:'',page:1};results.hidden=true;browse.hidden=false;}else if(!results.hidden){matches.innerHTML='';summary.textContent='Press Search to find the updated phrase.';}});
+ form.addEventListener('submit',event=>{event.preventDefault();if(!input.value.trim()){clear();return;}search(input.value);});
+ if(rememberedSearch.query){input.value=rememberedSearch.query;search(rememberedSearch.query,rememberedSearch.page);}
 }

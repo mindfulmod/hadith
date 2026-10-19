@@ -1,6 +1,6 @@
 /* Search normalization is only an index operation. Displayed source is untouched. */
 export function searchKey(text){return String(text).normalize('NFC').toLocaleLowerCase('en').replace(/[‘’]/g,"'").replace(/\s+/gu,' ').trim();}
-export function searchEntries(entries,input,limit=50){
+export function searchEntries(entries,input,limit=50,offset=0){
  const query=String(input).trim().slice(0,200).replace(/^"(.*)"$/s,'$1');
  if(!query)return {total:0,results:[]};
  const reference=query.match(/^(?:(?:sahih\s+al[- ]?bukhari|bukhari|hadith)\s*|#)?(\d+)$/i);
@@ -12,5 +12,5 @@ export function searchEntries(entries,input,limit=50){
    if(text!==undefined){matches.push({entry:e,language,text});break;}
   }
  }
- return {total:matches.length,results:matches.slice(0,limit)};
+ return {total:matches.length,results:matches.slice(Number.isSafeInteger(offset)&&offset>0?offset:0,(Number.isSafeInteger(offset)&&offset>0?offset:0)+limit)};
 }

@@ -85,3 +85,12 @@ test('a stalled index request is aborted rather than leaving startup pending ind
  const f=fixture();
  await assert.rejects(createContentLibrary({files:f.files,timeoutMs:5,fetcher:(url,{signal})=>new Promise((resolve,reject)=>signal.addEventListener('abort',()=>reject(new Error('Timed out')),{once:true}))}),/Timed out/);
 });
+
+
+test('catalogued chapter divisions must match the exact downloaded book context',async()=>{
+ const f=fixture(),catalog=JSON.parse(f.responses.get('books/catalog.json'));
+ catalog.books[0].chapters=[{id:'first',title:'Synthetic test heading',entryNumbers:[1,2]}];
+ const body=JSON.stringify(catalog);f.responses.set('books/catalog.json',body);Object.assign(f.files.find(file=>file.path==='books/catalog.json'),{bytes:Buffer.byteLength(body),sha256:digest(body)});
+ const library=await setup(f);await assert.rejects(library.loadForNumber(1),/Chapter context mismatch/);assert.equal(library.getEntry(1),undefined);
+ catalog.books[0].chapters[0].entryNumbers=[2,1];const bad=JSON.stringify(catalog);f.responses.set('books/catalog.json',bad);Object.assign(f.files.find(file=>file.path==='books/catalog.json'),{bytes:Buffer.byteLength(bad),sha256:digest(bad)});await assert.rejects(setup(f),/Chapter order/);
+});

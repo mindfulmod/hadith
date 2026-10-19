@@ -51,7 +51,7 @@ test('returning reader migrates into a finite session without changing reading o
  const entries=[entry(1,40),entry(2,50)];
  const legacy={last:2,finished:[1],audio:{seconds:25},positions:{2:323}};
  const session=resolveSession(entries,undefined,5,legacy.last);
- assert.deepEqual(session,{numbers:[1,2],cursor:2,ended:false});
+ assert.deepEqual(session,{numbers:[2],cursor:2,ended:false});
  assert.deepEqual(legacy,{last:2,finished:[1],audio:{seconds:25},positions:{2:323}});
  const expanded=[...entries,entry(3,400)];
  assert.deepEqual(resolveSession(expanded,session,10,1),session);
@@ -59,7 +59,7 @@ test('returning reader migrates into a finite session without changing reading o
 test('invalid saved sessions recover to an ordered whole-hadith plan',()=>{
  const entries=[entry(1,20),entry(2,20)];
  for(const bad of [null,{}, {numbers:[2,1]}, {numbers:[1,1]}, {numbers:[1,999]}, {numbers:[]}, {numbers:'12'}]) {
-  assert.deepEqual(resolveSession(entries,bad,5,2),{numbers:[1,2],cursor:2,ended:false});
+  assert.deepEqual(resolveSession(entries,bad,5,2),{numbers:[2],cursor:2,ended:false});
  }
  assert.deepEqual(resolveSession(entries,{numbers:[1,2],cursor:999,ended:true},5,1),{numbers:[1,2],cursor:1,ended:true});
 });
