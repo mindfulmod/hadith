@@ -1,0 +1,41 @@
+{
+  "id": "islamhouse-bukhari-epub-2010",
+  "status": "candidate-not-approved",
+  "retrievedAt": "2026-10-18",
+  "listingURL": "https://islamhouse.com/en/books/70510",
+  "downloadURL": "https://d1.islamhouse.com/data/en/ih_books/ebook/en_translation_of_sahih_bukhari.epub",
+  "declaredTranslator": "M. Muhsin Khan in EPUB metadata and main introduction",
+  "creditConflict": "Acknowledgement names Abdul Hamid Siddiqui; metadata and main introduction name M. Muhsin Khan. Unresolved.",
+  "sourceOrganization": "IslamHouse.com; listing credits Ruh al-Islam",
+  "rights": {
+    "policy": {
+      "repository": "https://github.com/IslamHouse-API/multilingual-quran-hadith-islamic-content-database-api-hub",
+      "commit": "2d8afef6ad3b994f2e21f06671497157b0b8cf1e",
+      "url": "https://raw.githubusercontent.com/IslamHouse-API/multilingual-quran-hadith-islamic-content-database-api-hub/2d8afef6ad3b994f2e21f06671497157b0b8cf1e/README.md",
+      "sha256": "eece3db0ad94aac316b21a1a569001db2b5dda6bee602672a80f6d5c91afc31d",
+      "finding": "The current official developer policy expressly permits downloading, unchanged republication, offline storage, and app use with attribution/version retention and updates. It says prior permission is not required when the policy is followed. This is content-policy evidence, not treating the repository MIT license as a license to third-party books.",
+      "scopeNotes": "Retain the EPUB-specific prohibition on commercial use. This project is personal/noncommercial. Translator-credit conflict, completeness, exact source preservation and Arabic-chain mapping remain unresolved; AI narration has not been approved as accurate."
+    },
+    "constraints": [
+      "Unchanged wording and source attribution.",
+      "Preserve source version and update when the distributor releases corrections.",
+      "Retain the EPUB-specific prohibition on commercial copying/use."
+    ],
+    "scope": "Unchanged noncommercial source staging for this personal app; no claim of translation accuracy, complete chains or approved AI narration."
+  },
+  "files": [
+    {
+      "path": "source.epub",
+      "bytes": 1379875,
+      "sha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c"
+    },
+    {
+      "path": "upstream-policy.md",
+      "bytes": 19703,
+      "sha256": "eece3db0ad94aac316b21a1a569001db2b5dda6bee602672a80f6d5c91afc31d"
+    }
+  ],
+  "attribution": "Sahih al-Bukhari, digital English translation distributed by IslamHouse.com. EPUB metadata and main introduction credit M. Muhsin Khan; acknowledgement instead credits Abdul Hamid Siddiqui. EPUB date: 2010. Credits are unresolved; source bytes retained unchanged.",
+  "readerEligible": false,
+  "audit": "research/english-source-audit.json"
+}

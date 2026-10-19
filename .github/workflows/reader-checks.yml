@@ -25,8 +25,11 @@ jobs:
         run: |
           node reader/check-content.mjs
           node scripts/import-bukhari.mjs --check > /dev/null
+          python3 scripts/import-english.py --check > /dev/null
       - name: Test reader, source gates, backups and release hashes
         run: node --test tests/*.test.mjs
+      - name: Test English source intake fidelity
+        run: PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p 'test_*.py'
       - name: Check patch formatting
         run: git diff --check
       - name: Assemble verified public files
