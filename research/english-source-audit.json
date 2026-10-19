@@ -262,5 +262,53 @@
       "Seven report headings are followed only by a narrator introduction. Their missing narration bodies were confirmed in original EPUB markup.",
       "The source contains additional transcription defects; the inventory does not certify all remaining bodies as correct."
     ]
+  },
+  "pdfComparison": {
+    "downloadURL": "https://d1.islamhouse.com/data/en/ih_books/single/en_Sahih_Al-Bukhari.pdf",
+    "pages": 1700,
+    "coverCredit": "Translator: M. Muhsin Khan; edited by Mika’il al-Almany; cover version 0910112346244624-21",
+    "purpose": "Read-only comparison of the EPUB omissions, not a replacement reader source.",
+    "sha256": "a2510ed4904780ebfcd46e038740bd6b7e37dfb9b227893c6048a3b936db8bc3",
+    "bytes": 6063181,
+    "method": "Extracted text using pypdf, then rendered and visually inspected the complete cover and all seven relevant pages. Page numbers below are one-based PDF pages and match printed page labels.",
+    "checkedOmissions": [
+      {
+        "reference": "3.29.74",
+        "pdfPage": 422,
+        "visibleResult": "Narrator followed by ???, then reference 75."
+      },
+      {
+        "reference": "4.54.523",
+        "pdfPage": 766,
+        "visibleResult": "Narrator followed by reference 524; no narration body."
+      },
+      {
+        "reference": "6.60.189",
+        "pdfPage": 1020,
+        "visibleResult": "Narrator followed by ???, then reference 190."
+      },
+      {
+        "reference": "6.60.392",
+        "pdfPage": 1081,
+        "visibleResult": "Narrator followed by reference 393; no narration body."
+      },
+      {
+        "reference": "7.64.267",
+        "pdfPage": 1199,
+        "visibleResult": "Narrator followed by ???, then reference 268."
+      },
+      {
+        "reference": "8.76.502",
+        "pdfPage": 1449,
+        "visibleResult": "Narrator followed by ???, then reference 503."
+      },
+      {
+        "reference": "8.78.642",
+        "pdfPage": 1484,
+        "visibleResult": "Narrator followed by ???, then reference 643."
+      }
+    ],
+    "additionalFinding": "Page 422 also visibly contains a truncated body at 3.29.73. The seven empty bodies are not an exhaustive list of source defects.",
+    "conclusion": "The PDF shares all seven checked omissions. It cannot repair this EPUB or independently establish full translation fidelity. Keep both as comparison witnesses; seek a more complete authoritative edition."
   }
 }
