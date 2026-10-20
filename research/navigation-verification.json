@@ -40,5 +40,14 @@
     "Desktop browser checks do not establish iPhone locked-screen behavior for this release.",
     "Only the existing two evaluation entries are published. Chapter metadata and full-collection source alignment remain pending.",
     "This verifies application behavior and exact rendering, not translation accuracy or generated speech fidelity."
-  ]
+  ],
+  "deviceAcceptance": {
+    "status": "user-confirmed",
+    "reportedAt": "2026-10-20",
+    "device": "iPhone 17, iOS 26 (point release not supplied)",
+    "readerRelease": "opening-9b5e73347b22",
+    "test": "After opening the update page, open Hadith 2 and choose Start a session here; browse to Hadith 1; return to the session and use Continue.",
+    "response": "Yes, my session stays at Hadith 2",
+    "scope": "Confirms browsing/session separation on the user’s iPhone. It is not a new audio, locked-screen or optional full-backup-restore test."
+  }
 }

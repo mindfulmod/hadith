@@ -1,76 +1,83 @@
 {
-  "status": "preliminary-candidate-audit-not-reader-approved",
+  "status": "lossless-inventory-with-selected-witness-comparisons-not-reader-approved",
   "upstreamURI": "0256Bukhari.Sahih.JK000110-ara1.completed",
   "sourceURL": "https://raw.githubusercontent.com/OpenITI/0275AH/44e1c36738a2bf5c14dafa232a6ae1891e6171cd/data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.JK000110-ara1.completed",
   "commit": "44e1c36738a2bf5c14dafa232a6ae1891e6171cd",
   "sha256": "69e95684acfde24171d29dd7ba43ff2c8f9b54ade5e3ab0a73899c06671082b7",
   "bytes": 5524762,
-  "editionMetadata": "Mustafa Dib al-Bugha, Dar Ibn Kathir / al-Yamama, Beirut, third edition, 1407/1987, six volumes; as recorded in the digital header.",
-  "method": "Count multiline markers matching ^# (\\d+) (?=\\S). This deliberately broad inventory includes mis-tagged chapter headings and suffixed records; it is not a hadith count.",
+  "editionMetadata": "Mustafa Dib al-Bugha, Dar Ibn Kathir / al-Yamama, Beirut, third edition, 1407/1987, six volumes; from the digital header.",
+  "method": "scripts/import-bukhari-jk.py classifies every raw source byte exactly once as front matter, section context, heading context or a numbered report span. It preserves original labels and all intervening paragraphs. A report span is a structural unit, not a certified complete narration.",
+  "inventory": "content/staging/bukhari-ar-jk/catalog.json",
   "audit": {
-    "numberedMarkers": 7135,
-    "distinctNumericLabels": 7124,
-    "observedRange": [
-      1,
-      7124
-    ],
-    "absentNumericLabels": [],
-    "repeatedLabels": [
+    "sourceBytes": 5524762,
+    "coveredBytes": 5524762,
+    "sectionCount": 100,
+    "headingCount": 3965,
+    "reportCount": 7129,
+    "uniqueNumericLabels": 7124,
+    "missingNumericLabels": [],
+    "duplicateReferences": [
       {
-        "number": 2,
-        "count": 2
-      },
-      {
-        "number": 8,
-        "count": 2
-      },
-      {
-        "number": 23,
-        "count": 2
-      },
-      {
-        "number": 39,
-        "count": 2
-      },
-      {
-        "number": 192,
-        "count": 2
-      },
-      {
-        "number": 372,
-        "count": 2
-      },
-      {
-        "number": 619,
-        "count": 2
-      },
-      {
-        "number": 3905,
-        "count": 2
-      },
-      {
-        "number": 4537,
-        "count": 2
-      },
-      {
-        "number": 4626,
-        "count": 2
-      },
-      {
-        "number": 6705,
+        "label": "3905",
         "count": 2
       }
     ],
-    "topLevelHeadings": 100
+    "suffixedReferences": [
+      "619 م",
+      "4537 م",
+      "4626 م",
+      "6705 م"
+    ],
+    "numericChapterHeadings": [
+      {
+        "line": 4808,
+        "label": "39",
+        "text": "# 39 باب حد إتمام الركوع والاعتدال فيه والطمأنينة"
+      },
+      {
+        "line": 20679,
+        "label": "2",
+        "text": "# 2 باب قول الله تعالى @QB@ وإذ قال ربك للملائكة إني جاعل في الأرض خليفة"
+      },
+      {
+        "line": 30190,
+        "label": "192",
+        "text": "# 192 باب قوله @QB@ إلا من استرق السمع فأتبعه شهاب مبين @QE@"
+      },
+      {
+        "line": 32250,
+        "label": "372",
+        "text": "# 372 ms1348 باب قوله تعالى @QB@ من بعدي اسمه أحمد @QE@"
+      },
+      {
+        "line": 41074,
+        "label": "23",
+        "text": "# 23 باب الدعاء غير مستقبل القبلة"
+      },
+      {
+        "line": 43213,
+        "label": "8",
+        "text": "# 8 باب إذا أعتق في الكفارة لمن يكون ولاؤه"
+      }
+    ],
+    "emptyRecords": [],
+    "limitations": [
+      "A complete byte inventory is not a certification of Arabic transcription or narration completeness.",
+      "Section numbers and report labels belong to this edition; they are not a cross-edition reference map.",
+      "Heading context includes all intervening paragraphs. It is not silently folded into a report.",
+      "Upstream records a 2023 cleaning that removed editorial paratext and inconsistent heading annotation."
+    ]
   },
   "findings": [
-    "The numeric label range differs from the current Shamela candidate. Do not use number equality as an edition mapping.",
-    "Six repeated numeric labels occur in mis-tagged chapter heading lines (2, 8, 23, 39, 192, 372).",
-    "Additional records use the Arabic suffix م at 619, 4537, 4626 and 6705. Preserve these as distinct candidates pending edition review.",
-    "Two different narrator introductions are labelled 3905. This needs comparison against the printed edition; do not deduplicate.",
-    "A continuous numeric range does not prove complete narration bodies, full chains, correct transcription or complete chapter context.",
-    "Next: build an edition-specific span inventory preserving headers, suffixed IDs, duplicate references and witness differences. Compare flagged areas against a printed witness before any reader import."
+    "Every one of the 5,524,762 source bytes is accounted for with contiguous hashed UTF-8 spans.",
+    "The 7,135 broad numeric markers comprise 7,129 report spans and six chapter headings using report syntax.",
+    "There are 7,124 distinct numeric report labels, four additional suffixed labels and a second occurrence of 3905. No absent numeric labels or empty heuristic bodies were detected; that does not establish text completeness.",
+    "The two 3905 occurrences contain distinct passages; printed-witness comparison relates them to separately labelled 4134 and 4135. Both raw records are retained.",
+    "JK 3906 includes a passage labelled separately as 4137 in the comparison witness. Report counts cannot be aligned by a constant numeric offset.",
+    "Upstream flags random characters and inconsistent heading continuation. Its cleaning removed editorial paratext; preserve the source as evidence and check boundaries before publishing any material.",
+    "The 2002 comparison witness has different numbering and is not the edition named in the digital header."
   ],
+  "witnessObservations": "research/arabic-reference-audit.json",
   "readerEligible": false,
   "licenseEvidence": "https://kitab-project.org/docs/openITI"
 }

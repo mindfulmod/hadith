@@ -1,0 +1,377 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-20",
+  "status": "observed-reference-relationships-pending-independent-review",
+  "readerEligible": false,
+  "sources": [
+    {
+      "sourceId": "openiti-bukhari-shamela1681",
+      "manifest": "content/sources/openiti-bukhari/manifest.json",
+      "catalog": "content/staging/bukhari-ar/catalog.json",
+      "sourceURL": "https://raw.githubusercontent.com/OpenITI/0275AH/44e1c36738a2bf5c14dafa232a6ae1891e6171cd/data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+      "sha256": "16f95173b9ea1927b577ff85dc7e2a8351b8287e4ea9863782c4c5fc87ac8132"
+    },
+    {
+      "sourceId": "openiti-bukhari-jk000110",
+      "manifest": "content/sources/openiti-bukhari-jk/manifest.json",
+      "catalog": "content/staging/bukhari-ar-jk/catalog.json",
+      "sourceURL": "https://raw.githubusercontent.com/OpenITI/0275AH/44e1c36738a2bf5c14dafa232a6ae1891e6171cd/data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.JK000110-ara1.completed",
+      "sha256": "69e95684acfde24171d29dd7ba43ff2c8f9b54ade5e3ab0a73899c06671082b7"
+    }
+  ],
+  "comparisonWitness": {
+    "id": "dar-ibn-kathir-2002-waq79565",
+    "url": "https://archive.org/download/waq79565/79565.pdf",
+    "bytes": 45304371,
+    "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+    "pageCount": 1944,
+    "edition": "Dar Ibn Kathir, first edition 1423 AH / 2002, as printed on PDF page 4. This is the comparison witness linked by the OpenITI JK annotator; it is not the 1987 edition described in the digital header.",
+    "pageConvention": "One-based PDF page numbers; checked body pages also display those printed page numbers.",
+    "rights": "The colophon reserves publication rights. This PDF is used as a read-only comparison witness; it is not copied into the reader or deployed site.",
+    "reviewMethod": "Codex AI visual inspection of complete rendered pages and comparison with pinned raw Arabic spans. This is research evidence, not independent human or scholarly approval.",
+    "inspectedPages": [
+      1,
+      2,
+      3,
+      4,
+      112,
+      113,
+      280,
+      281,
+      835,
+      1013,
+      1014,
+      1015
+    ]
+  },
+  "findings": [
+    {
+      "id": "combined-408-409",
+      "kind": "combined-numbering",
+      "pages": [
+        112
+      ],
+      "printedReferences": [
+        "408–409"
+      ],
+      "digital": [
+        {
+          "sourceId": "openiti-bukhari-shamela1681",
+          "recordId": "openiti-bukhari-shamela1681:b8:r60",
+          "reference": "408",
+          "occurrence": 1,
+          "offsetUnit": "JavaScript UTF-16 code units; end exclusive",
+          "start": 207566,
+          "end": 207893,
+          "sha256": "c1f4a9ca6bbbcdc8b5fdedc4b96931fc23039461bd038134b4fa4d2b08af5501",
+          "contains": [
+            "أبا هريرة، وأبا سعيد حدثاه"
+          ]
+        }
+      ],
+      "absentNumericLabels": [
+        409
+      ],
+      "finding": "The witness prints 408–409 above one chain and passage. The corresponding passage is present in the digital record labelled 408, naming both Abu Hurayra and Abu Said. The missing 409 marker alone is not evidence of missing narration text.",
+      "action": "Retain the single raw passage; a future reviewed reference map can associate both printed labels without duplicating text."
+    },
+    {
+      "id": "combined-410-411",
+      "kind": "combined-numbering",
+      "pages": [
+        112
+      ],
+      "printedReferences": [
+        "410–411"
+      ],
+      "digital": [
+        {
+          "sourceId": "openiti-bukhari-shamela1681",
+          "recordId": "openiti-bukhari-shamela1681:b8:r61",
+          "reference": "410",
+          "occurrence": 1,
+          "offsetUnit": "JavaScript UTF-16 code units; end exclusive",
+          "start": 207944,
+          "end": 208304,
+          "sha256": "719fb2f6bbec03addc8fc83ac34752b76a7f0608debb535260a128aed3120fcd",
+          "contains": [
+            "أبا هريرة، وأبا سعيد أخبراه"
+          ]
+        }
+      ],
+      "absentNumericLabels": [
+        411
+      ],
+      "finding": "The witness prints 410–411 above one chain and passage. Its corresponding digital passage is labelled 410 and includes both named narrators.",
+      "action": "Record the combined reference relationship; do not add a duplicate passage simply to fill label 411."
+    },
+    {
+      "id": "embedded-4137",
+      "kind": "embedded-following-report",
+      "pages": [
+        1015
+      ],
+      "printedReferences": [
+        "4136",
+        "4137"
+      ],
+      "digital": [
+        {
+          "sourceId": "openiti-bukhari-shamela1681",
+          "recordId": "openiti-bukhari-shamela1681:b64:r182",
+          "reference": "4136",
+          "occurrence": 1,
+          "offsetUnit": "JavaScript UTF-16 code units; end exclusive",
+          "start": 1915048,
+          "end": 1915859,
+          "sha256": "722bc795e8fa990a2932a205002c9ff4b6749f15b7748999e046d01782009710",
+          "contains": [
+            "وقال أبو الزبير",
+            "غزوة نجد صلاة الخوف"
+          ]
+        },
+        {
+          "sourceId": "openiti-bukhari-jk000110",
+          "recordId": "openiti-bukhari-jk000110:l26085",
+          "reference": "3906",
+          "occurrence": 1,
+          "offsetUnit": "UTF-8 bytes, end exclusive",
+          "start": 2954370,
+          "end": 2955708,
+          "sha256": "f6ec8ddb105727f68eb2b1c788509f9d527c0cf0817f00b704c2630030acd77e",
+          "contains": [
+            "وقال أبو الزبير",
+            "غزوة نجد صلاة الخوف"
+          ]
+        }
+      ],
+      "absentNumericLabels": [
+        4137
+      ],
+      "finding": "The witness gives the Abu al-Zubayr/Jabir passage a separate 4137 label after 4136. The corresponding passage appears at the end of Shamela 4136 and JK 3906, after the Musaddad note. Neither digital source has this same report boundary.",
+      "action": "Preserve the complete raw spans. Any later segmentation or reference mapping must explicitly account for the embedded passage and its source wording; do not append it a second time."
+    },
+    {
+      "id": "duplicate-jk-3905-first",
+      "kind": "duplicate-label-distinct-report",
+      "pages": [
+        1014
+      ],
+      "printedReferences": [
+        "4134"
+      ],
+      "digital": [
+        {
+          "sourceId": "openiti-bukhari-jk000110",
+          "recordId": "openiti-bukhari-jk000110:l26073",
+          "reference": "3905",
+          "occurrence": 1,
+          "offsetUnit": "UTF-8 bytes, end exclusive",
+          "start": 2952905,
+          "end": 2953146,
+          "sha256": "f0e912b1f330d00558186ded6f57456f75fe38633b66070c543645cd57011732",
+          "contains": [
+            "حدثنا أبو اليمان حدثنا شعيب"
+          ]
+        },
+        {
+          "sourceId": "openiti-bukhari-shamela1681",
+          "recordId": "openiti-bukhari-shamela1681:b64:r180",
+          "reference": "4134",
+          "occurrence": 1,
+          "offsetUnit": "JavaScript UTF-16 code units; end exclusive",
+          "start": 1914141,
+          "end": 1914293,
+          "sha256": "4f135a82bb8d20e75f88d8da8b8d0600477bb23517cee2c29218edb354270cbd",
+          "contains": [
+            "حدثنا أبو اليمان، حدثنا شعيب"
+          ]
+        }
+      ],
+      "finding": "The first JK record labelled 3905 has the short Abu al-Yaman/Shuayb report. The witness labels the corresponding report 4134; the Shamela candidate also labels it 4134.",
+      "action": "Keep this record separate from the second 3905 occurrence. This observation does not authorize renumbering the JK edition."
+    },
+    {
+      "id": "duplicate-jk-3905-second",
+      "kind": "duplicate-label-distinct-report",
+      "pages": [
+        1014,
+        1015
+      ],
+      "printedReferences": [
+        "4135"
+      ],
+      "digital": [
+        {
+          "sourceId": "openiti-bukhari-jk000110",
+          "recordId": "openiti-bukhari-jk000110:l26075",
+          "reference": "3905",
+          "occurrence": 2,
+          "offsetUnit": "UTF-8 bytes, end exclusive",
+          "start": 2953146,
+          "end": 2954370,
+          "sha256": "1ed4362502a54bfdd3ca2807797eeaca724f07bab8c3bd72533057c94da49d40",
+          "contains": [
+            "حدثنا إسماعيل قال حدثني أخي"
+          ]
+        },
+        {
+          "sourceId": "openiti-bukhari-shamela1681",
+          "recordId": "openiti-bukhari-shamela1681:b64:r181",
+          "reference": "4135",
+          "occurrence": 1,
+          "offsetUnit": "JavaScript UTF-16 code units; end exclusive",
+          "start": 1914293,
+          "end": 1915048,
+          "sha256": "53acb8fc1a081131003f14dde04bd00b2765b293a2070185380c9f5aeb236847",
+          "contains": [
+            "حدثنا إسماعيل، قال: حدثني أخي"
+          ]
+        }
+      ],
+      "finding": "The second JK record labelled 3905 has a different introduction and the longer account, corresponding to witness 4135, which continues onto page 1015. Shamela preserves that passage separately under 4135. The two JK occurrences are not duplicate copies of one body.",
+      "action": "Retain both unique source-span identities and their original duplicate label. Resolve the edition reference map before publication."
+    },
+    {
+      "id": "shamela-1161-1167-cluster",
+      "kind": "empty-and-misassigned-span",
+      "pages": [
+        280,
+        281
+      ],
+      "printedReferences": [
+        "1161",
+        "1162",
+        "1163",
+        "1164",
+        "1165",
+        "1166",
+        "1167"
+      ],
+      "digital": [
+        {
+          "sourceId": "openiti-bukhari-shamela1681",
+          "recordId": "openiti-bukhari-shamela1681:b19:r42",
+          "reference": "1161",
+          "occurrence": 1,
+          "offsetUnit": "JavaScript UTF-16 code units; end exclusive",
+          "start": 516249,
+          "end": 516262,
+          "sha256": "3134d50cdcf8b9dc0f4dc33d52a11cb4ad9367da533952a2cd97da0278d66941"
+        },
+        {
+          "sourceId": "openiti-bukhari-shamela1681",
+          "recordId": "openiti-bukhari-shamela1681:b19:r43",
+          "reference": "1162",
+          "occurrence": 1,
+          "offsetUnit": "JavaScript UTF-16 code units; end exclusive",
+          "start": 516262,
+          "end": 516271,
+          "sha256": "e11ba320a03b08e75fc9b7a7d5d99b16a8e0f66e93afa637f1ae20202c69b791"
+        },
+        {
+          "sourceId": "openiti-bukhari-shamela1681",
+          "recordId": "openiti-bukhari-shamela1681:b19:r44",
+          "reference": "1163",
+          "occurrence": 1,
+          "offsetUnit": "JavaScript UTF-16 code units; end exclusive",
+          "start": 516271,
+          "end": 516280,
+          "sha256": "f30ec79765500b5c08c6a579fa8d15d272046288338c0ec5efd21f902d115c77"
+        },
+        {
+          "sourceId": "openiti-bukhari-shamela1681",
+          "recordId": "openiti-bukhari-shamela1681:b19:r45",
+          "reference": "1164",
+          "occurrence": 1,
+          "offsetUnit": "JavaScript UTF-16 code units; end exclusive",
+          "start": 516280,
+          "end": 516289,
+          "sha256": "8bee010b0fb216bd5babe0f8346e402fa3a34218f8b060711a5ee8730f5720b3"
+        },
+        {
+          "sourceId": "openiti-bukhari-shamela1681",
+          "recordId": "openiti-bukhari-shamela1681:b19:r46",
+          "reference": "1165",
+          "occurrence": 1,
+          "offsetUnit": "JavaScript UTF-16 code units; end exclusive",
+          "start": 516289,
+          "end": 516298,
+          "sha256": "6b49398b40c4b11b6c597d92c7a0d58ccf91ed6e387c87018db871ac9517c6fa"
+        },
+        {
+          "sourceId": "openiti-bukhari-shamela1681",
+          "recordId": "openiti-bukhari-shamela1681:b19:r47",
+          "reference": "1167",
+          "occurrence": 1,
+          "offsetUnit": "JavaScript UTF-16 code units; end exclusive",
+          "start": 516298,
+          "end": 516516,
+          "sha256": "b01ca0d84168e54515be18f236a5b86ed72bb48d888e7fe92004c9e6eb3be1f9",
+          "contains": [
+            "حدثنا بشر بن الحكم، حدثنا سفيان"
+          ]
+        },
+        {
+          "sourceId": "openiti-bukhari-jk000110",
+          "recordId": "openiti-bukhari-jk000110:l6944",
+          "reference": "1108",
+          "occurrence": 1,
+          "offsetUnit": "UTF-8 bytes, end exclusive",
+          "start": 769014,
+          "end": 769408,
+          "sha256": "ab9459829f1a2ff837d4b2649f26b0fae6593d55552a45421126f354678f4b38",
+          "contains": [
+            "حدثنا بشر بن الحكم حدثنا سفيان"
+          ]
+        }
+      ],
+      "emptyNumericLabels": [
+        1161,
+        1162,
+        1163,
+        1164,
+        1165
+      ],
+      "absentNumericLabels": [
+        1166
+      ],
+      "finding": "Shamela contains five consecutive empty spans at 1161–1165, no 1166 marker, then places the Bashr/Sufyan/Aisha passage under 1167. The witness labels the corresponding passage 1161 on page 280, with wording differences including the visible phrase سنة الفجر. Page 281 has distinct bodies under 1162–1166 and begins a different 1167 report. JK 1108 contains the corresponding Bashr/Sufyan/Aisha passage.",
+      "action": "Treat this as a defective local sequence, not simply combined numbering. Do not relabel 1167 or fill blanks automatically. Check the full source/witness context and variants; this spot check does not prove those passages are absent everywhere else in the corpus."
+    },
+    {
+      "id": "shamela-empty-3382",
+      "kind": "empty-span-with-witness-body",
+      "pages": [
+        835
+      ],
+      "printedReferences": [
+        "3382"
+      ],
+      "digital": [
+        {
+          "sourceId": "openiti-bukhari-shamela1681",
+          "recordId": "openiti-bukhari-shamela1681:b60:r56",
+          "reference": "3382",
+          "occurrence": 1,
+          "offsetUnit": "JavaScript UTF-16 code units; end exclusive",
+          "start": 1549870,
+          "end": 1549898,
+          "sha256": "f91f7fe250a2262dfd76bb507c87c932c2ae4dd76fbcc018d12c4ba89358ce47"
+        }
+      ],
+      "emptyNumericLabels": [
+        3382
+      ],
+      "finding": "The Shamela span labelled 3382 contains only a page marker. The witness has a full chain beginning with Ishaq ibn Mansur and a narration under 3382, between the preceding report and the following Yusuf chapter.",
+      "action": "Flag the source span as unusable for publication pending source comparison and reviewed restoration. Do not copy a similarly worded repeated report from elsewhere or silently import publisher editorial material."
+    }
+  ],
+  "interpretationLimits": [
+    "These are selected source-reference observations, not a complete cross-edition map or an assertion of word-for-word equivalence.",
+    "The original Shamela inventory still has 173 absent numeric labels and 10 empty numbered spans. Three absent labels (409, 411 and 4137) have an observed combined or embedded-passage explanation; the raw inventory is not rewritten.",
+    "Numeric labels, paragraph boundaries and wording differ across witnesses. Automated counts must never be reported as a count of missing narrations.",
+    "All candidates remain excluded from the reader. No canonical Arabic, English translation, narration script or recording was changed.",
+    "Independent Arabic, translation and context reviews remain pending. Automated tests check evidence pointers and hashes, not the correctness of these visual judgements."
+  ]
+}

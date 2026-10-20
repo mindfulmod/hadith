@@ -49,7 +49,7 @@ test('corrupt local data is bounded and never treated as source content',()=>{
  const s=normalizeState({saved:[1,1,-1,'2',Infinity],positions:{'__proto__':0,1:-8,2:100},size:999,theme:'<script>',session:{numbers:[1,1],cursor:1},content:'changed'});
  assert.deepEqual(s.saved,[1]);assert.deepEqual(s.positions,{2:100});assert.equal(s.size,21);assert.equal(s.theme,'device');assert.equal(s.content,undefined);assert.equal(s.session,undefined);
 });
-test('pinned full-source inventory reports real gaps and never becomes reader-eligible',()=>{
+test('pinned full-source inventory reports absent labels and empty spans without becoming reader-eligible',()=>{
  const catalog=buildInventory();assert.equal(catalog.books.length,97);assert.equal(catalog.records.length,7390);assert.equal(catalog.audit.missingNumbers.length,173);assert.equal(catalog.audit.emptyRecords.length,10);assert(catalog.audit.missingNumbers.includes(1166));assert(catalog.audit.emptyRecords.includes(1161));assert.equal(catalog.readerEligible,false);
  assert(!release.files.some(f=>/staging|openiti-bukhari/.test(f.path)));
  const raw=readFileSync(new URL('../content/sources/openiti-bukhari/source.mARkdown',import.meta.url),'utf8');

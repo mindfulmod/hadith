@@ -1,0 +1,53 @@
+{
+  "id": "openiti-bukhari-jk000110",
+  "upstreamURI": "0256Bukhari.Sahih.JK000110-ara1.completed",
+  "repository": "https://github.com/OpenITI/0275AH",
+  "commit": "44e1c36738a2bf5c14dafa232a6ae1891e6171cd",
+  "retrievedAt": "2026-10-20",
+  "sourceURL": "https://raw.githubusercontent.com/OpenITI/0275AH/44e1c36738a2bf5c14dafa232a6ae1891e6171cd/data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.JK000110-ara1.completed",
+  "metadataURL": "https://raw.githubusercontent.com/OpenITI/0275AH/44e1c36738a2bf5c14dafa232a6ae1891e6171cd/data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.JK000110-ara1.yml",
+  "status": "candidate-not-approved",
+  "readerEligible": false,
+  "expectedSectionCount": 100,
+  "expectedNumberRange": [
+    1,
+    7124
+  ],
+  "editionMetadata": "Mustafa Dib al-Bugha, Dar Ibn Kathir / al-Yamama, Beirut, third edition, 1407/1987, six volumes; from the digital header.",
+  "license": {
+    "id": "CC-BY-NC-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "evidence": "https://kitab-project.org/docs/openITI",
+    "attribution": "Al-Bukhari, Sahih. Digital text: OpenITI, JK000110 version, commit 44e1c36738a2bf5c14dafa232a6ae1891e6171cd. See the retained upstream metadata for edition, annotation and cleaning history.",
+    "changes": "Source and upstream metadata bytes are unchanged. The generated inventory classifies source spans and flags ambiguous markers; it does not correct or certify the Arabic."
+  },
+  "upstreamReviewNotes": [
+    "The annotator used a 2002 reprint; page and heading numbers differ from the digital version.",
+    "Heading continuation paragraphs are inconsistent; the annotator followed bold versus plain text in the PDF.",
+    "The 2023 OpenITI cleaning removed editorial paratext. A complete source-file inventory cannot establish that all original chapter context is intact.",
+    "Upstream flags RANDOM_CHARS, PRIMARY_VERSION and CLEANED_VERSION. Completed is an upstream annotation status, not app content approval."
+  ],
+  "comparisonWitness": {
+    "url": "https://archive.org/download/waq79565/79565.pdf",
+    "upstreamURL": "https://ia800200.us.archive.org/6/items/waq79565/79565.pdf",
+    "purpose": "Read-only witness identified in upstream metadata, not part of reader publication.",
+    "id": "dar-ibn-kathir-2002-waq79565",
+    "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+    "bytes": 45304371,
+    "pageCount": 1944,
+    "edition": "Dar Ibn Kathir, first edition 1423 AH / 2002, as printed on PDF page 4. This is the comparison witness linked by the OpenITI JK annotator; it is not the 1987 edition described in the digital header.",
+    "observations": "research/arabic-reference-audit.json"
+  },
+  "files": [
+    {
+      "path": "source.mARkdown",
+      "bytes": 5524762,
+      "sha256": "69e95684acfde24171d29dd7ba43ff2c8f9b54ade5e3ab0a73899c06671082b7"
+    },
+    {
+      "path": "upstream.yml",
+      "bytes": 1529,
+      "sha256": "cdbf6ba76dfc918d665f6cab2beb5f7f84d1521d63cdce3d06e946baaa51c4be"
+    }
+  ]
+}
