@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The personal reader is at `reader/`: two complete Bukhari entries, unchanged source blocks, Cedar AI narration, and separately checked reading/audio downloads. It is an evaluation prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The personal reader is at `reader/`: seven complete opening Bukhari entries, Cedar AI narration for Hadith 1–2, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Run
 
@@ -273,3 +273,14 @@ Local comparison-note files are derived into the reading download from the entry
 `research/source-reference-verification.json` records 78 Node and 26 Python checks, exact rendered-text comparison, 320px/393px layouts, chain navigation and session preservation, and source access with the local server stopped. Canonical wording, audio, artwork and personal-data keys are unchanged. These checks do not certify translation or narration.
 
 The Hadith 5 draft review now records a precise **proposed, unapplied** Arabic correction from `له` to `لك`, with the corresponding English proposal “for him” to “for you”. Existing printed comparisons and an identified passage in Ibn Hajar’s *Fath al-Bari* support review of a likely digital transcription defect. The original source and draft body are retained. The proposal validator checks its exact span, English target, evidence and pending status; it does not approve or apply a correction. Entries 3–7 remain outside the reader.
+
+
+## Seven-entry personal prototype · 20 October 2026
+
+The user chose “Keep this as a clearly labelled personal prototype for now.” This supersedes the earlier two-entry evaluation limit for this personal build, without granting scholarly certification or production approval. Hadith 1–2 remain byte-for-byte unchanged. Hadith 3–7 now have complete English working translations, preserved narrator chains, letters and transmission notes, per-entry citations, and offline comparison notes. Cedar remains limited to its existing two-entry recording; unrecorded entries explicitly show no audio yet.
+
+`content/review/opening-prototype-decisions.json` records the 11 provisional source/translation decisions and evidence. `scripts/build-opening-prototype.mjs` derives `research/bukhari-opening-prototype.json`, the matching prototype ledger, the offline original inputs and comparison page. It does not modify `research/bukhari-opening-review.json`, `content/review/opening-next-drafts.json`, or the pinned Arabic intake. One Arabic word in the derived Hadith 5 changes from له to لك, supported by both inspected prints and Ibn Hajar. The original remains available and the reader shows a separate correction notice.
+
+The publisher admits this exact seven-entry version as `personal-prototype`; changing the source requires a deliberate admission update. Human Arabic, English, context, reference and reuse review gates still apply to production. All review records remain pending. Run `node scripts/build-opening-prototype.mjs --check`, `node reader/check-content.mjs`, the existing source-intake checks, and the full test suite before publishing. The original `content.js` remains the unchanged two-entry compatibility source for archived design concepts.
+
+Reading downloads include the seven entries, source notes and exact original inputs. Existing sessions remain finite across the expansion; new sessions use the user’s 5/10-minute preference and stop only after a complete hadith. Automated checks verify text preservation and software behavior, not religious accuracy.

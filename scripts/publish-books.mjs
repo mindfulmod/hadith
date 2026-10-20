@@ -10,7 +10,9 @@ export const digest=value=>createHash('sha256').update(value).digest('hex');
 export const objectHash=value=>digest(JSON.stringify(value));
 const root=new URL('../',import.meta.url);
 const json=path=>JSON.parse(readFileSync(new URL(path,root),'utf8'));
-// The user accepted this exact two-entry evaluation. This is not production approval.
+// Deliberate seven-entry admission for the user-authorized personal prototype; not certification.
+const personalPrototypeSourceHash='11a47792c7c679c5f4b7e1f4a52c4d12d045f19b86acba195e3cdf3cd2c7274d';
+// Retained for the original two-entry evaluation and its regression fixtures.
 const evaluationSourceHash='fea9b889d30bdc3ceb8e41de8cb390292905391d2079993ce69a85b138bd7f33';
 function approval(record,hash,label){
  assert.equal(record?.status,'approved',label+' needs approval');
@@ -30,11 +32,17 @@ export function buildBooks(source,ledger,{production=false}={}){
  assert.equal(new Set(ledger.entries.map(e=>e.number)).size,ledger.entries.length,'Duplicate review record');
  assert.equal(ledger.catalogContextSha256,objectHash(ledger.books),'Book grouping or labels changed since review');
  const mode=production?'production':ledger.publication;
- assert(['evaluation','production'].includes(mode),'Unknown publication mode');
+ assert(['evaluation','personal-prototype','production'].includes(mode),'Unknown publication mode');
  if(mode==='production'){
   assert.equal(ledger.publication,'production','Evaluation text cannot enter a production collection');
   approval(ledger.rights,ledger.sourceRecordSha256,'Reuse rights');
   approval(ledger.collectionReview,ledger.catalogContextSha256,'Collection context');
+ }else if(mode==='personal-prototype'){
+  assert.equal(ledger.sourceRecordSha256,personalPrototypeSourceHash,'Personal prototype source version is not admitted');
+  assert.deepEqual(source.entries.map(e=>e.number),[1,2,3,4,5,6,7],'Personal prototype scope changed');
+  assert.deepEqual(ledger.books,[{id:'opening-revelation',number:1,title:source.entries[0].book,entryNumbers:[1,2,3,4,5,6,7]}],'Personal prototype book context changed');
+  assert.equal(source.prototypeReview?.status,'personal-prototype-only');
+  assert.equal(source.prototypeReview.independentReview,'pending');
  }else{
   assert.deepEqual(ledger.books,[{id:'opening-revelation',number:1,title:source.entries[0].book,entryNumbers:[1,2]}],'Evaluation book context is fixed');
   assert.deepEqual(source.entries.map(e=>e.number),[1,2],'Evaluation is limited to the two existing entries');
@@ -54,7 +62,7 @@ export function buildBooks(source,ledger,{production=false}={}){
    assert.equal(record.status,'approved','Unapproved entry');
    assert.deepEqual(record.unresolvedDiscrepancies,[],'Resolve discrepancies before publication');
    approval(record.arabicReview,ar,'Arabic');approval(record.englishReview,en,'English');approval(record.contextReview,record.entrySha256,'Chapter and reference context');
-  }else assert.equal(record.status,'evaluation-only','Evaluation status must stay explicit');
+  }else assert.equal(record.status,mode==='personal-prototype'?'personal-prototype-only':'evaluation-only','Non-production status must stay explicit');
  }
  validateSourceReferences(ledger.sourceReferences,source.entries,{sourceRecordSha256:ledger.sourceRecordSha256});
  assert.equal(ledger.referencesSha256,objectHash(ledger.sourceReferences),'Source references changed since review');
@@ -85,7 +93,7 @@ export function buildBooks(source,ledger,{production=false}={}){
  return {catalog,files};
 }
 export function publishBooks({check=false,production=false}={}){
- const result=buildBooks(json('research/bukhari-opening-review.json'),json('content/review/opening-ledger.json'),{production});
+ const result=buildBooks(json('research/bukhari-opening-prototype.json'),json('content/review/opening-prototype-ledger.json'),{production});
  const directory=new URL('reader/books/',root);
  if(!check)mkdirSync(directory,{recursive:true});
  for(const [path,bytes] of result.files){const url=new URL('reader/'+path,root);if(check)assert.equal(readFileSync(url,'utf8'),bytes,'Stale generated book file: '+path);else writeFileSync(url,bytes);}

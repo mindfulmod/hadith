@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-10-20",
+  "status": "personal-prototype-only",
+  "readerRelease": "opening-8c9e0014da08",
+  "scope": "Seven opening entries; Cedar audio remains limited to Hadith 1–2.",
+  "sourceIntegrity": {
+    "firstTwo": "Unchanged entry objects and compatibility source.",
+    "drafts": "Original five working drafts and pinned intake remain unchanged.",
+    "changes": "Eleven provisional decisions recorded; six English phrase substitutions and one derived Arabic correction in Hadith 5.",
+    "originals": "reader/prototype-inputs.json",
+    "humanReview": "pending"
+  },
+  "automated": {
+    "node": 83,
+    "python": 26,
+    "sourceChecks": "Original intake, candidate review, generated prototype, exact source package and publication artifact checks passed."
+  },
+  "browser": {
+    "renderedText": "All 32 new English blocks and 11 Arabic paragraphs matched the versioned source exactly, including collapsed chain content.",
+    "inheritedChain": "Hadith 4 link opened Hadith 3, expanded the chain and focused its summary.",
+    "smallScreen": "No horizontal overflow at 393px or at 320px with 28px reading text. Letter and transmission-note sections remain in order.",
+    "session": "Starting a session at Hadith 7 kept that complete report as a single session; Continue reopened 7.",
+    "offline": "On local preview opening-c32445135b4c, Save reading reported Ready offline. With the preview server stopped, reload, Continue to Hadith 7 and the Hadith 5 comparison page all loaded. Final release differs only in consistent rounded session estimates and explanatory UI copy.",
+    "audio": "Unrecorded entries show a disabled No audio yet control; the existing recording assets were not modified."
+  },
+  "limits": [
+    "Browser checks do not certify religious accuracy.",
+    "The expanded reading download and long-report experience still need iPhone acceptance.",
+    "No new audio or full-collection publication is claimed."
+  ]
+}

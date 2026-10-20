@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-20",
+  "status": "personal-prototype-only",
+  "userDecision": "Keep this as a clearly labelled personal prototype for now",
+  "independentReview": "pending",
+  "draftSha256": "6b31fb16f5bfc5e4acf08f06b269b20e5a8fc1a0747e153da9cd7cb3f6f9d43c",
+  "sources": [
+    {
+      "id": "nawawi-revelation",
+      "label": "Al-Nawawi · Sharh Sahih Muslim",
+      "url": "https://www.islamweb.net/ar/library/content/53/82/?idfrom=469&idto=474",
+      "kind": "commentary",
+      "format": "web",
+      "locator": "Volume 2, pages 351–353 · parallel revelation report",
+      "scope": "Lexical commentary on taksibu al-ma‘dum, nawa’ib al-haqq and Namus. The Muslim parallel is not substituted for the selected Bukhari wording."
+    },
+    {
+      "id": "mulaqqin-opening-3",
+      "label": "Ibn al-Mulaqqin · al-Tawdih",
+      "url": "https://www.islamweb.net/ar/library/content/305/19/باب",
+      "kind": "commentary",
+      "format": "web",
+      "locator": "Volume 2, pages 277–280 and 288–289 · opening report 3",
+      "scope": "Records lexical alternatives for Khadijah’s description and explains Namus; consulted as commentary, not narration text."
+    },
+    {
+      "id": "ayni-opening-4",
+      "label": "Al-‘Ayni · ‘Umdat al-Qari",
+      "url": "https://www.islamweb.net/ar/library/content/303/12/باب-بدء-الوحي",
+      "kind": "commentary",
+      "format": "web",
+      "locator": "Volume 1, pages 66–69 · opening report 4",
+      "scope": "Explains the continued chain, al-rujz and the bawadir variant. Other lexical readings are acknowledged."
+    },
+    {
+      "id": "ayni-opening-6",
+      "label": "Al-‘Ayni · ‘Umdat al-Qari",
+      "url": "https://www.islamweb.net/ar/library/content/303/16/باب-بدء-الوحي",
+      "kind": "commentary",
+      "format": "web",
+      "locator": "Volume 1, pages 74–76 · opening report 6",
+      "scope": "Explains the two chains, the chain-switch sign and the distinction between similar and identical wording."
+    },
+    {
+      "id": "ibn-hajar-heraclius",
+      "label": "Ibn Hajar · Fath al-Bari (digital transcription)",
+      "url": "https://ar.wikisource.org/wiki/الحديث_رقم_(_6_)_(_بسم_الله_الرحمن_الرحيم_من_محمد_عبد_الله_ورسوله_إلى_)",
+      "kind": "commentary",
+      "format": "web",
+      "locator": "Commentary on the Heraclius report; page title uses a different number",
+      "scope": "Community transcription of classical commentary. Used for al-Arisiyyin, Ibn al-Nazur and the unqualified faith reference; not used as an Arabic base edition."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "3-lexical",
+      "number": 3,
+      "topic": "Khadijah’s description",
+      "status": "chosen-for-personal-prototype",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "decision": "Retain “provide for those who have nothing,” the giving-to-those-in-need reading preferred in the consulted commentaries. Render nawa’ib al-haqq as “hardships where help is due” to retain the qualification of rightful help. Earning otherwise unavailable wealth is another recorded reading of taksibu al-ma‘dum, understood with generosity. These are translation choices, not uniquely certified equivalents.",
+      "sources": [
+        "nawawi-revelation",
+        "mulaqqin-opening-3"
+      ],
+      "englishEdits": [
+        {
+          "segmentId": "3-5",
+          "before": "help in the adversities that befall people",
+          "after": "help in hardships where help is due"
+        }
+      ]
+    },
+    {
+      "id": "3-namus",
+      "number": 3,
+      "topic": "Namus",
+      "status": "chosen-for-personal-prototype",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "decision": "Retain the technical term Namus in the report. The commentaries explain it as a keeper of a secret and identify the intended referent here as Gabriel. That explanation stays in the source notes; it is not inserted into Waraqah’s quoted words.",
+      "sources": [
+        "nawawi-revelation",
+        "mulaqqin-opening-3"
+      ],
+      "englishEdits": []
+    },
+    {
+      "id": "4-transmission-context",
+      "number": 4,
+      "topic": "The continued narrator chain",
+      "status": "chosen-for-personal-prototype",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "decision": "The first-person account is the Prophet’s, transmitted by Jabir through Abu Salamah and Ibn Shihab. A separate note links to Hadith 3’s preceding chain. No missing words are inserted into the selected chain.",
+      "sources": [
+        "ayni-opening-4"
+      ],
+      "englishEdits": []
+    },
+    {
+      "id": "4-bawadir",
+      "number": 4,
+      "topic": "The final transmission note",
+      "status": "chosen-for-personal-prototype",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "decision": "Translate bawadiruhu as “the flesh between his neck and shoulders,” following the anatomical explanation in the commentary. The note records a wording variant in the preceding trembling account. Do not silently replace this with “his heart”; the anatomical reading and a historical heart-related explanation both appear in commentary.",
+      "sources": [
+        "ayni-opening-4"
+      ],
+      "englishEdits": [
+        {
+          "segmentId": "4-3",
+          "before": "“bawadiruhu.”",
+          "after": "“the flesh between his neck and shoulders.”"
+        }
+      ]
+    },
+    {
+      "id": "4-rujz",
+      "number": 4,
+      "topic": "The quoted verse ending",
+      "status": "chosen-for-personal-prototype",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "decision": "Use “shun idols” for al-rujz in the quoted ending of Qur’an 74:5, following the contextual reading reported by al-‘Ayni. “Filth” or “impurity” are broader English alternatives, and the commentary also records sin-related explanations. The verse between the two quoted endpoints remains unexpanded.",
+      "sources": [
+        "ayni-opening-4"
+      ],
+      "englishEdits": [
+        {
+          "segmentId": "4-2",
+          "before": "And shun impurity.",
+          "after": "And shun idols."
+        }
+      ]
+    },
+    {
+      "id": "5-lahu-laka",
+      "number": 5,
+      "topic": "One declared Arabic correction",
+      "status": "chosen-for-personal-prototype",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "decision": "In the derived prototype only, change له (for him) to لك (for you). Both inspected printed witnesses and Ibn Hajar support laka in this phrase. The pinned digital input and original draft remain unchanged. This is an AI-evaluated correction, pending independent review.",
+      "sources": [
+        "brill-1862",
+        "dar-ibn-kathir-2002",
+        "ibn-hajar-opening-5"
+      ],
+      "englishEdits": [
+        {
+          "segmentId": "5-3",
+          "before": "for him",
+          "after": "for you"
+        }
+      ]
+    },
+    {
+      "id": "5-quotation",
+      "number": 5,
+      "topic": "Qur’anic quotations and explanation",
+      "status": "chosen-for-personal-prototype",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "decision": "Keep the quoted Qur’anic phrases distinct from the intervening explanation. Ibn Hajar identifies the explanation as Ibn ‘Abbas’s. The final sentence after “Then its explanation is Our responsibility” remains outside that verse quotation; it is not an additional Qur’anic verse.",
+      "sources": [
+        "ibn-hajar-opening-5"
+      ],
+      "englishEdits": []
+    },
+    {
+      "id": "6-chain-switch",
+      "number": 6,
+      "topic": "Two narrator chains",
+      "status": "chosen-for-personal-prototype",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "decision": "Keep “Another chain” as the English rendering of the source’s ح chain-switch sign, inside the expandable narrator section. It is a structural cue, not prophetic speech. Keep “similarly” for nahwahu, which does not assert identical wording. Different Arabic recitation conventions exist; new audio has not yet been generated.",
+      "sources": [
+        "ayni-opening-6"
+      ],
+      "englishEdits": []
+    },
+    {
+      "id": "7-arisiyyin",
+      "number": 7,
+      "topic": "Al-Arisiyyin",
+      "status": "chosen-for-personal-prototype",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "decision": "Use “cultivators,” a lexical reading favoured in the consulted Fath al-Bari passage. The commentary connects it with followers more broadly; English translators also use subjects or peasants. This choice is recorded rather than silently treating those terms as exact synonyms.",
+      "sources": [
+        "ibn-hajar-heraclius"
+      ],
+      "englishEdits": [
+        {
+          "segmentId": "7-10",
+          "before": "al-Arisiyyin",
+          "after": "the cultivators"
+        }
+      ]
+    },
+    {
+      "id": "7-ibn-nazur",
+      "number": 7,
+      "topic": "Ibn al-Nazur’s role",
+      "status": "chosen-for-personal-prototype",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "decision": "Use “governor of Ilya and an associate of Heraclius,” following the commentary’s distinction between the office in Ilya and the relationship to Heraclius. The bishop description belongs to Ibn al-Nazur. The later account is introduced in his name and is not presented as Abu Sufyan’s first-person speech.",
+      "sources": [
+        "ibn-hajar-heraclius"
+      ],
+      "englishEdits": [
+        {
+          "segmentId": "7-12",
+          "before": "the official of Ilya",
+          "after": "the governor of Ilya"
+        }
+      ]
+    },
+    {
+      "id": "7-faith-referent",
+      "number": 7,
+      "topic": "The final faith reference",
+      "status": "chosen-for-personal-prototype",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "decision": "Retain “despaired of belief,” leaving the source’s object unqualified. The consulted commentary discusses both his people’s belief and his own belief while retaining kingship. Do not narrow the English to only one referent without independent review.",
+      "sources": [
+        "ibn-hajar-heraclius"
+      ],
+      "englishEdits": []
+    }
+  ],
+  "arabicCorrections": [
+    {
+      "number": 5,
+      "proposalId": "5-lahu-laka-proposal",
+      "decisionId": "5-lahu-laka"
+    }
+  ]
+}

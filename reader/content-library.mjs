@@ -6,7 +6,7 @@ const freeze=value=>{if(value&&typeof value==='object'){Object.values(value).for
 const requireValue=(value,message)=>{if(!value)throw new Error(message);};
 function validateCatalog(catalog){
  requireValue(catalog?.schemaVersion===1&&catalog.namespace==='bukhari-opening-v1','Unsupported collection');
- requireValue(['evaluation','production'].includes(catalog.publication),'Unknown publication status');
+ requireValue(['evaluation','personal-prototype','production'].includes(catalog.publication),'Unknown publication status');
  requireValue(Array.isArray(catalog.books)&&catalog.books.length>0&&Array.isArray(catalog.entries)&&catalog.entries.length>0,'Empty collection');
  const books=new Map(catalog.books.map(b=>[b.id,b]));
  requireValue(books.size===catalog.books.length,'Duplicate book');

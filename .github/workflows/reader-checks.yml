@@ -23,6 +23,7 @@ jobs:
           node-version: '22'
       - name: Verify source and staged catalogue
         run: |
+          node scripts/build-opening-prototype.mjs --check
           node reader/check-content.mjs
           node scripts/import-bukhari.mjs --check > /dev/null
           python3 scripts/import-bukhari-jk.py --check > /dev/null
