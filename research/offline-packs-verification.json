@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-20",
+  "readerRelease": "opening-82b548d8899a",
+  "decision": "Save all available reading text, source notes and artwork together; choose audio separately.",
+  "scope": "The existing two-entry evaluation. No canonical source blocks, narration scripts, recording bytes or artwork changed.",
+  "automated": {
+    "node": 56,
+    "python": 19,
+    "failures": 0,
+    "additionalChecks": [
+      "Canonical source equality and Arabic integrity hashes",
+      "All three pinned-source imports reproduced with --check",
+      "Patch whitespace checks"
+    ]
+  },
+  "downloadModel": {
+    "reading": "All catalogued reading packs, local source notes, artwork and supporting app files. Approximately 2.8 MB in this release.",
+    "cedar": "Existing continuous Hadith 1–2 recording, approximately 1.4 MB; requires reading.",
+    "comparisons": "Optional existing delivery comparison recordings, approximately 2.0 MB; requires reading.",
+    "verification": "Check byte length and SHA-256 before writing a new or reused file. Normal readiness checks presence and receipts; Check downloads rehashes bytes and removes corrupt cache entries. Exact release metadata and dependencies are required.",
+    "resume": "Completed files are retained and reused after interruption. An incomplete individual file restarts.",
+    "cleanup": "Only exact older Hadith reader release cache names are removed on explicit user action. Current release, personal storage, legacy pilot and other library caches are preserved.",
+    "concurrency": "The active worker serializes operations. Audio removal checks relevant reader/review clients and refuses if playing or unresponsive."
+  },
+  "browserObserved": [
+    "Reading-only download became ready while Cedar remained not saved.",
+    "With the local server stopped, the reader reloaded, opened Hadith 2 and its source/Arabic view. All eight rendered source blocks matched canonical text exactly.",
+    "A Cedar save reused unchanged, hash-checked audio from an older reader download while the server was stopped.",
+    "Offline playback naturally crossed the 37.512-second Hadith 1–2 boundary; at 45.834 seconds it was still playing without an audio error and the reading view had followed to Hadith 2.",
+    "A second tab could not remove Cedar while the first played it at 58.297 seconds. After pausing, removal succeeded and reading remained ready.",
+    "An update retained Continue at Hadith 2 and the saved bookmark. Saving Cedar also saved required reading; optional comparisons stayed unselected.",
+    "Explicit old-cache cleanup preserved current reading and Cedar downloads. Removing Cedar preserved reading and personal state.",
+    "Saving audio with the server stopped did not mark it ready. Reconnecting allowed retry to succeed, followed by a successful deep Check downloads.",
+    "Day and night layouts fit 393px and 320px without horizontal overflow; night with the largest 28px reading setting was checked."
+  ],
+  "browserBuilds": "Functional checks span candidates opening-ea994e8b416e, opening-cab8a6192cd4 and opening-3aef3d386b03. The final release also restores keyboard focus after Check downloads; final artifact smoke-check is recorded separately below.",
+  "limits": [
+    "Desktop browser tests do not certify iPhone locked-screen/background behavior.",
+    "The revised reading/audio download flow needs iPhone acceptance.",
+    "Full-collection sizes and future per-session audio downloads have not been exercised by this two-entry sample.",
+    "Keep the app open while saving; the operating system may stop work or evict saved data.",
+    "Source translation and exact spoken-word/name review remain pending; these tests make no scholarly or audio approval claim."
+  ],
+  "platformReferences": [
+    {
+      "url": "https://webkit.org/blog/14403/updates-to-storage-policy/",
+      "use": "Label storage estimates as origin-wide and approximate, handle quota errors, treat persistence as best effort and eviction as possible."
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage",
+      "use": "Use explicit named caches for releases and preserve unrelated caches."
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage/delete",
+      "use": "Limit cleanup to exact older reader cache names."
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/StorageManager",
+      "use": "Expose estimate and request persistence without treating either as an offline guarantee."
+    }
+  ],
+  "finalArtifactCheck": {
+    "release": "opening-82b548d8899a",
+    "publicFiles": 175,
+    "observations": [
+      "Updater activated the final release and retained Continue at Hadith 2 and the saved bookmark.",
+      "Save audio also completed reading; both reported Ready offline. Check downloads succeeded and restored keyboard focus to its button.",
+      "At 320px in night mode, document width equalled viewport width.",
+      "After stopping the preview server, reload and opening Hadith 1 succeeded. Cedar crossed naturally into Hadith 2; at 50.064449 seconds it was playing without error and the text view had followed. Playback was then paused."
+    ]
+  }
+}

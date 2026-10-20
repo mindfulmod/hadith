@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The personal reader is at `reader/`: two complete Bukhari entries, unchanged source blocks, Cedar AI narration, and a verified offline bundle. It is an evaluation prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The personal reader is at `reader/`: two complete Bukhari entries, unchanged source blocks, Cedar AI narration, and separately checked reading/audio downloads. It is an evaluation prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Run
 
@@ -61,8 +61,8 @@ The app stays buildless. Responsibilities are separated:
 - `reader.js` renders source blocks and handles navigation. `store.js` preserves the existing local preference/bookmark key. Reading marks, scroll positions, daily preference and audio position are separate fields. No reading is automatically marked complete by audio.
 - `session.mjs` plans approximately 5- or 10-minute sessions using whole entries in order, including finishing a first entry longer than the target. The current two-entry sample is shorter than either target; the UI saves a future daily preference and labels the sample honestly.
 - `audio.mjs` owns one persistent audio element outside route rendering. One continuous 87-second file contains both full recordings with chapter cues; no file change is needed at the boundary. Lock-screen metadata and audio-session requests begin only after a user play action. Merely opening a page does not start audio or claim a playback session.
-- `offline.mjs`, `integrity.mjs`, `sw.js` and generated `release.mjs` own the reader bundle. The worker has only the reader scope; it does not replace the legacy pilot worker or delete pilot caches. Each required file is checked by SHA-256 and byte length. Partial responses are rejected, interrupted saves can reuse verified files, and readiness is rechecked after returning. Cached audio supports single byte ranges. The current bundle is approximately 6.1 MB, including both delivery comparisons. Browser/OS storage eviction remains possible.
-- Updates wait for existing reader windows to close, so installing an update does not interrupt a playing session. A waiting update is shown in the offline status. Cache cleanup across old releases is not yet automated; current and legacy pilot caches are preserved.
+- `offline.mjs`, `offline-store.mjs`, `offline-view.mjs`, `integrity.mjs`, `sw.js` and generated `release.mjs` own separate downloads. Save reading keeps all available text, source notes and artwork (about 2.8 MB). The continuous Cedar recording is selected separately (about 1.4 MB); delivery comparisons are optional (about 2.0 MB). Saving audio also saves reading. Files pass SHA-256 and byte-length checks before storage; partial responses are rejected. Returning checks presence and verification receipts; Check downloads rehashes saved bytes. Interrupted saves reuse complete verified files. Cached audio supports single byte ranges. Browser/OS storage eviction remains possible.
+- Updates wait for existing reader windows to close, so installing an update does not interrupt a playing session. A waiting update is shown in the offline status. More download options offers explicit removal of older reader caches; it preserves the current release, personal data, legacy pilot and unrelated library caches. Save wanted audio first to reuse unchanged verified files from an older release. Removing an audio pack is blocked while another responsive reader tab reports playing it, or a relevant tab cannot be checked.
 
 ### Narration provenance and review
 
@@ -84,7 +84,7 @@ The release builder includes core files, local source notes, both theme artworks
 
 Desktop browser checks: saved bundle reopened with the development server stopped; playback progressed naturally from Hadith 1 to Hadith 2 while browsing and opening sources; local comparison notes opened offline. Day/night, bookmarks, saved preferences, 320px narrow layout and the largest reading size were checked. These results do not establish locked-screen behavior on iPhone.
 
-On the iPhone, open the reader from its Home Screen icon, save there, wait for “Ready offline,” enable airplane mode, start the sample and lock the screen. Test the Hadith 1→2 boundary, lock-screen pause/resume, headphones, then reopening at the saved position. Safari and Home Screen installations may have separate saved data. Compare Take A and Take B for word-to-word flow and review every spoken word and name against the full scripts before approving narration.
+On the iPhone, open the reader from its Home Screen icon, choose Save reading and Save audio there, wait for both to say “Ready offline,” enable airplane mode, start the sample and lock the screen. Test the Hadith 1→2 boundary, lock-screen pause/resume, headphones, then reopening at the saved position. Safari and Home Screen installations may have separate saved data. Compare Take A and Take B for word-to-word flow and review every spoken word and name against the full scripts before approving narration.
 
 
 ## User acceptance · 17 October 2026
@@ -230,3 +230,10 @@ The upstream annotator identifies a 2002 comparison witness, with different page
 `research/arabic-reference-audit.json` ties selected observations to exact source spans and one-based PDF pages. The witness combines labels 408–409 and 410–411; Shamela contains each corresponding passage under its first label. The passage labelled 4137 in print is embedded in Shamela 4136 and JK 3906. The two JK 3905 occurrences correspond to distinct printed reports 4134 and 4135. Conversely, the empty Shamela sequence at 1161–1165 is followed by a misassigned body under 1167, and the empty 3382 span has a body in the witness. No source is silently repaired or merged. These are AI visual comparisons awaiting independent review, not a complete reference map or scholarly certification.
 
 Run `python3 scripts/import-bukhari-jk.py --check` and `PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p 'test_*.py'`. The checks protect full byte coverage, chapter/record distinctions, duplicate and suffixed IDs, exact evidence pointers, pinned-source integrity and reproducibility. They do not certify the visual judgements or Arabic wording. Neither the live two-entry source bundle nor its Cedar recordings changed.
+
+
+## Separate offline downloads — 20 October 2026
+
+The user selected all reading material together, with audio chosen separately. The active worker serializes save/check/remove operations across reader tabs, verifies every new or reused file, and retains completed files after cancellation, connection failure or quota errors. Readiness requires the exact release metadata and every dependency. Downloads expose progress, Stop saving, retry, Check downloads, individual audio removal and explicit cleanup of older reader copies. The storage estimate is labelled as shared website space, not guaranteed free phone storage. Keep the app open while saving; partial individual files restart.
+
+`research/offline-packs-verification.json` records 75 passing automated checks (56 Node and 19 Python), unchanged canonical content, offline browser reload/source access and natural Cedar transition, cross-tab removal protection, cleanup/state preservation, and 320px/night/large-type checks. The two-entry sample remains an evaluation; full-collection scale and the revised download flow on iPhone still need acceptance. This does not approve translation or generated speech.

@@ -9,7 +9,8 @@
     "numbering": "Namespace source IDs and edition references. Never assume one edition's book or hadith number equals another's.",
     "architecture": "Keep the static PWA. Split collection metadata, book text packs, search index and audio packs; load text and download audio independently. Preserve the persistent media element and waiting-worker update behavior.",
     "publication": "Candidate import is not reader approval. Resolve source coverage and rights, then review complete narrator chains, narration, chapter context and any source notes separately. Preserve repeated narrations; do not deduplicate by meaning.",
-    "browsing": "Browsing outside the current session leaves its plan and continuation point intact. Only Start a session here, Next session, or an explicit restart replaces/restarts the plan; the user confirmed this on 18 October 2026."
+    "browsing": "Browsing outside the current session leaves its plan and continuation point intact. Only Start a session here, Next session, or an explicit restart replaces/restarts the plan; the user confirmed this on 18 October 2026.",
+    "offline": "All available reading text, source notes and artwork saved together; choose Cedar audio separately. Optional delivery comparison recordings remain a separate choice. User selected this on 20 October 2026."
   },
   "requirements": [
     {
@@ -56,14 +57,14 @@
     },
     {
       "id": "offline-at-scale",
-      "status": "partial",
-      "evidence": "Current bundle uses byte hashes and cached range responses",
-      "remaining": "Versioned text packs are implemented, but the sample worker still caches the complete two-entry text bundle. Add separate selective text/audio downloads, storage estimate, resumable per-pack saves, explicit removal, release eviction and failure recovery."
+      "status": "separate-packs-implemented-sample-browser-verified",
+      "evidence": "reader/offline-store.mjs; reader/offline-view.mjs; reader/offline.mjs; reader/sw.js; tests/offline-packs.test.mjs; research/offline-packs-verification.json",
+      "remaining": "Confirm the revised download flow and locked-screen playback on iPhone; exercise full-collection size and future per-session audio packs. Current sample has all reading together, separate Cedar/review audio, verified-file resume, quota/cancellation recovery, explicit removal/old-cache cleanup and cross-tab playback protection. Storage eviction remains possible."
     },
     {
       "id": "production-testing",
       "status": "in-progress",
-      "evidence": "64 passing automated checks (45 Node, 19 Python); research/navigation-verification.json; .github/workflows/reader-checks.yml",
+      "evidence": "75 passing automated checks (56 Node, 19 Python); research/navigation-verification.json; research/offline-packs-verification.json; .github/workflows/reader-checks.yml",
       "remaining": "Accessibility audit, keyboard/screen reader review, optional iPhone full-place/settings restore and locked-screen/interruption acceptance after final architecture changes. Default iPhone backup export/merge restore and browsing/session separation are confirmed. Deploy checks gate publishing."
     },
     {
@@ -77,7 +78,7 @@
     "Complete the Arabic edition/reference map using the new exact-span inventory and pinned printed-witness findings; keep combined labels distinct from missing or misassigned bodies.",
     "Find a more complete authoritative English witness: the IslamHouse EPUB and PDF share seven checked omissions and additional transcription defects. Keep their exact inventories as comparison evidence rather than patching them silently.",
     "Obtain complete English source coverage and explicit offline/narration permissions; request #4160 is posted.",
-    "Build selective offline text/audio packs on the verified book loader; apply the implemented navigation to reviewed collection metadata.",
+    "Confirm the separate reading/audio downloads on iPhone and extend audio-pack definitions as reviewed recordings become available.",
     "Complete independent translation and generated-audio reviews before claiming production content."
   ],
   "sourceResearch": [

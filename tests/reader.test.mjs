@@ -9,6 +9,7 @@ import {verifyResponse} from '../reader/integrity.mjs';
 import {recording} from '../reader/recording.mjs';
 import {sourceParts,sourceHTML,honorifics} from '../reader/source-format.mjs';
 import {release} from '../reader/release.mjs';
+import {createOfflineStore,readerCacheName,verifiedCopy,releaseModuleSource} from '../reader/offline-store.mjs';
 const entry=(number,words)=>({number,english_blocks:['word '.repeat(words)]});
 test('session keeps order, completes a boundary entry and never splits a long hadith',()=>{
  const entries=[entry(12,400),entry(15,450),entry(16,100)];
@@ -70,7 +71,7 @@ test('updater release manifest identifies the exact generated reader bundle',()=
 });
 test('worker reports its release without forcing activation or changing stored data',()=>{
  const handlers={},messages=[];
- const context={release,URL,self:{location:{href:'https://example.com/hadith/reader/sw.js'},addEventListener:(name,handler)=>handlers[name]=handler}};
+ const context={release,URL,createOfflineStore,readerCacheName,verifiedCopy,releaseModuleSource,self:{location:{href:'https://example.com/hadith/reader/sw.js'},addEventListener:(name,handler)=>handlers[name]=handler}};
  const source=readFileSync(new URL('../reader/sw.js',import.meta.url),'utf8').replace(/^import .*;\n/gm,'');
  vm.runInNewContext(source,context);
  handlers.message({data:{type:'GET_READER_RELEASE'},ports:[{postMessage:message=>messages.push(message)}]});

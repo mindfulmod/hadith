@@ -48,7 +48,7 @@ function activate(){
 async function play(){
  activate();session('playback');busy=true;$('#audio-message').textContent='';update();
  try{await audio.play();}
- catch{session('auto');$('#audio-message').textContent='Playback did not start. Tap Play again, or reconnect and finish saving the offline sample.';}
+ catch{session('auto');$('#audio-message').textContent='Playback did not start. Tap Play again, or reconnect and finish saving the Cedar audio.';}
  finally{busy=false;update();}
 }
 export function listen(number){activate();const c=recording.chapters.find(c=>c.number===number)||recording.chapters[0];setPosition(c.start);play();}
@@ -88,7 +88,7 @@ for(const event of ['play','pause','seeked','durationchange'])audio.addEventList
 audio.addEventListener('waiting',()=>{busy=true;update();});
 audio.addEventListener('playing',()=>{busy=false;update();});
 audio.addEventListener('ended',()=>{busy=false;save();session('auto');$('#audio-message').textContent='Sample complete. Your reading marks are kept separately.';update();});
-audio.addEventListener('error',()=>{busy=false;session('auto');$('#audio-message').textContent='Audio could not load. Reconnect and use Save for offline to check the complete download.';update();});
+audio.addEventListener('error',()=>{busy=false;session('auto');$('#audio-message').textContent='Audio could not load. Reconnect and save the Cedar audio from your session page.';update();});
 window.addEventListener('pagehide',()=>{save();session('auto');});
 document.addEventListener('visibilitychange',()=>{if(document.hidden)save();});
 if('mediaSession' in navigator){

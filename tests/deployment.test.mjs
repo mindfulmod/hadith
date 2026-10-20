@@ -24,7 +24,7 @@ test('site assembly refuses changed bytes before creating an artifact',()=>{
  assert.throws(()=>verifyFiles([file],{read:()=>bytes.subarray(1)}),/Wrong release/);
 });
 test('the current release includes source and privacy information offline',()=>{
- for(const path of ['about.html','about.mjs','source-record.json','source-review.html'])assert(release.files.some(f=>f.path===path&&f.core));
+ for(const path of ['about.html','about.mjs','source-record.json','source-review.html'])assert(release.packs.find(p=>p.id==='reading').files.includes(path));
  const about=readFileSync(new URL('../reader/about.html',import.meta.url),'utf8');assert(about.includes('source-correction.yml'));assert(about.includes('AI-assisted working translation'));assert(about.includes('does not upload it'));
 });
 
