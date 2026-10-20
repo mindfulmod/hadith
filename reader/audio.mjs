@@ -1,9 +1,9 @@
 import {store} from './store.js';
-import {recording} from './recording.mjs';
+import {recording,recordedChapter} from './recording.mjs';
 import {chapterAt,safePosition} from './session.mjs';
 const audio=document.querySelector('#narration'), player=document.querySelector('#player');
 const $=s=>document.querySelector(s);
-let activated=false, pendingSeek=null, lastSaved=0, busy=false, prepared=false;
+let activated=false, pendingSeek=null, lastSaved=0, busy=false;
 const time=s=>`${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`;
 const chapter=()=>chapterAt(recording.chapters,pendingSeek??audio.currentTime);
 function session(type){try{if(navigator.audioSession)navigator.audioSession.type=type;}catch{}}
@@ -51,23 +51,26 @@ async function play(){
  catch{session('auto');$('#audio-message').textContent='Playback did not start. Tap Play again, or reconnect and finish saving the Cedar audio.';}
  finally{busy=false;update();}
 }
-export function listen(number){activate();const c=recording.chapters.find(c=>c.number===number)||recording.chapters[0];setPosition(c.start);play();}
+export function listen(number){const c=recordedChapter(number);if(!c)return false;activate();setPosition(c.start);play();return true;}
 export function listenAlong(number){
- if(activated&&!audio.ended&&chapter().number===number){play();return;}
+ if(!recordedChapter(number))return false;
+ if(activated&&!audio.ended&&chapter().number===number){play();return true;}
  const saved=store.get().audio;
  const seconds=saved?.release===recording.id?safePosition(saved.seconds,recording.duration):0;
  if(!activated&&chapterAt(recording.chapters,seconds).number===number){setPosition(seconds);play();}
  else listen(number);
+ return true;
 }
 export function prepareListening(number){
+ const requested=recordedChapter(number);if(!requested)return false;
  player.hidden=false;document.body.classList.add('has-player');
- if(!prepared&&!activated){
-  prepared=true;
+ if(!activated){
   const saved=store.get().audio;
   const seconds=saved?.release===recording.id?safePosition(saved.seconds,recording.duration):0;
-  setPosition(chapterAt(recording.chapters,seconds).number===number?seconds:(recording.chapters.find(c=>c.number===number)?.start||0));
- }
- update();
+  setPosition(chapterAt(recording.chapters,seconds).number===number?seconds:requested.start);
+ }else if(audio.paused&&!busy&&(audio.ended||chapter().number!==number))setPosition(requested.start);
+ // Navigating while playing does not interrupt the active recording.
+ update();return true;
 }
 export function resumeListening(){
  if(!activated){const saved=store.get().audio;setPosition(saved?.release===recording.id?safePosition(saved.seconds,recording.duration):0);}

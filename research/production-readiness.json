@@ -29,7 +29,7 @@
       "id": "content-review-gates",
       "status": "implemented-for-opening-sample",
       "evidence": "content/review/opening-ledger.json; scripts/publish-books.mjs; tests/content-library.test.mjs",
-      "remaining": "Obtain actual independent human reviews and reuse evidence. Current production publishing is deliberately refused. Extend edition/reference mapping before expanding beyond the evaluation namespace; audio review needs its own ledger."
+      "remaining": "Obtain actual independent human reviews and reuse evidence. Current production publishing is deliberately refused. Extend edition/reference mapping before expanding beyond the evaluation namespace; audio review needs its own ledger. New source presentation ranges are now validated and included in entry/context approval hashes; per-entry edition/source citations still need generalization."
     },
     {
       "id": "library-navigation-search",
@@ -64,7 +64,7 @@
     {
       "id": "production-testing",
       "status": "in-progress",
-      "evidence": "81 automated checks (56 Node, 25 Python); research/navigation-verification.json; research/offline-packs-verification.json; tests/test_opening_review.py; .github/workflows/reader-checks.yml",
+      "evidence": "92 automated checks (67 Node, 25 Python); research/navigation-verification.json; research/offline-packs-verification.json; tests/test_opening_review.py; .github/workflows/reader-checks.yml; research/reader-structure-verification.json",
       "remaining": "Accessibility audit, keyboard/screen reader review, optional iPhone full-place/settings restore and locked-screen/interruption acceptance after final architecture changes. Default iPhone backup export/merge restore and browsing/session separation are confirmed. Deploy checks gate publishing."
     },
     {
@@ -75,7 +75,7 @@
     }
   ],
   "nextActions": [
-    "Resolve the documented source and translation questions in opening drafts 3–7; support complete multi-paragraph reports, inherited chains and transmission notes in the reader before content admission.",
+    "Resolve the documented source and translation questions in opening drafts 3–7; generalize per-entry edition citations and inherited-chain context before admitting any reviewed records. Complete source-role presentation and unavailable-audio guards are implemented.",
     "Complete the Arabic edition/reference map using the new exact-span inventory and pinned printed-witness findings; keep combined labels distinct from missing or misassigned bodies.",
     "Find a more complete authoritative English witness: the IslamHouse EPUB and PDF share seven checked omissions and additional transcription defects. Keep their exact inventories as comparison evidence rather than patching them silently.",
     "Obtain complete English source coverage and explicit offline/narration permissions; request #4160 is posted.",
@@ -130,11 +130,16 @@
     "preview": "research/opening-next.html",
     "source": "content/sources/wikisource-opening/manifest.json",
     "scope": "Entries 3–7; 32 exact Arabic spans, complete draft translations and comparison evidence. Not admitted to the reader.",
-    "remaining": "Resolve source/lexical questions, review inherited speaker and note attribution, and extend the reader’s fixed two-block model before admitting reviewed records. No independent approval has been fabricated.",
+    "remaining": "Resolve source/lexical questions, review inherited speaker and note attribution, and provide per-entry source citations before admitting reviewed records. Multi-paragraph source-role rendering is now implemented; no independent approval has been fabricated.",
     "verification": {
       "automated": "56 Node and 25 Python checks pass; exact extraction, exhaustive segmentation, changed-text rejection, comparison coverage, candidate status and generated-artifact fidelity are checked.",
       "browser": "All 32 rendered English and 32 Arabic segment texts matched the draft record exactly. Complete chain across the Hadith 7 paragraph boundary displayed. Hadith 5 source/questions expanded. No horizontal overflow at 393px or 320px.",
       "reader": "Existing canonical source and release opening-82b548d8899a remain unchanged."
     }
+  },
+  "readerStructure": {
+    "status": "implemented-with-unchanged-two-entry-reader",
+    "evidence": "research/reader-structure-verification.json",
+    "scope": "Explicit exact-span source presentation; multi-paragraph chains, letters and transmission notes; missing-audio guards and correct paused listening navigation. No new source records admitted."
   }
 }

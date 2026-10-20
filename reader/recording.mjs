@@ -17,3 +17,6 @@ export const recording = {
   ],
   "status": "Cedar Take A delivery selected; exact spoken wording and names await listening review"
 };
+
+// An unavailable reference must never select a different recording.
+export function recordedChapter(number){return recording.chapters.find(chapter=>chapter.number===number)??null;}

@@ -1,5 +1,6 @@
 import {verifyResponse} from './integrity.mjs';
 import {validateChapters} from './navigation.mjs';
+import {validateSourceStructure} from './source-structure.mjs';
 const freeze=value=>{if(value&&typeof value==='object'){Object.values(value).forEach(freeze);Object.freeze(value);}return value;};
 const requireValue=(value,message)=>{if(!value)throw new Error(message);};
 function validateCatalog(catalog){
@@ -51,7 +52,7 @@ export async function createContentLibrary({files,base=new URL('./',import.meta.
    for(const entry of pack.entries){
     const summary=summaries.get(entry.number);
     requireValue(entry.id===summary.id&&entry.book===summary.book,'Entry identity mismatch');
-    for(const lang of ['english','arabic'])requireValue(Array.isArray(entry[lang+'_blocks'])&&entry[lang+'_blocks'].length>=2&&entry[lang+'_blocks'].every(b=>typeof b==='string'&&b.trim()),'Incomplete narration');
+    validateSourceStructure(entry);
     requireValue(entry.english_blocks.join(' ').trim().split(/\s+/u).length===summary.englishWords,'Entry metadata mismatch');
    }
    freeze(pack);loaded.set(id,pack);return pack;

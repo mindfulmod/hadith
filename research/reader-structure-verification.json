@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-10-20",
+  "readerRelease": "opening-353d181a5d3f",
+  "status": "verified-before-publication",
+  "automated": {
+    "node": 67,
+    "python": 25,
+    "coverage": [
+      "Exact source text reconstruction, including punctuation, whitespace and Unicode code-point ranges.",
+      "Reject gaps, overlaps, missing paragraphs, reordering, unsupported roles and missing presentation.",
+      "Changed presentation invalidates recorded context approval even when wording is unchanged.",
+      "Publisher and loader reject incomplete layouts despite valid text/file hashes.",
+      "Unavailable audio requests leave idle and playing states untouched.",
+      "Listening route changes prepare the requested chapter without autoplay and preserve active playback."
+    ]
+  },
+  "browser": {
+    "widths": [
+      393,
+      320
+    ],
+    "existingText": "Both English blocks of each live entry and the second Arabic source dialog match the canonical record.",
+    "longText": "A local-only Hadith 7 working draft renders every English segment exactly once, with its two-paragraph chain in one disclosure and its letter and transmission note in source order. No horizontal overflow. This is not source approval or reader admission.",
+    "playback": "The compact player opens with reading; successive paused listening routes show the requested reference and chapter position without autoplay.",
+    "limitations": [
+      "Desktop browser checks do not replace iPhone locked-screen/interruption testing.",
+      "New entries remain outside the reader; per-entry citations and source/translation questions remain unresolved."
+    ],
+    "audioUnavailable": "A private local fixture marks an existing entry as unrecorded: its listening link displays Audio isn’t available yet, Read returns to its full text, No audio yet is visible at 320px, and the player remains hidden. The fixture is outside Git and all release artifacts."
+  },
+  "preserved": [
+    "Canonical Arabic/English source record",
+    "Existing book pack and review ledger",
+    "Recording audio bytes and complete narration scripts",
+    "Chapter boundaries and one persistent media element",
+    "Artwork, colour palette, personal data namespace and separate offline reading/audio choices"
+  ]
+}

@@ -4,6 +4,7 @@ import {createHash} from 'node:crypto';
 import {pathToFileURL} from 'node:url';
 import assert from 'node:assert/strict';
 import {validateChapters} from '../reader/navigation.mjs';
+import {validateSourceStructure} from '../reader/source-structure.mjs';
 export const digest=value=>createHash('sha256').update(value).digest('hex');
 export const objectHash=value=>digest(JSON.stringify(value));
 const root=new URL('../',import.meta.url);
@@ -41,7 +42,7 @@ export function buildBooks(source,ledger,{production=false}={}){
  for(const entry of source.entries){
   assert(Number.isSafeInteger(entry.number)&&entry.number>0,'Invalid reference');
   assert(typeof entry.id==='string'&&entry.id,'Missing source ID');
-  for(const language of ['arabic','english'])assert(Array.isArray(entry[language+'_blocks'])&&entry[language+'_blocks'].length>=2&&entry[language+'_blocks'].every(b=>typeof b==='string'&&b.trim()),'Complete chain and narration blocks required');
+  validateSourceStructure(entry);
   const record=ledger.entries.find(r=>r.number===entry.number);
   assert(record&&record.id===entry.id,'Missing review record');
   assert.equal(record.entrySha256,objectHash(entry),'Entry or context changed since review');
