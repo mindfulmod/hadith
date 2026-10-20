@@ -27,6 +27,9 @@ jobs:
           node scripts/import-bukhari.mjs --check > /dev/null
           python3 scripts/import-bukhari-jk.py --check > /dev/null
           python3 scripts/import-english.py --check > /dev/null
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/import-opening.py --check
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/check-opening-review.py
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/build-opening-review.py --check
       - name: Test reader, source gates, backups and release hashes
         run: node --test tests/*.test.mjs
       - name: Test source intake and evidence integrity

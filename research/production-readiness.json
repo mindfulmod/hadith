@@ -64,7 +64,7 @@
     {
       "id": "production-testing",
       "status": "in-progress",
-      "evidence": "75 passing automated checks (56 Node, 19 Python); research/navigation-verification.json; research/offline-packs-verification.json; .github/workflows/reader-checks.yml",
+      "evidence": "81 automated checks (56 Node, 25 Python); research/navigation-verification.json; research/offline-packs-verification.json; tests/test_opening_review.py; .github/workflows/reader-checks.yml",
       "remaining": "Accessibility audit, keyboard/screen reader review, optional iPhone full-place/settings restore and locked-screen/interruption acceptance after final architecture changes. Default iPhone backup export/merge restore and browsing/session separation are confirmed. Deploy checks gate publishing."
     },
     {
@@ -75,6 +75,7 @@
     }
   ],
   "nextActions": [
+    "Resolve the documented source and translation questions in opening drafts 3–7; support complete multi-paragraph reports, inherited chains and transmission notes in the reader before content admission.",
     "Complete the Arabic edition/reference map using the new exact-span inventory and pinned printed-witness findings; keep combined labels distinct from missing or misassigned bodies.",
     "Find a more complete authoritative English witness: the IslamHouse EPUB and PDF share seven checked omissions and additional transcription defects. Keep their exact inventories as comparison evidence rather than patching them silently.",
     "Obtain complete English source coverage and explicit offline/narration permissions; request #4160 is posted.",
@@ -111,7 +112,9 @@
     "status": "posted-awaiting-response",
     "url": "https://github.com/sunnah-com/api/issues/4160",
     "record": "research/source-access-request.json",
-    "permissionsGranted": false
+    "permissionsGranted": false,
+    "lastChecked": "2026-10-20",
+    "latestObservation": "Public GitHub comments endpoint returned an empty list; no permission response observed."
   },
   "deploymentMigration": {
     "mode": "GitHub Actions",
@@ -120,5 +123,18 @@
     "readerRelease": "opening-bfb44e69b629",
     "publicFiles": 167,
     "verification": "Verify job and dependent deploy job both succeeded. Published site-release.json matched all local public-file hashes; representative live reader and legacy routes matched byte-for-byte."
+  },
+  "openingExpansion": {
+    "status": "five-complete-working-drafts-with-unresolved-issues",
+    "record": "content/review/opening-next-drafts.json",
+    "preview": "research/opening-next.html",
+    "source": "content/sources/wikisource-opening/manifest.json",
+    "scope": "Entries 3–7; 32 exact Arabic spans, complete draft translations and comparison evidence. Not admitted to the reader.",
+    "remaining": "Resolve source/lexical questions, review inherited speaker and note attribution, and extend the reader’s fixed two-block model before admitting reviewed records. No independent approval has been fabricated.",
+    "verification": {
+      "automated": "56 Node and 25 Python checks pass; exact extraction, exhaustive segmentation, changed-text rejection, comparison coverage, candidate status and generated-artifact fidelity are checked.",
+      "browser": "All 32 rendered English and 32 Arabic segment texts matched the draft record exactly. Complete chain across the Hadith 7 paragraph boundary displayed. Hadith 5 source/questions expanded. No horizontal overflow at 393px or 320px.",
+      "reader": "Existing canonical source and release opening-82b548d8899a remain unchanged."
+    }
   }
 }
