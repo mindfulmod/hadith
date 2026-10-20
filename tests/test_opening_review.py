@@ -82,6 +82,17 @@ class OpeningReviewTests(unittest.TestCase):
         self.assertIn('ح ',es[6]['segments'][1]['arabic'])
         self.assertIn('5-lahu-laka',[i['id'] for i in es[5]['unresolved'] if isinstance(i,dict)])
 
+    def test_correction_proposals_are_exact_evidenced_and_never_self_approve(self):
+        entry=next(e for e in DRAFT['entries'] if e['number']==5)
+        proposal=entry['proposedCorrections'][0]
+        self.assertEqual((proposal['original'],proposal['replacement']),('له','لك'))
+        self.assertIn('for him',next(s['english'] for s in entry['segments'] if s['id']=='5-3'))
+        self.assertTrue(review.validate(CAT,DRAFT))
+        for mutation in [lambda p:p.update(status='applied'),lambda p:p.update(reviewerKind='human'),lambda p:p.update(start=p['start']+1),lambda p:p.update(original='غير'),lambda p:p.update(sources=[]),lambda p:p.update(englishOriginal='not in the draft')]:
+            draft=copy.deepcopy(DRAFT);e=next(e for e in draft['entries'] if e['number']==5);mutation(e['proposedCorrections'][0]);rebind(e)
+            with self.assertRaises(ValueError):review.validate(CAT,draft)
+        self.assertIn('Proposed correction · not applied',page.render(CAT,DRAFT))
+
     def test_rendered_artifact_preserves_each_segment_once_and_escapes_text(self):
         actual=page.render(CAT,DRAFT)
         self.assertEqual((ROOT/'research/opening-next.html').read_text(),actual)

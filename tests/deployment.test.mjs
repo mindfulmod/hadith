@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
-import {isPublicFile,verifyFiles,checkArtifactPaths,checkLocalLinks} from '../scripts/build-site.mjs';
+import {isPublicFile,verifyFiles,checkArtifactPaths,checkLocalLinks,checkSourceNoteLinks} from '../scripts/build-site.mjs';
 import {release} from '../reader/release.mjs';
 const repository=new URL('../',import.meta.url);
 test('site packaging preserves the reader and earlier public experiences, excluding source intake and build tools',()=>{
@@ -33,4 +33,10 @@ test('local-link checking catches omitted pages and tolerates anchors and extern
  const pages={'index.html':'<a href="reader/">Read</a>', 'reader/index.html':'<a href="about.html#privacy">About</a><a href="https://sunnah.com/bukhari:1">Source</a>','reader/about.html':'<a href="./">Return</a>'};
  checkLocalLinks(paths,{read:path=>pages[path]});
  pages['reader/about.html']='<img src="missing.jpg">';assert.throws(()=>checkLocalLinks(paths,{read:path=>pages[path]}),/Missing local link/);
+});
+
+test('source comparison links must identify exactly one section in the offline notes',()=>{
+ const packs=[{sourceReferences:{entries:[{localNotes:{path:'notes.html',fragment:'hadith-2'}}]}}];
+ checkSourceNoteLinks(packs,{read:()=>'<section id="hadith-2">Exact entry notes</section>'});
+ for(const html of ['<section id="hadith-1">Wrong entry</section>','<p data-id="hadith-2">Not an anchor</p>','<p id="hadith-2"></p><p id="hadith-2"></p>'])assert.throws(()=>checkSourceNoteLinks(packs,{read:()=>html}),/comparison note anchor/);
 });

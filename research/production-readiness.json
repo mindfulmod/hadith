@@ -10,7 +10,8 @@
     "architecture": "Keep the static PWA. Split collection metadata, book text packs, search index and audio packs; load text and download audio independently. Preserve the persistent media element and waiting-worker update behavior.",
     "publication": "Candidate import is not reader approval. Resolve source coverage and rights, then review complete narrator chains, narration, chapter context and any source notes separately. Preserve repeated narrations; do not deduplicate by meaning.",
     "browsing": "Browsing outside the current session leaves its plan and continuation point intact. Only Start a session here, Next session, or an explicit restart replaces/restarts the plan; the user confirmed this on 18 October 2026.",
-    "offline": "All available reading text, source notes and artwork saved together; choose Cedar audio separately. Optional delivery comparison recordings remain a separate choice. User selected this on 20 October 2026."
+    "offline": "All available reading text, source notes and artwork saved together; choose Cedar audio separately. Optional delivery comparison recordings remain a separate choice. User selected this on 20 October 2026.",
+    "inheritedChainContext": "A brief note above the text, explicitly separate from the hadith wording, with a link that opens the previous narrator chain. User selected this on 20 October 2026."
   },
   "requirements": [
     {
@@ -28,8 +29,8 @@
     {
       "id": "content-review-gates",
       "status": "implemented-for-opening-sample",
-      "evidence": "content/review/opening-ledger.json; scripts/publish-books.mjs; tests/content-library.test.mjs",
-      "remaining": "Obtain actual independent human reviews and reuse evidence. Current production publishing is deliberately refused. Extend edition/reference mapping before expanding beyond the evaluation namespace; audio review needs its own ledger. New source presentation ranges are now validated and included in entry/context approval hashes; per-entry edition/source citations still need generalization."
+      "evidence": "content/review/opening-ledger.json; scripts/publish-books.mjs; tests/content-library.test.mjs; reader/source-references.mjs; tests/source-references.test.mjs",
+      "remaining": "Obtain actual independent human reviews and reuse evidence. Current production publishing is deliberately refused. Extend edition/reference mapping before expanding beyond the evaluation namespace; audio review needs its own ledger. Source presentation and per-entry citations are validated and bound to exact review hashes. Reference metadata requires its own human approval for production."
     },
     {
       "id": "library-navigation-search",
@@ -64,7 +65,7 @@
     {
       "id": "production-testing",
       "status": "in-progress",
-      "evidence": "92 automated checks (67 Node, 25 Python); research/navigation-verification.json; research/offline-packs-verification.json; tests/test_opening_review.py; .github/workflows/reader-checks.yml; research/reader-structure-verification.json",
+      "evidence": "104 automated checks (78 Node, 26 Python); research/navigation-verification.json; research/offline-packs-verification.json; research/reader-structure-verification.json; research/source-reference-verification.json; .github/workflows/reader-checks.yml",
       "remaining": "Accessibility audit, keyboard/screen reader review, optional iPhone full-place/settings restore and locked-screen/interruption acceptance after final architecture changes. Default iPhone backup export/merge restore and browsing/session separation are confirmed. Deploy checks gate publishing."
     },
     {
@@ -75,7 +76,7 @@
     }
   ],
   "nextActions": [
-    "Resolve the documented source and translation questions in opening drafts 3–7; generalize per-entry edition citations and inherited-chain context before admitting any reviewed records. Complete source-role presentation and unavailable-audio guards are implemented.",
+    "Resolve the documented source and translation questions in opening drafts 3–7, including the explicit Hadith 5 correction proposal; obtain real reviews before admitting records. Source-role presentation, per-entry citations, inherited-chain links and unavailable-audio guards are implemented.",
     "Complete the Arabic edition/reference map using the new exact-span inventory and pinned printed-witness findings; keep combined labels distinct from missing or misassigned bodies.",
     "Find a more complete authoritative English witness: the IslamHouse EPUB and PDF share seven checked omissions and additional transcription defects. Keep their exact inventories as comparison evidence rather than patching them silently.",
     "Obtain complete English source coverage and explicit offline/narration permissions; request #4160 is posted.",
@@ -130,7 +131,7 @@
     "preview": "research/opening-next.html",
     "source": "content/sources/wikisource-opening/manifest.json",
     "scope": "Entries 3–7; 32 exact Arabic spans, complete draft translations and comparison evidence. Not admitted to the reader.",
-    "remaining": "Resolve source/lexical questions, review inherited speaker and note attribution, and provide per-entry source citations before admitting reviewed records. Multi-paragraph source-role rendering is now implemented; no independent approval has been fabricated.",
+    "remaining": "Review source/lexical questions, inherited speaker and note attribution, then bind the final per-entry citations before admission. Hadith 5 has a documented lahu → laka proposal supported by printed witnesses and a classical commentary passage; the pinned source and English draft remain unchanged. No independent approval has been fabricated.",
     "verification": {
       "automated": "56 Node and 25 Python checks pass; exact extraction, exhaustive segmentation, changed-text rejection, comparison coverage, candidate status and generated-artifact fidelity are checked.",
       "browser": "All 32 rendered English and 32 Arabic segment texts matched the draft record exactly. Complete chain across the Hadith 7 paragraph boundary displayed. Hadith 5 source/questions expanded. No horizontal overflow at 393px or 320px.",
@@ -141,5 +142,11 @@
     "status": "implemented-with-unchanged-two-entry-reader",
     "evidence": "research/reader-structure-verification.json",
     "scope": "Explicit exact-span source presentation; multi-paragraph chains, letters and transmission notes; missing-audio guards and correct paused listening navigation. No new source records admitted."
+  },
+  "sourceReferences": {
+    "status": "implemented-with-unchanged-two-entry-reader",
+    "evidence": "research/source-reference-verification.json",
+    "scope": "Entry-specific translator identity, Arabic input, explicit edition/page citations, local comparison notes and inherited-chain context. No new source records admitted.",
+    "readerRelease": "opening-a04e158d819d"
   }
 }

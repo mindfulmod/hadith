@@ -1,6 +1,7 @@
 import {verifyResponse} from './integrity.mjs';
 import {validateChapters} from './navigation.mjs';
 import {validateSourceStructure} from './source-structure.mjs';
+import {validateSourceReferences,externalSourceURL} from './source-references.mjs';
 const freeze=value=>{if(value&&typeof value==='object'){Object.values(value).forEach(freeze);Object.freeze(value);}return value;};
 const requireValue=(value,message)=>{if(!value)throw new Error(message);};
 function validateCatalog(catalog){
@@ -55,6 +56,9 @@ export async function createContentLibrary({files,base=new URL('./',import.meta.
     validateSourceStructure(entry);
     requireValue(entry.english_blocks.join(' ').trim().split(/\s+/u).length===summary.englishWords,'Entry metadata mismatch');
    }
+   validateSourceReferences(pack.sourceReferences,pack.entries,{sourceRecordSha256:catalog.sourceRecordSha256,knownEntries:catalog.entries});
+   externalSourceURL(pack.sourceRecord.license.url);
+   for(const row of pack.sourceReferences.entries)requireValue(descriptors.has(row.localNotes.path),'Offline comparison notes are missing from this release');
    freeze(pack);loaded.set(id,pack);return pack;
   })();
   pending.set(id,task);

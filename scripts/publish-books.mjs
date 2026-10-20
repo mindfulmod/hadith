@@ -5,6 +5,7 @@ import {pathToFileURL} from 'node:url';
 import assert from 'node:assert/strict';
 import {validateChapters} from '../reader/navigation.mjs';
 import {validateSourceStructure} from '../reader/source-structure.mjs';
+import {validateSourceReferences} from '../reader/source-references.mjs';
 export const digest=value=>createHash('sha256').update(value).digest('hex');
 export const objectHash=value=>digest(JSON.stringify(value));
 const root=new URL('../',import.meta.url);
@@ -55,11 +56,15 @@ export function buildBooks(source,ledger,{production=false}={}){
    approval(record.arabicReview,ar,'Arabic');approval(record.englishReview,en,'English');approval(record.contextReview,record.entrySha256,'Chapter and reference context');
   }else assert.equal(record.status,'evaluation-only','Evaluation status must stay explicit');
  }
+ validateSourceReferences(ledger.sourceReferences,source.entries,{sourceRecordSha256:ledger.sourceRecordSha256});
+ assert.equal(ledger.referencesSha256,objectHash(ledger.sourceReferences),'Source references changed since review');
+ for(const row of ledger.sourceReferences.entries)assert.equal(row.entrySha256,objectHash(source.entries.find(e=>e.id===row.id)),'References do not match the exact entry');
+ if(mode==='production')approval(ledger.referencesReview,ledger.referencesSha256,'Source references');
  const assigned=ledger.books.flatMap(b=>b.entryNumbers);
  assert.deepEqual(assigned,source.entries.map(e=>e.number),'Book order must assign each entry exactly once');
  assert.equal(new Set(ledger.books.map(b=>b.id)).size,ledger.books.length,'Duplicate book ID');
  const {entries,...sourceRecord}=source;
- const catalog={schemaVersion:1,namespace:ledger.namespace,publication:mode,sourceRecordSha256:ledger.sourceRecordSha256,books:[],entries:[]};
+ const catalog={schemaVersion:1,namespace:ledger.namespace,publication:mode,sourceRecordSha256:ledger.sourceRecordSha256,referencesSha256:ledger.referencesSha256,books:[],entries:[]};
  const files=new Map();
  for(const book of ledger.books){
   assert(/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(book.id),'Invalid book ID');
@@ -67,7 +72,10 @@ export function buildBooks(source,ledger,{production=false}={}){
   validateChapters(book);
   const selected=book.entryNumbers.map(n=>entries.find(e=>e.number===n));
   assert(selected.length,'Empty book');
-  const pack={schemaVersion:1,namespace:ledger.namespace,publication:mode,book:{id:book.id,number:book.number,title:book.title,...(book.chapters?{chapters:book.chapters}:{})},sourceRecord,entries:selected};
+  const referenceRows=ledger.sourceReferences.entries.filter(row=>book.entryNumbers.includes(row.number));
+  const citedIds=new Set(referenceRows.flatMap(row=>row.citations.map(c=>c.sourceId)));
+  const sourceReferences={...ledger.sourceReferences,entries:referenceRows,sources:ledger.sourceReferences.sources.filter(s=>citedIds.has(s.id))};
+  const pack={schemaVersion:1,namespace:ledger.namespace,publication:mode,book:{id:book.id,number:book.number,title:book.title,...(book.chapters?{chapters:book.chapters}:{})},sourceRecord,sourceReferences,entries:selected};
   const bytes=JSON.stringify(pack,null,2)+'\n',sha256=digest(bytes),path=`books/${book.id}-${sha256.slice(0,16)}.json`;
   files.set(path,bytes);
   catalog.books.push({...book,path,bytes:Buffer.byteLength(bytes),sha256});

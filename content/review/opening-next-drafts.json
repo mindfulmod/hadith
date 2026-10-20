@@ -41,6 +41,13 @@
       "url": "https://archive.org/download/waq79565/79565.pdf",
       "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
       "role": "Modern printed Arabic comparison, visually inspected; selected differences are recorded rather than harmonized."
+    },
+    {
+      "id": "ibn-hajar-opening-5",
+      "url": "https://www.islamweb.net/ar/library/content/52/7/?idfrom=&idto=&start=",
+      "role": "Ibn Hajar, Fath al-Bari, discussion of opening report 5, volume 1, pages 39–40; digital classical commentary consulted 20 October 2026. The website breadcrumb is inconsistent with the displayed opening-report text; identify the passage by its wording, not that breadcrumb.",
+      "checkedAt": "2026-10-20",
+      "evidenceExcerpt": "جمعه لك في صدرك"
     }
   ],
   "entries": [
@@ -514,13 +521,27 @@
           ],
           "reviewerKind": "ai",
           "status": "comparison-recorded-not-approval"
+        },
+        {
+          "segments": [
+            "5-3"
+          ],
+          "topic": "Evidence for a separately recorded correction",
+          "finding": "The digital Fath al-Bari discussion explicitly records laka and attributes the explanatory phrase to Ibn Abbas. Together with the two inspected printed witnesses, this supports the proposed lahu-to-laka correction. A proposal is recorded separately from both the unchanged Arabic and the current English draft; it is not an independent approval.",
+          "sources": [
+            "brill-1862",
+            "dar-ibn-kathir-2002",
+            "ibn-hajar-opening-5"
+          ],
+          "reviewerKind": "ai",
+          "status": "comparison-recorded-not-approval"
         }
       ],
       "unresolved": [
         "Independent Arabic, translation and context review remains pending. This draft is not production approved.",
         {
           "id": "5-lahu-laka",
-          "detail": "Resolve the apparent lahu/laka transcription difference before reader admission. If corrected, retain the original, chosen witness, exact change and reviewer evidence; do not update the pinned paragraph in place.",
+          "detail": "Review the explicit lahu → laka correction proposal below. Both inspected print witnesses and Ibn Hajar’s discussion support laka. The pinned Arabic and current English remain unchanged; accepting a correction requires a separately versioned text with the original and evidence retained.",
           "status": "pending-specialist-review"
         },
         {
@@ -569,7 +590,28 @@
         ],
         "finding": "Arabic-to-English pass and comparison pass completed as working-draft review; listed unresolved choices remain. This is not independent human review."
       },
-      "reviewRecordSha256": "3e07e2a03dec651470b3d77e803d3c54717aef4d2f0586595a9586ffde1db26d"
+      "proposedCorrections": [
+        {
+          "id": "5-lahu-laka-proposal",
+          "status": "proposed-not-applied",
+          "reviewerKind": "ai",
+          "paragraphId": "mwGA",
+          "start": 254,
+          "end": 256,
+          "original": "له",
+          "replacement": "لك",
+          "englishSegmentId": "5-3",
+          "englishOriginal": "for him",
+          "englishReplacement": "for you",
+          "sources": [
+            "brill-1862",
+            "dar-ibn-kathir-2002",
+            "ibn-hajar-opening-5"
+          ],
+          "reason": "Both previously inspected printed witnesses read laka. Ibn Hajar’s discussion also explicitly records laka in the relevant phrase, including the version with fi sadrika. This supports treating lahu in the selected digital text as a likely transcription defect. Proposed Arabic and corresponding English corrections remain separate until reviewed; neither the pinned source nor the working draft has been changed."
+        }
+      ],
+      "reviewRecordSha256": "1b45e2709016e6a5eda10b99b733211be2eb1225395dcf4cb902bee3f9138e88"
     },
     {
       "number": 6,

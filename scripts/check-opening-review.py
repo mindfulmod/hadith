@@ -57,6 +57,21 @@ def validate(catalog,draft):
             raise ValueError('Arabic entry hash mismatch')
         if sha('\n\n'.join(s['english'] for s in e['segments']))!=e['englishSha256']:
             raise ValueError('English entry hash mismatch')
+        for proposal in e.get('proposedCorrections',[]):
+            if proposal.get('status')!='proposed-not-applied' or proposal.get('reviewerKind')!='ai':
+                raise ValueError('A correction proposal cannot claim approval or application')
+            if proposal['paragraphId'] not in e['arabicParagraphIds']:
+                raise ValueError('Correction targets a different source paragraph')
+            original=blocks[proposal['paragraphId']]['text'];start=proposal['start'];end=proposal['end']
+            if type(start) is not int or type(end) is not int or not 0<=start<end<=len(original) or original[start:end]!=proposal['original']:
+                raise ValueError('Correction proposal does not match the exact source')
+            if not proposal['replacement'].strip() or proposal['replacement']==proposal['original'] or not proposal['reason'].strip():
+                raise ValueError('Invalid correction proposal')
+            segment=next((s for s in e['segments'] if s['id']==proposal['englishSegmentId']),None)
+            if segment is None or not proposal['englishOriginal'] or segment['english'].count(proposal['englishOriginal'])!=1 or not proposal['englishReplacement'].strip():
+                raise ValueError('Correction proposal does not match its English draft')
+            if not proposal['sources'] or not set(proposal['sources'])<=known_sources:
+                raise ValueError('Correction proposal needs recorded evidence')
         ids={s['id'] for s in e['segments']}
         if e['comparisonCoverage']['segmentIds']!=[s['id'] for s in e['segments']] or e['comparisonCoverage']['reviewerKind']!='ai':
             raise ValueError('Comparison coverage or attribution is wrong')

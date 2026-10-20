@@ -50,6 +50,7 @@ function approvedFixture(){
  const approved=sha256=>({status:'approved',reviewerKind:'human',reviewer:'TEST FIXTURE ONLY',reviewedAt:'2026-10-20',sha256,evidence:['test fixture only']});
  l.publication='production';l.sourceRecordSha256=objectHash(s);l.rights=approved(l.sourceRecordSha256);l.collectionReview=approved(l.catalogContextSha256);
  for(const entry of s.entries){const row=l.entries.find(r=>r.number===entry.number);Object.assign(row,{entrySha256:objectHash(entry),arabicSha256:digest(entry.arabic_blocks.join('\n\n')),englishSha256:digest(entry.english_blocks.join('\n\n')),status:'approved',unresolvedDiscrepancies:[]});row.arabicReview=approved(row.arabicSha256);row.englishReview=approved(row.englishSha256);row.contextReview=approved(row.entrySha256);}
+ l.sourceReferences.sourceRecordSha256=l.sourceRecordSha256;for(const row of l.sourceReferences.entries)row.entrySha256=objectHash(s.entries.find(e=>e.id===row.id));l.referencesSha256=objectHash(l.sourceReferences);l.referencesReview=approved(l.referencesSha256);
  return {s,l};
 }
 test('presentation metadata is bound to the review, even when no wording changes',()=>{
@@ -63,7 +64,7 @@ test('publisher and loader reject incomplete presentation even with valid text/f
  pack.entries[0].presentation.english.pop();
  const catalog=structuredClone(good.catalog),body=JSON.stringify(pack),sha256=digest(body),path=`books/${pack.book.id}-${sha256.slice(0,16)}.json`;
  Object.assign(catalog.books[0],{path,bytes:Buffer.byteLength(body),sha256});
- const responses=new Map([[path,body],['books/catalog.json',JSON.stringify(catalog)]]),files=[...responses].map(([path,body])=>({path,bytes:Buffer.byteLength(body),sha256:digest(body)}));
+ const responses=new Map([[path,body],['books/catalog.json',JSON.stringify(catalog)],['source-review.html','<p>Fixture notes</p>']]),files=[...responses].map(([path,body])=>({path,bytes:Buffer.byteLength(body),sha256:digest(body)}));
  const library=await createContentLibrary({files,base:new URL('https://example.com/reader/'),fetcher:async url=>new Response(responses.get(url.pathname.slice('/reader/'.length)))});
  await assert.rejects(library.loadForNumber(1),/omits text/);assert.equal(library.getEntry(1),undefined);
  s.entries[0].presentation.english.pop();l.sourceRecordSha256=objectHash(s);l.rights.sha256=l.sourceRecordSha256;

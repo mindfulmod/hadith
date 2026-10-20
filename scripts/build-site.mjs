@@ -36,8 +36,17 @@ export function checkLocalLinks(paths,{read=path=>readFileSync(resolve(repositor
   }
  }
 }
+export function checkSourceNoteLinks(packs,{read=path=>readFileSync(resolve(repository,'reader',path),'utf8')}={}){
+ const pages=new Map();
+ for(const pack of packs)for(const row of pack.sourceReferences.entries){
+  const {path,fragment}=row.localNotes;
+  if(!pages.has(path))pages.set(path,[...read(path).matchAll(/\s+id\s*=\s*["']([^"']+)["']/g)].map(match=>match[1]));
+  assert.equal(pages.get(path).filter(id=>id===fragment).length,1,`Missing or duplicate comparison note anchor: ${path}#${fragment}`);
+ }
+}
 export function buildSite(destination){
- publishBooks({check:true});verifyFiles(release.files);
+ const books=publishBooks({check:true});verifyFiles(release.files);
+ checkSourceNoteLinks(books.catalog.books.map(book=>JSON.parse(books.files.get(book.path))));
  const version=JSON.parse(readFileSync(resolve(repository,'reader-version.json'),'utf8'));assert.equal(version.release,release.id,'Stale update marker');
  const paths=execFileSync('git',['ls-files','-z'],{cwd:repository,encoding:'utf8'}).split('\0').filter(isPublicFile).sort();
  checkArtifactPaths(paths);checkLocalLinks(paths);

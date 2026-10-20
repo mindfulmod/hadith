@@ -60,5 +60,157 @@
   "catalogContextSha256": "14c02b5b0eaf99e890fd4d47261fae66ccf85f0f3367f1b3ad6fe78e574e489a",
   "collectionReview": {
     "status": "pending"
+  },
+  "sourceReferences": {
+    "schemaVersion": 1,
+    "sourceRecordSha256": "fea9b889d30bdc3ceb8e41de8cb390292905391d2079993ce69a85b138bd7f33",
+    "sources": [
+      {
+        "id": "arabic-base",
+        "label": "Arabic Wikisource · fixed revision 484874",
+        "url": "https://ar.wikisource.org/w/index.php?title=%D8%B5%D8%AD%D9%8A%D8%AD_%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A/%D9%83%D8%AA%D8%A7%D8%A8_%D8%A8%D8%AF%D8%A1_%D8%A7%D9%84%D9%88%D8%AD%D9%8A&oldid=484874",
+        "kind": "arabic-input",
+        "format": "web"
+      },
+      {
+        "id": "darussalam-sample",
+        "label": "Darussalam · Muhammad Muhsin Khan",
+        "url": "https://dar-us-salam.com/?controller=attachment&id_attachment=433",
+        "kind": "english-comparison",
+        "format": "pdf"
+      },
+      {
+        "id": "bewley",
+        "label": "Aisha Bewley · English translation",
+        "url": "https://aishabewley.org/bukhari1",
+        "kind": "english-comparison",
+        "format": "web"
+      },
+      {
+        "id": "sunnah-1",
+        "label": "Sunnah.com · Bukhari 1",
+        "url": "https://sunnah.com/bukhari:1",
+        "kind": "reference-check",
+        "format": "web"
+      },
+      {
+        "id": "sunnah-2",
+        "label": "Sunnah.com · Bukhari 2",
+        "url": "https://sunnah.com/bukhari:2",
+        "kind": "reference-check",
+        "format": "web"
+      },
+      {
+        "id": "brill-scan",
+        "label": "Historical Arabic print · Brill 1862",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/%D8%B5%D8%AD%D9%8A%D8%AD_%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A_%D8%B11.pdf",
+        "kind": "arabic-witness",
+        "format": "pdf"
+      }
+    ],
+    "entries": [
+      {
+        "id": "bukhari:1",
+        "number": 1,
+        "entrySha256": "639d7fce6048a408c578f32da4a55a720cc0f06ec7c48f01477a7d59dafb8d6d",
+        "translation": {
+          "label": "English working translation",
+          "description": "AI-produced working translation; compared against two named English translators and the Arabic. Not independently certified. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-base",
+            "locator": "Opening book · source entry 1",
+            "scope": "The Arabic paragraphs used in this entry, retained verbatim. A community-maintained digital transcription, not assumed error-free."
+          },
+          {
+            "id": "publisher",
+            "sourceId": "darussalam-sample",
+            "locator": "Printed page 45 · PDF page 5",
+            "pdfPage": 5,
+            "scope": "Arabic and Muhammad Muhsin Khan English used for comparison. This app does not reproduce that English translation."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley",
+            "locator": "Opening chapter · entry 1",
+            "scope": "An independent named English comparison. Its shortened narrator introduction does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "numbering",
+            "sourceId": "sunnah-1",
+            "locator": "Bukhari 1",
+            "scope": "Additional Arabic and numbering check. Its Khan-family English is not counted as a third independent translator."
+          },
+          {
+            "id": "historical",
+            "sourceId": "brill-scan",
+            "locator": "Opening reports · PDF page 4",
+            "pdfPage": 4,
+            "scope": "Historical printed Arabic comparison. It is not established as the edition from which the digital input was transcribed."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "source-review.html",
+          "fragment": "hadith-1",
+          "label": "Full comparison notes for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:2",
+        "number": 2,
+        "entrySha256": "f9f9a33f36d8d56783151d8d44700f5dec1f93e3d45fcc5e5ad94fe06e99f370",
+        "translation": {
+          "label": "English working translation",
+          "description": "AI-produced working translation; compared against two named English translators and the Arabic. Not independently certified. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-base",
+            "locator": "Opening book · source entry 2",
+            "scope": "The Arabic paragraphs used in this entry, retained verbatim. A community-maintained digital transcription, not assumed error-free."
+          },
+          {
+            "id": "publisher",
+            "sourceId": "darussalam-sample",
+            "locator": "Printed page 46 · PDF page 6",
+            "pdfPage": 6,
+            "scope": "Arabic and Muhammad Muhsin Khan English used for comparison. This app does not reproduce that English translation."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley",
+            "locator": "Opening chapter · entry 2",
+            "scope": "An independent named English comparison. Its shortened narrator introduction does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "numbering",
+            "sourceId": "sunnah-2",
+            "locator": "Bukhari 2",
+            "scope": "Additional Arabic and numbering check. Its Khan-family English is not counted as a third independent translator."
+          },
+          {
+            "id": "historical",
+            "sourceId": "brill-scan",
+            "locator": "Opening reports · PDF page 4",
+            "pdfPage": 4,
+            "scope": "Historical printed Arabic comparison. It is not established as the edition from which the digital input was transcribed."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "source-review.html",
+          "fragment": "hadith-2",
+          "label": "Full comparison notes for this hadith"
+        }
+      }
+    ]
+  },
+  "referencesSha256": "25ba38c353d58360ddbbbdf580c1267586fef69cda1ec36e0f046c4af67beea2",
+  "referencesReview": {
+    "status": "pending"
   }
 }

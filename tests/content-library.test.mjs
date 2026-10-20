@@ -7,7 +7,7 @@ import {planSession} from '../reader/session.mjs';
 const read=path=>JSON.parse(readFileSync(new URL('../'+path,import.meta.url)));
 const source=read('research/bukhari-opening-review.json'),ledger=read('content/review/opening-ledger.json');
 function fixture(){
- const result=buildBooks(source,ledger),responses=new Map(result.files),files=[...responses].map(([path,body])=>({path,bytes:Buffer.byteLength(body),sha256:digest(body)}));
+ const result=buildBooks(source,ledger),responses=new Map([...result.files,['source-review.html','<p>Fixture notes</p>']]),files=[...responses].map(([path,body])=>({path,bytes:Buffer.byteLength(body),sha256:digest(body)}));
  const calls=[];let failure=null;
  const fetcher=async url=>{const path=new URL(url).pathname.slice('/reader/'.length);calls.push(path);if(failure&&path!== 'books/catalog.json')return failure();return new Response(responses.get(path),{status:responses.has(path)?200:404});};
  return {result,responses,files,calls,fetcher,fail:fn=>{failure=fn;}};
@@ -35,7 +35,7 @@ test('production checks require human sign-off bound to exact text, context and 
  // Synthetic fixture only; no approvals are written to the real ledger.
  const copy=structuredClone(ledger);copy.publication='production';
  const approved=sha256=>({status:'approved',reviewerKind:'human',reviewer:'TEST FIXTURE ONLY',reviewedAt:'2026-10-18',sha256,evidence:['test fixture']});
- copy.rights=approved(copy.sourceRecordSha256);copy.collectionReview=approved(copy.catalogContextSha256);
+ copy.rights=approved(copy.sourceRecordSha256);copy.collectionReview=approved(copy.catalogContextSha256);copy.referencesReview=approved(copy.referencesSha256);
  for(const e of copy.entries){e.status='approved';e.unresolvedDiscrepancies=[];e.arabicReview=approved(e.arabicSha256);e.englishReview=approved(e.englishSha256);e.contextReview=approved(e.entrySha256);}
  assert.equal(buildBooks(source,copy,{production:true}).catalog.publication,'production');
  for(const change of [r=>r.entries[0].englishReview.sha256='old',r=>r.entries[0].contextReview.reviewerKind='ai',r=>r.entries[0].unresolvedDiscrepancies.push('unresolved'),r=>r.rights.evidence=[],r=>r.books[0].title='Changed context']){
@@ -71,10 +71,10 @@ test('a multi-book search refuses partial results and retries only the missing b
  const original=buildBooks(source,ledger),basePack=JSON.parse(original.files.get(original.catalog.books[0].path));
  const catalog={...original.catalog,books:[],entries:[]},responses=new Map(),calls=[];let unavailable=true;
  for(const [index,entry] of source.entries.entries()){
-  const id=`fixture-${index+1}`,pack={...basePack,book:{id,number:index+1,title:'Test fixture'},entries:[entry]},body=JSON.stringify(pack),sha256=digest(body),path=`books/${id}-${sha256.slice(0,16)}.json`;
+  const id=`fixture-${index+1}`,pack={...basePack,book:{id,number:index+1,title:'Test fixture'},sourceReferences:{...basePack.sourceReferences,entries:basePack.sourceReferences.entries.filter(row=>row.id===entry.id)},entries:[entry]},body=JSON.stringify(pack),sha256=digest(body),path=`books/${id}-${sha256.slice(0,16)}.json`;
   responses.set(path,body);catalog.books.push({...pack.book,entryNumbers:[entry.number],bytes:Buffer.byteLength(body),sha256,path});catalog.entries.push({...original.catalog.entries[index],bookId:id});
  }
- responses.set('books/catalog.json',JSON.stringify(catalog));
+ responses.set('books/catalog.json',JSON.stringify(catalog));responses.set('source-review.html','<p>Fixture notes</p>');
  const files=[...responses].map(([path,body])=>({path,bytes:Buffer.byteLength(body),sha256:digest(body)}));
  const fetcher=async url=>{const path=url.pathname.slice('/reader/'.length);calls.push(path);return new Response(responses.get(path),{status:unavailable&&path===catalog.books[1].path?503:200});};
  const library=await createContentLibrary({files,fetcher,base:new URL('https://example.com/reader/')});

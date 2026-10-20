@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-20",
+  "readerRelease": "opening-a04e158d819d",
+  "status": "local-checks-complete",
+  "scope": "Source references and inherited-chain navigation; unchanged two-entry evaluation reader.",
+  "userDecision": "Brief context above the text, clearly separate from narration, linking to the previous chain.",
+  "implementation": [
+    "Each entry records its translation status, Arabic input and explicit citation locators. No page number, translator or edition reference is inferred from the entry number.",
+    "Reference metadata is bound to the complete source record and exact entry hashes. Production requires a separate human reference review; current review is pending.",
+    "Source context requires cited evidence and an available related reference. Chain links open and focus the chain; manual navigation defers audio following.",
+    "The reading download derives its local comparison files from the catalogued entry references. Packaging checks each target section exists exactly once.",
+    "The existing manual navigation fixture now includes explicit presentation, synthetic source records and valid separate offline packs. It remains outside the published artifact."
+  ],
+  "automated": {
+    "node": 78,
+    "python": 26,
+    "total": 104,
+    "coverage": [
+      "Exact reference identity and edition locators",
+      "Unsafe or stale source metadata rejection",
+      "Missing offline notes and missing/duplicate note anchors",
+      "Reference approvals bound to hashes and human review",
+      "Escaping without changing source strings",
+      "Synthetic fixture loading through the same runtime validation",
+      "Unapplied correction proposal bounds, evidence and status"
+    ]
+  },
+  "browser": [
+    "All four English and four Arabic blocks for current entries 1–2 matched the canonical JSON exactly.",
+    "Hadith 1 links to Darussalam PDF page 5 / printed page 45 and Sunnah.com Bukhari 1; Hadith 2 links to PDF page 6 / printed page 46 and Bukhari 2.",
+    "Complete Arabic and comparison disclosures open; source dialog fits at 393px and 320px with no horizontal overflow. Night palette visually inspected.",
+    "Local synthetic entry 13 context linked to synthetic entry 10, opening and focusing its narrator-chain disclosure. The same link inside Sources closed the dialog and opened the chain.",
+    "Starting a fixture session at 13, consulting the previous chain at 10 and returning to Session left Continue pointing to 13.",
+    "Save reading reached Ready offline while Cedar remained Not saved. After both owned preview servers stopped, the reader reloaded, entry 2 sources opened, and source-review.html#hadith-2 loaded.",
+    "Hadith 5 review page displays Proposed correction · not applied; its English still reads for him. No horizontal overflow in the checked view."
+  ],
+  "sourceWork": {
+    "record": "content/review/opening-next-drafts.json",
+    "proposal": "5-lahu-laka-proposal",
+    "status": "proposed-not-applied",
+    "evidence": "Existing recorded printed comparisons plus Ibn Hajar, Fath al-Bari, volume 1 pages 39–40, digital passage consulted 20 October 2026.",
+    "url": "https://www.islamweb.net/ar/library/content/52/7/?idfrom=&idto=&start=",
+    "limits": "AI comparison only. Neither pinned Arabic nor English draft body changed; independent review remains pending."
+  },
+  "unchanged": [
+    "Canonical Arabic and English source strings for the two reader entries",
+    "Opening drafts’ Arabic and English body strings",
+    "Cedar recordings, scripts and chapter timings",
+    "Artwork and palette",
+    "Personal-data storage keys"
+  ],
+  "limits": [
+    "Current entries 1–2 have no inherited-chain context note; that interaction was checked using clearly marked local synthetic data.",
+    "These checks validate presentation, provenance plumbing and byte integrity, not scholarly accuracy or generated speech.",
+    "Updated separate downloads and locked-screen playback still need iPhone acceptance.",
+    "Entries 3–7 remain unapproved drafts outside the reader."
+  ]
+}
