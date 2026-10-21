@@ -10,8 +10,8 @@ export const digest=value=>createHash('sha256').update(value).digest('hex');
 export const objectHash=value=>digest(JSON.stringify(value));
 const root=new URL('../',import.meta.url);
 const json=path=>JSON.parse(readFileSync(new URL(path,root),'utf8'));
-// Deliberate seven-entry admission for the user-authorized personal prototype; not certification.
-const personalPrototypeSourceHash='11a47792c7c679c5f4b7e1f4a52c4d12d045f19b86acba195e3cdf3cd2c7274d';
+// Deliberate version admissions keep prototype growth separate from human production reviews.
+const prototypeAdmissions=json('content/review/prototype-admissions.json');
 // Retained for the original two-entry evaluation and its regression fixtures.
 const evaluationSourceHash='fea9b889d30bdc3ceb8e41de8cb390292905391d2079993ce69a85b138bd7f33';
 function approval(record,hash,label){
@@ -38,9 +38,12 @@ export function buildBooks(source,ledger,{production=false}={}){
   approval(ledger.rights,ledger.sourceRecordSha256,'Reuse rights');
   approval(ledger.collectionReview,ledger.catalogContextSha256,'Collection context');
  }else if(mode==='personal-prototype'){
-  assert.equal(ledger.sourceRecordSha256,personalPrototypeSourceHash,'Personal prototype source version is not admitted');
-  assert.deepEqual(source.entries.map(e=>e.number),[1,2,3,4,5,6,7],'Personal prototype scope changed');
-  assert.deepEqual(ledger.books,[{id:'opening-revelation',number:1,title:source.entries[0].book,entryNumbers:[1,2,3,4,5,6,7]}],'Personal prototype book context changed');
+  assert.equal(prototypeAdmissions.schemaVersion,1);
+  const admission=prototypeAdmissions.admissions.find(a=>a.sourceRecordSha256===ledger.sourceRecordSha256);
+  assert(admission,'Personal prototype source version is not admitted');
+  assert.equal(admission.status,'personal-prototype-only');
+  assert.deepEqual(source.entries.map(e=>e.id),admission.entryIds,'Personal prototype scope changed');
+  assert.deepEqual(ledger.books,admission.books,'Personal prototype book context changed');
   assert.equal(source.prototypeReview?.status,'personal-prototype-only');
   assert.equal(source.prototypeReview.independentReview,'pending');
  }else{
@@ -83,7 +86,7 @@ export function buildBooks(source,ledger,{production=false}={}){
   const referenceRows=ledger.sourceReferences.entries.filter(row=>book.entryNumbers.includes(row.number));
   const citedIds=new Set(referenceRows.flatMap(row=>row.citations.map(c=>c.sourceId)));
   const sourceReferences={...ledger.sourceReferences,entries:referenceRows,sources:ledger.sourceReferences.sources.filter(s=>citedIds.has(s.id))};
-  const pack={schemaVersion:1,namespace:ledger.namespace,publication:mode,book:{id:book.id,number:book.number,title:book.title,...(book.chapters?{chapters:book.chapters}:{})},sourceRecord,sourceReferences,entries:selected};
+  const pack={schemaVersion:1,namespace:ledger.namespace,publication:mode,book:{id:book.id,number:book.number,title:book.title,...(book.sourceEntryCount!==undefined?{sourceEntryCount:book.sourceEntryCount}:{}),...(book.chapters?{chapters:book.chapters}:{})},sourceRecord,sourceReferences,entries:selected};
   const bytes=JSON.stringify(pack,null,2)+'\n',sha256=digest(bytes),path=`books/${book.id}-${sha256.slice(0,16)}.json`;
   files.set(path,bytes);
   catalog.books.push({...book,path,bytes:Buffer.byteLength(bytes),sha256});
@@ -93,7 +96,7 @@ export function buildBooks(source,ledger,{production=false}={}){
  return {catalog,files};
 }
 export function publishBooks({check=false,production=false}={}){
- const result=buildBooks(json('research/bukhari-opening-prototype.json'),json('content/review/opening-prototype-ledger.json'),{production});
+ const result=buildBooks(json('research/bukhari-personal-collection.json'),json('content/review/personal-collection-ledger.json'),{production});
  const directory=new URL('reader/books/',root);
  if(!check)mkdirSync(directory,{recursive:true});
  for(const [path,bytes] of result.files){const url=new URL('reader/'+path,root);if(check)assert.equal(readFileSync(url,'utf8'),bytes,'Stale generated book file: '+path);else writeFileSync(url,bytes);}

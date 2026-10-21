@@ -61,3 +61,6 @@ body:not([data-view=listen]):not([data-view=read]) #audio-close{grid-column:3}
 
 /* Source references are concise first, with complete evidence one step away. */
 .source-origin h3{font-size:16px}.source-citations{list-style:none;padding:0;margin:12px 0}.source-citations li{margin:0 0 20px;overflow-wrap:anywhere}.source-citations a{font-weight:600}.source-citations p{font-size:13px;line-height:1.65;margin:6px 0;color:var(--muted)}.source-citations .citation-location{color:var(--ink);font-size:12px}.source-section{border-top:1px solid var(--line);padding:4px 0}.source-section summary{min-height:48px;padding:12px 0;cursor:pointer;font-size:15px}.source-section summary span{color:var(--muted);margin-left:8px;font-size:12px}.source-section .source-licence{border:0;padding-top:0}.source-context{border-left:2px solid var(--accent);padding:4px 0 4px 16px;margin:18px 0 24px;font-size:14px;line-height:1.7}.source-context h3{font-size:15px;margin:8px 0}.source-context a,.source-context button{display:block;margin:8px 0}.source-context .source-section-label{margin:0}
+
+.chapter-context .honorific,.chapter-index .honorific,.chapter-detail h1 .honorific{font-size:max(14px,.78em);font-weight:400;color:var(--muted)}
+.chapter-detail h1{font-size:clamp(26px,4vw,36px);line-height:1.35}

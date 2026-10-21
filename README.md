@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The personal reader is at `reader/`: seven complete opening Bukhari entries, Cedar AI narration for Hadith 1–2, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The personal reader is at `reader/`: seventeen complete Bukhari entries across two books, Cedar AI narration for Hadith 1–2, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Run
 
@@ -284,3 +284,14 @@ The user chose “Keep this as a clearly labelled personal prototype for now.”
 The publisher admits this exact seven-entry version as `personal-prototype`; changing the source requires a deliberate admission update. Human Arabic, English, context, reference and reuse review gates still apply to production. All review records remain pending. Run `node scripts/build-opening-prototype.mjs --check`, `node reader/check-content.mjs`, the existing source-intake checks, and the full test suite before publishing. The original `content.js` remains the unchanged two-entry compatibility source for archived design concepts.
 
 Reading downloads include the seven entries, source notes and exact original inputs. Existing sessions remain finite across the expansion; new sessions use the user’s 5/10-minute preference and stop only after a complete hadith. Automated checks verify text preservation and software behavior, not religious accuracy.
+
+
+## Book of Faith and repeatable batch admission · 20 October 2026
+
+The personal collection now contains Hadith 1–17. The original seven entry objects and existing Cedar audio are unchanged. `content/sources/wikisource-faith/` pins revision 490285; the exact intake accounts for all 163 paragraph/heading blocks, 42 headings and 51 numbered spans (8–58). Unnumbered introductions and trailing whitespace are preserved separately. This intake is a candidate inventory, not automatic reader admission.
+
+`content/review/faith-first-review.json` records complete translations and presentation roles for 8–17: 23 English segments corresponding to 21 exact Arabic paragraphs. The two Arabic print witnesses were visually compared on the relevant pages; comparison records distinguish longer narrator names and chapter-division differences. Bewley and the Khan-family IslamHouse edition were compared for the report bodies. The new English is not a redistribution of either translation. Independent review remains pending. Nine chapter titles have provisional English translations; their unnumbered introductions are preserved in Arabic in the offline source notes, with English translation pending.
+
+`node scripts/build-collection.mjs` assembles batches into the current source record and ledger without changing the earlier entries. `content/review/prototype-admissions.json` records the exact source version, entry IDs and book/chapter context admitted to the personal prototype. Production still requires separate human sign-offs. The older seven-entry builder now preserves its original artifacts without overwriting the current collection source record. Reproducibility and all existing intake checks are in CI.
+
+The Faith book explicitly reports 10 of its source’s 51 hadith as available. Optional source counts are validated against the book pack as well as the catalog. Cross-book sessions, full search loading, complete source rendering, and offline source-note access have been checked. Honorifics receive the same lighter treatment in chapter titles. `research/faith-expansion-verification.json` records the evidence and remaining iPhone/full-content work.

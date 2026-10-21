@@ -47,6 +47,7 @@ export async function createContentLibrary({files,base=new URL('./',import.meta.
    const pack=await read(descriptor);
    requireValue(pack.schemaVersion===catalog.schemaVersion&&pack.namespace===catalog.namespace&&pack.publication===catalog.publication,'Book version mismatch');
    requireValue(pack.book?.id===id&&pack.book.number===descriptor.number&&pack.book.title===descriptor.title,'Book identity mismatch');
+   requireValue(pack.book.sourceEntryCount===descriptor.sourceEntryCount,'Source coverage mismatch');
    requireValue(JSON.stringify(pack.book.chapters)===JSON.stringify(descriptor.chapters),'Chapter context mismatch');
    requireValue(pack.sourceRecord&&Array.isArray(pack.sourceRecord.sources)&&pack.sourceRecord.license,'Missing source trail');
    requireValue(Array.isArray(pack.entries)&&JSON.stringify(pack.entries.map(e=>e.number))===JSON.stringify(descriptor.entryNumbers),'Incomplete book');

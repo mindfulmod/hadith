@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-10-20",
+  "readerRelease": "opening-db33d0b8af13",
+  "status": "personal-prototype-only",
+  "scope": "17 complete numbered reports in two books; Cedar remains Hadith 1–2.",
+  "source": {
+    "faithRevision": 490285,
+    "intake": {
+      "numberedSpans": 51,
+      "headings": 42,
+      "blocks": 163
+    },
+    "admittedRange": [
+      8,
+      17
+    ],
+    "arabicParagraphs": 21,
+    "englishSegments": 23,
+    "existingEntries": "First seven entry objects unchanged.",
+    "witnesses": "Brill 1862 PDF pages 10–12 and Dar Ibn Kathir 2002 PDF pages 12–14 visually compared; both downloaded PDFs matched the recorded SHA-256 values.",
+    "comparators": "Bewley 8–17; IslamHouse Khan-family 1.2.7–16, each matched by report wording.",
+    "remaining": "Independent review; unnumbered chapter introductions remain in Arabic with English pending; Faith 18–58 are not admitted.",
+    "chainChecks": "All 13 chain/transmission segments retain the selected Arabic reporting-verb distinctions; this is a consistency check, not translation certification."
+  },
+  "automated": {
+    "node": 88,
+    "python": 30,
+    "checks": "Pinned source intake, exact block ownership, reproduction, source-role coverage, mutation rejection, explicit prototype admission, unchanged prior entries, cross-book sessions, book pack integrity and production refusal."
+  },
+  "browser": {
+    "text": "All 23 English segments and 21 Arabic paragraphs were compared with the source record in the browser. After the final Hadith 14 chain correction, its complete English and Arabic were rechecked and matched exactly.",
+    "navigation": "Next from 7 opened 8 in Book 02. Chapter title and smaller honorifics rendered.",
+    "session": "A ten-minute session beginning at 7 contained 7–11 across both books. Browsing/bookmarking 16 preserved Continue at 8.",
+    "search": "Exact phrase sweetness of faith returned Hadith 16 from the second book.",
+    "offline": "After Save reading showed Ready offline, the local preview server was stopped. Reload, Continue to 8, chapter navigation and the Hadith 10 source page still worked. The final release was saved again on a fresh preview origin; with that server stopped, Hadith 14 reloaded with exact English and its comparison notes opened successfully.",
+    "mobile": "393px reading and book layouts checked; the longest chapter heading fit 320px without horizontal overflow. Chapter honorific text measured 20.28px versus 26px surrounding text.",
+    "coverage": "Faith states 10 of the selected source’s 51 reports available, with more in preparation."
+  },
+  "limits": [
+    "This is evidence of source preservation and app behavior, not scholarly certification.",
+    "The expanded two-book download still needs iPhone acceptance.",
+    "Full collection text and audio remain incomplete."
+  ]
+}

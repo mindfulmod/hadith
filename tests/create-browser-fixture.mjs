@@ -15,9 +15,9 @@ const original=JSON.parse(readFileSync(resolve(root,'reader/books/catalog.json')
 const base=JSON.parse(readFileSync(resolve(root,'reader',original.books[0].path),'utf8'));
 const catalog=structuredClone(original),newPaths=[];
 for(const [index,count] of [32,63].entries()){
- const id=index?'fixture-second':'fixture-first',number=index+2,title=`Synthetic fixture book ${index+1} — not hadith content`;
+ const id=index?'fixture-second':'fixture-first',number=index+original.books.length+1,title=`Synthetic fixture book ${index+1} — not hadith content`;
  const entries=Array.from({length:count},(_,i)=>{
-  const number=10+(i+(index?32:0))*3;
+  const number=10000+(i+(index?32:0))*3;
   const english_blocks=['TEST FIXTURE — not a hadith.','Synthetic search phrase. '+('placeholder '.repeat(170))],arabic_blocks=['TEST FIXTURE — not a hadith.','نص تجريبي ليس حديثاً.'];
   const presentation={schemaVersion:1,...Object.fromEntries(Object.entries({english:english_blocks,arabic:arabic_blocks}).map(([language,blocks])=>[language,blocks.map((block,i)=>({block:i,start:0,end:Array.from(block).length,kind:i?'report':'chain'}))]))};
   return {id:`fixture:${number}`,number,book:title,english_blocks,arabic_blocks,presentation,english_status:'SYNTHETIC TEST DATA — not a translation or hadith.',source_pages:{}};

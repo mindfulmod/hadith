@@ -30,14 +30,14 @@
     {
       "id": "content-review-gates",
       "status": "separate-personal-prototype-and-production-gates",
-      "evidence": "content/review/opening-ledger.json; scripts/publish-books.mjs; tests/content-library.test.mjs; reader/source-references.mjs; tests/source-references.test.mjs; content/review/opening-prototype-ledger.json; tests/opening-prototype.test.mjs",
+      "evidence": "content/review/opening-ledger.json; scripts/publish-books.mjs; tests/content-library.test.mjs; reader/source-references.mjs; tests/source-references.test.mjs; content/review/opening-prototype-ledger.json; tests/opening-prototype.test.mjs; scripts/build-collection.mjs; content/review/prototype-admissions.json; tests/collection-batches.test.mjs",
       "remaining": "Obtain actual independent human reviews and reuse evidence. Current production publishing is deliberately refused. Extend edition/reference mapping before expanding beyond the evaluation namespace; audio review needs its own ledger. Source presentation and per-entry citations are validated and bound to exact review hashes. Reference metadata requires its own human approval for production."
     },
     {
       "id": "library-navigation-search",
       "status": "book-browser-and-pagination-implemented",
       "evidence": "reader/navigation.mjs; reader/library.mjs; tests/navigation.test.mjs; research/navigation-verification.json",
-      "remaining": "Publish verified source chapter metadata and edition-specific reference maps; support any headings without report assignments found in the selected edition. The personal prototype contains seven entries and no recorded chapter headings. A dedicated full-library search index remains to be built; current exact search loads all available book packs before returning results."
+      "remaining": "Publish verified source chapter metadata and edition-specific reference maps; support any headings without report assignments found in the selected edition. The personal prototype contains seventeen entries in two books, with nine provisional chapter titles for the Faith selection. A dedicated full-library search index remains to be built; current exact search loads all available book packs before returning results."
     },
     {
       "id": "session-planning",
@@ -66,7 +66,7 @@
     {
       "id": "production-testing",
       "status": "in-progress",
-      "evidence": "109 automated checks (83 Node, 26 Python); research/navigation-verification.json; research/offline-packs-verification.json; research/reader-structure-verification.json; research/source-reference-verification.json; .github/workflows/reader-checks.yml",
+      "evidence": "118 automated checks (88 Node, 30 Python); research/navigation-verification.json; research/offline-packs-verification.json; research/reader-structure-verification.json; research/source-reference-verification.json; .github/workflows/reader-checks.yml",
       "remaining": "Accessibility audit, keyboard/screen reader review, optional iPhone full-place/settings restore and locked-screen/interruption acceptance after final architecture changes. Default iPhone backup export/merge restore and browsing/session separation are confirmed. Deploy checks gate publishing."
     },
     {
@@ -77,7 +77,7 @@
     }
   ],
   "nextActions": [
-    "Evaluate the seven-entry personal prototype on iPhone, including the longer report, inherited chain and offline source notes. Preserve the complete drafts and explicit correction trail as source work expands.",
+    "Continue source/translation comparison through the remaining Book of Faith reports and chapter introductions; extend Cedar audio and its version-bound packs for the admitted personal text.",
     "Complete the Arabic edition/reference map using the new exact-span inventory and pinned printed-witness findings; keep combined labels distinct from missing or misassigned bodies.",
     "Find a more complete authoritative English witness: the IslamHouse EPUB and PDF share seven checked omissions and additional transcription defects. Keep their exact inventories as comparison evidence rather than patching them silently.",
     "Obtain complete English source coverage and explicit offline/narration permissions; request #4160 is posted.",
@@ -127,7 +127,7 @@
     "verification": "Verify job and dependent deploy job both succeeded. Published site-release.json matched all local public-file hashes; representative live reader and legacy routes matched byte-for-byte."
   },
   "openingExpansion": {
-    "status": "seven-entry-personal-prototype",
+    "status": "preserved-in-two-book-personal-prototype",
     "record": "research/bukhari-opening-prototype.json",
     "decisions": "content/review/opening-prototype-decisions.json",
     "preview": "reader/prototype-review.html",
@@ -145,5 +145,13 @@
     "evidence": "research/source-reference-verification.json",
     "scope": "Entry-specific translator identity, Arabic input, explicit edition/page citations, local comparison notes and inherited-chain context. No new source records admitted.",
     "readerRelease": "opening-a04e158d819d"
+  },
+  "faithExpansion": {
+    "status": "first-ten-reports-published-as-personal-prototype",
+    "source": "content/sources/wikisource-faith/manifest.json",
+    "intake": "51 numbered spans and 42 headings; all 163 paragraph/heading blocks accounted for.",
+    "review": "content/review/faith-first-review.json",
+    "readerRange": "8–17",
+    "remaining": "Translate and compare reports 18–58, finish English chapter introductions, then continue with the next source book. Independent review and new Cedar audio remain pending."
   }
 }

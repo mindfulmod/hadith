@@ -1,5 +1,6 @@
 /* Navigation follows reviewed catalogue order, never inferred subjects or number arithmetic. */
 export function validateChapters(book) {
+ if(book.sourceEntryCount!==undefined&&(!Number.isSafeInteger(book.sourceEntryCount)||book.sourceEntryCount<book.entryNumbers.length))throw new Error('Invalid source entry count');
  if(book.chapters===undefined)return;
  if(!Array.isArray(book.chapters)||!book.chapters.length)throw new Error('Empty chapter context');
  const ids=new Set();
