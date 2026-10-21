@@ -50,17 +50,23 @@
   "method": "Retrieved the current page to identify revision 252975, then retrieved and preserved that fixed revision. Verified revision ID, raw byte count and SHA-256. Decoded every p/h3 block without trimming or normalization and assigned every block once to a chapter heading, introduction, numbered report or blank paragraph. Exact numeric labels are 59–134. This checks intake coverage, not textual accuracy.",
   "rights": "The retrieved page links CC BY-SA 4.0. Attribution, source revision, original bytes and the extraction policy are retained in the manifest. No modern English comparison translation was copied into this intake.",
   "architectureFinding": "Chapters 1 and 11 contain introductory material without numbered reports; chapter 6 is a heading with no separate introductory paragraph or numbered report. They must stay in chapter order without manufactured hadith identities. Forty-three reports place their content in one paragraph, so paragraph position cannot identify narrator-chain boundaries.",
-  "readerStatus": "The live reader remains at 58 entries in two books. This candidate is excluded from the public site artifact and has no English translation or recording admission.",
+  "readerStatus": "The personal reader now contains 67 entries in three books. Only the separately reviewed and explicitly admitted Knowledge batch 59–67 is published, with source chapters 1–10. The complete intake remains a candidate, excluded from the public artifact; it is not automatically admitted.",
   "nextWork": [
-    "Compare the complete Arabic reports and chapter material against the pinned printed witnesses.",
-    "Individually match English comparison references; do not infer a fixed offset from Faith.",
-    "Generalize the book-review assembler around an explicit book/source configuration and preserve the source-only chapters.",
-    "Prepare the first complete Knowledge batch (59–67) with exact presentation spans, full chains and all transmission notes.",
-    "Review chapter introductions separately from numbered reports; keep human approval pending until actually obtained."
+    "Continue complete Arabic and English comparison from 68 in full source chapters, retaining the source-only chapter 11.",
+    "Individually match English references and printed chapter divisions; do not extrapolate an offset.",
+    "Translate chapter introductions separately and investigate the unresolved wording of 59.",
+    "Obtain independent Arabic, English and context reviews before production admission."
   ],
   "limits": [
-    "No full-body Arabic comparison, English translation approval or scholarly certification has been completed for this book.",
+    "Complete-book Arabic/English comparison and independent scholarly approval remain unfinished. The first nine reports have documented AI-assisted comparison and working English only.",
     "A source paragraph count is not a narration count or proof of source completeness across editions.",
     "The selected page’s 54 headings must be mapped individually to printed chapter divisions."
-  ]
+  ],
+  "firstBatch": {
+    "review": "content/review/knowledge-first-review.json",
+    "verification": "research/knowledge-first-verification.json",
+    "status": "personal-prototype-only",
+    "range": "59–67",
+    "independentReview": "pending"
+  }
 }

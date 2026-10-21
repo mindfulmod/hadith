@@ -1,0 +1,153 @@
+{
+  "checkedAt": "2026-10-20",
+  "status": "personal-prototype-only",
+  "readerRelease": "opening-c45cd8422669",
+  "sourceRecordSha256": "f601e1532c6dc3424de647c925cdbf9e2c5ab33c4096fc7cd8150a772920fec1",
+  "catalogContextSha256": "ca3fb5f7a263d22f1a70b1300039ba978d2b3eee4453c98b0d3be3f4df81b877",
+  "scope": {
+    "newEntries": "59–67",
+    "totalEntries": 67,
+    "books": 3,
+    "knowledgeSourceChapters": 10,
+    "knowledgeSourceOnlyChapters": [
+      "chapter-01",
+      "chapter-06"
+    ],
+    "arabicReportParagraphs": 19,
+    "englishSegments": 21,
+    "chapterArabicBlocks": 14
+  },
+  "preservation": "All previous 58 entry objects are deep-equal to the previous release. Faith review files and all existing recording media are unchanged. New exact narration inputs exist for 59–67; actual Cedar recordings still cover 1–3.",
+  "sourceReview": {
+    "record": "content/review/knowledge-first-review.json",
+    "arabicInput": "content/sources/wikisource-knowledge/manifest.json",
+    "printedWitnesses": [
+      {
+        "id": "brill-1862",
+        "pdfPages": [
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+      },
+      {
+        "id": "dar-ibn-kathir-2002",
+        "pdfPages": [
+          26,
+          27,
+          28,
+          29
+        ],
+        "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+      }
+    ],
+    "method": "Complete relevant pages visually inspected, both PDF file hashes rechecked, selected Arabic compared and retained unchanged. English report bodies individually compared with Bewley 59–67 and the pinned Khan-family EPUB 1.3.56–59 then 1.3.63–67. These are AI-assisted comparisons, not independent approval. Full English chains remain provisional because the English comparison chains are abbreviated.",
+    "findings": [
+      "Hadith 59 retains the digital أراه and displays a separate unresolved-difference notice. Both prints omit it here. The provisional “I think” is not assigned to a named narrator.",
+      "English numbering cannot use one fixed offset: Khan-family 1.3.60–62 contain same-as-above references.",
+      "Hadith 63 retains all four invocations and its closing transmission route; a further report in the historical print is not spliced into the selected digital numbering.",
+      "Hadith 65 retains its closing Qatadah question, absent from the matched Khan-family comparison.",
+      "Narrator-name expansions, singular/plural reporting verbs and printed/digital chapter division differences are recorded per entry."
+    ]
+  },
+  "architecture": "Explicit immutable book configuration selects the book identity, Arabic source, Bewley page, Khan book number and source revision. One shared assembler validates all books, consecutive reviewed batches and complete chapter spans. Source-only chapters cannot disappear while report coverage appears unchanged. Existing prototype/production separation remains.",
+  "automated": {
+    "node": 144,
+    "python": 39,
+    "failed": 0,
+    "checks": "Full reader/source tests; all importers and generated source, narration, book and release integrity checks; public artifact packaging."
+  },
+  "browser": {
+    "exactEntries": [
+      {
+        "number": 59,
+        "englishBlocks": 3,
+        "arabicBlocks": 2,
+        "exact": true
+      },
+      {
+        "number": 60,
+        "englishBlocks": 2,
+        "arabicBlocks": 2,
+        "exact": true
+      },
+      {
+        "number": 61,
+        "englishBlocks": 2,
+        "arabicBlocks": 2,
+        "exact": true
+      },
+      {
+        "number": 62,
+        "englishBlocks": 2,
+        "arabicBlocks": 2,
+        "exact": true
+      },
+      {
+        "number": 63,
+        "englishBlocks": 3,
+        "arabicBlocks": 3,
+        "exact": true
+      },
+      {
+        "number": 64,
+        "englishBlocks": 2,
+        "arabicBlocks": 2,
+        "exact": true
+      },
+      {
+        "number": 65,
+        "englishBlocks": 3,
+        "arabicBlocks": 2,
+        "exact": true
+      },
+      {
+        "number": 66,
+        "englishBlocks": 2,
+        "arabicBlocks": 2,
+        "exact": true
+      },
+      {
+        "number": 67,
+        "englishBlocks": 2,
+        "arabicBlocks": 2,
+        "exact": true
+      }
+    ],
+    "chapterArabicBlocks": 14,
+    "continuedSessionAt": 59,
+    "exactSearch": {
+      "query": "hobbled",
+      "result": 63
+    },
+    "layout": {
+      "widths": [
+        320,
+        393
+      ],
+      "largestPx": 28,
+      "horizontalOverflow": false,
+      "themes": [
+        "day",
+        "night"
+      ]
+    },
+    "offline": {
+      "previewServerStopped": true,
+      "exactHadith": 63,
+      "exactChapterBlocks": 14
+    },
+    "screenshot": "/private/tmp/hadith-knowledge-reader.png",
+    "releaseNote": "Browser checks covered these exact unchanged entry/chapter objects; a final source-metadata cleanup removed a carried-over heading sentence. Generated release integrity is checked after this cleanup."
+  },
+  "offlineReadingMB": 4.58,
+  "limits": [
+    "No independent Arabic, English, theological or context approval is claimed. The Hadith 59 phrase and previously documented discrepancies remain unresolved.",
+    "Knowledge has 9 of 76 numbered reports and 10 of 54 selected source headings available. Chapter 11 is source-only and belongs to the next batch.",
+    "English chapter introductions remain pending. The four introductory paragraphs included here are preserved in Arabic.",
+    "Cedar audio beyond Hadith 3 and iPhone locked-screen continuation across separate files remain in progress. Desktop offline verification is not iPhone acceptance."
+  ]
+}
