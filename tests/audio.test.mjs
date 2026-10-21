@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import vm from 'node:vm';
 import {readFileSync} from 'node:fs';
-import {recording,recordedChapter,playbackVariants} from '../reader/recording.mjs';
+import {recording,recordings,recordedChapter,playbackVariants} from '../reader/recording.mjs';
 import {listeningPlan} from '../reader/listening-plan.mjs';
 import {chapterAt,safePosition} from '../reader/session.mjs';
 function harness(saved={},items=[recording]){
@@ -131,4 +131,10 @@ test('a completed session restarts from its beginning after reopening, while see
  finish(h);await tick();finish(h);await tick();assert.equal(h.state.audio.seconds,otherRecording.duration);
  h.api.listenSession([1,2,3,4],{number:3});await tick();assert.equal(h.api.getPlaybackState().number,3);finish(h);await tick();
  h.elements.get('#audio-back').click();assert.equal(h.api.getListeningState().complete,false);h.elements.get('#audio-toggle').click();await tick();assert.equal(h.api.getPlaybackState().recordingId,otherRecording.id);
+});
+
+test('the actual opening queue crosses all five files and stops before unrecorded Hadith 7',async()=>{
+ const h=harness({},recordings),element=h.audio;h.api.listenSession([1,2,3,4,5,6,7]);await tick();
+ for(const number of [3,4,5,6]){finish(h);await tick();assert.equal(h.audio,element);assert.equal(h.api.getPlaybackState().number,number);}
+ finish(h);await tick();assert.equal(h.audio.playCalls,5);assert.equal(h.api.getListeningState().nextNumber,7);assert(h.elements.get('#audio-message').textContent.includes('Hadith 7'));
 });

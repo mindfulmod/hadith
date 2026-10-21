@@ -53,8 +53,8 @@ test('the expanded library loads all seven exact texts while recordings remain l
  const files=[...responses].map(([path,body])=>({path,bytes:Buffer.byteLength(body),sha256:digest(body)}));
  const library=await createContentLibrary({files,base:new URL('https://example.com/reader/'),fetcher:async url=>new Response(responses.get(url.pathname.slice(8)))});
  assert.deepEqual(await library.loadAllEntries(),source.entries);
- assert.equal(recordedChapter(3).number,3);
- for(const n of [4,5,6,7])assert.equal(recordedChapter(n),null);
+ for(const n of [1,2,3,4,5,6])assert.equal(recordedChapter(n).number,n);
+ assert.equal(recordedChapter(7),null);
  const plan=planSession(published.catalog.entries,3,5);assert.equal(plan.numbers[0],3);assert(plan.numbers.every(n=>n>=3&&n<=7));
  const long=planSession(published.catalog.entries,7,5);assert.deepEqual(long.numbers,[7]);
 });

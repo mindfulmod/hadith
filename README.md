@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The personal reader is at `reader/`: twenty-nine complete Bukhari entries across two books, Cedar AI narration for Hadith 1–3, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The personal reader is at `reader/`: 67 complete Bukhari entries across three books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Run
 
@@ -384,3 +384,11 @@ The personal prototype now contains 67 complete numbered entries across three bo
 The shared assembler uses explicit book/source configuration and rejects missing source-only chapters as well as report gaps, source mismatches and stale review records. Existing Faith wrappers and historical-source checks remain. The new exact source and chapter context have their own personal-prototype admission; production publication still requires separate human reviews.
 
 `research/knowledge-first-verification.json` records 183 passing checks (144 Node, 39 Python), exact rendered comparison of all new Arabic/English report blocks and 14 chapter blocks, preserved Continue, exact search, day/night layouts at 320px with the largest reading size, and offline reopening with the preview server stopped. Reading downloads total about 4.6 MB; audio stays separate. All 67 narration inputs are prepared; recordings still cover 1–3. Remaining Knowledge content, chapter English, independent review, further recordings and iPhone acceptance remain open.
+
+## Opening audio continuation and chapter policy — 20 October 2026
+
+The user confirmed that daily sessions contain numbered hadith only; chapter introductions and quotations remain separately accessible while browsing. This records the existing behavior as an explicit product decision.
+
+Hadith 4–6 now have individual complete Cedar recordings using the selected Take A instructions. Four original MP3s are preserved with exact paragraph-segment input hashes. The assembly retains every decoded frame in order, without trimming, filtering or speech edits. Individual recording endings allow sessions to finish at any of these hadith. All wording, pronunciation and delivery reviews remain pending; input integrity and numerical audio checks do not certify speech. Hadith 5 also needs its paragraph join reviewed.
+
+OpenAI.fm displayed its weekly download limit when starting Hadith 7. No Hadith 7 file was downloaded or admitted. Current audio coverage is 1–6, and a session containing 7 stops after 6. Separate optional offline packs cover each new recording. No source wording or earlier recording was changed.

@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-20",
+  "status": "personal-prototype-playback-verified-listening-review-pending",
+  "readerRelease": "opening-a96b088e497e",
+  "sourceFileSha256": "f0d44e548e25f0586162e06028f37497522f386fb6e8fef8991ae9d04f719188",
+  "scope": {
+    "numberedHadith": 67,
+    "newAudio": [
+      4,
+      5,
+      6
+    ],
+    "recordedHadith": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "firstUnrecordedHadith": 7,
+    "changedSourceWording": false,
+    "changedPriorRecordings": false
+  },
+  "inputChecks": {
+    "completeScripts": true,
+    "paragraphSegments": 4,
+    "offsetUnit": "utf16-code-units",
+    "studioLimit": 999,
+    "instructions": "Exact Cedar Take A prompt from Hadith 3 provenance",
+    "originals": "content/audio/raw/",
+    "notes": "Every input segment matches the current English blocks exactly; this does not certify generated speech."
+  },
+  "recordings": [
+    {
+      "number": 4,
+      "duration": 49.00798185941043,
+      "bytes": 775935,
+      "segments": 1,
+      "allFramesRetained": true,
+      "encodedFullScaleSamples": 0
+    },
+    {
+      "number": 5,
+      "duration": 71.75997732426303,
+      "bytes": 1134588,
+      "segments": 2,
+      "allFramesRetained": true,
+      "encodedFullScaleSamples": 0
+    },
+    {
+      "number": 6,
+      "duration": 37.00798185941043,
+      "bytes": 592077,
+      "segments": 1,
+      "allFramesRetained": true,
+      "encodedFullScaleSamples": 0
+    }
+  ],
+  "automated": {
+    "node": 147,
+    "python": 39,
+    "total": 186,
+    "result": "passed",
+    "generatedArtifacts": "Opening and collection builds, all source importers, audio catalog, source-text integrity and review-page checks passed."
+  },
+  "browser": {
+    "environment": "Codex in-app browser; 393 × 852 screenshot; not iPhone hardware",
+    "offline": "Saved all reading plus audio 3, 4, 5, 6; each showed Ready offline. Stopped preview server, reloaded and continued from browser storage.",
+    "transitions": "Used visible seek controls near each file ending. Native ended events advanced 3 → 4 → 5. Read-along Follow changed the text to Hadith 5.",
+    "sessionEnd": "The 3–5 session ended on Hadith 5 with Listening session complete; no Hadith 6 started.",
+    "independentPlayback": "Opened Hadith 6 outside the session, closed the completed player and started its own complete recording offline. Playback reached 18 seconds.",
+    "about": "Updated source/status information and confirmed numbered-hadith-only policy loaded offline.",
+    "screenshot": "/private/tmp/hadith-cedar-6-reader.png"
+  },
+  "generationLimit": {
+    "source": "https://www.openai.fm/",
+    "observation": "Download limit reached: ten downloads per week. Shown when requesting Hadith 7; no Hadith 7 output downloaded or published.",
+    "bypassed": false
+  },
+  "remaining": [
+    "Exact spoken wording and pronunciation review for every new recording.",
+    "Delivery review including the paragraph join in Hadith 5.",
+    "iPhone locked-screen continuation and interruption acceptance across the new files.",
+    "Hadith 7 and the rest of the collection remain unrecorded."
+  ]
+}

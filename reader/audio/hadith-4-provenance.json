@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "source": "https://www.openai.fm/",
+  "model_label": "GPT-4o mini TTS",
+  "voice": "Cedar",
+  "instructions": "Accent: neutral North American English. You are an attentive, experienced audiobook reader speaking to one listener. Warm, grounded, rounded vocal tone, relaxed and natural. Read in connected phrases with smooth word-to-word flow; let syntax guide the emphasis. Moderate conversational pace, never over-slow or syllable-by-syllable. Take natural breaths at sentence boundaries, with a small pause between the narrator introduction and the quoted narration. Keep proper names clear without punching every consonant. No whispering, vocal fry, theatrical voices, sing-song rhythm, or exaggerated reverence. Do not add, omit, rephrase or repeat any words. Honorifics are already written in English: say them exactly as written. Read only the script.",
+  "encoding": "Original MP3s retained. Complete decoded frames joined in source order without trimming, filtering, cross-fading or speech edits; AAC 128kbps mono 44.1kHz. Assembly uses macOS afconvert and Python 3.12 or newer.",
+  "date": "2026-10-20",
+  "scripts": [
+    "Ibn Shihab said: Abu Salamah ibn ‘Abd al-Rahman also informed me that Jabir ibn ‘Abdullah al-Ansari, speaking about the pause in revelation, said in his account:\n\n“While I was walking, I heard a voice from the sky. I raised my eyes, and there was the angel who had come to me at Hira, sitting on a chair between the sky and the earth. I was frightened of him, so I returned and said, ‘Wrap me up, wrap me up.’ Then Allah Most High sent down: ‘O you wrapped in a cloak, rise and warn,’ up to His words: ‘And shun idols.’ Revelation then became intense and continued.”\n\n‘Abdullah ibn Yusuf and Abu Salih followed him in transmitting it. Hilal ibn Raddad also followed him in transmitting it from al-Zuhri. Yunus and Ma‘mar said “the flesh between his neck and shoulders.”"
+  ],
+  "status": "Cedar Take A delivery instructions; exact spoken wording, names and delivery await listening review.",
+  "script_check": "Submitted segments reconstruct every English block exactly, including narrator introductions and transmission notes. This verifies input, not generated speech.",
+  "segmentation": {
+    "schemaVersion": 1,
+    "limit": 999,
+    "offsetUnit": "utf16-code-units",
+    "entries": [
+      {
+        "number": 4,
+        "scriptSha256": "8230911904313447d806c3425f43f33968eb9ea179e1f267fffd2174e83a9f31",
+        "parts": [
+          {
+            "index": 1,
+            "start": 0,
+            "end": 769,
+            "text": "Ibn Shihab said: Abu Salamah ibn ‘Abd al-Rahman also informed me that Jabir ibn ‘Abdullah al-Ansari, speaking about the pause in revelation, said in his account:\n\n“While I was walking, I heard a voice from the sky. I raised my eyes, and there was the angel who had come to me at Hira, sitting on a chair between the sky and the earth. I was frightened of him, so I returned and said, ‘Wrap me up, wrap me up.’ Then Allah Most High sent down: ‘O you wrapped in a cloak, rise and warn,’ up to His words: ‘And shun idols.’ Revelation then became intense and continued.”\n\n‘Abdullah ibn Yusuf and Abu Salih followed him in transmitting it. Hilal ibn Raddad also followed him in transmitting it from al-Zuhri. Yunus and Ma‘mar said “the flesh between his neck and shoulders.”",
+            "sha256": "8230911904313447d806c3425f43f33968eb9ea179e1f267fffd2174e83a9f31",
+            "original": {
+              "path": "content/audio/raw/hadith-4-cedar-part-01.mp3",
+              "bytes": 784128,
+              "sha256": "4fd33664b599d0edb7d0095f87fca3252044b73f3d2df7ddba0a473ae2143c64"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "assembly": {
+    "sampleRate": 44100,
+    "channels": 1,
+    "bitsPerSample": 16,
+    "frames": 2161252,
+    "duration": 49.00798185941043,
+    "pcmSha256": "7f1c9fa3c8bda3b7aed4a58f290acdb745c3f9298d81c5ba8777712f11fe3c25",
+    "parts": [
+      {
+        "startFrame": 0,
+        "frames": 2161252,
+        "pcmSha256": "7f1c9fa3c8bda3b7aed4a58f290acdb745c3f9298d81c5ba8777712f11fe3c25",
+        "peak": 21785,
+        "fullScaleSamples": 0
+      }
+    ],
+    "encodedCheck": {
+      "sampleRate": 44100,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "frames": 2161252,
+      "duration": 49.00798185941043,
+      "pcmSha256": "be46323682271ea1475953434daf072b799c4fd085eb96fb0dac38b0e3edd166",
+      "parts": [
+        {
+          "startFrame": 0,
+          "frames": 2161252,
+          "pcmSha256": "be46323682271ea1475953434daf072b799c4fd085eb96fb0dac38b0e3edd166",
+          "peak": 21783,
+          "fullScaleSamples": 0
+        }
+      ]
+    },
+    "file": {
+      "file": "hadith-4-cedar-v1.m4a",
+      "bytes": 775935,
+      "sha256": "ed671dd065107a71104555a3946094c83f8e68df6d11547eb8d4061b3c385d99"
+    }
+  },
+  "chapters": [
+    {
+      "number": 4,
+      "start": 0,
+      "duration": 49.00798185941043
+    }
+  ],
+  "files": [
+    {
+      "file": "hadith-4-cedar-v1.m4a",
+      "bytes": 775935,
+      "sha256": "ed671dd065107a71104555a3946094c83f8e68df6d11547eb8d4061b3c385d99"
+    }
+  ],
+  "review": {
+    "wording": "pending",
+    "pronunciation": "pending",
+    "deliveryAndJoins": "pending",
+    "iphoneOffline": "pending"
+  }
+}

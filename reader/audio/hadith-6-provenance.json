@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "source": "https://www.openai.fm/",
+  "model_label": "GPT-4o mini TTS",
+  "voice": "Cedar",
+  "instructions": "Accent: neutral North American English. You are an attentive, experienced audiobook reader speaking to one listener. Warm, grounded, rounded vocal tone, relaxed and natural. Read in connected phrases with smooth word-to-word flow; let syntax guide the emphasis. Moderate conversational pace, never over-slow or syllable-by-syllable. Take natural breaths at sentence boundaries, with a small pause between the narrator introduction and the quoted narration. Keep proper names clear without punching every consonant. No whispering, vocal fry, theatrical voices, sing-song rhythm, or exaggerated reverence. Do not add, omit, rephrase or repeat any words. Honorifics are already written in English: say them exactly as written. Read only the script.",
+  "encoding": "Original MP3s retained. Complete decoded frames joined in source order without trimming, filtering, cross-fading or speech edits; AAC 128kbps mono 44.1kHz. Assembly uses macOS afconvert and Python 3.12 or newer.",
+  "date": "2026-10-20",
+  "scripts": [
+    "‘Abdan related to us: ‘Abdullah informed us: Yunus informed us, from al-Zuhri.\n\nAnother chain: Bishr ibn Muhammad related to us: ‘Abdullah informed us: Yunus and Ma‘mar informed us, from al-Zuhri, similarly. He said: ‘Ubaydullah ibn ‘Abdullah informed me, from Ibn ‘Abbas, who said:\n\nThe Messenger of Allah, may Allah bless him and grant him peace, was the most generous of people. He was at his most generous in Ramadan, when Jibril met him. He would meet him every night of Ramadan and study the Qur’an with him. The Messenger of Allah, may Allah bless him and grant him peace, was more generous in goodness than the wind sent forth."
+  ],
+  "status": "Cedar Take A delivery instructions; exact spoken wording, names and delivery await listening review.",
+  "script_check": "Submitted segments reconstruct every English block exactly, including narrator introductions and transmission notes. This verifies input, not generated speech.",
+  "segmentation": {
+    "schemaVersion": 1,
+    "limit": 999,
+    "offsetUnit": "utf16-code-units",
+    "entries": [
+      {
+        "number": 6,
+        "scriptSha256": "ea67201cef4d33681e0571362a2a1f4ae16ad1cdf170296c53eb1937adf586a4",
+        "parts": [
+          {
+            "index": 1,
+            "start": 0,
+            "end": 635,
+            "text": "‘Abdan related to us: ‘Abdullah informed us: Yunus informed us, from al-Zuhri.\n\nAnother chain: Bishr ibn Muhammad related to us: ‘Abdullah informed us: Yunus and Ma‘mar informed us, from al-Zuhri, similarly. He said: ‘Ubaydullah ibn ‘Abdullah informed me, from Ibn ‘Abbas, who said:\n\nThe Messenger of Allah, may Allah bless him and grant him peace, was the most generous of people. He was at his most generous in Ramadan, when Jibril met him. He would meet him every night of Ramadan and study the Qur’an with him. The Messenger of Allah, may Allah bless him and grant him peace, was more generous in goodness than the wind sent forth.",
+            "sha256": "ea67201cef4d33681e0571362a2a1f4ae16ad1cdf170296c53eb1937adf586a4",
+            "original": {
+              "path": "content/audio/raw/hadith-6-cedar-part-01.mp3",
+              "bytes": 592128,
+              "sha256": "fa325bba16b4c6a3561d788229c0ff08ad3c2bca6d64bfdd021d8579e493ad27"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "assembly": {
+    "sampleRate": 44100,
+    "channels": 1,
+    "bitsPerSample": 16,
+    "frames": 1632052,
+    "duration": 37.00798185941043,
+    "pcmSha256": "9ce4a20ff6fe25cf9c985fafa1ac44c8e2ca58bdc112d7e3c0293b7584f7c6e6",
+    "parts": [
+      {
+        "startFrame": 0,
+        "frames": 1632052,
+        "pcmSha256": "9ce4a20ff6fe25cf9c985fafa1ac44c8e2ca58bdc112d7e3c0293b7584f7c6e6",
+        "peak": 19391,
+        "fullScaleSamples": 0
+      }
+    ],
+    "encodedCheck": {
+      "sampleRate": 44100,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "frames": 1632052,
+      "duration": 37.00798185941043,
+      "pcmSha256": "348f2f350d6d93e8aea2c9b0cc1e2c2c72dbd12a95fd41831e557a7790b06b1c",
+      "parts": [
+        {
+          "startFrame": 0,
+          "frames": 1632052,
+          "pcmSha256": "348f2f350d6d93e8aea2c9b0cc1e2c2c72dbd12a95fd41831e557a7790b06b1c",
+          "peak": 19391,
+          "fullScaleSamples": 0
+        }
+      ]
+    },
+    "file": {
+      "file": "hadith-6-cedar-v1.m4a",
+      "bytes": 592077,
+      "sha256": "f76d59cc7bea58ab553968798eddab0e7366c12930f4c5e3e5654c30835ab9a0"
+    }
+  },
+  "chapters": [
+    {
+      "number": 6,
+      "start": 0,
+      "duration": 37.00798185941043
+    }
+  ],
+  "files": [
+    {
+      "file": "hadith-6-cedar-v1.m4a",
+      "bytes": 592077,
+      "sha256": "f76d59cc7bea58ab553968798eddab0e7366c12930f4c5e3e5654c30835ab9a0"
+    }
+  ],
+  "review": {
+    "wording": "pending",
+    "pronunciation": "pending",
+    "deliveryAndJoins": "pending",
+    "iphoneOffline": "pending"
+  }
+}

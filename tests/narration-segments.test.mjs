@@ -36,3 +36,13 @@ test('publication checks segment evidence even if a changed evidence file has be
  const raw=Buffer.from(JSON.stringify(p)),row=ledger.recordings.find(r=>r.generationFormat==='segmented-v1');row.evidence.sha256=audioHash(raw);
  assert.throws(()=>buildAudioCatalog(source,ledger,{readOriginal:read,readAsset:p=>read('reader/'+p),readEvidence:p=>p===row.evidence.path?raw:read(p)}),/segmented generation/);
 });
+
+test('all new opening audio preserves the complete submitted text and decoded frame sequence',()=>{
+ for(const number of [4,5,6]){
+  const p=json(`reader/audio/hadith-${number}-provenance.json`);validateSegmentedEvidence(p,p.chapters,{readOriginal:read});
+  assert.equal(p.segmentation.entries[0].parts.length,number===5?2:1);
+  assert.equal(p.assembly.parts.reduce((sum,part)=>sum+part.frames,0),p.assembly.frames);
+  assert.equal(p.assembly.frames,p.assembly.encodedCheck.frames);
+  assert.equal(p.assembly.encodedCheck.parts[0].fullScaleSamples,0);
+ }
+});

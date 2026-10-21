@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "source": "https://www.openai.fm/",
+  "model_label": "GPT-4o mini TTS",
+  "voice": "Cedar",
+  "instructions": "Accent: neutral North American English. You are an attentive, experienced audiobook reader speaking to one listener. Warm, grounded, rounded vocal tone, relaxed and natural. Read in connected phrases with smooth word-to-word flow; let syntax guide the emphasis. Moderate conversational pace, never over-slow or syllable-by-syllable. Take natural breaths at sentence boundaries, with a small pause between the narrator introduction and the quoted narration. Keep proper names clear without punching every consonant. No whispering, vocal fry, theatrical voices, sing-song rhythm, or exaggerated reverence. Do not add, omit, rephrase or repeat any words. Honorifics are already written in English: say them exactly as written. Read only the script.",
+  "encoding": "Original MP3s retained. Complete decoded frames joined in source order without trimming, filtering, cross-fading or speech edits; AAC 128kbps mono 44.1kHz. Assembly uses macOS afconvert and Python 3.12 or newer.",
+  "date": "2026-10-20",
+  "scripts": [
+    "Musa ibn Isma‘il related to us: Abu ‘Awanah related to us: Musa ibn Abi ‘A’ishah related to us: Sa‘id ibn Jubayr related to us, from Ibn ‘Abbas, concerning the words of the Most High, “Do not move your tongue with it to hasten it.” He said:\n\nThe Messenger of Allah, may Allah bless him and grant him peace, used to undergo hardship from the revelation, and he would move his lips. Ibn ‘Abbas said, “I am moving them for you as the Messenger of Allah, may Allah bless him and grant him peace, used to move them.” Sa‘id said, “I am moving them as I saw Ibn ‘Abbas move them,” and he moved his lips.\n\nThen Allah Most High sent down: “Do not move your tongue with it to hasten it. Its collection and recitation are Our responsibility.” He said: “Gathering it for you in your breast, and your reciting it.” “When We recite it, follow its recitation.” He said: “Listen to it and be silent.” “Then its explanation is Our responsibility.” Then it is Our responsibility that you recite it.\n\nAfter that, when Jibril came to the Messenger of Allah, may Allah bless him and grant him peace, he would listen. When Jibril departed, the Prophet, may Allah bless him and grant him peace, would recite it as he had recited it."
+  ],
+  "status": "Cedar Take A delivery instructions; exact spoken wording, names and delivery await listening review. The join between two complete paragraph groups also awaits review.",
+  "script_check": "Submitted segments reconstruct every English block exactly, including narrator introductions and transmission notes. This verifies input, not generated speech.",
+  "segmentation": {
+    "schemaVersion": 1,
+    "limit": 999,
+    "offsetUnit": "utf16-code-units",
+    "entries": [
+      {
+        "number": 5,
+        "scriptSha256": "5f399da46276717f1c016a54cd24e1c5d3347ba7b2c137178aeedab6a1f19e78",
+        "parts": [
+          {
+            "index": 1,
+            "start": 0,
+            "end": 982,
+            "text": "Musa ibn Isma‘il related to us: Abu ‘Awanah related to us: Musa ibn Abi ‘A’ishah related to us: Sa‘id ibn Jubayr related to us, from Ibn ‘Abbas, concerning the words of the Most High, “Do not move your tongue with it to hasten it.” He said:\n\nThe Messenger of Allah, may Allah bless him and grant him peace, used to undergo hardship from the revelation, and he would move his lips. Ibn ‘Abbas said, “I am moving them for you as the Messenger of Allah, may Allah bless him and grant him peace, used to move them.” Sa‘id said, “I am moving them as I saw Ibn ‘Abbas move them,” and he moved his lips.\n\nThen Allah Most High sent down: “Do not move your tongue with it to hasten it. Its collection and recitation are Our responsibility.” He said: “Gathering it for you in your breast, and your reciting it.” “When We recite it, follow its recitation.” He said: “Listen to it and be silent.” “Then its explanation is Our responsibility.” Then it is Our responsibility that you recite it.\n\n",
+            "sha256": "b96f712b864c3d21fbc16c49648481d0f4149adbf0e7f414914068aaa622d828",
+            "original": {
+              "path": "content/audio/raw/hadith-5-cedar-part-01.mp3",
+              "bytes": 947328,
+              "sha256": "28c43e354c36e43876ffbd3b6e00d871313dc229604ede752fd02ab0cc35d6b2"
+            }
+          },
+          {
+            "index": 2,
+            "start": 982,
+            "end": 1209,
+            "text": "After that, when Jibril came to the Messenger of Allah, may Allah bless him and grant him peace, he would listen. When Jibril departed, the Prophet, may Allah bless him and grant him peace, would recite it as he had recited it.",
+            "sha256": "bfefd848ddf321aa80e920eacf1174fa15d8e12875ab0f3d488ff4b0cfb9e966",
+            "original": {
+              "path": "content/audio/raw/hadith-5-cedar-part-02.mp3",
+              "bytes": 200832,
+              "sha256": "f5cce72f84d6ec65aa91b1d038377f0fd04fecd84420439f890186361ffeaa1d"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "assembly": {
+    "sampleRate": 44100,
+    "channels": 1,
+    "bitsPerSample": 16,
+    "frames": 3164615,
+    "duration": 71.75997732426303,
+    "pcmSha256": "dffcc46c15b1e65bbf010a5f01dada789b37e434dd924613f7864bc3db7d67ef",
+    "parts": [
+      {
+        "startFrame": 0,
+        "frames": 2611072,
+        "pcmSha256": "6ec4b73b0c17a682a25479e78a59d63aac288e9b3e00d3b347a8399a315132c3",
+        "peak": 21716,
+        "fullScaleSamples": 0
+      },
+      {
+        "startFrame": 2611072,
+        "frames": 553543,
+        "pcmSha256": "e01d2beabf2b8644b1bb66b8cb510e9e469bea66097987e8dd500043cd278182",
+        "peak": 20122,
+        "fullScaleSamples": 0
+      }
+    ],
+    "encodedCheck": {
+      "sampleRate": 44100,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "frames": 3164615,
+      "duration": 71.75997732426303,
+      "pcmSha256": "d88d255041ed4f0665e24dbfe6214562517d899167189000cf92da906f61ee73",
+      "parts": [
+        {
+          "startFrame": 0,
+          "frames": 3164615,
+          "pcmSha256": "d88d255041ed4f0665e24dbfe6214562517d899167189000cf92da906f61ee73",
+          "peak": 21708,
+          "fullScaleSamples": 0
+        }
+      ]
+    },
+    "file": {
+      "file": "hadith-5-cedar-v1.m4a",
+      "bytes": 1134588,
+      "sha256": "32a1542adf8c7ccbd702e9acf5741d4aef440ef1eddfe9ef940fa5f848096e21"
+    }
+  },
+  "chapters": [
+    {
+      "number": 5,
+      "start": 0,
+      "duration": 71.75997732426303
+    }
+  ],
+  "files": [
+    {
+      "file": "hadith-5-cedar-v1.m4a",
+      "bytes": 1134588,
+      "sha256": "32a1542adf8c7ccbd702e9acf5741d4aef440ef1eddfe9ef940fa5f848096e21"
+    }
+  ],
+  "review": {
+    "wording": "pending",
+    "pronunciation": "pending",
+    "deliveryAndJoins": "pending",
+    "iphoneOffline": "pending"
+  }
+}

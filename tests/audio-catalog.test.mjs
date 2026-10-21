@@ -14,7 +14,7 @@ test('all prepared narration scripts contain every English block exactly, includ
 });
 test('published recordings bind exact input scripts and media without claiming speech accuracy',()=>{
  const [source,ledger]=inputs(),{catalog}=buildAudioCatalog(source,ledger,options);
- assert.deepEqual(catalog.coverage.recorded,[1,2,3]);assert.equal(catalog.coverage.unrecorded.length,64);
+ assert.deepEqual(catalog.coverage.recorded,[1,2,3,4,5,6]);assert.equal(catalog.coverage.unrecorded.length,61);
  assert.equal(catalog.recordings[0].review.wording,'pending');assert.equal(catalog.recordings[0].review.pronunciation,'pending');
  assert.equal(catalog.recordings[0].id,'cedar-opening-v1');assert.deepEqual(audioFiles({check:true}).catalog,catalog);
 });
@@ -47,9 +47,9 @@ test('audio production requires two separate human reviews bound to the exact re
  row.pronunciationReview=fixture;assert.equal(buildAudioCatalog(source,ledger,{...options,production:true}).catalog.recordings[0].review.status,'independently-reviewed');
 });
 test('session audio availability reports gaps without substituting a different hadith',()=>{
- assert.deepEqual(recordingCoverage([1,2,3,4]).recorded,[1,2,3]);assert.deepEqual(recordingCoverage([1,2,3,4]).missing,[4]);
+ assert.deepEqual(recordingCoverage([1,2,3,4,5,6,7]).recorded,[1,2,3,4,5,6]);assert.deepEqual(recordingCoverage([1,2,3,4,5,6,7]).missing,[7]);
  assert.equal(recordingCoverage([8,9]).completeRecording,null);assert.equal(recordingCoverage([1,2]).completeRecording.id,'cedar-opening-v1');
- for(const n of [4,8,999,'1',null])assert.equal(recordingForNumber(n),null);
+ for(const n of [7,8,999,'1',null])assert.equal(recordingForNumber(n),null);
 });
 
 test('separate continuous recordings can cover different source entries without changing their bindings',()=>{
