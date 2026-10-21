@@ -43,7 +43,7 @@
       "id": "session-planning",
       "status": "implemented-iphone-browsing-separation-confirmed",
       "evidence": "reader/session.mjs; reader/reader.js; tests/navigation.test.mjs; research/navigation-verification.json",
-      "remaining": "Full-library audio sessions remain separate work. The user confirmed that Continue stays at Hadith 2 after browsing back to Hadith 1. Cross-book/end behavior is tested with clearly labelled synthetic records; reviewed collection content remains pending."
+      "remaining": "Full-library audio sessions remain separate work. The user confirmed Continue stays at Hadith 2 after browsing to Hadith 1. Cross-book reading sessions have also been checked against the actual two-book personal collection; see research/faith-expansion-verification.json."
     },
     {
       "id": "personal-backup",
@@ -53,9 +53,9 @@
     },
     {
       "id": "full-audio",
-      "status": "pending",
-      "evidence": "reader/audio/provenance.json covers two entries",
-      "remaining": "Cedar generation cost/workflow, exact spoken-word and name audit, per-session continuous packs, text-hash version binding and complete library coverage."
+      "status": "version-bound-catalogue-and-complete-script-plan-implemented",
+      "evidence": "content/audio/recordings.json; content/audio/narration-plan.json; scripts/build-audio.mjs; reader/audio/catalog.json; tests/audio-catalog.test.mjs; tests/audio.test.mjs; research/audio-catalog-verification.json",
+      "remaining": "Generate and audit Cedar recordings beyond 1–2; complete per-session continuous audio delivery and iPhone lock-screen/interruption acceptance. All 17 current entries have exact complete narration scripts. Each recording is bound to its exact English, generation evidence and media hash. Prepared scripts are not completed recordings."
     },
     {
       "id": "offline-at-scale",
@@ -66,7 +66,7 @@
     {
       "id": "production-testing",
       "status": "in-progress",
-      "evidence": "118 automated checks (88 Node, 30 Python); research/navigation-verification.json; research/offline-packs-verification.json; research/reader-structure-verification.json; research/source-reference-verification.json; .github/workflows/reader-checks.yml",
+      "evidence": "133 automated checks (103 Node, 30 Python); research/navigation-verification.json; research/offline-packs-verification.json; research/reader-structure-verification.json; research/source-reference-verification.json; .github/workflows/reader-checks.yml; research/audio-catalog-verification.json",
       "remaining": "Accessibility audit, keyboard/screen reader review, optional iPhone full-place/settings restore and locked-screen/interruption acceptance after final architecture changes. Default iPhone backup export/merge restore and browsing/session separation are confirmed. Deploy checks gate publishing."
     },
     {
@@ -77,7 +77,7 @@
     }
   ],
   "nextActions": [
-    "Continue source/translation comparison through the remaining Book of Faith reports and chapter introductions; extend Cedar audio and its version-bound packs for the admitted personal text.",
+    "Generate and compare the next Cedar recordings from the exact narration plan, then continue source/translation comparison through the remaining Book of Faith reports and chapter introductions.",
     "Complete the Arabic edition/reference map using the new exact-span inventory and pinned printed-witness findings; keep combined labels distinct from missing or misassigned bodies.",
     "Find a more complete authoritative English witness: the IslamHouse EPUB and PDF share seven checked omissions and additional transcription defects. Keep their exact inventories as comparison evidence rather than patching them silently.",
     "Obtain complete English source coverage and explicit offline/narration permissions; request #4160 is posted.",

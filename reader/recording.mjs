@@ -1,22 +1,11 @@
-export const recording = {
-  "id": "cedar-opening-v1",
-  "src": "audio/opening-cedar-v1.m4a",
-  "voice": "Cedar",
-  "duration": 87.35997732426304,
-  "chapters": [
-    {
-      "number": 1,
-      "start": 0,
-      "duration": 37.51199546485261
-    },
-    {
-      "number": 2,
-      "start": 37.51199546485261,
-      "duration": 49.84798185941043
-    }
-  ],
-  "status": "Cedar Take A delivery selected; exact spoken wording and names await listening review"
-};
-
-// An unavailable reference must never select a different recording.
-export function recordedChapter(number){return recording.chapters.find(chapter=>chapter.number===number)??null;}
+import {recordings} from './recordings.mjs';
+export {recordings};
+// Preserve the original default and saved recording ID when the catalogue grows.
+export const recording=recordings.find(item=>item.id==='cedar-opening-v1')??recordings[0];
+export const recordingForNumber=number=>recordings.find(item=>item.chapters.some(chapter=>chapter.number===number))??null;
+export const recordedChapter=number=>recordingForNumber(number)?.chapters.find(chapter=>chapter.number===number)??null;
+export function recordingCoverage(numbers){
+ const recorded=numbers.filter(number=>recordedChapter(number)),missing=numbers.filter(number=>!recordedChapter(number));
+ const completeRecording=recordings.find(item=>JSON.stringify(item.chapters.map(c=>c.number))===JSON.stringify(numbers))??null;
+ return {recorded,missing,completeRecording};
+}

@@ -1,0 +1,43 @@
+{
+  "checkedAt": "2026-10-20",
+  "readerRelease": "opening-c3d12a11f08a",
+  "scope": "Exact-text recording catalogue, complete narration input plan, multi-recording selection and explicit audio coverage. The existing two-entry audio bytes and all 17 reading entries are unchanged.",
+  "status": "personal-prototype",
+  "checks": {
+    "node": 103,
+    "python": 30,
+    "scriptCoverage": "All 17 complete English entries are prepared without trimming, phonetic substitutions or omitted narrator chains. Prepared scripts are not generated speech.",
+    "bindings": "Each published recording binds its media hash, source entry ID, complete English block hash, script hash, presentation hash, timing and original generation evidence. Changing the current text rejects stale recordings, including when only the ledger is rebound.",
+    "publication": "Production audio requires separate human spoken-word and pronunciation sign-offs against the exact binding hash. Existing delivery preference is retained separately from accuracy approval.",
+    "multipleRecordings": "Synthetic tests verify distinct recording selection, saved-ID resume, one persistent media element, gap/reorder refusal and no autoplay on unavailable media. Synthetic audio is never published.",
+    "recovery": "Late play promise failures cannot overwrite a newer recording selection or an explicit pause. A user retry reloads failed media and applies the retained seek only after metadata.",
+    "browser": "Real Cedar playback, pause, seeking, expanded narrator chain and Follow from Hadith 1 to 2 verified. Session availability states 2 of 4 recorded; a new Faith session states no audio yet.",
+    "offline": "After Save audio completed on a fresh local origin, the server was stopped. A reload and Continue → Listen resumed Hadith 2 at 37.9 seconds with readyState 4 and no media error.",
+    "ending": "The complete Cedar recording stops at its end and offers Read Hadith 3. Reading marks and the chosen session stay separate. Returning from the completed audio to the Faith session kept Continue at Hadith 8; the ending action is hidden on unrelated screens."
+  },
+  "architecture": {
+    "continuousAudio": "Keep each published recording continuous; its chapter boundaries must cover adjacent source entries exactly. Multiple-file lock-screen continuation has not been claimed or implemented by this change.",
+    "missingAudio": "Default to stopping at a coverage gap and offering text; the preference question remains pending.",
+    "downloads": "Audio download definitions are now derived from the validated recording catalogue. All reading stays together and each recording remains optional."
+  },
+  "research": [
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=261858",
+      "finding": "An open report describes background next-file playback failure on iOS 16/17 standalone web apps. This is historical platform evidence, not confirmation about iOS 26."
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=173332",
+      "finding": "An older background ended-event issue is marked fixed. Its historical cause demonstrates why browser background transitions need device acceptance rather than assumption."
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/play",
+      "finding": "play() is asynchronous and can reject; the UI must use playback results instead of assuming a start succeeded."
+    }
+  ],
+  "remaining": [
+    "Generate and audit new Cedar audio. Only Hadith 1–2 have real recordings.",
+    "Build complete 5/10-minute listening sessions and validate transitions on iPhone before claiming full session audio.",
+    "Confirm screen-locked playback and interruption recovery on the user’s iPhone after this player update.",
+    "Independent Arabic/English and generated-speech reviews remain pending."
+  ]
+}

@@ -6,6 +6,7 @@ import {resolve,dirname,relative,isAbsolute} from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 import assert from 'node:assert/strict';
 import {publishBooks} from './publish-books.mjs';
+import {audioFiles} from './build-audio.mjs';
 import {release} from '../reader/release.mjs';
 const repository=fileURLToPath(new URL('../',import.meta.url));
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
@@ -45,6 +46,7 @@ export function checkSourceNoteLinks(packs,{read=path=>readFileSync(resolve(repo
  }
 }
 export function buildSite(destination){
+ audioFiles({check:true});
  const books=publishBooks({check:true});verifyFiles(release.files);
  checkSourceNoteLinks(books.catalog.books.map(book=>JSON.parse(books.files.get(book.path))));
  const version=JSON.parse(readFileSync(resolve(repository,'reader-version.json'),'utf8'));assert.equal(version.release,release.id,'Stale update marker');

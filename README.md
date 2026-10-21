@@ -295,3 +295,12 @@ The personal collection now contains Hadith 1–17. The original seven entry obj
 `node scripts/build-collection.mjs` assembles batches into the current source record and ledger without changing the earlier entries. `content/review/prototype-admissions.json` records the exact source version, entry IDs and book/chapter context admitted to the personal prototype. Production still requires separate human sign-offs. The older seven-entry builder now preserves its original artifacts without overwriting the current collection source record. Reproducibility and all existing intake checks are in CI.
 
 The Faith book explicitly reports 10 of its source’s 51 hadith as available. Optional source counts are validated against the book pack as well as the catalog. Cross-book sessions, full search loading, complete source rendering, and offline source-note access have been checked. Honorifics receive the same lighter treatment in chapter titles. `research/faith-expansion-verification.json` records the evidence and remaining iPhone/full-content work.
+
+
+## Version-bound audio catalogue · 20 October 2026
+
+`node scripts/build-audio.mjs --check` checks every complete narration script against the current source and every published recording against its original submitted scripts, media bytes, source IDs and chapter boundaries. The 17-entry script plan is in `content/audio/narration-plan.json`; preparation does not mean narration has been generated. `content/audio/recordings.json` retains separate pending spoken-word and pronunciation reviews. The original Cedar delivery choice is not treated as either review. `--production` refuses recordings without both human reviews bound to the exact recording and script.
+
+The generated `reader/recordings.mjs` and `reader/audio/catalog.json` drive availability and optional audio downloads. The single persistent player can select distinct recordings and restore only the matching recording’s position. A late rejected play request cannot overwrite a newer selection; retrying failed media preserves the intended seek. Existing Cedar audio and hadith text remain unchanged.
+
+Sessions show their actual audio coverage. When the recording ends before an unrecorded hadith, the reader offers its text without silently skipping it. Playback remains within the selected continuous recording; automatic transitions across recordings and full session audio still need implementation and iPhone acceptance. `research/audio-catalog-verification.json` distinguishes real browser/offline checks from synthetic multi-recording tests.
