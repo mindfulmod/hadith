@@ -1,4 +1,4 @@
-// Reader release: opening-a8bfae87490e
+// Reader release: opening-801af0c5f55d
 import {release} from './release.mjs';
 import {verifyResponse} from './integrity.mjs';
 import {createOfflineStore,readerCacheName,verifiedCopy,releaseModuleSource} from './offline-store.mjs';

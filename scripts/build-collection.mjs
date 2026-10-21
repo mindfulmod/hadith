@@ -12,7 +12,13 @@ function validateComparisons(comparisons){
  assert.deepEqual(comparisons.map(c=>c.id).sort(),['bewley','islamhouse-khan'],'Expected distinct English comparison records');
  const bewley=comparisons.find(c=>c.id==='bewley'),khan=comparisons.find(c=>c.id==='islamhouse-khan');
  assert(/^[1-9]\d*$/.test(bewley.reference)&&bewley.status===undefined,'Invalid Bewley comparison');
- if(khan.status===undefined){assert(/^1\.2\.[1-9]\d*$/.test(khan.reference),'Invalid Khan-family comparison');return;}
+ assert(bewley.part===undefined,'Unexpected Bewley part metadata');
+ if(khan.status===undefined){
+  assert(/^1\.2\.[1-9]\d*$/.test(khan.reference),'Invalid Khan-family comparison');
+  if(khan.part!==undefined)assert(khan.part&&Number.isSafeInteger(khan.part.index)&&Number.isSafeInteger(khan.part.count)&&khan.part.count>1&&khan.part.index>=1&&khan.part.index<=khan.part.count,'Invalid comparison part');
+  return;
+ }
+ assert(khan.part===undefined,'An absent comparison cannot claim a report part');
  assert.equal(khan.status,'not-present-in-checked-sequence','Unknown comparison status');assert.equal(khan.reference,null,'An absent comparison cannot claim a matching reference');
  assert(Array.isArray(khan.checkedReferences)&&khan.checkedReferences.length===2&&khan.checkedReferences.every(r=>/^1\.2\.[1-9]\d*$/.test(r)),'Missing comparison search evidence');
  assert.equal(Number(khan.checkedReferences[1].split('.')[2]),Number(khan.checkedReferences[0].split('.')[2])+1,'Checked comparison references must be adjacent');
@@ -21,7 +27,7 @@ function validateComparisons(comparisons){
 function khanCitation(record){
  if(record.status==='not-present-in-checked-sequence')return {id:'khan',sourceId:'islamhouse-khan',locator:`No corresponding report in the checked sequence: ${record.checkedReferences.join(' → ')}`,scope:record.note+' This is documented absence in that sequence, not a completed English comparison or a claim about every occurrence elsewhere in the collection.'};
  const [volume,book,number]=record.reference.split('.');
- return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Number ${number}`,scope:'Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed.'};
+ return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Number ${number}${record.part?` · report ${record.part.index} of ${record.part.count}`:''}`,scope:record.part?'This English reference contains multiple reports. Only the identified report is matched here; the reader retains separate entries and full chains from its selected Arabic source.':'Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed.'};
 }
 export function buildFaithBatch(inventory,review,manifest){
  assert.equal(review.schemaVersion,1);assert.equal(review.status,'personal-prototype-only');assert.equal(review.independentReview,'pending');
@@ -29,13 +35,23 @@ export function buildFaithBatch(inventory,review,manifest){
  const numbers=review.entries.map(e=>e.number);assert(numbers.length,'Empty Faith batch');
  assert.deepEqual(numbers,inventory.records.filter(r=>r.number>=numbers[0]&&r.number<=numbers.at(-1)).map(r=>r.number),'Faith batch must be in complete source order');
  const blocks=new Map(inventory.blocks.map(b=>[b.htmlId,b])),entries=[];
+ const comparisonGroups=new Map();
+ for(const row of review.entries){
+  validateComparisons(row.comparisons);const c=row.comparisons.find(c=>c.id==='islamhouse-khan');
+  if(c.status!==undefined)continue;
+  const group=comparisonGroups.get(c.reference)||[];group.push(c);comparisonGroups.set(c.reference,group);
+ }
+ for(const group of comparisonGroups.values())if(group.length>1){
+  assert(group.every(c=>c.part&&c.part.count===group[0].part?.count),'A shared reference needs consistent report parts');
+  assert.equal(new Set(group.map(c=>c.part.index)).size,group.length,'A comparison part cannot be assigned twice');
+ }
+
  for(const row of review.entries){
   const {reviewRecordSha256,...record}=row;assert.equal(reviewRecordSha256,hash(record),'Stale entry review');
   assert.equal(row.status,'personal-prototype-only');assert.equal(row.reviewerKind,'ai');assert.equal(row.independentReview,'pending');
   const original=inventory.records.find(r=>r.number===row.number);assert(original&&original.id===row.sourceRecordId&&row.id===`bukhari:${row.number}`,'Source identity mismatch');
   assert.deepEqual(row.paragraphIds,original.paragraphIds);assert.equal(row.chapterId,original.chapterId);
   assert(row.notes.length&&row.printedWitnesses.length===2&&row.comparisons.length===2,'Missing comparison evidence');
-  validateComparisons(row.comparisons);
   const arabic_blocks=row.paragraphIds.map(id=>blocks.get(id).text),english_blocks=row.segments.map(s=>s.english);
   const presentation={schemaVersion:1,arabic:[],english:[]};
   for(const [i,s] of row.segments.entries()){

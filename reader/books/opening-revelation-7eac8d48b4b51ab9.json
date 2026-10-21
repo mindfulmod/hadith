@@ -1,0 +1,1969 @@
+{
+  "schemaVersion": 1,
+  "namespace": "bukhari-opening-v1",
+  "publication": "personal-prototype",
+  "book": {
+    "id": "opening-revelation",
+    "number": 1,
+    "title": "The Beginning of Revelation"
+  },
+  "sourceRecord": {
+    "created": "2026-10-20",
+    "scope": "Personal prototype: opening entries 1–7 and Book of Faith entries 8–58. The rest of the collection remains in preparation.",
+    "selected_route": "Pinned Arabic text plus a new English working translation.",
+    "license": {
+      "id": "CC-BY-SA-4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Sahih al-Bukhari by Muhammad ibn Ismail al-Bukhari; Arabic digital transcription by Arabic Wikisource contributors, opening revision 484874 and Faith revision 490285.",
+      "changes": "Entries 1–2 are unchanged. Entries 3–7 are derived from the pinned Arabic; Hadith 5 has one explicitly recorded correction from له to لك supported by two printed witnesses. Original inputs are retained in prototype-inputs.json. New AI-assisted English, presentation and comparison notes are offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app. Hadith 8–58 retain their Arabic paragraphs unchanged from revision 490285; their new English and available chapter titles are AI-assisted. A disputed chapter heading is explicitly withheld. Chapter introductions are preserved separately in Arabic, with English translation still pending."
+    },
+    "sources": [
+      {
+        "id": "arabic-base",
+        "url": "https://ar.wikisource.org/w/index.php?title=%D8%B5%D8%AD%D9%8A%D8%AD_%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A/%D9%83%D8%AA%D8%A7%D8%A8_%D8%A8%D8%AF%D8%A1_%D8%A7%D9%84%D9%88%D8%AD%D9%8A&oldid=484874",
+        "role": "Exact Arabic digital input; community-maintained, not assumed error-free.",
+        "sha256_download": "cad3964e2aaabe1d6655ec45b69a6e66d2f604ce3055a239699c101513e8270f"
+      },
+      {
+        "id": "darussalam-sample",
+        "url": "https://dar-us-salam.com/?controller=attachment&id_attachment=433",
+        "role": "Printed Arabic and Muhsin Khan English comparison, pages 45–46. Not redistributed here.",
+        "sha256_download": "dafb56c86101cb47f0830125428ca303b3a85e97f92948140825b33daa842ed6"
+      },
+      {
+        "id": "bewley",
+        "url": "https://aishabewley.org/bukhari1",
+        "role": "Second named English translator, entries 1–2. Comparison only; no full English text copied."
+      },
+      {
+        "id": "sunnah-1",
+        "url": "https://sunnah.com/bukhari:1",
+        "role": "Additional Arabic/reference check. English belongs to the Khan translation family, not an independent third translator."
+      },
+      {
+        "id": "sunnah-2",
+        "url": "https://sunnah.com/bukhari:2",
+        "role": "Additional Arabic/reference check."
+      },
+      {
+        "id": "brill-scan",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/%D8%B5%D8%AD%D9%8A%D8%AD_%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A_%D8%B11.pdf",
+        "role": "Historical Arabic print witness, listed as Brill 1862, PDF page 4. Read visually. Not proof that Wikisource was transcribed from this edition.",
+        "sha256_download": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+      },
+      {
+        "id": "islamhouse-khan",
+        "url": "https://islamhouse.com/en/books/70510",
+        "localManifest": "content/sources/islamhouse-bukhari/manifest.json",
+        "role": "Khan-family English comparator with source-credit caveats. 1.1.3 combines Arabic entries 3 and 4; 1.1.4–6 correspond to Arabic entries 5–7. Full Arabic chains and some transmission notes are absent."
+      },
+      {
+        "id": "brill-1862",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf",
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+        "role": "Historical printed Arabic comparison, visually inspected; not asserted as the transcription’s base edition."
+      },
+      {
+        "id": "dar-ibn-kathir-2002",
+        "url": "https://archive.org/download/waq79565/79565.pdf",
+        "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+        "role": "Modern printed Arabic comparison, visually inspected; selected differences are recorded rather than harmonized."
+      },
+      {
+        "id": "ibn-hajar-opening-5",
+        "url": "https://www.islamweb.net/ar/library/content/52/7/?idfrom=&idto=&start=",
+        "role": "Ibn Hajar, Fath al-Bari, discussion of opening report 5, volume 1, pages 39–40; digital classical commentary consulted 20 October 2026. The website breadcrumb is inconsistent with the displayed opening-report text; identify the passage by its wording, not that breadcrumb.",
+        "checkedAt": "2026-10-20",
+        "evidenceExcerpt": "جمعه لك في صدرك"
+      },
+      {
+        "id": "nawawi-revelation",
+        "label": "Al-Nawawi · Sharh Sahih Muslim",
+        "url": "https://www.islamweb.net/ar/library/content/53/82/?idfrom=469&idto=474",
+        "kind": "commentary",
+        "format": "web",
+        "locator": "Volume 2, pages 351–353 · parallel revelation report",
+        "scope": "Lexical commentary on taksibu al-ma‘dum, nawa’ib al-haqq and Namus. The Muslim parallel is not substituted for the selected Bukhari wording."
+      },
+      {
+        "id": "mulaqqin-opening-3",
+        "label": "Ibn al-Mulaqqin · al-Tawdih",
+        "url": "https://www.islamweb.net/ar/library/content/305/19/باب",
+        "kind": "commentary",
+        "format": "web",
+        "locator": "Volume 2, pages 277–280 and 288–289 · opening report 3",
+        "scope": "Records lexical alternatives for Khadijah’s description and explains Namus; consulted as commentary, not narration text."
+      },
+      {
+        "id": "ayni-opening-4",
+        "label": "Al-‘Ayni · ‘Umdat al-Qari",
+        "url": "https://www.islamweb.net/ar/library/content/303/12/باب-بدء-الوحي",
+        "kind": "commentary",
+        "format": "web",
+        "locator": "Volume 1, pages 66–69 · opening report 4",
+        "scope": "Explains the continued chain, al-rujz and the bawadir variant. Other lexical readings are acknowledged."
+      },
+      {
+        "id": "ayni-opening-6",
+        "label": "Al-‘Ayni · ‘Umdat al-Qari",
+        "url": "https://www.islamweb.net/ar/library/content/303/16/باب-بدء-الوحي",
+        "kind": "commentary",
+        "format": "web",
+        "locator": "Volume 1, pages 74–76 · opening report 6",
+        "scope": "Explains the two chains, the chain-switch sign and the distinction between similar and identical wording."
+      },
+      {
+        "id": "ibn-hajar-heraclius",
+        "label": "Ibn Hajar · Fath al-Bari (digital transcription)",
+        "url": "https://ar.wikisource.org/wiki/الحديث_رقم_(_6_)_(_بسم_الله_الرحمن_الرحيم_من_محمد_عبد_الله_ورسوله_إلى_)",
+        "kind": "commentary",
+        "format": "web",
+        "locator": "Commentary on the Heraclius report; page title uses a different number",
+        "scope": "Community transcription of classical commentary. Used for al-Arisiyyin, Ibn al-Nazur and the unqualified faith reference; not used as an Arabic base edition."
+      },
+      {
+        "id": "arabic-faith",
+        "label": "Arabic Wikisource · fixed revision 490285",
+        "kind": "arabic-input",
+        "format": "web",
+        "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_الإيمان&oldid=490285"
+      }
+    ],
+    "findings": [
+      "The selected digital Arabic includes full chains of transmission; the working English retains them.",
+      "The Brill print abbreviates the first narrator to al-Humaydi while the selected digital text and Darussalam give his name. Honorific wording and orthography also differ. These are recorded as witness differences, not silently harmonized.",
+      "The first two narration bodies were visually compared against the Darussalam Arabic and the older print. No additional substantive body clause was identified in those comparisons. This is an AI review, not an independent human audit.",
+      "The sample and a digital edition are not presumed identical merely because their translator is the same.",
+      "A close translation still involves linguistic judgment; zero interpretation and infallibility cannot honestly be promised.",
+      "Entries 3–7 have AI comparison records and declared wording choices; no human accuracy certification is claimed. The derived Hadith 5 correction does not modify the pinned digital input."
+    ],
+    "candidates": [
+      {
+        "name": "HadeethEnc",
+        "result": "Useful selected-hadith translation/API project; not established here as a complete, exact-numbered Bukhari edition with explicit redistribution and narration terms.",
+        "url": "https://hadeethenc.com/en/home/about"
+      },
+      {
+        "name": "Sunnah.com API",
+        "result": "Free API exists but requires a key. Useful for checking; no assumption that scraped mirrors confer permission to reuse translations.",
+        "url": "https://sunnah.com/developers"
+      },
+      {
+        "name": "Scraped GitHub English datasets",
+        "result": "Rejected as independent verification. Software/data wrapper licenses do not establish provenance or ownership of embedded translations.",
+        "url": "https://github.com/Jaguar16/open-hadith-data"
+      }
+    ],
+    "prototypeReview": {
+      "status": "personal-prototype-only",
+      "independentReview": "pending",
+      "userDecision": "Keep this as a clearly labelled personal prototype for now",
+      "originalSourceSha256": "fea9b889d30bdc3ceb8e41de8cb390292905391d2079993ce69a85b138bd7f33",
+      "originalDraftSha256": "6b31fb16f5bfc5e4acf08f06b269b20e5a8fc1a0747e153da9cd7cb3f6f9d43c",
+      "decisionsSha256": "a3d25932e2caca64186991ddb8ff1da18d39392990b131e5fffc50dca2f13d1e",
+      "openingSourceSha256": "11a47792c7c679c5f4b7e1f4a52c4d12d045f19b86acba195e3cdf3cd2c7274d",
+      "faithReviewSha256": "913cde0d9b2089bd87a8c8a0b59766d267ca251b3febe56f814ef720156266b1",
+      "faithSourceSha256": "0f8c0518a21d266a075dd1cfb756733845ed5dff6548f634cfded0542a30a7a9"
+    }
+  },
+  "sourceReferences": {
+    "schemaVersion": 1,
+    "sourceRecordSha256": "d2c67f16c4e4f2701e3e591b1ea58a06101b1f4e64eab060afd8bd9b91651243",
+    "sources": [
+      {
+        "id": "arabic-base",
+        "label": "Arabic Wikisource · fixed revision 484874",
+        "url": "https://ar.wikisource.org/w/index.php?title=%D8%B5%D8%AD%D9%8A%D8%AD_%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A/%D9%83%D8%AA%D8%A7%D8%A8_%D8%A8%D8%AF%D8%A1_%D8%A7%D9%84%D9%88%D8%AD%D9%8A&oldid=484874",
+        "kind": "arabic-input",
+        "format": "web"
+      },
+      {
+        "id": "darussalam-sample",
+        "label": "Darussalam · Muhammad Muhsin Khan",
+        "url": "https://dar-us-salam.com/?controller=attachment&id_attachment=433",
+        "kind": "english-comparison",
+        "format": "pdf"
+      },
+      {
+        "id": "bewley",
+        "label": "Aisha Bewley · English translation",
+        "url": "https://aishabewley.org/bukhari1",
+        "kind": "english-comparison",
+        "format": "web"
+      },
+      {
+        "id": "sunnah-1",
+        "label": "Sunnah.com · Bukhari 1",
+        "url": "https://sunnah.com/bukhari:1",
+        "kind": "reference-check",
+        "format": "web"
+      },
+      {
+        "id": "sunnah-2",
+        "label": "Sunnah.com · Bukhari 2",
+        "url": "https://sunnah.com/bukhari:2",
+        "kind": "reference-check",
+        "format": "web"
+      },
+      {
+        "id": "brill-scan",
+        "label": "Historical Arabic print · Brill 1862",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/%D8%B5%D8%AD%D9%8A%D8%AD_%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A_%D8%B11.pdf",
+        "kind": "arabic-witness",
+        "format": "pdf"
+      },
+      {
+        "id": "islamhouse-khan",
+        "label": "IslamHouse · Khan-family English comparison",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://islamhouse.com/en/books/70510"
+      },
+      {
+        "id": "brill-1862",
+        "label": "Historical Arabic print · Brill 1862",
+        "kind": "arabic-witness",
+        "format": "pdf",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf"
+      },
+      {
+        "id": "dar-ibn-kathir-2002",
+        "label": "Arabic print · Dar Ibn Kathir 2002",
+        "kind": "arabic-witness",
+        "format": "pdf",
+        "url": "https://archive.org/download/waq79565/79565.pdf"
+      },
+      {
+        "id": "ibn-hajar-opening-5",
+        "label": "Ibn Hajar · Fath al-Bari",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://www.islamweb.net/ar/library/content/52/7/?idfrom=&idto=&start="
+      },
+      {
+        "id": "nawawi-revelation",
+        "label": "Al-Nawawi · Sharh Sahih Muslim",
+        "url": "https://www.islamweb.net/ar/library/content/53/82/?idfrom=469&idto=474",
+        "kind": "commentary",
+        "format": "web"
+      },
+      {
+        "id": "mulaqqin-opening-3",
+        "label": "Ibn al-Mulaqqin · al-Tawdih",
+        "url": "https://www.islamweb.net/ar/library/content/305/19/باب",
+        "kind": "commentary",
+        "format": "web"
+      },
+      {
+        "id": "ayni-opening-4",
+        "label": "Al-‘Ayni · ‘Umdat al-Qari",
+        "url": "https://www.islamweb.net/ar/library/content/303/12/باب-بدء-الوحي",
+        "kind": "commentary",
+        "format": "web"
+      },
+      {
+        "id": "ayni-opening-6",
+        "label": "Al-‘Ayni · ‘Umdat al-Qari",
+        "url": "https://www.islamweb.net/ar/library/content/303/16/باب-بدء-الوحي",
+        "kind": "commentary",
+        "format": "web"
+      },
+      {
+        "id": "ibn-hajar-heraclius",
+        "label": "Ibn Hajar · Fath al-Bari (digital transcription)",
+        "url": "https://ar.wikisource.org/wiki/الحديث_رقم_(_6_)_(_بسم_الله_الرحمن_الرحيم_من_محمد_عبد_الله_ورسوله_إلى_)",
+        "kind": "commentary",
+        "format": "web"
+      }
+    ],
+    "entries": [
+      {
+        "id": "bukhari:1",
+        "number": 1,
+        "entrySha256": "639d7fce6048a408c578f32da4a55a720cc0f06ec7c48f01477a7d59dafb8d6d",
+        "translation": {
+          "label": "English working translation",
+          "description": "AI-produced working translation; compared against two named English translators and the Arabic. Not independently certified. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-base",
+            "locator": "Opening book · source entry 1",
+            "scope": "The Arabic paragraphs used in this entry, retained verbatim. A community-maintained digital transcription, not assumed error-free."
+          },
+          {
+            "id": "publisher",
+            "sourceId": "darussalam-sample",
+            "locator": "Printed page 45 · PDF page 5",
+            "pdfPage": 5,
+            "scope": "Arabic and Muhammad Muhsin Khan English used for comparison. This app does not reproduce that English translation."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley",
+            "locator": "Opening chapter · entry 1",
+            "scope": "An independent named English comparison. Its shortened narrator introduction does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "numbering",
+            "sourceId": "sunnah-1",
+            "locator": "Bukhari 1",
+            "scope": "Additional Arabic and numbering check. Its Khan-family English is not counted as a third independent translator."
+          },
+          {
+            "id": "historical",
+            "sourceId": "brill-scan",
+            "locator": "Opening reports · PDF page 4",
+            "pdfPage": 4,
+            "scope": "Historical printed Arabic comparison. It is not established as the edition from which the digital input was transcribed."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "source-review.html",
+          "fragment": "hadith-1",
+          "label": "Full comparison notes for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:2",
+        "number": 2,
+        "entrySha256": "f9f9a33f36d8d56783151d8d44700f5dec1f93e3d45fcc5e5ad94fe06e99f370",
+        "translation": {
+          "label": "English working translation",
+          "description": "AI-produced working translation; compared against two named English translators and the Arabic. Not independently certified. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-base",
+            "locator": "Opening book · source entry 2",
+            "scope": "The Arabic paragraphs used in this entry, retained verbatim. A community-maintained digital transcription, not assumed error-free."
+          },
+          {
+            "id": "publisher",
+            "sourceId": "darussalam-sample",
+            "locator": "Printed page 46 · PDF page 6",
+            "pdfPage": 6,
+            "scope": "Arabic and Muhammad Muhsin Khan English used for comparison. This app does not reproduce that English translation."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley",
+            "locator": "Opening chapter · entry 2",
+            "scope": "An independent named English comparison. Its shortened narrator introduction does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "numbering",
+            "sourceId": "sunnah-2",
+            "locator": "Bukhari 2",
+            "scope": "Additional Arabic and numbering check. Its Khan-family English is not counted as a third independent translator."
+          },
+          {
+            "id": "historical",
+            "sourceId": "brill-scan",
+            "locator": "Opening reports · PDF page 4",
+            "pdfPage": 4,
+            "scope": "Historical printed Arabic comparison. It is not established as the edition from which the digital input was transcribed."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "source-review.html",
+          "fragment": "hadith-2",
+          "label": "Full comparison notes for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:3",
+        "number": 3,
+        "entrySha256": "63c7eeb71c24e97b7e3b59990212c39f0e0fd9bf63d10c723b716bd5c49a704c",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; source comparisons and translation choices recorded. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-base",
+            "locator": "Opening book · source entry 3",
+            "scope": "Arabic retained verbatim from the fixed digital revision, including its source paragraph boundaries."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley",
+            "locator": "Opening chapter · entry 3",
+            "scope": "Independent named English comparison; not copied into this working translation."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "English reference 1.1.3",
+            "scope": "Khan-family comparator. References 1.1.3 combine Arabic entries 3 and 4; 1.1.4–6 correspond to Arabic entries 5–7. Not a second Arabic base or a third independent English translator."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF pages 4, 5, 6",
+            "pdfPage": 4,
+            "scope": "Visually inspected Arabic witness. Differences are recorded in the comparison notes; the digital input is not assumed to come from this edition."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF pages 7, 8",
+            "pdfPage": 7,
+            "scope": "Visually inspected Arabic witness. Differences are recorded in the comparison notes; the digital input is not assumed to come from this edition."
+          },
+          {
+            "id": "nawawi-revelation",
+            "sourceId": "nawawi-revelation",
+            "locator": "Volume 2, pages 351–353 · parallel revelation report",
+            "scope": "Lexical commentary on taksibu al-ma‘dum, nawa’ib al-haqq and Namus. The Muslim parallel is not substituted for the selected Bukhari wording."
+          },
+          {
+            "id": "mulaqqin-opening-3",
+            "sourceId": "mulaqqin-opening-3",
+            "locator": "Volume 2, pages 277–280 and 288–289 · opening report 3",
+            "scope": "Records lexical alternatives for Khadijah’s description and explains Namus; consulted as commentary, not narration text."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "prototype-review.html",
+          "fragment": "hadith-3",
+          "label": "Translation choices and original source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:4",
+        "number": 4,
+        "entrySha256": "021e4b08b44412d8e671ad2df503c6b3471e235080cda4c235220275db99fc35",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; source comparisons and translation choices recorded. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-base",
+            "locator": "Opening book · source entry 4",
+            "scope": "Arabic retained verbatim from the fixed digital revision, including its source paragraph boundaries."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley",
+            "locator": "Opening chapter · entry 4",
+            "scope": "Independent named English comparison; not copied into this working translation."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "English reference 1.1.3",
+            "scope": "Khan-family comparator. References 1.1.3 combine Arabic entries 3 and 4; 1.1.4–6 correspond to Arabic entries 5–7. Not a second Arabic base or a third independent English translator."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 6",
+            "pdfPage": 6,
+            "scope": "Visually inspected Arabic witness. Differences are recorded in the comparison notes; the digital input is not assumed to come from this edition."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 8",
+            "pdfPage": 8,
+            "scope": "Visually inspected Arabic witness. Differences are recorded in the comparison notes; the digital input is not assumed to come from this edition."
+          },
+          {
+            "id": "ayni-opening-4",
+            "sourceId": "ayni-opening-4",
+            "locator": "Volume 1, pages 66–69 · opening report 4",
+            "scope": "Explains the continued chain, al-rujz and the bawadir variant. Other lexical readings are acknowledged."
+          }
+        ],
+        "contextNotes": [
+          {
+            "label": "A continued chain",
+            "text": "This report continues through Ibn Shihab from the preceding narrator chain, then through Abu Salamah and Jabir. The first-person account is the Prophet’s.",
+            "citations": [
+              "ayni-opening-4"
+            ],
+            "related": [
+              {
+                "id": "bukhari:3",
+                "number": 3,
+                "label": "See the preceding chain",
+                "target": "chain"
+              }
+            ]
+          }
+        ],
+        "localNotes": {
+          "path": "prototype-review.html",
+          "fragment": "hadith-4",
+          "label": "Translation choices and original source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:5",
+        "number": 5,
+        "entrySha256": "233fb7e472da7de9d170cd1cfbd89d4181c7ccda1b93f5252526a3652ca1752d",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; source comparisons and translation choices recorded. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-base",
+            "locator": "Opening book · source entry 5",
+            "scope": "Derived Arabic with one declared correction: له → لك. The unchanged digital input is preserved in the offline prototype inputs and comparison notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley",
+            "locator": "Opening chapter · entry 5",
+            "scope": "Independent named English comparison; not copied into this working translation."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "English reference 1.1.4",
+            "scope": "Khan-family comparator. References 1.1.3 combine Arabic entries 3 and 4; 1.1.4–6 correspond to Arabic entries 5–7. Not a second Arabic base or a third independent English translator."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 6",
+            "pdfPage": 6,
+            "scope": "Visually inspected Arabic witness. Differences are recorded in the comparison notes; the digital input is not assumed to come from this edition."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 9",
+            "pdfPage": 9,
+            "scope": "Visually inspected Arabic witness. Differences are recorded in the comparison notes; the digital input is not assumed to come from this edition."
+          },
+          {
+            "id": "ibn-hajar-opening-5",
+            "sourceId": "ibn-hajar-opening-5",
+            "locator": "Fath al-Bari, volume 1, pages 39–40 · opening report 5",
+            "scope": "Ibn Hajar, Fath al-Bari, discussion of opening report 5, volume 1, pages 39–40; digital classical commentary consulted 20 October 2026. The website breadcrumb is inconsistent with the displayed opening-report text; identify the passage by its wording, not that breadcrumb."
+          }
+        ],
+        "contextNotes": [
+          {
+            "label": "A recorded source correction",
+            "text": "This personal edition uses “for you” where the digital transcription has “for him.” Two printed Arabic witnesses support the correction. The original and evidence remain in the source notes.",
+            "citations": [
+              "brill-1862",
+              "dar-ibn-kathir-2002",
+              "ibn-hajar-opening-5"
+            ],
+            "related": []
+          }
+        ],
+        "localNotes": {
+          "path": "prototype-review.html",
+          "fragment": "hadith-5",
+          "label": "Translation choices and original source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:6",
+        "number": 6,
+        "entrySha256": "b6a6a27bcf2b06b7ce683ef83e1b5fd0ed4d5b2e6d96d1d1ce46efe0bdb7ad09",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; source comparisons and translation choices recorded. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-base",
+            "locator": "Opening book · source entry 6",
+            "scope": "Arabic retained verbatim from the fixed digital revision, including its source paragraph boundaries."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley",
+            "locator": "Opening chapter · entry 6",
+            "scope": "Independent named English comparison; not copied into this working translation."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "English reference 1.1.5",
+            "scope": "Khan-family comparator. References 1.1.3 combine Arabic entries 3 and 4; 1.1.4–6 correspond to Arabic entries 5–7. Not a second Arabic base or a third independent English translator."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF pages 6, 7",
+            "pdfPage": 6,
+            "scope": "Visually inspected Arabic witness. Differences are recorded in the comparison notes; the digital input is not assumed to come from this edition."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 9",
+            "pdfPage": 9,
+            "scope": "Visually inspected Arabic witness. Differences are recorded in the comparison notes; the digital input is not assumed to come from this edition."
+          },
+          {
+            "id": "ayni-opening-6",
+            "sourceId": "ayni-opening-6",
+            "locator": "Volume 1, pages 74–76 · opening report 6",
+            "scope": "Explains the two chains, the chain-switch sign and the distinction between similar and identical wording."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "prototype-review.html",
+          "fragment": "hadith-6",
+          "label": "Translation choices and original source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:7",
+        "number": 7,
+        "entrySha256": "f7ae7f10b8ea54283e7750f17aa833541ddcabc65d0d5cd170fcbb027526f0f9",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; source comparisons and translation choices recorded. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-base",
+            "locator": "Opening book · source entry 7",
+            "scope": "Arabic retained verbatim from the fixed digital revision, including its source paragraph boundaries."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley",
+            "locator": "Opening chapter · entry 7",
+            "scope": "Independent named English comparison; not copied into this working translation."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "English reference 1.1.6",
+            "scope": "Khan-family comparator. References 1.1.3 combine Arabic entries 3 and 4; 1.1.4–6 correspond to Arabic entries 5–7. Not a second Arabic base or a third independent English translator."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF pages 7, 8, 9",
+            "pdfPage": 7,
+            "scope": "Visually inspected Arabic witness. Differences are recorded in the comparison notes; the digital input is not assumed to come from this edition."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF pages 9, 10, 11",
+            "pdfPage": 9,
+            "scope": "Visually inspected Arabic witness. Differences are recorded in the comparison notes; the digital input is not assumed to come from this edition."
+          },
+          {
+            "id": "ibn-hajar-heraclius",
+            "sourceId": "ibn-hajar-heraclius",
+            "locator": "Commentary on the Heraclius report; page title uses a different number",
+            "scope": "Community transcription of classical commentary. Used for al-Arisiyyin, Ibn al-Nazur and the unqualified faith reference; not used as an Arabic base edition."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "prototype-review.html",
+          "fragment": "hadith-7",
+          "label": "Translation choices and original source for this hadith"
+        }
+      }
+    ]
+  },
+  "entries": [
+    {
+      "id": "bukhari:1",
+      "book": "The Beginning of Revelation",
+      "number": 1,
+      "arabic_blocks": [
+        "[1] حدثنا الحميدي عبد الله بن الزبير قال: حدثنا سفيان قال: حدثنا يحيى بن سعيد الأنصارى قال: أخبرني محمد بن إبراهيم التيمي أنه سمع علقمة بن وقاص الليثي يقول: سمعت عمر بن الخطاب رضى الله تعالى عنه على المنبر قال:",
+        "سمعت رسول الله ﷺ يقول: إنما الأعمال بالنيات وإنما لكل امرئ ما نوى فمن كانت هجرته إلى دنيا يصيبها أو إلى امرأة ينكحها فهجرته إلى ما هاجر إليه."
+      ],
+      "arabic_sha256": "3235630045f053d7beaf85d9a61b44f21f590db531283e14d0c8dc7cd6f9c5ff",
+      "english_blocks": [
+        "Al-Humaydi, ‘Abdullah ibn al-Zubayr, related to us: Sufyan related to us: Yahya ibn Sa‘id al-Ansari related to us: Muhammad ibn Ibrahim al-Taymi informed me that he heard ‘Alqamah ibn Waqqas al-Laythi say: I heard ‘Umar ibn al-Khattab, may Allah Most High be pleased with him, on the pulpit. He said:",
+        "I heard the Messenger of Allah, may Allah bless him and grant him peace, say: “Actions are only according to intentions, and each person will have only what they intended. Whoever’s migration is for worldly gain or to marry a woman, their migration is to that for which they migrated.”"
+      ],
+      "english_status": "AI-produced working translation; compared against two named English translators and the Arabic. Not independently certified.",
+      "checks": [
+        {
+          "arabic": "إنما الأعمال بالنيات",
+          "decision": "Preserve the restrictive force of إنما. Use a close English rendering; do not insert the explicit noun “reward”, which appears in Khan’s explanatory rendering but not in this Arabic clause.",
+          "comparators": "Khan and Bewley both relate the valuation of deeds to intentions. Their English wording differs.",
+          "status": "AI comparison completed; translation choice documented"
+        },
+        {
+          "arabic": "وإنما لكل امرئ ما نوى",
+          "decision": "Preserve each person and the intention-specific result. Gender-neutral English does not narrow the generic Arabic person to men.",
+          "comparators": "Both English comparators preserve individual intention.",
+          "status": "AI comparison completed"
+        },
+        {
+          "arabic": "إلى دنيا يصيبها أو إلى امرأة ينكحها",
+          "decision": "Keep both alternatives: obtaining worldly benefit and marrying a woman.",
+          "comparators": "Both comparators include both alternatives.",
+          "status": "AI comparison completed"
+        },
+        {
+          "arabic": "فهجرته إلى ما هاجر إليه",
+          "decision": "Preserve the conclusion without adding a separate moral explanation.",
+          "comparators": "Both comparators retain this conclusion.",
+          "status": "AI comparison completed"
+        },
+        {
+          "arabic": "على المنبر",
+          "decision": "Retain the pulpit setting in the full translated narrator introduction. Khan’s displayed abridged introduction does not include the full chain; Bewley includes the pulpit setting.",
+          "comparators": "Checked against the Arabic witnesses.",
+          "status": "AI comparison completed"
+        },
+        {
+          "arabic": "Variant boundary",
+          "decision": "Do not import the additional migration-to-Allah-and-His-Messenger clause from other transmissions of this hadith. It is absent from the selected opening entry in all Arabic witnesses inspected.",
+          "comparators": "Opening entries in Khan and Bewley also follow the shorter form.",
+          "status": "Variant guard recorded"
+        }
+      ],
+      "source_pages": {
+        "wikisource_revision": 484874,
+        "darussalam_sample_printed_page": 45,
+        "darussalam_sample_pdf_page": 5,
+        "brill_scan_pdf_page": 4
+      },
+      "audio_status": "Not generated; voice phrasing and spoken honorific policy remain to be settled."
+    },
+    {
+      "id": "bukhari:2",
+      "book": "The Beginning of Revelation",
+      "number": 2,
+      "arabic_blocks": [
+        "[2] حدثنا عبد الله بن يوسف قال: أخبرنا مالك عن هشام بن عروة عن أبيه عن عائشة أم المؤمنين رضى الله تعالى عنها أن الحارث بن هشام رضى الله تعالى عنه سأل رسول الله ﷺ،",
+        "فقال: يا رسول الله كيف يأتيك الوحي، فقال رسول الله ﷺ: أحيانا يأتيني مثل صلصلة الجرس وهو أشده علي فيفصم عني وقد وعيت عنه ما قال وأحيانا يتمثل لي الملك رجلا فيكلمني فأعي ما يقول: قالت عائشة رضى الله تعالى عنها ولقد رأيته ينزل عليه الوحي في اليوم الشديد البرد فيفصم عنه وإن جبينه ليتفصد عرقا."
+      ],
+      "arabic_sha256": "30093595e3ae7505884e642ed01365c51b221fa4193ea09192c0268796c81fd1",
+      "english_blocks": [
+        "‘Abdullah ibn Yusuf related to us: Malik informed us, from Hisham ibn ‘Urwah, from his father, from ‘A’ishah, the Mother of the Believers, may Allah Most High be pleased with her, that al-Harith ibn Hisham, may Allah Most High be pleased with him, asked the Messenger of Allah, may Allah bless him and grant him peace:",
+        "He said, “Messenger of Allah, how does revelation come to you?” The Messenger of Allah, may Allah bless him and grant him peace, said: “At times it comes to me like the ringing of a bell, and this is the hardest form for me. It then leaves me, and I have understood what he said. At other times the angel appears to me as a man and speaks to me, and I understand what he says.” ‘A’ishah, may Allah Most High be pleased with her, said: “I saw revelation descend upon him on a bitterly cold day. It then left him, while his forehead was streaming with sweat.”"
+      ],
+      "english_status": "AI-produced working translation; compared against two named English translators and the Arabic. Not independently certified.",
+      "checks": [
+        {
+          "arabic": "كيف يأتيك الوحي",
+          "decision": "Translate الوحي consistently as revelation. Preserve al-Harith’s question as a question.",
+          "comparators": "Bewley uses revelation; Sunnah.com’s Khan rendering uses Divine Inspiration, while the Darussalam sample uses Divine Revelation. Same underlying concept; not three independent translators.",
+          "status": "AI comparison completed"
+        },
+        {
+          "arabic": "مثل صلصلة الجرس",
+          "decision": "Preserve the comparison to a ringing bell; do not state that a physical bell was present.",
+          "comparators": "Both English translators preserve a comparison.",
+          "status": "AI comparison completed"
+        },
+        {
+          "arabic": "وهو أشده علي",
+          "decision": "Keep the superlative and its relation to the speaker; do not weaken it to merely difficult.",
+          "comparators": "Both translators preserve the comparative severity.",
+          "status": "AI comparison completed"
+        },
+        {
+          "arabic": "فيفصم عني وقد وعيت عنه ما قال",
+          "decision": "Keep the sequence: it leaves, and the message has been understood. The Arabic ما قال refers to what he said; retain the pronoun without inserting Gabriel’s name. وعيت includes understanding/retention; the draft uses understood rather than adding a separate interpretive sentence.",
+          "comparators": "Bewley makes understanding and retention explicit; Khan describes grasping the revealed content.",
+          "status": "Translation nuance recorded; no independent scholarly sign-off"
+        },
+        {
+          "arabic": "يتمثل لي الملك رجلا",
+          "decision": "Keep the angel appearing in a man’s form. Do not imply an ordinary man authored the revelation.",
+          "comparators": "Both translators preserve the angel and the human form.",
+          "status": "AI comparison completed"
+        },
+        {
+          "arabic": "فيكلمني فأعي ما يقول",
+          "decision": "Preserve speech to the Prophet and his understanding of that speech.",
+          "comparators": "Both English comparators retain both actions.",
+          "status": "AI comparison completed"
+        },
+        {
+          "arabic": "قالت عائشة",
+          "decision": "End the Prophet’s quoted answer before ‘A’ishah’s observation; do not merge the two speakers.",
+          "comparators": "Both comparators distinguish the speakers.",
+          "status": "Speaker boundary checked"
+        },
+        {
+          "arabic": "في اليوم الشديد البرد … وإن جبينه ليتفصد عرقا",
+          "decision": "Preserve both severe cold and sweat flowing from the forehead. Do not replace these details with a generalized description.",
+          "comparators": "Both English comparators retain the weather and forehead/sweat details.",
+          "status": "AI comparison completed"
+        }
+      ],
+      "source_pages": {
+        "wikisource_revision": 484874,
+        "darussalam_sample_printed_page": 46,
+        "darussalam_sample_pdf_page": 6,
+        "brill_scan_pdf_page": 4
+      },
+      "audio_status": "Not generated; voice phrasing and spoken honorific policy remain to be settled."
+    },
+    {
+      "id": "bukhari:3",
+      "book": "The Beginning of Revelation",
+      "number": 3,
+      "arabic_blocks": [
+        "[3] حدثنا يحيى بن بكير قال: حدثنا الليث عن عقيل عن ابن شهاب عن عروة بن الزبير عن عائشة أم المؤمنين أنها قالت",
+        "أول ما بدئ به رسول الله ﷺ من الوحي الرؤيا الصالحة في النوم فكان لا يرى رؤيا إلا جاءت مثل فلق الصبح ثم حبب إليه الخلاء وكان يخلو بغار حراء فيتحنث فيه وهو التعبد الليالي ذوات العدد قبل أن ينزع إلى أهله ويتزود لذلك ثم يرجع إلى خديجة فيتزود لمثلها حتى جاءه الحق وهو في غار حراء فجاءه الملك، فقال اقرأ قال: ما أنا بقارئ قال: فأخذني فغطني حتى بلغ مني الجهد ثم أرسلني، فقال اقرأ قلت: ما أنا بقارئ فأخذني فغطني الثانية حتى بلغ مني الجهد ثم أرسلني، فقال اقرأ فقلت: ما أنا بقارئ فأخذني فغطني الثالثة ثم أرسلني، فقال { اقرأ باسم ربك الذي خلق. خلق الإنسان من علق اقرأ وربك الأكرم } فرجع بها رسول الله ﷺ يرجف فؤاده فدخل على خديجة بنت خويلد رضى الله تعالى عنها، فقال زملوني زملوني فزملوه حتى ذهب عنه الروع، فقال لخديجة وأخبرها الخبر لقد خشيت على نفسي فقالت خديجة كلا والله ما يخزيك الله أبدا إنك لتصل الرحم وتحمل الكل وتكسب المعدوم وتقري الضيف وتعين على نوائب الحق فانطلقت به خديجة حتى أتت به ورقة بن نوفل بن أسد بن عبد العزى ابن عم خديجة وكان امرأ تنصر في الجاهلية وكان يكتب الكتاب العبراني فيكتب من الإنجيل بالعبرانية ما شاء الله أن يكتب وكان شيخا كبيرا قد عمي فقالت له خديجة يا ابن عم اسمع من ابن أخيك، فقال له ورقة يا ابن أخي ماذا ترى فأخبره رسول الله ﷺ خبر ما رأى، فقال له ورقة هذا الناموس الذي نزل الله على موسى يا ليتني فيها جذع ليتني أكون حيا إذ يخرجك قومك، فقال رسول الله ﷺ: أو مخرجي هم قال: نعم لم يأت رجل قط بمثل ما جئت به إلا عودي وإن يدركني يومك أنصرك نصرا مؤزرا ثم لم ينشب ورقة أن توفي وفتر الوحي."
+      ],
+      "arabic_sha256": "d20bee739bee481a9c61fe1121f80530edd912a379c98ce9a9d2005037ea7330",
+      "english_blocks": [
+        "Yahya ibn Bukayr related to us: al-Layth related to us, from ‘Uqayl, from Ibn Shihab, from ‘Urwah ibn al-Zubayr, from ‘A’ishah, the Mother of the Believers, who said:",
+        "The first revelation with which the Messenger of Allah, may Allah bless him and grant him peace, began was good dreams during sleep. He would see no dream except that it came like the break of dawn.",
+        "Then solitude was made dear to him. He used to withdraw to the cave of Hira and devote himself there to worship—which is the meaning of tahannuth—for a number of nights before returning to his family. He would take provisions for that, then return to Khadijah and take provisions for a similar stay, until the truth came to him while he was in the cave of Hira.",
+        "The angel came to him and said, “Read.” He said, “I cannot read.” He said: “He took hold of me and pressed me until I reached the limit of my strength. Then he released me and said, ‘Read.’ I said, ‘I cannot read.’ He took hold of me and pressed me a second time until I reached the limit of my strength. Then he released me and said, ‘Read.’ I said, ‘I cannot read.’ He took hold of me and pressed me a third time. Then he released me and said: ‘Read in the name of your Lord who created. He created the human being from a clot. Read, and your Lord is the Most Generous.’”",
+        "The Messenger of Allah, may Allah bless him and grant him peace, returned with it, his heart trembling. He went in to Khadijah bint Khuwaylid, may Allah Most High be pleased with her, and said, “Wrap me up, wrap me up.” They wrapped him up until his fright had left him. He told Khadijah what had happened and said, “I feared for myself.” Khadijah said, “No! By Allah, Allah will never disgrace you. You maintain ties of kinship, bear the burdens of others, provide for those who have nothing, entertain guests, and help in hardships where help is due.”",
+        "Khadijah took him to Waraqah ibn Nawfal ibn Asad ibn ‘Abd al-‘Uzza, her cousin. He was a man who had become a Christian in the time of ignorance. He used to write the Hebrew script and would write from the Gospel in Hebrew as much as Allah willed him to write. He was an elderly man who had become blind. Khadijah said to him, “Cousin, listen to your nephew.” Waraqah said to him, “Nephew, what do you see?” The Messenger of Allah, may Allah bless him and grant him peace, told him what he had seen.",
+        "Waraqah said to him, “This is the Namus whom Allah sent down to Musa. If only I were young then! If only I were alive when your people drive you out!” The Messenger of Allah, may Allah bless him and grant him peace, said, “Will they drive me out?” He said, “Yes. No man has ever brought the like of what you have brought without being met with hostility. If your day reaches me, I will give you firm support.” Before long, Waraqah died, and revelation paused."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; source comparisons and translation choices recorded. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 108,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 99,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 99,
+            "end": 274,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 274,
+            "end": 570,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 570,
+            "end": 851,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 851,
+            "end": 1156,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 1156,
+            "end": 1397,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 166,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 198,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 361,
+            "kind": "report"
+          },
+          {
+            "block": 3,
+            "start": 0,
+            "end": 573,
+            "kind": "report"
+          },
+          {
+            "block": 4,
+            "start": 0,
+            "end": 553,
+            "kind": "report"
+          },
+          {
+            "block": 5,
+            "start": 0,
+            "end": 499,
+            "kind": "report"
+          },
+          {
+            "block": 6,
+            "start": 0,
+            "end": 459,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "originalDraftId": "wikisource-bukhari-opening-r484874:3",
+        "originalDraftReviewSha256": "4e2bff6ec646d31baa712496509736f3516984c3754111501f394c930a27e0ed",
+        "decisions": [
+          {
+            "id": "3-lexical",
+            "number": 3,
+            "topic": "Khadijah’s description",
+            "status": "chosen-for-personal-prototype",
+            "reviewerKind": "ai",
+            "independentReview": "pending",
+            "decision": "Retain “provide for those who have nothing,” the giving-to-those-in-need reading preferred in the consulted commentaries. Render nawa’ib al-haqq as “hardships where help is due” to retain the qualification of rightful help. Earning otherwise unavailable wealth is another recorded reading of taksibu al-ma‘dum, understood with generosity. These are translation choices, not uniquely certified equivalents.",
+            "sources": [
+              "nawawi-revelation",
+              "mulaqqin-opening-3"
+            ],
+            "englishEdits": [
+              {
+                "segmentId": "3-5",
+                "before": "help in the adversities that befall people",
+                "after": "help in hardships where help is due"
+              }
+            ]
+          },
+          {
+            "id": "3-namus",
+            "number": 3,
+            "topic": "Namus",
+            "status": "chosen-for-personal-prototype",
+            "reviewerKind": "ai",
+            "independentReview": "pending",
+            "decision": "Retain the technical term Namus in the report. The commentaries explain it as a keeper of a secret and identify the intended referent here as Gabriel. That explanation stays in the source notes; it is not inserted into Waraqah’s quoted words.",
+            "sources": [
+              "nawawi-revelation",
+              "mulaqqin-opening-3"
+            ],
+            "englishEdits": []
+          }
+        ],
+        "arabicCorrections": [],
+        "comparisonChecks": [
+          {
+            "segments": [
+              "3-1"
+            ],
+            "topic": "Chain wording",
+            "finding": "The selected source and modern print begin with Yahya ibn Bukayr. The older print on PDF page 4 gives Yahya ibn ‘Abdullah ibn Bukayr. The draft does not add the longer name to the selected source. All six named links and the Mother of the Believers title are retained.",
+            "sources": [
+              "arabic-base",
+              "brill-1862",
+              "dar-ibn-kathir-2002"
+            ],
+            "reviewerKind": "ai",
+            "status": "comparison-recorded-not-approval"
+          },
+          {
+            "segments": [
+              "3-2",
+              "3-3"
+            ],
+            "topic": "Dreams, retreat and provisions",
+            "finding": "Retains dreams in sleep, dawn comparison, solitude, Hira, the embedded explanation of tahannuth, nights, return to family, provisions and return to Khadijah. These are distinct clauses; no general summary replaces them.",
+            "sources": [
+              "arabic-base",
+              "islamhouse-khan"
+            ],
+            "reviewerKind": "ai",
+            "status": "comparison-recorded-not-approval"
+          },
+          {
+            "segments": [
+              "3-4"
+            ],
+            "topic": "Three commands and three pressings",
+            "finding": "Retains three commands, three replies and three pressings. The selected text states the limit of strength for the first two pressings, not the third. The older print repeats that clause for the third; the modern print agrees with the selected shorter third description. No third limit-of-strength clause is imported.",
+            "sources": [
+              "arabic-base",
+              "brill-1862",
+              "dar-ibn-kathir-2002"
+            ],
+            "reviewerKind": "ai",
+            "status": "comparison-recorded-not-approval"
+          },
+          {
+            "segments": [
+              "3-4"
+            ],
+            "topic": "Qur’anic quotation extent",
+            "finding": "The quotation ends at al-akram, corresponding to 96:1–3. The draft does not append later verses. Read/cannot-read follows both named translation comparisons; it remains a translation choice.",
+            "sources": [
+              "arabic-base",
+              "bewley",
+              "islamhouse-khan"
+            ],
+            "reviewerKind": "ai",
+            "status": "comparison-recorded-not-approval"
+          },
+          {
+            "segments": [
+              "3-5",
+              "3-6",
+              "3-7"
+            ],
+            "topic": "Sequence and direct speech",
+            "finding": "Retains the repeated wrapping request, fear, five qualities in Khadijah’s reply, Waraqah’s lineage/religion/writing/blindness, question, exile warning, pledge of support, death and pause. Hebrew is retained; no Arabic-writing variant is substituted.",
+            "sources": [
+              "arabic-base",
+              "islamhouse-khan"
+            ],
+            "reviewerKind": "ai",
+            "status": "comparison-recorded-not-approval"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              7,
+              8
+            ]
+          }
+        ]
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:4",
+      "book": "The Beginning of Revelation",
+      "number": 4,
+      "arabic_blocks": [
+        "[4] قال ابن شهاب وأخبرني أبو سلمة بن عبد الرحمن أن جابر بن عبد الله الأنصاري قال وهو يحدث عن فترة الوحي، فقال في حديثه",
+        "بينا أنا أمشي إذ سمعت صوتا من السماء فرفعت بصري فإذا الملك الذي جاءني بحراء جالس على كرسي بين السماء والأرض فرعبت منه فرجعت فقلت: زملوني زملوني فأنزل الله تعالى { يا أيها المدثر قم فأنذر } إلى قوله { والرجز فاهجر } فحمي الوحي وتتابع تابعه عبد الله بن يوسف وأبو صالح وتابعه هلال بن رداد عن الزهري، وقال يونس ومعمر بوادره."
+      ],
+      "arabic_sha256": "38e5c6b8b730cfe3c06ac720899dd160145dc69e666d9963bcd5124b9330b0a1",
+      "english_blocks": [
+        "Ibn Shihab said: Abu Salamah ibn ‘Abd al-Rahman also informed me that Jabir ibn ‘Abdullah al-Ansari, speaking about the pause in revelation, said in his account:",
+        "“While I was walking, I heard a voice from the sky. I raised my eyes, and there was the angel who had come to me at Hira, sitting on a chair between the sky and the earth. I was frightened of him, so I returned and said, ‘Wrap me up, wrap me up.’ Then Allah Most High sent down: ‘O you wrapped in a cloak, rise and warn,’ up to His words: ‘And shun idols.’ Revelation then became intense and continued.”",
+        "‘Abdullah ibn Yusuf and Abu Salih followed him in transmitting it. Hilal ibn Raddad also followed him in transmitting it from al-Zuhri. Yunus and Ma‘mar said “the flesh between his neck and shoulders.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; source comparisons and translation choices recorded. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 118,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 233,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 233,
+            "end": 320,
+            "kind": "transmission-note"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 161,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 403,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 201,
+            "kind": "transmission-note"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "originalDraftId": "wikisource-bukhari-opening-r484874:4",
+        "originalDraftReviewSha256": "80190ec12093147d229a2f06d6f8a82d58c26b9f59914b2981f57ef4346a12d4",
+        "decisions": [
+          {
+            "id": "4-transmission-context",
+            "number": 4,
+            "topic": "The continued narrator chain",
+            "status": "chosen-for-personal-prototype",
+            "reviewerKind": "ai",
+            "independentReview": "pending",
+            "decision": "The first-person account is the Prophet’s, transmitted by Jabir through Abu Salamah and Ibn Shihab. A separate note links to Hadith 3’s preceding chain. No missing words are inserted into the selected chain.",
+            "sources": [
+              "ayni-opening-4"
+            ],
+            "englishEdits": []
+          },
+          {
+            "id": "4-bawadir",
+            "number": 4,
+            "topic": "The final transmission note",
+            "status": "chosen-for-personal-prototype",
+            "reviewerKind": "ai",
+            "independentReview": "pending",
+            "decision": "Translate bawadiruhu as “the flesh between his neck and shoulders,” following the anatomical explanation in the commentary. The note records a wording variant in the preceding trembling account. Do not silently replace this with “his heart”; the anatomical reading and a historical heart-related explanation both appear in commentary.",
+            "sources": [
+              "ayni-opening-4"
+            ],
+            "englishEdits": [
+              {
+                "segmentId": "4-3",
+                "before": "“bawadiruhu.”",
+                "after": "“the flesh between his neck and shoulders.”"
+              }
+            ]
+          },
+          {
+            "id": "4-rujz",
+            "number": 4,
+            "topic": "The quoted verse ending",
+            "status": "chosen-for-personal-prototype",
+            "reviewerKind": "ai",
+            "independentReview": "pending",
+            "decision": "Use “shun idols” for al-rujz in the quoted ending of Qur’an 74:5, following the contextual reading reported by al-‘Ayni. “Filth” or “impurity” are broader English alternatives, and the commentary also records sin-related explanations. The verse between the two quoted endpoints remains unexpanded.",
+            "sources": [
+              "ayni-opening-4"
+            ],
+            "englishEdits": [
+              {
+                "segmentId": "4-2",
+                "before": "And shun impurity.",
+                "after": "And shun idols."
+              }
+            ]
+          }
+        ],
+        "arabicCorrections": [],
+        "comparisonChecks": [
+          {
+            "segments": [
+              "4-1"
+            ],
+            "topic": "Inherited chain and speaker",
+            "finding": "This record starts with Ibn Shihab and continues the preceding chain. The first-person speech is transmitted by Jabir as the Prophet’s account; it must not be presented as Jabir describing his own experience. The abbreviated source does not repeat all upper links or a fresh explicit Prophet attribution.",
+            "sources": [
+              "arabic-base",
+              "bewley",
+              "islamhouse-khan"
+            ],
+            "reviewerKind": "ai",
+            "status": "comparison-recorded-not-approval"
+          },
+          {
+            "segments": [
+              "4-2"
+            ],
+            "topic": "Quotation boundary",
+            "finding": "The selected Arabic explicitly abbreviates the Qur’anic passage with “up to His words”. The draft preserves that abbreviation. Both printed witnesses inspected give intermediate wording; it is not silently filled into this source.",
+            "sources": [
+              "arabic-base",
+              "brill-1862",
+              "dar-ibn-kathir-2002"
+            ],
+            "reviewerKind": "ai",
+            "status": "comparison-recorded-not-approval"
+          },
+          {
+            "segments": [
+              "4-3"
+            ],
+            "topic": "Transmission note retained",
+            "finding": "The note beginning taba‘ahu is outside the first-person quotation. The full tail names ‘Abdullah ibn Yusuf, Abu Salih, Hilal ibn Raddad, al-Zuhri, Yunus and Ma‘mar. Bewley preserves this note; the Khan-family combined record does not.",
+            "sources": [
+              "arabic-base",
+              "brill-1862",
+              "bewley",
+              "islamhouse-khan"
+            ],
+            "reviewerKind": "ai",
+            "status": "comparison-recorded-not-approval"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              6
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              8
+            ]
+          }
+        ]
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:5",
+      "book": "The Beginning of Revelation",
+      "number": 5,
+      "arabic_blocks": [
+        "[5] حدثنا موسى بن إسماعيل قال: حدثنا أبو عوانة قال: حدثنا موسى بن أبي عائشة قال: حدثنا سعيد بن جبير عن ابن عباس في قوله تعالى { لا تحرك به لسانك لتعجل به } قال:",
+        "كان رسول الله ﷺ يعالج من التنزيل شدة وكان مما يحرك شفتيه، فقال ابن عباس فأنا أحركهما لكم كما كان رسول الله ﷺ يحركهما، وقال سعيد أنا أحركهما كما رأيت ابن عباس يحركهما فحرك شفتيه فأنزل الله تعالى { لا تحرك به لسانك لتعجل به إن علينا جمعه وقرآنه } قال جمعه لك في صدرك وتقرأه { فإذا قرأناه فاتبع قرآنه } قال: فاستمع له وأنصت { ثم إن علينا بيانه } ثم إن علينا أن تقرأه فكان رسول الله ﷺ بعد ذلك إذا أتاه جبريل استمع فإذا انطلق جبريل قرأه النبي ﷺ كما قرأه."
+      ],
+      "arabic_sha256": "7fb2eb830c4c31ffa51766b98f5f59be8252a62e78099cb0e78c3f05237f5e44",
+      "english_blocks": [
+        "Musa ibn Isma‘il related to us: Abu ‘Awanah related to us: Musa ibn Abi ‘A’ishah related to us: Sa‘id ibn Jubayr related to us, from Ibn ‘Abbas, concerning the words of the Most High, “Do not move your tongue with it to hasten it.” He said:",
+        "The Messenger of Allah, may Allah bless him and grant him peace, used to undergo hardship from the revelation, and he would move his lips. Ibn ‘Abbas said, “I am moving them for you as the Messenger of Allah, may Allah bless him and grant him peace, used to move them.” Sa‘id said, “I am moving them as I saw Ibn ‘Abbas move them,” and he moved his lips.",
+        "Then Allah Most High sent down: “Do not move your tongue with it to hasten it. Its collection and recitation are Our responsibility.” He said: “Gathering it for you in your breast, and your reciting it.” “When We recite it, follow its recitation.” He said: “Listen to it and be silent.” “Then its explanation is Our responsibility.” Then it is Our responsibility that you recite it.",
+        "After that, when Jibril came to the Messenger of Allah, may Allah bless him and grant him peace, he would listen. When Jibril departed, the Prophet, may Allah bless him and grant him peace, would recite it as he had recited it."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; source comparisons and translation choices recorded. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 160,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 177,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 177,
+            "end": 364,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 364,
+            "end": 449,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 240,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 354,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 382,
+            "kind": "report"
+          },
+          {
+            "block": 3,
+            "start": 0,
+            "end": 227,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "originalDraftId": "wikisource-bukhari-opening-r484874:5",
+        "originalDraftReviewSha256": "1b45e2709016e6a5eda10b99b733211be2eb1225395dcf4cb902bee3f9138e88",
+        "decisions": [
+          {
+            "id": "5-lahu-laka",
+            "number": 5,
+            "topic": "One declared Arabic correction",
+            "status": "chosen-for-personal-prototype",
+            "reviewerKind": "ai",
+            "independentReview": "pending",
+            "decision": "In the derived prototype only, change له (for him) to لك (for you). Both inspected printed witnesses and Ibn Hajar support laka in this phrase. The pinned digital input and original draft remain unchanged. This is an AI-evaluated correction, pending independent review.",
+            "sources": [
+              "brill-1862",
+              "dar-ibn-kathir-2002",
+              "ibn-hajar-opening-5"
+            ],
+            "englishEdits": [
+              {
+                "segmentId": "5-3",
+                "before": "for him",
+                "after": "for you"
+              }
+            ]
+          },
+          {
+            "id": "5-quotation",
+            "number": 5,
+            "topic": "Qur’anic quotations and explanation",
+            "status": "chosen-for-personal-prototype",
+            "reviewerKind": "ai",
+            "independentReview": "pending",
+            "decision": "Keep the quoted Qur’anic phrases distinct from the intervening explanation. Ibn Hajar identifies the explanation as Ibn ‘Abbas’s. The final sentence after “Then its explanation is Our responsibility” remains outside that verse quotation; it is not an additional Qur’anic verse.",
+            "sources": [
+              "ibn-hajar-opening-5"
+            ],
+            "englishEdits": []
+          }
+        ],
+        "arabicCorrections": [
+          {
+            "id": "5-lahu-laka-proposal",
+            "status": "applied-to-personal-prototype-only",
+            "reviewerKind": "ai",
+            "paragraphId": "mwGA",
+            "start": 254,
+            "end": 256,
+            "original": "له",
+            "replacement": "لك",
+            "englishSegmentId": "5-3",
+            "englishOriginal": "for him",
+            "englishReplacement": "for you",
+            "sources": [
+              "brill-1862",
+              "dar-ibn-kathir-2002",
+              "ibn-hajar-opening-5"
+            ],
+            "reason": "Both previously inspected printed witnesses read laka. Ibn Hajar’s discussion also explicitly records laka in the relevant phrase, including the version with fi sadrika. This supports treating lahu in the selected digital text as a likely transcription defect. Proposed Arabic and corresponding English corrections remain separate until reviewed; neither the pinned source nor the working draft has been changed.",
+            "decisionId": "5-lahu-laka"
+          }
+        ],
+        "comparisonChecks": [
+          {
+            "segments": [
+              "5-1",
+              "5-2"
+            ],
+            "topic": "Narrator actions",
+            "finding": "The selected Arabic distinguishes Ibn ‘Abbas’s demonstration and Sa‘id’s later demonstration; both are retained. The older print includes the hardship description and Ibn ‘Abbas’s demonstration. The modern printed page 9 instead moves directly to the Prophet moving them and Sa‘id’s words; its shorter passage is recorded, not used to delete the selected clauses.",
+            "sources": [
+              "arabic-base",
+              "brill-1862",
+              "dar-ibn-kathir-2002"
+            ],
+            "reviewerKind": "ai",
+            "status": "comparison-recorded-not-approval"
+          },
+          {
+            "segments": [
+              "5-3"
+            ],
+            "topic": "Quotation and explanation boundaries",
+            "finding": "The Qur’anic fragments and the transmitted explanations are distinct. The source has lahu in “jam‘ahu lahu fi sadrika”; both inspected printed pages show laka. The draft deliberately exposes the selected source’s “for him … your breast” shift instead of silently repairing it.",
+            "sources": [
+              "arabic-base",
+              "brill-1862",
+              "dar-ibn-kathir-2002"
+            ],
+            "reviewerKind": "ai",
+            "status": "comparison-recorded-not-approval"
+          },
+          {
+            "segments": [
+              "5-4"
+            ],
+            "topic": "Final sequence",
+            "finding": "Retains listening when Jibril arrived and reciting after he departed. Neither a memorization method nor a separate lesson is added.",
+            "sources": [
+              "arabic-base",
+              "islamhouse-khan"
+            ],
+            "reviewerKind": "ai",
+            "status": "comparison-recorded-not-approval"
+          },
+          {
+            "segments": [
+              "5-3"
+            ],
+            "topic": "Evidence for a separately recorded correction",
+            "finding": "The digital Fath al-Bari discussion explicitly records laka and attributes the explanatory phrase to Ibn Abbas. Together with the two inspected printed witnesses, this supports the proposed lahu-to-laka correction. A proposal is recorded separately from both the unchanged Arabic and the current English draft; it is not an independent approval.",
+            "sources": [
+              "brill-1862",
+              "dar-ibn-kathir-2002",
+              "ibn-hajar-opening-5"
+            ],
+            "reviewerKind": "ai",
+            "status": "comparison-recorded-not-approval"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              6
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              9
+            ]
+          }
+        ]
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:6",
+      "book": "The Beginning of Revelation",
+      "number": 6,
+      "arabic_blocks": [
+        "[6] حدثنا عبدان قال: أخبرنا عبد الله قال: أخبرنا يونس عن الزهري ح وحدثنا بشر بن محمد قال: أخبرنا عبد الله قال: أخبرنا يونس ومعمر عن الزهري نحوه قال: أخبرني عبيد الله بن عبد الله عن ابن عباس قال: ",
+        "كان رسول الله ﷺ أجود الناس وكان أجود ما يكون في رمضان حين يلقاه جبريل وكان يلقاه في كل ليلة من رمضان فيدارسه القرآن فلرسول الله ﷺ أجود بالخير من الريح المرسلة."
+      ],
+      "arabic_sha256": "ae77b6e67f0250f1e703d1b6b81668a55f99d56b27ca19480c0d4c07ac3099f3",
+      "english_blocks": [
+        "‘Abdan related to us: ‘Abdullah informed us: Yunus informed us, from al-Zuhri.",
+        "Another chain: Bishr ibn Muhammad related to us: ‘Abdullah informed us: Yunus and Ma‘mar informed us, from al-Zuhri, similarly. He said: ‘Ubaydullah ibn ‘Abdullah informed me, from Ibn ‘Abbas, who said:",
+        "The Messenger of Allah, may Allah bless him and grant him peace, was the most generous of people. He was at his most generous in Ramadan, when Jibril met him. He would meet him every night of Ramadan and study the Qur’an with him. The Messenger of Allah, may Allah bless him and grant him peace, was more generous in goodness than the wind sent forth."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; source comparisons and translation choices recorded. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 64,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 64,
+            "end": 195,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 159,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 78,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 202,
+            "kind": "chain"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 351,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "originalDraftId": "wikisource-bukhari-opening-r484874:6",
+        "originalDraftReviewSha256": "3b0895313328d369a88b654c2457ca05d30339ea5370f833d08d3daf6b814433",
+        "decisions": [
+          {
+            "id": "6-chain-switch",
+            "number": 6,
+            "topic": "Two narrator chains",
+            "status": "chosen-for-personal-prototype",
+            "reviewerKind": "ai",
+            "independentReview": "pending",
+            "decision": "Keep “Another chain” as the English rendering of the source’s ح chain-switch sign, inside the expandable narrator section. It is a structural cue, not prophetic speech. Keep “similarly” for nahwahu, which does not assert identical wording. Different Arabic recitation conventions exist; new audio has not yet been generated.",
+            "sources": [
+              "ayni-opening-6"
+            ],
+            "englishEdits": []
+          }
+        ],
+        "arabicCorrections": [],
+        "comparisonChecks": [
+          {
+            "segments": [
+              "6-1",
+              "6-2"
+            ],
+            "topic": "Two chains and transition marker",
+            "finding": "Retains both ‘Abdan and Bishr routes, Yunus alone in the first and Yunus with Ma‘mar in the second, the similar-wording indication and the transition sign ha. “Another chain” renders the sign’s role and is marked as a chain segment.",
+            "sources": [
+              "arabic-base",
+              "brill-1862",
+              "dar-ibn-kathir-2002"
+            ],
+            "reviewerKind": "ai",
+            "status": "comparison-recorded-not-approval"
+          },
+          {
+            "segments": [
+              "6-3"
+            ],
+            "topic": "Generosity and study",
+            "finding": "Retains the general superlative, Ramadan intensification, every night, reciprocal study of the Qur’an and the wind comparison. Bewley supports a review/study rendering; the Khan-family comparator uses teaching and adds explanatory wording to the wind image. The draft adds no explanation.",
+            "sources": [
+              "arabic-base",
+              "bewley",
+              "islamhouse-khan"
+            ],
+            "reviewerKind": "ai",
+            "status": "comparison-recorded-not-approval"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              6,
+              7
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              9
+            ]
+          }
+        ]
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:7",
+      "book": "The Beginning of Revelation",
+      "number": 7,
+      "arabic_blocks": [
+        "[7] حدثنا أبو اليمان الحكم بن نافع قال: أخبرنا شعيب عن الزهري قال: أخبرني عبيد الله بن عبد الله بن عتبة بن مسعود أن عبد الله بن عباس أخبره",
+        "أن أبا سفيان بن حرب أخبره أن هرقل أرسل إليه في ركب من قريش وكانوا تجارا بالشام في المدة التي كان رسول الله ﷺ ماد فيها أبا سفيان وكفار قريش فأتوه وهم بإيلياء فدعاهم في مجلسه وحوله عظماء الروم ثم دعاهم ودعا بترجمانه، فقال أيكم أقرب نسبا بهذا الرجل الذي يزعم أنه نبي، فقال أبو سفيان فقلت: أنا أقربهم نسبا، فقال أدنوه مني وقربوا أصحابه فاجعلوهم عند ظهره، ثم قال لترجمانه قل لهم إني سائل هذا عن هذا الرجل فإن كذبني فكذبوه فوالله لولا الحياء من أن يأثروا علي كذبا لكذبت عنه ثم كان أول ما سألني عنه أن قال كيف نسبه فيكم قلت: هو فينا ذو نسب قال: فهل قال هذا القول منكم أحد قط قبله قلت لا قال: فهل كان من آبائه من ملك قلت لا قال: فأشراف الناس يتبعونه أم ضعفاؤهم فقلت: بل ضعفاؤهم قال أيزيدون أم ينقصون قلت: بل يزيدون قال: فهل يرتد أحد منهم سخطة لدينه بعد أن يدخل فيه قلت لا قال: فهل كنتم تتهمونه بالكذب قبل أن يقول: ما قال: قلت لا قال: فهل يغدر قلت لا ونحن منه في مدة لا ندري ما هو فاعل فيها قال ولم تمكني كلمة أدخل فيها شيئا غير هذه الكلمة قال: فهل قاتلتموه قلت: نعم قال: فكيف كان قتالكم إياه قلت: الحرب بيننا وبينه سجال ينال منا وننال منه قال: ماذا يأمركم قلت: يقول اعبدوا الله وحده ولا تشركوا به شيئا واتركوا ما يقول آباؤكم ويأمرنا بالصلاة والصدق والعفاف والصلة، فقال للترجمان قل له سألتك عن نسبه فذكرت أنه فيكم ذو نسب فكذلك الرسل تبعث في نسب قومها وسألتك هل قال أحد منكم هذا القول فذكرت أن لا فقلت لو كان أحد قال هذا القول قبله لقلت: رجل يأتسي بقول قيل قبله وسألتك هل كان من آبائه من ملك فذكرت أن لا قلت: فلو كان من آبائه من ملك قلت: رجل يطلب ملك أبيه وسألتك هل كنتم تتهمونه بالكذب قبل أن يقول: ما قال: فذكرت أن لا فقد أعرف أنه لم يكن ليذر الكذب على الناس ويكذب على الله وسألتك أشراف الناس اتبعوه أم ضعفاؤهم فذكرت أن ضعفاءهم اتبعوه وهم أتباع الرسل وسألتك أيزيدون أم ينقصون فذكرت أنهم يزيدون وكذلك أمر الإيمان حتى يتم وسألتك أيرتد أحد سخطة لدينه بعد أن يدخل فيه فذكرت أن لا وكذلك الإيمان حين تخالط بشاشته القلوب وسألتك هل يغدر فذكرت أن لا وكذلك الرسل لا تغدر وسألتك بما يأمركم فذكرت أنه يأمركم أن تعبدوا الله ولا تشركوا به شيئا وينهاكم عن عبادة الأوثان ويأمركم بالصلاة والصدق والعفاف فإن كان ما تقول حقا فسيملك موضع قدمي هاتين وقد كنت أعلم أنه خارج لم أكن أظن أنه منكم فلو أني أعلم أني أخلص إليه لتجشمت لقاءه ولو كنت عنده لغسلت عن قدمه ثم دعا بكتاب رسول الله ﷺ الذي بعث به دحية إلى عظيم بصرى فدفعه إلى هرقل فقرأه فإذا فيه بسم الله الرحمن الرحيم من محمد عبد الله ورسوله إلى هرقل عظيم الروم سلام على من اتبع الهدى أما بعد فإني أدعوك بدعاية الإسلام أسلم تسلم يؤتك الله أجرك مرتين فإن توليت فإن عليك إثم الأريسيين و { يا أهل الكتاب تعالوا إلى كلمة سواء بيننا وبينكم أن لا نعبد إلا الله ولا نشرك به شيئا ولا يتخذ بعضنا بعضا أربابا من دون الله فإن تولوا فقولوا اشهدوا بأنا مسلمون } قال أبو سفيان فلما قال: ما قال وفرغ من قراءة الكتاب كثر عنده الصخب وارتفعت الأصوات وأخرجنا فقلت لأصحابي حين أخرجنا لقد أمر أمر بن أبي كبشة إنه يخافه ملك بني الأصفر فما زلت موقنا أنه سيظهر حتى أدخل الله علي الإسلام وكان ابن الناظور صاحب إيلياء وهرقل أسقفا على نصارى الشام يحدث أن هرقل حين قدم إيلياء أصبح يوما خبيث النفس، فقال بعض بطارقته قد استنكرنا هيئتك قال ابن الناظور وكان هرقل حزاء ينظر في النجوم، فقال لهم حين سألوه إني رأيت الليلة حين نظرت في النجوم ملك الختان قد ظهر فمن يختتن من هذه الأمة قالوا ليس يختتن إلا اليهود فلا يهمنك شأنهم واكتب إلى مداين ملكك فيقتلوا من فيهم من اليهود فبينما هم على أمرهم أتي هرقل برجل أرسل به ملك غسان يخبر عن خبر رسول الله ﷺ فلما استخبره هرقل قال اذهبوا فانظروا أمختتن هو أم لا فنظروا إليه فحدثوه أنه مختتن وسأله عن العرب، فقال هم يختتنون، فقال هرقل هذا ملك هذه الأمة قد ظهر ثم كتب هرقل إلى صاحب له برومية وكان نظيره في العلم وسار هرقل إلى حمص فلم يرم حمص حتى أتاه كتاب من صاحبه يوافق رأي هرقل على خروج النبي ﷺ وأنه نبي فأذن هرقل لعظماء الروم في دسكرة له بحمص ثم أمر بأبوابها فغلقت ثم اطلع، فقال: يا معشر الروم هل لكم في الفلاح والرشد وأن يثبت ملككم فتبايعوا هذا النبي فحاصوا حيصة حمر الوحش إلى الأبواب فوجدوها قد غلقت فلما رأى هرقل نفرتهم وأيس من الإيمان قال ردوهم علي، وقال إني قلت: مقالتي آنفا أختبر بها شدتكم على دينكم فقد رأيت فسجدوا له ورضوا عنه فكان ذلك آخر شأن هرقل.",
+        "رواه صالح بن كيسان ويونس ومعمر عن الزهري."
+      ],
+      "arabic_sha256": "8f6a662cc13f4f57bea9bdbd5e7f0a419cf8ac0d257a13d0645cdaa83b15cf13",
+      "english_blocks": [
+        "Abu al-Yaman al-Hakam ibn Nafi‘ related to us: Shu‘ayb informed us, from al-Zuhri, who said: ‘Ubaydullah ibn ‘Abdullah ibn ‘Utbah ibn Mas‘ud informed me that ‘Abdullah ibn ‘Abbas informed him",
+        "that Abu Sufyan ibn Harb informed him:",
+        "Heraclius had sent for him among a party of Quraysh who were merchants in al-Sham, during the truce that the Messenger of Allah, may Allah bless him and grant him peace, had made with Abu Sufyan and the unbelievers of Quraysh. They came to him while they were in Ilya. He summoned them to his assembly, surrounded by the leading men of the Romans. Then he called them and his interpreter and said, “Which of you is nearest in lineage to this man who claims to be a prophet?” Abu Sufyan said: I replied, “I am nearest to him in lineage.” He said, “Bring him close to me, and bring his companions close and place them behind him.” Then he said to his interpreter, “Tell them that I will question this man about that man. If he lies to me, contradict him.”",
+        "By Allah, had I not been ashamed that they would report a lie from me, I would have lied about him. The first thing he asked me was, “What is his lineage among you?” I said, “He is of noble lineage among us.” He said, “Has anyone among you ever said this before him?” I said, “No.” He said, “Was any of his ancestors a king?” I said, “No.” He said, “Do the prominent people follow him, or their weak?” I said, “Their weak.” He said, “Are they increasing or decreasing?” I said, “They are increasing.” He said, “Does anyone turn back in displeasure with his religion after entering it?” I said, “No.” He said, “Did you accuse him of lying before he said what he said?” I said, “No.” He said, “Does he betray?” I said, “No. We are in a truce with him, and we do not know what he will do during it.” He said: I could find no words into which I could insert anything except these.",
+        "He said, “Have you fought him?” I said, “Yes.” He said, “How was your fighting against him?” I said, “War between us and him alternates: he gains against us, and we gain against him.” He said, “What does he command you?” I said, “He says: worship Allah alone, associate nothing with Him, and abandon what your forefathers say. He commands us to pray, be truthful, be chaste, and maintain ties of kinship.”",
+        "He said to the interpreter, “Tell him: I asked you about his lineage, and you said he was of noble lineage among you. Likewise, messengers are sent among the lineages of their peoples. I asked whether anyone among you had said this before, and you said no. Had anyone said it before him, I would have said: a man following words spoken before him. I asked whether any of his ancestors was a king, and you said no. Had one of his ancestors been a king, I would have said: a man seeking his forefather’s kingdom. I asked whether you accused him of lying before he said what he said, and you said no. I know that he would not leave off lying about people and then lie about Allah.",
+        "“I asked whether the prominent people followed him or their weak, and you said that their weak followed him. They are the followers of the messengers. I asked whether they were increasing or decreasing, and you said they were increasing. Such is the course of faith until it is complete. I asked whether anyone turned back in displeasure with his religion after entering it, and you said no. Such is faith when its joy mingles with hearts. I asked whether he betrayed, and you said no. Likewise, the messengers do not betray.",
+        "“I asked what he commanded you, and you said that he commanded you to worship Allah and associate nothing with Him, forbade you to worship idols, and commanded you to pray, be truthful, and be chaste. If what you say is true, he will possess the place beneath these two feet of mine. I knew that he would appear, but I did not think he would be from among you. If I knew that I could reach him, I would undertake the hardship of meeting him. If I were with him, I would wash his foot.”",
+        "Then he called for the letter of the Messenger of Allah, may Allah bless him and grant him peace, which he had sent with Dihyah to the ruler of Busra, who passed it to Heraclius. He read it, and it contained:",
+        "“In the name of Allah, the Most Merciful, the Merciful. From Muhammad, the servant of Allah and His Messenger, to Heraclius, ruler of the Romans. Peace be upon whoever follows guidance. To proceed: I call you with the call of Islam. Accept Islam and you will be safe; Allah will grant you your reward twice. If you turn away, you will bear the sin of the cultivators. And: ‘People of the Scripture, come to a word common to us and you: that we worship none but Allah, associate nothing with Him, and do not take one another as lords apart from Allah. If they turn away, say: bear witness that we are Muslims.’”",
+        "Abu Sufyan said: When he had said what he said and finished reading the letter, the uproar around him grew and voices rose, and we were sent out. When we were sent out, I said to my companions, “The affair of Ibn Abi Kabshah has become so great that the king of Banu al-Asfar fears him.” I remained certain that he would prevail until Allah brought Islam to me.",
+        "Ibn al-Nazur, the governor of Ilya and an associate of Heraclius, was a bishop over the Christians of al-Sham. He used to relate that, when Heraclius came to Ilya, he awoke one day in an ill temper. Some of his dignitaries said, “We find your appearance unusual.” Ibn al-Nazur said: Heraclius was a diviner who studied the stars. When they questioned him, he said, “Last night, when I studied the stars, I saw that the king of the circumcised had appeared. Who among this people is circumcised?” They said, “Only the Jews are circumcised. Do not let their affair concern you. Write to the cities of your kingdom so that they kill the Jews who are in them.”",
+        "While they were engaged in this matter, a man whom the king of Ghassan had sent with news of the Messenger of Allah, may Allah bless him and grant him peace, was brought to Heraclius. After Heraclius questioned him, he said, “Go and see whether he is circumcised or not.” They examined him and told him that he was circumcised. He asked him about the Arabs, and he said, “They are circumcised.” Heraclius said, “The rule of this people has appeared.” Then Heraclius wrote to a companion of his in Rome who was his equal in knowledge. Heraclius travelled to Homs and did not leave Homs until a letter from his companion reached him, agreeing with his view concerning the appearance of the Prophet, may Allah bless him and grant him peace, and that he was a prophet.",
+        "Heraclius admitted the leading men of the Romans to an estate of his in Homs. Then he ordered its doors shut and appeared before them. He said, “People of Rome, would you have success and right guidance, and your kingdom remain firm, by pledging allegiance to this Prophet?” They bolted toward the doors like wild asses and found them shut. When Heraclius saw their aversion and despaired of belief, he said, “Bring them back to me.” He said, “I said what I said just now to test your firmness in your religion, and I have seen it.” They prostrated to him and were pleased with him. That was the last of the account of Heraclius.",
+        "Salih ibn Kaysan, Yunus and Ma‘mar related it from al-Zuhri."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; source comparisons and translation choices recorded. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 138,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 26,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 26,
+            "end": 417,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 417,
+            "end": 931,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 931,
+            "end": 1156,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 1156,
+            "end": 1565,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 1565,
+            "end": 1852,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 1852,
+            "end": 2129,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 2129,
+            "end": 2215,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 2215,
+            "end": 2569,
+            "kind": "letter"
+          },
+          {
+            "block": 1,
+            "start": 2569,
+            "end": 2783,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 2783,
+            "end": 3157,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 3157,
+            "end": 3527,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 3527,
+            "end": 3881,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 41,
+            "kind": "transmission-note"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 191,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 38,
+            "kind": "chain"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 753,
+            "kind": "report"
+          },
+          {
+            "block": 3,
+            "start": 0,
+            "end": 876,
+            "kind": "report"
+          },
+          {
+            "block": 4,
+            "start": 0,
+            "end": 405,
+            "kind": "report"
+          },
+          {
+            "block": 5,
+            "start": 0,
+            "end": 677,
+            "kind": "report"
+          },
+          {
+            "block": 6,
+            "start": 0,
+            "end": 525,
+            "kind": "report"
+          },
+          {
+            "block": 7,
+            "start": 0,
+            "end": 485,
+            "kind": "report"
+          },
+          {
+            "block": 8,
+            "start": 0,
+            "end": 208,
+            "kind": "report"
+          },
+          {
+            "block": 9,
+            "start": 0,
+            "end": 610,
+            "kind": "letter"
+          },
+          {
+            "block": 10,
+            "start": 0,
+            "end": 361,
+            "kind": "report"
+          },
+          {
+            "block": 11,
+            "start": 0,
+            "end": 656,
+            "kind": "report"
+          },
+          {
+            "block": 12,
+            "start": 0,
+            "end": 764,
+            "kind": "report"
+          },
+          {
+            "block": 13,
+            "start": 0,
+            "end": 629,
+            "kind": "report"
+          },
+          {
+            "block": 14,
+            "start": 0,
+            "end": 60,
+            "kind": "transmission-note"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "originalDraftId": "wikisource-bukhari-opening-r484874:7",
+        "originalDraftReviewSha256": "4ac93759292c40a22305626ef4b2cb75c78235fdb8ed6099b4ccbe0c71c9c95c",
+        "decisions": [
+          {
+            "id": "7-arisiyyin",
+            "number": 7,
+            "topic": "Al-Arisiyyin",
+            "status": "chosen-for-personal-prototype",
+            "reviewerKind": "ai",
+            "independentReview": "pending",
+            "decision": "Use “cultivators,” a lexical reading favoured in the consulted Fath al-Bari passage. The commentary connects it with followers more broadly; English translators also use subjects or peasants. This choice is recorded rather than silently treating those terms as exact synonyms.",
+            "sources": [
+              "ibn-hajar-heraclius"
+            ],
+            "englishEdits": [
+              {
+                "segmentId": "7-10",
+                "before": "al-Arisiyyin",
+                "after": "the cultivators"
+              }
+            ]
+          },
+          {
+            "id": "7-ibn-nazur",
+            "number": 7,
+            "topic": "Ibn al-Nazur’s role",
+            "status": "chosen-for-personal-prototype",
+            "reviewerKind": "ai",
+            "independentReview": "pending",
+            "decision": "Use “governor of Ilya and an associate of Heraclius,” following the commentary’s distinction between the office in Ilya and the relationship to Heraclius. The bishop description belongs to Ibn al-Nazur. The later account is introduced in his name and is not presented as Abu Sufyan’s first-person speech.",
+            "sources": [
+              "ibn-hajar-heraclius"
+            ],
+            "englishEdits": [
+              {
+                "segmentId": "7-12",
+                "before": "the official of Ilya",
+                "after": "the governor of Ilya"
+              }
+            ]
+          },
+          {
+            "id": "7-faith-referent",
+            "number": 7,
+            "topic": "The final faith reference",
+            "status": "chosen-for-personal-prototype",
+            "reviewerKind": "ai",
+            "independentReview": "pending",
+            "decision": "Retain “despaired of belief,” leaving the source’s object unqualified. The consulted commentary discusses both his people’s belief and his own belief while retaining kingship. Do not narrow the English to only one referent without independent review.",
+            "sources": [
+              "ibn-hajar-heraclius"
+            ],
+            "englishEdits": []
+          }
+        ],
+        "arabicCorrections": [],
+        "comparisonChecks": [
+          {
+            "segments": [
+              "7-1",
+              "7-2"
+            ],
+            "topic": "Chain across paragraph boundary",
+            "finding": "The source ends the first paragraph before Abu Sufyan’s link. Both source paragraphs contribute to the translated chain. No chain link is dropped by treating paragraph two as entirely narration.",
+            "sources": [
+              "arabic-base",
+              "dar-ibn-kathir-2002"
+            ],
+            "reviewerKind": "ai",
+            "status": "comparison-recorded-not-approval"
+          },
+          {
+            "segments": [
+              "7-3",
+              "7-4",
+              "7-5"
+            ],
+            "topic": "Questions and admissions",
+            "finding": "Retains the truce, setting/interpreter, companions behind Abu Sufyan, fear of being reported as a liar, all questions and replies, the qualified truce remark, alternating warfare and commands. Weak followers are not narrowed to a financial class in the draft.",
+            "sources": [
+              "arabic-base",
+              "islamhouse-khan"
+            ],
+            "reviewerKind": "ai",
+            "status": "comparison-recorded-not-approval"
+          },
+          {
+            "segments": [
+              "7-6",
+              "7-7",
+              "7-8"
+            ],
+            "topic": "Heraclius’s reasoning",
+            "finding": "The repeated questions in Heraclius’s reply are retained rather than deduplicated. Lineage, prior claim, royal ancestry, truthfulness, followers, increase, apostasy, betrayal and commands remain in order. The selected foot wording is singular; no plural is silently imported.",
+            "sources": [
+              "arabic-base",
+              "dar-ibn-kathir-2002"
+            ],
+            "reviewerKind": "ai",
+            "status": "comparison-recorded-not-approval"
+          },
+          {
+            "segments": [
+              "7-9",
+              "7-10"
+            ],
+            "topic": "Letter",
+            "finding": "Retains the route through Dihyah and Busra, the complete letter opening and address, call, doubled reward, warning and the quoted passage corresponding to 3:64. A letter segment is still part of this record, not a new hadith.",
+            "sources": [
+              "arabic-base",
+              "brill-1862",
+              "islamhouse-khan"
+            ],
+            "reviewerKind": "ai",
+            "status": "comparison-recorded-not-approval"
+          },
+          {
+            "segments": [
+              "7-11",
+              "7-12",
+              "7-13",
+              "7-14"
+            ],
+            "topic": "Closing accounts and attribution",
+            "finding": "Retains Abu Sufyan’s reaction and later Islam, Ibn al-Nazur’s separately introduced account, divination, the reported hostile proposal, the Ghassan messenger, circumcision enquiry, correspondence, Homs, shut doors, flight, retraction and prostration. These are reported actions/words, not app advice. The printed punctuation identifies Ibn al-Nazur as bishop; the English comparisons differ on the surrounding office wording.",
+            "sources": [
+              "arabic-base",
+              "dar-ibn-kathir-2002",
+              "islamhouse-khan"
+            ],
+            "reviewerKind": "ai",
+            "status": "comparison-recorded-not-approval"
+          },
+          {
+            "segments": [
+              "7-15"
+            ],
+            "topic": "Trailing note",
+            "finding": "The separate source paragraph after the long body is retained in full and remains outside quoted speech. It names Salih ibn Kaysan, Yunus and Ma‘mar transmitting from al-Zuhri.",
+            "sources": [
+              "arabic-base",
+              "brill-1862"
+            ],
+            "reviewerKind": "ai",
+            "status": "comparison-recorded-not-approval"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              7,
+              8,
+              9
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              9,
+              10,
+              11
+            ]
+          }
+        ]
+      },
+      "audio_status": "No recording yet."
+    }
+  ]
+}

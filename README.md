@@ -348,3 +348,16 @@ The new batch records both Arabic print witnesses and individual English matches
 The exact version is admitted only as a personal prototype. The literal working wording and pronoun in Hadith 43 remain documented questions for qualified review. The disputed heading above Hadith 29 is still withheld. All 43 input scripts are prepared; only Hadith 1–3 have actual Cedar recordings. No new audio or playback code is included in this batch.
 
 `research/faith-third-verification.json` records 161 passing automated checks (128 Node, 33 Python), exact browser comparisons of every new English and Arabic block, source-gap presentation, search/session preservation, narrow layouts and saved text/source-note reopening with the preview server stopped. All reading material is about 3.9 MB; audio stays separate. The remaining Faith reports are 44–58. Independent review, chapter-introduction translation, iPhone acceptance and full-collection work remain open.
+
+
+## Selected Book of Faith reports complete · 20 October 2026
+
+The personal prototype now contains 58 complete numbered entries. The Book of Faith contains all 51 reports in its pinned source, with 42 source headings. This completes the numbered-report intake for that book; English chapter introductions and independent review remain pending. `content/review/faith-final-review.json` adds 44–58 with 30 unchanged Arabic paragraphs and 44 complete English segments. The earlier 43 complete entry objects, all recording media and playback code remain unchanged.
+
+The final batch records individually matched comparisons with both pinned Arabic prints and the two English families. The Khan-family reference 1.2.46 contains two reports, corresponding to selected 48 and 49. Their citations now identify report 1 of 2 and report 2 of 2. The builder refuses missing, repeated, invalid or inconsistent part identities when entries share a reference. It does not merge the reports or infer a global numbering offset.
+
+Hadith 50 retains the selected digital wording while a visible notice records its difference from both printed witnesses at the visitor’s arrival. The full questions, quoted verse opening, departure and final transmission note remain. Hadith 55 demonstrates exact chain/report presentation within a single source paragraph. The final Jarir address in 58 remains a narrator’s address with an embedded Prophetic report. Other provisional wording decisions and comparison defects are documented per entry; none is human approval.
+
+`research/faith-final-verification.json` records 165 passing checks (132 Node, 33 Python), every new Arabic and English block matched to the rendered reader, source-part citations, exact search, pagination, session preservation and end-of-available-content behavior. Saved reading and comparison notes reopened with the preview server stopped. Day and night layouts were checked at phone widths, including 320px and the largest reading size. Reading downloads total about 4.2 MB; audio stays separate.
+
+All 58 complete narration input scripts are prepared; actual Cedar audio still covers 1–3. Remaining work includes independent review, unresolved source differences, English chapter introductions, the next book’s intake, more recordings and iPhone acceptance. Completing this source book does not make the full collection production ready.

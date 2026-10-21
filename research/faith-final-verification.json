@@ -1,0 +1,76 @@
+{
+  "checkedAt": "2026-10-20",
+  "readerRelease": "opening-801af0c5f55d",
+  "sourceRecordSha256": "d2c67f16c4e4f2701e3e591b1ea58a06101b1f4e64eab060afd8bd9b91651243",
+  "status": "personal-prototype-only",
+  "scope": "58 complete numbered entries across two books. Adds Hadith 44–58 and completes the 51 numbered reports of the selected Book of Faith source. Actual Cedar audio remains 1–3.",
+  "source": {
+    "faithRevision": 490285,
+    "admittedRange": [
+      44,
+      58
+    ],
+    "arabicParagraphs": 30,
+    "englishSegments": 44,
+    "earlierEntries": "All 43 earlier entry objects deep-compared with the prior published commit and unchanged. All existing recording media and playback code unchanged.",
+    "printedWitnesses": [
+      {
+        "id": "brill-1862",
+        "pdfPages": [
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+      },
+      {
+        "id": "dar-ibn-kathir-2002",
+        "pdfPages": [
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+      }
+    ],
+    "witnessMethod": "Pinned PDF hashes checked; all ten listed pages rendered and visually inspected. Per-entry page ranges and differences are retained in the review record.",
+    "englishComparators": "Bewley 44–58 individually compared. Khan-family 1.2.42–46 match selected 44–48; selected 49 matches the second report within 1.2.46; selected 50–58 match 1.2.47–55. No global numbering offset is assumed.",
+    "combinedReference": "Selected 48 and 49 remain separate complete reports. Their Khan-family citations identify report 1 of 2 and report 2 of 2 within Volume 1, Book 2, Number 46. Invalid, missing, duplicated or inconsistent part metadata is refused.",
+    "entry50": "Selected digital Arabic names Jibril at arrival, while both inspected printed witnesses say a man. The selected Arabic remains unchanged and a separate visible context note links to the evidence. This discrepancy remains unresolved for production.",
+    "entry55": "A single exact Arabic paragraph contains the chain and report. Separate presentation spans keep the chain expandable without dropping either portion.",
+    "reviewRecord": "content/review/faith-final-review.json",
+    "batchRegistry": "content/review/faith-batches.json"
+  },
+  "automated": {
+    "node": 132,
+    "python": 33,
+    "failed": 0,
+    "checks": "Pinned intakes; exact complete source spans; unchanged earlier entries; combined-reference identities; source discrepancy display; explicit prototype admission; complete narration inputs; unchanged recording bindings; production refusal; offline integrity; preserved sessions and end-of-collection behavior; public packaging."
+  },
+  "browser": {
+    "english": "All 44 new English segments compared from rendered DOM with canonical blocks; exact match.",
+    "arabic": "All 30 new Arabic paragraphs compared from the source dialog with canonical blocks; exact match.",
+    "sourceReferences": "Expanded source dialogs show report 1 of 2 for Hadith 48 and report 2 of 2 for 49. Hadith 50 displays its separate source discrepancy notice above the complete text.",
+    "catalogue": "Faith shows 51 available hadith and 42 chapters. The second page contains entries 38–58, displayed as 31–51 of 51.",
+    "search": "Exact phrase protected pasture returns Hadith 52.",
+    "session": "Started at 44, browsed outside the session to 58 and returned: Continue remained 44. Free browsing at 58 shows Collection; an explicit session starting at 58 offers Finish this session and then the end of currently available hadith message. Automated checks additionally preserve a saved session ending at 43 and start its next session at 44.",
+    "offline": "All reading material reached Ready offline (4.22 MB). With the preview server stopped, the reader reloaded and Hadith 53 matched all stored English and Arabic blocks. A separate tab opened saved comparison notes at Hadith 50. External websites and PDFs are not claimed offline.",
+    "layout": "At 320px, largest text and the full expanded chapter heading at 58 have no horizontal overflow. Hadith 50 source notice checked at that width. Standard 21px night reading checked at 393px and captured at Hadith 55.",
+    "errors": "No error-level browser logs in the reader tab.",
+    "screenshots": [
+      "/private/tmp/hadith-faith-final-reader.png"
+    ]
+  },
+  "limits": [
+    "AI working translations and comparisons are not independent scholarly certification. Human Arabic, English, context and recording reviews remain pending.",
+    "Completing the selected numbered Book of Faith source does not complete its chapter-introduction translations or the whole Bukhari collection.",
+    "Hadith 50 has an unresolved visitor-wording discrepancy. The English heading above Hadith 29 remains withheld; Hadith 41 retains one matched English comparison and an explicit second-witness gap.",
+    "Compressed expressions at 49, theological wording at 56, vessel names at 53 and other documented choices require qualified review. Comparison notes do not silently modify the source.",
+    "All 58 complete narration inputs are prepared; only 1–3 have actual recordings. Prepared scripts are not audio or spoken-word approval.",
+    "The expanded download and locked-screen continuation between separate recordings still require iPhone acceptance. Desktop checks do not establish those results."
+  ]
+}
