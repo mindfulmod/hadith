@@ -1,12 +1,12 @@
 {
   "created": "2026-10-20",
-  "scope": "Personal prototype: opening entries 1–7 and Book of Faith entries 8–29. The rest of the collection remains in preparation.",
+  "scope": "Personal prototype: opening entries 1–7 and Book of Faith entries 8–43. The rest of the collection remains in preparation.",
   "selected_route": "Pinned Arabic text plus a new English working translation.",
   "license": {
     "id": "CC-BY-SA-4.0",
     "url": "https://creativecommons.org/licenses/by-sa/4.0/",
     "attribution": "Sahih al-Bukhari by Muhammad ibn Ismail al-Bukhari; Arabic digital transcription by Arabic Wikisource contributors, opening revision 484874 and Faith revision 490285.",
-    "changes": "Entries 1–2 are unchanged. Entries 3–7 are derived from the pinned Arabic; Hadith 5 has one explicitly recorded correction from له to لك supported by two printed witnesses. Original inputs are retained in prototype-inputs.json. New AI-assisted English, presentation and comparison notes are offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app. Hadith 8–29 retain their Arabic paragraphs unchanged from revision 490285; their new English and available chapter titles are AI-assisted. A disputed chapter heading is explicitly withheld. Chapter introductions are preserved separately in Arabic, with English translation still pending."
+    "changes": "Entries 1–2 are unchanged. Entries 3–7 are derived from the pinned Arabic; Hadith 5 has one explicitly recorded correction from له to لك supported by two printed witnesses. Original inputs are retained in prototype-inputs.json. New AI-assisted English, presentation and comparison notes are offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app. Hadith 8–43 retain their Arabic paragraphs unchanged from revision 490285; their new English and available chapter titles are AI-assisted. A disputed chapter heading is explicitly withheld. Chapter introductions are preserved separately in Arabic, with English translation still pending."
   },
   "sources": [
     {
@@ -2813,6 +2813,890 @@
         "reviewScope": "The complete selected Arabic paragraphs, including chains and transmission notes, were visually compared with the two pinned printed witnesses. The report bodies were compared with Bewley and the pinned Khan-family EPUB; their abbreviated chains do not independently verify the full English chain. This records an AI comparison, not independent scholarly approval."
       },
       "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:30",
+      "book": "Faith",
+      "number": 30,
+      "arabic_blocks": [
+        "[30] حدثنا سليمان بن حرب قال: حدثنا شعبة عن واصل الأحدب عن المعرور قال:",
+        "لقيت أبا ذر بالربذة وعليه حلة وعلى غلامه حلة فسألته عن ذلك، فقال إني ساببت رجلا فعيرته بأمه، فقال لي النبي ﷺ يا أبا ذر أعيرته بأمه إنك امرؤ فيك جاهلية إخوانكم خولكم جعلهم الله تحت أيديكم فمن كان أخوه تحت يده فليطعمه مما يأكل وليلبسه مما يلبس ولا تكلفوهم ما يغلبهم فإن كلفتموهم فأعينوهم."
+      ],
+      "arabic_sha256": "9350a8fd8fcfd05a1e49f738bacb798273d1743a8e0ecc941ee215eb42dd8f69",
+      "english_blocks": [
+        "Sulayman ibn Harb related to us. He said: Shu‘bah related to us, from Wasil al-Ahdab, from al-Ma‘rur, who said:",
+        "I met Abu Dharr at al-Rabadhah. He was wearing a set of clothes, and his slave was wearing a set of clothes. I asked him about that. He said: I exchanged insults with a man and disparaged him on account of his mother. The Prophet, may Allah bless him and grant him peace, said to me: “Abu Dharr, did you disparage him on account of his mother? You are a man in whom there is Jahiliyyah. Your slaves are your brothers; Allah has placed them under your authority. Whoever has his brother under his authority should feed him from what he eats and clothe him from what he wears. Do not burden them with what overcomes them. If you do burden them, then help them.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 71,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 286,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 111,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 659,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-faith-r490285:30",
+        "reviewRecordSha256": "840d750ee4950b78b6b75302d2c854f5985cdca86f1d3f42f355d130358c5cfe",
+        "notes": [
+          "Both print witnesses contain this report. The historical print places the report corresponding to 31 before this report; the selected digital and modern print order is retained. Wasil’s epithet al-Ahdab is present in the selected digital chain and modern print, but not in this historical printed chain.",
+          "The whole encounter, Abu Dharr’s account and the Prophet’s response are retained. Hullah is rendered as a set of clothes. The source’s slavery language is retained; Jahiliyyah is transliterated rather than replaced with an explanatory sentence."
+        ],
+        "reviewScope": "AI-assisted full-chain and report comparison against the pinned Arabic and two visually inspected Arabic print witnesses. Two individually matched English report-body comparisons. This records a working translation, not independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:31",
+      "book": "Faith",
+      "number": 31,
+      "arabic_blocks": [
+        "[31] حدثنا عبد الرحمن بن المبارك حدثنا حماد بن زيد حدثنا أيوب ويونس عن الحسن عن الأحنف بن قيس قال ذهبت لأنصر هذا الرجل فلقيني أبو بكرة، فقال أين تريد قلت: أنصر هذا الرجل قال ارجع فإني سمعت رسول الله ﷺ يقول:",
+        "إذا التقى المسلمان بسيفيهما فالقاتل والمقتول في النار فقلت: يا رسول الله هذا القاتل فما بال المقتول قال إنه كان حريصا على قتل صاحبه. "
+      ],
+      "arabic_sha256": "e0055bce36255cbc7369002b75a66fa51ea4b6dc8be12d4bdcf016f5ac61c9e6",
+      "english_blocks": [
+        "‘Abd al-Rahman ibn al-Mubarak related to us. Hammad ibn Zayd related to us. Ayyub and Yunus related to us, from al-Hasan, from al-Ahnaf ibn Qays, who said:",
+        "I went to support this man. Abu Bakrah met me and said: “Where are you going?” I said: “To support this man.” He said: “Go back, for I heard the Messenger of Allah, may Allah bless him and grant him peace, say:",
+        "“When two Muslims meet with their swords, both the killer and the one killed are in the Fire.” I said: “Messenger of Allah, this is the killer, but what about the one killed?” He said: “He was intent on killing his companion.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 98,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 98,
+            "end": 206,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 133,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 155,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 210,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 226,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-faith-r490285:31",
+        "reviewRecordSha256": "9800c09691ee2006c5721bb3349e372a157f656e2773800759ef97795174f61c",
+        "notes": [
+          "The historical print and selected digital source order the two neighbouring reports differently. This record is matched by its full wording, not by neighbouring number alone.",
+          "The selected chain has related to us for all three opening transmissions. The narrator’s encounter and question precede the quoted saying and remain visible as part of the report. This man is left unnamed, as in this selected Arabic; an identifying parenthesis in the English comparisons is not inserted."
+        ],
+        "reviewScope": "AI-assisted full-chain and report comparison against the pinned Arabic and two visually inspected Arabic print witnesses. Two individually matched English report-body comparisons. This records a working translation, not independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:32",
+      "book": "Faith",
+      "number": 32,
+      "arabic_blocks": [
+        "[32] حدثنا أبو الوليد قال: حدثنا شعبة ح قال وحدثني بشر قال: حدثنا محمد عن شعبة عن سليمان عن إبراهيم عن علقمة عن عبد الله قال:",
+        "لما نزلت { الذين آمنوا ولم يلبسوا إيمانهم بظلم } قال أصحاب رسول الله ﷺ أينا لم يظلم فأنزل الله { إن الشرك لظلم عظيم }  ."
+      ],
+      "arabic_sha256": "0252de900cc12da719e965422d28d927486a80facde6028ffe4ec0f2959c774f",
+      "english_blocks": [
+        "Abu al-Walid related to us. He said: Shu‘bah related to us.",
+        "Another chain: He said: And Bishr related to me. He said: Muhammad related to us, from Shu‘bah, from Sulayman, from Ibrahim, from ‘Alqamah, from ‘Abdullah, who said:",
+        "When {Those who believe and do not mix their faith with wrongdoing} was revealed, the Companions of the Messenger of Allah, may Allah bless him and grant him peace, said: “Which of us has not done wrong?” Then Allah revealed: {Indeed, associating partners is a great wrongdoing}."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 38,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 38,
+            "end": 125,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 120,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 59,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 165,
+            "kind": "chain"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 279,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-faith-r490285:32",
+        "reviewRecordSha256": "3d4d633394a10da338183847a73acaa748720a676a41e537f7dba007f80e4713",
+        "notes": [
+          "The selected source and modern print have the second route as related to me from Bishr. The historical print has a plural reporting form at that point. The selected form is preserved.",
+          "The source’s ح is rendered Another chain in a separate narrator section, consistent with Hadith 15. This describes the chain-switch marker rather than inventing a narrator or inserting words into the prophetic report. The Arabic marker itself remains unchanged. Independent chain-presentation review remains pending.",
+          "The Qur’anic excerpts correspond to 6:82 and 31:13, checked against their Arabic at https://quran.com/6/82 and https://quran.com/31/13. The Khan-family comparator labels the first as 6:83. That comparator’s number is not imported into the narration; verse references are source notes only."
+        ],
+        "reviewScope": "AI-assisted full-chain and report comparison against the pinned Arabic and two visually inspected Arabic print witnesses. Two individually matched English report-body comparisons. This records a working translation, not independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:33",
+      "book": "Faith",
+      "number": 33,
+      "arabic_blocks": [
+        "[33] حدثنا سليمان أبو الربيع قال: حدثنا إسماعيل بن جعفر قال: حدثنا نافع بن مالك بن أبي عامر أبو سهيل عن أبيه عن أبي هريرة عن النبي ﷺ قال:",
+        "آية المنافق ثلاث إذا حدث كذب وإذا وعد أخلف وإذا أؤتمن خان"
+      ],
+      "arabic_sha256": "3f7914f41300ee70092989d7af6561c3334631eac481294669dfe4515a916e88",
+      "english_blocks": [
+        "Sulayman Abu al-Rabi‘ related to us. He said: Isma‘il ibn Ja‘far related to us. He said: Nafi‘ ibn Malik ibn Abi ‘Amir, Abu Suhayl, related to us, from his father, from Abu Hurayrah, from the Prophet, may Allah bless him and grant him peace, who said:",
+        "“The signs of the hypocrite are three: when he speaks, he lies; when he promises, he breaks his promise; and when he is entrusted, he betrays the trust.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 137,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 57,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 251,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 153,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-faith-r490285:33",
+        "reviewRecordSha256": "5fe78845e7b7137dd8304b11b6152b8632d466d0b6719276d5182a944bf439ed",
+        "notes": [
+          "The complete chain retains Nafi‘ ibn Malik ibn Abi ‘Amir, Abu Suhayl, and the following transmission from his father. The English comparators abbreviate the chain and cannot establish its full English rendering.",
+          "The three signs remain in their selected order: speech, promise, trust. No behavioural examples or added explanation are inserted."
+        ],
+        "reviewScope": "AI-assisted full-chain and report comparison against the pinned Arabic and two visually inspected Arabic print witnesses. Two individually matched English report-body comparisons. This records a working translation, not independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:34",
+      "book": "Faith",
+      "number": 34,
+      "arabic_blocks": [
+        "[34] حدثنا قبيصة بن عقبة قال: حدثنا سفيان عن الأعمش عن عبد الله بن مرة عن مسروق عن عبد الله بن عمرو أن النبي ﷺ قال:",
+        "أربع من كن فيه كان منافقا خالصا ومن كانت فيه خصلة منهن كانت فيه خصلة من النفاق حتى يدعها إذا أؤتمن خان وإذا حدث كذب وإذا عاهد غدر وإذا خاصم فجر",
+        "تابعه شعبة عن الأعمش."
+      ],
+      "arabic_sha256": "2624b4246d6af520a059bfc3aaf52caf24b0c37a3fc0e9163d591f58c0125468",
+      "english_blocks": [
+        "Qabisah ibn ‘Uqbah related to us. He said: Sufyan related to us, from al-A‘mash, from ‘Abdullah ibn Murrah, from Masruq, from ‘Abdullah ibn ‘Amr, that the Prophet, may Allah bless him and grant him peace, said:",
+        "“There are four traits: whoever has them is a complete hypocrite. Whoever has one of them has a trait of hypocrisy until he leaves it: when entrusted, he betrays the trust; when he speaks, he lies; when he makes a covenant, he acts treacherously; and when he disputes, he acts wickedly.”",
+        "Shu‘bah also transmitted it from al-A‘mash."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 115,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 143,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 21,
+            "kind": "transmission-note"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 210,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 287,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 43,
+            "kind": "transmission-note"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-faith-r490285:34",
+        "reviewRecordSha256": "c7d42f24398548685f72e91f415d0635d373f2e953eedab24db336ae18124ff0",
+        "notes": [
+          "The report’s four traits and its final Shu‘bah transmission note are retained. The selected final note is also visible in both Arabic prints and Bewley; the Khan-family comparison does not include that closing note.",
+          "Fajara is provisionally rendered acts wickedly in the dispute clause, without importing a comparator’s longer explanatory parenthesis. Independent Arabic and contextual review remains pending."
+        ],
+        "reviewScope": "AI-assisted full-chain and report comparison against the pinned Arabic and two visually inspected Arabic print witnesses. Two individually matched English report-body comparisons. This records a working translation, not independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:35",
+      "book": "Faith",
+      "number": 35,
+      "arabic_blocks": [
+        "[35] حدثنا أبو اليمان قال: أخبرنا شعيب قال: حدثنا أبو الزناد عن الأعرج عن أبي هريرة قال: قال رسول الله ﷺ:",
+        "من يقم ليلة القدر إيمانا واحتسابا غفر له ما تقدم من ذنبه"
+      ],
+      "arabic_sha256": "c46e4cff999fccb8becb3dfa0a8ec8a75b0c95f11a1266b941954527fea7d6b4",
+      "english_blocks": [
+        "Abu al-Yaman related to us. He said: Shu‘ayb informed us. He said: Abu al-Zinad related to us, from al-A‘raj, from Abu Hurayrah, who said: The Messenger of Allah, may Allah bless him and grant him peace, said:",
+        "“Whoever stands in prayer on the Night of Decree, with faith and seeking reward, will have his previous sins forgiven.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 105,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 56,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 209,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 119,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-faith-r490285:35",
+        "reviewRecordSha256": "137677bda50f1e264db93b608ca3db7d55254641fec57fb9898d17ba6a4e19bd",
+        "notes": [
+          "Both Arabic prints retain the complete route through Abu al-Zinad and al-A‘raj and the same report body. The chain distinguishes Shu‘ayb informed us from the other related to us forms.",
+          "Standing on the Night of Decree is rendered standing in prayer; with faith and seeking reward is retained. No additional conditions from commentary are added."
+        ],
+        "reviewScope": "AI-assisted full-chain and report comparison against the pinned Arabic and two visually inspected Arabic print witnesses. Two individually matched English report-body comparisons. This records a working translation, not independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:36",
+      "book": "Faith",
+      "number": 36,
+      "arabic_blocks": [
+        "[36] حدثنا حرمي بن حفص قال: حدثنا عبد الواحد قال: حدثنا عمارة قال: حدثنا أبو زرعة بن عمرو بن جرير قال: سمعت أبا هريرة عن النبي ﷺ قال:",
+        "انتدب الله عز وجل لمن خرج في سبيله لا يخرجه إلا إيمان بي وتصديق برسلي أن أرجعه بما نال من أجر أو غنيمة أو أدخله الجنة ولولا أن أشق على أمتي ما قعدت خلف سرية ولوددت أني أقتل في سبيل الله ثم أحيا ثم أقتل ثم أحيا ثم أقتل"
+      ],
+      "arabic_sha256": "778500d376a0caae51f04d48c4209ca4b27f5639c62fd446c74d84d0c346f665",
+      "english_blocks": [
+        "Harami ibn Hafs related to us. He said: ‘Abd al-Wahid related to us. He said: ‘Umarah related to us. He said: Abu Zur‘ah ibn ‘Amr ibn Jarir related to us. He said: I heard Abu Hurayrah report from the Prophet, may Allah bless him and grant him peace, who said:",
+        "“Allah, Mighty and Majestic, has undertaken for the one who goes out in His path: ‘Nothing brings him out except faith in Me and belief in My messengers; I shall return him with whatever reward or spoils he has obtained, or admit him into the Garden.’ Were it not that I would cause hardship for my community, I would not stay behind any expedition. I would wish to be killed in Allah’s path, then brought to life, then killed, then brought to life, then killed.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 133,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 217,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 260,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 463,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-faith-r490285:36",
+        "reviewRecordSha256": "db0f63a6db64713167de3e50c5416f56b21e5a0e5516a33c609168e430c60aae",
+        "notes": [
+          "The selected digital source and historical print include عز وجل after Allah; the inspected modern print does not show that honorific here. The selected words are retained as Mighty and Majestic.",
+          "The source moves from Allah in the third person to faith in Me, My messengers and I return him in the first person. The working English marks this shift with nested quotation punctuation. It does not add the comparator’s parenthetical survival or martyrdom conditions.",
+          "The final sentence retains three occurrences of being killed and two of being brought to life. The expedition clause and complete Abu Zur‘ah chain are retained. This is a working rendering, not a contextual or legal interpretation of the report."
+        ],
+        "reviewScope": "AI-assisted full-chain and report comparison against the pinned Arabic and two visually inspected Arabic print witnesses. Two individually matched English report-body comparisons. This records a working translation, not independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:37",
+      "book": "Faith",
+      "number": 37,
+      "arabic_blocks": [
+        "[37] حدثنا إسماعيل قال: حدثني مالك عن ابن شهاب عن حميد بن عبد الرحمن عن أبي هريرة أن رسول الله ﷺ قال:",
+        "من قام رمضان إيمانا واحتسابا غفر له ما تقدم من ذنبه"
+      ],
+      "arabic_sha256": "b35aa572662ac6c4e57202788c1254a4735798a04d50c85df0576663d57e7410",
+      "english_blocks": [
+        "Isma‘il related to us. He said: Malik related to me, from Ibn Shihab, from Humayd ibn ‘Abd al-Rahman, from Abu Hurayrah, that the Messenger of Allah, may Allah bless him and grant him peace, said:",
+        "“Whoever stands in prayer during Ramadan, with faith and seeking reward, will have his previous sins forgiven.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 101,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 51,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 196,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 111,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-faith-r490285:37",
+        "reviewRecordSha256": "5a2f3d460a08db6b07d696d263d5adbbdf65d7914bb91b5ff9e3e99edaf7f2d8",
+        "notes": [
+          "The selected source and both prints use the singular Malik related to me. This is retained, along with Humayd ibn ‘Abd al-Rahman in the full chain.",
+          "The source report concerns standing in Ramadan; the following entry concerns fasting. They remain separate complete reports, without merging their wording."
+        ],
+        "reviewScope": "AI-assisted full-chain and report comparison against the pinned Arabic and two visually inspected Arabic print witnesses. Two individually matched English report-body comparisons. This records a working translation, not independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:38",
+      "book": "Faith",
+      "number": 38,
+      "arabic_blocks": [
+        "[38] حدثنا ابن سلام قال: أخبرنا محمد بن فضيل قال: حدثنا يحيى بن سعيد عن أبي سلمة عن أبي هريرة قال: قال رسول الله ﷺ:",
+        "من صام رمضان إيمانا واحتسابا غفر له ما تقدم من ذنب"
+      ],
+      "arabic_sha256": "8812045719c32d818223555293803f7507457ac6c60ee21ef56f1f77f5036ffa",
+      "english_blocks": [
+        "Ibn Salam related to us. He said: Muhammad ibn Fudayl informed us. He said: Yahya ibn Sa‘id related to us, from Abu Salamah, from Abu Hurayrah, who said: The Messenger of Allah, may Allah bless him and grant him peace, said:",
+        "“Whoever fasts Ramadan, with faith and seeking reward, will be forgiven the sins that preceded.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 115,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 50,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 224,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 96,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-faith-r490285:38",
+        "reviewRecordSha256": "96234ac1aebb934b9d3a1afdc4a7ce7d881601d0f8cbe418ecfd0b80efd94677",
+        "notes": [
+          "The historical print gives Muhammad ibn Salam where the selected source and modern print give Ibn Salam. The selected shorter form remains unchanged.",
+          "The selected digital ending is من ذنب; the inspected prints have من ذنبه. No possessive suffix is silently added to the Arabic. The provisional English says the sins that preceded, preserving the selected wording without importing the suffix."
+        ],
+        "reviewScope": "AI-assisted full-chain and report comparison against the pinned Arabic and two visually inspected Arabic print witnesses. Two individually matched English report-body comparisons. This records a working translation, not independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:39",
+      "book": "Faith",
+      "number": 39,
+      "arabic_blocks": [
+        "[39] حدثنا عبد السلام بن مطهر قال: حدثنا عمر بن علي عن معن ابن محمد الغفاري عن سعيد بن أبي سعيد المقبري عن أبي هريرة عن النبي ﷺ قال:",
+        "إن الدين يسر ولن يشاد الدين أحد إلا غلبه فسددوا وقاربوا وأبشروا واستعينوا بالغدوة والروحة وشيء من الدلجة"
+      ],
+      "arabic_sha256": "24eac0e91e3957e86c1d07a643e1aff1c5b43055ed62ca1779836b91c0b40508",
+      "english_blocks": [
+        "‘Abd al-Salam ibn Mutahhar related to us. He said: ‘Umar ibn ‘Ali related to us, from Ma‘n ibn Muhammad al-Ghifari, from Sa‘id ibn Abi Sa‘id al-Maqburi, from Abu Hurayrah, from the Prophet, may Allah bless him and grant him peace, who said:",
+        "“Religion is ease. No one contends with religion without it overcoming him. So aim rightly, come close, and receive good news. Seek help in the early morning, the latter part of the day, and a portion of the night.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 132,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 104,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 240,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 215,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-faith-r490285:39",
+        "reviewRecordSha256": "b4fcb15208b279c1a56b9ba90b90f8d881a88121fce56f7de306804a114ca963",
+        "notes": [
+          "All three time expressions are retained: early morning, the latter part of the day, and a portion of the night. The pinned Khan-family EPUB comparison omits the middle expression; Bewley and both Arabic print witnesses retain it.",
+          "The working translation keeps the source’s compressed wording rather than adding the comparator’s explanatory worship or extremism language. The metaphoric wording and theological context require independent review.",
+          "The full selected chapter heading includes the separately quoted saying about al-hanifiyyah al-samhah. Its provisional title remains separate from this numbered report."
+        ],
+        "reviewScope": "AI-assisted full-chain and report comparison against the pinned Arabic and two visually inspected Arabic print witnesses. Two individually matched English report-body comparisons. This records a working translation, not independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:40",
+      "book": "Faith",
+      "number": 40,
+      "arabic_blocks": [
+        "[40] حدثنا عمرو بن خالد قال: حدثنا زهير قال: حدثنا أبو إسحاق عن البراء:",
+        "أن النبي ﷺ كان أول ما قدم المدينة نزل على أجداده أو قال أخواله من الأنصار وأنه صلى قبل بيت المقدس ستة عشر شهرا أو سبعة عشر شهرا وكان يعجبه أن تكون قبلته قبل البيت وأنه صلى أول صلاة صلاها صلاة العصر وصلى معه قوم فخرج رجل ممن صلى معه فمر على أهل مسجد وهم راكعون، فقال أشهد بالله لقد صليت مع رسول الله ﷺ قبل مكة فداروا كما هم قبل البيت وكانت اليهود قد أعجبهم إذ كان يصلي قبل بيت المقدس وأهل الكتاب فلما ولى وجهه قبل البيت أنكروا ذلك قال زهير حدثنا أبو إسحاق عن البراء في حديثه هذا أنه مات على القبلة قبل أن تحول رجال وقتلوا فلم ندر ما نقول فيهم فأنزل الله تعالى { وما كان الله ليضيع إيمانكم } "
+      ],
+      "arabic_sha256": "639f5ae2c1aeb9b2cadb831af254f29af2d28b3cb3462e012cd8295d4789deaa",
+      "english_blocks": [
+        "‘Amr ibn Khalid related to us. He said: Zuhayr related to us. He said: Abu Ishaq related to us, from al-Bara’:",
+        "When the Prophet, may Allah bless him and grant him peace, first came to Madinah, he stayed with his grandfathers—or he said his maternal uncles—from the Ansar. He prayed facing Bayt al-Maqdis for sixteen months or seventeen months. He desired that his direction of prayer should be towards the House. The first prayer he prayed was the afternoon prayer, and a group prayed with him. A man who had prayed with him went out and passed people in a mosque while they were bowing. He said: “I testify by Allah that I have prayed with the Messenger of Allah, may Allah bless him and grant him peace, facing Makkah.” They turned, just as they were, towards the House.",
+        "The Jews had been pleased when he prayed facing Bayt al-Maqdis, as had the People of the Book. When he turned his face towards the House, they objected to that.",
+        "Zuhayr said: Abu Ishaq related to us, from al-Bara’, in this report of his, that men had died facing the direction of prayer before it was changed, and others had been killed. We did not know what to say about them. Then Allah Most High revealed: {Allah would not let your faith go to waste}."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 71,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 333,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 333,
+            "end": 430,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 430,
+            "end": 590,
+            "kind": "transmission-note"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 110,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 661,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 160,
+            "kind": "report"
+          },
+          {
+            "block": 3,
+            "start": 0,
+            "end": 292,
+            "kind": "transmission-note"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-faith-r490285:40",
+        "reviewRecordSha256": "ea8454e75a01bed5a0d4dbf016134e4a83bf545b2c4d24379166b85a980bc49d",
+        "notes": [
+          "The uncertainty grandfathers—or maternal uncles—and sixteen or seventeen months is retained. The House and Bayt al-Maqdis remain as named in the selected Arabic, without inserting explanatory locations into the narration.",
+          "Zuhayr’s final addition begins with its own Abu Ishaq transmission and is retained as a transmission note, including the deaths, killings and Qur’anic excerpt. It is not dropped as a duplicated chain.",
+          "The final Qur’anic excerpt corresponds to 2:143, checked against https://quran.com/2/143. The separate chapter introduction glosses faith as prayer; that introduction remains Arabic context, not an addition to the quoted verse or numbered report."
+        ],
+        "reviewScope": "AI-assisted full-chain and report comparison against the pinned Arabic and two visually inspected Arabic print witnesses. Two individually matched English report-body comparisons. This records a working translation, not independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:41",
+      "book": "Faith",
+      "number": 41,
+      "arabic_blocks": [
+        "[41] قال: مالك أخبرني زيد بن أسلم أن عطاء بن يسار أخبره أن أبا سعيد الخدري أخبره أنه سمع رسول الله ﷺ يقول:",
+        "إذا أسلم العبد فحسن إسلامه يكفر الله عنه كل سيئة كان زلفها وكان بعد ذلك القصاص الحسنة بعشر أمثالها إلى سبعمائة ضعف والسيئة بمثلها إلا أن يتجاوز الله عنها."
+      ],
+      "arabic_sha256": "2219ab2b34682420878768f3e7798520bab68f6399388272dcf716526d4e94d4",
+      "english_blocks": [
+        "Malik said: Zayd ibn Aslam informed me that ‘Ata’ ibn Yasar informed him that Abu Sa‘id al-Khudri informed him that he heard the Messenger of Allah, may Allah bless him and grant him peace, say:",
+        "“When a servant embraces Islam and his Islam becomes good, Allah expiates every evil deed he had previously committed. After that comes the reckoning: a good deed is rewarded ten times its like, up to seven hundred times, and an evil deed with its like, unless Allah pardons it.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and one English translation family compared. A second English comparison is absent from the checked sequence; see source notes. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 106,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 154,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 194,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 279,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-faith-r490285:41",
+        "reviewRecordSha256": "e79e4e17899a18a98fb46931c50c1981bae2af6fdd5cd7d9c4dbcc07f3d81222",
+        "notes": [
+          "This report appears in both inspected Arabic print witnesses and at Bewley 41. In the checked Khan-family Book 2 sequence, 1.2.39 corresponds to selected Hadith 40 and 1.2.40 corresponds to selected Hadith 42. There is no corresponding report between those references. This is recorded as a missing comparison in that sequence, not a numbering match or a claim about every occurrence elsewhere in the collection.",
+          "The selected Arabic begins Malik said. No earlier narrator is supplied, and no chain is inherited from Hadith 40. All three informed clauses are retained, including the two informed him clauses.",
+          "The past evil deeds, subsequent ten-to-seven-hundred reward, one-for-one evil deed and exception for Allah’s pardon all remain in the working English. Only one English translation family was available at this location; independent review remains pending."
+        ],
+        "reviewScope": "AI-assisted full-chain and report comparison against the pinned Arabic and two visually inspected Arabic print witnesses. One English report-body comparison and one documented absence in the checked sequence. This records a working translation, not independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:42",
+      "book": "Faith",
+      "number": 42,
+      "arabic_blocks": [
+        "[42] حدثنا إسحاق بن منصور قال: حدثنا عبد الرزاق قال: أخبرنا معمر عن همام عن أبي هريرة قال: قال رسول الله ﷺ:",
+        "إذا أحسن أحدكم إسلامه فكل حسنة يعملها تكتب له بعشر أمثالها إلى سبعمائة ضعف وكل سيئة يعملها تكتب له بمثلها"
+      ],
+      "arabic_sha256": "6440c3dc5cfe8e5c75ebca47bd8e2bc603354e69561b7fe968da026207467aa3",
+      "english_blocks": [
+        "Ishaq ibn Mansur related to us. He said: ‘Abd al-Razzaq related to us. He said: Ma‘mar informed us, from Hammam, from Abu Hurayrah, who said: The Messenger of Allah, may Allah bless him and grant him peace, said:",
+        "“When one of you makes his Islam good, every good deed he does is recorded for him as ten times its like, up to seven hundred times. Every evil deed he does is recorded for him as its like.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 107,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 105,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 212,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 190,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-faith-r490285:42",
+        "reviewRecordSha256": "d7541ae55936ca1adee87fa7d126a0a67c9763ddca7f370fd8bb66dac3db8775",
+        "notes": [
+          "This report maps individually to Khan-family 1.2.40, not to a fixed one-number offset. It remains distinct from the preceding Abu Sa‘id report and has its own Abu Hurayrah chain.",
+          "The historical print uses informed us for ‘Abd al-Razzaq, while the selected source and modern print use related to us. The selected reporting form is retained."
+        ],
+        "reviewScope": "AI-assisted full-chain and report comparison against the pinned Arabic and two visually inspected Arabic print witnesses. Two individually matched English report-body comparisons. This records a working translation, not independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:43",
+      "book": "Faith",
+      "number": 43,
+      "arabic_blocks": [
+        "[43] حدثنا محمد بن المثنى حدثنا يحيى عن هشام قال: أخبرني أبي عن عائشة",
+        "أن النبي ﷺ دخل عليها وعندها امرأة قال من هذه قالت فلانة تذكر من صلاتها قال مه عليكم بما تطيقون فوالله لا يمل الله حتى تملوا وكان أحب الدين إليه ما داوم عليه صاحبه"
+      ],
+      "arabic_sha256": "b73b57b5af880425896608a6b08a0a543fad64bd7fbe9b60c27b28caf312602c",
+      "english_blocks": [
+        "Muhammad ibn al-Muthanna related to us. Yahya related to us, from Hisham, who said: My father informed me, from ‘A’ishah:",
+        "The Prophet, may Allah bless him and grant him peace, came in to her while a woman was with her. He said: “Who is this?” She said: “So-and-so,” mentioning her prayer. He said: “Stop. Take on what you are able to bear. By Allah, Allah does not grow weary until you grow weary.” The religious practice most beloved to him was that which its practitioner continued."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 69,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 162,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 121,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 362,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-faith-r490285:43",
+        "reviewRecordSha256": "a1b0c922e5d0f958c1c98a33bb36254f3f661e814cb43b0339f9e7227d5071bc",
+        "notes": [
+          "The selected report’s woman remains unnamed, as does its description of her prayer. The complete Muhammad ibn al-Muthanna, Yahya, Hisham, his father and ‘A’ishah route is retained.",
+          "The phrase لا يمل الله حتى تملوا is given a close provisional rendering. The English comparisons contain interpretive wording or parentheses about reward; those expansions are not represented as words in the selected Arabic. Its theological sense requires qualified review, which has not occurred.",
+          "The closing Arabic has the pronoun إليه. The English retains to him without silently replacing that pronoun with an explicit name. The chapter heading’s explicit reference to Allah remains separate. This unresolved referent should receive independent review before production use."
+        ],
+        "reviewScope": "AI-assisted full-chain and report comparison against the pinned Arabic and two visually inspected Arabic print witnesses. Two individually matched English report-body comparisons. This records a working translation, not independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
     }
   ],
   "prototypeReview": {
@@ -2823,7 +3707,7 @@
     "originalDraftSha256": "6b31fb16f5bfc5e4acf08f06b269b20e5a8fc1a0747e153da9cd7cb3f6f9d43c",
     "decisionsSha256": "a3d25932e2caca64186991ddb8ff1da18d39392990b131e5fffc50dca2f13d1e",
     "openingSourceSha256": "11a47792c7c679c5f4b7e1f4a52c4d12d045f19b86acba195e3cdf3cd2c7274d",
-    "faithReviewSha256": "b5c6e853f5c0978f646fd87b8fe4ac9cc2bf4450f7637a5f9ecb1e2e95a606bb",
+    "faithReviewSha256": "01078ae97be2a012319c2c8706ec196de1468e1badd24f24aeace3601b161afc",
     "faithSourceSha256": "0f8c0518a21d266a075dd1cfb756733845ed5dff6548f634cfded0542a30a7a9"
   }
 }

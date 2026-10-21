@@ -1,0 +1,72 @@
+{
+  "checkedAt": "2026-10-20",
+  "readerRelease": "opening-a8bfae87490e",
+  "sourceRecordSha256": "401523ddaa134b7f213a58433a5ee6d8b9a507731edf60c567e28944f4b17a07",
+  "status": "personal-prototype-only",
+  "scope": "43 complete numbered entries across two books. Adds Hadith 30–43; actual Cedar audio remains 1–3.",
+  "source": {
+    "faithRevision": 490285,
+    "admittedRange": [
+      30,
+      43
+    ],
+    "arabicParagraphs": 29,
+    "englishSegments": 33,
+    "earlierEntries": "All 29 earlier entry objects deep-compared with the prior published commit and unchanged. All existing audio media unchanged.",
+    "printedWitnesses": [
+      {
+        "id": "brill-1862",
+        "pdfPages": [
+          16,
+          17,
+          18,
+          19
+        ],
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+      },
+      {
+        "id": "dar-ibn-kathir-2002",
+        "pdfPages": [
+          18,
+          19,
+          20,
+          21
+        ],
+        "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+      }
+    ],
+    "witnessMethod": "Pinned PDF hashes checked; all listed pages rendered and visually inspected. Per-entry page ranges and wording differences are preserved in the review record.",
+    "englishComparators": "Bewley 30–43; Khan-family 1.2.29–39 for selected 30–40 and 1.2.40–41 for selected 42–43, individually matched. No corresponding Hadith 41 between the checked adjacent references. That absence is explicit; it is not counted as a completed comparison.",
+    "chain32": "The unchanged Arabic chain-switch marker is rendered Another chain in its own English paragraph within the expandable chain, consistent with Hadith 15.",
+    "chain41": "The selected source begins Malik said. The separate source-context note explains that no earlier narrator is supplied; the app does not inherit another hadith’s chain.",
+    "reviewRecord": "content/review/faith-third-review.json",
+    "batchRegistry": "content/review/faith-batches.json"
+  },
+  "automated": {
+    "node": 128,
+    "python": 33,
+    "failed": 0,
+    "checks": "Pinned intakes, complete source spans, earlier-entry preservation, explicit prototype admission, evidence for missing English comparisons, per-entry citation mapping, reporting-verb checks, complete scripts, unchanged audio bindings, production refusal, offline packs, session behavior and public packaging."
+  },
+  "browser": {
+    "english": "All 33 new English segments in the final release compared from rendered DOM with canonical blocks; exact match.",
+    "arabic": "All 29 new Arabic paragraphs in the final release compared from the source dialog with canonical blocks; exact match.",
+    "sourceReferences": "Hadith 41 identifies one English comparison and documented absence in the other checked sequence. Both print locations and the separate chain-context notice are accessible.",
+    "search": "Exact phrase latter part of the day returns Hadith 39.",
+    "session": "Start at 30, browse to 43, return home: Continue still points to 30.",
+    "offline": "Final release saved All reading material to Ready offline (3.88 MB). With its preview server stopped, the reader reloaded, Hadith 32 opened with both complete chain paragraphs, and a separate tab opened the local comparison notes at Hadith 41. No external source PDF/site is claimed offline.",
+    "layout": "Hadith 39 at 320px with 28px text has no horizontal overflow. Standard 21px night view checked at 393px, including long Hadith 40 and the final Hadith 39 screenshot.",
+    "errors": "No error-level browser logs in the final reader tab.",
+    "screenshots": [
+      "/private/tmp/hadith-faith-third-reader.png"
+    ]
+  },
+  "limits": [
+    "AI working translations and comparisons are not independent scholarly certification. All human reviews remain pending.",
+    "The selected Hadith 41 has only one matched English comparison at the checked locations; the other witness’s absence is retained explicitly.",
+    "The chapter heading above Hadith 29 remains unresolved. Chapter introductions are preserved separately in Arabic; English pending.",
+    "Hadith 43’s theological phrase and closing pronoun have explicit provisional notes; no interpretive expansion is attributed to the selected Arabic.",
+    "Current source coverage is 1–43, including 36 of the selected Faith source’s 51 reports. The full collection and audio beyond Hadith 3 remain incomplete.",
+    "The expanded reading pack and separate-file locked-screen playback still need iPhone acceptance. Desktop checks do not establish that result."
+  ]
+}

@@ -28,12 +28,12 @@ test('stale wording, Arabic replacements, missing chains and reassigned chapters
 test('assembly preserves the seven existing entries and admits only the explicit two-book version',()=>{
  const opening=prototypeFiles(),{source,ledger}=collectionFiles();assert.deepEqual(source.entries.slice(0,7),opening.source.entries);
  assert.equal(buildBooks(source,ledger).catalog.books.length,2);assert.equal(ledger.books[1].sourceEntryCount,51);assert.throws(()=>validateChapters({...ledger.books[1],sourceEntryCount:9}),/source entry count/);assert.throws(()=>buildBooks(source,ledger,{production:true}));
- const copy=structuredClone(source),l=structuredClone(ledger);copy.entries.push({...copy.entries.at(-1),number:30,id:'bukhari:30'});l.sourceRecordSha256=objectHash(copy);l.entries.push({...l.entries.at(-1),number:30,id:'bukhari:30'});assert.throws(()=>buildBooks(copy,l),/not admitted/);
+ const copy=structuredClone(source),l=structuredClone(ledger);copy.entries.push({...copy.entries.at(-1),number:44,id:'bukhari:44'});l.sourceRecordSha256=objectHash(copy);l.entries.push({...l.entries.at(-1),number:44,id:'bukhari:44'});assert.throws(()=>buildBooks(copy,l),/not admitted/);
 });
 test('a ten-minute session crosses the real book boundary without growing an existing seven-entry session',()=>{
  const {source}=collectionFiles();const plan=startSession(source.entries,7,10);assert(plan.numbers.includes(7)&&plan.numbers.includes(8));
  const saved={numbers:[7],cursor:7,ended:true};assert.deepEqual(resolveSession(source.entries,saved,10,7),saved);assert.equal(nextSession(source.entries,saved,5).cursor,8);
- assert(planSession(source.entries,17,5).numbers.includes(18));assert.deepEqual(resolveSession(source.entries,{numbers:[17],cursor:17,ended:false},5,17),{numbers:[17],cursor:17,ended:false});assert.deepEqual(planSession(source.entries,29,5).numbers,[29]);for(let n=8;n<=29;n++)assert.equal(recordedChapter(n),null);
+ assert(planSession(source.entries,17,5).numbers.includes(18));assert.deepEqual(resolveSession(source.entries,{numbers:[17],cursor:17,ended:false},5,17),{numbers:[17],cursor:17,ended:false});assert(planSession(source.entries,29,5).numbers.includes(30));assert.deepEqual(planSession(source.entries,43,5).numbers,[43]);for(let n=8;n<=43;n++)assert.equal(recordedChapter(n),null);
 });
 test('the two real books load separately and expose complete search content only after both succeed',async()=>{
  const {source,ledger,files:derived}=collectionFiles(),published=buildBooks(source,ledger),responses=new Map(published.files),calls=[];
@@ -45,13 +45,13 @@ test('the two real books load separately and expose complete search content only
 
 test('new Faith batches preserve all seventeen earlier entries and every new Arabic paragraph',()=>{
  const {source}=collectionFiles(),opening=prototypeFiles().source.entries,first=buildFaithBatch(...input()).entries;
- assert.deepEqual(source.entries.slice(0,17),[...opening,...first]);assert.equal(source.entries.length,29);
+ assert.deepEqual(source.entries.slice(0,17),[...opening,...first]);assert.equal(source.entries.length,43);
  const inventory=input()[0],next=read('content/review/faith-next-review.json');
  for(const row of next.entries){const e=source.entries.find(e=>e.number===row.number);assert.deepEqual(e.arabic_blocks,row.paragraphIds.map(id=>inventory.blocks.find(b=>b.htmlId===id).text));assert.deepEqual(sourceSegments(e,'english').map(s=>s.text),row.segments.map(s=>s.english));}
 });
 test('registered batches reject stale records, gaps, reordered references and duplicate chapter ownership',()=>{
  const registry=read('content/review/faith-batches.json');
- assert.equal(combineFaithReviews(registry).entries.length,22);
+ assert.equal(combineFaithReviews(registry).entries.length,36);
  const stale=structuredClone(registry);stale.batches[1].sha256='0'.repeat(64);assert.throws(()=>combineFaithReviews(stale),/Changed/);
  const gap=structuredClone(registry);gap.batches[1].first=19;assert.throws(()=>combineFaithReviews(gap),/consecutive/);
  for(const mutate of [r=>r.entries.reverse(),r=>r.entries.pop(),r=>r.chapters[0].id='chapter-01']){
@@ -74,4 +74,30 @@ test('the disputed heading is an explicit status with offline original and cited
  const ref=ledger.sourceReferences.entries.find(e=>e.number===29);assert(ref.contextNotes[0].citations.includes('brill-1862'));assert(ref.contextNotes[0].citations.includes('dar-ibn-kathir-2002'));
  const inputs=JSON.parse(files.get('reader/faith-inputs.json'));assert(inputs.selectedBlocks.some(b=>b.text.includes('وكفر بعد كفر فيه')));assert(files.get('reader/faith-review.html').includes('not source wording'));
  const review=read('content/review/faith-next-review.json');delete review.chapters.at(-1).headingDiscrepancy;assert.throws(()=>buildFaithBatch(input()[0],review,input()[2]));
+});
+
+test('third Faith batch preserves the earlier 29 entries and exact new source spans',()=>{
+ const {source}=collectionFiles(),[inventory,first,manifest]=input();
+ const previous=[...prototypeFiles().source.entries,...buildFaithBatch(inventory,first,manifest).entries,...buildFaithBatch(inventory,read('content/review/faith-next-review.json'),manifest).entries];
+ assert.deepEqual(source.entries.slice(0,29),previous);
+ const review=read('content/review/faith-third-review.json');
+ for(const row of review.entries){const entry=source.entries.find(e=>e.number===row.number);assert.deepEqual(entry.arabic_blocks,row.paragraphIds.map(id=>inventory.blocks.find(b=>b.htmlId===id).text));assert.deepEqual(sourceSegments(entry,'english').map(s=>s.text),row.segments.map(s=>s.english));}
+ assert.deepEqual(sourceSegments(source.entries[30],'english').map(s=>s.kind),['chain','report','report']);
+ assert.deepEqual(sourceSegments(source.entries[31],'english').map(s=>s.kind),['chain','chain','report']);
+ assert.deepEqual(sourceSegments(source.entries[33],'english').map(s=>s.kind),['chain','report','transmission-note']);
+ assert.deepEqual(sourceSegments(source.entries[39],'english').map(s=>s.kind),['chain','report','report','transmission-note']);
+});
+test('an unavailable English comparison stays explicit without borrowing the next reference',()=>{
+ const {source,ledger,files}=collectionFiles(),entry=source.entries.find(e=>e.number===41),ref=ledger.sourceReferences.entries.find(e=>e.number===41);
+ assert.match(entry.english_status,/one English translation family/);assert.doesNotMatch(entry.english_status,/two English translation families/);
+ assert.match(ref.citations.find(c=>c.id==='khan').locator,/No corresponding report/);assert.match(ref.citations.find(c=>c.id==='khan').scope,/not a completed English comparison/);
+ assert.match(ref.contextNotes[0].text,/does not borrow a chain/);assert.deepEqual(ref.contextNotes[0].related,[]);
+ assert.match(files.get('reader/faith-review.html'),/1\.2\.39 → 1\.2\.40/);
+ assert.equal(ledger.sourceReferences.entries.find(e=>e.number===42).citations.find(c=>c.id==='khan').locator,'Volume 1, Book 2, Number 40');
+});
+test('missing or contradictory comparison evidence cannot be admitted even after rehashing',()=>{
+ for(const mutate of [c=>c.reference='1.2.40',c=>delete c.checkedReferences,c=>c.checkedReferences=['1.2.39','1.2.42'],c=>c.note='',c=>c.status='approved']){
+  const review=read('content/review/faith-third-review.json'),row=review.entries.find(e=>e.number===41);mutate(row.comparisons[1]);delete row.reviewRecordSha256;row.reviewRecordSha256=objectHash(row);assert.throws(()=>buildFaithBatch(input()[0],review,input()[2]));
+ }
+ const review=read('content/review/faith-third-review.json'),row=review.entries[0];row.comparisons[1]={...row.comparisons[0]};delete row.reviewRecordSha256;row.reviewRecordSha256=objectHash(row);assert.throws(()=>buildFaithBatch(input()[0],review,input()[2]),/distinct English/);
 });
