@@ -5,7 +5,7 @@ import {narrationPlan,buildAudioCatalog,audioFiles,audioHash}from '../scripts/bu
 import {recordingCoverage,recordingForNumber}from '../reader/recording.mjs';
 const root=new URL('../',import.meta.url),read=p=>readFileSync(new URL(p,root)),json=p=>JSON.parse(read(p));
 const inputs=()=>[json('reader/source-record.json'),json('content/audio/recordings.json')];
-const options={readEvidence:read,readAsset:p=>read('reader/'+p)};
+const options={readOriginal:read,readEvidence:read,readAsset:p=>read('reader/'+p)};
 test('all prepared narration scripts contain every English block exactly, including later chains and notes',()=>{
  const [source]=inputs(),copy=structuredClone(source),plan=narrationPlan(source);
  assert.deepEqual(source,copy);assert.equal(plan.entries.length,17);
@@ -14,7 +14,7 @@ test('all prepared narration scripts contain every English block exactly, includ
 });
 test('published recordings bind exact input scripts and media without claiming speech accuracy',()=>{
  const [source,ledger]=inputs(),{catalog}=buildAudioCatalog(source,ledger,options);
- assert.deepEqual(catalog.coverage.recorded,[1,2]);assert.equal(catalog.coverage.unrecorded.length,15);
+ assert.deepEqual(catalog.coverage.recorded,[1,2,3]);assert.equal(catalog.coverage.unrecorded.length,14);
  assert.equal(catalog.recordings[0].review.wording,'pending');assert.equal(catalog.recordings[0].review.pronunciation,'pending');
  assert.equal(catalog.recordings[0].id,'cedar-opening-v1');assert.deepEqual(audioFiles({check:true}).catalog,catalog);
 });
@@ -37,7 +37,7 @@ test('ambiguous records, repeated entries and chapter timing changes cannot publ
  }
 });
 test('audio production requires two separate human reviews bound to the exact recording and script',()=>{
- const [source,ledger]=inputs(),row=ledger.recordings[0];
+ const [source,ledger]=inputs(),row=ledger.recordings[0];ledger.recordings=[row];
  assert.throws(()=>buildAudioCatalog(source,ledger,{...options,production:true}),/spoken-word/);
  row.wordingReview={status:'approved',reviewerKind:'ai'};assert.throws(()=>buildAudioCatalog(source,ledger,{...options,production:true}),/spoken-word/);
  const clean=inputs()[1],subject=buildAudioCatalog(source,clean,options).catalog.recordings[0].review.subjectSha256;
@@ -47,9 +47,9 @@ test('audio production requires two separate human reviews bound to the exact re
  row.pronunciationReview=fixture;assert.equal(buildAudioCatalog(source,ledger,{...options,production:true}).catalog.recordings[0].review.status,'independently-reviewed');
 });
 test('session audio availability reports gaps without substituting a different hadith',()=>{
- assert.deepEqual(recordingCoverage([1,2,3,4]).recorded,[1,2]);assert.deepEqual(recordingCoverage([1,2,3,4]).missing,[3,4]);
+ assert.deepEqual(recordingCoverage([1,2,3,4]).recorded,[1,2,3]);assert.deepEqual(recordingCoverage([1,2,3,4]).missing,[4]);
  assert.equal(recordingCoverage([8,9]).completeRecording,null);assert.equal(recordingCoverage([1,2]).completeRecording.id,'cedar-opening-v1');
- for(const n of [3,8,999,'1',null])assert.equal(recordingForNumber(n),null);
+ for(const n of [4,8,999,'1',null])assert.equal(recordingForNumber(n),null);
 });
 
 test('separate continuous recordings can cover different source entries without changing their bindings',()=>{

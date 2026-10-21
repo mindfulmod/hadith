@@ -53,9 +53,9 @@
     },
     {
       "id": "full-audio",
-      "status": "version-bound-catalogue-and-complete-script-plan-implemented",
-      "evidence": "content/audio/recordings.json; content/audio/narration-plan.json; scripts/build-audio.mjs; reader/audio/catalog.json; tests/audio-catalog.test.mjs; tests/audio.test.mjs; research/audio-catalog-verification.json",
-      "remaining": "Generate and audit Cedar recordings beyond 1–2; complete per-session continuous audio delivery and iPhone lock-screen/interruption acceptance. All 17 current entries have exact complete narration scripts. Each recording is bound to its exact English, generation evidence and media hash. Prepared scripts are not completed recordings."
+      "status": "three-recorded-hadith-with-exact-segment-evidence",
+      "evidence": "content/audio/recordings.json; content/audio/narration-plan.json; scripts/build-audio.mjs; reader/audio/catalog.json; tests/audio-catalog.test.mjs; tests/audio.test.mjs; research/audio-catalog-verification.json; reader/audio/hadith-3-provenance.json; research/hadith-3-audio-verification.json",
+      "remaining": "Generate and review Cedar recordings beyond Hadith 3; complete per-session continuous delivery and iPhone lock-screen/interruption acceptance. All 17 current entries have complete exact input scripts; actual audio covers 1–3. Hadith 3 has pending wording, pronunciation, delivery and join review. Prepared scripts are not completed recordings."
     },
     {
       "id": "offline-at-scale",
@@ -66,7 +66,7 @@
     {
       "id": "production-testing",
       "status": "in-progress",
-      "evidence": "133 automated checks (103 Node, 30 Python); research/navigation-verification.json; research/offline-packs-verification.json; research/reader-structure-verification.json; research/source-reference-verification.json; .github/workflows/reader-checks.yml; research/audio-catalog-verification.json",
+      "evidence": "141 automated checks (108 Node, 33 Python); research/navigation-verification.json; research/offline-packs-verification.json; research/reader-structure-verification.json; research/source-reference-verification.json; .github/workflows/reader-checks.yml; research/audio-catalog-verification.json; research/hadith-3-audio-verification.json",
       "remaining": "Accessibility audit, keyboard/screen reader review, optional iPhone full-place/settings restore and locked-screen/interruption acceptance after final architecture changes. Default iPhone backup export/merge restore and browsing/session separation are confirmed. Deploy checks gate publishing."
     },
     {
@@ -133,7 +133,7 @@
     "preview": "reader/prototype-review.html",
     "originals": "reader/prototype-inputs.json",
     "scope": "Entries 1–7. Existing entries 1–2 unchanged. Entries 3–7 derived with 11 documented AI choices and one explicit Hadith 5 Arabic correction.",
-    "remaining": "Independent Arabic, English and context reviews remain pending. Cedar recording is available only for entries 1–2. Full-collection source coverage remains a separate workstream."
+    "remaining": "Independent Arabic, English and context reviews remain pending. Cedar recording is available only for entries 1–3. Full-collection source coverage remains a separate workstream."
   },
   "readerStructure": {
     "status": "implemented-with-unchanged-two-entry-reader",

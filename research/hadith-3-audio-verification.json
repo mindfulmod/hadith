@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-20",
+  "status": "personal-prototype-listening-review-pending",
+  "scope": "Complete Cedar narration for Hadith 3; exact-segment preservation, separate download and explicit next-recording control.",
+  "sourceUnchanged": true,
+  "existingAudioUnchanged": true,
+  "generation": {
+    "source": "https://www.openai.fm/",
+    "voice": "Cedar",
+    "modelLabel": "GPT-4o mini TTS",
+    "delivery": "Existing selected Take A instructions",
+    "segments": 4,
+    "submittedText": "All complete current English blocks, exactly reconstructed from four paragraph groups",
+    "observedStudioLimit": 999,
+    "limitUnit": "UTF-16 code units",
+    "duration": 174.88798185941044,
+    "decodedFrames": 7712560,
+    "encodedDecodedFrames": 7712560,
+    "fullScaleSamples": 0
+  },
+  "automated": {
+    "node": 108,
+    "python": 33,
+    "result": "pass",
+    "sourceIntakeAndPublicationChecks": "pass"
+  },
+  "browser": {
+    "environment": "Desktop in-app browser; not iPhone Safari",
+    "previewRelease": "opening-ed5361e65e77",
+    "finalRelease": "opening-f2eeec0f50c7",
+    "finalDelta": "Only generation evidence offset-unit documentation and its generated hashes changed after the browser pass. Reader UI and media bytes are the same.",
+    "observations": [
+      "Opening a listening route did not autoplay.",
+      "Hadith 3 used its own media file and continued when switching to reading.",
+      "All rendered English source blocks for Hadith 3 reconstructed the canonical blocks exactly.",
+      "393px and 320px layouts had no horizontal overflow.",
+      "Reading and both actual audio packs reached Ready offline separately.",
+      "After Hadith 2 ended, the explicit Listen to Hadith 3 action selected and played the new recording.",
+      "After Hadith 3 ended, only Read Hadith 4 was offered; no unavailable recording was substituted.",
+      "With the local server stopped, reload, text access and Hadith 3 playback succeeded.",
+      "No browser runtime errors were observed."
+    ]
+  },
+  "limits": [
+    "Input equality and signal checks do not certify spoken-word accuracy.",
+    "Exact wording, names, paragraph joins and delivery need listening review.",
+    "Independent Arabic/English/context review remains pending.",
+    "New recording iPhone lock-screen and interruption acceptance remains pending.",
+    "Automatic transitions across separate recordings are not implemented."
+  ]
+}

@@ -68,3 +68,5 @@ body:not([data-view=listen]):not([data-view=read]) #audio-close{grid-column:3}
 .audio-availability{font-size:14px;line-height:1.7;margin:12px 0;color:var(--muted)}.audio-availability a{display:inline-block;padding:8px 0;color:var(--ink)}
 
 #audio-next-step{grid-column:1/-1;font-size:13px;line-height:1.6;margin:0;text-align:center}#audio-next-step span{color:var(--muted)}#audio-next-step a{display:inline-flex;align-items:center;min-height:44px;padding:10px;color:var(--ink);font-weight:600}
+
+#audio-listen-next{font-size:13px;margin:4px 6px}#audio-listen-next[hidden]{display:none}

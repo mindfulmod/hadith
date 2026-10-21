@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The personal reader is at `reader/`: seventeen complete Bukhari entries across two books, Cedar AI narration for Hadith 1–2, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The personal reader is at `reader/`: seventeen complete Bukhari entries across two books, Cedar AI narration for Hadith 1–3, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Run
 
@@ -304,3 +304,14 @@ The Faith book explicitly reports 10 of its source’s 51 hadith as available. O
 The generated `reader/recordings.mjs` and `reader/audio/catalog.json` drive availability and optional audio downloads. The single persistent player can select distinct recordings and restore only the matching recording’s position. A late rejected play request cannot overwrite a newer selection; retrying failed media preserves the intended seek. Existing Cedar audio and hadith text remain unchanged.
 
 Sessions show their actual audio coverage. When the recording ends before an unrecorded hadith, the reader offers its text without silently skipping it. Playback remains within the selected continuous recording; automatic transitions across recordings and full session audio still need implementation and iPhone acceptance. `research/audio-catalog-verification.json` distinguishes real browser/offline checks from synthetic multi-recording tests.
+
+
+## First longer Cedar recording · 20 October 2026
+
+Hadith 3 now has a complete 174.89-second Cedar recording using the selected Take A delivery instructions. The observed OpenAI.fm textarea limit is 999 UTF-16 code units, so this script was submitted as four complete paragraph groups. `scripts/narration-segments.mjs` rejects dropped, repeated, reordered or altered segment text and changed original media. The concatenation equals every current English block, including the complete narrator introduction. This is an input-integrity check, not a listening review.
+
+The four original MP3 downloads are preserved under `content/audio/raw/`. `scripts/assemble-narration.py` uses macOS Core Audio and Python 3.12+ to decode all frames to mono 16-bit 44.1kHz PCM, join them unchanged and encode one AAC file. Its evidence records segment hashes, frame boundaries, duration and a decoded-output check. No silence is trimmed, no words are edited, and no filtering or cross-fading is applied. The final decoded frame count matches the assembled input and has no full-scale clipped samples. Spoken wording, pronunciation, delivery and joins remain explicitly pending review.
+
+The recording has its own optional offline pack. Generation provenance for every recording is included with reading downloads. At the end of Hadith 2, an explicit Listen to Hadith 3 action switches the persistent player; at the end of Hadith 3, the reader offers Hadith 4 as text. Automatic transitions between distinct recordings remain future work. Existing Hadith 1–2 media and all source wording are unchanged.
+
+`research/hadith-3-audio-verification.json` records 141 automated checks and local browser observations, including saved playback with the preview server stopped. iPhone locked-screen playback and listening quality for this new recording remain unconfirmed.

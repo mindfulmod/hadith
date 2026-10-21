@@ -11,6 +11,7 @@ export const recordings = [
     "status": "Cedar Take A delivery selected by the user; exact spoken wording and names await listening review",
     "bytes": 1385968,
     "sha256": "f52c79d53227837caf400dcfa1f1adc66130f88926ccc1e00787c286d09aa6c1",
+    "provenance": "audio/provenance.json",
     "chapters": [
       {
         "number": 1,
@@ -34,6 +35,36 @@ export const recordings = [
     "review": {
       "status": "personal-prototype",
       "subjectSha256": "59473e48d55297f0268dfa043f1d026fe3a89a0c65c075aae4a41325db2441e8",
+      "wording": "pending",
+      "pronunciation": "pending"
+    }
+  },
+  {
+    "id": "cedar-hadith-3-v1",
+    "packId": "cedar-hadith-3",
+    "title": "Hadith 3 · Cedar",
+    "album": "The Beginning of Revelation",
+    "src": "audio/hadith-3-cedar-v1.m4a",
+    "voice": "Cedar",
+    "duration": 174.88798185941044,
+    "status": "Cedar Take A delivery instructions; new segmented recording. Exact spoken wording, names and joins await listening review.",
+    "bytes": 2773264,
+    "sha256": "4a1a0f2cdd91e4548cb6b0e7b0d79beea7f5c3981ba3ad25de988cb6f825e71b",
+    "provenance": "audio/hadith-3-provenance.json",
+    "chapters": [
+      {
+        "number": 3,
+        "start": 0,
+        "duration": 174.88798185941044,
+        "entryId": "bukhari:3",
+        "scriptSha256": "df753d802609e08edc527883321a499af9395ed65f283bb42634d7d7a1bacce3",
+        "englishBlocksSha256": "a64af435697731fbb1d93760d90ef5b0a191a14dd336e9a38ca1934f783bb0c4",
+        "presentationSha256": "c356bb4a91c16b596abca29d35adbad82629a5dbeef34bdf996fdd636b138b67"
+      }
+    ],
+    "review": {
+      "status": "personal-prototype",
+      "subjectSha256": "107c8c1a51b231f230602a0c0e47b7c76694840d76fbf57e85747bbe36fa43f3",
       "wording": "pending",
       "pronunciation": "pending"
     }
