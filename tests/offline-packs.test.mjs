@@ -111,7 +111,7 @@ test('pack manifests reject missing files, duplicated ownership, wrong sizes and
  }
  const html=offlinePanel(published);assert(html.includes('Save reading'));assert(html.includes('Save audio'));assert(html.includes('More download options'));assert(html.includes('Check downloads'));
  assert(offlineError('playing').includes('Pause'));assert(offlineError('quota').includes('Remove'));
- assert(published.packs.find(p=>p.kind==='audio').files.every(p=>p.endsWith('.m4a')));
+ assert(published.packs.find(p=>p.kind==='audio').files.every(p=>/\.(m4a|mp3)$/.test(p)));
 });
 
 test('a receipt-write failure during a deep check never deletes intact source bytes',async()=>{

@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-10-20",
+  "readerRelease": "opening-568fccbfcf0d",
+  "scope": "Finite listening sessions across existing Cedar recordings; 29 source entries and all media bytes unchanged.",
+  "automated": {
+    "node": 125,
+    "python": 33,
+    "checks": "Complete session planning, missing-audio stops, native one-chapter endpoints, saved recording selection, completed-session restart, explicit chapter override, late-play rejection, retry after blocked continuation, pause/close cancellation, source/provenance binding, chapter-file tampering, offline pack ownership and release packaging."
+  },
+  "browser": {
+    "environment": "Desktop in-app WebKit browser; 393px viewport. This is not an iPhone result.",
+    "offlineFinalRelease": "Both audio packs and reading reported Ready offline. The local HTTP server on port 51547 was stopped. The natural ended event of the saved Hadith 1–2 file started the saved Hadith 3 file on the same persistent element. Hadith 3 then ended paused and offered Read Hadith 4; no later audio started. The seek control was used to approach file endings; this was not an uninterrupted full-length listening audit.",
+    "follow": "In the corrected preview, started reading Hadith 2 shortly before its natural ending; Follow moved the text to Hadith 3 while its separate file played offline. Complete chain remained available and revealed.",
+    "resume": "In the corrected preview, paused Hadith 3 at 15.443 seconds, reopened the saved reader with its server stopped, selected the listening session and observed Hadith 3 resume at 15.445 seconds.",
+    "queuedDownloadProtection": "While Hadith 1 played in the queue, attempted removal of the future Hadith 3 download. Removal was refused with the pause-first message and the pack remained Ready offline.",
+    "explicitChapter": "On the final release after queue completion, selecting Play Hadith 2 started Hadith 2 rather than restarting at 1.",
+    "runtimeErrors": "No error-level messages in the corrected or final reader tabs.",
+    "proof": "/private/tmp/hadith-listening-session-final.png"
+  },
+  "sourceIntegrity": "Compared the current source-record.json and all four playback media files against the preceding published commit: every byte unchanged. Original chapter-file mapping is added to existing generation evidence with pending spoken-word review.",
+  "research": [
+    {
+      "url": "https://webkit.org/blog/7734/auto-play-policy-changes-for-macos/",
+      "application": "Reuse one media element; handle play promise rejection and expose retry. This is WebKit macOS guidance, not proof of current iPhone behavior."
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/ended_event",
+      "application": "Continue on the native ended event; do not synthesize completion or loop media."
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=261858",
+      "application": "Historical Safari/Home Screen background-transition report supports keeping device acceptance separate; it does not prove the same issue exists on iOS 26."
+    }
+  ],
+  "limits": [
+    "Independent text and spoken-word/ pronunciation reviews remain pending.",
+    "iPhone 17 / iOS 26 locked-screen transitions across distinct recordings, interruptions and Safari handoff remain unconfirmed.",
+    "Exact session endpoints use complete source files. A future combined recording without a required chapter file cannot be played beyond or clipped to that endpoint.",
+    "Full collection text and Cedar coverage remain incomplete."
+  ]
+}

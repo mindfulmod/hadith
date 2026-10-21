@@ -43,7 +43,7 @@
       "id": "session-planning",
       "status": "implemented-iphone-browsing-separation-confirmed",
       "evidence": "reader/session.mjs; reader/reader.js; tests/navigation.test.mjs; research/navigation-verification.json",
-      "remaining": "Full-library audio sessions remain separate work. The user confirmed Continue stays at Hadith 2 after browsing to Hadith 1. Cross-book reading sessions have also been checked against the actual two-book personal collection; see research/faith-expansion-verification.json."
+      "remaining": "Confirm listening queues on iPhone. Finite cross-recording listening, gap stops and matching saved-position resume are implemented and checked on desktop; the full collection and its audio remain incomplete."
     },
     {
       "id": "personal-backup",
@@ -53,20 +53,20 @@
     },
     {
       "id": "full-audio",
-      "status": "three-recorded-hadith-with-exact-segment-evidence",
-      "evidence": "content/audio/recordings.json; content/audio/narration-plan.json; scripts/build-audio.mjs; reader/audio/catalog.json; tests/audio-catalog.test.mjs; tests/audio.test.mjs; research/audio-catalog-verification.json; reader/audio/hadith-3-provenance.json; research/hadith-3-audio-verification.json",
-      "remaining": "Generate and review Cedar recordings beyond Hadith 3; complete per-session continuous delivery and iPhone lock-screen/interruption acceptance. All 29 current entries have complete exact input scripts; actual audio covers 1–3. Hadith 3 has pending wording, pronunciation, delivery and join review. Prepared scripts are not completed recordings."
+      "status": "three-recorded-hadith-with-finite-cross-recording-sessions",
+      "evidence": "content/audio/recordings.json; content/audio/narration-plan.json; scripts/build-audio.mjs; reader/audio/catalog.json; tests/audio-catalog.test.mjs; tests/audio.test.mjs; research/audio-catalog-verification.json; reader/audio/hadith-3-provenance.json; research/hadith-3-audio-verification.json; reader/listening-plan.mjs; research/listening-session-verification.json",
+      "remaining": "Generate and review Cedar recordings beyond Hadith 3 and complete iPhone lock-screen/interruption acceptance across separate files. All 29 current entries have exact complete input scripts; actual audio covers 1–3. Finite queues now stop at missing audio or session end and preserve complete chapter boundaries. Hadith 3 still needs wording, pronunciation, delivery and join review. Prepared scripts are not recordings."
     },
     {
       "id": "offline-at-scale",
       "status": "separate-packs-implemented-sample-browser-verified",
-      "evidence": "reader/offline-store.mjs; reader/offline-view.mjs; reader/offline.mjs; reader/sw.js; tests/offline-packs.test.mjs; research/offline-packs-verification.json",
+      "evidence": "reader/offline-store.mjs; reader/offline-view.mjs; reader/offline.mjs; reader/sw.js; tests/offline-packs.test.mjs; research/offline-packs-verification.json; research/listening-session-verification.json",
       "remaining": "Confirm the revised download flow and locked-screen playback on iPhone; exercise full-collection size and future per-session audio packs. Current sample has all reading together, separate Cedar/review audio, verified-file resume, quota/cancellation recovery, explicit removal/old-cache cleanup and cross-tab playback protection. Storage eviction remains possible."
     },
     {
       "id": "production-testing",
       "status": "in-progress",
-      "evidence": "147 automated checks (114 Node, 33 Python); research/navigation-verification.json; research/offline-packs-verification.json; research/reader-structure-verification.json; research/source-reference-verification.json; .github/workflows/reader-checks.yml; research/audio-catalog-verification.json; research/hadith-3-audio-verification.json; research/faith-next-verification.json",
+      "evidence": "158 automated checks (125 Node, 33 Python); research/navigation-verification.json; research/offline-packs-verification.json; research/reader-structure-verification.json; research/source-reference-verification.json; .github/workflows/reader-checks.yml; research/audio-catalog-verification.json; research/hadith-3-audio-verification.json; research/faith-next-verification.json; research/listening-session-verification.json",
       "remaining": "Accessibility audit, keyboard/screen reader review, optional iPhone full-place/settings restore and locked-screen/interruption acceptance after final architecture changes. Default iPhone backup export/merge restore and browsing/session separation are confirmed. Deploy checks gate publishing."
     },
     {
@@ -81,7 +81,7 @@
     "Complete the Arabic edition/reference map using the new exact-span inventory and pinned printed-witness findings; keep combined labels distinct from missing or misassigned bodies.",
     "Find a more complete authoritative English witness: the IslamHouse EPUB and PDF share seven checked omissions and additional transcription defects. Keep their exact inventories as comparison evidence rather than patching them silently.",
     "Obtain complete English source coverage and explicit offline/narration permissions; request #4160 is posted.",
-    "Confirm the separate reading/audio downloads on iPhone and extend audio-pack definitions as reviewed recordings become available.",
+    "Confirm locked-screen Hadith 2→3 continuation after saving both audio packs on iPhone, then extend the checked queue and audio packs as reviewed recordings become available.",
     "Complete independent translation and generated-audio reviews before claiming production content."
   ],
   "sourceResearch": [
@@ -154,5 +154,11 @@
     "readerRange": "8–29",
     "remaining": "Translate and compare reports 30–58, resolve the disputed heading above Hadith 29, finish English chapter introductions, then continue with the next source book. Independent review and new Cedar audio remain pending.",
     "verification": "research/faith-next-verification.json"
+  },
+  "listeningSessions": {
+    "status": "implemented-desktop-offline-verified-iphone-pending",
+    "readerRelease": "opening-568fccbfcf0d",
+    "verification": "research/listening-session-verification.json",
+    "policy": "Finite ordered prefix of the selected session; stop at a missing recording or exact session boundary. No automatic skip over gaps. This recommended default was presented to the user; no additional answer was received this turn."
   }
 }

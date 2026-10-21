@@ -74,5 +74,22 @@
     "procedure": "Open the reader from its Home Screen icon, save the complete sample, wait for Ready offline, enable airplane mode, start playback and lock the screen.",
     "result": "Both hadith played successfully.",
     "scope": "User-reported success for the two-entry continuous sample and its chapter boundary. Lock-screen pause/resume, interruption recovery and saved-position reopening were not separately reported in this response."
-  }
+  },
+  "chapterFiles": [
+    {
+      "number": 1,
+      "src": "audio/hadith-1-cedar-v1.mp3",
+      "bytes": 600192,
+      "sha256": "058393ae06605aeff20ad53822495aa7a4a3acd22d469147010dbff2228b2b1e",
+      "duration": 37.51199546485261
+    },
+    {
+      "number": 2,
+      "src": "audio/hadith-2-cedar-v1.mp3",
+      "bytes": 797568,
+      "sha256": "9309ec6efa66a3a907216fe188d37de7f85dd2fa720a1fdee7a9e0d4f765226f",
+      "duration": 49.84798185941043
+    }
+  ],
+  "chapterFileBinding": "The original Take A files already listed above, mapped to their submitted scripts and measured chapter durations for native session endings. Added 2026-10-20; media bytes unchanged; spoken-word review remains pending."
 }

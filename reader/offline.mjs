@@ -1,3 +1,5 @@
+import {getListeningState,getPlaybackState} from './audio.mjs';
+import {playbackRecordings} from './recording.mjs';
 import {release} from './release.mjs';
 import {offlinePanel,formatBytes,offlineError} from './offline-view.mjs';
 export {offlinePanel};
@@ -79,7 +81,8 @@ if(supported){
  navigator.serviceWorker.addEventListener('message',event=>{
   const data=event.data;
   if(data?.type==='HADITH_AUDIO_IN_USE'){
-   const playing=[...document.querySelectorAll('audio')].some(audio=>!audio.paused&&!audio.ended&&data.files.some(path=>new URL(path,base).href===(audio.currentSrc||audio.src)));
+   const queued=getListeningState(),queueInUse=getPlaybackState().playing&&queued?.steps.slice(queued.index).some(step=>data.files.includes(playbackRecordings.find(r=>r.id===step.recordingId)?.src));
+   const playing=!!queueInUse||[...document.querySelectorAll('audio')].some(audio=>!audio.paused&&!audio.ended&&data.files.some(path=>new URL(path,base).href===(audio.currentSrc||audio.src)));
    event.ports[0]?.postMessage({playing});return;
   }
   if(data?.type==='HADITH_OFFLINE_STATUS'&&data.release===release.id){state=data;for(const beat of heartbeats)beat();if(!state.operation&&!pending&&!feedback)message=summary();show();}

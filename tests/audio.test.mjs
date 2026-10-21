@@ -2,7 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import vm from 'node:vm';
 import {readFileSync} from 'node:fs';
-import {recording,recordedChapter} from '../reader/recording.mjs';
+import {recording,recordedChapter,playbackVariants} from '../reader/recording.mjs';
+import {listeningPlan} from '../reader/listening-plan.mjs';
 import {chapterAt,safePosition} from '../reader/session.mjs';
 function harness(saved={},items=[recording]){
  const elements=new Map(),classes=new Set();
@@ -12,8 +13,8 @@ function harness(saved={},items=[recording]){
  const state={audio:saved},store={get:()=>structuredClone(state),set:patch=>Object.assign(state,patch)};
  const document={querySelector:query,body:{classList:{add:c=>classes.add(c),remove:c=>classes.delete(c)}},addEventListener(){},dispatchEvent(){},documentElement:{style:{setProperty(){}}}};
  const recordingForNumber=n=>items.find(r=>r.chapters.some(c=>c.number===n))??null,recordedChapter=n=>recordingForNumber(n)?.chapters.find(c=>c.number===n)??null;
- const context={document,store,defaultRecording:items[0],recordings:items,recordingForNumber,recordedChapter,chapterAt,safePosition,URL,navigator:{},window:{addEventListener(){}},CustomEvent:class{},ResizeObserver:class{observe(){}}};
- const code=readFileSync(new URL('../reader/audio.mjs',import.meta.url),'utf8').replace(/^import .*;\n/gm,'').replace(/export /g,'').replaceAll('import.meta.url',JSON.stringify('https://example.com/reader/audio.mjs'))+'\nglobalThis.api={listen,listenAlong,prepareListening,resumeListening,getPlaybackState,getActiveRecording};';
+ const context={document,store,defaultRecording:items[0],recordings:items,playbackRecordings:[...items,...playbackVariants(items)],listeningPlan,recordingForNumber,recordedChapter,chapterAt,safePosition,URL,navigator:{},window:{addEventListener(){}},CustomEvent:class{},ResizeObserver:class{observe(){}}};
+ const code=readFileSync(new URL('../reader/audio.mjs',import.meta.url),'utf8').replace(/^import .*;\n/gm,'').replace(/export /g,'').replaceAll('import.meta.url',JSON.stringify('https://example.com/reader/audio.mjs'))+'\nglobalThis.api={listen,listenAlong,prepareListening,resumeListening,getPlaybackState,getActiveRecording,listenSession,getListeningState};';
  vm.runInNewContext(code,context);
  return {api:context.api,audio,player:query('#player'),state,classes,elements};
 }
@@ -83,4 +84,51 @@ test('retry reloads failed media and restores its saved position only after meta
  assert.equal(h.state.audio.seconds,50);let loads=0;h.audio.load=function(){loads++;this.readyState=0;this.currentTime=0;this.error=null;};
  h.elements.get('#audio-toggle').click();await new Promise(resolve=>setImmediate(resolve));assert.equal(loads,1);assert.equal(h.api.getPlaybackState().seconds,50);
  h.audio.readyState=1;h.audio.emit('loadedmetadata');assert.equal(h.audio.currentTime,50);
+});
+
+const tick=()=>new Promise(resolve=>setImmediate(resolve));
+function finish(h){h.audio.currentTime=h.api.getActiveRecording().duration;h.audio.ended=true;h.audio.paused=true;h.audio.emit('ended');}
+test('a listening session crosses files on the same media element and stops at its own end',async()=>{
+ const h=harness({},[recording,otherRecording]),original=h.audio;h.api.listenSession([1,2,3,4]);await tick();
+ finish(h);await tick();assert.equal(h.audio,original);assert.equal(h.api.getPlaybackState().number,3);assert.equal(h.audio.playCalls,2);assert.equal(h.state.audio.release,otherRecording.id);
+ finish(h);await tick();assert(h.api.getListeningState().complete);assert.equal(h.audio.playCalls,2);assert(h.elements.get('#audio-message').textContent.includes('session complete'));
+ h.elements.get('#audio-toggle').click();await tick();assert.equal(h.api.getPlaybackState().number,1);assert.equal(h.api.getListeningState().complete,false);
+});
+test('a one-hadith session uses the original complete clip and never leaks the next chapter',async()=>{
+ const h=harness({},[recording,otherRecording]);h.api.listenSession([1]);await tick();assert.equal(h.api.getActiveRecording().chapters.length,1);assert(h.audio.src.endsWith('hadith-1-cedar-v1.mp3'));
+ finish(h);await tick();assert.equal(h.audio.playCalls,1);assert.equal(h.api.getPlaybackState().number,1);
+});
+test('audio gaps are stopping points even when later recordings exist',async()=>{
+ const later={...otherRecording,id:'later',chapters:[{number:4,start:0,duration:40}]};const h=harness({},[recording,later]);
+ h.api.listenSession([1,2,3,4]);await tick();finish(h);await tick();assert.equal(h.audio.playCalls,1);assert.equal(h.api.getListeningState().nextNumber,3);assert(h.elements.get('#audio-message').textContent.includes('Hadith 3'));
+ assert.equal(h.api.listenSession([3,4]),false);assert.equal(h.api.listenSession([1,3]),false);
+});
+test('queued retry keeps the intended next file and route preparation does not discard the queue',async()=>{
+ const h=harness({},[recording,otherRecording]);h.api.listenSession([1,2,3,4]);await tick();
+ h.audio.play=function(){this.playCalls++;this.paused=true;this.ended=false;return Promise.reject(new Error('Blocked'));};finish(h);await tick();
+ assert.equal(h.api.getPlaybackState().number,3);assert(h.elements.get('#audio-message').textContent.includes('Tap Play'));
+ h.api.prepareListening(3);assert(h.api.getListeningState());
+ h.audio.play=function(){this.playCalls++;this.paused=false;return Promise.resolve();};h.elements.get('#audio-toggle').click();await tick();assert.equal(h.api.getPlaybackState().number,3);assert.equal(h.api.getListeningState().index,1);
+});
+test('queue navigation stays within the selected session and preserves paused state and speed',async()=>{
+ const h=harness({},[recording,otherRecording]);h.api.listenSession([2,3,4]);await tick();h.audio.playbackRate=1.1;
+ h.elements.get('#audio-next').click();await tick();assert.equal(h.api.getPlaybackState().number,3);assert.equal(h.audio.playbackRate,1.1);
+ h.elements.get('#audio-toggle').click();h.elements.get('#audio-previous').click();assert.equal(h.api.getPlaybackState().number,2);assert.equal(h.api.getPlaybackState().playing,false);
+ h.elements.get('#audio-back').click();assert.equal(h.api.getPlaybackState().seconds,recording.chapters[1].start);
+});
+test('a saved recording position resumes in its matching session and out-of-session positions are not reused',async()=>{
+ const h=harness({release:otherRecording.id,seconds:25},[recording,otherRecording]);h.api.listenSession([1,2,3,4]);await tick();assert.equal(h.api.getPlaybackState().number,4);assert.equal(h.audio.currentTime,25);
+ h.api.listenSession([1,2]);await tick();assert.equal(h.api.getPlaybackState().number,1);assert.equal(h.audio.currentTime,0);
+});
+test('a user pause or close cancels continuation and a new explicit recording clears the queue',async()=>{
+ const h=harness({},[recording,otherRecording]);h.api.listenSession([1,2,3,4]);await tick();h.elements.get('#audio-toggle').click();const count=h.audio.playCalls;finish(h);await tick();assert.equal(h.audio.playCalls,count);
+ h.api.listenSession([1,2,3,4],{number:2});await tick();h.api.listen(3);assert.equal(h.api.getListeningState(),null);
+ h.api.listenSession([1,2,3,4]);await tick();h.elements.get('#audio-close').click();assert.equal(h.api.getListeningState(),null);assert.equal(h.player.hidden,true);
+});
+
+test('a completed session restarts from its beginning after reopening, while seeking can replay the last recording',async()=>{
+ const h=harness({release:otherRecording.id,seconds:otherRecording.duration},[recording,otherRecording]);h.api.listenSession([1,2,3,4]);await tick();assert.equal(h.api.getPlaybackState().number,1);
+ finish(h);await tick();finish(h);await tick();assert.equal(h.state.audio.seconds,otherRecording.duration);
+ h.api.listenSession([1,2,3,4],{number:3});await tick();assert.equal(h.api.getPlaybackState().number,3);finish(h);await tick();
+ h.elements.get('#audio-back').click();assert.equal(h.api.getListeningState().complete,false);h.elements.get('#audio-toggle').click();await tick();assert.equal(h.api.getPlaybackState().recordingId,otherRecording.id);
 });

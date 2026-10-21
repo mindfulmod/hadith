@@ -9,3 +9,7 @@ export function recordingCoverage(numbers){
  const completeRecording=recordings.find(item=>JSON.stringify(item.chapters.map(c=>c.number))===JSON.stringify(numbers))??null;
  return {recorded,missing,completeRecording};
 }
+
+// Original chapter files provide native media endings for sessions ending inside a combined file.
+export function playbackVariants(items){return items.flatMap(r=>(r.chapterFiles||[]).map(f=>({...r,...f,id:r.id+'-chapter-'+f.number,chapters:[{...r.chapters.find(c=>c.number===f.number),start:0}],chapterFiles:[],parentId:r.id})));}
+export const playbackRecordings=[...recordings,...playbackVariants(recordings)];

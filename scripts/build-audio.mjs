@@ -52,13 +52,22 @@ export function buildAudioCatalog(source,ledger,{readEvidence,readAsset,readOrig
    requireValue(evidence.scripts[i]===entry.script,'Submitted script differs from complete current English');
   }
   requireValue(Math.abs(end-row.duration)<0.000001,'Recording duration omits or exceeds its chapters');
-  const subjectSha256=objectHash({id:row.id,src:row.src,sha256:row.sha256,voice:row.voice,duration:row.duration,chapters:row.chapters,evidence:row.evidence});
+  const chapterFiles=structuredClone(row.chapterFiles||[]),chapterNumbers=new Set();
+  for(const file of chapterFiles){
+   const chapter=row.chapters.find(c=>c.number===file.number);
+   requireValue(objectHash(file)===objectHash(evidence.chapterFiles?.find(f=>f.number===file.number)??null),'Chapter audio mapping differs from evidence');
+   requireValue(chapter&&!chapterNumbers.has(file.number),'Invalid or duplicate chapter file');chapterNumbers.add(file.number);
+   requireValue(/^audio\/[a-z0-9-]+\.(m4a|mp3)$/.test(file.src)&&!paths.has(file.src),'Invalid or reused chapter audio path');paths.add(file.src);
+   const bytes=readAsset(file.src);requireValue(bytes.length===file.bytes&&audioHash(bytes)===file.sha256,'Chapter audio differs from ledger');
+   requireValue(file.duration===chapter.duration&&evidence.files.some(f=>f.file===file.src.slice(6)&&f.sha256===file.sha256),'Chapter audio missing from generation evidence');
+  }
+  const subjectSha256=objectHash({id:row.id,src:row.src,sha256:row.sha256,voice:row.voice,duration:row.duration,chapters:row.chapters,evidence:row.evidence,...(chapterFiles.length?{chapterFiles}:{})});
   if(production){signoff(row.wordingReview,subjectSha256,'spoken-word');signoff(row.pronunciationReview,subjectSha256,'pronunciation');}
   else {
    requireValue(row.publication==='personal-prototype','Audio prototype publication mismatch');
    for(const [review,label]of [[row.wordingReview,'spoken-word'],[row.pronunciationReview,'pronunciation']]){if(review?.status==='approved')signoff(review,subjectSha256,label);else requireValue(review?.status==='pending','Audio review must be pending or independently approved');}
   }
-  recordings.push({...Object.fromEntries(['id','packId','title','album','src','voice','duration','status','bytes','sha256'].map(k=>[k,row[k]])),provenance:row.evidence.path.slice(7),chapters:structuredClone(row.chapters),review:{status:production?'independently-reviewed':'personal-prototype',subjectSha256,wording:row.wordingReview.status,pronunciation:row.pronunciationReview.status}});
+  recordings.push({...Object.fromEntries(['id','packId','title','album','src','voice','duration','status','bytes','sha256'].map(k=>[k,row[k]])),provenance:row.evidence.path.slice(7),chapters:structuredClone(row.chapters),...(chapterFiles.length?{chapterFiles}:{}),review:{status:production?'independently-reviewed':'personal-prototype',subjectSha256,wording:row.wordingReview.status,pronunciation:row.pronunciationReview.status}});
  }
  const catalog={schemaVersion:1,recordings,coverage:{recorded:plan.entries.filter(e=>covered.has(e.number)).map(e=>e.number),unrecorded:plan.entries.filter(e=>!covered.has(e.number)).map(e=>e.number)}};
  return {plan,catalog};

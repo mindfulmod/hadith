@@ -56,7 +56,7 @@ test('separate continuous recordings can cover different source entries without 
  const [source,original]=inputs(),plan=narrationPlan(source),bytes=new Map(),evidence=new Map();
  const rows=[1,2].map(number=>{
   const entry=plan.entries.find(e=>e.number===number),row=structuredClone(original.recordings[0]);
-  row.id='synthetic-'+number;row.packId=row.id;row.src='audio/'+row.id+'.m4a';row.duration=10;
+  delete row.chapterFiles;row.id='synthetic-'+number;row.packId=row.id;row.src='audio/'+row.id+'.m4a';row.duration=10;
   row.chapters=[{number,start:0,duration:10,entryId:entry.id,scriptSha256:entry.scriptSha256,englishBlocksSha256:entry.englishBlocksSha256,presentationSha256:entry.presentationSha256}];
   const media=Buffer.from('SYNTHETIC TEST BYTES — not speech '+number);bytes.set(row.src,media);row.bytes=media.length;row.sha256=audioHash(media);
   const proof=Buffer.from(JSON.stringify({voice:row.voice,scripts:[entry.script],chapters:[{number,start:0,duration:10}],files:[{file:row.src.slice(6),sha256:row.sha256}]}));
@@ -70,4 +70,11 @@ test('rebinding every input still cannot label a recording with a skipped source
  Object.assign(row.chapters[1],{number:3,entryId:entry.id,scriptSha256:entry.scriptSha256,englishBlocksSha256:entry.englishBlocksSha256,presentationSha256:entry.presentationSha256});
  const proof=json(row.evidence.path);proof.chapters[1].number=3;proof.scripts[1]=entry.script;const raw=Buffer.from(JSON.stringify(proof));row.evidence.sha256=audioHash(raw);
  assert.throws(()=>buildAudioCatalog(source,ledger,{...options,readEvidence:()=>raw}),/skip or reorder/);
+});
+
+test('chapter playback originals are bound to entry-specific evidence and exact media bytes',()=>{
+ for(const change of [l=>l.recordings[0].chapterFiles[0].number=2,l=>l.recordings[0].chapterFiles[0].duration++,l=>l.recordings[0].chapterFiles[0].sha256='wrong',l=>l.recordings[0].chapterFiles[0].src='../private.mp3']){
+  const [source,ledger]=inputs();change(ledger);assert.throws(()=>buildAudioCatalog(source,ledger,options));
+ }
+ const [source,ledger]=inputs();assert.throws(()=>buildAudioCatalog(source,ledger,{...options,readAsset:p=>p.endsWith('.mp3')?Buffer.from('changed original'):options.readAsset(p)}),/Chapter audio differs/);
 });
