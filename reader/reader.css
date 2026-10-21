@@ -70,3 +70,5 @@ body:not([data-view=listen]):not([data-view=read]) #audio-close{grid-column:3}
 #audio-next-step{grid-column:1/-1;font-size:13px;line-height:1.6;margin:0;text-align:center}#audio-next-step span{color:var(--muted)}#audio-next-step a{display:inline-flex;align-items:center;min-height:44px;padding:10px;color:var(--ink);font-weight:600}
 
 #audio-listen-next{font-size:13px;margin:4px 6px}#audio-listen-next[hidden]{display:none}
+
+.chapter-context-long summary{cursor:pointer;min-height:44px;padding:10px 0;color:var(--ink)}.chapter-context-long summary span{float:right;color:var(--muted);font-size:12px}.chapter-context-long p{margin:6px 0 16px}.chapter-context-long[open] summary{margin-bottom:6px}

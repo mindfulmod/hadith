@@ -1,0 +1,72 @@
+{
+  "checkedAt": "2026-10-20",
+  "readerRelease": "opening-143486e039d5",
+  "sourceRecordSha256": "93335c75460fb975eb416df30f958d1123b9914996dccf737fefb1f6e22e7f7d",
+  "status": "personal-prototype-only",
+  "scope": "29 complete numbered entries across two books. This release adds 18–29; actual Cedar audio remains 1–3.",
+  "source": {
+    "faithRevision": 490285,
+    "admittedRange": [
+      18,
+      29
+    ],
+    "arabicParagraphs": 25,
+    "englishSegments": 29,
+    "earlierEntries": "All 17 earlier entry objects deep-compared with the previous published commit and unchanged.",
+    "printedWitnesses": [
+      {
+        "id": "brill-1862",
+        "pdfPages": [
+          12,
+          13,
+          14,
+          15
+        ],
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+      },
+      {
+        "id": "dar-ibn-kathir-2002",
+        "pdfPages": [
+          14,
+          15,
+          16,
+          17
+        ],
+        "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+      }
+    ],
+    "witnessMethod": "Downloaded files matched the recorded hashes. All listed Arabic PDF pages were rendered and visually inspected. Per-entry comparisons and differences are preserved in the review record.",
+    "englishComparators": "Aisha Bewley entries 18–29 and IslamHouse Khan-family references 1.2.17–28, matched individually by wording. These are comparisons, not the origin of copied English.",
+    "heading29": "Digital wording differs from both inspected print witnesses. No Arabic correction applied; English heading withheld. App status and explanatory note are separate from the report.",
+    "reviewRecord": "content/review/faith-next-review.json",
+    "batchRegistry": "content/review/faith-batches.json"
+  },
+  "automated": {
+    "node": 114,
+    "python": 33,
+    "failed": 0,
+    "checks": "Pinned source imports, collection and recording reproduction, exact source-span ownership, unchanged earlier entries, explicit prototype admission, stale/gapped/reordered batch refusal, reporting-verb counts, chapter-discrepancy evidence, content packs, narration segmentation, production refusal and deployment packaging."
+  },
+  "browser": {
+    "english": "All 29 new English segments in reports 18–29 were compared from the rendered DOM with their canonical blocks; all matched exactly.",
+    "arabic": "All 25 new Arabic paragraphs in reports 18–29 were compared from the source dialog with their canonical blocks; all matched exactly.",
+    "chapters": "Hadith 27 long heading starts collapsed and expands to the complete stored title. Hadith 29 displays the separate unresolved-heading notice.",
+    "search": "Exact phrase Malik was unsure returns Hadith 22.",
+    "session": "Started a 5-minute session at 18, browsed to 29, returned to the session; Continue remains 18.",
+    "offline": "Save reading reported Ready offline for all 29 entries. With the preview server then stopped, reader reload, Hadith 29 Arabic/source dialog and the local faith-review.html#hadith-29 notes opened successfully; a fresh reader tab at 27 also loaded. External PDF/source sites were not claimed offline.",
+    "layout": "320px layout checked with largest 28px reading text and an expanded long chapter heading; no horizontal overflow. Standard text checked in day at 320px, night at 393px, and desktop at 1280px.",
+    "errors": "No error-level console messages in the checked reader tabs.",
+    "screenshots": [
+      "/private/tmp/hadith-faith-27-day.png",
+      "/private/tmp/hadith-faith-29-day.png",
+      "/private/tmp/hadith-faith-27-night.png"
+    ]
+  },
+  "limits": [
+    "AI-assisted comparison is not independent scholarly certification.",
+    "Unnumbered chapter introductions remain separately preserved in Arabic; English translation pending.",
+    "The expanded 29-entry download still needs iPhone Safari and Home Screen acceptance.",
+    "No new audio media or playback code in this release. New spoken-word and pronunciation review remains pending.",
+    "The full collection, automatic transitions across distinct recordings and production content review are incomplete."
+  ]
+}

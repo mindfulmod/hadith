@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {buildFaithBatch,collectionFiles} from '../scripts/build-collection.mjs';
+import {buildFaithBatch,collectionFiles,combineFaithReviews} from '../scripts/build-collection.mjs';
 import {prototypeFiles} from '../scripts/build-opening-prototype.mjs';
 import {buildBooks,objectHash,digest} from '../scripts/publish-books.mjs';
 import {sourceSegments} from '../reader/source-structure.mjs';
@@ -28,12 +28,12 @@ test('stale wording, Arabic replacements, missing chains and reassigned chapters
 test('assembly preserves the seven existing entries and admits only the explicit two-book version',()=>{
  const opening=prototypeFiles(),{source,ledger}=collectionFiles();assert.deepEqual(source.entries.slice(0,7),opening.source.entries);
  assert.equal(buildBooks(source,ledger).catalog.books.length,2);assert.equal(ledger.books[1].sourceEntryCount,51);assert.throws(()=>validateChapters({...ledger.books[1],sourceEntryCount:9}),/source entry count/);assert.throws(()=>buildBooks(source,ledger,{production:true}));
- const copy=structuredClone(source),l=structuredClone(ledger);copy.entries.push({...copy.entries.at(-1),number:18,id:'bukhari:18'});l.sourceRecordSha256=objectHash(copy);l.entries.push({...l.entries.at(-1),number:18,id:'bukhari:18'});assert.throws(()=>buildBooks(copy,l),/not admitted/);
+ const copy=structuredClone(source),l=structuredClone(ledger);copy.entries.push({...copy.entries.at(-1),number:30,id:'bukhari:30'});l.sourceRecordSha256=objectHash(copy);l.entries.push({...l.entries.at(-1),number:30,id:'bukhari:30'});assert.throws(()=>buildBooks(copy,l),/not admitted/);
 });
 test('a ten-minute session crosses the real book boundary without growing an existing seven-entry session',()=>{
  const {source}=collectionFiles();const plan=startSession(source.entries,7,10);assert(plan.numbers.includes(7)&&plan.numbers.includes(8));
  const saved={numbers:[7],cursor:7,ended:true};assert.deepEqual(resolveSession(source.entries,saved,10,7),saved);assert.equal(nextSession(source.entries,saved,5).cursor,8);
- assert.deepEqual(planSession(source.entries,17,5).numbers,[17]);for(let n=8;n<=17;n++)assert.equal(recordedChapter(n),null);
+ assert(planSession(source.entries,17,5).numbers.includes(18));assert.deepEqual(resolveSession(source.entries,{numbers:[17],cursor:17,ended:false},5,17),{numbers:[17],cursor:17,ended:false});assert.deepEqual(planSession(source.entries,29,5).numbers,[29]);for(let n=8;n<=29;n++)assert.equal(recordedChapter(n),null);
 });
 test('the two real books load separately and expose complete search content only after both succeed',async()=>{
  const {source,ledger,files:derived}=collectionFiles(),published=buildBooks(source,ledger),responses=new Map(published.files),calls=[];
@@ -41,4 +41,37 @@ test('the two real books load separately and expose complete search content only
  const files=[...responses].map(([path,body])=>({path,bytes:Buffer.byteLength(body),sha256:digest(body)}));
  const library=await createContentLibrary({files,base:new URL('https://example.com/reader/'),fetcher:async u=>{const path=u.pathname.slice(8);calls.push(path);return new Response(responses.get(path));}});
  await library.loadForNumber(8);assert.equal(calls.length,2);assert.equal(library.getEntry(7),undefined);assert.equal(library.getEntry(8).id,'bukhari:8');assert.deepEqual(await library.loadAllEntries(),source.entries);assert.equal(calls.length,3);
+});
+
+test('new Faith batches preserve all seventeen earlier entries and every new Arabic paragraph',()=>{
+ const {source}=collectionFiles(),opening=prototypeFiles().source.entries,first=buildFaithBatch(...input()).entries;
+ assert.deepEqual(source.entries.slice(0,17),[...opening,...first]);assert.equal(source.entries.length,29);
+ const inventory=input()[0],next=read('content/review/faith-next-review.json');
+ for(const row of next.entries){const e=source.entries.find(e=>e.number===row.number);assert.deepEqual(e.arabic_blocks,row.paragraphIds.map(id=>inventory.blocks.find(b=>b.htmlId===id).text));assert.deepEqual(sourceSegments(e,'english').map(s=>s.text),row.segments.map(s=>s.english));}
+});
+test('registered batches reject stale records, gaps, reordered references and duplicate chapter ownership',()=>{
+ const registry=read('content/review/faith-batches.json');
+ assert.equal(combineFaithReviews(registry).entries.length,22);
+ const stale=structuredClone(registry);stale.batches[1].sha256='0'.repeat(64);assert.throws(()=>combineFaithReviews(stale),/Changed/);
+ const gap=structuredClone(registry);gap.batches[1].first=19;assert.throws(()=>combineFaithReviews(gap),/consecutive/);
+ for(const mutate of [r=>r.entries.reverse(),r=>r.entries.pop(),r=>r.chapters[0].id='chapter-01']){
+  const r=read('content/review/faith-next-review.json');mutate(r);const reg=structuredClone(registry);reg.batches[1].sha256=objectHash(r);assert.throws(()=>combineFaithReviews(reg,p=>p===reg.batches[1].path?r:read(p)));
+ }
+});
+test('narrator doubt and alternate transmission remain separate and in exact source order',()=>{
+ const {source}=collectionFiles();
+ assert.deepEqual(sourceSegments(source.entries.find(e=>e.number===22),'english').map(s=>s.kind),['chain','report','transmission-note','report','transmission-note']);
+ assert.deepEqual(sourceSegments(source.entries.find(e=>e.number===27),'english').map(s=>s.kind),['chain','report','transmission-note']);
+ assert.deepEqual(sourceSegments(source.entries.find(e=>e.number===28),'english').map(s=>s.kind),['chain','report','report']);
+});
+test('reporting verb checks recognize Arabic marks and distinguish singular from plural',()=>{
+ for(const [number,from,to]of [[20,'related to us','informed us'],[22,'related to me','related to us']]){
+  const review=read('content/review/faith-next-review.json'),row=review.entries.find(e=>e.number===number),s=row.segments[0];s.english=s.english.replace(from,to);s.englishSha256=digest(s.english);row.englishSha256=digest(row.segments.map(s=>s.english).join('\n\n'));delete row.reviewRecordSha256;row.reviewRecordSha256=objectHash(row);assert.throws(()=>buildFaithBatch(input()[0],review,input()[2]),/Reporting verb mismatch/);
+ }
+});
+test('the disputed heading is an explicit status with offline original and cited source context',()=>{
+ const {ledger,files}=collectionFiles(),chapter=ledger.books[1].chapters.find(c=>c.entryNumbers.includes(29));assert.equal(chapter.title,'Chapter heading under review');
+ const ref=ledger.sourceReferences.entries.find(e=>e.number===29);assert(ref.contextNotes[0].citations.includes('brill-1862'));assert(ref.contextNotes[0].citations.includes('dar-ibn-kathir-2002'));
+ const inputs=JSON.parse(files.get('reader/faith-inputs.json'));assert(inputs.selectedBlocks.some(b=>b.text.includes('وكفر بعد كفر فيه')));assert(files.get('reader/faith-review.html').includes('not source wording'));
+ const review=read('content/review/faith-next-review.json');delete review.chapters.at(-1).headingDiscrepancy;assert.throws(()=>buildFaithBatch(input()[0],review,input()[2]));
 });

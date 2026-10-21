@@ -14,7 +14,7 @@ test('the local-only navigation fixture remains loadable with complete presentat
   execFileSync(process.execPath,['tests/create-browser-fixture.mjs',out],{cwd:new URL('../',import.meta.url)});
   const {release}=await import(pathToFileURL(join(out,'reader/release.mjs')).href);validatePacks(release);
   const library=await createContentLibrary({files:release.files,base:new URL('https://example.invalid/reader/'),fetcher:async url=>new Response(readFileSync(join(out,url.pathname)))});
-  const entries=await library.loadAllEntries();assert.equal(entries.length,112);
+  const entries=await library.loadAllEntries();const published=JSON.parse(readFileSync(new URL('../reader/books/catalog.json',import.meta.url),'utf8'));assert.equal(entries.length,published.entries.length+95);assert.deepEqual(entries.filter(e=>e.id.startsWith('bukhari:')).map(e=>e.id),published.entries.map(e=>e.id));
   const synthetic=entries.filter(entry=>entry.id.startsWith('fixture:'));assert.equal(synthetic.length,95);
   assert(synthetic.every(entry=>entry.english_blocks[0]==='TEST FIXTURE — not a hadith.'));
   const packs=await Promise.all(library.catalog.books.map(book=>library.loadBook(book.id)));

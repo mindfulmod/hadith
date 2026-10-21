@@ -96,7 +96,7 @@ class ArabicEditionInventoryTests(unittest.TestCase):
     def test_committed_inventory_reproduces_and_sources_are_not_in_reader(self):
         self.assertEqual(json.loads(jk.OUTPUT.read_text()),self.result)
         published=json.loads((ROOT/'reader/books/catalog.json').read_text())
-        self.assertEqual([e['number'] for e in published['entries']],list(range(1,18)))
+        self.assertEqual([e['number'] for e in published['entries']],list(range(1,30)))
         self.assertEqual(published['publication'],'personal-prototype')
         self.assertTrue(all(e['id'].startswith('bukhari:') for e in published['entries']))
         release=(ROOT/'reader/release.mjs').read_text()

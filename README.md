@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The personal reader is at `reader/`: seventeen complete Bukhari entries across two books, Cedar AI narration for Hadith 1–3, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The personal reader is at `reader/`: twenty-nine complete Bukhari entries across two books, Cedar AI narration for Hadith 1–3, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Run
 
@@ -315,3 +315,14 @@ The four original MP3 downloads are preserved under `content/audio/raw/`. `scrip
 The recording has its own optional offline pack. Generation provenance for every recording is included with reading downloads. At the end of Hadith 2, an explicit Listen to Hadith 3 action switches the persistent player; at the end of Hadith 3, the reader offers Hadith 4 as text. Automatic transitions between distinct recordings remain future work. Existing Hadith 1–2 media and all source wording are unchanged.
 
 `research/hadith-3-audio-verification.json` records 141 automated checks and local browser observations, including saved playback with the preview server stopped. iPhone locked-screen playback and listening quality for this new recording remain unconfirmed.
+
+
+## Further Book of Faith entries · 20 October 2026
+
+The personal prototype now contains Hadith 1–29. The Faith book has 22 of the selected source’s 51 numbered reports available. `content/review/faith-next-review.json` adds reports 18–29 with 25 unchanged Arabic paragraphs and 29 complete English segments. Both pinned Arabic print witnesses were visually compared, and the report bodies were compared with Bewley and the individually matched Khan-family IslamHouse references. The new English remains an AI-assisted working translation, with independent review pending. The earlier 17 entry objects and all recording media remain unchanged.
+
+`content/review/faith-batches.json` registers each exact review version and consecutive source range. The collection builder rejects altered or reordered batch records, incomplete source spans and duplicate chapter ownership. The prototype admission remains bound to the exact resulting source and context hashes. All 29 entries have complete input scripts; actual Cedar audio remains Hadith 1–3. Longer unrecorded paragraphs that exceed the demo input limit are refused by the segmenter rather than shortened.
+
+Hadith 22 retains Malik’s uncertainty and the final Wuhayb transmission note. Hadith 27 retains its alternate transmission note. The heading above Hadith 29 differs between the digital source and both printed witnesses; its English translation is withheld and an explicit source-context notice links to the preserved evidence. The Arabic is not silently corrected. Unnumbered chapter introductions remain separate, with English translation pending.
+
+Long chapter headings are complete inside an expandable “Chapter context” section; short headings remain visible. `research/faith-next-verification.json` records 147 automated checks, exact rendered Arabic and English comparisons for all 12 new entries, session/search checks, narrow day/night layouts and saved reader/source-note access with the local server stopped. These desktop checks do not establish iPhone acceptance or scholarly accuracy.
