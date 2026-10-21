@@ -15,6 +15,7 @@ function validateCatalog(catalog){
   requireValue(typeof b.sha256==='string'&&/^[a-f0-9]{64}$/.test(b.sha256)&&b.path===`books/${b.id}-${b.sha256.slice(0,16)}.json`&&Number.isSafeInteger(b.bytes)&&b.bytes>0,'Invalid book download');
   requireValue(Array.isArray(b.entryNumbers)&&b.entryNumbers.length>0,'Empty book');
   validateChapters(b);
+  for(const chapter of b.chapters||[])if(chapter.sourceContext)requireValue(typeof chapter.sourceContext.notes.path==='string','Missing chapter source path');
  }
  const numbers=new Set(),ids=new Set();
  for(const e of catalog.entries){
@@ -38,6 +39,7 @@ export async function createContentLibrary({files,base=new URL('./',import.meta.
  const index=descriptors.get('books/catalog.json');requireValue(index,'Collection index unavailable');
  const catalog=freeze(validateCatalog(await read(index))),pending=new Map(),loaded=new Map();
  const summaries=new Map(catalog.entries.map(e=>[e.number,e]));
+ for(const book of catalog.books)for(const chapter of book.chapters||[])if(chapter.sourceContext)requireValue(descriptors.has(chapter.sourceContext.notes.path),'Offline chapter source notes are missing from this release');
  function loadBook(id){
   if(loaded.has(id))return Promise.resolve(loaded.get(id));
   if(pending.has(id))return pending.get(id);

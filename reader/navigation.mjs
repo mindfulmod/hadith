@@ -5,7 +5,15 @@ export function validateChapters(book) {
  if(!Array.isArray(book.chapters)||!book.chapters.length)throw new Error('Empty chapter context');
  const ids=new Set();
  for(const chapter of book.chapters){
-  if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(chapter.id)||ids.has(chapter.id)||typeof chapter.title!=='string'||!chapter.title.trim()||!Array.isArray(chapter.entryNumbers)||!chapter.entryNumbers.length)throw new Error('Invalid chapter context');
+  if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(chapter.id)||ids.has(chapter.id)||typeof chapter.title!=='string'||!chapter.title.trim()||!Array.isArray(chapter.entryNumbers))throw new Error('Invalid chapter context');
+  const context=chapter.sourceContext;
+  if(context!==undefined){
+   const notes=context?.notes,introduction=context?.introduction;
+   if(context.schemaVersion!==1||!['ai-working-translation','heading-discrepancy-pending','reviewed-translation'].includes(context.headingStatus)||!['present','none-in-source'].includes(context.numberedReports))throw new Error('Invalid chapter source status');
+   if((context.numberedReports==='present')!==Boolean(chapter.entryNumbers.length))throw new Error('Chapter report status contradicts its entries');
+   if(!Number.isSafeInteger(introduction?.arabicParagraphs)||introduction.arabicParagraphs<0||(introduction.arabicParagraphs===0?introduction.englishStatus!=='not-applicable':!['pending','reviewed-translation'].includes(introduction.englishStatus)))throw new Error('Invalid chapter introduction status');
+   if(!notes||typeof notes.path!=='string'||!/^[a-z0-9][a-z0-9/_.-]*\.html$/.test(notes.path)||notes.path.split('/').some(p=>p==='..'||p==='.'||!p)||notes.fragment!==chapter.id)throw new Error('Invalid chapter source notes');
+  }else if(!chapter.entryNumbers.length)throw new Error('A chapter without reports needs explicit source context');
   ids.add(chapter.id);
  }
  if(JSON.stringify(book.chapters.flatMap(c=>c.entryNumbers))!==JSON.stringify(book.entryNumbers))throw new Error('Chapter order must assign each available entry exactly once');

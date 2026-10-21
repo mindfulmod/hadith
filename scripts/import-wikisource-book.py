@@ -42,12 +42,39 @@ def extract(raw,manifest):
 
 def build(directory):
     manifest=json.loads((directory/'manifest.json').read_text())
-    return extract((directory/manifest['file']['path']).read_bytes(),manifest)
+    if manifest.get('file',{}).get('path')!='source.html':raise ValueError('Unexpected source file path')
+    return extract((directory/'source.html').read_bytes(),manifest)
+
+def inventory_paths(registry,root=ROOT):
+    if registry.get('schemaVersion')!=1 or not isinstance(registry.get('books'),list) or not registry['books']:
+        raise ValueError('Invalid Wikisource book registry')
+    seen=set();paths=[]
+    for row in registry['books']:
+        id=row.get('id')
+        if not isinstance(id,str) or not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*',id) or id in seen:
+            raise ValueError('Invalid or duplicate source book identity')
+        seen.add(id)
+        if row.get('sourceDirectory')!=f'content/sources/wikisource-{id}' or row.get('inventory')!=f'content/staging/bukhari-{id}-wikisource/catalog.json':
+            raise ValueError('Unexpected source or inventory path')
+        source=root/row['sourceDirectory'];output=root/row['inventory']
+        for path in [source,source/'manifest.json',source/'source.html',output]:
+            if not path.resolve().is_relative_to(root.resolve()):raise ValueError('Source registry escapes repository')
+        paths.append((id,source,output))
+    return paths
+
+def build_registered(registry,check=False):
+    results=[]
+    # Validate every source and existing output before writing any inventory.
+    for id,directory,output in inventory_paths(registry):
+        result=build(directory);text=encoded(result)
+        if check and output.read_text()!=text:raise ValueError('Stale book inventory: '+id)
+        results.append((id,output,result,text))
+    if not check:
+        for _,output,_,text in results:output.parent.mkdir(parents=True,exist_ok=True);output.write_text(text)
+    return [(id,result)for id,_,result,_ in results]
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--check',action='store_true');args=p.parse_args()
-    result=build(ROOT/'content/sources/wikisource-faith');output=ROOT/'content/staging/bukhari-faith-wikisource/catalog.json';text=encoded(result)
-    if args.check:
-        if output.read_text()!=text:raise ValueError('Stale book inventory')
-    else:output.parent.mkdir(parents=True,exist_ok=True);output.write_text(text)
-    print(f"{len(result['records'])} numbered spans, {len(result['chapters'])} source headings, {len(result['blocks'])} exact blocks; candidate only")
+    registry=json.loads((ROOT/'content/sources/wikisource-books.json').read_text())
+    for id,result in build_registered(registry,check=args.check):
+        print(f"{id}: {len(result['records'])} numbered spans, {len(result['chapters'])} source headings, {len(result['blocks'])} exact blocks; candidate only")

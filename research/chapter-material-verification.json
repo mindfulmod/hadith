@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-10-20",
+  "readerRelease": "opening-146d8edbea55",
+  "sourceRecordSha256": "d2c67f16c4e4f2701e3e591b1ea58a06101b1f4e64eab060afd8bd9b91651243",
+  "catalogContextSha256": "f5376deb172e24fa3deee5a0fa914f4e6dc1a03041e2f5296c8a6ef183de74a4",
+  "status": "personal-prototype-only",
+  "scope": "Source-backed chapter availability, direct offline chapter anchors and standalone chapter navigation. All 58 hadith, complete narration inputs, existing recordings and playback/session code unchanged. Knowledge intake remains separate and unpublished.",
+  "sourceChanges": {
+    "faith": "All 42 chapter headings and 15 introductory paragraphs have dedicated offline sections. Fourteen chapters have introductions whose English is pending. The disputed English heading above Hadith 29 remains withheld.",
+    "knowledge": "Revision 252975 preserved: 76 numbered reports, 54 headings, 13 introductory paragraphs, one blank paragraph; all 178 blocks owned exactly once. Three chapters have no numbered reports. See knowledge-source-audit.json.",
+    "versioning": "Prototype admissions can identify the exact source and exact catalogue context independently. Earlier admissions of the same source remain intact; altered chapter availability cannot reuse their approval."
+  },
+  "automated": {
+    "node": 137,
+    "python": 39,
+    "failed": 0,
+    "coverage": "Explicit source-only chapters; no invented hadith routes or session entries; source order; contradictory status and unsafe link rejection; complete pinned intake and one-owner coverage; independent source/context admission; exact catalogue/book agreement; required offline notes; unique chapter anchors; unchanged source, narration and recorded audio; existing production gates and reader checks."
+  },
+  "browser": {
+    "sourceText": "All 42 chapter sections compared from the rendered source-page DOM: 42 Arabic headings plus 15 introductory paragraphs exactly match their pinned source blocks.",
+    "navigation": "Chapter 20 shows the withheld English heading status, Next chapter opens 21, and both have correct adjacent links. A session started at 44 still continues at 44 after chapter browsing.",
+    "availability": "Chapter 42 shows one Arabic introduction pending English; chapter 1 shows two. The book view derives pending availability from exact chapter metadata.",
+    "offline": "All reading material reached Ready offline (4.31 MB). After stopping the preview server, the reader reloaded and opened Chapter 1; a separate tab opened its saved source section and all three Arabic blocks matched exactly.",
+    "layout": "Long chapter 42 checked in day/night views; at a measured 320px width it had no horizontal overflow. Standard text night view captured at 393px for Chapter 33.",
+    "errors": "No error-level browser logs.",
+    "screenshot": "/private/tmp/hadith-chapter-material.png"
+  },
+  "decision": "Asked whether chapter-only material should enter daily sessions. No additional answer received during implementation. Default remains numbered-hadith sessions with chapter material available separately through browsing; no user confirmation is claimed.",
+  "limits": [
+    "Standalone chapters are exercised with synthetic navigation fixtures; the Knowledge book is not yet in the reader.",
+    "Chapter introductions remain Arabic-only. No AI comparison is represented as independent human review.",
+    "The full collection and audio beyond Hadith 3 remain incomplete. iPhone acceptance of expanded downloads and separate-file locked-screen playback is still pending."
+  ]
+}

@@ -128,3 +128,14 @@ test('the visitor wording discrepancy remains visible and supported without modi
  assert(entry.arabic_blocks[1].includes('فأتاه جبريل'));assert(entry.english_blocks[1].includes('Jibril came to him'));
  assert.deepEqual(ref.contextNotes[0].citations,['base','brill-1862','dar-ibn-kathir-2002']);assert.match(ref.contextNotes[0].text,/Both printed comparisons say “a man”/);assert.match(files.get('reader/faith-review.html'),/visitor’s arrival/);
 });
+
+test('chapter source availability is exact and has its own admission without changing hadith wording',()=>{
+ const {source,ledger,files}=collectionFiles(),inventory=input()[0];
+ assert.equal(ledger.sourceRecordSha256,'d2c67f16c4e4f2701e3e591b1ea58a06101b1f4e64eab060afd8bd9b91651243');
+ for(const chapter of ledger.books[1].chapters){const original=inventory.chapters.find(c=>c.id===chapter.id);assert.equal(chapter.sourceContext.introduction.arabicParagraphs,original.contextIds.length);assert.equal(chapter.sourceContext.introduction.englishStatus,original.contextIds.length?'pending':'not-applicable');assert.equal(chapter.sourceContext.notes.fragment,chapter.id);assert.equal((files.get('reader/faith-review.html').match(new RegExp('id="'+chapter.id+'"','g'))||[]).length,1);}
+ assert.equal(ledger.books[1].chapters.filter(c=>c.sourceContext.introduction.englishStatus==='pending').length,14);
+ assert.equal(ledger.books[1].chapters[19].sourceContext.headingStatus,'heading-discrepancy-pending');
+ const old=read('content/review/prototype-admissions.json').admissions.filter(a=>a.sourceRecordSha256===ledger.sourceRecordSha256);assert.equal(old.length,2);assert.notDeepEqual(old[0].books,old[1].books);assert.equal(old[1].catalogContextSha256,ledger.catalogContextSha256);
+ assert.equal(buildBooks(source,ledger).catalog.entries.length,58);
+ const bad=structuredClone(ledger);bad.books[1].chapters[0].sourceContext.introduction.arabicParagraphs=3;bad.catalogContextSha256=objectHash(bad.books);assert.throws(()=>buildBooks(source,bad),/not admitted/);
+});

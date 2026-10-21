@@ -18,7 +18,7 @@
     {
       "id": "source-coverage",
       "status": "two-candidates-inventoried-selected-reference-defects-investigated",
-      "evidence": "content/sources/openiti-bukhari/manifest.json; content/staging/bukhari-ar/catalog.json; content/sources/openiti-bukhari-jk/manifest.json; content/staging/bukhari-ar-jk/catalog.json; research/arabic-reference-audit.json",
+      "evidence": "content/sources/openiti-bukhari/manifest.json; content/staging/bukhari-ar/catalog.json; content/sources/openiti-bukhari-jk/manifest.json; content/staging/bukhari-ar-jk/catalog.json; research/arabic-reference-audit.json; content/sources/wikisource-books.json; content/sources/wikisource-knowledge/manifest.json; research/knowledge-source-audit.json",
       "remaining": "Complete the edition-specific reference and chapter map and verify Arabic wording. The first candidate has 173 absent numeric labels and 10 empty spans, not 173 proven missing narrations. Selected printed comparisons explain labels 409, 411 and 4137 as combined/embedded passages and confirm local empty/misassigned spans at 1161–1167 and 3382. The JK inventory accounts for every byte in 7,129 report spans and 3,965 heading-context spans; its duplicate 3905 passages, four suffixes, context boundaries and upstream transcription warnings remain subject to review."
     },
     {
@@ -30,14 +30,14 @@
     {
       "id": "content-review-gates",
       "status": "separate-personal-prototype-and-production-gates",
-      "evidence": "content/review/opening-ledger.json; scripts/publish-books.mjs; tests/content-library.test.mjs; reader/source-references.mjs; tests/source-references.test.mjs; content/review/opening-prototype-ledger.json; tests/opening-prototype.test.mjs; scripts/build-collection.mjs; content/review/prototype-admissions.json; tests/collection-batches.test.mjs; content/review/faith-batches.json; content/review/faith-next-review.json; content/review/faith-third-review.json; content/review/faith-final-review.json",
+      "evidence": "content/review/opening-ledger.json; scripts/publish-books.mjs; tests/content-library.test.mjs; reader/source-references.mjs; tests/source-references.test.mjs; content/review/opening-prototype-ledger.json; tests/opening-prototype.test.mjs; scripts/build-collection.mjs; content/review/prototype-admissions.json; tests/collection-batches.test.mjs; content/review/faith-batches.json; content/review/faith-next-review.json; content/review/faith-third-review.json; content/review/faith-final-review.json; research/chapter-material-verification.json",
       "remaining": "Obtain actual independent human reviews and reuse evidence. Current production publishing is deliberately refused. Extend edition/reference mapping before expanding beyond the evaluation namespace; audio review needs its own ledger. Source presentation and per-entry citations are validated and bound to exact review hashes. Reference metadata requires its own human approval for production."
     },
     {
       "id": "library-navigation-search",
-      "status": "book-browser-and-pagination-implemented",
-      "evidence": "reader/navigation.mjs; reader/library.mjs; tests/navigation.test.mjs; research/navigation-verification.json",
-      "remaining": "Publish independently reviewed source chapter metadata and edition-specific reference maps; support any headings without report assignments found in the selected edition. The personal prototype contains 58 entries in two books. Faith has 42 source headings: 41 have provisional English and the heading above Hadith 29 is withheld pending resolution. A dedicated full-library search index remains to be built; current exact search loads all available book packs before returning results."
+      "status": "source-aware-chapter-browsing-implemented",
+      "evidence": "reader/navigation.mjs; reader/library.mjs; tests/navigation.test.mjs; research/navigation-verification.json; research/chapter-material-verification.json",
+      "remaining": "Publish independently reviewed source chapter metadata and edition-specific reference maps. The personal prototype contains 58 entries in two books; all 42 Faith headings and 15 Arabic introductory paragraphs have direct offline access, with 14 chapter introductions pending English. Source-only chapters are now supported without invented hadith numbers and tested with synthetic fixtures; the Knowledge source still needs comparison and translation before admission. A full-library search index remains to be built; current exact search loads all available book packs."
     },
     {
       "id": "session-planning",
@@ -66,7 +66,7 @@
     {
       "id": "production-testing",
       "status": "in-progress",
-      "evidence": "165 automated checks (132 Node, 33 Python); research/navigation-verification.json; research/offline-packs-verification.json; research/reader-structure-verification.json; research/source-reference-verification.json; .github/workflows/reader-checks.yml; research/audio-catalog-verification.json; research/hadith-3-audio-verification.json; research/faith-next-verification.json; research/listening-session-verification.json; research/faith-third-verification.json; research/faith-final-verification.json",
+      "evidence": "176 automated checks (137 Node, 39 Python); research/navigation-verification.json; research/offline-packs-verification.json; research/reader-structure-verification.json; research/source-reference-verification.json; .github/workflows/reader-checks.yml; research/audio-catalog-verification.json; research/hadith-3-audio-verification.json; research/faith-next-verification.json; research/listening-session-verification.json; research/faith-third-verification.json; research/faith-final-verification.json; research/chapter-material-verification.json",
       "remaining": "Accessibility audit, keyboard/screen reader review, optional iPhone full-place/settings restore and locked-screen/interruption acceptance after final architecture changes. Default iPhone backup export/merge restore and browsing/session separation are confirmed. Deploy checks gate publishing."
     },
     {
@@ -77,7 +77,7 @@
     }
   ],
   "nextActions": [
-    "Complete and compare the English chapter introductions for Faith, resolve the documented heading discrepancy above Hadith 29 and visitor wording at 50, then inventory the next book (Knowledge) without assuming shared numbering. Generate and compare the next Cedar recordings from the exact narration plan.",
+    "Compare and translate the first Knowledge reports (59–67) and their chapter material, generalize book assembly using explicit source/book configuration, and retain the three source-only chapters. Continue Faith introduction translation and resolve the documented heading/visitor wording discrepancies. Generate and compare the next Cedar recordings from the exact narration plan.",
     "Complete the Arabic edition/reference map using the new exact-span inventory and pinned printed-witness findings; keep combined labels distinct from missing or misassigned bodies.",
     "Find a more complete authoritative English witness: the IslamHouse EPUB and PDF share seven checked omissions and additional transcription defects. Keep their exact inventories as comparison evidence rather than patching them silently.",
     "Obtain complete English source coverage and explicit offline/narration permissions; request #4160 is posted.",
@@ -160,5 +160,17 @@
     "readerRelease": "opening-568fccbfcf0d",
     "verification": "research/listening-session-verification.json",
     "policy": "Finite ordered prefix of the selected session; stop at a missing recording or exact session boundary. No automatic skip over gaps. This recommended default was presented to the user; no additional answer was received this turn."
+  },
+  "knowledgeIntake": {
+    "status": "candidate-inventoried-not-published",
+    "record": "research/knowledge-source-audit.json",
+    "source": "content/sources/wikisource-knowledge/manifest.json",
+    "range": "59–134",
+    "remaining": "Printed Arabic and English comparisons, complete translations, chapter source mapping, presentation spans, explicit prototype admission and independent reviews."
+  },
+  "chapterMaterial": {
+    "status": "implemented-browser-offline-verified",
+    "verification": "research/chapter-material-verification.json",
+    "policy": "Daily sessions continue to use numbered hadith. Chapter sources are available separately through browsing; the optional question about including them in sessions remains pending."
   }
 }

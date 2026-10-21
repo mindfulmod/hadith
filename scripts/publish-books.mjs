@@ -39,9 +39,10 @@ export function buildBooks(source,ledger,{production=false}={}){
   approval(ledger.collectionReview,ledger.catalogContextSha256,'Collection context');
  }else if(mode==='personal-prototype'){
   assert.equal(prototypeAdmissions.schemaVersion,1);
-  const admission=prototypeAdmissions.admissions.find(a=>a.sourceRecordSha256===ledger.sourceRecordSha256);
+  const admission=prototypeAdmissions.admissions.find(a=>a.sourceRecordSha256===ledger.sourceRecordSha256&&(a.catalogContextSha256??objectHash(a.books))===ledger.catalogContextSha256);
   assert(admission,'Personal prototype source version is not admitted');
   assert.equal(admission.status,'personal-prototype-only');
+  assert.equal(admission.catalogContextSha256??objectHash(admission.books),objectHash(admission.books),'Prototype context admission is stale');
   assert.deepEqual(source.entries.map(e=>e.id),admission.entryIds,'Personal prototype scope changed');
   assert.deepEqual(ledger.books,admission.books,'Personal prototype book context changed');
   assert.equal(source.prototypeReview?.status,'personal-prototype-only');

@@ -1,0 +1,66 @@
+{
+  "checkedAt": "2026-10-20",
+  "status": "candidate-not-approved",
+  "readerEligible": false,
+  "source": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_العلم&oldid=252975",
+  "revision": 252975,
+  "sourceId": "wikisource-bukhari-knowledge-r252975",
+  "raw": {
+    "path": "source.html",
+    "bytes": 229296,
+    "sha256": "9060879f4b110cc9007f35db6b1f2fa0cc37c5ba8e510531721b024cbadf4e58"
+  },
+  "inventory": "content/staging/bukhari-knowledge-wikisource/catalog.json",
+  "coverage": {
+    "firstNumber": 59,
+    "lastNumber": 134,
+    "numberedRecords": 76,
+    "headings": 54,
+    "reportParagraphs": 110,
+    "chapterIntroductionParagraphs": 13,
+    "blankParagraphs": 1,
+    "exactBlocks": 178,
+    "reportParagraphDistribution": {
+      "one": 43,
+      "two": 32,
+      "three": 1
+    },
+    "sourceOnlyChapters": [
+      {
+        "id": "chapter-01",
+        "headingId": "باب_فضل_العلم",
+        "contextIds": [
+          "mwCA"
+        ]
+      },
+      {
+        "id": "chapter-06",
+        "headingId": "باب_ما_جاء_في_العلم_وقوله_تعالى_{_وقل_رب_زدني_علما_}",
+        "contextIds": []
+      },
+      {
+        "id": "chapter-11",
+        "headingId": "باب_العلم_قبل_القول_والعمل",
+        "contextIds": [
+          "mwRw"
+        ]
+      }
+    ]
+  },
+  "method": "Retrieved the current page to identify revision 252975, then retrieved and preserved that fixed revision. Verified revision ID, raw byte count and SHA-256. Decoded every p/h3 block without trimming or normalization and assigned every block once to a chapter heading, introduction, numbered report or blank paragraph. Exact numeric labels are 59–134. This checks intake coverage, not textual accuracy.",
+  "rights": "The retrieved page links CC BY-SA 4.0. Attribution, source revision, original bytes and the extraction policy are retained in the manifest. No modern English comparison translation was copied into this intake.",
+  "architectureFinding": "Chapters 1 and 11 contain introductory material without numbered reports; chapter 6 is a heading with no separate introductory paragraph or numbered report. They must stay in chapter order without manufactured hadith identities. Forty-three reports place their content in one paragraph, so paragraph position cannot identify narrator-chain boundaries.",
+  "readerStatus": "The live reader remains at 58 entries in two books. This candidate is excluded from the public site artifact and has no English translation or recording admission.",
+  "nextWork": [
+    "Compare the complete Arabic reports and chapter material against the pinned printed witnesses.",
+    "Individually match English comparison references; do not infer a fixed offset from Faith.",
+    "Generalize the book-review assembler around an explicit book/source configuration and preserve the source-only chapters.",
+    "Prepare the first complete Knowledge batch (59–67) with exact presentation spans, full chains and all transmission notes.",
+    "Review chapter introductions separately from numbered reports; keep human approval pending until actually obtained."
+  ],
+  "limits": [
+    "No full-body Arabic comparison, English translation approval or scholarly certification has been completed for this book.",
+    "A source paragraph count is not a narration count or proof of source completeness across editions.",
+    "The selected page’s 54 headings must be mapped individually to printed chapter divisions."
+  ]
+}

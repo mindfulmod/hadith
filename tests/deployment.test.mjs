@@ -40,3 +40,9 @@ test('source comparison links must identify exactly one section in the offline n
  checkSourceNoteLinks(packs,{read:()=>'<section id="hadith-2">Exact entry notes</section>'});
  for(const html of ['<section id="hadith-1">Wrong entry</section>','<p data-id="hadith-2">Not an anchor</p>','<p id="hadith-2"></p><p id="hadith-2"></p>'])assert.throws(()=>checkSourceNoteLinks(packs,{read:()=>html}),/comparison note anchor/);
 });
+
+test('every chapter source link must resolve once in the shipped offline page',()=>{
+ const packs=[{book:{chapters:[{sourceContext:{notes:{path:'notes.html',fragment:'chapter-one'}}}]},sourceReferences:{entries:[]}}];
+ checkSourceNoteLinks(packs,{read:()=>'<article id="chapter-one">Chapter source</article>'});
+ for(const html of ['<article id="wrong"></article>','<article id="chapter-one"></article><p id="chapter-one"></p>'])assert.throws(()=>checkSourceNoteLinks(packs,{read:()=>html}),/comparison note anchor/);
+});

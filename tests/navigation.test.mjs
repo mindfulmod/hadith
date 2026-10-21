@@ -52,3 +52,21 @@ test('book pages show only available metadata, escaped source headings and bound
  const noChapters=bookView(copy,state,{book:copy.books[1],chapter:null,page:1});assert.match(noChapters,/Chapter headings are not yet available/);assert.doesNotMatch(noChapters,/class="chapter-index"/);
  assert.match(savedView(copy,state),/1 saved reference is not available/);assert.deepEqual(state.saved,[10,9999]);
 });
+
+const chapterContext=(paragraphs=0,reports='none-in-source',fragment='intro')=>({schemaVersion:1,headingStatus:'ai-working-translation',numberedReports:reports,introduction:{arabicParagraphs:paragraphs,englishStatus:paragraphs?'pending':'not-applicable'},notes:{path:'notes.html',fragment}});
+test('source-only chapters stay in order without entering reading sessions or receiving fake numbers',()=>{
+ const copy=structuredClone(catalog),book=copy.books[0];book.chapters.unshift({id:'intro',title:'Source-only heading',entryNumbers:[],sourceContext:chapterContext(2)});
+ book.chapters.splice(2,0,{id:'heading-only',title:'Another source-only heading',entryNumbers:[],sourceContext:chapterContext(0,'none-in-source','heading-only')});validateChapters(book);
+ const route=libraryRoute('#book/first/chapter/intro',copy),state=normalizeState({});assert.equal(route.chapter.id,'intro');
+ const html=bookView(copy,state,route);assert.match(html,/No numbered hadith in this source chapter/);assert.match(html,/2 introductory paragraphs/);assert.match(html,/English translation is still in preparation/);assert.match(html,/notes.html#intro/);assert.match(html,/#book\/first\/chapter\/alpha/);assert.doesNotMatch(html,/data-start-session|Read from Hadith|#read\/undefined|0–0 of 0/);
+ const first=bookView(copy,state,{book,chapter:book.chapters[1],page:1});assert.match(first,/#book\/first\/chapter\/intro/);assert.match(first,/#book\/first\/chapter\/heading-only/);
+ const empty=bookView(copy,state,{book,chapter:book.chapters[2],page:1});assert.match(empty,/no separate introductory paragraph/);assert.match(empty,/View the Arabic heading and source/);
+ assert.deepEqual(startSession(copy.entries,10,5),startSession(catalog.entries,10,5));assert.deepEqual(copy.entries,catalog.entries);
+});
+test('chapter availability cannot invent or contradict source-only material or link outside the notes',()=>{
+ const base=structuredClone(catalog.books[0]);base.chapters.unshift({id:'intro',title:'Introduction',entryNumbers:[],sourceContext:chapterContext(2)});
+ for(const change of [c=>delete c.sourceContext,c=>c.sourceContext.numberedReports='present',c=>c.sourceContext.introduction.arabicParagraphs=-1,c=>c.sourceContext.introduction.arabicParagraphs=1.5,c=>c.sourceContext.introduction.englishStatus='not-applicable',c=>c.sourceContext.headingStatus='certified',c=>c.sourceContext.notes.path='../secret.html',c=>c.sourceContext.notes.path='https://example.org/notes.html',c=>c.sourceContext.notes.fragment='another-chapter']){
+  const bad=structuredClone(base);change(bad.chapters[0]);assert.throws(()=>validateChapters(bad));
+ }
+ const bad=structuredClone(base);bad.chapters[1].sourceContext=chapterContext(0,'none-in-source','alpha');assert.throws(()=>validateChapters(bad),/contradicts/);
+});
