@@ -31,6 +31,23 @@ function validateComparisons(comparisons,config){
  assert.equal(Number(khan.checkedReferences[1].split('.')[2]),Number(khan.checkedReferences[0].split('.')[2])+1,'Checked comparison references must be adjacent');
  assert(typeof khan.note==='string'&&khan.note.trim(),'Missing comparison absence explanation');
 }
+function entryTranslationStatus(row){
+ if(row.printedWitnesses.some(w=>w.status))return 'Personal prototype: AI-assisted working translation; the modern Arabic print and two English translation families were compared. The historical print does not separately contain this distinct form in its checked chapter; see source notes. Independent Arabic, English and context review pending.';
+ return row.comparisons.some(c=>c.status==='not-present-in-checked-sequence')?'Personal prototype: AI-assisted working translation; two Arabic printed witnesses and one English translation family compared. A second English comparison is absent from the checked sequence; see source notes. Independent Arabic, English and context review pending.':'Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.';
+}
+function validatePrintedWitnesses(witnesses){
+ assert.deepEqual(witnesses.map(w=>w.id).sort(),['brill-1862','dar-ibn-kathir-2002'],'Expected two distinct Arabic print witnesses');
+ for(const w of witnesses){
+  assert(Array.isArray(w.pdfPages)&&w.pdfPages.length&&w.pdfPages.every((p,i)=>Number.isSafeInteger(p)&&p>0&&(!i||p>w.pdfPages[i-1])),'Invalid printed witness pages');
+  if(w.status===undefined){assert.equal(w.note,undefined,'A witness note requires an explicit comparison status');continue;}
+  assert.equal(w.id,'brill-1862','This absence status is defined for the historical witness only');
+  assert.equal(w.status,'not-separately-present-in-checked-chapter','Unknown printed comparison status');assert(typeof w.note==='string'&&w.note.trim(),'Missing printed comparison absence evidence');
+ }
+}
+function printedCitation(w){
+ const location=`PDF ${w.pdfPages.length===1?'page':'pages'} ${w.pdfPages.join(', ')}`;
+ return {id:w.id,sourceId:w.id,locator:w.status?`Checked ${location} · no separate match in this chapter`:location,pdfPage:w.pdfPages[0],scope:w.status?w.note+' This checked absence is not an exact printed match.':'Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes.'};
+}
 function khanCitation(record){
  if(record.status==='not-present-in-checked-sequence')return {id:'khan',sourceId:'islamhouse-khan',locator:`No corresponding report in the checked sequence: ${record.checkedReferences.join(' → ')}`,scope:record.note+' This is documented absence in that sequence, not a completed English comparison or a claim about every occurrence elsewhere in the collection.'};
  const [volume,book,number]=record.reference.split('.');
@@ -61,6 +78,7 @@ export function buildBookBatch(inventory,review,manifest,config){
   const original=inventory.records.find(r=>r.number===row.number);assert(original&&original.id===row.sourceRecordId&&row.id===`bukhari:${row.number}`,'Source identity mismatch');
   assert.deepEqual(row.paragraphIds,original.paragraphIds);assert.equal(row.chapterId,original.chapterId);
   assert(row.notes.length&&row.printedWitnesses.length===2&&row.comparisons.length===2,'Missing comparison evidence');
+  validatePrintedWitnesses(row.printedWitnesses);
   const arabic_blocks=row.paragraphIds.map(id=>blocks.get(id).text),english_blocks=row.segments.map(s=>s.english);
   const presentation={schemaVersion:1,arabic:[],english:[]};
   for(const [i,s] of row.segments.entries()){
@@ -70,7 +88,7 @@ export function buildBookBatch(inventory,review,manifest,config){
    presentation.arabic.push({block,start:s.start,end:s.end,kind:s.kind});presentation.english.push({block:i,start:0,end:Array.from(s.english).length,kind:s.kind});
   }
   assert.equal(row.arabicSha256,sha(arabic_blocks.join('\n\n')));assert.equal(row.englishSha256,sha(english_blocks.join('\n\n')));
-  const entry={id:row.id,book:config.title,number:row.number,arabic_blocks,arabic_sha256:row.arabicSha256,english_blocks,english_status:row.comparisons.some(c=>c.status==='not-present-in-checked-sequence')?'Personal prototype: AI-assisted working translation; two Arabic printed witnesses and one English translation family compared. A second English comparison is absent from the checked sequence; see source notes. Independent Arabic, English and context review pending.':'Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.',presentation,review:{status:row.status,independentReview:row.independentReview,sourceRecordId:row.sourceRecordId,reviewRecordSha256,notes:row.notes,reviewScope:row.reviewScope},audio_status:'No recording yet.'};
+  const entry={id:row.id,book:config.title,number:row.number,arabic_blocks,arabic_sha256:row.arabicSha256,english_blocks,english_status:entryTranslationStatus(row),presentation,review:{status:row.status,independentReview:row.independentReview,sourceRecordId:row.sourceRecordId,reviewRecordSha256,notes:row.notes,reviewScope:row.reviewScope},audio_status:'No recording yet.'};
   validateSourceStructure(entry);entries.push(entry);
  }
  const chapters=review.chapters.map(c=>{
@@ -104,7 +122,7 @@ export function assembleCollection(opening,inventory,review,manifest,config=BOOK
    {id:'base',sourceId:config.arabicSourceId,locator:`Book of ${config.title} · source entry ${e.number} · ${chapter.titleArabic}`,scope:'Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes.'},
    {id:'bewley',sourceId:config.bewleySourceId,locator:`Book of ${config.bewleyTitle} · entry ${r.comparisons.find(c=>c.id===config.bewleySourceId).reference}`,scope:'Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain.'},
    khanCitation(r.comparisons.find(c=>c.id==='islamhouse-khan')),
-   ...r.printedWitnesses.map(w=>({id:w.id,sourceId:w.id,locator:`PDF ${w.pdfPages.length===1?'page':'pages'} ${w.pdfPages.join(', ')}`,pdfPage:w.pdfPages[0],scope:'Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes.'})),
+   ...r.printedWitnesses.map(printedCitation),
    ...structuredClone(r.additionalCitations||[])
   ],contextNotes:structuredClone(r.contextNotes||[]),localNotes:{path:config.id+'-review.html',fragment:`hadith-${e.number}`,label:'Comparison notes and chapter source for this hadith'}});
  }

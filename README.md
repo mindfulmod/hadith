@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The personal reader is at `reader/`: 81 complete Bukhari entries across three books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The personal reader is at `reader/`: 96 complete Bukhari entries across three books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Run
 
@@ -402,3 +402,12 @@ The personal prototype contains 81 complete numbered reports. Knowledge now has 
 `content/review/source-location-corrections.json` repairs the historical print’s broken URL to the exact same SHA-256-identified PDF. Original review inputs remain unchanged; active source links use the corrected location. Batch assembly now allows new supplemental sources while refusing conflicting definitions of an existing source ID.
 
 `research/knowledge-next-verification.json` records 192 passing automated checks (153 Node and 39 Python), exact rendered checks for every new report and 17 chapter blocks, preserved Continue, 320px day/night layouts with 28px text, and offline report/chapter reopening and phrase search after stopping the preview server. Reading downloads are about 4.9 MB; audio remains a separate choice. Knowledge 82–134, chapter English, independent review and further audio are still unfinished.
+
+
+### Knowledge continued: 82–96 and explicit print differences (21 October 2026)
+
+The personal prototype contains 96 complete numbered reports. Knowledge now has 38 of 76 reports and its first 31 source chapters. This batch adds 22 unchanged Arabic report paragraphs, 45 working English segments, nine headings and two separate Arabic introductory paragraphs. Daily sessions still contain numbered hadith only. All earlier 81 entry objects and the five recording catalog rows are unchanged; Cedar still covers 1–6.
+
+The review retains embedded narrator uncertainty in 86 and 91, both chains in 89, the shortened selected name in 91, and the separate repetition reports 94–95. The modern print contains both of the latter; the checked historical chapter contains only the fuller form. The source record and reader now identify this checked absence explicitly, without claiming a second exact printed match. Checked page locations and distinct witness identities are validated. Ibn Hajar’s discussions inform separately cited working-wording notes for 90 and 91; they do not replace the selected Arabic or certify the new English.
+
+`research/knowledge-third-verification.json` records 198 passing checks (159 Node, 39 Python), exact rendered comparison of all 15 new reports and 11 chapter blocks, preserved Continue after browsing outside a session, and 320px day/night reading with 28px text. New reports, chapter Arabic and exact phrase search reopened after the preview server was stopped. Reading downloads are about 5.3 MB; audio stays separate. Knowledge 97–134, chapter English, independent reviews and further audio remain unfinished.

@@ -1,0 +1,283 @@
+{
+  "checkedAt": "2026-10-21",
+  "status": "personal-prototype-only",
+  "readerRelease": "opening-08a912c190b5",
+  "sourceRecordSha256": "20de06c85ff47d5fc965cc9b4b4f9bac451bdbdacec41ec132d20d2afbbcefaa",
+  "catalogContextSha256": "88383f9bfeda1d1355756a69a8a7d31bafe3d927c40acdb59f628d34c461941a",
+  "scope": {
+    "newEntries": "82–96",
+    "totalEntries": 96,
+    "books": 3,
+    "knowledgeEntries": 38,
+    "knowledgeSourceChapters": 31,
+    "knowledgeSourceOnlyChapters": [
+      "chapter-01",
+      "chapter-06",
+      "chapter-11"
+    ],
+    "newArabicReportParagraphs": 22,
+    "newEnglishSegments": 45,
+    "newChapterArabicBlocks": 11,
+    "chapterIntroductionEnglish": "pending"
+  },
+  "preservation": "All 81 earlier entry objects and all five recording catalog rows are deep-equal to the preceding release. No audio media or original review input was changed. Narration input preparation now covers 96; actual Cedar recordings remain 1–6.",
+  "sourceReview": {
+    "record": "content/review/knowledge-third-review.json",
+    "arabicInput": "content/sources/wikisource-knowledge/manifest.json",
+    "printedWitnesses": [
+      {
+        "id": "brill-1862",
+        "pdfPages": [
+          32,
+          33,
+          34,
+          35,
+          36
+        ],
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+      },
+      {
+        "id": "dar-ibn-kathir-2002",
+        "pdfPages": [
+          33,
+          34,
+          35,
+          36,
+          37
+        ],
+        "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+      }
+    ],
+    "method": "Complete relevant printed pages visually inspected; both PDF hashes rechecked. Bewley 82–96 and pinned Khan-family EPUB 1.3.82–96 individually matched. Arabic paragraphs remain exact. The historical print has no separate 94 form in the checked chapter; this is documented absence, not an exact second match. AI comparison is not independent certification; shortened English comparison chains do not verify full working English chains.",
+    "findings": [
+      "82 retains the milk/moisture wording without adding a religious-knowledge gloss.",
+      "84 preserves apparent closing-brace markup in Arabic with a separate formatting notice.",
+      "86 retains all three narrator-uncertainty interruptions, separately labelled as transmission notes.",
+      "87 retains the interpreter frame, alternate expressions, enumerated wording and final remember/convey instruction; its chapter introduction is separate.",
+      "89 retains both chains and the selected Abu Abdullah introduction despite the historical variation.",
+      "90 flags the provisional attendance rendering and links Ibn Hajar’s discussion separately from the report.",
+      "91 retains the selected shortened name and both or-he-said alternatives; the fuller printed name is explained, not silently substituted.",
+      "94 and 95 remain separate. The historical comparison is explicitly marked as no separate match for 94 in the checked chapter. No knocking or permission-to-enter gloss is imported.",
+      "96 retains its own chain, named Asr prayer and two-or-three-times wording."
+    ],
+    "commentary": [
+      "https://www.islamweb.net/amp/ar/library/content/52/178/باب-الغضب-في-الموعظة-والتعليم-إذا-رأى-ما-يكره",
+      "https://www.islamweb.net/ar/library/content/52/180/باب-الغضب-في-الموعظة-والتعليم-إذا-رأى-ما-يكره"
+    ]
+  },
+  "architecture": "Printed comparison locations must be nonempty, ordered and attributed to two distinct known witnesses. An explicit checked-absence status requires evidence and is allowed only for its historical witness. The reader status and citation distinguish that absence from an exact match. Complete source chapter spans remain mandatory.",
+  "automated": {
+    "node": 159,
+    "python": 39,
+    "failed": 0,
+    "checks": "Full Node and Python suites, all source importers, generated source/book/audio checks, release integrity, formatting and tracked public artifact packaging."
+  },
+  "browser": {
+    "exactEntries": [
+      {
+        "number": 82,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 2,
+        "arabicBlocks": 2
+      },
+      {
+        "number": 83,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 2,
+        "arabicBlocks": 2
+      },
+      {
+        "number": 84,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 2,
+        "arabicBlocks": 2
+      },
+      {
+        "number": 85,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 2,
+        "arabicBlocks": 2
+      },
+      {
+        "number": 86,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 8,
+        "arabicBlocks": 2
+      },
+      {
+        "number": 87,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 5,
+        "arabicBlocks": 2
+      },
+      {
+        "number": 88,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 3,
+        "arabicBlocks": 2
+      },
+      {
+        "number": 89,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 3,
+        "arabicBlocks": 1
+      },
+      {
+        "number": 90,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 2,
+        "arabicBlocks": 1
+      },
+      {
+        "number": 91,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 6,
+        "arabicBlocks": 1
+      },
+      {
+        "number": 92,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 2,
+        "arabicBlocks": 1
+      },
+      {
+        "number": 93,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 2,
+        "arabicBlocks": 1
+      },
+      {
+        "number": 94,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 2,
+        "arabicBlocks": 1
+      },
+      {
+        "number": 95,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 2,
+        "arabicBlocks": 1
+      },
+      {
+        "number": 96,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 2,
+        "arabicBlocks": 1
+      }
+    ],
+    "exactChapters": [
+      {
+        "chapter": "chapter-23",
+        "blocks": 1,
+        "exact": true
+      },
+      {
+        "chapter": "chapter-24",
+        "blocks": 1,
+        "exact": true
+      },
+      {
+        "chapter": "chapter-25",
+        "blocks": 1,
+        "exact": true
+      },
+      {
+        "chapter": "chapter-26",
+        "blocks": 2,
+        "exact": true
+      },
+      {
+        "chapter": "chapter-27",
+        "blocks": 1,
+        "exact": true
+      },
+      {
+        "chapter": "chapter-28",
+        "blocks": 1,
+        "exact": true
+      },
+      {
+        "chapter": "chapter-29",
+        "blocks": 1,
+        "exact": true
+      },
+      {
+        "chapter": "chapter-30",
+        "blocks": 1,
+        "exact": true
+      },
+      {
+        "chapter": "chapter-31",
+        "blocks": 2,
+        "exact": true
+      }
+    ],
+    "session": {
+      "start": 82,
+      "numbers": [
+        82,
+        83,
+        84,
+        85,
+        86,
+        87
+      ],
+      "browsedOutside": 94,
+      "continuePreservedAt": 82,
+      "chapterOnlySessionStops": 0
+    },
+    "layout": {
+      "widths": [
+        320,
+        393
+      ],
+      "largestPx": 28,
+      "horizontalOverflow": false,
+      "themes": [
+        "day",
+        "night"
+      ],
+      "inlineTransmissionNotesIn86": 3
+    },
+    "historicalAbsenceVisibleFor": 94,
+    "offline": {
+      "previewServerStopped": true,
+      "reportsReopened": [
+        86,
+        94
+      ],
+      "sourceChapterReopened": "chapter-31",
+      "chapterArabicBlocks": 2,
+      "exactSearch": {
+        "query": "tying cord",
+        "result": 91
+      },
+      "readingReady": true,
+      "audioNotImplicitlyDownloaded": true
+    },
+    "runtimeErrors": [],
+    "screenshot": "/private/tmp/hadith-knowledge-82-reader.png"
+  },
+  "offlineReadingMB": 5.3,
+  "limits": [
+    "Independent Arabic, English, context and reuse review remain pending; production publication is not approved.",
+    "Knowledge has 38 of 76 reports and 31 of 54 source chapters. Continue with 97–134 in complete chapters.",
+    "Eleven Knowledge introductory Arabic paragraphs remain pending English translation.",
+    "Cedar recordings cover 1–6. No recording was generated this turn. Desktop offline checks do not replace iPhone acceptance."
+  ]
+}

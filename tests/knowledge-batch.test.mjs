@@ -19,7 +19,7 @@ test('dropping, reordering or borrowing source-only chapters is rejected even th
 test('book configuration and comparison namespace cannot silently reuse a different book',()=>{
  const args=input();assert.throws(()=>buildBookBatch(...args.slice(0,3),BOOK_CONFIGS.faith));assert.throws(()=>buildBookBatch(...args.slice(0,3),{...BOOK_CONFIGS.knowledge}));
  for(const mutate of [r=>r.comparisons[0].id='bewley',r=>r.comparisons[1].reference='1.2.56']){const a=input(),row=a[1].entries[0];mutate(row);delete row.reviewRecordSha256;row.reviewRecordSha256=objectHash(row);assert.throws(()=>buildBookBatch(...a));}
- const registry=read('content/review/knowledge-batches.json');assert.equal(combineBookReviews(registry,BOOK_CONFIGS.knowledge).entries.length,23);assert.throws(()=>combineBookReviews(registry,BOOK_CONFIGS.faith));
+ const registry=read('content/review/knowledge-batches.json');assert.equal(combineBookReviews(registry,BOOK_CONFIGS.knowledge).entries.length,38);assert.throws(()=>combineBookReviews(registry,BOOK_CONFIGS.faith));
 });
 test('individual English mappings account for the comparator’s same-as-above gap',()=>{
  const {ledger}=collectionFiles(),rows=ledger.sourceReferences.entries.filter(e=>e.number>=59&&e.number<=67);
@@ -37,12 +37,12 @@ test('the selected uncertainty, alternate chain and closing transmission notes r
 });
 test('Knowledge source notes retain exact headings and introductions with separate offline anchors',()=>{
  const {ledger,files}=collectionFiles(),book=ledger.books.find(b=>b.id==='knowledge'),inputs=JSON.parse(files.get('reader/knowledge-inputs.json')),html=files.get('reader/knowledge-review.html');
- assert.equal(book.sourceEntryCount,76);assert.equal(book.chapters.filter(c=>c.sourceContext.introduction.englishStatus==='pending').length,9);
+ assert.equal(book.sourceEntryCount,76);assert.equal(book.chapters.filter(c=>c.sourceContext.introduction.englishStatus==='pending').length,11);
  for(const c of book.chapters){assert.equal(c.sourceContext.notes.path,'knowledge-review.html');assert.equal((html.match(new RegExp('id="'+c.id+'"','g'))||[]).length,1);assert.equal(c.sourceContext.numberedReports,c.entryNumbers.length?'present':'none-in-source');}
  const [inventory]=input(),review=combineBookReviews(read('content/review/knowledge-batches.json'),BOOK_CONFIGS.knowledge),ids=new Set(review.chapters.flatMap(c=>[c.headingId,...c.contextIds]).concat(review.entries.flatMap(e=>e.paragraphIds)));assert.deepEqual(inputs.selectedBlocks,inventory.blocks.filter(b=>ids.has(b.htmlId)));assert(html.includes('Book of Knowledge'));assert(!html.includes('#book/faith'));
 });
 test('expansion preserves a saved session and starts a new one across Faith to Knowledge without synthetic entries',()=>{
- const {source}=collectionFiles(),saved={numbers:[58],cursor:58,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,58),saved);const next=nextSession(source.entries,saved,5);assert.equal(next.cursor,59);assert(next.numbers.every(n=>Number.isSafeInteger(n)&&n>=59));assert.equal(nextSession(source.entries,{numbers:[67],cursor:67,ended:true},5).cursor,68);assert.equal(nextSession(source.entries,{numbers:[81],cursor:81,ended:true},5),null);
+ const {source}=collectionFiles(),saved={numbers:[58],cursor:58,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,58),saved);const next=nextSession(source.entries,saved,5);assert.equal(next.cursor,59);assert(next.numbers.every(n=>Number.isSafeInteger(n)&&n>=59));assert.equal(nextSession(source.entries,{numbers:[67],cursor:67,ended:true},5).cursor,68);assert.equal(nextSession(source.entries,{numbers:[96],cursor:96,ended:true},5),null);
 });
 
 test('the next Knowledge batch preserves exact paragraphs, report parts and individual references',()=>{
@@ -68,4 +68,37 @@ test('markup residue, repeated narratives, memory frame and disputed closing not
 test('supplemental comparison sources may be added but conflicting identities fail closed',()=>{
  const registry=read('content/review/knowledge-batches.json'),review=read(registry.batches[1].path);assert(combineBookReviews(registry,BOOK_CONFIGS.knowledge).sources.some(s=>s.id==='ibn-hajar-knowledge-79'));
  review.sources.find(s=>s.id==='brill-1862').url='https://example.com/different.pdf';registry.batches[1].sha256=objectHash(review);assert.throws(()=>combineBookReviews(registry,BOOK_CONFIGS.knowledge,p=>p===registry.batches[1].path?review:read(p)),/Conflicting book batch source/);
+});
+
+test('third Knowledge batch preserves all 81 earlier entries and adds 15 exact reports in nine complete chapters',()=>{
+ const [inventory,,manifest,config]=input(),review=read('content/review/knowledge-third-review.json'),batch=buildBookBatch(inventory,review,manifest,config),{source}=collectionFiles();
+ const prior=['opening-revelation-a11fae3a007251a7','faith-c30f000be15f5c20','knowledge-e31e1a367afa3a33'].flatMap(name=>read('reader/books/'+name+'.json').entries);assert.deepEqual(source.entries.slice(0,81),prior);
+ assert.deepEqual(batch.entries.map(e=>e.number),Array.from({length:15},(_,i)=>82+i));assert.deepEqual(batch.chapters.map(c=>c.id),inventory.chapters.slice(22,31).map(c=>c.id));
+ for(const e of batch.entries){const row=review.entries.find(r=>r.number===e.number);assert.deepEqual(e.arabic_blocks,row.paragraphIds.map(id=>inventory.blocks.find(b=>b.htmlId===id).text));assert.deepEqual(sourceSegments(e,'english').map(s=>s.text),row.segments.map(s=>s.english));}
+});
+test('embedded uncertainty and the alternate chain stay explicit without silently replacing source wording',()=>{
+ const {source,ledger}=collectionFiles(),get=n=>source.entries.find(e=>e.number===n);
+ const notes=sourceSegments(get(86),'english').filter(s=>s.kind==='transmission-note');assert.equal(notes.length,3);assert(notes.every(s=>s.text.includes('Asma’')));assert.equal(sourceSegments(get(89),'english').filter(s=>s.kind==='chain').length,2);assert.match(get(89).english_blocks[1],/Abu ‘Abdullah said/);
+ assert(get(84).arabic_blocks.at(-1).includes('}}'));assert.match(get(91).english_blocks[0],/Rabi‘ah ibn Abi ‘Abd,/);assert(!get(91).arabic_blocks[0].includes('ربيعة بن أبي عبد الرحمن'));assert.match(ledger.sourceReferences.entries.find(r=>r.number===91).contextNotes[0].text,/al-Rahman/);
+ assert.equal(sourceSegments(get(91),'english').filter(s=>s.kind==='transmission-note').length,2);assert.equal(sourceSegments(get(87),'english').filter(s=>s.kind==='transmission-note').length,1);assert.match(get(87).english_blocks.at(-1),/convey it/);
+});
+test('an inspected absence is identified as absence in both the reader status and historical citation',()=>{
+ const {source,ledger}=collectionFiles(),entry=source.entries.find(e=>e.number===94),row=ledger.sourceReferences.entries.find(e=>e.number===94),citation=row.citations.find(c=>c.id==='brill-1862');
+ assert.match(entry.english_status,/does not separately contain/);assert.match(citation.locator,/no separate match/);assert.match(citation.scope,/not an exact printed match/);assert.equal(row.contextNotes[0].related[0].number,95);
+ const next=source.entries.find(e=>e.number===95);assert.notDeepEqual(entry.english_blocks,next.english_blocks);assert.match(entry.english_blocks[1],/^Whenever he gave a greeting/);assert.match(next.english_blocks[1],/so that it would be understood/);assert.doesNotMatch(entry.english_blocks[1]+next.english_blocks[1],/knock|permission/);
+});
+test('printed witness evidence rejects invented status, duplicate sources and empty checked locations',()=>{
+ const [inventory,,manifest,config]=input();
+ for(const change of [w=>w.status='approved',w=>w.note='',w=>w.pdfPages=[],w=>w.pdfPages=[36,36],w=>w.id='dar-ibn-kathir-2002']){
+  const review=read('content/review/knowledge-third-review.json'),row=review.entries.find(e=>e.number===94);change(row.printedWitnesses[0]);delete row.reviewRecordSha256;row.reviewRecordSha256=objectHash(row);assert.throws(()=>buildBookBatch(inventory,review,manifest,config));
+ }
+});
+test('historical absence cannot be silently attributed to the modern print',()=>{
+ const [inventory,,manifest,config]=input(),review=read('content/review/knowledge-third-review.json'),row=review.entries.find(e=>e.number===94);
+ row.printedWitnesses[0].id='dar-ibn-kathir-2002';row.printedWitnesses[1].id='brill-1862';delete row.reviewRecordSha256;row.reviewRecordSha256=objectHash(row);
+ assert.throws(()=>buildBookBatch(inventory,review,manifest,config),/historical witness only/);
+});
+test('the repeated warning retains the named prayer and new chapter context stays outside numbered sessions',()=>{
+ const {source,ledger}=collectionFiles(),get=n=>source.entries.find(e=>e.number===n),book=ledger.books.find(b=>b.id==='knowledge');assert.match(get(96).english_blocks[1],/‘Asr/);assert.doesNotMatch(get(60).english_blocks[1],/‘Asr/);assert.notDeepEqual(get(60).english_blocks,get(96).english_blocks);
+ assert.equal(book.chapters.find(c=>c.id==='chapter-26').sourceContext.introduction.arabicParagraphs,1);assert.equal(book.chapters.find(c=>c.id==='chapter-31').sourceContext.introduction.arabicParagraphs,1);assert.equal(book.chapters.length,31);const saved={numbers:[81],cursor:81,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,81),saved);assert.equal(nextSession(source.entries,saved,5).cursor,82);
 });
