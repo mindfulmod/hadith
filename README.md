@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The personal reader is at `reader/`: 167 complete selected Bukhari entries across four books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The personal reader is at `reader/`: 180 complete selected Bukhari entries across four books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Run
 
@@ -508,3 +508,12 @@ The original digital `[١٦٢]` remains attached to reader 160, with individuall
 Entry 158 retains both linked narrations, both introductions and ‘Urwah’s closing verse identification. Entry 159 keeps the final odd-number-of-stones clause absent from one English comparison, with a visible notice. The working English marks supplied words in brackets and records where comparison translations add explanations absent from the selected Arabic. Historical edition notes now appear under an explicitly labelled comparison-history disclosure, preserving earlier findings without presenting old holds as current status.
 
 `research/ablution-fourth-verification.json` records 267 passing checks (207 Node, 60 Python), thirteen source/release integrity checks, exact rendered comparison of all new Arabic and English blocks and fifteen chapter blocks, 320px layouts at 28px text, and preserved Continue after browsing. A cached two-entry preview successfully updated to 167 entries while retaining its reading place, bookmark count and largest-text setting. With the final preview server stopped, the combined entry, original mapped source paragraphs, chapter material and both numeric references remained available. Reading downloads total about 7.3 MB. Continue from 168; independent review, English introductions, full collection coverage and further audio remain unfinished.
+
+
+### Ablution 168–180: separate reports and chapter-only context (21 October 2026)
+
+The personal prototype now contains 180 selected numbered entries. This batch adds thirteen entries, three complete source chapters, 30 working English segments, 24 unchanged Arabic paragraphs and two separately browseable Arabic introductions. All previous 167 entry objects and every recording row remain unchanged. Ablution now contains 46 entries, 34 digital chapters and the separately retained printed heading before 155. Actual Cedar audio still covers 1–6.
+
+Khan-family 1.4.174 combines two bodies corresponding to selected 171 and 172. Explicit part references retain the independent Arabic chains and reader identities; later references are individually matched. The selected wording in 172 includes a word omitted from the historical print, with a separate visible notice. Closing transmission notes in 176 and 178 remain complete even though the checked Khan-family bodies omit them. Related Book of Bathing passages are linked separately for 177–178 without importing their wording or the English comparison’s explanatory additions. All independent review remains pending.
+
+`research/ablution-fifth-verification.json` records 273 passing checks (213 Node, 60 Python), thirteen source/release integrity checks, exact rendered comparison of every new Arabic and English block and five chapter blocks, and 320px layouts at 28px text. Browsing preserved Continue. With the preview server stopped, the complete report, separate source context, chapter introduction and exact-phrase search remained available. Reading downloads total about 7.7 MB; audio is separate. Continue from 181. English introductions, independent review, full collection coverage and further audio remain unfinished.

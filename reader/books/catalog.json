@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "namespace": "bukhari-opening-v1",
   "publication": "personal-prototype",
-  "sourceRecordSha256": "9345acc8c72a50007c5917dc459e2759a70436893dd1ed5ea73fe920f425f374",
-  "referencesSha256": "a31fee9acf35bd79307211c41b38b77a66c18fba01193cd9428f9edd7a18b5b3",
+  "sourceRecordSha256": "b152f5b875c6f6b3abc3d4f18ed55c13ade5c8aa342a750ab8641b3cd1d8165a",
+  "referencesSha256": "5d2a70a883c04231277f5fea532829e2efeb68dc7bdc92382bd396dc56539cde",
   "books": [
     {
       "id": "opening-revelation",
@@ -18,9 +18,9 @@
         6,
         7
       ],
-      "path": "books/opening-revelation-5e0fa92072afc757.json",
-      "bytes": 112316,
-      "sha256": "5e0fa92072afc757836ca3ddd39707136c797ddab3b6a865a69d35ab592763fe"
+      "path": "books/opening-revelation-5912c7128a18d9c9.json",
+      "bytes": 113027,
+      "sha256": "5912c7128a18d9c9304dbfc1e457023a6aa63067ee00f3c06ddb228222ad948c"
     },
     {
       "id": "faith",
@@ -931,9 +931,9 @@
           }
         }
       ],
-      "path": "books/faith-9b3863a16f3114b6.json",
-      "bytes": 350196,
-      "sha256": "9b3863a16f3114b6d16eb5892f4393beac95621269a7f877c0c6b9fe28160277"
+      "path": "books/faith-0083b6d6fb2f9a7e.json",
+      "bytes": 350907,
+      "sha256": "0083b6d6fb2f9a7eadbcb4945110c419838333e7735ac3df09c74693c8d947e2"
     },
     {
       "id": "knowledge",
@@ -2119,9 +2119,9 @@
           }
         }
       ],
-      "path": "books/knowledge-dcfdc4c22041885b.json",
-      "bytes": 543505,
-      "sha256": "dcfdc4c22041885b575ff482c20c9350277adf93f9f0342a0f7b221ba53329ea"
+      "path": "books/knowledge-9e2c952eba9b7bf3.json",
+      "bytes": 544216,
+      "sha256": "9e2c952eba9b7bf392897807c32112156d08f8b6592582bff0ffe9a805d8fd34"
     },
     {
       "id": "ablution",
@@ -2161,7 +2161,20 @@
         164,
         165,
         166,
-        167
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180
       ],
       "chapters": [
         {
@@ -2809,11 +2822,81 @@
               "fragment": "chapter-31"
             }
           }
+        },
+        {
+          "id": "chapter-32",
+          "title": "Water with which human hair is washed",
+          "entryNumbers": [
+            168,
+            169,
+            170,
+            171,
+            172,
+            173
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 1,
+              "englishStatus": "pending"
+            },
+            "notes": {
+              "path": "ablution-review.html",
+              "fragment": "chapter-32"
+            }
+          }
+        },
+        {
+          "id": "chapter-33",
+          "title": "Those who held that ablution is only required for discharge from the two passages, front and back",
+          "entryNumbers": [
+            174,
+            175,
+            176,
+            177,
+            178
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 1,
+              "englishStatus": "pending"
+            },
+            "notes": {
+              "path": "ablution-review.html",
+              "fragment": "chapter-33"
+            }
+          }
+        },
+        {
+          "id": "chapter-34",
+          "title": "A man helping his companion perform ablution",
+          "entryNumbers": [
+            179,
+            180
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ablution-review.html",
+              "fragment": "chapter-34"
+            }
+          }
         }
       ],
-      "path": "books/ablution-1c3632f8d20804db.json",
-      "bytes": 304370,
-      "sha256": "1c3632f8d20804dbf604b3d2e244ee7f648d55339df5fbe06fc9915f056ba906"
+      "path": "books/ablution-d0e576609a3d05d4.json",
+      "bytes": 405965,
+      "sha256": "d0e576609a3d05d4390aca5a12b99048d57001641e4e2df7cd63bf82df53d11f"
     }
   ],
   "entries": [
@@ -3985,6 +4068,97 @@
       "bookId": "ablution",
       "book": "Ablution",
       "englishWords": 123
+    },
+    {
+      "id": "bukhari:168",
+      "number": 168,
+      "bookId": "ablution",
+      "book": "Ablution",
+      "englishWords": 71
+    },
+    {
+      "id": "bukhari:169",
+      "number": 169,
+      "bookId": "ablution",
+      "book": "Ablution",
+      "englishWords": 56
+    },
+    {
+      "id": "bukhari:170",
+      "number": 170,
+      "bookId": "ablution",
+      "book": "Ablution",
+      "englishWords": 48
+    },
+    {
+      "id": "bukhari:171",
+      "number": 171,
+      "bookId": "ablution",
+      "book": "Ablution",
+      "englishWords": 78
+    },
+    {
+      "id": "bukhari:172",
+      "number": 172,
+      "bookId": "ablution",
+      "book": "Ablution",
+      "englishWords": 65
+    },
+    {
+      "id": "bukhari:173",
+      "number": 173,
+      "bookId": "ablution",
+      "book": "Ablution",
+      "englishWords": 98
+    },
+    {
+      "id": "bukhari:174",
+      "number": 174,
+      "bookId": "ablution",
+      "book": "Ablution",
+      "englishWords": 76
+    },
+    {
+      "id": "bukhari:175",
+      "number": 175,
+      "bookId": "ablution",
+      "book": "Ablution",
+      "englishWords": 47
+    },
+    {
+      "id": "bukhari:176",
+      "number": 176,
+      "bookId": "ablution",
+      "book": "Ablution",
+      "englishWords": 77
+    },
+    {
+      "id": "bukhari:177",
+      "number": 177,
+      "bookId": "ablution",
+      "book": "Ablution",
+      "englishWords": 113
+    },
+    {
+      "id": "bukhari:178",
+      "number": 178,
+      "bookId": "ablution",
+      "book": "Ablution",
+      "englishWords": 123
+    },
+    {
+      "id": "bukhari:179",
+      "number": 179,
+      "bookId": "ablution",
+      "book": "Ablution",
+      "englishWords": 87
+    },
+    {
+      "id": "bukhari:180",
+      "number": 180,
+      "bookId": "ablution",
+      "book": "Ablution",
+      "englishWords": 101
     }
   ]
 }

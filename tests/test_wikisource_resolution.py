@@ -178,7 +178,7 @@ class WikisourceResolutionTests(unittest.TestCase):
         self.assertFalse(self.result['readerEligible'])
         self.assertTrue(all(r['status'] == 'unreviewed' for r in self.result['records']))
         reader = resolution.read(ROOT / 'reader/books/catalog.json')
-        self.assertEqual([e['number'] for e in reader['entries'] if e['bookId'] == 'ablution'], list(range(135, 168)))
+        self.assertEqual([e['number'] for e in reader['entries'] if e['bookId'] == 'ablution'], list(range(135, 181)))
         self.assertEqual(len(self.result['layoutReview']['decisions']), 9)
         self.assertEqual(sum(len(d['issueIndexes']) for d in self.result['layoutReview']['decisions']), 11)
 
