@@ -1,12 +1,12 @@
 {
   "created": "2026-10-20",
-  "scope": "Personal prototype: complete numbered entries 1–155 across 4 books. The rest of the collection remains in preparation.",
+  "scope": "Personal prototype: complete numbered entries 1–167 across 4 books. The rest of the collection remains in preparation.",
   "selected_route": "Pinned Arabic text plus a new English working translation.",
   "license": {
     "id": "CC-BY-SA-4.0",
     "url": "https://creativecommons.org/licenses/by-sa/4.0/",
     "attribution": "Sahih al-Bukhari by Muhammad ibn Ismail al-Bukhari; Arabic digital transcription by Arabic Wikisource contributors, opening revision 484874 and Faith revision 490285. Book of Knowledge: revision 252975. Book of Ablution: revision 273249.",
-    "changes": "Entries 1–2 are unchanged. Entries 3–7 are derived from the pinned Arabic; Hadith 5 has one explicitly recorded correction from له to لك supported by two printed witnesses. Original inputs are retained in prototype-inputs.json. New AI-assisted English, presentation and comparison notes are offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app. Hadith 8–58 retain their Arabic paragraphs unchanged from revision 490285; their new English and available chapter titles are AI-assisted. A disputed chapter heading is explicitly withheld. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 59–134 derive from revision 252975; only 99 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 135–155 derive from revision 273249; only 137, 146 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Exact source origins and original labels are retained; any different reader reference is explicitly mapped. Chapter introductions are preserved separately in Arabic, with English translation still pending. Declared printed additions supply a missing closing transmission note and chapter heading; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately."
+    "changes": "Entries 1–2 are unchanged. Entries 3–7 are derived from the pinned Arabic; Hadith 5 has one explicitly recorded correction from له to لك supported by two printed witnesses. Original inputs are retained in prototype-inputs.json. New AI-assisted English, presentation and comparison notes are offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app. Hadith 8–58 retain their Arabic paragraphs unchanged from revision 490285; their new English and available chapter titles are AI-assisted. A disputed chapter heading is explicitly withheld. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 59–134 derive from revision 252975; only 99 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 135–167 derive from revision 273249; only 137, 146, 165 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Exact source origins and original labels are retained; any different reader reference is explicitly mapped. Chapter introductions are preserved separately in Arabic, with English translation still pending. Declared printed additions supply a missing closing transmission note and chapter heading; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately."
   },
   "sources": [
     {
@@ -181,6 +181,13 @@
       "kind": "english-comparison",
       "format": "web",
       "url": "https://aishabewley.org/bukhari3"
+    },
+    {
+      "id": "dorar-prayer-interval",
+      "label": "Dorar · explanation of the prayer interval",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://dorar.net/hadith/sharh/3834"
     }
   ],
   "findings": [
@@ -12373,6 +12380,1242 @@
         }
       },
       "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:156",
+      "book": "Ablution",
+      "number": 156,
+      "arabic_blocks": [
+        "[156] حدثنا محمد بن يوسف قال: حدثنا سفيان عن زيد بن أسلم عن عطاء بن يسار عن ابن عباس قال",
+        "توضأ النبي ﷺ مرة مرة "
+      ],
+      "arabic_sha256": "170c11b91fa8e93f178d6fe27d86e8aa660a1cd09082aa12c0942b7a199d9c28",
+      "english_blocks": [
+        "Muhammad ibn Yusuf related to us. He said: Sufyan related to us, from Zayd ibn Aslam, from ‘Ata’ ibn Yasar, from Ibn ‘Abbas, who said:",
+        "The Prophet, may Allah bless him and grant him peace, performed ablution, washing each part once."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 88,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 21,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 134,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 97,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwZg:0",
+        "reviewRecordSha256": "8d7b7e89510fc32aae3d7759cb386bbf324302984b26839cb616ce24856fbc29",
+        "notes": [
+          "Both printed witnesses and both English comparisons retain washing once for each part. The repetition مرة مرة is rendered distributively, without adding a rule about how often one must wash. The full selected chain remains visible and narrated."
+        ],
+        "reviewScope": "AI-assisted comparison with both inspected Arabic prints and two individually matched English references. English bodies abbreviate chains; any omissions or explanatory additions are recorded. Selected source wording, exact origins and original labels remain preserved, except the one explicitly evidenced correction in 165. Independent Arabic, English, chapter and reference review remains pending.",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-ablution-r273249",
+          "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+          "layoutAuditSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+          "layoutReviewSha256": "6dafde039fa774cd4861d0e76d71c314f5c8f2791b85324c16e6eab996683355",
+          "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwZg:0",
+          "sourceReference": {
+            "label": "156",
+            "number": 156,
+            "markerId": "mwZg:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwZg",
+              "textSha256": "6d373288717df9aade508316887db4b997c59692482144a770c2f069cfaf98f8",
+              "origin": {
+                "blockId": "mwZg",
+                "blockSha256": "6d373288717df9aade508316887db4b997c59692482144a770c2f069cfaf98f8",
+                "start": 0,
+                "end": 88
+              }
+            },
+            {
+              "id": "mwZw",
+              "textSha256": "4560c8e4b2596f98008a31736396f42ef2f311040a23fe2bb2b490088eb302fe",
+              "origin": {
+                "blockId": "mwZw",
+                "blockSha256": "4560c8e4b2596f98008a31736396f42ef2f311040a23fe2bb2b490088eb302fe",
+                "start": 0,
+                "end": 21
+              }
+            }
+          ]
+        }
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:157",
+      "book": "Ablution",
+      "number": 157,
+      "arabic_blocks": [
+        "[157] حدثنا حسين بن عيسى قال: حدثنا يونس بن محمد قال: حدثنا فليح بن سليمان عن عبد الله بن أبي بكر ابن عمرو بن حزم عن عباد بن تميم عن عبد الله بن زيد",
+        "أن النبي ﷺ توضأ مرتين مرتين "
+      ],
+      "arabic_sha256": "abdc46ae234517ce0dd5611111b2b73f0a1b6755f7216916983c0406bfab38c4",
+      "english_blocks": [
+        "Husayn ibn ‘Isa related to us. He said: Yunus ibn Muhammad related to us. He said: Fulayh ibn Sulayman related to us, from ‘Abdullah ibn Abi Bakr ibn ‘Amr ibn Hazm, from ‘Abbad ibn Tamim, from ‘Abdullah ibn Zayd:",
+        "The Prophet, may Allah bless him and grant him peace, performed ablution, washing each part twice."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 148,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 28,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 212,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 98,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwag:0",
+        "reviewRecordSha256": "d44dc05a3260439d218d534a774535deee01fc937a2ea2fa87dba31015bb8807",
+        "notes": [
+          "The selected and modern print have Fulayh introduced with حدثنا and the name ‘Abdullah ibn Abi Bakr ibn ‘Amr ibn Hazm. The historical print uses أخبرنا before Fulayh and includes Muhammad in the longer ancestral name. The selected digital wording is retained; these are recorded witness differences, not silently merged chains."
+        ],
+        "reviewScope": "AI-assisted comparison with both inspected Arabic prints and two individually matched English references. English bodies abbreviate chains; any omissions or explanatory additions are recorded. Selected source wording, exact origins and original labels remain preserved, except the one explicitly evidenced correction in 165. Independent Arabic, English, chapter and reference review remains pending.",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-ablution-r273249",
+          "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+          "layoutAuditSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+          "layoutReviewSha256": "6dafde039fa774cd4861d0e76d71c314f5c8f2791b85324c16e6eab996683355",
+          "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwag:0",
+          "sourceReference": {
+            "label": "157",
+            "number": 157,
+            "markerId": "mwag:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwag",
+              "textSha256": "6ec9d0c09790e6e150907cca11776e4edadab4b9961fa4cd0aaeab6bade5210e",
+              "origin": {
+                "blockId": "mwag",
+                "blockSha256": "6ec9d0c09790e6e150907cca11776e4edadab4b9961fa4cd0aaeab6bade5210e",
+                "start": 0,
+                "end": 148
+              }
+            },
+            {
+              "id": "mwaw",
+              "textSha256": "d46eb4e67f3b22a83d42927254d8af886c49e398200ac9110179443b8cae3151",
+              "origin": {
+                "blockId": "mwaw",
+                "blockSha256": "d46eb4e67f3b22a83d42927254d8af886c49e398200ac9110179443b8cae3151",
+                "start": 0,
+                "end": 28
+              }
+            }
+          ]
+        }
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:158",
+      "book": "Ablution",
+      "number": 158,
+      "arabic_blocks": [
+        "[158] حدثنا عبد العزيز بن عبد الله الأويسي قال: حدثني إبراهيم بن سعد عن ابن شهاب أن عطاء بن يزيد أخبره أن حمران مولى عثمان أخبره",
+        "أنه رأى عثمان بن عفان دعا بإناء فأفرغ على كفيه ثلاث مرار فغسلهما ثم أدخل يمينه في الإناء فمضمض واستنشق ثم غسل وجهه ثلاثا ويديه إلى المرفقين ثلاث مرار ثم مسح برأسه ثم غسل رجليه ثلاث مرار إلى الكعبين، ثم قال: قال رسول الله ﷺ: من توضأ نحو وضوئي هذا ثم صلى ركعتين لا يحدث فيهما نفسه غفر له ما تقدم من ذنبه وعن إبراهيم قال: قال صالح بن كيسان قال ابن شهاب ولكن عروة يحدث عن حمران فلما توضأ عثمان قال ألا أحدثكم حديثا لولا آية ما حدثتكموه سمعت النبي ﷺ يقول: لا يتوضأ رجل يحسن وضوءه ويصلي الصلاة إلا غفر له ما بينه وبين الصلاة حتى يصليها قال عروة الآية { إن الذين يكتمون ما أنزلنا من البينات }"
+      ],
+      "arabic_sha256": "aefc35b35186ceb33ab0b8e2c80820c05e1d4fef202da42a419b2a4d10619804",
+      "english_blocks": [
+        "‘Abd al-‘Aziz ibn ‘Abdullah al-Uwaysi related to us. He said: Ibrahim ibn Sa‘d related to me, from Ibn Shihab, that ‘Ata’ ibn Yazid informed him that Humran, the freedman of ‘Uthman, informed him:",
+        "He saw ‘Uthman ibn ‘Affan call for a vessel. He poured over his palms three times and washed them. Then he put his right hand into the vessel, rinsed his mouth and drew water into his nose. Then he washed his face three times and his hands up to the elbows three times. Then he wiped his head, and then washed his feet up to the ankles three times. Then he said: The Messenger of Allah, may Allah bless him and grant him peace, said: “Whoever performs ablution like this ablution of mine, then prays two rak‘ahs without letting his thoughts wander during them, will have his past sins forgiven.”",
+        "And from Ibrahim, who said: Salih ibn Kaysan said: Ibn Shihab said: But ‘Urwah relates from Humran:",
+        "When ‘Uthman performed ablution, he said: “Shall I relate to you a hadith which, were it not for a verse, I would not have related to you? I heard the Prophet, may Allah bless him and grant him peace, saying: ‘A man who performs ablution, does it well and offers the prayer will be forgiven for what occurs between that and the [next] prayer, until he offers it.’”",
+        "‘Urwah said: The verse is: “Indeed, those who conceal what We have sent down of clear proofs.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 128,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 302,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 302,
+            "end": 374,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 374,
+            "end": 530,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 530,
+            "end": 585,
+            "kind": "transmission-note"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 196,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 595,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 99,
+            "kind": "chain"
+          },
+          {
+            "block": 3,
+            "start": 0,
+            "end": 364,
+            "kind": "report"
+          },
+          {
+            "block": 4,
+            "start": 0,
+            "end": 94,
+            "kind": "transmission-note"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwbg:0",
+        "reviewRecordSha256": "74a62e9feda34b8f1423713dff9bec393493c419c7e3bfb1971569f6b88663cb",
+        "notes": [
+          "Both linked narrations, their chains, the second introductory question and ‘Urwah’s closing verse identification remain in source order. Modern print numbers the two narrations 159 and 160; the selected digital entry and Khan-family 1.4.161 contain both.",
+          "The self-talk idiom لا يحدث فيهما نفسه is rendered as not letting his thoughts wander, consistent with both English body comparisons. The first account says the right hand enters the vessel, then mouth rinsing and drawing water into the nose. It does not separately say blowing water out, whereas 162 does; the extra action in the English comparisons is not inserted here. The Arabic hands-to-elbows expression is retained rather than adding a separate limb list.",
+          "The second prayer clause uses [next] as an explicitly supplied English word. Both English comparisons understand the interval as extending to the next prayer; the Arabic commentary at https://dorar.net/hadith/sharh/3834 explains that reading using parallel narrations. The selected Arabic does not itself say “next”, and remains unchanged. Compulsory and congregational specifications from the Khan-family comparison are not inserted. This translation choice still needs independent review.",
+          "The selected and modern print quote the verse through من البينات. The historical print ends its quoted fragment at ما أنزلنا. The selected longer fragment remains, with no completion of the rest of the Quranic verse."
+        ],
+        "reviewScope": "AI-assisted comparison with both inspected Arabic prints and two individually matched English references. English bodies abbreviate chains; any omissions or explanatory additions are recorded. Selected source wording, exact origins and original labels remain preserved, except the one explicitly evidenced correction in 165. Independent Arabic, English, chapter and reference review remains pending.",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-ablution-r273249",
+          "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+          "layoutAuditSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+          "layoutReviewSha256": "6dafde039fa774cd4861d0e76d71c314f5c8f2791b85324c16e6eab996683355",
+          "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwbg:0",
+          "sourceReference": {
+            "label": "158",
+            "number": 158,
+            "markerId": "mwbg:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwbg",
+              "textSha256": "8748c998add9b54b69f347f151bec88d70d4202109e305aee5b36717258621c1",
+              "origin": {
+                "blockId": "mwbg",
+                "blockSha256": "8748c998add9b54b69f347f151bec88d70d4202109e305aee5b36717258621c1",
+                "start": 0,
+                "end": 128
+              }
+            },
+            {
+              "id": "mwbw",
+              "textSha256": "6b96142fe0ab13e782b8b1c1aadc457420d51fe6153d3f593534e2e0c30a6447",
+              "origin": {
+                "blockId": "mwbw",
+                "blockSha256": "6b96142fe0ab13e782b8b1c1aadc457420d51fe6153d3f593534e2e0c30a6447",
+                "start": 0,
+                "end": 585
+              }
+            }
+          ]
+        }
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:159",
+      "book": "Ablution",
+      "number": 159,
+      "arabic_blocks": [
+        "[159] حدثنا عبدان قال: أخبرنا عبد الله قال: أخبرنا يونس عن الزهري قال: أخبرني أبو إدريس أنه سمع أبا هريرة عن النبي ﷺ أنه قال",
+        "من توضأ فليستنثر ومن استجمر فليوتر "
+      ],
+      "arabic_sha256": "cdd131d87a9c0b6cee052dc3e7fb9758ecd2f95111a3e2d4ca284307cb1321d0",
+      "english_blocks": [
+        "‘Abdan related to us. He said: ‘Abdullah informed us. He said: Yunus informed us, from al-Zuhri, who said: Abu Idris informed me that he heard Abu Hurayrah relate from the Prophet, may Allah bless him and grant him peace, that he said:",
+        "“Whoever performs ablution should blow water out of his nose, and whoever cleanses himself with stones should use an odd number.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 124,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 35,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 235,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 129,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwdQ:0",
+        "reviewRecordSha256": "17677ce40bd74f6354f5bc27e7cefdf56b7002dabde6b672bb1c02329d84f268",
+        "notes": [
+          "The full concluding clause about an odd number of cleansing stones is present in the selected digital text, both inspected prints and Khan-family 1.4.162. It is absent from the checked Bewley 159 web body. That partial comparison is not treated as proof of completeness. Both clauses remain in the working English and complete narration.",
+          "The separate chapter introduction naming ‘Uthman, ‘Abdullah ibn Zayd and Ibn ‘Abbas stays in chapter browsing. It is never added to this hadith or narration script."
+        ],
+        "reviewScope": "AI-assisted comparison with both inspected Arabic prints and two individually matched English references. English bodies abbreviate chains; any omissions or explanatory additions are recorded. Selected source wording, exact origins and original labels remain preserved, except the one explicitly evidenced correction in 165. Independent Arabic, English, chapter and reference review remains pending.",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-ablution-r273249",
+          "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+          "layoutAuditSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+          "layoutReviewSha256": "6dafde039fa774cd4861d0e76d71c314f5c8f2791b85324c16e6eab996683355",
+          "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwdQ:0",
+          "sourceReference": {
+            "label": "159",
+            "number": 159,
+            "markerId": "mwdQ:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwdQ",
+              "textSha256": "6a9ad5d57a85bc0a7ab9c62e05a412e3c04239c957cf1cbf6295d4af621384de",
+              "origin": {
+                "blockId": "mwdQ",
+                "blockSha256": "6a9ad5d57a85bc0a7ab9c62e05a412e3c04239c957cf1cbf6295d4af621384de",
+                "start": 0,
+                "end": 124
+              }
+            },
+            {
+              "id": "mwdw",
+              "textSha256": "3db3f44ff431275b082b9b15f4ed6283d6abbd1d1c958902a8594cc761f84a40",
+              "origin": {
+                "blockId": "mwdw",
+                "blockSha256": "3db3f44ff431275b082b9b15f4ed6283d6abbd1d1c958902a8594cc761f84a40",
+                "start": 0,
+                "end": 35
+              }
+            }
+          ]
+        }
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:160",
+      "book": "Ablution",
+      "number": 160,
+      "arabic_blocks": [
+        "[١٦٢] حدثنا عبد الله بن يوسف قال: أخبرنا مالك عن أبي الزناد عن الأعرج عن أبي هريرة أن رسول الله ﷺ قال:",
+        "إذا توضأ أحدكم فليجعل في أنفه ثم لينثر ومن استجمر فليوتر وإذا استيقظ أحدكم من نومه فليغسل يده قبل أن يدخلها في وضوئه فإن أحدكم لا يدري أين باتت يده"
+      ],
+      "arabic_sha256": "1981f80db3f7f3c79744702879001853b7c3049c2149271df2f36a660d573b29",
+      "english_blocks": [
+        "‘Abdullah ibn Yusuf related to us. He said: Malik informed us, from Abu al-Zinad, from al-A‘raj, from Abu Hurayrah, that the Messenger of Allah, may Allah bless him and grant him peace, said:",
+        "“When one of you performs ablution, he should put [water] into his nose and then blow it out. Whoever cleanses himself with stones should use an odd number. When one of you wakes from his sleep, he should wash his hand before putting it into his ablution water, for none of you knows where his hand spent the night.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 102,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 147,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 191,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 316,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ablution-r273249:mweA:24",
+        "reviewRecordSha256": "d5b27f222466b45d74f1545eed760fe8f9ee1ee5855f274e0b3211d188f71eaf",
+        "notes": [
+          "The selected chain begins with the exact Arabic-digit label [١٦٢]. Its reader number 160 is an explicit body/reference match, not a replacement of the source numeral. The later digital [162] is a separate report and remains reader 162.",
+          "The historical print explicitly has ماء after “into his nose”; the selected digital and modern print leave the object implicit. The working English marks the supplied object as [water], without changing the Arabic. Singular hand is retained in both waking clauses.",
+          "The literal === delimiters in the original source are retained as formatting spans. Only the exact heading words form the separate chapter heading; the whole original paragraph is available in the source notes."
+        ],
+        "reviewScope": "AI-assisted comparison with both inspected Arabic prints and two individually matched English references. English bodies abbreviate chains; any omissions or explanatory additions are recorded. Selected source wording, exact origins and original labels remain preserved, except the one explicitly evidenced correction in 165. Independent Arabic, English, chapter and reference review remains pending.",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-ablution-r273249",
+          "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+          "layoutAuditSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+          "layoutReviewSha256": "6dafde039fa774cd4861d0e76d71c314f5c8f2791b85324c16e6eab996683355",
+          "sourceRecordId": "wikisource-bukhari-ablution-r273249:mweA:24",
+          "sourceReference": {
+            "label": "١٦٢",
+            "number": 162,
+            "markerId": "mweA:24",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mweA@24-126",
+              "textSha256": "30a9f4730b6e8755f7d3ce69d1c666e5e20166fd4e81f34c396958a6207883da",
+              "origin": {
+                "blockId": "mweA",
+                "blockSha256": "d5c82e6f04d91473ce389b647d3f84d5457d65101d89d5ff9b582c7cd3e572c2",
+                "start": 24,
+                "end": 126
+              },
+              "layoutDecisionId": "layout-mweA"
+            },
+            {
+              "id": "mweg",
+              "textSha256": "2641169cac42e654083b3973f5167771c32b3ebf825e7b9719efb798224bea7d",
+              "origin": {
+                "blockId": "mweg",
+                "blockSha256": "2641169cac42e654083b3973f5167771c32b3ebf825e7b9719efb798224bea7d",
+                "start": 0,
+                "end": 147
+              }
+            }
+          ],
+          "referenceMapping": {
+            "status": "ai-matched-not-approved",
+            "sourceLabel": "١٦٢",
+            "sourceNumber": 162,
+            "number": 160,
+            "bewley": {
+              "url": "https://aishabewley.org/bukhari3",
+              "reference": "160"
+            },
+            "modernPrintReference": "162",
+            "khan": {
+              "reference": "1.4.163",
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.163",
+              "recordSha256": "59b1f99320f236a3317d04e539620cd5f765949660a2b28cd8f6baf6cb29ac1e"
+            },
+            "note": "Keep the exact source label [١٦٢]. Reader reference 160 follows the matched Bewley entry and surrounding sequence. The modern print uses 162 for this body, whereas the later digital [162] is a different report (modern 164). No source numeral is rewritten; independent reference review remains pending."
+          }
+        }
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:161",
+      "book": "Ablution",
+      "number": 161,
+      "arabic_blocks": [
+        "[161] حدثنا موسى قال: حدثنا أبو عوانة عن أبي بشر عن يوسف بن ماهك عن عبد الله بن عمرو قال",
+        "تخلف النبي ﷺ عنا في سفرة سافرناها فأدركنا وقد أرهقنا العصر فجعلنا نتوضأ ونمسح على أرجلنا فنادى بأعلى صوته ويل للأعقاب من النار مرتين أو ثلاثا "
+      ],
+      "arabic_sha256": "704df60f6a21a82b446ddb0d2b4f09d2b003da9c445f76a674e4f7c41ace2159",
+      "english_blocks": [
+        "Musa related to us. He said: Abu ‘Awanah related to us, from Abu Bishr, from Yusuf ibn Mahak, from ‘Abdullah ibn ‘Amr, who said:",
+        "The Prophet, may Allah bless him and grant him peace, stayed behind us on a journey we were making. He caught up with us when the time for ‘Asr was pressing upon us. We began performing ablution and wiping over our feet. He called out at the top of his voice: “Woe to the heels from the Fire!” Two or three times."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 88,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 142,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 128,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 313,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwfA:0",
+        "reviewRecordSha256": "dfff2d35b71a9a9b142dc9d58a40adb1a0849da7b61309eed2abceaa311cb995",
+        "notes": [
+          "The warning remains twice or three times, preserving the narrator’s alternative. The wording about wiping over the feet is retained; parenthetical legal explanations from the English comparisons are not inserted.",
+          "The historical print abbreviates the journey clause; the selected and modern print retain “on a journey we were making.” The selected fuller phrase remains."
+        ],
+        "reviewScope": "AI-assisted comparison with both inspected Arabic prints and two individually matched English references. English bodies abbreviate chains; any omissions or explanatory additions are recorded. Selected source wording, exact origins and original labels remain preserved, except the one explicitly evidenced correction in 165. Independent Arabic, English, chapter and reference review remains pending.",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-ablution-r273249",
+          "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+          "layoutAuditSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+          "layoutReviewSha256": "6dafde039fa774cd4861d0e76d71c314f5c8f2791b85324c16e6eab996683355",
+          "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwfA:0",
+          "sourceReference": {
+            "label": "161",
+            "number": 161,
+            "markerId": "mwfA:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwfA",
+              "textSha256": "f9f8d35a76c0320fc95a30335a994788e740178cbee3ae83a946c7132c5da714",
+              "origin": {
+                "blockId": "mwfA",
+                "blockSha256": "f9f8d35a76c0320fc95a30335a994788e740178cbee3ae83a946c7132c5da714",
+                "start": 0,
+                "end": 88
+              },
+              "layoutDecisionId": "layout-mwfA"
+            },
+            {
+              "id": "mwfQ",
+              "textSha256": "1129dd7635becc2489f38c42bcd3d037cc3fec38ea50a4dd7bfff4f2c4789d90",
+              "origin": {
+                "blockId": "mwfQ",
+                "blockSha256": "1129dd7635becc2489f38c42bcd3d037cc3fec38ea50a4dd7bfff4f2c4789d90",
+                "start": 0,
+                "end": 142
+              }
+            }
+          ]
+        }
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:162",
+      "book": "Ablution",
+      "number": 162,
+      "arabic_blocks": [
+        "[162] حدثنا أبو اليمان قال: أخبرنا شعيب عن الزهري قال: أخبرني عطاء بن يزيد عن حمران مولى عثمان بن عفان ",
+        "أنه رأى عثمان دعا بوضوء فأفرغ على يديه من إنائه فغسلهما ثلاث مرات ثم أدخل يمينه في الوضوء ثم تمضمض واستنشق واستنثر ثم غسل وجهه ثلاثا ويديه إلى المرفقين ثلاثا ثم مسح برأسه ثم غسل كل رجل ثلاثا، ثم قال: رأيت النبي ﷺ يتوضأ نحو وضوئي هذا، وقال من توضأ نحو وضوئي هذا ثم صلى ركعتين لا يحدث فيهما نفسه غفر الله له ما تقدم من ذنبه "
+      ],
+      "arabic_sha256": "ed349df1d1278da29e21518aa80c8856bf658f01dcd9196cd989def158796256",
+      "english_blocks": [
+        "Abu al-Yaman related to us. He said: Shu‘ayb informed us, from al-Zuhri, who said: ‘Ata’ ibn Yazid informed me, from Humran, the freedman of ‘Uthman ibn ‘Affan:",
+        "He saw ‘Uthman call for water for ablution. He poured from his vessel over his hands and washed them three times. Then he put his right hand into the ablution water, rinsed his mouth, drew water into his nose and blew it out. Then he washed his face three times and his hands up to the elbows three times. Then he wiped his head and then washed each foot three times. Then he said: “I saw the Prophet, may Allah bless him and grant him peace, perform ablution like this ablution of mine, and he said: ‘Whoever performs ablution like this ablution of mine, then prays two rak‘ahs without letting his thoughts wander during them, Allah will forgive his past sins.’”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 103,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 322,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 160,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 663,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwgg:0",
+        "reviewRecordSha256": "212e1cc43eca6d2b6594d4fb6781944957f863acb459cb233ce3eecfa5490be9",
+        "notes": [
+          "The complete water sequence explicitly includes rinsing the mouth, drawing water into the nose and expelling it, followed by face, hands to elbows, head and each foot. The singular each-foot wording and the named subject Allah in the forgiveness clause remain.",
+          "This is the later digital label [162], distinct from the earlier Arabic-digit [١٦٢] assigned reader 160. Its references are independently matched: modern print 164, Bewley 162 and Khan-family 1.4.165."
+        ],
+        "reviewScope": "AI-assisted comparison with both inspected Arabic prints and two individually matched English references. English bodies abbreviate chains; any omissions or explanatory additions are recorded. Selected source wording, exact origins and original labels remain preserved, except the one explicitly evidenced correction in 165. Independent Arabic, English, chapter and reference review remains pending.",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-ablution-r273249",
+          "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+          "layoutAuditSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+          "layoutReviewSha256": "6dafde039fa774cd4861d0e76d71c314f5c8f2791b85324c16e6eab996683355",
+          "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwgg:0",
+          "sourceReference": {
+            "label": "162",
+            "number": 162,
+            "markerId": "mwgg:0",
+            "occurrence": 2
+          },
+          "paragraphs": [
+            {
+              "id": "mwgg",
+              "textSha256": "d41f5264a86e3f9aba0f842019d46cfe11775574f671582cd1a9034c1f817aac",
+              "origin": {
+                "blockId": "mwgg",
+                "blockSha256": "d41f5264a86e3f9aba0f842019d46cfe11775574f671582cd1a9034c1f817aac",
+                "start": 0,
+                "end": 103
+              },
+              "layoutDecisionId": "layout-mwgg"
+            },
+            {
+              "id": "mwgw",
+              "textSha256": "e20e6bebd708b7782e7547a3d860ed65967b8d9a06c779804298049cb482643d",
+              "origin": {
+                "blockId": "mwgw",
+                "blockSha256": "e20e6bebd708b7782e7547a3d860ed65967b8d9a06c779804298049cb482643d",
+                "start": 0,
+                "end": 322
+              }
+            }
+          ]
+        }
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:163",
+      "book": "Ablution",
+      "number": 163,
+      "arabic_blocks": [
+        "[163] حدثنا آدم بن أبي إياس قال: حدثنا شعبة قال: حدثنا محمد بن زياد قال: سمعت أبا هريرة وكان يمر بنا والناس يتوضؤون من المطهرة قال ",
+        "أسبغوا الوضوء فإن أبا القاسم ﷺ قال ويل للأعقاب من النار "
+      ],
+      "arabic_sha256": "21750936db5a86f72b7d4963257a5a21f6f0d5caae38c4e20ee03f2ca2e21467",
+      "english_blocks": [
+        "Adam ibn Abi Iyas related to us. He said: Shu‘bah related to us. He said: Muhammad ibn Ziyad related to us. He said: I heard Abu Hurayrah—he would pass by us while the people were performing ablution from the water vessel—say:",
+        "“Perform ablution thoroughly, for Abu al-Qasim, may Allah bless him and grant him peace, said: ‘Woe to the heels from the Fire!’”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 131,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 56,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 226,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 129,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwhw:0",
+        "reviewRecordSha256": "22bca1f1e3d6cbf44095d2131968642cbb965b3be9c492673246e8ae264732d9",
+        "notes": [
+          "Muhammad ibn Ziyad’s hearing of Abu Hurayrah and the setting at the water vessel remain in the full introduction. Abu al-Qasim remains the name used in the source; no explanatory replacement is inserted.",
+          "The Ibn Sirin statement about washing the ring area is separate chapter context and remains outside this report and narration."
+        ],
+        "reviewScope": "AI-assisted comparison with both inspected Arabic prints and two individually matched English references. English bodies abbreviate chains; any omissions or explanatory additions are recorded. Selected source wording, exact origins and original labels remain preserved, except the one explicitly evidenced correction in 165. Independent Arabic, English, chapter and reference review remains pending.",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-ablution-r273249",
+          "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+          "layoutAuditSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+          "layoutReviewSha256": "6dafde039fa774cd4861d0e76d71c314f5c8f2791b85324c16e6eab996683355",
+          "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwhw:0",
+          "sourceReference": {
+            "label": "163",
+            "number": 163,
+            "markerId": "mwhw:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwhw",
+              "textSha256": "c8404b2da1839b4fd0f0f1f32ca4b5d91e3c95974f00fdf993e28ba9fa03433a",
+              "origin": {
+                "blockId": "mwhw",
+                "blockSha256": "c8404b2da1839b4fd0f0f1f32ca4b5d91e3c95974f00fdf993e28ba9fa03433a",
+                "start": 0,
+                "end": 131
+              }
+            },
+            {
+              "id": "mwiA",
+              "textSha256": "cd1f5786221d8ccc80550e732ae62bf8b34939d7ddfde59fed0ee5f7013f5013",
+              "origin": {
+                "blockId": "mwiA",
+                "blockSha256": "cd1f5786221d8ccc80550e732ae62bf8b34939d7ddfde59fed0ee5f7013f5013",
+                "start": 0,
+                "end": 56
+              }
+            }
+          ]
+        }
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:164",
+      "book": "Ablution",
+      "number": 164,
+      "arabic_blocks": [
+        "[164] حدثنا عبد الله بن يوسف قال: أخبرنا مالك عن سعيد المقبري عن عبيد بن جريج أنه قال لعبد الله بن عمر",
+        "يا أبا عبد الرحمن رأيتك تصنع أربعا لم أر أحدا من أصحابك يصنعها قال وما هي يا ابن جريج قال: رأيتك لا تمس من الأركان إلا اليمانيين ورأيتك تلبس النعال السبتية ورأيتك تصبغ بالصفرة ورأيتك إذا كنت بمكة أهل الناس إذا رأوا الهلال ولم تهل أنت حتى كان يوم التروية قال عبد الله أما الأركان فإني لم أر رسول الله ﷺ يمس إلا اليمانيين وأما النعال السبتية فإني رأيت رسول الله ﷺ يلبس النعل التي ليس فيها شعر ويتوضأ فيها فأنا أحب أن ألبسها وأما الصفرة فإني رأيت رسول الله ﷺ يصبغ بها فأنا أحب أن أصبغ بها وأما الإهلال فإني لم أر رسول الله ﷺ يهل حتى تنبعث به راحلته "
+      ],
+      "arabic_sha256": "bf9370303d7ee2faf20507532a7dd73c4c48439888c2771561bb6e86b2501428",
+      "english_blocks": [
+        "‘Abdullah ibn Yusuf related to us. He said: Malik informed us, from Sa‘id al-Maqburi, from ‘Ubayd ibn Jurayj, that he said to ‘Abdullah ibn ‘Umar:",
+        "“Abu ‘Abd al-Rahman, I have seen you do four things which I have not seen any of your companions do.” He said: “What are they, Ibn Jurayj?” He said: “I have seen you touch none of the corners except the two Yemeni ones. I have seen you wear tanned-leather sandals, and I have seen you dye with yellow. I have seen that, when you are in Makkah, the people begin the talbiyah when they see the crescent, but you do not begin it until the Day of Tarwiyah.”",
+        "‘Abdullah said: “As for the corners, I did not see the Messenger of Allah, may Allah bless him and grant him peace, touch any except the two Yemeni ones. As for tanned-leather sandals, I saw the Messenger of Allah, may Allah bless him and grant him peace, wear sandals with no hair on them and perform ablution while wearing them, so I like to wear them. As for the yellow, I saw the Messenger of Allah, may Allah bless him and grant him peace, dye with it, so I like to dye with it. As for beginning the talbiyah, I did not see the Messenger of Allah, may Allah bless him and grant him peace, begin it until his mount rose with him.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 102,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 254,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 254,
+            "end": 546,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 146,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 453,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 634,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwiw:0",
+        "reviewRecordSha256": "dbadfa42666c722858a35ce2b2f4e71e3ddafeea43fd8f57bf734f9611544782",
+        "notes": [
+          "All four observations, the question asking what they are and all four answers remain in order. The two Yemeni corners, hairless sandals, yellow dye, crescent and Day of Tarwiyah are retained.",
+          "The selected Arabic does not state a hair object for dyeing or name henna; the working English does not import those additions from the comparisons. It also preserves the mount rising with him, without replacing it with a date or a journey-to-Hajj explanation. Ihlal is rendered as beginning the talbiyah.",
+          "The historical print has plural النعال in the reply where the selected and modern print have النعل. The selected wording is retained without an Arabic correction."
+        ],
+        "reviewScope": "AI-assisted comparison with both inspected Arabic prints and two individually matched English references. English bodies abbreviate chains; any omissions or explanatory additions are recorded. Selected source wording, exact origins and original labels remain preserved, except the one explicitly evidenced correction in 165. Independent Arabic, English, chapter and reference review remains pending.",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-ablution-r273249",
+          "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+          "layoutAuditSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+          "layoutReviewSha256": "6dafde039fa774cd4861d0e76d71c314f5c8f2791b85324c16e6eab996683355",
+          "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwiw:0",
+          "sourceReference": {
+            "label": "164",
+            "number": 164,
+            "markerId": "mwiw:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwiw",
+              "textSha256": "20b755bbfb37a29e82c05ce977ae5f7214e23ee7f1a5e500fbc2c5159e3fc88a",
+              "origin": {
+                "blockId": "mwiw",
+                "blockSha256": "20b755bbfb37a29e82c05ce977ae5f7214e23ee7f1a5e500fbc2c5159e3fc88a",
+                "start": 0,
+                "end": 102
+              }
+            },
+            {
+              "id": "mwjA",
+              "textSha256": "a169ff1dc8ab5553a39356fb5da0edea83fbb1a45d20e73911c7807d09ce74c2",
+              "origin": {
+                "blockId": "mwjA",
+                "blockSha256": "a169ff1dc8ab5553a39356fb5da0edea83fbb1a45d20e73911c7807d09ce74c2",
+                "start": 0,
+                "end": 546
+              }
+            }
+          ]
+        }
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:165",
+      "book": "Ablution",
+      "number": 165,
+      "arabic_blocks": [
+        "[165] حدثنا مسدد قال: حدثنا إسماعيل قال: حدثنا خالد عن حفصة بنت سيرين عن أم عطية قالت:",
+        "قال النبي ﷺ لهن في غسل ابنته ابدأن بميامنها ومواضع الوضوء منها"
+      ],
+      "arabic_sha256": "8b149b947db8991915084458d5f74f1e89a376126c82a8156c29d968f6830980",
+      "english_blocks": [
+        "Musaddad related to us. He said: Isma‘il related to us. He said: Khalid related to us, from Hafsah bint Sirin, from Umm ‘Atiyyah, who said:",
+        "The Prophet, may Allah bless him and grant him peace, said to them concerning washing his daughter: “Begin with her right side and the parts of her washed in ablution.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation with an explicitly recorded Arabic correction supported by two printed witnesses. English comparison bodies and the original input remain accessible. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 86,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 62,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 139,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 168,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwkg:0",
+        "reviewRecordSha256": "c33f66948525037fd601020edc891d521196593e696baff34757261ea1ab844e",
+        "notes": [
+          "Both inspected prints have the feminine reporting form قالت after Umm ‘Atiyyah. The digital source has قال. A declared prototype correction supplies the final letter only, with unchanged original paragraph, exact offsets, both printed readings and matching English retained.",
+          "The report retains addressing them while washing his daughter, the right side and the ablution places. It does not insert the daughter’s name or additional washing instructions."
+        ],
+        "reviewScope": "AI-assisted comparison with both inspected Arabic prints and two individually matched English references. English bodies abbreviate chains; any omissions or explanatory additions are recorded. Selected source wording, exact origins and original labels remain preserved, except the one explicitly evidenced correction in 165. Independent Arabic, English, chapter and reference review remains pending.",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-ablution-r273249",
+          "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+          "layoutAuditSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+          "layoutReviewSha256": "6dafde039fa774cd4861d0e76d71c314f5c8f2791b85324c16e6eab996683355",
+          "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwkg:0",
+          "sourceReference": {
+            "label": "165",
+            "number": 165,
+            "markerId": "mwkg:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwkg",
+              "textSha256": "6237859bafc6989d974c3d72c4963488f7d879fb4b1d07728374663c9a0bd807",
+              "origin": {
+                "blockId": "mwkg",
+                "blockSha256": "6237859bafc6989d974c3d72c4963488f7d879fb4b1d07728374663c9a0bd807",
+                "start": 0,
+                "end": 85
+              }
+            },
+            {
+              "id": "mwkw",
+              "textSha256": "508629b7149c8e4c864379184ea89492a549155054e573833c7a8aa2343e5b36",
+              "origin": {
+                "blockId": "mwkw",
+                "blockSha256": "508629b7149c8e4c864379184ea89492a549155054e573833c7a8aa2343e5b36",
+                "start": 0,
+                "end": 62
+              }
+            }
+          ]
+        },
+        "originalArabicSha256": "9cf390eead63eb2f2a41112e37447381fd2ef11e3af576fc88787034e2fa7bf1",
+        "arabicCorrections": [
+          {
+            "id": "165-feminine-reporting-verb",
+            "paragraphId": "mwkg",
+            "start": 81,
+            "end": 84,
+            "before": "قال",
+            "after": "قالت",
+            "originalParagraphSha256": "6237859bafc6989d974c3d72c4963488f7d879fb4b1d07728374663c9a0bd807",
+            "correctedParagraphSha256": "bfa810ae3e130488eacbdc6ebfc49d51bdcf6c3d3e3cca41fbc101c2388a1e4f",
+            "status": "chosen-for-personal-prototype",
+            "reviewerKind": "ai",
+            "independentReview": "pending",
+            "reason": "Both inspected Arabic prints use قالت for Umm ‘Atiyyah’s report. Supply the final feminine letter in the derived prototype chain; preserve the original digital paragraph exactly.",
+            "witnesses": [
+              {
+                "sourceId": "brill-1862",
+                "pdfPage": 55,
+                "reading": "قالت",
+                "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+              },
+              {
+                "sourceId": "dar-ibn-kathir-2002",
+                "pdfPage": 54,
+                "reading": "قالت",
+                "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+              }
+            ],
+            "contextNoteId": "165-source-correction",
+            "englishSegmentId": "165-1",
+            "englishRendering": "Umm ‘Atiyyah, who said:"
+          }
+        ]
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:166",
+      "book": "Ablution",
+      "number": 166,
+      "arabic_blocks": [
+        "[166] حدثنا حفص بن عمر قال: حدثنا شعبة قال: أخبرني أشعث بن سليم قال: سمعت أبي عن مسروق عن عائشة قالت",
+        "كان النبي ﷺ يعجبه التيمن في تنعله وترجله وطهوره وفي شأنه كله "
+      ],
+      "arabic_sha256": "63384c8dd09f777dbe0c67adb04ee4fd29c952d08cb1ef8f60a8b70578227917",
+      "english_blocks": [
+        "Hafs ibn ‘Umar related to us. He said: Shu‘bah related to us. He said: Ash‘ath ibn Sulaym informed me. He said: I heard my father relate from Masruq, from ‘A’ishah, who said:",
+        "The Prophet, may Allah bless him and grant him peace, liked beginning with the right when putting on his sandals, combing his hair, purifying himself and in all his affairs."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 100,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 61,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 174,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 173,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwlQ:0",
+        "reviewRecordSha256": "ab9b3ac91c5c1e520c101408bbc7790b785bee6158975854f1f0199e24a19cb3",
+        "notes": [
+          "The full chain retains Ash‘ath’s direct hearing of his father, followed by Masruq and ‘A’ishah. Sandals, combing, purification and all affairs remain separate items; the wording is not reduced to a topic summary."
+        ],
+        "reviewScope": "AI-assisted comparison with both inspected Arabic prints and two individually matched English references. English bodies abbreviate chains; any omissions or explanatory additions are recorded. Selected source wording, exact origins and original labels remain preserved, except the one explicitly evidenced correction in 165. Independent Arabic, English, chapter and reference review remains pending.",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-ablution-r273249",
+          "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+          "layoutAuditSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+          "layoutReviewSha256": "6dafde039fa774cd4861d0e76d71c314f5c8f2791b85324c16e6eab996683355",
+          "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwlQ:0",
+          "sourceReference": {
+            "label": "166",
+            "number": 166,
+            "markerId": "mwlQ:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwlQ",
+              "textSha256": "9f53c8dff75be601e74b3e631fbf0291ad8f15eecbe77134f363e5f2a3a24d15",
+              "origin": {
+                "blockId": "mwlQ",
+                "blockSha256": "9f53c8dff75be601e74b3e631fbf0291ad8f15eecbe77134f363e5f2a3a24d15",
+                "start": 0,
+                "end": 100
+              }
+            },
+            {
+              "id": "mwlg",
+              "textSha256": "4a1914c5035fe71fd51df4fbf027d6e9c97a043b784ad525d9f3ce015442ce5a",
+              "origin": {
+                "blockId": "mwlg",
+                "blockSha256": "4a1914c5035fe71fd51df4fbf027d6e9c97a043b784ad525d9f3ce015442ce5a",
+                "start": 0,
+                "end": 61
+              }
+            }
+          ]
+        }
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:167",
+      "book": "Ablution",
+      "number": 167,
+      "arabic_blocks": [
+        "[167] حدثنا عبد الله بن يوسف قال: أخبرنا مالك عن إسحاق بن عبد الله بن أبي طلحة عن أنس بن مالك أنه قال:",
+        "رأيت رسول الله ﷺ وحانت صلاة العصر فالتمس الناس الوضوء فلم يجدوه فأتي رسول الله ﷺ بوضوء فوضع رسول الله ﷺ في ذلك الإناء يده وأمر الناس أن يتوضؤوا منه قال: فرأيت الماء ينبع من تحت أصابعه حتى توضؤوا من عند آخرهم "
+      ],
+      "arabic_sha256": "46167f53248e5dc1d9a9f5aa225e51944d4b08dd1f896c1b8d09c2535edb1aa1",
+      "english_blocks": [
+        "‘Abdullah ibn Yusuf related to us. He said: Malik informed us, from Ishaq ibn ‘Abdullah ibn Abi Talhah, from Anas ibn Malik, who said:",
+        "I saw the Messenger of Allah, may Allah bless him and grant him peace, when the time for the ‘Asr prayer had come. The people looked for water for ablution but did not find any. Water for ablution was brought to the Messenger of Allah, may Allah bless him and grant him peace. The Messenger of Allah, may Allah bless him and grant him peace, put his hand into that vessel and ordered the people to perform ablution from it. He said: I saw water springing from beneath his fingers until every last one of them had performed ablution."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 102,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 208,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 134,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 532,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwmg:0",
+        "reviewRecordSha256": "f86842b2e2db7064b93c6a4ada5e700c294ff62bd311b9c2471081a21a3a170d",
+        "notes": [
+          "The repeated references to the Messenger of Allah, the arrival of ‘Asr, unsuccessful search, brought water, hand in the vessel, instruction to the people and every last person finishing are all retained. No explanatory miracle label is added to the hadith.",
+          "The historical print begins with “I saw the Prophet,” while the selected and modern print say “I saw the Messenger of Allah.” The selected wording remains. The chapter’s separate ‘A’ishah statement about missing dawn water and tayammum is not part of this narration."
+        ],
+        "reviewScope": "AI-assisted comparison with both inspected Arabic prints and two individually matched English references. English bodies abbreviate chains; any omissions or explanatory additions are recorded. Selected source wording, exact origins and original labels remain preserved, except the one explicitly evidenced correction in 165. Independent Arabic, English, chapter and reference review remains pending.",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-ablution-r273249",
+          "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+          "layoutAuditSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+          "layoutReviewSha256": "6dafde039fa774cd4861d0e76d71c314f5c8f2791b85324c16e6eab996683355",
+          "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwmg:0",
+          "sourceReference": {
+            "label": "167",
+            "number": 167,
+            "markerId": "mwmg:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwmg",
+              "textSha256": "064e75df3a586d12783065ffce30167fac4c67011b486456b9de11c936a4a16d",
+              "origin": {
+                "blockId": "mwmg",
+                "blockSha256": "064e75df3a586d12783065ffce30167fac4c67011b486456b9de11c936a4a16d",
+                "start": 0,
+                "end": 102
+              }
+            },
+            {
+              "id": "mwmw",
+              "textSha256": "6fada6b055213730ac464f883ede7fe79e72a245c9a2cb78276b3154d4385db6",
+              "origin": {
+                "blockId": "mwmw",
+                "blockSha256": "6fada6b055213730ac464f883ede7fe79e72a245c9a2cb78276b3154d4385db6",
+                "start": 0,
+                "end": 208
+              }
+            }
+          ]
+        }
+      },
+      "audio_status": "No recording yet."
     }
   ],
   "sourceLocationCorrections": {
@@ -12402,7 +13645,7 @@
     "faithSourceSha256": "0f8c0518a21d266a075dd1cfb756733845ed5dff6548f634cfded0542a30a7a9",
     "knowledgeReviewSha256": "351ad243c96c33164cbdab6671abb0d2867548982925aeed71adae2b03ee2c2f",
     "knowledgeSourceSha256": "9060879f4b110cc9007f35db6b1f2fa0cc37c5ba8e510531721b024cbadf4e58",
-    "ablutionReviewSha256": "637bd9bb01f32896f764a18d4a80b3881dd211825b502d56a5aa9e9937bf435c",
+    "ablutionReviewSha256": "475970010e6c0652a70b77eff2327aecd74520acb86d54f8aaf1c7ac50bae3e4",
     "ablutionSourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd"
   }
 }
