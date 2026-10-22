@@ -11,9 +11,13 @@ export function externalSourceURL(value){
  requireValue(url.protocol==='https:'&&!url.username&&!url.password,'Source links must use HTTPS without credentials');
  return url;
 }
-export function validateSourceReferences(bundle,entries,{sourceRecordSha256,knownEntries=entries}={}){
- requireValue(bundle?.schemaVersion===1,'Missing or unsupported source references');
- requireValue(hash(bundle.sourceRecordSha256)&&bundle.sourceRecordSha256===sourceRecordSha256,'Source references belong to another text version');
+export function validateSourceReferences(bundle,entries,{sourceRecordSha256,entriesSha256,knownEntries=entries}={}){
+ requireValue([1,2].includes(bundle?.schemaVersion),'Missing or unsupported source references');
+ if(bundle.schemaVersion===1){
+  requireValue(bundle.entriesSha256===undefined&&hash(bundle.sourceRecordSha256)&&bundle.sourceRecordSha256===sourceRecordSha256,'Source references belong to another text version');
+ }else{
+  requireValue(bundle.sourceRecordSha256===undefined&&hash(bundle.entriesSha256)&&bundle.entriesSha256===entriesSha256,'Source references belong to another book text version');
+ }
  requireValue(Array.isArray(bundle.sources)&&bundle.sources.length>0&&Array.isArray(bundle.entries),'Missing source reference records');
  const sources=new Map();
  for(const source of bundle.sources){

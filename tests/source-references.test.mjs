@@ -7,9 +7,9 @@ import {createContentLibrary} from '../reader/content-library.mjs';
 const read=path=>JSON.parse(readFileSync(new URL('../'+path,import.meta.url)));
 const source=read('research/bukhari-opening-review.json'),ledger=read('content/review/opening-ledger.json');
 const validate=refs=>validateSourceReferences(refs,source.entries,{sourceRecordSha256:ledger.sourceRecordSha256});
-function pack(){const built=buildBooks(source,ledger);return JSON.parse(built.files.get(built.catalog.books[0].path));}
+function pack({raw=false}={}){const built=buildBooks(source,ledger),value=JSON.parse(built.files.get(built.catalog.books[0].path));return raw?value:{...value,sourceRecord:built.catalog.sourceRecord};}
 test('each entry shows only its recorded references, page and translation identity',()=>{
- const value=pack();validate(value.sourceReferences);
+ const value=pack();validateSourceReferences(value.sourceReferences,source.entries,{entriesSha256:objectHash(source.entries)});
  for(const e of source.entries){const html=sourceDialogHTML(e,value,{hasAudio:true});assert(html.includes(`PDF page ${e.source_pages.darussalam_sample_pdf_page}`));assert(html.includes(`bukhari:${e.number}`));assert(!html.includes(`bukhari:${e.number===1?2:1}`));assert(html.includes(`source-review.html#hadith-${e.number}`));assert(html.includes('not the Darussalam translation'));assert.equal((html.match(/data-source-block="arabic-/g)||[]).length,e.arabic_blocks.length);}
 });
 test('citations preserve edition-specific locators and never infer numbers or translator identity',()=>{
@@ -51,7 +51,7 @@ test('production requires a separate human reference review bound to the exact m
 });
 test('book loading refuses missing references or offline comparison notes',async()=>{
  for(const missing of ['references','notes']){
-  const built=buildBooks(source,ledger),value=pack(),catalog=structuredClone(built.catalog);
+  const built=buildBooks(source,ledger),value=pack({raw:true}),catalog=structuredClone(built.catalog);
   if(missing==='references')delete value.sourceReferences;
   const body=JSON.stringify(value),sha256=digest(body),path=`books/${value.book.id}-${sha256.slice(0,16)}.json`;Object.assign(catalog.books[0],{path,sha256,bytes:Buffer.byteLength(body)});
   const responses=new Map([[path,body],['books/catalog.json',JSON.stringify(catalog)]]);if(missing!=='notes')responses.set('source-review.html','<p>fixture</p>');

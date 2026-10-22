@@ -1,0 +1,164 @@
+{
+  "checkedAt": "2026-10-22",
+  "status": "implemented-and-local-upgrade-verified",
+  "independentReview": "pending",
+  "reader": {
+    "release": "opening-e91a1f6acff3",
+    "entries": 180,
+    "books": 4,
+    "sourceRecordSha256": "b152f5b875c6f6b3abc3d4f18ed55c13ade5c8aa342a750ab8641b3cd1d8165a",
+    "completeSourceRecordBytesUnchanged": true,
+    "audioCatalogBytesUnchanged": true,
+    "recordedAudioRange": "1–6",
+    "newRecordings": 0
+  },
+  "architecture": {
+    "catalog": "Schema 2 stores the exact collection source metadata once in the release-checked catalog. The global source and reference hashes remain bound to the unchanged admission ledger at build time.",
+    "bookFiles": "Schema 2 book files contain exact entries, chapter context and their citations. Reference bundles bind to the hash of their own complete entry list. Runtime also checks each citation row against the exact entry hash.",
+    "sourcePresentation": "The reader attaches the frozen current catalog metadata to each loaded book in memory. Arabic source access, licence attribution, changes and local notes retain their existing presentation.",
+    "offline": "Unchanged content-addressed files can be reused across releases after size and SHA-256 verification. Corrupted cached files are fetched again. Reading remains a single user-facing download; audio packs remain optional.",
+    "compatibility": "The runtime still supports schema 1 catalogs and book files. Existing immutable files remain available for older readers.",
+    "reviewGates": "Production, admission, original source, references and independent-review gates are unchanged. This packaging change supplies no scholarly approval."
+  },
+  "measurement": {
+    "comparison": "Exact admitted 167-entry and 180-entry snapshots, repacked under the new schema; measurements are book-file transfer sizes, excluding other changed app assets.",
+    "previousSourceHash": "9345acc8c72a50007c5917dc459e2759a70436893dd1ed5ea73fe920f425f374",
+    "currentSourceHash": "b152f5b875c6f6b3abc3d4f18ed55c13ade5c8aa342a750ab8641b3cd1d8165a",
+    "changedBooks": [
+      "ablution"
+    ],
+    "reusedBooks": [
+      {
+        "id": "opening-revelation",
+        "path": "books/opening-revelation-0a534f10d205292c.json",
+        "bytes": 96992
+      },
+      {
+        "id": "faith",
+        "path": "books/faith-ad873aab8759ca02.json",
+        "bytes": 334872
+      },
+      {
+        "id": "knowledge",
+        "path": "books/knowledge-e3d5ef7956421322.json",
+        "bytes": 528181
+      }
+    ],
+    "legacyBookDownloadBytes": 1414115,
+    "newBookDownloadBytes": 389930,
+    "catalogBytes": 125595,
+    "currentEntriesUnchanged": true
+  },
+  "verification": {
+    "node": 220,
+    "python": 60,
+    "failed": 0,
+    "newRegressionTests": 7,
+    "sourceAndReleaseIntegrityChecks": 13,
+    "browser": {
+      "oldRelease": "opening-25cfdd8a0c71",
+      "newRelease": "opening-e91a1f6acff3",
+      "beforeContinue": "#read/180",
+      "beforeSaved": "Saved 1",
+      "afterContinue": "#read/180",
+      "afterSaved": "Saved 1",
+      "rendered": [
+        {
+          "number": 1,
+          "englishExact": true,
+          "arabicExact": true,
+          "currentAttributionExact": true,
+          "font": "28px",
+          "scrollWidth": 320,
+          "theme": "day",
+          "width": 320
+        },
+        {
+          "number": 8,
+          "englishExact": true,
+          "arabicExact": true,
+          "currentAttributionExact": true,
+          "font": "28px",
+          "scrollWidth": 320,
+          "theme": "day",
+          "width": 320
+        },
+        {
+          "number": 59,
+          "englishExact": true,
+          "arabicExact": true,
+          "currentAttributionExact": true,
+          "font": "28px",
+          "scrollWidth": 320,
+          "theme": "day",
+          "width": 320
+        },
+        {
+          "number": 155,
+          "englishExact": true,
+          "arabicExact": true,
+          "currentAttributionExact": true,
+          "font": "28px",
+          "scrollWidth": 320,
+          "theme": "day",
+          "width": 320
+        },
+        {
+          "number": 172,
+          "englishExact": true,
+          "arabicExact": true,
+          "currentAttributionExact": true,
+          "font": "28px",
+          "scrollWidth": 320,
+          "theme": "day",
+          "width": 320
+        },
+        {
+          "number": 178,
+          "englishExact": true,
+          "arabicExact": true,
+          "currentAttributionExact": true,
+          "font": "28px",
+          "scrollWidth": 320,
+          "theme": "day",
+          "width": 320
+        },
+        {
+          "number": 180,
+          "englishExact": true,
+          "arabicExact": true,
+          "currentAttributionExact": true,
+          "font": "28px",
+          "scrollWidth": 320,
+          "theme": "day",
+          "width": 320
+        }
+      ],
+      "offline": {
+        "serverStopped": true,
+        "report178": true,
+        "completeArabic": true,
+        "currentAttribution": true,
+        "continueAfterBrowsing": "#read/180",
+        "readingReady": true,
+        "audioReady": true,
+        "phraseSearch": {
+          "query": "Ghundar and Yahya",
+          "result": 178
+        },
+        "chapterOnly": {
+          "route": "#book/ablution/chapter/chapter-01",
+          "numberedHadith": false,
+          "arabicParagraphs": 2
+        }
+      }
+    },
+    "screenshot": "/private/tmp/hadith-stable-books-chapter.png"
+  },
+  "limits": [
+    "The schema 1 to schema 2 migration changes every current book filename once. Savings apply to later updates after the new files have been saved.",
+    "The 167-to-180 measurement compares book-file transfers only; the catalog and other changed app/source-note files are additional downloads.",
+    "Desktop offline and updater checks do not establish physical iPhone locked-screen behavior. No narration or player behavior changed.",
+    "All 180 reports remain personal-prototype working translations. Full collection coverage, English chapter introductions, independent reviews and additional reviewed audio remain unfinished."
+  ]
+}

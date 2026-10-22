@@ -1,9 +1,278 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "namespace": "bukhari-opening-v1",
   "publication": "personal-prototype",
   "sourceRecordSha256": "b152f5b875c6f6b3abc3d4f18ed55c13ade5c8aa342a750ab8641b3cd1d8165a",
   "referencesSha256": "5d2a70a883c04231277f5fea532829e2efeb68dc7bdc92382bd396dc56539cde",
+  "sourceRecord": {
+    "created": "2026-10-20",
+    "scope": "Personal prototype: complete numbered entries 1–180 across 4 books. The rest of the collection remains in preparation.",
+    "selected_route": "Pinned Arabic text plus a new English working translation.",
+    "license": {
+      "id": "CC-BY-SA-4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Sahih al-Bukhari by Muhammad ibn Ismail al-Bukhari; Arabic digital transcription by Arabic Wikisource contributors, opening revision 484874 and Faith revision 490285. Book of Knowledge: revision 252975. Book of Ablution: revision 273249.",
+      "changes": "Entries 1–2 are unchanged. Entries 3–7 are derived from the pinned Arabic; Hadith 5 has one explicitly recorded correction from له to لك supported by two printed witnesses. Original inputs are retained in prototype-inputs.json. New AI-assisted English, presentation and comparison notes are offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app. Hadith 8–58 retain their Arabic paragraphs unchanged from revision 490285; their new English and available chapter titles are AI-assisted. A disputed chapter heading is explicitly withheld. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 59–134 derive from revision 252975; only 99 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 135–180 derive from revision 273249; only 137, 146, 165 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Exact source origins and original labels are retained; any different reader reference is explicitly mapped. Chapter introductions are preserved separately in Arabic, with English translation still pending. Declared printed additions supply a missing closing transmission note and chapter heading; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately."
+    },
+    "sources": [
+      {
+        "id": "arabic-base",
+        "url": "https://ar.wikisource.org/w/index.php?title=%D8%B5%D8%AD%D9%8A%D8%AD_%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A/%D9%83%D8%AA%D8%A7%D8%A8_%D8%A8%D8%AF%D8%A1_%D8%A7%D9%84%D9%88%D8%AD%D9%8A&oldid=484874",
+        "role": "Exact Arabic digital input; community-maintained, not assumed error-free.",
+        "sha256_download": "cad3964e2aaabe1d6655ec45b69a6e66d2f604ce3055a239699c101513e8270f"
+      },
+      {
+        "id": "darussalam-sample",
+        "url": "https://dar-us-salam.com/?controller=attachment&id_attachment=433",
+        "role": "Printed Arabic and Muhsin Khan English comparison, pages 45–46. Not redistributed here.",
+        "sha256_download": "dafb56c86101cb47f0830125428ca303b3a85e97f92948140825b33daa842ed6"
+      },
+      {
+        "id": "bewley",
+        "url": "https://aishabewley.org/bukhari1",
+        "role": "Second named English translator, entries 1–2. Comparison only; no full English text copied."
+      },
+      {
+        "id": "sunnah-1",
+        "url": "https://sunnah.com/bukhari:1",
+        "role": "Additional Arabic/reference check. English belongs to the Khan translation family, not an independent third translator."
+      },
+      {
+        "id": "sunnah-2",
+        "url": "https://sunnah.com/bukhari:2",
+        "role": "Additional Arabic/reference check."
+      },
+      {
+        "id": "brill-scan",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/%D8%B5%D8%AD%D9%8A%D8%AD_%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A_%D8%B11.pdf",
+        "role": "Historical Arabic print witness, listed as Brill 1862, PDF page 4. Read visually. Not proof that Wikisource was transcribed from this edition.",
+        "sha256_download": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+      },
+      {
+        "id": "islamhouse-khan",
+        "url": "https://islamhouse.com/en/books/70510",
+        "localManifest": "content/sources/islamhouse-bukhari/manifest.json",
+        "role": "Khan-family English comparator with source-credit caveats. 1.1.3 combines Arabic entries 3 and 4; 1.1.4–6 correspond to Arabic entries 5–7. Full Arabic chains and some transmission notes are absent."
+      },
+      {
+        "id": "brill-1862",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+        "role": "Historical printed Arabic comparison, visually inspected; not asserted as the transcription’s base edition."
+      },
+      {
+        "id": "dar-ibn-kathir-2002",
+        "url": "https://archive.org/download/waq79565/79565.pdf",
+        "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+        "role": "Modern printed Arabic comparison, visually inspected; selected differences are recorded rather than harmonized."
+      },
+      {
+        "id": "ibn-hajar-opening-5",
+        "url": "https://www.islamweb.net/ar/library/content/52/7/?idfrom=&idto=&start=",
+        "role": "Ibn Hajar, Fath al-Bari, discussion of opening report 5, volume 1, pages 39–40; digital classical commentary consulted 20 October 2026. The website breadcrumb is inconsistent with the displayed opening-report text; identify the passage by its wording, not that breadcrumb.",
+        "checkedAt": "2026-10-20",
+        "evidenceExcerpt": "جمعه لك في صدرك"
+      },
+      {
+        "id": "nawawi-revelation",
+        "label": "Al-Nawawi · Sharh Sahih Muslim",
+        "url": "https://www.islamweb.net/ar/library/content/53/82/?idfrom=469&idto=474",
+        "kind": "commentary",
+        "format": "web",
+        "locator": "Volume 2, pages 351–353 · parallel revelation report",
+        "scope": "Lexical commentary on taksibu al-ma‘dum, nawa’ib al-haqq and Namus. The Muslim parallel is not substituted for the selected Bukhari wording."
+      },
+      {
+        "id": "mulaqqin-opening-3",
+        "label": "Ibn al-Mulaqqin · al-Tawdih",
+        "url": "https://www.islamweb.net/ar/library/content/305/19/باب",
+        "kind": "commentary",
+        "format": "web",
+        "locator": "Volume 2, pages 277–280 and 288–289 · opening report 3",
+        "scope": "Records lexical alternatives for Khadijah’s description and explains Namus; consulted as commentary, not narration text."
+      },
+      {
+        "id": "ayni-opening-4",
+        "label": "Al-‘Ayni · ‘Umdat al-Qari",
+        "url": "https://www.islamweb.net/ar/library/content/303/12/باب-بدء-الوحي",
+        "kind": "commentary",
+        "format": "web",
+        "locator": "Volume 1, pages 66–69 · opening report 4",
+        "scope": "Explains the continued chain, al-rujz and the bawadir variant. Other lexical readings are acknowledged."
+      },
+      {
+        "id": "ayni-opening-6",
+        "label": "Al-‘Ayni · ‘Umdat al-Qari",
+        "url": "https://www.islamweb.net/ar/library/content/303/16/باب-بدء-الوحي",
+        "kind": "commentary",
+        "format": "web",
+        "locator": "Volume 1, pages 74–76 · opening report 6",
+        "scope": "Explains the two chains, the chain-switch sign and the distinction between similar and identical wording."
+      },
+      {
+        "id": "ibn-hajar-heraclius",
+        "label": "Ibn Hajar · Fath al-Bari (digital transcription)",
+        "url": "https://ar.wikisource.org/wiki/الحديث_رقم_(_6_)_(_بسم_الله_الرحمن_الرحيم_من_محمد_عبد_الله_ورسوله_إلى_)",
+        "kind": "commentary",
+        "format": "web",
+        "locator": "Commentary on the Heraclius report; page title uses a different number",
+        "scope": "Community transcription of classical commentary. Used for al-Arisiyyin, Ibn al-Nazur and the unqualified faith reference; not used as an Arabic base edition."
+      },
+      {
+        "id": "arabic-faith",
+        "label": "Arabic Wikisource · fixed revision 490285",
+        "kind": "arabic-input",
+        "format": "web",
+        "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_الإيمان&oldid=490285"
+      },
+      {
+        "id": "arabic-knowledge",
+        "label": "Arabic Wikisource · fixed revision 252975",
+        "kind": "arabic-input",
+        "format": "web",
+        "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_العلم&oldid=252975"
+      },
+      {
+        "id": "bewley-knowledge",
+        "label": "Aisha Bewley · Book of Knowledge",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://aishabewley.org/bukhari2"
+      },
+      {
+        "id": "ibn-hajar-knowledge-79",
+        "label": "Ibn Hajar · Fath al-Bari · Hadith 79",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://www.islamweb.net/ar/library/content/52/155/باب-فضل-من-علم-وعلم"
+      },
+      {
+        "id": "ibn-hajar-knowledge-90",
+        "label": "Ibn Hajar · Fath al-Bari · Hadith 90",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://www.islamweb.net/amp/ar/library/content/52/178/باب-الغضب-في-الموعظة-والتعليم-إذا-رأى-ما-يكره"
+      },
+      {
+        "id": "ibn-hajar-knowledge-91",
+        "label": "Ibn Hajar · Fath al-Bari · Hadith 91",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://www.islamweb.net/ar/library/content/52/180/باب-الغضب-في-الموعظة-والتعليم-إذا-رأى-ما-يكره"
+      },
+      {
+        "id": "ayni-knowledge-99",
+        "label": "Al-‘Ayni · Umdat al-Qari · narrator chain for 99",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://islamweb.net/ar/library/content/303/487/باب-الحرص-على-الحديث"
+      },
+      {
+        "id": "ibn-hajar-knowledge-125",
+        "label": "Ibn Hajar · Fath al-Bari · quoted reading in 125",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://islamweb.net/ar/library/content/52/246/باب-قول-الله-تعالى-وما-أوتيتم-من-العلم-إلا-قليلا"
+      },
+      {
+        "id": "arabic-ablution",
+        "label": "Arabic Wikisource · fixed revision 273249",
+        "kind": "arabic-input",
+        "format": "web",
+        "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_الوضوء&oldid=273249"
+      },
+      {
+        "id": "bewley-ablution",
+        "label": "Aisha Bewley · Book of Wudu",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://aishabewley.org/bukhari3"
+      },
+      {
+        "id": "dorar-prayer-interval",
+        "label": "Dorar · explanation of the prayer interval",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://dorar.net/hadith/sharh/3834"
+      },
+      {
+        "id": "bathing-context-291",
+        "label": "Bukhari · Book of Bathing · report on bathing (291)",
+        "kind": "reference-check",
+        "format": "web",
+        "url": "https://sunnah.com/bukhari:291"
+      },
+      {
+        "id": "bathing-context-292",
+        "label": "Bukhari · Book of Bathing · parallel report (292)",
+        "kind": "reference-check",
+        "format": "web",
+        "url": "https://sunnah.com/bukhari:292"
+      },
+      {
+        "id": "bathing-context-293",
+        "label": "Bukhari · Book of Bathing · closing authorial note (293)",
+        "kind": "reference-check",
+        "format": "web",
+        "url": "https://sunnah.com/bukhari:293"
+      }
+    ],
+    "findings": [
+      "The selected digital Arabic includes full chains of transmission; the working English retains them.",
+      "The Brill print abbreviates the first narrator to al-Humaydi while the selected digital text and Darussalam give his name. Honorific wording and orthography also differ. These are recorded as witness differences, not silently harmonized.",
+      "The first two narration bodies were visually compared against the Darussalam Arabic and the older print. No additional substantive body clause was identified in those comparisons. This is an AI review, not an independent human audit.",
+      "The sample and a digital edition are not presumed identical merely because their translator is the same.",
+      "A close translation still involves linguistic judgment; zero interpretation and infallibility cannot honestly be promised.",
+      "Entries 3–7 have AI comparison records and declared wording choices; no human accuracy certification is claimed. The derived Hadith 5 correction does not modify the pinned digital input."
+    ],
+    "candidates": [
+      {
+        "name": "HadeethEnc",
+        "result": "Useful selected-hadith translation/API project; not established here as a complete, exact-numbered Bukhari edition with explicit redistribution and narration terms.",
+        "url": "https://hadeethenc.com/en/home/about"
+      },
+      {
+        "name": "Sunnah.com API",
+        "result": "Free API exists but requires a key. Useful for checking; no assumption that scraped mirrors confer permission to reuse translations.",
+        "url": "https://sunnah.com/developers"
+      },
+      {
+        "name": "Scraped GitHub English datasets",
+        "result": "Rejected as independent verification. Software/data wrapper licenses do not establish provenance or ownership of embedded translations.",
+        "url": "https://github.com/Jaguar16/open-hadith-data"
+      }
+    ],
+    "sourceLocationCorrections": {
+      "schemaVersion": 1,
+      "corrections": [
+        {
+          "sourceId": "brill-1862",
+          "fromURL": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf",
+          "toURL": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+          "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "bytes": 28290204,
+          "verifiedAt": "2026-10-21",
+          "basis": "The earlier URL returns 404. The corrected Wikimedia volume-one URL was located through the Wikisource file index and downloaded. Its full file SHA-256 matches the already pinned historical witness. This repairs a citation URL only; original review inputs and every hadith text remain unchanged.",
+          "discoveryURL": "https://ar.wikisource.org/wiki/ملف:صحيح_البخاري_ر0.pdf"
+        }
+      ]
+    },
+    "prototypeReview": {
+      "status": "personal-prototype-only",
+      "independentReview": "pending",
+      "userDecision": "Keep this as a clearly labelled personal prototype for now",
+      "originalSourceSha256": "fea9b889d30bdc3ceb8e41de8cb390292905391d2079993ce69a85b138bd7f33",
+      "originalDraftSha256": "6b31fb16f5bfc5e4acf08f06b269b20e5a8fc1a0747e153da9cd7cb3f6f9d43c",
+      "decisionsSha256": "a3d25932e2caca64186991ddb8ff1da18d39392990b131e5fffc50dca2f13d1e",
+      "openingSourceSha256": "d596d6aad6ad1f02839f3690c446d5b16791f7b7aa35c157b6e89a442db7b76a",
+      "faithReviewSha256": "913cde0d9b2089bd87a8c8a0b59766d267ca251b3febe56f814ef720156266b1",
+      "faithSourceSha256": "0f8c0518a21d266a075dd1cfb756733845ed5dff6548f634cfded0542a30a7a9",
+      "knowledgeReviewSha256": "351ad243c96c33164cbdab6671abb0d2867548982925aeed71adae2b03ee2c2f",
+      "knowledgeSourceSha256": "9060879f4b110cc9007f35db6b1f2fa0cc37c5ba8e510531721b024cbadf4e58",
+      "ablutionReviewSha256": "301da2ee41bc2cb390459e903c026790fa56d12c972e41e4ca88c47a2c75d984",
+      "ablutionSourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd"
+    }
+  },
   "books": [
     {
       "id": "opening-revelation",
@@ -18,9 +287,9 @@
         6,
         7
       ],
-      "path": "books/opening-revelation-5912c7128a18d9c9.json",
-      "bytes": 113027,
-      "sha256": "5912c7128a18d9c9304dbfc1e457023a6aa63067ee00f3c06ddb228222ad948c"
+      "path": "books/opening-revelation-0a534f10d205292c.json",
+      "bytes": 96992,
+      "sha256": "0a534f10d205292cd8ebfea683219367146e1940754c1607cffb2813e7d73f45"
     },
     {
       "id": "faith",
@@ -931,9 +1200,9 @@
           }
         }
       ],
-      "path": "books/faith-0083b6d6fb2f9a7e.json",
-      "bytes": 350907,
-      "sha256": "0083b6d6fb2f9a7eadbcb4945110c419838333e7735ac3df09c74693c8d947e2"
+      "path": "books/faith-ad873aab8759ca02.json",
+      "bytes": 334872,
+      "sha256": "ad873aab8759ca02927b2b331edd40ec0ea25a00cfad6b28433bd003ae235da9"
     },
     {
       "id": "knowledge",
@@ -2119,9 +2388,9 @@
           }
         }
       ],
-      "path": "books/knowledge-9e2c952eba9b7bf3.json",
-      "bytes": 544216,
-      "sha256": "9e2c952eba9b7bf392897807c32112156d08f8b6592582bff0ffe9a805d8fd34"
+      "path": "books/knowledge-e3d5ef7956421322.json",
+      "bytes": 528181,
+      "sha256": "e3d5ef7956421322449d73c21fb39b8814640ee1a1cc684eb85106142ea13ea6"
     },
     {
       "id": "ablution",
@@ -2894,9 +3163,9 @@
           }
         }
       ],
-      "path": "books/ablution-d0e576609a3d05d4.json",
-      "bytes": 405965,
-      "sha256": "d0e576609a3d05d4390aca5a12b99048d57001641e4e2df7cd63bf82df53d11f"
+      "path": "books/ablution-bbd47f3cd65faa06.json",
+      "bytes": 389930,
+      "sha256": "bbd47f3cd65faa06b309f378ebbfb83e0d01cb095b080f31ebdbff231d866395"
     }
   ],
   "entries": [

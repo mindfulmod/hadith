@@ -1,12 +1,17 @@
-import {verifyResponse} from './integrity.mjs';
+import {verifyResponse,objectDigest} from './integrity.mjs';
 import {validateChapters} from './navigation.mjs';
 import {validateSourceStructure} from './source-structure.mjs';
 import {validateSourceReferences,externalSourceURL} from './source-references.mjs';
 const freeze=value=>{if(value&&typeof value==='object'){Object.values(value).forEach(freeze);Object.freeze(value);}return value;};
 const requireValue=(value,message)=>{if(!value)throw new Error(message);};
 function validateCatalog(catalog){
- requireValue(catalog?.schemaVersion===1&&catalog.namespace==='bukhari-opening-v1','Unsupported collection');
+ requireValue([1,2].includes(catalog?.schemaVersion)&&catalog.namespace==='bukhari-opening-v1','Unsupported collection');
  requireValue(['evaluation','personal-prototype','production'].includes(catalog.publication),'Unknown publication status');
+ if(catalog.schemaVersion===2){
+  requireValue(catalog.sourceRecord&&Array.isArray(catalog.sourceRecord.sources)&&catalog.sourceRecord.license&&!Object.hasOwn(catalog.sourceRecord,'entries'),'Missing collection source trail');
+  externalSourceURL(catalog.sourceRecord.license.url);
+  requireValue(/^[a-f0-9]{64}$/.test(catalog.sourceRecordSha256)&&/^[a-f0-9]{64}$/.test(catalog.referencesSha256),'Invalid collection review hashes');
+ }
  requireValue(Array.isArray(catalog.books)&&catalog.books.length>0&&Array.isArray(catalog.entries)&&catalog.entries.length>0,'Empty collection');
  const books=new Map(catalog.books.map(b=>[b.id,b]));
  requireValue(books.size===catalog.books.length,'Duplicate book');
@@ -51,7 +56,8 @@ export async function createContentLibrary({files,base=new URL('./',import.meta.
    requireValue(pack.book?.id===id&&pack.book.number===descriptor.number&&pack.book.title===descriptor.title,'Book identity mismatch');
    requireValue(pack.book.sourceEntryCount===descriptor.sourceEntryCount,'Source coverage mismatch');
    requireValue(JSON.stringify(pack.book.chapters)===JSON.stringify(descriptor.chapters),'Chapter context mismatch');
-   requireValue(pack.sourceRecord&&Array.isArray(pack.sourceRecord.sources)&&pack.sourceRecord.license,'Missing source trail');
+   if(catalog.schemaVersion===1)requireValue(pack.sourceRecord&&Array.isArray(pack.sourceRecord.sources)&&pack.sourceRecord.license,'Missing source trail');
+   else requireValue(!Object.hasOwn(pack,'sourceRecord'),'Book contains conflicting collection metadata');
    requireValue(Array.isArray(pack.entries)&&JSON.stringify(pack.entries.map(e=>e.number))===JSON.stringify(descriptor.entryNumbers),'Incomplete book');
    for(const entry of pack.entries){
     const summary=summaries.get(entry.number);
@@ -59,7 +65,10 @@ export async function createContentLibrary({files,base=new URL('./',import.meta.
     validateSourceStructure(entry);
     requireValue(entry.english_blocks.join(' ').trim().split(/\s+/u).length===summary.englishWords,'Entry metadata mismatch');
    }
-   validateSourceReferences(pack.sourceReferences,pack.entries,{sourceRecordSha256:catalog.sourceRecordSha256,knownEntries:catalog.entries});
+   requireValue(pack.sourceReferences?.schemaVersion===catalog.schemaVersion,'Missing or incompatible source references');
+   validateSourceReferences(pack.sourceReferences,pack.entries,catalog.schemaVersion===1?{sourceRecordSha256:catalog.sourceRecordSha256,knownEntries:catalog.entries}:{entriesSha256:await objectDigest(pack.entries),knownEntries:catalog.entries});
+   for(const [index,entry]of pack.entries.entries())requireValue(pack.sourceReferences.entries[index].entrySha256===await objectDigest(entry),'Reference entry hash mismatch');
+   if(catalog.schemaVersion===2)pack.sourceRecord=catalog.sourceRecord;
    externalSourceURL(pack.sourceRecord.license.url);
    for(const row of pack.sourceReferences.entries)requireValue(descriptors.has(row.localNotes.path),'Offline comparison notes are missing from this release');
    freeze(pack);loaded.set(id,pack);return pack;

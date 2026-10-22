@@ -17,7 +17,7 @@ test('book publisher preserves every source field and produces identical output 
  const one=buildBooks(source,ledger),two=buildBooks(source,ledger);
  assert.deepEqual(one,two);
  const pack=JSON.parse(one.files.get(one.catalog.books[0].path));
- assert.deepEqual({...pack.sourceRecord,entries:pack.entries},source);
+ assert.equal(pack.sourceRecord,undefined);assert.deepEqual({...one.catalog.sourceRecord,entries:pack.entries},source);
  assert.deepEqual(planSession(one.catalog.entries,1,5),planSession(source.entries,1,5));
 });
 test('publication rejects changed wording, missing chains, duplicate identities and wrong book order',()=>{
@@ -71,7 +71,7 @@ test('a multi-book search refuses partial results and retries only the missing b
  const original=buildBooks(source,ledger),basePack=JSON.parse(original.files.get(original.catalog.books[0].path));
  const catalog={...original.catalog,books:[],entries:[]},responses=new Map(),calls=[];let unavailable=true;
  for(const [index,entry] of source.entries.entries()){
-  const id=`fixture-${index+1}`,pack={...basePack,book:{id,number:index+1,title:'Test fixture'},sourceReferences:{...basePack.sourceReferences,entries:basePack.sourceReferences.entries.filter(row=>row.id===entry.id)},entries:[entry]},body=JSON.stringify(pack),sha256=digest(body),path=`books/${id}-${sha256.slice(0,16)}.json`;
+  const id=`fixture-${index+1}`,pack={...basePack,book:{id,number:index+1,title:'Test fixture'},sourceReferences:{...basePack.sourceReferences,entriesSha256:objectHash([entry]),entries:basePack.sourceReferences.entries.filter(row=>row.id===entry.id)},entries:[entry]},body=JSON.stringify(pack),sha256=digest(body),path=`books/${id}-${sha256.slice(0,16)}.json`;
   responses.set(path,body);catalog.books.push({...pack.book,entryNumbers:[entry.number],bytes:Buffer.byteLength(body),sha256,path});catalog.entries.push({...original.catalog.entries[index],bookId:id});
  }
  responses.set('books/catalog.json',JSON.stringify(catalog));responses.set('source-review.html','<p>Fixture notes</p>');

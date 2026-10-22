@@ -7,7 +7,7 @@ const original=JSON.parse(readFileSync(new URL('../research/bukhari-opening-revi
 const input=JSON.parse(readFileSync(new URL('../research/bukhari-personal-collection.json',import.meta.url),'utf8'));
 const {catalog,files}=publishBooks({check:true});
 const packs=catalog.books.map(b=>JSON.parse(files.get(b.path)));
-const output={...packs[0].sourceRecord,entries:packs.flatMap(p=>p.entries)};
+const output={...catalog.sourceRecord,entries:packs.flatMap(p=>p.entries)};
 assert.deepEqual(JSON.parse(readFileSync(new URL('./source-record.json',import.meta.url),'utf8')),input,'Offline source record must match the reviewed input.');
 const legacy={window:{}};vm.runInNewContext(readFileSync(new URL('./content.js',import.meta.url),'utf8'),legacy);
 assert.deepEqual(JSON.parse(JSON.stringify(legacy.window.HadithContent)),original,'Archived design concepts must retain the same source.');

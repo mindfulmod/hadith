@@ -76,7 +76,9 @@ export function buildBooks(source,ledger,{production=false}={}){
  assert.deepEqual(assigned,source.entries.map(e=>e.number),'Book order must assign each entry exactly once');
  assert.equal(new Set(ledger.books.map(b=>b.id)).size,ledger.books.length,'Duplicate book ID');
  const {entries,...sourceRecord}=source;
- const catalog={schemaVersion:1,namespace:ledger.namespace,publication:mode,sourceRecordSha256:ledger.sourceRecordSha256,referencesSha256:ledger.referencesSha256,books:[],entries:[]};
+ // Collection metadata changes independently of a book’s exact entries and citations.
+ // Preserve it once in the checked catalog; keep all review gates above unchanged.
+ const catalog={schemaVersion:2,namespace:ledger.namespace,publication:mode,sourceRecordSha256:ledger.sourceRecordSha256,referencesSha256:ledger.referencesSha256,sourceRecord,books:[],entries:[]};
  const files=new Map();
  for(const book of ledger.books){
   assert(/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(book.id),'Invalid book ID');
@@ -86,8 +88,8 @@ export function buildBooks(source,ledger,{production=false}={}){
   assert(selected.length,'Empty book');
   const referenceRows=ledger.sourceReferences.entries.filter(row=>book.entryNumbers.includes(row.number));
   const citedIds=new Set(referenceRows.flatMap(row=>row.citations.map(c=>c.sourceId)));
-  const sourceReferences={...ledger.sourceReferences,entries:referenceRows,sources:ledger.sourceReferences.sources.filter(s=>citedIds.has(s.id))};
-  const pack={schemaVersion:1,namespace:ledger.namespace,publication:mode,book:{id:book.id,number:book.number,title:book.title,...(book.sourceEntryCount!==undefined?{sourceEntryCount:book.sourceEntryCount}:{}),...(book.chapters?{chapters:book.chapters}:{})},sourceRecord,sourceReferences,entries:selected};
+  const sourceReferences={schemaVersion:2,entriesSha256:objectHash(selected),sources:ledger.sourceReferences.sources.filter(s=>citedIds.has(s.id)),entries:referenceRows};
+  const pack={schemaVersion:2,namespace:ledger.namespace,publication:mode,book:{id:book.id,number:book.number,title:book.title,...(book.sourceEntryCount!==undefined?{sourceEntryCount:book.sourceEntryCount}:{}),...(book.chapters?{chapters:book.chapters}:{})},sourceReferences,entries:selected};
   const bytes=JSON.stringify(pack,null,2)+'\n',sha256=digest(bytes),path=`books/${book.id}-${sha256.slice(0,16)}.json`;
   files.set(path,bytes);
   catalog.books.push({...book,path,bytes:Buffer.byteLength(bytes),sha256});
