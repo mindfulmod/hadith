@@ -1,0 +1,282 @@
+{
+  "checkedAt": "2026-10-21",
+  "status": "personal-prototype-only",
+  "readerRelease": "opening-9c5547152eda",
+  "sourceRecordSha256": "8d0f48281faf9260a5e245d9f7caeb9956db0bff082e1ab205b625f466c9f3ee",
+  "catalogContextSha256": "52c325cd4ddf14169cd2c04aa4e04903b3cd5309244ba18725999ac3606811c6",
+  "scope": {
+    "newEntries": "68–81",
+    "totalEntries": 81,
+    "books": 3,
+    "knowledgeEntries": 23,
+    "knowledgeSourceChapters": 22,
+    "knowledgeSourceOnlyChapters": [
+      "chapter-01",
+      "chapter-06",
+      "chapter-11"
+    ],
+    "newArabicReportParagraphs": 27,
+    "newEnglishSegments": 34,
+    "newChapterArabicBlocks": 17,
+    "chapterIntroductionEnglish": "pending"
+  },
+  "preservation": "All 67 earlier entry objects and all five recording catalog rows are deep-equal to the preceding release. No audio media or original review input was changed. Narration input preparation now covers 81; actual Cedar recordings remain 1–6.",
+  "sourceReview": {
+    "record": "content/review/knowledge-next-review.json",
+    "arabicInput": "content/sources/wikisource-knowledge/manifest.json",
+    "printedWitnesses": [
+      {
+        "id": "brill-1862",
+        "pdfPages": [
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+      },
+      {
+        "id": "dar-ibn-kathir-2002",
+        "pdfPages": [
+          29,
+          30,
+          31,
+          32,
+          33
+        ],
+        "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+      }
+    ],
+    "method": "Complete relevant printed pages visually inspected; both PDF file hashes rechecked. Bewley 68–81 and pinned Khan-family EPUB 1.3.68–81 individually matched. Full Arabic paragraphs remain exact. This is AI comparison, not independent certification; abbreviated English comparison chains do not verify full working English chains.",
+    "findings": [
+      "Selected chain verbs and narrator-name forms remain despite printed variants.",
+      "72 and 75 retain apparent closing-brace markup in Arabic, with an explicit formatting notice.",
+      "74 and 78 stay separate with their full frames and quotations.",
+      "76 flags nearly reached versus attained puberty.",
+      "79 retains the full closing note and flags the disputed قيّلت rendering; Ibn Hajar’s commentary is linked as lexical evidence, separate from the narration."
+    ],
+    "citationRepair": "content/review/source-location-corrections.json"
+  },
+  "architecture": "Complete chapter spans remain mandatory across batches, including source-only chapter 11. Supplemental cited sources can be added without changing earlier entry reviews; conflicting source identities are rejected. Explicit same-file URL corrections affect active citations while original review inputs remain preserved.",
+  "automated": {
+    "node": 153,
+    "python": 39,
+    "failed": 0,
+    "checks": "Full Node and Python suites, all source importers, generated source/book/audio checks, release integrity, formatting and tracked public artifact packaging."
+  },
+  "browser": {
+    "exactEntries": [
+      {
+        "number": 68,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 2,
+        "arabicBlocks": 2
+      },
+      {
+        "number": 69,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 2,
+        "arabicBlocks": 2
+      },
+      {
+        "number": 70,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 2,
+        "arabicBlocks": 1
+      },
+      {
+        "number": 71,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 2,
+        "arabicBlocks": 2
+      },
+      {
+        "number": 72,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 3,
+        "arabicBlocks": 2
+      },
+      {
+        "number": 73,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 2,
+        "arabicBlocks": 2
+      },
+      {
+        "number": 74,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 3,
+        "arabicBlocks": 2
+      },
+      {
+        "number": 75,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 2,
+        "arabicBlocks": 2
+      },
+      {
+        "number": 76,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 2,
+        "arabicBlocks": 2
+      },
+      {
+        "number": 77,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 3,
+        "arabicBlocks": 2
+      },
+      {
+        "number": 78,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 4,
+        "arabicBlocks": 2
+      },
+      {
+        "number": 79,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 3,
+        "arabicBlocks": 2
+      },
+      {
+        "number": 80,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 2,
+        "arabicBlocks": 2
+      },
+      {
+        "number": 81,
+        "englishExact": true,
+        "arabicExact": true,
+        "englishBlocks": 2,
+        "arabicBlocks": 2
+      }
+    ],
+    "exactChapters": [
+      {
+        "chapter": "chapter-11",
+        "blocks": 2,
+        "exact": true
+      },
+      {
+        "chapter": "chapter-12",
+        "blocks": 1,
+        "exact": true
+      },
+      {
+        "chapter": "chapter-13",
+        "blocks": 1,
+        "exact": true
+      },
+      {
+        "chapter": "chapter-14",
+        "blocks": 1,
+        "exact": true
+      },
+      {
+        "chapter": "chapter-15",
+        "blocks": 1,
+        "exact": true
+      },
+      {
+        "chapter": "chapter-16",
+        "blocks": 2,
+        "exact": true
+      },
+      {
+        "chapter": "chapter-17",
+        "blocks": 2,
+        "exact": true
+      },
+      {
+        "chapter": "chapter-18",
+        "blocks": 1,
+        "exact": true
+      },
+      {
+        "chapter": "chapter-19",
+        "blocks": 1,
+        "exact": true
+      },
+      {
+        "chapter": "chapter-20",
+        "blocks": 2,
+        "exact": true
+      },
+      {
+        "chapter": "chapter-21",
+        "blocks": 1,
+        "exact": true
+      },
+      {
+        "chapter": "chapter-22",
+        "blocks": 2,
+        "exact": true
+      }
+    ],
+    "session": {
+      "start": 68,
+      "numbers": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76
+      ],
+      "browsedOutside": 79,
+      "continuePreservedAt": 68,
+      "chapterOnlySessionStops": 0
+    },
+    "layout": {
+      "widths": [
+        320,
+        393
+      ],
+      "largestPx": 28,
+      "horizontalOverflow": false,
+      "themes": [
+        "day",
+        "night"
+      ]
+    },
+    "offline": {
+      "previewServerStopped": true,
+      "reportReopened": 78,
+      "sourceChapterReopened": "chapter-11",
+      "chapterArabicBlocks": 2,
+      "exactSearch": {
+        "query": "every Thursday",
+        "result": 70
+      },
+      "readingReady": true,
+      "audioNotImplicitlyDownloaded": true
+    },
+    "runtimeErrors": [],
+    "screenshot": "/private/tmp/hadith-knowledge-69-reader.png"
+  },
+  "offlineReadingMB": 4.94,
+  "limits": [
+    "Independent Arabic, English, context and reuse review remain pending; production publication is not approved.",
+    "Knowledge has 23 of 76 reports and 22 of 54 source chapters. Continue with 82–134 in complete chapters.",
+    "Nine Knowledge introductory Arabic paragraphs remain pending English translation.",
+    "Cedar recordings cover 1–6. No new recording was generated this turn. Desktop offline checks do not replace iPhone acceptance."
+  ]
+}

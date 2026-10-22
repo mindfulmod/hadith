@@ -1,5 +1,20 @@
 {
   "schemaVersion": 1,
+  "sourceLocationCorrections": {
+    "schemaVersion": 1,
+    "corrections": [
+      {
+        "sourceId": "brill-1862",
+        "fromURL": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf",
+        "toURL": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+        "bytes": 28290204,
+        "verifiedAt": "2026-10-21",
+        "basis": "The earlier URL returns 404. The corrected Wikimedia volume-one URL was located through the Wikisource file index and downloaded. Its full file SHA-256 matches the already pinned historical witness. This repairs a citation URL only; original review inputs and every hadith text remain unchanged.",
+        "discoveryURL": "https://ar.wikisource.org/wiki/ملف:صحيح_البخاري_ر0.pdf"
+      }
+    ]
+  },
   "status": "personal-prototype-only",
   "manifest": {
     "id": "wikisource-bukhari-knowledge-r252975",
@@ -104,7 +119,7 @@
     }
   },
   "completeInventorySha256": "968f569748c5305b8743b60c0767f7e24b1d8d4784c866deb435dfc5e2bc1961",
-  "scope": "Only the blocks used by Hadith 59–67 and their chapter context. The complete source inventory remains separately preserved.",
+  "scope": "Only the blocks used by Hadith 59–81 and their chapter context. The complete source inventory remains separately preserved.",
   "selectedBlocks": [
     {
       "htmlId": "باب_فضل_العلم",
@@ -336,6 +351,314 @@
       "text": "ذكر النبي ﷺ قعد على بعيره وأمسك إنسان بخطامه أو بزمامه قال أي يوم هذا فسكتنا حتى ظننا أنه سيسميه سوى اسمه قال أليس يوم النحر قلنا بلى قال: فأي شهر هذا فسكتنا حتى ظننا أنه سيسميه بغير اسمه، فقال أليس بذي الحجة قلنا بلى قال: فإن دماءكم وأموالكم وأعراضكم بينكم حرام كحرمة يومكم هذا في شهركم هذا في بلدكم هذا ليبلغ الشاهد الغائب فإن الشاهد عسى أن يبلغ من هو أوعى له منه ",
       "ordinal": 33,
       "textSha256": "cd9b275ff61b22e973f037e6185d7a6d12fec4220d710b0008fa9d321b7ee7be"
+    },
+    {
+      "htmlId": "باب_العلم_قبل_القول_والعمل",
+      "tag": "h3",
+      "text": "باب العلم قبل القول والعمل",
+      "ordinal": 34,
+      "textSha256": "65f08564388a25a4bbe8a15885e2882d21e855daa9d21ef5c6d4f5bd61881a55"
+    },
+    {
+      "htmlId": "mwRw",
+      "tag": "p",
+      "text": "لقول الله تعالى { فاعلم أنه لا إله إلا الله } فبدأ بالعلم وأن العلماء هم ورثة الأنبياء ورثوا العلم من أخذه أخذ بحظ وافر ومن سلك طريقا يطلب به علما سهل الله له طريقا إلى الجنة، وقال جل ذكره { إنما يخشى الله من عباده العلماء }، وقال { وما يعقلها إلا العالمون } { وقالوا لو كنا نسمع أو نعقل ما كنا في أصحاب السعير }، وقال { هل يستوي الذين يعلمون والذين لا يعلمون }، وقال النبي ﷺ من يرد الله به خيرا يفقهه وإنما العلم بالتعلم، وقال أبو ذر لو وضعتم الصمصامة على هذه وأشار إلى قفاه ثم ظننت أني أنفذ كلمة سمعتها من النبي ﷺ قبل أن تجيزوا علي لأنفذتها، وقال ابن عباس { كونوا ربانيين } حلماء فقهاء، ويقال الرباني الذي يربي الناس بصغار العلم قبل كباره ",
+      "ordinal": 35,
+      "textSha256": "efbaf17a5d64e1ad0a8af00803f5ccdc525e8988c2fba8204372c60263a1594c"
+    },
+    {
+      "htmlId": "باب_ما_كان_النبي_ﷺ_يتخولهم_بالموعظة_والعلم_كي_لا_ينفروا",
+      "tag": "h3",
+      "text": "باب ما كان النبي ﷺ يتخولهم بالموعظة والعلم كي لا ينفروا",
+      "ordinal": 36,
+      "textSha256": "0308903de2d239bb70fc522b8d14834c34e5f439f633bba2e98b62fd95eac7b0"
+    },
+    {
+      "htmlId": "mwTA",
+      "tag": "p",
+      "text": "[68] حدثنا محمد بن يوسف قال: أخبرنا سفيان عن الأعمش عن أبي وائل عن ابن مسعود قال: ",
+      "ordinal": 37,
+      "textSha256": "704898ae3e1fab5510ebd5ee7fbf36b1599cb6f740e7cb1d99e5ce36021d2b90"
+    },
+    {
+      "htmlId": "mwTQ",
+      "tag": "p",
+      "text": "كان النبي ﷺ يتخولنا بالموعظة في الأيام كراهة السآمة علينا",
+      "ordinal": 38,
+      "textSha256": "c280f73721818ad7f8d74ac44224fe61e7644134ece5bfd4c140b6e311ab1964"
+    },
+    {
+      "htmlId": "mwTw",
+      "tag": "p",
+      "text": "[69] حدثنا محمد بن بشار قال: حدثنا يحيى بن سعيد قال: حدثنا شعبة قال: حدثني أبو التياح عن أنس عن النبي ﷺ",
+      "ordinal": 39,
+      "textSha256": "8c5b6803682cef7a6e533a0c4467d5ef0039b45e68af71d2371a21ad4e5ab7e2"
+    },
+    {
+      "htmlId": "mwUQ",
+      "tag": "p",
+      "text": "قال: يسروا ولا تعسروا وبشروا ولا تنفروا",
+      "ordinal": 40,
+      "textSha256": "73880d50009d87beca2db9d7127ae6ac05d65357bd86bf511154436e9761605c"
+    },
+    {
+      "htmlId": "باب_من_جعل_لأهل_العلم_أياما_معلومة",
+      "tag": "h3",
+      "text": "باب من جعل لأهل العلم أياما معلومة",
+      "ordinal": 41,
+      "textSha256": "e84d4d20f5031e0a7f9e0b80ca1773194ac90fac31e4013a9fd6adb062f55760"
+    },
+    {
+      "htmlId": "mwUw",
+      "tag": "p",
+      "text": "[70] حدثنا عثمان بن أبي شيبة قال: حدثنا جرير عن منصور عن أبي وائل قال: كان عبد الله يذكر الناس في كل خميس، فقال له رجل يا أبا عبد الرحمن لوددت أنك ذكرتنا كل يوم قال: أما إنه يمنعني من ذلك أني أكره أن أملكم وإني أتخولكم بالموعظة كما كان النبي ﷺ يتخولنا بها مخافة السآمة علينا ",
+      "ordinal": 42,
+      "textSha256": "10e2a8e5c337d3574b8ad48089dc6a76dffef9f89d5c374aa0b1ab5ed801c8db"
+    },
+    {
+      "htmlId": "باب_من_يرد_الله_به_خيرا_يفقهه_في_الدين",
+      "tag": "h3",
+      "text": "باب من يرد الله به خيرا يفقهه في الدين",
+      "ordinal": 43,
+      "textSha256": "90b686f7b1abb1181d018467a778fefcac0e8012958f7cd60514f4ea6dd7954c"
+    },
+    {
+      "htmlId": "mwVg",
+      "tag": "p",
+      "text": "[71] حدثنا سعيد بن عفير قال: حدثنا ابن وهب عن يونس عن ابن شهاب قال: قال حميد بن عبد الرحمن سمعت معاوية خطيبا يقول: سمعت النبي ﷺ يقول: ",
+      "ordinal": 44,
+      "textSha256": "7c4386ba8b7a6aaa7a847db4d576857b8be8732cdc514f8175f76674cebf8577"
+    },
+    {
+      "htmlId": "mwWA",
+      "tag": "p",
+      "text": "من يرد الله به خيرا يفقهه في الدين وإنما أنا قاسم والله يعطي ولن تزال هذه الأمة قائمة على أمر الله لا يضرهم من خالفهم حتى يأتي أمر الله ",
+      "ordinal": 45,
+      "textSha256": "1633da678afee352e33166ec70970e122cf77939942130fd26727dd7eec5f504"
+    },
+    {
+      "htmlId": "باب_الفهم_في_العلم",
+      "tag": "h3",
+      "text": "باب الفهم في العلم",
+      "ordinal": 46,
+      "textSha256": "8c8d6bb7476dcf5d281ab089a8546576a2617ac344c3f5055af8ec8abfe36f5b"
+    },
+    {
+      "htmlId": "mwWg",
+      "tag": "p",
+      "text": "[72] حدثنا علي حدثنا سفيان قال: قال لي ابن أبي نجيح عن مجاهد قال صحبت بن عمر إلى المدينة فلم أسمعه يحدث عن رسول الله ﷺ إلا حديثا واحدا قال:",
+      "ordinal": 47,
+      "textSha256": "10610106b4a49f326456a747e95169549e725f9ac1f37bb1ca6112a3d53de281"
+    },
+    {
+      "htmlId": "mwXA",
+      "tag": "p",
+      "text": "كنا عند النبي ﷺ فأتي بجمار، فقال إن من الشجر شجرة مثلها كمثل المسلم فأردت أن أقول هي النخلة فإذا أنا أصغر القوم فسكت، فقال النبي ﷺ هي النخلة}} ",
+      "ordinal": 48,
+      "textSha256": "778658af9cae2b08c93da959a51a462d5c59c725db766ba1dc9238d8df928662"
+    },
+    {
+      "htmlId": "باب_الاغتباط_في_العلم_والحكمة",
+      "tag": "h3",
+      "text": "باب الاغتباط في العلم والحكمة",
+      "ordinal": 49,
+      "textSha256": "b018f5726f0efc89cfa4eed190d407b2fd65fbec0feb05c100929e8e2c7ac174"
+    },
+    {
+      "htmlId": "mwYA",
+      "tag": "p",
+      "text": "وقال عمر تفقهوا قبل أن تسودوا",
+      "ordinal": 50,
+      "textSha256": "1352f24291aee9c53c41afe075ff9d9c69ce2698f98be7e7e889b5f8f7325bac"
+    },
+    {
+      "htmlId": "mwYQ",
+      "tag": "p",
+      "text": "[73] حدثنا الحميدي قال: حدثنا سفيان قال: حدثني إسماعيل بن أبي خالد على غير ما حدثناه الزهري قال: سمعت قيس بن أبي حازم قال: سمعت عبد الله بن مسعود قال: قال النبي ﷺ:",
+      "ordinal": 51,
+      "textSha256": "fa6dc1fc68cba47e01e3c7f1b6fa410a8b6ff59cb133d39a30497504c6da7ca3"
+    },
+    {
+      "htmlId": "mwYw",
+      "tag": "p",
+      "text": "لا حسد إلا في اثنتين رجل آتاه الله مالا فسلط على هلكته في الحق ورجل آتاه الله الحكمة فهو يقضي بها ويعلمها",
+      "ordinal": 52,
+      "textSha256": "dec708e069547ade0c02ecaa13af5ec71c811d387cff1943100dd7387e8a73aa"
+    },
+    {
+      "htmlId": "باب_ما_ذكر_في_ذهاب_موسى_ﷺ_في_البحر_إلى_الخضر",
+      "tag": "h3",
+      "text": "باب ما ذكر في ذهاب موسى ﷺ في البحر إلى الخضر",
+      "ordinal": 53,
+      "textSha256": "25d6336e0b5a5b2521e26f888ba660e575904c64554754b75f31f64fc1eccbdd"
+    },
+    {
+      "htmlId": "mwZg",
+      "tag": "p",
+      "text": "وقوله تعالى { هل أتبعك على أن تعلمني مما علمت رشدا } ",
+      "ordinal": 54,
+      "textSha256": "1ee5eef86727836707eaafb1b584cf8adcd59107ed587844232b0002a9e87bda"
+    },
+    {
+      "htmlId": "mwZw",
+      "tag": "p",
+      "text": "[74] حدثني محمد بن غرير الزهري قال: حدثنا يعقوب بن إبراهيم قال: حدثني أبي عن صالح عن ابن شهاب حدث أن عبيد الله بن عبد الله أخبره عن ابن عباس أنه تمارى هو والحر بن قيس بن حصن الفزاري في صاحب موسى قال ابن عباس هو خضر فمر بهما أبي بن كعب فدعاه بن عباس، فقال إني تماريت أنا وصاحبي هذا في صاحب موسى الذي سأل موسى السبيل إلى لقيه هل سمعت النبي ﷺ يذكر شأنه قال: نعم سمعت رسول الله ﷺ يقول: ",
+      "ordinal": 55,
+      "textSha256": "9ed9958f94bbae710433f9073f5b74fa50aa7eb43679c623433d3f02eec661d8"
+    },
+    {
+      "htmlId": "mwag",
+      "tag": "p",
+      "text": "بينما موسى في ملأ من بني إسرائيل جاءه رجل، فقال هل تعلم أحدا أعلم منك قال موسى لا فأوحى الله إلى موسى بلى عبدنا خضر فسأل موسى السبيل إليه فجعل الله له الحوت آية وقيل له إذا فقدت الحوت فارجع فإنك ستلقاه وكان يتبع أثر الحوت في البحر، فقال لموسى فتاه { أرأيت إذ أوينا إلى الصخرة فإني نسيت الحوت وما أنسانيه إلا الشيطان أن أذكره } { قال ذلك ما كنا نبغي فارتدا على آثارهما قصصا } فوجدا خضرا فكان من شأنهما الذي قص الله عز وجل في كتابه",
+      "ordinal": 56,
+      "textSha256": "d25e7282c42ca1310b21d23fd33fee61527876cfcd6997cac5cd863b0b7fda83"
+    },
+    {
+      "htmlId": "باب_قول_النبي_ﷺ_اللهم_علمه_الكتاب",
+      "tag": "h3",
+      "text": "باب قول النبي ﷺ اللهم علمه الكتاب",
+      "ordinal": 57,
+      "textSha256": "99316c8fc632eff8c8d83c4c66b697a8b054b60cf6011615cd2bfb76ebbdef2d"
+    },
+    {
+      "htmlId": "mwbQ",
+      "tag": "p",
+      "text": "[75] حدثنا أبو معمر قال: حدثنا عبد الوارث قال: حدثنا خالد عن عكرمة عن ابن عباس قال:",
+      "ordinal": 58,
+      "textSha256": "852649f3dd27ec9a9c5b21ef6b06f431e2ec1b8393489bf39e528d798a5d3917"
+    },
+    {
+      "htmlId": "mwbg",
+      "tag": "p",
+      "text": "ضمني رسول الله ﷺ، وقال اللهم علمه الكتاب}} ",
+      "ordinal": 59,
+      "textSha256": "774735b862923b49db65c710adcdfa19f2588fdc1697ad955b4e49b324437243"
+    },
+    {
+      "htmlId": "باب_متى_يصح_سماع_الصغير",
+      "tag": "h3",
+      "text": "باب متى يصح سماع الصغير",
+      "ordinal": 60,
+      "textSha256": "48b9df3300e96b991ef85a370800c186cf417016d5895db3f61e35c476db97d3"
+    },
+    {
+      "htmlId": "mwcQ",
+      "tag": "p",
+      "text": "[76] حدثنا إسماعيل بن أبي أويس قال: حدثني مالك عن ابن شهاب عن عبيد الله بن عبد الله بن عتبة عن عبد الله بن عباس قال:",
+      "ordinal": 61,
+      "textSha256": "b373eb09effe1a42b71db9bccf57b60408f36f9df233d96feae8fbc0d8a99f1b"
+    },
+    {
+      "htmlId": "mwcg",
+      "tag": "p",
+      "text": "أقبلت راكبا على حمار أتان وأنا يومئذ قد ناهزت الاحتلام ورسول الله ﷺ يصلي بمنى إلى غير جدار فمررت بين يدي بعض الصف وأرسلت الأتان ترتع فدخلت في الصف فلم ينكر ذلك علي",
+      "ordinal": 62,
+      "textSha256": "a6d811437465b549e00cbc67bdbef145f2455894901bbcf5b3a86f1c47d59bc5"
+    },
+    {
+      "htmlId": "mwdA",
+      "tag": "p",
+      "text": "[77] حدثني محمد بن يوسف قال: حدثنا أبو مسهر قال: حدثني محمد بن حرب حدثني الزبيدي عن الزهري عن محمود بن الربيع قال عقلت: ",
+      "ordinal": 63,
+      "textSha256": "5d7fa6bfba0b6f201c6f552db4bc23b902e058e867a78312ef121ef92f10763e"
+    },
+    {
+      "htmlId": "mwdQ",
+      "tag": "p",
+      "text": "من النبي ﷺ مجة مجها في وجهي وأنا بن خمس سنين من دلو",
+      "ordinal": 64,
+      "textSha256": "186ba1ae33ae9dc80c2e211799499edad8bd4d085c16997b78bfbf2c7ec8b69c"
+    },
+    {
+      "htmlId": "باب_الخروج_في_طلب_العلم",
+      "tag": "h3",
+      "text": "باب الخروج في طلب العلم",
+      "ordinal": 65,
+      "textSha256": "3807407bb1cab100f3e3a6c07c457e57349036bb26ef4c8915933c83da63c715"
+    },
+    {
+      "htmlId": "mweA",
+      "tag": "p",
+      "text": "ورحل جابر بن عبد الله مسيرة شهر إلى عبد الله بن أنيس في حديث واحد",
+      "ordinal": 66,
+      "textSha256": "7799018c2c1e1c1ca209f44a97d82cfc10b6f61e9fbda741f5dd23a9ee1f3d38"
+    },
+    {
+      "htmlId": "mweQ",
+      "tag": "p",
+      "text": "[78] حدثنا أبو القاسم خالد بن خلي قال: حدثنا محمد بن حرب قال: قال الأوزاعي أخبرنا الزهري عن عبيد الله بن عبد الله بن عتبة بن مسعود عن ابن عباس أنه تمارى هو والحر بن قيس بن حصن الفزاري في صاحب موسى فمر بهما أبي بن كعب فدعاه بن عباس، فقال:",
+      "ordinal": 67,
+      "textSha256": "deca1b137ca9e11b3871527a6bad9f83e2e00c64e5790c37a41471e380c839b1"
+    },
+    {
+      "htmlId": "mweg",
+      "tag": "p",
+      "text": "إني تماريت أنا وصاحبي هذا في صاحب موسى الذي سأل السبيل إلى لقيه هل سمعت رسول الله ﷺ يذكر شأنه، فقال أبي نعم سمعت النبي ﷺ يذكر شأنه يقول بينما موسى في ملأ من بني إسرائيل إذ جاءه رجل، فقال أتعلم أحدا أعلم منك قال موسى لا فأوحى الله عز وجل إلى موسى بلى عبدنا خضر فسأل السبيل إلى لقيه فجعل الله له الحوت آية وقيل له إذا فقدت الحوت فارجع فإنك ستلقاه فكان موسى ﷺ يتبع أثر الحوت في البحر، فقال: فتى موسى لموسى { أرأيت إذ أوينا إلى الصخرة فإني نسيت الحوت وما أنسانيه إلا الشيطان أن أذكره } قال موسى { ذلك ما كنا نبغي فارتدا على آثارهما قصصا } فوجدا خضرا فكان من شأنهما ما قص الله في كتابه ",
+      "ordinal": 68,
+      "textSha256": "f5df12d073b09faa89eeac3e3c7991a44dbfe56ca1e4c38e8bea67d4bdc0f9b2"
+    },
+    {
+      "htmlId": "باب_فضل_من_علم_وعلم",
+      "tag": "h3",
+      "text": "باب فضل من علم وعلم",
+      "ordinal": 69,
+      "textSha256": "a54c92e399713e9f43b8a1b951d88fbf948b08858e14bad980e35c8c33832875"
+    },
+    {
+      "htmlId": "mwfw",
+      "tag": "p",
+      "text": "[79] حدثنا محمد بن العلاء قال: حدثنا حماد بن أسامة عن بريد بن عبد الله عن أبي بردة عن أبي موسى عن النبي ﷺ قال: ",
+      "ordinal": 70,
+      "textSha256": "51a06d3b8f2d35a0d4ececff929f6a19cd97c33e1c438e309f8e08ca88e42689"
+    },
+    {
+      "htmlId": "mwgQ",
+      "tag": "p",
+      "text": "مثل ما بعثني الله به من الهدى والعلم كمثل الغيث الكثير أصاب أرضا فكان منها نقية قبلت الماء فأنبتت الكلأ والعشب الكثير وكانت منها أجادب أمسكت الماء فنفع الله بها الناس فشربوا وسقوا وزرعوا وأصابت منها طائفة أخرى إنما هي قيعان لا تمسك ماء ولا تنبت كلأ فذلك مثل من فقه في دين الله ونفعه ما بعثني الله به فعلم وعلم ومثل من لم يرفع بذلك رأسا ولم يقبل هدى الله الذي أرسلت به قال أبو عبد الله قال إسحاق وكان منها طائفة قيّلت الماء قاع يعلوه الماء والصفصف المستوي من الأرض ",
+      "ordinal": 71,
+      "textSha256": "71e6b4d1917c5a522a06efc7d3f569e6e7e46102849552678a7a4a804c5ed073"
+    },
+    {
+      "htmlId": "باب_رفع_العلم_وظهور_الجهل",
+      "tag": "h3",
+      "text": "باب رفع العلم وظهور الجهل",
+      "ordinal": 72,
+      "textSha256": "82be9cff7f698871b7fe9f7e48134bb8602b5e862d6cd463be5033f2b81f1fd6"
+    },
+    {
+      "htmlId": "mwgw",
+      "tag": "p",
+      "text": "وقال ربيعة لا ينبغي لأحد عنده شيء من العلم أن يضيع نفسه",
+      "ordinal": 73,
+      "textSha256": "d7ae6a5a1fe9de5062175a734bad1e0805c99ab8dcd057cce8edd02dd7628b71"
+    },
+    {
+      "htmlId": "mwhA",
+      "tag": "p",
+      "text": "[80] حدثنا عمران بن ميسرة قال: حدثنا عبد الوارث عن أبي التياح عن أنس قال: قال رسول الله ﷺ:",
+      "ordinal": 74,
+      "textSha256": "dde6b3fbf424f80e52bbfd640da6b9d1b44ac7261f0e819036421d3bf76980f7"
+    },
+    {
+      "htmlId": "mwhg",
+      "tag": "p",
+      "text": "إن من أشراط الساعة أن يرفع العلم ويثبت الجهل ويشرب الخمر ويظهر الزنا ",
+      "ordinal": 75,
+      "textSha256": "55ecd5f13c690a94c77e3e380ab33132f3755fcd3ec5da635569676b3e7123b0"
+    },
+    {
+      "htmlId": "mwhw",
+      "tag": "p",
+      "text": "[81] حدثنا مسدد قال: حدثنا يحيى عن شعبة عن قتادة عن أنس قال:",
+      "ordinal": 76,
+      "textSha256": "ad40f112f43980025d052792361222375912fe1beaaf871289e314340069ca9d"
+    },
+    {
+      "htmlId": "mwiA",
+      "tag": "p",
+      "text": "لأحدثنكم حديثا لا يحدثكم أحد بعدي سمعت رسول الله ﷺ يقول: من أشراط الساعة أن يقل العلم ويظهر الجهل ويظهر الزنا وتكثر النساء ويقل الرجال حتى يكون لخمسين امرأة القيم الواحد",
+      "ordinal": 77,
+      "textSha256": "1d4ddd4c70bd2bcaebe09abc6e6233d1051357146df8b96ecc25b6d1f97a1c84"
     }
   ],
   "review": {
@@ -382,11 +705,18 @@
         "format": "pdf",
         "url": "https://archive.org/download/waq79565/79565.pdf",
         "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+      },
+      {
+        "id": "ibn-hajar-knowledge-79",
+        "label": "Ibn Hajar · Fath al-Bari · Hadith 79",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://www.islamweb.net/ar/library/content/52/155/باب-فضل-من-علم-وعلم"
       }
     ],
     "createdAt": "2026-10-20",
-    "scope": "Complete numbered reports 59–67. Available chapter titles use provisional English. Disputed headings are labelled under review; unnumbered chapter introductions remain separately preserved in Arabic.",
-    "editionNote": "Bewley 59–67 and Khan-family 1.3.56–59 then 1.3.63–67 were matched individually. The intervening Khan-family “same as above” references do not define extra reports in this Arabic source. Printed and digital chapter divisions differ. A wording discrepancy in 59 remains visible and unresolved. Full chains and closing transmission notes are retained.",
+    "scope": "Complete numbered reports 59–81. Available chapter titles use provisional English. Disputed headings are labelled under review; unnumbered chapter introductions remain separately preserved in Arabic.",
+    "editionNote": "Bewley 59–67 and Khan-family 1.3.56–59 then 1.3.63–67 were matched individually. The intervening Khan-family “same as above” references do not define extra reports in this Arabic source. Printed and digital chapter divisions differ. A wording discrepancy in 59 remains visible and unresolved. Full chains and closing transmission notes are retained. Bewley 68–81 and Khan-family 1.3.68–81 were matched individually. Selected Arabic was visually compared with Brill 1862 PDF pages 28–32 and Dar Ibn Kathir 2002 PDF pages 29–33. Two apparent markup remnants, singular/plural chain differences, the approach-to-puberty wording and the disputed closing word in 79 are explicitly recorded. No witness wording is silently merged into the selected source.",
     "entries": [
       {
         "number": 59,
@@ -1060,6 +1390,1098 @@
         ],
         "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic.",
         "reviewRecordSha256": "d9c3523799d9802281b828d4a90b4154bb8989663367cb293a2fddb198770095"
+      },
+      {
+        "number": 68,
+        "id": "bukhari:68",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:68",
+        "chapterId": "chapter-12",
+        "paragraphIds": [
+          "mwTA",
+          "mwTQ"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "segments": [
+          {
+            "id": "68-1",
+            "paragraphId": "mwTA",
+            "start": 0,
+            "end": 82,
+            "kind": "chain",
+            "arabic": "[68] حدثنا محمد بن يوسف قال: أخبرنا سفيان عن الأعمش عن أبي وائل عن ابن مسعود قال: ",
+            "english": "Muhammad ibn Yusuf related to us. He said: Sufyan informed us, from al-A‘mash, from Abu Wa’il, from Ibn Mas‘ud, who said:",
+            "arabicSha256": "704898ae3e1fab5510ebd5ee7fbf36b1599cb6f740e7cb1d99e5ce36021d2b90",
+            "englishSha256": "3082c02eb51ce1a30270cc69d7277e6568b73f85abe227a5b9bc968e09b3adb6"
+          },
+          {
+            "id": "68-2",
+            "paragraphId": "mwTQ",
+            "start": 0,
+            "end": 57,
+            "kind": "report",
+            "arabic": "كان النبي ﷺ يتخولنا بالموعظة في الأيام كراهة السآمة علينا",
+            "english": "The Prophet, may Allah bless him and grant him peace, would choose days to give us admonition, disliking that we should become weary.",
+            "arabicSha256": "c280f73721818ad7f8d74ac44224fe61e7644134ece5bfd4c140b6e311ab1964",
+            "englishSha256": "b0421b8d055e1789567f52a4e4a1057ad96e0b128b832cb737bc1aa5518ff2f1"
+          }
+        ],
+        "arabicSha256": "9f8f46c3f44d6ea167d5dee6846a19903dc8137dfda955d25f68eedb13b93f44",
+        "englishSha256": "4dea3a632bce653fd77b8df82a4600e7934d40a8a7807011f3a788074e4e8f85",
+        "comparisons": [
+          {
+            "id": "bewley-knowledge",
+            "reference": "68"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.3.68"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              29
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              30
+            ]
+          }
+        ],
+        "notes": [
+          "The occasional timing of admonition and avoidance of weariness are retained. Explanations about religious knowledge or a daily schedule from the comparison translations are not inserted into this report."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic.",
+        "reviewRecordSha256": "29475459bbd01a38c97ba1b3e3a03225f5812ff4c15f7d56da1ac087cb39a53f"
+      },
+      {
+        "number": 69,
+        "id": "bukhari:69",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:69",
+        "chapterId": "chapter-12",
+        "paragraphIds": [
+          "mwTw",
+          "mwUQ"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "segments": [
+          {
+            "id": "69-1",
+            "paragraphId": "mwTw",
+            "start": 0,
+            "end": 103,
+            "kind": "chain",
+            "arabic": "[69] حدثنا محمد بن بشار قال: حدثنا يحيى بن سعيد قال: حدثنا شعبة قال: حدثني أبو التياح عن أنس عن النبي ﷺ",
+            "english": "Muhammad ibn Bashshar related to us. He said: Yahya ibn Sa‘id related to us. He said: Shu‘bah related to us. He said: Abu al-Tayyah related to me, from Anas, from the Prophet, may Allah bless him and grant him peace:",
+            "arabicSha256": "8c5b6803682cef7a6e533a0c4467d5ef0039b45e68af71d2371a21ad4e5ab7e2",
+            "englishSha256": "5c28f23a13ce57730671c24c80d8c51ef9069bd5653919d5ab8fe13bfff95e78"
+          },
+          {
+            "id": "69-2",
+            "paragraphId": "mwUQ",
+            "start": 0,
+            "end": 39,
+            "kind": "report",
+            "arabic": "قال: يسروا ولا تعسروا وبشروا ولا تنفروا",
+            "english": "He said: “Make things easy and do not make them difficult; give good news and do not drive people away.”",
+            "arabicSha256": "73880d50009d87beca2db9d7127ae6ac05d65357bd86bf511154436e9761605c",
+            "englishSha256": "af4071eb239fcc37e621d1c55366d5e3f3e0af07e32486ed86f8ac79e068b1fb"
+          }
+        ],
+        "arabicSha256": "96e6b017572bef9b857efe9c0d479679e9d5d22c46e2ef7701f2e61fd8be5123",
+        "englishSha256": "eae3e410a982ea1d1874b72649895eb67c7b9f633be7212a215b35289a1f6e7b",
+        "comparisons": [
+          {
+            "id": "bewley-knowledge",
+            "reference": "69"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.3.69"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              29
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              30
+            ]
+          }
+        ],
+        "notes": [
+          "All four paired instructions remain. The chain preserves three occurrences of “related to us” and the singular “related to me”. Explanatory restrictions added in the Khan-family comparison are not part of this selected Arabic."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic.",
+        "reviewRecordSha256": "16e3f09d10ea45deb2d5f73e3238346cd429c61e90b6375b03c5689c62e86308"
+      },
+      {
+        "number": 70,
+        "id": "bukhari:70",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:70",
+        "chapterId": "chapter-13",
+        "paragraphIds": [
+          "mwUw"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "segments": [
+          {
+            "id": "70-1",
+            "paragraphId": "mwUw",
+            "start": 0,
+            "end": 71,
+            "kind": "chain",
+            "arabic": "[70] حدثنا عثمان بن أبي شيبة قال: حدثنا جرير عن منصور عن أبي وائل قال: ",
+            "english": "‘Uthman ibn Abi Shaybah related to us. He said: Jarir related to us, from Mansur, from Abu Wa’il, who said:",
+            "arabicSha256": "f97646d522c861aecb6062f8296ea7f06b71c5c0ebee441dc875fe4e7ee3e167",
+            "englishSha256": "d096bb7f336d263892bc7f1d5f2c86e25d9aa2a07707279870755f73fc5ce07b"
+          },
+          {
+            "id": "70-2",
+            "paragraphId": "mwUw",
+            "start": 71,
+            "end": 275,
+            "kind": "report",
+            "arabic": "كان عبد الله يذكر الناس في كل خميس، فقال له رجل يا أبا عبد الرحمن لوددت أنك ذكرتنا كل يوم قال: أما إنه يمنعني من ذلك أني أكره أن أملكم وإني أتخولكم بالموعظة كما كان النبي ﷺ يتخولنا بها مخافة السآمة علينا ",
+            "english": "‘Abdullah used to remind the people every Thursday. A man said to him: “Abu ‘Abd al-Rahman, I wish you would remind us every day.” He said: “What prevents me from that is that I dislike making you weary. I choose occasions to admonish you, just as the Prophet, may Allah bless him and grant him peace, used to do with us, fearing that we would become weary.”",
+            "arabicSha256": "ede4c95a82fc8f85efb954062670d10dba71bd8179e636bcd3b3f01a5a2bfc09",
+            "englishSha256": "5e4de3b83f4e805a582518169c37fd983f673258af1e0df3dad31c46224443b4"
+          }
+        ],
+        "arabicSha256": "10e2a8e5c337d3574b8ad48089dc6a76dffef9f89d5c374aa0b1ab5ed801c8db",
+        "englishSha256": "ae6c12afe5e944ebf1851a370fd366b419602ed7cf2ea2d78cf3e8c2c3de1d89",
+        "comparisons": [
+          {
+            "id": "bewley-knowledge",
+            "reference": "70"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.3.70"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              29
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              30
+            ]
+          }
+        ],
+        "notes": [
+          "The single Arabic paragraph is divided only for presentation: full chain, then the complete exchange. Every Thursday, the request for daily reminders and the reply remain. The oath in one English comparison is not present in the selected Arabic and is not added."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic.",
+        "reviewRecordSha256": "906abeb635b7dbb2e6252ccaafe43cc1edabc9ab1ee7fcd051d493027b08da9a"
+      },
+      {
+        "number": 71,
+        "id": "bukhari:71",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:71",
+        "chapterId": "chapter-14",
+        "paragraphIds": [
+          "mwVg",
+          "mwWA"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "segments": [
+          {
+            "id": "71-1",
+            "paragraphId": "mwVg",
+            "start": 0,
+            "end": 134,
+            "kind": "chain",
+            "arabic": "[71] حدثنا سعيد بن عفير قال: حدثنا ابن وهب عن يونس عن ابن شهاب قال: قال حميد بن عبد الرحمن سمعت معاوية خطيبا يقول: سمعت النبي ﷺ يقول: ",
+            "english": "Sa‘id ibn ‘Ufayr related to us. He said: Ibn Wahb related to us, from Yunus, from Ibn Shihab, who said: Humayd ibn ‘Abd al-Rahman said: I heard Mu‘awiyah delivering a sermon, saying: I heard the Prophet, may Allah bless him and grant him peace, say:",
+            "arabicSha256": "7c4386ba8b7a6aaa7a847db4d576857b8be8732cdc514f8175f76674cebf8577",
+            "englishSha256": "77a0dd49f975d5585bd88b5824ba365cb88937b84f8ffd8c7fccffa83e39481b"
+          },
+          {
+            "id": "71-2",
+            "paragraphId": "mwWA",
+            "start": 0,
+            "end": 136,
+            "kind": "report",
+            "arabic": "من يرد الله به خيرا يفقهه في الدين وإنما أنا قاسم والله يعطي ولن تزال هذه الأمة قائمة على أمر الله لا يضرهم من خالفهم حتى يأتي أمر الله ",
+            "english": "“When Allah intends good for someone, He gives him understanding of the religion. I am only a distributor, and Allah gives. This community will continue upholding Allah’s command, unharmed by those who oppose them, until Allah’s command comes.”",
+            "arabicSha256": "1633da678afee352e33166ec70970e122cf77939942130fd26727dd7eec5f504",
+            "englishSha256": "37051d0e8b6f0c37c9f619daef8035d8f6e8b73264ce9cda692688e1c7133437"
+          }
+        ],
+        "arabicSha256": "cce95389bbc646b5e7e8f6a96ecfe504cecc0087fbc4c1cd89b0805ee0c0e483",
+        "englishSha256": "7e0aa383eb73a6accad36636b2798a28c567cec307331228f0625f982fe553db",
+        "comparisons": [
+          {
+            "id": "bewley-knowledge",
+            "reference": "71"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.3.71"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              29
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              30
+            ]
+          }
+        ],
+        "notes": [
+          "The selected chain says “Humayd ibn ‘Abd al-Rahman said”; the historical print has “Humayd ibn ‘Abd al-Rahman related to me”. The selected wording and both “I heard” clauses are retained.",
+          "The selected Arabic and both prints have أمر الله in both the continuing-community clause and the final clause. Bewley’s “command of its Prophet” in the first clause is not imported. “Until Allah’s command comes” is retained without adding an identification of that event."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic.",
+        "reviewRecordSha256": "e5e7b8e33ad02f393f65ef86998c272f3a5d206f2fb58c13a613a72ea72839ff"
+      },
+      {
+        "number": 72,
+        "id": "bukhari:72",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:72",
+        "chapterId": "chapter-15",
+        "paragraphIds": [
+          "mwWg",
+          "mwXA"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "segments": [
+          {
+            "id": "72-1",
+            "paragraphId": "mwWg",
+            "start": 0,
+            "end": 65,
+            "kind": "chain",
+            "arabic": "[72] حدثنا علي حدثنا سفيان قال: قال لي ابن أبي نجيح عن مجاهد قال ",
+            "english": "‘Ali related to us. Sufyan related to us. He said: Ibn Abi Najih said to me, from Mujahid, who said:",
+            "arabicSha256": "66ca54fefa712535a51f77c439fd217e3a986cd7da4befb0c73e12b5dba02fcb",
+            "englishSha256": "243140aca847b0ad202d80cabb584407201e5cb9cdf478b6afda2f0cfcdeaf4d"
+          },
+          {
+            "id": "72-2",
+            "paragraphId": "mwWg",
+            "start": 65,
+            "end": 139,
+            "kind": "report",
+            "arabic": "صحبت بن عمر إلى المدينة فلم أسمعه يحدث عن رسول الله ﷺ إلا حديثا واحدا قال:",
+            "english": "I accompanied Ibn ‘Umar to Medina, and I heard him relate only one hadith from the Messenger of Allah, may Allah bless him and grant him peace. He said:",
+            "arabicSha256": "ba51f208b1f5c74612e80c8b967a79f8fbd312b5406b63e25c2dc1eeaba37b45",
+            "englishSha256": "ee225e4f17ec18978dec708b301c4d0f20daf1c006cbf2419e6ed6a00d4aa93a"
+          },
+          {
+            "id": "72-3",
+            "paragraphId": "mwXA",
+            "start": 0,
+            "end": 143,
+            "kind": "report",
+            "arabic": "كنا عند النبي ﷺ فأتي بجمار، فقال إن من الشجر شجرة مثلها كمثل المسلم فأردت أن أقول هي النخلة فإذا أنا أصغر القوم فسكت، فقال النبي ﷺ هي النخلة}} ",
+            "english": "“We were with the Prophet, may Allah bless him and grant him peace, when some palm pith was brought to him. He said: ‘Among the trees is a tree whose likeness is that of a Muslim.’ I wanted to say, ‘It is the date palm,’ but I was the youngest of the people, so I remained silent. The Prophet, may Allah bless him and grant him peace, said: ‘It is the date palm.’”",
+            "arabicSha256": "778658af9cae2b08c93da959a51a462d5c59c725db766ba1dc9238d8df928662",
+            "englishSha256": "16910458e9e4132b4cb52ee90c3fe8ecb082bafe526383d7e4aafc1c882444d1"
+          }
+        ],
+        "arabicSha256": "8f18ad612e335df4ae5569208615887481b8c58f4d86d18af93e197f5cbf71a9",
+        "englishSha256": "0fbfe39e0ca15ca78052f6a8fa8348d7076c8a6bd2554cb03b73382c76a7b1f6",
+        "comparisons": [
+          {
+            "id": "bewley-knowledge",
+            "reference": "72"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.3.72"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              29,
+              30
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              30
+            ]
+          }
+        ],
+        "notes": [
+          "Mujahid’s journey with Ibn ‘Umar to Medina and his statement about hearing one hadith remain; the Khan-family comparison starts with the inner report and does not verify this frame. This is a separate report from 61 and 62.",
+          "The selected digital paragraph ends with two closing braces (}}) absent from both print witnesses. They remain in the exact Arabic input as apparent markup residue. The working English gives the complete verbal report without pronouncing the braces; this is a declared formatting difference, not a silent Arabic correction."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic.",
+        "contextNotes": [
+          {
+            "label": "A formatting difference in the Arabic input",
+            "text": "The selected digital Arabic ends with two closing braces, absent from both print witnesses. They remain visible in the unchanged Arabic; the working English renders the words without treating those braces as speech.",
+            "citations": [
+              "base",
+              "brill-1862",
+              "dar-ibn-kathir-2002"
+            ],
+            "related": []
+          }
+        ],
+        "reviewRecordSha256": "d06280b6247659c55430fa5427c49c358c46c230ef23944999391657dfd92b75"
+      },
+      {
+        "number": 73,
+        "id": "bukhari:73",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:73",
+        "chapterId": "chapter-16",
+        "paragraphIds": [
+          "mwYQ",
+          "mwYw"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "segments": [
+          {
+            "id": "73-1",
+            "paragraphId": "mwYQ",
+            "start": 0,
+            "end": 163,
+            "kind": "chain",
+            "arabic": "[73] حدثنا الحميدي قال: حدثنا سفيان قال: حدثني إسماعيل بن أبي خالد على غير ما حدثناه الزهري قال: سمعت قيس بن أبي حازم قال: سمعت عبد الله بن مسعود قال: قال النبي ﷺ:",
+            "english": "Al-Humaydi related to us. He said: Sufyan related to us. He said: Isma‘il ibn Abi Khalid related to me, in a form different from what al-Zuhri related to us. He said: I heard Qays ibn Abi Hazim say: I heard ‘Abdullah ibn Mas‘ud say: The Prophet, may Allah bless him and grant him peace, said:",
+            "arabicSha256": "fa6dc1fc68cba47e01e3c7f1b6fa410a8b6ff59cb133d39a30497504c6da7ca3",
+            "englishSha256": "cbedea95f758cc3d15326d3511463218c7bdf4fa6452b601b8b923a4dc83444b"
+          },
+          {
+            "id": "73-2",
+            "paragraphId": "mwYw",
+            "start": 0,
+            "end": 105,
+            "kind": "report",
+            "arabic": "لا حسد إلا في اثنتين رجل آتاه الله مالا فسلط على هلكته في الحق ورجل آتاه الله الحكمة فهو يقضي بها ويعلمها",
+            "english": "“There is no envy except in two cases: a man to whom Allah has given wealth and who is enabled to spend it in what is right, and a man to whom Allah has given wisdom, who judges by it and teaches it.”",
+            "arabicSha256": "dec708e069547ade0c02ecaa13af5ec71c811d387cff1943100dd7387e8a73aa",
+            "englishSha256": "e395661bc2794df7d75e04ceb964f26003226503def843cd97dd85c0e966a795"
+          }
+        ],
+        "arabicSha256": "8a56d2f9e797dd4afa3a2a34ecc1fed39cd19d9bc8c1b8a622e6bfa4cbdb1c14",
+        "englishSha256": "26e2c88070ab18c1b375ba874b2778eb9d37e25d330a534158b63f9f035f7f00",
+        "comparisons": [
+          {
+            "id": "bewley-knowledge",
+            "reference": "73"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.3.73"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              30
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              31
+            ]
+          }
+        ],
+        "notes": [
+          "The chain’s comparison with al-Zuhri’s narration and both hearing statements are retained. Wisdom is not narrowed to a parenthetical identification from an English comparison. يقضي بها is rendered “judges by it”.",
+          "The chapter’s selected introduction contains ‘Umar’s statement only. Both print witnesses also have Abu ‘Abdullah’s comment about learning after attaining leadership and the companions learning in old age; this extra witness wording is not inserted into the selected chapter input. The heading’s الاغتباط and report’s حسد are not silently made identical."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic.",
+        "reviewRecordSha256": "fb02f8e628ee367a94dcbe65b41790f22b11ca0e51713548075a74339bd0288f"
+      },
+      {
+        "number": 74,
+        "id": "bukhari:74",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:74",
+        "chapterId": "chapter-17",
+        "paragraphIds": [
+          "mwZw",
+          "mwag"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "segments": [
+          {
+            "id": "74-1",
+            "paragraphId": "mwZw",
+            "start": 0,
+            "end": 141,
+            "kind": "chain",
+            "arabic": "[74] حدثني محمد بن غرير الزهري قال: حدثنا يعقوب بن إبراهيم قال: حدثني أبي عن صالح عن ابن شهاب حدث أن عبيد الله بن عبد الله أخبره عن ابن عباس ",
+            "english": "Muhammad ibn Ghurayr al-Zuhri related to me. He said: Ya‘qub ibn Ibrahim related to us. He said: My father related to me, from Salih, from Ibn Shihab, who related that ‘Ubaydullah ibn ‘Abdullah informed him, from Ibn ‘Abbas:",
+            "arabicSha256": "cedce7271b54aefffc8ed886952386445410421c97acdeea80e76a5c6beb5f0d",
+            "englishSha256": "8c489a51ab55992386ba4d7cc27d82c25d52ef6686571f36360fe7e1666f83e7"
+          },
+          {
+            "id": "74-2",
+            "paragraphId": "mwZw",
+            "start": 141,
+            "end": 382,
+            "kind": "report",
+            "arabic": "أنه تمارى هو والحر بن قيس بن حصن الفزاري في صاحب موسى قال ابن عباس هو خضر فمر بهما أبي بن كعب فدعاه بن عباس، فقال إني تماريت أنا وصاحبي هذا في صاحب موسى الذي سأل موسى السبيل إلى لقيه هل سمعت النبي ﷺ يذكر شأنه قال: نعم سمعت رسول الله ﷺ يقول: ",
+            "english": "He and al-Hurr ibn Qays ibn Hisn al-Fazari disputed about Musa’s companion. Ibn ‘Abbas said: “He was Khidr.” Ubayy ibn Ka‘b passed by them, and Ibn ‘Abbas called him and said: “This companion of mine and I have disputed about Musa’s companion, whom Musa asked how to meet. Have you heard the Prophet, may Allah bless him and grant him peace, mention his story?” He said: “Yes. I heard the Messenger of Allah, may Allah bless him and grant him peace, say:”",
+            "arabicSha256": "6d6c3e4a3fb6a8039332ed78ae0fb1a4c590ff8ccb23c5ac8a7fa2c88febb75e",
+            "englishSha256": "44acb09cae0ab27c5464ed97a06f1c1161a302e1f838e195da0b2b09987858bd"
+          },
+          {
+            "id": "74-3",
+            "paragraphId": "mwag",
+            "start": 0,
+            "end": 429,
+            "kind": "report",
+            "arabic": "بينما موسى في ملأ من بني إسرائيل جاءه رجل، فقال هل تعلم أحدا أعلم منك قال موسى لا فأوحى الله إلى موسى بلى عبدنا خضر فسأل موسى السبيل إليه فجعل الله له الحوت آية وقيل له إذا فقدت الحوت فارجع فإنك ستلقاه وكان يتبع أثر الحوت في البحر، فقال لموسى فتاه { أرأيت إذ أوينا إلى الصخرة فإني نسيت الحوت وما أنسانيه إلا الشيطان أن أذكره } { قال ذلك ما كنا نبغي فارتدا على آثارهما قصصا } فوجدا خضرا فكان من شأنهما الذي قص الله عز وجل في كتابه",
+            "english": "“While Musa was among a gathering of the Children of Israel, a man came and asked: “Do you know anyone more knowledgeable than you?” Musa said: “No.” Allah revealed to Musa: “Indeed, Our servant Khidr.” Musa asked how to reach him. Allah made the fish a sign for him, and he was told: “When you lose the fish, go back, for you will meet him.” He was following the fish’s trail in the sea. Musa’s young companion said to him: {Did you see? When we took shelter at the rock, I forgot the fish; none but Satan made me forget to mention it.} {He said: That is what we were seeking. So they retraced their steps.} They found Khidr, and what happened between them was what Allah, mighty and majestic, recounted in His Book.”",
+            "arabicSha256": "d25e7282c42ca1310b21d23fd33fee61527876cfcd6997cac5cd863b0b7fda83",
+            "englishSha256": "f5756f91972cd22919093d250499417db3e49021064d3d14cb273136a0a342b3"
+          }
+        ],
+        "arabicSha256": "a8037201704235fa8f0b0b722585cf0fea54da6049e4f2ac448f3f7be0b3b07b",
+        "englishSha256": "60c1236e7c4b3c1848bda16090c63d379b785045b6e1c05c3378b918427ed0b9",
+        "comparisons": [
+          {
+            "id": "bewley-knowledge",
+            "reference": "74"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.3.74"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              30,
+              31
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              31
+            ]
+          }
+        ],
+        "notes": [
+          "The full dispute, Ibn ‘Abbas’s identification of Khidr, the call to Ubayy and his hearing statement precede the inner report. This repeated narrative remains separate from 78, whose chain and wording differ.",
+          "The selected and modern printed chain begin “related to me” and have Ya‘qub say “my father related to me”; the historical print has plural reporting in these positions and names Salih ibn Kaysan. The selected shorter name and singular verbs remain.",
+          "The two Quran quotations are preserved as quotations within the hadith, with new working English. No expanded version of the Khidr story or external verse-range parenthesis is inserted."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic.",
+        "reviewRecordSha256": "0ead82cb4aa08df6f0d88e5caf34d01b2c3a769e6daa9f3b6b52dcc950c07192"
+      },
+      {
+        "number": 75,
+        "id": "bukhari:75",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:75",
+        "chapterId": "chapter-18",
+        "paragraphIds": [
+          "mwbQ",
+          "mwbg"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "segments": [
+          {
+            "id": "75-1",
+            "paragraphId": "mwbQ",
+            "start": 0,
+            "end": 83,
+            "kind": "chain",
+            "arabic": "[75] حدثنا أبو معمر قال: حدثنا عبد الوارث قال: حدثنا خالد عن عكرمة عن ابن عباس قال:",
+            "english": "Abu Ma‘mar related to us. He said: ‘Abd al-Warith related to us. He said: Khalid related to us, from ‘Ikrimah, from Ibn ‘Abbas, who said:",
+            "arabicSha256": "852649f3dd27ec9a9c5b21ef6b06f431e2ec1b8393489bf39e528d798a5d3917",
+            "englishSha256": "6ba5060c5899b42161ab2f19b41f40aa872d8d842083c884cc0e8d820075cd2f"
+          },
+          {
+            "id": "75-2",
+            "paragraphId": "mwbg",
+            "start": 0,
+            "end": 43,
+            "kind": "report",
+            "arabic": "ضمني رسول الله ﷺ، وقال اللهم علمه الكتاب}} ",
+            "english": "The Messenger of Allah, may Allah bless him and grant him peace, drew me close to him and said: “O Allah, teach him the Book.”",
+            "arabicSha256": "774735b862923b49db65c710adcdfa19f2588fdc1697ad955b4e49b324437243",
+            "englishSha256": "7d0b6d3c5629066f4d93d4b7b1eefaa914b819d039b337f6aeb47d21b4ea5beb"
+          }
+        ],
+        "arabicSha256": "de3f1d20ef5011c453a93a2aa673adb6c467b637fe1d7ce48c00224a0d30c16a",
+        "englishSha256": "f3ec6273ebc08aedf740554c67dc555cc1aebb4ac8d57d762982ec24f5a97ca1",
+        "comparisons": [
+          {
+            "id": "bewley-knowledge",
+            "reference": "75"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.3.75"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              31
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              31
+            ]
+          }
+        ],
+        "notes": [
+          "The embrace and the prayer remain. “The Book” follows الكتاب without inserting an explanatory parenthesis.",
+          "The selected digital paragraph ends with }} absent from both prints. These apparent markup braces remain in the Arabic input; the English renders the complete words without treating the braces as speech."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic.",
+        "contextNotes": [
+          {
+            "label": "A formatting difference in the Arabic input",
+            "text": "The selected digital Arabic ends with two closing braces, absent from both print witnesses. They remain visible in the unchanged Arabic; the working English renders the words without treating those braces as speech.",
+            "citations": [
+              "base",
+              "brill-1862",
+              "dar-ibn-kathir-2002"
+            ],
+            "related": []
+          }
+        ],
+        "reviewRecordSha256": "33bccf1e049fa4999c861b4326d4173ee62319390d9b7edf3638d62a97d10d95"
+      },
+      {
+        "number": 76,
+        "id": "bukhari:76",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:76",
+        "chapterId": "chapter-19",
+        "paragraphIds": [
+          "mwcQ",
+          "mwcg"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "segments": [
+          {
+            "id": "76-1",
+            "paragraphId": "mwcQ",
+            "start": 0,
+            "end": 116,
+            "kind": "chain",
+            "arabic": "[76] حدثنا إسماعيل بن أبي أويس قال: حدثني مالك عن ابن شهاب عن عبيد الله بن عبد الله بن عتبة عن عبد الله بن عباس قال:",
+            "english": "Isma‘il ibn Abi Uways related to us. He said: Malik related to me, from Ibn Shihab, from ‘Ubaydullah ibn ‘Abdullah ibn ‘Utbah, from ‘Abdullah ibn ‘Abbas, who said:",
+            "arabicSha256": "b373eb09effe1a42b71db9bccf57b60408f36f9df233d96feae8fbc0d8a99f1b",
+            "englishSha256": "5772da8142ca893587019bf0b5c380d9b08f02fc0f4f710988afa2e534b30c02"
+          },
+          {
+            "id": "76-2",
+            "paragraphId": "mwcg",
+            "start": 0,
+            "end": 163,
+            "kind": "report",
+            "arabic": "أقبلت راكبا على حمار أتان وأنا يومئذ قد ناهزت الاحتلام ورسول الله ﷺ يصلي بمنى إلى غير جدار فمررت بين يدي بعض الصف وأرسلت الأتان ترتع فدخلت في الصف فلم ينكر ذلك علي",
+            "english": "I approached riding a she-donkey. At that time I had nearly reached puberty, and the Messenger of Allah, may Allah bless him and grant him peace, was praying at Mina without a wall in front of him. I passed in front of part of the row, let the she-donkey graze and entered the row. No one objected to what I had done.",
+            "arabicSha256": "a6d811437465b549e00cbc67bdbef145f2455894901bbcf5b3a86f1c47d59bc5",
+            "englishSha256": "fa2d6e6359508bde713c9a6abb531bb27c536274afe778af1a67685d6caa294f"
+          }
+        ],
+        "arabicSha256": "1edde1ad893380f9c5d65444fcbb2e164725926fa58d17dc316a27ec58a1fa54",
+        "englishSha256": "208d1f3dbef621ff9df4834bfaa8360919319aa05f9aae352f5c1e7d6e535f33",
+        "comparisons": [
+          {
+            "id": "bewley-knowledge",
+            "reference": "76"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.3.76"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              31
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              31,
+              32
+            ]
+          }
+        ],
+        "notes": [
+          "The selected and modern print name Isma‘il ibn Abi Uways; the historical print has the shorter Isma‘il. The singular “Malik related to me” is retained.",
+          "The Arabic ناهزت الاحتلام is provisionally rendered “had nearly reached puberty”; the two English comparisons say “just attained puberty”. The working English follows the approach-to sense rather than silently importing attainment. The Arabic is unchanged; the difference remains open to independent language review.",
+          "The passage specifies no wall, part of the row, the she-donkey grazing and the absence of objection. No legal ruling or additional explanation of a barrier is added."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic.",
+        "contextNotes": [
+          {
+            "label": "A translation difference awaiting review",
+            "text": "The working English renders ناهزت الاحتلام as “had nearly reached puberty”. Both English comparisons say “just attained puberty”. The selected Arabic remains unchanged; this difference is recorded for independent language review.",
+            "citations": [
+              "base",
+              "bewley",
+              "khan"
+            ],
+            "related": []
+          }
+        ],
+        "reviewRecordSha256": "3e5276cb70276e9744bbf816591a2016e29d043cd69ec3604f81ba60220cef5f"
+      },
+      {
+        "number": 77,
+        "id": "bukhari:77",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:77",
+        "chapterId": "chapter-19",
+        "paragraphIds": [
+          "mwdA",
+          "mwdQ"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "segments": [
+          {
+            "id": "77-1",
+            "paragraphId": "mwdA",
+            "start": 0,
+            "end": 114,
+            "kind": "chain",
+            "arabic": "[77] حدثني محمد بن يوسف قال: حدثنا أبو مسهر قال: حدثني محمد بن حرب حدثني الزبيدي عن الزهري عن محمود بن الربيع قال ",
+            "english": "Muhammad ibn Yusuf related to me. He said: Abu Mushir related to us. He said: Muhammad ibn Harb related to me. Al-Zubaydi related to me, from al-Zuhri, from Mahmud ibn al-Rabi‘, who said:",
+            "arabicSha256": "e9d28be13ce276448e2a3c5af50e82cee30a9e2429a676e776806aa7baab827e",
+            "englishSha256": "24b1ba231d9b6a98560592efbe38388347a5564b0677516f76717e6fc4835155"
+          },
+          {
+            "id": "77-2",
+            "paragraphId": "mwdA",
+            "start": 114,
+            "end": 120,
+            "kind": "report",
+            "arabic": "عقلت: ",
+            "english": "I remember:",
+            "arabicSha256": "f5f56a31790c157868590af73c825a411d999f0bc2d911f2da44f976d91f8cfd",
+            "englishSha256": "ea263b87b47f24342402631ad3d46b3585d0c4fbf585793c1becb92571f23771"
+          },
+          {
+            "id": "77-3",
+            "paragraphId": "mwdQ",
+            "start": 0,
+            "end": 51,
+            "kind": "report",
+            "arabic": "من النبي ﷺ مجة مجها في وجهي وأنا بن خمس سنين من دلو",
+            "english": "the Prophet, may Allah bless him and grant him peace, squirting a mouthful of water into my face from a bucket when I was five years old.",
+            "arabicSha256": "186ba1ae33ae9dc80c2e211799499edad8bd4d085c16997b78bfbf2c7ec8b69c",
+            "englishSha256": "0b24a3642420eaa363ed741a526ae7132b31d7b9fe1804b23a39b5fccd415889"
+          }
+        ],
+        "arabicSha256": "76653bbd18beeb64c2de4f8af67a459695eaebd8df5c876b03193daf2dd63752",
+        "englishSha256": "0fe21a184f916678b02d45839bc22158e7c7a12ed5b780f2283b308eb9ff1388",
+        "comparisons": [
+          {
+            "id": "bewley-knowledge",
+            "reference": "77"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.3.77"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              31
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              32
+            ]
+          }
+        ],
+        "notes": [
+          "The selected and modern printed chain begin with the singular “related to me”; the historical print begins with the plural “related to us”. The selected singular is retained. The remaining singular reporting verbs remain explicit.",
+          "The source splits “I remember” from its object between paragraphs. It is presented as report text, outside the expandable chain, with both source paragraphs fully preserved. The bucket, action and age five remain; no well or playful motive is supplied."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic.",
+        "reviewRecordSha256": "73ce071f75816829771aa06073c1938c5f13db759b6e512a91b67bf674f67702"
+      },
+      {
+        "number": 78,
+        "id": "bukhari:78",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:78",
+        "chapterId": "chapter-20",
+        "paragraphIds": [
+          "mweQ",
+          "mweg"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "segments": [
+          {
+            "id": "78-1",
+            "paragraphId": "mweQ",
+            "start": 0,
+            "end": 143,
+            "kind": "chain",
+            "arabic": "[78] حدثنا أبو القاسم خالد بن خلي قال: حدثنا محمد بن حرب قال: قال الأوزاعي أخبرنا الزهري عن عبيد الله بن عبد الله بن عتبة بن مسعود عن ابن عباس ",
+            "english": "Abu al-Qasim Khalid ibn Khali related to us. He said: Muhammad ibn Harb related to us. He said: Al-Awza‘i said: Al-Zuhri informed us, from ‘Ubaydullah ibn ‘Abdullah ibn ‘Utbah ibn Mas‘ud, from Ibn ‘Abbas:",
+            "arabicSha256": "890deba1c84873bfef0b4285b2e714478bd1ffba94c70c88d919a73e74101af3",
+            "englishSha256": "a22704246e306c191ac977dd72c74675894211080da84332e03f52fdb3b03a80"
+          },
+          {
+            "id": "78-2",
+            "paragraphId": "mweQ",
+            "start": 143,
+            "end": 237,
+            "kind": "report",
+            "arabic": "أنه تمارى هو والحر بن قيس بن حصن الفزاري في صاحب موسى فمر بهما أبي بن كعب فدعاه بن عباس، فقال:",
+            "english": "He and al-Hurr ibn Qays ibn Hisn al-Fazari disputed about Musa’s companion. Ubayy ibn Ka‘b passed by them, and Ibn ‘Abbas called him and said:",
+            "arabicSha256": "90a52e7a87c3c3954eab3077a0a222c24cef12a79fbaf8a8f6c214a6aefb633e",
+            "englishSha256": "692bd31761481950c14b9dbfa6750a836c43ab3946f34ccedd85fb04c6d6d188"
+          },
+          {
+            "id": "78-3",
+            "paragraphId": "mweg",
+            "start": 0,
+            "end": 136,
+            "kind": "report",
+            "arabic": "إني تماريت أنا وصاحبي هذا في صاحب موسى الذي سأل السبيل إلى لقيه هل سمعت رسول الله ﷺ يذكر شأنه، فقال أبي نعم سمعت النبي ﷺ يذكر شأنه يقول ",
+            "english": "“This companion of mine and I have disputed about Musa’s companion, whom he asked how to meet. Have you heard the Messenger of Allah, may Allah bless him and grant him peace, mention his story?” Ubayy said: “Yes. I heard the Prophet, may Allah bless him and grant him peace, mention his story, saying:”",
+            "arabicSha256": "5f47afd4f33971fd9d06b6367021cd20b2513d13ff8848f647fa938c18d3b486",
+            "englishSha256": "84de4db22f5b4b4f0113b2e145ac45dd45367221ca547c8ebc98b144994189d9"
+          },
+          {
+            "id": "78-4",
+            "paragraphId": "mweg",
+            "start": 136,
+            "end": 581,
+            "kind": "report",
+            "arabic": "بينما موسى في ملأ من بني إسرائيل إذ جاءه رجل، فقال أتعلم أحدا أعلم منك قال موسى لا فأوحى الله عز وجل إلى موسى بلى عبدنا خضر فسأل السبيل إلى لقيه فجعل الله له الحوت آية وقيل له إذا فقدت الحوت فارجع فإنك ستلقاه فكان موسى ﷺ يتبع أثر الحوت في البحر، فقال: فتى موسى لموسى { أرأيت إذ أوينا إلى الصخرة فإني نسيت الحوت وما أنسانيه إلا الشيطان أن أذكره } قال موسى { ذلك ما كنا نبغي فارتدا على آثارهما قصصا } فوجدا خضرا فكان من شأنهما ما قص الله في كتابه ",
+            "english": "“While Musa was among a gathering of the Children of Israel, a man came and asked: “Do you know anyone more knowledgeable than you?” Musa said: “No.” Allah, mighty and majestic, revealed to Musa: “Indeed, Our servant Khidr.” He asked how to meet him. Allah made the fish a sign for him, and he was told: “When you lose the fish, go back, for you will meet him.” Musa, may Allah bless him and grant him peace, was following the fish’s trail in the sea. Musa’s young companion said to Musa: {Did you see? When we took shelter at the rock, I forgot the fish; none but Satan made me forget to mention it.} Musa said: {That is what we were seeking. So they retraced their steps.} They found Khidr, and what happened between them was what Allah recounted in His Book.”",
+            "arabicSha256": "55d8eb448ab4bd35a739b232b2854f7435369d6a54f57b0a5094ae9e70913f61",
+            "englishSha256": "486c3dec243333ed95d2d03d944fb5c27e5bea00c85b4f5370a5728945631cce"
+          }
+        ],
+        "arabicSha256": "594e66bfee5ff92a6b6e5670188ce7d3ddf1b8c165aeee6a80c347ceda4c53ee",
+        "englishSha256": "ae7334076688e427da3a396177fedc61cb1a64a296a23b19d103386c906280ad",
+        "comparisons": [
+          {
+            "id": "bewley-knowledge",
+            "reference": "78"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.3.78"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              31,
+              32
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              32
+            ]
+          }
+        ],
+        "notes": [
+          "This is not deduplicated against 74: it retains its own full chain, narrative frame, wording and honorific after Musa. The chapter’s Jabir journey statement remains separate introductory material, not part of 78 or its narration script.",
+          "The selected first paragraph ends inside the narrative frame. Both halves of that frame stay visible before the inner report. The two Quran quotations and the closing reference to what Allah recounted remain complete."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic.",
+        "reviewRecordSha256": "b19ea658d8667f1f270ad93519b82aff6da8ffa493a7c082bdc1db4a1b2e2828"
+      },
+      {
+        "number": 79,
+        "id": "bukhari:79",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:79",
+        "chapterId": "chapter-21",
+        "paragraphIds": [
+          "mwfw",
+          "mwgQ"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "segments": [
+          {
+            "id": "79-1",
+            "paragraphId": "mwfw",
+            "start": 0,
+            "end": 111,
+            "kind": "chain",
+            "arabic": "[79] حدثنا محمد بن العلاء قال: حدثنا حماد بن أسامة عن بريد بن عبد الله عن أبي بردة عن أبي موسى عن النبي ﷺ قال: ",
+            "english": "Muhammad ibn al-‘Ala’ related to us. He said: Hammad ibn Usamah related to us, from Burayd ibn ‘Abdullah, from Abu Burdah, from Abu Musa, from the Prophet, may Allah bless him and grant him peace, who said:",
+            "arabicSha256": "51a06d3b8f2d35a0d4ececff929f6a19cd97c33e1c438e309f8e08ca88e42689",
+            "englishSha256": "3772786fcb5af1b52b9179f5fa957e6bd9def50cde863512e96b8abffd3d7759"
+          },
+          {
+            "id": "79-2",
+            "paragraphId": "mwgQ",
+            "start": 0,
+            "end": 368,
+            "kind": "report",
+            "arabic": "مثل ما بعثني الله به من الهدى والعلم كمثل الغيث الكثير أصاب أرضا فكان منها نقية قبلت الماء فأنبتت الكلأ والعشب الكثير وكانت منها أجادب أمسكت الماء فنفع الله بها الناس فشربوا وسقوا وزرعوا وأصابت منها طائفة أخرى إنما هي قيعان لا تمسك ماء ولا تنبت كلأ فذلك مثل من فقه في دين الله ونفعه ما بعثني الله به فعلم وعلم ومثل من لم يرفع بذلك رأسا ولم يقبل هدى الله الذي أرسلت به ",
+            "english": "“The guidance and knowledge with which Allah sent me are like abundant rain falling on land. Some of it was good ground that accepted the water and brought forth plentiful pasture and fresh grass. Some of it was hard ground that held the water, through which Allah benefited people: they drank, watered and cultivated. It fell on another tract that was only level ground, neither holding water nor growing pasture. This is the likeness of one who gains understanding of Allah’s religion and benefits from what Allah sent me with, learning and teaching; and the likeness of one who pays it no heed and does not accept Allah’s guidance with which I was sent.”",
+            "arabicSha256": "84765be02a3f9333e753d7ce1c309b38c41ef7392bfd81707957b624e8329c5c",
+            "englishSha256": "676c01ef6ea48431a77409f03f1f0ec65012f981a4afe14c3ddda8543d70757c"
+          },
+          {
+            "id": "79-3",
+            "paragraphId": "mwgQ",
+            "start": 368,
+            "end": 464,
+            "kind": "transmission-note",
+            "arabic": "قال أبو عبد الله قال إسحاق وكان منها طائفة قيّلت الماء قاع يعلوه الماء والصفصف المستوي من الأرض ",
+            "english": "Abu ‘Abdullah said: Ishaq said: “And among it was a tract that drank in the water.” A qa‘ is ground over which water rises, and al-safsaf is level ground.",
+            "arabicSha256": "24e252248b4bbd45fecc990c42c375ac42f17c2c99e0c623bb0e671b11c8eb68",
+            "englishSha256": "5b294db501a5d7127a956a618d9a480a5a9f1a4b6e738f6dc9e1397b0cda6078"
+          }
+        ],
+        "arabicSha256": "84711bbef46627a737bc526b0f36eae5c1c3ba2275370d964b710dabd41ba176",
+        "englishSha256": "cee82f158a524932722e329d97400c8b8c731ea1fc1351982bb6223097d9c4a8",
+        "comparisons": [
+          {
+            "id": "bewley-knowledge",
+            "reference": "79"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.3.79"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              32
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              32,
+              33
+            ]
+          }
+        ],
+        "notes": [
+          "All three kinds of ground, the people’s drinking, watering and cultivation, and both concluding comparisons are retained. The two English report-body comparisons are abbreviated in their treatment of the final transmission note: Khan-family omits it; Bewley gives only the ground definitions. They do not verify its full wording.",
+          "The selected closing note and modern print read قيّلت; the historical print reads قبلت and omits both the Abu ‘Abdullah introduction and the qa‘/al-safsaf definitions. “Drank in” is a provisional rendering of the selected قيّلت, not a harmonization to قبلت.",
+          "Ibn Hajar, Fath al-Bari, Book of Knowledge, commentary on report 79, volume 1 pages 210–213, records disputed readings and explanations of this word, including drinking and a proposed scribal error. The provisional rendering follows the drinking explanation; this does not settle the variant. This commentary is lexical evidence only and is not inserted into the hadith. The complete closing source note remains distinct from the Prophet’s quoted words."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic.",
+        "additionalCitations": [
+          {
+            "id": "ibn-hajar-knowledge-79",
+            "sourceId": "ibn-hajar-knowledge-79",
+            "locator": "Fath al-Bari · Book of Knowledge · report 79 · volume 1, pages 210–213",
+            "scope": "Lexical and variant-reading discussion for the closing transmission note; not part of the numbered hadith or evidence of independent approval."
+          }
+        ],
+        "contextNotes": [
+          {
+            "label": "A closing word awaiting review",
+            "text": "“Drank in” provisionally renders قيّلت in the closing transmission note. The printed witnesses differ, and Ibn Hajar records disputed readings and explanations. The note is retained separately from the Prophet’s quoted words; this translation choice remains unresolved.",
+            "citations": [
+              "base",
+              "brill-1862",
+              "dar-ibn-kathir-2002",
+              "ibn-hajar-knowledge-79"
+            ],
+            "related": []
+          }
+        ],
+        "reviewRecordSha256": "685e7e94010f37690407d8dea2ecfc208bb35cc1f4dbed1f62cb7719ac77e989"
+      },
+      {
+        "number": 80,
+        "id": "bukhari:80",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:80",
+        "chapterId": "chapter-22",
+        "paragraphIds": [
+          "mwhA",
+          "mwhg"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "segments": [
+          {
+            "id": "80-1",
+            "paragraphId": "mwhA",
+            "start": 0,
+            "end": 90,
+            "kind": "chain",
+            "arabic": "[80] حدثنا عمران بن ميسرة قال: حدثنا عبد الوارث عن أبي التياح عن أنس قال: قال رسول الله ﷺ:",
+            "english": "‘Imran ibn Maysarah related to us. He said: ‘Abd al-Warith related to us, from Abu al-Tayyah, from Anas, who said: The Messenger of Allah, may Allah bless him and grant him peace, said:",
+            "arabicSha256": "dde6b3fbf424f80e52bbfd640da6b9d1b44ac7261f0e819036421d3bf76980f7",
+            "englishSha256": "53d4d0d771d5d87a24e30cf6514006843d8ba948034efd9b709d36bf83be77f0"
+          },
+          {
+            "id": "80-2",
+            "paragraphId": "mwhg",
+            "start": 0,
+            "end": 69,
+            "kind": "report",
+            "arabic": "إن من أشراط الساعة أن يرفع العلم ويثبت الجهل ويشرب الخمر ويظهر الزنا ",
+            "english": "“Among the signs of the Hour are that knowledge is taken away, ignorance becomes established, wine is drunk and unlawful sexual intercourse becomes manifest.”",
+            "arabicSha256": "55ecd5f13c690a94c77e3e380ab33132f3755fcd3ec5da635569676b3e7123b0",
+            "englishSha256": "330469dabbf4c1455ef2abf5756c22b2585a6ce7ca5efdaed152a60ad98257c9"
+          }
+        ],
+        "arabicSha256": "faddd6c14c30d1e4f0d7b763cbc523a940319a66ca5fd6a1fca74c244a75b000",
+        "englishSha256": "56d372aef247b25d6d459e1b08398915af192a390d7c752671a5978e90d232d8",
+        "comparisons": [
+          {
+            "id": "bewley-knowledge",
+            "reference": "80"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.3.80"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              32
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              33
+            ]
+          }
+        ],
+        "notes": [
+          "All four clauses remain in their source order. No parenthetical account of scholars’ deaths or modern application is inserted. “Unlawful sexual intercourse” provisionally renders الزنا; this is wording, not a separate legal definition."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic.",
+        "reviewRecordSha256": "5c8ed0bb542d53efb034754b745563ac74180662387b9e1e67883cb0afc2a2ea"
+      },
+      {
+        "number": 81,
+        "id": "bukhari:81",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:81",
+        "chapterId": "chapter-22",
+        "paragraphIds": [
+          "mwhw",
+          "mwiA"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "segments": [
+          {
+            "id": "81-1",
+            "paragraphId": "mwhw",
+            "start": 0,
+            "end": 60,
+            "kind": "chain",
+            "arabic": "[81] حدثنا مسدد قال: حدثنا يحيى عن شعبة عن قتادة عن أنس قال:",
+            "english": "Musaddad related to us. He said: Yahya related to us, from Shu‘bah, from Qatadah, from Anas, who said:",
+            "arabicSha256": "ad40f112f43980025d052792361222375912fe1beaaf871289e314340069ca9d",
+            "englishSha256": "338783c946081dbe1a4c71226ae69bf0abb7b01988c53b17adb96ba41a4e82f7"
+          },
+          {
+            "id": "81-2",
+            "paragraphId": "mwiA",
+            "start": 0,
+            "end": 169,
+            "kind": "report",
+            "arabic": "لأحدثنكم حديثا لا يحدثكم أحد بعدي سمعت رسول الله ﷺ يقول: من أشراط الساعة أن يقل العلم ويظهر الجهل ويظهر الزنا وتكثر النساء ويقل الرجال حتى يكون لخمسين امرأة القيم الواحد",
+            "english": "I will certainly relate to you a hadith that no one after me will relate to you. I heard the Messenger of Allah, may Allah bless him and grant him peace, say: “Among the signs of the Hour are that knowledge becomes scarce, ignorance becomes manifest, unlawful sexual intercourse becomes manifest, women increase and men decrease, until there is one man looking after fifty women.”",
+            "arabicSha256": "1d4ddd4c70bd2bcaebe09abc6e6233d1051357146df8b96ecc25b6d1f97a1c84",
+            "englishSha256": "bb811469b6686630f8aa3e0abc1ca8a1da8d6032ea4bad88e34c821c161a2d42"
+          }
+        ],
+        "arabicSha256": "7aeacfda62251163a800462b370e34879b26e84156606c6435220d80cb889507",
+        "englishSha256": "62d3e82cee49e9e238357f9dd39e981554f03b1202e7add1a6051269d37fa9da",
+        "comparisons": [
+          {
+            "id": "bewley-knowledge",
+            "reference": "81"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.3.81"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              32
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              33
+            ]
+          }
+        ],
+        "notes": [
+          "Anas’s introductory statement and his “I heard” remain before the quoted report. The historical print expands Yahya to Yahya ibn Sa‘id; the selected shorter form remains.",
+          "The source says knowledge becomes scarce here, whereas 80 says it is taken away. Both reports remain separate. “One man looking after” is provisional for القيم الواحد; the text does not identify a husband, impose a marriage arrangement or supply a contemporary application."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic.",
+        "reviewRecordSha256": "94392504ba0c1163cc03455c6f7b9ff4e427449a66599fc3a993498d3ae8face"
       }
     ],
     "chapters": [
@@ -1187,6 +2609,161 @@
         "title": "The saying of the Prophet, may Allah bless him and grant him peace: “Many a recipient understands more than a listener”",
         "status": "ai-working-translation",
         "independentReview": "pending"
+      },
+      {
+        "id": "chapter-11",
+        "headingId": "باب_العلم_قبل_القول_والعمل",
+        "contextIds": [
+          "mwRw"
+        ],
+        "entryNumbers": [],
+        "titleArabic": "باب العلم قبل القول والعمل",
+        "title": "Knowledge before speech and action",
+        "status": "ai-working-translation",
+        "independentReview": "pending"
+      },
+      {
+        "id": "chapter-12",
+        "headingId": "باب_ما_كان_النبي_ﷺ_يتخولهم_بالموعظة_والعلم_كي_لا_ينفروا",
+        "contextIds": [],
+        "entryNumbers": [
+          68,
+          69
+        ],
+        "titleArabic": "باب ما كان النبي ﷺ يتخولهم بالموعظة والعلم كي لا ينفروا",
+        "title": "How the Prophet, may Allah bless him and grant him peace, chose occasions for admonition and teaching so that people would not be driven away",
+        "status": "ai-working-translation",
+        "independentReview": "pending"
+      },
+      {
+        "id": "chapter-13",
+        "headingId": "باب_من_جعل_لأهل_العلم_أياما_معلومة",
+        "contextIds": [],
+        "entryNumbers": [
+          70
+        ],
+        "titleArabic": "باب من جعل لأهل العلم أياما معلومة",
+        "title": "One who sets appointed days for people of knowledge",
+        "status": "ai-working-translation",
+        "independentReview": "pending"
+      },
+      {
+        "id": "chapter-14",
+        "headingId": "باب_من_يرد_الله_به_خيرا_يفقهه_في_الدين",
+        "contextIds": [],
+        "entryNumbers": [
+          71
+        ],
+        "titleArabic": "باب من يرد الله به خيرا يفقهه في الدين",
+        "title": "When Allah intends good for someone, He gives him understanding of the religion",
+        "status": "ai-working-translation",
+        "independentReview": "pending"
+      },
+      {
+        "id": "chapter-15",
+        "headingId": "باب_الفهم_في_العلم",
+        "contextIds": [],
+        "entryNumbers": [
+          72
+        ],
+        "titleArabic": "باب الفهم في العلم",
+        "title": "Understanding in knowledge",
+        "status": "ai-working-translation",
+        "independentReview": "pending"
+      },
+      {
+        "id": "chapter-16",
+        "headingId": "باب_الاغتباط_في_العلم_والحكمة",
+        "contextIds": [
+          "mwYA"
+        ],
+        "entryNumbers": [
+          73
+        ],
+        "titleArabic": "باب الاغتباط في العلم والحكمة",
+        "title": "Aspiring to the good of others in knowledge and wisdom",
+        "status": "ai-working-translation",
+        "independentReview": "pending"
+      },
+      {
+        "id": "chapter-17",
+        "headingId": "باب_ما_ذكر_في_ذهاب_موسى_ﷺ_في_البحر_إلى_الخضر",
+        "contextIds": [
+          "mwZg"
+        ],
+        "entryNumbers": [
+          74
+        ],
+        "titleArabic": "باب ما ذكر في ذهاب موسى ﷺ في البحر إلى الخضر",
+        "title": "What is mentioned about Musa, may Allah bless him and grant him peace, going by sea to Khidr",
+        "status": "ai-working-translation",
+        "independentReview": "pending"
+      },
+      {
+        "id": "chapter-18",
+        "headingId": "باب_قول_النبي_ﷺ_اللهم_علمه_الكتاب",
+        "contextIds": [],
+        "entryNumbers": [
+          75
+        ],
+        "titleArabic": "باب قول النبي ﷺ اللهم علمه الكتاب",
+        "title": "The saying of the Prophet, may Allah bless him and grant him peace: “O Allah, teach him the Book”",
+        "status": "ai-working-translation",
+        "independentReview": "pending"
+      },
+      {
+        "id": "chapter-19",
+        "headingId": "باب_متى_يصح_سماع_الصغير",
+        "contextIds": [],
+        "entryNumbers": [
+          76,
+          77
+        ],
+        "titleArabic": "باب متى يصح سماع الصغير",
+        "title": "When a young child’s hearing is valid",
+        "status": "ai-working-translation",
+        "independentReview": "pending"
+      },
+      {
+        "id": "chapter-20",
+        "headingId": "باب_الخروج_في_طلب_العلم",
+        "contextIds": [
+          "mweA"
+        ],
+        "entryNumbers": [
+          78
+        ],
+        "titleArabic": "باب الخروج في طلب العلم",
+        "title": "Going out in search of knowledge",
+        "status": "ai-working-translation",
+        "independentReview": "pending"
+      },
+      {
+        "id": "chapter-21",
+        "headingId": "باب_فضل_من_علم_وعلم",
+        "contextIds": [],
+        "entryNumbers": [
+          79
+        ],
+        "titleArabic": "باب فضل من علم وعلم",
+        "title": "The virtue of one who learns and teaches",
+        "status": "ai-working-translation",
+        "independentReview": "pending"
+      },
+      {
+        "id": "chapter-22",
+        "headingId": "باب_رفع_العلم_وظهور_الجهل",
+        "contextIds": [
+          "mwgw"
+        ],
+        "entryNumbers": [
+          80,
+          81
+        ],
+        "titleArabic": "باب رفع العلم وظهور الجهل",
+        "title": "Knowledge being taken away and ignorance becoming manifest",
+        "status": "ai-working-translation",
+        "independentReview": "pending"
       }
     ],
     "batches": [
@@ -1195,6 +2772,12 @@
         "first": 59,
         "last": 67,
         "sha256": "1911e07ed82d0b4ecdd5f0710f3319fc0d30bbae80ab10bf16c46cf55f523988"
+      },
+      {
+        "path": "content/review/knowledge-next-review.json",
+        "first": 68,
+        "last": 81,
+        "sha256": "0fdc1a8c472d300b27b7d4931a719201bb3330ca3b5e96f7776738440a4a74b9"
       }
     ]
   }

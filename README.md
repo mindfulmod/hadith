@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The personal reader is at `reader/`: 67 complete Bukhari entries across three books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The personal reader is at `reader/`: 81 complete Bukhari entries across three books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Run
 
@@ -392,3 +392,13 @@ The user confirmed that daily sessions contain numbered hadith only; chapter int
 Hadith 4–6 now have individual complete Cedar recordings using the selected Take A instructions. Four original MP3s are preserved with exact paragraph-segment input hashes. The assembly retains every decoded frame in order, without trimming, filtering or speech edits. Individual recording endings allow sessions to finish at any of these hadith. All wording, pronunciation and delivery reviews remain pending; input integrity and numerical audio checks do not certify speech. Hadith 5 also needs its paragraph join reviewed.
 
 OpenAI.fm displayed its weekly download limit when starting Hadith 7. No Hadith 7 file was downloaded or admitted. Current audio coverage is 1–6, and a session containing 7 stops after 6. Separate optional offline packs cover each new recording. No source wording or earlier recording was changed.
+
+### Knowledge continued: 68–81 and source-only chapter 11 (21 October 2026)
+
+The personal prototype contains 81 complete numbered reports. Knowledge now has 23 of 76 reports and all first 22 source chapters, including three without numbered hadith. This batch adds 27 unchanged Arabic report paragraphs, 34 working English segments, twelve chapter headings and five separate Arabic introductory paragraphs. Daily sessions still contain numbered hadith only; chapter material remains separately browseable and saved with reading. Earlier 67 entry objects and the five existing recording catalog rows are unchanged. Cedar still covers Hadith 1–6.
+
+`content/review/knowledge-next-review.json` records individual Bewley and Khan-family comparisons and printed Arabic witnesses. Differences in chain verbs, apparent markup in 72/75, the age wording in 76 and the disputed closing word in 79 remain explicit. Reports 74 and 78 are not merged. Hadith 79’s complete transmission note is separate from the quoted narration and links to the lexical discussion in Fath al-Bari. Independent review remains pending.
+
+`content/review/source-location-corrections.json` repairs the historical print’s broken URL to the exact same SHA-256-identified PDF. Original review inputs remain unchanged; active source links use the corrected location. Batch assembly now allows new supplemental sources while refusing conflicting definitions of an existing source ID.
+
+`research/knowledge-next-verification.json` records 192 passing automated checks (153 Node and 39 Python), exact rendered checks for every new report and 17 chapter blocks, preserved Continue, 320px day/night layouts with 28px text, and offline report/chapter reopening and phrase search after stopping the preview server. Reading downloads are about 4.9 MB; audio remains a separate choice. Knowledge 82–134, chapter English, independent review and further audio are still unfinished.

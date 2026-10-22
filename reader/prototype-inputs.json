@@ -1542,5 +1542,20 @@
         "decisionId": "5-lahu-laka"
       }
     ]
+  },
+  "sourceLocationCorrections": {
+    "schemaVersion": 1,
+    "corrections": [
+      {
+        "sourceId": "brill-1862",
+        "fromURL": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf",
+        "toURL": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+        "bytes": 28290204,
+        "verifiedAt": "2026-10-21",
+        "basis": "The earlier URL returns 404. The corrected Wikimedia volume-one URL was located through the Wikisource file index and downloaded. Its full file SHA-256 matches the already pinned historical witness. This repairs a citation URL only; original review inputs and every hadith text remain unchanged.",
+        "discoveryURL": "https://ar.wikisource.org/wiki/ملف:صحيح_البخاري_ر0.pdf"
+      }
+    ]
   }
 }

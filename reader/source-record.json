@@ -1,12 +1,12 @@
 {
   "created": "2026-10-20",
-  "scope": "Personal prototype: complete numbered entries 1–67 across 3 books. The rest of the collection remains in preparation.",
+  "scope": "Personal prototype: complete numbered entries 1–81 across 3 books. The rest of the collection remains in preparation.",
   "selected_route": "Pinned Arabic text plus a new English working translation.",
   "license": {
     "id": "CC-BY-SA-4.0",
     "url": "https://creativecommons.org/licenses/by-sa/4.0/",
     "attribution": "Sahih al-Bukhari by Muhammad ibn Ismail al-Bukhari; Arabic digital transcription by Arabic Wikisource contributors, opening revision 484874 and Faith revision 490285. Book of Knowledge: revision 252975.",
-    "changes": "Entries 1–2 are unchanged. Entries 3–7 are derived from the pinned Arabic; Hadith 5 has one explicitly recorded correction from له to لك supported by two printed witnesses. Original inputs are retained in prototype-inputs.json. New AI-assisted English, presentation and comparison notes are offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app. Hadith 8–58 retain their Arabic paragraphs unchanged from revision 490285; their new English and available chapter titles are AI-assisted. A disputed chapter heading is explicitly withheld. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 59–67 retain their Arabic paragraphs unchanged from revision 252975; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending."
+    "changes": "Entries 1–2 are unchanged. Entries 3–7 are derived from the pinned Arabic; Hadith 5 has one explicitly recorded correction from له to لك supported by two printed witnesses. Original inputs are retained in prototype-inputs.json. New AI-assisted English, presentation and comparison notes are offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app. Hadith 8–58 retain their Arabic paragraphs unchanged from revision 490285; their new English and available chapter titles are AI-assisted. A disputed chapter heading is explicitly withheld. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 59–81 retain their Arabic paragraphs unchanged from revision 252975; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending."
   },
   "sources": [
     {
@@ -50,7 +50,7 @@
     },
     {
       "id": "brill-1862",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
       "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
       "role": "Historical printed Arabic comparison, visually inspected; not asserted as the transcription’s base edition."
     },
@@ -132,6 +132,13 @@
       "kind": "english-comparison",
       "format": "web",
       "url": "https://aishabewley.org/bukhari2"
+    },
+    {
+      "id": "ibn-hajar-knowledge-79",
+      "label": "Ibn Hajar · Fath al-Bari · Hadith 79",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/ar/library/content/52/155/باب-فضل-من-علم-وعلم"
     }
   ],
   "findings": [
@@ -5335,8 +5342,911 @@
         "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic."
       },
       "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:68",
+      "book": "Knowledge",
+      "number": 68,
+      "arabic_blocks": [
+        "[68] حدثنا محمد بن يوسف قال: أخبرنا سفيان عن الأعمش عن أبي وائل عن ابن مسعود قال: ",
+        "كان النبي ﷺ يتخولنا بالموعظة في الأيام كراهة السآمة علينا"
+      ],
+      "arabic_sha256": "9f8f46c3f44d6ea167d5dee6846a19903dc8137dfda955d25f68eedb13b93f44",
+      "english_blocks": [
+        "Muhammad ibn Yusuf related to us. He said: Sufyan informed us, from al-A‘mash, from Abu Wa’il, from Ibn Mas‘ud, who said:",
+        "The Prophet, may Allah bless him and grant him peace, would choose days to give us admonition, disliking that we should become weary."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 82,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 57,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 121,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 133,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:68",
+        "reviewRecordSha256": "29475459bbd01a38c97ba1b3e3a03225f5812ff4c15f7d56da1ac087cb39a53f",
+        "notes": [
+          "The occasional timing of admonition and avoidance of weariness are retained. Explanations about religious knowledge or a daily schedule from the comparison translations are not inserted into this report."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:69",
+      "book": "Knowledge",
+      "number": 69,
+      "arabic_blocks": [
+        "[69] حدثنا محمد بن بشار قال: حدثنا يحيى بن سعيد قال: حدثنا شعبة قال: حدثني أبو التياح عن أنس عن النبي ﷺ",
+        "قال: يسروا ولا تعسروا وبشروا ولا تنفروا"
+      ],
+      "arabic_sha256": "96e6b017572bef9b857efe9c0d479679e9d5d22c46e2ef7701f2e61fd8be5123",
+      "english_blocks": [
+        "Muhammad ibn Bashshar related to us. He said: Yahya ibn Sa‘id related to us. He said: Shu‘bah related to us. He said: Abu al-Tayyah related to me, from Anas, from the Prophet, may Allah bless him and grant him peace:",
+        "He said: “Make things easy and do not make them difficult; give good news and do not drive people away.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 103,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 39,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 216,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 104,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:69",
+        "reviewRecordSha256": "16e3f09d10ea45deb2d5f73e3238346cd429c61e90b6375b03c5689c62e86308",
+        "notes": [
+          "All four paired instructions remain. The chain preserves three occurrences of “related to us” and the singular “related to me”. Explanatory restrictions added in the Khan-family comparison are not part of this selected Arabic."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:70",
+      "book": "Knowledge",
+      "number": 70,
+      "arabic_blocks": [
+        "[70] حدثنا عثمان بن أبي شيبة قال: حدثنا جرير عن منصور عن أبي وائل قال: كان عبد الله يذكر الناس في كل خميس، فقال له رجل يا أبا عبد الرحمن لوددت أنك ذكرتنا كل يوم قال: أما إنه يمنعني من ذلك أني أكره أن أملكم وإني أتخولكم بالموعظة كما كان النبي ﷺ يتخولنا بها مخافة السآمة علينا "
+      ],
+      "arabic_sha256": "10e2a8e5c337d3574b8ad48089dc6a76dffef9f89d5c374aa0b1ab5ed801c8db",
+      "english_blocks": [
+        "‘Uthman ibn Abi Shaybah related to us. He said: Jarir related to us, from Mansur, from Abu Wa’il, who said:",
+        "‘Abdullah used to remind the people every Thursday. A man said to him: “Abu ‘Abd al-Rahman, I wish you would remind us every day.” He said: “What prevents me from that is that I dislike making you weary. I choose occasions to admonish you, just as the Prophet, may Allah bless him and grant him peace, used to do with us, fearing that we would become weary.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 71,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 71,
+            "end": 275,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 107,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 358,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:70",
+        "reviewRecordSha256": "906abeb635b7dbb2e6252ccaafe43cc1edabc9ab1ee7fcd051d493027b08da9a",
+        "notes": [
+          "The single Arabic paragraph is divided only for presentation: full chain, then the complete exchange. Every Thursday, the request for daily reminders and the reply remain. The oath in one English comparison is not present in the selected Arabic and is not added."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:71",
+      "book": "Knowledge",
+      "number": 71,
+      "arabic_blocks": [
+        "[71] حدثنا سعيد بن عفير قال: حدثنا ابن وهب عن يونس عن ابن شهاب قال: قال حميد بن عبد الرحمن سمعت معاوية خطيبا يقول: سمعت النبي ﷺ يقول: ",
+        "من يرد الله به خيرا يفقهه في الدين وإنما أنا قاسم والله يعطي ولن تزال هذه الأمة قائمة على أمر الله لا يضرهم من خالفهم حتى يأتي أمر الله "
+      ],
+      "arabic_sha256": "cce95389bbc646b5e7e8f6a96ecfe504cecc0087fbc4c1cd89b0805ee0c0e483",
+      "english_blocks": [
+        "Sa‘id ibn ‘Ufayr related to us. He said: Ibn Wahb related to us, from Yunus, from Ibn Shihab, who said: Humayd ibn ‘Abd al-Rahman said: I heard Mu‘awiyah delivering a sermon, saying: I heard the Prophet, may Allah bless him and grant him peace, say:",
+        "“When Allah intends good for someone, He gives him understanding of the religion. I am only a distributor, and Allah gives. This community will continue upholding Allah’s command, unharmed by those who oppose them, until Allah’s command comes.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 134,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 136,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 249,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 244,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:71",
+        "reviewRecordSha256": "e5e7b8e33ad02f393f65ef86998c272f3a5d206f2fb58c13a613a72ea72839ff",
+        "notes": [
+          "The selected chain says “Humayd ibn ‘Abd al-Rahman said”; the historical print has “Humayd ibn ‘Abd al-Rahman related to me”. The selected wording and both “I heard” clauses are retained.",
+          "The selected Arabic and both prints have أمر الله in both the continuing-community clause and the final clause. Bewley’s “command of its Prophet” in the first clause is not imported. “Until Allah’s command comes” is retained without adding an identification of that event."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:72",
+      "book": "Knowledge",
+      "number": 72,
+      "arabic_blocks": [
+        "[72] حدثنا علي حدثنا سفيان قال: قال لي ابن أبي نجيح عن مجاهد قال صحبت بن عمر إلى المدينة فلم أسمعه يحدث عن رسول الله ﷺ إلا حديثا واحدا قال:",
+        "كنا عند النبي ﷺ فأتي بجمار، فقال إن من الشجر شجرة مثلها كمثل المسلم فأردت أن أقول هي النخلة فإذا أنا أصغر القوم فسكت، فقال النبي ﷺ هي النخلة}} "
+      ],
+      "arabic_sha256": "8f18ad612e335df4ae5569208615887481b8c58f4d86d18af93e197f5cbf71a9",
+      "english_blocks": [
+        "‘Ali related to us. Sufyan related to us. He said: Ibn Abi Najih said to me, from Mujahid, who said:",
+        "I accompanied Ibn ‘Umar to Medina, and I heard him relate only one hadith from the Messenger of Allah, may Allah bless him and grant him peace. He said:",
+        "“We were with the Prophet, may Allah bless him and grant him peace, when some palm pith was brought to him. He said: ‘Among the trees is a tree whose likeness is that of a Muslim.’ I wanted to say, ‘It is the date palm,’ but I was the youngest of the people, so I remained silent. The Prophet, may Allah bless him and grant him peace, said: ‘It is the date palm.’”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 65,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 65,
+            "end": 139,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 143,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 100,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 152,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 364,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:72",
+        "reviewRecordSha256": "d06280b6247659c55430fa5427c49c358c46c230ef23944999391657dfd92b75",
+        "notes": [
+          "Mujahid’s journey with Ibn ‘Umar to Medina and his statement about hearing one hadith remain; the Khan-family comparison starts with the inner report and does not verify this frame. This is a separate report from 61 and 62.",
+          "The selected digital paragraph ends with two closing braces (}}) absent from both print witnesses. They remain in the exact Arabic input as apparent markup residue. The working English gives the complete verbal report without pronouncing the braces; this is a declared formatting difference, not a silent Arabic correction."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:73",
+      "book": "Knowledge",
+      "number": 73,
+      "arabic_blocks": [
+        "[73] حدثنا الحميدي قال: حدثنا سفيان قال: حدثني إسماعيل بن أبي خالد على غير ما حدثناه الزهري قال: سمعت قيس بن أبي حازم قال: سمعت عبد الله بن مسعود قال: قال النبي ﷺ:",
+        "لا حسد إلا في اثنتين رجل آتاه الله مالا فسلط على هلكته في الحق ورجل آتاه الله الحكمة فهو يقضي بها ويعلمها"
+      ],
+      "arabic_sha256": "8a56d2f9e797dd4afa3a2a34ecc1fed39cd19d9bc8c1b8a622e6bfa4cbdb1c14",
+      "english_blocks": [
+        "Al-Humaydi related to us. He said: Sufyan related to us. He said: Isma‘il ibn Abi Khalid related to me, in a form different from what al-Zuhri related to us. He said: I heard Qays ibn Abi Hazim say: I heard ‘Abdullah ibn Mas‘ud say: The Prophet, may Allah bless him and grant him peace, said:",
+        "“There is no envy except in two cases: a man to whom Allah has given wealth and who is enabled to spend it in what is right, and a man to whom Allah has given wisdom, who judges by it and teaches it.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 163,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 105,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 292,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 200,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:73",
+        "reviewRecordSha256": "fb02f8e628ee367a94dcbe65b41790f22b11ca0e51713548075a74339bd0288f",
+        "notes": [
+          "The chain’s comparison with al-Zuhri’s narration and both hearing statements are retained. Wisdom is not narrowed to a parenthetical identification from an English comparison. يقضي بها is rendered “judges by it”.",
+          "The chapter’s selected introduction contains ‘Umar’s statement only. Both print witnesses also have Abu ‘Abdullah’s comment about learning after attaining leadership and the companions learning in old age; this extra witness wording is not inserted into the selected chapter input. The heading’s الاغتباط and report’s حسد are not silently made identical."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:74",
+      "book": "Knowledge",
+      "number": 74,
+      "arabic_blocks": [
+        "[74] حدثني محمد بن غرير الزهري قال: حدثنا يعقوب بن إبراهيم قال: حدثني أبي عن صالح عن ابن شهاب حدث أن عبيد الله بن عبد الله أخبره عن ابن عباس أنه تمارى هو والحر بن قيس بن حصن الفزاري في صاحب موسى قال ابن عباس هو خضر فمر بهما أبي بن كعب فدعاه بن عباس، فقال إني تماريت أنا وصاحبي هذا في صاحب موسى الذي سأل موسى السبيل إلى لقيه هل سمعت النبي ﷺ يذكر شأنه قال: نعم سمعت رسول الله ﷺ يقول: ",
+        "بينما موسى في ملأ من بني إسرائيل جاءه رجل، فقال هل تعلم أحدا أعلم منك قال موسى لا فأوحى الله إلى موسى بلى عبدنا خضر فسأل موسى السبيل إليه فجعل الله له الحوت آية وقيل له إذا فقدت الحوت فارجع فإنك ستلقاه وكان يتبع أثر الحوت في البحر، فقال لموسى فتاه { أرأيت إذ أوينا إلى الصخرة فإني نسيت الحوت وما أنسانيه إلا الشيطان أن أذكره } { قال ذلك ما كنا نبغي فارتدا على آثارهما قصصا } فوجدا خضرا فكان من شأنهما الذي قص الله عز وجل في كتابه"
+      ],
+      "arabic_sha256": "a8037201704235fa8f0b0b722585cf0fea54da6049e4f2ac448f3f7be0b3b07b",
+      "english_blocks": [
+        "Muhammad ibn Ghurayr al-Zuhri related to me. He said: Ya‘qub ibn Ibrahim related to us. He said: My father related to me, from Salih, from Ibn Shihab, who related that ‘Ubaydullah ibn ‘Abdullah informed him, from Ibn ‘Abbas:",
+        "He and al-Hurr ibn Qays ibn Hisn al-Fazari disputed about Musa’s companion. Ibn ‘Abbas said: “He was Khidr.” Ubayy ibn Ka‘b passed by them, and Ibn ‘Abbas called him and said: “This companion of mine and I have disputed about Musa’s companion, whom Musa asked how to meet. Have you heard the Prophet, may Allah bless him and grant him peace, mention his story?” He said: “Yes. I heard the Messenger of Allah, may Allah bless him and grant him peace, say:”",
+        "“While Musa was among a gathering of the Children of Israel, a man came and asked: “Do you know anyone more knowledgeable than you?” Musa said: “No.” Allah revealed to Musa: “Indeed, Our servant Khidr.” Musa asked how to reach him. Allah made the fish a sign for him, and he was told: “When you lose the fish, go back, for you will meet him.” He was following the fish’s trail in the sea. Musa’s young companion said to him: {Did you see? When we took shelter at the rock, I forgot the fish; none but Satan made me forget to mention it.} {He said: That is what we were seeking. So they retraced their steps.} They found Khidr, and what happened between them was what Allah, mighty and majestic, recounted in His Book.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 141,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 141,
+            "end": 382,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 429,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 224,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 455,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 718,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:74",
+        "reviewRecordSha256": "0ead82cb4aa08df6f0d88e5caf34d01b2c3a769e6daa9f3b6b52dcc950c07192",
+        "notes": [
+          "The full dispute, Ibn ‘Abbas’s identification of Khidr, the call to Ubayy and his hearing statement precede the inner report. This repeated narrative remains separate from 78, whose chain and wording differ.",
+          "The selected and modern printed chain begin “related to me” and have Ya‘qub say “my father related to me”; the historical print has plural reporting in these positions and names Salih ibn Kaysan. The selected shorter name and singular verbs remain.",
+          "The two Quran quotations are preserved as quotations within the hadith, with new working English. No expanded version of the Khidr story or external verse-range parenthesis is inserted."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:75",
+      "book": "Knowledge",
+      "number": 75,
+      "arabic_blocks": [
+        "[75] حدثنا أبو معمر قال: حدثنا عبد الوارث قال: حدثنا خالد عن عكرمة عن ابن عباس قال:",
+        "ضمني رسول الله ﷺ، وقال اللهم علمه الكتاب}} "
+      ],
+      "arabic_sha256": "de3f1d20ef5011c453a93a2aa673adb6c467b637fe1d7ce48c00224a0d30c16a",
+      "english_blocks": [
+        "Abu Ma‘mar related to us. He said: ‘Abd al-Warith related to us. He said: Khalid related to us, from ‘Ikrimah, from Ibn ‘Abbas, who said:",
+        "The Messenger of Allah, may Allah bless him and grant him peace, drew me close to him and said: “O Allah, teach him the Book.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 83,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 43,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 137,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 126,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:75",
+        "reviewRecordSha256": "33bccf1e049fa4999c861b4326d4173ee62319390d9b7edf3638d62a97d10d95",
+        "notes": [
+          "The embrace and the prayer remain. “The Book” follows الكتاب without inserting an explanatory parenthesis.",
+          "The selected digital paragraph ends with }} absent from both prints. These apparent markup braces remain in the Arabic input; the English renders the complete words without treating the braces as speech."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:76",
+      "book": "Knowledge",
+      "number": 76,
+      "arabic_blocks": [
+        "[76] حدثنا إسماعيل بن أبي أويس قال: حدثني مالك عن ابن شهاب عن عبيد الله بن عبد الله بن عتبة عن عبد الله بن عباس قال:",
+        "أقبلت راكبا على حمار أتان وأنا يومئذ قد ناهزت الاحتلام ورسول الله ﷺ يصلي بمنى إلى غير جدار فمررت بين يدي بعض الصف وأرسلت الأتان ترتع فدخلت في الصف فلم ينكر ذلك علي"
+      ],
+      "arabic_sha256": "1edde1ad893380f9c5d65444fcbb2e164725926fa58d17dc316a27ec58a1fa54",
+      "english_blocks": [
+        "Isma‘il ibn Abi Uways related to us. He said: Malik related to me, from Ibn Shihab, from ‘Ubaydullah ibn ‘Abdullah ibn ‘Utbah, from ‘Abdullah ibn ‘Abbas, who said:",
+        "I approached riding a she-donkey. At that time I had nearly reached puberty, and the Messenger of Allah, may Allah bless him and grant him peace, was praying at Mina without a wall in front of him. I passed in front of part of the row, let the she-donkey graze and entered the row. No one objected to what I had done."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 116,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 163,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 163,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 317,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:76",
+        "reviewRecordSha256": "3e5276cb70276e9744bbf816591a2016e29d043cd69ec3604f81ba60220cef5f",
+        "notes": [
+          "The selected and modern print name Isma‘il ibn Abi Uways; the historical print has the shorter Isma‘il. The singular “Malik related to me” is retained.",
+          "The Arabic ناهزت الاحتلام is provisionally rendered “had nearly reached puberty”; the two English comparisons say “just attained puberty”. The working English follows the approach-to sense rather than silently importing attainment. The Arabic is unchanged; the difference remains open to independent language review.",
+          "The passage specifies no wall, part of the row, the she-donkey grazing and the absence of objection. No legal ruling or additional explanation of a barrier is added."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:77",
+      "book": "Knowledge",
+      "number": 77,
+      "arabic_blocks": [
+        "[77] حدثني محمد بن يوسف قال: حدثنا أبو مسهر قال: حدثني محمد بن حرب حدثني الزبيدي عن الزهري عن محمود بن الربيع قال عقلت: ",
+        "من النبي ﷺ مجة مجها في وجهي وأنا بن خمس سنين من دلو"
+      ],
+      "arabic_sha256": "76653bbd18beeb64c2de4f8af67a459695eaebd8df5c876b03193daf2dd63752",
+      "english_blocks": [
+        "Muhammad ibn Yusuf related to me. He said: Abu Mushir related to us. He said: Muhammad ibn Harb related to me. Al-Zubaydi related to me, from al-Zuhri, from Mahmud ibn al-Rabi‘, who said:",
+        "I remember:",
+        "the Prophet, may Allah bless him and grant him peace, squirting a mouthful of water into my face from a bucket when I was five years old."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 114,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 114,
+            "end": 120,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 51,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 187,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 11,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 137,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:77",
+        "reviewRecordSha256": "73ce071f75816829771aa06073c1938c5f13db759b6e512a91b67bf674f67702",
+        "notes": [
+          "The selected and modern printed chain begin with the singular “related to me”; the historical print begins with the plural “related to us”. The selected singular is retained. The remaining singular reporting verbs remain explicit.",
+          "The source splits “I remember” from its object between paragraphs. It is presented as report text, outside the expandable chain, with both source paragraphs fully preserved. The bucket, action and age five remain; no well or playful motive is supplied."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:78",
+      "book": "Knowledge",
+      "number": 78,
+      "arabic_blocks": [
+        "[78] حدثنا أبو القاسم خالد بن خلي قال: حدثنا محمد بن حرب قال: قال الأوزاعي أخبرنا الزهري عن عبيد الله بن عبد الله بن عتبة بن مسعود عن ابن عباس أنه تمارى هو والحر بن قيس بن حصن الفزاري في صاحب موسى فمر بهما أبي بن كعب فدعاه بن عباس، فقال:",
+        "إني تماريت أنا وصاحبي هذا في صاحب موسى الذي سأل السبيل إلى لقيه هل سمعت رسول الله ﷺ يذكر شأنه، فقال أبي نعم سمعت النبي ﷺ يذكر شأنه يقول بينما موسى في ملأ من بني إسرائيل إذ جاءه رجل، فقال أتعلم أحدا أعلم منك قال موسى لا فأوحى الله عز وجل إلى موسى بلى عبدنا خضر فسأل السبيل إلى لقيه فجعل الله له الحوت آية وقيل له إذا فقدت الحوت فارجع فإنك ستلقاه فكان موسى ﷺ يتبع أثر الحوت في البحر، فقال: فتى موسى لموسى { أرأيت إذ أوينا إلى الصخرة فإني نسيت الحوت وما أنسانيه إلا الشيطان أن أذكره } قال موسى { ذلك ما كنا نبغي فارتدا على آثارهما قصصا } فوجدا خضرا فكان من شأنهما ما قص الله في كتابه "
+      ],
+      "arabic_sha256": "594e66bfee5ff92a6b6e5670188ce7d3ddf1b8c165aeee6a80c347ceda4c53ee",
+      "english_blocks": [
+        "Abu al-Qasim Khalid ibn Khali related to us. He said: Muhammad ibn Harb related to us. He said: Al-Awza‘i said: Al-Zuhri informed us, from ‘Ubaydullah ibn ‘Abdullah ibn ‘Utbah ibn Mas‘ud, from Ibn ‘Abbas:",
+        "He and al-Hurr ibn Qays ibn Hisn al-Fazari disputed about Musa’s companion. Ubayy ibn Ka‘b passed by them, and Ibn ‘Abbas called him and said:",
+        "“This companion of mine and I have disputed about Musa’s companion, whom he asked how to meet. Have you heard the Messenger of Allah, may Allah bless him and grant him peace, mention his story?” Ubayy said: “Yes. I heard the Prophet, may Allah bless him and grant him peace, mention his story, saying:”",
+        "“While Musa was among a gathering of the Children of Israel, a man came and asked: “Do you know anyone more knowledgeable than you?” Musa said: “No.” Allah, mighty and majestic, revealed to Musa: “Indeed, Our servant Khidr.” He asked how to meet him. Allah made the fish a sign for him, and he was told: “When you lose the fish, go back, for you will meet him.” Musa, may Allah bless him and grant him peace, was following the fish’s trail in the sea. Musa’s young companion said to Musa: {Did you see? When we took shelter at the rock, I forgot the fish; none but Satan made me forget to mention it.} Musa said: {That is what we were seeking. So they retraced their steps.} They found Khidr, and what happened between them was what Allah recounted in His Book.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 143,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 143,
+            "end": 237,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 136,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 136,
+            "end": 581,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 204,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 142,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 302,
+            "kind": "report"
+          },
+          {
+            "block": 3,
+            "start": 0,
+            "end": 762,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:78",
+        "reviewRecordSha256": "b19ea658d8667f1f270ad93519b82aff6da8ffa493a7c082bdc1db4a1b2e2828",
+        "notes": [
+          "This is not deduplicated against 74: it retains its own full chain, narrative frame, wording and honorific after Musa. The chapter’s Jabir journey statement remains separate introductory material, not part of 78 or its narration script.",
+          "The selected first paragraph ends inside the narrative frame. Both halves of that frame stay visible before the inner report. The two Quran quotations and the closing reference to what Allah recounted remain complete."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:79",
+      "book": "Knowledge",
+      "number": 79,
+      "arabic_blocks": [
+        "[79] حدثنا محمد بن العلاء قال: حدثنا حماد بن أسامة عن بريد بن عبد الله عن أبي بردة عن أبي موسى عن النبي ﷺ قال: ",
+        "مثل ما بعثني الله به من الهدى والعلم كمثل الغيث الكثير أصاب أرضا فكان منها نقية قبلت الماء فأنبتت الكلأ والعشب الكثير وكانت منها أجادب أمسكت الماء فنفع الله بها الناس فشربوا وسقوا وزرعوا وأصابت منها طائفة أخرى إنما هي قيعان لا تمسك ماء ولا تنبت كلأ فذلك مثل من فقه في دين الله ونفعه ما بعثني الله به فعلم وعلم ومثل من لم يرفع بذلك رأسا ولم يقبل هدى الله الذي أرسلت به قال أبو عبد الله قال إسحاق وكان منها طائفة قيّلت الماء قاع يعلوه الماء والصفصف المستوي من الأرض "
+      ],
+      "arabic_sha256": "84711bbef46627a737bc526b0f36eae5c1c3ba2275370d964b710dabd41ba176",
+      "english_blocks": [
+        "Muhammad ibn al-‘Ala’ related to us. He said: Hammad ibn Usamah related to us, from Burayd ibn ‘Abdullah, from Abu Burdah, from Abu Musa, from the Prophet, may Allah bless him and grant him peace, who said:",
+        "“The guidance and knowledge with which Allah sent me are like abundant rain falling on land. Some of it was good ground that accepted the water and brought forth plentiful pasture and fresh grass. Some of it was hard ground that held the water, through which Allah benefited people: they drank, watered and cultivated. It fell on another tract that was only level ground, neither holding water nor growing pasture. This is the likeness of one who gains understanding of Allah’s religion and benefits from what Allah sent me with, learning and teaching; and the likeness of one who pays it no heed and does not accept Allah’s guidance with which I was sent.”",
+        "Abu ‘Abdullah said: Ishaq said: “And among it was a tract that drank in the water.” A qa‘ is ground over which water rises, and al-safsaf is level ground."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 111,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 368,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 368,
+            "end": 464,
+            "kind": "transmission-note"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 206,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 657,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 154,
+            "kind": "transmission-note"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:79",
+        "reviewRecordSha256": "685e7e94010f37690407d8dea2ecfc208bb35cc1f4dbed1f62cb7719ac77e989",
+        "notes": [
+          "All three kinds of ground, the people’s drinking, watering and cultivation, and both concluding comparisons are retained. The two English report-body comparisons are abbreviated in their treatment of the final transmission note: Khan-family omits it; Bewley gives only the ground definitions. They do not verify its full wording.",
+          "The selected closing note and modern print read قيّلت; the historical print reads قبلت and omits both the Abu ‘Abdullah introduction and the qa‘/al-safsaf definitions. “Drank in” is a provisional rendering of the selected قيّلت, not a harmonization to قبلت.",
+          "Ibn Hajar, Fath al-Bari, Book of Knowledge, commentary on report 79, volume 1 pages 210–213, records disputed readings and explanations of this word, including drinking and a proposed scribal error. The provisional rendering follows the drinking explanation; this does not settle the variant. This commentary is lexical evidence only and is not inserted into the hadith. The complete closing source note remains distinct from the Prophet’s quoted words."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:80",
+      "book": "Knowledge",
+      "number": 80,
+      "arabic_blocks": [
+        "[80] حدثنا عمران بن ميسرة قال: حدثنا عبد الوارث عن أبي التياح عن أنس قال: قال رسول الله ﷺ:",
+        "إن من أشراط الساعة أن يرفع العلم ويثبت الجهل ويشرب الخمر ويظهر الزنا "
+      ],
+      "arabic_sha256": "faddd6c14c30d1e4f0d7b763cbc523a940319a66ca5fd6a1fca74c244a75b000",
+      "english_blocks": [
+        "‘Imran ibn Maysarah related to us. He said: ‘Abd al-Warith related to us, from Abu al-Tayyah, from Anas, who said: The Messenger of Allah, may Allah bless him and grant him peace, said:",
+        "“Among the signs of the Hour are that knowledge is taken away, ignorance becomes established, wine is drunk and unlawful sexual intercourse becomes manifest.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 90,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 69,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 185,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 158,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:80",
+        "reviewRecordSha256": "5c8ed0bb542d53efb034754b745563ac74180662387b9e1e67883cb0afc2a2ea",
+        "notes": [
+          "All four clauses remain in their source order. No parenthetical account of scholars’ deaths or modern application is inserted. “Unlawful sexual intercourse” provisionally renders الزنا; this is wording, not a separate legal definition."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:81",
+      "book": "Knowledge",
+      "number": 81,
+      "arabic_blocks": [
+        "[81] حدثنا مسدد قال: حدثنا يحيى عن شعبة عن قتادة عن أنس قال:",
+        "لأحدثنكم حديثا لا يحدثكم أحد بعدي سمعت رسول الله ﷺ يقول: من أشراط الساعة أن يقل العلم ويظهر الجهل ويظهر الزنا وتكثر النساء ويقل الرجال حتى يكون لخمسين امرأة القيم الواحد"
+      ],
+      "arabic_sha256": "7aeacfda62251163a800462b370e34879b26e84156606c6435220d80cb889507",
+      "english_blocks": [
+        "Musaddad related to us. He said: Yahya related to us, from Shu‘bah, from Qatadah, from Anas, who said:",
+        "I will certainly relate to you a hadith that no one after me will relate to you. I heard the Messenger of Allah, may Allah bless him and grant him peace, say: “Among the signs of the Hour are that knowledge becomes scarce, ignorance becomes manifest, unlawful sexual intercourse becomes manifest, women increase and men decrease, until there is one man looking after fifty women.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 60,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 169,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 102,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 380,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-knowledge-r252975:81",
+        "reviewRecordSha256": "94392504ba0c1163cc03455c6f7b9ff4e427449a66599fc3a993498d3ae8face",
+        "notes": [
+          "Anas’s introductory statement and his “I heard” remain before the quoted report. The historical print expands Yahya to Yahya ibn Sa‘id; the selected shorter form remains.",
+          "The source says knowledge becomes scarce here, whereas 80 says it is taken away. Both reports remain separate. “One man looking after” is provisional for القيم الواحد; the text does not identify a husband, impose a marriage arrangement or supply a contemporary application."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic with two visually inspected Arabic print witnesses and individually matched English report-body comparisons. Abbreviated English chains are not independent verification of the full English chain. This working translation has no independent scholarly approval. Chapter introductions remain separate in Arabic."
+      },
+      "audio_status": "No recording yet."
     }
   ],
+  "sourceLocationCorrections": {
+    "schemaVersion": 1,
+    "corrections": [
+      {
+        "sourceId": "brill-1862",
+        "fromURL": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf",
+        "toURL": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+        "bytes": 28290204,
+        "verifiedAt": "2026-10-21",
+        "basis": "The earlier URL returns 404. The corrected Wikimedia volume-one URL was located through the Wikisource file index and downloaded. Its full file SHA-256 matches the already pinned historical witness. This repairs a citation URL only; original review inputs and every hadith text remain unchanged.",
+        "discoveryURL": "https://ar.wikisource.org/wiki/ملف:صحيح_البخاري_ر0.pdf"
+      }
+    ]
+  },
   "prototypeReview": {
     "status": "personal-prototype-only",
     "independentReview": "pending",
@@ -5344,10 +6254,10 @@
     "originalSourceSha256": "fea9b889d30bdc3ceb8e41de8cb390292905391d2079993ce69a85b138bd7f33",
     "originalDraftSha256": "6b31fb16f5bfc5e4acf08f06b269b20e5a8fc1a0747e153da9cd7cb3f6f9d43c",
     "decisionsSha256": "a3d25932e2caca64186991ddb8ff1da18d39392990b131e5fffc50dca2f13d1e",
-    "openingSourceSha256": "11a47792c7c679c5f4b7e1f4a52c4d12d045f19b86acba195e3cdf3cd2c7274d",
+    "openingSourceSha256": "d596d6aad6ad1f02839f3690c446d5b16791f7b7aa35c157b6e89a442db7b76a",
     "faithReviewSha256": "913cde0d9b2089bd87a8c8a0b59766d267ca251b3febe56f814ef720156266b1",
     "faithSourceSha256": "0f8c0518a21d266a075dd1cfb756733845ed5dff6548f634cfded0542a30a7a9",
-    "knowledgeReviewSha256": "b8963fc63396b8f5f6169f91cad05f52464a0bf7fc3a5d16d618bbf006be6241",
+    "knowledgeReviewSha256": "bc325d7f5fa8d3cf53062c0c2eaa99bffe0336d68e847f969b917a27736c00f4",
     "knowledgeSourceSha256": "9060879f4b110cc9007f35db6b1f2fa0cc37c5ba8e510531721b024cbadf4e58"
   }
 }

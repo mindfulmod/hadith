@@ -1,4 +1,5 @@
 /* Assemble reviewed personal-prototype batches; never infer Arabic edits or sign-offs. */
+import {sourceLocationCorrections,resolveSourceLocation} from './source-locations.mjs';
 import {readFileSync,writeFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {pathToFileURL} from 'node:url';
@@ -90,20 +91,21 @@ export function assembleCollection(opening,inventory,review,manifest,config=BOOK
  const batch=buildBookBatch(inventory,review,manifest,config),sources=structuredClone(opening.source.sources);
  assert(!opening.ledger.books.some(b=>b.id===config.id),'Book already assembled');
  assert.equal(opening.source.entries.at(-1).number+1,config.first,'Collection book order must be consecutive');
- for(const s of review.sources)if(!sources.some(v=>v.id===s.id))sources.push(s);
+ for(const s of review.sources)if(!sources.some(v=>v.id===s.id))sources.push(resolveSourceLocation(s));
  const range=`${batch.entries[0].number}–${batch.entries.at(-1).number}`;
  const source={...opening.source,scope:config.id==='faith'?`Personal prototype: opening entries 1–7 and Book of Faith entries ${range}. The rest of the collection remains in preparation.`:`Personal prototype: complete numbered entries 1–${batch.entries.at(-1).number} across ${opening.ledger.books.length+1} books. The rest of the collection remains in preparation.`,
   license:{...opening.source.license,attribution:config.id==='faith'?'Sahih al-Bukhari by Muhammad ibn Ismail al-Bukhari; Arabic digital transcription by Arabic Wikisource contributors, opening revision 484874 and Faith revision 490285.':opening.source.license.attribution+` Book of ${config.title}: revision ${config.revision}.`,changes:opening.source.license.changes+` Hadith ${range} retain their Arabic paragraphs unchanged from revision ${config.revision}; their new English and available chapter titles are AI-assisted.${review.chapters.some(c=>c.status==='heading-discrepancy-pending')?' A disputed chapter heading is explicitly withheld.':''} Chapter introductions are preserved separately in Arabic, with English translation still pending.`},sources,
   prototypeReview:config.id==='faith'?{...opening.source.prototypeReview,openingSourceSha256:hash(opening.source),faithReviewSha256:hash(review),faithSourceSha256:manifest.file.sha256}:{...opening.source.prototypeReview,[config.id+'ReviewSha256']:hash(review),[config.id+'SourceSha256']:manifest.file.sha256},entries:[...opening.source.entries,...batch.entries]};
  const sourceHash=hash(source),references=structuredClone(opening.ledger.sourceReferences);references.sourceRecordSha256=sourceHash;
- for(const {id,label,kind,format,url}of review.sources){const existing=references.sources.find(s=>s.id===id);if(existing)assert.deepEqual(existing,{id,label,kind,format,url},'Conflicting shared source');else references.sources.push({id,label,kind,format,url});}
+ for(const {id,label,kind,format,url}of review.sources.map(resolveSourceLocation)){const existing=references.sources.find(s=>s.id===id);if(existing)assert.deepEqual(existing,{id,label,kind,format,url},'Conflicting shared source');else references.sources.push({id,label,kind,format,url});}
  for(const e of batch.entries){
   const r=review.entries.find(r=>r.number===e.number),chapter=review.chapters.find(c=>c.entryNumbers.includes(e.number));
   references.entries.push({id:e.id,number:e.number,entrySha256:hash(e),translation:{label:'Personal prototype · English working translation',description:e.english_status+' This is a new working translation, not the Darussalam translation.'},citations:[
    {id:'base',sourceId:config.arabicSourceId,locator:`Book of ${config.title} · source entry ${e.number} · ${chapter.titleArabic}`,scope:'Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes.'},
    {id:'bewley',sourceId:config.bewleySourceId,locator:`Book of ${config.bewleyTitle} · entry ${r.comparisons.find(c=>c.id===config.bewleySourceId).reference}`,scope:'Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain.'},
    khanCitation(r.comparisons.find(c=>c.id==='islamhouse-khan')),
-   ...r.printedWitnesses.map(w=>({id:w.id,sourceId:w.id,locator:`PDF ${w.pdfPages.length===1?'page':'pages'} ${w.pdfPages.join(', ')}`,pdfPage:w.pdfPages[0],scope:'Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes.'}))
+   ...r.printedWitnesses.map(w=>({id:w.id,sourceId:w.id,locator:`PDF ${w.pdfPages.length===1?'page':'pages'} ${w.pdfPages.join(', ')}`,pdfPage:w.pdfPages[0],scope:'Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes.'})),
+   ...structuredClone(r.additionalCitations||[])
   ],contextNotes:structuredClone(r.contextNotes||[]),localNotes:{path:config.id+'-review.html',fragment:`hadith-${e.number}`,label:'Comparison notes and chapter source for this hadith'}});
  }
  const books=[...structuredClone(opening.ledger.books),{id:config.id,number:config.number,title:config.title,sourceEntryCount:inventory.records.length,entryNumbers:batch.entries.map(e=>e.number),chapters:batch.chapters}];
@@ -111,7 +113,7 @@ export function assembleCollection(opening,inventory,review,manifest,config=BOOK
  ledger.entries.push(...batch.entries.map(e=>({number:e.number,id:e.id,entrySha256:hash(e),arabicSha256:e.arabic_sha256,englishSha256:sha(e.english_blocks.join('\n\n')),status:'personal-prototype-only',arabicReview:{status:'pending'},englishReview:{status:'pending'},contextReview:{status:'pending'}})));
  ledger.rights.evidence.push(`reader/${config.id}-inputs.json`,`reader/${config.id}-review.html`);
  const selectedIds=new Set([...review.chapters.flatMap(c=>[c.headingId,...c.contextIds]),...review.entries.flatMap(e=>e.paragraphIds)]);
- const inputs={schemaVersion:1,status:'personal-prototype-only',manifest,completeInventorySha256:hash(inventory),scope:`Only the blocks used by Hadith ${range} and their chapter context. The complete source inventory remains separately preserved.`,selectedBlocks:inventory.blocks.filter(b=>selectedIds.has(b.htmlId)),review};
+ const inputs={schemaVersion:1,sourceLocationCorrections,status:'personal-prototype-only',manifest,completeInventorySha256:hash(inventory),scope:`Only the blocks used by Hadith ${range} and their chapter context. The complete source inventory remains separately preserved.`,selectedBlocks:inventory.blocks.filter(b=>selectedIds.has(b.htmlId)),review};
  const chapterNotes=review.chapters.map(c=>{
   const sourceURL=new URL(manifest.url);sourceURL.hash=c.headingId;
   return `<article id="${esc(c.id)}"><p class="eyebrow">Chapter material · separate from numbered hadith</p><h2>${esc(c.title)}</h2><p><a href="./#book/${config.id}/chapter/${esc(c.id)}">Open this chapter →</a></p><p>${c.status==='heading-discrepancy-pending'?'The English heading is withheld because the selected digital and printed witnesses differ. The title above is an app status.':'The English heading is an AI-assisted working translation; independent review is pending.'}</p><h3>Selected Arabic heading</h3><div class="arabic" dir="rtl" lang="ar"><p>${esc(c.titleArabic)}</p></div><h3>Chapter introduction</h3>${c.contextIds.length?`<p>${c.contextIds.length} Arabic ${c.contextIds.length===1?'paragraph':'paragraphs'}. English translation is pending.</p><div class="arabic" dir="rtl" lang="ar">${c.contextIds.map(id=>`<p>${esc(inventory.blocks.find(b=>b.htmlId===id).text)}</p>`).join('')}</div>`:'<p>No separate introductory paragraph appears in this selected source chapter.</p>'}<p><a href="${esc(sourceURL.href)}" target="_blank" rel="noopener">Pinned Arabic source · revision ${manifest.revision} ↗</a></p><p>${c.entryNumbers.length?`Numbered reports in this chapter: ${c.entryNumbers.map(n=>`<a href="./#read/${n}">${n}</a>`).join(', ')}.`:'This source chapter has no numbered report. No hadith number has been invented for it.'}</p>${c.headingDiscrepancy?`<p>The heading difference is documented in the <a href="#hadith-${c.entryNumbers[0]}">report comparison notes</a>.</p>`:''}</article>`;
@@ -131,12 +133,14 @@ export function combineBookReviews(registry,config,readReview=read){
   assert.equal(batch.first,next,'Book batches must be consecutive');assert(Number.isSafeInteger(batch.last)&&batch.last>=batch.first);
   const review=readReview(batch.path);assert.equal(hash(review),batch.sha256,'Changed book batch record');
   assert.deepEqual(review.entries.map(e=>e.number),Array.from({length:batch.last-batch.first+1},(_,i)=>batch.first+i),'Incomplete registered book batch');
-  if(reviews.length)for(const key of ['schemaVersion','status','independentReview','sourceId','sourceSha256','inventorySha256','sources'])assert.deepEqual(review[key],reviews[0][key],'Conflicting book batch source');
+  if(reviews.length)for(const key of ['schemaVersion','status','independentReview','sourceId','sourceSha256','inventorySha256'])assert.deepEqual(review[key],reviews[0][key],'Conflicting book batch source');
   reviews.push(review);next=batch.last+1;
  }
+ const sources=[];
+ for(const review of reviews)for(const source of review.sources){const existing=sources.find(s=>s.id===source.id);if(existing)assert.deepEqual(existing,source,'Conflicting book batch source');else sources.push(source);}
  const entries=reviews.flatMap(r=>r.entries),chapters=reviews.flatMap(r=>r.chapters);
  assert.equal(new Set(chapters.map(c=>c.id)).size,chapters.length,'A chapter cannot be split across review batches');
- return {...reviews[0],entries,chapters,scope:`Complete numbered reports ${config.first}–${next-1}. Available chapter titles use provisional English. Disputed headings are labelled under review; unnumbered chapter introductions remain separately preserved in Arabic.`,editionNote:reviews.map(r=>r.editionNote).join(' '),batches:registry.batches};
+ return {...reviews[0],sources,entries,chapters,scope:`Complete numbered reports ${config.first}–${next-1}. Available chapter titles use provisional English. Disputed headings are labelled under review; unnumbered chapter introductions remain separately preserved in Arabic.`,editionNote:reviews.map(r=>r.editionNote).join(' '),batches:registry.batches};
 }
 export function buildFaithBatch(inventory,review,manifest){return buildBookBatch(inventory,review,manifest,BOOK_CONFIGS.faith);}
 export function combineFaithReviews(registry,readReview=read){return combineBookReviews(registry,BOOK_CONFIGS.faith,readReview);}
