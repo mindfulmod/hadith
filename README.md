@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The personal reader is at `reader/`: 96 complete Bukhari entries across three books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The personal reader is at `reader/`: 110 complete Bukhari entries across three books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Run
 
@@ -411,3 +411,14 @@ The personal prototype contains 96 complete numbered reports. Knowledge now has 
 The review retains embedded narrator uncertainty in 86 and 91, both chains in 89, the shortened selected name in 91, and the separate repetition reports 94–95. The modern print contains both of the latter; the checked historical chapter contains only the fuller form. The source record and reader now identify this checked absence explicitly, without claiming a second exact printed match. Checked page locations and distinct witness identities are validated. Ibn Hajar’s discussions inform separately cited working-wording notes for 90 and 91; they do not replace the selected Arabic or certify the new English.
 
 `research/knowledge-third-verification.json` records 198 passing checks (159 Node, 39 Python), exact rendered comparison of all 15 new reports and 11 chapter blocks, preserved Continue after browsing outside a session, and 320px day/night reading with 28px text. New reports, chapter Arabic and exact phrase search reopened after the preview server was stopped. Reading downloads are about 5.3 MB; audio stays separate. Knowledge 97–134, chapter English, independent reviews and further audio remain unfinished.
+
+
+### Knowledge continued: 97–110 and auditable source corrections (21 October 2026)
+
+The personal prototype contains 110 complete numbered reports. Knowledge now has 52 of 76 reports and its first 39 source chapters. This batch adds 16 Arabic report paragraphs, 39 working English segments, eight headings and one separate Arabic chapter introduction. All earlier 96 entry objects and all five recording catalog rows remain unchanged. Cedar still covers 1–6.
+
+Hadith 99 has one declared derived Arabic correction: the selected digital chain merges two narrators, while both inspected prints and al-‘Ayni’s narrator list retain the separate Sa‘id ibn Abi Sa‘id link. The reader restores that link and preserves the untouched input, before/after wording and evidence offline. `scripts/arabic-corrections.mjs` requires exact input and output hashes, Unicode offsets, two distinct pinned print witnesses, matching inspected pages, an English rendering and a visible source notice. This is an AI-evaluated personal-prototype correction; no independent approval is claimed.
+
+The exact Khan-family reference for selected Hadith 98 is `1.3.97g`, while selected 99 maps to `1.3.98`. Suffixed references require evidence matching the pinned EPUB inventory. Hadith 97 retains a clause absent from the modern print and both English comparison bodies; 98 and 105 retain narrator uncertainty; 100 retains its final chain; 102 links to 101 without silently copying the preceding body. The different warning forms in 106–110 remain separate. Full findings are in the offline source notes.
+
+`research/knowledge-fourth-verification.json` records 205 passing checks (166 Node, 39 Python), exact rendered comparison of all new report blocks and nine chapter blocks, the preserved session, the original/corrected Arabic distinction, the suffixed citation, 320px layouts at 28px text, and offline reading, chapter material and phrase search with the preview server stopped. The new source notices were shortened after visual inspection; the narration and full evidence were unchanged. Reading downloads total about 5.6 MB; audio remains separate. Knowledge 111–134, chapter English, independent review and further audio remain unfinished.

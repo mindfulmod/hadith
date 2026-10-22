@@ -19,7 +19,7 @@ test('dropping, reordering or borrowing source-only chapters is rejected even th
 test('book configuration and comparison namespace cannot silently reuse a different book',()=>{
  const args=input();assert.throws(()=>buildBookBatch(...args.slice(0,3),BOOK_CONFIGS.faith));assert.throws(()=>buildBookBatch(...args.slice(0,3),{...BOOK_CONFIGS.knowledge}));
  for(const mutate of [r=>r.comparisons[0].id='bewley',r=>r.comparisons[1].reference='1.2.56']){const a=input(),row=a[1].entries[0];mutate(row);delete row.reviewRecordSha256;row.reviewRecordSha256=objectHash(row);assert.throws(()=>buildBookBatch(...a));}
- const registry=read('content/review/knowledge-batches.json');assert.equal(combineBookReviews(registry,BOOK_CONFIGS.knowledge).entries.length,38);assert.throws(()=>combineBookReviews(registry,BOOK_CONFIGS.faith));
+ const registry=read('content/review/knowledge-batches.json');assert.equal(combineBookReviews(registry,BOOK_CONFIGS.knowledge).entries.length,52);assert.throws(()=>combineBookReviews(registry,BOOK_CONFIGS.faith));
 });
 test('individual English mappings account for the comparator’s same-as-above gap',()=>{
  const {ledger}=collectionFiles(),rows=ledger.sourceReferences.entries.filter(e=>e.number>=59&&e.number<=67);
@@ -37,12 +37,12 @@ test('the selected uncertainty, alternate chain and closing transmission notes r
 });
 test('Knowledge source notes retain exact headings and introductions with separate offline anchors',()=>{
  const {ledger,files}=collectionFiles(),book=ledger.books.find(b=>b.id==='knowledge'),inputs=JSON.parse(files.get('reader/knowledge-inputs.json')),html=files.get('reader/knowledge-review.html');
- assert.equal(book.sourceEntryCount,76);assert.equal(book.chapters.filter(c=>c.sourceContext.introduction.englishStatus==='pending').length,11);
+ assert.equal(book.sourceEntryCount,76);assert.equal(book.chapters.filter(c=>c.sourceContext.introduction.englishStatus==='pending').length,12);
  for(const c of book.chapters){assert.equal(c.sourceContext.notes.path,'knowledge-review.html');assert.equal((html.match(new RegExp('id="'+c.id+'"','g'))||[]).length,1);assert.equal(c.sourceContext.numberedReports,c.entryNumbers.length?'present':'none-in-source');}
  const [inventory]=input(),review=combineBookReviews(read('content/review/knowledge-batches.json'),BOOK_CONFIGS.knowledge),ids=new Set(review.chapters.flatMap(c=>[c.headingId,...c.contextIds]).concat(review.entries.flatMap(e=>e.paragraphIds)));assert.deepEqual(inputs.selectedBlocks,inventory.blocks.filter(b=>ids.has(b.htmlId)));assert(html.includes('Book of Knowledge'));assert(!html.includes('#book/faith'));
 });
 test('expansion preserves a saved session and starts a new one across Faith to Knowledge without synthetic entries',()=>{
- const {source}=collectionFiles(),saved={numbers:[58],cursor:58,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,58),saved);const next=nextSession(source.entries,saved,5);assert.equal(next.cursor,59);assert(next.numbers.every(n=>Number.isSafeInteger(n)&&n>=59));assert.equal(nextSession(source.entries,{numbers:[67],cursor:67,ended:true},5).cursor,68);assert.equal(nextSession(source.entries,{numbers:[96],cursor:96,ended:true},5),null);
+ const {source}=collectionFiles(),saved={numbers:[58],cursor:58,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,58),saved);const next=nextSession(source.entries,saved,5);assert.equal(next.cursor,59);assert(next.numbers.every(n=>Number.isSafeInteger(n)&&n>=59));assert.equal(nextSession(source.entries,{numbers:[67],cursor:67,ended:true},5).cursor,68);assert.equal(nextSession(source.entries,{numbers:[110],cursor:110,ended:true},5),null);
 });
 
 test('the next Knowledge batch preserves exact paragraphs, report parts and individual references',()=>{
@@ -100,5 +100,39 @@ test('historical absence cannot be silently attributed to the modern print',()=>
 });
 test('the repeated warning retains the named prayer and new chapter context stays outside numbered sessions',()=>{
  const {source,ledger}=collectionFiles(),get=n=>source.entries.find(e=>e.number===n),book=ledger.books.find(b=>b.id==='knowledge');assert.match(get(96).english_blocks[1],/‘Asr/);assert.doesNotMatch(get(60).english_blocks[1],/‘Asr/);assert.notDeepEqual(get(60).english_blocks,get(96).english_blocks);
- assert.equal(book.chapters.find(c=>c.id==='chapter-26').sourceContext.introduction.arabicParagraphs,1);assert.equal(book.chapters.find(c=>c.id==='chapter-31').sourceContext.introduction.arabicParagraphs,1);assert.equal(book.chapters.length,31);const saved={numbers:[81],cursor:81,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,81),saved);assert.equal(nextSession(source.entries,saved,5).cursor,82);
+ assert.equal(book.chapters.find(c=>c.id==='chapter-26').sourceContext.introduction.arabicParagraphs,1);assert.equal(book.chapters.find(c=>c.id==='chapter-31').sourceContext.introduction.arabicParagraphs,1);assert.equal(book.chapters.length,39);const saved={numbers:[81],cursor:81,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,81),saved);assert.equal(nextSession(source.entries,saved,5).cursor,82);
+});
+
+test('fourth Knowledge batch preserves the earlier 96 entries and admits eight complete chapters',()=>{
+ const [inventory,,manifest,config]=input(),review=read('content/review/knowledge-fourth-review.json'),batch=buildBookBatch(inventory,review,manifest,config),{source}=collectionFiles();
+ const prior=['opening-revelation-0838666424fc2680','faith-4b603172bba4b1d1','knowledge-fd5bb655e84c121d'].flatMap(name=>read('reader/books/'+name+'.json').entries);assert.deepEqual(source.entries.slice(0,96),prior);
+ assert.deepEqual(batch.entries.map(e=>e.number),Array.from({length:14},(_,i)=>97+i));assert.deepEqual(batch.chapters.map(c=>c.id),inventory.chapters.slice(31,39).map(c=>c.id));
+ for(const e of batch.entries){const row=review.entries.find(r=>r.number===e.number);if(e.number!==99)assert.deepEqual(e.arabic_blocks,row.paragraphIds.map(id=>inventory.blocks.find(b=>b.htmlId===id).text));assert.deepEqual(sourceSegments(e,'english').map(s=>s.text),row.segments.map(s=>s.english));}
+});
+test('a declared chain correction changes only its recorded span and preserves the pinned original',()=>{
+ const args=input();args[1]=read('content/review/knowledge-fourth-review.json');const snapshot=structuredClone(args),batch=buildBookBatch(...args),entry=batch.entries.find(e=>e.number===99),row=args[1].entries.find(e=>e.number===99),c=row.arabicCorrections[0],raw=args[0].blocks.find(b=>b.htmlId===c.paragraphId).text;
+ assert.deepEqual(args,snapshot);assert.equal(entry.arabic_blocks[0],Array.from(raw).slice(0,c.start).join('')+c.after+Array.from(raw).slice(c.end).join(''));assert.notEqual(entry.arabic_sha256,entry.review.originalArabicSha256);assert.deepEqual(entry.review.arabicCorrections,row.arabicCorrections);assert.match(entry.english_blocks[0],/from ‘Amr ibn Abi ‘Amr, from Sa‘id ibn Abi Sa‘id al-Maqburi/);assert.match(entry.english_status,/recorded Arabic correction/);
+ const {source,ledger,files}=collectionFiles(),html=files.get('reader/knowledge-review.html'),inputs=JSON.parse(files.get('reader/knowledge-inputs.json'));assert.equal(inputs.selectedBlocks.find(b=>b.htmlId===c.paragraphId).text,raw);assert(html.includes('Unchanged original digital report')&&html.includes(c.before)&&html.includes(c.after));assert.match(source.license.changes,/only 99 have declared Arabic corrections/);assert.match(ledger.sourceReferences.entries.find(e=>e.number===99).citations[0].scope,/Derived Arabic/);
+});
+test('correction evidence cannot hide changed originals, uninspected witnesses or fabricated approval',()=>{
+ const mutators=[
+  r=>r.originalArabicSha256='0'.repeat(64),r=>r.arabicCorrections[0].originalParagraphSha256='0'.repeat(64),r=>r.arabicCorrections[0].correctedParagraphSha256='0'.repeat(64),r=>r.arabicCorrections[0].start++,r=>r.arabicCorrections[0].after+=' نعم',r=>r.arabicCorrections[0].witnesses[0].sourceSha256='0'.repeat(64),r=>r.arabicCorrections[0].witnesses[0].pdfPage=1,r=>r.arabicCorrections[0].witnesses[0].sourceId='dar-ibn-kathir-2002',r=>r.arabicCorrections[0].witnesses[0].reading='different',r=>r.arabicCorrections[0].independentReview='approved',r=>r.arabicCorrections[0].englishRendering='untranslated name',r=>r.arabicCorrections[0].englishSegmentId='99-2',r=>r.contextNotes=[],r=>r.arabicCorrections.push(structuredClone(r.arabicCorrections[0])),r=>{delete r.arabicCorrections;delete r.originalArabicSha256;}
+ ];
+ for(const mutate of mutators){const args=input();args[1]=read('content/review/knowledge-fourth-review.json');const row=args[1].entries.find(e=>e.number===99);mutate(row);delete row.reviewRecordSha256;row.reviewRecordSha256=objectHash(row);assert.throws(()=>buildBookBatch(...args));}
+});
+test('the actual suffixed English reference stays distinct from the following report and chapter letter',()=>{
+ const {ledger}=collectionFiles(),get=n=>ledger.sourceReferences.entries.find(e=>e.number===n).citations.find(c=>c.id==='khan').locator;assert.equal(get(97),'Volume 1, Book 3, Number 97');assert.equal(get(98),'Volume 1, Book 3, Number 97g');assert.equal(get(99),'Volume 1, Book 3, Number 98');assert.equal(get(100),'Volume 1, Book 3, Number 100');
+ for(const mutate of [r=>delete r.comparisons[1].referenceEvidence,r=>r.comparisons[1].reference='1.3.97h',r=>r.comparisons[1].referenceEvidence.recordSha256='0'.repeat(64),r=>r.comparisons[1].referenceEvidence.sourceSha256='0'.repeat(64),r=>r.comparisons[1].reference='1.2.97g']){const args=input();args[1]=read('content/review/knowledge-fourth-review.json');const row=args[1].entries.find(e=>e.number===98);mutate(row);delete row.reviewRecordSha256;row.reviewRecordSha256=objectHash(row);assert.throws(()=>buildBookBatch(...args));}
+});
+test('source variants, witness uncertainty and the closing transmission chains remain complete',()=>{
+ const {source,ledger}=collectionFiles(),get=n=>source.entries.find(e=>e.number===n),segments=n=>sourceSegments(get(n),'english');assert.match(get(97).english_blocks[1],/with whom he had intercourse/);assert.equal(segments(97).at(-1).kind,'transmission-note');assert.match(get(97).english_blocks.at(-1),/‘Amir/);
+ assert.equal(segments(98).filter(s=>s.kind==='transmission-note').length,2);assert.match(get(98).english_blocks[1],/or ‘Ata’/);assert.match(get(98).english_blocks.at(-1),/Isma‘il/);assert.match(get(100).english_blocks.at(-1),/Al-Firabri/);assert.equal(segments(100).at(-1).kind,'transmission-note');assert.equal(segments(105).filter(s=>s.kind==='transmission-note').length,2);assert.doesNotMatch(get(105).english_blocks.join(' '),/this city/);assert.match(get(105).english_blocks.at(-1),/twice/);
+ const chapter=ledger.books.find(b=>b.id==='knowledge').chapters.find(c=>c.id==='chapter-35');assert.equal(chapter.sourceContext.introduction.arabicParagraphs,1);assert.equal(chapter.sourceContext.introduction.englishStatus,'pending');
+});
+test('an abbreviated report links back without copying another report or losing its second chain',()=>{
+ const {source,ledger}=collectionFiles(),entry=source.entries.find(e=>e.number===102),context=ledger.sourceReferences.entries.find(e=>e.number===102).contextNotes[0];assert.deepEqual(sourceSegments(entry,'english').map(s=>s.kind),['chain','report','chain','report']);assert.equal(entry.english_blocks[1],'With this same report.');assert.match(entry.english_blocks.at(-1),/Three who have not reached/);assert.equal(context.related[0].number,101);assert.doesNotMatch(entry.english_blocks.join(' '),/And two/);
+});
+test('nearby warnings keep the different verbs and explicit qualifiers of each selected report',()=>{
+ const {source}=collectionFiles(),body=n=>source.entries.find(e=>e.number===n).english_blocks.slice(1).join(' ');for(const n of [106,107,109])assert.doesNotMatch(body(n),/deliberately/);for(const n of [108,110])assert.match(body(n),/deliberately/);assert.match(body(106),/enter the Fire/);assert.doesNotMatch(body(106),/seat/);assert.match(body(109),/what I did not say/);assert.match(body(110),/kunyah/);assert.doesNotMatch(body(110),/Abu al-Qasim/);
+ const saved={numbers:[96],cursor:96,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,96),saved);assert.equal(nextSession(source.entries,saved,5).cursor,97);
 });
