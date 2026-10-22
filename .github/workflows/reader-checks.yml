@@ -26,6 +26,7 @@ jobs:
           node scripts/build-opening-prototype.mjs --check
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/import-wikisource-book.py --check
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit-wikisource-layout.py --check
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/resolve-wikisource-layout.py --check
           node scripts/build-collection.mjs --check
           node scripts/build-audio.mjs --check
           node reader/check-content.mjs

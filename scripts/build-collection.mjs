@@ -96,7 +96,9 @@ function khanCitation(record){
  return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Number ${number}${record.part?` · report ${record.part.index} of ${record.part.count}`:''}`,scope:record.part?'This English reference contains multiple reports. Only the identified report is matched here; the reader retains separate entries and full chains from its selected Arabic source.':'Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed.'};
 }
 export function buildBookBatch(inventory,review,manifest,config){
- bookConfig(config);assert.equal(inventory.records[0].number,config.first,'Source book begins at the wrong reference');
+ bookConfig(config);
+ assert(inventory.schemaVersion===1&&!('layoutReview' in inventory)&&!('layoutReviewSha256' in inventory)&&!('originalBlocks' in inventory),'Mapped source inventories need explicit reader provenance support before admission');
+ assert.equal(inventory.records[0].number,config.first,'Source book begins at the wrong reference');
  assert.equal(manifest.revision,config.revision,'Unexpected source revision');
  assert.equal(review.schemaVersion,1);assert.equal(review.status,'personal-prototype-only');assert.equal(review.independentReview,'pending');
  assert.equal(review.inventorySha256,hash(inventory),'Stale source inventory');assert.equal(review.sourceSha256,inventory.sourceSha256);assert.equal(review.sourceId,inventory.sourceId);assert.equal(manifest.file.sha256,inventory.sourceSha256);
