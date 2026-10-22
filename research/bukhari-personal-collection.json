@@ -1,12 +1,12 @@
 {
   "created": "2026-10-20",
-  "scope": "Personal prototype: complete numbered entries 1–153 across 4 books. The rest of the collection remains in preparation.",
+  "scope": "Personal prototype: complete numbered entries 1–155 across 4 books. The rest of the collection remains in preparation.",
   "selected_route": "Pinned Arabic text plus a new English working translation.",
   "license": {
     "id": "CC-BY-SA-4.0",
     "url": "https://creativecommons.org/licenses/by-sa/4.0/",
     "attribution": "Sahih al-Bukhari by Muhammad ibn Ismail al-Bukhari; Arabic digital transcription by Arabic Wikisource contributors, opening revision 484874 and Faith revision 490285. Book of Knowledge: revision 252975. Book of Ablution: revision 273249.",
-    "changes": "Entries 1–2 are unchanged. Entries 3–7 are derived from the pinned Arabic; Hadith 5 has one explicitly recorded correction from له to لك supported by two printed witnesses. Original inputs are retained in prototype-inputs.json. New AI-assisted English, presentation and comparison notes are offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app. Hadith 8–58 retain their Arabic paragraphs unchanged from revision 490285; their new English and available chapter titles are AI-assisted. A disputed chapter heading is explicitly withheld. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 59–134 derive from revision 252975; only 99 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 135–153 derive from revision 273249; only 137, 146 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Exact source origins and original labels are retained; any different reader reference is explicitly mapped. Chapter introductions are preserved separately in Arabic, with English translation still pending."
+    "changes": "Entries 1–2 are unchanged. Entries 3–7 are derived from the pinned Arabic; Hadith 5 has one explicitly recorded correction from له to لك supported by two printed witnesses. Original inputs are retained in prototype-inputs.json. New AI-assisted English, presentation and comparison notes are offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app. Hadith 8–58 retain their Arabic paragraphs unchanged from revision 490285; their new English and available chapter titles are AI-assisted. A disputed chapter heading is explicitly withheld. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 59–134 derive from revision 252975; only 99 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 135–155 derive from revision 273249; only 137, 146 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Exact source origins and original labels are retained; any different reader reference is explicitly mapped. Chapter introductions are preserved separately in Arabic, with English translation still pending. Declared printed additions supply a missing closing transmission note and chapter heading; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately."
   },
   "sources": [
     {
@@ -12055,6 +12055,324 @@
         }
       },
       "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:154",
+      "book": "Ablution",
+      "number": 154,
+      "arabic_blocks": [
+        "[154] حدثنا أحمد بن محمد المكي قال: حدثنا عمرو بن يحيى بن سعيد بن عمرو المكي عن جده عن أبي هريرة قال",
+        "اتبعت النبي ﷺ وخرج لحاجته فكان لا يلتفت فدنوت منه، فقال ابغني أحجارا أستنفض بها أو نحوه ولا تأتني بعظم ولا روث فأتيته بأحجار بطرف ثيابي فوضعتها إلى جنبه وأعرضت عنه فلما قضى أتبعه بهن"
+      ],
+      "arabic_sha256": "7e1cf51b0e84a6ca67804aac85ec8631f0e4f2e9f70b49205b17595fdb13f5f6",
+      "english_blocks": [
+        "Ahmad ibn Muhammad al-Makki related to us. He said: ‘Amr ibn Yahya ibn Sa‘id ibn ‘Amr al-Makki related to us, from his grandfather, from Abu Hurayrah, who said:",
+        "I followed the Prophet, may Allah bless him and grant him peace, as he went out to relieve himself. He did not turn around. I drew near to him, and he said: “Find me stones with which to cleanse myself.”",
+        "Or words to that effect.",
+        "“And do not bring me a bone or dung.” I brought him stones in the edge of my garments, placed them beside him and turned away from him. When he had finished, he used them."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 100,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 80,
+            "kind": "report"
+          },
+          {
+            "block": 1,
+            "start": 80,
+            "end": 88,
+            "kind": "transmission-note"
+          },
+          {
+            "block": 1,
+            "start": 88,
+            "end": 182,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 160,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 203,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 24,
+            "kind": "transmission-note"
+          },
+          {
+            "block": 3,
+            "start": 0,
+            "end": 171,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwXg:0",
+        "reviewRecordSha256": "18ebe26b64689b3dd46569b5c912a25d43ed8dbc1c9a3a3c8d2e44272372a05a",
+        "notes": [
+          "The complete selected chain retains both occurrences of ‘Amr. The historical print reads عمير in the second ancestral name, whereas the selected digital and modern print read عمرو. The selected ‘Amr is retained; the difference is recorded without claiming a resolved biographical identification.",
+          "The narrator’s uncertainty “or words to that effect” remains at its original position between the request for stones and the prohibition of bone or dung. It is a separate transmission-note segment without deleting it from reading or narration.",
+          "The report retains not turning around, drawing near, the edge of the garments, placing the stones beside him and turning away. The final clause is rendered “he used them” with its reference to the stones; the defective final phrase in the Bewley web comparison is not copied."
+        ],
+        "reviewScope": "AI-assisted comparison of the selected Arabic with both visually inspected Arabic prints and two individually matched English report bodies. The English sources omit complete chains and the closing printed note. Any printed addition is identified separately, with both witness readings and exact pages. Independent Arabic, English, chapter and reference review remains pending.",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-ablution-r273249",
+          "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+          "layoutAuditSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+          "layoutReviewSha256": "6dafde039fa774cd4861d0e76d71c314f5c8f2791b85324c16e6eab996683355",
+          "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwXg:0",
+          "sourceReference": {
+            "label": "154",
+            "number": 154,
+            "markerId": "mwXg:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwXg",
+              "textSha256": "aa619096f6f778d213c8b1b08ac239034a6ed3c324163c483b8aa1901c10ff4d",
+              "origin": {
+                "blockId": "mwXg",
+                "blockSha256": "aa619096f6f778d213c8b1b08ac239034a6ed3c324163c483b8aa1901c10ff4d",
+                "start": 0,
+                "end": 100
+              }
+            },
+            {
+              "id": "mwXw",
+              "textSha256": "c3102f1e798a151dab5b9069083ed9827694a79967e4cdbee72f70b6020bbfe2",
+              "origin": {
+                "blockId": "mwXw",
+                "blockSha256": "c3102f1e798a151dab5b9069083ed9827694a79967e4cdbee72f70b6020bbfe2",
+                "start": 0,
+                "end": 182
+              }
+            }
+          ]
+        }
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:155",
+      "book": "Ablution",
+      "number": 155,
+      "arabic_blocks": [
+        "[155] حدثنا أبو نعيم قال: حدثنا زهير عن أبي إسحاق قال ليس أبو عبيدة ذكره ولكن عبد الرحمن بن الأسود عن أبيه أنه سمع عبد الله يقول",
+        "أتى النبي ﷺ الغائط فأمرني أن آتيه بثلاثة أحجار فوجدت حجرين والتمست الثالث فلم أجده فأخذت روثة فأتيته بها فأخذ الحجرين وألقى الروثة، وقال هذا ركس ",
+        "وقال إبراهيم بن يوسف عن أبيه عن أبي إسحاق حدثني عبد الرحمن"
+      ],
+      "arabic_sha256": "76e21721548ee3bd4a9ff8edb787d7a9658c87bc35388b7be61552bd62bfa559",
+      "english_blocks": [
+        "Abu Nu‘aym related to us. He said: Zuhayr related to us, from Abu Ishaq, who said: It was not Abu ‘Ubaydah who mentioned it, but ‘Abd al-Rahman ibn al-Aswad, from his father, that he heard ‘Abdullah saying:",
+        "The Prophet, may Allah bless him and grant him peace, went to relieve himself and ordered me to bring him three stones. I found two stones and looked for the third, but could not find it. I took a piece of dung and brought it to him. He took the two stones, threw away the dung, and said: “This is unclean.”",
+        "And Ibrahim ibn Yusuf said, from his father, from Abu Ishaq: ‘Abd al-Rahman related to me."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation with a separately identified closing transmission note transcribed from an Arabic print. Two printed witnesses and the original digital text remain accessible; the English comparisons omit that closing note. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 128,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 145,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 58,
+            "kind": "transmission-note",
+            "provenance": {
+              "kind": "printed-supplement",
+              "id": "print-155-closing-note"
+            }
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 206,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 307,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 90,
+            "kind": "transmission-note",
+            "provenance": {
+              "kind": "printed-supplement",
+              "id": "print-155-closing-note"
+            }
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwYQ:2",
+        "reviewRecordSha256": "5725f11516e65c2a72cab07ccc60b8a3f1100430625a4f80b840dffe1c571f2d",
+        "notes": [
+          "The chain explicitly rejects Abu ‘Ubaydah as the transmitter here and names ‘Abd al-Rahman ibn al-Aswad from his father. That correction within the source wording is retained, along with the father’s hearing of ‘Abdullah. No personal name absent from the chain is inserted.",
+          "The search for the third stone, the two found stones, the dung, its rejection and the final description remain. “Unclean” is a working rendering of ركس. The comparison translations add “dried”; the selected Arabic does not, so that adjective is not inserted.",
+          "The modern Arabic print labels this report 156. Its closing transmission note and the historical printed note are preserved as explicit evidence; neither checked English report-body comparison contains the note. The new English of the note comes directly from the selected printed Arabic and still needs independent review.",
+          "The original digital chain begins after two newline characters in its raw block. The selected span starts at Unicode offset 2, while the entire original block remains available. The printed heading stays out of both the report text and the narration script."
+        ],
+        "reviewScope": "AI-assisted comparison of the selected Arabic with both visually inspected Arabic prints and two individually matched English report bodies. The English sources omit complete chains and the closing printed note. Any printed addition is identified separately, with both witness readings and exact pages. Independent Arabic, English, chapter and reference review remains pending.",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-ablution-r273249",
+          "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+          "layoutAuditSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+          "layoutReviewSha256": "6dafde039fa774cd4861d0e76d71c314f5c8f2791b85324c16e6eab996683355",
+          "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwYQ:2",
+          "sourceReference": {
+            "label": "155",
+            "number": 155,
+            "markerId": "mwYQ:2",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwYQ@2-130",
+              "textSha256": "014abe79311d3215a1989df99e46884ea9258bee39199a6780d03cc542aaea9f",
+              "origin": {
+                "blockId": "mwYQ",
+                "blockSha256": "c97fb86a30a456141876e1e4238289883fc2c5061db2d0a90a04bd1f44a32d64",
+                "start": 2,
+                "end": 130
+              },
+              "layoutDecisionId": "layout-mwYQ"
+            },
+            {
+              "id": "mwYw",
+              "textSha256": "b382b939ebaa4c46bfcd3114315b1f1211512c53848862ee67ab6a0a9372fdb5",
+              "origin": {
+                "blockId": "mwYw",
+                "blockSha256": "b382b939ebaa4c46bfcd3114315b1f1211512c53848862ee67ab6a0a9372fdb5",
+                "start": 0,
+                "end": 145
+              }
+            }
+          ]
+        },
+        "arabicSupplements": [
+          {
+            "schemaVersion": 1,
+            "id": "print-155-closing-note",
+            "kind": "transmission-note",
+            "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwYQ:2",
+            "digitalArabicSha256": "469c14e3243a734679cfd7129d334b6e6c2cff32050f4c8323103bbd4016646f",
+            "status": "chosen-for-personal-prototype",
+            "reviewerKind": "ai",
+            "independentReview": "pending",
+            "arabic": "وقال إبراهيم بن يوسف عن أبيه عن أبي إسحاق حدثني عبد الرحمن",
+            "arabicSha256": "ab62a3ef025211a9dc0c2e2d9cb893e8dd7eca9d090f277d300e128ffc02e848",
+            "english": "And Ibrahim ibn Yusuf said, from his father, from Abu Ishaq: ‘Abd al-Rahman related to me.",
+            "englishSha256": "a3e23afb799ae0a426dde6c1242c90677ef89ff9c2f832b83230c2ad35edce29",
+            "selectedWitnessId": "dar-ibn-kathir-2002",
+            "transcriptionPolicy": "Printed vowel marks, punctuation and line breaks are omitted in these manually transcribed readings. Letters and wording differences are recorded per witness. This transcription still needs independent checking.",
+            "reason": "Both inspected Arabic prints include this closing transmission note after the report. It is absent from the digital paragraphs and the two checked English comparison bodies. The prototype supplies the modern printed wording as a distinct, labelled source block.",
+            "witnesses": [
+              {
+                "sourceId": "brill-1862",
+                "pdfPage": 52,
+                "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+                "reading": "وقال إبراهيم بن يوسف عن أبيه عن أبى إسحق قال حدثنى عبد الرحمن",
+                "readingSha256": "4be1047a0b7e2f6305076be04323f47e96fb7d46f216258504b2c0f581a7cedf",
+                "differenceNote": "The historical print includes قال before the final reporting verb and prints إسحق, أبى and حدثنى. The selected modern reading omits that قال and uses إسحاق, أبي and حدثني. These readings are retained separately; they are not silently harmonised."
+              },
+              {
+                "sourceId": "dar-ibn-kathir-2002",
+                "pdfPage": 52,
+                "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+                "reading": "وقال إبراهيم بن يوسف عن أبيه عن أبي إسحاق حدثني عبد الرحمن",
+                "readingSha256": "ab62a3ef025211a9dc0c2e2d9cb893e8dd7eca9d090f277d300e128ffc02e848"
+              }
+            ],
+            "contextNoteId": "155-printed-material",
+            "position": "after-report",
+            "englishSegmentId": "155-3"
+          }
+        ],
+        "printedHeading": {
+          "schemaVersion": 1,
+          "id": "chapter-20-print-21",
+          "kind": "chapter-heading",
+          "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwYQ:2",
+          "digitalArabicSha256": "469c14e3243a734679cfd7129d334b6e6c2cff32050f4c8323103bbd4016646f",
+          "status": "chosen-for-personal-prototype",
+          "reviewerKind": "ai",
+          "independentReview": "pending",
+          "arabic": "باب لا يستنجى بروث",
+          "arabicSha256": "b87b7cb03039eb33bd398711394e837f86d41048e1c73d7d1d7c5b3754ddfd57",
+          "english": "Not cleansing oneself with dung",
+          "englishSha256": "1d0ea39752ed6799da8552cac23765a1e2d92eef548031054f64b7cbf67a50a3",
+          "selectedWitnessId": "dar-ibn-kathir-2002",
+          "transcriptionPolicy": "Printed vowel marks, punctuation and line breaks are omitted in these manually transcribed readings. Letters and wording differences are recorded per witness. This transcription still needs independent checking.",
+          "reason": "Both Arabic prints begin a distinct chapter with this heading immediately before the report corresponding to selected 155. The digital source omits this heading and groups 154–155 together. Preserve the printed division as a separate browsing section without changing the original digital grouping.",
+          "witnesses": [
+            {
+              "sourceId": "brill-1862",
+              "pdfPage": 52,
+              "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+              "reading": "باب لا يستنجى بروث",
+              "readingSha256": "b87b7cb03039eb33bd398711394e837f86d41048e1c73d7d1d7c5b3754ddfd57",
+              "chapterNumber": 21
+            },
+            {
+              "sourceId": "dar-ibn-kathir-2002",
+              "pdfPage": 52,
+              "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+              "reading": "باب لا يستنجى بروث",
+              "readingSha256": "b87b7cb03039eb33bd398711394e837f86d41048e1c73d7d1d7c5b3754ddfd57",
+              "chapterNumber": 21
+            }
+          ],
+          "contextNoteId": "155-printed-material",
+          "sourceChapterId": "chapter-20",
+          "beforeEntry": 155,
+          "printedChapterNumber": 21
+        }
+      },
+      "audio_status": "No recording yet."
     }
   ],
   "sourceLocationCorrections": {
@@ -12084,7 +12402,7 @@
     "faithSourceSha256": "0f8c0518a21d266a075dd1cfb756733845ed5dff6548f634cfded0542a30a7a9",
     "knowledgeReviewSha256": "351ad243c96c33164cbdab6671abb0d2867548982925aeed71adae2b03ee2c2f",
     "knowledgeSourceSha256": "9060879f4b110cc9007f35db6b1f2fa0cc37c5ba8e510531721b024cbadf4e58",
-    "ablutionReviewSha256": "375ec44515a49c80d4bae53ff75012c63eaa557b624effd5e3be8783ecddecd2",
+    "ablutionReviewSha256": "637bd9bb01f32896f764a18d4a80b3881dd211825b502d56a5aa9e9937bf435c",
     "ablutionSourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd"
   }
 }

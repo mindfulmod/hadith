@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "namespace": "bukhari-opening-v1",
   "publication": "personal-prototype",
-  "sourceRecordSha256": "acf0e6a7989f80a023d06e36258686d3bd25a1f6a1863ac1644508f7f786c93c",
-  "referencesSha256": "d025565cb78b5edc0bbd724adae889c0577c34687280a5830ad010accb0ce046",
+  "sourceRecordSha256": "c607d74a57aa8034107754a0ae98e00b3724efe43351cbcb1404242853f5f94a",
+  "referencesSha256": "156000d66fc029dcc72635fc5db7d57893acd4f29300e3bd251041cd2353146d",
   "books": [
     {
       "id": "opening-revelation",
@@ -18,9 +18,9 @@
         6,
         7
       ],
-      "path": "books/opening-revelation-8f9b7206f3b1c395.json",
-      "bytes": 111863,
-      "sha256": "8f9b7206f3b1c3957155573df171a1fb654070156ae4098ccd4f95bc74955fc7"
+      "path": "books/opening-revelation-f98429f28fa5027b.json",
+      "bytes": 112083,
+      "sha256": "f98429f28fa5027b9bf8a1508ca75537fe692fa9bdb99e30b74a5556a889d8eb"
     },
     {
       "id": "faith",
@@ -931,9 +931,9 @@
           }
         }
       ],
-      "path": "books/faith-51ef5137099b1ce5.json",
-      "bytes": 349743,
-      "sha256": "51ef5137099b1ce5c91507cd4ecf8f805cc895b836b0674f9d22e4ad392c3c6c"
+      "path": "books/faith-87785c8f866db16d.json",
+      "bytes": 349963,
+      "sha256": "87785c8f866db16dd752992708e86bf63180cc662823733713169d8385c96ccb"
     },
     {
       "id": "knowledge",
@@ -2119,9 +2119,9 @@
           }
         }
       ],
-      "path": "books/knowledge-0b3fbe8a82cf56d5.json",
-      "bytes": 543052,
-      "sha256": "0b3fbe8a82cf56d571bfdff84462a76e83c770f319678cf69ca26f4bfacaa928"
+      "path": "books/knowledge-684bf917a94a9f9d.json",
+      "bytes": 543272,
+      "sha256": "684bf917a94a9f9d6ab5e58da8b13d27a1fabb6337ebc88871298e607167164d"
     },
     {
       "id": "ablution",
@@ -2147,7 +2147,9 @@
         150,
         151,
         152,
-        153
+        153,
+        154,
+        155
       ],
       "chapters": [
         {
@@ -2528,11 +2530,57 @@
               "fragment": "chapter-19"
             }
           }
+        },
+        {
+          "id": "chapter-20",
+          "title": "Cleansing oneself with stones",
+          "entryNumbers": [
+            154
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ablution-review.html",
+              "fragment": "chapter-20"
+            }
+          }
+        },
+        {
+          "id": "chapter-20-print-21",
+          "title": "Not cleansing oneself with dung",
+          "entryNumbers": [
+            155
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ablution-review.html",
+              "fragment": "chapter-20-print-21"
+            },
+            "printedHeading": {
+              "sourceChapterId": "chapter-20",
+              "beforeEntry": 155,
+              "printedChapterNumber": 21,
+              "evidenceSha256": "fbbb5cef86c16d845ebd7e709f35bcb037e053d8b4248abc839aee52c9cb57e3"
+            }
+          }
         }
       ],
-      "path": "books/ablution-06f5b0511207d61d.json",
-      "bytes": 177733,
-      "sha256": "06f5b0511207d61d5086e29ab3d04a9b1b192691e102a1f944c29a656df22c23"
+      "path": "books/ablution-ab5393604863ed2f.json",
+      "bytes": 202376,
+      "sha256": "ab5393604863ed2fd4c2b3e3f30ba143fe5ca593f7ccd6b095ed0cf2800c4e61"
     }
   ],
   "entries": [
@@ -3606,6 +3654,20 @@
       "bookId": "ablution",
       "book": "Ablution",
       "englishWords": 64
+    },
+    {
+      "id": "bukhari:154",
+      "number": 154,
+      "bookId": "ablution",
+      "book": "Ablution",
+      "englishWords": 108
+    },
+    {
+      "id": "bukhari:155",
+      "number": 155,
+      "bookId": "ablution",
+      "book": "Ablution",
+      "englishWords": 114
     }
   ]
 }

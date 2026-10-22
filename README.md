@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The personal reader is at `reader/`: 153 complete selected Bukhari entries across four books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The personal reader is at `reader/`: 155 complete selected Bukhari entries across four books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Run
 
@@ -486,3 +486,14 @@ Selected 146 contains two narrations, with two full chains and Hisham’s closin
 `research/ablution-second-verification.json` records 251 passing checks (191 Node, 60 Python), thirteen source/release integrity checks, exact browser comparisons of all new English and Arabic report blocks and twelve chapter blocks, preserved Continue after browsing, and 320px layouts with 28px text. The combined entry, chapter introduction and exact phrase search worked with the preview server stopped. Reading downloads total about 6.8 MB; audio remains separate.
 
 `research/ablution-next-discrepancy.json` records a source gap requiring further work: the selected digital material around 155 omits a chapter heading and a closing transmission note present in both printed witnesses. Source chapter 20 (154–155) is held rather than presented as complete. Original inputs remain unchanged. Independent review, English chapter introductions, the remaining collection and further audio are still unfinished.
+
+
+### Printed material retained explicitly: 154–155 (21 October 2026)
+
+The personal prototype now has 155 selected numbered entries. All 153 earlier entry objects and all recording rows remain unchanged. This batch adds four unchanged digital paragraphs, one separately identified printed transmission-note block and seven complete working English segments. Actual Cedar audio still covers 1–6. The previous hold on this chapter is resolved for the personal prototype; independent review remains pending.
+
+`scripts/printed-supplements.mjs` admits a printed addition only with its original digital report hash, selected printed wording, both pinned witness readings and pages, a declared transcription policy, a complete matching English segment and a visible source notice. The readings are manual AI transcriptions, with vowel marks, punctuation and line breaks omitted. Hadith 155 uses the modern print’s closing note. The historical print’s extra قال and spelling conventions remain in its separate reading; the two texts are not silently harmonised. The English comparisons omit the closing note, so its working English has no claimed independent English comparison.
+
+The missing printed heading before 155 has its own stable chapter route. The reader’s digital chapter 20 leads to 154; the printed section leads to 155. Offline evidence retains the original digital grouping of 154–155 together. Chapter headings stay outside sessions and narration scripts. The closing note appears once in the complete narration script and is visibly identified in English reading, Arabic source access and search excerpts.
+
+`research/ablution-third-verification.json` records 260 passing checks (200 Node, 60 Python), thirteen source/release integrity checks, exact rendered comparison of the new report blocks, both printed readings and original digital paragraphs, stable Continue after browsing, and narrow-screen day/night readability. With the preview servers stopped, the report, printed chapter, original evidence and exact phrase search remained available. The final search check confirms the printed-source label survives offline use and fits a 320px screen. Reading downloads total about 6.9 MB. Continue with selected 156; the full collection, English introductions, independent reviews and additional audio remain unfinished.

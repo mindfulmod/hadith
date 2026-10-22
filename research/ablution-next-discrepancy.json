@@ -1,6 +1,6 @@
 {
   "checkedAt": "2026-10-21",
-  "status": "pending-source-resolution-not-reader-approved",
+  "status": "resolved-for-personal-prototype-independent-review-pending",
   "independentReview": "pending",
   "sourceId": "wikisource-bukhari-ablution-r273249",
   "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
@@ -24,7 +24,7 @@
   "candidatePrintedReadings": {
     "heading": "باب لا يستنجى بروث",
     "closingNote": "وقال إبراهيم بن يوسف عن أبيه عن أبي إسحاق قال حدثني عبد الرحمن",
-    "status": "AI visual transcription for further checking; not admitted or inserted into the original."
+    "status": "Initial comparison transcription, retained as history; superseded by the two individually transcribed witness readings in the resolution."
   },
   "witnesses": [
     {
@@ -39,10 +39,18 @@
       "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
     }
   ],
-  "currentTreatment": "Hold all of selected source chapter 20, containing 154–155. Preserve the immutable digital source and existing exact-span structural map. No invented source block, heading or silent appended wording.",
+  "currentTreatment": "Selected 154–155 are admitted with their digital paragraphs unchanged. The closing note is a separately labelled printed block; the missing heading is a separately browseable printed section. The modern printed reading is selected and the differing historical reading remains accessible.",
   "nextWork": [
-    "Reinspect both printed boundaries and determine the explicit representation of printed supplemental material without altering digital provenance.",
-    "Record the corresponding complete working English and precise printed evidence if an evidence-bound prototype supplement is chosen.",
-    "Investigate the separate 154 narrator-name difference: selected digital and modern print have عمرو, while the historical print appears to have عمير."
-  ]
+    "Obtain independent review of the two printed transcriptions, selected wording, working English and chapter provenance.",
+    "Continue source work from 156."
+  ],
+  "resolution": {
+    "review": "content/review/ablution-third-review.json",
+    "verification": "research/ablution-third-verification.json",
+    "module": "scripts/printed-supplements.mjs",
+    "independentReview": "pending",
+    "selectedWitnessId": "dar-ibn-kathir-2002",
+    "witnessDifferences": "The historical closing note includes قال before the final reporting verb and uses older spelling conventions; the modern text omits that قال. These readings are preserved separately.",
+    "originalDigitalSourceUnchanged": true
+  }
 }

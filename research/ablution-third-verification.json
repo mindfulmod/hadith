@@ -1,0 +1,247 @@
+{
+  "checkedAt": "2026-10-21",
+  "status": "personal-prototype-only",
+  "independentReview": "pending",
+  "range": [
+    154,
+    155
+  ],
+  "source": {
+    "revision": 273249,
+    "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+    "inventorySha256": "141f35671a316faadab95ff0fefc3aab8dc725199bfbf5cc12448772433e28da",
+    "reviewSha256": "f153d80e808325a775d1224c6c4e7c3e97446e9800c8afce5133cd598ffb5eac",
+    "sourceLayout": {
+      "schemaVersion": 1,
+      "sourceId": "wikisource-bukhari-ablution-r273249",
+      "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+      "layoutAuditSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+      "layoutReviewSha256": "6dafde039fa774cd4861d0e76d71c314f5c8f2791b85324c16e6eab996683355"
+    }
+  },
+  "reader": {
+    "release": "opening-f14eeed7ddbf",
+    "entries": 155,
+    "books": 4,
+    "sourceRecordSha256": "c607d74a57aa8034107754a0ae98e00b3724efe43351cbcb1404242853f5f94a",
+    "previous153EntryObjectsUnchanged": true,
+    "newUnchangedDigitalParagraphs": 4,
+    "newPrintedTransmissionNoteBlocks": 1,
+    "newEnglishSegments": 7,
+    "selectedDigitalChapters": 20,
+    "browseableAblutionChapters": 21,
+    "recordedAudioRange": "1–6",
+    "newRecordings": 0
+  },
+  "sourceComparison": {
+    "printedPages": [
+      {
+        "id": "brill-1862",
+        "pdfPages": [
+          52
+        ],
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+      },
+      {
+        "id": "dar-ibn-kathir-2002",
+        "pdfPages": [
+          51,
+          52
+        ],
+        "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+      }
+    ],
+    "pageNumbering": "One-based PDF page numbers. Both full PDF hashes were checked; relevant pages were visually inspected.",
+    "englishReferences": [
+      {
+        "number": 154,
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "154"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.157",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.157",
+              "recordSha256": "a4279113d221b9fdea70279e0ec05042cd384ed76ee2c434b19e2bdb388d70fc"
+            }
+          }
+        ]
+      },
+      {
+        "number": 155,
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "155"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.158",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.158",
+              "recordSha256": "aea610f351744d25e60dc36a7b98eeaea8a63c738893e091443cf9018b39ed81"
+            }
+          }
+        ]
+      }
+    ],
+    "printedAddition": {
+      "schemaVersion": 1,
+      "id": "print-155-closing-note",
+      "kind": "transmission-note",
+      "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwYQ:2",
+      "digitalArabicSha256": "469c14e3243a734679cfd7129d334b6e6c2cff32050f4c8323103bbd4016646f",
+      "status": "chosen-for-personal-prototype",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "arabic": "وقال إبراهيم بن يوسف عن أبيه عن أبي إسحاق حدثني عبد الرحمن",
+      "arabicSha256": "ab62a3ef025211a9dc0c2e2d9cb893e8dd7eca9d090f277d300e128ffc02e848",
+      "english": "And Ibrahim ibn Yusuf said, from his father, from Abu Ishaq: ‘Abd al-Rahman related to me.",
+      "englishSha256": "a3e23afb799ae0a426dde6c1242c90677ef89ff9c2f832b83230c2ad35edce29",
+      "selectedWitnessId": "dar-ibn-kathir-2002",
+      "transcriptionPolicy": "Printed vowel marks, punctuation and line breaks are omitted in these manually transcribed readings. Letters and wording differences are recorded per witness. This transcription still needs independent checking.",
+      "reason": "Both inspected Arabic prints include this closing transmission note after the report. It is absent from the digital paragraphs and the two checked English comparison bodies. The prototype supplies the modern printed wording as a distinct, labelled source block.",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "pdfPage": 52,
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "reading": "وقال إبراهيم بن يوسف عن أبيه عن أبى إسحق قال حدثنى عبد الرحمن",
+          "readingSha256": "4be1047a0b7e2f6305076be04323f47e96fb7d46f216258504b2c0f581a7cedf",
+          "differenceNote": "The historical print includes قال before the final reporting verb and prints إسحق, أبى and حدثنى. The selected modern reading omits that قال and uses إسحاق, أبي and حدثني. These readings are retained separately; they are not silently harmonised."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "pdfPage": 52,
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "reading": "وقال إبراهيم بن يوسف عن أبيه عن أبي إسحاق حدثني عبد الرحمن",
+          "readingSha256": "ab62a3ef025211a9dc0c2e2d9cb893e8dd7eca9d090f277d300e128ffc02e848"
+        }
+      ],
+      "contextNoteId": "155-printed-material",
+      "position": "after-report",
+      "englishSegmentId": "155-3"
+    },
+    "printedHeading": {
+      "schemaVersion": 1,
+      "id": "chapter-20-print-21",
+      "kind": "chapter-heading",
+      "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwYQ:2",
+      "digitalArabicSha256": "469c14e3243a734679cfd7129d334b6e6c2cff32050f4c8323103bbd4016646f",
+      "status": "chosen-for-personal-prototype",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "arabic": "باب لا يستنجى بروث",
+      "arabicSha256": "b87b7cb03039eb33bd398711394e837f86d41048e1c73d7d1d7c5b3754ddfd57",
+      "english": "Not cleansing oneself with dung",
+      "englishSha256": "1d0ea39752ed6799da8552cac23765a1e2d92eef548031054f64b7cbf67a50a3",
+      "selectedWitnessId": "dar-ibn-kathir-2002",
+      "transcriptionPolicy": "Printed vowel marks, punctuation and line breaks are omitted in these manually transcribed readings. Letters and wording differences are recorded per witness. This transcription still needs independent checking.",
+      "reason": "Both Arabic prints begin a distinct chapter with this heading immediately before the report corresponding to selected 155. The digital source omits this heading and groups 154–155 together. Preserve the printed division as a separate browsing section without changing the original digital grouping.",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "pdfPage": 52,
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "reading": "باب لا يستنجى بروث",
+          "readingSha256": "b87b7cb03039eb33bd398711394e837f86d41048e1c73d7d1d7c5b3754ddfd57",
+          "chapterNumber": 21
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "pdfPage": 52,
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "reading": "باب لا يستنجى بروث",
+          "readingSha256": "b87b7cb03039eb33bd398711394e837f86d41048e1c73d7d1d7c5b3754ddfd57",
+          "chapterNumber": 21
+        }
+      ],
+      "contextNoteId": "155-printed-material",
+      "sourceChapterId": "chapter-20",
+      "beforeEntry": 155,
+      "printedChapterNumber": 21
+    },
+    "limits": [
+      "The source body comparisons abbreviate full narrator chains and omit the added closing transmission note. That note’s new working English is translated from the selected printed Arabic, without claiming an independent English comparison.",
+      "Printed readings are manual AI transcriptions with vowel marks, punctuation and line breaks omitted as declared. The two readings differ; both remain visible, and the modern reading is selected.",
+      "The historical print has عمير in the second ancestral name of 154 while the selected digital and modern print have عمرو. The selected reading is preserved, with the difference recorded.",
+      "No independent scholarly certification has been obtained."
+    ]
+  },
+  "architecture": {
+    "module": "scripts/printed-supplements.mjs",
+    "digitalPreservation": "Original digital paragraph IDs, source labels, exact spans and chapter grouping are unchanged. Added printed material has distinct identities and two pinned witnesses; it never appears as a fabricated digital block.",
+    "readingAndNarration": "The closing note is labelled in the English reading view, Arabic source panel and exact search excerpts. Its complete English enters the narration script exactly once. The chapter heading and app notices remain outside that script.",
+    "chapters": "The selected digital chapter 20 remains recorded with 154–155. The reader offers 154 under the digital heading and 155 under a separate stable printed-heading route. Original grouping and both printed readings remain in offline notes.",
+    "production": "The addition is bound to explicit personal-prototype admission; it cannot satisfy production review gates."
+  },
+  "verification": {
+    "node": 200,
+    "python": 60,
+    "failed": 0,
+    "newRegressionTests": 9,
+    "sourceAndReleaseIntegrityChecks": 13,
+    "browser": {
+      "reports": [
+        {
+          "number": 154,
+          "englishBlocks": 4,
+          "arabicBlocks": 2,
+          "exact": true,
+          "scrollWidth": 320,
+          "textSize": "28px",
+          "width": 320
+        },
+        {
+          "number": 155,
+          "englishBlocks": 3,
+          "arabicBlocks": 3,
+          "exact": true,
+          "scrollWidth": 320,
+          "textSize": "28px",
+          "width": 320
+        }
+      ],
+      "layouts": [
+        {
+          "theme": "night",
+          "scrollWidth": 320,
+          "textSize": "28px",
+          "width": 320
+        }
+      ],
+      "printedChapterNotice": true,
+      "chapterRoute": "ablution-review.html#chapter-20-print-21",
+      "originalChapterReadLink": "#read/154",
+      "continueAfterBrowsing": "#read/155",
+      "originalDigitalBlocksExact": true,
+      "bothPrintedReadingsExact": true,
+      "printedHeadingExact": true,
+      "offlineReportExact": true,
+      "offlineOriginalAndBothReadingsExact": true,
+      "offlinePrintedChapter": true,
+      "offlinePhraseSearch": {
+        "query": "Ibrahim ibn Yusuf",
+        "result": 155
+      },
+      "serverStopped": true,
+      "finalRelease": "opening-f14eeed7ddbf",
+      "offlineSearchRetainsPrintedOrigin": true,
+      "finalSearchLayout": {
+        "scrollWidth": 320,
+        "width": 320
+      }
+    },
+    "screenshot": "/private/tmp/hadith-ablution-third-reader.png"
+  },
+  "remaining": [
+    "Continue selected Ablution source chapters from 156, retaining the stable original chapter IDs and printed-heading provenance.",
+    "Complete English chapter introductions and independent Arabic, English, reference and context reviews.",
+    "Expand reviewed Cedar audio beyond 6 and finish full-collection/device acceptance work."
+  ]
+}

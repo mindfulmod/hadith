@@ -16,7 +16,7 @@ export function chapterMaterialView(chapter){
  const intro=context.introduction,notes=context.notes;
  const heading=context.headingStatus==='heading-discrepancy-pending'?'The English heading is withheld while a source difference is reviewed.':context.headingStatus==='ai-working-translation'?'The English heading is a working translation; independent review is pending.':'The heading has a recorded independent review.';
  const introduction=intro.arabicParagraphs?`${countLabel(intro.arabicParagraphs,'introductory paragraph')} ${intro.arabicParagraphs===1?'is':'are'} preserved in Arabic. ${intro.englishStatus==='pending'?'English translation is still in preparation.':'The English translation has a recorded independent review.'}`:'This selected chapter has no separate introductory paragraph.';
- return `<aside class="source-context chapter-material" aria-label="Chapter source material"><h2>Chapter material</h2><p>${heading}</p><p>${introduction}</p><a href="${escape(notes.path+'#'+notes.fragment)}" target="_blank" rel="noopener">${intro.arabicParagraphs?'Read Arabic chapter material':'View the Arabic heading and source'} ↗</a><p class="sample-note">Separate from the numbered hadith. Saved with your reading material for offline use.</p></aside>`;
+ return `<aside class="source-context chapter-material" aria-label="Chapter source material"><h2>Chapter material</h2>${context.printedHeading?'<p>This heading is supplied from two Arabic prints; it is absent from the digital source. Both printed readings and the original grouping are available below.</p>':''}<p>${heading}</p><p>${introduction}</p><a href="${escape(notes.path+'#'+notes.fragment)}" target="_blank" rel="noopener">${intro.arabicParagraphs?'Read Arabic chapter material':'View the Arabic heading and source'} ↗</a><p class="sample-note">Separate from the numbered hadith. Saved with your reading material for offline use.</p></aside>`;
 }
 export function bookView(catalog,state,route){
  const {book,chapter}=route,numbers=chapter?chapter.entryNumbers:book.entryNumbers;
@@ -49,7 +49,7 @@ export function mountSearch(loadEntries){
   if(page>pages){page=pages;display(focus);return;}
   rememberedSearch={query,page};
   summary.textContent=found.total?`${found.total} ${found.total===1?'hadith matches':'hadith match'}. Showing ${(page-1)*30+1}–${(page-1)*30+found.results.length}.`:'No matches in the available text. Try a shorter phrase or a hadith number.';
-  matches.innerHTML=found.results.map(({entry,language,text})=>`<a class="search-result" href="#read/${entry.number}"><strong>Hadith ${entry.number}<span aria-hidden="true"> →</span></strong><p ${language==='ar'?'lang="ar" dir="rtl"':''}>${escape(text)}</p><small>${escape(entry.book)} · Complete hadith and sources</small></a>`).join('');
+  matches.innerHTML=found.results.map(({entry,language,text,sourceOrigin})=>`<a class="search-result" href="#read/${entry.number}"><strong>Hadith ${entry.number}<span aria-hidden="true"> →</span></strong><p ${language==='ar'?'lang="ar" dir="rtl"':''}>${escape(text)}</p><small>${escape(entry.book)}${sourceOrigin==='printed-supplement'?' · Transmission note from an Arabic print':''} · Complete hadith and sources</small></a>`).join('');
   pager.hidden=pages<=1;previous.disabled=page===1;next.disabled=page===pages;document.querySelector('#search-page').textContent=`Page ${page} of ${pages}`;
   if(focus){summary.focus({preventScroll:true});summary.scrollIntoView({block:'start'});}
  };

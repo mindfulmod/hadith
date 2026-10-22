@@ -10,6 +10,10 @@ export function validateChapters(book) {
   if(context!==undefined){
    const notes=context?.notes,introduction=context?.introduction;
    if(context.schemaVersion!==1||!['ai-working-translation','heading-discrepancy-pending','reviewed-translation'].includes(context.headingStatus)||!['present','none-in-source'].includes(context.numberedReports))throw new Error('Invalid chapter source status');
+   if(context.printedHeading!==undefined){
+    const h=context.printedHeading;
+    if(!ids.has(h.sourceChapterId)||!chapter.id.startsWith(h.sourceChapterId+'-print-')||h.beforeEntry!==chapter.entryNumbers[0]||!Number.isSafeInteger(h.printedChapterNumber)||h.printedChapterNumber<1||!/^[a-f0-9]{64}$/.test(h.evidenceSha256)||context.numberedReports!=='present'||introduction?.arabicParagraphs!==0)throw new Error('Invalid printed chapter provenance');
+   }
    if((context.numberedReports==='present')!==Boolean(chapter.entryNumbers.length))throw new Error('Chapter report status contradicts its entries');
    if(!Number.isSafeInteger(introduction?.arabicParagraphs)||introduction.arabicParagraphs<0||(introduction.arabicParagraphs===0?introduction.englishStatus!=='not-applicable':!['pending','reviewed-translation'].includes(introduction.englishStatus)))throw new Error('Invalid chapter introduction status');
    if(!notes||typeof notes.path!=='string'||!/^[a-z0-9][a-z0-9/_.-]*\.html$/.test(notes.path)||notes.path.split('/').some(p=>p==='..'||p==='.'||!p)||notes.fragment!==chapter.id)throw new Error('Invalid chapter source notes');
