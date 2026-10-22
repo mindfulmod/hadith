@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The personal reader is at `reader/`: 134 complete Bukhari entries across three books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The personal reader is at `reader/`: 153 complete selected Bukhari entries across four books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Run
 
@@ -475,3 +475,14 @@ The reader builder now consumes the authoritative JSON output from the checked P
 Hadith 137 has one declared conjunction correction: the selected digital chain omits the “and” in “and from ‘Abbad”, which is present in both printed witnesses. The original, derived wording, exact location, two printed readings and matching English are retained, with a visible notice. Other printed wording differences remain in the notes. Hadith 138 preserves the short opening form, its alternative, Sufyan’s repeated chain, the longer account, ‘Amr’s quantity comment, both words for “left”, and the closing discussion and Quranic fragment. The negation at the end of 139 remains despite a defective sentence in the Bewley web comparison. Full chains and the identifying glosses in 140 remain complete.
 
 `research/ablution-first-verification.json` records 246 passing automated checks (186 Node, 60 Python), all source/release integrity checks, exact rendered comparison of all 23 English and 14 Arabic report blocks and all eleven chapter blocks, unchanged Continue after browsing, and 320px day/night layouts at 28px text without horizontal overflow. With the local preview server stopped, the complete long report, original correction evidence, chapter-only page and exact phrase search still worked. Reading downloads total about 6.5 MB. The About page now describes entry-specific comparison limits and corrections without stale coverage claims. Independent review, English chapter introductions, the remaining books and further audio remain unfinished.
+
+
+### Ablution continued: 142–153, with chapter material kept separate (21 October 2026)
+
+The personal prototype now has 153 selected numbered entries. This batch adds twelve entries, eleven complete selected source chapters, 23 Arabic paragraphs, 31 working English segments and one separately browseable Arabic introduction. Ablution now has nineteen entries and nineteen source chapters. All 141 earlier entry objects and all recording rows remain unchanged; actual Cedar audio still covers 1–6.
+
+Selected 146 contains two narrations, with two full chains and Hisham’s closing explanation. Its English comparisons are individually mapped to Khan-family 1.4.148 and 1.4.149; modern Arabic print numbers them 146 and 147. One hamza spelling correction (إذن → أذن) is explicitly supported by both prints, displayed separately, and bound to the unchanged original and exact matching English segment. Entry 142 preserves all following transmission variants; 145 keeps the final exchange and Malik’s explanation; 149 and 151 retain their closing notes. The separately preserved introduction before 150 never enters its narration script or a daily session.
+
+`research/ablution-second-verification.json` records 251 passing checks (191 Node, 60 Python), thirteen source/release integrity checks, exact browser comparisons of all new English and Arabic report blocks and twelve chapter blocks, preserved Continue after browsing, and 320px layouts with 28px text. The combined entry, chapter introduction and exact phrase search worked with the preview server stopped. Reading downloads total about 6.8 MB; audio remains separate.
+
+`research/ablution-next-discrepancy.json` records a source gap requiring further work: the selected digital material around 155 omits a chapter heading and a closing transmission note present in both printed witnesses. Source chapter 20 (154–155) is held rather than presented as complete. Original inputs remain unchanged. Independent review, English chapter introductions, the remaining collection and further audio are still unfinished.
