@@ -33,7 +33,7 @@ test('assembly preserves the seven existing entries and admits only the explicit
 test('a ten-minute session crosses the real book boundary without growing an existing seven-entry session',()=>{
  const {source}=collectionFiles();const plan=startSession(source.entries,7,10);assert(plan.numbers.includes(7)&&plan.numbers.includes(8));
  const saved={numbers:[7],cursor:7,ended:true};assert.deepEqual(resolveSession(source.entries,saved,10,7),saved);assert.equal(nextSession(source.entries,saved,5).cursor,8);
- assert(planSession(source.entries,17,5).numbers.includes(18));assert.deepEqual(resolveSession(source.entries,{numbers:[17],cursor:17,ended:false},5,17),{numbers:[17],cursor:17,ended:false});assert(planSession(source.entries,29,5).numbers.includes(30));assert(planSession(source.entries,43,5).numbers.includes(44));assert.deepEqual(planSession(source.entries,122,5).numbers,[122]);for(let n=8;n<=58;n++)assert.equal(recordedChapter(n),null);
+ assert(planSession(source.entries,17,5).numbers.includes(18));assert.deepEqual(resolveSession(source.entries,{numbers:[17],cursor:17,ended:false},5,17),{numbers:[17],cursor:17,ended:false});assert(planSession(source.entries,29,5).numbers.includes(30));assert(planSession(source.entries,43,5).numbers.includes(44));assert.deepEqual(planSession(source.entries,134,5).numbers,[134]);for(let n=8;n<=58;n++)assert.equal(recordedChapter(n),null);
 });
 test('all three books load separately and expose complete search content only after all succeed',async()=>{
  const {source,ledger,files:derived}=collectionFiles(),published=buildBooks(source,ledger),responses=new Map(published.files),calls=[];
@@ -45,7 +45,7 @@ test('all three books load separately and expose complete search content only af
 
 test('new Faith batches preserve all seventeen earlier entries and every new Arabic paragraph',()=>{
  const {source}=collectionFiles(),opening=prototypeFiles().source.entries,first=buildFaithBatch(...input()).entries;
- assert.deepEqual(source.entries.slice(0,17),[...opening,...first]);assert.equal(source.entries.length,122);
+ assert.deepEqual(source.entries.slice(0,17),[...opening,...first]);assert.equal(source.entries.length,134);
  const inventory=input()[0],next=read('content/review/faith-next-review.json');
  for(const row of next.entries){const e=source.entries.find(e=>e.number===row.number);assert.deepEqual(e.arabic_blocks,row.paragraphIds.map(id=>inventory.blocks.find(b=>b.htmlId===id).text));assert.deepEqual(sourceSegments(e,'english').map(s=>s.text),row.segments.map(s=>s.english));}
 });
@@ -109,7 +109,7 @@ test('the final Faith batch completes the selected numbered source without chang
  for(const row of read('content/review/faith-final-review.json').entries){const e=source.entries.find(e=>e.number===row.number);assert.deepEqual(e.arabic_blocks,row.paragraphIds.map(id=>inventory.blocks.find(b=>b.htmlId===id).text));assert.deepEqual(sourceSegments(e,'english').map(s=>s.text),row.segments.map(s=>s.english));}
  for(const number of [44,47,50])assert.equal(sourceSegments(source.entries[number-1],'english').at(-1).kind,'transmission-note');
  assert.equal(source.entries[54].arabic_blocks.length,1);assert.deepEqual(sourceSegments(source.entries[54],'english').map(s=>s.kind),['chain','report']);
- assert.equal(nextSession(source.entries,{numbers:[122],cursor:122,ended:true},5),null);
+ assert.equal(nextSession(source.entries,{numbers:[134],cursor:134,ended:true},5),null);
  assert.deepEqual(resolveSession(source.entries,{numbers:[43],cursor:43,ended:true},5,43),{numbers:[43],cursor:43,ended:true});assert.equal(nextSession(source.entries,{numbers:[43],cursor:43,ended:true},5).cursor,44);
 });
 test('a combined English reference identifies separate matched reports, not duplicated identities',()=>{
@@ -136,6 +136,6 @@ test('chapter source availability is exact and has its own admission without cha
  assert.equal(ledger.books[1].chapters.filter(c=>c.sourceContext.introduction.englishStatus==='pending').length,14);
  assert.equal(ledger.books[1].chapters[19].sourceContext.headingStatus,'heading-discrepancy-pending');
  const old=read('content/review/prototype-admissions.json').admissions.filter(a=>a.sourceRecordSha256==='d2c67f16c4e4f2701e3e591b1ea58a06101b1f4e64eab060afd8bd9b91651243');assert.equal(old.length,2);assert.notDeepEqual(old[0].books,old[1].books);assert.equal(old[1].catalogContextSha256,historical.ledger.catalogContextSha256);
- assert.equal(buildBooks(source,ledger).catalog.entries.length,122);
+ assert.equal(buildBooks(source,ledger).catalog.entries.length,134);
  const bad=structuredClone(ledger);bad.books[1].chapters[0].sourceContext.introduction.arabicParagraphs=3;bad.catalogContextSha256=objectHash(bad.books);assert.throws(()=>buildBooks(source,bad),/not admitted/);
 });

@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The personal reader is at `reader/`: 122 complete Bukhari entries across three books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The personal reader is at `reader/`: 134 complete Bukhari entries across three books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Run
 
@@ -433,3 +433,12 @@ The Khan-family EPUB splits selected Hadith 119 across references `1.3.119` and 
 The source review retains the narrator uncertainty and pronunciation note in 112, both chains in 115, the word alternatives and prayer counts in 117, the selected Quranic fragments in 118, the hand-wording alternative and follow-up chain in 119, and the complete frame, embedded chain, Ibn ‘Uyaynah comment and closing words in 122. Printed-edition differences are recorded in the offline source notes. No new Arabic correction was made.
 
 `research/knowledge-fifth-verification.json` records 210 passing automated checks (171 Node, 39 Python), exact browser comparison of every new Arabic and English block and all six headings, visible split references, preserved Continue after browsing, and 320px day/night layouts at 28px text without horizontal overflow. With the preview server stopped, the long report, chapter source page, a chapter-only section and exact phrase search remained available. Reading downloads total about 5.9 MB. Knowledge 123–134, chapter English, independent reviews and further audio remain unfinished.
+
+
+### Knowledge complete: 123–134 and reference-only comparison evidence (21 October 2026)
+
+The personal prototype now contains 134 complete numbered reports. Knowledge includes all 76 selected reports (59–134), all 54 source chapters, three chapters without numbered reports, and 13 separately preserved Arabic introductory paragraphs. This batch adds 13 unchanged Arabic report paragraphs, 33 working English segments, nine provisional chapter headings and one Arabic chapter introduction. All 122 earlier entry objects and all five recording catalog rows are unchanged. Daily sessions remain limited to numbered reports; English chapter introductions are still pending. Cedar still covers 1–6.
+
+The selected Hadith 125 preserves its third-person quoted reading and al-A‘mash’s reading note, while its heading uses the second person. Printed and English comparison differences are recorded and a separate source notice makes the distinction visible. Hadith 127 remains explicitly attributed to ‘Ali. Its Khan-family EPUB reference `1.3.129` contains only a narrator line and a backward pointer; it supplies no statement body. New validation binds that reference-only status to the exact pinned paragraphs and hashes, rejects mixed or fabricated comparison evidence and discloses the limit in the reader and offline notes. It is not counted as a second complete English body comparison. No new Arabic correction was made.
+
+`research/knowledge-final-verification.json` records 216 passing automated checks (177 Node, 39 Python), exact browser comparisons of every new English/Arabic report block and all ten chapter blocks, visible source distinctions, preserved Continue after free browsing, and 320px day/night layouts at 28px text without horizontal overflow. With the preview server stopped, the final report, chapter material, reference-only evidence, chapter-only section and exact phrase search remained available. Reading downloads total about 6.2 MB. Independent review, English chapter introductions, the remaining books and further audio remain unfinished.

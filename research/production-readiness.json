@@ -31,14 +31,14 @@
     {
       "id": "content-review-gates",
       "status": "separate-personal-prototype-and-production-gates",
-      "evidence": "content/review/opening-ledger.json; scripts/publish-books.mjs; tests/content-library.test.mjs; reader/source-references.mjs; tests/source-references.test.mjs; content/review/opening-prototype-ledger.json; tests/opening-prototype.test.mjs; scripts/build-collection.mjs; content/review/prototype-admissions.json; tests/collection-batches.test.mjs; content/review/faith-batches.json; content/review/faith-next-review.json; content/review/faith-third-review.json; content/review/faith-final-review.json; research/chapter-material-verification.json; research/knowledge-first-verification.json; tests/knowledge-batch.test.mjs; research/knowledge-next-verification.json; research/knowledge-third-verification.json; research/knowledge-fourth-verification.json; scripts/arabic-corrections.mjs; research/knowledge-fifth-verification.json",
+      "evidence": "content/review/opening-ledger.json; scripts/publish-books.mjs; tests/content-library.test.mjs; reader/source-references.mjs; tests/source-references.test.mjs; content/review/opening-prototype-ledger.json; tests/opening-prototype.test.mjs; scripts/build-collection.mjs; content/review/prototype-admissions.json; tests/collection-batches.test.mjs; content/review/faith-batches.json; content/review/faith-next-review.json; content/review/faith-third-review.json; content/review/faith-final-review.json; research/chapter-material-verification.json; research/knowledge-first-verification.json; tests/knowledge-batch.test.mjs; research/knowledge-next-verification.json; research/knowledge-third-verification.json; research/knowledge-fourth-verification.json; scripts/arabic-corrections.mjs; research/knowledge-fifth-verification.json; research/knowledge-final-verification.json",
       "remaining": "Obtain actual independent human reviews and reuse evidence. Current production publishing is deliberately refused. Extend edition/reference mapping before expanding beyond the evaluation namespace; audio review needs its own ledger. Source presentation and per-entry citations are validated and bound to exact review hashes. Reference metadata requires its own human approval for production."
     },
     {
       "id": "library-navigation-search",
       "status": "source-aware-chapter-browsing-implemented",
-      "evidence": "reader/navigation.mjs; reader/library.mjs; tests/navigation.test.mjs; research/navigation-verification.json; research/chapter-material-verification.json; research/knowledge-first-verification.json; tests/knowledge-batch.test.mjs; research/knowledge-next-verification.json; research/knowledge-third-verification.json; research/knowledge-fourth-verification.json; research/knowledge-fifth-verification.json",
-      "remaining": "Publish independently reviewed chapter metadata and edition-specific reference maps. The personal prototype has 122 entries in three books. Knowledge has 64 of 76 reports, 45 source chapters including three without numbered reports, and twelve Arabic introductory paragraphs pending English. Faith retains 42 headings and 15 Arabic introductory paragraphs. Full-library search indexing remains future work; current exact search loads all available packs."
+      "evidence": "reader/navigation.mjs; reader/library.mjs; tests/navigation.test.mjs; research/navigation-verification.json; research/chapter-material-verification.json; research/knowledge-first-verification.json; tests/knowledge-batch.test.mjs; research/knowledge-next-verification.json; research/knowledge-third-verification.json; research/knowledge-fourth-verification.json; research/knowledge-fifth-verification.json; research/knowledge-final-verification.json",
+      "remaining": "Publish independently reviewed chapter metadata and edition-specific reference maps. The personal prototype has 134 entries in three books. Knowledge has all 76 reports, 54 source chapters including three without numbered reports, and thirteen Arabic introductory paragraphs pending English. Faith retains 42 headings and 15 Arabic introductory paragraphs. Full-library search indexing remains future work; current exact search loads all available packs."
     },
     {
       "id": "session-planning",
@@ -56,18 +56,18 @@
       "id": "full-audio",
       "status": "six-recorded-hadith-with-finite-cross-recording-sessions",
       "evidence": "content/audio/recordings.json; content/audio/narration-plan.json; scripts/build-audio.mjs; reader/audio/catalog.json; tests/audio-catalog.test.mjs; tests/audio.test.mjs; research/audio-catalog-verification.json; reader/audio/hadith-3-provenance.json; research/hadith-3-audio-verification.json; reader/listening-plan.mjs; research/listening-session-verification.json; research/opening-audio-continuation-verification.json",
-      "remaining": "Generate and review Cedar recordings beyond Hadith 6 and complete iPhone lock-screen/interruption acceptance across separate files. All 122 entries have exact complete input scripts; actual audio covers 1–6. New recordings need wording, pronunciation and delivery review, including the joins in 3 and 5. OpenAI.fm has reached its ten-downloads-per-week demo limit; no Hadith 7 recording is admitted."
+      "remaining": "Generate and review Cedar recordings beyond Hadith 6 and complete iPhone lock-screen/interruption acceptance across separate files. All 134 entries have exact complete input scripts; actual audio covers 1–6. New recordings need wording, pronunciation and delivery review, including the joins in 3 and 5. OpenAI.fm has reached its ten-downloads-per-week demo limit; no Hadith 7 recording is admitted."
     },
     {
       "id": "offline-at-scale",
       "status": "separate-packs-implemented-sample-browser-verified",
-      "evidence": "reader/offline-store.mjs; reader/offline-view.mjs; reader/offline.mjs; reader/sw.js; tests/offline-packs.test.mjs; research/offline-packs-verification.json; research/listening-session-verification.json; research/knowledge-next-verification.json; research/knowledge-third-verification.json; research/knowledge-fourth-verification.json; research/knowledge-fifth-verification.json",
+      "evidence": "reader/offline-store.mjs; reader/offline-view.mjs; reader/offline.mjs; reader/sw.js; tests/offline-packs.test.mjs; research/offline-packs-verification.json; research/listening-session-verification.json; research/knowledge-next-verification.json; research/knowledge-third-verification.json; research/knowledge-fourth-verification.json; research/knowledge-fifth-verification.json; research/knowledge-final-verification.json",
       "remaining": "Confirm the revised download flow and locked-screen playback on iPhone; exercise full-collection size and future per-session audio packs. Current sample has all reading together, separate Cedar/review audio, verified-file resume, quota/cancellation recovery, explicit removal/old-cache cleanup and cross-tab playback protection. Storage eviction remains possible."
     },
     {
       "id": "production-testing",
       "status": "in-progress",
-      "evidence": "210 automated checks (171 Node, 39 Python); research/navigation-verification.json; research/offline-packs-verification.json; research/reader-structure-verification.json; research/source-reference-verification.json; .github/workflows/reader-checks.yml; research/audio-catalog-verification.json; research/hadith-3-audio-verification.json; research/faith-next-verification.json; research/listening-session-verification.json; research/faith-third-verification.json; research/faith-final-verification.json; research/chapter-material-verification.json; research/knowledge-first-verification.json; tests/knowledge-batch.test.mjs; research/opening-audio-continuation-verification.json; research/knowledge-next-verification.json; research/knowledge-third-verification.json; research/knowledge-fourth-verification.json; research/knowledge-fifth-verification.json",
+      "evidence": "216 automated checks (177 Node, 39 Python); research/navigation-verification.json; research/offline-packs-verification.json; research/reader-structure-verification.json; research/source-reference-verification.json; .github/workflows/reader-checks.yml; research/audio-catalog-verification.json; research/hadith-3-audio-verification.json; research/faith-next-verification.json; research/listening-session-verification.json; research/faith-third-verification.json; research/faith-final-verification.json; research/chapter-material-verification.json; research/knowledge-first-verification.json; tests/knowledge-batch.test.mjs; research/opening-audio-continuation-verification.json; research/knowledge-next-verification.json; research/knowledge-third-verification.json; research/knowledge-fourth-verification.json; research/knowledge-fifth-verification.json; research/knowledge-final-verification.json",
       "remaining": "Accessibility audit, keyboard/screen reader review, optional iPhone full-place/settings restore and locked-screen/interruption acceptance after final architecture changes. Default iPhone backup export/merge restore and browsing/session separation are confirmed. Deploy checks gate publishing."
     },
     {
@@ -78,7 +78,7 @@
     }
   ],
   "nextActions": [
-    "Continue Knowledge from 123 in complete source chapters. Complete English chapter introductions and independently review recorded source differences, comparison splits and the declared correction in 99. Generate and compare further Cedar recordings when an authorized generation path is available.",
+    "Begin the next source book with a pinned inventory and explicit chapter/reference map. Complete English chapter introductions and independently review the recorded Knowledge variants, comparison gaps, splits and declared correction in 99. Generate and compare further Cedar recordings when an authorized generation path is available.",
     "Complete the Arabic edition/reference map using the new exact-span inventory and pinned printed-witness findings; keep combined labels distinct from missing or misassigned bodies.",
     "Find a more complete authoritative English witness: the IslamHouse EPUB and PDF share seven checked omissions and additional transcription defects. Keep their exact inventories as comparison evidence rather than patching them silently.",
     "Obtain complete English source coverage and explicit offline/narration permissions; request #4160 is posted.",
@@ -163,18 +163,18 @@
     "policy": "Finite ordered prefix of the selected session; stop at a missing recording or exact session boundary. No automatic skip over gaps. This recommended default was presented to the user; no additional answer was received this turn."
   },
   "knowledgeIntake": {
-    "status": "candidate-inventoried-first-64-reports-admitted-as-personal-prototype",
+    "status": "all-selected-numbered-reports-admitted-as-personal-prototype",
     "record": "research/knowledge-source-audit.json",
     "source": "content/sources/wikisource-knowledge/manifest.json",
     "range": "59–134",
-    "remaining": "Compare and translate 123–134 in complete source chapters, complete chapter English and individual reference mapping, and obtain independent reviews. The full candidate is not automatically reader-eligible.",
-    "publishedRange": "59–122",
+    "remaining": "Complete English chapter introductions, independently review wording, references and recorded source differences, and obtain reuse evidence. All 76 selected numbered reports and 54 source chapters are available; this is not production certification.",
+    "publishedRange": "59–134",
     "review": "content/review/knowledge-batches.json",
-    "verification": "research/knowledge-fifth-verification.json"
+    "verification": "research/knowledge-final-verification.json"
   },
   "chapterMaterial": {
     "status": "implemented-browser-offline-verified",
-    "verification": "research/chapter-material-verification.json; research/knowledge-first-verification.json; research/knowledge-next-verification.json; research/knowledge-third-verification.json; research/knowledge-fourth-verification.json; research/knowledge-fifth-verification.json",
+    "verification": "research/chapter-material-verification.json; research/knowledge-first-verification.json; research/knowledge-next-verification.json; research/knowledge-third-verification.json; research/knowledge-fourth-verification.json; research/knowledge-fifth-verification.json; research/knowledge-final-verification.json",
     "policy": "Daily sessions contain numbered hadith only; chapter introductions and quotations remain separately accessible in the book browser. User confirmed this policy on 20 October 2026.",
     "userConfirmedAt": "2026-10-20"
   },

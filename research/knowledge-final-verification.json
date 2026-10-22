@@ -1,0 +1,197 @@
+{
+  "checkedAt": "2026-10-21",
+  "status": "personal-prototype-only",
+  "readerRelease": "opening-18087806ba2d",
+  "sourceRecordSha256": "1ee3c3d1b43c393eb686b7684c9994444cc73eb6657bb0e588b43353ef104a2f",
+  "catalogContextSha256": "9de8245b063bd9a4db1a60bf75f4e271f0c2aa8680f9c867ae017f76636bb81b",
+  "scope": {
+    "newEntries": "123–134",
+    "totalEntries": 134,
+    "books": 3,
+    "knowledgeEntries": 76,
+    "knowledgeSourceChapters": 54,
+    "knowledgeSourceOnlyChapters": [
+      "chapter-01",
+      "chapter-06",
+      "chapter-11"
+    ],
+    "newArabicReportParagraphs": 13,
+    "newEnglishSegments": 33,
+    "newChapterArabicBlocks": 10,
+    "knowledgeIntroductionArabicParagraphs": 13,
+    "chapterIntroductionEnglish": "pending"
+  },
+  "preservation": "All 122 earlier entry objects and all five recording catalog rows are deep-equal to the preceding release. The 13 new Arabic report paragraphs are unchanged from their pinned input. All 76 Knowledge numbered reports and 54 source headings are now represented, with 13 Arabic introductory paragraphs separately preserved. All 177 nonblank Knowledge input blocks are retained; the original 178-block inventory includes one blank. Narration inputs cover 134; actual Cedar recordings remain 1–6.",
+  "sourceReview": {
+    "record": "content/review/knowledge-final-review.json",
+    "arabicInput": "content/sources/wikisource-knowledge/manifest.json",
+    "printedWitnesses": [
+      {
+        "id": "brill-1862",
+        "pdfPages": [
+          44,
+          45,
+          46,
+          47
+        ],
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+      },
+      {
+        "id": "dar-ibn-kathir-2002",
+        "pdfPages": [
+          44,
+          45,
+          46
+        ],
+        "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+      }
+    ],
+    "method": "Relevant printed pages visually inspected in full; both PDF hashes rechecked. Bewley 123–134 and pinned Khan-family EPUB references 1.3.125–136 were individually matched. The reference-only Khan-family 1.3.129 record was checked in the original XHTML, including its neighboring paragraphs. Hadith 125 was additionally compared with the relevant Ibn Hajar commentary. AI comparison is not independent certification.",
+    "findings": [
+      "123 retains the selected narrator name, informed-us transmission verb, the questioner-position explanation and closing attributes. 124 retains all three no-harm responses without adding an inadvertently qualifier.",
+      "125 retains the selected third-person quoted reading and al-A‘mash’s reading note. The heading has the second-person wording, as do the historical print and both English body comparisons. The modern print and Ibn Hajar passage support the selected third-person report wording. A separate visible note discloses the difference; no verse wording is silently harmonized.",
+      "126 distinguishes Ibn al-Zubayr’s interruption from the continuing quotation and preserves the closing narrator note.",
+      "127 is a statement of ‘Ali followed by its chain. Bewley supplies a complete statement; the Khan-family reference has only a narrator line and backward pointer. The incomplete comparison is explicit in the reader and offline source notes.",
+      "128 preserves the two explicitly written exchanges plus three-times wording, without adding the third written exchange from the historical print. 129 retains its different chain and indirect it-was-mentioned-to-me frame.",
+      "130 retains the conditional answer, narrator clarification and final question. 131 remains separately numbered despite the earlier related reports. 132 retains its brief selected answer without added explanation.",
+      "133 retains the singular related-to-me opening, all place names and Ibn Umar’s I-did-not-grasp-this qualification. 134 retains both chains, all garment exclusions, wars and the below-the-ankles ending. No next-book basmalah is imported."
+    ]
+  },
+  "architecture": "Reference-only comparisons require the exact pinned source and record hashes, two exact checked paragraphs and an explicit note. Validation rejects a fabricated or altered body, mixed comparison modes, stale evidence or missing explanation. The status is visible in entry translation status and individual citations and does not count as a second complete English body comparison. Numbered-only session policy is unchanged.",
+  "automated": {
+    "node": 177,
+    "python": 39,
+    "failed": 0,
+    "checks": "Complete Node and Python suites, all source importers, generated source/book/audio checks, release integrity and formatting. Two initial Node failures were stale expectations for the introduction count and a session previously truncated at the old collection end; updated expectations passed in the full rerun."
+  },
+  "browser": {
+    "exactEntries": [
+      {
+        "number": 123,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 124,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 125,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 126,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 127,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 128,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 129,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 130,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 131,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 132,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 133,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 134,
+        "englishExact": true,
+        "arabicExact": true
+      }
+    ],
+    "exactChapters": [
+      {
+        "id": "chapter-46",
+        "exact": true
+      },
+      {
+        "id": "chapter-47",
+        "exact": true
+      },
+      {
+        "id": "chapter-48",
+        "exact": true
+      },
+      {
+        "id": "chapter-49",
+        "exact": true
+      },
+      {
+        "id": "chapter-50",
+        "exact": true
+      },
+      {
+        "id": "chapter-51",
+        "exact": true
+      },
+      {
+        "id": "chapter-52",
+        "exact": true
+      },
+      {
+        "id": "chapter-53",
+        "exact": true
+      },
+      {
+        "id": "chapter-54",
+        "exact": true
+      }
+    ],
+    "referenceOnlyVisible": true,
+    "finalBoundary": true,
+    "sessionContinue": "#read/123",
+    "offlineReady": true,
+    "readingVariantVisible": true,
+    "largeDay": {
+      "font": "28px",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    "largeNight": {
+      "font": "28px",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    "offlineFinalReport": true,
+    "offlineChapter": true,
+    "offlineComparisonGap": true,
+    "offlineSourceOnlyChapter": true,
+    "offlineSearch": "#read/132",
+    "runtimeErrors": []
+  },
+  "offlineReadingMB": 6.19,
+  "limits": [
+    "Independent Arabic, English, context and reuse review remain pending; production publication is not approved.",
+    "All selected Knowledge numbered reports are available; thirteen Arabic introductory paragraphs still need English translation.",
+    "The remaining books are not yet admitted to the reader.",
+    "Cedar recordings cover 1–6. No new recording was generated. Desktop offline checks do not replace iPhone acceptance."
+  ]
+}

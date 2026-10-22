@@ -21,6 +21,7 @@ function comparisonEvidence(reference,evidence){
  const record=englishInventory.records.find(r=>r.id===englishInventory.namespace+':'+reference);
  assert(record,'Comparison label is absent from the pinned inventory');
  assert.deepEqual(evidence,{sourceSha256:englishInventory.sourceSha256,sourceRecordId:record.id,recordSha256:hash(record)},'Comparison needs exact pinned-inventory evidence');
+ return record;
 }
 function validateComparisons(comparisons,config,segments){
  const khanReference=new RegExp('^1\\.'+config.number+'\\.[1-9]\\d*[a-z]?$');
@@ -28,6 +29,17 @@ function validateComparisons(comparisons,config,segments){
  const bewley=comparisons.find(c=>c.id===config.bewleySourceId),khan=comparisons.find(c=>c.id==='islamhouse-khan');
  assert(/^[1-9]\d*$/.test(bewley.reference)&&bewley.status===undefined,'Invalid Bewley comparison');
  assert(bewley.part===undefined&&bewley.splitReferences===undefined,'Unexpected Bewley part metadata');
+ if(khan.status==='reference-only-body-absent'){
+  assert(khanReference.test(khan.reference),'Invalid reference-only comparison');
+  assert(khan.part===undefined&&khan.splitReferences===undefined&&khan.checkedReferences===undefined,'Reference-only comparison cannot claim complete report parts');
+  const record=comparisonEvidence(khan.reference,khan.referenceEvidence);
+  assert(Array.isArray(khan.checkedBody)&&khan.checkedBody.length===2&&khan.checkedBody.every(p=>typeof p==='string'),'Reference-only comparison needs its exact checked body');
+  assert.equal(hash(khan.checkedBody),record.textSha256,'Reference-only body differs from the pinned record');
+  assert(/^Narrated .+:$/.test(khan.checkedBody[0].trim())&&/^the above mentioned Statement of '[A-Za-z -]+\.$/.test(khan.checkedBody[1].trim()),'Checked record is not a narrator and backward pointer');
+  assert(typeof khan.note==='string'&&khan.note.trim(),'Reference-only comparison needs an omission explanation');
+  return;
+ }
+ assert.equal(khan.checkedBody,undefined,'Only a reference-only comparison may carry checked-body evidence');
  if(khan.status===undefined){
   assert(khanReference.test(khan.reference),'Invalid Khan-family comparison');
   if(khan.splitReferences!==undefined){
@@ -58,6 +70,7 @@ function validateComparisons(comparisons,config,segments){
  assert(typeof khan.note==='string'&&khan.note.trim(),'Missing comparison absence explanation');
 }
 function entryTranslationStatus(row){
+ if(row.comparisons.some(c=>c.status==='reference-only-body-absent'))return 'Personal prototype: AI-assisted working translation; two Arabic printed witnesses and one complete English comparison body were checked. The second English reference contains only a backward pointer, not the statement body. Independent Arabic, English and context review pending.';
  if(row.arabicCorrections)return 'Personal prototype: AI-assisted working translation with an explicitly recorded Arabic correction supported by two printed witnesses. English comparison bodies and the original input remain accessible. Independent Arabic, English and context review pending.';
  if(row.printedWitnesses.some(w=>w.status))return 'Personal prototype: AI-assisted working translation; the modern Arabic print and two English translation families were compared. The historical print does not separately contain this distinct form in its checked chapter; see source notes. Independent Arabic, English and context review pending.';
  return row.comparisons.some(c=>c.status==='not-present-in-checked-sequence')?'Personal prototype: AI-assisted working translation; two Arabic printed witnesses and one English translation family compared. A second English comparison is absent from the checked sequence; see source notes. Independent Arabic, English and context review pending.':'Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.';
@@ -76,6 +89,7 @@ function printedCitation(w){
  return {id:w.id,sourceId:w.id,locator:w.status?`Checked ${location} · no separate match in this chapter`:location,pdfPage:w.pdfPages[0],scope:w.status?w.note+' This checked absence is not an exact printed match.':'Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes.'};
 }
 function khanCitation(record){
+ if(record.status==='reference-only-body-absent'){const [volume,book,number]=record.reference.split('.');return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Number ${number} · reference only; statement body absent`,scope:record.note};}
  if(record.splitReferences){const [volume,book]=record.reference.split('.');return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Numbers ${record.splitReferences.map(p=>p.reference.split('.')[2]).join(', ')} · separately numbered comparison parts`,scope:record.note+' The reader retains one complete numbered entry from its selected Arabic source.'};}
  if(record.status==='not-present-in-checked-sequence')return {id:'khan',sourceId:'islamhouse-khan',locator:`No corresponding report in the checked sequence: ${record.checkedReferences.join(' → ')}`,scope:record.note+' This is documented absence in that sequence, not a completed English comparison or a claim about every occurrence elsewhere in the collection.'};
  const [volume,book,number]=record.reference.split('.');
