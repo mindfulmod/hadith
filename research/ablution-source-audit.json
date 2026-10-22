@@ -1,0 +1,133 @@
+{
+  "checkedAt": "2026-10-21",
+  "status": "candidate-layout-review-required",
+  "readerEligible": false,
+  "source": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_الوضوء&oldid=273249",
+  "revision": 273249,
+  "raw": {
+    "path": "source.html",
+    "bytes": 259334,
+    "sha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd"
+  },
+  "audit": "content/staging/bukhari-ablution-wikisource/layout-audit.json",
+  "auditObjectSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+  "coverage": {
+    "blocks": 252,
+    "htmlHeadings": 75,
+    "unparsedHeadings": 1,
+    "numberedMarkers": 110,
+    "uniqueNumericLabels": 109,
+    "numericRange": [
+      135,
+      244
+    ],
+    "unobservedLabelsWithinRange": [
+      160
+    ],
+    "duplicateLabels": [
+      {
+        "number": 162,
+        "occurrences": 2
+      }
+    ],
+    "sourceCodePoints": 34517,
+    "coveredCodePoints": 34517
+  },
+  "method": "Retrieved the page, identified revision 273249 and retained an unchanged fixed-revision HTML retrieval. Decoded all p/h3 blocks exactly. Observed every bracketed decimal marker, preserving Arabic digit glyphs and duplicate occurrences. Partitioned every decoded source code point into reversible spans. This is lexical coverage, not approved report boundaries or proof of narration completeness.",
+  "findings": [
+    {
+      "kind": "leading-whitespace",
+      "blocks": [
+        "mwYQ",
+        "mwpw"
+      ],
+      "labels": [
+        "155",
+        "170"
+      ],
+      "finding": "Two newline characters precede each number. The old beginning-of-paragraph matcher would attach these paragraphs to the preceding report."
+    },
+    {
+      "kind": "unparsed-heading-and-reference",
+      "block": "mweA",
+      "headingSpan": [
+        0,
+        24
+      ],
+      "markerId": "mweA:24",
+      "label": "١٦٢",
+      "finding": "Raw wikitext for an odd-number-of-stones chapter is followed immediately by an Arabic-digit 162 marker. A later paragraph has another 162 label. No 160 marker is observed. The heading, original glyphs, duplicate and sequence are all preserved; no automatic renumbering was performed."
+    },
+    {
+      "kind": "multiple-numbered-markers-in-one-paragraph",
+      "blocks": [
+        "mwAQM",
+        "mwAVQ",
+        "mwAZw"
+      ],
+      "labels": [
+        [
+          "194",
+          "195"
+        ],
+        [
+          "220",
+          "221"
+        ],
+        [
+          "241",
+          "242"
+        ]
+      ],
+      "finding": "Each HTML paragraph contains two numbered markers. One paragraph cannot be assumed to be one report."
+    },
+    {
+      "kind": "chapter-context-followed-by-numbered-report",
+      "block": "mwAZM",
+      "markerId": "mwAZM:77",
+      "label": "239",
+      "finding": "Unnumbered chapter context and marker 239 share a paragraph. The old importer treated the whole paragraph as chapter context. No claim that this chapter is numberless can be made from that old classification."
+    }
+  ],
+  "comparisonOrientation": {
+    "bewley": "https://aishabewley.org/bukhari3",
+    "observed": "The English comparison separately lists the later numbers that the old paragraph-start matcher missed. Its final Ablution reference is 244; the next selected Arabic book begins at 245. These observations orient the next edition map; they do not approve the Arabic body, assign 160 to the repeated 162 marker, or establish equivalence with other numbering systems.",
+    "nextSelectedBook": "https://ar.wikisource.org/wiki/صحيح_البخاري/كتاب_الغسل",
+    "printedBoundaryReview": "pending"
+  },
+  "safeguard": "Both ordinary Wikisource importers now refuse embedded, malformed, nonstandard or repeated numeric markers and unrendered heading syntax before inferring report ownership. A separate pending layout registry retains irregular candidates without making them reader-eligible. Existing Faith and Knowledge inventories remain byte-for-byte reproducible.",
+  "verification": {
+    "node": 177,
+    "python": 48,
+    "failed": 0,
+    "newRegressionTests": 9,
+    "checks": [
+      "Exact reconstruction of all 34,517 decoded source code points across 259 spans.",
+      "Every observed marker retains its source location, original glyphs and duplicate occurrence.",
+      "Embedded 239 remains distinguishable from preceding chapter context.",
+      "Ordinary import refuses the real irregular source, including when its hash and expected block count are valid.",
+      "Opening import refuses an embedded extra reference even after the source hash is updated.",
+      "Changed source bytes, revision, summary, paths, reused identities and escaped symlinks are rejected.",
+      "Complete source, book and release integrity checks pass. Reader source and release are unchanged."
+    ]
+  },
+  "reader": {
+    "entries": 134,
+    "release": "opening-18087806ba2d",
+    "changed": false,
+    "audioRange": "1–6"
+  },
+  "nextWork": [
+    "Inspect the printed witnesses at each flagged boundary and match each body to the English comparison records.",
+    "Create an explicit, hash-bound source-span classification that handles report/report and context/report shared paragraphs without rewriting original bytes.",
+    "Resolve the inline chapter heading and duplicate 162 reference with visible evidence and separate source labels from reader identities.",
+    "Admit only separately compared complete chapters, beginning with 135; preserve the source-only opening chapter.",
+    "Continue wording, translation, rights and independent-review work before any production claim."
+  ],
+  "limits": [
+    "There are 110 observed markers, not 110 certified or admitted reports.",
+    "The absent 160 label is not proof of missing narration text.",
+    "The candidate’s 75 rendered headings and one raw heading need a reviewed chapter map.",
+    "No new Arabic, working English or audio was added to the reader this turn."
+  ]
+}

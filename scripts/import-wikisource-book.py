@@ -6,6 +6,7 @@ spec=importlib.util.spec_from_file_location('opening',ROOT/'scripts/import-openi
 opening=importlib.util.module_from_spec(spec);spec.loader.exec_module(opening)
 sha=opening.digest
 encoded=opening.encoded
+layout_spec=importlib.util.spec_from_file_location('wikisource_layout',ROOT/'scripts/wikisource_layout.py');layout=importlib.util.module_from_spec(layout_spec);layout_spec.loader.exec_module(layout)
 
 def extract(raw,manifest):
     if len(raw)!=manifest['file']['bytes'] or sha(raw)!=manifest['file']['sha256']:
@@ -18,6 +19,8 @@ def extract(raw,manifest):
     blocks=parser.blocks
     if len(blocks)!=manifest['expected']['blocks'] or len({b['htmlId'] for b in blocks})!=len(blocks) or any(not b['htmlId'] for b in blocks):
         raise ValueError('Unexpected or ambiguous source blocks')
+    # Every number marker must be a supported boundary before any ownership is inferred.
+    layout.require_simple_layout(blocks)
     chapters=[];records=[];blanks=[];current=None;chapter=None
     for index,b in enumerate(blocks):
         b['ordinal']=index;b['textSha256']=sha(b['text'])

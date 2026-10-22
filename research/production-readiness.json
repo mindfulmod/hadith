@@ -19,8 +19,8 @@
     {
       "id": "source-coverage",
       "status": "two-candidates-inventoried-selected-reference-defects-investigated",
-      "evidence": "content/sources/openiti-bukhari/manifest.json; content/staging/bukhari-ar/catalog.json; content/sources/openiti-bukhari-jk/manifest.json; content/staging/bukhari-ar-jk/catalog.json; research/arabic-reference-audit.json; content/sources/wikisource-books.json; content/sources/wikisource-knowledge/manifest.json; research/knowledge-source-audit.json",
-      "remaining": "Complete the edition-specific reference and chapter map and verify Arabic wording. The first candidate has 173 absent numeric labels and 10 empty spans, not 173 proven missing narrations. Selected printed comparisons explain labels 409, 411 and 4137 as combined/embedded passages and confirm local empty/misassigned spans at 1161–1167 and 3382. The JK inventory accounts for every byte in 7,129 report spans and 3,965 heading-context spans; its duplicate 3905 passages, four suffixes, context boundaries and upstream transcription warnings remain subject to review."
+      "evidence": "content/sources/openiti-bukhari/manifest.json; content/staging/bukhari-ar/catalog.json; content/sources/openiti-bukhari-jk/manifest.json; content/staging/bukhari-ar-jk/catalog.json; research/arabic-reference-audit.json; content/sources/wikisource-books.json; content/sources/wikisource-knowledge/manifest.json; research/knowledge-source-audit.json; research/ablution-source-audit.json",
+      "remaining": "Complete the edition-specific reference and chapter map and verify Arabic wording. The first candidate has 173 absent numeric labels and 10 empty spans, not 173 proven missing narrations. Selected printed comparisons explain labels 409, 411 and 4137 as combined/embedded passages and confirm local empty/misassigned spans at 1161–1167 and 3382. The JK inventory accounts for every byte in 7,129 report spans and 3,965 heading-context spans; its duplicate 3905 passages, four suffixes, context boundaries and upstream transcription warnings remain subject to review. Ablution has a separate pending layout audit; resolve its seven noninitial markers and duplicate numeric label before ordinary intake."
     },
     {
       "id": "english-full-collection",
@@ -67,7 +67,7 @@
     {
       "id": "production-testing",
       "status": "in-progress",
-      "evidence": "216 automated checks (177 Node, 39 Python); research/navigation-verification.json; research/offline-packs-verification.json; research/reader-structure-verification.json; research/source-reference-verification.json; .github/workflows/reader-checks.yml; research/audio-catalog-verification.json; research/hadith-3-audio-verification.json; research/faith-next-verification.json; research/listening-session-verification.json; research/faith-third-verification.json; research/faith-final-verification.json; research/chapter-material-verification.json; research/knowledge-first-verification.json; tests/knowledge-batch.test.mjs; research/opening-audio-continuation-verification.json; research/knowledge-next-verification.json; research/knowledge-third-verification.json; research/knowledge-fourth-verification.json; research/knowledge-fifth-verification.json; research/knowledge-final-verification.json",
+      "evidence": "225 automated checks (177 Node, 48 Python); research/navigation-verification.json; research/offline-packs-verification.json; research/reader-structure-verification.json; research/source-reference-verification.json; .github/workflows/reader-checks.yml; research/audio-catalog-verification.json; research/hadith-3-audio-verification.json; research/faith-next-verification.json; research/listening-session-verification.json; research/faith-third-verification.json; research/faith-final-verification.json; research/chapter-material-verification.json; research/knowledge-first-verification.json; tests/knowledge-batch.test.mjs; research/opening-audio-continuation-verification.json; research/knowledge-next-verification.json; research/knowledge-third-verification.json; research/knowledge-fourth-verification.json; research/knowledge-fifth-verification.json; research/knowledge-final-verification.json; tests/test_wikisource_layout.py; research/ablution-source-audit.json",
       "remaining": "Accessibility audit, keyboard/screen reader review, optional iPhone full-place/settings restore and locked-screen/interruption acceptance after final architecture changes. Default iPhone backup export/merge restore and browsing/session separation are confirmed. Deploy checks gate publishing."
     },
     {
@@ -78,7 +78,7 @@
     }
   ],
   "nextActions": [
-    "Begin the next source book with a pinned inventory and explicit chapter/reference map. Complete English chapter introductions and independently review the recorded Knowledge variants, comparison gaps, splits and declared correction in 99. Generate and compare further Cedar recordings when an authorized generation path is available.",
+    "Resolve Ablution layout using the pinned audit: compare printed witnesses, explicitly classify shared paragraphs and the inline heading, and map the repeated 162 source label without silently renumbering. Then translate and compare complete chapters beginning with 135. Complete pending English chapter introductions and independent reviews; extend Cedar audio when an authorized path is available.",
     "Complete the Arabic edition/reference map using the new exact-span inventory and pinned printed-witness findings; keep combined labels distinct from missing or misassigned bodies.",
     "Find a more complete authoritative English witness: the IslamHouse EPUB and PDF share seven checked omissions and additional transcription defects. Keep their exact inventories as comparison evidence rather than patching them silently.",
     "Obtain complete English source coverage and explicit offline/narration permissions; request #4160 is posted.",
@@ -191,5 +191,14 @@
       "finding": "Official guidance marks gpt-4o-mini-tts deprecated, with shutdown on 6 January 2027, and points to the Realtime API as the replacement workflow. Existing saved recordings do not depend on the live generation model.",
       "action": "Evaluate a supported generation workflow and its available Cedar voice before bulk production. Preserve the selected delivery and require a new quality comparison rather than automatically replacing approved recordings."
     }
+  },
+  "ablutionIntake": {
+    "status": "pinned-layout-audited-boundaries-unresolved",
+    "source": "content/sources/wikisource-ablution/manifest.json",
+    "audit": "research/ablution-source-audit.json",
+    "markers": 110,
+    "uniqueNumericLabels": 109,
+    "published": false,
+    "remaining": "Resolve shared paragraphs, chapter/report boundaries, the raw heading and repeated 162 label against printed witnesses. Prepare an explicit exact-span map before admitting the first batch; no silent renumbering."
   }
 }

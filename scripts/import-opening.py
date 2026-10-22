@@ -1,6 +1,7 @@
 """Extract pinned opening-book paragraphs without repairing or publishing text."""
 import argparse
 import hashlib
+import importlib.util
 import json
 import re
 from html.parser import HTMLParser
@@ -9,6 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'content/sources/wikisource-opening'
 OUTPUT = ROOT / 'content/staging/bukhari-opening-wikisource/catalog.json'
+layout_spec=importlib.util.spec_from_file_location('wikisource_layout',ROOT/'scripts/wikisource_layout.py');layout=importlib.util.module_from_spec(layout_spec);layout_spec.loader.exec_module(layout)
 VOID = {'area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr'}
 
 
@@ -77,6 +79,7 @@ def extract(raw,manifest):
     blocks=parser.blocks
     if len(blocks)!=17 or len({b['htmlId'] for b in blocks})!=17:
         raise ValueError('Unexpected source block coverage')
+    layout.require_simple_layout(blocks)
     records=[];context=[];current=None
     for index,block in enumerate(blocks):
         block['ordinal']=index
