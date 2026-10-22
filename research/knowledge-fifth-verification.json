@@ -1,0 +1,183 @@
+{
+  "checkedAt": "2026-10-21",
+  "status": "personal-prototype-only",
+  "readerRelease": "opening-6a91a02d022e",
+  "sourceRecordSha256": "57174253e42575838db37c6f8dd43171b4a4be0f28f9f9a283f83646feafb0da",
+  "catalogContextSha256": "b5e107a302deee166c735f1e5d5939f95f56aa05141651423654e68cded359dd",
+  "scope": {
+    "newEntries": "111–122",
+    "totalEntries": 122,
+    "books": 3,
+    "knowledgeEntries": 64,
+    "knowledgeSourceChapters": 45,
+    "knowledgeSourceOnlyChapters": [
+      "chapter-01",
+      "chapter-06",
+      "chapter-11"
+    ],
+    "newArabicReportParagraphs": 13,
+    "newEnglishSegments": 42,
+    "newChapterArabicBlocks": 6,
+    "chapterIntroductionEnglish": "pending"
+  },
+  "preservation": "All 110 earlier entry objects and all five recording catalog rows are deep-equal to the preceding release. The 13 new Arabic report paragraphs are unchanged from their pinned input. Full chains, uncertainty, embedded quotation fragments and closing narrator comments remain. Narration inputs cover 122; actual Cedar recordings remain 1–6.",
+  "sourceReview": {
+    "record": "content/review/knowledge-fifth-review.json",
+    "arabicInput": "content/sources/wikisource-knowledge/manifest.json",
+    "printedWitnesses": [
+      {
+        "id": "brill-1862",
+        "pdfPages": [
+          40,
+          41,
+          42,
+          43,
+          44
+        ],
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+      },
+      {
+        "id": "dar-ibn-kathir-2002",
+        "pdfPages": [
+          40,
+          41,
+          42,
+          43
+        ],
+        "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+      }
+    ],
+    "method": "Relevant printed report pages visually inspected in full; both PDF hashes rechecked. Bewley 111–122 and pinned Khan-family EPUB references 1.3.111–124 were individually matched. Comparisons shorten chains, divide reports differently and omit some selected clauses; the review records these differences. AI comparison is not independent certification.",
+    "findings": [
+      "112 preserves killing-or-elephant uncertainty, both idhkhir repetitions, the qaf note and the closing question about the written address. The historical and modern differences remain documented.",
+      "113 keeps the final corroborating chain; 114 excludes comparison footnotes from the narration; 115 retains both chain routes and the selected feminine wording.",
+      "117 retains four, five and two rakah counts, the little-boy expression alternative and ghatit-or-khatit.",
+      "118 translates only the selected Quranic fragments, without adding the historical and Khan-family phrase and guidance.",
+      "119 keeps the follow-up chain inside the same report and retains both-hands versus one-hand alternatives. Its Khan references are 1.3.119 and 1.3.120.",
+      "120 retains the two-vessels metaphor without importing the historical closing gloss. Its Khan reference is 1.3.121; selected 121 maps to 1.3.122.",
+      "122 retains the opening frame, embedded Ubayy chain, all quoted fragments, garment alternative, once-or-twice uncertainty, Ibn Uyaynah comment and closing wish. Its Khan references are 1.3.123 and 1.3.124. No expanded verse text or content from other occurrences is inserted."
+    ]
+  },
+  "architecture": "A selected report may span multiple English comparison records. Every part is bound to the pinned source and record hashes, with non-overlapping segment IDs in source order. Missing parts, stale evidence, duplicate coverage and mixed split/shared-reference modes fail validation. Reader numbering, complete-hadith session boundaries and earlier entries are unchanged.",
+  "automated": {
+    "node": 171,
+    "python": 39,
+    "failed": 0,
+    "checks": "Complete Node and Python suites, all source importers, generated source/book/audio checks, release integrity, formatting and tracked public artifact packaging. Initial test failures were stale release-count expectations and pre-staging artifact paths; these were corrected and both suites passed in full."
+  },
+  "browser": {
+    "exactEntries": [
+      {
+        "number": 111,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 112,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 113,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 114,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 115,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 116,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 117,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 118,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 119,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 120,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 121,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 122,
+        "englishExact": true,
+        "arabicExact": true
+      }
+    ],
+    "exactChapters": [
+      {
+        "id": "chapter-40",
+        "exact": true
+      },
+      {
+        "id": "chapter-41",
+        "exact": true
+      },
+      {
+        "id": "chapter-42",
+        "exact": true
+      },
+      {
+        "id": "chapter-43",
+        "exact": true
+      },
+      {
+        "id": "chapter-44",
+        "exact": true
+      },
+      {
+        "id": "chapter-45",
+        "exact": true
+      }
+    ],
+    "splitReferenceVisible": true,
+    "sessionContinue": "#read/111",
+    "offlineReady": true,
+    "largeDay": {
+      "font": "28px",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    "largeNight": {
+      "font": "28px",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    "offlineLongReport": true,
+    "offlineChapter": true,
+    "offlineSearch": "#read/122",
+    "offlineSourceOnlyChapter": true,
+    "runtimeErrors": []
+  },
+  "offlineReadingMB": 5.92,
+  "limits": [
+    "Independent Arabic, English, context and reuse review remain pending; production publication is not approved.",
+    "Knowledge has 64 of 76 reports and 45 of 54 source chapters. Continue with 123–134 in complete chapters.",
+    "Twelve Knowledge introductory Arabic paragraphs remain pending English translation.",
+    "Cedar recordings cover 1–6. No new recording was generated. Desktop offline checks do not replace iPhone acceptance."
+  ]
+}
