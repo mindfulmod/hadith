@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "namespace": "bukhari-opening-v1",
   "publication": "personal-prototype",
-  "sourceRecordSha256": "1ee3c3d1b43c393eb686b7684c9994444cc73eb6657bb0e588b43353ef104a2f",
+  "sourceRecordSha256": "0d1a7607d55a20cddbfb10eb81ee7f93ecb321924e6d0875e053f290641346c3",
   "rights": {
     "status": "pending",
     "evidence": [
@@ -11,7 +11,9 @@
       "reader/faith-inputs.json",
       "reader/faith-review.html",
       "reader/knowledge-inputs.json",
-      "reader/knowledge-review.html"
+      "reader/knowledge-review.html",
+      "reader/ablution-inputs.json",
+      "reader/ablution-review.html"
     ]
   },
   "books": [
@@ -2119,6 +2121,181 @@
             "notes": {
               "path": "knowledge-review.html",
               "fragment": "chapter-54"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ablution",
+      "number": 4,
+      "title": "Ablution",
+      "sourceEntryCount": 110,
+      "entryNumbers": [
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141
+      ],
+      "chapters": [
+        {
+          "id": "chapter-01",
+          "title": "What has been related about ablution",
+          "entryNumbers": [],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "none-in-source",
+            "introduction": {
+              "arabicParagraphs": 2,
+              "englishStatus": "pending"
+            },
+            "notes": {
+              "path": "ablution-review.html",
+              "fragment": "chapter-01"
+            }
+          }
+        },
+        {
+          "id": "chapter-02",
+          "title": "Prayer is not accepted without purification",
+          "entryNumbers": [
+            135
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ablution-review.html",
+              "fragment": "chapter-02"
+            }
+          }
+        },
+        {
+          "id": "chapter-03",
+          "title": "The virtue of ablution and the radiant faces and limbs from its traces",
+          "entryNumbers": [
+            136
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ablution-review.html",
+              "fragment": "chapter-03"
+            }
+          }
+        },
+        {
+          "id": "chapter-04",
+          "title": "Not performing ablution because of doubt until one is certain",
+          "entryNumbers": [
+            137
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ablution-review.html",
+              "fragment": "chapter-04"
+            }
+          }
+        },
+        {
+          "id": "chapter-05",
+          "title": "Light ablution",
+          "entryNumbers": [
+            138
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ablution-review.html",
+              "fragment": "chapter-05"
+            }
+          }
+        },
+        {
+          "id": "chapter-06",
+          "title": "Performing ablution thoroughly",
+          "entryNumbers": [
+            139
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 1,
+              "englishStatus": "pending"
+            },
+            "notes": {
+              "path": "ablution-review.html",
+              "fragment": "chapter-06"
+            }
+          }
+        },
+        {
+          "id": "chapter-07",
+          "title": "Washing the face with both hands from one handful",
+          "entryNumbers": [
+            140
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ablution-review.html",
+              "fragment": "chapter-07"
+            }
+          }
+        },
+        {
+          "id": "chapter-08",
+          "title": "Saying “In the name of Allah” in every situation and during intercourse",
+          "entryNumbers": [
+            141
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ablution-review.html",
+              "fragment": "chapter-08"
             }
           }
         }
@@ -4403,15 +4580,134 @@
       "contextReview": {
         "status": "pending"
       }
+    },
+    {
+      "number": 135,
+      "id": "bukhari:135",
+      "entrySha256": "8678a351f9009eb6511c122dd4d8889966b67984ef735ef303e2ac1c2d86a457",
+      "arabicSha256": "a2cf1918ca3ed9eb8ef19d455b57b1d1eeeed52f9952713566c3eef9563081a4",
+      "englishSha256": "ffa97649fb013d5d0063afba3868d2b9265b91fe96a8d8ee901af58fd002a61f",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 136,
+      "id": "bukhari:136",
+      "entrySha256": "9decd27e28e250a609e9e73ae11019a0193b39cf71e0a8f91d7adae0af248d7f",
+      "arabicSha256": "1ce0b5fc9c7c1108b3d5c3dc865ce1d5812c301e0723eed98b8081f156f85ea9",
+      "englishSha256": "73e680b325a5b3ae9176c75e5ed9b4cad24c8bdd31dc065cccaece21e550e579",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 137,
+      "id": "bukhari:137",
+      "entrySha256": "facd0362a907bf3fe355654c5bba3d5029d2d295b65802385a0f5c74c8fcefbc",
+      "arabicSha256": "8988334df7a6c4588c950f6b1de0259ee6baad690cf397556b083d219f1023b6",
+      "englishSha256": "b11da1a3c73b1d71e102a9ca42ff259f7d9178a8017c1493c5760a3fcb755298",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 138,
+      "id": "bukhari:138",
+      "entrySha256": "1428d6c1150895c5ced5aa362eb97f94c46ae861c6a2f5d809477f4f368d3941",
+      "arabicSha256": "0e0fb6f67e9540869d0101560d68542ac8ae24cb403e3775aee6400c02c2905b",
+      "englishSha256": "edaf2b26c8cf72568482cf7ff76c47c407966b1792ee284a90d367bfdacd2be8",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 139,
+      "id": "bukhari:139",
+      "entrySha256": "5b1300b7b7f0e6cf7ff51ca8f223f85543ff0a815f688009aa96599c329a4aa6",
+      "arabicSha256": "d066e3ac892b4c10406b5cafe138f9771372af2c3c2cd7780b87a8acd9d2adb9",
+      "englishSha256": "45ae3fb06ae081a04b06841d471d78f84be8860a4ff27d4e2759d98ce0d5e2b4",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 140,
+      "id": "bukhari:140",
+      "entrySha256": "5dddb522b9b35085d889a9e110f02a3ebac8ad61089ffa77943404081e16f11a",
+      "arabicSha256": "d0679ee6edd31d19209cb87b5c53b4ca84b409e9bdb1796eedfd62a47070f581",
+      "englishSha256": "0aa5b931c9b443040c59288891f1d7404b7d76dbe19cd5c02e34444d62ed61a2",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 141,
+      "id": "bukhari:141",
+      "entrySha256": "19453525498400b9a4850239abe7128705be68edcf59a53d7217c561c6e11f3b",
+      "arabicSha256": "baf0acb31c64f3d6b7d4a5e6923c4461c646c050a450ed0c4ba15b491cc78f8b",
+      "englishSha256": "aa0775364aba55ed09c0cc9300da1dc49353f4a4c030ccdfaf11894eba6f80ed",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
     }
   ],
-  "catalogContextSha256": "9de8245b063bd9a4db1a60bf75f4e271f0c2aa8680f9c867ae017f76636bb81b",
+  "catalogContextSha256": "a020cdca6dd88c931732d0049786874ae86116f450fbb7d68da8871b7bc526c4",
   "collectionReview": {
     "status": "pending"
   },
   "sourceReferences": {
     "schemaVersion": 1,
-    "sourceRecordSha256": "1ee3c3d1b43c393eb686b7684c9994444cc73eb6657bb0e588b43353ef104a2f",
+    "sourceRecordSha256": "0d1a7607d55a20cddbfb10eb81ee7f93ecb321924e6d0875e053f290641346c3",
     "sources": [
       {
         "id": "arabic-base",
@@ -4573,6 +4869,20 @@
         "kind": "commentary",
         "format": "web",
         "url": "https://islamweb.net/ar/library/content/52/246/باب-قول-الله-تعالى-وما-أوتيتم-من-العلم-إلا-قليلا"
+      },
+      {
+        "id": "arabic-ablution",
+        "label": "Arabic Wikisource · fixed revision 273249",
+        "kind": "arabic-input",
+        "format": "web",
+        "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_الوضوء&oldid=273249"
+      },
+      {
+        "id": "bewley-ablution",
+        "label": "Aisha Bewley · Book of Wudu",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://aishabewley.org/bukhari3"
       }
     ],
     "entries": [
@@ -11446,10 +11756,365 @@
           "fragment": "hadith-134",
           "label": "Comparison notes and chapter source for this hadith"
         }
+      },
+      {
+        "id": "bukhari:135",
+        "number": 135,
+        "entrySha256": "8678a351f9009eb6511c122dd4d8889966b67984ef735ef303e2ac1c2d86a457",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-ablution",
+            "locator": "Book of Ablution · source entry 135 · باب لا تقبل صلاة بغير طهور",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-ablution",
+            "locator": "Book of Wudu · entry 135",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 4, Number 137",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 48",
+            "pdfPage": 48,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 47",
+            "pdfPage": 47,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "ablution-review.html",
+          "fragment": "hadith-135",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:136",
+        "number": 136,
+        "entrySha256": "9decd27e28e250a609e9e73ae11019a0193b39cf71e0a8f91d7adae0af248d7f",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-ablution",
+            "locator": "Book of Ablution · source entry 136 · باب فضل الوضوء والغر المحجلون من آثار الوضوء",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-ablution",
+            "locator": "Book of Wudu · entry 136",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 4, Number 138",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 48",
+            "pdfPage": 48,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 47",
+            "pdfPage": 47,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "ablution-review.html",
+          "fragment": "hadith-136",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:137",
+        "number": 137,
+        "entrySha256": "facd0362a907bf3fe355654c5bba3d5029d2d295b65802385a0f5c74c8fcefbc",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation with an explicitly recorded Arabic correction supported by two printed witnesses. English comparison bodies and the original input remain accessible. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-ablution",
+            "locator": "Book of Ablution · source entry 137 · باب لا يتوضأ من الشك حتى يستيقن",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-ablution",
+            "locator": "Book of Wudu · entry 137",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 4, Number 139",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 48",
+            "pdfPage": 48,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 47",
+            "pdfPage": 47,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [
+          {
+            "id": "137-source-correction",
+            "label": "A recorded narrator-chain correction",
+            "text": "Both Arabic prints include “and from ‘Abbad,” where the digital paragraph omits “and.” The original and exact change remain in source notes. Independent review is pending.",
+            "citations": [
+              "base",
+              "brill-1862",
+              "dar-ibn-kathir-2002"
+            ],
+            "related": []
+          }
+        ],
+        "localNotes": {
+          "path": "ablution-review.html",
+          "fragment": "hadith-137",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:138",
+        "number": 138,
+        "entrySha256": "1428d6c1150895c5ced5aa362eb97f94c46ae861c6a2f5d809477f4f368d3941",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-ablution",
+            "locator": "Book of Ablution · source entry 138 · باب التخفيف في الوضوء",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-ablution",
+            "locator": "Book of Wudu · entry 138",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 4, Number 140",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF pages 48, 49",
+            "pdfPage": 48,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 48",
+            "pdfPage": 48,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "ablution-review.html",
+          "fragment": "hadith-138",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:139",
+        "number": 139,
+        "entrySha256": "5b1300b7b7f0e6cf7ff51ca8f223f85543ff0a815f688009aa96599c329a4aa6",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-ablution",
+            "locator": "Book of Ablution · source entry 139 · باب إسباغ الوضوء",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-ablution",
+            "locator": "Book of Wudu · entry 139",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 4, Number 141",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 49",
+            "pdfPage": 49,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 48",
+            "pdfPage": 48,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "ablution-review.html",
+          "fragment": "hadith-139",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:140",
+        "number": 140,
+        "entrySha256": "5dddb522b9b35085d889a9e110f02a3ebac8ad61089ffa77943404081e16f11a",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-ablution",
+            "locator": "Book of Ablution · source entry 140 · باب غسل الوجه باليدين من غرفة واحدة",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-ablution",
+            "locator": "Book of Wudu · entry 140",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 4, Number 142",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 49",
+            "pdfPage": 49,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 48",
+            "pdfPage": 48,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "ablution-review.html",
+          "fragment": "hadith-140",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:141",
+        "number": 141,
+        "entrySha256": "19453525498400b9a4850239abe7128705be68edcf59a53d7217c561c6e11f3b",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-ablution",
+            "locator": "Book of Ablution · source entry 141 · باب التسمية على كل حال وعند الوقاع",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-ablution",
+            "locator": "Book of Wudu · entry 141",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 4, Number 143",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF pages 49, 50",
+            "pdfPage": 49,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 49",
+            "pdfPage": 49,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "ablution-review.html",
+          "fragment": "hadith-141",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
       }
     ]
   },
-  "referencesSha256": "613dfb48bde9b146523880683915c1bb13c51282bc811c384f6a51b3dda39a92",
+  "referencesSha256": "d33d290f5c1bed96582ff78a8eed9c6bcd557fa2f4997265ae0144e6f23497f9",
   "referencesReview": {
     "status": "pending"
   }

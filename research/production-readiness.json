@@ -19,8 +19,8 @@
     {
       "id": "source-coverage",
       "status": "two-candidates-inventoried-selected-reference-defects-investigated",
-      "evidence": "content/sources/openiti-bukhari/manifest.json; content/staging/bukhari-ar/catalog.json; content/sources/openiti-bukhari-jk/manifest.json; content/staging/bukhari-ar-jk/catalog.json; research/arabic-reference-audit.json; content/sources/wikisource-books.json; content/sources/wikisource-knowledge/manifest.json; research/knowledge-source-audit.json; research/ablution-source-audit.json; research/ablution-layout-verification.json; content/review/ablution-layout-review.json",
-      "remaining": "Complete the edition-specific reference and chapter map and verify Arabic wording. The first candidate has 173 absent numeric labels and 10 empty spans, not 173 proven missing narrations. Selected printed comparisons explain labels 409, 411 and 4137 as combined/embedded passages and confirm local empty/misassigned spans at 1161–1167 and 3382. The JK inventory accounts for every byte in 7,129 report spans and 3,965 heading-context spans; its duplicate 3905 passages, four suffixes, context boundaries and upstream transcription warnings remain subject to review. Ablution now has an explicit exact-span structural map: 110 candidate reports, 76 chapters and a separately recorded mixed-numbering reference. Integrate origin/reference disclosure and compare wording/translation before admitting reader batches."
+      "evidence": "content/sources/openiti-bukhari/manifest.json; content/staging/bukhari-ar/catalog.json; content/sources/openiti-bukhari-jk/manifest.json; content/staging/bukhari-ar-jk/catalog.json; research/arabic-reference-audit.json; content/sources/wikisource-books.json; content/sources/wikisource-knowledge/manifest.json; research/knowledge-source-audit.json; research/ablution-source-audit.json; research/ablution-layout-verification.json; content/review/ablution-layout-review.json; research/ablution-first-verification.json; tests/ablution-batch.test.mjs",
+      "remaining": "Complete the edition-specific reference and chapter map and verify Arabic wording. The first candidate has 173 absent numeric labels and 10 empty spans, not 173 proven missing narrations. Selected printed comparisons explain labels 409, 411 and 4137 as combined/embedded passages and confirm local empty/misassigned spans at 1161–1167 and 3382. The JK inventory accounts for every byte in 7,129 report spans and 3,965 heading-context spans; its duplicate 3905 passages, four suffixes, context boundaries and upstream transcription warnings remain subject to review. Ablution now has an explicit exact-span structural map: 110 candidate reports, 76 chapters and a separately recorded mixed-numbering reference. The first seven reports (135–141) and eight chapters are admitted as a personal prototype with exact source origins; continue wording/translation work from 142."
     },
     {
       "id": "english-full-collection",
@@ -37,8 +37,8 @@
     {
       "id": "library-navigation-search",
       "status": "source-aware-chapter-browsing-implemented",
-      "evidence": "reader/navigation.mjs; reader/library.mjs; tests/navigation.test.mjs; research/navigation-verification.json; research/chapter-material-verification.json; research/knowledge-first-verification.json; tests/knowledge-batch.test.mjs; research/knowledge-next-verification.json; research/knowledge-third-verification.json; research/knowledge-fourth-verification.json; research/knowledge-fifth-verification.json; research/knowledge-final-verification.json",
-      "remaining": "Publish independently reviewed chapter metadata and edition-specific reference maps. The personal prototype has 134 entries in three books. Knowledge has all 76 reports, 54 source chapters including three without numbered reports, and thirteen Arabic introductory paragraphs pending English. Faith retains 42 headings and 15 Arabic introductory paragraphs. Full-library search indexing remains future work; current exact search loads all available packs."
+      "evidence": "reader/navigation.mjs; reader/library.mjs; tests/navigation.test.mjs; research/navigation-verification.json; research/chapter-material-verification.json; research/knowledge-first-verification.json; tests/knowledge-batch.test.mjs; research/knowledge-next-verification.json; research/knowledge-third-verification.json; research/knowledge-fourth-verification.json; research/knowledge-fifth-verification.json; research/knowledge-final-verification.json; research/ablution-first-verification.json; tests/ablution-batch.test.mjs",
+      "remaining": "Publish independently reviewed chapter metadata and edition-specific reference maps. The personal prototype has 141 entries in four books. Knowledge has all 76 reports, 54 source chapters including three without numbered reports, and thirteen Arabic introductory paragraphs pending English. Faith retains 42 headings and 15 Arabic introductory paragraphs. Full-library search indexing remains future work; current exact search loads all available packs. Ablution currently has seven reports and eight source chapters, including its source-only opening chapter and three introductory paragraphs."
     },
     {
       "id": "session-planning",
@@ -56,18 +56,18 @@
       "id": "full-audio",
       "status": "six-recorded-hadith-with-finite-cross-recording-sessions",
       "evidence": "content/audio/recordings.json; content/audio/narration-plan.json; scripts/build-audio.mjs; reader/audio/catalog.json; tests/audio-catalog.test.mjs; tests/audio.test.mjs; research/audio-catalog-verification.json; reader/audio/hadith-3-provenance.json; research/hadith-3-audio-verification.json; reader/listening-plan.mjs; research/listening-session-verification.json; research/opening-audio-continuation-verification.json",
-      "remaining": "Generate and review Cedar recordings beyond Hadith 6 and complete iPhone lock-screen/interruption acceptance across separate files. All 134 entries have exact complete input scripts; actual audio covers 1–6. New recordings need wording, pronunciation and delivery review, including the joins in 3 and 5. OpenAI.fm has reached its ten-downloads-per-week demo limit; no Hadith 7 recording is admitted."
+      "remaining": "Generate and review Cedar recordings beyond Hadith 6 and complete iPhone lock-screen/interruption acceptance across separate files. All 141 entries have exact complete input scripts; actual audio covers 1–6. New recordings need wording, pronunciation and delivery review, including the joins in 3 and 5. OpenAI.fm has reached its ten-downloads-per-week demo limit; no Hadith 7 recording is admitted."
     },
     {
       "id": "offline-at-scale",
       "status": "separate-packs-implemented-sample-browser-verified",
-      "evidence": "reader/offline-store.mjs; reader/offline-view.mjs; reader/offline.mjs; reader/sw.js; tests/offline-packs.test.mjs; research/offline-packs-verification.json; research/listening-session-verification.json; research/knowledge-next-verification.json; research/knowledge-third-verification.json; research/knowledge-fourth-verification.json; research/knowledge-fifth-verification.json; research/knowledge-final-verification.json",
+      "evidence": "reader/offline-store.mjs; reader/offline-view.mjs; reader/offline.mjs; reader/sw.js; tests/offline-packs.test.mjs; research/offline-packs-verification.json; research/listening-session-verification.json; research/knowledge-next-verification.json; research/knowledge-third-verification.json; research/knowledge-fourth-verification.json; research/knowledge-fifth-verification.json; research/knowledge-final-verification.json; research/ablution-first-verification.json; tests/ablution-batch.test.mjs",
       "remaining": "Confirm the revised download flow and locked-screen playback on iPhone; exercise full-collection size and future per-session audio packs. Current sample has all reading together, separate Cedar/review audio, verified-file resume, quota/cancellation recovery, explicit removal/old-cache cleanup and cross-tab playback protection. Storage eviction remains possible."
     },
     {
       "id": "production-testing",
       "status": "in-progress",
-      "evidence": "238 automated checks (178 Node, 60 Python); research/navigation-verification.json; research/offline-packs-verification.json; research/reader-structure-verification.json; research/source-reference-verification.json; .github/workflows/reader-checks.yml; research/audio-catalog-verification.json; research/hadith-3-audio-verification.json; research/faith-next-verification.json; research/listening-session-verification.json; research/faith-third-verification.json; research/faith-final-verification.json; research/chapter-material-verification.json; research/knowledge-first-verification.json; tests/knowledge-batch.test.mjs; research/opening-audio-continuation-verification.json; research/knowledge-next-verification.json; research/knowledge-third-verification.json; research/knowledge-fourth-verification.json; research/knowledge-fifth-verification.json; research/knowledge-final-verification.json; tests/test_wikisource_layout.py; research/ablution-source-audit.json; tests/test_wikisource_resolution.py; tests/wikisource-resolution.test.mjs; research/ablution-layout-verification.json",
+      "evidence": "246 automated checks (186 Node, 60 Python); research/navigation-verification.json; research/offline-packs-verification.json; research/reader-structure-verification.json; research/source-reference-verification.json; .github/workflows/reader-checks.yml; research/audio-catalog-verification.json; research/hadith-3-audio-verification.json; research/faith-next-verification.json; research/listening-session-verification.json; research/faith-third-verification.json; research/faith-final-verification.json; research/chapter-material-verification.json; research/knowledge-first-verification.json; tests/knowledge-batch.test.mjs; research/opening-audio-continuation-verification.json; research/knowledge-next-verification.json; research/knowledge-third-verification.json; research/knowledge-fourth-verification.json; research/knowledge-fifth-verification.json; research/knowledge-final-verification.json; tests/test_wikisource_layout.py; research/ablution-source-audit.json; tests/test_wikisource_resolution.py; tests/wikisource-resolution.test.mjs; research/ablution-layout-verification.json; research/ablution-first-verification.json; tests/ablution-batch.test.mjs",
       "remaining": "Accessibility audit, keyboard/screen reader review, optional iPhone full-place/settings restore and locked-screen/interruption acceptance after final architecture changes. Default iPhone backup export/merge restore and browsing/session separation are confirmed. Deploy checks gate publishing."
     },
     {
@@ -78,7 +78,7 @@
     }
   ],
   "nextActions": [
-    "Use the explicit Ablution layout map to add validated source-span provenance and visible edition-reference mappings, then compare and translate complete chapters beginning with 135. Keep chapter-only material separately browseable. Complete pending English chapter introductions and independent reviews; extend Cedar audio when an authorized path is available.",
+    "Continue Ablution from 142 in complete source chapters, retaining exact origins, recorded source differences and individually matched references. Complete pending English chapter introductions and independent reviews; extend Cedar audio when an authorized path is available.",
     "Complete the Arabic edition/reference map using the new exact-span inventory and pinned printed-witness findings; keep combined labels distinct from missing or misassigned bodies.",
     "Find a more complete authoritative English witness: the IslamHouse EPUB and PDF share seven checked omissions and additional transcription defects. Keep their exact inventories as comparison evidence rather than patching them silently.",
     "Obtain complete English source coverage and explicit offline/narration permissions; request #4160 is posted.",
@@ -193,17 +193,20 @@
     }
   },
   "ablutionIntake": {
-    "status": "layout-mapped-wording-and-admission-pending",
+    "status": "first-seven-reports-admitted-as-personal-prototype",
     "source": "content/sources/wikisource-ablution/manifest.json",
     "audit": "research/ablution-source-audit.json",
     "markers": 110,
     "uniqueNumericLabels": 109,
-    "published": false,
-    "remaining": "Extend reader provenance validation for exact source spans and the explicit 160/١٦٢ mapping, then compare and translate complete opening chapters. Structural checks preserve all original text but do not approve wording or publication; independent review remains pending.",
+    "published": true,
+    "remaining": "Continue complete chapters from 142. Exact source origins and reference mappings now have reader admission checks and offline evidence. Independent wording, translation and reference review remain pending; the full candidate is not automatically admitted.",
     "resolution": "research/ablution-layout-verification.json",
-    "review": "content/review/ablution-layout-review.json",
+    "review": "content/review/ablution-batches.json",
     "inventory": "content/staging/bukhari-ablution-wikisource/catalog.json",
     "candidateReports": 110,
-    "chapters": 76
+    "chapters": 76,
+    "publishedRange": "135–141",
+    "publishedChapters": 8,
+    "verification": "research/ablution-first-verification.json"
   }
 }

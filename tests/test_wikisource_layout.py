@@ -54,7 +54,7 @@ class WikisourceLayoutTests(unittest.TestCase):
   with tempfile.TemporaryDirectory()as tmp:
    root=Path(tmp);(root/'content/sources').mkdir(parents=True);(root/'content/sources/wikisource-ablution').symlink_to(self.directory,target_is_directory=True)
    with self.assertRaises(ValueError):audit.audit_paths(registry,root)
- def test_unresolved_intake_does_not_enter_the_reader_or_public_dependencies(self):
-  catalog=json.loads((ROOT/'reader/books/catalog.json').read_text());self.assertEqual([b['id']for b in catalog['books']],['opening-revelation','faith','knowledge']);self.assertEqual(catalog['entries'][-1]['number'],134)
-  release=(ROOT/'reader/release.mjs').read_text();self.assertNotIn('ablution',release);self.assertNotIn('layout-audit',release)
+ def test_full_candidate_is_not_automatically_admitted_to_the_reader(self):
+  catalog=json.loads((ROOT/'reader/books/catalog.json').read_text());self.assertEqual([b['id']for b in catalog['books']],['opening-revelation','faith','knowledge','ablution']);self.assertEqual(catalog['entries'][-1]['number'],141)
+  release=(ROOT/'reader/release.mjs').read_text();self.assertNotIn('layout-audit',release);self.assertFalse(any(e['number']>141 for e in catalog['entries']))
 if __name__=='__main__':unittest.main()

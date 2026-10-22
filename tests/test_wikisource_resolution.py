@@ -171,14 +171,14 @@ class WikisourceResolutionTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'escapes repository'):
                 resolution.resolution_paths(self.registry, root)
 
-    def test_saved_inventory_is_reproducible_and_remains_outside_reader(self):
+    def test_saved_inventory_is_reproducible_and_only_explicit_batches_enter_reader(self):
         result = resolution.build_registered(self.registry, check=True)
         self.assertEqual(result, [('ablution', self.result)])
         self.assertEqual(self.result['status'], 'candidate-layout-mapped-not-approved')
         self.assertFalse(self.result['readerEligible'])
         self.assertTrue(all(r['status'] == 'unreviewed' for r in self.result['records']))
         reader = resolution.read(ROOT / 'reader/books/catalog.json')
-        self.assertNotIn('ablution', [b['id'] for b in reader['books']])
+        self.assertEqual([e['number'] for e in reader['entries'] if e['bookId'] == 'ablution'], list(range(135, 142)))
         self.assertEqual(len(self.result['layoutReview']['decisions']), 9)
         self.assertEqual(sum(len(d['issueIndexes']) for d in self.result['layoutReview']['decisions']), 11)
 

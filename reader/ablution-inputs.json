@@ -1,0 +1,2254 @@
+{
+  "schemaVersion": 1,
+  "sourceLocationCorrections": {
+    "schemaVersion": 1,
+    "corrections": [
+      {
+        "sourceId": "brill-1862",
+        "fromURL": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf",
+        "toURL": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+        "bytes": 28290204,
+        "verifiedAt": "2026-10-21",
+        "basis": "The earlier URL returns 404. The corrected Wikimedia volume-one URL was located through the Wikisource file index and downloaded. Its full file SHA-256 matches the already pinned historical witness. This repairs a citation URL only; original review inputs and every hadith text remain unchanged.",
+        "discoveryURL": "https://ar.wikisource.org/wiki/ملف:صحيح_البخاري_ر0.pdf"
+      }
+    ]
+  },
+  "status": "personal-prototype-only",
+  "manifest": {
+    "id": "wikisource-bukhari-ablution-r273249",
+    "revision": 273249,
+    "retrievedAt": "2026-10-21",
+    "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_الوضوء&oldid=273249",
+    "status": "candidate-layout-review-required",
+    "readerEligible": false,
+    "license": {
+      "id": "CC-BY-SA-4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Sahih al-Bukhari by Muhammad ibn Ismail al-Bukhari; Arabic digital transcription by Arabic Wikisource contributors, revision 273249.",
+      "changes": "The retrieved HTML is retained unchanged. Paragraph and heading text is decoded without trimming, normalization or spelling corrections. This is a candidate inventory, not a reviewed English translation."
+    },
+    "file": {
+      "path": "source.html",
+      "bytes": 259334,
+      "sha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd"
+    },
+    "note": "The exact retrieval is preserved. Noninitial numbered markers, a malformed inline heading and duplicate numeric label need explicit boundary and edition-reference review. No missing numeric label is treated as proof of a missing narration. No selected text is rewritten or automatically reader-eligible.",
+    "expected": {
+      "blocks": 252,
+      "layoutSummary": {
+        "blocks": 252,
+        "htmlHeadings": 75,
+        "unparsedHeadings": 1,
+        "numberedMarkers": 110,
+        "uniqueNumericLabels": 109,
+        "numericRange": [
+          135,
+          244
+        ],
+        "unobservedLabelsWithinRange": [
+          160
+        ],
+        "duplicateLabels": [
+          {
+            "number": 162,
+            "occurrences": 2
+          }
+        ],
+        "sourceCodePoints": 34517,
+        "coveredCodePoints": 34517
+      }
+    }
+  },
+  "completeInventorySha256": "141f35671a316faadab95ff0fefc3aab8dc725199bfbf5cc12448772433e28da",
+  "scope": "Only the blocks used by Hadith 135–141 and their chapter context. The complete source inventory remains separately preserved.",
+  "selectedBlocks": [
+    {
+      "htmlId": "باب_ما_جاء_في_الوضوء",
+      "tag": "h3",
+      "text": "باب ما جاء في الوضوء",
+      "ordinal": 0,
+      "textSha256": "7fbae96890c0d074e7f466484ac6af3301bbf847eb629f1651f8a6928de8e228",
+      "role": "heading",
+      "origin": {
+        "blockId": "باب_ما_جاء_في_الوضوء",
+        "blockSha256": "7fbae96890c0d074e7f466484ac6af3301bbf847eb629f1651f8a6928de8e228",
+        "start": 0,
+        "end": 20
+      }
+    },
+    {
+      "htmlId": "mwBg",
+      "tag": "p",
+      "text": "وقول الله تعالى { إذا قمتم إلى الصلاة فاغسلوا وجوهكم وأيديكم إلى المرافق وامسحوا برؤوسكم وأرجلكم إلى الكعبين } ",
+      "ordinal": 1,
+      "textSha256": "fca007885e5863e625fd00ee56abdac21907656720b5254d9deda170986080e2",
+      "role": "text",
+      "origin": {
+        "blockId": "mwBg",
+        "blockSha256": "fca007885e5863e625fd00ee56abdac21907656720b5254d9deda170986080e2",
+        "start": 0,
+        "end": 111
+      }
+    },
+    {
+      "htmlId": "mwBw",
+      "tag": "p",
+      "text": "قال أبو عبد الله وبين النبي ﷺ أن فرض الوضوء مرة مرة وتوضأ أيضا مرتين وثلاثا ولم يزد على ثلاث وكره أهل العلم الإسراف فيه وأن يجاوزوا فعل النبي ﷺ",
+      "ordinal": 2,
+      "textSha256": "2e9795b856525b02cafea339efa4c18d11269c47d5aa74e4de3676484447e4a4",
+      "role": "text",
+      "origin": {
+        "blockId": "mwBw",
+        "blockSha256": "2e9795b856525b02cafea339efa4c18d11269c47d5aa74e4de3676484447e4a4",
+        "start": 0,
+        "end": 143
+      }
+    },
+    {
+      "htmlId": "باب_لا_تقبل_صلاة_بغير_طهور",
+      "tag": "h3",
+      "text": "باب لا تقبل صلاة بغير طهور",
+      "ordinal": 3,
+      "textSha256": "e96fe41531fb2eb5fcbc7ff0f04c9df6648530abc066d9d65d8bfbf16f82efc3",
+      "role": "heading",
+      "origin": {
+        "blockId": "باب_لا_تقبل_صلاة_بغير_طهور",
+        "blockSha256": "e96fe41531fb2eb5fcbc7ff0f04c9df6648530abc066d9d65d8bfbf16f82efc3",
+        "start": 0,
+        "end": 26
+      }
+    },
+    {
+      "htmlId": "mwCw",
+      "tag": "p",
+      "text": "[135] حدثنا إسحاق بن إبراهيم الحنظلي قال: أخبرنا عبد الرزاق قال: أخبرنا معمر عن همام بن منبه أنه سمع أبا هريرة يقول: ",
+      "ordinal": 4,
+      "textSha256": "026a567a009beda38939f9c51706c088f52972f0fa85fd1c954e8e8addf5b8a2",
+      "role": "report-start",
+      "origin": {
+        "blockId": "mwCw",
+        "blockSha256": "026a567a009beda38939f9c51706c088f52972f0fa85fd1c954e8e8addf5b8a2",
+        "start": 0,
+        "end": 117
+      },
+      "number": 135,
+      "sourceReference": {
+        "label": "135",
+        "number": 135,
+        "markerId": "mwCw:0",
+        "occurrence": 1
+      }
+    },
+    {
+      "htmlId": "mwDA",
+      "tag": "p",
+      "text": "قال رسول الله ﷺ: لا تقبل صلاة من أحدث حتى يتوضأ قال رجل من حضرموت ما الحدث يا أبا هريرة قال: فساء أو ضراط ",
+      "ordinal": 5,
+      "textSha256": "4d536f4dc84d7025a7e035791cc46cd74f4131433e982606540761e3023049b6",
+      "role": "text",
+      "origin": {
+        "blockId": "mwDA",
+        "blockSha256": "4d536f4dc84d7025a7e035791cc46cd74f4131433e982606540761e3023049b6",
+        "start": 0,
+        "end": 106
+      }
+    },
+    {
+      "htmlId": "باب_فضل_الوضوء_والغر_المحجلون_من_آثار_الوضوء",
+      "tag": "h3",
+      "text": "باب فضل الوضوء والغر المحجلون من آثار الوضوء",
+      "ordinal": 6,
+      "textSha256": "1d390690812cf2467486c138632929951c0ad13a7405e027c26c4a41b0ed714c",
+      "role": "heading",
+      "origin": {
+        "blockId": "باب_فضل_الوضوء_والغر_المحجلون_من_آثار_الوضوء",
+        "blockSha256": "1d390690812cf2467486c138632929951c0ad13a7405e027c26c4a41b0ed714c",
+        "start": 0,
+        "end": 44
+      }
+    },
+    {
+      "htmlId": "mwDw",
+      "tag": "p",
+      "text": "[136] حدثنا يحيى بن بكير قال: حدثنا الليث عن خالد عن سعيد بن أبي هلال عن نعيم المجمر قال رقيت مع أبي هريرة على ظهر المسجد فتوضأ، فقال",
+      "ordinal": 7,
+      "textSha256": "bc84eae353f80172e73e444fa8a458dc50bd49dbe0980335d35844f589c59060",
+      "role": "report-start",
+      "origin": {
+        "blockId": "mwDw",
+        "blockSha256": "bc84eae353f80172e73e444fa8a458dc50bd49dbe0980335d35844f589c59060",
+        "start": 0,
+        "end": 133
+      },
+      "number": 136,
+      "sourceReference": {
+        "label": "136",
+        "number": 136,
+        "markerId": "mwDw:0",
+        "occurrence": 1
+      }
+    },
+    {
+      "htmlId": "mwEA",
+      "tag": "p",
+      "text": "إني سمعت النبي ﷺ يقول: إن أمتي يدعون يوم القيامة غرا محجلين من آثار الوضوء فمن استطاع منكم أن يطيل غرته فليفعل",
+      "ordinal": 8,
+      "textSha256": "3116fd95bbd5838b45b52d166362e451c234a5e04f2eb323513e1cf94e0a509b",
+      "role": "text",
+      "origin": {
+        "blockId": "mwEA",
+        "blockSha256": "3116fd95bbd5838b45b52d166362e451c234a5e04f2eb323513e1cf94e0a509b",
+        "start": 0,
+        "end": 110
+      }
+    },
+    {
+      "htmlId": "باب_لا_يتوضأ_من_الشك_حتى_يستيقن",
+      "tag": "h3",
+      "text": "باب لا يتوضأ من الشك حتى يستيقن",
+      "ordinal": 9,
+      "textSha256": "b70407a193e1a1e79b3c22ae8e32828b6ca52e66b976dc4fdc873811b2727a99",
+      "role": "heading",
+      "origin": {
+        "blockId": "باب_لا_يتوضأ_من_الشك_حتى_يستيقن",
+        "blockSha256": "b70407a193e1a1e79b3c22ae8e32828b6ca52e66b976dc4fdc873811b2727a99",
+        "start": 0,
+        "end": 31
+      }
+    },
+    {
+      "htmlId": "mwEw",
+      "tag": "p",
+      "text": "[137] حدثنا علي قال: حدثنا سفيان قال: حدثنا الزهري عن سعيد بن المسيب عن عباد بن تميم عن عمه ",
+      "ordinal": 10,
+      "textSha256": "aa34be3b8d400c81057ba8356f7949a7343db9588be0f883706edf09caf32bbd",
+      "role": "report-start",
+      "origin": {
+        "blockId": "mwEw",
+        "blockSha256": "aa34be3b8d400c81057ba8356f7949a7343db9588be0f883706edf09caf32bbd",
+        "start": 0,
+        "end": 92
+      },
+      "number": 137,
+      "sourceReference": {
+        "label": "137",
+        "number": 137,
+        "markerId": "mwEw:0",
+        "occurrence": 1
+      }
+    },
+    {
+      "htmlId": "mwFA",
+      "tag": "p",
+      "text": "أنه شكا إلى رسول الله ﷺ الرجل الذي يخيل إليه أنه يجد الشيء في الصلاة، فقال لا ينفتل أولا ينصرف حتى يسمع صوتا أو يجد ريحا ",
+      "ordinal": 11,
+      "textSha256": "56db8199e1ff11c36b7a5532706be70ef87038c402d6805f82c5d4599850f0cd",
+      "role": "text",
+      "origin": {
+        "blockId": "mwFA",
+        "blockSha256": "56db8199e1ff11c36b7a5532706be70ef87038c402d6805f82c5d4599850f0cd",
+        "start": 0,
+        "end": 121
+      }
+    },
+    {
+      "htmlId": "باب_التخفيف_في_الوضوء",
+      "tag": "h3",
+      "text": "باب التخفيف في الوضوء",
+      "ordinal": 12,
+      "textSha256": "939cecc75b7eb3782dc58f0dd46d82a1abaeaf55452a2599ca9f5f32309b7f4a",
+      "role": "heading",
+      "origin": {
+        "blockId": "باب_التخفيف_في_الوضوء",
+        "blockSha256": "939cecc75b7eb3782dc58f0dd46d82a1abaeaf55452a2599ca9f5f32309b7f4a",
+        "start": 0,
+        "end": 21
+      }
+    },
+    {
+      "htmlId": "mwFw",
+      "tag": "p",
+      "text": "[138] حدثنا علي بن عبد الله قال: حدثنا سفيان عن عمرو قال: أخبرني كريب عن ابن عباس ",
+      "ordinal": 13,
+      "textSha256": "b04314cf7626eb7e61334637a362fcf1c352e8072668d4eb7f20fe6ed43543dc",
+      "role": "report-start",
+      "origin": {
+        "blockId": "mwFw",
+        "blockSha256": "b04314cf7626eb7e61334637a362fcf1c352e8072668d4eb7f20fe6ed43543dc",
+        "start": 0,
+        "end": 82
+      },
+      "number": 138,
+      "sourceReference": {
+        "label": "138",
+        "number": 138,
+        "markerId": "mwFw:0",
+        "occurrence": 1
+      }
+    },
+    {
+      "htmlId": "mwGA",
+      "tag": "p",
+      "text": "أن النبي ﷺ نام حتى نفخ ثم صلى وربما قال اضطجع حتى نفخ ثم قام فصلى ثم حدثنا به سفيان مرة بعد مرة عن عمرو عن كريب عن ابن عباس قال بت عند خالتي ميمونة ليلة فقام النبي ﷺ من الليل فلما كان في بعض الليل قام النبي ﷺ فتوضأ من شن معلق وضوءا خفيفا يخففه عمرو ويقلله وقام يصلي فتوضأت نحوا مما توضأ ثم جئت فقمت عن يساره وربما قال سفيان عن شماله فحولني فجعلني عن يمينه ثم صلى ما شاء الله ثم اضطجع فنام حتى نفخ ثم أتاه المنادي فآذنه بالصلاة فقام معه إلى الصلاة فصلى ولم يتوضأ قلنا لعمرو إن ناسا يقولون إن رسول الله ﷺ تنام عينه ولا ينام قلبه قال عمرو سمعت عبيد بن عمير يقول رؤيا الأنبياء وحي ثم قرأ { إني أرى في المنام أني أذبحك } ",
+      "ordinal": 14,
+      "textSha256": "d738caeffc055d7862098a05ea4386a300cb3735984e49a1e60dc2f57e4b5716",
+      "role": "text",
+      "origin": {
+        "blockId": "mwGA",
+        "blockSha256": "d738caeffc055d7862098a05ea4386a300cb3735984e49a1e60dc2f57e4b5716",
+        "start": 0,
+        "end": 616
+      }
+    },
+    {
+      "htmlId": "باب_إسباغ_الوضوء",
+      "tag": "h3",
+      "text": "باب إسباغ الوضوء",
+      "ordinal": 15,
+      "textSha256": "e932425c3ef2f3f6be70e31644e884b423b3aa2c7aa8fa08885e45d218c39d85",
+      "role": "heading",
+      "origin": {
+        "blockId": "باب_إسباغ_الوضوء",
+        "blockSha256": "e932425c3ef2f3f6be70e31644e884b423b3aa2c7aa8fa08885e45d218c39d85",
+        "start": 0,
+        "end": 16
+      }
+    },
+    {
+      "htmlId": "mwHg",
+      "tag": "p",
+      "text": "وقال ابن عمر إسباغ الوضوء الإنقاء ",
+      "ordinal": 16,
+      "textSha256": "48632a1856bde3aee98226ca83515e45d34ea47338bdb28eaefdbaeed1a42470",
+      "role": "text",
+      "origin": {
+        "blockId": "mwHg",
+        "blockSha256": "48632a1856bde3aee98226ca83515e45d34ea47338bdb28eaefdbaeed1a42470",
+        "start": 0,
+        "end": 34
+      }
+    },
+    {
+      "htmlId": "mwHw",
+      "tag": "p",
+      "text": "[139] حدثنا عبد الله بن مسلمة عن مالك عن موسى بن عقبة عن كريب مولى ابن عباس عن أسامة بن زيد أنه سمعه يقول",
+      "ordinal": 17,
+      "textSha256": "9da685f308a2c17a40f8f5b356a25a4921bb761e54d42f14177a59eb0e04c186",
+      "role": "report-start",
+      "origin": {
+        "blockId": "mwHw",
+        "blockSha256": "9da685f308a2c17a40f8f5b356a25a4921bb761e54d42f14177a59eb0e04c186",
+        "start": 0,
+        "end": 105
+      },
+      "number": 139,
+      "sourceReference": {
+        "label": "139",
+        "number": 139,
+        "markerId": "mwHw:0",
+        "occurrence": 1
+      }
+    },
+    {
+      "htmlId": "mwIA",
+      "tag": "p",
+      "text": "دفع رسول الله ﷺ من عرفة حتى إذا كان بالشعب نزل فبال ثم توضأ ولم يسبغ الوضوء فقلت: الصلاة يا رسول الله، فقال الصلاة أمامك فركب فلما جاء المزدلفة نزل فتوضأ فأسبغ الوضوء ثم أقيمت الصلاة فصلى المغرب ثم أناخ كل إنسان بعيره في منزله ثم أقيمت العشاء فصلى ولم يصل بينهما ",
+      "ordinal": 18,
+      "textSha256": "4c5677529079869ef5be6b99b23759653d9694e7355e755309e7405d437f070b",
+      "role": "text",
+      "origin": {
+        "blockId": "mwIA",
+        "blockSha256": "4c5677529079869ef5be6b99b23759653d9694e7355e755309e7405d437f070b",
+        "start": 0,
+        "end": 263
+      }
+    },
+    {
+      "htmlId": "باب_غسل_الوجه_باليدين_من_غرفة_واحدة",
+      "tag": "h3",
+      "text": "باب غسل الوجه باليدين من غرفة واحدة",
+      "ordinal": 19,
+      "textSha256": "7fa4a47c1467056c485a3f902b1fd8f287811a5a1099d6be77c3864da870d04c",
+      "role": "heading",
+      "origin": {
+        "blockId": "باب_غسل_الوجه_باليدين_من_غرفة_واحدة",
+        "blockSha256": "7fa4a47c1467056c485a3f902b1fd8f287811a5a1099d6be77c3864da870d04c",
+        "start": 0,
+        "end": 35
+      }
+    },
+    {
+      "htmlId": "mwIw",
+      "tag": "p",
+      "text": "[140] حدثنا محمد بن عبد الرحيم قال: أخبرنا أبو سلمة الخزاعي منصور بن سلمة قال: أخبرنا ابن بلال يعني سليمان عن زيد بن أسلم عن عطاء بن يسار عن ابن عباس",
+      "ordinal": 20,
+      "textSha256": "3d4359751e376ed2555c369dc92aba8bb81498f0f66cc8ffd787fa6e5ebfeb29",
+      "role": "report-start",
+      "origin": {
+        "blockId": "mwIw",
+        "blockSha256": "3d4359751e376ed2555c369dc92aba8bb81498f0f66cc8ffd787fa6e5ebfeb29",
+        "start": 0,
+        "end": 149
+      },
+      "number": 140,
+      "sourceReference": {
+        "label": "140",
+        "number": 140,
+        "markerId": "mwIw:0",
+        "occurrence": 1
+      }
+    },
+    {
+      "htmlId": "mwJA",
+      "tag": "p",
+      "text": "أنه توضأ فغسل وجهه ثم أخذ غرفة من ماء فمضمض بها واستنشق ثم أخذ غرفة من ماء فجعل بها هكذا أضافها إلى يده الأخرى فغسل بهما وجهه ثم أخذ غرفة من ماء فغسل بها يده اليمنى ثم أخذ غرفة من ماء فغسل بها يده اليسرى ثم مسح برأسه ثم أخذ غرفة من ماء فرش على رجله اليمنى حتى غسلها ثم أخذ غرفة أخرى فغسل بها رجله يعني اليسرى، ثم قال هكذا رأيت رسول الله ﷺ يتوضأ",
+      "ordinal": 21,
+      "textSha256": "f46546a899a7887f1eafc316a4e78172c0bc95368906553541b5f073d56896d4",
+      "role": "text",
+      "origin": {
+        "blockId": "mwJA",
+        "blockSha256": "f46546a899a7887f1eafc316a4e78172c0bc95368906553541b5f073d56896d4",
+        "start": 0,
+        "end": 344
+      }
+    },
+    {
+      "htmlId": "باب_التسمية_على_كل_حال_وعند_الوقاع",
+      "tag": "h3",
+      "text": "باب التسمية على كل حال وعند الوقاع",
+      "ordinal": 22,
+      "textSha256": "8f2707473d22c2102dfcc720a1e4323fca4b56ec4ab1d5bf20f259be684f805c",
+      "role": "heading",
+      "origin": {
+        "blockId": "باب_التسمية_على_كل_حال_وعند_الوقاع",
+        "blockSha256": "8f2707473d22c2102dfcc720a1e4323fca4b56ec4ab1d5bf20f259be684f805c",
+        "start": 0,
+        "end": 34
+      }
+    },
+    {
+      "htmlId": "mwJw",
+      "tag": "p",
+      "text": "[141] حدثنا علي بن عبد الله قال: حدثنا جرير عن منصور عن سالم بن أبي الجعد عن كريب عن ابن عباس يبلغ به النبي ﷺ قال:",
+      "ordinal": 23,
+      "textSha256": "228fbd4dbdf6334716ad94ac006322fa4fbc2eaf9d9142aae6e05d137b64f286",
+      "role": "report-start",
+      "origin": {
+        "blockId": "mwJw",
+        "blockSha256": "228fbd4dbdf6334716ad94ac006322fa4fbc2eaf9d9142aae6e05d137b64f286",
+        "start": 0,
+        "end": 114
+      },
+      "number": 141,
+      "sourceReference": {
+        "label": "141",
+        "number": 141,
+        "markerId": "mwJw:0",
+        "occurrence": 1
+      }
+    },
+    {
+      "htmlId": "mwKQ",
+      "tag": "p",
+      "text": "لو أن أحدكم إذا أتى أهله قال بسم الله اللهم جنبنا الشيطان وجنب الشيطان ما رزقتنا فقضي بينهما ولد لم يضره ",
+      "ordinal": 24,
+      "textSha256": "8a7e72eb0b8bacc298c49ce8edc731317e39d8e8a8c11c757bd09d1012f559ee",
+      "role": "text",
+      "origin": {
+        "blockId": "mwKQ",
+        "blockSha256": "8a7e72eb0b8bacc298c49ce8edc731317e39d8e8a8c11c757bd09d1012f559ee",
+        "start": 0,
+        "end": 105
+      }
+    }
+  ],
+  "sourceLayout": {
+    "schemaVersion": 1,
+    "sourceId": "wikisource-bukhari-ablution-r273249",
+    "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+    "layoutAuditSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+    "layoutReviewSha256": "6dafde039fa774cd4861d0e76d71c314f5c8f2791b85324c16e6eab996683355",
+    "completeLayoutReview": {
+      "schemaVersion": 1,
+      "status": "ai-reviewed-layout-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "checkedAt": "2026-10-21",
+      "sourceId": "wikisource-bukhari-ablution-r273249",
+      "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+      "auditSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+      "sources": [
+        {
+          "id": "brill-1862",
+          "label": "Historical Arabic print · Brill 1862",
+          "kind": "arabic-witness",
+          "format": "pdf",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+          "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "label": "Arabic print · Dar Ibn Kathir 2002",
+          "kind": "arabic-witness",
+          "format": "pdf",
+          "url": "https://archive.org/download/waq79565/79565.pdf",
+          "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+        }
+      ],
+      "scope": "Exact structural classification only. Every source character is retained. Report text, translations and production admission require separate reviews. One source label is explicitly mapped to a reader reference without rewriting the Arabic label.",
+      "expected": {
+        "numbers": [
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180,
+          181,
+          182,
+          183,
+          184,
+          185,
+          186,
+          187,
+          188,
+          189,
+          190,
+          191,
+          192,
+          193,
+          194,
+          195,
+          196,
+          197,
+          198,
+          199,
+          200,
+          201,
+          202,
+          203,
+          204,
+          205,
+          206,
+          207,
+          208,
+          209,
+          210,
+          211,
+          212,
+          213,
+          214,
+          215,
+          216,
+          217,
+          218,
+          219,
+          220,
+          221,
+          222,
+          223,
+          224,
+          225,
+          226,
+          227,
+          228,
+          229,
+          230,
+          231,
+          232,
+          233,
+          234,
+          235,
+          236,
+          237,
+          238,
+          239,
+          240,
+          241,
+          242,
+          243,
+          244
+        ],
+        "chapters": 76
+      },
+      "decisions": [
+        {
+          "id": "layout-mwYQ",
+          "blockId": "mwYQ",
+          "blockSha256": "c97fb86a30a456141876e1e4238289883fc2c5061db2d0a90a04bd1f44a32d64",
+          "issueIndexes": [
+            0
+          ],
+          "units": [
+            {
+              "start": 0,
+              "end": 2,
+              "kind": "blank"
+            },
+            {
+              "start": 2,
+              "end": 130,
+              "kind": "report-start",
+              "number": 155
+            }
+          ],
+          "printedWitnesses": [
+            {
+              "id": "brill-1862",
+              "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+              "pdfPages": [
+                52
+              ]
+            },
+            {
+              "id": "dar-ibn-kathir-2002",
+              "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+              "pdfPages": [
+                52
+              ]
+            }
+          ],
+          "note": "The two leading newlines remain a separate blank span. Both prints begin a distinct Abu Nuaym/Zuhayr/Abu Ishaq chain for the stones-and-dung report. Modern print reference 156; Bewley 155. This is not a continuation of the preceding Abu Hurayrah report."
+        },
+        {
+          "id": "layout-mweA",
+          "blockId": "mweA",
+          "blockSha256": "d5c82e6f04d91473ce389b647d3f84d5457d65101d89d5ff9b582c7cd3e572c2",
+          "issueIndexes": [
+            1,
+            2,
+            3
+          ],
+          "units": [
+            {
+              "start": 0,
+              "end": 3,
+              "kind": "formatting"
+            },
+            {
+              "start": 3,
+              "end": 21,
+              "kind": "heading"
+            },
+            {
+              "start": 21,
+              "end": 24,
+              "kind": "formatting"
+            },
+            {
+              "start": 24,
+              "end": 126,
+              "kind": "report-start",
+              "number": 160,
+              "referenceMapping": {
+                "status": "ai-matched-not-approved",
+                "sourceLabel": "١٦٢",
+                "sourceNumber": 162,
+                "number": 160,
+                "bewley": {
+                  "url": "https://aishabewley.org/bukhari3",
+                  "reference": "160"
+                },
+                "modernPrintReference": "162",
+                "khan": {
+                  "reference": "1.4.163",
+                  "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+                  "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.163",
+                  "recordSha256": "59b1f99320f236a3317d04e539620cd5f765949660a2b28cd8f6baf6cb29ac1e"
+                },
+                "note": "Keep the exact source label [١٦٢]. Reader reference 160 follows the matched Bewley entry and surrounding sequence. The modern print uses 162 for this body, whereas the later digital [162] is a different report (modern 164). No source numeral is rewritten; independent reference review remains pending."
+              }
+            }
+          ],
+          "printedWitnesses": [
+            {
+              "id": "brill-1862",
+              "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+              "pdfPages": [
+                53,
+                54
+              ]
+            },
+            {
+              "id": "dar-ibn-kathir-2002",
+              "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+              "pdfPages": [
+                53
+              ]
+            }
+          ],
+          "note": "The literal === delimiters are retained as formatting spans. The heading words باب الاستجمار وترا are separately classified, supported by both prints. The following Arabic-digit label ١٦٢ remains unchanged. Its report includes the nose, odd-number-of-stones and waking-hand clauses: modern print 162, Bewley 160, Khan-family 1.4.163. This is a reference mapping, not an Arabic-text correction."
+        },
+        {
+          "id": "layout-mwfA",
+          "blockId": "mwfA",
+          "blockSha256": "f9f8d35a76c0320fc95a30335a994788e740178cbee3ae83a946c7132c5da714",
+          "issueIndexes": [
+            4
+          ],
+          "units": [
+            {
+              "start": 0,
+              "end": 88,
+              "kind": "report-start",
+              "number": 161
+            }
+          ],
+          "printedWitnesses": [
+            {
+              "id": "brill-1862",
+              "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+              "pdfPages": [
+                54
+              ]
+            },
+            {
+              "id": "dar-ibn-kathir-2002",
+              "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+              "pdfPages": [
+                53
+              ]
+            }
+          ],
+          "note": "Keep the following digital label 161 and its distinct journey/heels report. Its apparent decrease follows the mixed source label ١٦٢, which is mapped separately. Modern print 163; Bewley 161."
+        },
+        {
+          "id": "layout-mwgg",
+          "blockId": "mwgg",
+          "blockSha256": "d41f5264a86e3f9aba0f842019d46cfe11775574f671582cd1a9034c1f817aac",
+          "issueIndexes": [
+            5
+          ],
+          "units": [
+            {
+              "start": 0,
+              "end": 103,
+              "kind": "report-start",
+              "number": 162
+            }
+          ],
+          "printedWitnesses": [
+            {
+              "id": "brill-1862",
+              "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+              "pdfPages": [
+                54
+              ]
+            },
+            {
+              "id": "dar-ibn-kathir-2002",
+              "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+              "pdfPages": [
+                53
+              ]
+            }
+          ],
+          "note": "Keep this second digital 162 as a distinct Humran/Uthman ablution report. It is not the earlier Abu Hurayrah nose/stones/waking report. Modern print 164; Bewley 162."
+        },
+        {
+          "id": "layout-mwpw",
+          "blockId": "mwpw",
+          "blockSha256": "648fa4d4b4ac7f74552e9d7ff9901be2d0bc06e5070c7854e483728d222caece",
+          "issueIndexes": [
+            6
+          ],
+          "units": [
+            {
+              "start": 0,
+              "end": 2,
+              "kind": "blank"
+            },
+            {
+              "start": 2,
+              "end": 79,
+              "kind": "report-start",
+              "number": 170
+            }
+          ],
+          "printedWitnesses": [
+            {
+              "id": "brill-1862",
+              "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+              "pdfPages": [
+                56
+              ]
+            },
+            {
+              "id": "dar-ibn-kathir-2002",
+              "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+              "pdfPages": [
+                55
+              ]
+            }
+          ],
+          "note": "The two leading newlines remain separate. Both prints begin a distinct Abdullah ibn Yusuf/Malik/Abu al-Zinad chain for the dog-drinking report. Modern print 172; Bewley 170."
+        },
+        {
+          "id": "layout-mwAQM",
+          "blockId": "mwAQM",
+          "blockSha256": "da4e2e0649474a150119a5e6e4c5f9e9c8e3c61489ec30841131e35b6e4c8f01",
+          "issueIndexes": [
+            7
+          ],
+          "units": [
+            {
+              "start": 0,
+              "end": 237,
+              "kind": "report-start",
+              "number": 194
+            },
+            {
+              "start": 237,
+              "end": 797,
+              "kind": "report-start",
+              "number": 195
+            }
+          ],
+          "printedWitnesses": [
+            {
+              "id": "brill-1862",
+              "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+              "pdfPages": [
+                62,
+                63
+              ]
+            },
+            {
+              "id": "dar-ibn-kathir-2002",
+              "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+              "pdfPages": [
+                61
+              ]
+            }
+          ],
+          "note": "Split only at the observed [195] marker. Both prints distinguish the copper-vessel report from the Aishah illness report, with separate chains. Modern print 197 and 198; Bewley 194 and 195. No wording or intervening whitespace is removed."
+        },
+        {
+          "id": "layout-mwAVQ",
+          "blockId": "mwAVQ",
+          "blockSha256": "a089356b17170a1ae8dda7447ebe0611747d13153d5b3f36c00c878db8818fdf",
+          "issueIndexes": [
+            8
+          ],
+          "units": [
+            {
+              "start": 0,
+              "end": 159,
+              "kind": "report-start",
+              "number": 220
+            },
+            {
+              "start": 159,
+              "end": 390,
+              "kind": "report-start",
+              "number": 221
+            }
+          ],
+          "printedWitnesses": [
+            {
+              "id": "brill-1862",
+              "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+              "pdfPages": [
+                67,
+                68
+              ]
+            },
+            {
+              "id": "dar-ibn-kathir-2002",
+              "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+              "pdfPages": [
+                66
+              ]
+            }
+          ],
+          "note": "Split at [221]. Both prints show the Aishah infant report followed by a distinct Umm Qays report and chain. Modern print 222 and 223; Bewley 220 and 221."
+        },
+        {
+          "id": "layout-mwAZM",
+          "blockId": "mwAZM",
+          "blockSha256": "59618360e002c7e1aaf843631cc571ed5be60fcdcc400aac13e5bdd6d93a9587",
+          "issueIndexes": [
+            9
+          ],
+          "units": [
+            {
+              "start": 0,
+              "end": 77,
+              "kind": "text"
+            },
+            {
+              "start": 77,
+              "end": 198,
+              "kind": "report-start",
+              "number": 239
+            }
+          ],
+          "printedWitnesses": [
+            {
+              "id": "brill-1862",
+              "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+              "pdfPages": [
+                72
+              ]
+            },
+            {
+              "id": "dar-ibn-kathir-2002",
+              "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+              "pdfPages": [
+                70
+              ]
+            }
+          ],
+          "note": "The opening Al-Hasan/Abu al-Aliyah/Ata material belongs to the current chapter introduction; [239] begins the distinct Ali ibn Abdullah/Sufyan chain. Both prints show that boundary. Modern print 242; Bewley 239. This source chapter is not numberless."
+        },
+        {
+          "id": "layout-mwAZw",
+          "blockId": "mwAZw",
+          "blockSha256": "bf677c88f727e6b58cb50c1adf3eada1016e85b1a6f877f3ddebd4fb6dba3604",
+          "issueIndexes": [
+            10
+          ],
+          "units": [
+            {
+              "start": 0,
+              "end": 162,
+              "kind": "report-start",
+              "number": 241
+            },
+            {
+              "start": 162,
+              "end": 277,
+              "kind": "report-start",
+              "number": 242
+            }
+          ],
+          "printedWitnesses": [
+            {
+              "id": "brill-1862",
+              "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+              "pdfPages": [
+                72
+              ]
+            },
+            {
+              "id": "dar-ibn-kathir-2002",
+              "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+              "pdfPages": [
+                70
+              ]
+            }
+          ],
+          "note": "Split at [242]. Both prints distinguish the Abu Musa siwak report from the following Hudhayfah night-time report with a fresh Uthman/Jarir/Mansur/Abu Wail chain. Modern print 244 and 245; Bewley 241 and 242."
+        }
+      ],
+      "pageNumbering": "One-based PDF page numbers, not printed page labels."
+    },
+    "originalBlocks": [
+      {
+        "htmlId": "باب_ما_جاء_في_الوضوء",
+        "tag": "h3",
+        "text": "باب ما جاء في الوضوء",
+        "ordinal": 0,
+        "textSha256": "7fbae96890c0d074e7f466484ac6af3301bbf847eb629f1651f8a6928de8e228"
+      },
+      {
+        "htmlId": "mwBg",
+        "tag": "p",
+        "text": "وقول الله تعالى { إذا قمتم إلى الصلاة فاغسلوا وجوهكم وأيديكم إلى المرافق وامسحوا برؤوسكم وأرجلكم إلى الكعبين } ",
+        "ordinal": 1,
+        "textSha256": "fca007885e5863e625fd00ee56abdac21907656720b5254d9deda170986080e2"
+      },
+      {
+        "htmlId": "mwBw",
+        "tag": "p",
+        "text": "قال أبو عبد الله وبين النبي ﷺ أن فرض الوضوء مرة مرة وتوضأ أيضا مرتين وثلاثا ولم يزد على ثلاث وكره أهل العلم الإسراف فيه وأن يجاوزوا فعل النبي ﷺ",
+        "ordinal": 2,
+        "textSha256": "2e9795b856525b02cafea339efa4c18d11269c47d5aa74e4de3676484447e4a4"
+      },
+      {
+        "htmlId": "باب_لا_تقبل_صلاة_بغير_طهور",
+        "tag": "h3",
+        "text": "باب لا تقبل صلاة بغير طهور",
+        "ordinal": 3,
+        "textSha256": "e96fe41531fb2eb5fcbc7ff0f04c9df6648530abc066d9d65d8bfbf16f82efc3"
+      },
+      {
+        "htmlId": "mwCw",
+        "tag": "p",
+        "text": "[135] حدثنا إسحاق بن إبراهيم الحنظلي قال: أخبرنا عبد الرزاق قال: أخبرنا معمر عن همام بن منبه أنه سمع أبا هريرة يقول: ",
+        "ordinal": 4,
+        "textSha256": "026a567a009beda38939f9c51706c088f52972f0fa85fd1c954e8e8addf5b8a2"
+      },
+      {
+        "htmlId": "mwDA",
+        "tag": "p",
+        "text": "قال رسول الله ﷺ: لا تقبل صلاة من أحدث حتى يتوضأ قال رجل من حضرموت ما الحدث يا أبا هريرة قال: فساء أو ضراط ",
+        "ordinal": 5,
+        "textSha256": "4d536f4dc84d7025a7e035791cc46cd74f4131433e982606540761e3023049b6"
+      },
+      {
+        "htmlId": "باب_فضل_الوضوء_والغر_المحجلون_من_آثار_الوضوء",
+        "tag": "h3",
+        "text": "باب فضل الوضوء والغر المحجلون من آثار الوضوء",
+        "ordinal": 6,
+        "textSha256": "1d390690812cf2467486c138632929951c0ad13a7405e027c26c4a41b0ed714c"
+      },
+      {
+        "htmlId": "mwDw",
+        "tag": "p",
+        "text": "[136] حدثنا يحيى بن بكير قال: حدثنا الليث عن خالد عن سعيد بن أبي هلال عن نعيم المجمر قال رقيت مع أبي هريرة على ظهر المسجد فتوضأ، فقال",
+        "ordinal": 7,
+        "textSha256": "bc84eae353f80172e73e444fa8a458dc50bd49dbe0980335d35844f589c59060"
+      },
+      {
+        "htmlId": "mwEA",
+        "tag": "p",
+        "text": "إني سمعت النبي ﷺ يقول: إن أمتي يدعون يوم القيامة غرا محجلين من آثار الوضوء فمن استطاع منكم أن يطيل غرته فليفعل",
+        "ordinal": 8,
+        "textSha256": "3116fd95bbd5838b45b52d166362e451c234a5e04f2eb323513e1cf94e0a509b"
+      },
+      {
+        "htmlId": "باب_لا_يتوضأ_من_الشك_حتى_يستيقن",
+        "tag": "h3",
+        "text": "باب لا يتوضأ من الشك حتى يستيقن",
+        "ordinal": 9,
+        "textSha256": "b70407a193e1a1e79b3c22ae8e32828b6ca52e66b976dc4fdc873811b2727a99"
+      },
+      {
+        "htmlId": "mwEw",
+        "tag": "p",
+        "text": "[137] حدثنا علي قال: حدثنا سفيان قال: حدثنا الزهري عن سعيد بن المسيب عن عباد بن تميم عن عمه ",
+        "ordinal": 10,
+        "textSha256": "aa34be3b8d400c81057ba8356f7949a7343db9588be0f883706edf09caf32bbd"
+      },
+      {
+        "htmlId": "mwFA",
+        "tag": "p",
+        "text": "أنه شكا إلى رسول الله ﷺ الرجل الذي يخيل إليه أنه يجد الشيء في الصلاة، فقال لا ينفتل أولا ينصرف حتى يسمع صوتا أو يجد ريحا ",
+        "ordinal": 11,
+        "textSha256": "56db8199e1ff11c36b7a5532706be70ef87038c402d6805f82c5d4599850f0cd"
+      },
+      {
+        "htmlId": "باب_التخفيف_في_الوضوء",
+        "tag": "h3",
+        "text": "باب التخفيف في الوضوء",
+        "ordinal": 12,
+        "textSha256": "939cecc75b7eb3782dc58f0dd46d82a1abaeaf55452a2599ca9f5f32309b7f4a"
+      },
+      {
+        "htmlId": "mwFw",
+        "tag": "p",
+        "text": "[138] حدثنا علي بن عبد الله قال: حدثنا سفيان عن عمرو قال: أخبرني كريب عن ابن عباس ",
+        "ordinal": 13,
+        "textSha256": "b04314cf7626eb7e61334637a362fcf1c352e8072668d4eb7f20fe6ed43543dc"
+      },
+      {
+        "htmlId": "mwGA",
+        "tag": "p",
+        "text": "أن النبي ﷺ نام حتى نفخ ثم صلى وربما قال اضطجع حتى نفخ ثم قام فصلى ثم حدثنا به سفيان مرة بعد مرة عن عمرو عن كريب عن ابن عباس قال بت عند خالتي ميمونة ليلة فقام النبي ﷺ من الليل فلما كان في بعض الليل قام النبي ﷺ فتوضأ من شن معلق وضوءا خفيفا يخففه عمرو ويقلله وقام يصلي فتوضأت نحوا مما توضأ ثم جئت فقمت عن يساره وربما قال سفيان عن شماله فحولني فجعلني عن يمينه ثم صلى ما شاء الله ثم اضطجع فنام حتى نفخ ثم أتاه المنادي فآذنه بالصلاة فقام معه إلى الصلاة فصلى ولم يتوضأ قلنا لعمرو إن ناسا يقولون إن رسول الله ﷺ تنام عينه ولا ينام قلبه قال عمرو سمعت عبيد بن عمير يقول رؤيا الأنبياء وحي ثم قرأ { إني أرى في المنام أني أذبحك } ",
+        "ordinal": 14,
+        "textSha256": "d738caeffc055d7862098a05ea4386a300cb3735984e49a1e60dc2f57e4b5716"
+      },
+      {
+        "htmlId": "باب_إسباغ_الوضوء",
+        "tag": "h3",
+        "text": "باب إسباغ الوضوء",
+        "ordinal": 15,
+        "textSha256": "e932425c3ef2f3f6be70e31644e884b423b3aa2c7aa8fa08885e45d218c39d85"
+      },
+      {
+        "htmlId": "mwHg",
+        "tag": "p",
+        "text": "وقال ابن عمر إسباغ الوضوء الإنقاء ",
+        "ordinal": 16,
+        "textSha256": "48632a1856bde3aee98226ca83515e45d34ea47338bdb28eaefdbaeed1a42470"
+      },
+      {
+        "htmlId": "mwHw",
+        "tag": "p",
+        "text": "[139] حدثنا عبد الله بن مسلمة عن مالك عن موسى بن عقبة عن كريب مولى ابن عباس عن أسامة بن زيد أنه سمعه يقول",
+        "ordinal": 17,
+        "textSha256": "9da685f308a2c17a40f8f5b356a25a4921bb761e54d42f14177a59eb0e04c186"
+      },
+      {
+        "htmlId": "mwIA",
+        "tag": "p",
+        "text": "دفع رسول الله ﷺ من عرفة حتى إذا كان بالشعب نزل فبال ثم توضأ ولم يسبغ الوضوء فقلت: الصلاة يا رسول الله، فقال الصلاة أمامك فركب فلما جاء المزدلفة نزل فتوضأ فأسبغ الوضوء ثم أقيمت الصلاة فصلى المغرب ثم أناخ كل إنسان بعيره في منزله ثم أقيمت العشاء فصلى ولم يصل بينهما ",
+        "ordinal": 18,
+        "textSha256": "4c5677529079869ef5be6b99b23759653d9694e7355e755309e7405d437f070b"
+      },
+      {
+        "htmlId": "باب_غسل_الوجه_باليدين_من_غرفة_واحدة",
+        "tag": "h3",
+        "text": "باب غسل الوجه باليدين من غرفة واحدة",
+        "ordinal": 19,
+        "textSha256": "7fa4a47c1467056c485a3f902b1fd8f287811a5a1099d6be77c3864da870d04c"
+      },
+      {
+        "htmlId": "mwIw",
+        "tag": "p",
+        "text": "[140] حدثنا محمد بن عبد الرحيم قال: أخبرنا أبو سلمة الخزاعي منصور بن سلمة قال: أخبرنا ابن بلال يعني سليمان عن زيد بن أسلم عن عطاء بن يسار عن ابن عباس",
+        "ordinal": 20,
+        "textSha256": "3d4359751e376ed2555c369dc92aba8bb81498f0f66cc8ffd787fa6e5ebfeb29"
+      },
+      {
+        "htmlId": "mwJA",
+        "tag": "p",
+        "text": "أنه توضأ فغسل وجهه ثم أخذ غرفة من ماء فمضمض بها واستنشق ثم أخذ غرفة من ماء فجعل بها هكذا أضافها إلى يده الأخرى فغسل بهما وجهه ثم أخذ غرفة من ماء فغسل بها يده اليمنى ثم أخذ غرفة من ماء فغسل بها يده اليسرى ثم مسح برأسه ثم أخذ غرفة من ماء فرش على رجله اليمنى حتى غسلها ثم أخذ غرفة أخرى فغسل بها رجله يعني اليسرى، ثم قال هكذا رأيت رسول الله ﷺ يتوضأ",
+        "ordinal": 21,
+        "textSha256": "f46546a899a7887f1eafc316a4e78172c0bc95368906553541b5f073d56896d4"
+      },
+      {
+        "htmlId": "باب_التسمية_على_كل_حال_وعند_الوقاع",
+        "tag": "h3",
+        "text": "باب التسمية على كل حال وعند الوقاع",
+        "ordinal": 22,
+        "textSha256": "8f2707473d22c2102dfcc720a1e4323fca4b56ec4ab1d5bf20f259be684f805c"
+      },
+      {
+        "htmlId": "mwJw",
+        "tag": "p",
+        "text": "[141] حدثنا علي بن عبد الله قال: حدثنا جرير عن منصور عن سالم بن أبي الجعد عن كريب عن ابن عباس يبلغ به النبي ﷺ قال:",
+        "ordinal": 23,
+        "textSha256": "228fbd4dbdf6334716ad94ac006322fa4fbc2eaf9d9142aae6e05d137b64f286"
+      },
+      {
+        "htmlId": "mwKQ",
+        "tag": "p",
+        "text": "لو أن أحدكم إذا أتى أهله قال بسم الله اللهم جنبنا الشيطان وجنب الشيطان ما رزقتنا فقضي بينهما ولد لم يضره ",
+        "ordinal": 24,
+        "textSha256": "8a7e72eb0b8bacc298c49ce8edc731317e39d8e8a8c11c757bd09d1012f559ee"
+      }
+    ],
+    "selectedDecisionIds": []
+  },
+  "review": {
+    "schemaVersion": 1,
+    "status": "personal-prototype-only",
+    "independentReview": "pending",
+    "sourceId": "wikisource-bukhari-ablution-r273249",
+    "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+    "inventorySha256": "141f35671a316faadab95ff0fefc3aab8dc725199bfbf5cc12448772433e28da",
+    "sourceLayout": {
+      "schemaVersion": 1,
+      "sourceId": "wikisource-bukhari-ablution-r273249",
+      "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+      "layoutAuditSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+      "layoutReviewSha256": "6dafde039fa774cd4861d0e76d71c314f5c8f2791b85324c16e6eab996683355"
+    },
+    "sources": [
+      {
+        "id": "arabic-ablution",
+        "label": "Arabic Wikisource · fixed revision 273249",
+        "kind": "arabic-input",
+        "format": "web",
+        "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_الوضوء&oldid=273249"
+      },
+      {
+        "id": "bewley-ablution",
+        "label": "Aisha Bewley · Book of Wudu",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://aishabewley.org/bukhari3"
+      },
+      {
+        "id": "islamhouse-khan",
+        "label": "IslamHouse · Khan-family English comparison",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://islamhouse.com/en/books/70510"
+      },
+      {
+        "id": "brill-1862",
+        "label": "Historical Arabic print · Brill 1862",
+        "kind": "arabic-witness",
+        "format": "pdf",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf",
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+      },
+      {
+        "id": "dar-ibn-kathir-2002",
+        "label": "Arabic print · Dar Ibn Kathir 2002",
+        "kind": "arabic-witness",
+        "format": "pdf",
+        "url": "https://archive.org/download/waq79565/79565.pdf",
+        "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+      }
+    ],
+    "createdAt": "2026-10-21",
+    "scope": "Complete numbered reports 135–141. Available chapter titles use provisional English. Disputed headings are labelled under review; unnumbered chapter introductions remain separately preserved in Arabic.",
+    "editionNote": "Bewley 135–141 and Khan-family 1.4.137–143 were matched by wording. This does not establish a constant numbering offset for the book. Original source spans and labels remain accessible. Hadith 137 has one explicitly recorded conjunction correction supported by both printed chains; the original digital wording is preserved.",
+    "entries": [
+      {
+        "number": 135,
+        "id": "bukhari:135",
+        "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwCw:0",
+        "chapterId": "chapter-02",
+        "paragraphIds": [
+          "mwCw",
+          "mwDA"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-ablution-r273249",
+          "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+          "layoutAuditSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+          "layoutReviewSha256": "6dafde039fa774cd4861d0e76d71c314f5c8f2791b85324c16e6eab996683355",
+          "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwCw:0",
+          "sourceReference": {
+            "label": "135",
+            "number": 135,
+            "markerId": "mwCw:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwCw",
+              "textSha256": "026a567a009beda38939f9c51706c088f52972f0fa85fd1c954e8e8addf5b8a2",
+              "origin": {
+                "blockId": "mwCw",
+                "blockSha256": "026a567a009beda38939f9c51706c088f52972f0fa85fd1c954e8e8addf5b8a2",
+                "start": 0,
+                "end": 117
+              }
+            },
+            {
+              "id": "mwDA",
+              "textSha256": "4d536f4dc84d7025a7e035791cc46cd74f4131433e982606540761e3023049b6",
+              "origin": {
+                "blockId": "mwDA",
+                "blockSha256": "4d536f4dc84d7025a7e035791cc46cd74f4131433e982606540761e3023049b6",
+                "start": 0,
+                "end": 106
+              }
+            }
+          ]
+        },
+        "segments": [
+          {
+            "id": "135-1",
+            "paragraphId": "mwCw",
+            "start": 0,
+            "end": 117,
+            "kind": "chain",
+            "arabic": "[135] حدثنا إسحاق بن إبراهيم الحنظلي قال: أخبرنا عبد الرزاق قال: أخبرنا معمر عن همام بن منبه أنه سمع أبا هريرة يقول: ",
+            "english": "Ishaq ibn Ibrahim al-Hanzali related to us. He said: ‘Abd al-Razzaq informed us. He said: Ma‘mar informed us, from Hammam ibn Munabbih, that he heard Abu Hurayrah saying:",
+            "arabicSha256": "026a567a009beda38939f9c51706c088f52972f0fa85fd1c954e8e8addf5b8a2",
+            "englishSha256": "ebe8eff4e1edb738b451c266f25e152bb3fe7d58b805243a52fce172202f33f1"
+          },
+          {
+            "id": "135-2",
+            "paragraphId": "mwDA",
+            "start": 0,
+            "end": 106,
+            "kind": "report",
+            "arabic": "قال رسول الله ﷺ: لا تقبل صلاة من أحدث حتى يتوضأ قال رجل من حضرموت ما الحدث يا أبا هريرة قال: فساء أو ضراط ",
+            "english": "The Messenger of Allah, may Allah bless him and grant him peace, said: “The prayer of someone in a state of hadath is not accepted until he performs ablution.” A man from Hadramawt said: “What is hadath, Abu Hurayrah?” He said: “Passing wind silently or audibly.”",
+            "arabicSha256": "4d536f4dc84d7025a7e035791cc46cd74f4131433e982606540761e3023049b6",
+            "englishSha256": "287070733f588bb7f3ead037059a311ed6a637e2f809c4ab56fe02a6b63d7705"
+          }
+        ],
+        "arabicSha256": "a2cf1918ca3ed9eb8ef19d455b57b1d1eeeed52f9952713566c3eef9563081a4",
+        "englishSha256": "ffa97649fb013d5d0063afba3868d2b9265b91fe96a8d8ee901af58fd002a61f",
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "135"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.137",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.137",
+              "recordSha256": "dea071ba27027f4f328776c9f766c0ae25287bd10ab7c49f5176504a05f23d79"
+            }
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              48
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              47
+            ]
+          }
+        ],
+        "notes": [
+          "The chain retains Ishaq’s full selected name, both “informed us” verbs and Hammam’s hearing of Abu Hurayrah. Both forms of passing wind in the answer remain. The term hadath is retained for the question and answer; no extra list of causes is inserted.",
+          "The historical print says “the Prophet” where the selected digital and modern print say “the Messenger of Allah”. The selected form is retained. The Khan-family comparison abbreviates the chain and does not distinguish the silent and audible forms in the answer."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic against two visually inspected Arabic printed witnesses and two individually matched English report-body comparisons. Abbreviated or omitted English chains do not independently verify the complete English chain. This working translation has no independent scholarly approval. Original source origins and any declared correction remain accessible.",
+        "reviewRecordSha256": "6ea289dbd82029fd977067ead6828c9ff275ddbabfea5aca0e16ef2b636afb6b"
+      },
+      {
+        "number": 136,
+        "id": "bukhari:136",
+        "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwDw:0",
+        "chapterId": "chapter-03",
+        "paragraphIds": [
+          "mwDw",
+          "mwEA"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-ablution-r273249",
+          "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+          "layoutAuditSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+          "layoutReviewSha256": "6dafde039fa774cd4861d0e76d71c314f5c8f2791b85324c16e6eab996683355",
+          "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwDw:0",
+          "sourceReference": {
+            "label": "136",
+            "number": 136,
+            "markerId": "mwDw:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwDw",
+              "textSha256": "bc84eae353f80172e73e444fa8a458dc50bd49dbe0980335d35844f589c59060",
+              "origin": {
+                "blockId": "mwDw",
+                "blockSha256": "bc84eae353f80172e73e444fa8a458dc50bd49dbe0980335d35844f589c59060",
+                "start": 0,
+                "end": 133
+              }
+            },
+            {
+              "id": "mwEA",
+              "textSha256": "3116fd95bbd5838b45b52d166362e451c234a5e04f2eb323513e1cf94e0a509b",
+              "origin": {
+                "blockId": "mwEA",
+                "blockSha256": "3116fd95bbd5838b45b52d166362e451c234a5e04f2eb323513e1cf94e0a509b",
+                "start": 0,
+                "end": 110
+              }
+            }
+          ]
+        },
+        "segments": [
+          {
+            "id": "136-1",
+            "paragraphId": "mwDw",
+            "start": 0,
+            "end": 89,
+            "kind": "chain",
+            "arabic": "[136] حدثنا يحيى بن بكير قال: حدثنا الليث عن خالد عن سعيد بن أبي هلال عن نعيم المجمر قال ",
+            "english": "Yahya ibn Bukayr related to us. He said: Al-Layth related to us, from Khalid, from Sa‘id ibn Abi Hilal, from Nu‘aym al-Mujmir, who said:",
+            "arabicSha256": "eb69f9350295ad9446b2a952ac1946d578e60740b49d6c1ac5aa1a3e00920a60",
+            "englishSha256": "1c37207f6316ee31ae3d16fbfb192c0097361b1d6ae2150d3ed713715f0aaeae"
+          },
+          {
+            "id": "136-2",
+            "paragraphId": "mwDw",
+            "start": 89,
+            "end": 133,
+            "kind": "report",
+            "arabic": "رقيت مع أبي هريرة على ظهر المسجد فتوضأ، فقال",
+            "english": "I climbed onto the roof of the mosque with Abu Hurayrah. He performed ablution and said:",
+            "arabicSha256": "5796fb569bce923435e9063f7d2d77dd381d1601caea253493ba61e92068a1e9",
+            "englishSha256": "8b4a88c0df8cf3b726fe51b6f6d468d14b9bad5772261cbed9c4ea8a11b2604d"
+          },
+          {
+            "id": "136-3",
+            "paragraphId": "mwEA",
+            "start": 0,
+            "end": 110,
+            "kind": "report",
+            "arabic": "إني سمعت النبي ﷺ يقول: إن أمتي يدعون يوم القيامة غرا محجلين من آثار الوضوء فمن استطاع منكم أن يطيل غرته فليفعل",
+            "english": "I heard the Prophet, may Allah bless him and grant him peace, say: “My community will be called on the Day of Resurrection with radiant faces and limbs from the traces of ablution. So whoever among you can extend his radiance, let him do so.”",
+            "arabicSha256": "3116fd95bbd5838b45b52d166362e451c234a5e04f2eb323513e1cf94e0a509b",
+            "englishSha256": "45447e313a925ff1b90be441b80db56ade6469e7dd56ff3cbaaeb225252ec916"
+          }
+        ],
+        "arabicSha256": "1ce0b5fc9c7c1108b3d5c3dc865ce1d5812c301e0723eed98b8081f156f85ea9",
+        "englishSha256": "73e680b325a5b3ae9176c75e5ed9b4cad24c8bdd31dc065cccaece21e550e579",
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "136"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.138",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.138",
+              "recordSha256": "ed00f7e1b8e3ab29df16ab52832e5da6bbb6b427b68b7723af2e74cd24c236c5"
+            }
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              48
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              47
+            ]
+          }
+        ],
+        "notes": [
+          "The ascent to the mosque roof, Abu Hurayrah’s ablution and hearing, and the complete final exhortation remain. “Radiant faces and limbs” and “his radiance” are working renderings of غرا محجلين and غرته; independent review remains pending.",
+          "The final clause is retained in the position and quotation frame of the selected source. No claim resolving separate scholarly discussion of its attribution is made. The regular-ablution explanation in the Khan-family parentheses is not inserted."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic against two visually inspected Arabic printed witnesses and two individually matched English report-body comparisons. Abbreviated or omitted English chains do not independently verify the complete English chain. This working translation has no independent scholarly approval. Original source origins and any declared correction remain accessible.",
+        "reviewRecordSha256": "f58b716b6f265879d22bd635e41451629203b0a89c93d981a0f5343f67e21f0e"
+      },
+      {
+        "number": 137,
+        "id": "bukhari:137",
+        "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwEw:0",
+        "chapterId": "chapter-04",
+        "paragraphIds": [
+          "mwEw",
+          "mwFA"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-ablution-r273249",
+          "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+          "layoutAuditSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+          "layoutReviewSha256": "6dafde039fa774cd4861d0e76d71c314f5c8f2791b85324c16e6eab996683355",
+          "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwEw:0",
+          "sourceReference": {
+            "label": "137",
+            "number": 137,
+            "markerId": "mwEw:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwEw",
+              "textSha256": "aa34be3b8d400c81057ba8356f7949a7343db9588be0f883706edf09caf32bbd",
+              "origin": {
+                "blockId": "mwEw",
+                "blockSha256": "aa34be3b8d400c81057ba8356f7949a7343db9588be0f883706edf09caf32bbd",
+                "start": 0,
+                "end": 92
+              }
+            },
+            {
+              "id": "mwFA",
+              "textSha256": "56db8199e1ff11c36b7a5532706be70ef87038c402d6805f82c5d4599850f0cd",
+              "origin": {
+                "blockId": "mwFA",
+                "blockSha256": "56db8199e1ff11c36b7a5532706be70ef87038c402d6805f82c5d4599850f0cd",
+                "start": 0,
+                "end": 121
+              }
+            }
+          ]
+        },
+        "originalArabicSha256": "9989040e8d0bdb7476bba63f9aa29142c317103d8b96757e959b0b664ce58c54",
+        "arabicCorrections": [
+          {
+            "id": "137-restore-chain-conjunction",
+            "paragraphId": "mwEw",
+            "start": 51,
+            "end": 76,
+            "before": "عن سعيد بن المسيب عن عباد",
+            "after": "عن سعيد بن المسيب وعن عباد",
+            "originalParagraphSha256": "aa34be3b8d400c81057ba8356f7949a7343db9588be0f883706edf09caf32bbd",
+            "correctedParagraphSha256": "6d360da48b203a323566e487c6b2eeeb16b11097d04e54f6e6c36849a1a0b532",
+            "status": "chosen-for-personal-prototype",
+            "reviewerKind": "ai",
+            "independentReview": "pending",
+            "reason": "Both inspected printed chains have the conjunction وعن before ‘Abbad. Restore it in the derived prototype text while preserving the unchanged digital paragraph.",
+            "witnesses": [
+              {
+                "sourceId": "brill-1862",
+                "pdfPage": 48,
+                "reading": "عن سعيد بن المسيب وعن عباد",
+                "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+              },
+              {
+                "sourceId": "dar-ibn-kathir-2002",
+                "pdfPage": 47,
+                "reading": "عن سعيد بن المسيب وعن عباد",
+                "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+              }
+            ],
+            "contextNoteId": "137-source-correction",
+            "englishSegmentId": "137-1",
+            "englishRendering": "and from ‘Abbad ibn Tamim"
+          }
+        ],
+        "contextNotes": [
+          {
+            "id": "137-source-correction",
+            "label": "A recorded narrator-chain correction",
+            "text": "Both Arabic prints include “and from ‘Abbad,” where the digital paragraph omits “and.” The original and exact change remain in source notes. Independent review is pending.",
+            "citations": [
+              "base",
+              "brill-1862",
+              "dar-ibn-kathir-2002"
+            ],
+            "related": []
+          }
+        ],
+        "segments": [
+          {
+            "id": "137-1",
+            "paragraphId": "mwEw",
+            "start": 0,
+            "end": 93,
+            "kind": "chain",
+            "arabic": "[137] حدثنا علي قال: حدثنا سفيان قال: حدثنا الزهري عن سعيد بن المسيب وعن عباد بن تميم عن عمه ",
+            "english": "‘Ali related to us. He said: Sufyan related to us. He said: Al-Zuhri related to us, from Sa‘id ibn al-Musayyab and from ‘Abbad ibn Tamim, from his uncle:",
+            "arabicSha256": "6d360da48b203a323566e487c6b2eeeb16b11097d04e54f6e6c36849a1a0b532",
+            "englishSha256": "60c5e62ccc33189edfb1d521d6350640ae143567e8f1d4c6a225a8f8cca2c625"
+          },
+          {
+            "id": "137-2",
+            "paragraphId": "mwFA",
+            "start": 0,
+            "end": 121,
+            "kind": "report",
+            "arabic": "أنه شكا إلى رسول الله ﷺ الرجل الذي يخيل إليه أنه يجد الشيء في الصلاة، فقال لا ينفتل أولا ينصرف حتى يسمع صوتا أو يجد ريحا ",
+            "english": "He complained to the Messenger of Allah, may Allah bless him and grant him peace, about a man who imagined that he felt something during prayer. He said: “He should not turn away—or depart—until he hears a sound or detects an odour.”",
+            "arabicSha256": "56db8199e1ff11c36b7a5532706be70ef87038c402d6805f82c5d4599850f0cd",
+            "englishSha256": "b6f7ac1a79e9a8b2d4e2db13fedbdb5cb543cd3af39958b978ced2b03f7b17b6"
+          }
+        ],
+        "arabicSha256": "8988334df7a6c4588c950f6b1de0259ee6baad690cf397556b083d219f1023b6",
+        "englishSha256": "b11da1a3c73b1d71e102a9ca42ff259f7d9178a8017c1493c5760a3fcb755298",
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "137"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.139",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.139",
+              "recordSha256": "fcf2873349a54e79508ee328d86d69bef7cf92c1977df5cc3524f0c93fef7759"
+            }
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              48
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              47
+            ]
+          }
+        ],
+        "notes": [
+          "The digital chain lacks the conjunction before “from ‘Abbad”. Both visually inspected Arabic prints have وعن عباد. The prototype restores that conjunction explicitly; the original paragraph, exact change and two printed witnesses remain accessible.",
+          "The report retains the vague “felt something” and the two alternative verbs “turn away—or depart”. It does not silently replace those alternatives with one wording. The Khan-family EPUB narrator line prints “‘Abbas bin Tamim”, while both Arabic prints and the selected digital text have ‘Abbad; the Arabic name is retained."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic against two visually inspected Arabic printed witnesses and two individually matched English report-body comparisons. Abbreviated or omitted English chains do not independently verify the complete English chain. This working translation has no independent scholarly approval. Original source origins and any declared correction remain accessible.",
+        "reviewRecordSha256": "27078ad4c7c8a7a8397bb3ce76beb963dbfc48ee1e7e9fe134564bad3818b10d"
+      },
+      {
+        "number": 138,
+        "id": "bukhari:138",
+        "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwFw:0",
+        "chapterId": "chapter-05",
+        "paragraphIds": [
+          "mwFw",
+          "mwGA"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-ablution-r273249",
+          "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+          "layoutAuditSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+          "layoutReviewSha256": "6dafde039fa774cd4861d0e76d71c314f5c8f2791b85324c16e6eab996683355",
+          "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwFw:0",
+          "sourceReference": {
+            "label": "138",
+            "number": 138,
+            "markerId": "mwFw:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwFw",
+              "textSha256": "b04314cf7626eb7e61334637a362fcf1c352e8072668d4eb7f20fe6ed43543dc",
+              "origin": {
+                "blockId": "mwFw",
+                "blockSha256": "b04314cf7626eb7e61334637a362fcf1c352e8072668d4eb7f20fe6ed43543dc",
+                "start": 0,
+                "end": 82
+              }
+            },
+            {
+              "id": "mwGA",
+              "textSha256": "d738caeffc055d7862098a05ea4386a300cb3735984e49a1e60dc2f57e4b5716",
+              "origin": {
+                "blockId": "mwGA",
+                "blockSha256": "d738caeffc055d7862098a05ea4386a300cb3735984e49a1e60dc2f57e4b5716",
+                "start": 0,
+                "end": 616
+              }
+            }
+          ]
+        },
+        "segments": [
+          {
+            "id": "138-1",
+            "paragraphId": "mwFw",
+            "start": 0,
+            "end": 82,
+            "kind": "chain",
+            "arabic": "[138] حدثنا علي بن عبد الله قال: حدثنا سفيان عن عمرو قال: أخبرني كريب عن ابن عباس ",
+            "english": "‘Ali ibn ‘Abdullah related to us. He said: Sufyan related to us, from ‘Amr, who said: Kurayb informed me, from Ibn ‘Abbas:",
+            "arabicSha256": "b04314cf7626eb7e61334637a362fcf1c352e8072668d4eb7f20fe6ed43543dc",
+            "englishSha256": "1b020bfb638ef2028927a3681389163ecc6d72017c8b68f514665b9e0d989ce3"
+          },
+          {
+            "id": "138-2",
+            "paragraphId": "mwGA",
+            "start": 0,
+            "end": 30,
+            "kind": "report",
+            "arabic": "أن النبي ﷺ نام حتى نفخ ثم صلى ",
+            "english": "The Prophet, may Allah bless him and grant him peace, slept until he snored, then prayed.",
+            "arabicSha256": "5cf1770db487f56c2c8200bf2370983d5d0741a2e8720c493d777370e88c4d07",
+            "englishSha256": "88123c4d7dbdcb1f708a87b30c46885921e547bf66ebd04267c328e2af77efa5"
+          },
+          {
+            "id": "138-3",
+            "paragraphId": "mwGA",
+            "start": 30,
+            "end": 66,
+            "kind": "transmission-note",
+            "arabic": "وربما قال اضطجع حتى نفخ ثم قام فصلى ",
+            "english": "Sometimes he said: “He lay down until he snored, then got up and prayed.”",
+            "arabicSha256": "4b456186b3fea36adafb0769894d0eac657be3fe07461864213247883fb5f337",
+            "englishSha256": "e1d5d1b5a203f19d58a0eeb14da6a60cdf27d26fe3bcded2c4ba9c5064991d7e"
+          },
+          {
+            "id": "138-4",
+            "paragraphId": "mwGA",
+            "start": 66,
+            "end": 128,
+            "kind": "chain",
+            "arabic": "ثم حدثنا به سفيان مرة بعد مرة عن عمرو عن كريب عن ابن عباس قال ",
+            "english": "Then Sufyan related to us this report time after time, from ‘Amr, from Kurayb, from Ibn ‘Abbas, who said:",
+            "arabicSha256": "1ecc1c8093fc56a01405ab39a82e6df10d49e5f589eb5e2a7805571a33a41cd8",
+            "englishSha256": "3a691d608b3ba3a946821d3d8376dbf54647148a84a296188efe2dca839658aa"
+          },
+          {
+            "id": "138-5",
+            "paragraphId": "mwGA",
+            "start": 128,
+            "end": 238,
+            "kind": "report",
+            "arabic": "بت عند خالتي ميمونة ليلة فقام النبي ﷺ من الليل فلما كان في بعض الليل قام النبي ﷺ فتوضأ من شن معلق وضوءا خفيفا ",
+            "english": "One night I stayed with my maternal aunt Maymunah. The Prophet, may Allah bless him and grant him peace, got up during the night. When part of the night had passed, the Prophet, may Allah bless him and grant him peace, got up and performed a light ablution from a hanging worn waterskin.",
+            "arabicSha256": "7082cd5bcd1b9c457d03927658b8c8dd7b3dbf51a465185053e0c335e9dfb809",
+            "englishSha256": "44595b5615a23e499505d305c4218ef25eead1b10be065f47747952c721e7c7a"
+          },
+          {
+            "id": "138-6",
+            "paragraphId": "mwGA",
+            "start": 238,
+            "end": 256,
+            "kind": "transmission-note",
+            "arabic": "يخففه عمرو ويقلله ",
+            "english": "‘Amr described it as light and small in amount.",
+            "arabicSha256": "6db21b5be792db1e343d06422c2c95804d3d9e24b136253afc8ac21b76026d27",
+            "englishSha256": "44b9c51e2084d69f7c3325b32aa8b1b8cbed4d510ef27206eeb72056875a07a2"
+          },
+          {
+            "id": "138-7",
+            "paragraphId": "mwGA",
+            "start": 256,
+            "end": 308,
+            "kind": "report",
+            "arabic": "وقام يصلي فتوضأت نحوا مما توضأ ثم جئت فقمت عن يساره ",
+            "english": "He stood to pray. I performed ablution much as he had, then came and stood on his left.",
+            "arabicSha256": "8a658dec088ad1d88d0270a80268d1bdceb7be82de12f622f8bebfb84e7a686c",
+            "englishSha256": "9433f1865fad5742fe2aad8b32696eb65f6c995e8fb12ddf89a5a3cf5582288a"
+          },
+          {
+            "id": "138-8",
+            "paragraphId": "mwGA",
+            "start": 308,
+            "end": 333,
+            "kind": "transmission-note",
+            "arabic": "وربما قال سفيان عن شماله ",
+            "english": "Sometimes Sufyan said: “On his left.”",
+            "arabicSha256": "f30b5f14bf8ad9ab6a2a75877ca99b6be3655cb301f970bc24646ac6b7b7849c",
+            "englishSha256": "44d0a56ad222804f01b4d8e198c6ef954f4422962ecea5c8868b9f4ae0064c1a"
+          },
+          {
+            "id": "138-9",
+            "paragraphId": "mwGA",
+            "start": 333,
+            "end": 462,
+            "kind": "report",
+            "arabic": "فحولني فجعلني عن يمينه ثم صلى ما شاء الله ثم اضطجع فنام حتى نفخ ثم أتاه المنادي فآذنه بالصلاة فقام معه إلى الصلاة فصلى ولم يتوضأ ",
+            "english": "He moved me and placed me on his right. Then he prayed as much as Allah willed, then lay down and slept until he snored. Then the caller came and informed him of the prayer. He got up with him to go to the prayer, prayed, and did not perform ablution.",
+            "arabicSha256": "b329c40079f1b92a675ded5f44963ddba45e9b1624b38f07a223e14a1fc1026a",
+            "englishSha256": "7ed6a6e751e05ba68e3f65b669bff2cb008dc1bbabc181823905ffd9d684ca33"
+          },
+          {
+            "id": "138-10",
+            "paragraphId": "mwGA",
+            "start": 462,
+            "end": 616,
+            "kind": "transmission-note",
+            "arabic": "قلنا لعمرو إن ناسا يقولون إن رسول الله ﷺ تنام عينه ولا ينام قلبه قال عمرو سمعت عبيد بن عمير يقول رؤيا الأنبياء وحي ثم قرأ { إني أرى في المنام أني أذبحك } ",
+            "english": "We said to ‘Amr: “Some people say that the eye of the Messenger of Allah, may Allah bless him and grant him peace, sleeps, but his heart does not sleep.” ‘Amr said: “I heard ‘Ubayd ibn ‘Umayr say: ‘The dreams of the prophets are revelation.’” Then he recited: {I see in a dream that I am slaughtering you.}",
+            "arabicSha256": "b8e24d5348a3fb1c3cfee8d10577d91452efe20253191a003ea6bf4ade0fb660",
+            "englishSha256": "8bcee03a750c04189eca2bb114cbb9477f5d0d358acecaa16894fa295e02a25b"
+          }
+        ],
+        "arabicSha256": "0e0fb6f67e9540869d0101560d68542ac8ae24cb403e3775aee6400c02c2905b",
+        "englishSha256": "edaf2b26c8cf72568482cf7ff76c47c407966b1792ee284a90d367bfdacd2be8",
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "138"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.140",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.140",
+              "recordSha256": "3f03e7312ae7edd7a52bc260d73829761a8182c10b23f26589e22f15398f8bf3"
+            }
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              48,
+              49
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              48
+            ]
+          }
+        ],
+        "notes": [
+          "The initial short report, its alternative wording, Sufyan’s repeated transmission with its chain, the complete overnight account, ‘Amr’s amount comment and the closing discussion are all retained. The transmission notes remain separate presentation segments without deleting them from the text or future narration.",
+          "The source repeats “got up” before and after the night-time phrase. It also records yasarihi and Sufyan’s alternative shimalihi; both mean “on his left”. Both occurrences remain in English, and this note records the distinct Arabic words.",
+          "The selected chain has Kurayb’s “informed me”. The historical print uses “Messenger of Allah” at the later rising where the digital and modern print use “Prophet”. The selected singular “eye”, the dreams statement and only the quoted Quranic fragment are retained. The Khan-family comparison abridges some intermediate transmission wording and includes explanations absent from the selected Arabic; these are not substituted."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic against two visually inspected Arabic printed witnesses and two individually matched English report-body comparisons. Abbreviated or omitted English chains do not independently verify the complete English chain. This working translation has no independent scholarly approval. Original source origins and any declared correction remain accessible.",
+        "reviewRecordSha256": "4545336cc590a5288bd46395987b458af2bdb2798b7c11406ec9a160b6014371"
+      },
+      {
+        "number": 139,
+        "id": "bukhari:139",
+        "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwHw:0",
+        "chapterId": "chapter-06",
+        "paragraphIds": [
+          "mwHw",
+          "mwIA"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-ablution-r273249",
+          "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+          "layoutAuditSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+          "layoutReviewSha256": "6dafde039fa774cd4861d0e76d71c314f5c8f2791b85324c16e6eab996683355",
+          "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwHw:0",
+          "sourceReference": {
+            "label": "139",
+            "number": 139,
+            "markerId": "mwHw:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwHw",
+              "textSha256": "9da685f308a2c17a40f8f5b356a25a4921bb761e54d42f14177a59eb0e04c186",
+              "origin": {
+                "blockId": "mwHw",
+                "blockSha256": "9da685f308a2c17a40f8f5b356a25a4921bb761e54d42f14177a59eb0e04c186",
+                "start": 0,
+                "end": 105
+              }
+            },
+            {
+              "id": "mwIA",
+              "textSha256": "4c5677529079869ef5be6b99b23759653d9694e7355e755309e7405d437f070b",
+              "origin": {
+                "blockId": "mwIA",
+                "blockSha256": "4c5677529079869ef5be6b99b23759653d9694e7355e755309e7405d437f070b",
+                "start": 0,
+                "end": 263
+              }
+            }
+          ]
+        },
+        "segments": [
+          {
+            "id": "139-1",
+            "paragraphId": "mwHw",
+            "start": 0,
+            "end": 105,
+            "kind": "chain",
+            "arabic": "[139] حدثنا عبد الله بن مسلمة عن مالك عن موسى بن عقبة عن كريب مولى ابن عباس عن أسامة بن زيد أنه سمعه يقول",
+            "english": "‘Abdullah ibn Maslamah related to us, from Malik, from Musa ibn ‘Uqbah, from Kurayb, the client of Ibn ‘Abbas, from Usamah ibn Zayd, that he heard him say:",
+            "arabicSha256": "9da685f308a2c17a40f8f5b356a25a4921bb761e54d42f14177a59eb0e04c186",
+            "englishSha256": "0cfb3772cdff6908bbf6b96731cf9b889e24b90982530bab0be56e35b16ad220"
+          },
+          {
+            "id": "139-2",
+            "paragraphId": "mwIA",
+            "start": 0,
+            "end": 263,
+            "kind": "report",
+            "arabic": "دفع رسول الله ﷺ من عرفة حتى إذا كان بالشعب نزل فبال ثم توضأ ولم يسبغ الوضوء فقلت: الصلاة يا رسول الله، فقال الصلاة أمامك فركب فلما جاء المزدلفة نزل فتوضأ فأسبغ الوضوء ثم أقيمت الصلاة فصلى المغرب ثم أناخ كل إنسان بعيره في منزله ثم أقيمت العشاء فصلى ولم يصل بينهما ",
+            "english": "The Messenger of Allah, may Allah bless him and grant him peace, set out from ‘Arafah. When he reached the mountain pass, he dismounted and urinated, then performed ablution without doing it thoroughly. I said: “The prayer, Messenger of Allah!” He said: “The prayer is ahead of you.” He mounted, and when he reached Muzdalifah he dismounted and performed ablution thoroughly. Then the prayer was announced and he prayed Maghrib. Then each person made his camel kneel at his stopping place. Then ‘Isha’ was announced and he prayed, and he did not pray between the two.",
+            "arabicSha256": "4c5677529079869ef5be6b99b23759653d9694e7355e755309e7405d437f070b",
+            "englishSha256": "4215e8e80d1b98ffbcc92c551d0341852dfe53a1283f0ea0be350ce873489567"
+          }
+        ],
+        "arabicSha256": "d066e3ac892b4c10406b5cafe138f9771372af2c3c2cd7780b87a8acd9d2adb9",
+        "englishSha256": "45ae3fb06ae081a04b06841d471d78f84be8860a4ff27d4e2759d98ce0d5e2b4",
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "139"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.141",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.141",
+              "recordSha256": "aa1bd9edd4ccc186e64fdeb67555830fdc6478a52859e17f07c0a23b7c3592f8"
+            }
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              49
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              48
+            ]
+          }
+        ],
+        "notes": [
+          "The two different ablutions, the prayer-ahead response, both prayer announcements, each camel’s stopping place and the closing absence of prayer between the two are retained. “Client” is a working rendering of mawla, without adding a biographical claim.",
+          "The Bewley web text has a defective English phrase at the end. The selected Arabic and both printed witnesses say ولم يصل بينهما; the Khan-family comparison also retains the negation. The working English therefore keeps “he did not pray between the two”."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic against two visually inspected Arabic printed witnesses and two individually matched English report-body comparisons. Abbreviated or omitted English chains do not independently verify the complete English chain. This working translation has no independent scholarly approval. Original source origins and any declared correction remain accessible.",
+        "reviewRecordSha256": "21466f1123689daa03438bcd8f1129c2d6ffa745c866027fa71893144e8582a3"
+      },
+      {
+        "number": 140,
+        "id": "bukhari:140",
+        "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwIw:0",
+        "chapterId": "chapter-07",
+        "paragraphIds": [
+          "mwIw",
+          "mwJA"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-ablution-r273249",
+          "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+          "layoutAuditSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+          "layoutReviewSha256": "6dafde039fa774cd4861d0e76d71c314f5c8f2791b85324c16e6eab996683355",
+          "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwIw:0",
+          "sourceReference": {
+            "label": "140",
+            "number": 140,
+            "markerId": "mwIw:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwIw",
+              "textSha256": "3d4359751e376ed2555c369dc92aba8bb81498f0f66cc8ffd787fa6e5ebfeb29",
+              "origin": {
+                "blockId": "mwIw",
+                "blockSha256": "3d4359751e376ed2555c369dc92aba8bb81498f0f66cc8ffd787fa6e5ebfeb29",
+                "start": 0,
+                "end": 149
+              }
+            },
+            {
+              "id": "mwJA",
+              "textSha256": "f46546a899a7887f1eafc316a4e78172c0bc95368906553541b5f073d56896d4",
+              "origin": {
+                "blockId": "mwJA",
+                "blockSha256": "f46546a899a7887f1eafc316a4e78172c0bc95368906553541b5f073d56896d4",
+                "start": 0,
+                "end": 344
+              }
+            }
+          ]
+        },
+        "segments": [
+          {
+            "id": "140-1",
+            "paragraphId": "mwIw",
+            "start": 0,
+            "end": 149,
+            "kind": "chain",
+            "arabic": "[140] حدثنا محمد بن عبد الرحيم قال: أخبرنا أبو سلمة الخزاعي منصور بن سلمة قال: أخبرنا ابن بلال يعني سليمان عن زيد بن أسلم عن عطاء بن يسار عن ابن عباس",
+            "english": "Muhammad ibn ‘Abd al-Rahim related to us. He said: Abu Salamah al-Khuza‘i, Mansur ibn Salamah, informed us. He said: Ibn Bilal—meaning Sulayman—informed us, from Zayd ibn Aslam, from ‘Ata’ ibn Yasar, from Ibn ‘Abbas:",
+            "arabicSha256": "3d4359751e376ed2555c369dc92aba8bb81498f0f66cc8ffd787fa6e5ebfeb29",
+            "englishSha256": "119f54225e8de16bc37e8e9ef1083cfa0fd82fa85e701530831ec62be50452af"
+          },
+          {
+            "id": "140-2",
+            "paragraphId": "mwJA",
+            "start": 0,
+            "end": 344,
+            "kind": "report",
+            "arabic": "أنه توضأ فغسل وجهه ثم أخذ غرفة من ماء فمضمض بها واستنشق ثم أخذ غرفة من ماء فجعل بها هكذا أضافها إلى يده الأخرى فغسل بهما وجهه ثم أخذ غرفة من ماء فغسل بها يده اليمنى ثم أخذ غرفة من ماء فغسل بها يده اليسرى ثم مسح برأسه ثم أخذ غرفة من ماء فرش على رجله اليمنى حتى غسلها ثم أخذ غرفة أخرى فغسل بها رجله يعني اليسرى، ثم قال هكذا رأيت رسول الله ﷺ يتوضأ",
+            "english": "He performed ablution and washed his face. Then he took a handful of water and rinsed his mouth and drew water into his nose with it. Then he took a handful of water and did this with it: he added it to his other hand and washed his face with both. Then he took a handful of water and washed his right hand and arm with it. Then he took a handful of water and washed his left hand and arm with it. Then he wiped his head. Then he took a handful of water and sprinkled it on his right foot until he had washed it. Then he took another handful and washed his foot with it—meaning the left. Then he said: “This is how I saw the Messenger of Allah, may Allah bless him and grant him peace, perform ablution.”",
+            "arabicSha256": "f46546a899a7887f1eafc316a4e78172c0bc95368906553541b5f073d56896d4",
+            "englishSha256": "7e04cd18cece90b60d933f87b6d570f5f2f035df49d07fdb731e6b174ad2d7ca"
+          }
+        ],
+        "arabicSha256": "d0679ee6edd31d19209cb87b5c53b4ca84b409e9bdb1796eedfd62a47070f581",
+        "englishSha256": "0aa5b931c9b443040c59288891f1d7404b7d76dbe19cd5c02e34444d62ed61a2",
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "140"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.142",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.142",
+              "recordSha256": "c1f105f8a21dac0ec348ec4b78b16f92474292cf8a4b9c7ab218314975594cb0"
+            }
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              49
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              48
+            ]
+          }
+        ],
+        "notes": [
+          "The full chain includes Abu Salamah’s identifying name and “Ibn Bilal—meaning Sulayman”. The historical print uses a different reporting verb before Abu Salamah; the selected digital and modern-print “informed us” is retained.",
+          "The opening face-washing statement and the subsequent described sequence remain in their selected order. The repeated handfuls, right/left sides, joining the other hand, sprinkling until washed and final “meaning the left” remain. No elbow/ankle limits or explanation of blowing water out is inserted into this report where the selected wording does not state them."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic against two visually inspected Arabic printed witnesses and two individually matched English report-body comparisons. Abbreviated or omitted English chains do not independently verify the complete English chain. This working translation has no independent scholarly approval. Original source origins and any declared correction remain accessible.",
+        "reviewRecordSha256": "b2167ae844e87095a7155e2cce677e98abfb280ac49e311db07f8b2e1fb71b3c"
+      },
+      {
+        "number": 141,
+        "id": "bukhari:141",
+        "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwJw:0",
+        "chapterId": "chapter-08",
+        "paragraphIds": [
+          "mwJw",
+          "mwKQ"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-ablution-r273249",
+          "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+          "layoutAuditSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+          "layoutReviewSha256": "6dafde039fa774cd4861d0e76d71c314f5c8f2791b85324c16e6eab996683355",
+          "sourceRecordId": "wikisource-bukhari-ablution-r273249:mwJw:0",
+          "sourceReference": {
+            "label": "141",
+            "number": 141,
+            "markerId": "mwJw:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwJw",
+              "textSha256": "228fbd4dbdf6334716ad94ac006322fa4fbc2eaf9d9142aae6e05d137b64f286",
+              "origin": {
+                "blockId": "mwJw",
+                "blockSha256": "228fbd4dbdf6334716ad94ac006322fa4fbc2eaf9d9142aae6e05d137b64f286",
+                "start": 0,
+                "end": 114
+              }
+            },
+            {
+              "id": "mwKQ",
+              "textSha256": "8a7e72eb0b8bacc298c49ce8edc731317e39d8e8a8c11c757bd09d1012f559ee",
+              "origin": {
+                "blockId": "mwKQ",
+                "blockSha256": "8a7e72eb0b8bacc298c49ce8edc731317e39d8e8a8c11c757bd09d1012f559ee",
+                "start": 0,
+                "end": 105
+              }
+            }
+          ]
+        },
+        "segments": [
+          {
+            "id": "141-1",
+            "paragraphId": "mwJw",
+            "start": 0,
+            "end": 114,
+            "kind": "chain",
+            "arabic": "[141] حدثنا علي بن عبد الله قال: حدثنا جرير عن منصور عن سالم بن أبي الجعد عن كريب عن ابن عباس يبلغ به النبي ﷺ قال:",
+            "english": "‘Ali ibn ‘Abdullah related to us. He said: Jarir related to us, from Mansur, from Salim ibn Abi al-Ja‘d, from Kurayb, from Ibn ‘Abbas, attributing it to the Prophet, may Allah bless him and grant him peace, who said:",
+            "arabicSha256": "228fbd4dbdf6334716ad94ac006322fa4fbc2eaf9d9142aae6e05d137b64f286",
+            "englishSha256": "8dee45ca6d61ac36bfdfbfd8f7d063dbbabb2451cb673e2dbf1e86d9cbadcb6a"
+          },
+          {
+            "id": "141-2",
+            "paragraphId": "mwKQ",
+            "start": 0,
+            "end": 105,
+            "kind": "report",
+            "arabic": "لو أن أحدكم إذا أتى أهله قال بسم الله اللهم جنبنا الشيطان وجنب الشيطان ما رزقتنا فقضي بينهما ولد لم يضره ",
+            "english": "“If one of you, when he comes to his wife, says: ‘In the name of Allah. O Allah, keep Satan away from us and keep Satan away from what You grant us,’ and a child is decreed for them, he would not harm him.”",
+            "arabicSha256": "8a7e72eb0b8bacc298c49ce8edc731317e39d8e8a8c11c757bd09d1012f559ee",
+            "englishSha256": "af5424f68d22013dabfee630a7caccb0b4f04127d84d131c8d7cac1ac0ff3c8e"
+          }
+        ],
+        "arabicSha256": "baf0acb31c64f3d6b7d4a5e6923c4461c646c050a450ed0c4ba15b491cc78f8b",
+        "englishSha256": "aa0775364aba55ed09c0cc9300da1dc49353f4a4c030ccdfaf11894eba6f80ed",
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "141"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.143",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.143",
+              "recordSha256": "c1d79cc60296474ed984d1f150f910b6efbeafeaa8bfe6d1c2665c7ece87fdb9"
+            }
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              49,
+              50
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              49
+            ]
+          }
+        ],
+        "notes": [
+          "The full chain and Ibn ‘Abbas’s attribution to the Prophet remain. The invocation retains both requests and “what You grant us”; the conditional decree of a child and final pronouns remain.",
+          "The comparison’s added instruction about exactly when the invocation must be said and its explanatory “coming offspring” parentheses are not inserted into the selected wording. This is a translation of the report, not added legal guidance."
+        ],
+        "reviewScope": "AI-assisted comparison of the complete selected Arabic against two visually inspected Arabic printed witnesses and two individually matched English report-body comparisons. Abbreviated or omitted English chains do not independently verify the complete English chain. This working translation has no independent scholarly approval. Original source origins and any declared correction remain accessible.",
+        "reviewRecordSha256": "f924103bcfc6df1c22f1e66a6665481c12a8812276524e5b6d267e50b8e3243a"
+      }
+    ],
+    "chapters": [
+      {
+        "id": "chapter-01",
+        "headingId": "باب_ما_جاء_في_الوضوء",
+        "contextIds": [
+          "mwBg",
+          "mwBw"
+        ],
+        "entryNumbers": [],
+        "titleArabic": "باب ما جاء في الوضوء",
+        "title": "What has been related about ablution",
+        "status": "ai-working-translation",
+        "independentReview": "pending"
+      },
+      {
+        "id": "chapter-02",
+        "headingId": "باب_لا_تقبل_صلاة_بغير_طهور",
+        "contextIds": [],
+        "entryNumbers": [
+          135
+        ],
+        "titleArabic": "باب لا تقبل صلاة بغير طهور",
+        "title": "Prayer is not accepted without purification",
+        "status": "ai-working-translation",
+        "independentReview": "pending"
+      },
+      {
+        "id": "chapter-03",
+        "headingId": "باب_فضل_الوضوء_والغر_المحجلون_من_آثار_الوضوء",
+        "contextIds": [],
+        "entryNumbers": [
+          136
+        ],
+        "titleArabic": "باب فضل الوضوء والغر المحجلون من آثار الوضوء",
+        "title": "The virtue of ablution and the radiant faces and limbs from its traces",
+        "status": "ai-working-translation",
+        "independentReview": "pending"
+      },
+      {
+        "id": "chapter-04",
+        "headingId": "باب_لا_يتوضأ_من_الشك_حتى_يستيقن",
+        "contextIds": [],
+        "entryNumbers": [
+          137
+        ],
+        "titleArabic": "باب لا يتوضأ من الشك حتى يستيقن",
+        "title": "Not performing ablution because of doubt until one is certain",
+        "status": "ai-working-translation",
+        "independentReview": "pending"
+      },
+      {
+        "id": "chapter-05",
+        "headingId": "باب_التخفيف_في_الوضوء",
+        "contextIds": [],
+        "entryNumbers": [
+          138
+        ],
+        "titleArabic": "باب التخفيف في الوضوء",
+        "title": "Light ablution",
+        "status": "ai-working-translation",
+        "independentReview": "pending"
+      },
+      {
+        "id": "chapter-06",
+        "headingId": "باب_إسباغ_الوضوء",
+        "contextIds": [
+          "mwHg"
+        ],
+        "entryNumbers": [
+          139
+        ],
+        "titleArabic": "باب إسباغ الوضوء",
+        "title": "Performing ablution thoroughly",
+        "status": "ai-working-translation",
+        "independentReview": "pending"
+      },
+      {
+        "id": "chapter-07",
+        "headingId": "باب_غسل_الوجه_باليدين_من_غرفة_واحدة",
+        "contextIds": [],
+        "entryNumbers": [
+          140
+        ],
+        "titleArabic": "باب غسل الوجه باليدين من غرفة واحدة",
+        "title": "Washing the face with both hands from one handful",
+        "status": "ai-working-translation",
+        "independentReview": "pending"
+      },
+      {
+        "id": "chapter-08",
+        "headingId": "باب_التسمية_على_كل_حال_وعند_الوقاع",
+        "contextIds": [],
+        "entryNumbers": [
+          141
+        ],
+        "titleArabic": "باب التسمية على كل حال وعند الوقاع",
+        "title": "Saying “In the name of Allah” in every situation and during intercourse",
+        "status": "ai-working-translation",
+        "independentReview": "pending"
+      }
+    ],
+    "batches": [
+      {
+        "path": "content/review/ablution-first-review.json",
+        "first": 135,
+        "last": 141,
+        "sha256": "912efc68ede56beb2c87c2dd0ccaf873c3ff537e001b9e34faba8fd93d3fed31"
+      }
+    ]
+  }
+}

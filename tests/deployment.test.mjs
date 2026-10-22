@@ -25,7 +25,7 @@ test('site assembly refuses changed bytes before creating an artifact',()=>{
 });
 test('the current release includes source and privacy information offline',()=>{
  for(const path of ['about.html','about.mjs','source-record.json','source-review.html'])assert(release.packs.find(p=>p.id==='reading').files.includes(path));
- const about=readFileSync(new URL('../reader/about.html',import.meta.url),'utf8');assert(about.includes('source-correction.yml'));assert(about.includes('AI-assisted working translation'));assert(about.includes('does not upload it'));
+ const about=readFileSync(new URL('../reader/about.html',import.meta.url),'utf8');assert(about.includes('source-correction.yml'));assert.match(about,/AI-assisted working (?:English )?translation/);assert(about.includes('does not upload it'));
 });
 
 test('local-link checking catches omitted pages and tolerates anchors and external sources',()=>{

@@ -124,5 +124,9 @@ def build_registered(registry,check=False):
  return [(id,result)for id,_,result,_ in results]
 
 if __name__=='__main__':
- p=argparse.ArgumentParser(description=__doc__);p.add_argument('--check',action='store_true');args=p.parse_args()
- for id,result in build_registered(read(ROOT/'content/sources/wikisource-books.json'),args.check):print(f"{id}: {len(result['records'])} candidate reports; {len(result['chapters'])} mapped chapters; all source spans retained; not published")
+ p=argparse.ArgumentParser(description=__doc__);p.add_argument('--check',action='store_true');p.add_argument('--json',metavar='BOOK',help='Return one resolved inventory as JSON for the reader build');args=p.parse_args()
+ results=build_registered(read(ROOT/'content/sources/wikisource-books.json'),args.check)
+ if args.json:
+  matches=[result for id,result in results if id==args.json];need(len(matches)==1,'Unknown mapped source book');print(json.dumps(matches[0],ensure_ascii=False,separators=(',',':')))
+ else:
+  for id,result in results:print(f"{id}: {len(result['records'])} candidate reports; {len(result['chapters'])} mapped chapters; all source spans retained; not published")
