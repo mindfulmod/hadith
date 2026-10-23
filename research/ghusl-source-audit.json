@@ -1,6 +1,6 @@
 {
   "checkedAt": "2026-10-23",
-  "status": "candidate-intake-with-first-personal-prototype-batch",
+  "status": "candidate-intake-with-two-personal-prototype-batches",
   "readerEligible": false,
   "source": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_الغسل&oldid=484873",
   "revision": 484873,
@@ -59,7 +59,9 @@
       "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
       "inspectedPdfPages": [
         73,
-        74
+        74,
+        75,
+        76
       ]
     },
     {
@@ -71,7 +73,9 @@
       "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
       "inspectedPdfPages": [
         72,
-        73
+        73,
+        74,
+        75
       ]
     }
   ],
@@ -175,7 +179,7 @@
   "safeguards": [
     "Unknown, empty, reordered, changed or numbered introductory material is rejected even if the raw file hash is updated.",
     "Every original source block has exactly one owner, including the book introduction. Existing Faith and Knowledge inventory bytes remain unchanged.",
-    "Reader admission refuses inventories with book introductions until explicit book-level provenance and browsing support exists. Candidate files are excluded from the public site artifact."
+    "Book introductions require explicitly supported configuration, exact source ownership and hash-bound review before separate browsing is admitted. Unknown introduction shapes remain refused. Candidate HTML and inventories are excluded from the public site artifact."
   ],
   "verification": {
     "status": "passed",
@@ -198,16 +202,15 @@
     "scope": "Importer and admission regression checks only. No new reader UI or media behavior changed, so no new iPhone acceptance is claimed."
   },
   "nextWork": [
-    "Continue complete source-chapter review from 251 and prepare English introductions separately.",
-    "Review Ghusl in complete source chapters, beginning with 245. Individually compare both printed witnesses and the English witnesses; resolve the recorded final-note omission at 250 before its admission.",
-    "Prepare complete working English, source-role segmentation and explicit personal-prototype admission records. Keep full chains, repeated accounts and closing transmission notes.",
-    "Continue English chapter material, independent review, complete source mapping and further Cedar narration."
+    "Continue Ghusl from 262 in complete source chapters, retaining all introduction and transmission material.",
+    "Complete English book/chapter material and independent Arabic, English, context and reference review, including the recorded lexical uncertainty.",
+    "Extend Cedar recordings through an authorized generation path and verify them separately before production claims."
   ],
   "limits": [
-    "The complete inventory remains a candidate source. Only the separately reviewed and explicitly admitted entries 245–250 are available in the personal prototype; the other 39 await review.",
+    "The complete inventory remains a candidate source. Only separately reviewed and explicitly admitted entries 245–261 are available in the personal prototype; the other 28 await review.",
     "A complete block inventory does not certify the edition, translation or full narration coverage.",
-    "Printed inspection this turn covers only the opening pages and the recorded note difference, not the entire Ghusl book.",
-    "The English body locations are orientation evidence, not completed translation review or permission to reuse modern translation wording."
+    "Recorded printed inspection now covers Ghusl entries 245–261 and their headings/introduction, not the entire Ghusl book.",
+    "The initial six English body locations remain historical orientation evidence. Later review records pin individual mappings and comparison findings through 261; this is not independent translation approval or permission to reuse modern translation wording."
   ],
   "intakeReaderSnapshot": {
     "entries": 244,
@@ -216,10 +219,10 @@
     "audioRange": "1–6"
   },
   "reader": {
-    "entries": 250,
-    "release": "opening-f7d29ced82b0",
-    "ghuslEntries": 6,
-    "range": "245–250",
+    "entries": 261,
+    "release": "opening-03093313e573",
+    "ghuslEntries": 17,
+    "range": "245–261",
     "audioRange": "1–6"
   },
   "firstBatch": {
@@ -228,6 +231,14 @@
     "verification": "research/ghusl-first-verification.json",
     "range": "245–250",
     "bookIntroduction": "Arabic preserved separately with English pending",
+    "independentReview": "pending"
+  },
+  "secondBatch": {
+    "status": "personal-prototype-only",
+    "review": "content/review/ghusl-second-review.json",
+    "verification": "research/ghusl-second-verification.json",
+    "range": "251–261",
+    "chapterIntroduction": "Chapter 9 original Arabic preserved separately, English pending",
     "independentReview": "pending"
   }
 }

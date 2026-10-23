@@ -2,17 +2,17 @@
   "schemaVersion": 2,
   "namespace": "bukhari-opening-v1",
   "publication": "personal-prototype",
-  "sourceRecordSha256": "94a4d92b6603e976df687f01b794316ed1659319e1209f95ae3c2d211be279f9",
-  "referencesSha256": "ec11ab162717d2f049d8739f92320ef05f02de615d0787cc06b5dc3f63bd5310",
+  "sourceRecordSha256": "02f954f168291ed3af2582d926b485874ca53cc5c57030ffea706070dbd13c72",
+  "referencesSha256": "70aef68e1e704bdee426bdb1e5ed87f99e312b752323e4d5bf95689787e25d1c",
   "sourceRecord": {
     "created": "2026-10-20",
-    "scope": "Personal prototype: complete numbered entries 1–250 across 5 books. The rest of the collection remains in preparation.",
+    "scope": "Personal prototype: complete numbered entries 1–261 across 5 books. The rest of the collection remains in preparation.",
     "selected_route": "Pinned Arabic text plus a new English working translation.",
     "license": {
       "id": "CC-BY-SA-4.0",
       "url": "https://creativecommons.org/licenses/by-sa/4.0/",
       "attribution": "Sahih al-Bukhari by Muhammad ibn Ismail al-Bukhari; Arabic digital transcription by Arabic Wikisource contributors, opening revision 484874 and Faith revision 490285. Book of Knowledge: revision 252975. Book of Ablution: revision 273249. Book of Ghusl: revision 484873.",
-      "changes": "Entries 1–2 are unchanged. Entries 3–7 are derived from the pinned Arabic; Hadith 5 has one explicitly recorded correction from له to لك supported by two printed witnesses. Original inputs are retained in prototype-inputs.json. New AI-assisted English, presentation and comparison notes are offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app. Hadith 8–58 retain their Arabic paragraphs unchanged from revision 490285; their new English and available chapter titles are AI-assisted. A disputed chapter heading is explicitly withheld. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 59–134 derive from revision 252975; only 99 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 135–244 derive from revision 273249; only 137, 146, 165, 202 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Exact source origins and original labels are retained; any different reader reference is explicitly mapped. Chapter introductions are preserved separately in Arabic, with English translation still pending. Declared printed additions supply a missing closing transmission note and chapter heading; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately. Hadith 245–250 retain their Arabic paragraphs unchanged from revision 484873; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. A declared printed addition supplies a missing closing transmission note; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately."
+      "changes": "Entries 1–2 are unchanged. Entries 3–7 are derived from the pinned Arabic; Hadith 5 has one explicitly recorded correction from له to لك supported by two printed witnesses. Original inputs are retained in prototype-inputs.json. New AI-assisted English, presentation and comparison notes are offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app. Hadith 8–58 retain their Arabic paragraphs unchanged from revision 490285; their new English and available chapter titles are AI-assisted. A disputed chapter heading is explicitly withheld. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 59–134 derive from revision 252975; only 99 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 135–244 derive from revision 273249; only 137, 146, 165, 202 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Exact source origins and original labels are retained; any different reader reference is explicitly mapped. Chapter introductions are preserved separately in Arabic, with English translation still pending. Declared printed additions supply a missing closing transmission note and chapter heading; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately. Hadith 245–261 retain their Arabic paragraphs unchanged from revision 484873; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. A declared printed addition supplies a missing closing transmission note; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately."
     },
     "sources": [
       {
@@ -236,6 +236,20 @@
         "kind": "english-comparison",
         "format": "web",
         "url": "https://aishabewley.org/bukhari4"
+      },
+      {
+        "id": "fath-hilab",
+        "label": "Ibn Hajar · Fath al-Bari · hilab wording",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://www.islamweb.net/amp/ar/library/content/52/505/باب-من-بدأ-بالحلاب-أو-الطيب-عند-الغسل"
+      },
+      {
+        "id": "fath-ghusl-rinsing",
+        "label": "Ibn Hajar · Fath al-Bari · washing expressions",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://islamweb.net/ar/library/content/52/506/باب-المضمضة-والاستنشاق-في-الجنابة"
       }
     ],
     "findings": [
@@ -292,7 +306,7 @@
       "knowledgeSourceSha256": "9060879f4b110cc9007f35db6b1f2fa0cc37c5ba8e510531721b024cbadf4e58",
       "ablutionReviewSha256": "cabac2ca51195b600169481a70dc55f01df737860da9afa3f57f36abf0b59e67",
       "ablutionSourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
-      "ghuslReviewSha256": "bec2b1972e12ac353b9b51e905e620471845a2168ab6b494cc7f4dd1e5c0493e",
+      "ghuslReviewSha256": "524c8b4801c58e68991b42db4411854ed076cf607d263d8f63aa5f2c55326315",
       "ghuslSourceSha256": "07e29f845c2f17f77aae014356e8028a3335d245eeeb73e7b5efe3b52064db77"
     }
   },
@@ -4127,7 +4141,18 @@
         247,
         248,
         249,
-        250
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261
       ],
       "chapters": [
         {
@@ -4192,6 +4217,131 @@
               "fragment": "chapter-03"
             }
           }
+        },
+        {
+          "id": "chapter-04",
+          "title": "Pouring over the head three times",
+          "entryNumbers": [
+            251,
+            252,
+            253
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ghusl-review.html",
+              "fragment": "chapter-04"
+            }
+          }
+        },
+        {
+          "id": "chapter-05",
+          "title": "Washing once",
+          "entryNumbers": [
+            254
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ghusl-review.html",
+              "fragment": "chapter-05"
+            }
+          }
+        },
+        {
+          "id": "chapter-06",
+          "title": "Beginning with the hilab or scent when washing",
+          "entryNumbers": [
+            255
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ghusl-review.html",
+              "fragment": "chapter-06"
+            }
+          }
+        },
+        {
+          "id": "chapter-07",
+          "title": "Rinsing the mouth and drawing water into the nose for janabah",
+          "entryNumbers": [
+            256
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ghusl-review.html",
+              "fragment": "chapter-07"
+            }
+          }
+        },
+        {
+          "id": "chapter-08",
+          "title": "Wiping the hand with earth so that it is cleaner",
+          "entryNumbers": [
+            257
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ghusl-review.html",
+              "fragment": "chapter-08"
+            }
+          }
+        },
+        {
+          "id": "chapter-09",
+          "title": "May someone in janabah put his hand into the vessel before washing it, if there is no dirt on his hand other than janabah?",
+          "entryNumbers": [
+            258,
+            259,
+            260,
+            261
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 1,
+              "englishStatus": "pending"
+            },
+            "notes": {
+              "path": "ghusl-review.html",
+              "fragment": "chapter-09"
+            }
+          }
         }
       ],
       "introduction": {
@@ -4205,9 +4355,9 @@
           "fragment": "book-introduction"
         }
       },
-      "path": "books/ghusl-63bd0e04e12cecc5.json",
-      "bytes": 43523,
-      "sha256": "63bd0e04e12cecc588eb1e8e57595a07cf9e40750c7bedc4814254309e857f78"
+      "path": "books/ghusl-9ac831861e9b4847.json",
+      "bytes": 111306,
+      "sha256": "9ac831861e9b484738dd722bbeef38011bbc7b34c505b67f241a1093baa7a5eb"
     }
   ],
   "entries": [
@@ -5960,6 +6110,83 @@
       "bookId": "ghusl",
       "book": "Ghusl",
       "englishWords": 77
+    },
+    {
+      "id": "bukhari:251",
+      "number": 251,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 62
+    },
+    {
+      "id": "bukhari:252",
+      "number": 252,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 51
+    },
+    {
+      "id": "bukhari:253",
+      "number": 253,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 107
+    },
+    {
+      "id": "bukhari:254",
+      "number": 254,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 102
+    },
+    {
+      "id": "bukhari:255",
+      "number": 255,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 68
+    },
+    {
+      "id": "bukhari:256",
+      "number": 256,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 132
+    },
+    {
+      "id": "bukhari:257",
+      "number": 257,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 75
+    },
+    {
+      "id": "bukhari:258",
+      "number": 258,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 41
+    },
+    {
+      "id": "bukhari:259",
+      "number": 259,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 39
+    },
+    {
+      "id": "bukhari:260",
+      "number": 260,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 55
+    },
+    {
+      "id": "bukhari:261",
+      "number": 261,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 56
     }
   ]
 }

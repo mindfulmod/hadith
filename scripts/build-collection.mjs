@@ -177,7 +177,7 @@ export function buildBookBatch(inventory,review,manifest,config){
   for(const [i,s] of row.segments.entries()){
    const block=blockIds.indexOf(s.paragraphId);assert(block>=0&&Number.isSafeInteger(s.start)&&Number.isSafeInteger(s.end));
    assert.equal(s.arabic,Array.from(arabic_blocks[block]).slice(s.start,s.end).join(''),'Changed Arabic span');assert.equal(s.arabicSha256,sha(s.arabic));assert.equal(s.englishSha256,sha(s.english));
-   if(['chain','transmission-note'].includes(s.kind))for(const [arabic,english]of [[['حدثنا'],'related to us'],[['حدثني','حدثتني'],'related to me'],[['أخبرنا'],'informed us'],[['أخبرني'],'informed me'],[['سمعت'],'i heard']])assert.equal(arabic.reduce((n,word)=>n+s.arabic.replace(/\p{M}/gu,'').split(word).length-1,0),s.english.toLowerCase().split(english).length-1,'Reporting verb mismatch in '+s.id);
+   if(['chain','transmission-note'].includes(s.kind))for(const [arabic,english]of [[['حدثنا','حدثتنا'],'related to us'],[['حدثني','حدثتني'],'related to me'],[['أخبرنا'],'informed us'],[['أخبرني'],'informed me'],[['سمعت'],'i heard']])assert.equal(arabic.reduce((n,word)=>n+s.arabic.replace(/\p{M}/gu,'').split(word).length-1,0),s.english.toLowerCase().split(english).length-1,'Reporting verb mismatch in '+s.id);
    const supplement=row.arabicSupplements?.find(a=>a.id===s.paragraphId),origin=supplement?{provenance:{kind:'printed-supplement',id:supplement.id}}:{};
    presentation.arabic.push({block,start:s.start,end:s.end,kind:s.kind,...origin});presentation.english.push({block:i,start:0,end:Array.from(s.english).length,kind:s.kind,...origin});
   }
