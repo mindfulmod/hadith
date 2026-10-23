@@ -8,6 +8,22 @@ sha=opening.digest
 encoded=opening.encoded
 layout_spec=importlib.util.spec_from_file_location('wikisource_layout',ROOT/'scripts/wikisource_layout.py');layout=importlib.util.module_from_spec(layout_spec);layout_spec.loader.exec_module(layout)
 
+def book_introduction(blocks,manifest):
+    # Introductory quotations belong to the book, never to an invented chapter/report.
+    first_heading=next((i for i,b in enumerate(blocks)if b['tag']=='h3'),len(blocks))
+    prefix=[b for b in blocks[:first_heading]if b['text'].strip()]
+    if 'bookIntroduction' not in manifest:
+        if prefix:raise ValueError('Paragraph before the first chapter needs explicit classification')
+        return None
+    declaration=manifest['bookIntroduction']
+    if not isinstance(declaration,dict) or declaration.get('schemaVersion')!=1 or declaration.get('role')!='book-introduction' or declaration.get('status')!='layout-only-not-wording-approval' or not isinstance(declaration.get('note'),str) or not declaration['note'].strip():
+        raise ValueError('Invalid book introduction declaration')
+    if not prefix or first_heading==len(blocks) or any(b['tag']!='p' or layout.MARKER.search(b['text'])for b in prefix):
+        raise ValueError('Book introduction must contain only unnumbered paragraphs before the first chapter')
+    pins=[{'htmlId':b['htmlId'],'textSha256':sha(b['text'])}for b in prefix]
+    if declaration.get('blocks')!=pins:raise ValueError('Book introduction blocks or exact text changed')
+    return declaration
+
 def extract(raw,manifest):
     if len(raw)!=manifest['file']['bytes'] or sha(raw)!=manifest['file']['sha256']:
         raise ValueError('Pinned HTML integrity failed')
@@ -21,6 +37,8 @@ def extract(raw,manifest):
         raise ValueError('Unexpected or ambiguous source blocks')
     # Every number marker must be a supported boundary before any ownership is inferred.
     layout.require_simple_layout(blocks)
+    introduction=book_introduction(blocks,manifest)
+    introduction_ids=[p['htmlId']for p in introduction['blocks']]if introduction else []
     chapters=[];records=[];blanks=[];current=None;chapter=None
     for index,b in enumerate(blocks):
         b['ordinal']=index;b['textSha256']=sha(b['text'])
@@ -28,6 +46,7 @@ def extract(raw,manifest):
             current=None
             chapter={'id':f'chapter-{len(chapters)+1:02}', 'headingId':b['htmlId'],'contextIds':[],'entryNumbers':[]}
             chapters.append(chapter)
+        elif b['htmlId'] in introduction_ids:continue
         elif not b['text'].strip():blanks.append(b['htmlId'])
         else:
             if chapter is None:raise ValueError('Paragraph before the first chapter needs explicit classification')
@@ -39,9 +58,9 @@ def extract(raw,manifest):
             else:current['paragraphIds'].append(b['htmlId'])
     if [r['number'] for r in records]!=manifest['expected']['entryNumbers']:raise ValueError('Numbered source coverage changed')
     if len(chapters)!=manifest['expected']['chapters']:raise ValueError('Chapter count changed')
-    assigned=blanks+[id for c in chapters for id in [c['headingId'],*c['contextIds']]]+[id for r in records for id in r['paragraphIds']]
+    assigned=introduction_ids+blanks+[id for c in chapters for id in [c['headingId'],*c['contextIds']]]+[id for r in records for id in r['paragraphIds']]
     if len(assigned)!=len(set(assigned)) or set(assigned)!={b['htmlId']for b in blocks}:raise ValueError('Source block lost or multiply assigned')
-    return {'schemaVersion':1,'sourceId':manifest['id'],'revision':manifest['revision'],'sourceSha256':sha(raw),'status':'candidate-not-approved','readerEligible':False,'textPolicy':'All p/h3 source blocks retained exactly after HTML entity decoding. No trimming, normalization, spelling changes or inferred heading translation. Website navigation/templates remain in the raw HTML and are not narration. Numbered spans require separate role/translation review.','chapters':chapters,'records':records,'blankIds':blanks,'blocks':blocks}
+    return {'schemaVersion':1,'sourceId':manifest['id'],'revision':manifest['revision'],'sourceSha256':sha(raw),'status':'candidate-not-approved','readerEligible':False,'textPolicy':'All p/h3 source blocks retained exactly after HTML entity decoding. No trimming, normalization, spelling changes or inferred heading translation. Website navigation/templates remain in the raw HTML and are not narration. Numbered spans require separate role/translation review.','chapters':chapters,'records':records,'blankIds':blanks,'blocks':blocks,**({'bookIntroduction':introduction}if introduction else {})}
 
 def build(directory):
     manifest=json.loads((directory/'manifest.json').read_text())

@@ -19,8 +19,8 @@
     {
       "id": "source-coverage",
       "status": "two-candidates-inventoried-selected-reference-defects-investigated",
-      "evidence": "content/sources/openiti-bukhari/manifest.json; content/staging/bukhari-ar/catalog.json; content/sources/openiti-bukhari-jk/manifest.json; content/staging/bukhari-ar-jk/catalog.json; research/arabic-reference-audit.json; content/sources/wikisource-books.json; content/sources/wikisource-knowledge/manifest.json; research/knowledge-source-audit.json; research/ablution-source-audit.json; research/ablution-layout-verification.json; content/review/ablution-layout-review.json; research/ablution-first-verification.json; tests/ablution-batch.test.mjs; research/ablution-second-verification.json; tests/ablution-second.test.mjs; research/ablution-third-verification.json; tests/printed-supplements.test.mjs; research/ablution-fourth-verification.json; tests/ablution-fourth.test.mjs; research/ablution-fifth-verification.json; tests/ablution-fifth.test.mjs; research/ablution-sixth-verification.json; tests/ablution-sixth.test.mjs; research/ablution-seventh-verification.json; tests/ablution-seventh.test.mjs; research/ablution-eighth-verification.json; tests/ablution-eighth.test.mjs; research/ablution-final-verification.json; tests/ablution-final.test.mjs",
-      "remaining": "Complete the edition-specific reference and chapter map and verify Arabic wording. The first candidate has 173 absent numeric labels and 10 empty spans, not 173 proven missing narrations. Selected printed comparisons explain labels 409, 411 and 4137 as combined/embedded passages and confirm local empty/misassigned spans at 1161–1167 and 3382. The JK inventory accounts for every byte in 7,129 report spans and 3,965 heading-context spans; its duplicate 3905 passages, four suffixes, context boundaries and upstream transcription warnings remain subject to review. Ablution now has an explicit exact-span structural map: 110 candidate reports, 76 chapters and a separately recorded mixed-numbering reference. All 110 selected entries (135–244), 76 digital source chapters and one separately browseable printed heading are admitted as a personal prototype. The digital gap around 155 is handled by explicit printed provenance, with originals unchanged; independent review remains pending. The original Arabic-digit [١٦٢] is explicitly mapped to reader 160; the later [162] remains a separate report. Shared English comparison references retain explicit part identities. The selected Ablution inventory is complete; begin the next source book, Ghusl."
+      "evidence": "content/sources/openiti-bukhari/manifest.json; content/staging/bukhari-ar/catalog.json; content/sources/openiti-bukhari-jk/manifest.json; content/staging/bukhari-ar-jk/catalog.json; research/arabic-reference-audit.json; content/sources/wikisource-books.json; content/sources/wikisource-knowledge/manifest.json; research/knowledge-source-audit.json; research/ablution-source-audit.json; research/ablution-layout-verification.json; content/review/ablution-layout-review.json; research/ablution-first-verification.json; tests/ablution-batch.test.mjs; research/ablution-second-verification.json; tests/ablution-second.test.mjs; research/ablution-third-verification.json; tests/printed-supplements.test.mjs; research/ablution-fourth-verification.json; tests/ablution-fourth.test.mjs; research/ablution-fifth-verification.json; tests/ablution-fifth.test.mjs; research/ablution-sixth-verification.json; tests/ablution-sixth.test.mjs; research/ablution-seventh-verification.json; tests/ablution-seventh.test.mjs; research/ablution-eighth-verification.json; tests/ablution-eighth.test.mjs; research/ablution-final-verification.json; tests/ablution-final.test.mjs; research/ghusl-source-audit.json; tests/test_wikisource_book.py; tests/book-introduction.test.mjs",
+      "remaining": "Complete the edition-specific reference and chapter map and verify Arabic wording. The first candidate has 173 absent numeric labels and 10 empty spans, not 173 proven missing narrations. Selected printed comparisons explain labels 409, 411 and 4137 as combined/embedded passages and confirm local empty/misassigned spans at 1161–1167 and 3382. The JK inventory accounts for every byte in 7,129 report spans and 3,965 heading-context spans; its duplicate 3905 passages, four suffixes, context boundaries and upstream transcription warnings remain subject to review. Ablution now has an explicit exact-span structural map: 110 candidate reports, 76 chapters and a separately recorded mixed-numbering reference. All 110 selected entries (135–244), 76 digital source chapters and one separately browseable printed heading are admitted as a personal prototype. The digital gap around 155 is handled by explicit printed provenance, with originals unchanged; independent review remains pending. The original Arabic-digit [١٦٢] is explicitly mapped to reader 160; the later [162] remains a separate report. Shared English comparison references retain explicit part identities. The selected Ablution inventory is complete. Ghusl has a complete candidate intake of 45 numbered records, 29 headings, one book introduction and four chapter introductions; wording and reader admission remain pending."
     },
     {
       "id": "english-full-collection",
@@ -78,7 +78,7 @@
     }
   ],
   "nextActions": [
-    "Begin Ghusl source intake and exact edition/reference mapping. Preserve complete chains, narrator notes, chapter introductions, original labels and repeated accounts. Finish English chapter material, independent reviews and further Cedar audio.",
+    "Review Ghusl from 245 after implementing separate book-introduction provenance and browsing. The complete candidate intake preserves 45 entries, 29 chapters, one book introduction and four chapter introductions; resolve the recorded closing-note omission at 250 before admission. Continue English chapter material, independent reviews and further Cedar audio.",
     "Complete the Arabic edition/reference map using the new exact-span inventory and pinned printed-witness findings; keep combined labels distinct from missing or misassigned bodies.",
     "Find a more complete authoritative English witness: the IslamHouse EPUB and PDF share seven checked omissions and additional transcription defects. Keep their exact inventories as comparison evidence rather than patching them silently.",
     "Obtain complete English source coverage and explicit offline/narration permissions; request #4160 is posted.",
@@ -176,7 +176,8 @@
     "status": "implemented-browser-offline-verified",
     "verification": "research/chapter-material-verification.json; research/knowledge-first-verification.json; research/knowledge-next-verification.json; research/knowledge-third-verification.json; research/knowledge-fourth-verification.json; research/knowledge-fifth-verification.json; research/knowledge-final-verification.json; research/ablution-sixth-verification.json; research/ablution-seventh-verification.json; research/ablution-eighth-verification.json; research/ablution-final-verification.json",
     "policy": "Daily sessions contain numbered hadith only; chapter introductions and quotations remain separately accessible in the book browser. User confirmed this policy on 20 October 2026.",
-    "userConfirmedAt": "2026-10-20"
+    "userConfirmedAt": "2026-10-20",
+    "bookIntroductions": "Ghusl intake now preserves its pre-chapter quotation paragraph as separately pinned book-level material. Reader admission remains refused until explicit provenance and a separate browser destination support that material; it cannot silently become a session item."
   },
   "audioGeneration": {
     "checkedAt": "2026-10-20",
@@ -228,5 +229,18 @@
     ],
     "verification": "research/ablution-eighth-verification.json",
     "policy": "A complete selected source entry may consist only of a chain. Preserve it as its own numbered entry with exact-text and print-witness evidence, open the full chain by default, and keep related reports and context separate. Never infer this status merely because a report body is missing."
+  },
+  "ghuslIntake": {
+    "status": "candidate-intake-complete-wording-review-pending",
+    "source": "content/sources/wikisource-ghusl/manifest.json",
+    "inventory": "content/staging/bukhari-ghusl-wikisource/catalog.json",
+    "audit": "research/ghusl-source-audit.json",
+    "candidateReports": 45,
+    "range": "245–289",
+    "chapters": 29,
+    "bookIntroductionParagraphs": 1,
+    "chapterIntroductionParagraphs": 4,
+    "published": false,
+    "remaining": "Implement explicit book-level provenance and separate browsing. Review complete entries and edition references from 245, including the recorded absent closing note at 250. Translation and independent review remain pending."
   }
 }

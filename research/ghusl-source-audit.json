@@ -1,0 +1,218 @@
+{
+  "checkedAt": "2026-10-23",
+  "status": "candidate-intake-complete-wording-review-pending",
+  "readerEligible": false,
+  "source": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_الغسل&oldid=484873",
+  "revision": 484873,
+  "sourceId": "wikisource-bukhari-ghusl-r484873",
+  "raw": {
+    "path": "source.html",
+    "bytes": 149514,
+    "sha256": "07e29f845c2f17f77aae014356e8028a3335d245eeeb73e7b5efe3b52064db77"
+  },
+  "inventory": "content/staging/bukhari-ghusl-wikisource/catalog.json",
+  "inventoryFileSha256": "4d8a57f74561005dd32055c2bb00be73991b1d6fdc4419a3f3dfcb75b529c59f",
+  "coverage": {
+    "firstNumber": 245,
+    "lastNumber": 289,
+    "numberedRecords": 45,
+    "headings": 29,
+    "reportParagraphs": 45,
+    "bookIntroductionParagraphs": 1,
+    "chapterIntroductionParagraphs": 4,
+    "blankParagraphs": 0,
+    "exactBlocks": 79,
+    "sourceCodePoints": 12954,
+    "chapterIntroductionIds": [
+      "mwSg",
+      "mwWA",
+      "mwlg",
+      "mwuA"
+    ],
+    "sourceOnlyChapters": [],
+    "unobservedNumericLabels": [],
+    "duplicateNumericLabels": []
+  },
+  "method": "Retained fixed-revision HTML and checked its revision, byte length and SHA-256. Decoded every p/h3 block without trimming, normalization or corrections. Explicitly classified the exact unnumbered prefix as a book introduction, then assigned every block once to that introduction, a chapter heading, chapter context or a numbered record. The lexical layout check found no irregular numeral or heading boundaries. This establishes source intake coverage, not the accuracy or completeness of the source wording.",
+  "rights": "The pinned page links CC BY-SA 4.0. Attribution, revision, original bytes and extraction policy are retained in the manifest. No modern English comparison translation is copied into this intake.",
+  "bookIntroduction": {
+    "schemaVersion": 1,
+    "role": "book-introduction",
+    "status": "layout-only-not-wording-approval",
+    "blocks": [
+      {
+        "htmlId": "mwBA",
+        "textSha256": "547de131fd3cc37318f898b7481957b01b2c336b3e9f70b7516a10a2f810c862"
+      }
+    ],
+    "note": "The unnumbered paragraph precedes the first chapter and contains two Quranic quotations. Preserve it as book-level introductory material, distinct from chapter headings and numbered hadith. The digital wording, whitespace and quotation spellings remain unchanged; translation and independent review are pending.",
+    "printedOrientation": "The historical print, PDF page 73, places abbreviated Quranic quotations before the first chapter. The modern print, PDF page 72, gives fuller quotations and labels them 5:6 and 4:43. These observations establish book-level placement; they do not authorize replacing the digital quotation spelling or importing a different edition.",
+    "readerPlan": "A separate book introduction in the book browser, with original Arabic and references. No invented chapter zero, hadith number, session item or narrated hadith segment. English translation and reader provenance support must precede admission."
+  },
+  "printedWitnesses": [
+    {
+      "id": "brill-1862",
+      "label": "Historical Arabic print · Brill 1862",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf",
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+      "inspectedPdfPages": [
+        73,
+        74
+      ]
+    },
+    {
+      "id": "dar-ibn-kathir-2002",
+      "label": "Arabic print · Dar Ibn Kathir 2002",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+      "inspectedPdfPages": [
+        72,
+        73
+      ]
+    }
+  ],
+  "initialReferenceOrientation": {
+    "status": "six-body-locations-observed-not-complete-entry-review",
+    "bewleyUrl": "https://aishabewley.org/bukhari4",
+    "epub": "content/sources/islamhouse-bukhari/manifest.json",
+    "epubSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+    "mappings": [
+      {
+        "selectedNumber": 245,
+        "bewleyReference": "245",
+        "modernPrintReference": "248",
+        "epubRecordId": "islamhouse-bukhari-epub-2010:1.5.248",
+        "epubTextSha256": "c0f459e6758f7401ea733ea2026ee1e558b3b8d032429093e59d5b56cdf43886",
+        "scope": "Report-body orientation only; complete chains, wording alternatives and closing notes still require individual review."
+      },
+      {
+        "selectedNumber": 246,
+        "bewleyReference": "246",
+        "modernPrintReference": "249",
+        "epubRecordId": "islamhouse-bukhari-epub-2010:1.5.249",
+        "epubTextSha256": "e8cc4051ea374d793f5b06fe54867d5ff0c0caaaac90c4940f253d1854d45a15",
+        "scope": "Report-body orientation only; complete chains, wording alternatives and closing notes still require individual review."
+      },
+      {
+        "selectedNumber": 247,
+        "bewleyReference": "247",
+        "modernPrintReference": "250",
+        "epubRecordId": "islamhouse-bukhari-epub-2010:1.5.250",
+        "epubTextSha256": "7a1611f7aafd615779738d570d0a9d7e22d195115133d58e41e5b04e23a62bde",
+        "scope": "Report-body orientation only; complete chains, wording alternatives and closing notes still require individual review."
+      },
+      {
+        "selectedNumber": 248,
+        "bewleyReference": "248",
+        "modernPrintReference": "251",
+        "epubRecordId": "islamhouse-bukhari-epub-2010:1.5.251",
+        "epubTextSha256": "42e6a2a977088cde1ad7bda5ef5f2558be34ec08e2df3c44591a64b0b3cd2b33",
+        "scope": "Report-body orientation only; complete chains, wording alternatives and closing notes still require individual review."
+      },
+      {
+        "selectedNumber": 249,
+        "bewleyReference": "249",
+        "modernPrintReference": "252",
+        "epubRecordId": "islamhouse-bukhari-epub-2010:1.5.252",
+        "epubTextSha256": "ea033027dde316b1e98ef1d5b1925de9c8fb4f47554d2ebd8483931343da6afd",
+        "scope": "Report-body orientation only; complete chains, wording alternatives and closing notes still require individual review."
+      },
+      {
+        "selectedNumber": 250,
+        "bewleyReference": "250",
+        "modernPrintReference": "253",
+        "epubRecordId": "islamhouse-bukhari-epub-2010:1.5.253",
+        "epubTextSha256": "0ef674b3e495ea8bfc1dfd3bc1b55ecddf59b9c415c9e5d566436fd53d6c1cfe",
+        "scope": "Report-body orientation only; complete chains, wording alternatives and closing notes still require individual review."
+      }
+    ],
+    "note": "The six bodies were inspected individually. Do not extrapolate the observed numbering difference to the rest of this book. The EPUB provides abridged narrator introductions and omits selected closing notes."
+  },
+  "findings": [
+    {
+      "id": "book-introduction-boundary",
+      "kind": "source-layout",
+      "blockId": "mwBA",
+      "textSha256": "547de131fd3cc37318f898b7481957b01b2c336b3e9f70b7516a10a2f810c862",
+      "finding": "The first nonblank block precedes every chapter. An ordinary chapter-context assignment would drop it, invent a chapter or mix Quranic quotations into a numbered hadith. An explicit pinned book-introduction declaration now preserves it separately."
+    },
+    {
+      "id": "selected-250-closing-note",
+      "kind": "printed-note-absent-from-digital",
+      "status": "investigated-not-yet-resolved-for-reader",
+      "sourceNumber": 250,
+      "blockId": "mwHg",
+      "textSha256": "0c1d402c8e835b824d8bd0800f79640f534e5525656204bd7c9421fdd22a8feb",
+      "finding": "The selected digital paragraph stops after the short amount-of-a-sa transmission. Both inspected Arabic prints include a further Abu Abdullah note about Ibn Uyaynah later relating via Ibn Abbas from Maymunah, followed by a preference for Abu Nuaym’s transmission. The selected digital paragraph does not contain that final note. Bewley 250 also includes it; the checked EPUB 1.5.253 contains the short report body without either closing note.",
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            74
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            73
+          ]
+        }
+      ],
+      "separateVariant": "The historical print places the short amount-of-a-sa note after the earlier Aisha report and does not repeat it after this account. The modern print includes it in both locations. The selected digital repetition therefore has support in the inspected modern print; it must not be removed merely because it resembles an earlier note.",
+      "nextDecision": "Preserve the original digital paragraph. Before admitting 250, prepare an explicitly attributed printed supplement for the absent final note, retaining edition differences and pending independent review."
+    },
+    {
+      "id": "comparison-verse-reference",
+      "kind": "reference-disagreement",
+      "status": "pending-introduction-review",
+      "finding": "Bewley’s online introduction labels the second quotation 4:42; the inspected modern Arabic print labels it 4:43. Preserve the comparison as evidence but do not import its verse number without checking the Quranic reference."
+    }
+  ],
+  "safeguards": [
+    "Unknown, empty, reordered, changed or numbered introductory material is rejected even if the raw file hash is updated.",
+    "Every original source block has exactly one owner, including the book introduction. Existing Faith and Knowledge inventory bytes remain unchanged.",
+    "Reader admission refuses inventories with book introductions until explicit book-level provenance and browsing support exists. Candidate files are excluded from the public site artifact."
+  ],
+  "verification": {
+    "status": "passed",
+    "node": 253,
+    "python": 67,
+    "totalTests": 320,
+    "newRegressionTests": 9,
+    "failed": 0,
+    "integrityChecks": 13,
+    "unchangedBaselineCommit": "405d88e53d0b9cecdecead35b5a55fc12a51f577",
+    "unchangedReaderAudioAndPriorInventoryFiles": 151,
+    "checks": [
+      "All 79 decoded source blocks have exactly one owner; the book introduction never becomes a chapter or numbered record.",
+      "Source spelling and trailing whitespace remain exact. Raw-hash updates cannot bypass declaration hashes, identities or boundary rules.",
+      "Unknown, null, empty, mismatched, duplicated or numbered introductory material is rejected.",
+      "The actual reader batch builder and mapped admission path refuse unsupported book introductions.",
+      "Faith and Knowledge inventory bytes, every tracked reader and audio file, and the current release marker match the baseline.",
+      "All source inventories, publication gates, book packs, narration scripts and content hashes pass their thirteen existing integrity commands."
+    ],
+    "scope": "Importer and admission regression checks only. No new reader UI or media behavior changed, so no new iPhone acceptance is claimed."
+  },
+  "reader": {
+    "entries": 244,
+    "release": "opening-d84430d05a58",
+    "changed": false,
+    "audioRange": "1–6"
+  },
+  "nextWork": [
+    "Implement book-level introduction provenance and a separate browser destination, keeping sessions and audio plans limited to numbered entries.",
+    "Review Ghusl in complete source chapters, beginning with 245. Individually compare both printed witnesses and the English witnesses; resolve the recorded final-note omission at 250 before its admission.",
+    "Prepare complete working English, source-role segmentation and explicit personal-prototype admission records. Keep full chains, repeated accounts and closing transmission notes.",
+    "Continue English chapter material, independent review, complete source mapping and further Cedar narration."
+  ],
+  "limits": [
+    "All 45 numbered entries remain candidates. None is newly admitted to the reader by this intake.",
+    "A complete block inventory does not certify the edition, translation or full narration coverage.",
+    "Printed inspection this turn covers only the opening pages and the recorded note difference, not the entire Ghusl book.",
+    "The English body locations are orientation evidence, not completed translation review or permission to reuse modern translation wording."
+  ]
+}
