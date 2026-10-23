@@ -2,3 +2,6 @@
 content/sources/**/source.mARkdown -text -whitespace
 content/sources/**/upstream.yml -text -whitespace
 content/sources/**/source.html -text -whitespace
+
+# Generated review embeds exact original source spaces before newlines.
+reader/ablution-review.html whitespace=-blank-at-eol

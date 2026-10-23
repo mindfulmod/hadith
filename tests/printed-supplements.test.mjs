@@ -15,10 +15,10 @@ function rejects(change){const a=input(),row=a[1].entries[1];change(row);rehash(
 
 test('printed additions preserve the original source map and every previous 153 entry object',()=>{
  const args=input(),before=structuredClone(args.slice(0,3)),batch=buildBookBatch(...args),{source,ledger,files}=collectionFiles();assert.deepEqual(args.slice(0,3),before);
- const old=['opening-revelation-8f9b7206f3b1c395','faith-51ef5137099b1ce5','knowledge-0b3fbe8a82cf56d5','ablution-06f5b0511207d61d'].flatMap(p=>read('reader/books/'+p+'.json').entries);assert.deepEqual(source.entries.slice(0,153),old);assert.equal(source.entries.length,191);
+ const old=['opening-revelation-8f9b7206f3b1c395','faith-51ef5137099b1ce5','knowledge-0b3fbe8a82cf56d5','ablution-06f5b0511207d61d'].flatMap(p=>read('reader/books/'+p+'.json').entries);assert.deepEqual(source.entries.slice(0,153),old);assert.equal(source.entries.length,208);
  const original=args[0].records.find(e=>e.number===155),entry=batch.entries[1];assert.deepEqual(entry.arabic_blocks.slice(0,2),original.paragraphIds.map(id=>args[0].blocks.find(b=>b.htmlId===id).text));assert.equal(entry.arabic_blocks.length,3);
  assert.equal(entry.review.sourceLayout.paragraphs[0].origin.start,2);assert.equal(entry.review.sourceLayout.paragraphs.length,2);assert.equal(entry.review.arabicSupplements.length,1);
- const inputs=JSON.parse(files.get('reader/ablution-inputs.json'));assert.equal(inputs.selectedBlocks.length,162);assert(!inputs.selectedBlocks.some(b=>b.htmlId.startsWith('print-')));assert(inputs.sourceLayout.originalBlocks.find(b=>b.htmlId==='mwYQ').text.startsWith('\n\n[155]'));
+ const inputs=JSON.parse(files.get('reader/ablution-inputs.json'));assert.equal(inputs.selectedBlocks.length,188);assert(!inputs.selectedBlocks.some(b=>b.htmlId.startsWith('print-')));assert(inputs.sourceLayout.originalBlocks.find(b=>b.htmlId==='mwYQ').text.startsWith('\n\n[155]'));
  assert.deepEqual(ledger.books.find(b=>b.id==='ablution').chapters.filter(c=>['chapter-20','chapter-20-print-21'].includes(c.id)).map(c=>c.entryNumbers),[[154],[155]]);
 });
 test('printed transmission notes require exact original identity, selected wording, two witnesses and a visible notice',()=>{
