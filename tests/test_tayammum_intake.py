@@ -20,5 +20,5 @@ class TayammumIntakeTests(unittest.TestCase):
    with self.assertRaises(ValueError):m.resolve(self.audit,review,self.english)
  def test_structural_intake_remains_ineligible_while_separately_reviewed_book_is_published(self):
   self.assertFalse(self.result['readerEligible']);self.assertEqual([r['number']for r in self.result['records']],list(range(327,342)));self.assertEqual(len(self.result['chapters']),8)
-  catalog=m.read(ROOT/'reader/books/catalog.json');self.assertEqual([r['number']for r in catalog['entries']if r['bookId']=='tayammum'],list(range(327,342)));self.assertFalse(any(r['number']>=342 for r in catalog['entries']))
+  catalog=m.read(ROOT/'reader/books/catalog.json');self.assertEqual([r['number']for r in catalog['entries']if r['bookId']=='tayammum'],list(range(327,342)));self.assertFalse(any(r['bookId']=='tayammum' and r['number']>=342 for r in catalog['entries']))
 if __name__=='__main__':unittest.main()

@@ -15,7 +15,7 @@ test('Ablution admits seven complete reports and eight chapters while preserving
  assert.deepEqual(args.slice(0,3),original);assert.deepEqual(batch.entries.map(e=>e.number),[135,136,137,138,139,140,141]);assert.equal(batch.chapters.length,8);
  assert.deepEqual(batch.chapters[0].entryNumbers,[]);assert.equal(batch.chapters[0].sourceContext.introduction.arabicParagraphs,2);assert.equal(batch.chapters[5].sourceContext.introduction.arabicParagraphs,1);
  const previous=['opening-revelation-04b0db06903608d8','faith-72f493a0d1681cd6','knowledge-d3216a2acee5ec98'].flatMap(name=>read('reader/books/'+name+'.json').entries);
- assert.deepEqual(source.entries.slice(0,134),previous);assert.equal(source.entries.length,341);
+ assert.deepEqual(source.entries.slice(0,134),previous);assert.equal(source.entries.length,351);
  for(const entry of batch.entries){const row=args[1].entries.find(r=>r.number===entry.number);assert.deepEqual(sourceSegments(entry,'english').map(s=>s.text),row.segments.map(s=>s.english));assert.deepEqual(entry.review.sourceLayout,row.sourceLayout);}
 });
 test('mapped source changes are rejected even when the batch inventory hash is updated',()=>{
@@ -48,7 +48,7 @@ test('the long report retains both left-wording occurrences, the repeated chain 
 });
 test('source-only chapter browsing and the next numbered session cross into Ablution without changing a saved plan',()=>{
  const {source,ledger}=collectionFiles(),saved={numbers:[134],cursor:134,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,134),saved);assert.equal(nextSession(source.entries,saved,5).cursor,135);
- assert(planSession(source.entries,134,5).numbers.includes(135));assert.deepEqual(planSession(source.entries,341,5).numbers,[341]);assert.equal(nextSession(source.entries,{numbers:[341],cursor:341,ended:true},5),null);
+ assert(planSession(source.entries,134,5).numbers.includes(135));assert.deepEqual(planSession(source.entries,351,5).numbers,[351]);assert.equal(nextSession(source.entries,{numbers:[351],cursor:351,ended:true},5),null);
  const book=ledger.books.find(b=>b.id==='ablution');assert.equal(book.sourceEntryCount,110);assert.deepEqual(book.chapters[0].entryNumbers,[]);assert.equal(book.chapters[0].sourceContext.numberedReports,'none-in-source');
 });
 test('mapped labels and shared paragraphs keep original evidence in the future admission path',()=>{

@@ -40,7 +40,7 @@ class WikisourceLayoutTests(unittest.TestCase):
   d=ROOT/'content/sources/wikisource-opening';manifest=json.loads((d/'manifest.json').read_text());raw=(d/'source.html').read_bytes();position=raw.index(b'</p>',raw.index(b'[7]'));raw=raw[:position]+b' [99] extra report'+raw[position:];manifest['file'].update(bytes=len(raw),sha256=book.sha(raw))
   with self.assertRaisesRegex(ValueError,'explicit boundary review'):audit.opening.extract(raw,manifest)
  def test_committed_audit_is_reproducible_and_corruption_is_refused(self):
-  registry=json.loads((ROOT/'content/sources/wikisource-books.json').read_text());result=dict(audit.build_registered(registry,True));self.assertEqual(result['ablution'],self.result);self.assertEqual(set(result),{'ablution','tayammum'})
+  registry=json.loads((ROOT/'content/sources/wikisource-books.json').read_text());result=dict(audit.build_registered(registry,True));self.assertEqual(result['ablution'],self.result);self.assertEqual(set(result),{'ablution','tayammum','prayer'})
   with tempfile.TemporaryDirectory()as tmp:
    d=Path(tmp)
    for mutate in [lambda m:m['file'].update(bytes=1),lambda m:m.update(revision=1),lambda m:m['expected']['layoutSummary'].update(numberedMarkers=103),lambda m:m['file'].update(path='../source.html')]:
@@ -55,6 +55,6 @@ class WikisourceLayoutTests(unittest.TestCase):
    root=Path(tmp);(root/'content/sources').mkdir(parents=True);(root/'content/sources/wikisource-ablution').symlink_to(self.directory,target_is_directory=True)
    with self.assertRaises(ValueError):audit.audit_paths(registry,root)
  def test_full_candidate_is_not_automatically_admitted_to_the_reader(self):
-  catalog=json.loads((ROOT/'reader/books/catalog.json').read_text());self.assertEqual([b['id']for b in catalog['books']],['opening-revelation','faith','knowledge','ablution','ghusl','menstruation','tayammum']);self.assertEqual(catalog['entries'][-1]['number'],341)
-  release=(ROOT/'reader/release.mjs').read_text();self.assertNotIn('layout-audit',release);self.assertFalse(any(e['number']>341 for e in catalog['entries']))
+  catalog=json.loads((ROOT/'reader/books/catalog.json').read_text());self.assertEqual([b['id']for b in catalog['books']],['opening-revelation','faith','knowledge','ablution','ghusl','menstruation','tayammum','prayer']);self.assertEqual(catalog['entries'][-1]['number'],351)
+  release=(ROOT/'reader/release.mjs').read_text();self.assertNotIn('layout-audit',release);self.assertFalse(any(e['number']>351 for e in catalog['entries']))
 if __name__=='__main__':unittest.main()

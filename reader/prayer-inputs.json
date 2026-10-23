@@ -1,0 +1,2118 @@
+{
+  "schemaVersion": 1,
+  "sourceLocationCorrections": {
+    "schemaVersion": 1,
+    "corrections": [
+      {
+        "sourceId": "brill-1862",
+        "fromURL": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf",
+        "toURL": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+        "bytes": 28290204,
+        "verifiedAt": "2026-10-21",
+        "basis": "The earlier URL returns 404. The corrected Wikimedia volume-one URL was located through the Wikisource file index and downloaded. Its full file SHA-256 matches the already pinned historical witness. This repairs a citation URL only; original review inputs and every hadith text remain unchanged.",
+        "discoveryURL": "https://ar.wikisource.org/wiki/ملف:صحيح_البخاري_ر0.pdf"
+      }
+    ]
+  },
+  "status": "personal-prototype-only",
+  "manifest": {
+    "id": "wikisource-bukhari-prayer-r522110",
+    "revision": 522110,
+    "retrievedAt": "2026-10-23",
+    "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_الصلاة&oldid=522110",
+    "status": "candidate-layout-review-required",
+    "readerEligible": false,
+    "license": {
+      "id": "CC-BY-SA-4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Sahih al-Bukhari by Muhammad ibn Ismail al-Bukhari; Arabic digital transcription by Arabic Wikisource contributors, revision 522110.",
+      "changes": "The HTML is retained unchanged. Decoded text is not trimmed, normalized or corrected. Two leading newline characters before selected 453 require an explicit structural classification. This intake adds no English translation."
+    },
+    "file": {
+      "path": "source.html",
+      "bytes": 362712,
+      "sha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7"
+    },
+    "note": "This exact retrieval is pinned in addition to its revision ID. The candidate inventory has 108 rendered headings and 157 numbered markers. Structural coverage is not a claim that every printed heading or narration variant is present. Edition identity and wording approval are not inferred.",
+    "expected": {
+      "blocks": 305,
+      "layoutSummary": {
+        "blocks": 305,
+        "htmlHeadings": 108,
+        "unparsedHeadings": 0,
+        "numberedMarkers": 157,
+        "uniqueNumericLabels": 157,
+        "numericRange": [
+          342,
+          498
+        ],
+        "unobservedLabelsWithinRange": [],
+        "duplicateLabels": [],
+        "sourceCodePoints": 56260,
+        "coveredCodePoints": 56260
+      }
+    }
+  },
+  "completeInventorySha256": "c20bf799ffe65f7a219cc0f8ac3b8f82bc7627b60666bcff2ba7756a04934884",
+  "scope": "Only the blocks used by Hadith 342–351 and their chapter context. The complete source inventory remains separately preserved.",
+  "selectedBlocks": [
+    {
+      "htmlId": "باب_كيف_فرضت_الصلوات_في_الإسراء",
+      "tag": "h3",
+      "text": "باب كيف فرضت الصلوات في الإسراء",
+      "ordinal": 0,
+      "textSha256": "f1111f2299e6da4775e8ce2e31e2b0f0b8ea765663fb58c9eed2981a9f3a3bde",
+      "role": "heading",
+      "origin": {
+        "blockId": "باب_كيف_فرضت_الصلوات_في_الإسراء",
+        "blockSha256": "f1111f2299e6da4775e8ce2e31e2b0f0b8ea765663fb58c9eed2981a9f3a3bde",
+        "start": 0,
+        "end": 31
+      }
+    },
+    {
+      "htmlId": "mwBg",
+      "tag": "p",
+      "text": "وقال ابن عباس حدثني أبو سفيان في حديث هرقل، فقال يأمرنا يعني النبي ﷺ بالصلاة والصدق والعفاف ",
+      "ordinal": 1,
+      "textSha256": "6bb71fcc8ada6a23e59eb9259053bbcbeb94348909e244c873bcade6bb8fa61c",
+      "role": "text",
+      "origin": {
+        "blockId": "mwBg",
+        "blockSha256": "6bb71fcc8ada6a23e59eb9259053bbcbeb94348909e244c873bcade6bb8fa61c",
+        "start": 0,
+        "end": 92
+      }
+    },
+    {
+      "htmlId": "mwCA",
+      "tag": "p",
+      "text": "[342] حدثنا يحيى بن بكير قال: حدثنا الليث عن يونس عن ابن شهاب عن أنس بن مالك قال: كان أبو ذر يحدث أن رسول الله ﷺ قال: فرج عن سقف بيتي وأنا بمكة فنزل جبريل ففرج صدري ثم غسله بماء زمزم ثم جاء بطست من ذهب ممتلئ حكمة وإيمانا فأفرغه في صدري ثم أطبقه ثم أخذ بيدي فعرج بي إلى السماء الدنيا فلما جئت إلى السماء الدنيا قال جبريل لخازن السماء افتح قال من هذا قال هذا جبريل قال هل معك أحد قال: نعم معي محمد ﷺ، فقال أرسل إليه قال: نعم فلما فتح علونا السماء الدنيا فإذا رجل قاعد على يمينه أسودة وعلى يساره أسودة إذا نظر قبل يمينه ضحك وإذا نظر قبل يساره بكى، فقال مرحبا بالنبي الصالح والابن الصالح قلت لجبريل من هذا قال هذا آدم وهذه الأسودة عن يمينه وشماله نسم بنيه فأهل اليمين منهم أهل الجنة والأسودة التي عن شماله أهل النار فإذا نظر عن يمينه ضحك وإذا نظر قبل شماله بكى حتى عرج بي إلى السماء الثانية، فقال لخازنها افتح، فقال له خازنها مثل ما قال الأول ففتح قال أنس فذكر أنه وجد في السماوات آدم وإدريس وموسى وعيسى وإبراهيم صلوات الله عليهم ولم يثبت كيف منازلهم غير أنه ذكر أنه وجد آدم في السماء الدنيا وإبراهيم في السماء السادسة قال أنس فلما مر جبريل بالنبي ﷺ بإدريس قال مرحبا بالنبي الصالح والأخ الصالح فقلت: من هذا قال هذا إدريس ثم مررت بموسى، فقال مرحبا بالنبي الصالح والأخ الصالح قلت: من هذا قال هذا موسى ثم مررت بعيسى، فقال مرحبا بالأخ الصالح والنبي الصالح قلت: من هذا قال هذا عيسى ثم مررت بإبراهيم، فقال مرحبا بالنبي الصالح والابن الصالح قلت: من هذا قال هذا إبراهيم ﷺ قال ابن شهاب فأخبرني ابن حزم ان ابن عباس وأبا حبة الأنصارى كانا يقولان قال النبي ﷺ ثم عرج بي حتى ظهرت لمستوى أسمع فيه صريف الأقلام قال ابن حزم وأنس بن مالك قال النبي ﷺ ففرض الله على أمتي خمسين صلاة فرجعت بذلك حتى مررت على موسى، فقال: ما فرض الله لك على أمتك قلت: فرض خمسين صلاة قال: فارجع إلى ربك فإن أمتك لا تطيق ذلك فراجعني فوضع شطرها فرجعت إلى موسى قلت: وضع شطرها، فقال راجع ربك فإن أمتك لا تطيق فراجعت فوضع شطرها فرجعت إليه، فقال ارجع إلى ربك فإن أمتك لا تطيق ذلك فراجعته، فقال هي خمس وهي خمسون لا يبدل القول لدي فرجعت إلى موسى، فقال راجع ربك فقلت: استحييت من ربي ثم انطلق بي حتى انتهى بي إلى سدرة المنتهى وغشيها ألوان لا أدري ما هي ثم أدخلت الجنة فإذا فيها حبايل اللؤلؤ وإذا ترابها المسك  ",
+      "ordinal": 2,
+      "textSha256": "cc78f5974d9230954b1cf1f0db7245811c2777fc6c0895e959b20653a72c738b",
+      "role": "report-start",
+      "origin": {
+        "blockId": "mwCA",
+        "blockSha256": "cc78f5974d9230954b1cf1f0db7245811c2777fc6c0895e959b20653a72c738b",
+        "start": 0,
+        "end": 2054
+      },
+      "number": 342,
+      "sourceReference": {
+        "label": "342",
+        "number": 342,
+        "markerId": "mwCA:0",
+        "occurrence": 1
+      }
+    },
+    {
+      "htmlId": "mwDw",
+      "tag": "p",
+      "text": "[343] حدثنا عبد الله بن يوسف قال: أخبرنا مالك عن صالح بن كيسان عن عروة بن الزبير عن عائشة أم المؤمنين قالت فرض الله الصلاة حين فرضها ركعتين ركعتين في الحضر والسفر فأقرت صلاة السفر وزيد في صلاة الحضر ",
+      "ordinal": 3,
+      "textSha256": "d55e169a44d043285003b5fecf9ad21e3ec1b14cef009c3b8084396a34dfafe0",
+      "role": "report-start",
+      "origin": {
+        "blockId": "mwDw",
+        "blockSha256": "d55e169a44d043285003b5fecf9ad21e3ec1b14cef009c3b8084396a34dfafe0",
+        "start": 0,
+        "end": 199
+      },
+      "number": 343,
+      "sourceReference": {
+        "label": "343",
+        "number": 343,
+        "markerId": "mwDw:0",
+        "occurrence": 1
+      }
+    },
+    {
+      "htmlId": "باب_وجوب_الصلاة_في_الثياب",
+      "tag": "h3",
+      "text": "باب وجوب الصلاة في الثياب",
+      "ordinal": 4,
+      "textSha256": "8c817d3b6de75e461fd604e72baabc72fd57f8e1c8d9ed55725e8db7717b123e",
+      "role": "heading",
+      "origin": {
+        "blockId": "باب_وجوب_الصلاة_في_الثياب",
+        "blockSha256": "8c817d3b6de75e461fd604e72baabc72fd57f8e1c8d9ed55725e8db7717b123e",
+        "start": 0,
+        "end": 25
+      }
+    },
+    {
+      "htmlId": "mwEQ",
+      "tag": "p",
+      "text": "وقول الله تعالى { خذوا زينتكم عند كل مسجد } ومن صلى ملتحفا في ثوب واحد ويذكر عن سلمة بن الأكوع أن النبي ﷺ قال: يزره ولو بشوكة في إسناده نظر ومن صلى في الثوب الذي يجامع فيه ما لم ير أذى وأمر النبي ﷺ أن لا يطوف بالبيت عريان ",
+      "ordinal": 5,
+      "textSha256": "c02faea6de88fec8fda31c4fb9d7f2085318425f4c947d856b97ec9c41999099",
+      "role": "text",
+      "origin": {
+        "blockId": "mwEQ",
+        "blockSha256": "c02faea6de88fec8fda31c4fb9d7f2085318425f4c947d856b97ec9c41999099",
+        "start": 0,
+        "end": 222
+      }
+    },
+    {
+      "htmlId": "mwFA",
+      "tag": "p",
+      "text": "[344] حدثنا موسى بن إسماعيل قال: حدثنا يزيد بن إبراهيم عن محمد عن أم عطية قالت أمرنا أن نخرج الحيض يوم العيدين وذوات الخدور فيشهدن جماعة المسلمين ودعوتهم ويعتزل الحيض عن مصلاهن قالت امرأة يا رسول الله إحدانا ليس لها جلباب قال لتلبسها صاحبتها من جلبابها، وقال عبد الله بن رجاء حدثنا عمران حدثنا محمد بن سيرين حدثتنا أم عطية سمعت النبي ﷺ بهذا ",
+      "ordinal": 6,
+      "textSha256": "0cb47fa0b8c5225c7fce509f7587e20497f770082204a0a6e0cbdac3c6db649b",
+      "role": "report-start",
+      "origin": {
+        "blockId": "mwFA",
+        "blockSha256": "0cb47fa0b8c5225c7fce509f7587e20497f770082204a0a6e0cbdac3c6db649b",
+        "start": 0,
+        "end": 341
+      },
+      "number": 344,
+      "sourceReference": {
+        "label": "344",
+        "number": 344,
+        "markerId": "mwFA:0",
+        "occurrence": 1
+      }
+    },
+    {
+      "htmlId": "باب_عقد_الإزار_على_القفا_في_الصلاة",
+      "tag": "h3",
+      "text": "باب عقد الإزار على القفا في الصلاة",
+      "ordinal": 7,
+      "textSha256": "690e23a539403d8db23cf933f5086537b051ffcdaaa2f39969b8374421ce41ec",
+      "role": "heading",
+      "origin": {
+        "blockId": "باب_عقد_الإزار_على_القفا_في_الصلاة",
+        "blockSha256": "690e23a539403d8db23cf933f5086537b051ffcdaaa2f39969b8374421ce41ec",
+        "start": 0,
+        "end": 34
+      }
+    },
+    {
+      "htmlId": "mwFw",
+      "tag": "p",
+      "text": "وقال أبو حازم عن سهل صلوا مع النبي ﷺ عاقدي أزرهم على عواتقهم ",
+      "ordinal": 8,
+      "textSha256": "9046eb8c8f99a3cd0777b590871d32a6947e5965a25c8a7c519598b42ceb0d00",
+      "role": "text",
+      "origin": {
+        "blockId": "mwFw",
+        "blockSha256": "9046eb8c8f99a3cd0777b590871d32a6947e5965a25c8a7c519598b42ceb0d00",
+        "start": 0,
+        "end": 61
+      }
+    },
+    {
+      "htmlId": "mwGQ",
+      "tag": "p",
+      "text": "[345] حدثنا أحمد بن يونس قال: حدثنا عاصم بن محمد قال: حدثني واقد بن محمد عن محمد بن المنكدر قال صلى جابر في إزار قد عقده من قبل قفاه وثيابه موضوعة على المشجب قال له قائل تصلي في إزار واحد، فقال إنما صنعت ذلك ليراني أحمق مثلك وأينا كان له ثوبان على عهد النبي ﷺ",
+      "ordinal": 9,
+      "textSha256": "e595ea88398348ab8335652556a2ff70383786c92cb981d59c2e56ee33d17f21",
+      "role": "report-start",
+      "origin": {
+        "blockId": "mwGQ",
+        "blockSha256": "e595ea88398348ab8335652556a2ff70383786c92cb981d59c2e56ee33d17f21",
+        "start": 0,
+        "end": 259
+      },
+      "number": 345,
+      "sourceReference": {
+        "label": "345",
+        "number": 345,
+        "markerId": "mwGQ:0",
+        "occurrence": 1
+      }
+    },
+    {
+      "htmlId": "mwGw",
+      "tag": "p",
+      "text": "[346] حدثنا مطرف أبو مصعب قال: حدثنا عبد الرحمن بن أبي الموالي عن محمد بن المنكدر قال: رأيت جابر بن عبد الله يصلي في ثوب واحد، وقال: رأيت النبي ﷺ يصلي في ثوب ",
+      "ordinal": 10,
+      "textSha256": "531625a33e8b28d69042205ac7d322b2581a0717eea881860ff8758c95fcea6f",
+      "role": "report-start",
+      "origin": {
+        "blockId": "mwGw",
+        "blockSha256": "531625a33e8b28d69042205ac7d322b2581a0717eea881860ff8758c95fcea6f",
+        "start": 0,
+        "end": 158
+      },
+      "number": 346,
+      "sourceReference": {
+        "label": "346",
+        "number": 346,
+        "markerId": "mwGw:0",
+        "occurrence": 1
+      }
+    },
+    {
+      "htmlId": "باب_الصلاة_في_الثوب_الواحد_ملتحفا_به",
+      "tag": "h3",
+      "text": "باب الصلاة في الثوب الواحد ملتحفا به",
+      "ordinal": 11,
+      "textSha256": "bb7f6ade02bd64c2fb4792878313313e0c0da7c5b46a82ce5048c61fe03be42f",
+      "role": "heading",
+      "origin": {
+        "blockId": "باب_الصلاة_في_الثوب_الواحد_ملتحفا_به",
+        "blockSha256": "bb7f6ade02bd64c2fb4792878313313e0c0da7c5b46a82ce5048c61fe03be42f",
+        "start": 0,
+        "end": 36
+      }
+    },
+    {
+      "htmlId": "mwHg",
+      "tag": "p",
+      "text": "قال الزهري في حديثه الملتحف المتوشح وهو المخالف بين طرفيه على عاتقيه وهو الاشتمال على منكبيه قال: قالت أم هانئ التحف النبي ﷺ بثوب وخالف بين طرفيه على عاتقيه ",
+      "ordinal": 12,
+      "textSha256": "280e3da8f934455ecdfa08cc0685874d6da506b82c7c3d40e34c862172445ffd",
+      "role": "text",
+      "origin": {
+        "blockId": "mwHg",
+        "blockSha256": "280e3da8f934455ecdfa08cc0685874d6da506b82c7c3d40e34c862172445ffd",
+        "start": 0,
+        "end": 157
+      }
+    },
+    {
+      "htmlId": "mwIA",
+      "tag": "p",
+      "text": "[347] حدثنا عبيد الله بن موسى قال: حدثنا هشام بن عروة عن أبيه عن عمر بن أبي سلمة أن النبي ﷺ صلى في ثوب واحد قد خالف بين طرفيه ",
+      "ordinal": 13,
+      "textSha256": "e3962c112a02d889159765a6d87062100b3f893e2f7cf010499686a1fab945b4",
+      "role": "report-start",
+      "origin": {
+        "blockId": "mwIA",
+        "blockSha256": "e3962c112a02d889159765a6d87062100b3f893e2f7cf010499686a1fab945b4",
+        "start": 0,
+        "end": 126
+      },
+      "number": 347,
+      "sourceReference": {
+        "label": "347",
+        "number": 347,
+        "markerId": "mwIA:0",
+        "occurrence": 1
+      }
+    },
+    {
+      "htmlId": "mwIg",
+      "tag": "p",
+      "text": "[348] حدثنا محمد بن المثنى قال: حدثنا يحيى قال: حدثنا هشام قال: حدثني أبي عن عمر بن أبي سلمة أنه رأى النبي ﷺ يصلي في ثوب واحد في بيت أم سلمة قد ألقى طرفيه على عاتقيه ",
+      "ordinal": 14,
+      "textSha256": "294076817f25265319d3eb3ec3011769a8b61967084f244cca87bd25fe87d041",
+      "role": "report-start",
+      "origin": {
+        "blockId": "mwIg",
+        "blockSha256": "294076817f25265319d3eb3ec3011769a8b61967084f244cca87bd25fe87d041",
+        "start": 0,
+        "end": 166
+      },
+      "number": 348,
+      "sourceReference": {
+        "label": "348",
+        "number": 348,
+        "markerId": "mwIg:0",
+        "occurrence": 1
+      }
+    },
+    {
+      "htmlId": "mwJA",
+      "tag": "p",
+      "text": "[349] حدثنا عبيد بن إسماعيل قال: حدثنا أبو أسامة عن هشام عن أبيه أن عمر بن أبي سلمة أخبره قال: رأيت رسول الله ﷺ يصلي في ثوب واحد مشتملا به في بيت أم سلمة واضعا طرفيه على عاتقيه ",
+      "ordinal": 15,
+      "textSha256": "ead10afd66df22de4c673d120f1a832a0b045c70d0f8ef62a18e6b6340b05932",
+      "role": "report-start",
+      "origin": {
+        "blockId": "mwJA",
+        "blockSha256": "ead10afd66df22de4c673d120f1a832a0b045c70d0f8ef62a18e6b6340b05932",
+        "start": 0,
+        "end": 177
+      },
+      "number": 349,
+      "sourceReference": {
+        "label": "349",
+        "number": 349,
+        "markerId": "mwJA:0",
+        "occurrence": 1
+      }
+    },
+    {
+      "htmlId": "mwJg",
+      "tag": "p",
+      "text": "[350] حدثنا إسماعيل بن أبي أويس قال: حدثني مالك بن أنس عن أبي النضر مولى عمر بن عبيد الله أن أبا مرة مولى أم هانئ بنت أبي طالب أخبره أنه سمع أم هانئ بنت أبي طالب تقول ذهبت إلى رسول الله ﷺ عام الفتح فوجدته يغتسل وفاطمة ابنته تستره قالت فسلمت عليه، فقال من هذه فقلت: أنا أم هانئ بنت أبي طالب، فقال مرحبا بأم هانئ فلما فرغ من غسله قام فصلى ثماني ركعات ملتحفا في ثوب واحد فلما انصرف قلت: يا رسول الله زعم بن أمي أنه قاتل رجلا قد أجرته فلان بن هبيرة، فقال رسول الله ﷺ: قد أجرنا من أجرت يا أم هانئ قالت أم هانئ وذاك ضحى ",
+      "ordinal": 16,
+      "textSha256": "d6a129b79714a004b7281ec19b4e25c87610454b961a3292e74aea6e8f0f8596",
+      "role": "report-start",
+      "origin": {
+        "blockId": "mwJg",
+        "blockSha256": "d6a129b79714a004b7281ec19b4e25c87610454b961a3292e74aea6e8f0f8596",
+        "start": 0,
+        "end": 514
+      },
+      "number": 350,
+      "sourceReference": {
+        "label": "350",
+        "number": 350,
+        "markerId": "mwJg:0",
+        "occurrence": 1
+      }
+    },
+    {
+      "htmlId": "mwKQ",
+      "tag": "p",
+      "text": "[351] حدثنا عبد الله بن يوسف قال: أخبرنا مالك عن ابن شهاب عن سعيد بن المسيب عن أبي هريرة أن سائلا سأل رسول الله ﷺ عن الصلاة في ثوب واحد، فقال رسول الله ﷺ: أو لكلكم ثوبان ",
+      "ordinal": 17,
+      "textSha256": "927ed25f16f26e687428baba798dfd5a58625827a9a0adcfe5836effd8fd04fc",
+      "role": "report-start",
+      "origin": {
+        "blockId": "mwKQ",
+        "blockSha256": "927ed25f16f26e687428baba798dfd5a58625827a9a0adcfe5836effd8fd04fc",
+        "start": 0,
+        "end": 170
+      },
+      "number": 351,
+      "sourceReference": {
+        "label": "351",
+        "number": 351,
+        "markerId": "mwKQ:0",
+        "occurrence": 1
+      }
+    }
+  ],
+  "sourceLayout": {
+    "schemaVersion": 1,
+    "sourceId": "wikisource-bukhari-prayer-r522110",
+    "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+    "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+    "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+    "completeLayoutReview": {
+      "schemaVersion": 1,
+      "status": "ai-reviewed-layout-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "checkedAt": "2026-10-23",
+      "sourceId": "wikisource-bukhari-prayer-r522110",
+      "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+      "auditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+      "sources": [
+        {
+          "id": "brill-1862",
+          "label": "Historical Arabic print · Brill 1862",
+          "kind": "arabic-witness",
+          "format": "pdf",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf",
+          "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "label": "Arabic print · Dar Ibn Kathir 2002",
+          "kind": "arabic-witness",
+          "format": "pdf",
+          "url": "https://archive.org/download/waq79565/79565.pdf",
+          "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+        }
+      ],
+      "scope": "Exact structural classification only: all 56260 code points remain accounted for. Two newlines before the independently chained report 453 are preserved as spacing. The source omits an untitled chapter marker present before this report in both inspected prints; no absent heading is invented. Wording, chapter alignment and translation require later per-batch review.",
+      "expected": {
+        "numbers": [
+          342,
+          343,
+          344,
+          345,
+          346,
+          347,
+          348,
+          349,
+          350,
+          351,
+          352,
+          353,
+          354,
+          355,
+          356,
+          357,
+          358,
+          359,
+          360,
+          361,
+          362,
+          363,
+          364,
+          365,
+          366,
+          367,
+          368,
+          369,
+          370,
+          371,
+          372,
+          373,
+          374,
+          375,
+          376,
+          377,
+          378,
+          379,
+          380,
+          381,
+          382,
+          383,
+          384,
+          385,
+          386,
+          387,
+          388,
+          389,
+          390,
+          391,
+          392,
+          393,
+          394,
+          395,
+          396,
+          397,
+          398,
+          399,
+          400,
+          401,
+          402,
+          403,
+          404,
+          405,
+          406,
+          407,
+          408,
+          409,
+          410,
+          411,
+          412,
+          413,
+          414,
+          415,
+          416,
+          417,
+          418,
+          419,
+          420,
+          421,
+          422,
+          423,
+          424,
+          425,
+          426,
+          427,
+          428,
+          429,
+          430,
+          431,
+          432,
+          433,
+          434,
+          435,
+          436,
+          437,
+          438,
+          439,
+          440,
+          441,
+          442,
+          443,
+          444,
+          445,
+          446,
+          447,
+          448,
+          449,
+          450,
+          451,
+          452,
+          453,
+          454,
+          455,
+          456,
+          457,
+          458,
+          459,
+          460,
+          461,
+          462,
+          463,
+          464,
+          465,
+          466,
+          467,
+          468,
+          469,
+          470,
+          471,
+          472,
+          473,
+          474,
+          475,
+          476,
+          477,
+          478,
+          479,
+          480,
+          481,
+          482,
+          483,
+          484,
+          485,
+          486,
+          487,
+          488,
+          489,
+          490,
+          491,
+          492,
+          493,
+          494,
+          495,
+          496,
+          497,
+          498
+        ],
+        "chapters": 108
+      },
+      "pageNumbering": "One-based PDF page numbers, not printed page labels.",
+      "decisions": [
+        {
+          "id": "layout-mwAaI",
+          "blockId": "mwAaI",
+          "blockSha256": "3fcbeaf11f6f21cb5caa3a7b3460227516d081ca594ceeef61554838e586ed49",
+          "issueIndexes": [
+            0
+          ],
+          "note": "The original has exactly two newline characters before [453]. Preserve them as a blank unit; the remainder begins a distinct numbered report, not a continuation of 452. Both inspected prints show a new Muhammad ibn al-Muthanna / Muadh ibn Hisham chain for this account after Umm Salamah’s account and before the doorway chapter. Both prints also have an untitled chapter 79 before it, absent from this digital source. This structural map does not silently insert that heading or approve the report wording.",
+          "printedWitnesses": [
+            {
+              "id": "brill-1862",
+              "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+              "pdfPages": [
+                127,
+                128
+              ]
+            },
+            {
+              "id": "dar-ibn-kathir-2002",
+              "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+              "pdfPages": [
+                124
+              ]
+            }
+          ],
+          "units": [
+            {
+              "start": 0,
+              "end": 2,
+              "kind": "blank"
+            },
+            {
+              "start": 2,
+              "end": 243,
+              "kind": "report-start",
+              "number": 453
+            }
+          ]
+        }
+      ]
+    },
+    "originalBlocks": [
+      {
+        "htmlId": "باب_كيف_فرضت_الصلوات_في_الإسراء",
+        "tag": "h3",
+        "text": "باب كيف فرضت الصلوات في الإسراء",
+        "ordinal": 0,
+        "textSha256": "f1111f2299e6da4775e8ce2e31e2b0f0b8ea765663fb58c9eed2981a9f3a3bde"
+      },
+      {
+        "htmlId": "mwBg",
+        "tag": "p",
+        "text": "وقال ابن عباس حدثني أبو سفيان في حديث هرقل، فقال يأمرنا يعني النبي ﷺ بالصلاة والصدق والعفاف ",
+        "ordinal": 1,
+        "textSha256": "6bb71fcc8ada6a23e59eb9259053bbcbeb94348909e244c873bcade6bb8fa61c"
+      },
+      {
+        "htmlId": "mwCA",
+        "tag": "p",
+        "text": "[342] حدثنا يحيى بن بكير قال: حدثنا الليث عن يونس عن ابن شهاب عن أنس بن مالك قال: كان أبو ذر يحدث أن رسول الله ﷺ قال: فرج عن سقف بيتي وأنا بمكة فنزل جبريل ففرج صدري ثم غسله بماء زمزم ثم جاء بطست من ذهب ممتلئ حكمة وإيمانا فأفرغه في صدري ثم أطبقه ثم أخذ بيدي فعرج بي إلى السماء الدنيا فلما جئت إلى السماء الدنيا قال جبريل لخازن السماء افتح قال من هذا قال هذا جبريل قال هل معك أحد قال: نعم معي محمد ﷺ، فقال أرسل إليه قال: نعم فلما فتح علونا السماء الدنيا فإذا رجل قاعد على يمينه أسودة وعلى يساره أسودة إذا نظر قبل يمينه ضحك وإذا نظر قبل يساره بكى، فقال مرحبا بالنبي الصالح والابن الصالح قلت لجبريل من هذا قال هذا آدم وهذه الأسودة عن يمينه وشماله نسم بنيه فأهل اليمين منهم أهل الجنة والأسودة التي عن شماله أهل النار فإذا نظر عن يمينه ضحك وإذا نظر قبل شماله بكى حتى عرج بي إلى السماء الثانية، فقال لخازنها افتح، فقال له خازنها مثل ما قال الأول ففتح قال أنس فذكر أنه وجد في السماوات آدم وإدريس وموسى وعيسى وإبراهيم صلوات الله عليهم ولم يثبت كيف منازلهم غير أنه ذكر أنه وجد آدم في السماء الدنيا وإبراهيم في السماء السادسة قال أنس فلما مر جبريل بالنبي ﷺ بإدريس قال مرحبا بالنبي الصالح والأخ الصالح فقلت: من هذا قال هذا إدريس ثم مررت بموسى، فقال مرحبا بالنبي الصالح والأخ الصالح قلت: من هذا قال هذا موسى ثم مررت بعيسى، فقال مرحبا بالأخ الصالح والنبي الصالح قلت: من هذا قال هذا عيسى ثم مررت بإبراهيم، فقال مرحبا بالنبي الصالح والابن الصالح قلت: من هذا قال هذا إبراهيم ﷺ قال ابن شهاب فأخبرني ابن حزم ان ابن عباس وأبا حبة الأنصارى كانا يقولان قال النبي ﷺ ثم عرج بي حتى ظهرت لمستوى أسمع فيه صريف الأقلام قال ابن حزم وأنس بن مالك قال النبي ﷺ ففرض الله على أمتي خمسين صلاة فرجعت بذلك حتى مررت على موسى، فقال: ما فرض الله لك على أمتك قلت: فرض خمسين صلاة قال: فارجع إلى ربك فإن أمتك لا تطيق ذلك فراجعني فوضع شطرها فرجعت إلى موسى قلت: وضع شطرها، فقال راجع ربك فإن أمتك لا تطيق فراجعت فوضع شطرها فرجعت إليه، فقال ارجع إلى ربك فإن أمتك لا تطيق ذلك فراجعته، فقال هي خمس وهي خمسون لا يبدل القول لدي فرجعت إلى موسى، فقال راجع ربك فقلت: استحييت من ربي ثم انطلق بي حتى انتهى بي إلى سدرة المنتهى وغشيها ألوان لا أدري ما هي ثم أدخلت الجنة فإذا فيها حبايل اللؤلؤ وإذا ترابها المسك  ",
+        "ordinal": 2,
+        "textSha256": "cc78f5974d9230954b1cf1f0db7245811c2777fc6c0895e959b20653a72c738b"
+      },
+      {
+        "htmlId": "mwDw",
+        "tag": "p",
+        "text": "[343] حدثنا عبد الله بن يوسف قال: أخبرنا مالك عن صالح بن كيسان عن عروة بن الزبير عن عائشة أم المؤمنين قالت فرض الله الصلاة حين فرضها ركعتين ركعتين في الحضر والسفر فأقرت صلاة السفر وزيد في صلاة الحضر ",
+        "ordinal": 3,
+        "textSha256": "d55e169a44d043285003b5fecf9ad21e3ec1b14cef009c3b8084396a34dfafe0"
+      },
+      {
+        "htmlId": "باب_وجوب_الصلاة_في_الثياب",
+        "tag": "h3",
+        "text": "باب وجوب الصلاة في الثياب",
+        "ordinal": 4,
+        "textSha256": "8c817d3b6de75e461fd604e72baabc72fd57f8e1c8d9ed55725e8db7717b123e"
+      },
+      {
+        "htmlId": "mwEQ",
+        "tag": "p",
+        "text": "وقول الله تعالى { خذوا زينتكم عند كل مسجد } ومن صلى ملتحفا في ثوب واحد ويذكر عن سلمة بن الأكوع أن النبي ﷺ قال: يزره ولو بشوكة في إسناده نظر ومن صلى في الثوب الذي يجامع فيه ما لم ير أذى وأمر النبي ﷺ أن لا يطوف بالبيت عريان ",
+        "ordinal": 5,
+        "textSha256": "c02faea6de88fec8fda31c4fb9d7f2085318425f4c947d856b97ec9c41999099"
+      },
+      {
+        "htmlId": "mwFA",
+        "tag": "p",
+        "text": "[344] حدثنا موسى بن إسماعيل قال: حدثنا يزيد بن إبراهيم عن محمد عن أم عطية قالت أمرنا أن نخرج الحيض يوم العيدين وذوات الخدور فيشهدن جماعة المسلمين ودعوتهم ويعتزل الحيض عن مصلاهن قالت امرأة يا رسول الله إحدانا ليس لها جلباب قال لتلبسها صاحبتها من جلبابها، وقال عبد الله بن رجاء حدثنا عمران حدثنا محمد بن سيرين حدثتنا أم عطية سمعت النبي ﷺ بهذا ",
+        "ordinal": 6,
+        "textSha256": "0cb47fa0b8c5225c7fce509f7587e20497f770082204a0a6e0cbdac3c6db649b"
+      },
+      {
+        "htmlId": "باب_عقد_الإزار_على_القفا_في_الصلاة",
+        "tag": "h3",
+        "text": "باب عقد الإزار على القفا في الصلاة",
+        "ordinal": 7,
+        "textSha256": "690e23a539403d8db23cf933f5086537b051ffcdaaa2f39969b8374421ce41ec"
+      },
+      {
+        "htmlId": "mwFw",
+        "tag": "p",
+        "text": "وقال أبو حازم عن سهل صلوا مع النبي ﷺ عاقدي أزرهم على عواتقهم ",
+        "ordinal": 8,
+        "textSha256": "9046eb8c8f99a3cd0777b590871d32a6947e5965a25c8a7c519598b42ceb0d00"
+      },
+      {
+        "htmlId": "mwGQ",
+        "tag": "p",
+        "text": "[345] حدثنا أحمد بن يونس قال: حدثنا عاصم بن محمد قال: حدثني واقد بن محمد عن محمد بن المنكدر قال صلى جابر في إزار قد عقده من قبل قفاه وثيابه موضوعة على المشجب قال له قائل تصلي في إزار واحد، فقال إنما صنعت ذلك ليراني أحمق مثلك وأينا كان له ثوبان على عهد النبي ﷺ",
+        "ordinal": 9,
+        "textSha256": "e595ea88398348ab8335652556a2ff70383786c92cb981d59c2e56ee33d17f21"
+      },
+      {
+        "htmlId": "mwGw",
+        "tag": "p",
+        "text": "[346] حدثنا مطرف أبو مصعب قال: حدثنا عبد الرحمن بن أبي الموالي عن محمد بن المنكدر قال: رأيت جابر بن عبد الله يصلي في ثوب واحد، وقال: رأيت النبي ﷺ يصلي في ثوب ",
+        "ordinal": 10,
+        "textSha256": "531625a33e8b28d69042205ac7d322b2581a0717eea881860ff8758c95fcea6f"
+      },
+      {
+        "htmlId": "باب_الصلاة_في_الثوب_الواحد_ملتحفا_به",
+        "tag": "h3",
+        "text": "باب الصلاة في الثوب الواحد ملتحفا به",
+        "ordinal": 11,
+        "textSha256": "bb7f6ade02bd64c2fb4792878313313e0c0da7c5b46a82ce5048c61fe03be42f"
+      },
+      {
+        "htmlId": "mwHg",
+        "tag": "p",
+        "text": "قال الزهري في حديثه الملتحف المتوشح وهو المخالف بين طرفيه على عاتقيه وهو الاشتمال على منكبيه قال: قالت أم هانئ التحف النبي ﷺ بثوب وخالف بين طرفيه على عاتقيه ",
+        "ordinal": 12,
+        "textSha256": "280e3da8f934455ecdfa08cc0685874d6da506b82c7c3d40e34c862172445ffd"
+      },
+      {
+        "htmlId": "mwIA",
+        "tag": "p",
+        "text": "[347] حدثنا عبيد الله بن موسى قال: حدثنا هشام بن عروة عن أبيه عن عمر بن أبي سلمة أن النبي ﷺ صلى في ثوب واحد قد خالف بين طرفيه ",
+        "ordinal": 13,
+        "textSha256": "e3962c112a02d889159765a6d87062100b3f893e2f7cf010499686a1fab945b4"
+      },
+      {
+        "htmlId": "mwIg",
+        "tag": "p",
+        "text": "[348] حدثنا محمد بن المثنى قال: حدثنا يحيى قال: حدثنا هشام قال: حدثني أبي عن عمر بن أبي سلمة أنه رأى النبي ﷺ يصلي في ثوب واحد في بيت أم سلمة قد ألقى طرفيه على عاتقيه ",
+        "ordinal": 14,
+        "textSha256": "294076817f25265319d3eb3ec3011769a8b61967084f244cca87bd25fe87d041"
+      },
+      {
+        "htmlId": "mwJA",
+        "tag": "p",
+        "text": "[349] حدثنا عبيد بن إسماعيل قال: حدثنا أبو أسامة عن هشام عن أبيه أن عمر بن أبي سلمة أخبره قال: رأيت رسول الله ﷺ يصلي في ثوب واحد مشتملا به في بيت أم سلمة واضعا طرفيه على عاتقيه ",
+        "ordinal": 15,
+        "textSha256": "ead10afd66df22de4c673d120f1a832a0b045c70d0f8ef62a18e6b6340b05932"
+      },
+      {
+        "htmlId": "mwJg",
+        "tag": "p",
+        "text": "[350] حدثنا إسماعيل بن أبي أويس قال: حدثني مالك بن أنس عن أبي النضر مولى عمر بن عبيد الله أن أبا مرة مولى أم هانئ بنت أبي طالب أخبره أنه سمع أم هانئ بنت أبي طالب تقول ذهبت إلى رسول الله ﷺ عام الفتح فوجدته يغتسل وفاطمة ابنته تستره قالت فسلمت عليه، فقال من هذه فقلت: أنا أم هانئ بنت أبي طالب، فقال مرحبا بأم هانئ فلما فرغ من غسله قام فصلى ثماني ركعات ملتحفا في ثوب واحد فلما انصرف قلت: يا رسول الله زعم بن أمي أنه قاتل رجلا قد أجرته فلان بن هبيرة، فقال رسول الله ﷺ: قد أجرنا من أجرت يا أم هانئ قالت أم هانئ وذاك ضحى ",
+        "ordinal": 16,
+        "textSha256": "d6a129b79714a004b7281ec19b4e25c87610454b961a3292e74aea6e8f0f8596"
+      },
+      {
+        "htmlId": "mwKQ",
+        "tag": "p",
+        "text": "[351] حدثنا عبد الله بن يوسف قال: أخبرنا مالك عن ابن شهاب عن سعيد بن المسيب عن أبي هريرة أن سائلا سأل رسول الله ﷺ عن الصلاة في ثوب واحد، فقال رسول الله ﷺ: أو لكلكم ثوبان ",
+        "ordinal": 17,
+        "textSha256": "927ed25f16f26e687428baba798dfd5a58625827a9a0adcfe5836effd8fd04fc"
+      }
+    ],
+    "selectedDecisionIds": []
+  },
+  "review": {
+    "schemaVersion": 1,
+    "createdAt": "2026-10-23",
+    "status": "personal-prototype-only",
+    "independentReview": "pending",
+    "sourceId": "wikisource-bukhari-prayer-r522110",
+    "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+    "inventorySha256": "c20bf799ffe65f7a219cc0f8ac3b8f82bc7627b60666bcff2ba7756a04934884",
+    "sourceLayout": {
+      "schemaVersion": 1,
+      "sourceId": "wikisource-bukhari-prayer-r522110",
+      "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+      "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+      "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6"
+    },
+    "sources": [
+      {
+        "id": "arabic-prayer",
+        "label": "Arabic Wikisource · fixed revision 522110",
+        "kind": "arabic-input",
+        "format": "web",
+        "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_الصلاة&oldid=522110"
+      },
+      {
+        "id": "bewley-prayer",
+        "label": "Aisha Bewley · Book of Prayer and Clothing in the Prayer",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://aishabewley.org/bukhari5"
+      },
+      {
+        "id": "islamhouse-khan",
+        "label": "IslamHouse · Khan-family English comparison",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://islamhouse.com/en/books/70510"
+      },
+      {
+        "id": "brill-1862",
+        "label": "Historical Arabic print · Brill 1862",
+        "kind": "arabic-witness",
+        "format": "pdf",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf",
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+      },
+      {
+        "id": "dar-ibn-kathir-2002",
+        "label": "Arabic print · Dar Ibn Kathir 2002",
+        "kind": "arabic-witness",
+        "format": "pdf",
+        "url": "https://archive.org/download/waq79565/79565.pdf",
+        "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+      },
+      {
+        "id": "fath-prayer-390",
+        "label": "Ibn Hajar · Fath al-Bari · Prayer terminology and variants · online page 390",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://ablibrary.net/book_content/b/2601/390"
+      },
+      {
+        "id": "fath-prayer-391",
+        "label": "Ibn Hajar · Fath al-Bari · Prayer terminology and variants · online page 391",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://ablibrary.net/book_content/b/2601/391"
+      },
+      {
+        "id": "fath-prayer-392",
+        "label": "Ibn Hajar · Fath al-Bari · Prayer terminology and variants · online page 392",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://ablibrary.net/book_content/b/2601/392"
+      },
+      {
+        "id": "mirqat-prayer-11664",
+        "label": "Ali al-Qari · Mirqat al-Mafatih · Night Journey wording",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://www.islamweb.net/ar/library/content/79/11664/"
+      }
+    ],
+    "scope": "Complete numbered reports 342–351. Available chapter titles use provisional English. Disputed headings are labelled under review; unnumbered chapter introductions remain separately preserved in Arabic.",
+    "editionNote": "Selected Arabic wording is unchanged. Bewley divides the opening report and places the following Aisha account under a shared reference; both scopes are explicit. Its separate Clothing in the Prayer section is not treated as a new Arabic book. The printed chapter 1 title differs in singular/plural form between witnesses, and Bewley’s introductory wording differs from the selected والصدق. Introductions remain Arabic and outside daily sessions. Ambiguous lexical choices and print/English omissions are recorded; this AI-assisted personal prototype is not independently certified.",
+    "chapters": [
+      {
+        "id": "chapter-01",
+        "headingId": "باب_كيف_فرضت_الصلوات_في_الإسراء",
+        "contextIds": [
+          "mwBg"
+        ],
+        "entryNumbers": [
+          342,
+          343
+        ],
+        "title": "How the prayers were made obligatory during the Night Journey",
+        "titleArabic": "باب كيف فرضت الصلوات في الإسراء",
+        "status": "ai-working-translation",
+        "independentReview": "pending",
+        "contextStatus": "Original Arabic chapter introduction preserved separately; English translation remains pending."
+      },
+      {
+        "id": "chapter-02",
+        "headingId": "باب_وجوب_الصلاة_في_الثياب",
+        "contextIds": [
+          "mwEQ"
+        ],
+        "entryNumbers": [
+          344
+        ],
+        "title": "The obligation of wearing clothes in prayer",
+        "titleArabic": "باب وجوب الصلاة في الثياب",
+        "status": "ai-working-translation",
+        "independentReview": "pending",
+        "contextStatus": "Original Arabic chapter introduction preserved separately; English translation remains pending."
+      },
+      {
+        "id": "chapter-03",
+        "headingId": "باب_عقد_الإزار_على_القفا_في_الصلاة",
+        "contextIds": [
+          "mwFw"
+        ],
+        "entryNumbers": [
+          345,
+          346
+        ],
+        "title": "Tying the izar at the back of the neck in prayer",
+        "titleArabic": "باب عقد الإزار على القفا في الصلاة",
+        "status": "ai-working-translation",
+        "independentReview": "pending",
+        "contextStatus": "Original Arabic chapter introduction preserved separately; English translation remains pending."
+      },
+      {
+        "id": "chapter-04",
+        "headingId": "باب_الصلاة_في_الثوب_الواحد_ملتحفا_به",
+        "contextIds": [
+          "mwHg"
+        ],
+        "entryNumbers": [
+          347,
+          348,
+          349,
+          350,
+          351
+        ],
+        "title": "Praying wrapped in a single garment",
+        "titleArabic": "باب الصلاة في الثوب الواحد ملتحفا به",
+        "status": "ai-working-translation",
+        "independentReview": "pending",
+        "contextStatus": "Original Arabic chapter introduction preserved separately; English translation remains pending."
+      }
+    ],
+    "entries": [
+      {
+        "number": 342,
+        "id": "bukhari:342",
+        "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwCA:0",
+        "chapterId": "chapter-01",
+        "paragraphIds": [
+          "mwCA"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-prayer-r522110",
+          "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+          "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+          "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+          "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwCA:0",
+          "sourceReference": {
+            "label": "342",
+            "number": 342,
+            "markerId": "mwCA:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwCA",
+              "textSha256": "cc78f5974d9230954b1cf1f0db7245811c2777fc6c0895e959b20653a72c738b",
+              "origin": {
+                "blockId": "mwCA",
+                "blockSha256": "cc78f5974d9230954b1cf1f0db7245811c2777fc6c0895e959b20653a72c738b",
+                "start": 0,
+                "end": 2054
+              }
+            }
+          ]
+        },
+        "segments": [
+          {
+            "id": "342-1",
+            "paragraphId": "mwCA",
+            "start": 0,
+            "end": 118,
+            "kind": "chain",
+            "arabic": "[342] حدثنا يحيى بن بكير قال: حدثنا الليث عن يونس عن ابن شهاب عن أنس بن مالك قال: كان أبو ذر يحدث أن رسول الله ﷺ قال: ",
+            "english": "Yahya ibn Bukayr related to us. He said: Al-Layth related to us, from Yunus, from Ibn Shihab, from Anas ibn Malik, who said: Abu Dharr used to relate that the Messenger of Allah, may Allah bless him and grant him peace, said:",
+            "arabicSha256": "cd65a02c7580507fe3d73f0726c01f0d2b06f0a3a7c1036301a6b67fc6079ecc",
+            "englishSha256": "4680bbcdf8aba8945e33fdef861e3fcc599bcf10676e9356e288e88d46fd4d01"
+          },
+          {
+            "id": "342-2",
+            "paragraphId": "mwCA",
+            "start": 118,
+            "end": 283,
+            "kind": "report",
+            "arabic": "فرج عن سقف بيتي وأنا بمكة فنزل جبريل ففرج صدري ثم غسله بماء زمزم ثم جاء بطست من ذهب ممتلئ حكمة وإيمانا فأفرغه في صدري ثم أطبقه ثم أخذ بيدي فعرج بي إلى السماء الدنيا ",
+            "english": "The roof of my house was opened while I was in Makkah. Jibril descended, opened my chest and then washed it with Zamzam water. Then he brought a basin of gold filled with wisdom and faith, poured it into my chest and closed it. Then he took my hand and ascended with me to the lowest heaven.",
+            "arabicSha256": "7bc8b4daa2afcfb257ccd359c9d54c741fa36b0e53cfe6cd862771c1de053d9c",
+            "englishSha256": "b3a3e24b8836e2a3a5f318bfb825cace7931f80b5c1b343ed4d447c5dd502ffb"
+          },
+          {
+            "id": "342-3",
+            "paragraphId": "mwCA",
+            "start": 283,
+            "end": 423,
+            "kind": "report",
+            "arabic": "فلما جئت إلى السماء الدنيا قال جبريل لخازن السماء افتح قال من هذا قال هذا جبريل قال هل معك أحد قال: نعم معي محمد ﷺ، فقال أرسل إليه قال: نعم ",
+            "english": "When I came to the lowest heaven, Jibril said to the keeper of the heaven: “Open.” He said: “Who is this?” He said: “This is Jibril.” He said: “Is anyone with you?” He said: “Yes, Muhammad, may Allah bless him and grant him peace, is with me.” He said: “Has he been sent for?” He said: “Yes.”",
+            "arabicSha256": "4518350d44de72b952f2cff5da294fecc886ed9eff7c398b355646b05ed3db8d",
+            "englishSha256": "f5bd79f08c2e52f7d2f7644d221d7137f2ae6b68d2775e1ec9ba416b16a390b3"
+          },
+          {
+            "id": "342-4",
+            "paragraphId": "mwCA",
+            "start": 423,
+            "end": 844,
+            "kind": "report",
+            "arabic": "فلما فتح علونا السماء الدنيا فإذا رجل قاعد على يمينه أسودة وعلى يساره أسودة إذا نظر قبل يمينه ضحك وإذا نظر قبل يساره بكى، فقال مرحبا بالنبي الصالح والابن الصالح قلت لجبريل من هذا قال هذا آدم وهذه الأسودة عن يمينه وشماله نسم بنيه فأهل اليمين منهم أهل الجنة والأسودة التي عن شماله أهل النار فإذا نظر عن يمينه ضحك وإذا نظر قبل شماله بكى حتى عرج بي إلى السماء الثانية، فقال لخازنها افتح، فقال له خازنها مثل ما قال الأول ففتح ",
+            "english": "When he opened, we ascended into the lowest heaven. There was a man sitting with figures to his right and figures to his left. When he looked towards his right, he laughed, and when he looked towards his left, he wept. He said: “Welcome to the righteous Prophet and the righteous son.” I said to Jibril: “Who is this?” He said: “This is Adam, and these figures to his right and left are the souls of his children. Those on the right are among the people of Paradise, and the figures on his left are the people of the Fire. When he looks to his right, he laughs, and when he looks towards his left, he weeps.” Then he ascended with me to the second heaven and said to its keeper: “Open.” Its keeper said to him the same as the first had said, and he opened.",
+            "arabicSha256": "a26c8c2c7ba792e05e464eac549646acc16c9cd0c146c2decf1c96df609d6b6c",
+            "englishSha256": "22c28b80778a63a76256ac5eb6bab82372c198574118cb36159e0068dc00036a"
+          },
+          {
+            "id": "342-5",
+            "paragraphId": "mwCA",
+            "start": 844,
+            "end": 1015,
+            "kind": "report",
+            "arabic": "قال أنس فذكر أنه وجد في السماوات آدم وإدريس وموسى وعيسى وإبراهيم صلوات الله عليهم ولم يثبت كيف منازلهم غير أنه ذكر أنه وجد آدم في السماء الدنيا وإبراهيم في السماء السادسة ",
+            "english": "Anas said: He mentioned that he found Adam, Idris, Musa, ‘Isa and Ibrahim in the heavens—may Allah’s blessings be upon them. He did not specify their positions, except that he mentioned finding Adam in the lowest heaven and Ibrahim in the sixth heaven.",
+            "arabicSha256": "2dc6ae94f0be01991c8e71da4f7f9a06421ebc54ed56c00b2d5af0df8716486a",
+            "englishSha256": "2ab92a54b1580bfaeb43d2373b85656c757b695e5e9e8d693198f1331d1167ed"
+          },
+          {
+            "id": "342-6",
+            "paragraphId": "mwCA",
+            "start": 1015,
+            "end": 1360,
+            "kind": "report",
+            "arabic": "قال أنس فلما مر جبريل بالنبي ﷺ بإدريس قال مرحبا بالنبي الصالح والأخ الصالح فقلت: من هذا قال هذا إدريس ثم مررت بموسى، فقال مرحبا بالنبي الصالح والأخ الصالح قلت: من هذا قال هذا موسى ثم مررت بعيسى، فقال مرحبا بالأخ الصالح والنبي الصالح قلت: من هذا قال هذا عيسى ثم مررت بإبراهيم، فقال مرحبا بالنبي الصالح والابن الصالح قلت: من هذا قال هذا إبراهيم ﷺ ",
+            "english": "Anas said: When Jibril passed by Idris with the Prophet, may Allah bless him and grant him peace, he said: “Welcome to the righteous Prophet and the righteous brother.” I said: “Who is this?” He said: “This is Idris.” Then I passed by Musa, and he said: “Welcome to the righteous Prophet and the righteous brother.” I said: “Who is this?” He said: “This is Musa.” Then I passed by ‘Isa, and he said: “Welcome to the righteous brother and the righteous Prophet.” I said: “Who is this?” He said: “This is ‘Isa.” Then I passed by Ibrahim, and he said: “Welcome to the righteous Prophet and the righteous son.” I said: “Who is this?” He said: “This is Ibrahim, may Allah bless him and grant him peace.”",
+            "arabicSha256": "de71c41f77981d460e4122e7a835603fb5d2e08cda324ac93d6693d85b8d14d7",
+            "englishSha256": "6fedb061e15f743b785be7de37fbb1ec62bb99b34bd434987a0d312a009a16d9"
+          },
+          {
+            "id": "342-7",
+            "paragraphId": "mwCA",
+            "start": 1360,
+            "end": 1443,
+            "kind": "chain",
+            "arabic": "قال ابن شهاب فأخبرني ابن حزم ان ابن عباس وأبا حبة الأنصارى كانا يقولان قال النبي ﷺ ",
+            "english": "Ibn Shihab said: Then Ibn Hazm informed me that Ibn ‘Abbas and Abu Habbah al-Ansari used to say: The Prophet, may Allah bless him and grant him peace, said:",
+            "arabicSha256": "c978cd8c0be85354d2e1fac15d8dd2aa0ad4188a98f4a0f0187ccbb68bfa997e",
+            "englishSha256": "ed37e4d42a11077ff7c59ac9f5fbb8fc6722e94b3adcb4720eb2b57385cb23d1"
+          },
+          {
+            "id": "342-8",
+            "paragraphId": "mwCA",
+            "start": 1443,
+            "end": 1491,
+            "kind": "report",
+            "arabic": "ثم عرج بي حتى ظهرت لمستوى أسمع فيه صريف الأقلام ",
+            "english": "Then I was taken up until I reached a height where I could hear the scratching of pens.",
+            "arabicSha256": "7900e4fcdfa1c16417e7a228b4672e4dcd907804fe3ddc3b9bc599847fae563c",
+            "englishSha256": "70e2eebf6e47af6b13360cfa23bee71cdbafc6512c7c51fdb4c5cebf2790bf0f"
+          },
+          {
+            "id": "342-9",
+            "paragraphId": "mwCA",
+            "start": 1491,
+            "end": 1528,
+            "kind": "chain",
+            "arabic": "قال ابن حزم وأنس بن مالك قال النبي ﷺ ",
+            "english": "Ibn Hazm and Anas ibn Malik said: The Prophet, may Allah bless him and grant him peace, said:",
+            "arabicSha256": "3127737432c27c82121e43b1e204b32eba63b9932b917858187670c24e08451d",
+            "englishSha256": "fe43e310bf7ca23c666d14c2c8a3f27cdf9e6faf0f25d594852f12e3bc52cea9"
+          },
+          {
+            "id": "342-10",
+            "paragraphId": "mwCA",
+            "start": 1528,
+            "end": 1928,
+            "kind": "report",
+            "arabic": "ففرض الله على أمتي خمسين صلاة فرجعت بذلك حتى مررت على موسى، فقال: ما فرض الله لك على أمتك قلت: فرض خمسين صلاة قال: فارجع إلى ربك فإن أمتك لا تطيق ذلك فراجعني فوضع شطرها فرجعت إلى موسى قلت: وضع شطرها، فقال راجع ربك فإن أمتك لا تطيق فراجعت فوضع شطرها فرجعت إليه، فقال ارجع إلى ربك فإن أمتك لا تطيق ذلك فراجعته، فقال هي خمس وهي خمسون لا يبدل القول لدي فرجعت إلى موسى، فقال راجع ربك فقلت: استحييت من ربي ",
+            "english": "Allah made fifty prayers obligatory for my community. I returned with that until I passed by Musa, who said: “What has Allah made obligatory for you upon your community?” I said: “He has made fifty prayers obligatory.” He said: “Return to your Lord, for your community cannot bear that.” So he sent me back, and He removed part of them. I returned to Musa and said: “He has removed part of them.” He said: “Go back to your Lord, for your community cannot bear it.” I went back, and He removed part of them. I returned to him, and he said: “Return to your Lord, for your community cannot bear that.” I went back to Him, and He said: “They are five and they are fifty. The word is not changed with Me.” I returned to Musa, and he said: “Go back to your Lord.” I said: “I feel ashamed before my Lord.”",
+            "arabicSha256": "ff20d55fc65e0d131f3255b19e7ec44f4ef6b4d9f8897689ccbbcd1b4fce07c1",
+            "englishSha256": "6c063e70bf13809fd6d9ad8a42205843f78300c49bf23d8408d9f80cdefd65bc"
+          },
+          {
+            "id": "342-11",
+            "paragraphId": "mwCA",
+            "start": 1928,
+            "end": 2054,
+            "kind": "report",
+            "arabic": "ثم انطلق بي حتى انتهى بي إلى سدرة المنتهى وغشيها ألوان لا أدري ما هي ثم أدخلت الجنة فإذا فيها حبايل اللؤلؤ وإذا ترابها المسك  ",
+            "english": "Then I was taken onwards until I reached the Lote-tree of the Utmost Boundary. Colours covered it, and I do not know what they were. Then I was brought into Paradise, and there were strings of pearls in it, and its soil was musk.",
+            "arabicSha256": "7cd10d9e2af386f3680063aba5d53da99979da565eabaa8e3ed3d4564d9d217e",
+            "englishSha256": "43005b476ef33f99654d010ceefb9b8856d8a57caac14a4fafcffde7a1dffd0b"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              99,
+              100
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              98,
+              99
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "id": "bewley-prayer",
+            "reference": "342",
+            "splitReferences": [
+              {
+                "reference": "342",
+                "segmentIds": [
+                  "342-1",
+                  "342-2",
+                  "342-3",
+                  "342-4",
+                  "342-5",
+                  "342-6",
+                  "342-7",
+                  "342-8"
+                ]
+              },
+              {
+                "reference": "343",
+                "part": {
+                  "index": 1,
+                  "count": 2
+                },
+                "segmentIds": [
+                  "342-9",
+                  "342-10",
+                  "342-11"
+                ]
+              }
+            ],
+            "note": "Selected 342 spans Bewley 342 and the first account under 343, ending with the pearls and musk. The separate unnumbered Aisha paragraph under that same 343 is selected 343, not part of this report."
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.8.345",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.345",
+              "recordSha256": "a2ff44bca1efe8acd422bf6820eb93e26ab444462f19356c305f5192cc1154c3"
+            }
+          }
+        ],
+        "notes": [
+          "The selected Arabic is one report. Bewley divides its material across 342 and the first account under 343; an unnumbered Aisha account under that same 343 corresponds to selected 343. Both scopes are recorded explicitly. The Khan-family EPUB 1.8.345 has the main narrative but omits the Ibn Shihab / Ibn Hazm / Ibn Abbas and Abu Habbah attribution before the pens sentence. All selected chains and narrator transitions remain.",
+          "The selected text and modern print have فراجعني; the historical print has فراجعت. The working English retains the former as he sent me back, following the explanation in Mirqat al-Mafatih. Shatr can denote half or a part; the compared English uses half, while Fath al-Bari explicitly discusses part here. This provisional rendering uses part without supplying an arithmetic sequence or importing additional visits from other reports. Independent lexical review is required.",
+          "The selected and modern wording has حبايل اللؤلؤ, provisionally strings of pearls. The historical print instead has جنابذ اللؤلؤ. Fath al-Bari discusses both readings and competing explanations; the historical domes wording is not substituted into the selected Arabic. The Khan-family comparison also renders this differently. These are recorded variants, not reconciled descriptions.",
+          "The selected sixth heaven, order of encounters, plural blessing and change from narrated third person to first person remain. Fath al-Bari discusses differing reports; no seventh heaven or reordered encounters are imported. The historical print has additional honorifics and a shorter wording at several points. The selected form remains unchanged.",
+          "The English expands the source honorific symbols only. It does not import the comparisons’ parenthetical explanations of reward, the identity of the pens’ writers or additional place descriptions. Figures renders أسودة; souls renders نسم. These lexical choices remain provisional."
+        ],
+        "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and two individually matched English comparison families. Omissions, shared references and wording variants remain documented. Independent Arabic, English, lexical, chapter and reference review is pending; this is not certification.",
+        "additionalCitations": [
+          {
+            "id": "lexical-390",
+            "sourceId": "fath-prayer-390",
+            "locator": "Fath al-Bari · volume 1 · online page 390",
+            "scope": "Consulted for lexical and variant review; commentary is separate from the selected report and does not certify the working translation."
+          },
+          {
+            "id": "lexical-391",
+            "sourceId": "fath-prayer-391",
+            "locator": "Fath al-Bari · volume 1 · online page 391",
+            "scope": "Consulted for lexical and variant review; commentary is separate from the selected report and does not certify the working translation."
+          },
+          {
+            "id": "lexical-392",
+            "sourceId": "fath-prayer-392",
+            "locator": "Fath al-Bari · volume 1 · online page 392",
+            "scope": "Consulted for lexical and variant review; commentary is separate from the selected report and does not certify the working translation."
+          },
+          {
+            "id": "return-wording",
+            "sourceId": "mirqat-prayer-11664",
+            "locator": "Mirqat al-Mafatih · Night Journey commentary",
+            "scope": "Consulted for the grammatical explanation of فراجعني. Commentary is not part of the hadith."
+          }
+        ],
+        "contextNotes": [
+          {
+            "id": "342-wording-review",
+            "label": "Wording differences under review",
+            "text": "This complete report has variant wording and a different division in the compared sources. The selected Arabic remains unchanged. The source notes explain the comparison boundaries and provisional English choices for the reduction of prayers and the pearls. Independent review is pending.",
+            "citations": [
+              "base",
+              "bewley",
+              "khan",
+              "brill-1862",
+              "dar-ibn-kathir-2002"
+            ],
+            "related": []
+          }
+        ],
+        "arabicSha256": "cc78f5974d9230954b1cf1f0db7245811c2777fc6c0895e959b20653a72c738b",
+        "englishSha256": "3494c13846e90dd516aa4f11cacf73d71788671abcb6f346d0c5953c5e94db26",
+        "reviewRecordSha256": "f1675d2ca0182d65eb3bdf8a84184cf6605d3b106f55d3a84077bdb1995495c4"
+      },
+      {
+        "number": 343,
+        "id": "bukhari:343",
+        "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwDw:0",
+        "chapterId": "chapter-01",
+        "paragraphIds": [
+          "mwDw"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-prayer-r522110",
+          "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+          "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+          "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+          "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwDw:0",
+          "sourceReference": {
+            "label": "343",
+            "number": 343,
+            "markerId": "mwDw:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwDw",
+              "textSha256": "d55e169a44d043285003b5fecf9ad21e3ec1b14cef009c3b8084396a34dfafe0",
+              "origin": {
+                "blockId": "mwDw",
+                "blockSha256": "d55e169a44d043285003b5fecf9ad21e3ec1b14cef009c3b8084396a34dfafe0",
+                "start": 0,
+                "end": 199
+              }
+            }
+          ]
+        },
+        "segments": [
+          {
+            "id": "343-1",
+            "paragraphId": "mwDw",
+            "start": 0,
+            "end": 107,
+            "kind": "chain",
+            "arabic": "[343] حدثنا عبد الله بن يوسف قال: أخبرنا مالك عن صالح بن كيسان عن عروة بن الزبير عن عائشة أم المؤمنين قالت ",
+            "english": "‘Abd Allah ibn Yusuf related to us. He said: Malik informed us, from Salih ibn Kaysan, from ‘Urwah ibn al-Zubayr, from ‘A’ishah, the Mother of the Believers, who said:",
+            "arabicSha256": "a429517ad009470ecffb8a51b03e7bb99ffc48d7bdb96ad194bc43c5cf9c2db0",
+            "englishSha256": "89a0907d0a754d5ef88deb70cbdfd114b171d4f742f776fefec867fa4cd43420"
+          },
+          {
+            "id": "343-2",
+            "paragraphId": "mwDw",
+            "start": 107,
+            "end": 199,
+            "kind": "report",
+            "arabic": "فرض الله الصلاة حين فرضها ركعتين ركعتين في الحضر والسفر فأقرت صلاة السفر وزيد في صلاة الحضر ",
+            "english": "When Allah first made prayer obligatory, He prescribed two rak‘ahs for each prayer, both while resident and while travelling. The travelling prayer was left as it was, and the resident prayer was increased.",
+            "arabicSha256": "ed08207b3276a657c3cd26f533051cd564699031d7980769b7b89226c2ca1c27",
+            "englishSha256": "76aa91e13d8bd81f336d33fdc6eafe87e359f86e101383a8f55e31009720087d"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              100
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              99
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "id": "bewley-prayer",
+            "reference": "343",
+            "part": {
+              "index": 2,
+              "count": 2
+            },
+            "note": "The unnumbered Aisha paragraph following the Night Journey continuation under Bewley 343. Only this second account corresponds to selected 343; the preceding account belongs to selected 342."
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.8.346",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.346",
+              "recordSha256": "36c20897d5fac5ca37ea6fe953323c47627f8ff452cd2f2c8018a056d7ee1f76"
+            }
+          }
+        ],
+        "notes": [
+          "Both inspected Arabic prints preserve the complete Aisha report and the distinction between travelling and resident prayer. The doubled ركعتين ركعتين is rendered two rakahs for each prayer, following its distributive force discussed in Fath al-Bari. No later four-rakah total, exception for Maghrib or legal conclusion is added.",
+          "Bewley has this as the unnumbered Aisha paragraph after the Night Journey continuation under 343. Its explicit second-part scope prevents the entire comparison 343 being misassigned to either selected entry. The Khan-family comparison is 1.8.346; the modern Arabic print numbers the report 350."
+        ],
+        "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and two individually matched English comparison families. Omissions, shared references and wording variants remain documented. Independent Arabic, English, lexical, chapter and reference review is pending; this is not certification.",
+        "arabicSha256": "d55e169a44d043285003b5fecf9ad21e3ec1b14cef009c3b8084396a34dfafe0",
+        "englishSha256": "5cb148804fffc7f72d5ccbdd01c962262b34544b9043c4aa4c93a5ab4fa96e44",
+        "reviewRecordSha256": "46b0f0064acc61a2b0bee9b54fa9b616314ca13da455532df11c920c5c73f931"
+      },
+      {
+        "number": 344,
+        "id": "bukhari:344",
+        "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwFA:0",
+        "chapterId": "chapter-02",
+        "paragraphIds": [
+          "mwFA"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-prayer-r522110",
+          "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+          "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+          "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+          "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwFA:0",
+          "sourceReference": {
+            "label": "344",
+            "number": 344,
+            "markerId": "mwFA:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwFA",
+              "textSha256": "0cb47fa0b8c5225c7fce509f7587e20497f770082204a0a6e0cbdac3c6db649b",
+              "origin": {
+                "blockId": "mwFA",
+                "blockSha256": "0cb47fa0b8c5225c7fce509f7587e20497f770082204a0a6e0cbdac3c6db649b",
+                "start": 0,
+                "end": 341
+              }
+            }
+          ]
+        },
+        "segments": [
+          {
+            "id": "344-1",
+            "paragraphId": "mwFA",
+            "start": 0,
+            "end": 79,
+            "kind": "chain",
+            "arabic": "[344] حدثنا موسى بن إسماعيل قال: حدثنا يزيد بن إبراهيم عن محمد عن أم عطية قالت ",
+            "english": "Musa ibn Isma‘il related to us. He said: Yazid ibn Ibrahim related to us, from Muhammad, from Umm ‘Atiyyah, who said:",
+            "arabicSha256": "a0a280daf71ea7a15a7314aed3b4d8aba5afa20e5bc23b69e399a80756b08823",
+            "englishSha256": "8a1becf1c14e89349434329f6b820a3b1ab12c223cc9ebfb3aa95c9fb9cadc62"
+          },
+          {
+            "id": "344-2",
+            "paragraphId": "mwFA",
+            "start": 79,
+            "end": 254,
+            "kind": "report",
+            "arabic": "أمرنا أن نخرج الحيض يوم العيدين وذوات الخدور فيشهدن جماعة المسلمين ودعوتهم ويعتزل الحيض عن مصلاهن قالت امرأة يا رسول الله إحدانا ليس لها جلباب قال لتلبسها صاحبتها من جلبابها، ",
+            "english": "We were instructed to bring out the menstruating women and the women in seclusion on the days of the two Eids, so that they might attend the gathering of the Muslims and their supplication. The menstruating women were to stay away from their place of prayer. A woman said: “Messenger of Allah, one of us does not have a jilbab.” He said: “Let her companion clothe her from her own jilbab.”",
+            "arabicSha256": "c9ec17132a1b339692d94feaaf05a739962c0e43bbaebd970e0318660e551aeb",
+            "englishSha256": "426a6c5711d3bc380bfe450e533a6227192c49318a220fd121769a24dab7e6cc"
+          },
+          {
+            "id": "344-3",
+            "paragraphId": "mwFA",
+            "start": 254,
+            "end": 341,
+            "kind": "chain",
+            "arabic": "وقال عبد الله بن رجاء حدثنا عمران حدثنا محمد بن سيرين حدثتنا أم عطية سمعت النبي ﷺ بهذا ",
+            "english": "And ‘Abd Allah ibn Raja’ said: ‘Imran related to us; Muhammad ibn Sirin related to us; Umm ‘Atiyyah related to us: “I heard this from the Prophet, may Allah bless him and grant him peace.”",
+            "arabicSha256": "6b8161a9cce3f5e1fc96e85e7fd1daae9b6e9506cc65781fa84f2cdbdf70fad6",
+            "englishSha256": "9538543171a17b18b392053c0a1e93496e5775184e9a29f4b38d5a913bde3d47"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              101
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              99,
+              100
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "id": "bewley-prayer",
+            "reference": "344"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.8.347",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.347",
+              "recordSha256": "b51507c014e73c34491976c87e01bfa75a4d12b3f5dc898bc477919786d7f5e6"
+            }
+          }
+        ],
+        "notes": [
+          "The complete selected closing transmission through Abd Allah ibn Raja, Imran and Muhammad ibn Sirin remains. It appears in the historical print and Bewley, but is absent from the inspected modern print and Khan-family EPUB body. Neither absence deletes it from this reader.",
+          "دعوتهم is rendered their supplication; Bewley instead uses feasts here. Jilbab is retained as the source garment term rather than being silently reduced to a face veil. The selected singular من جلبابها remains; the historical print has the plural جلابيبها. No names, legal conclusion or additional garment instructions are supplied."
+        ],
+        "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and two individually matched English comparison families. Omissions, shared references and wording variants remain documented. Independent Arabic, English, lexical, chapter and reference review is pending; this is not certification.",
+        "contextNotes": [
+          {
+            "id": "344-closing-chain",
+            "label": "Closing transmission retained",
+            "text": "The selected source and historical print include a closing narrator chain which the inspected modern print and one English comparison omit. It remains here in full, with the difference recorded in the source notes.",
+            "citations": [
+              "base",
+              "bewley",
+              "khan",
+              "brill-1862",
+              "dar-ibn-kathir-2002"
+            ],
+            "related": []
+          }
+        ],
+        "arabicSha256": "0cb47fa0b8c5225c7fce509f7587e20497f770082204a0a6e0cbdac3c6db649b",
+        "englishSha256": "c621790a47917f747e3f301aeee1e6a96867908db59cf0238993ccf54a51121a",
+        "reviewRecordSha256": "16814f3e066884dacc9eff7e37ccfb2e9325aba334c1cf0ad6c8d6af96720088"
+      },
+      {
+        "number": 345,
+        "id": "bukhari:345",
+        "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwGQ:0",
+        "chapterId": "chapter-03",
+        "paragraphIds": [
+          "mwGQ"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-prayer-r522110",
+          "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+          "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+          "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+          "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwGQ:0",
+          "sourceReference": {
+            "label": "345",
+            "number": 345,
+            "markerId": "mwGQ:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwGQ",
+              "textSha256": "e595ea88398348ab8335652556a2ff70383786c92cb981d59c2e56ee33d17f21",
+              "origin": {
+                "blockId": "mwGQ",
+                "blockSha256": "e595ea88398348ab8335652556a2ff70383786c92cb981d59c2e56ee33d17f21",
+                "start": 0,
+                "end": 259
+              }
+            }
+          ]
+        },
+        "segments": [
+          {
+            "id": "345-1",
+            "paragraphId": "mwGQ",
+            "start": 0,
+            "end": 96,
+            "kind": "chain",
+            "arabic": "[345] حدثنا أحمد بن يونس قال: حدثنا عاصم بن محمد قال: حدثني واقد بن محمد عن محمد بن المنكدر قال ",
+            "english": "Ahmad ibn Yunus related to us. He said: ‘Asim ibn Muhammad related to us. He said: Waqid ibn Muhammad related to me, from Muhammad ibn al-Munkadir, who said:",
+            "arabicSha256": "55830754d10f08384765917c94763cd0975b7c958fbf056ad49e96e8cc1f4cf8",
+            "englishSha256": "7117bf25ab6c0fcaeb31144e2dc45ad4a18b7f833bbd0676214005302a77b58b"
+          },
+          {
+            "id": "345-2",
+            "paragraphId": "mwGQ",
+            "start": 96,
+            "end": 259,
+            "kind": "report",
+            "arabic": "صلى جابر في إزار قد عقده من قبل قفاه وثيابه موضوعة على المشجب قال له قائل تصلي في إزار واحد، فقال إنما صنعت ذلك ليراني أحمق مثلك وأينا كان له ثوبان على عهد النبي ﷺ",
+            "english": "Jabir prayed in an izar which he had tied at the back of his neck, while his other clothes were placed on the clothes stand. Someone said to him: “Do you pray in a single izar?” He said: “I did this only so that a fool like you would see me. Which of us had two garments in the time of the Prophet, may Allah bless him and grant him peace?”",
+            "arabicSha256": "c916cba3779f070ddcabbba93120ddfd4891d373f6ff81cfb11a795ace329280",
+            "englishSha256": "3236634b5eea66abb2a9d81071d59d5969951224d52a6a44c965d74f8898b088"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              101
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              100
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "id": "bewley-prayer",
+            "reference": "345"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.8.348",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.348",
+              "recordSha256": "f8cde90022d75524699fe44b579097b653355c92c7acd97a5be9fc914d151713"
+            }
+          }
+        ],
+        "notes": [
+          "All four named transmitters and the distinction between related to us and related to me remain. The selected النبي at the close differs from the historical رسول الله. The selected wording remains.",
+          "The izar is tied at the back of the neck. المشجب is rendered clothes stand without importing a particular material, construction or extra beside-him wording. The emphatic إنما and the concluding question remain."
+        ],
+        "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and two individually matched English comparison families. Omissions, shared references and wording variants remain documented. Independent Arabic, English, lexical, chapter and reference review is pending; this is not certification.",
+        "arabicSha256": "e595ea88398348ab8335652556a2ff70383786c92cb981d59c2e56ee33d17f21",
+        "englishSha256": "678719248c24ee1211188d0a35c650a6d1199c299afc35448ccce0d3f661a912",
+        "reviewRecordSha256": "1512f0e41f77cfa19ad656ea7b21c80f8abc25147e4091f3eddbc783b463853e"
+      },
+      {
+        "number": 346,
+        "id": "bukhari:346",
+        "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwGw:0",
+        "chapterId": "chapter-03",
+        "paragraphIds": [
+          "mwGw"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-prayer-r522110",
+          "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+          "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+          "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+          "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwGw:0",
+          "sourceReference": {
+            "label": "346",
+            "number": 346,
+            "markerId": "mwGw:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwGw",
+              "textSha256": "531625a33e8b28d69042205ac7d322b2581a0717eea881860ff8758c95fcea6f",
+              "origin": {
+                "blockId": "mwGw",
+                "blockSha256": "531625a33e8b28d69042205ac7d322b2581a0717eea881860ff8758c95fcea6f",
+                "start": 0,
+                "end": 158
+              }
+            }
+          ]
+        },
+        "segments": [
+          {
+            "id": "346-1",
+            "paragraphId": "mwGw",
+            "start": 0,
+            "end": 87,
+            "kind": "chain",
+            "arabic": "[346] حدثنا مطرف أبو مصعب قال: حدثنا عبد الرحمن بن أبي الموالي عن محمد بن المنكدر قال: ",
+            "english": "Mutarrif Abu Mus‘ab related to us. He said: ‘Abd al-Rahman ibn Abi al-Mawali related to us, from Muhammad ibn al-Munkadir, who said:",
+            "arabicSha256": "12bc84c152434d0f576c89f748523f5dcb48c267818e62d3c5907595ba2bc9e5",
+            "englishSha256": "ad066702870339fc5b06cb3c9a6afdab56273a3008ce2a6892fa55e3af00a1e5"
+          },
+          {
+            "id": "346-2",
+            "paragraphId": "mwGw",
+            "start": 87,
+            "end": 158,
+            "kind": "report",
+            "arabic": "رأيت جابر بن عبد الله يصلي في ثوب واحد، وقال: رأيت النبي ﷺ يصلي في ثوب ",
+            "english": "I saw Jabir ibn ‘Abd Allah praying in a single garment. And he said: “I saw the Prophet, may Allah bless him and grant him peace, praying in a garment.”",
+            "arabicSha256": "8f793e61cf23248cbb2d5da1779f10392801f4b247d9ed141fefee3b52ae9c7a",
+            "englishSha256": "3044fd5b62a45a04def1553956abe92f635c82105bda39f4d99d277309e9d29c"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              101
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              100
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "id": "bewley-prayer",
+            "reference": "346"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.8.349",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.349",
+              "recordSha256": "288c1ab4ec6ea707c4ac12cc86253973fa5f57981b0ae7a6d8e9dae53f130f97"
+            }
+          }
+        ],
+        "notes": [
+          "The selected second clause says في ثوب, in a garment, without repeating واحد. Both printed witnesses support that shorter second clause. The English comparisons repeat single; the reader does not insert it. The full Mutarrif Abu Musab / Abd al-Rahman ibn Abi al-Mawali chain remains."
+        ],
+        "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and two individually matched English comparison families. Omissions, shared references and wording variants remain documented. Independent Arabic, English, lexical, chapter and reference review is pending; this is not certification.",
+        "arabicSha256": "531625a33e8b28d69042205ac7d322b2581a0717eea881860ff8758c95fcea6f",
+        "englishSha256": "945ef7eb231778fc984533d48661b6165134b7347011ba5b00759c1f0c641f0f",
+        "reviewRecordSha256": "a95cd5d894a2d66504d82b7c888760e2b0d4c3ed62fa5e13e0b05cc71663c372"
+      },
+      {
+        "number": 347,
+        "id": "bukhari:347",
+        "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwIA:0",
+        "chapterId": "chapter-04",
+        "paragraphIds": [
+          "mwIA"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-prayer-r522110",
+          "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+          "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+          "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+          "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwIA:0",
+          "sourceReference": {
+            "label": "347",
+            "number": 347,
+            "markerId": "mwIA:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwIA",
+              "textSha256": "e3962c112a02d889159765a6d87062100b3f893e2f7cf010499686a1fab945b4",
+              "origin": {
+                "blockId": "mwIA",
+                "blockSha256": "e3962c112a02d889159765a6d87062100b3f893e2f7cf010499686a1fab945b4",
+                "start": 0,
+                "end": 126
+              }
+            }
+          ]
+        },
+        "segments": [
+          {
+            "id": "347-1",
+            "paragraphId": "mwIA",
+            "start": 0,
+            "end": 81,
+            "kind": "chain",
+            "arabic": "[347] حدثنا عبيد الله بن موسى قال: حدثنا هشام بن عروة عن أبيه عن عمر بن أبي سلمة ",
+            "english": "‘Ubayd Allah ibn Musa related to us. He said: Hisham ibn ‘Urwah related to us, from his father, from ‘Umar ibn Abi Salamah:",
+            "arabicSha256": "253a83f895d4a1ceaf3df7f0800f59acfa68438914ca4aa2fef969d7af7349ca",
+            "englishSha256": "5f8ab10abbea8ac217a773efa6e8ef475feaa50f05200075a3d2fd4d5602f4ad"
+          },
+          {
+            "id": "347-2",
+            "paragraphId": "mwIA",
+            "start": 81,
+            "end": 126,
+            "kind": "report",
+            "arabic": "أن النبي ﷺ صلى في ثوب واحد قد خالف بين طرفيه ",
+            "english": "That the Prophet, may Allah bless him and grant him peace, prayed in a single garment, having crossed its two ends.",
+            "arabicSha256": "ac905c07fbb40c8ad3537f7666858087095c78b838e9d6f5b66166d4cfda283b",
+            "englishSha256": "ac6e86163a1243796504dad1d902d1a4e02333bbcd7b23a417757972596fea9a"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              101
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              100
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "id": "bewley-prayer",
+            "reference": "347"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.8.350",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.350",
+              "recordSha256": "33140cb84ebd2a63fbead06e63726e6e14346e154292256b79fa836968e3b8e8"
+            }
+          }
+        ],
+        "notes": [
+          "The source says crossed its two ends without mentioning shoulders in this numbered report. Shoulder wording appears separately in the chapter introduction and following reports and is not imported here. The selected and modern chain use حدثنا; the historical print has أخبرنا before Hisham. The selected reporting verb remains."
+        ],
+        "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and two individually matched English comparison families. Omissions, shared references and wording variants remain documented. Independent Arabic, English, lexical, chapter and reference review is pending; this is not certification.",
+        "arabicSha256": "e3962c112a02d889159765a6d87062100b3f893e2f7cf010499686a1fab945b4",
+        "englishSha256": "f050c8e1c39c6ed37f828cd428bc1b75fc3b27a4eb32d37f56c8a09ce20a4014",
+        "reviewRecordSha256": "4707497f4e718db4d0dd790e23b277657a1a0420ec583b3d38745f67e6c3a12a"
+      },
+      {
+        "number": 348,
+        "id": "bukhari:348",
+        "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwIg:0",
+        "chapterId": "chapter-04",
+        "paragraphIds": [
+          "mwIg"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-prayer-r522110",
+          "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+          "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+          "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+          "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwIg:0",
+          "sourceReference": {
+            "label": "348",
+            "number": 348,
+            "markerId": "mwIg:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwIg",
+              "textSha256": "294076817f25265319d3eb3ec3011769a8b61967084f244cca87bd25fe87d041",
+              "origin": {
+                "blockId": "mwIg",
+                "blockSha256": "294076817f25265319d3eb3ec3011769a8b61967084f244cca87bd25fe87d041",
+                "start": 0,
+                "end": 166
+              }
+            }
+          ]
+        },
+        "segments": [
+          {
+            "id": "348-1",
+            "paragraphId": "mwIg",
+            "start": 0,
+            "end": 93,
+            "kind": "chain",
+            "arabic": "[348] حدثنا محمد بن المثنى قال: حدثنا يحيى قال: حدثنا هشام قال: حدثني أبي عن عمر بن أبي سلمة ",
+            "english": "Muhammad ibn al-Muthanna related to us. He said: Yahya related to us. He said: Hisham related to us. He said: My father related to me, from ‘Umar ibn Abi Salamah:",
+            "arabicSha256": "009f0b539ea5f12376833c69d5cebad4479475174e89af6a1c8bbe31c2689c56",
+            "englishSha256": "97c25003ce5080b8c6ab8e7a4a169a8bd2d3b6a957bdf935efa2b7ca2aa26a9f"
+          },
+          {
+            "id": "348-2",
+            "paragraphId": "mwIg",
+            "start": 93,
+            "end": 166,
+            "kind": "report",
+            "arabic": "أنه رأى النبي ﷺ يصلي في ثوب واحد في بيت أم سلمة قد ألقى طرفيه على عاتقيه ",
+            "english": "That he saw the Prophet, may Allah bless him and grant him peace, praying in a single garment in the house of Umm Salamah, having placed its two ends over his shoulders.",
+            "arabicSha256": "ad30a7fe3dc131b64812ac59c3d189d011066b8a989f7f3d29f7e086ff774c83",
+            "englishSha256": "197e873656efa750bb284c568c6d04200134b1de733d4925d9721f70adbc8367"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              101,
+              102
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              100
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "id": "bewley-prayer",
+            "reference": "348"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.8.351",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.351",
+              "recordSha256": "16cec90350d730c57b6f6e01c8ac7be9cc1f870930df9a66beac36164f595a5d"
+            }
+          }
+        ],
+        "notes": [
+          "The third-person أنه رأى remains distinct from the first-person opening of the next report. The source says placed its ends over his shoulders; crossed is not imported from an English comparison. All reporting verbs, including my father related to me, remain."
+        ],
+        "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and two individually matched English comparison families. Omissions, shared references and wording variants remain documented. Independent Arabic, English, lexical, chapter and reference review is pending; this is not certification.",
+        "arabicSha256": "294076817f25265319d3eb3ec3011769a8b61967084f244cca87bd25fe87d041",
+        "englishSha256": "103142c124d4fa9a3b5c2e2cbd4049379bb3aeb90007a37712da36afd2813541",
+        "reviewRecordSha256": "572a05f955ccf6c3496c34c964d3202d563866e0a58589f716e83d733b7fddb9"
+      },
+      {
+        "number": 349,
+        "id": "bukhari:349",
+        "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwJA:0",
+        "chapterId": "chapter-04",
+        "paragraphIds": [
+          "mwJA"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-prayer-r522110",
+          "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+          "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+          "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+          "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwJA:0",
+          "sourceReference": {
+            "label": "349",
+            "number": 349,
+            "markerId": "mwJA:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwJA",
+              "textSha256": "ead10afd66df22de4c673d120f1a832a0b045c70d0f8ef62a18e6b6340b05932",
+              "origin": {
+                "blockId": "mwJA",
+                "blockSha256": "ead10afd66df22de4c673d120f1a832a0b045c70d0f8ef62a18e6b6340b05932",
+                "start": 0,
+                "end": 177
+              }
+            }
+          ]
+        },
+        "segments": [
+          {
+            "id": "349-1",
+            "paragraphId": "mwJA",
+            "start": 0,
+            "end": 95,
+            "kind": "chain",
+            "arabic": "[349] حدثنا عبيد بن إسماعيل قال: حدثنا أبو أسامة عن هشام عن أبيه أن عمر بن أبي سلمة أخبره قال: ",
+            "english": "‘Ubayd ibn Isma‘il related to us. He said: Abu Usamah related to us, from Hisham, from his father, whom ‘Umar ibn Abi Salamah informed, saying:",
+            "arabicSha256": "c36988321695fd344b841f6f5c589e21699a598be98f3fe5a76c37c8ac46fa94",
+            "englishSha256": "93a8e6065218c3e6d331d22068838145d897d519a37a2f98f4726390bf349e7c"
+          },
+          {
+            "id": "349-2",
+            "paragraphId": "mwJA",
+            "start": 95,
+            "end": 177,
+            "kind": "report",
+            "arabic": "رأيت رسول الله ﷺ يصلي في ثوب واحد مشتملا به في بيت أم سلمة واضعا طرفيه على عاتقيه ",
+            "english": "I saw the Messenger of Allah, may Allah bless him and grant him peace, praying in a single garment, wrapped in it, in the house of Umm Salamah, with its two ends placed over his shoulders.",
+            "arabicSha256": "1fc59bc349cc8ab51bc821930634ecac7115232b7bcc2c3af8538ab11efaff17",
+            "englishSha256": "32fbf8ce0280c3cb7a52dc593c12ebcd5ff1dc4a48d13c1aaf812c7b61c77fd9"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              102
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              100
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "id": "bewley-prayer",
+            "reference": "349"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.8.352",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.352",
+              "recordSha256": "879564c507cb95f65f42f7e931d9d2ad73ba62540b408ce5223b4c83a713d6e3"
+            }
+          }
+        ],
+        "notes": [
+          "The complete Ubayd ibn Ismail / Abu Usamah / Hisham / his father / Umar ibn Abi Salamah chain remains. The selected narrator Ubayd is not conflated with Ubayd Allah in 347. The source says wrapped in it and placed the ends over his shoulders; it does not repeat crossed."
+        ],
+        "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and two individually matched English comparison families. Omissions, shared references and wording variants remain documented. Independent Arabic, English, lexical, chapter and reference review is pending; this is not certification.",
+        "arabicSha256": "ead10afd66df22de4c673d120f1a832a0b045c70d0f8ef62a18e6b6340b05932",
+        "englishSha256": "aa063e927e882ef6da09584e1a81b7b1cc29d2ae56ed7fa63aa370d41054acef",
+        "reviewRecordSha256": "d7ef6201a8a678d5424ac9daf6a7c575cff93b7903ecd080d113a57d5e6ff6a4"
+      },
+      {
+        "number": 350,
+        "id": "bukhari:350",
+        "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwJg:0",
+        "chapterId": "chapter-04",
+        "paragraphIds": [
+          "mwJg"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-prayer-r522110",
+          "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+          "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+          "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+          "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwJg:0",
+          "sourceReference": {
+            "label": "350",
+            "number": 350,
+            "markerId": "mwJg:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwJg",
+              "textSha256": "d6a129b79714a004b7281ec19b4e25c87610454b961a3292e74aea6e8f0f8596",
+              "origin": {
+                "blockId": "mwJg",
+                "blockSha256": "d6a129b79714a004b7281ec19b4e25c87610454b961a3292e74aea6e8f0f8596",
+                "start": 0,
+                "end": 514
+              }
+            }
+          ]
+        },
+        "segments": [
+          {
+            "id": "350-1",
+            "paragraphId": "mwJg",
+            "start": 0,
+            "end": 167,
+            "kind": "chain",
+            "arabic": "[350] حدثنا إسماعيل بن أبي أويس قال: حدثني مالك بن أنس عن أبي النضر مولى عمر بن عبيد الله أن أبا مرة مولى أم هانئ بنت أبي طالب أخبره أنه سمع أم هانئ بنت أبي طالب تقول ",
+            "english": "Isma‘il ibn Abi Uways related to us. He said: Malik ibn Anas related to me, from Abu al-Nadr, the mawla of ‘Umar ibn ‘Ubayd Allah, that Abu Murrah, the mawla of Umm Hani’ bint Abi Talib, informed him that he heard Umm Hani’ bint Abi Talib say:",
+            "arabicSha256": "5679e01ab5fdc8db66ebe1c284b173089d76f457fa9b6b4f3263043b71f3e83f",
+            "englishSha256": "a8f32f8e29e9bf873c21efd2d43d6d5c91bfb5132bc4e65418f50bff1a1df825"
+          },
+          {
+            "id": "350-2",
+            "paragraphId": "mwJg",
+            "start": 167,
+            "end": 368,
+            "kind": "report",
+            "arabic": "ذهبت إلى رسول الله ﷺ عام الفتح فوجدته يغتسل وفاطمة ابنته تستره قالت فسلمت عليه، فقال من هذه فقلت: أنا أم هانئ بنت أبي طالب، فقال مرحبا بأم هانئ فلما فرغ من غسله قام فصلى ثماني ركعات ملتحفا في ثوب واحد ",
+            "english": "I went to the Messenger of Allah, may Allah bless him and grant him peace, in the year of the conquest. I found him bathing while his daughter Fatimah screened him. She said: I greeted him, and he said: “Who is this?” I said: “I am Umm Hani’ bint Abi Talib.” He said: “Welcome to Umm Hani’.” When he had finished bathing, he stood and prayed eight rak‘ahs, wrapped in a single garment.",
+            "arabicSha256": "1478bc63dc06cca1fee73d3946f6d33adbb57af572aecce422d3348b7f0f262c",
+            "englishSha256": "0046e89c9447de3e18dabd2e6142ee1ff060073b65bbbd11a6740df2282a7bb9"
+          },
+          {
+            "id": "350-3",
+            "paragraphId": "mwJg",
+            "start": 368,
+            "end": 514,
+            "kind": "report",
+            "arabic": "فلما انصرف قلت: يا رسول الله زعم بن أمي أنه قاتل رجلا قد أجرته فلان بن هبيرة، فقال رسول الله ﷺ: قد أجرنا من أجرت يا أم هانئ قالت أم هانئ وذاك ضحى ",
+            "english": "When he finished, I said: “Messenger of Allah, my mother’s son claims that he will kill a man to whom I have granted protection, so-and-so the son of Hubayrah.” The Messenger of Allah, may Allah bless him and grant him peace, said: “We have granted protection to the one to whom you have granted protection, Umm Hani’.” Umm Hani’ said: That was in the forenoon.",
+            "arabicSha256": "1c6ad707b65eb0d7107ffb768810ee3a1ddf71196bde9771b827d95181d6799a",
+            "englishSha256": "348320a61ba515d50349b1ba014941363d8e8a77b0b43f774a6a002e7c02401e"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              102
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              100,
+              101
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "id": "bewley-prayer",
+            "reference": "350"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.8.353",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.353",
+              "recordSha256": "fee8b3b31ad305ac2900c12e60d6820114cdb99e39277c719f11eafd4147e296"
+            }
+          }
+        ],
+        "notes": [
+          "Both stated mawla relationships, the repeated full name Umm Hani bint Abi Talib, the narrator transition she said, eight rakahs and the final forenoon statement remain. Mawla stays a source term rather than assigning a legal relationship not expressed in this sentence.",
+          "The source says the year of the conquest, not an added place name. My mother’s son retains بن أمي without supplying Ali or an individual identity for so-and-so son of Hubayrah. The two printed witnesses have ابن أمي in that position; the shorter digital spelling بن أمي is retained without a silent character edit. The full repeated protection statement remains."
+        ],
+        "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and two individually matched English comparison families. Omissions, shared references and wording variants remain documented. Independent Arabic, English, lexical, chapter and reference review is pending; this is not certification.",
+        "arabicSha256": "d6a129b79714a004b7281ec19b4e25c87610454b961a3292e74aea6e8f0f8596",
+        "englishSha256": "c66b4af29ab56f7dc23a30c746441ed31343cce0659689330772288622bc2403",
+        "reviewRecordSha256": "eda971163b46cabd130b22354a3c4cefa01edccfdfd211610266de938a89eda0"
+      },
+      {
+        "number": 351,
+        "id": "bukhari:351",
+        "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwKQ:0",
+        "chapterId": "chapter-04",
+        "paragraphIds": [
+          "mwKQ"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-prayer-r522110",
+          "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+          "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+          "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+          "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwKQ:0",
+          "sourceReference": {
+            "label": "351",
+            "number": 351,
+            "markerId": "mwKQ:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwKQ",
+              "textSha256": "927ed25f16f26e687428baba798dfd5a58625827a9a0adcfe5836effd8fd04fc",
+              "origin": {
+                "blockId": "mwKQ",
+                "blockSha256": "927ed25f16f26e687428baba798dfd5a58625827a9a0adcfe5836effd8fd04fc",
+                "start": 0,
+                "end": 170
+              }
+            }
+          ]
+        },
+        "segments": [
+          {
+            "id": "351-1",
+            "paragraphId": "mwKQ",
+            "start": 0,
+            "end": 89,
+            "kind": "chain",
+            "arabic": "[351] حدثنا عبد الله بن يوسف قال: أخبرنا مالك عن ابن شهاب عن سعيد بن المسيب عن أبي هريرة ",
+            "english": "‘Abd Allah ibn Yusuf related to us. He said: Malik informed us, from Ibn Shihab, from Sa‘id ibn al-Musayyab, from Abu Hurayrah:",
+            "arabicSha256": "0d0bbc7ea121ecf734689e5e166019d4a40cd311b8684a7a1fdfcba65026b73e",
+            "englishSha256": "f7c20e9a4d83b46575c164129fd639298551e4ef598434b6ea5503ebd5a59428"
+          },
+          {
+            "id": "351-2",
+            "paragraphId": "mwKQ",
+            "start": 89,
+            "end": 170,
+            "kind": "report",
+            "arabic": "أن سائلا سأل رسول الله ﷺ عن الصلاة في ثوب واحد، فقال رسول الله ﷺ: أو لكلكم ثوبان ",
+            "english": "That someone asked the Messenger of Allah, may Allah bless him and grant him peace, about praying in a single garment. The Messenger of Allah, may Allah bless him and grant him peace, said: “Do all of you have two garments?”",
+            "arabicSha256": "6444ebd5f7252bbb6a8d134188fce052862e831454b4e0a7df6f551ee0838fc7",
+            "englishSha256": "9498fbdb72faf80381760d1381b3ad50457c191dd4bbd38363cb4874db1884aa"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              102
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              101
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "id": "bewley-prayer",
+            "reference": "351"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.8.354",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.354",
+              "recordSha256": "dcade974ecbe59531b61920dc19dc74c0645e44451d80294a715fdfddee817b6"
+            }
+          }
+        ],
+        "notes": [
+          "The source question and repeated Messenger of Allah attribution remain, with both honorifics. The opening full chain is retained rather than replaced by the shorter Abu Hurayrah attribution in English comparisons. No answer beyond the selected question or clothing rule is appended."
+        ],
+        "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and two individually matched English comparison families. Omissions, shared references and wording variants remain documented. Independent Arabic, English, lexical, chapter and reference review is pending; this is not certification.",
+        "arabicSha256": "927ed25f16f26e687428baba798dfd5a58625827a9a0adcfe5836effd8fd04fc",
+        "englishSha256": "7963e935c8fa085d20af166d074a4686b2dd47fb17e6e631ce628f84ba520c6b",
+        "reviewRecordSha256": "d4bb093e04c7b0275e6c6ec9c6b108f577b4218812128b683a82edbb29c8d5bd"
+      }
+    ],
+    "batches": [
+      {
+        "path": "content/review/prayer-first-review.json",
+        "first": 342,
+        "last": 351,
+        "sha256": "a7b389b14f7f0ac5ac4bde51351ee7c2dd305070cf270a7d9dcb17de927a00f8"
+      }
+    ]
+  }
+}

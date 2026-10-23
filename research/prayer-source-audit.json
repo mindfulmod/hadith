@@ -1,0 +1,70 @@
+{
+  "checkedAt": "2026-10-23",
+  "status": "opening-four-chapters-admitted-as-personal-prototype",
+  "source": {
+    "id": "wikisource-bukhari-prayer-r522110",
+    "revision": 522110,
+    "retrievedAt": "2026-10-23",
+    "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_الصلاة&oldid=522110",
+    "status": "candidate-layout-review-required",
+    "readerEligible": false,
+    "license": {
+      "id": "CC-BY-SA-4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Sahih al-Bukhari by Muhammad ibn Ismail al-Bukhari; Arabic digital transcription by Arabic Wikisource contributors, revision 522110.",
+      "changes": "The HTML is retained unchanged. Decoded text is not trimmed, normalized or corrected. Two leading newline characters before selected 453 require an explicit structural classification. This intake adds no English translation."
+    },
+    "file": {
+      "path": "source.html",
+      "bytes": 362712,
+      "sha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7"
+    },
+    "note": "This exact retrieval is pinned in addition to its revision ID. The candidate inventory has 108 rendered headings and 157 numbered markers. Structural coverage is not a claim that every printed heading or narration variant is present. Edition identity and wording approval are not inferred.",
+    "expected": {
+      "blocks": 305,
+      "layoutSummary": {
+        "blocks": 305,
+        "htmlHeadings": 108,
+        "unparsedHeadings": 0,
+        "numberedMarkers": 157,
+        "uniqueNumericLabels": 157,
+        "numericRange": [
+          342,
+          498
+        ],
+        "unobservedLabelsWithinRange": [],
+        "duplicateLabels": [],
+        "sourceCodePoints": 56260,
+        "coveredCodePoints": 56260
+      }
+    }
+  },
+  "candidateInventory": {
+    "reports": 157,
+    "range": "342–498",
+    "chapters": 108,
+    "originalBlocks": 305,
+    "mappedUnits": 306,
+    "sourceCodePoints": 56260,
+    "readerEligible": false
+  },
+  "layoutReview": "content/review/prayer-layout-review.json",
+  "admitted": {
+    "range": "342–351",
+    "reports": 10,
+    "chapters": 4,
+    "separateArabicIntroductionParagraphs": 4,
+    "englishIntroductions": "pending",
+    "review": "content/review/prayer-first-review.json",
+    "verification": "research/prayer-first-verification.json"
+  },
+  "findings": [
+    "Two newline characters before selected 453 are retained as a separate blank span. Both printed witnesses show a distinct new chain there and an untitled chapter 79 which the digital source omits. This whole-book structural inventory does not admit the later report or silently insert its missing heading.",
+    "Selected 342 spans Bewley 342 and the first account under 343. The second unnumbered account under 343 is selected 343. Explicit part scopes preserve all selected segment ownership and reject lost, repeated or unordered shared parts.",
+    "Both full source chains and embedded attributions remain at 342, including the attribution omitted from the Khan-family body. The selected sixth heaven, return verb and pearl wording are unchanged; provisional English lexical choices and print differences are documented with commentary references.",
+    "Selected 344 retains its closing transmission even though the inspected modern print and Khan-family body omit it. Its source garment term and supplication wording are retained without importing the comparison’s different terminology.",
+    "The four unnumbered introductions are individually browsable Arabic, excluded from sessions and narration. English remains pending. The comparison’s separate Clothing in the Prayer section does not create a new source book.",
+    "Ten individually matched Khan-family comparison records are pinned to their source and record hashes: 1.8.345 through 1.8.354. This is a checked local mapping, not a full-book numbering offset."
+  ],
+  "remaining": "147 candidate Prayer reports (352–498), later chapter comparisons, English chapter introductions and independent Arabic/English/lexical/reference review remain. Full original source material is retained; unreviewed candidates are not reader content."
+}

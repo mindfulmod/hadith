@@ -20,7 +20,8 @@ export const BOOK_CONFIGS=Object.freeze({
  ablution:Object.freeze({id:'ablution',number:4,title:'Ablution',first:135,arabicSourceId:'arabic-ablution',bewleySourceId:'bewley-ablution',bewleyTitle:'Wudu',revision:273249,sourceLayout:'mapped'}),
  ghusl:Object.freeze({id:'ghusl',number:5,title:'Ghusl',first:245,arabicSourceId:'arabic-ghusl',bewleySourceId:'bewley-ghusl',bewleyTitle:'Ghusl',revision:484873,bookIntroduction:'preserved-arabic'}),
  menstruation:Object.freeze({id:'menstruation',number:6,title:'Menstruation',first:290,arabicSourceId:'arabic-menstruation',bewleySourceId:'bewley-menstruation',bewleyTitle:'Menstruation',revision:484869,bookIntroduction:'preserved-arabic'}),
- tayammum:Object.freeze({id:'tayammum',number:7,title:'Tayammum',first:327,arabicSourceId:'arabic-tayammum',bewleySourceId:'bewley-tayammum',bewleyTitle:'Tayammum',revision:484871,sourceLayout:'mapped'})
+ tayammum:Object.freeze({id:'tayammum',number:7,title:'Tayammum',first:327,arabicSourceId:'arabic-tayammum',bewleySourceId:'bewley-tayammum',bewleyTitle:'Tayammum',revision:484871,sourceLayout:'mapped'}),
+ prayer:Object.freeze({id:'prayer',number:8,title:'Prayer',first:342,arabicSourceId:'arabic-prayer',bewleySourceId:'bewley-prayer',bewleyTitle:'Prayer',revision:522110,sourceLayout:'mapped'})
 });
 function bookConfig(config){assert(Object.values(BOOK_CONFIGS).includes(config),'Unknown book configuration');return config;}
 let englishInventory;
@@ -30,6 +31,11 @@ function comparisonEvidence(reference,evidence){
  assert(record,'Comparison label is absent from the pinned inventory');
  assert.deepEqual(evidence,{sourceSha256:englishInventory.sourceSha256,sourceRecordId:record.id,recordSha256:hash(record)},'Comparison needs exact pinned-inventory evidence');
  return record;
+}
+function validateBewleyPart(part){
+ assert(part&&typeof part==='object'&&!Array.isArray(part),'Invalid Bewley comparison part');
+ assert.deepEqual(Object.keys(part).sort(),['count','index'],'Unexpected Bewley part metadata');
+ assert(Number.isSafeInteger(part.index)&&Number.isSafeInteger(part.count)&&part.count>1&&part.index>=1&&part.index<=part.count,'Invalid Bewley comparison part');
 }
 function validateComparisons(comparisons,config,segments){
  const khanReference=new RegExp('^1\\.'+config.number+'\\.[1-9]\\d*[a-z]?$');
@@ -41,7 +47,11 @@ function validateComparisons(comparisons,config,segments){
   assert(typeof bewley.note==='string'&&bewley.note.trim(),'Abbreviated comparison needs an explanation');
   if(bewley.status==='cross-reference-with-transmission-note'||bewley.referencedReference!==undefined)assert(/^[1-9]\d*$/.test(bewley.referencedReference)&&Number(bewley.referencedReference)<Number(bewley.reference),'Cross-reference comparison needs its earlier reference');
  }else assert.equal(bewley.referencedReference,undefined,'A comparison pointer needs an explicit status');
- assert.equal(bewley.part,undefined,'Unexpected Bewley part metadata');
+ if(bewley.part!==undefined){
+  validateBewleyPart(bewley.part);
+  assert(bewley.status===undefined&&bewley.splitReferences===undefined&&bewley.referencedReference===undefined,'Shared comparison part cannot claim another comparison form');
+  assert(typeof bewley.note==='string'&&bewley.note.trim(),'Shared comparison needs a scope explanation');
+ }
  if(bewley.splitReferences!==undefined){
   assert(bewley.status===undefined&&bewley.referencedReference===undefined,'Split comparison cannot also claim an abbreviated pointer');
   const parts=bewley.splitReferences;
@@ -49,7 +59,8 @@ function validateComparisons(comparisons,config,segments){
   assert.equal(parts[0].reference,bewley.reference,'Split comparison must begin at its primary reference');
   assert(typeof bewley.note==='string'&&bewley.note.trim(),'Split comparison needs an explanation');
   for(const [index,part]of parts.entries()){
-   assert.deepEqual(Object.keys(part).sort(),['reference','segmentIds'],'Unexpected split comparison metadata');
+   assert.deepEqual(Object.keys(part).sort(),(part.part===undefined?['reference','segmentIds']:['part','reference','segmentIds']),'Unexpected split comparison metadata');
+   if(part.part!==undefined)validateBewleyPart(part.part);
    assert(/^[1-9]\d*$/.test(part.reference)&&(!index||Number(part.reference)>Number(parts[index-1].reference)),'Split comparison references must be distinct and ordered');
    assert(Array.isArray(part.segmentIds)&&part.segmentIds.length,'Split comparison needs segment coverage');
   }
@@ -162,6 +173,11 @@ function printedCitation(w){
  const location=`PDF ${w.pdfPages.length===1?'page':'pages'} ${w.pdfPages.join(', ')}`;
  return {id:w.id,sourceId:w.id,locator:w.status?`Checked ${location} · no separate match in this chapter`:location,pdfPage:w.pdfPages[0],scope:w.status?w.note+' This checked absence is not an exact printed match.':'Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes.'};
 }
+function bewleyCitation(row,config){
+ const c=row.comparisons.find(c=>c.id===config.bewleySourceId);
+ const describe=p=>p.reference+(p.part?` (part ${p.part.index} of ${p.part.count})`:'');
+ return {id:'bewley',sourceId:config.bewleySourceId,locator:`Book of ${config.bewleyTitle} · ${c.splitReferences?'entries '+c.splitReferences.map(describe).join(', '):'entry '+describe(c)}`,scope:c.splitReferences||c.part?c.note:row.sourceForm?.kind==='chain-only'?'Named English comparison for this abbreviated transmission; no repeated report body is supplied here.':c.status!==undefined?c.note:'Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain.'};
+}
 function khanCitation(record){
  if(record.status==='unnumbered-back-reference-only'){const [volume,book,number]=record.reference.split('.');return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Number ${number} · unnumbered backward pointer only`,scope:record.note};}
  if(record.status==='back-reference-only'){const [volume,book,number]=record.reference.split('.');return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Number ${number} · backward reference only`,scope:record.note};}
@@ -192,6 +208,18 @@ export function buildBookBatch(inventory,review,manifest,config){
  for(const group of comparisonGroups.values())if(group.length>1){
   assert(group.every(c=>c.part&&c.part.count===group[0].part?.count),'A shared reference needs consistent report parts');
   assert.equal(new Set(group.map(c=>c.part.index)).size,group.length,'A comparison part cannot be assigned twice');
+ }
+
+ const bewleyGroups=new Map();
+ for(const row of review.entries){
+  const c=row.comparisons.find(c=>c.id===config.bewleySourceId);if(c.status!==undefined)continue;
+  for(const part of c.splitReferences||[c]){const group=bewleyGroups.get(part.reference)||[];group.push(part);bewleyGroups.set(part.reference,group);}
+ }
+ for(const group of bewleyGroups.values())if(group.length>1||group.some(c=>c.part)){
+  const count=group[0].part?.count;
+  assert(group.every(c=>c.part&&c.part.count===count),'A shared Bewley reference needs consistent report parts');
+  assert.equal(group.length,count,'A shared Bewley reference needs all declared parts');
+  assert.deepEqual(group.map(c=>c.part.index),Array.from({length:count},(_,i)=>i+1),'Shared Bewley parts must be complete, unique and in source order');
  }
 
  for(const row of review.entries){
@@ -251,7 +279,7 @@ export function assembleCollection(opening,inventory,review,manifest,config=BOOK
   const r=review.entries.find(r=>r.number===e.number),chapter=review.chapters.find(c=>c.entryNumbers.includes(e.number));
   references.entries.push({id:e.id,number:e.number,entrySha256:hash(e),translation:{label:'Personal prototype · English working translation',description:e.english_status+' This is a new working translation, not the Darussalam translation.'},citations:[
    {id:'base',sourceId:config.arabicSourceId,locator:`Book of ${config.title} · source entry ${r.sourceLayout?.sourceReference.label??e.number} · ${chapter.titleArabic}`,scope:r.sourceLayout?'Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence.':r.arabicCorrections?'Derived Arabic with an explicitly recorded correction supported by two printed witnesses. The unchanged digital paragraph, before/after wording and evidence are preserved in the offline source notes.':'Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes.'},
-   {id:'bewley',sourceId:config.bewleySourceId,locator:`Book of ${config.bewleyTitle} · ${r.comparisons.find(c=>c.id===config.bewleySourceId).splitReferences?'entries '+r.comparisons.find(c=>c.id===config.bewleySourceId).splitReferences.map(p=>p.reference).join(', '):'entry '+r.comparisons.find(c=>c.id===config.bewleySourceId).reference}`,scope:r.comparisons.find(c=>c.id===config.bewleySourceId).splitReferences?r.comparisons.find(c=>c.id===config.bewleySourceId).note:r.sourceForm?.kind==='chain-only'?'Named English comparison for this abbreviated transmission; no repeated report body is supplied here.':r.comparisons.find(c=>c.id===config.bewleySourceId).status!==undefined?r.comparisons.find(c=>c.id===config.bewleySourceId).note:'Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain.'},
+   bewleyCitation(r,config),
    khanCitation(r.comparisons.find(c=>c.id==='islamhouse-khan')),
    ...r.printedWitnesses.map(printedCitation),
    ...structuredClone(r.additionalCitations||[])

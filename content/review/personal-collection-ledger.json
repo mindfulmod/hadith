@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "namespace": "bukhari-opening-v1",
   "publication": "personal-prototype",
-  "sourceRecordSha256": "6950c588a6a4d25d35a705f9099b6eb9dc124c67f246e70082db198d9792971f",
+  "sourceRecordSha256": "39650a0b6d79d3d23c6e937609db577ab0e3ab5c3ec5fb9542404882e5600d40",
   "rights": {
     "status": "pending",
     "evidence": [
@@ -19,7 +19,9 @@
       "reader/menstruation-inputs.json",
       "reader/menstruation-review.html",
       "reader/tayammum-inputs.json",
-      "reader/tayammum-review.html"
+      "reader/tayammum-review.html",
+      "reader/prayer-inputs.json",
+      "reader/prayer-review.html"
     ]
   },
   "books": [
@@ -5375,6 +5377,112 @@
               "beforeEntry": 341,
               "printedChapterNumber": 9,
               "evidenceSha256": "bf0d8b9c37b00f1956e68074fd876628f1b1d9c475d60ed5d5a04a31a92e14ed"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "prayer",
+      "number": 8,
+      "title": "Prayer",
+      "sourceEntryCount": 157,
+      "entryNumbers": [
+        342,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348,
+        349,
+        350,
+        351
+      ],
+      "chapters": [
+        {
+          "id": "chapter-01",
+          "title": "How the prayers were made obligatory during the Night Journey",
+          "entryNumbers": [
+            342,
+            343
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 1,
+              "englishStatus": "pending"
+            },
+            "notes": {
+              "path": "prayer-review.html",
+              "fragment": "chapter-01"
+            }
+          }
+        },
+        {
+          "id": "chapter-02",
+          "title": "The obligation of wearing clothes in prayer",
+          "entryNumbers": [
+            344
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 1,
+              "englishStatus": "pending"
+            },
+            "notes": {
+              "path": "prayer-review.html",
+              "fragment": "chapter-02"
+            }
+          }
+        },
+        {
+          "id": "chapter-03",
+          "title": "Tying the izar at the back of the neck in prayer",
+          "entryNumbers": [
+            345,
+            346
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 1,
+              "englishStatus": "pending"
+            },
+            "notes": {
+              "path": "prayer-review.html",
+              "fragment": "chapter-03"
+            }
+          }
+        },
+        {
+          "id": "chapter-04",
+          "title": "Praying wrapped in a single garment",
+          "entryNumbers": [
+            347,
+            348,
+            349,
+            350,
+            351
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 1,
+              "englishStatus": "pending"
+            },
+            "notes": {
+              "path": "prayer-review.html",
+              "fragment": "chapter-04"
             }
           }
         }
@@ -11178,15 +11286,185 @@
       "contextReview": {
         "status": "pending"
       }
+    },
+    {
+      "number": 342,
+      "id": "bukhari:342",
+      "entrySha256": "f7df0d32533144ea4bc75fb9e91c37c19afd1461994f2a496eb97bae6c529e9d",
+      "arabicSha256": "cc78f5974d9230954b1cf1f0db7245811c2777fc6c0895e959b20653a72c738b",
+      "englishSha256": "3494c13846e90dd516aa4f11cacf73d71788671abcb6f346d0c5953c5e94db26",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 343,
+      "id": "bukhari:343",
+      "entrySha256": "99d5084d9e584cc36dacf906510d5744a119f39c8cf4af52eb66d212d7ab3c5b",
+      "arabicSha256": "d55e169a44d043285003b5fecf9ad21e3ec1b14cef009c3b8084396a34dfafe0",
+      "englishSha256": "5cb148804fffc7f72d5ccbdd01c962262b34544b9043c4aa4c93a5ab4fa96e44",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 344,
+      "id": "bukhari:344",
+      "entrySha256": "770f2de15666a802aa395aa7ef079197e3931e47b28c9cb457ab5ad16b612e0c",
+      "arabicSha256": "0cb47fa0b8c5225c7fce509f7587e20497f770082204a0a6e0cbdac3c6db649b",
+      "englishSha256": "c621790a47917f747e3f301aeee1e6a96867908db59cf0238993ccf54a51121a",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 345,
+      "id": "bukhari:345",
+      "entrySha256": "6eca6c7f5a82923c869d996ffda11496259ee00a74ee5e2f7aba5ac02422fa19",
+      "arabicSha256": "e595ea88398348ab8335652556a2ff70383786c92cb981d59c2e56ee33d17f21",
+      "englishSha256": "678719248c24ee1211188d0a35c650a6d1199c299afc35448ccce0d3f661a912",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 346,
+      "id": "bukhari:346",
+      "entrySha256": "e86101b1fdc5836af04da06d4a68bee59255b9a14b4fd3b6a201773beaee8e3c",
+      "arabicSha256": "531625a33e8b28d69042205ac7d322b2581a0717eea881860ff8758c95fcea6f",
+      "englishSha256": "945ef7eb231778fc984533d48661b6165134b7347011ba5b00759c1f0c641f0f",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 347,
+      "id": "bukhari:347",
+      "entrySha256": "0b6e55865fd32241abf3b550580cae94cb59ae41c53eb3528d4bae3eb90c5814",
+      "arabicSha256": "e3962c112a02d889159765a6d87062100b3f893e2f7cf010499686a1fab945b4",
+      "englishSha256": "f050c8e1c39c6ed37f828cd428bc1b75fc3b27a4eb32d37f56c8a09ce20a4014",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 348,
+      "id": "bukhari:348",
+      "entrySha256": "cbfb86e089ef59158416ec2b966e4fcf00be8b74e590b7384342580f1d03a8d1",
+      "arabicSha256": "294076817f25265319d3eb3ec3011769a8b61967084f244cca87bd25fe87d041",
+      "englishSha256": "103142c124d4fa9a3b5c2e2cbd4049379bb3aeb90007a37712da36afd2813541",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 349,
+      "id": "bukhari:349",
+      "entrySha256": "16e43683c37ab2c27087ad452e676466f44810e96bcc0a5ffea0e9bcbc333373",
+      "arabicSha256": "ead10afd66df22de4c673d120f1a832a0b045c70d0f8ef62a18e6b6340b05932",
+      "englishSha256": "aa063e927e882ef6da09584e1a81b7b1cc29d2ae56ed7fa63aa370d41054acef",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 350,
+      "id": "bukhari:350",
+      "entrySha256": "9820146b93a7bcebc9502cc86455964a242ca44e469863fc02694d433ec56a8f",
+      "arabicSha256": "d6a129b79714a004b7281ec19b4e25c87610454b961a3292e74aea6e8f0f8596",
+      "englishSha256": "c66b4af29ab56f7dc23a30c746441ed31343cce0659689330772288622bc2403",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 351,
+      "id": "bukhari:351",
+      "entrySha256": "3ad918815545f4789cc6acb24db7a7984159ae9f8515a3bda33e1569bf083d81",
+      "arabicSha256": "927ed25f16f26e687428baba798dfd5a58625827a9a0adcfe5836effd8fd04fc",
+      "englishSha256": "7963e935c8fa085d20af166d074a4686b2dd47fb17e6e631ce628f84ba520c6b",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
     }
   ],
-  "catalogContextSha256": "7050fffa34d20e0f6182584dfb0c03e81e1821f311901be81745a39fb07ccca9",
+  "catalogContextSha256": "c948ab59d7435007b78e229451ac2f96a7eee21ebeca7cef06ac9e28179be106",
   "collectionReview": {
     "status": "pending"
   },
   "sourceReferences": {
     "schemaVersion": 1,
-    "sourceRecordSha256": "6950c588a6a4d25d35a705f9099b6eb9dc124c67f246e70082db198d9792971f",
+    "sourceRecordSha256": "39650a0b6d79d3d23c6e937609db577ab0e3ab5c3ec5fb9542404882e5600d40",
     "sources": [
       {
         "id": "arabic-base",
@@ -11607,6 +11885,48 @@
         "kind": "commentary",
         "format": "web",
         "url": "https://ablibrary.net/book_content/b/2601/384"
+      },
+      {
+        "id": "arabic-prayer",
+        "label": "Arabic Wikisource · fixed revision 522110",
+        "kind": "arabic-input",
+        "format": "web",
+        "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_الصلاة&oldid=522110"
+      },
+      {
+        "id": "bewley-prayer",
+        "label": "Aisha Bewley · Book of Prayer and Clothing in the Prayer",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://aishabewley.org/bukhari5"
+      },
+      {
+        "id": "fath-prayer-390",
+        "label": "Ibn Hajar · Fath al-Bari · Prayer terminology and variants · online page 390",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://ablibrary.net/book_content/b/2601/390"
+      },
+      {
+        "id": "fath-prayer-391",
+        "label": "Ibn Hajar · Fath al-Bari · Prayer terminology and variants · online page 391",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://ablibrary.net/book_content/b/2601/391"
+      },
+      {
+        "id": "fath-prayer-392",
+        "label": "Ibn Hajar · Fath al-Bari · Prayer terminology and variants · online page 392",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://ablibrary.net/book_content/b/2601/392"
+      },
+      {
+        "id": "mirqat-prayer-11664",
+        "label": "Ali al-Qari · Mirqat al-Mafatih · Night Journey wording",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://www.islamweb.net/ar/library/content/79/11664/"
       }
     ],
     "entries": [
@@ -29577,10 +29897,552 @@
           "fragment": "hadith-341",
           "label": "Comparison notes and chapter source for this hadith"
         }
+      },
+      {
+        "id": "bukhari:342",
+        "number": 342,
+        "entrySha256": "f7df0d32533144ea4bc75fb9e91c37c19afd1461994f2a496eb97bae6c529e9d",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-prayer",
+            "locator": "Book of Prayer · source entry 342 · باب كيف فرضت الصلوات في الإسراء",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-prayer",
+            "locator": "Book of Prayer · entries 342, 343 (part 1 of 2)",
+            "scope": "Selected 342 spans Bewley 342 and the first account under 343, ending with the pearls and musk. The separate unnumbered Aisha paragraph under that same 343 is selected 343, not part of this report."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 8, Number 345",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF pages 99, 100",
+            "pdfPage": 99,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF pages 98, 99",
+            "pdfPage": 98,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "lexical-390",
+            "sourceId": "fath-prayer-390",
+            "locator": "Fath al-Bari · volume 1 · online page 390",
+            "scope": "Consulted for lexical and variant review; commentary is separate from the selected report and does not certify the working translation."
+          },
+          {
+            "id": "lexical-391",
+            "sourceId": "fath-prayer-391",
+            "locator": "Fath al-Bari · volume 1 · online page 391",
+            "scope": "Consulted for lexical and variant review; commentary is separate from the selected report and does not certify the working translation."
+          },
+          {
+            "id": "lexical-392",
+            "sourceId": "fath-prayer-392",
+            "locator": "Fath al-Bari · volume 1 · online page 392",
+            "scope": "Consulted for lexical and variant review; commentary is separate from the selected report and does not certify the working translation."
+          },
+          {
+            "id": "return-wording",
+            "sourceId": "mirqat-prayer-11664",
+            "locator": "Mirqat al-Mafatih · Night Journey commentary",
+            "scope": "Consulted for the grammatical explanation of فراجعني. Commentary is not part of the hadith."
+          }
+        ],
+        "contextNotes": [
+          {
+            "id": "342-wording-review",
+            "label": "Wording differences under review",
+            "text": "This complete report has variant wording and a different division in the compared sources. The selected Arabic remains unchanged. The source notes explain the comparison boundaries and provisional English choices for the reduction of prayers and the pearls. Independent review is pending.",
+            "citations": [
+              "base",
+              "bewley",
+              "khan",
+              "brill-1862",
+              "dar-ibn-kathir-2002"
+            ],
+            "related": []
+          }
+        ],
+        "localNotes": {
+          "path": "prayer-review.html",
+          "fragment": "hadith-342",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:343",
+        "number": 343,
+        "entrySha256": "99d5084d9e584cc36dacf906510d5744a119f39c8cf4af52eb66d212d7ab3c5b",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-prayer",
+            "locator": "Book of Prayer · source entry 343 · باب كيف فرضت الصلوات في الإسراء",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-prayer",
+            "locator": "Book of Prayer · entry 343 (part 2 of 2)",
+            "scope": "The unnumbered Aisha paragraph following the Night Journey continuation under Bewley 343. Only this second account corresponds to selected 343; the preceding account belongs to selected 342."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 8, Number 346",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 100",
+            "pdfPage": 100,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 99",
+            "pdfPage": 99,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "prayer-review.html",
+          "fragment": "hadith-343",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:344",
+        "number": 344,
+        "entrySha256": "770f2de15666a802aa395aa7ef079197e3931e47b28c9cb457ab5ad16b612e0c",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-prayer",
+            "locator": "Book of Prayer · source entry 344 · باب وجوب الصلاة في الثياب",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-prayer",
+            "locator": "Book of Prayer · entry 344",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 8, Number 347",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 101",
+            "pdfPage": 101,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF pages 99, 100",
+            "pdfPage": 99,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [
+          {
+            "id": "344-closing-chain",
+            "label": "Closing transmission retained",
+            "text": "The selected source and historical print include a closing narrator chain which the inspected modern print and one English comparison omit. It remains here in full, with the difference recorded in the source notes.",
+            "citations": [
+              "base",
+              "bewley",
+              "khan",
+              "brill-1862",
+              "dar-ibn-kathir-2002"
+            ],
+            "related": []
+          }
+        ],
+        "localNotes": {
+          "path": "prayer-review.html",
+          "fragment": "hadith-344",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:345",
+        "number": 345,
+        "entrySha256": "6eca6c7f5a82923c869d996ffda11496259ee00a74ee5e2f7aba5ac02422fa19",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-prayer",
+            "locator": "Book of Prayer · source entry 345 · باب عقد الإزار على القفا في الصلاة",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-prayer",
+            "locator": "Book of Prayer · entry 345",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 8, Number 348",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 101",
+            "pdfPage": 101,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 100",
+            "pdfPage": 100,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "prayer-review.html",
+          "fragment": "hadith-345",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:346",
+        "number": 346,
+        "entrySha256": "e86101b1fdc5836af04da06d4a68bee59255b9a14b4fd3b6a201773beaee8e3c",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-prayer",
+            "locator": "Book of Prayer · source entry 346 · باب عقد الإزار على القفا في الصلاة",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-prayer",
+            "locator": "Book of Prayer · entry 346",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 8, Number 349",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 101",
+            "pdfPage": 101,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 100",
+            "pdfPage": 100,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "prayer-review.html",
+          "fragment": "hadith-346",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:347",
+        "number": 347,
+        "entrySha256": "0b6e55865fd32241abf3b550580cae94cb59ae41c53eb3528d4bae3eb90c5814",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-prayer",
+            "locator": "Book of Prayer · source entry 347 · باب الصلاة في الثوب الواحد ملتحفا به",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-prayer",
+            "locator": "Book of Prayer · entry 347",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 8, Number 350",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 101",
+            "pdfPage": 101,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 100",
+            "pdfPage": 100,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "prayer-review.html",
+          "fragment": "hadith-347",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:348",
+        "number": 348,
+        "entrySha256": "cbfb86e089ef59158416ec2b966e4fcf00be8b74e590b7384342580f1d03a8d1",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-prayer",
+            "locator": "Book of Prayer · source entry 348 · باب الصلاة في الثوب الواحد ملتحفا به",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-prayer",
+            "locator": "Book of Prayer · entry 348",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 8, Number 351",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF pages 101, 102",
+            "pdfPage": 101,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 100",
+            "pdfPage": 100,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "prayer-review.html",
+          "fragment": "hadith-348",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:349",
+        "number": 349,
+        "entrySha256": "16e43683c37ab2c27087ad452e676466f44810e96bcc0a5ffea0e9bcbc333373",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-prayer",
+            "locator": "Book of Prayer · source entry 349 · باب الصلاة في الثوب الواحد ملتحفا به",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-prayer",
+            "locator": "Book of Prayer · entry 349",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 8, Number 352",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 102",
+            "pdfPage": 102,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 100",
+            "pdfPage": 100,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "prayer-review.html",
+          "fragment": "hadith-349",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:350",
+        "number": 350,
+        "entrySha256": "9820146b93a7bcebc9502cc86455964a242ca44e469863fc02694d433ec56a8f",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-prayer",
+            "locator": "Book of Prayer · source entry 350 · باب الصلاة في الثوب الواحد ملتحفا به",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-prayer",
+            "locator": "Book of Prayer · entry 350",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 8, Number 353",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 102",
+            "pdfPage": 102,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF pages 100, 101",
+            "pdfPage": 100,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "prayer-review.html",
+          "fragment": "hadith-350",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:351",
+        "number": 351,
+        "entrySha256": "3ad918815545f4789cc6acb24db7a7984159ae9f8515a3bda33e1569bf083d81",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-prayer",
+            "locator": "Book of Prayer · source entry 351 · باب الصلاة في الثوب الواحد ملتحفا به",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-prayer",
+            "locator": "Book of Prayer · entry 351",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 8, Number 354",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 102",
+            "pdfPage": 102,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 101",
+            "pdfPage": 101,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "prayer-review.html",
+          "fragment": "hadith-351",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
       }
     ]
   },
-  "referencesSha256": "fdba5dbd28cc688942abebcf9093f47ebc5d77c5bf3587e5d4570fd5138a4625",
+  "referencesSha256": "5908ba163a3290d4378828b084ea4dc859be88333d5ecbc1da0e59cd6f9bf975",
   "referencesReview": {
     "status": "pending"
   }

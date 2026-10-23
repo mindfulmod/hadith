@@ -174,7 +174,7 @@ class WikisourceResolutionTests(unittest.TestCase):
     def test_saved_inventory_is_reproducible_and_only_explicit_batches_enter_reader(self):
         result = resolution.build_registered(self.registry, check=True)
         self.assertEqual(dict(result)['ablution'], self.result)
-        self.assertEqual(set(dict(result)), {'ablution', 'tayammum'})
+        self.assertEqual(set(dict(result)), {'ablution', 'tayammum', 'prayer'})
         self.assertEqual(self.result['status'], 'candidate-layout-mapped-not-approved')
         self.assertFalse(self.result['readerEligible'])
         self.assertTrue(all(r['status'] == 'unreviewed' for r in self.result['records']))

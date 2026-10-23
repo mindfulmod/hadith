@@ -6,11 +6,11 @@ import {escapeHTML as esc} from '../reader/source-format.mjs';
 const root=new URL('../',import.meta.url);
 const verified=new Map();
 function checkedInventory(id){
- assert(['ablution','tayammum'].includes(id),'Unknown mapped source book');
+ assert(['ablution','tayammum','prayer'].includes(id),'Unknown mapped source book');
  if(!verified.has(id)){
   // The Python resolver checks the raw revision, audit, every original span and its review.
   // Keep this build-time dependency out of the browser and avoid a second layout algorithm.
-  const resolved=execFileSync('python3',[fileURLToPath(new URL('scripts/resolve-wikisource-layout.py',root)),'--check','--json',id],{cwd:fileURLToPath(root),env:{...process.env,PYTHONDONTWRITEBYTECODE:'1'},encoding:'utf8',maxBuffer:2*1024*1024});
+  const resolved=execFileSync('python3',[fileURLToPath(new URL('scripts/resolve-wikisource-layout.py',root)),'--check','--json',id],{cwd:fileURLToPath(root),env:{...process.env,PYTHONDONTWRITEBYTECODE:'1'},encoding:'utf8',maxBuffer:8*1024*1024});
   verified.set(id,JSON.parse(resolved));
  }
  return verified.get(id);

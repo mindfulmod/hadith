@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The personal reader is at `reader/`: 341 complete selected Bukhari entries across seven books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The personal reader is at `reader/`: 351 complete selected Bukhari entries across eight books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Run
 
@@ -651,3 +651,14 @@ One hamza correction at 339 is declared with two agreeing printed witnesses and 
 Validation: **319 Node + 74 Python tests**, all 13 source/release integrity checks, and exact browser-rendered English and Arabic for all ten new entries. With the preview server stopped, reload, original Arabic, the final four chapter sections, the printed chapter division, next-hadith navigation and phrase search work. At 320px, both standard 21px day reading and largest 28px night reading fit without horizontal overflow. Continue remains at Hadith 250 after free browsing. All prior 331 entry objects, six stable book packs, artwork and actual audio bytes remain unchanged. Evidence: `research/tayammum-final-verification.json`.
 
 Scripts cover 341 entries; actual Cedar audio remains **1–6**. This remains a personal prototype with independent Arabic, English, context and spoken-word review pending. Next corpus work is source intake for the Book of Prayer; English chapter introductions and physical iPhone cross-recording acceptance also remain unfinished.
+
+
+### Prayer opening and separate chapter material — 23 October 2026
+
+The reader now contains **351 numbered entries across eight books**. Prayer 342–351 adds four complete chapters; all four introductions remain separately browsable Arabic with English pending. Sessions and narration include only numbered reports. The full pinned Prayer source has 157 candidate reports and 108 headings, but its remaining 147 reports have not been admitted. Every one of its 56,260 source code points is retained, including two explicitly classified newlines before selected 453.
+
+Selected Arabic for this batch is unchanged. The Night Journey report spans two Bewley references, sharing the second with the following Aisha account. Explicit part scopes now require complete, unique, ordered assignments. Full narrator chains, the closing transmission at 344 and differences between the inspected printed/English witnesses remain visible. Lexical choices in 342 are provisional and documented with primary commentary references; they are not independent certification.
+
+Validation: **324 Node + 78 Python tests**, 13 integrity commands, and exact rendered Arabic and English for all ten new reports. With the local preview server stopped, reload, next-hadith navigation, phrase search, complete Arabic and all four chapter introductions work. Standard 21px day text and largest 28px night text fit at 320px without horizontal overflow. Free browsing preserves the current session. All 341 previous entry objects, seven previous book packs, artwork and actual recordings are unchanged. Evidence: `research/prayer-first-verification.json`.
+
+The complete scripts cover 351 entries; actual Cedar audio remains **1–6**. Independent Arabic, English, lexical, chapter, reference and spoken-word review remain pending. Next corpus work begins at Prayer 352, in complete source chapters.
