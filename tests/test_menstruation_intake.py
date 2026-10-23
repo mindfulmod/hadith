@@ -11,7 +11,7 @@ class MenstruationIntakeTests(unittest.TestCase):
   owned=[b['htmlId']for b in i['bookIntroduction']['blocks']]+i['blankIds']+[x for c in i['chapters']for x in [c['headingId'],*c['contextIds']]]+[x for r in i['records']for x in r['paragraphIds']]
   self.assertEqual(len(owned),len(set(owned)));self.assertEqual(set(owned),{b['htmlId']for b in i['blocks']});self.assertEqual(sum(len(c['contextIds'])for c in i['chapters']),7)
   self.assertFalse(i['readerEligible']);self.assertTrue(all(r['status']=='unreviewed'for r in i['records']));self.assertEqual(book.encoded(i),(ROOT/'content/staging/bukhari-menstruation-wikisource/catalog.json').read_text())
-  published=json.loads((ROOT/'reader/books/catalog.json').read_text());self.assertFalse(any(e['number']>=298 for e in published['entries']))
+  published=json.loads((ROOT/'reader/books/catalog.json').read_text());self.assertFalse(any(e['number']>=310 for e in published['entries']))
  def test_opening_quotation_and_context_are_not_attached_to_the_first_numbered_report(self):
   i=self.i;self.assertEqual(i['bookIntroduction']['blocks'][0]['htmlId'],'mwBA');self.assertEqual(i['chapters'][0]['contextIds'],['mwBw']);self.assertEqual(i['records'][0]['paragraphIds'],['mwCg']);self.assertEqual(i['chapters'][0]['entryNumbers'],[290]);self.assertEqual(i['chapters'][2]['contextIds'],['mwHQ'])
   self.assertEqual(i['blocks'][0]['text'],'وقول الله تعالى { ويسألونك عن المحيض قل هو أذى } إلى قوله { ويحب المتطهرين }')

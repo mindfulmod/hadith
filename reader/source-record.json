@@ -1,12 +1,12 @@
 {
   "created": "2026-10-20",
-  "scope": "Personal prototype: complete numbered entries 1–297 across 6 books. The rest of the collection remains in preparation.",
+  "scope": "Personal prototype: complete numbered entries 1–309 across 6 books. The rest of the collection remains in preparation.",
   "selected_route": "Pinned Arabic text plus a new English working translation.",
   "license": {
     "id": "CC-BY-SA-4.0",
     "url": "https://creativecommons.org/licenses/by-sa/4.0/",
     "attribution": "Sahih al-Bukhari by Muhammad ibn Ismail al-Bukhari; Arabic digital transcription by Arabic Wikisource contributors, opening revision 484874 and Faith revision 490285. Book of Knowledge: revision 252975. Book of Ablution: revision 273249. Book of Ghusl: revision 484873. Book of Menstruation: revision 484869.",
-    "changes": "Entries 1–2 are unchanged. Entries 3–7 are derived from the pinned Arabic; Hadith 5 has one explicitly recorded correction from له to لك supported by two printed witnesses. Original inputs are retained in prototype-inputs.json. New AI-assisted English, presentation and comparison notes are offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app. Hadith 8–58 retain their Arabic paragraphs unchanged from revision 490285; their new English and available chapter titles are AI-assisted. A disputed chapter heading is explicitly withheld. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 59–134 derive from revision 252975; only 99 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 135–244 derive from revision 273249; only 137, 146, 165, 202 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Exact source origins and original labels are retained; any different reader reference is explicitly mapped. Chapter introductions are preserved separately in Arabic, with English translation still pending. Declared printed additions supply a missing closing transmission note and chapter heading; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately. Hadith 245–289 derive from revision 484873; only 262, 272, 287, 288 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. A declared printed addition supplies a missing closing transmission note; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately. Hadith 290–297 retain their Arabic paragraphs unchanged from revision 484869; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending."
+    "changes": "Entries 1–2 are unchanged. Entries 3–7 are derived from the pinned Arabic; Hadith 5 has one explicitly recorded correction from له to لك supported by two printed witnesses. Original inputs are retained in prototype-inputs.json. New AI-assisted English, presentation and comparison notes are offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app. Hadith 8–58 retain their Arabic paragraphs unchanged from revision 490285; their new English and available chapter titles are AI-assisted. A disputed chapter heading is explicitly withheld. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 59–134 derive from revision 252975; only 99 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 135–244 derive from revision 273249; only 137, 146, 165, 202 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Exact source origins and original labels are retained; any different reader reference is explicitly mapped. Chapter introductions are preserved separately in Arabic, with English translation still pending. Declared printed additions supply a missing closing transmission note and chapter heading; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately. Hadith 245–289 derive from revision 484873; only 262, 272, 287, 288 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. A declared printed addition supplies a missing closing transmission note; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately. Hadith 290–309 derive from revision 484869; only 300 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending."
   },
   "sources": [
     {
@@ -293,6 +293,41 @@
       "kind": "commentary",
       "format": "web",
       "url": "https://ablibrary.net/book_content/b/2601/343"
+    },
+    {
+      "id": "fath-menstruation-351",
+      "label": "Ibn Hajar · Fath al-Bari · garment wording and alternate chain",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://ablibrary.net/book_content/b/2601/351"
+    },
+    {
+      "id": "fath-menstruation-352",
+      "label": "Ibn Hajar · Fath al-Bari · cloth and perfume terminology",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://ablibrary.net/book_content/b/2601/352"
+    },
+    {
+      "id": "fath-menstruation-353",
+      "label": "Ibn Hajar · Fath al-Bari · cleansing cloth terminology",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://ablibrary.net/book_content/b/2601/353"
+    },
+    {
+      "id": "fath-menstruation-354",
+      "label": "Ibn Hajar · Fath al-Bari · repetition and narrator uncertainty",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://ablibrary.net/book_content/b/2601/354"
+    },
+    {
+      "id": "fath-menstruation-285",
+      "label": "Ibn Hajar · Fath al-Bari · rubbing and washing blood",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://ablibrary.net/book_content/b/2601/285"
     }
   ],
   "findings": [
@@ -24304,6 +24339,802 @@
         "reviewScope": "AI-assisted drafting from the complete selected Arabic, with two visually inspected Arabic prints and two individually matched English comparison records. Differences in chains, reporting verbs, chapter divisions, numbering and omitted notes are recorded. This is not independent certification; Arabic, English, context and reference review remain pending."
       },
       "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:298",
+      "book": "Menstruation",
+      "number": 298,
+      "arabic_blocks": [
+        "[298] حدثنا سعيد بن أبي مريم قال : أخبرنا محمد بن جعفر قال : أخبرني زيد هو ابن أسلم عن عياض بن عبد الله عن أبي سعيد الخدري قال خرج رسول الله ﷺ في أضحى أو فطر إلى المصلى فمر على النساء ، فقال : يا معشر النساء تصدقن فإني أريتكن أكثر أهل النار فقلن وبم يا رسول الله قال تكثرن اللعن وتكفرن العشير ما رأيت من ناقصات عقل ودين أذهب للب الرجل الحازم من إحداكن قلن وما نقصان ديننا وعقلنا يا رسول الله قال أليس شهادة المرأة مثل نصف شهادة الرجل قلن بلى قال : فذلك نقصان من عقلها أليس إذا حاضت لم تصل ولم تصم قلن بلى قال : فذلك من نقصان دينها "
+      ],
+      "arabic_sha256": "b7badffaeaa49276925dd319f3302cfe50a503a46c35c04b5557e4118c853d55",
+      "english_blocks": [
+        "Sa‘id ibn Abi Maryam related to us. He said: Muhammad ibn Ja‘far informed us. He said: Zayd—who is Ibn Aslam—informed me, from ‘Iyad ibn ‘Abd Allah, from Abu Sa‘id al-Khudri, who said:",
+        "The Messenger of Allah, may Allah bless him and grant him peace, went out on Adha or Fitr to the prayer ground. He passed by the women and said: “Women, give charity, for I have been shown that you make up most of the people of the Fire.” They said: “And why, Messenger of Allah?” He said: “You curse often and are ungrateful to your husbands. I have not seen anyone deficient in intellect and religion who takes away the reason of a resolute man more than one of you.” They said: “What is the deficiency in our religion and intellect, Messenger of Allah?” He said: “Is not a woman’s testimony like half a man’s testimony?” They said: “Yes.” He said: “That is part of the deficiency in her intellect. Is it not the case that when she menstruates, she neither prays nor fasts?” They said: “Yes.” He said: “That is part of the deficiency in her religion.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 127,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 127,
+            "end": 531,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 184,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 853,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-menstruation-r484869:298",
+        "reviewRecordSha256": "6c83b450af76f55558e94a87819274f76b42f327e3eb9f3321adc431290c6db6",
+        "notes": [
+          "Both festival alternatives and every question and answer remain. The women’s question places religion before intellect; the opening description places intellect before religion. The selected testimony question compares one woman’s testimony with half a man’s, rather than substituting the EPUB’s two-women formulation.",
+          "The working English preserves the sensitive quoted wording without adding an explanation, modern legal application, or interpretive paraphrase. Full chain and all reporting verbs remain; independent review is pending."
+        ],
+        "reviewScope": "AI-assisted drafting from the complete selected Arabic, with two visually inspected Arabic prints and two individually matched English comparison bodies. Source differences and translation uncertainties are documented separately. This is not independent certification; Arabic, English, context and reference review remain pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:299",
+      "book": "Menstruation",
+      "number": 299,
+      "arabic_blocks": [
+        "[299] حدثنا أبو نعيم قال : حدثنا عبد العزيز بن أبي سلمة عن عبد الرحمن بن القاسم عن القاسم بن محمد عن عائشة قالت خرجنا مع النبي ﷺ لا نذكر إلا الحج فلما جئنا سرف طمثت فدخل علي النبي ﷺ وأنا أبكي ، فقال : ما يبكيك قلت لوددت والله أني لم أحج العام قال لعلك نفست قلت : نعم قال : فإن ذلك شيء كتبه الله على بنات آدم فافعلي ما يفعل الحاج غير أن لا تطوفي بالبيت حتى تطهري "
+      ],
+      "arabic_sha256": "78121adcd8c7d2eb1c385d0f600ff6d867146161eab73829a6d5e4560822e466",
+      "english_blocks": [
+        "Abu Nu‘aym related to us. He said: ‘Abd al-‘Aziz ibn Abi Salamah related to us, from ‘Abd al-Rahman ibn al-Qasim, from al-Qasim ibn Muhammad, from ‘A’ishah, who said:",
+        "We set out with the Prophet, may Allah bless him and grant him peace, mentioning only the Hajj. When we came to Sarif, I menstruated. The Prophet, may Allah bless him and grant him peace, came in to me while I was crying. He said: “What makes you cry?” I said: “By Allah, I wish I had not performed Hajj this year.” He said: “Perhaps you have begun menstruating?” I said: “Yes.” He said: “That is something Allah has ordained for the daughters of Adam. Perform what the pilgrim performs, except that you must not circumambulate the House until you become pure.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 112,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 112,
+            "end": 362,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 166,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 561,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-menstruation-r484869:299",
+        "reviewRecordSha256": "912ab1bca3856f8ed56d1dacec678b90c9a4106fc28135e933ba789a7e07c9bb",
+        "notes": [
+          "This separate report remains complete despite its overlap with 290. Mentioning only the Hajj renders لا نذكر إلا الحج; it is not changed to the different intending wording in 290. The oath, this year and until you become pure are retained.",
+          "The chapter’s long introduction remains exact Arabic, including its abbreviated quotations and transmission statements, outside both this hadith and numbered sessions. Its English translation remains pending."
+        ],
+        "reviewScope": "AI-assisted drafting from the complete selected Arabic, with two visually inspected Arabic prints and two individually matched English comparison bodies. Source differences and translation uncertainties are documented separately. This is not independent certification; Arabic, English, context and reference review remain pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:300",
+      "book": "Menstruation",
+      "number": 300,
+      "arabic_blocks": [
+        "[300] حدثنا عبد الله بن يوسف قال : أخبرنا مالك عن هشام بن عروة عن أبيه عن عائشة أنها قالت : قالت فاطمة بنت أبي حبيش لرسول الله ﷺ يا رسول الله إني لا أطهر أفأدع الصلاة ، فقال رسول الله ﷺ : إنما ذلك عرق وليس بالحيضة فإذا أقبلت الحيضة فاتركي الصلاة فإذا ذهب قدرها فاغسلي عنك الدم وصلي "
+      ],
+      "arabic_sha256": "35601754ef796873a407c2090a10ae0aff2a08fcd66614427a73e92d72a253a2",
+      "english_blocks": [
+        "‘Abd Allah ibn Yusuf related to us. He said: Malik informed us, from Hisham ibn ‘Urwah, from his father, from ‘A’ishah, that she said:",
+        "Fatimah bint Abi Hubaysh said to the Messenger of Allah, may Allah bless him and grant him peace: “Messenger of Allah, I do not become pure. Shall I leave prayer?” The Messenger of Allah, may Allah bless him and grant him peace, said: “That is only a vein, and is not menstruation. When the menstrual period comes, leave prayer. When its duration has passed, wash the blood off yourself and pray.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation with an explicitly recorded Arabic correction supported by two printed witnesses. English comparison bodies and the original input remain accessible. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 92,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 92,
+            "end": 282,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 134,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 397,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-menstruation-r484869:300",
+        "reviewRecordSha256": "5515a1a73bb9ab4827257ee46b616f21a10de954d4c2f4eedc2790538de5d672",
+        "notes": [
+          "The digital attribution has أنها قال, lacking the feminine ending. Both inspected Arabic prints have أنها قالت. A single declared correction restores that letter, with the original paragraph, offsets, hashes and both printed readings retained. The following قالت beginning Fatimah’s speech is not removed as duplication.",
+          "Fatimah bint Abi Hubaysh’s full selected name remains. Neither the EPUB’s introductory No nor its parenthetical bathing instruction is present in this selected Arabic; neither is imported."
+        ],
+        "reviewScope": "AI-assisted drafting from the complete selected Arabic, with two visually inspected Arabic prints and two individually matched English comparison bodies. Source differences and translation uncertainties are documented separately. This is not independent certification; Arabic, English, context and reference review remain pending.",
+        "originalArabicSha256": "bc9863cea8d9e86e46494f4fd7307a959b89e5aa85b92cbfaaaabec6d5f85d31",
+        "arabicCorrections": [
+          {
+            "id": "300-reporting-verb",
+            "paragraphId": "mwSA",
+            "start": 80,
+            "end": 88,
+            "before": "أنها قال",
+            "after": "أنها قالت",
+            "originalParagraphSha256": "bc9863cea8d9e86e46494f4fd7307a959b89e5aa85b92cbfaaaabec6d5f85d31",
+            "correctedParagraphSha256": "35601754ef796873a407c2090a10ae0aff2a08fcd66614427a73e92d72a253a2",
+            "status": "chosen-for-personal-prototype",
+            "reviewerKind": "ai",
+            "independentReview": "pending",
+            "reason": "Both inspected Arabic prints include the feminine ending in Aisha’s reporting verb. Restore only the missing letter, retaining the separate following Fatimah reporting verb and the complete original digital paragraph.",
+            "witnesses": [
+              {
+                "sourceId": "brill-1862",
+                "pdfPage": 86,
+                "reading": "أنها قالت",
+                "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+              },
+              {
+                "sourceId": "dar-ibn-kathir-2002",
+                "pdfPage": 85,
+                "reading": "أنها قالت",
+                "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+              }
+            ],
+            "contextNoteId": "300-source-correction",
+            "englishSegmentId": "300-1",
+            "englishRendering": "that she said"
+          }
+        ]
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:301",
+      "book": "Menstruation",
+      "number": 301,
+      "arabic_blocks": [
+        "[301] حدثنا عبد الله بن يوسف قال : أخبرنا مالك عن هشام عن فاطمة بنت المنذر عن أسماء بنت أبي بكر أنها قالت سألت امرأة رسول الله ﷺ فقالت : يا رسول الله أرأيت إحدانا إذا أصاب ثوبها الدم من الحيضة كيف تصنع ، فقال رسول الله ﷺ : إذا أصاب ثوب إحداكن الدم من الحيضة فلتقرصه ثم لتنضحه بماء ثم لتصلي فيه "
+      ],
+      "arabic_sha256": "2e07183d603ec359f5717e3d731b8c56eaea183f2d07119aa49a13ff2c488d28",
+      "english_blocks": [
+        "‘Abd Allah ibn Yusuf related to us. He said: Malik informed us, from Hisham, from Fatimah bint al-Mundhir, from Asma’ bint Abi Bakr, that she said:",
+        "A woman asked the Messenger of Allah, may Allah bless him and grant him peace, saying: “Messenger of Allah, tell me, if menstrual blood gets on the garment of one of us, what should she do?” The Messenger of Allah, may Allah bless him and grant him peace, said: “If menstrual blood gets on the garment of one of you, let her rub it with her fingers, then wash it with water, then pray in it.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 106,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 106,
+            "end": 294,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 147,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 392,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-menstruation-r484869:301",
+        "reviewRecordSha256": "d2cb9a6c39983a56d208bc61de063f04fbe5d5b8fd1826329e68ae8ab7483bb7",
+        "notes": [
+          "The selected Arabic names Asma in the chain but leaves the questioner unnamed; no identity from commentary is inserted. The sequence rub with the fingers, wash with water, then pray is retained. The Arabic نضح can concern washing in this context; compare the distinct sprinkling of the garment’s remainder in 302.",
+          "Fath al-Bari records both washing and sprinkling explanations of نضح and favors washing here. The working English follows that explanation without adding the commentary’s legal conclusions."
+        ],
+        "reviewScope": "AI-assisted drafting from the complete selected Arabic, with two visually inspected Arabic prints and two individually matched English comparison bodies. Source differences and translation uncertainties are documented separately. This is not independent certification; Arabic, English, context and reference review remain pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:302",
+      "book": "Menstruation",
+      "number": 302,
+      "arabic_blocks": [
+        "[302] حدثنا أصبغ قال : أخبرني ابن وهب قال : أخبرني عمرو بن الحارث عن عبد الرحمن بن القاسم حدثه عن أبيه عن عائشة قالت كانت إحدانا تحيض ثم تقترص الدم من ثوبها عند طهرها فتغسله وتنضح على سائره ثم تصلي فيه "
+      ],
+      "arabic_sha256": "11afcf9f1725224537c6294f206e277db9dd47879eaedfdc0c68c77f9265ca6a",
+      "english_blocks": [
+        "Asbagh related to us. He said: Ibn Wahb informed me. He said: ‘Amr ibn al-Harith informed me, from ‘Abd al-Rahman ibn al-Qasim, who related to him, from his father, from ‘A’ishah, who said:",
+        "One of us would menstruate, then, when she became pure, rub the blood from her garment, wash it and sprinkle water over the rest of it, then pray in it."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 117,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 117,
+            "end": 202,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 189,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 152,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-menstruation-r484869:302",
+        "reviewRecordSha256": "e36bdb3bc0e70be103be372c4a2636ed5ee71797716a3cf88464fe970fd51ebb",
+        "notes": [
+          "The chain retains both informed me statements and the additional who related to him. The report distinguishes washing the affected part from sprinkling the rest of the garment. The EPUB’s extra pouring/thorough-washing wording is not imported."
+        ],
+        "reviewScope": "AI-assisted drafting from the complete selected Arabic, with two visually inspected Arabic prints and two individually matched English comparison bodies. Source differences and translation uncertainties are documented separately. This is not independent certification; Arabic, English, context and reference review remain pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:303",
+      "book": "Menstruation",
+      "number": 303,
+      "arabic_blocks": [
+        "[303] حدثنا إسحاق قال : حدثنا خالد بن عبد الله عن خالد عن عكرمة عن عائشة أن النبي ﷺ اعتكف معه بعض نسائه وهي مستحاضة ترى الدم فربما وضعت الطست تحتها من الدم وزعم أن عائشة رأت ماء العصفر فقالت كأن هذا شيء كانت فلانة تجده "
+      ],
+      "arabic_sha256": "b5b2d3eadc7cfb33777a95b56f860541622bed377a7c57615f1950d909173a01",
+      "english_blocks": [
+        "Ishaq related to us. He said: Khalid ibn ‘Abd Allah related to us, from Khalid, from ‘Ikrimah, from ‘A’ishah:",
+        "That one of the wives of the Prophet, may Allah bless him and grant him peace, stayed in retreat with him while she had bleeding outside her menstrual period and was seeing blood. Sometimes she would place a basin beneath her because of the blood.",
+        "And he stated that ‘A’ishah saw safflower water and said: “It is as if this is something such-and-such a woman used to experience.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 73,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 73,
+            "end": 156,
+            "kind": "report"
+          },
+          {
+            "block": 0,
+            "start": 156,
+            "end": 219,
+            "kind": "transmission-note"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 109,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 247,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 131,
+            "kind": "transmission-note"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-menstruation-r484869:303",
+        "reviewRecordSha256": "73b8b558b8a30a77abc5676acd4b5bd1c5fbbd251a7e340f5e1e4a3cbd3e927d",
+        "notes": [
+          "The historical print expands Ishaq to Ishaq ibn Shahin and has أخبرنا before Khalid ibn Abd Allah; the selected digital and modern print have the shorter name and حدثنا. The selected chain remains unchanged.",
+          "The closing وزعم statement remains a separate transmission note in its original position. English comparisons name Ikrimah as its speaker, but the selected clause does not name him; the working wording retains he. The safflower-water observation and unnamed woman remain complete."
+        ],
+        "reviewScope": "AI-assisted drafting from the complete selected Arabic, with two visually inspected Arabic prints and two individually matched English comparison bodies. Source differences and translation uncertainties are documented separately. This is not independent certification; Arabic, English, context and reference review remain pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:304",
+      "book": "Menstruation",
+      "number": 304,
+      "arabic_blocks": [
+        "[304] حدثنا قتيبة قال : حدثنا يزيد بن زريع عن خالد عن عكرمة عن عائشة قالت اعتكفت مع رسول الله ﷺ امرأة من أزواجه فكانت ترى الدم والصفرة والطست تحتها وهي تصلي "
+      ],
+      "arabic_sha256": "86e398770437916edcb0db1284db7e5a0a4778765553f780c53f28f8105ef5b4",
+      "english_blocks": [
+        "Qutaybah related to us. He said: Yazid ibn Zuray‘ related to us, from Khalid, from ‘Ikrimah, from ‘A’ishah, who said:",
+        "A woman among the wives of the Messenger of Allah, may Allah bless him and grant him peace, stayed in retreat with him. She would see blood and yellow discharge, and the basin was beneath her while she prayed."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 74,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 74,
+            "end": 157,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 117,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 209,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-menstruation-r484869:304",
+        "reviewRecordSha256": "56680335de075443aff9926ee867776ff156af1400a72c48e59cd04444d68655",
+        "notes": [
+          "The complete chain and both blood and yellow discharge remain. The basin and prayer timing are retained without converting this narration into an additional medical or legal instruction."
+        ],
+        "reviewScope": "AI-assisted drafting from the complete selected Arabic, with two visually inspected Arabic prints and two individually matched English comparison bodies. Source differences and translation uncertainties are documented separately. This is not independent certification; Arabic, English, context and reference review remain pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:305",
+      "book": "Menstruation",
+      "number": 305,
+      "arabic_blocks": [
+        "[305] حدثنا مسدد قال : حدثنا معتمر عن خالد عن عكرمة عن عائشة أن بعض أمهات المؤمنين اعتكفت وهي مستحاضة "
+      ],
+      "arabic_sha256": "28ffa6c785e8d376ec3360b14b23d9433a29c8e916317dc1e046e5b49608da2b",
+      "english_blocks": [
+        "Musaddad related to us. He said: Mu‘tamir related to us, from Khalid, from ‘Ikrimah, from ‘A’ishah:",
+        "That one of the Mothers of the Believers stayed in retreat while she had bleeding outside her menstrual period."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 61,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 61,
+            "end": 102,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 99,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 111,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-menstruation-r484869:305",
+        "reviewRecordSha256": "4f5fb5d1f2b2af2147efe594baf91c5d9be6b5d41fa6e860bf8757047a51a633",
+        "notes": [
+          "The short report remains a distinct numbered entry with its full chain. Mothers of the Believers and retreat are retained. Its overlap with 303–304 is not treated as permission to deduplicate it."
+        ],
+        "reviewScope": "AI-assisted drafting from the complete selected Arabic, with two visually inspected Arabic prints and two individually matched English comparison bodies. Source differences and translation uncertainties are documented separately. This is not independent certification; Arabic, English, context and reference review remain pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:306",
+      "book": "Menstruation",
+      "number": 306,
+      "arabic_blocks": [
+        "[306] حدثنا أبو نعيم قال : حدثنا إبراهيم بن نافع عن ابن أبي نجيح عن مجاهد قال : قالت عائشة ما كان لإحدانا إلا ثوب واحد تحيض فيه فإذا أصابه شيء من دم قالت بريقها فقصعته بظفرها "
+      ],
+      "arabic_sha256": "4fff1f3e043694b4e0135b64dd676fcf3697d355b34453bca640cfe48a53fff1",
+      "english_blocks": [
+        "Abu Nu‘aym related to us. He said: Ibrahim ibn Nafi‘ related to us, from Ibn Abi Najih, from Mujahid, who said: ‘A’ishah said:",
+        "Each of us had only one garment in which she would menstruate. If some blood got on it, she applied her saliva to it and rubbed it off with her fingernail."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 91,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 91,
+            "end": 175,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 126,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 155,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-menstruation-r484869:306",
+        "reviewRecordSha256": "9dde8be8bf7b28e326d3d7fdada034c3b4e936568b53907957b54aa2ec88f73f",
+        "notes": [
+          "The selected digital and modern print have فقصعته; the historical print has فمصعته. The selected form stays unchanged. Fath al-Bari records these rubbing/scraping variants and explains قالت بريقها as an action with saliva, not spoken words.",
+          "No subsequent washing instruction is added to this report from commentary or another narration. The first-person group and each woman’s single garment remain."
+        ],
+        "reviewScope": "AI-assisted drafting from the complete selected Arabic, with two visually inspected Arabic prints and two individually matched English comparison bodies. Source differences and translation uncertainties are documented separately. This is not independent certification; Arabic, English, context and reference review remain pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:307",
+      "book": "Menstruation",
+      "number": 307,
+      "arabic_blocks": [
+        "[307] حدثنا عبد الله بن عبد الوهاب قال : حدثنا حماد بن زيد عن أيوب عن حفصة قال أبو عبد الله أو هشام بن حسان عن حفصة عن أم عطية عن النبي ﷺ قالت كنا ننهى أن نحد على ميت فوق ثلاث إلا على زوج أربعة أشهر وعشرا ولا نكتحل ولا نتطيب ولا نلبس ثوبا مصبوغا إلا ثوب عصب وقد رخص لنا عند الطهر إذا اغتسلت إحدانا من محيضها في نبذة من كست أظفار وكنا ننهي عن اتباع الجنائز قال رواه هشام بن حسان عن حفصة عن أم عطية عن النبي ﷺ"
+      ],
+      "arabic_sha256": "fc4d2860fffa0ac6dc395f663763bbbb6d6a673a3be13e2164f40320889ab99d",
+      "english_blocks": [
+        "‘Abd Allah ibn ‘Abd al-Wahhab related to us. He said: Hammad ibn Zayd related to us, from Ayyub, from Hafsah.",
+        "Abu ‘Abd Allah said: “Or Hisham ibn Hassan, from Hafsah.”",
+        "From Umm ‘Atiyyah, from the Prophet, may Allah bless him and grant him peace. She said:",
+        "We were forbidden to mourn a dead person for more than three days, except for a husband: four months and ten days. We were not to apply kohl, use perfume or wear a dyed garment, except an ‘asb garment. When becoming pure, if one of us bathed after her menstruation, we were allowed a small amount of kust azfar. We were forbidden to follow funeral processions.",
+        "He said: Hisham ibn Hassan related it from Hafsah, from Umm ‘Atiyyah, from the Prophet, may Allah bless him and grant him peace."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 75,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 75,
+            "end": 116,
+            "kind": "transmission-note"
+          },
+          {
+            "block": 0,
+            "start": 116,
+            "end": 143,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 143,
+            "end": 356,
+            "kind": "report"
+          },
+          {
+            "block": 0,
+            "start": 356,
+            "end": 407,
+            "kind": "transmission-note"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 109,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 57,
+            "kind": "transmission-note"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 87,
+            "kind": "chain"
+          },
+          {
+            "block": 3,
+            "start": 0,
+            "end": 360,
+            "kind": "report"
+          },
+          {
+            "block": 4,
+            "start": 0,
+            "end": 128,
+            "kind": "transmission-note"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-menstruation-r484869:307",
+        "reviewRecordSha256": "b1d4506fdc1cd2654d1a0521fe4f9b31e535984b22812013ca013b3f5bccefb8",
+        "notes": [
+          "The compiler’s explicit alternative between Ayyub and Hisham ibn Hassan remains between chain segments, followed by Umm Atiyyah’s attribution to the Prophet. The historical print has a shorter opening without this alternative; the modern print agrees with the selected fuller version. The final Hisham chain and its Prophet attribution remain separate and complete.",
+          "The garment name ‘asb and the selected perfume wording kust azfar are retained as terms. Fath al-Bari explains ‘asb as cloth woven from dyed yarn, and records differing explanations/readings for the perfume wording. No or is silently inserted between kust and azfar, and no generic light perfume replaces the selected words. These terms need independent review.",
+          "All time periods and both prohibitions surrounding the exception remain. The selected final ننهي spelling is retained in Arabic rather than silently normalized; the passive working English follows the context and inspected prints."
+        ],
+        "reviewScope": "AI-assisted drafting from the complete selected Arabic, with two visually inspected Arabic prints and two individually matched English comparison bodies. Source differences and translation uncertainties are documented separately. This is not independent certification; Arabic, English, context and reference review remain pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:308",
+      "book": "Menstruation",
+      "number": 308,
+      "arabic_blocks": [
+        "[308] حدثنا يحيى قال : حدثنا ابن عيينة عن منصور بن صفية عن أمه عن عائشة أن امرأة سألت النبي ﷺ عن غسلها من المحيض فأمرها كيف تغتسل قال خذي فرصة من مسك فتطهري بها قالت كيف أتطهر قال تطهري بها قالت كيف قال سبحان الله تطهري فاجتبذتها إلي فقلت : تتبعي بها أثر الدم "
+      ],
+      "arabic_sha256": "b6919ddb310e5f352cc53da66c72a8b1cf119fb102ea298cce1f6eb0bf48656a",
+      "english_blocks": [
+        "Yahya related to us. He said: Ibn ‘Uyaynah related to us, from Mansur ibn Safiyyah, from his mother, from ‘A’ishah:",
+        "That a woman asked the Prophet, may Allah bless him and grant him peace, about her washing after menstruation. He instructed her how to bathe. He said: “Take a piece of cloth with musk and purify yourself with it.” She said: “How do I purify myself?” He said: “Purify yourself with it.” She said: “How?” He said: “Glory be to Allah! Purify yourself.” I pulled her towards me and said: “Follow the trace of blood with it.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 72,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 72,
+            "end": 260,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 115,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 421,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-menstruation-r484869:308",
+        "reviewRecordSha256": "fe1dd0cfd2603bbfc8d694722080ef102fa9fbb02df9d54e894ae5180a684eb5",
+        "notes": [
+          "Every repeated question and response is retained, including the short final How? The EPUB omits one exchange; it is not used to shorten the selected report. The ending remains first person without adding a speaker label absent from that clause.",
+          "Piece of cloth with musk is a provisional rendering of فرصة من مسك. Fath al-Bari discusses both the cloth/material and musk-versus-leather readings. Both English comparison bodies use a perfumed cloth; the original unvocalized Arabic remains available and independent review is pending. The source’s short Yahya is not expanded into a disputed identity.",
+          "The historical print adds بها in the first question where the selected and modern body do not. The selected shorter question is preserved."
+        ],
+        "reviewScope": "AI-assisted drafting from the complete selected Arabic, with two visually inspected Arabic prints and two individually matched English comparison bodies. Source differences and translation uncertainties are documented separately. This is not independent certification; Arabic, English, context and reference review remain pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:309",
+      "book": "Menstruation",
+      "number": 309,
+      "arabic_blocks": [
+        "[309] حدثنا مسلم قال : حدثنا وهيب حدثنا منصور عن أمه عن عائشة أن امرأة من الأنصار قالت للنبي ﷺ كيف أغتسل من المحيض قال خذي فرصة ممسكة فتوضئي ثلاثا ثم إن النبي ﷺ استحيا فأعرض بوجهه أو قال توضئي بها فأخذتها فجذبتها فأخبرتها بما يريد النبي ﷺ"
+      ],
+      "arabic_sha256": "67fc2070e02c2e20fb230658720b4a3a2e575aa9923d87c73358d3e8ac6a4b91",
+      "english_blocks": [
+        "Muslim related to us. He said: Wuhayb related to us; Mansur related to us, from his mother, from ‘A’ishah:",
+        "That a woman of the Ansar said to the Prophet, may Allah bless him and grant him peace: “How do I bathe after menstruation?” He said: “Take a piece of cloth scented with musk and clean yourself three times.” Then the Prophet, may Allah bless him and grant him peace, felt embarrassed and turned his face away.",
+        "Or he said: “Clean yourself with it.”",
+        "I took hold of her, pulled her towards me and told her what the Prophet, may Allah bless him and grant him peace, meant."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 62,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 62,
+            "end": 180,
+            "kind": "report"
+          },
+          {
+            "block": 0,
+            "start": 180,
+            "end": 197,
+            "kind": "transmission-note"
+          },
+          {
+            "block": 0,
+            "start": 197,
+            "end": 238,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 106,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 309,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 37,
+            "kind": "transmission-note"
+          },
+          {
+            "block": 3,
+            "start": 0,
+            "end": 120,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-menstruation-r484869:309",
+        "reviewRecordSha256": "632669db6a3be27589dc086048e3292a0256589ef15ffa6305281e3487b6114f",
+        "notes": [
+          "The phrase فتوضئي ثلاثا is provisionally rendered clean yourself three times, following the clause order and both English comparisons. Fath al-Bari also explains three as repetition of the spoken instruction. This ambiguity is disclosed separately, not presented as an independently settled translation.",
+          "The narrator’s explicit أو قال alternative is retained as a transmission note between the report portions. No anatomical detail from the EPUB’s explanatory brackets is added. The final taking hold, pulling closer and explanation all remain.",
+          "The historical print has a different conjunction before توضئي and an additional قال before Mansur’s reporting verb; selected wording agrees with the modern print and is retained."
+        ],
+        "reviewScope": "AI-assisted drafting from the complete selected Arabic, with two visually inspected Arabic prints and two individually matched English comparison bodies. Source differences and translation uncertainties are documented separately. This is not independent certification; Arabic, English, context and reference review remain pending."
+      },
+      "audio_status": "No recording yet."
     }
   ],
   "sourceLocationCorrections": {
@@ -24337,7 +25168,7 @@
     "ablutionSourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
     "ghuslReviewSha256": "16cb62282b8a284cb2fc37a97dc32c2835f63029dc7dcf3033e21113a5cf310e",
     "ghuslSourceSha256": "07e29f845c2f17f77aae014356e8028a3335d245eeeb73e7b5efe3b52064db77",
-    "menstruationReviewSha256": "28c0477c82180d022d90eb2f6cc2f07ec10061a66dd71c45a146d9289b19a74c",
+    "menstruationReviewSha256": "16c30a861a8c45cd2d7deba7fda9c6e0f0b962abbdca0021c2ecafdfdc73f0cd",
     "menstruationSourceSha256": "eb6ab7e471a9f236d773f2acddfeb83e24c8a99c445e9bdc73da928b49e9e95d"
   }
 }

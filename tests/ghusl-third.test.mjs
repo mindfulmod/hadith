@@ -12,7 +12,7 @@ test('Ghusl third batch preserves all prior 261 entries, four stable packs and e
  const {source,ledger}=collectionFiles(),published=buildBooks(source,ledger),args=input(),original=structuredClone(args.slice(0,3)),batch=buildBookBatch(...args);
  const stable=['opening-revelation-0a534f10d205292c','faith-ad873aab8759ca02','knowledge-e3d5ef7956421322','ablution-4012bd796dae0e95'];
  const previous=[...stable,'ghusl-9ac831861e9b4847'].flatMap(n=>read('reader/books/'+n+'.json').entries);
- assert.deepEqual(source.entries.slice(0,261),previous);assert.equal(source.entries.length,297);assert.deepEqual(args.slice(0,3),original);
+ assert.deepEqual(source.entries.slice(0,261),previous);assert.equal(source.entries.length,309);assert.deepEqual(args.slice(0,3),original);
  for(const n of stable)assert.equal(published.files.get('books/'+n+'.json'),readFileSync(new URL('../reader/books/'+n+'.json',import.meta.url),'utf8'));
  assert.equal(batch.chapters.length,10);assert.deepEqual(batch.entries.map(e=>e.number),Array.from({length:12},(_,i)=>262+i));
  for(const row of args[1].entries){const entry=batch.entries.find(e=>e.number===row.number);assert.equal(row.segments.map(s=>s.arabic).join(''),entry.arabic_blocks[0]);assert.deepEqual(entry.english_blocks,row.segments.map(s=>s.english));}
@@ -51,7 +51,7 @@ test('chapter 10 introduction is separately preserved and excluded from sessions
  const {source,ledger,files}=collectionFiles(),book=ledger.books.find(b=>b.id==='ghusl'),chapter=book.chapters.find(c=>c.id==='chapter-10'),original=input()[0].blocks.find(b=>b.htmlId==='mwWA'),inputs=JSON.parse(files.get('reader/ghusl-inputs.json'));
  assert.equal(book.entryNumbers.length,45);assert.equal(book.chapters.length,29);assert.deepEqual(chapter.entryNumbers,[262]);assert.equal(chapter.sourceContext.introduction.arabicParagraphs,1);assert.equal(chapter.sourceContext.introduction.englishStatus,'pending');
  assert.deepEqual(inputs.selectedBlocks.find(b=>b.htmlId==='mwWA'),original);assert.equal(inputs.selectedBlocks.length,79);assert(files.get('reader/ghusl-review.html').includes(original.text));assert(source.entries.every(e=>!e.arabic_blocks.includes(original.text)));
- const saved={numbers:[261],cursor:261,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,273),saved);assert.equal(nextSession(source.entries,saved,5).cursor,262);assert.deepEqual(planSession(source.entries,297,5).numbers,[297]);assert.equal(nextSession(source.entries,{numbers:[297],cursor:297,ended:true},5),null);
+ const saved={numbers:[261],cursor:261,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,273),saved);assert.equal(nextSession(source.entries,saved,5).cursor,262);assert.deepEqual(planSession(source.entries,309,5).numbers,[309]);assert.equal(nextSession(source.entries,{numbers:[309],cursor:309,ended:true},5),null);
 });
 test('context links and lexical uncertainty remain separate from hadith text and scripts',()=>{
  const {source,ledger}=collectionFiles(),plan=narrationPlan(source),refs=ledger.sourceReferences.entries;
