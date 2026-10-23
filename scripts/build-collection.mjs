@@ -142,9 +142,13 @@ function validateComparisons(comparisons,config,segments){
  assert(khan.part===undefined&&khan.splitReferences===undefined,'An absent comparison cannot claim a report part');
  assert.equal(khan.status,'not-present-in-checked-sequence','Unknown comparison status');assert.equal(khan.reference,null,'An absent comparison cannot claim a matching reference');
  assert(Array.isArray(khan.checkedReferences)&&khan.checkedReferences.length===2&&khan.checkedReferences.every(r=>khanReference.test(r)),'Missing comparison search evidence');
- assert.equal(Number(khan.checkedReferences[1].split('.')[2]),Number(khan.checkedReferences[0].split('.')[2])+1,'Checked comparison references must be adjacent');
+ englishInventory??=read('content/staging/bukhari-en-islamhouse/catalog.json');
+ const positions=khan.checkedReferences.map(reference=>englishInventory.records.findIndex(r=>r.id===englishInventory.namespace+':'+reference));
+ assert(positions[0]>=0&&positions[1]===positions[0]+1,'Checked comparison references must be adjacent in the pinned source order');
+ assert.equal(englishInventory.records[positions[0]].section,englishInventory.records[positions[1]].section,'Checked sequence cannot cross source sections');
  assert(typeof khan.note==='string'&&khan.note.trim(),'Missing comparison absence explanation');
- if(khan.checkedReferenceEvidence!==undefined){
+ // Literal suffixes are edition labels, not decimal numbers. Bind their exact records.
+ if(khan.checkedReferenceEvidence!==undefined||khan.checkedReferences.some(r=>/[a-z]$/.test(r))){
   assert(Array.isArray(khan.checkedReferenceEvidence)&&khan.checkedReferenceEvidence.length===khan.checkedReferences.length,'Incomplete checked-sequence evidence');
   khan.checkedReferences.forEach((reference,index)=>comparisonEvidence(reference,khan.checkedReferenceEvidence[index]));
  }

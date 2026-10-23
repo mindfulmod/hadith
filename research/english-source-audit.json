@@ -310,5 +310,36 @@
     ],
     "additionalFinding": "Page 422 also visibly contains a truncated body at 3.29.73. The seven empty bodies are not an exhaustive list of source defects.",
     "conclusion": "The PDF shares all seven checked omissions. It cannot repair this EPUB or independently establish full translation fidelity. Keep both as comparison witnesses; seek a more complete authoritative edition."
+  },
+  "prayerSequenceCheck": {
+    "checkedAt": "2026-10-23",
+    "selectedArabicNumber": 382,
+    "section": "OPS/section-0010.html",
+    "status": "not-present-in-checked-sequence",
+    "checkedReferences": [
+      "1.8.385l",
+      "1.8.385u"
+    ],
+    "checkedReferenceEvidence": [
+      {
+        "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+        "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.385l",
+        "recordSha256": "e773a6fd8ba06527e3d1a60e32a616cd2d60f339ef76caacb56077e0c0b51a66"
+      },
+      {
+        "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+        "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.385u",
+        "recordSha256": "7cbea571dd5e6e6502a823f10cba6b76b9b1d2ee6cb2b62bae62c0317984ada7"
+      }
+    ],
+    "finding": "The pinned EPUB proceeds directly from 1.8.385l, al-Mughirah’s ablution account, to 1.8.385u, Ibn Buhaynah’s arm-position account. The Hudhayfah report is absent from this checked sequence. Literal suffix labels and exact record evidence are preserved; neither record is claimed as a match.",
+    "supplementaryReference": {
+      "url": "https://sunnah.com/bukhari:389",
+      "modernReference": "Bukhari 389; Book 8, Hadith 41",
+      "deprecatedReference": "1.8.385",
+      "note": "The deprecated label does not exist as a matching record in this EPUB. The modern page is a supplementary reference check, not a replacement for the selected Arabic."
+    },
+    "scope": "Only this local sequence was checked for absence. This is not a whole-collection occurrence search.",
+    "evidence": "content/review/prayer-fourth-review.json; research/prayer-fourth-verification.json"
   }
 }
