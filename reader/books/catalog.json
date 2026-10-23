@@ -2,17 +2,17 @@
   "schemaVersion": 2,
   "namespace": "bukhari-opening-v1",
   "publication": "personal-prototype",
-  "sourceRecordSha256": "b152f5b875c6f6b3abc3d4f18ed55c13ade5c8aa342a750ab8641b3cd1d8165a",
-  "referencesSha256": "5d2a70a883c04231277f5fea532829e2efeb68dc7bdc92382bd396dc56539cde",
+  "sourceRecordSha256": "2fc29cb287b8492092bf6bab9e1f3afa9d31bf5e7472796d276460610130d68a",
+  "referencesSha256": "f9868187958332064fb1a6c3926607f1a9bbcdb23757fb36e898475d5c2ea5ec",
   "sourceRecord": {
     "created": "2026-10-20",
-    "scope": "Personal prototype: complete numbered entries 1–180 across 4 books. The rest of the collection remains in preparation.",
+    "scope": "Personal prototype: complete numbered entries 1–191 across 4 books. The rest of the collection remains in preparation.",
     "selected_route": "Pinned Arabic text plus a new English working translation.",
     "license": {
       "id": "CC-BY-SA-4.0",
       "url": "https://creativecommons.org/licenses/by-sa/4.0/",
       "attribution": "Sahih al-Bukhari by Muhammad ibn Ismail al-Bukhari; Arabic digital transcription by Arabic Wikisource contributors, opening revision 484874 and Faith revision 490285. Book of Knowledge: revision 252975. Book of Ablution: revision 273249.",
-      "changes": "Entries 1–2 are unchanged. Entries 3–7 are derived from the pinned Arabic; Hadith 5 has one explicitly recorded correction from له to لك supported by two printed witnesses. Original inputs are retained in prototype-inputs.json. New AI-assisted English, presentation and comparison notes are offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app. Hadith 8–58 retain their Arabic paragraphs unchanged from revision 490285; their new English and available chapter titles are AI-assisted. A disputed chapter heading is explicitly withheld. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 59–134 derive from revision 252975; only 99 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 135–180 derive from revision 273249; only 137, 146, 165 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Exact source origins and original labels are retained; any different reader reference is explicitly mapped. Chapter introductions are preserved separately in Arabic, with English translation still pending. Declared printed additions supply a missing closing transmission note and chapter heading; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately."
+      "changes": "Entries 1–2 are unchanged. Entries 3–7 are derived from the pinned Arabic; Hadith 5 has one explicitly recorded correction from له to لك supported by two printed witnesses. Original inputs are retained in prototype-inputs.json. New AI-assisted English, presentation and comparison notes are offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app. Hadith 8–58 retain their Arabic paragraphs unchanged from revision 490285; their new English and available chapter titles are AI-assisted. A disputed chapter heading is explicitly withheld. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 59–134 derive from revision 252975; only 99 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 135–191 derive from revision 273249; only 137, 146, 165 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Exact source origins and original labels are retained; any different reader reference is explicitly mapped. Chapter introductions are preserved separately in Arabic, with English translation still pending. Declared printed additions supply a missing closing transmission note and chapter heading; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately."
     },
     "sources": [
       {
@@ -215,6 +215,13 @@
         "kind": "reference-check",
         "format": "web",
         "url": "https://sunnah.com/bukhari:293"
+      },
+      {
+        "id": "sunnah-ablution-193",
+        "label": "Sunnah.com · Bukhari 193 · supplementary reference check",
+        "kind": "reference-check",
+        "format": "web",
+        "url": "https://sunnah.com/bukhari:193"
       }
     ],
     "findings": [
@@ -269,7 +276,7 @@
       "faithSourceSha256": "0f8c0518a21d266a075dd1cfb756733845ed5dff6548f634cfded0542a30a7a9",
       "knowledgeReviewSha256": "351ad243c96c33164cbdab6671abb0d2867548982925aeed71adae2b03ee2c2f",
       "knowledgeSourceSha256": "9060879f4b110cc9007f35db6b1f2fa0cc37c5ba8e510531721b024cbadf4e58",
-      "ablutionReviewSha256": "301da2ee41bc2cb390459e903c026790fa56d12c972e41e4ca88c47a2c75d984",
+      "ablutionReviewSha256": "d11519a7c7e79fb6d37f86d17a7a7e9e849c7c859e5049c3fc5ec7e346913dcd",
       "ablutionSourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd"
     }
   },
@@ -2443,7 +2450,18 @@
         177,
         178,
         179,
-        180
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191
       ],
       "chapters": [
         {
@@ -3161,11 +3179,212 @@
               "fragment": "chapter-34"
             }
           }
+        },
+        {
+          "id": "chapter-35",
+          "title": "Reciting the Quran after breaking ablution and other matters",
+          "entryNumbers": [
+            181
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 1,
+              "englishStatus": "pending"
+            },
+            "notes": {
+              "path": "ablution-review.html",
+              "fragment": "chapter-35"
+            }
+          }
+        },
+        {
+          "id": "chapter-36",
+          "title": "Those who did not perform ablution except after deep loss of consciousness",
+          "entryNumbers": [
+            182
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ablution-review.html",
+              "fragment": "chapter-36"
+            }
+          }
+        },
+        {
+          "id": "chapter-37",
+          "title": "Wiping the whole head, according to the saying of Allah Most High: “And wipe your heads”",
+          "entryNumbers": [
+            183
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 1,
+              "englishStatus": "pending"
+            },
+            "notes": {
+              "path": "ablution-review.html",
+              "fragment": "chapter-37"
+            }
+          }
+        },
+        {
+          "id": "chapter-38",
+          "title": "Washing the feet up to the ankles",
+          "entryNumbers": [
+            184
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ablution-review.html",
+              "fragment": "chapter-38"
+            }
+          }
+        },
+        {
+          "id": "chapter-39",
+          "title": "Using the remaining water from people’s ablution",
+          "entryNumbers": [
+            185,
+            186
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 1,
+              "englishStatus": "pending"
+            },
+            "notes": {
+              "path": "ablution-review.html",
+              "fragment": "chapter-39"
+            }
+          }
+        },
+        {
+          "id": "chapter-40",
+          "title": "Chapter",
+          "entryNumbers": [
+            187
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ablution-review.html",
+              "fragment": "chapter-40"
+            }
+          }
+        },
+        {
+          "id": "chapter-41",
+          "title": "Rinsing the mouth and drawing water into the nose from one handful",
+          "entryNumbers": [
+            188
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ablution-review.html",
+              "fragment": "chapter-41"
+            }
+          }
+        },
+        {
+          "id": "chapter-42",
+          "title": "Wiping the head once",
+          "entryNumbers": [
+            189
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ablution-review.html",
+              "fragment": "chapter-42"
+            }
+          }
+        },
+        {
+          "id": "chapter-43",
+          "title": "A man performing ablution with his wife, and the remaining water from a woman’s ablution. ‘Umar performed ablution with hot water and [with water] from a Christian woman’s house",
+          "entryNumbers": [
+            190
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ablution-review.html",
+              "fragment": "chapter-43"
+            }
+          }
+        },
+        {
+          "id": "chapter-44",
+          "title": "The Prophet, may Allah bless him and grant him peace, pouring water from his ablution over someone unconscious",
+          "entryNumbers": [
+            191
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ablution-review.html",
+              "fragment": "chapter-44"
+            }
+          }
         }
       ],
-      "path": "books/ablution-bbd47f3cd65faa06.json",
-      "bytes": 389930,
-      "sha256": "bbd47f3cd65faa06b309f378ebbfb83e0d01cb095b080f31ebdbff231d866395"
+      "path": "books/ablution-715a3974a42d6319.json",
+      "bytes": 485704,
+      "sha256": "715a3974a42d63192ad643dbc873c700ca2bec21611982cd777cf3c7c3206efc"
     }
   ],
   "entries": [
@@ -4428,6 +4647,83 @@
       "bookId": "ablution",
       "book": "Ablution",
       "englishWords": 101
+    },
+    {
+      "id": "bukhari:181",
+      "number": 181,
+      "bookId": "ablution",
+      "book": "Ablution",
+      "englishWords": 247
+    },
+    {
+      "id": "bukhari:182",
+      "number": 182,
+      "bookId": "ablution",
+      "book": "Ablution",
+      "englishWords": 287
+    },
+    {
+      "id": "bukhari:183",
+      "number": 183,
+      "bookId": "ablution",
+      "book": "Ablution",
+      "englishWords": 145
+    },
+    {
+      "id": "bukhari:184",
+      "number": 184,
+      "bookId": "ablution",
+      "book": "Ablution",
+      "englishWords": 148
+    },
+    {
+      "id": "bukhari:185",
+      "number": 185,
+      "bookId": "ablution",
+      "book": "Ablution",
+      "englishWords": 153
+    },
+    {
+      "id": "bukhari:186",
+      "number": 186,
+      "bookId": "ablution",
+      "book": "Ablution",
+      "englishWords": 102
+    },
+    {
+      "id": "bukhari:187",
+      "number": 187,
+      "bookId": "ablution",
+      "book": "Ablution",
+      "englishWords": 94
+    },
+    {
+      "id": "bukhari:188",
+      "number": 188,
+      "bookId": "ablution",
+      "book": "Ablution",
+      "englishWords": 103
+    },
+    {
+      "id": "bukhari:189",
+      "number": 189,
+      "bookId": "ablution",
+      "book": "Ablution",
+      "englishWords": 179
+    },
+    {
+      "id": "bukhari:190",
+      "number": 190,
+      "bookId": "ablution",
+      "book": "Ablution",
+      "englishWords": 43
+    },
+    {
+      "id": "bukhari:191",
+      "number": 191,
+      "bookId": "ablution",
+      "book": "Ablution",
+      "englishWords": 89
     }
   ]
 }

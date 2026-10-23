@@ -15,10 +15,10 @@ const rehash=r=>{delete r.reviewRecordSha256;r.reviewRecordSha256=objectHash(r);
 test('fifth batch retains every prior entry and all exact new source paragraphs',()=>{
  const args=input(),snapshot=structuredClone(args.slice(0,3)),batch=buildBookBatch(...args),{source,ledger,files}=collectionFiles();assert.deepEqual(args.slice(0,3),snapshot);
  const prior=['opening-revelation-5e0fa92072afc757','faith-9b3863a16f3114b6','knowledge-dcfdc4c22041885b','ablution-1c3632f8d20804db'].flatMap(p=>read('reader/books/'+p+'.json').entries);assert.deepEqual(source.entries.slice(0,167),prior);
- assert.deepEqual(batch.entries.map(e=>e.number),Array.from({length:13},(_,i)=>168+i));assert.equal(source.entries.length,180);assert.equal(batch.chapters.length,3);
- const book=ledger.books.find(b=>b.id==='ablution');assert.equal(book.entryNumbers.length,46);assert.equal(book.chapters.length,35);
+ assert.deepEqual(batch.entries.map(e=>e.number),Array.from({length:13},(_,i)=>168+i));assert.equal(source.entries.length,191);assert.equal(batch.chapters.length,3);
+ const book=ledger.books.find(b=>b.id==='ablution');assert.equal(book.entryNumbers.length,57);assert.equal(book.chapters.length,45);
  for(const e of batch.entries){const r=args[1].entries.find(r=>r.number===e.number);assert.deepEqual(e.arabic_blocks,r.paragraphIds.map(id=>args[0].blocks.find(b=>b.htmlId===id).text));assert.deepEqual(sourceSegments(e,'english').map(s=>s.text),r.segments.map(s=>s.english));}
- const inputs=JSON.parse(files.get('reader/ablution-inputs.json'));assert.equal(inputs.selectedBlocks.length,133);assert.equal(inputs.sourceLayout.originalBlocks.length,132);
+ const inputs=JSON.parse(files.get('reader/ablution-inputs.json'));assert.equal(inputs.selectedBlocks.length,162);assert.equal(inputs.sourceLayout.originalBlocks.length,161);
 });
 test('171 and 172 share a comparison reference without merging identities or shifting later references',()=>{
  const args=input(),batch=buildBookBatch(...args),rows=args[1].entries;for(const n of [171,172]){const c=rows.find(r=>r.number===n).comparisons[1];assert.equal(c.reference,'1.4.174');assert.deepEqual(c.part,{index:n-170,count:2});}
@@ -37,7 +37,7 @@ test('chapter introductions remain browse-only while sessions cross the old coll
  const args=input(),{source,ledger,files}=collectionFiles(),plan=narrationPlan(source),book=ledger.books.find(b=>b.id==='ablution');assert.equal(book.chapters[0].entryNumbers.length,0);
  assert.deepEqual(args[1].chapters.map(c=>c.entryNumbers),[[168,169,170,171,172,173],[174,175,176,177,178],[179,180]]);
  for(const id of ['mwoA','mwtQ']){const text=args[0].blocks.find(b=>b.htmlId===id).text;assert(files.get('reader/ablution-review.html').includes(text));assert(!source.entries.some(e=>e.arabic_blocks.includes(text)));}
- const saved={numbers:[167],cursor:167,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,180),saved);assert.equal(nextSession(source.entries,saved,5).cursor,168);assert(planSession(source.entries,167,5).numbers.includes(168));assert.deepEqual(planSession(source.entries,180,5).numbers,[180]);assert.equal(nextSession(source.entries,{numbers:[180],cursor:180,ended:true},5),null);
+ const saved={numbers:[167],cursor:167,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,180),saved);assert.equal(nextSession(source.entries,saved,5).cursor,168);assert(planSession(source.entries,167,5).numbers.includes(168));assert.deepEqual(planSession(source.entries,191,5).numbers,[191]);assert.equal(nextSession(source.entries,{numbers:[191],cursor:191,ended:true},5),null);
  for(const e of source.entries.slice(167))assert.equal(plan.entries.find(r=>r.number===e.number).script,e.english_blocks.join('\n\n'));assert(!plan.entries.find(r=>r.number===174).script.includes('Dhat'));
 });
 test('related bathing context and witness variants stay visibly separate from source wording',()=>{

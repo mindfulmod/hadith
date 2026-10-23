@@ -6,16 +6,19 @@ import {createContentLibrary} from '../reader/content-library.mjs';
 import {validateSourceReferences} from '../reader/source-references.mjs';
 import {createOfflineStore,readerCacheName} from '../reader/offline-store.mjs';
 const read=p=>JSON.parse(readFileSync(new URL('../'+p,import.meta.url),'utf8'));
+function admittedSnapshot(names){
+ const current=read('reader/source-record.json'),ledger=structuredClone(read('content/review/personal-collection-ledger.json')),packs=names.map(p=>read('reader/books/'+p+'.json'));
+ const source=Object.fromEntries(Object.keys(current).map(k=>[k,k==='entries'?packs.flatMap(p=>p.entries):packs[0].sourceRecord[k]]));
+ const admission=read('content/review/prototype-admissions.json').admissions.find(a=>a.sourceRecordSha256===objectHash(source));assert(admission,'Historical fixture must be an exact admitted source version');
+ ledger.sourceRecordSha256=objectHash(source);ledger.books=admission.books;ledger.catalogContextSha256=objectHash(admission.books);ledger.entries=ledger.entries.filter(e=>source.entries.some(p=>p.number===e.number));
+ const cited=new Set(packs.flatMap(p=>p.sourceReferences.sources.map(s=>s.id)));
+ ledger.sourceReferences={...ledger.sourceReferences,sourceRecordSha256:objectHash(source),entries:packs.flatMap(p=>p.sourceReferences.entries),sources:ledger.sourceReferences.sources.filter(s=>cited.has(s.id))};ledger.referencesSha256=objectHash(ledger.sourceReferences);
+ return {source,ledger,result:buildBooks(source,ledger)};
+}
 function snapshots(){
- const source=read('reader/source-record.json'),ledger=read('content/review/personal-collection-ledger.json');
- const names=['opening-revelation-5e0fa92072afc757','faith-9b3863a16f3114b6','knowledge-dcfdc4c22041885b','ablution-1c3632f8d20804db'];
- const oldPacks=names.map(p=>read('reader/books/'+p+'.json'));
- const oldSource=Object.fromEntries(Object.keys(source).map(k=>[k,k==='entries'?oldPacks.flatMap(p=>p.entries):oldPacks[0].sourceRecord[k]]));
- const admission=read('content/review/prototype-admissions.json').admissions.find(a=>a.sourceRecordSha256===objectHash(oldSource));assert(admission,'Historical fixture must be an exact admitted source version');
- const oldLedger=structuredClone(ledger);oldLedger.sourceRecordSha256=objectHash(oldSource);oldLedger.books=admission.books;oldLedger.catalogContextSha256=objectHash(admission.books);oldLedger.entries=oldLedger.entries.filter(e=>e.number<=167);
- const cited=new Set(oldPacks.flatMap(p=>p.sourceReferences.sources.map(s=>s.id)));
- oldLedger.sourceReferences={...oldLedger.sourceReferences,sourceRecordSha256:objectHash(oldSource),entries:oldPacks.flatMap(p=>p.sourceReferences.entries),sources:oldLedger.sourceReferences.sources.filter(s=>cited.has(s.id))};oldLedger.referencesSha256=objectHash(oldLedger.sourceReferences);
- return {source,ledger,oldSource,before:buildBooks(oldSource,oldLedger),after:buildBooks(source,ledger)};
+ const before=admittedSnapshot(['opening-revelation-5e0fa92072afc757','faith-9b3863a16f3114b6','knowledge-dcfdc4c22041885b','ablution-1c3632f8d20804db']);
+ const after=admittedSnapshot(['opening-revelation-5912c7128a18d9c9','faith-0083b6d6fb2f9a7e','knowledge-9e2c952eba9b7bf3','ablution-d0e576609a3d05d4']);
+ return {source:after.source,ledger:after.ledger,oldSource:before.source,before:before.result,after:after.result};
 }
 const snapshot=snapshots();
 function responsesFor(result){

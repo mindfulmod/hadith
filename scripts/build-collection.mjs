@@ -71,6 +71,10 @@ function validateComparisons(comparisons,config,segments){
  assert(Array.isArray(khan.checkedReferences)&&khan.checkedReferences.length===2&&khan.checkedReferences.every(r=>khanReference.test(r)),'Missing comparison search evidence');
  assert.equal(Number(khan.checkedReferences[1].split('.')[2]),Number(khan.checkedReferences[0].split('.')[2])+1,'Checked comparison references must be adjacent');
  assert(typeof khan.note==='string'&&khan.note.trim(),'Missing comparison absence explanation');
+ if(khan.checkedReferenceEvidence!==undefined){
+  assert(Array.isArray(khan.checkedReferenceEvidence)&&khan.checkedReferenceEvidence.length===khan.checkedReferences.length,'Incomplete checked-sequence evidence');
+  khan.checkedReferences.forEach((reference,index)=>comparisonEvidence(reference,khan.checkedReferenceEvidence[index]));
+ }
 }
 function entryTranslationStatus(row){
  if(row.arabicSupplements)return 'Personal prototype: AI-assisted working translation with a separately identified closing transmission note transcribed from an Arabic print. Two printed witnesses and the original digital text remain accessible; the English comparisons omit that closing note. Independent Arabic, English and context review pending.';

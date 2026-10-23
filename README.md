@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The personal reader is at `reader/`: 180 complete selected Bukhari entries across four books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The personal reader is at `reader/`: 191 complete selected Bukhari entries across four books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Run
 
@@ -525,3 +525,12 @@ Book files now change only when their own entries, chapter context or citations 
 `research/stable-book-packs-verification.json` records 280 passing automated tests, thirteen integrity checks and an update from the previous live format that preserved the bookmark, Continue position, day theme and largest text preference. All four books retained exact rendered text and current attribution. With the preview server stopped, saved text, Arabic source access, chapter-only browsing and exact phrase search worked. This desktop test does not certify physical iPhone background audio.
 
 Repacking the exact admitted 167- and 180-entry snapshots demonstrates that only Ablution changes in the new format: book-file transfers decrease from 1,414,115 to 389,930 bytes for that example, excluding the catalog and other changed assets. Offline tests verify reuse of the other three books and refetch of corrupted saved bytes. The first schema upgrade needs a one-time refresh of the current book files; the reduction applies to subsequent content updates. Schema 1 reading remains supported and older immutable files are retained. Reading remains one download, with Cedar audio saved separately.
+
+
+### Ablution 181–191: complete reports with explicit comparison limits (23 October 2026)
+
+The personal prototype now contains 191 selected numbered entries. This batch adds eleven entries, ten complete source chapters, 33 working English segments, 16 unchanged Arabic paragraphs and three separately browseable Arabic introductions. All 180 previous entry objects and every recording row remain unchanged. Ablution now has 57 entries, 44 digital chapters and the separately retained printed heading before 155. Actual Cedar audio still covers 1–6.
+
+The source decisions preserve all six separately stated pairs in 181, all three uncertainty notes in 182, both reports grouped under 185, the alternative wording in 188 and the closing transmission in 189. The phrase zirr al-hajalah in 187 remains transliterated with a visible unresolved-English notice. The pinned EPUB interval around 1.4.192 contains an incomplete continuation rather than the body of selected 190; both checked records are hash-bound as absence evidence. A separately linked modern reference does not turn that defective EPUB item into a match. Chapter 43’s embedded statement about ‘Umar remains outside the numbered hadith and narration.
+
+`research/ablution-sixth-verification.json` records 287 passing checks (227 Node, 60 Python), thirteen integrity checks, exact browser comparisons of all new English and Arabic blocks and thirteen chapter blocks, preserved Continue after browsing, and 320px day/night layouts at 28px text. With the preview server stopped, the report, Arabic source, chapter-only browsing, chapter introduction and exact phrase search remained available. The first content expansion after the packaging change retains all three unaffected book files byte-for-byte. Reading downloads total about 8.0 MB; audio is separate. Continue from 192. Independent review, English introductions, full collection coverage and further audio remain unfinished.

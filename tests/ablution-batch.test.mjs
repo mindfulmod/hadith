@@ -15,7 +15,7 @@ test('Ablution admits seven complete reports and eight chapters while preserving
  assert.deepEqual(args.slice(0,3),original);assert.deepEqual(batch.entries.map(e=>e.number),[135,136,137,138,139,140,141]);assert.equal(batch.chapters.length,8);
  assert.deepEqual(batch.chapters[0].entryNumbers,[]);assert.equal(batch.chapters[0].sourceContext.introduction.arabicParagraphs,2);assert.equal(batch.chapters[5].sourceContext.introduction.arabicParagraphs,1);
  const previous=['opening-revelation-04b0db06903608d8','faith-72f493a0d1681cd6','knowledge-d3216a2acee5ec98'].flatMap(name=>read('reader/books/'+name+'.json').entries);
- assert.deepEqual(source.entries.slice(0,134),previous);assert.equal(source.entries.length,180);
+ assert.deepEqual(source.entries.slice(0,134),previous);assert.equal(source.entries.length,191);
  for(const entry of batch.entries){const row=args[1].entries.find(r=>r.number===entry.number);assert.deepEqual(sourceSegments(entry,'english').map(s=>s.text),row.segments.map(s=>s.english));assert.deepEqual(entry.review.sourceLayout,row.sourceLayout);}
 });
 test('mapped source changes are rejected even when the batch inventory hash is updated',()=>{
@@ -48,7 +48,7 @@ test('the long report retains both left-wording occurrences, the repeated chain 
 });
 test('source-only chapter browsing and the next numbered session cross into Ablution without changing a saved plan',()=>{
  const {source,ledger}=collectionFiles(),saved={numbers:[134],cursor:134,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,134),saved);assert.equal(nextSession(source.entries,saved,5).cursor,135);
- assert(planSession(source.entries,134,5).numbers.includes(135));assert.deepEqual(planSession(source.entries,180,5).numbers,[180]);assert.equal(nextSession(source.entries,{numbers:[180],cursor:180,ended:true},5),null);
+ assert(planSession(source.entries,134,5).numbers.includes(135));assert.deepEqual(planSession(source.entries,191,5).numbers,[191]);assert.equal(nextSession(source.entries,{numbers:[191],cursor:191,ended:true},5),null);
  const book=ledger.books.find(b=>b.id==='ablution');assert.equal(book.sourceEntryCount,110);assert.deepEqual(book.chapters[0].entryNumbers,[]);assert.equal(book.chapters[0].sourceContext.numberedReports,'none-in-source');
 });
 test('mapped labels and shared paragraphs keep original evidence in the future admission path',()=>{
@@ -59,7 +59,7 @@ test('mapped labels and shared paragraphs keep original evidence in the future a
 });
 test('offline source inputs retain every selected original paragraph and correct external source anchors',()=>{
  const {files}=collectionFiles(),inputs=JSON.parse(files.get('reader/ablution-inputs.json')),html=files.get('reader/ablution-review.html'),[inventory]=input();
- assert.equal(inputs.sourceLayout.originalBlocks.length,132);assert.equal(inputs.selectedBlocks.length,133);
+ assert.equal(inputs.sourceLayout.originalBlocks.length,161);assert.equal(inputs.selectedBlocks.length,162);
  for(const block of inputs.selectedBlocks){const original=inputs.sourceLayout.originalBlocks.find(b=>b.htmlId===block.origin.blockId);assert.equal(Array.from(original.text).slice(block.origin.start,block.origin.end).join(''),block.text);}
  assert.deepEqual(inputs.sourceLayout.completeLayoutReview,inventory.layoutReview);assert(html.includes('id="chapter-01"'));assert(html.includes('Original source labels and boundaries'));assert(!html.includes('full collection is verified'));
 });
