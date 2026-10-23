@@ -2,17 +2,17 @@
   "schemaVersion": 2,
   "namespace": "bukhari-opening-v1",
   "publication": "personal-prototype",
-  "sourceRecordSha256": "3cb6c8f14000cf57234a54b53b5641f013b4da35951cef45279c0dddc685176c",
-  "referencesSha256": "7f01127ee3e2bd5afc8dd659722e298f0cb823c57b927396a255722e234a9b33",
+  "sourceRecordSha256": "436250b5b6b4655c97e7956795f5faca098f5de0bb55be0a762197c403ab5edc",
+  "referencesSha256": "6d7bedd14b0e737f68e7e04bad4effa1ded91a111bc8b78c7a4bdef29897afcf",
   "sourceRecord": {
     "created": "2026-10-20",
-    "scope": "Personal prototype: complete numbered entries 1–326 across 6 books. The rest of the collection remains in preparation.",
+    "scope": "Personal prototype: complete numbered entries 1–331 across 7 books. The rest of the collection remains in preparation.",
     "selected_route": "Pinned Arabic text plus a new English working translation.",
     "license": {
       "id": "CC-BY-SA-4.0",
       "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Sahih al-Bukhari by Muhammad ibn Ismail al-Bukhari; Arabic digital transcription by Arabic Wikisource contributors, opening revision 484874 and Faith revision 490285. Book of Knowledge: revision 252975. Book of Ablution: revision 273249. Book of Ghusl: revision 484873. Book of Menstruation: revision 484869.",
-      "changes": "Entries 1–2 are unchanged. Entries 3–7 are derived from the pinned Arabic; Hadith 5 has one explicitly recorded correction from له to لك supported by two printed witnesses. Original inputs are retained in prototype-inputs.json. New AI-assisted English, presentation and comparison notes are offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app. Hadith 8–58 retain their Arabic paragraphs unchanged from revision 490285; their new English and available chapter titles are AI-assisted. A disputed chapter heading is explicitly withheld. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 59–134 derive from revision 252975; only 99 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 135–244 derive from revision 273249; only 137, 146, 165, 202 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Exact source origins and original labels are retained; any different reader reference is explicitly mapped. Chapter introductions are preserved separately in Arabic, with English translation still pending. Declared printed additions supply a missing closing transmission note and chapter heading; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately. Hadith 245–289 derive from revision 484873; only 262, 272, 287, 288 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. A declared printed addition supplies a missing closing transmission note; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately. Hadith 290–326 derive from revision 484869; only 300, 311, 324 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. A declared printed addition supplies a missing chapter heading; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately."
+      "attribution": "Sahih al-Bukhari by Muhammad ibn Ismail al-Bukhari; Arabic digital transcription by Arabic Wikisource contributors, opening revision 484874 and Faith revision 490285. Book of Knowledge: revision 252975. Book of Ablution: revision 273249. Book of Ghusl: revision 484873. Book of Menstruation: revision 484869. Book of Tayammum: revision 484871.",
+      "changes": "Entries 1–2 are unchanged. Entries 3–7 are derived from the pinned Arabic; Hadith 5 has one explicitly recorded correction from له to لك supported by two printed witnesses. Original inputs are retained in prototype-inputs.json. New AI-assisted English, presentation and comparison notes are offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app. Hadith 8–58 retain their Arabic paragraphs unchanged from revision 490285; their new English and available chapter titles are AI-assisted. A disputed chapter heading is explicitly withheld. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 59–134 derive from revision 252975; only 99 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 135–244 derive from revision 273249; only 137, 146, 165, 202 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Exact source origins and original labels are retained; any different reader reference is explicitly mapped. Chapter introductions are preserved separately in Arabic, with English translation still pending. Declared printed additions supply a missing closing transmission note and chapter heading; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately. Hadith 245–289 derive from revision 484873; only 262, 272, 287, 288 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. A declared printed addition supplies a missing closing transmission note; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately. Hadith 290–326 derive from revision 484869; only 300, 311, 324 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. A declared printed addition supplies a missing chapter heading; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately. Hadith 327–331 retain their Arabic source spans unchanged from revision 484871; their new English and available chapter titles are AI-assisted. Exact source origins and original labels are retained; any different reader reference is explicitly mapped. Chapter introductions are preserved separately in Arabic, with English translation still pending."
     },
     "sources": [
       {
@@ -376,6 +376,34 @@
         "kind": "commentary",
         "format": "web",
         "url": "https://ablibrary.net/book_content/b/2601/364"
+      },
+      {
+        "id": "arabic-tayammum",
+        "label": "Arabic Wikisource · fixed revision 484871",
+        "kind": "arabic-input",
+        "format": "web",
+        "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_التيمم&oldid=484871"
+      },
+      {
+        "id": "bewley-tayammum",
+        "label": "Aisha Bewley · Book of Tayammum",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://aishabewley.org/bukhari4"
+      },
+      {
+        "id": "fath-tayammum-369",
+        "label": "Ibn Hajar · Fath al-Bari · reporting verbs and narrator epithet",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://ablibrary.net/book_content/b/2601/369"
+      },
+      {
+        "id": "fath-tayammum-371",
+        "label": "Ibn Hajar · Fath al-Bari · purification wording",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://ablibrary.net/book_content/b/2601/371"
       }
     ],
     "findings": [
@@ -435,7 +463,9 @@
       "ghuslReviewSha256": "16cb62282b8a284cb2fc37a97dc32c2835f63029dc7dcf3033e21113a5cf310e",
       "ghuslSourceSha256": "07e29f845c2f17f77aae014356e8028a3335d245eeeb73e7b5efe3b52064db77",
       "menstruationReviewSha256": "50559a3f613bb35581e152ef6721e4a75df82afd12c61134945e0eedf7f9bfd2",
-      "menstruationSourceSha256": "eb6ab7e471a9f236d773f2acddfeb83e24c8a99c445e9bdc73da928b49e9e95d"
+      "menstruationSourceSha256": "eb6ab7e471a9f236d773f2acddfeb83e24c8a99c445e9bdc73da928b49e9e95d",
+      "tayammumReviewSha256": "8aa80da8cf931caaac8c906784dfd09e267dab94d85e6fd8841dc1a4ef9f9766",
+      "tayammumSourceSha256": "e5ad7c8f11523b76e258adb2ad188a87bced650e99705e59bada404c416fb69f"
     }
   },
   "books": [
@@ -5596,6 +5626,105 @@
       "path": "books/menstruation-95605644e549c484.json",
       "bytes": 269556,
       "sha256": "95605644e549c4842747f9850cee0f97af86e710d8d6f9a471c94b3fef5e68ac"
+    },
+    {
+      "id": "tayammum",
+      "number": 7,
+      "title": "Tayammum",
+      "sourceEntryCount": 15,
+      "entryNumbers": [
+        327,
+        328,
+        329,
+        330,
+        331
+      ],
+      "chapters": [
+        {
+          "id": "chapter-01",
+          "title": "The words of Allah Most High: “If you find no water, seek clean earth and wipe your faces and hands with it”",
+          "entryNumbers": [
+            327,
+            328
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "tayammum-review.html",
+              "fragment": "chapter-01"
+            }
+          }
+        },
+        {
+          "id": "chapter-02",
+          "title": "If one finds neither water nor earth",
+          "entryNumbers": [
+            329
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "tayammum-review.html",
+              "fragment": "chapter-02"
+            }
+          }
+        },
+        {
+          "id": "chapter-03",
+          "title": "Tayammum while resident when one finds no water and fears missing the prayer",
+          "entryNumbers": [
+            330
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 1,
+              "englishStatus": "pending"
+            },
+            "notes": {
+              "path": "tayammum-review.html",
+              "fragment": "chapter-03"
+            }
+          }
+        },
+        {
+          "id": "chapter-04",
+          "title": "Does the person performing tayammum blow on his hands?",
+          "entryNumbers": [
+            331
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "tayammum-review.html",
+              "fragment": "chapter-04"
+            }
+          }
+        }
+      ],
+      "path": "books/tayammum-9b7a0e742cfc0814.json",
+      "bytes": 48831,
+      "sha256": "9b7a0e742cfc08148f2d2ce3e97a7e68651e8af47f85268012f28faab8a5e2e4"
     }
   ],
   "entries": [
@@ -7880,6 +8009,41 @@
       "bookId": "menstruation",
       "book": "Menstruation",
       "englishWords": 102
+    },
+    {
+      "id": "bukhari:327",
+      "number": 327,
+      "bookId": "tayammum",
+      "book": "Tayammum",
+      "englishWords": 319
+    },
+    {
+      "id": "bukhari:328",
+      "number": 328,
+      "bookId": "tayammum",
+      "book": "Tayammum",
+      "englishWords": 161
+    },
+    {
+      "id": "bukhari:329",
+      "number": 329,
+      "bookId": "tayammum",
+      "book": "Tayammum",
+      "englishWords": 132
+    },
+    {
+      "id": "bukhari:330",
+      "number": 330,
+      "bookId": "tayammum",
+      "book": "Tayammum",
+      "englishWords": 124
+    },
+    {
+      "id": "bukhari:331",
+      "number": 331,
+      "bookId": "tayammum",
+      "book": "Tayammum",
+      "englishWords": 141
     }
   ]
 }

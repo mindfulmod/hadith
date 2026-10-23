@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "status": "ai-reviewed-layout-only",
+  "reviewerKind": "ai",
+  "independentReview": "pending",
+  "checkedAt": "2026-10-23",
+  "sourceId": "wikisource-bukhari-tayammum-r484871",
+  "sourceSha256": "e5ad7c8f11523b76e258adb2ad188a87bced650e99705e59bada404c416fb69f",
+  "auditSha256": "f4ba4eac236518af6e9bde010793d05872ed09e5352f2240677539d6ea40a79a",
+  "sources": [
+    {
+      "id": "brill-1862",
+      "label": "Historical Arabic print · Brill 1862",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf",
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+    },
+    {
+      "id": "dar-ibn-kathir-2002",
+      "label": "Arabic print · Dar Ibn Kathir 2002",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+    }
+  ],
+  "scope": "Exact structural classification only. All 8062 source code points remain accounted for. Both inspected prints put the heading and following context between selected 329 and 330. The literal editor placeholder is retained separately, not translated or merged into a narration. No report wording or translation is approved by this map.",
+  "expected": {
+    "numbers": [
+      327,
+      328,
+      329,
+      330,
+      331,
+      332,
+      333,
+      334,
+      335,
+      336,
+      337,
+      338,
+      339,
+      340,
+      341
+    ],
+    "chapters": 8
+  },
+  "pageNumbering": "One-based PDF page numbers, not printed page labels.",
+  "decisions": [
+    {
+      "id": "layout-mwHw",
+      "blockId": "mwHw",
+      "blockSha256": "6126fd13e11bcfbd76fdc2b69165b865c7fa74ba53cf8974f272d90ba8437b21",
+      "issueIndexes": [
+        0
+      ],
+      "note": "The original begins with the literal editor placeholder 'نص غليظ' (bold text), followed by a chapter heading in === delimiters and its introduction. Both inspected Arabic prints show the chapter heading and context after the necklace report and before Abu Juhaym’s report; neither contains the placeholder or equals signs. Preserve the placeholder as an editorial artifact, the delimiters as formatting, the exact heading as chapter 3 and the remaining paragraph as its context. These characters are not silently deleted or attached to numbered 329.",
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPages": [
+            94
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPages": [
+            93
+          ]
+        }
+      ],
+      "units": [
+        {
+          "start": 0,
+          "end": 9,
+          "kind": "editorial-artifact"
+        },
+        {
+          "start": 9,
+          "end": 12,
+          "kind": "formatting"
+        },
+        {
+          "start": 12,
+          "end": 64,
+          "kind": "heading"
+        },
+        {
+          "start": 64,
+          "end": 67,
+          "kind": "formatting"
+        },
+        {
+          "start": 67,
+          "end": 233,
+          "kind": "text"
+        }
+      ]
+    }
+  ]
+}

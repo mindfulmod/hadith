@@ -6,7 +6,7 @@ import {escapeHTML as esc} from '../reader/source-format.mjs';
 const root=new URL('../',import.meta.url);
 const verified=new Map();
 function checkedInventory(id){
- assert.equal(id,'ablution','Unknown mapped source book');
+ assert(['ablution','tayammum'].includes(id),'Unknown mapped source book');
  if(!verified.has(id)){
   // The Python resolver checks the raw revision, audit, every original span and its review.
   // Keep this build-time dependency out of the browser and avoid a second layout algorithm.
@@ -58,4 +58,14 @@ export function layoutSourceDetails(inventory,row){
  const originals=[...new Set(row.sourceLayout.paragraphs.map(p=>p.origin.blockId))].map(id=>inventory.originalBlocks.find(b=>b.htmlId===id));
  const m=row.sourceLayout.referenceMapping;
  return `<details class="source-layout"><summary>Original source labels and boundaries</summary><p>These original digital paragraphs remain unchanged. The reading text uses the exact spans listed here, with any separately declared wording correction shown above.${row.arabicSupplements?' The additional printed note has its own provenance record and is not part of these digital paragraphs.':''} Offsets count Unicode characters from zero; the end is excluded.</p>${m?`<p>${esc(m.note)}</p>`:''}<ul>${row.sourceLayout.paragraphs.map(p=>`<li>Source block ${esc(p.origin.blockId)} · characters ${p.origin.start}–${p.origin.end}</li>`).join('')}</ul><div class="arabic source-original-blocks" lang="ar" dir="rtl">${originals.map(b=>`<p>${esc(b.text)}</p>`).join('')}</div></details>`;
+}
+
+export function chapterLayoutDetails(inventory,chapter){
+ if(!inventory.editorialArtifactIds?.length)return '';
+ const selected=new Set([chapter.headingId,...chapter.contextIds]);
+ const decisionIds=new Set(inventory.blocks.filter(b=>selected.has(b.htmlId)).map(b=>b.layoutDecisionId).filter(Boolean));
+ const artifacts=inventory.blocks.filter(b=>inventory.editorialArtifactIds.includes(b.htmlId)&&decisionIds.has(b.layoutDecisionId));
+ if(!artifacts.length)return '';
+ const originals=[...new Set(artifacts.map(b=>b.origin.blockId))].map(id=>inventory.originalBlocks.find(b=>b.htmlId===id));
+ return `<details class="source-layout chapter-original-layout"><summary>Original chapter layout</summary><p>The digital paragraph contains an editor placeholder and heading delimiters as well as the chapter words. The reviewed boundaries keep the heading and introduction separate from numbered hadith. Every original character remains below. Offsets count Unicode characters from zero; the end is excluded. Independent review is pending.</p>${originals.map(b=>{const decision=inventory.layoutReview.decisions.find(d=>d.blockId===b.htmlId);return `<p>${esc(decision.note)}</p><div class="arabic source-original-blocks" lang="ar" dir="rtl"><p>${esc(b.text)}</p></div><ul>${decision.units.map(u=>`<li>${esc(u.kind)} · characters ${u.start}–${u.end}</li>`).join('')}</ul><ul>${decision.printedWitnesses.map(w=>{const source=inventory.layoutReview.sources.find(s=>s.id===w.id);return `<li>${esc(source.label)}: ${w.pdfPages.map(p=>{const url=new URL(source.url);url.hash='page='+p;return `<a href="${esc(url.href)}" target="_blank" rel="noopener">PDF page ${p} ↗</a>`;}).join(', ')}</li>`;}).join('')}</ul>`;}).join('')}</details>`;
 }

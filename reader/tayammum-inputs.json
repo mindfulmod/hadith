@@ -1,0 +1,1165 @@
+{
+  "schemaVersion": 1,
+  "sourceLocationCorrections": {
+    "schemaVersion": 1,
+    "corrections": [
+      {
+        "sourceId": "brill-1862",
+        "fromURL": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf",
+        "toURL": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+        "bytes": 28290204,
+        "verifiedAt": "2026-10-21",
+        "basis": "The earlier URL returns 404. The corrected Wikimedia volume-one URL was located through the Wikisource file index and downloaded. Its full file SHA-256 matches the already pinned historical witness. This repairs a citation URL only; original review inputs and every hadith text remain unchanged.",
+        "discoveryURL": "https://ar.wikisource.org/wiki/ملف:صحيح_البخاري_ر0.pdf"
+      }
+    ]
+  },
+  "status": "personal-prototype-only",
+  "manifest": {
+    "id": "wikisource-bukhari-tayammum-r484871",
+    "revision": 484871,
+    "retrievedAt": "2026-10-23",
+    "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_التيمم&oldid=484871",
+    "status": "candidate-layout-review-required",
+    "readerEligible": false,
+    "license": {
+      "id": "CC-BY-SA-4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Sahih al-Bukhari by Muhammad ibn Ismail al-Bukhari; Arabic digital transcription by Arabic Wikisource contributors, revision 484871.",
+      "changes": "The HTML is retained unchanged. Decoded text is not trimmed, normalized or corrected. An embedded chapter heading and editor placeholder require explicit structural review before report ownership is assigned. This intake adds no English translation."
+    },
+    "file": {
+      "path": "source.html",
+      "bytes": 111280,
+      "sha256": "e5ad7c8f11523b76e258adb2ad188a87bced650e99705e59bada404c416fb69f"
+    },
+    "note": "This exact retrieval is pinned in addition to its revision ID. The source has seven rendered headings and one unparsed heading, with an editor placeholder before it. Printed edition identity and wording approval are not inferred.",
+    "expected": {
+      "blocks": 25,
+      "layoutSummary": {
+        "blocks": 25,
+        "htmlHeadings": 7,
+        "unparsedHeadings": 1,
+        "numberedMarkers": 15,
+        "uniqueNumericLabels": 15,
+        "numericRange": [
+          327,
+          341
+        ],
+        "unobservedLabelsWithinRange": [],
+        "duplicateLabels": [],
+        "sourceCodePoints": 8062,
+        "coveredCodePoints": 8062
+      }
+    }
+  },
+  "completeInventorySha256": "afaf733abe129f90274a0493d373e188580dbb2e60674d2fee394c0c69e09a3e",
+  "scope": "Only the blocks used by Hadith 327–331 and their chapter context. The complete source inventory remains separately preserved.",
+  "selectedBlocks": [
+    {
+      "htmlId": "باب_قول_الله_تعالى_{_فلم_تجدوا_ماء_فتيمموا_صعيدا_طيبا_فامسحوا_بوجوهكم_وأيديكم_منه_}",
+      "tag": "h3",
+      "text": "باب قول الله تعالى { فلم تجدوا ماء فتيمموا صعيدا طيبا فامسحوا بوجوهكم وأيديكم منه }",
+      "ordinal": 0,
+      "textSha256": "d9f77e91600111a922f9e75f2936f57dc4df9b01454e7560c678d8af588ce350",
+      "role": "heading",
+      "origin": {
+        "blockId": "باب_قول_الله_تعالى_{_فلم_تجدوا_ماء_فتيمموا_صعيدا_طيبا_فامسحوا_بوجوهكم_وأيديكم_منه_}",
+        "blockSha256": "d9f77e91600111a922f9e75f2936f57dc4df9b01454e7560c678d8af588ce350",
+        "start": 0,
+        "end": 83
+      }
+    },
+    {
+      "htmlId": "mwBg",
+      "tag": "p",
+      "text": "[327] حدثنا عبد الله بن يوسف قال : أخبرنا مالك عن عبد الرحمن بن القاسم عن أبيه عن عائشة زوج النبي ﷺ قالت خرجنا مع رسول الله ﷺ في بعض أسفاره حتى إذا كنا بالبيداء أو بذات الجيش انقطع عقد لي فأقام رسول الله ﷺ على التماسه وأقام الناس معه وليسوا على ماء فأتى الناس إلى أبي بكر الصديق فقالوا ألا ترى ما صنعت عائشة أقامت برسول الله ﷺ والناس وليسوا على ماء وليس معهم ماء فجاء أبو بكر ورسول الله ﷺ واضع رأسه على فخذي قد نام ، فقال حبست رسول الله ﷺ والناس وليسوا على ماء وليس معهم ماء فقالت عائشة فعاتبني أبو بكر ، وقال : ما شاء الله أن يقول وجعل يطعنني بيده في خاصرتي فلا يمنعني من التحرك إلا مكان رسول الله ﷺ على فخذي فقام رسول الله ﷺ حين أصبح على غير ماء فأنزل الله آية التيمم فتيمموا ، فقال أسيد بن الحضير ما هي بأول بركتكم يا آل أبي بكر قالت فبعثنا البعير الذي كنت عليه فأصبنا العقد تحته ",
+      "ordinal": 1,
+      "textSha256": "f903e5ff57b489bd01b1bb4fff2be89d5011c1d33ec19cd1447706cf6a8724b8",
+      "role": "report-start",
+      "origin": {
+        "blockId": "mwBg",
+        "blockSha256": "f903e5ff57b489bd01b1bb4fff2be89d5011c1d33ec19cd1447706cf6a8724b8",
+        "start": 0,
+        "end": 783
+      },
+      "number": 327,
+      "sourceReference": {
+        "label": "327",
+        "number": 327,
+        "markerId": "mwBg:0",
+        "occurrence": 1
+      }
+    },
+    {
+      "htmlId": "mwEQ",
+      "tag": "p",
+      "text": "[328] حدثنا محمد بن سنان قال : حدثنا هشيم ح قال وحدثني سعيد بن النضر قال : أخبرنا هشيم قال : أخبرنا سيار قال : حدثنا يزيد هو ابن صهيب الفقير قال : أخبرنا جابر بن عبد الله أن النبي ﷺ قال : أعطيت خمسا لم يعطهن أحد قبلي نصرت بالرعب مسيرة شهر وجعلت لي الأرض مسجدا وطهورا فأيما رجل من أمتي أدركته الصلاة فليصل وأحلت لي المغانم ولم تحل لأحد قبلي وأعطيت الشفاعة وكان النبي يبعث إلى قومه خاصة وبعثت إلى الناس عامة ",
+      "ordinal": 2,
+      "textSha256": "bb58b9c865dcd72d11c7462abc7cabee5b1d65ee68b3454c9c5ebab569663920",
+      "role": "report-start",
+      "origin": {
+        "blockId": "mwEQ",
+        "blockSha256": "bb58b9c865dcd72d11c7462abc7cabee5b1d65ee68b3454c9c5ebab569663920",
+        "start": 0,
+        "end": 406
+      },
+      "number": 328,
+      "sourceReference": {
+        "label": "328",
+        "number": 328,
+        "markerId": "mwEQ:0",
+        "occurrence": 1
+      }
+    },
+    {
+      "htmlId": "باب_إذا_لم_يجد_ماء_ولا_ترابا",
+      "tag": "h3",
+      "text": "باب إذا لم يجد ماء ولا ترابا",
+      "ordinal": 3,
+      "textSha256": "353e2d8a4db24b7d5cc8b0e983dd07fccdbdd6f69d357c4ec03ffff042a2928c",
+      "role": "heading",
+      "origin": {
+        "blockId": "باب_إذا_لم_يجد_ماء_ولا_ترابا",
+        "blockSha256": "353e2d8a4db24b7d5cc8b0e983dd07fccdbdd6f69d357c4ec03ffff042a2928c",
+        "start": 0,
+        "end": 28
+      }
+    },
+    {
+      "htmlId": "mwGg",
+      "tag": "p",
+      "text": "[329] حدثنا زكريا بن يحيى قال : حدثنا عبد الله بن نمير قال : حدثنا هشام بن عروة عن أبيه عن عائشة أنها استعارت من أسماء قلادة فهلكت فبعث رسول الله ﷺ رجلا فوجدها فأدركتهم الصلاة وليس معهم ماء فصلوا فشكوا ذلك إلى رسول الله ﷺ فأنزل الله آية التيمم ، فقال أسيد بن حضير لعائشة جزاك الله خيرا فوالله ما نزل بك أمر تكرهينه إلا جعل الله ذلك لك وللمسلمين فيه خيرا",
+      "ordinal": 4,
+      "textSha256": "bbab3bb6ad05e4908c60c39328b4ad7363db271b3315dc1bb03c45b9eb0986d8",
+      "role": "report-start",
+      "origin": {
+        "blockId": "mwGg",
+        "blockSha256": "bbab3bb6ad05e4908c60c39328b4ad7363db271b3315dc1bb03c45b9eb0986d8",
+        "start": 0,
+        "end": 353
+      },
+      "number": 329,
+      "sourceReference": {
+        "label": "329",
+        "number": 329,
+        "markerId": "mwGg:0",
+        "occurrence": 1
+      }
+    },
+    {
+      "htmlId": "mwHw@12-64",
+      "tag": "h3",
+      "text": "باب التيمم في الحضر إذا لم يجد الماء وخاف فوت الصلاة",
+      "ordinal": 7,
+      "textSha256": "b3c99d86b62b7ce323c64a23cb6d46cc60c7ff6697ecdca22d104cafd710a0d0",
+      "role": "heading",
+      "origin": {
+        "blockId": "mwHw",
+        "blockSha256": "6126fd13e11bcfbd76fdc2b69165b865c7fa74ba53cf8974f272d90ba8437b21",
+        "start": 12,
+        "end": 64
+      },
+      "layoutDecisionId": "layout-mwHw"
+    },
+    {
+      "htmlId": "mwHw@67-233",
+      "tag": "p",
+      "text": "\nوبه قال عطاء ، وقال الحسن في المريض عنده الماء ولا يجد من يناوله يتيمم وأقبل بن عمر من أرضه بالجرف فحضرت العصر بمربد النعم فصلى ثم دخل المدينة والشمس مرتفعة فلم يعد ",
+      "ordinal": 9,
+      "textSha256": "e23d904dd63c388b54eb97a9b48c446caec82a06d71657c93cac44ae87948184",
+      "role": "text",
+      "origin": {
+        "blockId": "mwHw",
+        "blockSha256": "6126fd13e11bcfbd76fdc2b69165b865c7fa74ba53cf8974f272d90ba8437b21",
+        "start": 67,
+        "end": 233
+      },
+      "layoutDecisionId": "layout-mwHw"
+    },
+    {
+      "htmlId": "mwIg",
+      "tag": "p",
+      "text": "[330] حدثنا يحيى بن بكير قال : حدثنا الليث عن جعفر بن ربيعة عن الأعرج قال : سمعت عميرا مولى ابن عباس قال أقبلت أنا وعبد الله بن يسار مولى ميمونة زوج النبي ﷺ حتى دخلنا على أبي جهيم بن الحارث بن الصمة الأنصارى ، فقال أبو الجهيم أقبل النبي ﷺ من نحو بئر جمل فلقيه رجل فسلم عليه فلم يرد عليه النبي ﷺ حتى أقبل على الجدار فمسح بوجهه ويديه ثم رد عليه السلام",
+      "ordinal": 10,
+      "textSha256": "96ece4d79c98f2498b12e6bb27a01c8d3ef561c03644ebc4be4f21e1f32f749b",
+      "role": "report-start",
+      "origin": {
+        "blockId": "mwIg",
+        "blockSha256": "96ece4d79c98f2498b12e6bb27a01c8d3ef561c03644ebc4be4f21e1f32f749b",
+        "start": 0,
+        "end": 349
+      },
+      "number": 330,
+      "sourceReference": {
+        "label": "330",
+        "number": 330,
+        "markerId": "mwIg:0",
+        "occurrence": 1
+      }
+    },
+    {
+      "htmlId": "باب_المتيمم_هل_ينفخ_فيهما",
+      "tag": "h3",
+      "text": "باب المتيمم هل ينفخ فيهما",
+      "ordinal": 11,
+      "textSha256": "2629548796f1e7a569cbe9ed11ad2f63b46de766b9567ac60c5160ac550063fd",
+      "role": "heading",
+      "origin": {
+        "blockId": "باب_المتيمم_هل_ينفخ_فيهما",
+        "blockSha256": "2629548796f1e7a569cbe9ed11ad2f63b46de766b9567ac60c5160ac550063fd",
+        "start": 0,
+        "end": 25
+      }
+    },
+    {
+      "htmlId": "mwKQ",
+      "tag": "p",
+      "text": "[331] حدثنا آدم قال : حدثنا شعبة حدثنا الحكم عن ذر عن سعيد بن عبد الرحمن بن أبزى عن أبيه قال جاء رجل إلى عمر بن الخطاب ، فقال إني أجنبت فلم أصب الماء ، فقال عمار بن ياسر لعمر بن الخطاب أما تذكر أنا كنا في سفر أنا وأنت فأما أنت فلم تصل وأما أنا فتمعكت فصليت فذكرت ذلك للنبي ﷺ ، فقال النبي ﷺ إنما كان يكفيك هكذا فضرب النبي ﷺ بكفيه الأرض ونفخ فيهما ثم مسح بهما وجهه وكفيه ",
+      "ordinal": 12,
+      "textSha256": "6d1a7a431fc66869d39e634706ecc31285e78b4d40ac9a4c07080b2d856219f6",
+      "role": "report-start",
+      "origin": {
+        "blockId": "mwKQ",
+        "blockSha256": "6d1a7a431fc66869d39e634706ecc31285e78b4d40ac9a4c07080b2d856219f6",
+        "start": 0,
+        "end": 369
+      },
+      "number": 331,
+      "sourceReference": {
+        "label": "331",
+        "number": 331,
+        "markerId": "mwKQ:0",
+        "occurrence": 1
+      }
+    }
+  ],
+  "sourceLayout": {
+    "schemaVersion": 1,
+    "sourceId": "wikisource-bukhari-tayammum-r484871",
+    "sourceSha256": "e5ad7c8f11523b76e258adb2ad188a87bced650e99705e59bada404c416fb69f",
+    "layoutAuditSha256": "f4ba4eac236518af6e9bde010793d05872ed09e5352f2240677539d6ea40a79a",
+    "layoutReviewSha256": "dd357f7f5f9fd8eec31ed7fea6133434d4a053dd4a6bb6b0937feb298146fb50",
+    "completeLayoutReview": {
+      "schemaVersion": 1,
+      "status": "ai-reviewed-layout-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "checkedAt": "2026-10-23",
+      "sourceId": "wikisource-bukhari-tayammum-r484871",
+      "sourceSha256": "e5ad7c8f11523b76e258adb2ad188a87bced650e99705e59bada404c416fb69f",
+      "auditSha256": "f4ba4eac236518af6e9bde010793d05872ed09e5352f2240677539d6ea40a79a",
+      "sources": [
+        {
+          "id": "brill-1862",
+          "label": "Historical Arabic print · Brill 1862",
+          "kind": "arabic-witness",
+          "format": "pdf",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf",
+          "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "label": "Arabic print · Dar Ibn Kathir 2002",
+          "kind": "arabic-witness",
+          "format": "pdf",
+          "url": "https://archive.org/download/waq79565/79565.pdf",
+          "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+        }
+      ],
+      "scope": "Exact structural classification only. All 8062 source code points remain accounted for. Both inspected prints put the heading and following context between selected 329 and 330. The literal editor placeholder is retained separately, not translated or merged into a narration. No report wording or translation is approved by this map.",
+      "expected": {
+        "numbers": [
+          327,
+          328,
+          329,
+          330,
+          331,
+          332,
+          333,
+          334,
+          335,
+          336,
+          337,
+          338,
+          339,
+          340,
+          341
+        ],
+        "chapters": 8
+      },
+      "pageNumbering": "One-based PDF page numbers, not printed page labels.",
+      "decisions": [
+        {
+          "id": "layout-mwHw",
+          "blockId": "mwHw",
+          "blockSha256": "6126fd13e11bcfbd76fdc2b69165b865c7fa74ba53cf8974f272d90ba8437b21",
+          "issueIndexes": [
+            0
+          ],
+          "note": "The original begins with the literal editor placeholder 'نص غليظ' (bold text), followed by a chapter heading in === delimiters and its introduction. Both inspected Arabic prints show the chapter heading and context after the necklace report and before Abu Juhaym’s report; neither contains the placeholder or equals signs. Preserve the placeholder as an editorial artifact, the delimiters as formatting, the exact heading as chapter 3 and the remaining paragraph as its context. These characters are not silently deleted or attached to numbered 329.",
+          "printedWitnesses": [
+            {
+              "id": "brill-1862",
+              "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+              "pdfPages": [
+                94
+              ]
+            },
+            {
+              "id": "dar-ibn-kathir-2002",
+              "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+              "pdfPages": [
+                93
+              ]
+            }
+          ],
+          "units": [
+            {
+              "start": 0,
+              "end": 9,
+              "kind": "editorial-artifact"
+            },
+            {
+              "start": 9,
+              "end": 12,
+              "kind": "formatting"
+            },
+            {
+              "start": 12,
+              "end": 64,
+              "kind": "heading"
+            },
+            {
+              "start": 64,
+              "end": 67,
+              "kind": "formatting"
+            },
+            {
+              "start": 67,
+              "end": 233,
+              "kind": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "originalBlocks": [
+      {
+        "htmlId": "باب_قول_الله_تعالى_{_فلم_تجدوا_ماء_فتيمموا_صعيدا_طيبا_فامسحوا_بوجوهكم_وأيديكم_منه_}",
+        "tag": "h3",
+        "text": "باب قول الله تعالى { فلم تجدوا ماء فتيمموا صعيدا طيبا فامسحوا بوجوهكم وأيديكم منه }",
+        "ordinal": 0,
+        "textSha256": "d9f77e91600111a922f9e75f2936f57dc4df9b01454e7560c678d8af588ce350"
+      },
+      {
+        "htmlId": "mwBg",
+        "tag": "p",
+        "text": "[327] حدثنا عبد الله بن يوسف قال : أخبرنا مالك عن عبد الرحمن بن القاسم عن أبيه عن عائشة زوج النبي ﷺ قالت خرجنا مع رسول الله ﷺ في بعض أسفاره حتى إذا كنا بالبيداء أو بذات الجيش انقطع عقد لي فأقام رسول الله ﷺ على التماسه وأقام الناس معه وليسوا على ماء فأتى الناس إلى أبي بكر الصديق فقالوا ألا ترى ما صنعت عائشة أقامت برسول الله ﷺ والناس وليسوا على ماء وليس معهم ماء فجاء أبو بكر ورسول الله ﷺ واضع رأسه على فخذي قد نام ، فقال حبست رسول الله ﷺ والناس وليسوا على ماء وليس معهم ماء فقالت عائشة فعاتبني أبو بكر ، وقال : ما شاء الله أن يقول وجعل يطعنني بيده في خاصرتي فلا يمنعني من التحرك إلا مكان رسول الله ﷺ على فخذي فقام رسول الله ﷺ حين أصبح على غير ماء فأنزل الله آية التيمم فتيمموا ، فقال أسيد بن الحضير ما هي بأول بركتكم يا آل أبي بكر قالت فبعثنا البعير الذي كنت عليه فأصبنا العقد تحته ",
+        "ordinal": 1,
+        "textSha256": "f903e5ff57b489bd01b1bb4fff2be89d5011c1d33ec19cd1447706cf6a8724b8"
+      },
+      {
+        "htmlId": "mwEQ",
+        "tag": "p",
+        "text": "[328] حدثنا محمد بن سنان قال : حدثنا هشيم ح قال وحدثني سعيد بن النضر قال : أخبرنا هشيم قال : أخبرنا سيار قال : حدثنا يزيد هو ابن صهيب الفقير قال : أخبرنا جابر بن عبد الله أن النبي ﷺ قال : أعطيت خمسا لم يعطهن أحد قبلي نصرت بالرعب مسيرة شهر وجعلت لي الأرض مسجدا وطهورا فأيما رجل من أمتي أدركته الصلاة فليصل وأحلت لي المغانم ولم تحل لأحد قبلي وأعطيت الشفاعة وكان النبي يبعث إلى قومه خاصة وبعثت إلى الناس عامة ",
+        "ordinal": 2,
+        "textSha256": "bb58b9c865dcd72d11c7462abc7cabee5b1d65ee68b3454c9c5ebab569663920"
+      },
+      {
+        "htmlId": "باب_إذا_لم_يجد_ماء_ولا_ترابا",
+        "tag": "h3",
+        "text": "باب إذا لم يجد ماء ولا ترابا",
+        "ordinal": 3,
+        "textSha256": "353e2d8a4db24b7d5cc8b0e983dd07fccdbdd6f69d357c4ec03ffff042a2928c"
+      },
+      {
+        "htmlId": "mwGg",
+        "tag": "p",
+        "text": "[329] حدثنا زكريا بن يحيى قال : حدثنا عبد الله بن نمير قال : حدثنا هشام بن عروة عن أبيه عن عائشة أنها استعارت من أسماء قلادة فهلكت فبعث رسول الله ﷺ رجلا فوجدها فأدركتهم الصلاة وليس معهم ماء فصلوا فشكوا ذلك إلى رسول الله ﷺ فأنزل الله آية التيمم ، فقال أسيد بن حضير لعائشة جزاك الله خيرا فوالله ما نزل بك أمر تكرهينه إلا جعل الله ذلك لك وللمسلمين فيه خيرا",
+        "ordinal": 4,
+        "textSha256": "bbab3bb6ad05e4908c60c39328b4ad7363db271b3315dc1bb03c45b9eb0986d8"
+      },
+      {
+        "htmlId": "mwHw",
+        "tag": "p",
+        "text": "'نص غليظ'===باب التيمم في الحضر إذا لم يجد الماء وخاف فوت الصلاة===\nوبه قال عطاء ، وقال الحسن في المريض عنده الماء ولا يجد من يناوله يتيمم وأقبل بن عمر من أرضه بالجرف فحضرت العصر بمربد النعم فصلى ثم دخل المدينة والشمس مرتفعة فلم يعد ",
+        "ordinal": 5,
+        "textSha256": "6126fd13e11bcfbd76fdc2b69165b865c7fa74ba53cf8974f272d90ba8437b21"
+      },
+      {
+        "htmlId": "mwIg",
+        "tag": "p",
+        "text": "[330] حدثنا يحيى بن بكير قال : حدثنا الليث عن جعفر بن ربيعة عن الأعرج قال : سمعت عميرا مولى ابن عباس قال أقبلت أنا وعبد الله بن يسار مولى ميمونة زوج النبي ﷺ حتى دخلنا على أبي جهيم بن الحارث بن الصمة الأنصارى ، فقال أبو الجهيم أقبل النبي ﷺ من نحو بئر جمل فلقيه رجل فسلم عليه فلم يرد عليه النبي ﷺ حتى أقبل على الجدار فمسح بوجهه ويديه ثم رد عليه السلام",
+        "ordinal": 6,
+        "textSha256": "96ece4d79c98f2498b12e6bb27a01c8d3ef561c03644ebc4be4f21e1f32f749b"
+      },
+      {
+        "htmlId": "باب_المتيمم_هل_ينفخ_فيهما",
+        "tag": "h3",
+        "text": "باب المتيمم هل ينفخ فيهما",
+        "ordinal": 7,
+        "textSha256": "2629548796f1e7a569cbe9ed11ad2f63b46de766b9567ac60c5160ac550063fd"
+      },
+      {
+        "htmlId": "mwKQ",
+        "tag": "p",
+        "text": "[331] حدثنا آدم قال : حدثنا شعبة حدثنا الحكم عن ذر عن سعيد بن عبد الرحمن بن أبزى عن أبيه قال جاء رجل إلى عمر بن الخطاب ، فقال إني أجنبت فلم أصب الماء ، فقال عمار بن ياسر لعمر بن الخطاب أما تذكر أنا كنا في سفر أنا وأنت فأما أنت فلم تصل وأما أنا فتمعكت فصليت فذكرت ذلك للنبي ﷺ ، فقال النبي ﷺ إنما كان يكفيك هكذا فضرب النبي ﷺ بكفيه الأرض ونفخ فيهما ثم مسح بهما وجهه وكفيه ",
+        "ordinal": 8,
+        "textSha256": "6d1a7a431fc66869d39e634706ecc31285e78b4d40ac9a4c07080b2d856219f6"
+      }
+    ],
+    "selectedDecisionIds": [
+      "layout-mwHw"
+    ]
+  },
+  "review": {
+    "schemaVersion": 1,
+    "createdAt": "2026-10-23",
+    "status": "personal-prototype-only",
+    "independentReview": "pending",
+    "sourceId": "wikisource-bukhari-tayammum-r484871",
+    "sourceSha256": "e5ad7c8f11523b76e258adb2ad188a87bced650e99705e59bada404c416fb69f",
+    "inventorySha256": "afaf733abe129f90274a0493d373e188580dbb2e60674d2fee394c0c69e09a3e",
+    "sourceLayout": {
+      "schemaVersion": 1,
+      "sourceId": "wikisource-bukhari-tayammum-r484871",
+      "sourceSha256": "e5ad7c8f11523b76e258adb2ad188a87bced650e99705e59bada404c416fb69f",
+      "layoutAuditSha256": "f4ba4eac236518af6e9bde010793d05872ed09e5352f2240677539d6ea40a79a",
+      "layoutReviewSha256": "dd357f7f5f9fd8eec31ed7fea6133434d4a053dd4a6bb6b0937feb298146fb50"
+    },
+    "sources": [
+      {
+        "id": "arabic-tayammum",
+        "label": "Arabic Wikisource · fixed revision 484871",
+        "kind": "arabic-input",
+        "format": "web",
+        "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_التيمم&oldid=484871"
+      },
+      {
+        "id": "bewley-tayammum",
+        "label": "Aisha Bewley · Book of Tayammum",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://aishabewley.org/bukhari4"
+      },
+      {
+        "id": "islamhouse-khan",
+        "label": "IslamHouse · Khan-family English comparison",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://islamhouse.com/en/books/70510"
+      },
+      {
+        "id": "brill-1862",
+        "label": "Historical Arabic print · Brill 1862",
+        "kind": "arabic-witness",
+        "format": "pdf",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf",
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+      },
+      {
+        "id": "dar-ibn-kathir-2002",
+        "label": "Arabic print · Dar Ibn Kathir 2002",
+        "kind": "arabic-witness",
+        "format": "pdf",
+        "url": "https://archive.org/download/waq79565/79565.pdf",
+        "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+      },
+      {
+        "id": "fath-tayammum-369",
+        "label": "Ibn Hajar · Fath al-Bari · reporting verbs and narrator epithet",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://ablibrary.net/book_content/b/2601/369"
+      },
+      {
+        "id": "fath-tayammum-371",
+        "label": "Ibn Hajar · Fath al-Bari · purification wording",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://ablibrary.net/book_content/b/2601/371"
+      }
+    ],
+    "scope": "Complete numbered reports 327–331. Available chapter titles use provisional English. Disputed headings are labelled under review; unnumbered chapter introductions remain separately preserved in Arabic.",
+    "editionNote": "Selected report wording remains unchanged. A mapped structural repair separates the literal editor placeholder, heading delimiters, chapter 3 heading and introduction from numbered reports. Both inspected prints confirm the boundary. The opening Quran quotation has different chapter placement in the prints. Individual English comparisons contain abbreviated chains, a differing attribution and an extra chapter fragment; none is silently imported. English remains AI-assisted and provisional.",
+    "chapters": [
+      {
+        "id": "chapter-01",
+        "headingId": "باب_قول_الله_تعالى_{_فلم_تجدوا_ماء_فتيمموا_صعيدا_طيبا_فامسحوا_بوجوهكم_وأيديكم_منه_}",
+        "contextIds": [],
+        "entryNumbers": [
+          327,
+          328
+        ],
+        "title": "The words of Allah Most High: “If you find no water, seek clean earth and wipe your faces and hands with it”",
+        "titleArabic": "باب قول الله تعالى { فلم تجدوا ماء فتيمموا صعيدا طيبا فامسحوا بوجوهكم وأيديكم منه }",
+        "status": "ai-working-translation",
+        "independentReview": "pending",
+        "contextStatus": "No separate chapter-introduction paragraph in the selected source."
+      },
+      {
+        "id": "chapter-02",
+        "headingId": "باب_إذا_لم_يجد_ماء_ولا_ترابا",
+        "contextIds": [],
+        "entryNumbers": [
+          329
+        ],
+        "title": "If one finds neither water nor earth",
+        "titleArabic": "باب إذا لم يجد ماء ولا ترابا",
+        "status": "ai-working-translation",
+        "independentReview": "pending",
+        "contextStatus": "No separate chapter-introduction paragraph in the selected source."
+      },
+      {
+        "id": "chapter-03",
+        "headingId": "mwHw@12-64",
+        "contextIds": [
+          "mwHw@67-233"
+        ],
+        "entryNumbers": [
+          330
+        ],
+        "title": "Tayammum while resident when one finds no water and fears missing the prayer",
+        "titleArabic": "باب التيمم في الحضر إذا لم يجد الماء وخاف فوت الصلاة",
+        "status": "ai-working-translation",
+        "independentReview": "pending",
+        "contextStatus": "Original Arabic chapter introduction preserved separately; English translation remains pending."
+      },
+      {
+        "id": "chapter-04",
+        "headingId": "باب_المتيمم_هل_ينفخ_فيهما",
+        "contextIds": [],
+        "entryNumbers": [
+          331
+        ],
+        "title": "Does the person performing tayammum blow on his hands?",
+        "titleArabic": "باب المتيمم هل ينفخ فيهما",
+        "status": "ai-working-translation",
+        "independentReview": "pending",
+        "contextStatus": "No separate chapter-introduction paragraph in the selected source."
+      }
+    ],
+    "entries": [
+      {
+        "number": 327,
+        "id": "bukhari:327",
+        "sourceRecordId": "wikisource-bukhari-tayammum-r484871:mwBg:0",
+        "chapterId": "chapter-01",
+        "paragraphIds": [
+          "mwBg"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-tayammum-r484871",
+          "sourceSha256": "e5ad7c8f11523b76e258adb2ad188a87bced650e99705e59bada404c416fb69f",
+          "layoutAuditSha256": "f4ba4eac236518af6e9bde010793d05872ed09e5352f2240677539d6ea40a79a",
+          "layoutReviewSha256": "dd357f7f5f9fd8eec31ed7fea6133434d4a053dd4a6bb6b0937feb298146fb50",
+          "sourceRecordId": "wikisource-bukhari-tayammum-r484871:mwBg:0",
+          "sourceReference": {
+            "label": "327",
+            "number": 327,
+            "markerId": "mwBg:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwBg",
+              "textSha256": "f903e5ff57b489bd01b1bb4fff2be89d5011c1d33ec19cd1447706cf6a8724b8",
+              "origin": {
+                "blockId": "mwBg",
+                "blockSha256": "f903e5ff57b489bd01b1bb4fff2be89d5011c1d33ec19cd1447706cf6a8724b8",
+                "start": 0,
+                "end": 783
+              }
+            }
+          ]
+        },
+        "segments": [
+          {
+            "id": "327-1",
+            "paragraphId": "mwBg",
+            "start": 0,
+            "end": 105,
+            "kind": "chain",
+            "arabic": "[327] حدثنا عبد الله بن يوسف قال : أخبرنا مالك عن عبد الرحمن بن القاسم عن أبيه عن عائشة زوج النبي ﷺ قالت ",
+            "english": "‘Abd Allah ibn Yusuf related to us. He said: Malik informed us, from ‘Abd al-Rahman ibn al-Qasim, from his father, from ‘A’ishah, the wife of the Prophet, may Allah bless him and grant him peace, who said:",
+            "arabicSha256": "fbd51c4f8129c4d6181579aedfcc679196816b06ee40890d7537777c7f09d263",
+            "englishSha256": "71a36067909358564fdcfc22c2eff94d8b033ef39dfda2b70f3f8f625ec86b65"
+          },
+          {
+            "id": "327-2",
+            "paragraphId": "mwBg",
+            "start": 105,
+            "end": 363,
+            "kind": "report",
+            "arabic": "خرجنا مع رسول الله ﷺ في بعض أسفاره حتى إذا كنا بالبيداء أو بذات الجيش انقطع عقد لي فأقام رسول الله ﷺ على التماسه وأقام الناس معه وليسوا على ماء فأتى الناس إلى أبي بكر الصديق فقالوا ألا ترى ما صنعت عائشة أقامت برسول الله ﷺ والناس وليسوا على ماء وليس معهم ماء ",
+            "english": "We set out with the Messenger of Allah, may Allah bless him and grant him peace, on one of his journeys. When we were at al-Bayda’ or Dhat al-Jaysh, a necklace of mine broke. The Messenger of Allah, may Allah bless him and grant him peace, stayed to search for it, and the people stayed with him. They were not at a place with water. The people came to Abu Bakr al-Siddiq and said: “Do you not see what ‘A’ishah has done? She has kept the Messenger of Allah, may Allah bless him and grant him peace, and the people here, where there is no water, and they have no water with them.”",
+            "arabicSha256": "6c9e28f1ed2551e44c178979213c70f5a9468257c3e8d3da45f5ccdbb07dc748",
+            "englishSha256": "b0d62c5a098f2060a57a1f33c7210fe33bcf82235a218aed057e6ea08e0be242"
+          },
+          {
+            "id": "327-3",
+            "paragraphId": "mwBg",
+            "start": 363,
+            "end": 610,
+            "kind": "report",
+            "arabic": "فجاء أبو بكر ورسول الله ﷺ واضع رأسه على فخذي قد نام ، فقال حبست رسول الله ﷺ والناس وليسوا على ماء وليس معهم ماء فقالت عائشة فعاتبني أبو بكر ، وقال : ما شاء الله أن يقول وجعل يطعنني بيده في خاصرتي فلا يمنعني من التحرك إلا مكان رسول الله ﷺ على فخذي ",
+            "english": "Abu Bakr came while the Messenger of Allah, may Allah bless him and grant him peace, was asleep with his head resting on my thigh. He said: “You have detained the Messenger of Allah, may Allah bless him and grant him peace, and the people, where there is no water, and they have no water with them.” ‘A’ishah said: Abu Bakr reproached me, saying what Allah willed him to say, and began poking me in my side with his hand. Nothing kept me from moving except the position of the Messenger of Allah, may Allah bless him and grant him peace, on my thigh.",
+            "arabicSha256": "69708cd416b478fb2d2879e3807a1dce6b7dbb0d88d27d084788f5d5dbba4e30",
+            "englishSha256": "78416697ab271d85273e31abca53ff8c2d995bfc44d0eacb7661227971fc95dd"
+          },
+          {
+            "id": "327-4",
+            "paragraphId": "mwBg",
+            "start": 610,
+            "end": 783,
+            "kind": "report",
+            "arabic": "فقام رسول الله ﷺ حين أصبح على غير ماء فأنزل الله آية التيمم فتيمموا ، فقال أسيد بن الحضير ما هي بأول بركتكم يا آل أبي بكر قالت فبعثنا البعير الذي كنت عليه فأصبنا العقد تحته ",
+            "english": "The Messenger of Allah, may Allah bless him and grant him peace, rose when morning came, without water. Allah then revealed the verse of tayammum, and they performed tayammum. Usayd ibn al-Hudayr said: “This is not the first of your blessings, family of Abu Bakr.” She said: We made the camel on which I had been riding stand up and found the necklace beneath it.",
+            "arabicSha256": "0385a4eef1f06f38534b5fbd412684d2ffa03c1bce1bdf0576ebeec8b4b327a8",
+            "englishSha256": "f5b18694b150ab48887e67a88582d756f28e03595e441f5abbc73c97d17cbf06"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              92,
+              93
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              92
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "id": "bewley-tayammum",
+            "reference": "327"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.7.330",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.7.330",
+              "recordSha256": "5705685a0c0881b17fe0e5679f7ef76fb7be22d2e178037bdfeb34547f0b7a77"
+            }
+          }
+        ],
+        "notes": [
+          "The selected chain has أخبرنا (informed us), agreeing with the modern print; the historical print has أخبرني (informed me). The selected wording remains unchanged. The two possible place names, repeated lack of water, full name Abu Bakr al-Siddiq, change to Aisha said and final camel/necklace sentence remain.",
+          "The selected and modern wording use Usayd ibn al-Hudayr; the historical print omits the article. The selected form remains. No cause of pain, material of the necklace or verse identification is added to the report.",
+          "The digital source presents the opening Quran quotation as its first chapter heading. Both printed witnesses put the quotation before an untitled first chapter. This batch retains the selected digital grouping and explains that difference; the quotation is not part of either numbered report."
+        ],
+        "reviewScope": "AI-assisted translation of the complete selected Arabic, with two visually inspected Arabic prints and two English comparisons individually matched by their report bodies. Comparison omissions, extra chapter material and edition differences are documented rather than harmonised. This is not independent certification; Arabic, English, context and reference review remain pending.",
+        "arabicSha256": "f903e5ff57b489bd01b1bb4fff2be89d5011c1d33ec19cd1447706cf6a8724b8",
+        "englishSha256": "033a00bcd89e09ad2165fbd6fb55ceb108029b86203459fa899c899edf60bd09",
+        "reviewRecordSha256": "e300d93e739449e2a7879598c1bdaadcb58f196091eeba143abb7ad3e22c49a6"
+      },
+      {
+        "number": 328,
+        "id": "bukhari:328",
+        "sourceRecordId": "wikisource-bukhari-tayammum-r484871:mwEQ:0",
+        "chapterId": "chapter-01",
+        "paragraphIds": [
+          "mwEQ"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-tayammum-r484871",
+          "sourceSha256": "e5ad7c8f11523b76e258adb2ad188a87bced650e99705e59bada404c416fb69f",
+          "layoutAuditSha256": "f4ba4eac236518af6e9bde010793d05872ed09e5352f2240677539d6ea40a79a",
+          "layoutReviewSha256": "dd357f7f5f9fd8eec31ed7fea6133434d4a053dd4a6bb6b0937feb298146fb50",
+          "sourceRecordId": "wikisource-bukhari-tayammum-r484871:mwEQ:0",
+          "sourceReference": {
+            "label": "328",
+            "number": 328,
+            "markerId": "mwEQ:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwEQ",
+              "textSha256": "bb58b9c865dcd72d11c7462abc7cabee5b1d65ee68b3454c9c5ebab569663920",
+              "origin": {
+                "blockId": "mwEQ",
+                "blockSha256": "bb58b9c865dcd72d11c7462abc7cabee5b1d65ee68b3454c9c5ebab569663920",
+                "start": 0,
+                "end": 406
+              }
+            }
+          ]
+        },
+        "segments": [
+          {
+            "id": "328-1",
+            "paragraphId": "mwEQ",
+            "start": 0,
+            "end": 42,
+            "kind": "chain",
+            "arabic": "[328] حدثنا محمد بن سنان قال : حدثنا هشيم ",
+            "english": "Muhammad ibn Sinan related to us. He said: Hushaym related to us.",
+            "arabicSha256": "55af43c948dc59adf2e554a55c5bc6eb1ea3ecc2dfbefa07fe09070ee2ae9e4c",
+            "englishSha256": "7296a38c2848f8a7ccb2743889b95a3ebfcfaf5f7f49e236380a562599172b7c"
+          },
+          {
+            "id": "328-2",
+            "paragraphId": "mwEQ",
+            "start": 42,
+            "end": 188,
+            "kind": "chain",
+            "arabic": "ح قال وحدثني سعيد بن النضر قال : أخبرنا هشيم قال : أخبرنا سيار قال : حدثنا يزيد هو ابن صهيب الفقير قال : أخبرنا جابر بن عبد الله أن النبي ﷺ قال : ",
+            "english": "Another chain: He said: And Sa‘id ibn al-Nadr related to me. He said: Hushaym informed us. He said: Sayyar informed us. He said: Yazid—who is Ibn Suhayb, al-Faqir—related to us. He said: Jabir ibn ‘Abd Allah informed us that the Prophet, may Allah bless him and grant him peace, said:",
+            "arabicSha256": "b17c0b515c8368e876f1c05cc3dd6e3697ae582784b23302740203ed201dcf39",
+            "englishSha256": "858d1e0e138616b0c3919b2d3d42611126adaf9b19ee4c30a15f9e623400214f"
+          },
+          {
+            "id": "328-3",
+            "paragraphId": "mwEQ",
+            "start": 188,
+            "end": 406,
+            "kind": "report",
+            "arabic": "أعطيت خمسا لم يعطهن أحد قبلي نصرت بالرعب مسيرة شهر وجعلت لي الأرض مسجدا وطهورا فأيما رجل من أمتي أدركته الصلاة فليصل وأحلت لي المغانم ولم تحل لأحد قبلي وأعطيت الشفاعة وكان النبي يبعث إلى قومه خاصة وبعثت إلى الناس عامة ",
+            "english": "I have been given five things that no one before me was given. I have been aided by fear over a distance of a month’s journey. The earth has been made for me a place of prayer and a means of purification, so whichever man of my community is overtaken by the time of prayer, let him pray. The spoils have been made lawful for me, though they were not lawful for anyone before me. I have been given intercession. A prophet used to be sent to his own people specifically, while I have been sent to all people.",
+            "arabicSha256": "cdfd4c7d6379a309cc8a5e55ffba734b6975ac6d1dcac5f0347994241b0146a5",
+            "englishSha256": "4e84e91653deed088e1a80f4c643f4791606113c58f983d46a22c7495f91ae2d"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              93
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              92,
+              93
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "id": "bewley-tayammum",
+            "reference": "328"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.7.331",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.7.331",
+              "recordSha256": "6a64ca45cc8e60982c78920a8dc480ce143c1e1d1d72452478fb5c73c44c5674"
+            }
+          }
+        ],
+        "notes": [
+          "Both chains remain, with ح represented by Another chain. The selected distinctions between related to us, related to me and informed us are preserved. Fath al-Bari specifically discusses these reporting verbs. Yazid’s stated identification as Ibn Suhayb and his epithet al-Faqir remain; the epithet is not translated as poor, since the consulted commentary explains a different origin.",
+          "All five statements remain in source order. The rendering of طهورا as a means of purification follows the selected wording, compared English and consulted commentary. No rule about eligible ground, added timing condition, description of intercession or parenthetical enemies is imported into the narration. The historical print adds an honorific after the final occurrence of prophet; the selected and modern wording do not, so it is not inserted."
+        ],
+        "reviewScope": "AI-assisted translation of the complete selected Arabic, with two visually inspected Arabic prints and two English comparisons individually matched by their report bodies. Comparison omissions, extra chapter material and edition differences are documented rather than harmonised. This is not independent certification; Arabic, English, context and reference review remain pending.",
+        "additionalCitations": [
+          {
+            "id": "lexical-369",
+            "sourceId": "fath-tayammum-369",
+            "locator": "Fath al-Bari · volume 1 · online page 369",
+            "scope": "Consulted for reporting verbs, the narrator epithet and purification terminology. Commentary is separate from the selected report; independent review remains pending."
+          },
+          {
+            "id": "lexical-371",
+            "sourceId": "fath-tayammum-371",
+            "locator": "Fath al-Bari · volume 1 · online page 371",
+            "scope": "Consulted for reporting verbs, the narrator epithet and purification terminology. Commentary is separate from the selected report; independent review remains pending."
+          }
+        ],
+        "arabicSha256": "bb58b9c865dcd72d11c7462abc7cabee5b1d65ee68b3454c9c5ebab569663920",
+        "englishSha256": "14e9d88898ae82e88ac5afc12c9219447c2171c67dd2269a4fdceff9813e7bf3",
+        "reviewRecordSha256": "88767369fae87f1eaed34bdcf7564bab0ac64969163c5e42bf231226205ff94b"
+      },
+      {
+        "number": 329,
+        "id": "bukhari:329",
+        "sourceRecordId": "wikisource-bukhari-tayammum-r484871:mwGg:0",
+        "chapterId": "chapter-02",
+        "paragraphIds": [
+          "mwGg"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-tayammum-r484871",
+          "sourceSha256": "e5ad7c8f11523b76e258adb2ad188a87bced650e99705e59bada404c416fb69f",
+          "layoutAuditSha256": "f4ba4eac236518af6e9bde010793d05872ed09e5352f2240677539d6ea40a79a",
+          "layoutReviewSha256": "dd357f7f5f9fd8eec31ed7fea6133434d4a053dd4a6bb6b0937feb298146fb50",
+          "sourceRecordId": "wikisource-bukhari-tayammum-r484871:mwGg:0",
+          "sourceReference": {
+            "label": "329",
+            "number": 329,
+            "markerId": "mwGg:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwGg",
+              "textSha256": "bbab3bb6ad05e4908c60c39328b4ad7363db271b3315dc1bb03c45b9eb0986d8",
+              "origin": {
+                "blockId": "mwGg",
+                "blockSha256": "bbab3bb6ad05e4908c60c39328b4ad7363db271b3315dc1bb03c45b9eb0986d8",
+                "start": 0,
+                "end": 353
+              }
+            }
+          ]
+        },
+        "segments": [
+          {
+            "id": "329-1",
+            "paragraphId": "mwGg",
+            "start": 0,
+            "end": 97,
+            "kind": "chain",
+            "arabic": "[329] حدثنا زكريا بن يحيى قال : حدثنا عبد الله بن نمير قال : حدثنا هشام بن عروة عن أبيه عن عائشة ",
+            "english": "Zakariyya ibn Yahya related to us. He said: ‘Abd Allah ibn Numayr related to us. He said: Hisham ibn ‘Urwah related to us, from his father, from ‘A’ishah:",
+            "arabicSha256": "cbd48a64e43a7f90768e6c8b8f48797d3a3be94785ff2715c2223f6763a326c0",
+            "englishSha256": "8c56e0542b469596f85c2d8f0984f5e1237715c67848454b6eb9fa4a79eed5cf"
+          },
+          {
+            "id": "329-2",
+            "paragraphId": "mwGg",
+            "start": 97,
+            "end": 353,
+            "kind": "report",
+            "arabic": "أنها استعارت من أسماء قلادة فهلكت فبعث رسول الله ﷺ رجلا فوجدها فأدركتهم الصلاة وليس معهم ماء فصلوا فشكوا ذلك إلى رسول الله ﷺ فأنزل الله آية التيمم ، فقال أسيد بن حضير لعائشة جزاك الله خيرا فوالله ما نزل بك أمر تكرهينه إلا جعل الله ذلك لك وللمسلمين فيه خيرا",
+            "english": "That she borrowed a necklace from Asma’ and it was lost. The Messenger of Allah, may Allah bless him and grant him peace, sent a man, who found it. The time of prayer came upon them, and they had no water with them, so they prayed. They complained of that to the Messenger of Allah, may Allah bless him and grant him peace, and Allah revealed the verse of tayammum. Usayd ibn Hudayr said to ‘A’ishah: “May Allah reward you with good. By Allah, no matter that you dislike has befallen you without Allah making good in it for you and for the Muslims.”",
+            "arabicSha256": "e1b7caf2718e4e034dc8e9e9bc99c2f64e564276e1d673193ec3105ca7596eb2",
+            "englishSha256": "0b021927f05cd41887ec364e47cee9a2f38225ffef57834e5cb93e04de83801f"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              93,
+              94
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              93
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "id": "bewley-tayammum",
+            "reference": "329"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.7.332",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.7.332",
+              "recordSha256": "4a969302c3deff68d21ed002691598eda1531bf5434446c15e9c1594ef299c84"
+            }
+          }
+        ],
+        "notes": [
+          "The selected report ends with Usayd’s words. The following malformed digital paragraph contains an editor placeholder, chapter heading and introduction, which are mapped separately with two printed witnesses. None of that paragraph belongs to this numbered report. The pinned English EPUB comparison also appends a fragment of the Ibn Umar chapter material; that extraneous paragraph is not imported.",
+          "The chain retains Zakariyya ibn Yahya, Abd Allah ibn Numayr and Hisham ibn Urwah. The report sends one man but later uses the plural them; both forms remain. The comparison’s parenthetical without ablution is not added to the selected report. The historical print includes تعالى after Allah revealed; the selected and modern wording do not, so that addition is not inserted."
+        ],
+        "reviewScope": "AI-assisted translation of the complete selected Arabic, with two visually inspected Arabic prints and two English comparisons individually matched by their report bodies. Comparison omissions, extra chapter material and edition differences are documented rather than harmonised. This is not independent certification; Arabic, English, context and reference review remain pending.",
+        "contextNotes": [
+          {
+            "id": "329-chapter-boundary",
+            "label": "Chapter material is separate",
+            "text": "The digital source contains an unformatted chapter heading and introduction after Hadith 329. Both inspected Arabic prints put that material before Hadith 330. It is preserved separately under chapter 3, with the complete original paragraph in its source notes. Independent review remains pending.",
+            "citations": [
+              "base",
+              "brill-1862",
+              "dar-ibn-kathir-2002"
+            ],
+            "related": []
+          }
+        ],
+        "arabicSha256": "bbab3bb6ad05e4908c60c39328b4ad7363db271b3315dc1bb03c45b9eb0986d8",
+        "englishSha256": "48b9fe364a6a80c5df3b5ba396edcc741cf1851e62511c05e459e48027698841",
+        "reviewRecordSha256": "ef765d12d0bb4680009ef8adab7346fb911a221f8b7d961c5c7f698a4a6bfd53"
+      },
+      {
+        "number": 330,
+        "id": "bukhari:330",
+        "sourceRecordId": "wikisource-bukhari-tayammum-r484871:mwIg:0",
+        "chapterId": "chapter-03",
+        "paragraphIds": [
+          "mwIg"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-tayammum-r484871",
+          "sourceSha256": "e5ad7c8f11523b76e258adb2ad188a87bced650e99705e59bada404c416fb69f",
+          "layoutAuditSha256": "f4ba4eac236518af6e9bde010793d05872ed09e5352f2240677539d6ea40a79a",
+          "layoutReviewSha256": "dd357f7f5f9fd8eec31ed7fea6133434d4a053dd4a6bb6b0937feb298146fb50",
+          "sourceRecordId": "wikisource-bukhari-tayammum-r484871:mwIg:0",
+          "sourceReference": {
+            "label": "330",
+            "number": 330,
+            "markerId": "mwIg:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwIg",
+              "textSha256": "96ece4d79c98f2498b12e6bb27a01c8d3ef561c03644ebc4be4f21e1f32f749b",
+              "origin": {
+                "blockId": "mwIg",
+                "blockSha256": "96ece4d79c98f2498b12e6bb27a01c8d3ef561c03644ebc4be4f21e1f32f749b",
+                "start": 0,
+                "end": 349
+              }
+            }
+          ]
+        },
+        "segments": [
+          {
+            "id": "330-1",
+            "paragraphId": "mwIg",
+            "start": 0,
+            "end": 105,
+            "kind": "chain",
+            "arabic": "[330] حدثنا يحيى بن بكير قال : حدثنا الليث عن جعفر بن ربيعة عن الأعرج قال : سمعت عميرا مولى ابن عباس قال ",
+            "english": "Yahya ibn Bukayr related to us. He said: Al-Layth related to us, from Ja‘far ibn Rabi‘ah, from al-A‘raj, who said: I heard ‘Umayr, the mawla of Ibn ‘Abbas, say:",
+            "arabicSha256": "c0ae2ad38cfb84daa1a1d0ef53d265046bd83de062059478bd5e68353460ce52",
+            "englishSha256": "179e1ea57223151bf254d1f8656fabc686eb47c6c1b8e194d40e561c15d5b9d3"
+          },
+          {
+            "id": "330-2",
+            "paragraphId": "mwIg",
+            "start": 105,
+            "end": 210,
+            "kind": "report",
+            "arabic": "أقبلت أنا وعبد الله بن يسار مولى ميمونة زوج النبي ﷺ حتى دخلنا على أبي جهيم بن الحارث بن الصمة الأنصارى ، ",
+            "english": "I came with ‘Abd Allah ibn Yasar, the mawla of Maymunah, the wife of the Prophet, may Allah bless him and grant him peace, until we entered upon Abu Juhaym ibn al-Harith ibn al-Simmah al-Ansari.",
+            "arabicSha256": "fe64335aaf8833a7550280310e6cd77db2daf8ed4bc2c46b6d704021d36cb857",
+            "englishSha256": "4f6063fea355fc254c735e0a49e0741157d80db4d194023423b2b574f972b60b"
+          },
+          {
+            "id": "330-3",
+            "paragraphId": "mwIg",
+            "start": 210,
+            "end": 226,
+            "kind": "chain",
+            "arabic": "فقال أبو الجهيم ",
+            "english": "Then Abu al-Juhaym said:",
+            "arabicSha256": "af533c10a32b64ad2765e1102a95e0a072ebcd7a0a6c9ed23d05663dac5ddf14",
+            "englishSha256": "2f08c110d21b98c8318724cc5985de45891cff9e20c78e6312776b530f4df3a4"
+          },
+          {
+            "id": "330-4",
+            "paragraphId": "mwIg",
+            "start": 226,
+            "end": 349,
+            "kind": "report",
+            "arabic": "أقبل النبي ﷺ من نحو بئر جمل فلقيه رجل فسلم عليه فلم يرد عليه النبي ﷺ حتى أقبل على الجدار فمسح بوجهه ويديه ثم رد عليه السلام",
+            "english": "The Prophet, may Allah bless him and grant him peace, came from the direction of Bi’r Jamal. A man met him and greeted him. The Prophet, may Allah bless him and grant him peace, did not respond to him until he came to the wall and wiped his face and hands. Then he returned his greeting.",
+            "arabicSha256": "97018a386bc2b99df2584454d34baec0dc7b9c2fce0ed7cc43a2ea1288acd216",
+            "englishSha256": "e70352025019565730ad4611dd07558cc49204d3eaa820e59ab4fe078af1c82e"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              94
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              93
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "id": "bewley-tayammum",
+            "reference": "330"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.7.333",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.7.333",
+              "recordSha256": "19d8765a37fc78dd9e8ff514258cf348995af46e69bcb719f2e38bebe95ab236"
+            }
+          }
+        ],
+        "notes": [
+          "The full visiting account and the embedded Abu al-Juhaym attribution remain, rather than reducing the account to the final Prophetic action. The selected first-person singular أقبلت remains; the modern Arabic print has the plural أقبلنا. The source’s name forms Abu Juhaym and Abu al-Juhaym are retained in their respective positions.",
+          "Mawla remains a source term here, rather than asserting a specific legal relationship not stated in this sentence. The selected account says wall and wiping the face and hands; mud, dust, striking the wall and a legal conclusion are not inserted from explanatory English.",
+          "The preceding chapter heading and introduction were recovered from exact spans of digital paragraph mwHw. Both Arabic prints place them before this report. The literal editor placeholder and delimiters remain visible in Original chapter layout and the exact inputs; they are not narration."
+        ],
+        "reviewScope": "AI-assisted translation of the complete selected Arabic, with two visually inspected Arabic prints and two English comparisons individually matched by their report bodies. Comparison omissions, extra chapter material and edition differences are documented rather than harmonised. This is not independent certification; Arabic, English, context and reference review remain pending.",
+        "contextNotes": [
+          {
+            "id": "330-chapter-boundary",
+            "label": "Chapter material is separate",
+            "text": "The digital source contains an unformatted chapter heading and introduction after Hadith 329. Both inspected Arabic prints put that material before Hadith 330. It is preserved separately under chapter 3, with the complete original paragraph in its source notes. Independent review remains pending.",
+            "citations": [
+              "base",
+              "brill-1862",
+              "dar-ibn-kathir-2002"
+            ],
+            "related": []
+          }
+        ],
+        "arabicSha256": "96ece4d79c98f2498b12e6bb27a01c8d3ef561c03644ebc4be4f21e1f32f749b",
+        "englishSha256": "34e25cfff25298833ac29ee888db0b93344725fa594344839e6f644eca0bf68a",
+        "reviewRecordSha256": "dc775efcb213e47d3a1173aa42ad70a9e907209b224d13e9bbc113748bc392a3"
+      },
+      {
+        "number": 331,
+        "id": "bukhari:331",
+        "sourceRecordId": "wikisource-bukhari-tayammum-r484871:mwKQ:0",
+        "chapterId": "chapter-04",
+        "paragraphIds": [
+          "mwKQ"
+        ],
+        "status": "personal-prototype-only",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "sourceLayout": {
+          "schemaVersion": 1,
+          "sourceId": "wikisource-bukhari-tayammum-r484871",
+          "sourceSha256": "e5ad7c8f11523b76e258adb2ad188a87bced650e99705e59bada404c416fb69f",
+          "layoutAuditSha256": "f4ba4eac236518af6e9bde010793d05872ed09e5352f2240677539d6ea40a79a",
+          "layoutReviewSha256": "dd357f7f5f9fd8eec31ed7fea6133434d4a053dd4a6bb6b0937feb298146fb50",
+          "sourceRecordId": "wikisource-bukhari-tayammum-r484871:mwKQ:0",
+          "sourceReference": {
+            "label": "331",
+            "number": 331,
+            "markerId": "mwKQ:0",
+            "occurrence": 1
+          },
+          "paragraphs": [
+            {
+              "id": "mwKQ",
+              "textSha256": "6d1a7a431fc66869d39e634706ecc31285e78b4d40ac9a4c07080b2d856219f6",
+              "origin": {
+                "blockId": "mwKQ",
+                "blockSha256": "6d1a7a431fc66869d39e634706ecc31285e78b4d40ac9a4c07080b2d856219f6",
+                "start": 0,
+                "end": 369
+              }
+            }
+          ]
+        },
+        "segments": [
+          {
+            "id": "331-1",
+            "paragraphId": "mwKQ",
+            "start": 0,
+            "end": 93,
+            "kind": "chain",
+            "arabic": "[331] حدثنا آدم قال : حدثنا شعبة حدثنا الحكم عن ذر عن سعيد بن عبد الرحمن بن أبزى عن أبيه قال ",
+            "english": "Adam related to us. He said: Shu‘bah related to us; al-Hakam related to us, from Dharr, from Sa‘id ibn ‘Abd al-Rahman ibn Abza, from his father, who said:",
+            "arabicSha256": "6a2a357c4cf01b83b22cad071da8cd157a8fea8c9c4e85838d4720b1a9778b64",
+            "englishSha256": "6efbeb740aa9a49726bbbbce3ecd0ce59fcd1915a12a313190bff887afb1db48"
+          },
+          {
+            "id": "331-2",
+            "paragraphId": "mwKQ",
+            "start": 93,
+            "end": 369,
+            "kind": "report",
+            "arabic": "جاء رجل إلى عمر بن الخطاب ، فقال إني أجنبت فلم أصب الماء ، فقال عمار بن ياسر لعمر بن الخطاب أما تذكر أنا كنا في سفر أنا وأنت فأما أنت فلم تصل وأما أنا فتمعكت فصليت فذكرت ذلك للنبي ﷺ ، فقال النبي ﷺ إنما كان يكفيك هكذا فضرب النبي ﷺ بكفيه الأرض ونفخ فيهما ثم مسح بهما وجهه وكفيه ",
+            "english": "A man came to ‘Umar ibn al-Khattab and said: “I entered a state of janabah and could not find water.” ‘Ammar ibn Yasir said to ‘Umar ibn al-Khattab: “Do you not remember that we were on a journey, I and you? You did not pray, while I rolled about and prayed. I mentioned that to the Prophet, may Allah bless him and grant him peace, and the Prophet, may Allah bless him and grant him peace, said: ‘This alone would have been enough for you.’” The Prophet, may Allah bless him and grant him peace, struck the earth with his hands and blew on them, then wiped his face and hands with them.",
+            "arabicSha256": "240011405ae10b770396f6c16b016ddf42122d4841e7c7ebad2320070f559559",
+            "englishSha256": "21ddab658fde531c7339391852b393d0e8e9646412f57532e91c3e8f9a6c74e8"
+          }
+        ],
+        "printedWitnesses": [
+          {
+            "id": "brill-1862",
+            "pdfPages": [
+              94
+            ]
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "pdfPages": [
+              93
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "id": "bewley-tayammum",
+            "reference": "331"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.7.334",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.7.334",
+              "recordSha256": "603d120fcf368bc7b895291ca356bca8415e3b3f3c6a3c67caaf02b33dc69eb5"
+            }
+          }
+        ],
+        "notes": [
+          "The full chain has Said ibn Abd al-Rahman ibn Abza, from his father. The checked Bewley opening instead names Abd al-Rahman and then his father. The selected chain, supported by both inspected Arabic prints, remains without importing that different attribution. The historical print has an additional said before al-Hakam related to us; the shorter selected and modern wording remain.",
+          "The selected wording includes إنما before كان يكفيك, as does the historical print. The modern print omits that particle. The restrictive wording remains in the working English. Blowing on the hands is explicit; blowing dust off is not added. The spoken recollection, the repeated names and the complete final demonstration remain.",
+          "The historical chapter heading explicitly mentions blowing after striking the ground. The selected and modern chapter heading asks whether the person performing tayammum blows on them. The selected shorter heading is retained; the chapter title is separate from the narration."
+        ],
+        "reviewScope": "AI-assisted translation of the complete selected Arabic, with two visually inspected Arabic prints and two English comparisons individually matched by their report bodies. Comparison omissions, extra chapter material and edition differences are documented rather than harmonised. This is not independent certification; Arabic, English, context and reference review remain pending.",
+        "contextNotes": [
+          {
+            "id": "331-chain-comparison",
+            "label": "A difference in the compared chain",
+            "text": "One English comparison names a different generation in the opening chain. The full selected Arabic chain and both inspected Arabic prints retain Sa‘id ibn ‘Abd al-Rahman ibn Abza, from his father. The difference is recorded in the source notes; independent review remains pending.",
+            "citations": [
+              "base",
+              "bewley",
+              "brill-1862",
+              "dar-ibn-kathir-2002"
+            ],
+            "related": []
+          }
+        ],
+        "arabicSha256": "6d1a7a431fc66869d39e634706ecc31285e78b4d40ac9a4c07080b2d856219f6",
+        "englishSha256": "3c92a9b084af480260b095775e0f6b62723a3e29d6285eef06908e00e319ac2f",
+        "reviewRecordSha256": "96fa6aed10b0dbb5709e84092d0a6234200742648006bf3bcb2320a9b689324d"
+      }
+    ],
+    "batches": [
+      {
+        "path": "content/review/tayammum-first-review.json",
+        "first": 327,
+        "last": 331,
+        "sha256": "772d58644747a1a3a08d8226ffe51ca5b3a2588268d35e80d82bcfd943a24a83"
+      }
+    ]
+  }
+}

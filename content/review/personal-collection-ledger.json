@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "namespace": "bukhari-opening-v1",
   "publication": "personal-prototype",
-  "sourceRecordSha256": "3cb6c8f14000cf57234a54b53b5641f013b4da35951cef45279c0dddc685176c",
+  "sourceRecordSha256": "436250b5b6b4655c97e7956795f5faca098f5de0bb55be0a762197c403ab5edc",
   "rights": {
     "status": "pending",
     "evidence": [
@@ -17,7 +17,9 @@
       "reader/ghusl-inputs.json",
       "reader/ghusl-review.html",
       "reader/menstruation-inputs.json",
-      "reader/menstruation-review.html"
+      "reader/menstruation-review.html",
+      "reader/tayammum-inputs.json",
+      "reader/tayammum-review.html"
     ]
   },
   "books": [
@@ -5160,6 +5162,102 @@
           "fragment": "book-introduction"
         }
       }
+    },
+    {
+      "id": "tayammum",
+      "number": 7,
+      "title": "Tayammum",
+      "sourceEntryCount": 15,
+      "entryNumbers": [
+        327,
+        328,
+        329,
+        330,
+        331
+      ],
+      "chapters": [
+        {
+          "id": "chapter-01",
+          "title": "The words of Allah Most High: “If you find no water, seek clean earth and wipe your faces and hands with it”",
+          "entryNumbers": [
+            327,
+            328
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "tayammum-review.html",
+              "fragment": "chapter-01"
+            }
+          }
+        },
+        {
+          "id": "chapter-02",
+          "title": "If one finds neither water nor earth",
+          "entryNumbers": [
+            329
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "tayammum-review.html",
+              "fragment": "chapter-02"
+            }
+          }
+        },
+        {
+          "id": "chapter-03",
+          "title": "Tayammum while resident when one finds no water and fears missing the prayer",
+          "entryNumbers": [
+            330
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 1,
+              "englishStatus": "pending"
+            },
+            "notes": {
+              "path": "tayammum-review.html",
+              "fragment": "chapter-03"
+            }
+          }
+        },
+        {
+          "id": "chapter-04",
+          "title": "Does the person performing tayammum blow on his hands?",
+          "entryNumbers": [
+            331
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "tayammum-review.html",
+              "fragment": "chapter-04"
+            }
+          }
+        }
+      ]
     }
   ],
   "entries": [
@@ -10704,15 +10802,100 @@
       "contextReview": {
         "status": "pending"
       }
+    },
+    {
+      "number": 327,
+      "id": "bukhari:327",
+      "entrySha256": "2a076d814c39f43fbf6968cc5e96e0c8f70636e06e547a15ab08046ddd550290",
+      "arabicSha256": "f903e5ff57b489bd01b1bb4fff2be89d5011c1d33ec19cd1447706cf6a8724b8",
+      "englishSha256": "033a00bcd89e09ad2165fbd6fb55ceb108029b86203459fa899c899edf60bd09",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 328,
+      "id": "bukhari:328",
+      "entrySha256": "5fc4077f573a5266577fff63b4e9bb7b3a044c6b10ac17ecf9c09ddeb8813827",
+      "arabicSha256": "bb58b9c865dcd72d11c7462abc7cabee5b1d65ee68b3454c9c5ebab569663920",
+      "englishSha256": "14e9d88898ae82e88ac5afc12c9219447c2171c67dd2269a4fdceff9813e7bf3",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 329,
+      "id": "bukhari:329",
+      "entrySha256": "0b63714374f800ba25afc4247ef7c4f467afef5732f05e592223eef044d4ef8b",
+      "arabicSha256": "bbab3bb6ad05e4908c60c39328b4ad7363db271b3315dc1bb03c45b9eb0986d8",
+      "englishSha256": "48b9fe364a6a80c5df3b5ba396edcc741cf1851e62511c05e459e48027698841",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 330,
+      "id": "bukhari:330",
+      "entrySha256": "936e711282008827698702b58f4ce64d0ac3d36501acb65734c6558f1c9bff71",
+      "arabicSha256": "96ece4d79c98f2498b12e6bb27a01c8d3ef561c03644ebc4be4f21e1f32f749b",
+      "englishSha256": "34e25cfff25298833ac29ee888db0b93344725fa594344839e6f644eca0bf68a",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 331,
+      "id": "bukhari:331",
+      "entrySha256": "0cde65699775d6c3c6b9a1a09c699d022b89538c20ecd5fd10dcf0d6c2ff7846",
+      "arabicSha256": "6d1a7a431fc66869d39e634706ecc31285e78b4d40ac9a4c07080b2d856219f6",
+      "englishSha256": "3c92a9b084af480260b095775e0f6b62723a3e29d6285eef06908e00e319ac2f",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
     }
   ],
-  "catalogContextSha256": "79f421dc63d90778062f30a6915f9e35be598b85cd3bd3a751c89269f84e130d",
+  "catalogContextSha256": "ec5ea4969b0a89a9c3d8b6cb1a24680d9a2f87c44a29b59468263e456ce218de",
   "collectionReview": {
     "status": "pending"
   },
   "sourceReferences": {
     "schemaVersion": 1,
-    "sourceRecordSha256": "3cb6c8f14000cf57234a54b53b5641f013b4da35951cef45279c0dddc685176c",
+    "sourceRecordSha256": "436250b5b6b4655c97e7956795f5faca098f5de0bb55be0a762197c403ab5edc",
     "sources": [
       {
         "id": "arabic-base",
@@ -11077,6 +11260,34 @@
         "kind": "commentary",
         "format": "web",
         "url": "https://ablibrary.net/book_content/b/2601/364"
+      },
+      {
+        "id": "arabic-tayammum",
+        "label": "Arabic Wikisource · fixed revision 484871",
+        "kind": "arabic-input",
+        "format": "web",
+        "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_التيمم&oldid=484871"
+      },
+      {
+        "id": "bewley-tayammum",
+        "label": "Aisha Bewley · Book of Tayammum",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://aishabewley.org/bukhari4"
+      },
+      {
+        "id": "fath-tayammum-369",
+        "label": "Ibn Hajar · Fath al-Bari · reporting verbs and narrator epithet",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://ablibrary.net/book_content/b/2601/369"
+      },
+      {
+        "id": "fath-tayammum-371",
+        "label": "Ibn Hajar · Fath al-Bari · purification wording",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://ablibrary.net/book_content/b/2601/371"
       }
     ],
     "entries": [
@@ -28093,10 +28304,304 @@
           "fragment": "hadith-326",
           "label": "Comparison notes and chapter source for this hadith"
         }
+      },
+      {
+        "id": "bukhari:327",
+        "number": 327,
+        "entrySha256": "2a076d814c39f43fbf6968cc5e96e0c8f70636e06e547a15ab08046ddd550290",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-tayammum",
+            "locator": "Book of Tayammum · source entry 327 · باب قول الله تعالى { فلم تجدوا ماء فتيمموا صعيدا طيبا فامسحوا بوجوهكم وأيديكم منه }",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-tayammum",
+            "locator": "Book of Tayammum · entry 327",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 7, Number 330",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF pages 92, 93",
+            "pdfPage": 92,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 92",
+            "pdfPage": 92,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "tayammum-review.html",
+          "fragment": "hadith-327",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:328",
+        "number": 328,
+        "entrySha256": "5fc4077f573a5266577fff63b4e9bb7b3a044c6b10ac17ecf9c09ddeb8813827",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-tayammum",
+            "locator": "Book of Tayammum · source entry 328 · باب قول الله تعالى { فلم تجدوا ماء فتيمموا صعيدا طيبا فامسحوا بوجوهكم وأيديكم منه }",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-tayammum",
+            "locator": "Book of Tayammum · entry 328",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 7, Number 331",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 93",
+            "pdfPage": 93,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF pages 92, 93",
+            "pdfPage": 92,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "lexical-369",
+            "sourceId": "fath-tayammum-369",
+            "locator": "Fath al-Bari · volume 1 · online page 369",
+            "scope": "Consulted for reporting verbs, the narrator epithet and purification terminology. Commentary is separate from the selected report; independent review remains pending."
+          },
+          {
+            "id": "lexical-371",
+            "sourceId": "fath-tayammum-371",
+            "locator": "Fath al-Bari · volume 1 · online page 371",
+            "scope": "Consulted for reporting verbs, the narrator epithet and purification terminology. Commentary is separate from the selected report; independent review remains pending."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "tayammum-review.html",
+          "fragment": "hadith-328",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:329",
+        "number": 329,
+        "entrySha256": "0b63714374f800ba25afc4247ef7c4f467afef5732f05e592223eef044d4ef8b",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-tayammum",
+            "locator": "Book of Tayammum · source entry 329 · باب إذا لم يجد ماء ولا ترابا",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-tayammum",
+            "locator": "Book of Tayammum · entry 329",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 7, Number 332",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF pages 93, 94",
+            "pdfPage": 93,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 93",
+            "pdfPage": 93,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [
+          {
+            "id": "329-chapter-boundary",
+            "label": "Chapter material is separate",
+            "text": "The digital source contains an unformatted chapter heading and introduction after Hadith 329. Both inspected Arabic prints put that material before Hadith 330. It is preserved separately under chapter 3, with the complete original paragraph in its source notes. Independent review remains pending.",
+            "citations": [
+              "base",
+              "brill-1862",
+              "dar-ibn-kathir-2002"
+            ],
+            "related": []
+          }
+        ],
+        "localNotes": {
+          "path": "tayammum-review.html",
+          "fragment": "hadith-329",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:330",
+        "number": 330,
+        "entrySha256": "936e711282008827698702b58f4ce64d0ac3d36501acb65734c6558f1c9bff71",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-tayammum",
+            "locator": "Book of Tayammum · source entry 330 · باب التيمم في الحضر إذا لم يجد الماء وخاف فوت الصلاة",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-tayammum",
+            "locator": "Book of Tayammum · entry 330",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 7, Number 333",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 94",
+            "pdfPage": 94,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 93",
+            "pdfPage": 93,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [
+          {
+            "id": "330-chapter-boundary",
+            "label": "Chapter material is separate",
+            "text": "The digital source contains an unformatted chapter heading and introduction after Hadith 329. Both inspected Arabic prints put that material before Hadith 330. It is preserved separately under chapter 3, with the complete original paragraph in its source notes. Independent review remains pending.",
+            "citations": [
+              "base",
+              "brill-1862",
+              "dar-ibn-kathir-2002"
+            ],
+            "related": []
+          }
+        ],
+        "localNotes": {
+          "path": "tayammum-review.html",
+          "fragment": "hadith-330",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:331",
+        "number": 331,
+        "entrySha256": "0cde65699775d6c3c6b9a1a09c699d022b89538c20ecd5fd10dcf0d6c2ff7846",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-tayammum",
+            "locator": "Book of Tayammum · source entry 331 · باب المتيمم هل ينفخ فيهما",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-tayammum",
+            "locator": "Book of Tayammum · entry 331",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 7, Number 334",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 94",
+            "pdfPage": 94,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 93",
+            "pdfPage": 93,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [
+          {
+            "id": "331-chain-comparison",
+            "label": "A difference in the compared chain",
+            "text": "One English comparison names a different generation in the opening chain. The full selected Arabic chain and both inspected Arabic prints retain Sa‘id ibn ‘Abd al-Rahman ibn Abza, from his father. The difference is recorded in the source notes; independent review remains pending.",
+            "citations": [
+              "base",
+              "bewley",
+              "brill-1862",
+              "dar-ibn-kathir-2002"
+            ],
+            "related": []
+          }
+        ],
+        "localNotes": {
+          "path": "tayammum-review.html",
+          "fragment": "hadith-331",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
       }
     ]
   },
-  "referencesSha256": "7f01127ee3e2bd5afc8dd659722e298f0cb823c57b927396a255722e234a9b33",
+  "referencesSha256": "6d7bedd14b0e737f68e7e04bad4effa1ded91a111bc8b78c7a4bdef29897afcf",
   "referencesReview": {
     "status": "pending"
   }

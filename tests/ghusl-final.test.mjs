@@ -13,7 +13,7 @@ test('completed Ghusl retains all previous 273 entries and four stable book pack
  const {source,ledger}=collectionFiles(),published=buildBooks(source,ledger),a=input(),before=structuredClone(a.slice(0,3)),batch=buildBookBatch(...a);
  const stable=['opening-revelation-0a534f10d205292c','faith-ad873aab8759ca02','knowledge-e3d5ef7956421322','ablution-4012bd796dae0e95'];
  const previous=[...stable,'ghusl-b69cf6e20716bdec'].flatMap(n=>read('reader/books/'+n+'.json').entries);
- assert.deepEqual(source.entries.slice(0,273),previous);assert.equal(source.entries.length,326);assert.deepEqual(a.slice(0,3),before);
+ assert.deepEqual(source.entries.slice(0,273),previous);assert.equal(source.entries.length,331);assert.deepEqual(a.slice(0,3),before);
  for(const n of stable)assert.equal(published.files.get('books/'+n+'.json'),readFileSync(new URL('../reader/books/'+n+'.json',import.meta.url),'utf8'));
  assert.equal(batch.chapters.length,10);assert.deepEqual(batch.entries.map(e=>e.number),Array.from({length:16},(_,i)=>274+i));
  const plan=narrationPlan(source);for(const row of a[1].entries){const e=batch.entries.find(e=>e.number===row.number);assert.equal(row.segments.map(s=>s.arabic).join(''),e.arabic_blocks[0]);assert.deepEqual(e.english_blocks,row.segments.map(s=>s.english));assert.equal(plan.entries.find(p=>p.number===e.number).script,e.english_blocks.join('\n\n'));}
@@ -23,7 +23,7 @@ test('all original source blocks are retained with book/chapter introductions ou
  const {source,ledger,files}=collectionFiles(),book=ledger.books.find(b=>b.id==='ghusl'),a=input(),inputs=JSON.parse(files.get('reader/ghusl-inputs.json'));
  assert.equal(book.entryNumbers.length,45);assert.equal(book.chapters.length,29);assert.deepEqual(inputs.selectedBlocks,a[0].blocks);assert.equal(inputs.selectedBlocks.length,79);
  for(const [chapterId,bid]of [['chapter-20','mwlg'],['chapter-24','mwuA']]){const c=book.chapters.find(c=>c.id===chapterId),b=a[0].blocks.find(b=>b.htmlId===bid);assert.equal(c.sourceContext.introduction.arabicParagraphs,1);assert.equal(c.sourceContext.introduction.englishStatus,'pending');assert(files.get('reader/ghusl-review.html').includes(b.text));assert(source.entries.every(e=>!e.arabic_blocks.includes(b.text)));}
- const saved={numbers:[273],cursor:273,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,289),saved);assert.equal(nextSession(source.entries,saved,5).cursor,274);assert.deepEqual(planSession(source.entries,326,5).numbers,[326]);assert.equal(nextSession(source.entries,{numbers:[326],cursor:326,ended:true},5),null);
+ const saved={numbers:[273],cursor:273,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,289),saved);assert.equal(nextSession(source.entries,saved,5).cursor,274);assert.deepEqual(planSession(source.entries,331,5).numbers,[331]);assert.equal(nextSession(source.entries,{numbers:[331],cursor:331,ended:true},5),null);
 });
 test('missing-narrator corrections retain original wording and require matching printed witnesses',()=>{
  const a=input(),{entries}=buildBookBatch(...a),{ledger,files}=collectionFiles();

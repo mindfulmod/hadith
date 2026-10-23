@@ -29,7 +29,7 @@ def validate_mapping(mapping,label,number,english):
 def resolve(audit,review,english):
  need(review.get('schemaVersion')==1 and review.get('status')=='ai-reviewed-layout-only'and review.get('reviewerKind')=='ai'and review.get('independentReview')=='pending','Invalid layout-review status')
  need(review.get('sourceId')==audit['sourceId']and review.get('sourceSha256')==audit['sourceSha256']and review.get('auditSha256')==hashobj(audit),'Layout review has stale source evidence')
- need({s['id']:s['sha256']for s in review['sources']}==PRINTS and len(review['sources'])==2 and {s['id']:s['url']for s in review['sources']}==PRINT_URLS,'Unexpected printed sources')
+ need({s['id']:s['sha256']for s in review['sources']}==PRINTS and len(review['sources'])==2 and all(s['url'] in [PRINT_URLS[s['id']],PRINT_URLS[s['id']].replace('البخاري_ر1','البخاري_ج1')]for s in review['sources']),'Unexpected printed sources')
  need(review.get('pageNumbering')=='One-based PDF page numbers, not printed page labels.','Ambiguous printed witness page numbering')
  need(len({b['htmlId']for b in audit['blocks']})==len(audit['blocks'])and all(b['textSha256']==layout.sha(b['text'])for b in audit['blocks']),'Changed or ambiguous original blocks')
  fresh=layout.inspect_blocks(audit['blocks']);need(all(audit[k]==v for k,v in fresh.items()),'Changed lexical audit evidence')
@@ -59,7 +59,7 @@ def resolve(audit,review,english):
    need(set(span)<= {'start','end','kind','number','referenceMapping'},'Unexpected span field')
    start,end,kind=span['start'],span['end'],span['kind']
    need(type(start)is int and type(end)is int and start==position and start<end<=len(text),'Missing, overlapping or reordered source span');position=end
-   value=text[start:end];need(kind in ['heading','blank','formatting','report-start','text'],'Unknown source role')
+   value=text[start:end];need(kind in ['heading','blank','formatting','editorial-artifact','report-start','text'],'Unknown source role')
    markers=list(layout.MARKER.finditer(value));source_reference=None
    if kind=='report-start':
     match=re.match(r'^\[(\d+)\] ',value);need(match is not None and len(markers)==1,'Report span needs one exact initial marker')
@@ -70,6 +70,7 @@ def resolve(audit,review,english):
    else:need(not markers and 'number'not in span and 'referenceMapping'not in span,'A source marker cannot be hidden in another role')
    if kind=='blank':need(not value.strip(),'Nonblank content cannot be discarded as spacing')
    if kind=='formatting':need(value=='==='and any((start,end)in [(m.start(),m.start()+3),(m.end()-3,m.end())]for m in layout.HEADING.finditer(text)),'Only exact reviewed heading delimiters are formatting')
+   if kind=='editorial-artifact':need(value=="'نص غليظ'"and start==0 and any(m.start()==end for m in layout.HEADING.finditer(text)),'Only the exact reviewed editor placeholder immediately before an inline heading is an editorial artifact')
    if kind=='heading'and original['tag']!='h3':need(any(start==m.start()+3 and end==m.end()-3 for m in layout.HEADING.finditer(text)),'Derived heading must preserve the exact words inside its original delimiters')
    if original['tag']=='h3':need(kind=='heading'and start==0 and end==len(text),'Rendered headings cannot be reclassified')
    uid=bid if start==0 and end==len(text)else f'{bid}@{start}-{end}'
@@ -80,13 +81,14 @@ def resolve(audit,review,english):
    units.append(unit)
   need(position==len(text),'Uncovered source tail')
  need(len({u['htmlId']for u in units})==len(units),'Colliding derived unit identities')
- chapters=[];records=[];blanks=[];formatting=[];chapter=None;current=None
+ chapters=[];records=[];blanks=[];formatting=[];artifacts=[];chapter=None;current=None
  for u in units:
   uid=u['htmlId'];kind=u['role']
   if kind=='heading':
    current=None;chapter={'id':f'chapter-{len(chapters)+1:02}','headingId':uid,'contextIds':[],'entryNumbers':[]};chapters.append(chapter)
   elif kind=='blank':blanks.append(uid)
   elif kind=='formatting':formatting.append(uid)
+  elif kind=='editorial-artifact':artifacts.append(uid)
   else:
    need(chapter is not None,'Text before first chapter needs a separate front-matter decision')
    if kind=='report-start':
@@ -97,10 +99,10 @@ def resolve(audit,review,english):
    else:current['paragraphIds'].append(uid)
  need([r['number']for r in records]==review['expected']['numbers'],'Resolved report references differ from reviewed coverage')
  need(len(chapters)==review['expected']['chapters'],'Resolved chapter coverage changed')
- owned=blanks+formatting+[i for c in chapters for i in [c['headingId'],*c['contextIds']]]+[i for r in records for i in r['paragraphIds']]
+ owned=blanks+formatting+artifacts+[i for c in chapters for i in [c['headingId'],*c['contextIds']]]+[i for r in records for i in r['paragraphIds']]
  need(len(owned)==len(set(owned))and set(owned)=={u['htmlId']for u in units},'Source units lost or assigned more than once')
  need(len(records)==len(audit['markers']),'Observed source marker lost during classification')
- return {'schemaVersion':2,'sourceId':audit['sourceId'],'revision':audit['revision'],'sourceSha256':audit['sourceSha256'],'layoutAuditSha256':hashobj(audit),'layoutReviewSha256':hashobj(review),'status':'candidate-layout-mapped-not-approved','readerEligible':False,'textPolicy':'Exact source spans only. Every original code point is preserved in a heading, report/context, blank or formatting unit. Source labels and marker identities remain separate from the reviewed reference mapping. This structural map does not approve report wording, translation or publication.','chapters':chapters,'records':records,'blankIds':blanks,'formattingIds':formatting,'blocks':units,'originalBlocks':copy.deepcopy(audit['blocks']),'layoutReview':copy.deepcopy(review)}
+ return {'schemaVersion':2,'sourceId':audit['sourceId'],'revision':audit['revision'],'sourceSha256':audit['sourceSha256'],'layoutAuditSha256':hashobj(audit),'layoutReviewSha256':hashobj(review),'status':'candidate-layout-mapped-not-approved','readerEligible':False,'textPolicy':'Exact source spans only. Every original code point is preserved in a heading, report/context, blank or formatting unit. Source labels and marker identities remain separate from the reviewed reference mapping. This structural map does not approve report wording, translation or publication.'+(' Separately classified editor placeholders remain in editorial-artifact units and original paragraphs; they are not narration.'if artifacts else ''),'chapters':chapters,'records':records,'blankIds':blanks,'formattingIds':formatting,**({'editorialArtifactIds':artifacts}if artifacts else {}),'blocks':units,'originalBlocks':copy.deepcopy(audit['blocks']),'layoutReview':copy.deepcopy(review)}
 
 def resolution_paths(registry,root=ROOT):
  paths=[]

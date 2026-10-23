@@ -1,0 +1,89 @@
+{
+  "checkedAt": "2026-10-23",
+  "status": "structural-intake-and-first-personal-batch",
+  "independentReview": "pending",
+  "source": {
+    "id": "wikisource-bukhari-tayammum-r484871",
+    "revision": 484871,
+    "retrievedAt": "2026-10-23",
+    "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_التيمم&oldid=484871",
+    "status": "candidate-layout-review-required",
+    "readerEligible": false,
+    "license": {
+      "id": "CC-BY-SA-4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Sahih al-Bukhari by Muhammad ibn Ismail al-Bukhari; Arabic digital transcription by Arabic Wikisource contributors, revision 484871.",
+      "changes": "The HTML is retained unchanged. Decoded text is not trimmed, normalized or corrected. An embedded chapter heading and editor placeholder require explicit structural review before report ownership is assigned. This intake adds no English translation."
+    },
+    "file": {
+      "path": "source.html",
+      "bytes": 111280,
+      "sha256": "e5ad7c8f11523b76e258adb2ad188a87bced650e99705e59bada404c416fb69f"
+    },
+    "note": "This exact retrieval is pinned in addition to its revision ID. The source has seven rendered headings and one unparsed heading, with an editor placeholder before it. Printed edition identity and wording approval are not inferred.",
+    "expected": {
+      "blocks": 25,
+      "layoutSummary": {
+        "blocks": 25,
+        "htmlHeadings": 7,
+        "unparsedHeadings": 1,
+        "numberedMarkers": 15,
+        "uniqueNumericLabels": 15,
+        "numericRange": [
+          327,
+          341
+        ],
+        "unobservedLabelsWithinRange": [],
+        "duplicateLabels": [],
+        "sourceCodePoints": 8062,
+        "coveredCodePoints": 8062
+      }
+    }
+  },
+  "candidateInventory": {
+    "path": "content/staging/bukhari-tayammum-wikisource/catalog.json",
+    "sha256": "afaf733abe129f90274a0493d373e188580dbb2e60674d2fee394c0c69e09a3e",
+    "reports": 15,
+    "range": "327–341",
+    "originalBlocks": 25,
+    "mappedUnits": 29,
+    "sourceCodePoints": 8062,
+    "chapters": 8,
+    "chapterIntroductionParagraphs": 3
+  },
+  "layoutReview": {
+    "path": "content/review/tayammum-layout-review.json",
+    "sha256": "dd357f7f5f9fd8eec31ed7fea6133434d4a053dd4a6bb6b0937feb298146fb50",
+    "scope": "Structural boundaries only. A literal editor placeholder and inline heading after report 329 are classified separately. The complete original paragraph and all 8062 code points remain; no report wording is altered. Both inspected prints place chapter 3 and its introduction before selected 330.",
+    "printedPages": [
+      {
+        "id": "brill-1862",
+        "pdfPages": [
+          94
+        ]
+      },
+      {
+        "id": "dar-ibn-kathir-2002",
+        "pdfPages": [
+          93
+        ]
+      }
+    ]
+  },
+  "admitted": {
+    "range": "327–331",
+    "reports": 5,
+    "chapters": 4,
+    "chapterIntroductionParagraphs": 1,
+    "review": "content/review/tayammum-first-review.json",
+    "verification": "research/tayammum-first-verification.json"
+  },
+  "findings": [
+    "The EPUB comparison for selected 329 appends an Ibn Umar chapter fragment. It is comparison evidence, not part of the selected numbered report.",
+    "The first source heading contains the opening Quran quotation; both inspected prints instead place that quotation before an untitled first chapter. The selected grouping is retained and the difference is documented.",
+    "The first five English bodies have individual reference evidence; no universal offset is assumed. The later selected 340 appears split as Bewley 340 and 341, so later matching needs explicit handling.",
+    "Selected 328 retains two chains and their distinct reporting verbs. Selected 330 retains the visiting account and embedded Abu al-Juhaym chain. The comparison attribution at 331 differs from the selected Arabic and both prints.",
+    "Different readings at 327, 330 and 331 are recorded; no wording correction is made in the first batch."
+  ],
+  "remaining": "Ten candidate reports 332–341 remain unadmitted. Continue with the complete chapter 5 span 332–336, including its shortened/continued chains. English introductory material, independent text and reference review, and recording remain pending."
+}
