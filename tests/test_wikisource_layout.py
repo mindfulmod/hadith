@@ -1,3 +1,4 @@
+from published_fixture import LAST_NUMBER,BOOK_IDS
 import copy,importlib.util,json,tempfile,unittest
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -55,6 +56,6 @@ class WikisourceLayoutTests(unittest.TestCase):
    root=Path(tmp);(root/'content/sources').mkdir(parents=True);(root/'content/sources/wikisource-ablution').symlink_to(self.directory,target_is_directory=True)
    with self.assertRaises(ValueError):audit.audit_paths(registry,root)
  def test_full_candidate_is_not_automatically_admitted_to_the_reader(self):
-  catalog=json.loads((ROOT/'reader/books/catalog.json').read_text());self.assertEqual([b['id']for b in catalog['books']],['opening-revelation','faith','knowledge','ablution','ghusl','menstruation','tayammum','prayer']);self.assertEqual(catalog['entries'][-1]['number'],351)
-  release=(ROOT/'reader/release.mjs').read_text();self.assertNotIn('layout-audit',release);self.assertFalse(any(e['number']>351 for e in catalog['entries']))
+  catalog=json.loads((ROOT/'reader/books/catalog.json').read_text());self.assertEqual([b['id']for b in catalog['books']],BOOK_IDS);self.assertEqual(catalog['entries'][-1]['number'],LAST_NUMBER)
+  release=(ROOT/'reader/release.mjs').read_text();self.assertNotIn('layout-audit',release);self.assertFalse(any(e['number']>LAST_NUMBER for e in catalog['entries']))
 if __name__=='__main__':unittest.main()

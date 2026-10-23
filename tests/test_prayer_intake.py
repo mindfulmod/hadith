@@ -1,3 +1,4 @@
+from published_fixture import LAST_NUMBER,BOOK_RANGES
 import copy,importlib.util,unittest
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -18,7 +19,7 @@ class PrayerIntakeTests(unittest.TestCase):
   for change in [lambda r:r['decisions'][0]['units'].pop(0),lambda r:r['decisions'][0]['units'][0].update(end=3),lambda r:r['decisions'][0]['units'][1].update(number=452),lambda r:r['decisions'][0]['printedWitnesses'].pop(),lambda r:r.update(auditSha256='0'*64)]:
    review=copy.deepcopy(self.review);change(review)
    with self.assertRaises(ValueError):m.resolve(self.audit,review,self.english)
- def test_intake_of_157_candidates_does_not_publish_the_147_unreviewed_reports(self):
+ def test_intake_does_not_publish_unadmitted_candidates(self):
   r=self.result;self.assertFalse(r['readerEligible']);self.assertEqual([e['number']for e in r['records']],list(range(342,499)));self.assertEqual(len(r['chapters']),108)
-  c=m.read(ROOT/'reader/books/catalog.json');self.assertEqual([e['number']for e in c['entries']if e['bookId']=='prayer'],list(range(342,352)));self.assertFalse(any(e['number']>=352 for e in c['entries']))
+  c=m.read(ROOT/'reader/books/catalog.json');self.assertEqual([e['number']for e in c['entries']if e['bookId']=='prayer'],list(BOOK_RANGES['prayer']));self.assertFalse(any(e['number']>LAST_NUMBER for e in c['entries']))
 if __name__=='__main__':unittest.main()

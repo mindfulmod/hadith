@@ -1,3 +1,4 @@
+from published_fixture import LAST_NUMBER
 import copy,importlib.util,json,unittest
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -46,7 +47,7 @@ class KnowledgeInventoryTests(unittest.TestCase):
   registry=json.loads((ROOT/'content/sources/wikisource-books.json').read_text());results=book.build_registered(registry,check=True)
   self.assertEqual([id for id,_ in results],['faith','knowledge','ghusl','menstruation'])
   self.assertEqual([len(d['records'])for _,d in results],[51,76,45,37]);self.assertTrue(all(not d['readerEligible']for _,d in results))
-  published=json.loads((ROOT/'reader/books/catalog.json').read_text());self.assertEqual(published['entries'][-1]['number'],351)
+  published=json.loads((ROOT/'reader/books/catalog.json').read_text());self.assertEqual(published['entries'][-1]['number'],LAST_NUMBER)
   self.assertEqual(next(b for b in published['books']if b['id']=='knowledge')['entryNumbers'],list(range(59,135)))
   self.assertNotIn('content/staging/bukhari-knowledge-wikisource', (ROOT/'reader/release.mjs').read_text())
  def test_registry_refuses_duplicates_and_unexpected_paths(self):

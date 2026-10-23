@@ -1,3 +1,4 @@
+import {ENTRY_COUNT,UNRECORDED_COUNT} from './published-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync}from 'node:fs';
@@ -8,13 +9,13 @@ const inputs=()=>[json('reader/source-record.json'),json('content/audio/recordin
 const options={readOriginal:read,readEvidence:read,readAsset:p=>read('reader/'+p)};
 test('all prepared narration scripts contain every English block exactly, including later chains and notes',()=>{
  const [source]=inputs(),copy=structuredClone(source),plan=narrationPlan(source);
- assert.deepEqual(source,copy);assert.equal(plan.entries.length,351);
+ assert.deepEqual(source,copy);assert.equal(plan.entries.length,ENTRY_COUNT);
  for(const e of source.entries){const row=plan.entries.find(r=>r.number===e.number);assert.equal(row.script,e.english_blocks.join('\n\n'));assert.equal(row.scriptSha256,audioHash(row.script));}
  const incomplete=structuredClone(source);incomplete.entries[9].english_blocks.pop();assert.throws(()=>narrationPlan(incomplete));
 });
 test('published recordings bind exact input scripts and media without claiming speech accuracy',()=>{
  const [source,ledger]=inputs(),{catalog}=buildAudioCatalog(source,ledger,options);
- assert.deepEqual(catalog.coverage.recorded,[1,2,3,4,5,6]);assert.equal(catalog.coverage.unrecorded.length,345);
+ assert.deepEqual(catalog.coverage.recorded,[1,2,3,4,5,6]);assert.equal(catalog.coverage.unrecorded.length,UNRECORDED_COUNT);
  assert.equal(catalog.recordings[0].review.wording,'pending');assert.equal(catalog.recordings[0].review.pronunciation,'pending');
  assert.equal(catalog.recordings[0].id,'cedar-opening-v1');assert.deepEqual(audioFiles({check:true}).catalog,catalog);
 });

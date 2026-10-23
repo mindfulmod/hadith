@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The personal reader is at `reader/`: 351 complete selected Bukhari entries across eight books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The personal reader is at `reader/`: 363 complete selected Bukhari entries across eight books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Run
 
@@ -662,3 +662,14 @@ Selected Arabic for this batch is unchanged. The Night Journey report spans two 
 Validation: **324 Node + 78 Python tests**, 13 integrity commands, and exact rendered Arabic and English for all ten new reports. With the local preview server stopped, reload, next-hadith navigation, phrase search, complete Arabic and all four chapter introductions work. Standard 21px day text and largest 28px night text fit at 320px without horizontal overflow. Free browsing preserves the current session. All 341 previous entry objects, seven previous book packs, artwork and actual recordings are unchanged. Evidence: `research/prayer-first-verification.json`.
 
 The complete scripts cover 351 entries; actual Cedar audio remains **1–6**. Independent Arabic, English, lexical, chapter, reference and spoken-word review remain pending. Next corpus work begins at Prayer 352, in complete source chapters.
+
+
+### Prayer 352–363 and stable publication checks — 23 October 2026
+
+The personal reader now has **363 complete numbered entries across eight books**. Seven more complete Prayer chapters are included. The selected Arabic remains unchanged; differences involving narrator uncertainty, passive speech, complete clothing lists, closing chains and repeated attributions are documented beside the source comparisons. The new chapter introduction stays separately browsable Arabic, with English pending. No chapter introduction enters a session or narration script.
+
+Validation: **329 Node + 78 Python tests**, all 13 integrity commands, exact rendered Arabic and English for all twelve new reports, and offline reload/navigation/search/source notes after stopping the preview server. Standard 21px day and largest 28px night text fit at 320px; free browsing preserves Continue. All prior 351 entry objects, seven completed book packs, actual recordings and artwork are unchanged. Evidence: `research/prayer-second-verification.json`.
+
+Publication expectations now have one explicit fixture at `tests/fixtures/published-collection.json`. Tests compare the complete source, individual book packs, catalog and narration coverage against those independent ranges. Older batch tests retain their fixed wording and boundary checks, so future additions no longer require rewriting every old test’s current-total assertion.
+
+Scripts cover 363 entries; actual Cedar audio remains **1–6**. Independent review remains pending. The next source batch starts at Prayer 364; 135 Prayer candidates remain outside the reader.

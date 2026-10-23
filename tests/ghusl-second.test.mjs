@@ -1,3 +1,4 @@
+import {ENTRY_COUNT,LAST_NUMBER} from './published-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -14,7 +15,7 @@ test('Ghusl second batch preserves the first 250 entries and four stable book fi
  const {source,ledger}=collectionFiles(),published=buildBooks(source,ledger),args=input(),before=structuredClone(args.slice(0,3)),batch=buildBookBatch(...args);
  const stable=['opening-revelation-0a534f10d205292c','faith-ad873aab8759ca02','knowledge-e3d5ef7956421322','ablution-4012bd796dae0e95'];
  const previous=[...stable,'ghusl-63bd0e04e12cecc5'].flatMap(n=>read('reader/books/'+n+'.json').entries);
- assert.deepEqual(source.entries.slice(0,250),previous);assert.equal(source.entries.length,351);
+ assert.deepEqual(source.entries.slice(0,250),previous);assert.equal(source.entries.length,ENTRY_COUNT);
  for(const n of stable)assert.equal(published.files.get('books/'+n+'.json'),readFileSync(new URL('../reader/books/'+n+'.json',import.meta.url),'utf8'));
  assert.deepEqual(args.slice(0,3),before);assert.equal(batch.chapters.length,6);assert.deepEqual(batch.entries.map(e=>e.number),Array.from({length:11},(_,i)=>251+i));
  for(const row of args[1].entries){const e=batch.entries.find(e=>e.number===row.number),original=args[0].blocks.find(b=>b.htmlId===row.paragraphIds[0]).text;assert.deepEqual(e.arabic_blocks,[original]);assert.equal(row.segments.map(s=>s.arabic).join(''),original);assert.deepEqual(e.english_blocks,row.segments.map(s=>s.english));}
@@ -48,7 +49,7 @@ test('chapter 9 material remains offline, separately browsable and outside numbe
  const {source,ledger,files}=collectionFiles(),book=ledger.books.find(b=>b.id==='ghusl'),chapter=book.chapters.find(c=>c.id==='chapter-09'),inputData=JSON.parse(files.get('reader/ghusl-inputs.json')),original=input()[0].blocks.find(b=>b.htmlId==='mwSg');
  assert.equal(book.entryNumbers.length,45);assert.equal(book.chapters.length,29);assert.deepEqual(chapter.entryNumbers,[258,259,260,261]);assert.equal(chapter.sourceContext.introduction.arabicParagraphs,1);assert.equal(chapter.sourceContext.introduction.englishStatus,'pending');
  assert.deepEqual(inputData.selectedBlocks.find(b=>b.htmlId==='mwSg'),original);assert.equal(inputData.selectedBlocks.length,79);assert(files.get('reader/ghusl-review.html').includes(original.text));assert(source.entries.every(e=>!e.arabic_blocks.includes(original.text)));
- const saved={numbers:[250],cursor:250,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,261),saved);assert.equal(nextSession(source.entries,saved,5).cursor,251);assert.deepEqual(planSession(source.entries,351,5).numbers,[351]);
+ const saved={numbers:[250],cursor:250,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,261),saved);assert.equal(nextSession(source.entries,saved,5).cursor,251);assert.deepEqual(planSession(source.entries,LAST_NUMBER,5).numbers,[LAST_NUMBER]);
  const state=normalizeState({session:saved,last:250}),before=structuredClone(state),html=bookView(buildBooks(source,ledger).catalog,state,{mode:'book',book,chapter,page:1});assert.deepEqual(state,before);assert.match(html,/ghusl-review.html#chapter-09/);
 });
 test('second-batch evidence refuses reordered references, split chapters and changed preserved introductions',()=>{

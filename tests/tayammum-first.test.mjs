@@ -1,3 +1,4 @@
+import {ENTRY_COUNT,BOOK_COUNT,LAST_NUMBER} from './published-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -12,7 +13,7 @@ const input=()=>[read('content/staging/bukhari-tayammum-wikisource/catalog.json'
 const rehash=r=>{delete r.reviewRecordSha256;r.reviewRecordSha256=objectHash(r);};
 test('Tayammum admission leaves all 326 previous entries and six packs unchanged',()=>{
  const {source,ledger}=collectionFiles(),built=buildBooks(source,ledger),stable=['opening-revelation-0a534f10d205292c','faith-ad873aab8759ca02','knowledge-e3d5ef7956421322','ablution-4012bd796dae0e95','ghusl-1382b7bd3720f4ff','menstruation-95605644e549c484'];
- assert.deepEqual(source.entries.slice(0,326),stable.flatMap(n=>read('reader/books/'+n+'.json').entries));assert.equal(source.entries.length,351);assert.equal(ledger.books.length,8);
+ assert.deepEqual(source.entries.slice(0,326),stable.flatMap(n=>read('reader/books/'+n+'.json').entries));assert.equal(source.entries.length,ENTRY_COUNT);assert.equal(ledger.books.length,BOOK_COUNT);
  for(const n of stable)assert.equal(built.files.get('books/'+n+'.json'),readFileSync(new URL('../reader/books/'+n+'.json',import.meta.url),'utf8'));
  assert.throws(()=>buildBooks(source,ledger,{production:true}));
 });
@@ -36,5 +37,5 @@ test('comparison additions and attribution differences do not replace selected n
  const {source}=collectionFiles(),e=n=>source.entries[n-1];assert.match(e(327).english_blocks[0],/Malik informed us/);assert.match(e(327).english_blocks.at(-1),/Usayd ibn al-Hudayr/);assert.doesNotMatch(e(328).english_blocks.at(-1),/enemies|Day of Resurrection|al-Faqir/);assert.match(e(329).english_blocks[1],/sent a man.*came upon them/);assert.doesNotMatch(e(329).english_blocks[1],/Ibn ‘Umar|al-Jurf|without ablution/);assert.doesNotMatch(e(330).english_blocks.at(-1),/mud|dust/);assert.match(e(331).english_blocks[1],/This alone would have been enough for you/);assert.doesNotMatch(e(331).english_blocks[1],/blew off the dust/);
 });
 test('existing sessions remain fixed while new sessions can continue into Tayammum',()=>{
- const {source}=collectionFiles(),saved={numbers:[326],cursor:326,ended:true},before=structuredClone(saved);assert.deepEqual(resolveSession(source.entries,saved,5,331),before);assert.equal(nextSession(source.entries,saved,5).cursor,327);assert.deepEqual(saved,before);assert.deepEqual(planSession(source.entries,351,10).numbers,[351]);assert.equal(nextSession(source.entries,{numbers:[351],cursor:351,ended:true},5),null);assert(source.entries.every(e=>Number.isSafeInteger(e.number)));
+ const {source}=collectionFiles(),saved={numbers:[326],cursor:326,ended:true},before=structuredClone(saved);assert.deepEqual(resolveSession(source.entries,saved,5,331),before);assert.equal(nextSession(source.entries,saved,5).cursor,327);assert.deepEqual(saved,before);assert.deepEqual(planSession(source.entries,LAST_NUMBER,10).numbers,[LAST_NUMBER]);assert.equal(nextSession(source.entries,{numbers:[LAST_NUMBER],cursor:LAST_NUMBER,ended:true},5),null);assert(source.entries.every(e=>Number.isSafeInteger(e.number)));
 });

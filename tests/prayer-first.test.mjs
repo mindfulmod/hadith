@@ -1,3 +1,4 @@
+import {ENTRY_COUNT,BOOK_COUNT} from './published-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -13,7 +14,7 @@ test('Prayer admission preserves all selected Arabic, complete segment order and
  const a=input(),before=structuredClone(a.slice(0,3)),batch=buildBookBatch(...a),{source,ledger}=collectionFiles(),plan=narrationPlan(source);
  assert.deepEqual(a.slice(0,3),before);assert.equal(batch.entries.length,10);
  for(const row of a[1].entries){const entry=batch.entries.find(e=>e.number===row.number),arabic=a[0].blocks.find(b=>b.htmlId===row.paragraphIds[0]).text;assert.equal(row.segments.map(s=>s.arabic).join(''),arabic);assert.equal(entry.arabic_blocks.join(''),arabic);assert.deepEqual(entry.english_blocks,row.segments.map(s=>s.english));assert.equal(plan.entries.find(e=>e.number===row.number).script,entry.english_blocks.join('\n\n'));}
- assert.equal(source.entries.length,351);assert.equal(ledger.books.length,8);assert.throws(()=>buildBooks(source,ledger,{production:true}));
+ assert.equal(source.entries.length,ENTRY_COUNT);assert.equal(ledger.books.length,BOOK_COUNT);assert.throws(()=>buildBooks(source,ledger,{production:true}));
  const previous=read('reader/books/catalog.json').books.filter(b=>b.id!=='prayer');assert.deepEqual(previous.map(b=>b.path),['books/opening-revelation-0a534f10d205292c.json','books/faith-ad873aab8759ca02.json','books/knowledge-e3d5ef7956421322.json','books/ablution-4012bd796dae0e95.json','books/ghusl-1382b7bd3720f4ff.json','books/menstruation-95605644e549c484.json','books/tayammum-d329407c8ce82c99.json']);
 });
 test('shared Bewley reference distinguishes the Night Journey continuation from the Aisha report',()=>{
@@ -28,7 +29,7 @@ test('complete chains, variant wording and closing transmission survive the Engl
  assert.match(text(346),/praying in a garment/);assert.doesNotMatch(text(347),/shoulders/);assert.doesNotMatch(text(348),/crossed/);assert.match(text(350),/my mother’s son/);assert.match(text(350),/That was in the forenoon/);
 });
 test('four chapter introductions are separately browsable and cannot enter sessions or narration',()=>{
- const a=input(),{source,ledger}=collectionFiles(),book=ledger.books.find(b=>b.id==='prayer'),plan=narrationPlan(source);assert.equal(book.chapters.length,4);assert.deepEqual(book.entryNumbers,Array.from({length:10},(_,i)=>342+i));
+ const a=input(),{source,ledger}=collectionFiles(),book=ledger.books.find(b=>b.id==='prayer'),plan=narrationPlan(source);assert.deepEqual(book.chapters.slice(0,4).map(c=>c.id),a[1].chapters.map(c=>c.id));assert.deepEqual(book.entryNumbers.slice(0,10),Array.from({length:10},(_,i)=>342+i));
  for(const c of a[1].chapters){assert.equal(c.contextIds.length,1);assert.equal(book.chapters.find(b=>b.id===c.id).sourceContext.introduction.englishStatus,'pending');for(const id of c.contextIds){const original=a[0].blocks.find(b=>b.htmlId===id).text;assert(source.entries.every(e=>e.arabic_blocks.every(t=>!t.includes(original))));assert(plan.entries.every(e=>!e.script.includes(original)));}}
  const saved={numbers:[340,341],cursor:341,ended:true};assert.deepEqual(resolveSession(source.entries,saved,10,351),saved);assert.equal(nextSession(source.entries,saved,5).cursor,342);const long=source.entries.find(e=>e.number===342);assert.deepEqual(planSession(source.entries,342,5).numbers,[342,343,344]);assert(readingSeconds(long,100)>300);assert.deepEqual(planSession(source.entries,342,5,100).numbers,[342]);
 });

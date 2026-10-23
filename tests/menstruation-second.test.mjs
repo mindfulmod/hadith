@@ -1,3 +1,4 @@
+import {ENTRY_COUNT} from './published-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -12,7 +13,7 @@ const input=()=>[read('content/staging/bukhari-menstruation-wikisource/catalog.j
 const rehash=r=>{delete r.reviewRecordSha256;r.reviewRecordSha256=objectHash(r);};
 test('second Menstruation batch preserves the previous 297 entries and all five other packs',()=>{
  const {source,ledger}=collectionFiles(),published=buildBooks(source,ledger),stable=['opening-revelation-0a534f10d205292c','faith-ad873aab8759ca02','knowledge-e3d5ef7956421322','ablution-4012bd796dae0e95','ghusl-1382b7bd3720f4ff'];
- assert.deepEqual(source.entries.slice(0,297),[...stable,'menstruation-5c9d001c4f3d2ff0'].flatMap(n=>read('reader/books/'+n+'.json').entries));assert.equal(source.entries.length,351);
+ assert.deepEqual(source.entries.slice(0,297),[...stable,'menstruation-5c9d001c4f3d2ff0'].flatMap(n=>read('reader/books/'+n+'.json').entries));assert.equal(source.entries.length,ENTRY_COUNT);
  for(const n of stable)assert.equal(published.files.get('books/'+n+'.json'),readFileSync(new URL('../reader/books/'+n+'.json',import.meta.url),'utf8'));
  assert.throws(()=>buildBooks(source,ledger,{production:true}));
 });
