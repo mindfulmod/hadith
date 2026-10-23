@@ -1,5 +1,9 @@
 /* Navigation follows reviewed catalogue order, never inferred subjects or number arithmetic. */
 export function validateChapters(book) {
+ if(book.introduction!==undefined){
+  const i=book.introduction,n=i?.notes;
+  if(i?.schemaVersion!==1||!Number.isSafeInteger(i.arabicParagraphs)||i.arabicParagraphs<1||i.englishStatus!=='pending'||i.independentReview!=='pending'||!/^[a-f0-9]{64}$/.test(i.evidenceSha256)||n?.path!==book.id+'-review.html'||n?.fragment!=='book-introduction')throw new Error('Invalid book introduction context');
+ }
  if(book.sourceEntryCount!==undefined&&(!Number.isSafeInteger(book.sourceEntryCount)||book.sourceEntryCount<book.entryNumbers.length))throw new Error('Invalid source entry count');
  if(book.chapters===undefined)return;
  if(!Array.isArray(book.chapters)||!book.chapters.length)throw new Error('Empty chapter context');

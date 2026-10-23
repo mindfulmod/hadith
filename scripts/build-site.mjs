@@ -39,7 +39,7 @@ export function checkLocalLinks(paths,{read=path=>readFileSync(resolve(repositor
 }
 export function checkSourceNoteLinks(packs,{read=path=>readFileSync(resolve(repository,'reader',path),'utf8')}={}){
  const pages=new Map();
- for(const pack of packs)for(const notes of [...pack.sourceReferences.entries.map(row=>row.localNotes),...(pack.book?.chapters||[]).filter(c=>c.sourceContext).map(c=>c.sourceContext.notes)]){
+ for(const pack of packs)for(const notes of [...pack.sourceReferences.entries.map(row=>row.localNotes),...(pack.book?.introduction?[pack.book.introduction.notes]:[]),...(pack.book?.chapters||[]).filter(c=>c.sourceContext).map(c=>c.sourceContext.notes)]){
   const {path,fragment}=notes;
   if(!pages.has(path))pages.set(path,[...read(path).matchAll(/\s+id\s*=\s*["']([^"']+)["']/g)].map(match=>match[1]));
   assert.equal(pages.get(path).filter(id=>id===fragment).length,1,`Missing or duplicate comparison note anchor: ${path}#${fragment}`);

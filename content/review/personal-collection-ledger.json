@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "namespace": "bukhari-opening-v1",
   "publication": "personal-prototype",
-  "sourceRecordSha256": "55f3413f23e3facd9c2919f8a413c7577edd7ef14b163ca79da4c486bb88557e",
+  "sourceRecordSha256": "94a4d92b6603e976df687f01b794316ed1659319e1209f95ae3c2d211be279f9",
   "rights": {
     "status": "pending",
     "evidence": [
@@ -13,7 +13,9 @@
       "reader/knowledge-inputs.json",
       "reader/knowledge-review.html",
       "reader/ablution-inputs.json",
-      "reader/ablution-review.html"
+      "reader/ablution-review.html",
+      "reader/ghusl-inputs.json",
+      "reader/ghusl-review.html"
     ]
   },
   "books": [
@@ -3823,6 +3825,96 @@
           }
         }
       ]
+    },
+    {
+      "id": "ghusl",
+      "number": 5,
+      "title": "Ghusl",
+      "sourceEntryCount": 45,
+      "entryNumbers": [
+        245,
+        246,
+        247,
+        248,
+        249,
+        250
+      ],
+      "chapters": [
+        {
+          "id": "chapter-01",
+          "title": "Ablution before washing",
+          "entryNumbers": [
+            245,
+            246
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ghusl-review.html",
+              "fragment": "chapter-01"
+            }
+          }
+        },
+        {
+          "id": "chapter-02",
+          "title": "A man washing together with his wife",
+          "entryNumbers": [
+            247
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ghusl-review.html",
+              "fragment": "chapter-02"
+            }
+          }
+        },
+        {
+          "id": "chapter-03",
+          "title": "Washing with a sa‘ or thereabouts",
+          "entryNumbers": [
+            248,
+            249,
+            250
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ghusl-review.html",
+              "fragment": "chapter-03"
+            }
+          }
+        }
+      ],
+      "introduction": {
+        "schemaVersion": 1,
+        "arabicParagraphs": 1,
+        "englishStatus": "pending",
+        "independentReview": "pending",
+        "evidenceSha256": "feec7d07b3461edcc203cd0b7cdb73d1f28b9c3a2e1125935879afabcc2c914a",
+        "notes": {
+          "path": "ghusl-review.html",
+          "fragment": "book-introduction"
+        }
+      }
     }
   ],
   "entries": [
@@ -7973,15 +8065,117 @@
       "contextReview": {
         "status": "pending"
       }
+    },
+    {
+      "number": 245,
+      "id": "bukhari:245",
+      "entrySha256": "d04b38d7a6cb3cfd17869689acd0bb296f2f58a99b2caf97dbaa7648b6d6fd65",
+      "arabicSha256": "4dcc563b9bd96a0eba1d81361ce27272faa0b569b7c9ab4036e6c2b5e7fd90de",
+      "englishSha256": "a2d68d659c1456474bd13b41f31bf2fd64d304ca9e073b1bcacbf510bdfa70df",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 246,
+      "id": "bukhari:246",
+      "entrySha256": "985c7ed9481eec36021a8c1b9da8586853219b54ebc6ff02e073105ef26a6cc0",
+      "arabicSha256": "2c4be9768d086890b5f3c548249bb6df68af37efc133728505d03521d8e475af",
+      "englishSha256": "4d4cc602710818c1f33c417710a114fa338f6c2bf3cef7735a0c7bdace8d6275",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 247,
+      "id": "bukhari:247",
+      "entrySha256": "c1809a23671e4e92a7a98f6c84345c1ee6c837164c7a232f870c165014c976ed",
+      "arabicSha256": "f0ceb6ea900dfe6b1c47a7ca03fa2ed984bb60c1536f440c8b3314a40c915491",
+      "englishSha256": "12a7d868c6336c32e7831af1d65a941c9a1d8a5a09c9ffce59b8e881883f45ed",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 248,
+      "id": "bukhari:248",
+      "entrySha256": "9b609cced6fedd39bfc7a34a305e7837510bc35d884b5a25d2b315eaa97c3bde",
+      "arabicSha256": "58708d6e06c42df19ab1b5ef6935739c4dbccc23b83af57b0f89f00e7839355e",
+      "englishSha256": "202c9e4864358c772cafae865a62691253c039936675b4368c95abdb04c098eb",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 249,
+      "id": "bukhari:249",
+      "entrySha256": "4aad53044b70281d363c5054177fffd843eb7a63cdda88bc07201d898d5310e1",
+      "arabicSha256": "2d9be337a445d8cacb905f05770b398461d55501f783d8e28d509c9e6ad0b405",
+      "englishSha256": "b20633fb3473192f939151db171efdbf16405adff552da46e609dff05bb24854",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 250,
+      "id": "bukhari:250",
+      "entrySha256": "08cb8987922d42e24a9d4e1e28e3eed80458cbabd4338ce00655f2f2c1ea6e70",
+      "arabicSha256": "a0b1528458d2094a48f7a929cc8c5fa827e17e60edc4fcbb0508ab188b11eec7",
+      "englishSha256": "898b3c87a794690c2292baba9659876b0ac9e5c77507f1b9d65e9b73ceba325c",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
     }
   ],
-  "catalogContextSha256": "fb8c201c5a9c7b2e46853ca0fbb1019007d97a86ebfe433797e561326838eda1",
+  "catalogContextSha256": "7c1fb9974e16f27715b19fe6ee458c5dfa84480a6fd91c90b81d34e6de9e851b",
   "collectionReview": {
     "status": "pending"
   },
   "sourceReferences": {
     "schemaVersion": 1,
-    "sourceRecordSha256": "55f3413f23e3facd9c2919f8a413c7577edd7ef14b163ca79da4c486bb88557e",
+    "sourceRecordSha256": "94a4d92b6603e976df687f01b794316ed1659319e1209f95ae3c2d211be279f9",
     "sources": [
       {
         "id": "arabic-base",
@@ -8192,6 +8386,20 @@
         "kind": "reference-check",
         "format": "web",
         "url": "https://sunnah.com/bukhari:193"
+      },
+      {
+        "id": "arabic-ghusl",
+        "label": "Arabic Wikisource · fixed revision 484873",
+        "kind": "arabic-input",
+        "format": "web",
+        "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_الغسل&oldid=484873"
+      },
+      {
+        "id": "bewley-ghusl",
+        "label": "Aisha Bewley · Book of Ghusl",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://aishabewley.org/bukhari4"
       }
     ],
     "entries": [
@@ -20693,10 +20901,318 @@
           "fragment": "hadith-244",
           "label": "Comparison notes and chapter source for this hadith"
         }
+      },
+      {
+        "id": "bukhari:245",
+        "number": 245,
+        "entrySha256": "d04b38d7a6cb3cfd17869689acd0bb296f2f58a99b2caf97dbaa7648b6d6fd65",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-ghusl",
+            "locator": "Book of Ghusl · source entry 245 · باب الوضوء قبل الغسل",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-ghusl",
+            "locator": "Book of Ghusl · entry 245",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 5, Number 248",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 73",
+            "pdfPage": 73,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 72",
+            "pdfPage": 72,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "ghusl-review.html",
+          "fragment": "hadith-245",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:246",
+        "number": 246,
+        "entrySha256": "985c7ed9481eec36021a8c1b9da8586853219b54ebc6ff02e073105ef26a6cc0",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-ghusl",
+            "locator": "Book of Ghusl · source entry 246 · باب الوضوء قبل الغسل",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-ghusl",
+            "locator": "Book of Ghusl · entry 246",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 5, Number 249",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF pages 73, 74",
+            "pdfPage": 73,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 72",
+            "pdfPage": 72,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "ghusl-review.html",
+          "fragment": "hadith-246",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:247",
+        "number": 247,
+        "entrySha256": "c1809a23671e4e92a7a98f6c84345c1ee6c837164c7a232f870c165014c976ed",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-ghusl",
+            "locator": "Book of Ghusl · source entry 247 · باب غسل الرجل مع امرأته",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-ghusl",
+            "locator": "Book of Ghusl · entry 247",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 5, Number 250",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 74",
+            "pdfPage": 74,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 73",
+            "pdfPage": 73,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "ghusl-review.html",
+          "fragment": "hadith-247",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:248",
+        "number": 248,
+        "entrySha256": "9b609cced6fedd39bfc7a34a305e7837510bc35d884b5a25d2b315eaa97c3bde",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-ghusl",
+            "locator": "Book of Ghusl · source entry 248 · باب الغسل بالصاع ونحوه",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-ghusl",
+            "locator": "Book of Ghusl · entry 248",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 5, Number 251",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 74",
+            "pdfPage": 74,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 73",
+            "pdfPage": 73,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "ghusl-review.html",
+          "fragment": "hadith-248",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:249",
+        "number": 249,
+        "entrySha256": "4aad53044b70281d363c5054177fffd843eb7a63cdda88bc07201d898d5310e1",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-ghusl",
+            "locator": "Book of Ghusl · source entry 249 · باب الغسل بالصاع ونحوه",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-ghusl",
+            "locator": "Book of Ghusl · entry 249",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 5, Number 252",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 74",
+            "pdfPage": 74,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 73",
+            "pdfPage": 73,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "ghusl-review.html",
+          "fragment": "hadith-249",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:250",
+        "number": 250,
+        "entrySha256": "08cb8987922d42e24a9d4e1e28e3eed80458cbabd4338ce00655f2f2c1ea6e70",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation with a separately identified closing transmission note transcribed from an Arabic print. Two printed witnesses, the unchanged digital text and the differing coverage of the English comparisons remain accessible. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-ghusl",
+            "locator": "Book of Ghusl · source entry 250 · باب الغسل بالصاع ونحوه",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-ghusl",
+            "locator": "Book of Ghusl · entry 250",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 5, Number 253",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 74",
+            "pdfPage": 74,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 73",
+            "pdfPage": 73,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [
+          {
+            "id": "250-printed-note",
+            "label": "A closing note from the Arabic prints",
+            "text": "Both inspected Arabic prints include a final narrator note that is absent from the digital input. It appears below as a separately labelled source addition. The original digital text remains unchanged. Independent review is pending.",
+            "citations": [
+              "base",
+              "brill-1862",
+              "dar-ibn-kathir-2002",
+              "bewley",
+              "khan"
+            ],
+            "related": []
+          }
+        ],
+        "localNotes": {
+          "path": "ghusl-review.html",
+          "fragment": "hadith-250",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
       }
     ]
   },
-  "referencesSha256": "bda9b313f4a7949038db8eb8c2a8bc66bcdba66b2ee77de9197ca8f0f1d278e9",
+  "referencesSha256": "ec11ab162717d2f049d8739f92320ef05f02de615d0787cc06b5dc3f63bd5310",
   "referencesReview": {
     "status": "pending"
   }

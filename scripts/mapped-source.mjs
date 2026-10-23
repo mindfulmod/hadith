@@ -16,7 +16,7 @@ function checkedInventory(id){
  return verified.get(id);
 }
 export function validateBookInventory(inventory,review,config){
- assert(!('bookIntroduction' in inventory),'Book introductions need explicit reader provenance and browsing support before admission');
+ if('bookIntroduction' in inventory)assert.equal(config.bookIntroduction,'preserved-arabic','Book introductions need explicit reader provenance and browsing support before admission');
  if(config.sourceLayout!=='mapped'){
   assert(inventory.schemaVersion===1&&!('layoutReview' in inventory)&&!('layoutReviewSha256' in inventory)&&!('originalBlocks' in inventory),'Mapped source inventories need explicit reader provenance support before admission');
   assert.equal(review.sourceLayout,undefined,'Ordinary inventory cannot claim a layout map');return;

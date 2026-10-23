@@ -1,6 +1,6 @@
 {
   "checkedAt": "2026-10-23",
-  "status": "candidate-intake-complete-wording-review-pending",
+  "status": "candidate-intake-with-first-personal-prototype-batch",
   "readerEligible": false,
   "source": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_الغسل&oldid=484873",
   "revision": 484873,
@@ -47,7 +47,7 @@
     ],
     "note": "The unnumbered paragraph precedes the first chapter and contains two Quranic quotations. Preserve it as book-level introductory material, distinct from chapter headings and numbered hadith. The digital wording, whitespace and quotation spellings remain unchanged; translation and independent review are pending.",
     "printedOrientation": "The historical print, PDF page 73, places abbreviated Quranic quotations before the first chapter. The modern print, PDF page 72, gives fuller quotations and labels them 5:6 and 4:43. These observations establish book-level placement; they do not authorize replacing the digital quotation spelling or importing a different edition.",
-    "readerPlan": "A separate book introduction in the book browser, with original Arabic and references. No invented chapter zero, hadith number, session item or narrated hadith segment. English translation and reader provenance support must precede admission."
+    "readerPlan": "Implemented as a separate book-browser source link with exact original Arabic and references. English is explicitly pending, consistent with the existing chapter-material policy. No invented chapter zero, hadith number, session item or narrated hadith segment."
   },
   "printedWitnesses": [
     {
@@ -143,7 +143,7 @@
     {
       "id": "selected-250-closing-note",
       "kind": "printed-note-absent-from-digital",
-      "status": "investigated-not-yet-resolved-for-reader",
+      "status": "explicit-printed-supplement-in-personal-prototype",
       "sourceNumber": 250,
       "blockId": "mwHg",
       "textSha256": "0c1d402c8e835b824d8bd0800f79640f534e5525656204bd7c9421fdd22a8feb",
@@ -163,7 +163,7 @@
         }
       ],
       "separateVariant": "The historical print places the short amount-of-a-sa note after the earlier Aisha report and does not repeat it after this account. The modern print includes it in both locations. The selected digital repetition therefore has support in the inspected modern print; it must not be removed merely because it resembles an earlier note.",
-      "nextDecision": "Preserve the original digital paragraph. Before admitting 250, prepare an explicitly attributed printed supplement for the absent final note, retaining edition differences and pending independent review."
+      "nextDecision": "The first batch retains the original paragraph and supplies the final note as a separately labelled modern-print block, with both readings and English coverage. Independent review remains pending."
     },
     {
       "id": "comparison-verse-reference",
@@ -197,22 +197,37 @@
     ],
     "scope": "Importer and admission regression checks only. No new reader UI or media behavior changed, so no new iPhone acceptance is claimed."
   },
-  "reader": {
-    "entries": 244,
-    "release": "opening-d84430d05a58",
-    "changed": false,
-    "audioRange": "1–6"
-  },
   "nextWork": [
-    "Implement book-level introduction provenance and a separate browser destination, keeping sessions and audio plans limited to numbered entries.",
+    "Continue complete source-chapter review from 251 and prepare English introductions separately.",
     "Review Ghusl in complete source chapters, beginning with 245. Individually compare both printed witnesses and the English witnesses; resolve the recorded final-note omission at 250 before its admission.",
     "Prepare complete working English, source-role segmentation and explicit personal-prototype admission records. Keep full chains, repeated accounts and closing transmission notes.",
     "Continue English chapter material, independent review, complete source mapping and further Cedar narration."
   ],
   "limits": [
-    "All 45 numbered entries remain candidates. None is newly admitted to the reader by this intake.",
+    "The complete inventory remains a candidate source. Only the separately reviewed and explicitly admitted entries 245–250 are available in the personal prototype; the other 39 await review.",
     "A complete block inventory does not certify the edition, translation or full narration coverage.",
     "Printed inspection this turn covers only the opening pages and the recorded note difference, not the entire Ghusl book.",
     "The English body locations are orientation evidence, not completed translation review or permission to reuse modern translation wording."
-  ]
+  ],
+  "intakeReaderSnapshot": {
+    "entries": 244,
+    "release": "opening-d84430d05a58",
+    "changed": false,
+    "audioRange": "1–6"
+  },
+  "reader": {
+    "entries": 250,
+    "release": "opening-f7d29ced82b0",
+    "ghuslEntries": 6,
+    "range": "245–250",
+    "audioRange": "1–6"
+  },
+  "firstBatch": {
+    "status": "personal-prototype-only",
+    "review": "content/review/ghusl-first-review.json",
+    "verification": "research/ghusl-first-verification.json",
+    "range": "245–250",
+    "bookIntroduction": "Arabic preserved separately with English pending",
+    "independentReview": "pending"
+  }
 }

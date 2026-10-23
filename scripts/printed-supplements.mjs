@@ -22,6 +22,11 @@ function validatePrintedAddition(item,row,originals,sources){
   assert(w.reading===item.arabic||text(w.differenceNote),'Different printed readings need an explicit explanation');
  }
  const selected=item.witnesses.find(w=>w.sourceId===item.selectedWitnessId);assert(selected&&selected.reading===item.arabic,'Selected printed wording does not match its witness');
+ if(item.englishComparisons!==undefined){
+  assert(Array.isArray(item.englishComparisons)&&item.englishComparisons.length===row.comparisons.length,'Incomplete printed-note comparison coverage');
+  assert.deepEqual(item.englishComparisons.map(c=>c.sourceId).sort(),row.comparisons.map(c=>c.id).sort(),'Printed-note comparisons must identify both English sources');
+  for(const c of item.englishComparisons){const matching=row.comparisons.find(r=>r.id===c.sourceId);assert(c.reference===matching.reference&&['includes-note','omits-note'].includes(c.status)&&text(c.note),'Invalid printed-note comparison coverage');}
+ }
  const notice=row.contextNotes?.find(n=>n.id===item.contextNoteId);
  assert(notice?.label?.trim()&&notice.text?.trim()&&['base',...item.witnesses.map(w=>w.sourceId)].every(id=>notice.citations.includes(id)),'Printed addition needs a visible source notice');
 }
@@ -71,5 +76,5 @@ export function reviewedChapterViews(review){
 }
 export function printedHeadingContext(heading){return {sourceChapterId:heading.sourceChapterId,beforeEntry:heading.beforeEntry,printedChapterNumber:heading.printedChapterNumber,evidenceSha256:hash(heading)};}
 export function printedAdditionDetails(item,sources){
- return `<section class="printed-addition" data-printed-addition="${esc(item.id)}"><h3>${item.kind==='chapter-heading'?'Chapter heading from Arabic prints':'Closing transmission note from an Arabic print'}</h3><p>${esc(item.reason)}</p><p>AI transcription and working English; independent review pending. ${esc(item.transcriptionPolicy)}</p><div class="arabic" lang="ar" dir="rtl"><p>${esc(item.arabic)}</p></div><p>${esc(item.english)}</p><details><summary>Both printed readings and exact pages</summary>${item.witnesses.map(w=>{const source=sources.find(s=>s.id===w.sourceId),url=new URL(source.url);url.hash='page='+w.pdfPage;return `<p><a href="${esc(url.href)}" target="_blank" rel="noopener">${esc(source.label)} · PDF page ${w.pdfPage} ↗</a>${w.sourceId===item.selectedWitnessId?' · Selected wording':''}</p><p class="arabic" lang="ar" dir="rtl">${esc(w.reading)}</p>${w.differenceNote?`<p>${esc(w.differenceNote)}</p>`:''}`;}).join('')}</details></section>`;
+ return `<section class="printed-addition" data-printed-addition="${esc(item.id)}"><h3>${item.kind==='chapter-heading'?'Chapter heading from Arabic prints':'Closing transmission note from an Arabic print'}</h3><p>${esc(item.reason)}</p><p>AI transcription and working English; independent review pending. ${esc(item.transcriptionPolicy)}</p><div class="arabic" lang="ar" dir="rtl"><p>${esc(item.arabic)}</p></div><p>${esc(item.english)}</p>${item.englishComparisons?`<h4>English comparison coverage</h4><ul>${item.englishComparisons.map(c=>`<li>${esc(sources.find(s=>s.id===c.sourceId).label)} · ${esc(c.reference)}: ${esc(c.note)}</li>`).join('')}</ul>`:''}<details><summary>Both printed readings and exact pages</summary>${item.witnesses.map(w=>{const source=sources.find(s=>s.id===w.sourceId),url=new URL(source.url);url.hash='page='+w.pdfPage;return `<p><a href="${esc(url.href)}" target="_blank" rel="noopener">${esc(source.label)} · PDF page ${w.pdfPage} ↗</a>${w.sourceId===item.selectedWitnessId?' · Selected wording':''}</p><p class="arabic" lang="ar" dir="rtl">${esc(w.reading)}</p>${w.differenceNote?`<p>${esc(w.differenceNote)}</p>`:''}`;}).join('')}</details></section>`;
 }

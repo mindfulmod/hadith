@@ -1,0 +1,887 @@
+{
+  "schemaVersion": 2,
+  "namespace": "bukhari-opening-v1",
+  "publication": "personal-prototype",
+  "book": {
+    "id": "ghusl",
+    "number": 5,
+    "title": "Ghusl",
+    "sourceEntryCount": 45,
+    "chapters": [
+      {
+        "id": "chapter-01",
+        "title": "Ablution before washing",
+        "entryNumbers": [
+          245,
+          246
+        ],
+        "sourceContext": {
+          "schemaVersion": 1,
+          "headingStatus": "ai-working-translation",
+          "numberedReports": "present",
+          "introduction": {
+            "arabicParagraphs": 0,
+            "englishStatus": "not-applicable"
+          },
+          "notes": {
+            "path": "ghusl-review.html",
+            "fragment": "chapter-01"
+          }
+        }
+      },
+      {
+        "id": "chapter-02",
+        "title": "A man washing together with his wife",
+        "entryNumbers": [
+          247
+        ],
+        "sourceContext": {
+          "schemaVersion": 1,
+          "headingStatus": "ai-working-translation",
+          "numberedReports": "present",
+          "introduction": {
+            "arabicParagraphs": 0,
+            "englishStatus": "not-applicable"
+          },
+          "notes": {
+            "path": "ghusl-review.html",
+            "fragment": "chapter-02"
+          }
+        }
+      },
+      {
+        "id": "chapter-03",
+        "title": "Washing with a sa‘ or thereabouts",
+        "entryNumbers": [
+          248,
+          249,
+          250
+        ],
+        "sourceContext": {
+          "schemaVersion": 1,
+          "headingStatus": "ai-working-translation",
+          "numberedReports": "present",
+          "introduction": {
+            "arabicParagraphs": 0,
+            "englishStatus": "not-applicable"
+          },
+          "notes": {
+            "path": "ghusl-review.html",
+            "fragment": "chapter-03"
+          }
+        }
+      }
+    ],
+    "introduction": {
+      "schemaVersion": 1,
+      "arabicParagraphs": 1,
+      "englishStatus": "pending",
+      "independentReview": "pending",
+      "evidenceSha256": "feec7d07b3461edcc203cd0b7cdb73d1f28b9c3a2e1125935879afabcc2c914a",
+      "notes": {
+        "path": "ghusl-review.html",
+        "fragment": "book-introduction"
+      }
+    }
+  },
+  "sourceReferences": {
+    "schemaVersion": 2,
+    "entriesSha256": "70c075a9752212596e475a3ba749cda63a0ab619221c61dbde61be0b88a053be",
+    "sources": [
+      {
+        "id": "islamhouse-khan",
+        "label": "IslamHouse · Khan-family English comparison",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://islamhouse.com/en/books/70510"
+      },
+      {
+        "id": "brill-1862",
+        "label": "Historical Arabic print · Brill 1862",
+        "kind": "arabic-witness",
+        "format": "pdf",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf"
+      },
+      {
+        "id": "dar-ibn-kathir-2002",
+        "label": "Arabic print · Dar Ibn Kathir 2002",
+        "kind": "arabic-witness",
+        "format": "pdf",
+        "url": "https://archive.org/download/waq79565/79565.pdf"
+      },
+      {
+        "id": "arabic-ghusl",
+        "label": "Arabic Wikisource · fixed revision 484873",
+        "kind": "arabic-input",
+        "format": "web",
+        "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_الغسل&oldid=484873"
+      },
+      {
+        "id": "bewley-ghusl",
+        "label": "Aisha Bewley · Book of Ghusl",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://aishabewley.org/bukhari4"
+      }
+    ],
+    "entries": [
+      {
+        "id": "bukhari:245",
+        "number": 245,
+        "entrySha256": "d04b38d7a6cb3cfd17869689acd0bb296f2f58a99b2caf97dbaa7648b6d6fd65",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-ghusl",
+            "locator": "Book of Ghusl · source entry 245 · باب الوضوء قبل الغسل",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-ghusl",
+            "locator": "Book of Ghusl · entry 245",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 5, Number 248",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 73",
+            "pdfPage": 73,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 72",
+            "pdfPage": 72,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "ghusl-review.html",
+          "fragment": "hadith-245",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:246",
+        "number": 246,
+        "entrySha256": "985c7ed9481eec36021a8c1b9da8586853219b54ebc6ff02e073105ef26a6cc0",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-ghusl",
+            "locator": "Book of Ghusl · source entry 246 · باب الوضوء قبل الغسل",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-ghusl",
+            "locator": "Book of Ghusl · entry 246",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 5, Number 249",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF pages 73, 74",
+            "pdfPage": 73,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 72",
+            "pdfPage": 72,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "ghusl-review.html",
+          "fragment": "hadith-246",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:247",
+        "number": 247,
+        "entrySha256": "c1809a23671e4e92a7a98f6c84345c1ee6c837164c7a232f870c165014c976ed",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-ghusl",
+            "locator": "Book of Ghusl · source entry 247 · باب غسل الرجل مع امرأته",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-ghusl",
+            "locator": "Book of Ghusl · entry 247",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 5, Number 250",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 74",
+            "pdfPage": 74,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 73",
+            "pdfPage": 73,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "ghusl-review.html",
+          "fragment": "hadith-247",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:248",
+        "number": 248,
+        "entrySha256": "9b609cced6fedd39bfc7a34a305e7837510bc35d884b5a25d2b315eaa97c3bde",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-ghusl",
+            "locator": "Book of Ghusl · source entry 248 · باب الغسل بالصاع ونحوه",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-ghusl",
+            "locator": "Book of Ghusl · entry 248",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 5, Number 251",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 74",
+            "pdfPage": 74,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 73",
+            "pdfPage": 73,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "ghusl-review.html",
+          "fragment": "hadith-248",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:249",
+        "number": 249,
+        "entrySha256": "4aad53044b70281d363c5054177fffd843eb7a63cdda88bc07201d898d5310e1",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-ghusl",
+            "locator": "Book of Ghusl · source entry 249 · باب الغسل بالصاع ونحوه",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-ghusl",
+            "locator": "Book of Ghusl · entry 249",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 5, Number 252",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 74",
+            "pdfPage": 74,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 73",
+            "pdfPage": 73,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "ghusl-review.html",
+          "fragment": "hadith-249",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:250",
+        "number": 250,
+        "entrySha256": "08cb8987922d42e24a9d4e1e28e3eed80458cbabd4338ce00655f2f2c1ea6e70",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation with a separately identified closing transmission note transcribed from an Arabic print. Two printed witnesses, the unchanged digital text and the differing coverage of the English comparisons remain accessible. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-ghusl",
+            "locator": "Book of Ghusl · source entry 250 · باب الغسل بالصاع ونحوه",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-ghusl",
+            "locator": "Book of Ghusl · entry 250",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 5, Number 253",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 74",
+            "pdfPage": 74,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 73",
+            "pdfPage": 73,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [
+          {
+            "id": "250-printed-note",
+            "label": "A closing note from the Arabic prints",
+            "text": "Both inspected Arabic prints include a final narrator note that is absent from the digital input. It appears below as a separately labelled source addition. The original digital text remains unchanged. Independent review is pending.",
+            "citations": [
+              "base",
+              "brill-1862",
+              "dar-ibn-kathir-2002",
+              "bewley",
+              "khan"
+            ],
+            "related": []
+          }
+        ],
+        "localNotes": {
+          "path": "ghusl-review.html",
+          "fragment": "hadith-250",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      }
+    ]
+  },
+  "entries": [
+    {
+      "id": "bukhari:245",
+      "book": "Ghusl",
+      "number": 245,
+      "arabic_blocks": [
+        "[245] حدثنا عبد الله بن يوسف قال : أخبرنا مالك عن هشام عن أبيه عن عائشة زوج النبي ﷺ أن النبي ﷺ كان إذا اغتسل من الجنابة بدأ فغسل يديه ثم يتوضأ كما يتوضأ للصلاة ثم يدخل أصابعه في الماء فيخلل بها أصول شعره ثم يصب على رأسه ثلاث غرف بيديه ثم يفيض الماء على جلده كله "
+      ],
+      "arabic_sha256": "4dcc563b9bd96a0eba1d81361ce27272faa0b569b7c9ab4036e6c2b5e7fd90de",
+      "english_blocks": [
+        "‘Abd Allah ibn Yusuf related to us. He said: Malik informed us, from Hisham, from his father, from ‘A’ishah, the wife of the Prophet, may Allah bless him and grant him peace:",
+        "Whenever the Prophet, may Allah bless him and grant him peace, bathed for janabah, he began by washing his hands. Then he would perform ablution as he performed ablution for prayer. Then he would put his fingers into the water and work them through the roots of his hair. Then he would pour three handfuls over his head with his two hands, then pour water over all his skin."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 84,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 84,
+            "end": 262,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 174,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 374,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:245",
+        "reviewRecordSha256": "df49209dede3bac153572c2b2a1f0f4d3188216782b20ede106dbe6f185fba1e",
+        "notes": [
+          "The full chain, the identification of Aisha as the Prophet’s wife, and both honorifics remain explicit. The chain ends before the description of the Prophet’s washing.",
+          "The selected sequence remains hands, ablution, fingers through hair roots, three handfuls with both hands, then water over all the skin. No sequence is harmonized with a different narration.",
+          "Janabah is retained as a source term; no legal gloss or modern volume conversion is inserted into the narration."
+        ],
+        "reviewScope": "AI-assisted Arabic-to-English drafting and comparison with two visually inspected Arabic prints and two individually located English report bodies. Full narrator chains and transmission notes are retained from the selected Arabic; printed differences and English omissions are documented. This is a personal prototype. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:246",
+      "book": "Ghusl",
+      "number": 246,
+      "arabic_blocks": [
+        "[246] حدثنا محمد بن يوسف قال : حدثنا سفيان عن الأعمش عن سالم بن أبي الجعد عن كريب عن ابن عباس عن ميمونة زوج النبي ﷺ قالت توضأ رسول الله ﷺ وضوءه للصلاة غير رجليه وغسل فرجه وما أصابه من الأذى ثم أفاض عليه الماء ثم نحى رجليه فغسلهما هذه غسله من الجنابة"
+      ],
+      "arabic_sha256": "2c4be9768d086890b5f3c548249bb6df68af37efc133728505d03521d8e475af",
+      "english_blocks": [
+        "Muhammad ibn Yusuf related to us. He said: Sufyan related to us, from al-A‘mash, from Salim ibn Abi al-Ja‘d, from Kurayb, from Ibn ‘Abbas, from Maymunah, the wife of the Prophet, may Allah bless him and grant him peace, who said:",
+        "The Messenger of Allah, may Allah bless him and grant him peace, performed his ablution for prayer except for his feet, and washed his private parts and whatever had been soiled. Then he poured water over himself, then moved his feet aside and washed them. This was his washing for janabah."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 121,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 121,
+            "end": 249,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 229,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 290,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:246",
+        "reviewRecordSha256": "af7df33aead3bfef8e0dba85e7ae1b7a0795413a3585cd307b28388924118e35",
+        "notes": [
+          "The full chain through Salim ibn Abi al-Jad, Kurayb and Ibn Abbas is retained, including Maymunah’s description as the Prophet’s wife.",
+          "The order of actions follows this selected text: ablution except feet, washing the private parts and soiling, water, then moving and washing the feet. The text is not reordered to reconcile it with other accounts.",
+          "The wording “whatever had been soiled” renders وما أصابه من الأذى without adding a specified bodily fluid or a legal ruling."
+        ],
+        "reviewScope": "AI-assisted Arabic-to-English drafting and comparison with two visually inspected Arabic prints and two individually located English report bodies. Full narrator chains and transmission notes are retained from the selected Arabic; printed differences and English omissions are documented. This is a personal prototype. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:247",
+      "book": "Ghusl",
+      "number": 247,
+      "arabic_blocks": [
+        "[247] حدثنا آدم بن أبي إياس قال : حدثنا ابن أبي ذئب عن الزهري عن عروة عن عائشة قالت كنت أغتسل أنا والنبي ﷺ من إناء واحد من قدح يقال له الفرق"
+      ],
+      "arabic_sha256": "f0ceb6ea900dfe6b1c47a7ca03fa2ed984bb60c1536f440c8b3314a40c915491",
+      "english_blocks": [
+        "Adam ibn Abi Iyas related to us. He said: Ibn Abi Dhi’b related to us, from al-Zuhri, from ‘Urwah, from ‘A’ishah, who said:",
+        "The Prophet, may Allah bless him and grant him peace, and I used to bathe from a single vessel, from a bowl called al-faraq."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 84,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 84,
+            "end": 140,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 123,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 124,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:247",
+        "reviewRecordSha256": "fa8f6cce35befd259661381b42271af04301f0ac71977028fd86378a7d57a1ba",
+        "notes": [
+          "The selected digital reporting verb is حدثنا before Ibn Abi Dhib. The historical print has حدثني there; the modern print agrees with the selected plural form. The digital text is not silently harmonized with the historical variant.",
+          "Both the general vessel and the named bowl, al-faraq, remain in the English. No modern capacity is added."
+        ],
+        "reviewScope": "AI-assisted Arabic-to-English drafting and comparison with two visually inspected Arabic prints and two individually located English report bodies. Full narrator chains and transmission notes are retained from the selected Arabic; printed differences and English omissions are documented. This is a personal prototype. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:248",
+      "book": "Ghusl",
+      "number": 248,
+      "arabic_blocks": [
+        "[248] حدثنا عبد الله بن محمد قال : حدثني عبد الصمد قال : حدثني شعبة قال : حدثني أبو بكر ابن حفص قال : سمعت أبا سلمة يقول دخلت أنا وأخو عائشة على عائشة فسألها أخوها عن غسل النبي ﷺ فدعت بإناء نحوا من صاع فاغتسلت وأفاضت على رأسها وبيننا وبينها حجاب قال أبو عبد الله قال يزيد بن هارون وبهز والجدي عن شعبة قدر صاع "
+      ],
+      "arabic_sha256": "58708d6e06c42df19ab1b5ef6935739c4dbccc23b83af57b0f89f00e7839355e",
+      "english_blocks": [
+        "‘Abd Allah ibn Muhammad related to us. He said: ‘Abd al-Samad related to me. He said: Shu‘bah related to me. He said: Abu Bakr ibn Hafs related to me. He said: I heard Abu Salamah saying:",
+        "‘A’ishah’s brother and I went in to ‘A’ishah. Her brother asked her about the washing of the Prophet, may Allah bless him and grant him peace. She called for a vessel containing about a sa‘, then bathed and poured water over her head, with a screen between us and her.",
+        "Abu ‘Abd Allah said: Yazid ibn Harun, Bahz and al-Juddi said, from Shu‘bah: “The amount of a sa‘.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 121,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 121,
+            "end": 246,
+            "kind": "report"
+          },
+          {
+            "block": 0,
+            "start": 246,
+            "end": 309,
+            "kind": "transmission-note"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 187,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 268,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 98,
+            "kind": "transmission-note"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:248",
+        "reviewRecordSha256": "422fc591039b40f8b67c01647a7fd4adee5e734c52afa752f43a4d46a6a1f86c",
+        "notes": [
+          "All three singular reporting verbs and the listening clause remain distinct in the chain. The full Abu Abd Allah closing note includes all three named transmitters.",
+          "The selected “about a sa” in the body and “the amount of a sa” in the closing note remain separate. The curtain or screen is retained.",
+          "The checked Khan-family EPUB body 1.5.251 omits the closing transmission note. Bewley 248 includes an abbreviated rendering of its amount phrase; the complete names are translated from the Arabic."
+        ],
+        "reviewScope": "AI-assisted Arabic-to-English drafting and comparison with two visually inspected Arabic prints and two individually located English report bodies. Full narrator chains and transmission notes are retained from the selected Arabic; printed differences and English omissions are documented. This is a personal prototype. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:249",
+      "book": "Ghusl",
+      "number": 249,
+      "arabic_blocks": [
+        "[249] حدثنا عبد الله بن محمد قال : حدثنا يحيى بن آدم قال : حدثنا زهير عن أبي إسحاق قال : حدثنا أبو جعفر أنه كان عند جابر بن عبد الله هو وأبوه وعنده قوم فسألوه عن الغسل ، فقال يكفيك صاع ، فقال رجل ما يكفيني ، فقال جابر كان يكفي من هو أوفى منك شعرا وخير منك ثم أمنا في ثوب "
+      ],
+      "arabic_sha256": "2d9be337a445d8cacb905f05770b398461d55501f783d8e28d509c9e6ad0b405",
+      "english_blocks": [
+        "‘Abd Allah ibn Muhammad related to us. He said: Yahya ibn Adam related to us. He said: Zuhayr related to us, from Abu Ishaq, who said: Abu Ja‘far related to us:",
+        "He and his father were with Jabir ibn ‘Abd Allah, and some people were with him. They asked him about washing, and he said: “A sa‘ is enough for you.” A man said: “It is not enough for me.” Jabir said: “It was enough for someone who had more hair than you and was better than you.” Then he led us in prayer in a single garment."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 104,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 104,
+            "end": 271,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 160,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 327,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:249",
+        "reviewRecordSha256": "b242ce7d056d1a67a7b4bf7234a1770c05994f591b97efa10e981dcf8d3efd0f",
+        "notes": [
+          "The selected wording introduces Abu Jafar in third person and ends “he led us”; the change of person remains in the working English.",
+          "The unnamed man stays unnamed. No identification of “someone who had more hair” is inserted into the source wording. “A single garment” is retained without adding an action of putting it on."
+        ],
+        "reviewScope": "AI-assisted Arabic-to-English drafting and comparison with two visually inspected Arabic prints and two individually located English report bodies. Full narrator chains and transmission notes are retained from the selected Arabic; printed differences and English omissions are documented. This is a personal prototype. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:250",
+      "book": "Ghusl",
+      "number": 250,
+      "arabic_blocks": [
+        "[250] حدثنا أبو نعيم قال : حدثنا ابن عيينة عن عمرو عن جابر بن زيد عن ابن عباس أن النبي ﷺ وميمونة كانا يغتسلان من إناء واحد ، وقال يزيد بن هارون وبهز والجدي عن شعبة قدر صاع",
+        "قال أبو عبد الله كان ابن عيينة يقول أخيرا عن ابن عباس عن ميمونة والصحيح ما روى أبو نعيم"
+      ],
+      "arabic_sha256": "a0b1528458d2094a48f7a929cc8c5fa827e17e60edc4fcbb0508ab188b11eec7",
+      "english_blocks": [
+        "Abu Nu‘aym related to us. He said: Ibn ‘Uyaynah related to us, from ‘Amr, from Jabir ibn Zayd, from Ibn ‘Abbas:",
+        "The Prophet, may Allah bless him and grant him peace, and Maymunah used to bathe from one vessel.",
+        "And Yazid ibn Harun, Bahz and al-Juddi said, from Shu‘bah: “The amount of a sa‘.”",
+        "Abu ‘Abd Allah said: Ibn ‘Uyaynah would later say: “From Ibn ‘Abbas, from Maymunah.” And the correct version is what Abu Nu‘aym related."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation with a separately identified closing transmission note transcribed from an Arabic print. Two printed witnesses, the unchanged digital text and the differing coverage of the English comparisons remain accessible. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 78,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 78,
+            "end": 125,
+            "kind": "report"
+          },
+          {
+            "block": 0,
+            "start": 125,
+            "end": 171,
+            "kind": "transmission-note"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 87,
+            "kind": "transmission-note",
+            "provenance": {
+              "kind": "printed-supplement",
+              "id": "print-250-closing-note"
+            }
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 111,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 97,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 81,
+            "kind": "transmission-note"
+          },
+          {
+            "block": 3,
+            "start": 0,
+            "end": 136,
+            "kind": "transmission-note",
+            "provenance": {
+              "kind": "printed-supplement",
+              "id": "print-250-closing-note"
+            }
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:250",
+        "reviewRecordSha256": "b0e0a79e96c1ebc6232a499e61f83b12802f192319e9dfbdbe7c96ee2b5fcbcc",
+        "notes": [
+          "The digital paragraph and its closing amount-of-a-sa transmission remain unchanged. That short note is repeated here in the modern print but not in the inspected historical account; repetition alone is not a reason to delete it.",
+          "Both inspected Arabic prints have a further Abu Abd Allah note about Ibn Uyaynah’s later chain. It is absent from the selected digital paragraph. The modern printed wording is supplied as a separate, labelled final block, with both manually transcribed readings and exact pages.",
+          "Bewley 250 includes both closing-note topics. The pinned Khan-family EPUB 1.5.253 contains the short body without these notes. Their comparison coverage is recorded separately; the source record does not claim both translations contain the added note."
+        ],
+        "reviewScope": "AI-assisted Arabic-to-English drafting and comparison with two visually inspected Arabic prints and two individually located English report bodies. Full narrator chains and transmission notes are retained from the selected Arabic; printed differences and English omissions are documented. This is a personal prototype. Independent Arabic, English, context and reference review remains pending.",
+        "arabicSupplements": [
+          {
+            "schemaVersion": 1,
+            "id": "print-250-closing-note",
+            "kind": "transmission-note",
+            "sourceRecordId": "wikisource-bukhari-ghusl-r484873:250",
+            "digitalArabicSha256": "0c1d402c8e835b824d8bd0800f79640f534e5525656204bd7c9421fdd22a8feb",
+            "status": "chosen-for-personal-prototype",
+            "reviewerKind": "ai",
+            "independentReview": "pending",
+            "arabic": "قال أبو عبد الله كان ابن عيينة يقول أخيرا عن ابن عباس عن ميمونة والصحيح ما روى أبو نعيم",
+            "arabicSha256": "5234a5e6ce761dfc41f92e71c8978f342ef9f16c9fcbbf7738465194e43d5e40",
+            "english": "Abu ‘Abd Allah said: Ibn ‘Uyaynah would later say: “From Ibn ‘Abbas, from Maymunah.” And the correct version is what Abu Nu‘aym related.",
+            "englishSha256": "76270030cca2ab70be6d4a67134a41d66094da79d7dd025b60cce4f34cc2cc4d",
+            "selectedWitnessId": "dar-ibn-kathir-2002",
+            "transcriptionPolicy": "Printed vowel marks, punctuation and line breaks are omitted in these manual transcriptions. Wording and spelling differences are recorded per witness. Independent checking is pending.",
+            "reason": "Both inspected Arabic prints contain this final narrator note, absent from the selected digital paragraph. The prototype supplies the modern printed wording as a distinct labelled block and preserves the digital input unchanged.",
+            "witnesses": [
+              {
+                "sourceId": "brill-1862",
+                "pdfPage": 74,
+                "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+                "reading": "قال أبو عبد الله كان ابن عيينة يقول أخيرا عن ابن عباس عن ميمونة والصحيح ما رواه أبو نعيم",
+                "readingSha256": "3b97e11405c2bb2a547e3da1bfaf313dba97ef1cff48373cb085c61eb127213e",
+                "differenceNote": "The historical print reads ما رواه أبو نعيم, with an explicit object pronoun; the selected modern print reads ما روى أبو نعيم. The two readings remain separately recorded."
+              },
+              {
+                "sourceId": "dar-ibn-kathir-2002",
+                "pdfPage": 73,
+                "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+                "reading": "قال أبو عبد الله كان ابن عيينة يقول أخيرا عن ابن عباس عن ميمونة والصحيح ما روى أبو نعيم",
+                "readingSha256": "5234a5e6ce761dfc41f92e71c8978f342ef9f16c9fcbbf7738465194e43d5e40"
+              }
+            ],
+            "contextNoteId": "250-printed-note",
+            "position": "after-report",
+            "englishSegmentId": "250-4",
+            "englishComparisons": [
+              {
+                "sourceId": "bewley-ghusl",
+                "reference": "250",
+                "status": "includes-note",
+                "note": "Includes the final discussion of Ibn Uyaynah’s later chain and Abu Nuaym’s version."
+              },
+              {
+                "sourceId": "islamhouse-khan",
+                "reference": "1.5.253",
+                "status": "omits-note",
+                "note": "The pinned EPUB record contains the short report body without this final narrator note."
+              }
+            ]
+          }
+        ]
+      },
+      "audio_status": "No recording yet."
+    }
+  ]
+}

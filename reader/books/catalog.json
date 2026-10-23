@@ -2,17 +2,17 @@
   "schemaVersion": 2,
   "namespace": "bukhari-opening-v1",
   "publication": "personal-prototype",
-  "sourceRecordSha256": "55f3413f23e3facd9c2919f8a413c7577edd7ef14b163ca79da4c486bb88557e",
-  "referencesSha256": "bda9b313f4a7949038db8eb8c2a8bc66bcdba66b2ee77de9197ca8f0f1d278e9",
+  "sourceRecordSha256": "94a4d92b6603e976df687f01b794316ed1659319e1209f95ae3c2d211be279f9",
+  "referencesSha256": "ec11ab162717d2f049d8739f92320ef05f02de615d0787cc06b5dc3f63bd5310",
   "sourceRecord": {
     "created": "2026-10-20",
-    "scope": "Personal prototype: complete numbered entries 1–244 across 4 books. The rest of the collection remains in preparation.",
+    "scope": "Personal prototype: complete numbered entries 1–250 across 5 books. The rest of the collection remains in preparation.",
     "selected_route": "Pinned Arabic text plus a new English working translation.",
     "license": {
       "id": "CC-BY-SA-4.0",
       "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Sahih al-Bukhari by Muhammad ibn Ismail al-Bukhari; Arabic digital transcription by Arabic Wikisource contributors, opening revision 484874 and Faith revision 490285. Book of Knowledge: revision 252975. Book of Ablution: revision 273249.",
-      "changes": "Entries 1–2 are unchanged. Entries 3–7 are derived from the pinned Arabic; Hadith 5 has one explicitly recorded correction from له to لك supported by two printed witnesses. Original inputs are retained in prototype-inputs.json. New AI-assisted English, presentation and comparison notes are offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app. Hadith 8–58 retain their Arabic paragraphs unchanged from revision 490285; their new English and available chapter titles are AI-assisted. A disputed chapter heading is explicitly withheld. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 59–134 derive from revision 252975; only 99 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 135–244 derive from revision 273249; only 137, 146, 165, 202 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Exact source origins and original labels are retained; any different reader reference is explicitly mapped. Chapter introductions are preserved separately in Arabic, with English translation still pending. Declared printed additions supply a missing closing transmission note and chapter heading; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately."
+      "attribution": "Sahih al-Bukhari by Muhammad ibn Ismail al-Bukhari; Arabic digital transcription by Arabic Wikisource contributors, opening revision 484874 and Faith revision 490285. Book of Knowledge: revision 252975. Book of Ablution: revision 273249. Book of Ghusl: revision 484873.",
+      "changes": "Entries 1–2 are unchanged. Entries 3–7 are derived from the pinned Arabic; Hadith 5 has one explicitly recorded correction from له to لك supported by two printed witnesses. Original inputs are retained in prototype-inputs.json. New AI-assisted English, presentation and comparison notes are offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app. Hadith 8–58 retain their Arabic paragraphs unchanged from revision 490285; their new English and available chapter titles are AI-assisted. A disputed chapter heading is explicitly withheld. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 59–134 derive from revision 252975; only 99 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 135–244 derive from revision 273249; only 137, 146, 165, 202 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Exact source origins and original labels are retained; any different reader reference is explicitly mapped. Chapter introductions are preserved separately in Arabic, with English translation still pending. Declared printed additions supply a missing closing transmission note and chapter heading; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately. Hadith 245–250 retain their Arabic paragraphs unchanged from revision 484873; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. A declared printed addition supplies a missing closing transmission note; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately."
     },
     "sources": [
       {
@@ -222,6 +222,20 @@
         "kind": "reference-check",
         "format": "web",
         "url": "https://sunnah.com/bukhari:193"
+      },
+      {
+        "id": "arabic-ghusl",
+        "label": "Arabic Wikisource · fixed revision 484873",
+        "kind": "arabic-input",
+        "format": "web",
+        "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_الغسل&oldid=484873"
+      },
+      {
+        "id": "bewley-ghusl",
+        "label": "Aisha Bewley · Book of Ghusl",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://aishabewley.org/bukhari4"
       }
     ],
     "findings": [
@@ -277,7 +291,9 @@
       "knowledgeReviewSha256": "351ad243c96c33164cbdab6671abb0d2867548982925aeed71adae2b03ee2c2f",
       "knowledgeSourceSha256": "9060879f4b110cc9007f35db6b1f2fa0cc37c5ba8e510531721b024cbadf4e58",
       "ablutionReviewSha256": "cabac2ca51195b600169481a70dc55f01df737860da9afa3f57f36abf0b59e67",
-      "ablutionSourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd"
+      "ablutionSourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+      "ghuslReviewSha256": "bec2b1972e12ac353b9b51e905e620471845a2168ab6b494cc7f4dd1e5c0493e",
+      "ghuslSourceSha256": "07e29f845c2f17f77aae014356e8028a3335d245eeeb73e7b5efe3b52064db77"
     }
   },
   "books": [
@@ -4099,6 +4115,99 @@
       "path": "books/ablution-4012bd796dae0e95.json",
       "bytes": 868191,
       "sha256": "4012bd796dae0e95ee6ccb1b710179aee95220fc2853d87ec5578fc5ee6d9f6c"
+    },
+    {
+      "id": "ghusl",
+      "number": 5,
+      "title": "Ghusl",
+      "sourceEntryCount": 45,
+      "entryNumbers": [
+        245,
+        246,
+        247,
+        248,
+        249,
+        250
+      ],
+      "chapters": [
+        {
+          "id": "chapter-01",
+          "title": "Ablution before washing",
+          "entryNumbers": [
+            245,
+            246
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ghusl-review.html",
+              "fragment": "chapter-01"
+            }
+          }
+        },
+        {
+          "id": "chapter-02",
+          "title": "A man washing together with his wife",
+          "entryNumbers": [
+            247
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ghusl-review.html",
+              "fragment": "chapter-02"
+            }
+          }
+        },
+        {
+          "id": "chapter-03",
+          "title": "Washing with a sa‘ or thereabouts",
+          "entryNumbers": [
+            248,
+            249,
+            250
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ghusl-review.html",
+              "fragment": "chapter-03"
+            }
+          }
+        }
+      ],
+      "introduction": {
+        "schemaVersion": 1,
+        "arabicParagraphs": 1,
+        "englishStatus": "pending",
+        "independentReview": "pending",
+        "evidenceSha256": "feec7d07b3461edcc203cd0b7cdb73d1f28b9c3a2e1125935879afabcc2c914a",
+        "notes": {
+          "path": "ghusl-review.html",
+          "fragment": "book-introduction"
+        }
+      },
+      "path": "books/ghusl-63bd0e04e12cecc5.json",
+      "bytes": 43523,
+      "sha256": "63bd0e04e12cecc588eb1e8e57595a07cf9e40750c7bedc4814254309e857f78"
     }
   ],
   "entries": [
@@ -5809,6 +5918,48 @@
       "bookId": "ablution",
       "book": "Ablution",
       "englishWords": 183
+    },
+    {
+      "id": "bukhari:245",
+      "number": 245,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 101
+    },
+    {
+      "id": "bukhari:246",
+      "number": 246,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 92
+    },
+    {
+      "id": "bukhari:247",
+      "number": 247,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 47
+    },
+    {
+      "id": "bukhari:248",
+      "number": 248,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 104
+    },
+    {
+      "id": "bukhari:249",
+      "number": 249,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 98
+    },
+    {
+      "id": "bukhari:250",
+      "number": 250,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 77
     }
   ]
 }

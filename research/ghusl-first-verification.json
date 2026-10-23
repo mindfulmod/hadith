@@ -1,0 +1,173 @@
+{
+  "checkedAt": "2026-10-23",
+  "status": "personal-prototype-implemented-and-browser-verified",
+  "independentReview": "pending",
+  "range": "245–250",
+  "entriesAdded": 6,
+  "selectedSourceChapters": 3,
+  "englishSegments": 15,
+  "originalArabicParagraphs": 6,
+  "printedSupplementParagraphs": 1,
+  "bookIntroductionParagraphs": 1,
+  "readerEntries": 250,
+  "readerBooks": 5,
+  "sourceRecordSha256": "94a4d92b6603e976df687f01b794316ed1659319e1209f95ae3c2d211be279f9",
+  "reviewRecord": "content/review/ghusl-first-review.json",
+  "reviewSha256": "b3df6335cc86f32089d16ffb349b26ac8cf27e1551c66370a509bcf1e74f8b46",
+  "sourceIntake": "research/ghusl-source-audit.json",
+  "implementation": [
+    "Book introductions require explicit source-block hashes, unchanged manifest evidence, separate review status and two printed locations. They remain outside chapter IDs and numbered entries.",
+    "The book browser links to the original introductory quotations and source comparisons. English and independent review remain explicitly pending.",
+    "The checked book pack, catalog, offline manifest and deployment anchor checks all retain the introduction metadata and its source notes.",
+    "The complete digital paragraphs remain unchanged. The final note at 250 is separately sourced, labelled and included in its complete narration script. Both printed readings and English-comparison coverage remain accessible.",
+    "The preceding short amount note stays in the selected text; its different placement across the printed witnesses is documented rather than silently harmonized."
+  ],
+  "sourceFindings": [
+    "Selected 247 retains its plural reporting verb; the historical singular is recorded as a variant.",
+    "The amount expressions and full closing transmitter names in 248 and 250 remain separate from the report bodies.",
+    "The final narrator note at 250 is present in both inspected prints and Bewley 250 but absent from the digital paragraph and the checked EPUB 1.5.253. Its manually transcribed modern reading is a distinct source addition.",
+    "The first three source chapters are complete; the book introduction is not invented as chapter zero or a hadith."
+  ],
+  "regression": {
+    "node": 262,
+    "python": 67,
+    "total": 329,
+    "failed": 0,
+    "newTests": 9,
+    "integrityChecks": 13,
+    "note": "The first Node run exposed an accidentally updated request count in the historical four-book fixture. Its original five-request expectation was restored; the final complete Node run passed all 262 tests.",
+    "tests": [
+      "tests/ghusl-first.test.mjs",
+      "tests/book-introduction.test.mjs",
+      "tests/test_wikisource_book.py",
+      "tests/stable-book-packs.test.mjs"
+    ],
+    "checks": [
+      "Previous 244 entry objects and all four existing book packs remain exact.",
+      "Changed source blocks, missing introduction reviews, duplicate ownership, false translation status and changed print evidence are rejected.",
+      "Catalog/pack introduction mismatches and missing offline notes are rejected. Deployment requires exactly one matching introduction anchor.",
+      "Sessions remain numbered-only, preserve existing plans and cross the real Ablution/Ghusl boundary.",
+      "The printed note cannot claim stale references, duplicate English comparisons or unsupported coverage status. Production publishing remains refused."
+    ]
+  },
+  "browser": {
+    "entries": [
+      {
+        "number": 245,
+        "englishBlocks": 2,
+        "arabicBlocks": 1,
+        "exact": true
+      },
+      {
+        "number": 246,
+        "englishBlocks": 2,
+        "arabicBlocks": 1,
+        "exact": true
+      },
+      {
+        "number": 247,
+        "englishBlocks": 2,
+        "arabicBlocks": 1,
+        "exact": true
+      },
+      {
+        "number": 248,
+        "englishBlocks": 3,
+        "arabicBlocks": 1,
+        "exact": true
+      },
+      {
+        "number": 249,
+        "englishBlocks": 2,
+        "arabicBlocks": 1,
+        "exact": true
+      },
+      {
+        "number": 250,
+        "englishBlocks": 4,
+        "arabicBlocks": 2,
+        "exact": true
+      }
+    ],
+    "introduction": true,
+    "layouts": [
+      {
+        "scrollWidth": 393,
+        "theme": "day",
+        "view": "#read/250",
+        "width": 393
+      },
+      {
+        "font": "28px",
+        "scrollWidth": 1280,
+        "theme": "day",
+        "view": "#read/250",
+        "width": 1280
+      },
+      {
+        "font": "28px",
+        "scrollWidth": 1280,
+        "theme": "night",
+        "view": "#read/250",
+        "width": 1280
+      },
+      {
+        "font": "28px",
+        "scrollWidth": 320,
+        "theme": "night",
+        "view": "#read/250",
+        "width": 320
+      },
+      {
+        "font": "28px",
+        "scrollWidth": 320,
+        "theme": "day",
+        "view": "#read/250",
+        "width": 320
+      },
+      {
+        "scrollWidth": 320,
+        "theme": "day",
+        "view": "#book/ghusl",
+        "width": 320
+      }
+    ],
+    "offline": {
+      "bookBrowser": true,
+      "introduction": true,
+      "entry250": true,
+      "arabicAndPrintedNote": true,
+      "search": "1 hadith matches. Showing 1–1."
+    },
+    "continueBefore": "#read/244",
+    "continueAfter": "#read/244"
+  },
+  "offline": {
+    "readingBytes": 9580833,
+    "readerRelease": "opening-f7d29ced82b0",
+    "audioRecordedNumbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "audioRecordingsUnchanged": true,
+    "newAudioGenerated": false,
+    "sourceNotes": "reader/ghusl-review.html#book-introduction",
+    "method": "Saved until Ready offline, then stopped the only preview server. Reloaded the book browser, source notes and Hadith 250, compared complete displayed English and Arabic, and searched the added note successfully.",
+    "limits": "Desktop browser checks do not certify physical iPhone background playback. No new audio recording was generated."
+  },
+  "unchangedBookPacks": [
+    "books/opening-revelation-0a534f10d205292c.json",
+    "books/faith-ad873aab8759ca02.json",
+    "books/knowledge-e3d5ef7956421322.json",
+    "books/ablution-4012bd796dae0e95.json"
+  ],
+  "nextWork": [
+    "Continue Ghusl from 251 in complete source chapters, preserving repeated accounts, full chains and closing notes.",
+    "Prepare English book/chapter introductions and resolve the recorded quotation-reference discrepancy, keeping source wording separate from app explanations.",
+    "Complete independent Arabic, English, context and narration review, further Cedar recordings and physical iPhone acceptance before any production claim."
+  ]
+}

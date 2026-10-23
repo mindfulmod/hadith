@@ -44,6 +44,7 @@ export async function createContentLibrary({files,base=new URL('./',import.meta.
  const index=descriptors.get('books/catalog.json');requireValue(index,'Collection index unavailable');
  const catalog=freeze(validateCatalog(await read(index))),pending=new Map(),loaded=new Map();
  const summaries=new Map(catalog.entries.map(e=>[e.number,e]));
+ for(const book of catalog.books)if(book.introduction)requireValue(descriptors.has(book.introduction.notes.path),'Offline book introduction is missing from this release');
  for(const book of catalog.books)for(const chapter of book.chapters||[])if(chapter.sourceContext)requireValue(descriptors.has(chapter.sourceContext.notes.path),'Offline chapter source notes are missing from this release');
  function loadBook(id){
   if(loaded.has(id))return Promise.resolve(loaded.get(id));
@@ -55,6 +56,7 @@ export async function createContentLibrary({files,base=new URL('./',import.meta.
    requireValue(pack.schemaVersion===catalog.schemaVersion&&pack.namespace===catalog.namespace&&pack.publication===catalog.publication,'Book version mismatch');
    requireValue(pack.book?.id===id&&pack.book.number===descriptor.number&&pack.book.title===descriptor.title,'Book identity mismatch');
    requireValue(pack.book.sourceEntryCount===descriptor.sourceEntryCount,'Source coverage mismatch');
+   requireValue(JSON.stringify(pack.book.introduction)===JSON.stringify(descriptor.introduction),'Book introduction context mismatch');
    requireValue(JSON.stringify(pack.book.chapters)===JSON.stringify(descriptor.chapters),'Chapter context mismatch');
    if(catalog.schemaVersion===1)requireValue(pack.sourceRecord&&Array.isArray(pack.sourceRecord.sources)&&pack.sourceRecord.license,'Missing source trail');
    else requireValue(!Object.hasOwn(pack,'sourceRecord'),'Book contains conflicting collection metadata');
