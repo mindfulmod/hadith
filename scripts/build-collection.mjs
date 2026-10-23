@@ -82,6 +82,11 @@ function validateComparisons(comparisons,config,segments){
       assert.equal(p.continuedByReference,undefined,'Backward pointer cannot claim a forward continuation');
       comparisonEvidence(p.referencedReference,p.referencedReferenceEvidence);
       assert(p.segmentIds.every(id=>segments.find(s=>s.id===id)?.kind==='chain'),'Backward-only part may only correspond to an abbreviated chain');
+     }else if(p.status==='forward-reference-only'){
+      const pointer=/^as the following Hadith ([1-9]\d*)\.$/.exec(p.checkedBody[1].trim());
+      assert(pointer&&p.continuedByReference===`1.${config.number}.${pointer[1]}`&&p.continuedByReference===parts[i+1]?.reference&&Number(pointer[1])===Number(p.reference.split('.')[2])+1,'Forward-only pointer needs its exact adjacent continuation');
+      assert(p.referencedReference===undefined&&p.referencedReferenceEvidence===undefined,'Forward-only pointer cannot claim a backward reference');
+      assert(p.segmentIds.every(id=>segments.find(s=>s.id===id)?.kind==='chain'),'Forward-only part may only correspond to an abbreviated chain');
      }else{
       assert.equal(p.status,'forward-incipit-only','Unknown abbreviated comparison part');
       assert.equal(p.checkedBody[1].trim(),"While Allah's Apostle was prostrating (as stated below).",'Unexpected forward incipit');

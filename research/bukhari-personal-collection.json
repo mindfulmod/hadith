@@ -1,12 +1,12 @@
 {
   "created": "2026-10-20",
-  "scope": "Personal prototype: complete numbered entries 1–273 across 5 books. The rest of the collection remains in preparation.",
+  "scope": "Personal prototype: complete numbered entries 1–289 across 5 books. The rest of the collection remains in preparation.",
   "selected_route": "Pinned Arabic text plus a new English working translation.",
   "license": {
     "id": "CC-BY-SA-4.0",
     "url": "https://creativecommons.org/licenses/by-sa/4.0/",
     "attribution": "Sahih al-Bukhari by Muhammad ibn Ismail al-Bukhari; Arabic digital transcription by Arabic Wikisource contributors, opening revision 484874 and Faith revision 490285. Book of Knowledge: revision 252975. Book of Ablution: revision 273249. Book of Ghusl: revision 484873.",
-    "changes": "Entries 1–2 are unchanged. Entries 3–7 are derived from the pinned Arabic; Hadith 5 has one explicitly recorded correction from له to لك supported by two printed witnesses. Original inputs are retained in prototype-inputs.json. New AI-assisted English, presentation and comparison notes are offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app. Hadith 8–58 retain their Arabic paragraphs unchanged from revision 490285; their new English and available chapter titles are AI-assisted. A disputed chapter heading is explicitly withheld. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 59–134 derive from revision 252975; only 99 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 135–244 derive from revision 273249; only 137, 146, 165, 202 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Exact source origins and original labels are retained; any different reader reference is explicitly mapped. Chapter introductions are preserved separately in Arabic, with English translation still pending. Declared printed additions supply a missing closing transmission note and chapter heading; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately. Hadith 245–273 derive from revision 484873; only 262, 272 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. A declared printed addition supplies a missing closing transmission note; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately."
+    "changes": "Entries 1–2 are unchanged. Entries 3–7 are derived from the pinned Arabic; Hadith 5 has one explicitly recorded correction from له to لك supported by two printed witnesses. Original inputs are retained in prototype-inputs.json. New AI-assisted English, presentation and comparison notes are offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app. Hadith 8–58 retain their Arabic paragraphs unchanged from revision 490285; their new English and available chapter titles are AI-assisted. A disputed chapter heading is explicitly withheld. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 59–134 derive from revision 252975; only 99 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 135–244 derive from revision 273249; only 137, 146, 165, 202 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Exact source origins and original labels are retained; any different reader reference is explicitly mapped. Chapter introductions are preserved separately in Arabic, with English translation still pending. Declared printed additions supply a missing closing transmission note and chapter heading; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately. Hadith 245–289 derive from revision 484873; only 262, 272, 287, 288 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. A declared printed addition supplies a missing closing transmission note; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately."
   },
   "sources": [
     {
@@ -251,6 +251,20 @@
       "kind": "commentary",
       "format": "web",
       "url": "https://www.islamweb.net/ar/library/content/52/540/باب-من-بدأ-بشق-رأسه-الأيمن-في-الغسل"
+    },
+    {
+      "id": "fath-ghusl-intercourse",
+      "label": "Ibn Hajar · Fath al-Bari · intercourse wording",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://ablibrary.net/book_content/b/2601/337"
+    },
+    {
+      "id": "fath-ghusl-final",
+      "label": "Ibn Hajar · Fath al-Bari · closing compiler comment",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://ablibrary.net/book_content/b/2601/340"
     }
   ],
   "findings": [
@@ -22668,6 +22682,1091 @@
         "reviewScope": "AI-assisted working translation from the selected Arabic, compared with two visually inspected Arabic prints and individually matched English bodies. Comparison abbreviations, numbering changes, source variants and two explicit digital corrections are recorded. Full chains, uncertainty and closing attributions remain. Independent Arabic, English, context and reference review remains pending."
       },
       "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:274",
+      "book": "Ghusl",
+      "number": 274,
+      "arabic_blocks": [
+        "[274] حدثنا إسحاق بن نصر قال : حدثنا عبد الرزاق عن معمر عن همام بن منبه عن أبي هريرة عن النبي ﷺ قال : كانت بنو إسرائيل يغتسلون عراة ينظر بعضهم إلى بعض وكان موسى يغتسل وحده فقالوا والله ما يمنع موسى أن يغتسل معنا إلا أنه آدر فذهب مرة يغتسل فوضع ثوبه على حجر ففر الحجر بثوبه فخرج موسى في إثره يقول ثوبي يا حجر حتى نظرت بنو إسرائيل إلى موسى فقالوا والله ما بموسى من بأس وأخذ ثوبه فطفق بالحجر ضربا ، فقال أبو هريرة والله إنه لندب بالحجر ستة أو سبعة ضربا بالحجر "
+      ],
+      "arabic_sha256": "137acec71f30111db00ae02c072656d2aa67620b08953be0bbea070e76ef7b04",
+      "english_blocks": [
+        "Ishaq ibn Nasr related to us. He said: ‘Abd al-Razzaq related to us, from Ma‘mar, from Hammam ibn Munabbih, from Abu Hurayrah, from the Prophet, may Allah bless him and grant him peace, who said:",
+        "The Children of Israel used to bathe naked, looking at one another, while Musa used to bathe alone. They said: “By Allah, nothing prevents Musa from bathing with us except that he has swollen testicles.” Once he went to bathe and put his garment on a stone. The stone fled with his garment, and Musa went after it, saying: “My garment, stone!” The Children of Israel looked at Musa and said: “By Allah, there is nothing wrong with Musa.” He took his garment and began striking the stone.",
+        "Abu Hurayrah said: “By Allah, there are six or seven marks on the stone from striking the stone.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 102,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 102,
+            "end": 396,
+            "kind": "report"
+          },
+          {
+            "block": 0,
+            "start": 396,
+            "end": 457,
+            "kind": "transmission-note"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 195,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 487,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 97,
+            "kind": "transmission-note"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:274",
+        "reviewRecordSha256": "fc782859573b4c74f1433c445b6b551ef7525abe68ccbf1a3eac932435b233c3",
+        "notes": [
+          "The complete Musa report and Abu Hurayrah’s separate closing observation about six or seven marks remain. The digital and modern print say the garment request once; the historical print repeats it. The selected single occurrence remains. The historical print also supplies a blessing after Musa which is absent in the selected paragraph.",
+          "Swollen testicles renders آدر without treating the English comparison’s scrotal hernia as a separate diagnosis. The closing observation is not presented as a new quotation from the Prophet.",
+          "EPUB 1.5.277 contains this report and the next Ayyub report under one reference. They remain two selected-source entries, explicitly mapped to parts 1 and 2. Chapter 20’s unnumbered quotation stays separately browsable Arabic."
+        ],
+        "reviewScope": "AI-assisted working translation from selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparison records. Complete chains, compiler remarks and closing attributions remain. Shared/split references, abbreviated comparisons, witness variants and two explicit digital corrections are recorded. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:275",
+      "book": "Ghusl",
+      "number": 275,
+      "arabic_blocks": [
+        "[275] وعن أبي هريرة عن النبي ﷺ قال : بينا أيوب يغتسل عريانا فخر عليه جراد من ذهب فجعل أيوب يحتثي في ثوبه فناداه ربه يا أيوب ألم أكن أغنيتك عما ترى قال بلى وعزتك ولكن لا غنى بي عن بركتك  ، ورواه إبراهيم عن موسى بن عقبة عن صفوان عن عطاء بن يسار عن أبي هريرة عن النبي ﷺ قال : بينا أيوب يغتسل عريانا "
+      ],
+      "arabic_sha256": "b78555af4248c40f05e083205acd58b28ef7d986e712c3b1e79766e7c7f268e8",
+      "english_blocks": [
+        "And from Abu Hurayrah, from the Prophet, may Allah bless him and grant him peace, who said:",
+        "While Ayyub was bathing naked, golden locusts fell upon him. Ayyub began scooping them into his garment. His Lord called to him: “Ayyub, have I not made you free of need for what you see?” He said: “Yes, by Your might, but I cannot do without Your blessing.”",
+        "And Ibrahim related it from Musa ibn ‘Uqbah, from Safwan, from ‘Ata’ ibn Yasar, from Abu Hurayrah, from the Prophet, may Allah bless him and grant him peace, who said: “While Ayyub was bathing naked.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic prints and two English comparison families were inspected. One English comparison abbreviates the report; its omitted wording and any explicit Arabic correction are documented in the source notes. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 37,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 37,
+            "end": 188,
+            "kind": "report"
+          },
+          {
+            "block": 0,
+            "start": 188,
+            "end": 296,
+            "kind": "transmission-note"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 91,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 258,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 200,
+            "kind": "transmission-note"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:275",
+        "reviewRecordSha256": "b9cfd1b44fecf80a969d9d10d29c0277b18cc849558833ae0d55c5717d758f69",
+        "notes": [
+          "The selected opening And from Abu Hurayrah continues the preceding chain. That relationship is shown in a separate link to 274, without inserting an invented repeated chain into this report.",
+          "The full closing Ibrahim–Musa ibn Uqbah–Safwan–Ata ibn Yasar–Abu Hurayrah attribution and repeated opening words remain. Bewley abbreviates this to a same-report statement with another isnad, and the EPUB combined reference omits that closing attribution.",
+          "The digital spelling يحتثي differs from يحثي in the inspected prints; the selected Arabic remains unchanged. The working English renders the shared scooping action. Independent spelling and translation review remains pending."
+        ],
+        "reviewScope": "AI-assisted working translation from selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparison records. Complete chains, compiler remarks and closing attributions remain. Shared/split references, abbreviated comparisons, witness variants and two explicit digital corrections are recorded. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:276",
+      "book": "Ghusl",
+      "number": 276,
+      "arabic_blocks": [
+        "[276] حدثنا عبد الله بن مسلمة عن مالك عن أبي النضر مولى عمر بن عبيد الله أن أبا مرة مولى أم هانئ بنت أبي طالب أخبره أنه سمع أم هانئ بنت أبي طالب تقول ذهبت إلى رسول الله ﷺ عام الفتح فوجدته يغتسل وفاطمة تستره ، فقال من هذه فقلت : أنا أم هانئ "
+      ],
+      "arabic_sha256": "e856db099da734e90f0e2ab03a35400775758ab912cae01d864c9baf0a43e769",
+      "english_blocks": [
+        "‘Abd Allah ibn Maslamah related to us, from Malik, from Abu al-Nadr, the freedman of ‘Umar ibn ‘Ubayd Allah, that Abu Murrah, the freedman of Umm Hani’ bint Abi Talib, informed him that he heard Umm Hani’ bint Abi Talib saying:",
+        "I went to the Messenger of Allah, may Allah bless him and grant him peace, in the year of the conquest and found him bathing while Fatimah screened him. He said: “Who is this?” I said: “I am Umm Hani’.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 150,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 150,
+            "end": 240,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 227,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 202,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:276",
+        "reviewRecordSha256": "5ed330bce54c4f9a69c8f6306802e1adeedc78b5cf8fa6a93eb322412cd16f39",
+        "notes": [
+          "The full chain distinguishes Abu al-Nadr, the freedman of Umar ibn Ubayd Allah, from Abu Murrah, the freedman of Umm Hani. Her name and parentage remain repeated where the Arabic repeats them.",
+          "The year of the conquest remains without adding Makkah from the comparison explanation. Fatimah’s screening and the full question and answer remain."
+        ],
+        "reviewScope": "AI-assisted working translation from selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparison records. Complete chains, compiler remarks and closing attributions remain. Shared/split references, abbreviated comparisons, witness variants and two explicit digital corrections are recorded. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:277",
+      "book": "Ghusl",
+      "number": 277,
+      "arabic_blocks": [
+        "[277] حدثنا عبدان قال : أخبرنا عبد الله قال : أخبرنا سفيان عن الأعمش عن سالم بن أبي الجعد عن كريب عن ابن عباس عن ميمونة قالت سترت النبي ﷺ وهو يغتسل من الجنابة فغسل يديه ثم صب بيمينه على شماله فغسل فرجه وما أصابه ثم مسح بيده على الحائط أو الأرض ثم توضأ وضوءه للصلاة غير رجليه ثم أفاض على جسده الماء ثم تنحى فغسل قدميه تابعه أبو عوانة وابن فضيل في الستر "
+      ],
+      "arabic_sha256": "32b09e255735390a8dd57c45ed16a3df75f1419fc04e40f66e757eccdd611865",
+      "english_blocks": [
+        "‘Abdan related to us. He said: ‘Abd Allah informed us. He said: Sufyan informed us, from al-A‘mash, from Salim ibn Abi al-Ja‘d, from Kurayb, from Ibn ‘Abbas, from Maymunah, who said:",
+        "I screened the Prophet, may Allah bless him and grant him peace, while he was bathing from janabah. He washed his hands, then poured with his right hand onto his left and washed his private parts and what had touched them. Then he wiped his hand on the wall or the ground. Then he performed his ablution for prayer except for his feet. Then he poured water over his body, then moved aside and washed his feet.",
+        "Abu ‘Awanah and Ibn Fudayl corroborated it regarding the screening."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 125,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 125,
+            "end": 317,
+            "kind": "report"
+          },
+          {
+            "block": 0,
+            "start": 317,
+            "end": 352,
+            "kind": "transmission-note"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 182,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 409,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 67,
+            "kind": "transmission-note"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:277",
+        "reviewRecordSha256": "e04c20cd2021b3802269c45a2efbe29a87807a717df06f3e523a10caf1ddc1bc",
+        "notes": [
+          "The selected digital wording says his hands, while both inspected prints and Bewley use singular hand at the first wash. The selected dual is retained and this difference is documented; no change is inferred from the English comparison alone.",
+          "The exception for the feet and their later washing remain, as do the wall or ground alternatives. The final Abu Awanah and Ibn Fudayl corroboration regarding screening is preserved; the EPUB body omits it."
+        ],
+        "reviewScope": "AI-assisted working translation from selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparison records. Complete chains, compiler remarks and closing attributions remain. Shared/split references, abbreviated comparisons, witness variants and two explicit digital corrections are recorded. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:278",
+      "book": "Ghusl",
+      "number": 278,
+      "arabic_blocks": [
+        "[278] حدثنا عبد الله بن يوسف قال : أخبرنا مالك عن هشام بن عروة عن أبيه عن زينب بنت أبي سلمة عن أم سلمة أم المؤمنين أنها قالت جاءت أم سليم امرأة أبي طلحة إلى رسول الله ﷺ فقالت : يا رسول الله إن الله لا يستحي من الحق هل على المرأة من غسل إذا هي احتلمت ، فقال رسول الله ﷺ : نعم إذا رأت الماء "
+      ],
+      "arabic_sha256": "3b813d6629d1972406841c98382a131b1d9396133d5efd6e6f266fc1ef245c36",
+      "english_blocks": [
+        "‘Abd Allah ibn Yusuf related to us. He said: Malik informed us, from Hisham ibn ‘Urwah, from his father, from Zaynab bint Abi Salamah, from Umm Salamah, the Mother of the Believers, who said:",
+        "Umm Sulaym, the wife of Abu Talhah, came to the Messenger of Allah, may Allah bless him and grant him peace, and said: “Messenger of Allah, Allah is not shy of the truth. Must a woman perform a full ritual washing if she has a sexual dream?” The Messenger of Allah, may Allah bless him and grant him peace, said: “Yes, if she sees the fluid.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 125,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 125,
+            "end": 289,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 191,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 342,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:278",
+        "reviewRecordSha256": "33fb177045f47dc6f793056b305b27eaa061b28114500c0869939a194db9ee1b",
+        "notes": [
+          "The complete chain, Umm Salamah’s title, Umm Sulaym’s relationship and the affirmative answer remain. Fluid renders the contextual الماء, consistently with the earlier related report 130, without importing the additional dialogue from that report."
+        ],
+        "reviewScope": "AI-assisted working translation from selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparison records. Complete chains, compiler remarks and closing attributions remain. Shared/split references, abbreviated comparisons, witness variants and two explicit digital corrections are recorded. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:279",
+      "book": "Ghusl",
+      "number": 279,
+      "arabic_blocks": [
+        "[279] حدثنا علي بن عبد الله قال : حدثنا يحيى قال : حدثنا حميد قال : حدثنا بكر عن أبي رافع عن أبي هريرة أن النبي ﷺ لقيه في بعض طريق المدينة وهو جنب فانخنست منه فذهب فاغتسل ثم جاء ، فقال أين كنت يا أبا هريرة قال : كنت جنبا فكرهت أن أجالسك وأنا على غير طهارة ، فقال سبحان الله إن المسلم لا ينجس "
+      ],
+      "arabic_sha256": "36b11c7f8c3113f90165d7188e8b190ae8cda19661d62c9bd717274c7c538dba",
+      "english_blocks": [
+        "‘Ali ibn ‘Abd Allah related to us. He said: Yahya related to us. He said: Humayd related to us. He said: Bakr related to us, from Abu Rafi‘, from Abu Hurayrah,",
+        "That the Prophet, may Allah bless him and grant him peace, met him on one of the roads of Madinah while he was in janabah. “I slipped away from him.” He went and bathed, then came back. He said: “Where were you, Abu Hurayrah?” He said: “I was in janabah and disliked sitting with you while I was not in a state of purity.” He said: “Glory be to Allah! A Muslim does not become impure.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 103,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 103,
+            "end": 292,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 159,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 385,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:279",
+        "reviewRecordSha256": "50451f5b3d15fcd92158c1222c9644f1f80fb5ae24a2639bcd86241b90a433ed",
+        "notes": [
+          "The selected narration shifts from he to I slipped away, then back to he; those shifts remain visible instead of being silently rewritten into one narrative voice.",
+          "The selected digital and modern print conclude Muslim, while the historical print and EPUB use believer. The selected Muslim is retained. The final while I was not in a state of purity clause remains, although the EPUB shortens the reply."
+        ],
+        "reviewScope": "AI-assisted working translation from selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparison records. Complete chains, compiler remarks and closing attributions remain. Shared/split references, abbreviated comparisons, witness variants and two explicit digital corrections are recorded. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:280",
+      "book": "Ghusl",
+      "number": 280,
+      "arabic_blocks": [
+        "[280] حدثنا عبد الأعلى بن حماد قال : حدثنا يزيد بن زريع قال : حدثنا سعيد عن قتادة أن أنس بن مالك حدثهم أن نبي الله ﷺ كان يطوف على نسائه في الليلة الواحدة وله يومئذ تسع نسوة "
+      ],
+      "arabic_sha256": "c911978e423a55e6e86de108302486cec5f206663179eead1244131572923ffb",
+      "english_blocks": [
+        "‘Abd al-A‘la ibn Hammad related to us. He said: Yazid ibn Zuray‘ related to us. He said: Sa‘id related to us, from Qatadah, that Anas ibn Malik related to them:",
+        "That the Prophet of Allah, may Allah bless him and grant him peace, used to go round to his wives in one night, and he had nine wives at that time."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 103,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 103,
+            "end": 173,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 160,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 147,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:280",
+        "reviewRecordSha256": "e6777111f3fb1e03bd1c1250a8625589a0c6ba3f969a7dd5ff71799151c4188c",
+        "notes": [
+          "The full chain and nine wives at that time remain. The selected going round to the wives is not expanded with an additional explicit sexual clause. Chapter 24’s unnumbered Ata statement stays separately browsable Arabic, outside sessions and narration."
+        ],
+        "reviewScope": "AI-assisted working translation from selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparison records. Complete chains, compiler remarks and closing attributions remain. Shared/split references, abbreviated comparisons, witness variants and two explicit digital corrections are recorded. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:281",
+      "book": "Ghusl",
+      "number": 281,
+      "arabic_blocks": [
+        "[281] حدثنا عياش قال : حدثنا عبد الأعلى حدثنا حميد عن بكر عن أبي رافع عن أبي هريرة قال لقيني رسول الله ﷺ وأنا جنب فأخذ بيدي فمشيت معه حتى قعد فانسللت فأتيت الرحل فاغتسلت ثم جئت وهو قاعد ، فقال أين كنت يا أبا هر فقلت له ، فقال سبحان الله يا أبا هر إن المؤمن لا ينجس "
+      ],
+      "arabic_sha256": "70baafda92917506d3e8c1c039259047a6780ef9da78863a81ae132228646f98",
+      "english_blocks": [
+        "‘Ayyash related to us. He said: ‘Abd al-A‘la related to us. Humayd related to us, from Bakr, from Abu Rafi‘, from Abu Hurayrah, who said:",
+        "The Messenger of Allah, may Allah bless him and grant him peace, met me while I was in janabah. He took my hand, and I walked with him until he sat down. I slipped away, went to my lodging and bathed, then came back while he was sitting. He said: “Where were you, Abu Hirr?” I told him, and he said: “Glory be to Allah, Abu Hirr! A believer does not become impure.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 87,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 87,
+            "end": 265,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 137,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 365,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:281",
+        "reviewRecordSha256": "dbf055bbd2fe1e870654cfa65ac96ea2ac0d508ea2528e4cac5d6f483524f8dc",
+        "notes": [
+          "The selected text and modern print address Abu Hirr twice. The historical print and EPUB use Abu Hurayrah, and the historical print lacks the second address. The selected shorter name and both addresses remain.",
+          "Lodging renders الرحل. The hand-taking, walking, slipping away, bath, return and seated state remain. The final believer is preserved, distinct from Muslim in 279."
+        ],
+        "reviewScope": "AI-assisted working translation from selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparison records. Complete chains, compiler remarks and closing attributions remain. Shared/split references, abbreviated comparisons, witness variants and two explicit digital corrections are recorded. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:282",
+      "book": "Ghusl",
+      "number": 282,
+      "arabic_blocks": [
+        "[282] حدثنا أبو نعيم قال : حدثنا هشام وشيبان عن يحيى عن أبي سلمة قال : سألت عائشة أكان النبي ﷺ يرقد وهو جنب قالت نعم ويتوضأ "
+      ],
+      "arabic_sha256": "e6cb69a79c89929171e114b8b1b8aa8c3d7f188d80fe625216d8e3b15b9de29d",
+      "english_blocks": [
+        "Abu Nu‘aym related to us. He said: Hisham and Shayban related to us, from Yahya, from Abu Salamah, who said:",
+        "I asked ‘A’ishah: “Did the Prophet, may Allah bless him and grant him peace, sleep while in janabah?” She said: “Yes, and he would perform ablution.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 71,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 71,
+            "end": 124,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 108,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 149,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:282",
+        "reviewRecordSha256": "6a10156d0b7a999f86f0040d14c6b3e7167389a2191ede57c9e880868b954f17",
+        "notes": [
+          "The chain names both Hisham and Shayban. The question and affirmative reply remain complete. The Arabic conjunction and is retained rather than the EPUB’s contrastive but."
+        ],
+        "reviewScope": "AI-assisted working translation from selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparison records. Complete chains, compiler remarks and closing attributions remain. Shared/split references, abbreviated comparisons, witness variants and two explicit digital corrections are recorded. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:283",
+      "book": "Ghusl",
+      "number": 283,
+      "arabic_blocks": [
+        "[283] حدثنا قتيبة قال : حدثنا الليث عن نافع عن ابن عمر أن عمر بن الخطاب سأل رسول الله ﷺ أيرقد أحدنا وهو جنب قال : نعم إذا توضأ أحدكم فليرقد وهو جنب "
+      ],
+      "arabic_sha256": "8dacbc26a35c0f8181500d99d9b861717c012ce8fae6a8fdf11bf3b0e62e7384",
+      "english_blocks": [
+        "Qutaybah related to us. He said: Al-Layth related to us, from Nafi‘, from Ibn ‘Umar,",
+        "That ‘Umar ibn al-Khattab asked the Messenger of Allah, may Allah bless him and grant him peace: “May one of us sleep while in janabah?” He said: “Yes. When one of you has performed ablution, let him sleep while in janabah.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 55,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 55,
+            "end": 148,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 84,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 224,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:283",
+        "reviewRecordSha256": "2b855ea980c05b0ca11de0bd025743657b6231941bb473c4ecef7a135afd780c",
+        "notes": [
+          "The historical print extends Qutaybah to Qutaybah ibn Said and adds a blessing for Umar; the selected shorter forms remain. The full condition and permission to sleep remain."
+        ],
+        "reviewScope": "AI-assisted working translation from selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparison records. Complete chains, compiler remarks and closing attributions remain. Shared/split references, abbreviated comparisons, witness variants and two explicit digital corrections are recorded. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:284",
+      "book": "Ghusl",
+      "number": 284,
+      "arabic_blocks": [
+        "[284] حدثنا يحيى بن بكير قال : حدثنا الليث عن عبيد الله بن أبي جعفر عن محمد بن عبد الرحمن عن عروة عن عائشة قالت كان النبي ﷺ إذا أراد أن ينام وهو جنب غسل فرجه وتوضأ للصلاة "
+      ],
+      "arabic_sha256": "f1a7a91621f2e6b50201a3b59a0f49df0e5868ef37a1b74aa3e49c265e72ef26",
+      "english_blocks": [
+        "Yahya ibn Bukayr related to us. He said: Al-Layth related to us, from ‘Ubayd Allah ibn Abi Ja‘far, from Muhammad ibn ‘Abd al-Rahman, from ‘Urwah, from ‘A’ishah, who said:",
+        "When the Prophet, may Allah bless him and grant him peace, wanted to sleep while in janabah, he washed his private parts and performed ablution for prayer."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 112,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 112,
+            "end": 171,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 170,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 155,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:284",
+        "reviewRecordSha256": "2d9290a4dbfb48f1ea4631ab26d135fd4263598864311d50259e5b1879cf9cbe",
+        "notes": [
+          "The selected digital and historical print name Ubayd Allah ibn Abi Jafar; the modern print reads Abd Allah ibn Abi Jafar. This is a recorded witness difference, not a two-witness correction. The reader retains the selected Ubayd Allah.",
+          "The report’s intention to sleep, washing and ablution remain in order. No act of prayer is added."
+        ],
+        "reviewScope": "AI-assisted working translation from selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparison records. Complete chains, compiler remarks and closing attributions remain. Shared/split references, abbreviated comparisons, witness variants and two explicit digital corrections are recorded. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:285",
+      "book": "Ghusl",
+      "number": 285,
+      "arabic_blocks": [
+        "[285] حدثنا موسى بن إسماعيل قال : حدثنا جويرية عن نافع عن عبد الله قال استفتى عمر النبي ﷺ أينام أحدنا وهو جنب قال : نعم إذا توضأ "
+      ],
+      "arabic_sha256": "88012a8332fa29f6a62de2bf3ca26b5266adfbdfdbdaec8ad7a9bc9f3af22f89",
+      "english_blocks": [
+        "Musa ibn Isma‘il related to us. He said: Juwayriyah related to us, from Nafi‘, from ‘Abd Allah, who said:",
+        "‘Umar asked the Prophet, may Allah bless him and grant him peace, for a ruling: “May one of us sleep while in janabah?” He said: “Yes, if he performs ablution.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 71,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 71,
+            "end": 129,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 105,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 160,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:285",
+        "reviewRecordSha256": "ce3f0e60463a795eb517cfabfb0d53587110a983a3ff389944d6862d20533b67",
+        "notes": [
+          "The selected chain names Abd Allah without ibn Umar; the historical print supplies the additional name. The reader preserves the selected shorter name and the complete request for a ruling and response."
+        ],
+        "reviewScope": "AI-assisted working translation from selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparison records. Complete chains, compiler remarks and closing attributions remain. Shared/split references, abbreviated comparisons, witness variants and two explicit digital corrections are recorded. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:286",
+      "book": "Ghusl",
+      "number": 286,
+      "arabic_blocks": [
+        "[286] حدثنا عبد الله بن يوسف قال : أخبرنا مالك عن عبد الله بن دينار عن عبد الله بن عمر أنه قال : ذكر عمر بن الخطاب لرسول الله ﷺ أنه تصيبه الجنابة من الليل ، فقال له رسول الله ﷺ توضأ واغسل ذكرك ثم نم "
+      ],
+      "arabic_sha256": "2769fcd06298f4df9984298d0147523e1df35e8d4ff20ae2215b859fd7023a2d",
+      "english_blocks": [
+        "‘Abd Allah ibn Yusuf related to us. He said: Malik informed us, from ‘Abd Allah ibn Dinar, from ‘Abd Allah ibn ‘Umar, who said:",
+        "‘Umar ibn al-Khattab mentioned to the Messenger of Allah, may Allah bless him and grant him peace, that he would enter janabah at night. The Messenger of Allah, may Allah bless him and grant him peace, said to him: “Perform ablution and wash your penis, then sleep.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 97,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 97,
+            "end": 199,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 127,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 266,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:286",
+        "reviewRecordSha256": "a8cd6e716af842fbce6f23754643ad3e2ecdf96b0c0f1e78b9c117bf37ee05af",
+        "notes": [
+          "The selected instruction puts perform ablution and wash your penis in that conjunction order, then sleep. The EPUB renders ablution after washing; the reader does not import that reordered wording or add a legal sequencing explanation."
+        ],
+        "reviewScope": "AI-assisted working translation from selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparison records. Complete chains, compiler remarks and closing attributions remain. Shared/split references, abbreviated comparisons, witness variants and two explicit digital corrections are recorded. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:287",
+      "book": "Ghusl",
+      "number": 287,
+      "arabic_blocks": [
+        "[287] حدثنا معاذ بن فضالة قال : حدثنا هشام ح وحدثنا أبو نعيم عن هشام عن قتادة عن الحسن عن أبي رافع عن أبي هريرة عن النبي ﷺ قال : إذا جلس بين شعبها الأربع ثم جهدها فقد وجب الغسل تابعه عمرو بن مرزوق عن شعبة مثله ، وقال موسى حدثنا أبان قال : حدثنا قتادة أخبرنا الحسن مثله "
+      ],
+      "arabic_sha256": "2e7fb3f3a80689304681c9fe6048127722804fd6ac57626acb4a4a3b073ba0cc",
+      "english_blocks": [
+        "Mu‘adh ibn Fadalah related to us. He said: Hisham related to us.",
+        "And Abu Nu‘aym related to us, from Hisham, from Qatadah, from al-Hasan, from Abu Rafi‘, from Abu Hurayrah, from the Prophet, may Allah bless him and grant him peace, who said:",
+        "When he sits between her four limbs and then has intercourse with her, a full ritual washing becomes obligatory.",
+        "‘Amr ibn Marzuq corroborated it, from Shu‘bah, with the same.",
+        "And Musa said: Aban related to us. He said: Qatadah related to us. Al-Hasan informed us, with the same."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic prints and two English comparison families were inspected. One English comparison abbreviates the report; its omitted wording and any explicit Arabic correction are documented in the source notes. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 45,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 45,
+            "end": 129,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 129,
+            "end": 177,
+            "kind": "report"
+          },
+          {
+            "block": 0,
+            "start": 177,
+            "end": 212,
+            "kind": "transmission-note"
+          },
+          {
+            "block": 0,
+            "start": 212,
+            "end": 269,
+            "kind": "transmission-note"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 64,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 175,
+            "kind": "chain"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 112,
+            "kind": "report"
+          },
+          {
+            "block": 3,
+            "start": 0,
+            "end": 61,
+            "kind": "transmission-note"
+          },
+          {
+            "block": 4,
+            "start": 0,
+            "end": 103,
+            "kind": "transmission-note"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:287",
+        "reviewRecordSha256": "cb2352a4202e1e710bf55687dedd02e7958c5e86b571598c22bd9210314d27cd",
+        "notes": [
+          "The digital chain omits Abu Rafi between al-Hasan and Abu Hurayrah. Both inspected Arabic prints include him. A declared correction inserts only عن أبي رافع, retaining the unchanged original paragraph and exact before/after evidence.",
+          "The two opening chains, the structural chain-switch marker ح and both closing corroborations remain in the Arabic. English uses two chain segments; ح is a structural marker, not a narrated word. Singular/plural reporting verbs remain matched.",
+          "EPUB 1.5.289 is only a Hisham attribution and a forward pointer to 290. It is explicitly recorded as forward-reference-only, not as a second full report. EPUB 1.5.290 supplies the main report but omits the full closing corroborations. Bewley abbreviates the Musa/Aban chain.",
+          "Ibn Hajar’s Fath al-Bari explains جهدها here as a euphemism for intercourse and discusses several readings of four parts; the working English uses four limbs and has intercourse. This lexical choice remains pending independent review. The commentary is not inserted into the hadith.",
+          "The historical print has an additional Abu Abd Allah comment after this entry that the selected and modern print omit. It is recorded as a witness difference, not silently inserted."
+        ],
+        "reviewScope": "AI-assisted working translation from selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparison records. Complete chains, compiler remarks and closing attributions remain. Shared/split references, abbreviated comparisons, witness variants and two explicit digital corrections are recorded. Independent Arabic, English, context and reference review remains pending.",
+        "originalArabicSha256": "33a83605b6a27caacce162d2d644723b4a6f84d0906086a3863cdc346e72227d",
+        "arabicCorrections": [
+          {
+            "id": "287-missing-narrator",
+            "paragraphId": "mw2A",
+            "start": 78,
+            "end": 99,
+            "before": "عن الحسن عن أبي هريرة",
+            "after": "عن الحسن عن أبي رافع عن أبي هريرة",
+            "originalParagraphSha256": "33a83605b6a27caacce162d2d644723b4a6f84d0906086a3863cdc346e72227d",
+            "correctedParagraphSha256": "2e7fb3f3a80689304681c9fe6048127722804fd6ac57626acb4a4a3b073ba0cc",
+            "status": "chosen-for-personal-prototype",
+            "reviewerKind": "ai",
+            "independentReview": "pending",
+            "reason": "The digital chain omits Abu Rafi between al-Hasan and Abu Hurayrah. Both inspected Arabic prints include him. A declared correction inserts only عن أبي رافع, retaining the unchanged original paragraph and exact before/after evidence.",
+            "witnesses": [
+              {
+                "sourceId": "brill-1862",
+                "pdfPage": 82,
+                "reading": "عن الحسن عن أبي رافع عن أبي هريرة",
+                "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+              },
+              {
+                "sourceId": "dar-ibn-kathir-2002",
+                "pdfPage": 80,
+                "reading": "عن الحسن عن أبي رافع عن أبي هريرة",
+                "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+              }
+            ],
+            "contextNoteId": "287-source-correction",
+            "englishSegmentId": "287-2",
+            "englishRendering": "from al-Hasan, from Abu Rafi‘, from Abu Hurayrah"
+          }
+        ]
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:288",
+      "book": "Ghusl",
+      "number": 288,
+      "arabic_blocks": [
+        "[288] حدثنا أبو معمر حدثنا عبد الوارث عن الحسين قال يحيى وأخبرني أبو سلمة أن عطاء بن يسار أخبره أن زيد بن خالد الجهني أخبره أنه سأل عثمان بن عفان ، فقال أرأيت إذا جامع الرجل امرأته فلم يمن قال عثمان يتوضأ كما يتوضأ للصلاة ويغسل ذكره قال عثمان سمعته من رسول الله ﷺ فسألت عن ذلك علي بن أبي طالب والزبير بن العوام وطلحة بن عبيد الله وأبي بن كعب رضى الله تعالى عنهم فأمروه بذلك قال يحيى وأخبرني أبو سلمة أن عروة بن الزبير أخبره أن أبا أيوب أخبره أنه سمع ذلك من رسول الله ﷺ"
+      ],
+      "arabic_sha256": "c87dbb163b47a86b53ce78ca93a84a7c9f58bfca821bd22a39e5f89aaa02cfa4",
+      "english_blocks": [
+        "Abu Ma‘mar related to us. ‘Abd al-Warith related to us, from al-Husayn. Yahya said: And Abu Salamah informed me that ‘Ata’ ibn Yasar informed him that Zayd ibn Khalid al-Juhani informed him that he asked ‘Uthman ibn ‘Affan, saying:",
+        "“What do you say about a man having intercourse with his wife without ejaculating?” ‘Uthman said: “He performs ablution as he does for prayer and washes his penis.” ‘Uthman said: “I heard it from the Messenger of Allah, may Allah bless him and grant him peace.” I asked ‘Ali ibn Abi Talib, al-Zubayr ibn al-‘Awwam, Talhah ibn ‘Ubayd Allah and Ubayy ibn Ka‘b, may Allah Most High be pleased with them, about that, and they instructed him to do that.",
+        "Yahya said: And Abu Salamah informed me that ‘Urwah ibn al-Zubayr informed him that Abu Ayyub informed him that he heard that from the Messenger of Allah, may Allah bless him and grant him peace."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation with an explicitly recorded Arabic correction supported by two printed witnesses. English comparison bodies and the original input remain accessible. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 153,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 153,
+            "end": 374,
+            "kind": "report"
+          },
+          {
+            "block": 0,
+            "start": 374,
+            "end": 468,
+            "kind": "transmission-note"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 231,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 448,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 195,
+            "kind": "transmission-note"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:288",
+        "reviewRecordSha256": "e764647167653218a374f8f3f74ef6c61c0894f1d45522b3c90d4887c2392866",
+        "notes": [
+          "The digital closing chain omits Abu Ayyub between Urwah ibn al-Zubayr and the final hearing statement. Both inspected Arabic prints include أن أبا أيوب أخبره. An explicit correction restores only that span, with original wording accessible.",
+          "The first-person I asked and third-person they instructed him remain as selected. The group blessing and the repeated Yahya attribution also remain; the historical print lacks that blessing and the repeated Yahya formula. The historical print extends al-Husayn with al-Muallim, which is not added to the selected chain.",
+          "The complete closing chain remains a transmission note. The EPUB includes a short Abu Ayyub attribution and additional commentary about a later ruling; that modern explanatory comment is not part of the Arabic and is not copied into the narration."
+        ],
+        "reviewScope": "AI-assisted working translation from selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparison records. Complete chains, compiler remarks and closing attributions remain. Shared/split references, abbreviated comparisons, witness variants and two explicit digital corrections are recorded. Independent Arabic, English, context and reference review remains pending.",
+        "originalArabicSha256": "aeb1bfe6c297bd0bcccfd6341b3f7f8c1ddbf2cfd36c5399bc3f55eb5a51b107",
+        "arabicCorrections": [
+          {
+            "id": "288-missing-narrator",
+            "paragraphId": "mw3g",
+            "start": 400,
+            "end": 427,
+            "before": "أن عروة بن الزبير أخبره أنه",
+            "after": "أن عروة بن الزبير أخبره أن أبا أيوب أخبره أنه",
+            "originalParagraphSha256": "aeb1bfe6c297bd0bcccfd6341b3f7f8c1ddbf2cfd36c5399bc3f55eb5a51b107",
+            "correctedParagraphSha256": "c87dbb163b47a86b53ce78ca93a84a7c9f58bfca821bd22a39e5f89aaa02cfa4",
+            "status": "chosen-for-personal-prototype",
+            "reviewerKind": "ai",
+            "independentReview": "pending",
+            "reason": "The digital closing chain omits Abu Ayyub between Urwah ibn al-Zubayr and the final hearing statement. Both inspected Arabic prints include أن أبا أيوب أخبره. An explicit correction restores only that span, with original wording accessible.",
+            "witnesses": [
+              {
+                "sourceId": "brill-1862",
+                "pdfPage": 82,
+                "reading": "أن عروة بن الزبير أخبره أن أبا أيوب أخبره أنه",
+                "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+              },
+              {
+                "sourceId": "dar-ibn-kathir-2002",
+                "pdfPage": 81,
+                "reading": "أن عروة بن الزبير أخبره أن أبا أيوب أخبره أنه",
+                "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+              }
+            ],
+            "contextNoteId": "288-source-correction",
+            "englishSegmentId": "288-3",
+            "englishRendering": "‘Urwah ibn al-Zubayr informed him that Abu Ayyub informed him"
+          }
+        ]
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:289",
+      "book": "Ghusl",
+      "number": 289,
+      "arabic_blocks": [
+        "[289] حدثنا مسدد حدثنا يحيى عن هشام بن عروة قال : أخبرني أبي قال : أخبرني أبو أيوب قال : أخبرني أبي بن كعب أنه قال : يا رسول الله إذا جامع الرجل المرأة فلم ينزل قال يغسل ما مس المرأة منه ثم يتوضأ ويصلي قال أبو عبد الله الغسل أحوط وذاك الآخر وإنما بينا لاختلافهم "
+      ],
+      "arabic_sha256": "f17818db24d90768efc9541dac98b77661e5387b8c8cca1ea138721096230515",
+      "english_blocks": [
+        "Musaddad related to us. Yahya related to us, from Hisham ibn ‘Urwah, who said: My father informed me. He said: Abu Ayyub informed me. He said: Ubayy ibn Ka‘b informed me that he said:",
+        "“Messenger of Allah, what if a man has intercourse with a woman without ejaculating?” He said: “He washes the part of him that touched the woman, then performs ablution and prays.”",
+        "Abu ‘Abd Allah said: “A full ritual washing is more cautious, and that is the later ruling. We have only set this out because of their disagreement.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 117,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 117,
+            "end": 202,
+            "kind": "report"
+          },
+          {
+            "block": 0,
+            "start": 202,
+            "end": 262,
+            "kind": "transmission-note"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 183,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 180,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 149,
+            "kind": "transmission-note"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:289",
+        "reviewRecordSha256": "19189c591c3d026512d35a5d9a5be87363439d3c04cfe75b0f30d38d256bc153",
+        "notes": [
+          "The chain distinguishes my father from the name Ubayy ibn Kab and preserves all three singular informed me clauses. The complete question, washing instruction, ablution and prayer remain.",
+          "The final Abu Abd Allah statement is a separate compiler/transmission note, not part of the Prophet’s reply. Its disagreement clause is retained; the EPUB omits that clause. The historical print adds والماء أنقى after it, absent from the selected and modern print; that addition is not inserted.",
+          "The selected unvocalised الآخر has a reading ambiguity. Fath al-Bari discusses a later-ruling reading and a different reading pointing to the other report. Both English comparisons use the later-ruling sense, followed provisionally here. The ambiguity is visibly flagged and requires independent review; the app supplies no separate legal ruling."
+        ],
+        "reviewScope": "AI-assisted working translation from selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparison records. Complete chains, compiler remarks and closing attributions remain. Shared/split references, abbreviated comparisons, witness variants and two explicit digital corrections are recorded. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
     }
   ],
   "sourceLocationCorrections": {
@@ -22699,7 +23798,7 @@
     "knowledgeSourceSha256": "9060879f4b110cc9007f35db6b1f2fa0cc37c5ba8e510531721b024cbadf4e58",
     "ablutionReviewSha256": "cabac2ca51195b600169481a70dc55f01df737860da9afa3f57f36abf0b59e67",
     "ablutionSourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
-    "ghuslReviewSha256": "fe5a0886b0dc1b9410cd210cd62381764d22aa73d3ae535a6872e353661958f9",
+    "ghuslReviewSha256": "16cb62282b8a284cb2fc37a97dc32c2835f63029dc7dcf3033e21113a5cf310e",
     "ghuslSourceSha256": "07e29f845c2f17f77aae014356e8028a3335d245eeeb73e7b5efe3b52064db77"
   }
 }

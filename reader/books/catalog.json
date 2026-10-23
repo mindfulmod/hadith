@@ -2,17 +2,17 @@
   "schemaVersion": 2,
   "namespace": "bukhari-opening-v1",
   "publication": "personal-prototype",
-  "sourceRecordSha256": "9938c123d6046b213dec917dced38ef7071ad7258bd0b672213a171a50af5c3e",
-  "referencesSha256": "42f3262f7335dd44a071e059cd809b4f350fe236fdb8609ef7062a3ef88f8b4c",
+  "sourceRecordSha256": "70d760de9c93ed8bfb2f978eabd085f6e1eae43433f958cb4ec464cc477292f2",
+  "referencesSha256": "7dfa216b3b470d26045b6ebad9260fc5d9a796ed73e439004ad5319aa7e09566",
   "sourceRecord": {
     "created": "2026-10-20",
-    "scope": "Personal prototype: complete numbered entries 1–273 across 5 books. The rest of the collection remains in preparation.",
+    "scope": "Personal prototype: complete numbered entries 1–289 across 5 books. The rest of the collection remains in preparation.",
     "selected_route": "Pinned Arabic text plus a new English working translation.",
     "license": {
       "id": "CC-BY-SA-4.0",
       "url": "https://creativecommons.org/licenses/by-sa/4.0/",
       "attribution": "Sahih al-Bukhari by Muhammad ibn Ismail al-Bukhari; Arabic digital transcription by Arabic Wikisource contributors, opening revision 484874 and Faith revision 490285. Book of Knowledge: revision 252975. Book of Ablution: revision 273249. Book of Ghusl: revision 484873.",
-      "changes": "Entries 1–2 are unchanged. Entries 3–7 are derived from the pinned Arabic; Hadith 5 has one explicitly recorded correction from له to لك supported by two printed witnesses. Original inputs are retained in prototype-inputs.json. New AI-assisted English, presentation and comparison notes are offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app. Hadith 8–58 retain their Arabic paragraphs unchanged from revision 490285; their new English and available chapter titles are AI-assisted. A disputed chapter heading is explicitly withheld. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 59–134 derive from revision 252975; only 99 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 135–244 derive from revision 273249; only 137, 146, 165, 202 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Exact source origins and original labels are retained; any different reader reference is explicitly mapped. Chapter introductions are preserved separately in Arabic, with English translation still pending. Declared printed additions supply a missing closing transmission note and chapter heading; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately. Hadith 245–273 derive from revision 484873; only 262, 272 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. A declared printed addition supplies a missing closing transmission note; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately."
+      "changes": "Entries 1–2 are unchanged. Entries 3–7 are derived from the pinned Arabic; Hadith 5 has one explicitly recorded correction from له to لك supported by two printed witnesses. Original inputs are retained in prototype-inputs.json. New AI-assisted English, presentation and comparison notes are offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app. Hadith 8–58 retain their Arabic paragraphs unchanged from revision 490285; their new English and available chapter titles are AI-assisted. A disputed chapter heading is explicitly withheld. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 59–134 derive from revision 252975; only 99 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 135–244 derive from revision 273249; only 137, 146, 165, 202 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Exact source origins and original labels are retained; any different reader reference is explicitly mapped. Chapter introductions are preserved separately in Arabic, with English translation still pending. Declared printed additions supply a missing closing transmission note and chapter heading; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately. Hadith 245–289 derive from revision 484873; only 262, 272, 287, 288 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. A declared printed addition supplies a missing closing transmission note; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately."
     },
     "sources": [
       {
@@ -257,6 +257,20 @@
         "kind": "commentary",
         "format": "web",
         "url": "https://www.islamweb.net/ar/library/content/52/540/باب-من-بدأ-بشق-رأسه-الأيمن-في-الغسل"
+      },
+      {
+        "id": "fath-ghusl-intercourse",
+        "label": "Ibn Hajar · Fath al-Bari · intercourse wording",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://ablibrary.net/book_content/b/2601/337"
+      },
+      {
+        "id": "fath-ghusl-final",
+        "label": "Ibn Hajar · Fath al-Bari · closing compiler comment",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://ablibrary.net/book_content/b/2601/340"
       }
     ],
     "findings": [
@@ -313,7 +327,7 @@
       "knowledgeSourceSha256": "9060879f4b110cc9007f35db6b1f2fa0cc37c5ba8e510531721b024cbadf4e58",
       "ablutionReviewSha256": "cabac2ca51195b600169481a70dc55f01df737860da9afa3f57f36abf0b59e67",
       "ablutionSourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
-      "ghuslReviewSha256": "fe5a0886b0dc1b9410cd210cd62381764d22aa73d3ae535a6872e353661958f9",
+      "ghuslReviewSha256": "16cb62282b8a284cb2fc37a97dc32c2835f63029dc7dcf3033e21113a5cf310e",
       "ghuslSourceSha256": "07e29f845c2f17f77aae014356e8028a3335d245eeeb73e7b5efe3b52064db77"
     }
   },
@@ -4171,7 +4185,23 @@
         270,
         271,
         272,
-        273
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289
       ],
       "chapters": [
         {
@@ -4563,6 +4593,212 @@
               "fragment": "chapter-19"
             }
           }
+        },
+        {
+          "id": "chapter-20",
+          "title": "Bathing naked alone in private; covering oneself is better",
+          "entryNumbers": [
+            274,
+            275
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 1,
+              "englishStatus": "pending"
+            },
+            "notes": {
+              "path": "ghusl-review.html",
+              "fragment": "chapter-20"
+            }
+          }
+        },
+        {
+          "id": "chapter-21",
+          "title": "Screening oneself when bathing in the presence of others",
+          "entryNumbers": [
+            276,
+            277
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ghusl-review.html",
+              "fragment": "chapter-21"
+            }
+          }
+        },
+        {
+          "id": "chapter-22",
+          "title": "When a woman has a sexual dream",
+          "entryNumbers": [
+            278
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ghusl-review.html",
+              "fragment": "chapter-22"
+            }
+          }
+        },
+        {
+          "id": "chapter-23",
+          "title": "The sweat of a person in janabah, and that a Muslim does not become impure",
+          "entryNumbers": [
+            279
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ghusl-review.html",
+              "fragment": "chapter-23"
+            }
+          }
+        },
+        {
+          "id": "chapter-24",
+          "title": "A person in janabah going out and walking in the market and elsewhere",
+          "entryNumbers": [
+            280,
+            281
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 1,
+              "englishStatus": "pending"
+            },
+            "notes": {
+              "path": "ghusl-review.html",
+              "fragment": "chapter-24"
+            }
+          }
+        },
+        {
+          "id": "chapter-25",
+          "title": "A person in janabah remaining at home after performing ablution before bathing",
+          "entryNumbers": [
+            282
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ghusl-review.html",
+              "fragment": "chapter-25"
+            }
+          }
+        },
+        {
+          "id": "chapter-26",
+          "title": "A person in janabah sleeping",
+          "entryNumbers": [
+            283
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ghusl-review.html",
+              "fragment": "chapter-26"
+            }
+          }
+        },
+        {
+          "id": "chapter-27",
+          "title": "A person in janabah performing ablution and then sleeping",
+          "entryNumbers": [
+            284,
+            285,
+            286
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ghusl-review.html",
+              "fragment": "chapter-27"
+            }
+          }
+        },
+        {
+          "id": "chapter-28",
+          "title": "When the two circumcised parts meet",
+          "entryNumbers": [
+            287
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ghusl-review.html",
+              "fragment": "chapter-28"
+            }
+          }
+        },
+        {
+          "id": "chapter-29",
+          "title": "Washing what comes from a woman’s private parts",
+          "entryNumbers": [
+            288,
+            289
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "ghusl-review.html",
+              "fragment": "chapter-29"
+            }
+          }
         }
       ],
       "introduction": {
@@ -4576,9 +4812,9 @@
           "fragment": "book-introduction"
         }
       },
-      "path": "books/ghusl-b69cf6e20716bdec.json",
-      "bytes": 198887,
-      "sha256": "b69cf6e20716bdec30a017cea6f10ba6ef94c4b87b1bb55b05ed48a8ee45075c"
+      "path": "books/ghusl-1382b7bd3720f4ff.json",
+      "bytes": 307964,
+      "sha256": "1382b7bd3720f4ff47c992a6f87db9036093546b2239fef0f1a4418a31445d59"
     }
   ],
   "entries": [
@@ -6492,6 +6728,118 @@
       "bookId": "ghusl",
       "book": "Ghusl",
       "englishWords": 63
+    },
+    {
+      "id": "bukhari:274",
+      "number": 274,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 141
+    },
+    {
+      "id": "bukhari:275",
+      "number": 275,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 100
+    },
+    {
+      "id": "bukhari:276",
+      "number": 276,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 81
+    },
+    {
+      "id": "bukhari:277",
+      "number": 277,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 118
+    },
+    {
+      "id": "bukhari:278",
+      "number": 278,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 100
+    },
+    {
+      "id": "bukhari:279",
+      "number": 279,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 107
+    },
+    {
+      "id": "bukhari:280",
+      "number": 280,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 61
+    },
+    {
+      "id": "bukhari:281",
+      "number": 281,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 98
+    },
+    {
+      "id": "bukhari:282",
+      "number": 282,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 46
+    },
+    {
+      "id": "bukhari:283",
+      "number": 283,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 56
+    },
+    {
+      "id": "bukhari:284",
+      "number": 284,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 56
+    },
+    {
+      "id": "bukhari:285",
+      "number": 285,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 49
+    },
+    {
+      "id": "bukhari:286",
+      "number": 286,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 71
+    },
+    {
+      "id": "bukhari:287",
+      "number": 287,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 91
+    },
+    {
+      "id": "bukhari:288",
+      "number": 288,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 154
+    },
+    {
+      "id": "bukhari:289",
+      "number": 289,
+      "bookId": "ghusl",
+      "book": "Ghusl",
+      "englishWords": 92
     }
   ]
 }

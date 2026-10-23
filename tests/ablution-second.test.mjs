@@ -14,7 +14,7 @@ test('second Ablution batch preserves all earlier entry objects and completes el
  const args=input(),snapshot=structuredClone(args.slice(0,3)),batch=buildBookBatch(...args),{source,ledger}=collectionFiles();
  assert.deepEqual(args.slice(0,3),snapshot);assert.deepEqual(batch.entries.map(e=>e.number),Array.from({length:12},(_,i)=>142+i));assert.equal(batch.chapters.length,11);
  const previous=['opening-revelation-75034cf565efa4a7','faith-6727a26330f3f5f3','knowledge-b4c7f5998e10997e','ablution-88a67f0d3dc9b73b'].flatMap(p=>read('reader/books/'+p+'.json').entries);
- assert.deepEqual(source.entries.slice(0,141),previous);assert.equal(source.entries.length,273);
+ assert.deepEqual(source.entries.slice(0,141),previous);assert.equal(source.entries.length,289);
  const book=ledger.books.find(b=>b.id==='ablution');assert.equal(book.chapters.length,77);assert.equal(book.entryNumbers.length,110);
  assert(!batch.chapters.some(c=>c.id==='chapter-20'));assert(!batch.entries.some(e=>e.number===154||e.number===155));
  for(const e of batch.entries)assert.deepEqual(sourceSegments(e,'english').map(s=>s.text),args[1].entries.find(r=>r.number===e.number).segments.map(s=>s.english));
@@ -43,7 +43,7 @@ test('complete scripts preserve transmission alternatives and explanations witho
 });
 test('numbered sessions cross the previous end while chapter context remains separately browseable',()=>{
  const {source,ledger,files}=collectionFiles(),saved={numbers:[141],cursor:141,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,150),saved);assert.equal(nextSession(source.entries,saved,5).cursor,142);
- assert(planSession(source.entries,141,5).numbers.includes(142));assert.deepEqual(planSession(source.entries,273,5).numbers,[273]);
+ assert(planSession(source.entries,141,5).numbers.includes(142));assert.deepEqual(planSession(source.entries,289,5).numbers,[289]);
  const chapter=ledger.books.find(b=>b.id==='ablution').chapters.find(c=>c.id==='chapter-16');assert.deepEqual(chapter.entryNumbers,[150]);assert.equal(chapter.sourceContext.introduction.arabicParagraphs,1);
  const inputs=JSON.parse(files.get('reader/ablution-inputs.json')),intro=inputs.selectedBlocks.find(b=>b.htmlId==='mwTQ');assert.match(intro.text,/أبو الدرداء/);assert(!source.entries.find(e=>e.number===150).arabic_blocks.some(s=>s.includes(intro.text)));assert(files.get('reader/ablution-review.html').includes('id="chapter-16"'));
 });

@@ -2,7 +2,8 @@
 export const honorifics = Object.freeze([
  'may Allah bless him and grant him peace',
  'may Allah Most High be pleased with him',
- 'may Allah Most High be pleased with her'
+ 'may Allah Most High be pleased with her',
+ 'may Allah Most High be pleased with them'
 ]);
 const pattern=new RegExp('('+honorifics.join('|')+')','gu');
 export function sourceParts(text){
