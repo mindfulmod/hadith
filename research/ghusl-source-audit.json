@@ -1,6 +1,6 @@
 {
   "checkedAt": "2026-10-23",
-  "status": "candidate-intake-with-two-personal-prototype-batches",
+  "status": "candidate-intake-with-three-personal-prototype-batches",
   "readerEligible": false,
   "source": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_الغسل&oldid=484873",
   "revision": 484873,
@@ -61,7 +61,10 @@
         73,
         74,
         75,
-        76
+        76,
+        77,
+        78,
+        79
       ]
     },
     {
@@ -75,7 +78,10 @@
         72,
         73,
         74,
-        75
+        75,
+        76,
+        77,
+        78
       ]
     }
   ],
@@ -202,15 +208,15 @@
     "scope": "Importer and admission regression checks only. No new reader UI or media behavior changed, so no new iPhone acceptance is claimed."
   },
   "nextWork": [
-    "Continue Ghusl from 262 in complete source chapters, retaining all introduction and transmission material.",
-    "Complete English book/chapter material and independent Arabic, English, context and reference review, including the recorded lexical uncertainty.",
-    "Extend Cedar recordings through an authorized generation path and verify them separately before production claims."
+    "Continue Ghusl from 274 in complete source chapters, retaining all introductory and transmission material.",
+    "Finish English book/chapter material and independent Arabic, English, context and reference review, including every explicit correction and lexical uncertainty.",
+    "Extend Cedar recordings through an authorized generation path and verify generated speech separately before production claims."
   ],
   "limits": [
-    "The complete inventory remains a candidate source. Only separately reviewed and explicitly admitted entries 245–261 are available in the personal prototype; the other 28 await review.",
+    "The complete inventory remains a candidate source. Only separately reviewed and explicitly admitted entries 245–273 are available in the personal prototype; the other 16 await review.",
     "A complete block inventory does not certify the edition, translation or full narration coverage.",
-    "Recorded printed inspection now covers Ghusl entries 245–261 and their headings/introduction, not the entire Ghusl book.",
-    "The initial six English body locations remain historical orientation evidence. Later review records pin individual mappings and comparison findings through 261; this is not independent translation approval or permission to reuse modern translation wording."
+    "Recorded printed inspection covers Ghusl entries 245–273 and their headings/introductions, not the entire Ghusl book.",
+    "The initial six English body locations remain historical orientation evidence. Later review records pin individual mappings and comparison findings through 273, including abbreviated comparisons and changed print numbering. This is not independent translation approval or permission to reuse modern translation wording."
   ],
   "intakeReaderSnapshot": {
     "entries": 244,
@@ -219,10 +225,10 @@
     "audioRange": "1–6"
   },
   "reader": {
-    "entries": 261,
-    "release": "opening-03093313e573",
-    "ghuslEntries": 17,
-    "range": "245–261",
+    "entries": 273,
+    "release": "opening-e2cfd545d04f",
+    "ghuslEntries": 29,
+    "range": "245–273",
     "audioRange": "1–6"
   },
   "firstBatch": {
@@ -239,6 +245,18 @@
     "verification": "research/ghusl-second-verification.json",
     "range": "251–261",
     "chapterIntroduction": "Chapter 9 original Arabic preserved separately, English pending",
+    "independentReview": "pending"
+  },
+  "thirdBatch": {
+    "status": "personal-prototype-only",
+    "review": "content/review/ghusl-third-review.json",
+    "verification": "research/ghusl-third-verification.json",
+    "range": "262–273",
+    "chapterIntroduction": "Chapter 10 original Arabic preserved separately, English pending",
+    "declaredCorrections": [
+      262,
+      272
+    ],
     "independentReview": "pending"
   }
 }

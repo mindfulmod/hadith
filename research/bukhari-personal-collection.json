@@ -1,12 +1,12 @@
 {
   "created": "2026-10-20",
-  "scope": "Personal prototype: complete numbered entries 1–261 across 5 books. The rest of the collection remains in preparation.",
+  "scope": "Personal prototype: complete numbered entries 1–273 across 5 books. The rest of the collection remains in preparation.",
   "selected_route": "Pinned Arabic text plus a new English working translation.",
   "license": {
     "id": "CC-BY-SA-4.0",
     "url": "https://creativecommons.org/licenses/by-sa/4.0/",
     "attribution": "Sahih al-Bukhari by Muhammad ibn Ismail al-Bukhari; Arabic digital transcription by Arabic Wikisource contributors, opening revision 484874 and Faith revision 490285. Book of Knowledge: revision 252975. Book of Ablution: revision 273249. Book of Ghusl: revision 484873.",
-    "changes": "Entries 1–2 are unchanged. Entries 3–7 are derived from the pinned Arabic; Hadith 5 has one explicitly recorded correction from له to لك supported by two printed witnesses. Original inputs are retained in prototype-inputs.json. New AI-assisted English, presentation and comparison notes are offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app. Hadith 8–58 retain their Arabic paragraphs unchanged from revision 490285; their new English and available chapter titles are AI-assisted. A disputed chapter heading is explicitly withheld. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 59–134 derive from revision 252975; only 99 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 135–244 derive from revision 273249; only 137, 146, 165, 202 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Exact source origins and original labels are retained; any different reader reference is explicitly mapped. Chapter introductions are preserved separately in Arabic, with English translation still pending. Declared printed additions supply a missing closing transmission note and chapter heading; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately. Hadith 245–261 retain their Arabic paragraphs unchanged from revision 484873; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. A declared printed addition supplies a missing closing transmission note; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately."
+    "changes": "Entries 1–2 are unchanged. Entries 3–7 are derived from the pinned Arabic; Hadith 5 has one explicitly recorded correction from له to لك supported by two printed witnesses. Original inputs are retained in prototype-inputs.json. New AI-assisted English, presentation and comparison notes are offered under CC BY-SA 4.0. This does not license third-party comparison translations or the rest of the app. Hadith 8–58 retain their Arabic paragraphs unchanged from revision 490285; their new English and available chapter titles are AI-assisted. A disputed chapter heading is explicitly withheld. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 59–134 derive from revision 252975; only 99 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. Hadith 135–244 derive from revision 273249; only 137, 146, 165, 202 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Exact source origins and original labels are retained; any different reader reference is explicitly mapped. Chapter introductions are preserved separately in Arabic, with English translation still pending. Declared printed additions supply a missing closing transmission note and chapter heading; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately. Hadith 245–273 derive from revision 484873; only 262, 272 have declared Arabic corrections, with unchanged original inputs preserved separately; their new English and available chapter titles are AI-assisted. Chapter introductions are preserved separately in Arabic, with English translation still pending. A declared printed addition supplies a missing closing transmission note; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately."
   },
   "sources": [
     {
@@ -244,6 +244,13 @@
       "kind": "commentary",
       "format": "web",
       "url": "https://islamweb.net/ar/library/content/52/506/باب-المضمضة-والاستنشاق-في-الجنابة"
+    },
+    {
+      "id": "fath-ghusl-right-side",
+      "label": "Ibn Hajar · Fath al-Bari · right-side wording",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/ar/library/content/52/540/باب-من-بدأ-بشق-رأسه-الأيمن-في-الغسل"
     }
   ],
   "findings": [
@@ -21822,6 +21829,845 @@
         "reviewScope": "AI-assisted Arabic-to-English drafting, compared with two visually inspected Arabic prints and individually matched English bodies. Full source chains, repeated reports and closing notes remain complete. Differences and lexical uncertainty are recorded; commentary is distinct from the hadith. Independent Arabic, English, context and reference review remains pending."
       },
       "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:262",
+      "book": "Ghusl",
+      "number": 262,
+      "arabic_blocks": [
+        "[262] حدثنا محمد بن محبوب قال : حدثنا عبد الواحد قال : حدثنا الأعمش عن سالم بن أبي الجعد عن كريب مولى ابن عباس عن ابن عباس قال : قالت ميمونة وضعت لرسول الله ﷺ ماء يغتسل به فأفرغ على يديه فغسلهما مرتين أو ثلاثا ثم أفرغ بيمينه على شماله فغسل مذاكيره ثم دلك يده بالأرض ثم مضمض واستنشق ثم غسل وجهه ويديه وغسل رأسه ثلاثا ثم أفرغ على جسده ثم تنحى من مقامه فغسل قدميه "
+      ],
+      "arabic_sha256": "4058f1963626947b818fbfd78cb211c5d4aae6d858e0e82a1d2c1ed449f155a8",
+      "english_blocks": [
+        "Muhammad ibn Mahbub related to us. He said: ‘Abd al-Wahid related to us. He said: Al-A‘mash related to us, from Salim ibn Abi al-Ja‘d, from Kurayb, the freedman of Ibn ‘Abbas, from Ibn ‘Abbas, who said: Maymunah said:",
+        "I set out water for the Messenger of Allah, may Allah bless him and grant him peace, to bathe with. He poured onto his hands and washed them twice or three times, then poured with his right hand onto his left and washed his private parts. Then he rubbed his hand on the ground, then rinsed his mouth and drew water into his nose. Then he washed his face and hands, and washed his head three times, then poured over his body. Then he moved from his place and washed his feet."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation with an explicitly recorded Arabic correction supported by two printed witnesses. English comparison bodies and the original input remain accessible. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 141,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 141,
+            "end": 361,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 217,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 474,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:262",
+        "reviewRecordSha256": "10af055f3fe5b5bcda902a850091166c92f78d39553c2527a08b15e2e04e759f",
+        "notes": [
+          "The digital input repeats مرتين consecutively. Both inspected Arabic prints have مرتين أو ثلاثا. A declared correction removes only the duplicate word from the derived reader paragraph; the original remains accessible.",
+          "The full chain and all washing actions remain. The count of three applies to the head in the selected Arabic, not also to the face and hands as the EPUB wording could suggest. No separate blowing-out action is added to the nose-rinsing verb.",
+          "The chapter introduction is an unnumbered report about Ibn Umar; its original Arabic stays separate from this hadith, daily sessions and narration scripts."
+        ],
+        "reviewScope": "AI-assisted working translation from the selected Arabic, compared with two visually inspected Arabic prints and individually matched English bodies. Comparison abbreviations, numbering changes, source variants and two explicit digital corrections are recorded. Full chains, uncertainty and closing attributions remain. Independent Arabic, English, context and reference review remains pending.",
+        "originalArabicSha256": "fb3d40d4d492ad819f56af3bcdc033df757be4c36fed05f7515eb74d779ffc0c",
+        "arabicCorrections": [
+          {
+            "id": "262-remove-repeated-count",
+            "paragraphId": "mwWQ",
+            "start": 195,
+            "end": 206,
+            "before": "مرتين مرتين",
+            "after": "مرتين",
+            "originalParagraphSha256": "fb3d40d4d492ad819f56af3bcdc033df757be4c36fed05f7515eb74d779ffc0c",
+            "correctedParagraphSha256": "4058f1963626947b818fbfd78cb211c5d4aae6d858e0e82a1d2c1ed449f155a8",
+            "status": "chosen-for-personal-prototype",
+            "reviewerKind": "ai",
+            "independentReview": "pending",
+            "reason": "The digital input repeats مرتين consecutively. Both inspected Arabic prints have مرتين أو ثلاثا. A declared correction removes only the duplicate word from the derived reader paragraph; the original remains accessible.",
+            "witnesses": [
+              {
+                "sourceId": "brill-1862",
+                "pdfPage": 76,
+                "reading": "مرتين",
+                "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+              },
+              {
+                "sourceId": "dar-ibn-kathir-2002",
+                "pdfPage": 75,
+                "reading": "مرتين",
+                "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+              }
+            ],
+            "contextNoteId": "262-source-correction",
+            "englishSegmentId": "262-2",
+            "englishRendering": "twice or three times"
+          }
+        ]
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:263",
+      "book": "Ghusl",
+      "number": 263,
+      "arabic_blocks": [
+        "[263] حدثنا موسى بن إسماعيل قال : حدثنا أبو عوانة حدثنا الأعمش عن سالم بن أبي الجعد عن كريب مولى ابن عباس عن ابن عباس عن ميمونة بنت الحارث قالت وضعت لرسول الله ﷺ غسلا وسترته فصب على يده فغسلها مرة أو مرتين قال سليمان لا أدري أذكر الثالثة أم لا ثم أفرغ بيمينه على شماله فغسل فرجه ثم دلك يده بالأرض أو بالحائط ثم تمضمض واستنشق وغسل وجهه ويديه وغسل رأسه ثم صب على جسده ثم تنحى فغسل قدميه فناولته خرقة ، فقال بيده هكذا ولم يردها "
+      ],
+      "arabic_sha256": "d25f1f75fe2ed9f837ec6cc6ddb8fffc1bee62bb60b82d9ead1092dea639ae80",
+      "english_blocks": [
+        "Musa ibn Isma‘il related to us. He said: Abu ‘Awanah related to us. Al-A‘mash related to us, from Salim ibn Abi al-Ja‘d, from Kurayb, the freedman of Ibn ‘Abbas, from Ibn ‘Abbas, from Maymunah bint al-Harith, who said:",
+        "I set out water for the Messenger of Allah, may Allah bless him and grant him peace, to bathe and screened him. He poured onto his hand and washed it once or twice.",
+        "Sulayman said: I do not know whether he mentioned a third time or not.",
+        "Then he poured with his right hand onto his left and washed his private parts. Then he rubbed his hand on the ground or the wall. Then he rinsed his mouth and drew water into his nose, and washed his face and hands, and washed his head. Then he poured over his body, then moved aside and washed his feet. I handed him a cloth, but he gestured with his hand like this and did not want it."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 144,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 144,
+            "end": 206,
+            "kind": "report"
+          },
+          {
+            "block": 0,
+            "start": 206,
+            "end": 244,
+            "kind": "transmission-note"
+          },
+          {
+            "block": 0,
+            "start": 244,
+            "end": 425,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 218,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 164,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 70,
+            "kind": "transmission-note"
+          },
+          {
+            "block": 3,
+            "start": 0,
+            "end": 387,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:263",
+        "reviewRecordSha256": "66e9a25e594590720740146908b82714236362eeedb65586c0373ed25828072c",
+        "notes": [
+          "The selected Arabic and both prints begin with singular hand. Both English comparisons use plural hands; the working English keeps the selected singular.",
+          "Sulayman’s uncertainty remains an interleaved transmission-note segment between the two report portions. The selected masculine أذكر is rendered he mentioned; it is not changed to the EPUB’s she had said.",
+          "The alternative ground or wall, the gesture and the declined cloth remain complete. The EPUB adds washing the hand again and blowing water out of the nose; those are not inserted into the selected report. The historical print adds from his place after moved aside; the selected shorter wording remains."
+        ],
+        "reviewScope": "AI-assisted working translation from the selected Arabic, compared with two visually inspected Arabic prints and individually matched English bodies. Comparison abbreviations, numbering changes, source variants and two explicit digital corrections are recorded. Full chains, uncertainty and closing attributions remain. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:264",
+      "book": "Ghusl",
+      "number": 264,
+      "arabic_blocks": [
+        "[264] حدثنا محمد بن بشار قال : حدثنا ابن أبي عدي ويحيى بن سعيد عن شعبة عن إبراهيم بن محمد بن المنتشر عن أبيه قال : ذكرته لعائشة فقالت يرحم الله أبا عبد الرحمن كنت أطيب رسول الله ﷺ فيطوف على نسائه ثم يصبح محرما ينضخ طيبا "
+      ],
+      "arabic_sha256": "c4bdff9f187c7c42c65448b3180303826efb5d209a941874e0747dd555c6f250",
+      "english_blocks": [
+        "Muhammad ibn Bashshar related to us. He said: Ibn Abi ‘Adi and Yahya ibn Sa‘id related to us, from Shu‘bah, from Ibrahim ibn Muhammad ibn al-Muntashir, from his father, who said:",
+        "I mentioned it to ‘A’ishah, and she said: “May Allah have mercy on Abu ‘Abd al-Rahman. I used to apply perfume to the Messenger of Allah, may Allah bless him and grant him peace, and he would go round to his wives, then be in ihram in the morning, fragrant with perfume.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 115,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 115,
+            "end": 220,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 178,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 271,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:264",
+        "reviewRecordSha256": "a1a996e9750c49ef24c83752c9acc647da933a579441670ac9b183a6821763eb",
+        "notes": [
+          "The complete chain is Ibrahim ibn Muhammad ibn al-Muntashir, from his father, as in the inspected prints. Both English comparison headings name Muhammad ibn al-Muntashir from his father; they do not replace the selected chain.",
+          "The historical print uses singular حدثني for Ibn Abi Adi; the selected digital and modern print use plural حدثنا. The selected plural remains.",
+          "The report begins I mentioned it without naming the antecedent. No topic is invented inside the narration. A separate context link points to 267, whose wording names Ibn Umar’s statement. The working English retains going round to the wives without adding an explicit sexual clause or a bath."
+        ],
+        "reviewScope": "AI-assisted working translation from the selected Arabic, compared with two visually inspected Arabic prints and individually matched English bodies. Comparison abbreviations, numbering changes, source variants and two explicit digital corrections are recorded. Full chains, uncertainty and closing attributions remain. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:265",
+      "book": "Ghusl",
+      "number": 265,
+      "arabic_blocks": [
+        "[265] حدثنا محمد بن بشار قال : حدثنا معاذ بن هشام قال : حدثني أبي عن قتادة قال : حدثنا أنس بن مالك قال : كان النبي ﷺ يدور على نسائه في الساعة الواحدة من الليل والنهار وهن إحدى عشرة قال : قلت لأنس أو كان يطيقه قال كنا نتحدث أنه أعطي قوة ثلاثين ، وقال سعيد عن قتادة إن أنسا حدثهم تسع نسوة "
+      ],
+      "arabic_sha256": "5ed1b858cb82c146cff420c7ffd8f084a092235f6a0776814c11e35398f1fb60",
+      "english_blocks": [
+        "Muhammad ibn Bashshar related to us. He said: Mu‘adh ibn Hisham related to us. He said: My father related to me, from Qatadah, who said: Anas ibn Malik related to us. He said:",
+        "The Prophet, may Allah bless him and grant him peace, used to go round to his wives in a single period of the night or day, and they were eleven. He said: I said to Anas: “Was he able to do that?” He said: “We used to say that he had been given the strength of thirty.”",
+        "And Sa‘id said, from Qatadah, that Anas related to them: “Nine wives.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 105,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 105,
+            "end": 245,
+            "kind": "report"
+          },
+          {
+            "block": 0,
+            "start": 245,
+            "end": 287,
+            "kind": "transmission-note"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 175,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 269,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 70,
+            "kind": "transmission-note"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:265",
+        "reviewRecordSha256": "efb9dbd8619a26e2ec5e41612c4b95258f44270190ddb4264bc5da9069b3a498",
+        "notes": [
+          "The selected report records eleven wives and the separate Sa‘id transmission records nine. Both are retained in their original roles. The explanatory footnote on the comparison website is commentary and is not copied into the hadith.",
+          "The chain distinguishes the singular my father related to me from the three plural reporting verbs. The historical print has a longer closing Sa‘id/Qatadah formula; the shorter selected and modern form remains complete as selected.",
+          "A single period renders الساعة الواحدة without imposing a modern sixty-minute duration. Thirty remains without inserting the explanatory men supplied by the comparisons."
+        ],
+        "reviewScope": "AI-assisted working translation from the selected Arabic, compared with two visually inspected Arabic prints and individually matched English bodies. Comparison abbreviations, numbering changes, source variants and two explicit digital corrections are recorded. Full chains, uncertainty and closing attributions remain. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:266",
+      "book": "Ghusl",
+      "number": 266,
+      "arabic_blocks": [
+        "[266] حدثنا أبو الوليد قال : حدثنا زائدة عن أبي حصين عن أبي عبد الرحمن عن علي قال : كنت رجلا مذاء فأمرت رجلا أن يسأل النبي ﷺ لمكان ابنته فسأل ، فقال توضأ واغسل ذكرك "
+      ],
+      "arabic_sha256": "2ac81161ff5274b3ba59fa3359506f036f3fefdefbf651e9881d756336760dfe",
+      "english_blocks": [
+        "Abu al-Walid related to us. He said: Za’idah related to us, from Abu Hasin, from Abu ‘Abd al-Rahman, from ‘Ali, who said:",
+        "I was a man who frequently discharged madhiy, so I asked a man to ask the Prophet, may Allah bless him and grant him peace, because of his daughter. He asked, and he replied: “Perform ablution and wash your penis.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 84,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 84,
+            "end": 165,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 121,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 214,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:266",
+        "reviewRecordSha256": "8a955571b75c1520a8dd79ebb539051f2ce62e1440d08582f76279e7041dbe25",
+        "notes": [
+          "The unnamed questioner and the daughter remain unnamed. The working English retains the reason’s indirect wording; no name or biographical clause from the English comparisons is inserted.",
+          "The selected answer says perform ablution and wash your penis in that order. The EPUB reverses the sequence with after; the working English follows the Arabic conjunction and does not turn it into an added legal ordering instruction.",
+          "Madhiy remains a source term. The historical print repeats the Prophet’s title and blessing in the question clause; the selected and modern shorter form remains."
+        ],
+        "reviewScope": "AI-assisted working translation from the selected Arabic, compared with two visually inspected Arabic prints and individually matched English bodies. Comparison abbreviations, numbering changes, source variants and two explicit digital corrections are recorded. Full chains, uncertainty and closing attributions remain. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:267",
+      "book": "Ghusl",
+      "number": 267,
+      "arabic_blocks": [
+        "[267] حدثنا أبو النعمان قال : حدثنا أبو عوانة عن إبراهيم بن محمد بن المنتشر عن أبيه قال : سألت عائشة فذكرت لها قول ابن عمر ما أحب أن أصبح محرما أنضخ طيبا فقالت عائشة أنا طيبت رسول الله ﷺ ثم طاف في نسائه ثم أصبح محرما "
+      ],
+      "arabic_sha256": "3c7196709b8f079721d60e7d58729dfa119902005cb5522b7f6c8cdf39dbf414",
+      "english_blocks": [
+        "Abu al-Nu‘man related to us. He said: Abu ‘Awanah related to us, from Ibrahim ibn Muhammad ibn al-Muntashir, from his father, who said:",
+        "I asked ‘A’ishah and mentioned to her Ibn ‘Umar’s statement: “I would not like to be in ihram in the morning, fragrant with perfume.” ‘A’ishah said: “I applied perfume to the Messenger of Allah, may Allah bless him and grant him peace, then he went round among his wives, then was in ihram in the morning.”"
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic prints and two English comparison families were inspected. One English comparison abbreviates the report; its omitted wording and any explicit Arabic correction are documented in the source notes. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 90,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 90,
+            "end": 217,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 135,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 306,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:267",
+        "reviewRecordSha256": "025c465e84398bbfce6730c33620b87b1bdf5a26a25afda47a5e367532252e0f",
+        "notes": [
+          "The full chain through Ibrahim ibn Muhammad ibn al-Muntashir remains as selected. The comparison headings abbreviate/name it differently; their headings do not replace the Arabic chain.",
+          "Bewley 267 stops during Aisha’s answer and points to 264. That comparison is explicitly marked abbreviated. The EPUB 1.5.270 provides the full main body, but adds explanations about intercourse and a bath; these additions are not inserted.",
+          "Ibn Umar’s quoted statement, Aisha’s full reply and the morning state of ihram remain separate in the report. Entry 264 is linked as related context without merging the two reports."
+        ],
+        "reviewScope": "AI-assisted working translation from the selected Arabic, compared with two visually inspected Arabic prints and individually matched English bodies. Comparison abbreviations, numbering changes, source variants and two explicit digital corrections are recorded. Full chains, uncertainty and closing attributions remain. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:268",
+      "book": "Ghusl",
+      "number": 268,
+      "arabic_blocks": [
+        "[268] حدثنا آدم قال : حدثنا شعبة قال : حدثنا الحكم عن إبراهيم عن الأسود عن عائشة قالت كأني أنظر إلى وبيص الطيب في مفرق النبي ﷺ وهو محرم "
+      ],
+      "arabic_sha256": "ae858cc3fc07c03e7811adc430d0ed109d5fec1e91e97465c528dd8abe79a85c",
+      "english_blocks": [
+        "Adam related to us. He said: Shu‘bah related to us. He said: Al-Hakam related to us, from Ibrahim, from al-Aswad, from ‘A’ishah, who said:",
+        "It is as though I am looking at the gleam of perfume in the parting of the Prophet’s hair, may Allah bless him and grant him peace, while he was in ihram."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 86,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 86,
+            "end": 136,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 138,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 154,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:268",
+        "reviewRecordSha256": "1cc162757af8e496c8b12635d8cd56de1edd6e17ca02c0b8e1df0f71e1e52a35",
+        "notes": [
+          "The full chain through al-Hakam, Ibrahim and al-Aswad remains. Perfume, the hair parting and the state of ihram remain in the report without additions from adjacent narrations."
+        ],
+        "reviewScope": "AI-assisted working translation from the selected Arabic, compared with two visually inspected Arabic prints and individually matched English bodies. Comparison abbreviations, numbering changes, source variants and two explicit digital corrections are recorded. Full chains, uncertainty and closing attributions remain. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:269",
+      "book": "Ghusl",
+      "number": 269,
+      "arabic_blocks": [
+        "[269] حدثنا عبدان قال : أخبرنا عبد الله قال : أخبرنا هشام بن عروة عن أبيه عن عائشة قالت كان رسول الله ﷺ إذا اغتسل من الجنابة غسل يديه وتوضأ وضوءه للصلاة ثم اغتسل ثم يخلل بيده شعره حتى إذا ظن أنه قد أروى بشرته أفاض عليه الماء ثلاث مرات ثم غسل سائر جسده وقالت كنت أغتسل أنا ورسول الله ﷺ من إناء واحد نغرف منه جميعا "
+      ],
+      "arabic_sha256": "a7e3c251999a795c7406f30eb11d73076c33d056b82af34956ea00a6063d00a0",
+      "english_blocks": [
+        "‘Abdan related to us. He said: ‘Abd Allah informed us. He said: Hisham ibn ‘Urwah informed us, from his father, from ‘A’ishah, who said:",
+        "When the Messenger of Allah, may Allah bless him and grant him peace, bathed for janabah, he washed his hands and performed his ablution for prayer, then bathed. Then he worked his hand through his hair until, when he thought he had thoroughly wetted his skin, he poured water over it three times. Then he washed the rest of his body.",
+        "And she said: The Messenger of Allah, may Allah bless him and grant him peace, and I used to bathe from one vessel, both of us taking water from it."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 88,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 88,
+            "end": 252,
+            "kind": "report"
+          },
+          {
+            "block": 0,
+            "start": 252,
+            "end": 313,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 136,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 334,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 148,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:269",
+        "reviewRecordSha256": "321d054dd887d91591c50f65042130f37fb8d70e9749e172c61686ec582ddc41",
+        "notes": [
+          "The selected source and EPUB 1.5.272 keep the bathing account and shared-vessel statement under one number. The modern Arabic print numbers those statements 272 and 273 separately; the reader preserves one complete selected-source entry, in two report segments. Later modern print numbers must therefore not be inferred from the EPUB.",
+          "The historical print uses حدثنا before Hisham and dual بيديه in the hair clause. The selected digital and modern print use أخبرنا and singular بيده; the working English preserves these.",
+          "All actions remain in their source sequence, including then bathed before the hair clause. No act is deleted as apparent repetition, and the shared-vessel statement is not lost because another edition gives it a new number."
+        ],
+        "reviewScope": "AI-assisted working translation from the selected Arabic, compared with two visually inspected Arabic prints and individually matched English bodies. Comparison abbreviations, numbering changes, source variants and two explicit digital corrections are recorded. Full chains, uncertainty and closing attributions remain. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:270",
+      "book": "Ghusl",
+      "number": 270,
+      "arabic_blocks": [
+        "[270] حدثنا يوسف بن عيسى قال : أخبرنا الفضل بن موسى قال : أخبرنا الأعمش عن سالم عن كريب مولى ابن عباس عن ابن عباس عن ميمونة قالت وضع رسول الله ﷺ وضوءا لجنابة فأكفأ بيمينه على شماله مرتين أو ثلاثا ثم غسل فرجه ثم ضرب يده بالأرض أو الحائط مرتين أو ثلاثا ثم مضمض واستنشق وغسل وجهه وذراعيه ثم أفاض على رأسه الماء ثم غسل جسده ثم تنحى فغسل رجليه قالت فأتيته بخرقة فلم يردها فجعل ينفض بيده "
+      ],
+      "arabic_sha256": "e0d3c30287cb2a1c6a3ee9d78ee80d3aeef4902d99181b6f4e010a0836c7442b",
+      "english_blocks": [
+        "Yusuf ibn ‘Isa related to us. He said: Al-Fadl ibn Musa informed us. He said: Al-A‘mash informed us, from Salim, from Kurayb, the freedman of Ibn ‘Abbas, from Ibn ‘Abbas, from Maymunah, who said:",
+        "The Messenger of Allah, may Allah bless him and grant him peace, set out water for washing from janabah. He poured with his right hand onto his left twice or three times, then washed his private parts. Then he struck his hand on the ground or the wall twice or three times. Then he rinsed his mouth and drew water into his nose, and washed his face and forearms. Then he poured water over his head, then washed his body, then moved aside and washed his feet. She said: I brought him a cloth, but he did not want it, and he began shaking his hand."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 129,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 129,
+            "end": 382,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 195,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 546,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:270",
+        "reviewRecordSha256": "b150093501735c231de54a1802124ba60fb8d91b1aeaf0d3a0f6339ec21fd760",
+        "notes": [
+          "Both occurrences of twice or three times remain attached to their respective actions. Ground or wall remains an alternative, and the ending retains the unused cloth and singular hand.",
+          "The historical print has يساره instead of شماله and explicitly names water in the final shaking clause. The selected wording stays unchanged and the working English leaves that object implicit. The EPUB expands the ending to removing water from the body; that extra description is not imported.",
+          "No separate blowing-out action is added to الاستنشاق. The chosen source explicitly names forearms here, unlike the more general hands wording in 262–263."
+        ],
+        "reviewScope": "AI-assisted working translation from the selected Arabic, compared with two visually inspected Arabic prints and individually matched English bodies. Comparison abbreviations, numbering changes, source variants and two explicit digital corrections are recorded. Full chains, uncertainty and closing attributions remain. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:271",
+      "book": "Ghusl",
+      "number": 271,
+      "arabic_blocks": [
+        "[271] حدثنا عبد الله بن محمد قال : حدثنا عثمان بن عمر قال : أخبرنا يونس عن الزهري عن أبي سلمة عن أبي هريرة قال أقيمت الصلاة وعدلت الصفوف قياما فخرج إلينا رسول الله ﷺ فلما قام في مصلاه ذكر أنه جنب ، فقال لنا مكانكم ثم رجع فاغتسل ثم خرج إلينا ورأسه يقطر فكبر فصلينا معه تابعه عبد الأعلى عن معمر عن الزهري  ، ورواه الأوزاعي عن الزهري "
+      ],
+      "arabic_sha256": "5807534ba147269e2407888662b37ed9f9543c8f9634c414fe270022190de4ea",
+      "english_blocks": [
+        "‘Abd Allah ibn Muhammad related to us. He said: ‘Uthman ibn ‘Umar related to us. He said: Yunus informed us, from al-Zuhri, from Abu Salamah, from Abu Hurayrah, who said:",
+        "The call to begin the prayer was made and the rows were straightened while standing. The Messenger of Allah, may Allah bless him and grant him peace, came out to us. When he stood in his place of prayer, he remembered that he was in janabah. He said to us: “Stay in your places.” Then he returned and bathed, then came out to us with his head dripping. He pronounced the takbir, and we prayed with him.",
+        "‘Abd al-A‘la corroborated it, from Ma‘mar, from al-Zuhri.",
+        "And al-Awza‘i related it from al-Zuhri."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 111,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 111,
+            "end": 268,
+            "kind": "report"
+          },
+          {
+            "block": 0,
+            "start": 268,
+            "end": 306,
+            "kind": "transmission-note"
+          },
+          {
+            "block": 0,
+            "start": 306,
+            "end": 331,
+            "kind": "transmission-note"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 170,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 402,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 57,
+            "kind": "transmission-note"
+          },
+          {
+            "block": 3,
+            "start": 0,
+            "end": 39,
+            "kind": "transmission-note"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:271",
+        "reviewRecordSha256": "814e94c069a6f9859225140e6bc4042489c9c12f686efc8a67f72dfa55026365",
+        "notes": [
+          "The preparation for prayer, reminder, return to bathe, dripping head, takbir and shared prayer remain complete. Takbir is retained as the source action; an expanded spoken formula is not inserted as a direct quotation.",
+          "The complete closing attributions to Abd al-Ala from Ma‘mar from al-Zuhri, and al-Awza‘i from al-Zuhri, remain separate transmission-note segments. Bewley includes both; the EPUB main body omits them."
+        ],
+        "reviewScope": "AI-assisted working translation from the selected Arabic, compared with two visually inspected Arabic prints and individually matched English bodies. Comparison abbreviations, numbering changes, source variants and two explicit digital corrections are recorded. Full chains, uncertainty and closing attributions remain. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:272",
+      "book": "Ghusl",
+      "number": 272,
+      "arabic_blocks": [
+        "[272] حدثنا عبدان قال : أخبرنا أبو حمزة قال : سمعت الأعمش عن سالم عن كريب عن ابن عباس قال : قالت ميمونة وضعت للنبي ﷺ غسلا فسترته بثوب وصب على يديه فغسلهما ثم صب بيمينه على شماله فغسل فرجه فضرب بيده الأرض فمسحها ثم غسلها فمضمض واستنشق وغسل وجهه وذراعيه ثم صب على رأسه وأفاض على جسده ثم تنحى فغسل قدميه فناولته ثوبا فلم يأخذه فانطلق وهو ينفض يديه "
+      ],
+      "arabic_sha256": "9c06f8a939b841e8c0108b84f58a9c49d4ce11fab92a0df0b0ce1b9e94c02347",
+      "english_blocks": [
+        "‘Abdan related to us. He said: Abu Hamzah informed us. He said: I heard al-A‘mash, from Salim, from Kurayb, from Ibn ‘Abbas, who said: Maymunah said:",
+        "I set out water for the Prophet, may Allah bless him and grant him peace, to bathe and screened him with a cloth. He poured onto his hands and washed them, then poured with his right hand onto his left and washed his private parts. He struck the ground with his hand and wiped it, then washed it. He rinsed his mouth and drew water into his nose, and washed his face and forearms. Then he poured over his head and poured over his body, then moved aside and washed his feet. I handed him a cloth, but he did not take it, and went off shaking his hands."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic prints and two English comparison families were inspected. One English comparison abbreviates the report; its omitted wording and any explicit Arabic correction are documented in the source notes. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 104,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 104,
+            "end": 345,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 149,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 551,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:272",
+        "reviewRecordSha256": "60e66efe7eea841f2cab20774aa3cdd31845b47b56b6e19ec7198899aa41cbb5",
+        "notes": [
+          "The digital spelling ذراعية differs from ذراعيه in both inspected Arabic prints. The derived reader paragraph corrects only the final letter under an explicit two-witness correction. The unchanged digital paragraph and before/after wording remain accessible.",
+          "The selected digital and modern chain use أخبرنا for Abu Hamzah; the historical print uses حدثنا. The direct-hearing clause remains.",
+          "Bewley’s body omits the cloth offer and refusal before the departure. The complete selected Arabic, both prints and EPUB 1.5.275 retain it; the reader does too. That comparison is explicitly marked abbreviated. The final hands are plural, distinct from the earlier singular hand on the ground."
+        ],
+        "reviewScope": "AI-assisted working translation from the selected Arabic, compared with two visually inspected Arabic prints and individually matched English bodies. Comparison abbreviations, numbering changes, source variants and two explicit digital corrections are recorded. Full chains, uncertainty and closing attributions remain. Independent Arabic, English, context and reference review remains pending.",
+        "originalArabicSha256": "2568deadb350935a8bbcad168e704fbca96d4ea83f955241c0e1fadb01777aba",
+        "arabicCorrections": [
+          {
+            "id": "272-forearms-spelling",
+            "paragraphId": "mwjQ",
+            "start": 245,
+            "end": 251,
+            "before": "ذراعية",
+            "after": "ذراعيه",
+            "originalParagraphSha256": "2568deadb350935a8bbcad168e704fbca96d4ea83f955241c0e1fadb01777aba",
+            "correctedParagraphSha256": "9c06f8a939b841e8c0108b84f58a9c49d4ce11fab92a0df0b0ce1b9e94c02347",
+            "status": "chosen-for-personal-prototype",
+            "reviewerKind": "ai",
+            "independentReview": "pending",
+            "reason": "The digital spelling ذراعية differs from ذراعيه in both inspected Arabic prints. The derived reader paragraph corrects only the final letter under an explicit two-witness correction. The unchanged digital paragraph and before/after wording remain accessible.",
+            "witnesses": [
+              {
+                "sourceId": "brill-1862",
+                "pdfPage": 79,
+                "reading": "ذراعيه",
+                "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+              },
+              {
+                "sourceId": "dar-ibn-kathir-2002",
+                "pdfPage": 78,
+                "reading": "ذراعيه",
+                "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+              }
+            ],
+            "contextNoteId": "272-source-correction",
+            "englishSegmentId": "272-2",
+            "englishRendering": "forearms"
+          }
+        ]
+      },
+      "audio_status": "No recording yet."
+    },
+    {
+      "id": "bukhari:273",
+      "book": "Ghusl",
+      "number": 273,
+      "arabic_blocks": [
+        "[273] حدثنا خلاد بن يحيى قال : حدثنا إبراهيم بن نافع عن الحسن بن مسلم عن صفية بنت شيبة عن عائشة قالت كنا إذا أصابت إحدانا جنابة أخذت بيديها ثلاثا فوق رأسها ثم بيدها على شقها الأيمن وبيدها الأخرى على شقها الأيسر "
+      ],
+      "arabic_sha256": "bfbd754802e72e9bb596af8b52a45da47b185f63d7a8a05a83e26f42f3bccc75",
+      "english_blocks": [
+        "Khallad ibn Yahya related to us. He said: Ibrahim ibn Nafi‘ related to us, from al-Hasan ibn Muslim, from Safiyyah bint Shaybah, from ‘A’ishah, who said:",
+        "When one of us was in janabah, she would scoop with both hands and pour over her head three times, then with one hand over her right side and with her other hand over her left side."
+      ],
+      "english_status": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending.",
+      "presentation": {
+        "schemaVersion": 1,
+        "arabic": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 101,
+            "kind": "chain"
+          },
+          {
+            "block": 0,
+            "start": 101,
+            "end": 211,
+            "kind": "report"
+          }
+        ],
+        "english": [
+          {
+            "block": 0,
+            "start": 0,
+            "end": 153,
+            "kind": "chain"
+          },
+          {
+            "block": 1,
+            "start": 0,
+            "end": 181,
+            "kind": "report"
+          }
+        ]
+      },
+      "review": {
+        "status": "personal-prototype-only",
+        "independentReview": "pending",
+        "sourceRecordId": "wikisource-bukhari-ghusl-r484873:273",
+        "reviewRecordSha256": "55f43399e4fd505264c4d246614d0fab987032d0daa3e77c4fc346e2a06f24a1",
+        "notes": [
+          "Both printed witnesses include تأخذ after ثم; the selected digital paragraph leaves that repeated verb implicit. This shortened clause is retained as selected and recorded here, rather than silently expanded.",
+          "The right and left clauses say her side, whereas the chapter heading names the head. The two English comparisons add head in those clauses and use rub; the working English retains side and does not add rubbing.",
+          "Ibn Hajar’s Fath al-Bari, printed page 458, explains the initial elliptical taking as water poured over the head and discusses the distinction between the side of the person and the chapter’s head wording. The working action wording uses that lexical explanation, while the commentary remains separate. Independent review is pending."
+        ],
+        "reviewScope": "AI-assisted working translation from the selected Arabic, compared with two visually inspected Arabic prints and individually matched English bodies. Comparison abbreviations, numbering changes, source variants and two explicit digital corrections are recorded. Full chains, uncertainty and closing attributions remain. Independent Arabic, English, context and reference review remains pending."
+      },
+      "audio_status": "No recording yet."
     }
   ],
   "sourceLocationCorrections": {
@@ -21853,7 +22699,7 @@
     "knowledgeSourceSha256": "9060879f4b110cc9007f35db6b1f2fa0cc37c5ba8e510531721b024cbadf4e58",
     "ablutionReviewSha256": "cabac2ca51195b600169481a70dc55f01df737860da9afa3f57f36abf0b59e67",
     "ablutionSourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
-    "ghuslReviewSha256": "524c8b4801c58e68991b42db4411854ed076cf607d263d8f63aa5f2c55326315",
+    "ghuslReviewSha256": "fe5a0886b0dc1b9410cd210cd62381764d22aa73d3ae535a6872e353661958f9",
     "ghuslSourceSha256": "07e29f845c2f17f77aae014356e8028a3335d245eeeb73e7b5efe3b52064db77"
   }
 }

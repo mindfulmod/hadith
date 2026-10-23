@@ -18,14 +18,14 @@ test('Ghusl adds six complete entries while every previous entry and stable book
  const names=['opening-revelation-0a534f10d205292c','faith-ad873aab8759ca02','knowledge-e3d5ef7956421322','ablution-4012bd796dae0e95'];
  assert.deepEqual(source.entries.slice(0,244),names.flatMap(n=>read('reader/books/'+n+'.json').entries));
  for(const n of names){const path='books/'+n+'.json';assert.equal(published.files.get(path),readFileSync(new URL('../reader/'+path,import.meta.url),'utf8'));}
- assert.deepEqual(args.slice(0,3),before);assert.deepEqual(batch.entries.map(e=>e.number),[245,246,247,248,249,250]);assert.equal(batch.chapters.length,3);assert.equal(source.entries.length,261);
+ assert.deepEqual(args.slice(0,3),before);assert.deepEqual(batch.entries.map(e=>e.number),[245,246,247,248,249,250]);assert.equal(batch.chapters.length,3);assert.equal(source.entries.length,273);
  for(const row of args[1].entries){const entry=batch.entries.find(e=>e.number===row.number);assert.equal(entry.arabic_blocks[0],args[0].blocks.find(b=>b.htmlId===row.paragraphIds[0]).text);assert.deepEqual(entry.english_blocks,row.segments.map(s=>s.english));}
 });
 test('book quotations have a separately admitted browser context and exact offline source paragraph',()=>{
  const {source,ledger,files}=collectionFiles(),args=input(),book=ledger.books.at(-1),intro=book.introduction,review=args[1].bookIntroduction,paragraph=args[0].blocks.find(b=>b.htmlId==='mwBA');
  assert.equal(book.sourceEntryCount,45);assert.equal(intro.evidenceSha256,review.reviewRecordSha256);assert.equal(intro.arabicParagraphs,1);assert.equal(intro.englishStatus,'pending');assert.equal(intro.notes.fragment,'book-introduction');validateChapters(book);
  assert(!book.chapters.some(c=>c.id==='book-introduction'));assert.deepEqual(book.chapters.slice(0,3).flatMap(c=>c.entryNumbers),[245,246,247,248,249,250]);
- const inputs=JSON.parse(files.get('reader/ghusl-inputs.json'));assert.deepEqual(inputs.selectedBlocks.find(b=>b.htmlId==='mwBA'),paragraph);assert.equal(inputs.selectedBlocks.length,28);
+ const inputs=JSON.parse(files.get('reader/ghusl-inputs.json'));assert.deepEqual(inputs.selectedBlocks.find(b=>b.htmlId==='mwBA'),paragraph);assert.equal(inputs.selectedBlocks.length,51);
  const html=files.get('reader/ghusl-review.html');assert.equal((html.match(/id="book-introduction"/g)||[]).length,1);assert(html.includes(paragraph.text));assert.match(html,/English translation and independent review are pending/);
  for(const entry of source.entries.slice(244))assert(!entry.arabic_blocks.includes(paragraph.text));
 });
@@ -58,7 +58,7 @@ test('chains, amount alternatives and the printed final note remain in complete 
 test('browsing the book introduction does not change Continue or introduce unnumbered session items',()=>{
  const {source,ledger}=collectionFiles(),book=ledger.books.at(-1),state=normalizeState({session:{numbers:[244],cursor:244,ended:true},last:244}),before=structuredClone(state),catalog=buildBooks(source,ledger).catalog;
  const html=bookView(catalog,state,{mode:'book',book,chapter:null,page:1});assert.deepEqual(state,before);assert.match(html,/ghusl-review.html#book-introduction/);assert.doesNotMatch(bookIntroductionView(book),/data-start-session|#read\//);assert.doesNotMatch(bookIntroductionView(ledger.books[0]),/Book introduction/);
- assert.deepEqual(resolveSession(source.entries,state.session,5,250),state.session);assert.equal(nextSession(source.entries,state.session,5).cursor,245);assert(planSession(source.entries,244,5).numbers.includes(245));assert.deepEqual(planSession(source.entries,261,5).numbers,[261]);
+ assert.deepEqual(resolveSession(source.entries,state.session,5,250),state.session);assert.equal(nextSession(source.entries,state.session,5).cursor,245);assert(planSession(source.entries,244,5).numbers.includes(245));assert.deepEqual(planSession(source.entries,273,5).numbers,[273]);
 });
 function contentFixture(){
  const {source,ledger,files:derived}=collectionFiles(),published=buildBooks(source,ledger),responses=new Map(published.files);
