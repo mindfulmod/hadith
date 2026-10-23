@@ -14,10 +14,10 @@ const rehash=r=>{delete r.reviewRecordSha256;r.reviewRecordSha256=objectHash(r);
 test('sixth batch preserves all 180 existing entries and every new Arabic source span',()=>{
  const args=input(),batch=buildBookBatch(...args),{source,ledger,files}=collectionFiles();
  const previous=['opening-revelation-5912c7128a18d9c9','faith-0083b6d6fb2f9a7e','knowledge-9e2c952eba9b7bf3','ablution-d0e576609a3d05d4'].flatMap(p=>read('reader/books/'+p+'.json').entries);
- assert.deepEqual(source.entries.slice(0,180),previous);assert.equal(source.entries.length,208);assert.deepEqual(batch.entries.map(e=>e.number),Array.from({length:11},(_,i)=>181+i));assert.equal(batch.chapters.length,10);
+ assert.deepEqual(source.entries.slice(0,180),previous);assert.equal(source.entries.length,224);assert.deepEqual(batch.entries.map(e=>e.number),Array.from({length:11},(_,i)=>181+i));assert.equal(batch.chapters.length,10);
  for(const e of batch.entries){const r=args[1].entries.find(r=>r.number===e.number);assert.deepEqual(e.arabic_blocks,r.paragraphIds.map(id=>args[0].blocks.find(b=>b.htmlId===id).text));assert.deepEqual(sourceSegments(e,'english').map(s=>s.text),r.segments.map(s=>s.english));assert(!r.arabicCorrections&&!r.arabicSupplements);}
- const book=ledger.books.find(b=>b.id==='ablution');assert.equal(book.entryNumbers.length,74);assert.equal(book.chapters.length,53);
- const inputs=JSON.parse(files.get('reader/ablution-inputs.json'));assert.equal(inputs.selectedBlocks.length,188);assert.equal(inputs.sourceLayout.originalBlocks.length,186);
+ const book=ledger.books.find(b=>b.id==='ablution');assert.equal(book.entryNumbers.length,90);assert.equal(book.chapters.length,64);
+ const inputs=JSON.parse(files.get('reader/ablution-inputs.json'));assert.equal(inputs.selectedBlocks.length,216);assert.equal(inputs.sourceLayout.originalBlocks.length,213);
 });
 test('181 retains six separate pairs, timing alternatives and witr without inventing its count',()=>{
  const{source}=collectionFiles(),e=source.entries.find(e=>e.number===181),text=e.english_blocks.join(' '),script=narrationPlan(source).entries.find(e=>e.number===181).script;
@@ -46,7 +46,7 @@ test('chapter introductions and embedded heading statements stay out of sessions
  const args=input(),{source,ledger,files}=collectionFiles(),book=ledger.books.find(b=>b.id==='ablution');assert.deepEqual(args[1].chapters.map(c=>c.id),Array.from({length:10},(_,i)=>'chapter-'+(35+i)));assert.equal(book.chapters.find(c=>c.id==='chapter-40').title,'Chapter');
  for(const id of ['mwzg','mw2Q','mw4g']){const text=args[0].blocks.find(b=>b.htmlId===id).text;assert(files.get('reader/ablution-review.html').includes(text));assert(!source.entries.some(e=>e.arabic_blocks.includes(text)));}
  assert.match(book.chapters.find(c=>c.id==='chapter-43').title,/‘Umar performed ablution/);assert(!source.entries.find(e=>e.number===190).english_blocks.join(' ').includes('Christian woman'));
- const saved={numbers:[180],cursor:180,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,191),saved);assert.equal(nextSession(source.entries,saved,5).cursor,181);assert(planSession(source.entries,180,5).numbers.includes(181));assert.deepEqual(planSession(source.entries,208,5).numbers,[208]);assert.equal(nextSession(source.entries,{numbers:[208],cursor:208,ended:true},5),null);
+ const saved={numbers:[180],cursor:180,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,191),saved);assert.equal(nextSession(source.entries,saved,5).cursor,181);assert(planSession(source.entries,180,5).numbers.includes(181));assert.deepEqual(planSession(source.entries,224,5).numbers,[224]);assert.equal(nextSession(source.entries,{numbers:[224],cursor:224,ended:true},5),null);
 });
 test('the first real schema-two expansion keeps all three unaffected book files and existing audio coverage',()=>{
  const{source,ledger}=collectionFiles(),result=buildBooks(source,ledger);

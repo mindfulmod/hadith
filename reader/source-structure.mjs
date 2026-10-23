@@ -37,21 +37,26 @@ export function sourceSegments(entry,language){
  });
  requireValue(block===points.length&&offset===0,'Source presentation omits text');
  requireValue(seenSupplements.size===supplements.length,'Printed supplement is not visibly identified');
- requireValue(segments.some(s=>s.kind==='report'||s.kind==='letter'),'Source presentation has no narration');
+ const form=entry.review?.sourceForm;
+ if(form!==undefined){
+  requireValue(form.kind==='chain-only'&&form.reviewerKind==='ai'&&form.independentReview==='pending'&&typeof form.sourceRecordId==='string'&&form.sourceRecordId.trim()&&form.sourceRecordId===entry.review.sourceRecordId&&/^[a-f0-9]{64}$/.test(form.arabicSha256)&&form.arabicSha256===entry.arabic_sha256&&typeof form.contextNoteId==='string'&&form.contextNoteId.trim(),'Invalid chain-only source declaration');
+  requireValue(Array.isArray(form.witnesses)&&form.witnesses.length===2&&form.witnesses.map(w=>w.sourceId).sort().join(',')==='brill-1862,dar-ibn-kathir-2002'&&form.witnesses.every(w=>/^[a-f0-9]{64}$/.test(w.sourceSha256)&&Number.isSafeInteger(w.pdfPage)&&w.pdfPage>0),'Chain-only source lacks pinned witnesses');
+  requireValue(segments.every(s=>s.kind==='chain'),'Chain-only source contains a non-chain segment');
+ }else requireValue(segments.some(s=>s.kind==='report'||s.kind==='letter'),'Source presentation has no narration');
  return segments;
 }
 export function validateSourceStructure(entry){
  for(const language of ['english','arabic'])sourceSegments(entry,language);
 }
 export function narrationHTML(entry){
- const groups=[];
+ const groups=[],chainOnly=entry.review?.sourceForm?.kind==='chain-only';
  for(const segment of sourceSegments(entry,'english')){
   if(groups.at(-1)?.kind===segment.kind&&groups.at(-1)?.provenance?.id===segment.provenance?.id)groups.at(-1).segments.push(segment);
   else groups.push({kind:segment.kind,provenance:segment.provenance,segments:[segment]});
  }
  return groups.map(({kind,segments,provenance},index)=>{
   const paragraphs=segments.map(s=>`<p data-source-block="english-${s.block}" data-source-start="${s.start}" data-source-end="${s.end}">${sourceHTML(s.text)}</p>`).join('');
-  if(kind==='chain')return `<details class="chain"><summary>Chain of narrators <span>${index===0?'Full introduction':'Full chain'}</span></summary><div class="prose">${paragraphs}</div></details>`;
+  if(kind==='chain')return `<details class="chain"${chainOnly?' open':''}><summary>Chain of narrators <span>${chainOnly?'Complete source entry':index===0?'Full introduction':'Full chain'}</span></summary><div class="prose">${paragraphs}</div></details>`;
   if(kind==='transmission-note')return `<section class="source-note" aria-label="Transmission note"><p class="source-section-label">${provenance?'Transmission note · from an Arabic print':'Transmission note'}</p><div class="prose">${paragraphs}</div></section>`;
   if(kind==='letter')return `<section class="source-letter" aria-label="Letter in the narration"><p class="source-section-label">Letter in the narration</p><div class="prose">${paragraphs}</div></section>`;
   return `<div class="narration prose">${paragraphs}</div>`;

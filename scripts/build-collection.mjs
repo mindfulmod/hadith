@@ -1,5 +1,6 @@
 /* Assemble reviewed personal-prototype batches; never infer Arabic edits or sign-offs. */
 import {validateBookInventory,validateEntryLayout,layoutInputEvidence,layoutSourceNotice,layoutSourceDetails} from './mapped-source.mjs';
+import {validateSourceForm} from './source-forms.mjs';
 import {deriveArabicBlocks} from './arabic-corrections.mjs';
 import {derivePrintedBlocks,validatePrintedHeading,reviewedChapterViews,printedHeadingContext,printedAdditionDetails} from './printed-supplements.mjs';
 import {sourceLocationCorrections,resolveSourceLocation} from './source-locations.mjs';
@@ -32,6 +33,15 @@ function validateComparisons(comparisons,config,segments){
  const bewley=comparisons.find(c=>c.id===config.bewleySourceId),khan=comparisons.find(c=>c.id==='islamhouse-khan');
  assert(/^[1-9]\d*$/.test(bewley.reference)&&bewley.status===undefined,'Invalid Bewley comparison');
  assert(bewley.part===undefined&&bewley.splitReferences===undefined,'Unexpected Bewley part metadata');
+ if(khan.status==='back-reference-only'){
+  assert(khanReference.test(khan.reference)&&khanReference.test(khan.referencedReference),'Invalid backward-reference comparison');
+  assert(khan.part===undefined&&khan.splitReferences===undefined&&khan.checkedReferences===undefined,'Backward reference cannot claim a complete comparison body');
+  const record=comparisonEvidence(khan.reference,khan.referenceEvidence);
+  assert(Array.isArray(khan.checkedBody)&&khan.checkedBody.length===2&&khan.checkedBody.every(p=>typeof p==='string')&&hash(khan.checkedBody)===record.textSha256,'Backward pointer differs from its pinned body');
+  const pointer=/^The Prophet said as above \(([1-9]\d*)\)\.$/.exec(khan.checkedBody[1].trim());
+  assert(/^Narrated .+:$/.test(khan.checkedBody[0].trim())&&pointer&&khan.referencedReference===`1.${config.number}.${pointer[1]}`&&Number(pointer[1])<Number(khan.reference.split('.')[2]),'Invalid or forward comparison pointer');
+  assert(typeof khan.note==='string'&&khan.note.trim(),'Backward reference needs an explanation');return;
+ }
  if(khan.status==='reference-only-body-absent'){
   assert(khanReference.test(khan.reference),'Invalid reference-only comparison');
   assert(khan.part===undefined&&khan.splitReferences===undefined&&khan.checkedReferences===undefined,'Reference-only comparison cannot claim complete report parts');
@@ -77,6 +87,7 @@ function validateComparisons(comparisons,config,segments){
  }
 }
 function entryTranslationStatus(row){
+ if(row.sourceForm?.kind==='chain-only')return 'Personal prototype: the selected Arabic entry records a narrator chain without repeating the report body. The complete selected chain is translated; related accounts and abbreviated comparisons remain separate. Two Arabic prints and two English comparison families were inspected. Independent Arabic, English and context review pending.';
  if(row.arabicSupplements)return 'Personal prototype: AI-assisted working translation with a separately identified closing transmission note transcribed from an Arabic print. Two printed witnesses and the original digital text remain accessible; the English comparisons omit that closing note. Independent Arabic, English and context review pending.';
  if(row.comparisons.some(c=>c.status==='reference-only-body-absent'))return 'Personal prototype: AI-assisted working translation; two Arabic printed witnesses and one complete English comparison body were checked. The second English reference contains only a backward pointer, not the statement body. Independent Arabic, English and context review pending.';
  if(row.arabicCorrections)return 'Personal prototype: AI-assisted working translation with an explicitly recorded Arabic correction supported by two printed witnesses. English comparison bodies and the original input remain accessible. Independent Arabic, English and context review pending.';
@@ -97,6 +108,8 @@ function printedCitation(w){
  return {id:w.id,sourceId:w.id,locator:w.status?`Checked ${location} · no separate match in this chapter`:location,pdfPage:w.pdfPages[0],scope:w.status?w.note+' This checked absence is not an exact printed match.':'Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes.'};
 }
 function khanCitation(record){
+ if(record.status==='back-reference-only'){const [volume,book,number]=record.reference.split('.');return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Number ${number} · backward reference only`,scope:record.note};}
+
  if(record.status==='reference-only-body-absent'){const [volume,book,number]=record.reference.split('.');return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Number ${number} · reference only; statement body absent`,scope:record.note};}
  if(record.splitReferences){const [volume,book]=record.reference.split('.');return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Numbers ${record.splitReferences.map(p=>p.reference.split('.')[2]).join(', ')} · separately numbered comparison parts`,scope:record.note+' The reader retains one complete numbered entry from its selected Arabic source.'};}
  if(record.status==='not-present-in-checked-sequence')return {id:'khan',sourceId:'islamhouse-khan',locator:`No corresponding report in the checked sequence: ${record.checkedReferences.join(' → ')}`,scope:record.note+' This is documented absence in that sequence, not a completed English comparison or a claim about every occurrence elsewhere in the collection.'};
@@ -131,7 +144,7 @@ export function buildBookBatch(inventory,review,manifest,config){
   assert.deepEqual(row.paragraphIds,original.paragraphIds);assert.equal(row.chapterId,original.chapterId);
   validateEntryLayout(inventory,row,original);
   assert(row.notes.length&&row.printedWitnesses.length===2&&row.comparisons.length===2,'Missing comparison evidence');
-  validatePrintedWitnesses(row.printedWitnesses);
+  validatePrintedWitnesses(row.printedWitnesses);validateSourceForm(row,review.sources);
   const originalArabic=row.paragraphIds.map(id=>blocks.get(id).text),corrected=deriveArabicBlocks(row,originalArabic,review.sources);
   validatePrintedHeading(row,originalArabic,review.sources);
   const {blockIds,arabicBlocks:arabic_blocks}=derivePrintedBlocks(row,originalArabic,corrected,review.sources),english_blocks=row.segments.map(s=>s.english);
@@ -144,7 +157,7 @@ export function buildBookBatch(inventory,review,manifest,config){
    presentation.arabic.push({block,start:s.start,end:s.end,kind:s.kind,...origin});presentation.english.push({block:i,start:0,end:Array.from(s.english).length,kind:s.kind,...origin});
   }
   assert.equal(row.arabicSha256,sha(arabic_blocks.join('\n\n')));assert.equal(row.englishSha256,sha(english_blocks.join('\n\n')));
-  const entry={id:row.id,book:config.title,number:row.number,arabic_blocks,arabic_sha256:row.arabicSha256,english_blocks,english_status:entryTranslationStatus(row),presentation,review:{status:row.status,independentReview:row.independentReview,sourceRecordId:row.sourceRecordId,reviewRecordSha256,notes:row.notes,reviewScope:row.reviewScope,...(row.sourceLayout?{sourceLayout:structuredClone(row.sourceLayout)}:{}),...(row.arabicCorrections?{originalArabicSha256:row.originalArabicSha256,arabicCorrections:structuredClone(row.arabicCorrections)}:{}),...(row.arabicSupplements?{arabicSupplements:structuredClone(row.arabicSupplements)}:{}),...(row.printedHeading?{printedHeading:structuredClone(row.printedHeading)}:{})},audio_status:'No recording yet.'};
+  const entry={id:row.id,book:config.title,number:row.number,arabic_blocks,arabic_sha256:row.arabicSha256,english_blocks,english_status:entryTranslationStatus(row),presentation,review:{status:row.status,independentReview:row.independentReview,sourceRecordId:row.sourceRecordId,reviewRecordSha256,notes:row.notes,reviewScope:row.reviewScope,...(row.sourceForm?{sourceForm:structuredClone(row.sourceForm)}:{}),...(row.sourceLayout?{sourceLayout:structuredClone(row.sourceLayout)}:{}),...(row.arabicCorrections?{originalArabicSha256:row.originalArabicSha256,arabicCorrections:structuredClone(row.arabicCorrections)}:{}),...(row.arabicSupplements?{arabicSupplements:structuredClone(row.arabicSupplements)}:{}),...(row.printedHeading?{printedHeading:structuredClone(row.printedHeading)}:{})},audio_status:'No recording yet.'};
   validateSourceStructure(entry);entries.push(entry);
  }
  const chapters=review.chapters.map(c=>{
@@ -181,7 +194,7 @@ export function assembleCollection(opening,inventory,review,manifest,config=BOOK
   const r=review.entries.find(r=>r.number===e.number),chapter=review.chapters.find(c=>c.entryNumbers.includes(e.number));
   references.entries.push({id:e.id,number:e.number,entrySha256:hash(e),translation:{label:'Personal prototype · English working translation',description:e.english_status+' This is a new working translation, not the Darussalam translation.'},citations:[
    {id:'base',sourceId:config.arabicSourceId,locator:`Book of ${config.title} · source entry ${r.sourceLayout?.sourceReference.label??e.number} · ${chapter.titleArabic}`,scope:r.sourceLayout?'Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence.':r.arabicCorrections?'Derived Arabic with an explicitly recorded correction supported by two printed witnesses. The unchanged digital paragraph, before/after wording and evidence are preserved in the offline source notes.':'Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes.'},
-   {id:'bewley',sourceId:config.bewleySourceId,locator:`Book of ${config.bewleyTitle} · entry ${r.comparisons.find(c=>c.id===config.bewleySourceId).reference}`,scope:'Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain.'},
+   {id:'bewley',sourceId:config.bewleySourceId,locator:`Book of ${config.bewleyTitle} · entry ${r.comparisons.find(c=>c.id===config.bewleySourceId).reference}`,scope:r.sourceForm?.kind==='chain-only'?'Named English comparison for this abbreviated transmission; no repeated report body is supplied here.':'Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain.'},
    khanCitation(r.comparisons.find(c=>c.id==='islamhouse-khan')),
    ...r.printedWitnesses.map(printedCitation),
    ...structuredClone(r.additionalCitations||[])
@@ -231,5 +244,5 @@ export function collectionFiles(){
 }
 if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href){
  const result=collectionFiles();for(const [path,body]of result.files){const url=new URL(path,root);if(process.argv.includes('--check'))assert.equal(readFileSync(url,'utf8'),body,'Stale collection file: '+path);else writeFileSync(url,body);}
- console.log(`${result.ledger.books.length} books, ${result.source.entries.length} complete prototype reports; source ${hash(result.source)}`);
+ console.log(`${result.ledger.books.length} books, ${result.source.entries.length} complete prototype source entries; source ${hash(result.source)}`);
 }
