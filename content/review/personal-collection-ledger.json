@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "namespace": "bukhari-opening-v1",
   "publication": "personal-prototype",
-  "sourceRecordSha256": "70d760de9c93ed8bfb2f978eabd085f6e1eae43433f958cb4ec464cc477292f2",
+  "sourceRecordSha256": "14f70f1fc334103929c95f308b6d8d4b394442cab40b1da037aa9963de5e31bd",
   "rights": {
     "status": "pending",
     "evidence": [
@@ -15,7 +15,9 @@
       "reader/ablution-inputs.json",
       "reader/ablution-review.html",
       "reader/ghusl-inputs.json",
-      "reader/ghusl-review.html"
+      "reader/ghusl-review.html",
+      "reader/menstruation-inputs.json",
+      "reader/menstruation-review.html"
     ]
   },
   "books": [
@@ -4484,6 +4486,138 @@
         "evidenceSha256": "feec7d07b3461edcc203cd0b7cdb73d1f28b9c3a2e1125935879afabcc2c914a",
         "notes": {
           "path": "ghusl-review.html",
+          "fragment": "book-introduction"
+        }
+      }
+    },
+    {
+      "id": "menstruation",
+      "number": 6,
+      "title": "Menstruation",
+      "sourceEntryCount": 37,
+      "entryNumbers": [
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297
+      ],
+      "chapters": [
+        {
+          "id": "chapter-01",
+          "title": "How menstruation began",
+          "entryNumbers": [
+            290
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 1,
+              "englishStatus": "pending"
+            },
+            "notes": {
+              "path": "menstruation-review.html",
+              "fragment": "chapter-01"
+            }
+          }
+        },
+        {
+          "id": "chapter-02",
+          "title": "A menstruating woman washing and combing her husband’s head",
+          "entryNumbers": [
+            291,
+            292
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "menstruation-review.html",
+              "fragment": "chapter-02"
+            }
+          }
+        },
+        {
+          "id": "chapter-03",
+          "title": "A man reciting in his wife’s lap while she is menstruating",
+          "entryNumbers": [
+            293
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 1,
+              "englishStatus": "pending"
+            },
+            "notes": {
+              "path": "menstruation-review.html",
+              "fragment": "chapter-03"
+            }
+          }
+        },
+        {
+          "id": "chapter-04",
+          "title": "Calling nifas “menstruation”",
+          "entryNumbers": [
+            294
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "menstruation-review.html",
+              "fragment": "chapter-04"
+            }
+          }
+        },
+        {
+          "id": "chapter-05",
+          "title": "Caressing a menstruating woman",
+          "entryNumbers": [
+            295,
+            296,
+            297
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "menstruation-review.html",
+              "fragment": "chapter-05"
+            }
+          }
+        }
+      ],
+      "introduction": {
+        "schemaVersion": 1,
+        "arabicParagraphs": 1,
+        "englishStatus": "pending",
+        "independentReview": "pending",
+        "evidenceSha256": "1cb27b718298074f867f522504a8fe435e9910dbcd763536100f4414d199b388",
+        "notes": {
+          "path": "menstruation-review.html",
           "fragment": "book-introduction"
         }
       }
@@ -9402,15 +9536,151 @@
       "contextReview": {
         "status": "pending"
       }
+    },
+    {
+      "number": 290,
+      "id": "bukhari:290",
+      "entrySha256": "5662f3ce0ff33a029ef2ac0985307cce81846e1208c22978f069316c2e8ab8cc",
+      "arabicSha256": "dfd6b3639b6a00648d5e03b36c6879c3878a3971e676323a08ad5d651cd84a6f",
+      "englishSha256": "679dd4899dd594c175cc21fbaa4eec6fc6be551a7099916abdcd59cdb5e8ab6f",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 291,
+      "id": "bukhari:291",
+      "entrySha256": "4f8a8b278dc4d6618e976748f664f8ef4dd019844dd7f489b445129763c96ba6",
+      "arabicSha256": "707a297a8ecdc336dbb68e3b296b664f44b502229e5f092bc727d40f0b176c44",
+      "englishSha256": "ce40af8f625169a290fdf4a5faf8169f47fbd040c8213fb1c84f785d70351b90",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 292,
+      "id": "bukhari:292",
+      "entrySha256": "86678ce6a87b162793a6c0d7ad6093af849e0f1917c81307961a460ce0fd01d6",
+      "arabicSha256": "a98598f4c06d7007df64261f03761686b42dfe356be372beb6ff2259253e2b8a",
+      "englishSha256": "bccab3a94f146e70e35fa195aed53f5e324ba65ea0a2699f9e27dbaa99cf7578",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 293,
+      "id": "bukhari:293",
+      "entrySha256": "74d944c0287c7f7fd733e4ac0708ee7067a68d29c828f70acadac0958e5f4001",
+      "arabicSha256": "b95ff8e73ffb763c0035caeb73dd70b66f695cba8a4b6f03cfbecc2370d4588a",
+      "englishSha256": "3ad88b30dbaab59726aded41783f5e82059b8bd584b43c13eb4c40daaf6e147d",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 294,
+      "id": "bukhari:294",
+      "entrySha256": "15f7d25b0fe93e55e9c94404fcc8080638aa51ae334c1d2d3f6c3a02c8941930",
+      "arabicSha256": "7c9863fd221c876f8ad163fa27de188b7842550edccd0d40023dcd5b50570c80",
+      "englishSha256": "c3873243bf0b9a65f9254781d51ea54055b32f7fdc80ebb73b024a672b2a0dd6",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 295,
+      "id": "bukhari:295",
+      "entrySha256": "78c2f76017361eaf2ba465419114ed65c701d2b690ba5dc521e9248b42f576e0",
+      "arabicSha256": "b91e7a5fc18dc402917f847b90c5b25ccfa5b891a698338efedaa383b9c4e8ff",
+      "englishSha256": "3f9d2075f9135cde37bca3ea262285d936b4d5d5a532aa5bdcb1c71c9ecc726e",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 296,
+      "id": "bukhari:296",
+      "entrySha256": "ad8d62bd518bca0f3819caad5424f1c474cfa79e1de6bbae8531764562d18857",
+      "arabicSha256": "12eec67e6868d2aa1fdc1728594e7681343e0a30ea411f4cb9f36fb356ba14ef",
+      "englishSha256": "715da3693e077b8076d103b1f607cba1ecfe8db1926c4691e64dd81c93fbbd6c",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 297,
+      "id": "bukhari:297",
+      "entrySha256": "0e3f3c1c1fd0904115efdb263ab07fa9440d07a3a1a6ad73291fcdad270bab31",
+      "arabicSha256": "5077eb8c86c19fb72ed1f6e5045e38160f25092e037351aebd71fb29bb120df1",
+      "englishSha256": "9bd99dc9f2a192394a81b4b4b61244afeee53e1a99be04f92ecfda2d003cdeaf",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
     }
   ],
-  "catalogContextSha256": "c879988b396d80684d5ac83f5a046165521418aa1431db278a248decf749bd75",
+  "catalogContextSha256": "4088a4767d44ed5596238a35ab21424fb447925578ce789f091b63d0359c92d9",
   "collectionReview": {
     "status": "pending"
   },
   "sourceReferences": {
     "schemaVersion": 1,
-    "sourceRecordSha256": "70d760de9c93ed8bfb2f978eabd085f6e1eae43433f958cb4ec464cc477292f2",
+    "sourceRecordSha256": "14f70f1fc334103929c95f308b6d8d4b394442cab40b1da037aa9963de5e31bd",
     "sources": [
       {
         "id": "arabic-base",
@@ -9670,6 +9940,34 @@
         "kind": "commentary",
         "format": "web",
         "url": "https://ablibrary.net/book_content/b/2601/340"
+      },
+      {
+        "id": "arabic-menstruation",
+        "label": "Arabic Wikisource · fixed revision 484869",
+        "kind": "arabic-input",
+        "format": "web",
+        "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_الحيض&oldid=484869"
+      },
+      {
+        "id": "bewley-menstruation",
+        "label": "Aisha Bewley · Book of Menstruation",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://aishabewley.org/bukhari4"
+      },
+      {
+        "id": "fath-menstruation-wording",
+        "label": "Ibn Hajar · Fath al-Bari · contact and timing wording",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://ablibrary.net/book_content/b/2601/344"
+      },
+      {
+        "id": "fath-menstruation-clothing",
+        "label": "Ibn Hajar · Fath al-Bari · clothing and chapter terminology",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://ablibrary.net/book_content/b/2601/343"
       }
     ],
     "entries": [
@@ -24560,10 +24858,446 @@
           "fragment": "hadith-289",
           "label": "Comparison notes and chapter source for this hadith"
         }
+      },
+      {
+        "id": "bukhari:290",
+        "number": 290,
+        "entrySha256": "5662f3ce0ff33a029ef2ac0985307cce81846e1208c22978f069316c2e8ab8cc",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-menstruation",
+            "locator": "Book of Menstruation · source entry 290 · باب كيف كان بدء الحيض",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-menstruation",
+            "locator": "Book of Menstruation · entry 290",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 6, Number 293",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 83",
+            "pdfPage": 83,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 82",
+            "pdfPage": 82,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [
+          {
+            "id": "290-chapter-division",
+            "label": "A difference between editions",
+            "text": "The opening chapter division differs between the inspected editions. This reader follows the selected Arabic source; the separate chapter introduction and exact printed locations remain available in the source notes.",
+            "citations": [
+              "base",
+              "brill-1862",
+              "dar-ibn-kathir-2002",
+              "bewley"
+            ],
+            "related": []
+          }
+        ],
+        "localNotes": {
+          "path": "menstruation-review.html",
+          "fragment": "hadith-290",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:291",
+        "number": 291,
+        "entrySha256": "4f8a8b278dc4d6618e976748f664f8ef4dd019844dd7f489b445129763c96ba6",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-menstruation",
+            "locator": "Book of Menstruation · source entry 291 · باب غسل الحائض رأس زوجها وترجيله",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-menstruation",
+            "locator": "Book of Menstruation · entry 291",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 6, Number 294",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 83",
+            "pdfPage": 83,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 82",
+            "pdfPage": 82,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "menstruation-review.html",
+          "fragment": "hadith-291",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:292",
+        "number": 292,
+        "entrySha256": "86678ce6a87b162793a6c0d7ad6093af849e0f1917c81307961a460ce0fd01d6",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-menstruation",
+            "locator": "Book of Menstruation · source entry 292 · باب غسل الحائض رأس زوجها وترجيله",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-menstruation",
+            "locator": "Book of Menstruation · entry 292",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 6, Number 295",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF pages 83, 84",
+            "pdfPage": 83,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 83",
+            "pdfPage": 83,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "menstruation-review.html",
+          "fragment": "hadith-292",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:293",
+        "number": 293,
+        "entrySha256": "74d944c0287c7f7fd733e4ac0708ee7067a68d29c828f70acadac0958e5f4001",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-menstruation",
+            "locator": "Book of Menstruation · source entry 293 · باب قراءة الرجل في حجر امرأته وهي حائض",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-menstruation",
+            "locator": "Book of Menstruation · entry 293",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 6, Number 296",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 84",
+            "pdfPage": 84,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 83",
+            "pdfPage": 83,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "menstruation-review.html",
+          "fragment": "hadith-293",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:294",
+        "number": 294,
+        "entrySha256": "15f7d25b0fe93e55e9c94404fcc8080638aa51ae334c1d2d3f6c3a02c8941930",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-menstruation",
+            "locator": "Book of Menstruation · source entry 294 · باب من سمى النفاس حيضا",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-menstruation",
+            "locator": "Book of Menstruation · entry 294",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 6, Number 297",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 84",
+            "pdfPage": 84,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 83",
+            "pdfPage": 83,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "lexical-commentary",
+            "sourceId": "fath-menstruation-clothing",
+            "locator": "Fath al-Bari · volume 1 · online page 343",
+            "scope": "Consulted for the two clothing words, nifas terminology and the chapter title. Commentary remains separate and does not constitute independent approval."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "menstruation-review.html",
+          "fragment": "hadith-294",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:295",
+        "number": 295,
+        "entrySha256": "78c2f76017361eaf2ba465419114ed65c701d2b690ba5dc521e9248b42f576e0",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-menstruation",
+            "locator": "Book of Menstruation · source entry 295 · باب مباشرة الحائض",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-menstruation",
+            "locator": "Book of Menstruation · entry 295",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 6, Number 298",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 84",
+            "pdfPage": 84,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 83",
+            "pdfPage": 83,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "lexical-commentary",
+            "sourceId": "fath-menstruation-wording",
+            "locator": "Fath al-Bari · volume 1 · online page 344",
+            "scope": "Consulted for clothing words, contact wording and the timing phrase. Commentary stays separate from the selected narration and does not constitute independent approval."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "menstruation-review.html",
+          "fragment": "hadith-295",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:296",
+        "number": 296,
+        "entrySha256": "ad8d62bd518bca0f3819caad5424f1c474cfa79e1de6bbae8531764562d18857",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-menstruation",
+            "locator": "Book of Menstruation · source entry 296 · باب مباشرة الحائض",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-menstruation",
+            "locator": "Book of Menstruation · entry 296",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 6, Number 299",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 84",
+            "pdfPage": 84,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF pages 83, 84",
+            "pdfPage": 83,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "lexical-commentary",
+            "sourceId": "fath-menstruation-wording",
+            "locator": "Fath al-Bari · volume 1 · online page 344",
+            "scope": "Consulted for clothing words, contact wording and the timing phrase. Commentary stays separate from the selected narration and does not constitute independent approval."
+          }
+        ],
+        "contextNotes": [
+          {
+            "id": "296-timing-wording",
+            "label": "Translation wording under review",
+            "text": "The phrase describing the timing of menstrual flow has more than one explanation in the consulted commentary. The working English and comparison differences are recorded in the source notes; independent review remains pending.",
+            "citations": [
+              "base",
+              "bewley",
+              "khan",
+              "lexical-commentary"
+            ],
+            "related": []
+          }
+        ],
+        "localNotes": {
+          "path": "menstruation-review.html",
+          "fragment": "hadith-296",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:297",
+        "number": 297,
+        "entrySha256": "0e3f3c1c1fd0904115efdb263ab07fa9440d07a3a1a6ad73291fcdad270bab31",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-menstruation",
+            "locator": "Book of Menstruation · source entry 297 · باب مباشرة الحائض",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-menstruation",
+            "locator": "Book of Menstruation · entry 297",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 1, Book 6, Number 300",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 84",
+            "pdfPage": 84,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 84",
+            "pdfPage": 84,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "menstruation-review.html",
+          "fragment": "hadith-297",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
       }
     ]
   },
-  "referencesSha256": "7dfa216b3b470d26045b6ebad9260fc5d9a796ed73e439004ad5319aa7e09566",
+  "referencesSha256": "e75fa4e00d48a9d9e4a1aefa9c3805da6e2e3bc8cc87791ca4f6b972e81f841f",
   "referencesReview": {
     "status": "pending"
   }

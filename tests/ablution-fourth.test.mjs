@@ -16,7 +16,7 @@ const rehash=r=>{delete r.reviewRecordSha256;r.reviewRecordSha256=objectHash(r);
 test('fourth Ablution batch retains all previous 155 entries and completes eleven chapters',()=>{
  const args=input(),snapshot=structuredClone(args.slice(0,3)),batch=buildBookBatch(...args),{source,ledger,files}=collectionFiles();assert.deepEqual(args.slice(0,3),snapshot);
  const prior=['opening-revelation-f98429f28fa5027b','faith-87785c8f866db16d','knowledge-684bf917a94a9f9d','ablution-ab5393604863ed2f'].flatMap(p=>read('reader/books/'+p+'.json').entries);assert.deepEqual(source.entries.slice(0,155),prior);
- assert.deepEqual(batch.entries.map(e=>e.number),Array.from({length:12},(_,i)=>156+i));assert.equal(batch.chapters.length,11);assert.equal(source.entries.length,289);
+ assert.deepEqual(batch.entries.map(e=>e.number),Array.from({length:12},(_,i)=>156+i));assert.equal(batch.chapters.length,11);assert.equal(source.entries.length,297);
  const book=ledger.books.find(b=>b.id==='ablution');assert.equal(book.entryNumbers.length,110);assert.equal(book.chapters.length,77);assert.deepEqual(book.entryNumbers,Array.from({length:110},(_,i)=>135+i));
  const inputs=JSON.parse(files.get('reader/ablution-inputs.json'));assert.equal(inputs.selectedBlocks.length,256);assert.equal(inputs.sourceLayout.originalBlocks.length,251);
  for(const e of batch.entries)assert.deepEqual(sourceSegments(e,'english').map(s=>s.text),args[1].entries.find(r=>r.number===e.number).segments.map(s=>s.english));
@@ -49,7 +49,7 @@ test('165 correction preserves its original paragraph and cannot lose witness or
 test('four chapter introductions stay outside numbered sessions and full narration',()=>{
  const args=input(),{source,ledger,files}=collectionFiles(),plan=narrationPlan(source),book=ledger.books.find(b=>b.id==='ablution');assert.equal(chapterForNumber(book,155).id,'chapter-20-print-21');assert.equal(chapterForNumber(book,160).id,'chapter-25');
  const contexts=args[1].chapters.flatMap(c=>c.contextIds);assert.deepEqual(contexts,['mwcw','mwgA','mwhg','mwmQ']);for(const id of contexts){const text=args[0].blocks.find(b=>b.htmlId===id).text;assert(files.get('reader/ablution-review.html').includes(text));assert(!source.entries.some(e=>e.arabic_blocks.includes(text)));}
- const saved={numbers:[155],cursor:155,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,167),saved);assert.equal(nextSession(source.entries,saved,5).cursor,156);assert(planSession(source.entries,155,5).numbers.includes(156));assert.deepEqual(planSession(source.entries,289,5).numbers,[289]);
+ const saved={numbers:[155],cursor:155,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,167),saved);assert.equal(nextSession(source.entries,saved,5).cursor,156);assert(planSession(source.entries,155,5).numbers.includes(156));assert.deepEqual(planSession(source.entries,297,5).numbers,[297]);
  for(const n of [159,162,163,167]){const e=source.entries.find(e=>e.number===n);assert.equal(plan.entries.find(e=>e.number===n).script,e.english_blocks.join('\n\n'));}
  assert(!plan.entries.find(e=>e.number===163).script.includes('ring'));assert(!plan.entries.find(e=>e.number===167).script.includes('tayammum'));
 });
