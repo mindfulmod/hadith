@@ -41,7 +41,28 @@ function validateComparisons(comparisons,config,segments){
   assert(typeof bewley.note==='string'&&bewley.note.trim(),'Abbreviated comparison needs an explanation');
   if(bewley.status==='cross-reference-with-transmission-note'||bewley.referencedReference!==undefined)assert(/^[1-9]\d*$/.test(bewley.referencedReference)&&Number(bewley.referencedReference)<Number(bewley.reference),'Cross-reference comparison needs its earlier reference');
  }else assert.equal(bewley.referencedReference,undefined,'A comparison pointer needs an explicit status');
- assert(bewley.part===undefined&&bewley.splitReferences===undefined,'Unexpected Bewley part metadata');
+ assert.equal(bewley.part,undefined,'Unexpected Bewley part metadata');
+ if(bewley.splitReferences!==undefined){
+  assert(bewley.status===undefined&&bewley.referencedReference===undefined,'Split comparison cannot also claim an abbreviated pointer');
+  const parts=bewley.splitReferences;
+  assert(Array.isArray(parts)&&parts.length>1,'Split comparison needs multiple references');
+  assert.equal(parts[0].reference,bewley.reference,'Split comparison must begin at its primary reference');
+  assert(typeof bewley.note==='string'&&bewley.note.trim(),'Split comparison needs an explanation');
+  for(const [index,part]of parts.entries()){
+   assert.deepEqual(Object.keys(part).sort(),['reference','segmentIds'],'Unexpected split comparison metadata');
+   assert(/^[1-9]\d*$/.test(part.reference)&&(!index||Number(part.reference)>Number(parts[index-1].reference)),'Split comparison references must be distinct and ordered');
+   assert(Array.isArray(part.segmentIds)&&part.segmentIds.length,'Split comparison needs segment coverage');
+  }
+  assert.deepEqual(parts.flatMap(p=>p.segmentIds),segments.map(s=>s.id),'Split references must cover the selected segments exactly once in order');
+ }
+ if(khan.status==='unnumbered-back-reference-only'){
+  assert(khanReference.test(khan.reference),'Invalid unnumbered-pointer comparison');
+  for(const key of ['part','splitReferences','checkedReferences','referencedReference','referencedReferenceEvidence','continuedByReference'])assert.equal(khan[key],undefined,'An unnumbered pointer cannot claim a target or complete body');
+  const record=comparisonEvidence(khan.reference,khan.referenceEvidence);
+  assert(Array.isArray(khan.checkedBody)&&khan.checkedBody.length===2&&khan.checkedBody.every(p=>typeof p==='string')&&hash(khan.checkedBody)===record.textSha256,'Unnumbered pointer differs from its pinned body');
+  assert(/^Narrated .+:$/.test(khan.checkedBody[0].trim())&&khan.checkedBody[1].trim()==='as above.','Expected the exact unnumbered backward pointer');
+  assert(typeof khan.note==='string'&&khan.note.trim(),'Unnumbered pointer needs an explanation');return;
+ }
  if(khan.status==='back-reference-only'){
   assert(khanReference.test(khan.reference)&&khanReference.test(khan.referencedReference),'Invalid backward-reference comparison');
   assert(khan.part===undefined&&khan.splitReferences===undefined&&khan.checkedReferences===undefined,'Backward reference cannot claim a complete comparison body');
@@ -121,6 +142,7 @@ function entryTranslationStatus(row){
  if(row.sourceForm?.kind==='chain-only')return 'Personal prototype: the selected Arabic entry records a narrator chain without repeating the report body. The complete selected chain is translated; related accounts and abbreviated comparisons remain separate. Two Arabic prints and two English comparison families were inspected. Independent Arabic, English and context review pending.';
  if(row.arabicSupplements?.some(s=>s.englishComparisons))return 'Personal prototype: AI-assisted working translation with a separately identified closing transmission note transcribed from an Arabic print. Two printed witnesses, the unchanged digital text and the differing coverage of the English comparisons remain accessible. Independent Arabic, English and context review pending.';
  if(row.arabicSupplements)return 'Personal prototype: AI-assisted working translation with a separately identified closing transmission note transcribed from an Arabic print. Two printed witnesses and the original digital text remain accessible; the English comparisons omit that closing note. Independent Arabic, English and context review pending.';
+ if(row.comparisons.some(c=>c.status==='unnumbered-back-reference-only'))return 'Personal prototype: AI-assisted translation of the selected abbreviated account. Two Arabic prints and two English comparison families were inspected. One English reference contains only an unnumbered backward pointer; no missing body or target number has been supplied. Independent Arabic, English and context review pending.';
  if(row.comparisons.some(c=>c.status==='reference-only-body-absent'))return 'Personal prototype: AI-assisted working translation; two Arabic printed witnesses and one complete English comparison body were checked. The second English reference contains only a backward pointer, not the statement body. Independent Arabic, English and context review pending.';
  if(row.comparisons.some(c=>c.status==='abbreviated-report'))return 'Personal prototype: AI-assisted working translation; two Arabic prints and two English comparison families were inspected. One English comparison abbreviates the report; its omitted wording and any explicit Arabic correction are documented in the source notes. Independent Arabic, English and context review pending.';
  if(row.arabicCorrections)return 'Personal prototype: AI-assisted working translation with an explicitly recorded Arabic correction supported by two printed witnesses. English comparison bodies and the original input remain accessible. Independent Arabic, English and context review pending.';
@@ -141,6 +163,7 @@ function printedCitation(w){
  return {id:w.id,sourceId:w.id,locator:w.status?`Checked ${location} · no separate match in this chapter`:location,pdfPage:w.pdfPages[0],scope:w.status?w.note+' This checked absence is not an exact printed match.':'Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes.'};
 }
 function khanCitation(record){
+ if(record.status==='unnumbered-back-reference-only'){const [volume,book,number]=record.reference.split('.');return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Number ${number} · unnumbered backward pointer only`,scope:record.note};}
  if(record.status==='back-reference-only'){const [volume,book,number]=record.reference.split('.');return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Number ${number} · backward reference only`,scope:record.note};}
 
  if(record.status==='reference-only-body-absent'){const [volume,book,number]=record.reference.split('.');return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Number ${number} · reference only; statement body absent`,scope:record.note};}
@@ -228,7 +251,7 @@ export function assembleCollection(opening,inventory,review,manifest,config=BOOK
   const r=review.entries.find(r=>r.number===e.number),chapter=review.chapters.find(c=>c.entryNumbers.includes(e.number));
   references.entries.push({id:e.id,number:e.number,entrySha256:hash(e),translation:{label:'Personal prototype · English working translation',description:e.english_status+' This is a new working translation, not the Darussalam translation.'},citations:[
    {id:'base',sourceId:config.arabicSourceId,locator:`Book of ${config.title} · source entry ${r.sourceLayout?.sourceReference.label??e.number} · ${chapter.titleArabic}`,scope:r.sourceLayout?'Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence.':r.arabicCorrections?'Derived Arabic with an explicitly recorded correction supported by two printed witnesses. The unchanged digital paragraph, before/after wording and evidence are preserved in the offline source notes.':'Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes.'},
-   {id:'bewley',sourceId:config.bewleySourceId,locator:`Book of ${config.bewleyTitle} · entry ${r.comparisons.find(c=>c.id===config.bewleySourceId).reference}`,scope:r.sourceForm?.kind==='chain-only'?'Named English comparison for this abbreviated transmission; no repeated report body is supplied here.':r.comparisons.find(c=>c.id===config.bewleySourceId).status!==undefined?r.comparisons.find(c=>c.id===config.bewleySourceId).note:'Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain.'},
+   {id:'bewley',sourceId:config.bewleySourceId,locator:`Book of ${config.bewleyTitle} · ${r.comparisons.find(c=>c.id===config.bewleySourceId).splitReferences?'entries '+r.comparisons.find(c=>c.id===config.bewleySourceId).splitReferences.map(p=>p.reference).join(', '):'entry '+r.comparisons.find(c=>c.id===config.bewleySourceId).reference}`,scope:r.comparisons.find(c=>c.id===config.bewleySourceId).splitReferences?r.comparisons.find(c=>c.id===config.bewleySourceId).note:r.sourceForm?.kind==='chain-only'?'Named English comparison for this abbreviated transmission; no repeated report body is supplied here.':r.comparisons.find(c=>c.id===config.bewleySourceId).status!==undefined?r.comparisons.find(c=>c.id===config.bewleySourceId).note:'Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain.'},
    khanCitation(r.comparisons.find(c=>c.id==='islamhouse-khan')),
    ...r.printedWitnesses.map(printedCitation),
    ...structuredClone(r.additionalCitations||[])

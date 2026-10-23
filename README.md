@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The personal reader is at `reader/`: 244 complete selected Bukhari entries across four books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The personal reader is at `reader/`: 341 complete selected Bukhari entries across seven books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Run
 
@@ -640,3 +640,14 @@ The pinned digital book contains a malformed paragraph after 329: an editor plac
 Validation: **312 Node + 74 Python tests**, all 13 source/release integrity commands, exact browser-rendered Arabic and English for all five entries, all four chapter headings and the separate introduction. With the preview server stopped, original chapter evidence, Arabic, next-hadith navigation and phrase search remain available. The largest 28px text fits a 320px viewport in night mode; standard 21px reading and day/night art remain intact. Continue stays at Hadith 250 after free browsing. All previous 326 entry objects and six book packs remain unchanged. Evidence: `research/tayammum-source-audit.json` and `research/tayammum-first-verification.json`.
 
 The complete candidate intake covers 327–341 and eight chapters, but only 327–331 is admitted. Next review is 332–336, including shortened/continued chains. Scripts cover 331 entries; actual Cedar audio remains **1–6**. Independent review, English introductory material, further recordings and physical iPhone acceptance remain unfinished.
+
+
+### Complete selected Tayammum book — 23 October 2026
+
+The personal reader now contains **341 numbered entries across seven books**. Tayammum 327–341 is complete for the pinned selected source. The final ten entries preserve shortened accounts, full chains, dialogue alternatives and closing transmission notes. Related-account links do not fill in absent wording. The unnumbered EPUB backward pointer at 335 and the two Bewley comparison numbers for selected 340 are explicitly mapped and validated.
+
+One hamza correction at 339 is declared with two agreeing printed witnesses and an unchanged digital original. Two closing lexical notes at 337 are separately labelled printed additions, preserving both printed readings and the difference in English comparison coverage. An untitled printed chapter before 341 appears as “Chapter”; no title or additional hadith is invented. All three original chapter introductions remain separately browsable Arabic, with English pending. They never become daily-session stops or narration text.
+
+Validation: **319 Node + 74 Python tests**, all 13 source/release integrity checks, and exact browser-rendered English and Arabic for all ten new entries. With the preview server stopped, reload, original Arabic, the final four chapter sections, the printed chapter division, next-hadith navigation and phrase search work. At 320px, both standard 21px day reading and largest 28px night reading fit without horizontal overflow. Continue remains at Hadith 250 after free browsing. All prior 331 entry objects, six stable book packs, artwork and actual audio bytes remain unchanged. Evidence: `research/tayammum-final-verification.json`.
+
+Scripts cover 341 entries; actual Cedar audio remains **1–6**. This remains a personal prototype with independent Arabic, English, context and spoken-word review pending. Next corpus work is source intake for the Book of Prayer; English chapter introductions and physical iPhone cross-recording acceptance also remain unfinished.

@@ -1,6 +1,6 @@
 {
   "checkedAt": "2026-10-23",
-  "status": "structural-intake-and-first-personal-batch",
+  "status": "complete-selected-book-admitted-as-personal-prototype",
   "independentReview": "pending",
   "source": {
     "id": "wikisource-bukhari-tayammum-r484871",
@@ -71,19 +71,37 @@
     ]
   },
   "admitted": {
-    "range": "327–331",
-    "reports": 5,
-    "chapters": 4,
-    "chapterIntroductionParagraphs": 1,
-    "review": "content/review/tayammum-first-review.json",
-    "verification": "research/tayammum-first-verification.json"
+    "range": "327–341",
+    "reports": 15,
+    "digitalChapters": 8,
+    "browsingChapters": 9,
+    "chapterIntroductionParagraphs": 3,
+    "reviews": [
+      "content/review/tayammum-first-review.json",
+      "content/review/tayammum-final-review.json"
+    ],
+    "verification": "research/tayammum-final-verification.json"
   },
   "findings": [
     "The EPUB comparison for selected 329 appends an Ibn Umar chapter fragment. It is comparison evidence, not part of the selected numbered report.",
     "The first source heading contains the opening Quran quotation; both inspected prints instead place that quotation before an untitled first chapter. The selected grouping is retained and the difference is documented.",
-    "The first five English bodies have individual reference evidence; no universal offset is assumed. The later selected 340 appears split as Bewley 340 and 341, so later matching needs explicit handling.",
+    "English references are individually mapped. Selected 340 contains two transmissions numbered Bewley 340 and 341; both remain one selected entry. EPUB 1.7.338 is only an unnumbered backward pointer, not a complete comparison body.",
     "Selected 328 retains two chains and their distinct reporting verbs. Selected 330 retains the visiting account and embedded Abu al-Juhaym chain. The comparison attribution at 331 differs from the selected Arabic and both prints.",
-    "Different readings at 327, 330 and 331 are recorded; no wording correction is made in the first batch."
+    "Different readings at 327, 330 and 331 are recorded; no wording correction is made in the first batch.",
+    "332 and 335 preserve abbreviated source wording with separate related links; a fuller statement in the historical print at 332 is not imported because the modern print retains the shorter ending.",
+    "337 preserves both water-skin terminology alternatives, both embedded narrator notes, the complete journey account and a separately declared printed closing lexical note. The two printed readings and different English comparison coverage remain accessible.",
+    "339 has one exact declared correction from أنا to إنا supported by PDF pages 97 and 96. The unchanged digital original is available offline.",
+    "Both prints begin an untitled ninth chapter before 341. It is displayed as Chapter, with original digital grouping retained and no synthetic numbered entry."
   ],
-  "remaining": "Ten candidate reports 332–341 remain unadmitted. Continue with the complete chapter 5 span 332–336, including its shortened/continued chains. English introductory material, independent text and reference review, and recording remain pending."
+  "remaining": "The selected numbered Tayammum book is admitted for personal use only. English chapter introductions, independent Arabic/English/reference review and new recordings remain pending. Continue corpus intake with the next Book of Prayer.",
+  "lexicalFollowUp": {
+    "entry": 333,
+    "rendering": "blew lightly",
+    "evidence": "Retrieved primary commentary excerpt: Ibn Rajab identifies tafl here with blowing; Ibn Hajar’s introductory glossary permits blowing with slight saliva or without saliva. These inform the provisional lexical rendering and do not certify it.",
+    "sources": [
+      "https://islamweb.org/ar/library/content/302/282/باب-التيمم-للوجه-والكفين",
+      "https://shamela.org/gen/cdda65e493b5ee4e48500168da979343_gen.pdf"
+    ],
+    "independentReview": "pending"
+  }
 }

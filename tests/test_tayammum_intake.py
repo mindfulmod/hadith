@@ -18,7 +18,7 @@ class TayammumIntakeTests(unittest.TestCase):
   for mutate in [lambda r:r['decisions'][0]['units'][0].update(kind='blank'),lambda r:r['decisions'][0]['units'][0].update(kind='formatting'),lambda r:r['decisions'][0]['units'][4].update(kind='editorial-artifact'),lambda r:r['decisions'][0]['units'][0].update(end=8),lambda r:r['decisions'][0]['printedWitnesses'].pop(),lambda r:r.update(auditSha256='0'*64),lambda r:r['decisions'][0]['units'].pop()]:
    review=copy.deepcopy(self.review);mutate(review)
    with self.assertRaises(ValueError):m.resolve(self.audit,review,self.english)
- def test_structural_intake_does_not_admit_the_ten_unreviewed_reports(self):
+ def test_structural_intake_remains_ineligible_while_separately_reviewed_book_is_published(self):
   self.assertFalse(self.result['readerEligible']);self.assertEqual([r['number']for r in self.result['records']],list(range(327,342)));self.assertEqual(len(self.result['chapters']),8)
-  catalog=m.read(ROOT/'reader/books/catalog.json');self.assertEqual([r['number']for r in catalog['entries']if r['bookId']=='tayammum'],list(range(327,332)));self.assertFalse(any(r['number']>=332 for r in catalog['entries']))
+  catalog=m.read(ROOT/'reader/books/catalog.json');self.assertEqual([r['number']for r in catalog['entries']if r['bookId']=='tayammum'],list(range(327,342)));self.assertFalse(any(r['number']>=342 for r in catalog['entries']))
 if __name__=='__main__':unittest.main()

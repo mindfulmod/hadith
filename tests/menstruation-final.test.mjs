@@ -12,7 +12,7 @@ const input=()=>[read('content/staging/bukhari-menstruation-wikisource/catalog.j
 const rehash=r=>{delete r.reviewRecordSha256;r.reviewRecordSha256=objectHash(r);};
 test('final Menstruation batch preserves all prior 309 entries and five other packs',()=>{
  const {source,ledger}=collectionFiles(),published=buildBooks(source,ledger),stable=['opening-revelation-0a534f10d205292c','faith-ad873aab8759ca02','knowledge-e3d5ef7956421322','ablution-4012bd796dae0e95','ghusl-1382b7bd3720f4ff'];
- assert.deepEqual(source.entries.slice(0,309),[...stable,'menstruation-0f3c3cdf2218693b'].flatMap(n=>read('reader/books/'+n+'.json').entries));assert.equal(source.entries.length,331);
+ assert.deepEqual(source.entries.slice(0,309),[...stable,'menstruation-0f3c3cdf2218693b'].flatMap(n=>read('reader/books/'+n+'.json').entries));assert.equal(source.entries.length,341);
  for(const n of stable)assert.equal(published.files.get('books/'+n+'.json'),readFileSync(new URL('../reader/books/'+n+'.json',import.meta.url),'utf8'));
  assert.throws(()=>buildBooks(source,ledger,{production:true}));
 });
@@ -29,7 +29,7 @@ test('four chapter introductions remain separately browsable and excluded from n
  const a=input(),{source,ledger,files}=collectionFiles(),book=ledger.books.find(b=>b.id==='menstruation'),plan=narrationPlan(source),state=normalizeState({session:{numbers:[309],cursor:309,ended:false},last:309}),before=structuredClone(state);
  assert.equal(book.entryNumbers.length,37);assert.equal(book.chapters.length,30);assert.equal(JSON.parse(files.get('reader/menstruation-inputs.json')).selectedBlocks.length,74);
  for(const id of ['chapter-19','chapter-20','chapter-24','chapter-28']){const c=a[1].chapters.find(c=>c.id===id),chapter=book.chapters.find(c=>c.id===id);assert.equal(chapter.sourceContext.introduction.englishStatus,'pending');for(const bid of c.contextIds){const text=a[0].blocks.find(b=>b.htmlId===bid).text;assert(files.get('reader/menstruation-review.html').includes(text));assert(source.entries.every(e=>!e.arabic_blocks.includes(text)));assert(plan.entries.every(e=>!e.script.includes(text)));}assert(bookView(buildBooks(source,ledger).catalog,state,{mode:'book',book,chapter,page:1}).includes('menstruation-review.html#'+id));}
- assert.deepEqual(state,before);assert.deepEqual(resolveSession(source.entries,state.session,5,326),state.session);assert.equal(nextSession(source.entries,{...state.session,ended:true},5).cursor,310);assert.deepEqual(planSession(source.entries,331,10).numbers,[331]);assert.equal(nextSession(source.entries,{numbers:[331],cursor:331,ended:true},5),null);
+ assert.deepEqual(state,before);assert.deepEqual(resolveSession(source.entries,state.session,5,326),state.session);assert.equal(nextSession(source.entries,{...state.session,ended:true},5).cursor,310);assert.deepEqual(planSession(source.entries,341,10).numbers,[341]);assert.equal(nextSession(source.entries,{numbers:[341],cursor:341,ended:true},5),null);
 });
 test('untitled printed chapter is distinct from funeral material without rewriting digital grouping',()=>{
  const a=input(),before=structuredClone(a[0]),batch=buildBookBatch(...a),{source,ledger,files}=collectionFiles(),book=ledger.books.find(b=>b.id==='menstruation'),r=a[1].entries.at(-1),heading=r.printedHeading;

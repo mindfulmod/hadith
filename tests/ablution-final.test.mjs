@@ -15,7 +15,7 @@ const rehash=r=>{delete r.reviewRecordSha256;r.reviewRecordSha256=objectHash(r);
 test('final Ablution batch preserves all prior 224 entries and every new Arabic character',()=>{
  const args=input(),before=structuredClone(args.slice(0,3)),batch=buildBookBatch(...args),{source}=collectionFiles();
  const prior=['opening-revelation-0a534f10d205292c','faith-ad873aab8759ca02','knowledge-e3d5ef7956421322','ablution-39a86de9d0261811'].flatMap(p=>read('reader/books/'+p+'.json').entries);
- assert.deepEqual(source.entries.slice(0,224),prior);assert.equal(source.entries.length,331);assert.deepEqual(args.slice(0,3),before);assert.deepEqual(batch.entries.map(e=>e.number),Array.from({length:20},(_,i)=>225+i));assert.equal(batch.chapters.length,13);
+ assert.deepEqual(source.entries.slice(0,224),prior);assert.equal(source.entries.length,341);assert.deepEqual(args.slice(0,3),before);assert.deepEqual(batch.entries.map(e=>e.number),Array.from({length:20},(_,i)=>225+i));assert.equal(batch.chapters.length,13);
  for(const e of batch.entries){const row=args[1].entries.find(r=>r.number===e.number);assert.deepEqual(e.arabic_blocks,row.paragraphIds.map(id=>args[0].blocks.find(b=>b.htmlId===id).text));assert(!row.arabicCorrections&&!row.arabicSupplements);assert.deepEqual(sourceSegments(e,'english').map(s=>s.text),row.segments.map(s=>s.english));}
 });
 test('all selected Ablution chapters, source spans and separate introductions are accounted for',()=>{
@@ -58,7 +58,7 @@ test('chapter/report and shared-report boundaries reconstruct their exact unchan
  for(const [id,ids]of [['mwAZM',['mwAZM@0-77','mwAZM@77-198']],['mwAZw',['mwAZw@0-162','mwAZw@162-277']]]){const blocks=ids.map(id=>inventory.blocks.find(b=>b.htmlId===id));assert.equal(blocks[0].origin.end,blocks[1].origin.start);assert.equal(blocks.map(b=>b.text).join(''),original.find(b=>b.htmlId===id).text);}
 });
 test('completed selected book keeps numbered sessions, stable other books, audio and production gates separate',()=>{
- const {source,ledger}=collectionFiles(),saved={numbers:[224],cursor:224,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,243),saved);assert.equal(nextSession(source.entries,saved,5).cursor,225);assert.deepEqual(planSession(source.entries,331,5).numbers,[331]);assert.equal(nextSession(source.entries,{numbers:[331],cursor:331,ended:true},5),null);
+ const {source,ledger}=collectionFiles(),saved={numbers:[224],cursor:224,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,243),saved);assert.equal(nextSession(source.entries,saved,5).cursor,225);assert.deepEqual(planSession(source.entries,341,5).numbers,[341]);assert.equal(nextSession(source.entries,{numbers:[341],cursor:341,ended:true},5),null);
  const built=buildBooks(source,ledger);for(const path of ['books/opening-revelation-0a534f10d205292c.json','books/faith-ad873aab8759ca02.json','books/knowledge-e3d5ef7956421322.json'])assert.equal(built.files.get(path),readFileSync(new URL('../reader/'+path,import.meta.url),'utf8'));
  assert.deepEqual(read('reader/audio/catalog.json').coverage.recorded,[1,2,3,4,5,6]);assert.throws(()=>buildBooks(source,ledger,{production:true}));
 });
