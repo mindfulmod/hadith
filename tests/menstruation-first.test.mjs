@@ -12,7 +12,7 @@ const input=()=>[read('content/staging/bukhari-menstruation-wikisource/catalog.j
 const rehash=r=>{delete r.reviewRecordSha256;r.reviewRecordSha256=objectHash(r);};
 test('new book preserves all 289 earlier entries and all five current book packs',()=>{
  const {source,ledger}=collectionFiles(),published=buildBooks(source,ledger),stable=['opening-revelation-0a534f10d205292c','faith-ad873aab8759ca02','knowledge-e3d5ef7956421322','ablution-4012bd796dae0e95','ghusl-1382b7bd3720f4ff'];
- assert.deepEqual(source.entries.slice(0,289),stable.flatMap(n=>read('reader/books/'+n+'.json').entries));assert.equal(source.entries.length,309);assert.equal(ledger.books.length,6);
+ assert.deepEqual(source.entries.slice(0,289),stable.flatMap(n=>read('reader/books/'+n+'.json').entries));assert.equal(source.entries.length,326);assert.equal(ledger.books.length,6);
  for(const n of stable)assert.equal(published.files.get('books/'+n+'.json'),readFileSync(new URL('../reader/books/'+n+'.json',import.meta.url),'utf8'));
  assert.throws(()=>buildBooks(source,ledger,{production:true}));
 });
@@ -23,10 +23,10 @@ test('every new source character and all twenty English segments survive display
 });
 test('book quotation and chapter material remain separately browsable and outside session text',()=>{
  const {source,ledger,files}=collectionFiles(),book=ledger.books.find(b=>b.id==='menstruation'),a=input(),data=JSON.parse(files.get('reader/menstruation-inputs.json'));
- assert.equal(book.chapters.length,14);assert.equal(book.introduction.englishStatus,'pending');assert.equal(data.selectedBlocks.length,38);
+ assert.equal(book.chapters.length,30);assert.equal(book.introduction.englishStatus,'pending');assert.equal(data.selectedBlocks.length,74);
  const state=normalizeState({session:{numbers:[289],cursor:289,ended:false},last:289}),before=structuredClone(state);
  for(const [id,bid]of [['chapter-01','mwBw'],['chapter-03','mwHQ']]){const c=book.chapters.find(c=>c.id===id),b=a[0].blocks.find(b=>b.htmlId===bid);assert.equal(c.sourceContext.introduction.arabicParagraphs,1);assert.equal(c.sourceContext.introduction.englishStatus,'pending');assert(files.get('reader/menstruation-review.html').includes(b.text));assert(source.entries.every(e=>!e.arabic_blocks.includes(b.text)));assert(bookView(buildBooks(source,ledger).catalog,state,{mode:'book',book,chapter:c,page:1}).includes('menstruation-review.html#'+id));}
- assert.deepEqual(state,before);assert.deepEqual(resolveSession(source.entries,state.session,5,297),state.session);assert.equal(nextSession(source.entries,{numbers:[289],cursor:289,ended:true},5).cursor,290);assert.deepEqual(planSession(source.entries,309,5).numbers,[309]);assert.equal(nextSession(source.entries,{numbers:[309],cursor:309,ended:true},5),null);
+ assert.deepEqual(state,before);assert.deepEqual(resolveSession(source.entries,state.session,5,297),state.session);assert.equal(nextSession(source.entries,{numbers:[289],cursor:289,ended:true},5).cursor,290);assert.deepEqual(planSession(source.entries,326,5).numbers,[326]);assert.equal(nextSession(source.entries,{numbers:[326],cursor:326,ended:true},5),null);
  const original=a[0].blocks[0];assert(files.get('reader/menstruation-review.html').includes(original.text));assert(source.entries.every(e=>!e.arabic_blocks.includes(original.text)));
 });
 test('embedded feminine informed-me verb is checked without confusing it with informed-us',()=>{

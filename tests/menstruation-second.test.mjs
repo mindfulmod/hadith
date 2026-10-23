@@ -12,7 +12,7 @@ const input=()=>[read('content/staging/bukhari-menstruation-wikisource/catalog.j
 const rehash=r=>{delete r.reviewRecordSha256;r.reviewRecordSha256=objectHash(r);};
 test('second Menstruation batch preserves the previous 297 entries and all five other packs',()=>{
  const {source,ledger}=collectionFiles(),published=buildBooks(source,ledger),stable=['opening-revelation-0a534f10d205292c','faith-ad873aab8759ca02','knowledge-e3d5ef7956421322','ablution-4012bd796dae0e95','ghusl-1382b7bd3720f4ff'];
- assert.deepEqual(source.entries.slice(0,297),[...stable,'menstruation-5c9d001c4f3d2ff0'].flatMap(n=>read('reader/books/'+n+'.json').entries));assert.equal(source.entries.length,309);
+ assert.deepEqual(source.entries.slice(0,297),[...stable,'menstruation-5c9d001c4f3d2ff0'].flatMap(n=>read('reader/books/'+n+'.json').entries));assert.equal(source.entries.length,326);
  for(const n of stable)assert.equal(published.files.get('books/'+n+'.json'),readFileSync(new URL('../reader/books/'+n+'.json',import.meta.url),'utf8'));
  assert.throws(()=>buildBooks(source,ledger,{production:true}));
 });
@@ -26,7 +26,7 @@ test('feminine reporting-verb correction retains the original and refuses stale 
 });
 test('chapter seven introduction is browsable but cannot enter numbered sessions or scripts',()=>{
  const a=input(),{source,ledger,files}=collectionFiles(),book=ledger.books.find(b=>b.id==='menstruation'),chapter=book.chapters.find(c=>c.id==='chapter-07'),intro=a[0].blocks.find(b=>b.htmlId==='mwPQ'),plan=narrationPlan(source),state=normalizeState({session:{numbers:[297],cursor:297,ended:false},last:297}),before=structuredClone(state);
- assert.equal(book.chapters.length,14);assert.equal(book.entryNumbers.length,20);assert.equal(chapter.sourceContext.introduction.englishStatus,'pending');assert(files.get('reader/menstruation-review.html').includes(intro.text));assert.equal(JSON.parse(files.get('reader/menstruation-inputs.json')).selectedBlocks.length,38);assert(source.entries.every(e=>!e.arabic_blocks.includes(intro.text)));assert(plan.entries.every(e=>!e.script.includes(intro.text)));
+ assert.equal(book.chapters.length,30);assert.equal(book.entryNumbers.length,37);assert.equal(chapter.sourceContext.introduction.englishStatus,'pending');assert(files.get('reader/menstruation-review.html').includes(intro.text));assert.equal(JSON.parse(files.get('reader/menstruation-inputs.json')).selectedBlocks.length,74);assert(source.entries.every(e=>!e.arabic_blocks.includes(intro.text)));assert(plan.entries.every(e=>!e.script.includes(intro.text)));
  assert(bookView(buildBooks(source,ledger).catalog,state,{mode:'book',book,chapter,page:1}).includes('menstruation-review.html#chapter-07'));assert.deepEqual(state,before);assert.deepEqual(resolveSession(source.entries,state.session,5,309),state.session);assert(planSession(source.entries,298,5).numbers.every(n=>Number.isSafeInteger(n)&&source.entries.some(e=>e.number===n)));
 });
 test('alternate chains and closing observations retain their source positions and attribution limits',()=>{
