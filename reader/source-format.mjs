@@ -1,6 +1,7 @@
 /* Presentation-only spans. These exact phrases remain in the source and speech. */
 export const honorifics = Object.freeze([
  'may Allah bless him and grant him peace',
+ 'may Allah have mercy on him',
  'may Allah Most High be pleased with him',
  'may Allah Most High be pleased with her',
  'may Allah Most High be pleased with them'

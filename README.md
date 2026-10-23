@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The personal reader is at `reader/`: 363 complete selected Bukhari entries across eight books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The personal reader is at `reader/`: 377 complete selected Bukhari entries across eight books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Run
 
@@ -673,3 +673,14 @@ Validation: **329 Node + 78 Python tests**, all 13 integrity commands, exact ren
 Publication expectations now have one explicit fixture at `tests/fixtures/published-collection.json`. Tests compare the complete source, individual book packs, catalog and narration coverage against those independent ranges. Older batch tests retain their fixed wording and boundary checks, so future additions no longer require rewriting every old test’s current-total assertion.
 
 Scripts cover 363 entries; actual Cedar audio remains **1–6**. Independent review remains pending. The next source batch starts at Prayer 364; 135 Prayer candidates remain outside the reader.
+
+
+### Prayer 364–377, full transmission notes and browse-only chapter material — 23 October 2026
+
+The personal reader now has **377 complete numbered entries across eight books**. This batch adds fourteen reports and eleven complete Prayer chapters. Five chapter introductions remain separately browsable Arabic with English pending, outside numbered sessions and narration. The selected Arabic and all prior 363 entry objects are unchanged.
+
+Hadith 366 remains one reader entry, with explicit evidence for its two separately numbered Khan-family comparison bodies. Hadith 370 retains the later compiler/transmitter discussion as a visible Transmission note, through its closing question and answer. The mercy honorific now uses the same smaller presentation treatment as existing honorifics; its complete wording stays in the source and speech script. Per-entry notes preserve differences in narrator attribution, uncertainty, garments, mat terminology, printed variants and pronoun reference rather than silently harmonizing them.
+
+Validation: **335 Node + 78 Python tests**, all 13 integrity commands, exact rendered English and Arabic for all fourteen new reports, and offline reload/navigation/source panels, eleven chapter headings, five introductions and phrase search with the preview server stopped. Free browsing and the normal update flow preserve Continue. Standard 21px day and largest 28px night text fit at 320px; the new mercy phrase is smaller in both. All seven other book packs, actual recordings and artwork remain unchanged. Evidence: `research/prayer-third-verification.json`.
+
+Scripts cover 377 entries; actual Cedar audio remains **1–6**. This is still a personal prototype awaiting independent review. Prayer 378 begins the next batch; 121 Prayer candidates remain outside the reader.
