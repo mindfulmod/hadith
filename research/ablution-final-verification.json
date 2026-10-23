@@ -1,0 +1,827 @@
+{
+  "checkedAt": "2026-10-23",
+  "status": "personal-prototype-only",
+  "independentReview": "pending",
+  "range": [
+    225,
+    244
+  ],
+  "source": {
+    "revision": 273249,
+    "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+    "inventorySha256": "141f35671a316faadab95ff0fefc3aab8dc725199bfbf5cc12448772433e28da",
+    "reviewSha256": "39952c74f3e03805e6a507831d647af80a7d5b86ffa59ba194532de8428216cf",
+    "sourceLayout": {
+      "schemaVersion": 1,
+      "sourceId": "wikisource-bukhari-ablution-r273249",
+      "sourceSha256": "9678ea8ee57635c3e6ecaf9bd5c06ae374e79775dd42f8b22ec84bc67479f0cd",
+      "layoutAuditSha256": "80ffc079c9692b4fd12ec2eee5eaacc9d9738173fee8f2121fd9f622ba11b29f",
+      "layoutReviewSha256": "6dafde039fa774cd4861d0e76d71c314f5c8f2791b85324c16e6eab996683355"
+    }
+  },
+  "reader": {
+    "release": "opening-d84430d05a58",
+    "entries": 244,
+    "books": 4,
+    "sourceRecordSha256": "55f3413f23e3facd9c2919f8a413c7577edd7ef14b163ca79da4c486bb88557e",
+    "previous224EntryObjectsUnchanged": true,
+    "newArabicParagraphs": 20,
+    "unchangedNewArabicParagraphs": 20,
+    "explicitlyCorrectedNewArabicParagraphs": 0,
+    "newEnglishSegments": 51,
+    "newSourceChapters": 13,
+    "newArabicIntroductions": 7,
+    "recordedAudioRange": "1–6",
+    "newRecordings": 0,
+    "recordingRowsUnchanged": true,
+    "readingBytes": 9419164
+  },
+  "selectedBookCoverage": {
+    "scope": "Complete selected Ablution inventory, not certification of the full Bukhari collection or of wording accuracy.",
+    "numberedEntries": 110,
+    "readerRange": [
+      135,
+      244
+    ],
+    "digitalSourceChapters": 76,
+    "additionalPrintedHeadingSections": 1,
+    "browseableChapters": 77,
+    "arabicIntroductoryParagraphs": 22,
+    "selectedContentBlocks": 256,
+    "originalEvidenceBlocks": 251,
+    "allInventoryEntryIdsRepresented": true,
+    "allNonFormattingInventoryBlocksIncluded": true,
+    "excludedLayoutSpans": [
+      {
+        "id": "mwYQ@0-2",
+        "role": "blank",
+        "textSha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070"
+      },
+      {
+        "id": "mweA@0-3",
+        "role": "formatting",
+        "textSha256": "2cf2b04b1bae57d1fb472a2e73a6066ad6df8fe5dfd000336dead1b2f7627caa"
+      },
+      {
+        "id": "mweA@21-24",
+        "role": "formatting",
+        "textSha256": "2cf2b04b1bae57d1fb472a2e73a6066ad6df8fe5dfd000336dead1b2f7627caa"
+      },
+      {
+        "id": "mwpw@0-2",
+        "role": "blank",
+        "textSha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070"
+      },
+      {
+        "id": "mwAaY",
+        "role": "blank",
+        "textSha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+      }
+    ],
+    "excludedLayoutExplanation": "Three blank spans and two literal heading-format delimiters remain in the pinned source inventory. They contain no narration or chapter wording; reader text includes every non-formatting content block."
+  },
+  "sourceComparison": {
+    "printedPages": [
+      {
+        "id": "brill-1862",
+        "pdfPages": [
+          68,
+          69,
+          70,
+          71,
+          72,
+          73
+        ],
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+      },
+      {
+        "id": "dar-ibn-kathir-2002",
+        "pdfPages": [
+          66,
+          67,
+          68,
+          69,
+          70,
+          71
+        ],
+        "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+      }
+    ],
+    "pageNumbering": "One-based PDF pages, visually inspected in full; both complete PDF hashes rechecked. Per-entry locations are recorded in the review.",
+    "englishReferences": [
+      {
+        "number": 225,
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "225"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.227",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.227",
+              "recordSha256": "14d225ccc6ec1d3fa6968a186e804d3c8da026c35f29fb3f41c89ef8c290bf83"
+            }
+          }
+        ]
+      },
+      {
+        "number": 226,
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "226"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.228",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.228",
+              "recordSha256": "c2e1e332fca433202aa5063b16fdafb22a8cdedbd44bd7b71ed4b6da1e1ec15e"
+            }
+          }
+        ]
+      },
+      {
+        "number": 227,
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "227"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.229",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.229",
+              "recordSha256": "2f891ce72ee9c91ecafa77bf2c9533d74cfd71092104b35b64cc17255d9f89b7"
+            }
+          }
+        ]
+      },
+      {
+        "number": 228,
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "228"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.230",
+            "splitReferences": [
+              {
+                "reference": "1.4.230",
+                "referenceEvidence": {
+                  "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+                  "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.230",
+                  "recordSha256": "9eb8c2354d641bc2abaf904d4700fe7e3a1cdb72a4a38331b324790709e56751"
+                },
+                "segmentIds": [
+                  "228-1"
+                ],
+                "status": "back-reference-only",
+                "checkedBody": [
+                  "Narrated 'Aisha: ",
+                  "as above (229). "
+                ],
+                "referencedReference": "1.4.229",
+                "referencedReferenceEvidence": {
+                  "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+                  "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.229",
+                  "recordSha256": "2f891ce72ee9c91ecafa77bf2c9533d74cfd71092104b35b64cc17255d9f89b7"
+                },
+                "note": "This first comparison part only points back to 1.4.229; it supplies no repeated report body."
+              },
+              {
+                "reference": "1.4.231",
+                "referenceEvidence": {
+                  "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+                  "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.231",
+                  "recordSha256": "307c0dd7e48f6095448ee71aec749dfe795aee30b01afbd583c9fb89c7a42b74"
+                },
+                "segmentIds": [
+                  "228-2",
+                  "228-3"
+                ]
+              }
+            ],
+            "note": "The first selected chain remains abbreviated; the first English comparison is only a backward pointer. The second English record contains the question and report body. Their shortened English chains do not replace the full selected Arabic chains."
+          }
+        ]
+      },
+      {
+        "number": 229,
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "229"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.232",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.232",
+              "recordSha256": "73d46149fa366cc7fdb824cc73f71bb6410ac541103eeaa709ea71e454b5351a"
+            }
+          }
+        ]
+      },
+      {
+        "number": 230,
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "230"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.233",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.233",
+              "recordSha256": "f90603346b70bdded8f86a376da8589b014d8355316d58981672d79753054987"
+            }
+          }
+        ]
+      },
+      {
+        "number": 231,
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "231"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.234",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.234",
+              "recordSha256": "24d50c97de640e8148564cf0a7cc25d2f4481e32072142753a10d2cea77d802f"
+            }
+          }
+        ]
+      },
+      {
+        "number": 232,
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "232"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.235",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.235",
+              "recordSha256": "7c96e6e43371d0a0036d61f87799d64fff50a698f09c5e5a1fbfb378fbe8d54e"
+            }
+          }
+        ]
+      },
+      {
+        "number": 233,
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "233"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.236",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.236",
+              "recordSha256": "e8e04f788507772f5e35c448e6c03af33ea9d649eab5cd24208659aee5a14563"
+            }
+          }
+        ]
+      },
+      {
+        "number": 234,
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "234",
+            "status": "cross-reference-with-transmission-note",
+            "referencedReference": "233",
+            "note": "The online comparison points back to entry 233 with a wording distinction, then retains Ma‘n’s closing statement. It does not repeat the full body; the extra eating instruction from 233 is not imported."
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.237",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.237",
+              "recordSha256": "aafd2552facd19965f7cc47a29f80db7d45c7aca6c11a1b19b0e770c197d3c47"
+            }
+          }
+        ]
+      },
+      {
+        "number": 235,
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "235"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.238",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.238",
+              "recordSha256": "06322b91f68ffcc05be9221110ad6317a0ed0a38fe8bb95f542b28b64cfa4ef3"
+            }
+          }
+        ]
+      },
+      {
+        "number": 236,
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "236"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.239",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.239",
+              "recordSha256": "4804ede0828d2fa38613ec4f1c2b620c0e363f06d57284a47d94760b0bcb3bd5"
+            }
+          }
+        ]
+      },
+      {
+        "number": 237,
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "237"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.240",
+            "splitReferences": [
+              {
+                "reference": "1.4.240",
+                "referenceEvidence": {
+                  "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+                  "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.240",
+                  "recordSha256": "d1848bbd0afd2f558fb2b83434bda92a9c96becc4206c5384ba75761b0cef5cc"
+                },
+                "segmentIds": [
+                  "237-1",
+                  "237-2"
+                ],
+                "status": "forward-incipit-only",
+                "checkedBody": [
+                  "Narrated 'Abdullah: ",
+                  "While Allah's Apostle was prostrating (as stated below). "
+                ],
+                "continuedByReference": "1.4.241",
+                "note": "This first comparison part gives only the opening phrase and points below to the full account in 1.4.241."
+              },
+              {
+                "reference": "1.4.241",
+                "referenceEvidence": {
+                  "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+                  "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.241",
+                  "recordSha256": "8cd4cd59e4da423e032bda40db0e4f3add9fbcf766ecabb4596152c0552aa6ca"
+                },
+                "segmentIds": [
+                  "237-3",
+                  "237-4"
+                ]
+              }
+            ],
+            "note": "The first selected incipit remains abbreviated; the first English comparison contains only an opening phrase pointing forward. The second English record contains the fuller account. Their shortened English chains do not replace the full selected Arabic chains."
+          }
+        ]
+      },
+      {
+        "number": 238,
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "238"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.242",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.242",
+              "recordSha256": "431aaeb12c0162555376309231a32adf0751a383e50233c6b8cabfa6f7057ccd"
+            }
+          }
+        ]
+      },
+      {
+        "number": 239,
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "239"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.243",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.243",
+              "recordSha256": "f0d25b6cc3d62d1aeceb9033e447afc2e76c0f5f165ac3bd155cd7bde12be57d"
+            }
+          }
+        ]
+      },
+      {
+        "number": 240,
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "240"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.244",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.244",
+              "recordSha256": "5d0786efbb36f56f9a83c4fd05e4abaecfa3c8b0c490ac40e7b2f4f7c7ceca5e"
+            }
+          }
+        ]
+      },
+      {
+        "number": 241,
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "241"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.245",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.245",
+              "recordSha256": "2587752f45102e316e1e71453b6bb61d3b899f75caaa189310b37b50dd214be3"
+            }
+          }
+        ]
+      },
+      {
+        "number": 242,
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "242"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.246",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.246",
+              "recordSha256": "2762e36223dceb8492f9a855a0158684a1501efdb924182a3c3375b9858e1cff"
+            }
+          }
+        ]
+      },
+      {
+        "number": 243,
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "243"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": null,
+            "status": "not-present-in-checked-sequence",
+            "checkedReferences": [
+              "1.4.246",
+              "1.4.247"
+            ],
+            "checkedReferenceEvidence": [
+              {
+                "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+                "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.246",
+                "recordSha256": "2762e36223dceb8492f9a855a0158684a1501efdb924182a3c3375b9858e1cff"
+              },
+              {
+                "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+                "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.247",
+                "recordSha256": "be65153da9ab12eb98b85416322711ac486d96f03c71b67e5db2ba61477b5a23"
+              }
+            ],
+            "note": "The pinned EPUB proceeds from the night-time siwak account in 1.4.246 to the bedtime supplication in 1.4.247. The elder-priority account is not present between them; neither label is treated as its matching reference."
+          }
+        ]
+      },
+      {
+        "number": 244,
+        "comparisons": [
+          {
+            "id": "bewley-ablution",
+            "reference": "244"
+          },
+          {
+            "id": "islamhouse-khan",
+            "reference": "1.4.247",
+            "referenceEvidence": {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.4.247",
+              "recordSha256": "be65153da9ab12eb98b85416322711ac486d96f03c71b67e5db2ba61477b5a23"
+            }
+          }
+        ]
+      }
+    ],
+    "limits": [
+      "These are AI-assisted working translations, not independently reviewed or certified translations. Complete selected source coverage is distinct from scholarly approval.",
+      "The feminine reporting verb in 225 now participates in the same completeness check as its masculine form. Removing its English reporting clause is rejected.",
+      "The closing my father said statement in 226 remains separately attributed. The source imperative, printed variants and the historical reporting-verb difference remain recorded; Arabic is unchanged.",
+      "Entry 228 retains its first abbreviated chain and complete second chain/report. Its first English comparison is only a pinned backward pointer, not a full report. Entry 237 retains its short opening incipit and full second account; its first English comparison explicitly points forward.",
+      "Entry 229 retains the selected I asked rather than the modern printed I heard. Entry 230 retains the selected third-person-to-first-person change and its singular/plural alternative.",
+      "The full 231 report and Abu Qilabah’s separately attributed conclusion remain. No modern medical advice, legal explanation or treatment parenthetical is inserted into the narration.",
+      "Entry 234 does not import the final eating instruction from 233. Bewley’s cross-reference is labelled as such, and Ma‘n’s complete closing transmission remains.",
+      "Entry 236 retains both statements and the with-the-same-chain connector as one selected source entry. Modern printed numbering differs; no this-world/next-world gloss is inserted.",
+      "Entry 238 retains the longer-transmission notice and its full selected closing chain. Printed and English comparison differences remain in notes; no while-praying phrase is added.",
+      "The chapter/report boundary at 239 and shared paragraph of 241–242 retain their exact original spans. Chapter introductions are separate from numbered sessions.",
+      "Entry 243 is absent from the checked English EPUB interval 1.4.246–1.4.247, although both inspected Arabic prints and Bewley contain it. The full source entry remains, with a visible comparison-gap note and no false matching citation.",
+      "Entry 244 retains the entire supplication, repeated invocation, last-words instruction and final correction from Messenger to Prophet. Independent review of idiomatic English, wording, context and references remains pending."
+    ]
+  },
+  "architecture": {
+    "sessions": "Only numbered entries enter daily sessions. Browsing still preserves Continue; a next session after ended 224 begins at 225. The available selected collection currently ends at 244.",
+    "comparisons": "Abbreviated parts of split English comparisons carry explicit status, pinned original body and reference evidence. The backward reference and adjacent forward continuation are validated; removing their status is rejected. A shorthand Bewley reference has distinct citation wording.",
+    "unchangedBooks": [
+      {
+        "id": "opening-revelation",
+        "path": "books/opening-revelation-0a534f10d205292c.json",
+        "bytes": 96992
+      },
+      {
+        "id": "faith",
+        "path": "books/faith-ad873aab8759ca02.json",
+        "bytes": 334872
+      },
+      {
+        "id": "knowledge",
+        "path": "books/knowledge-e3d5ef7956421322.json",
+        "bytes": 528181
+      }
+    ],
+    "newAblutionFile": "books/ablution-4012bd796dae0e95.json",
+    "production": "Independent review and production gates remain unsatisfied; personal-prototype admission cannot bypass them."
+  },
+  "verification": {
+    "node": 251,
+    "python": 60,
+    "failedAfterResolution": 0,
+    "newRegressionTests": 9,
+    "sourceAndReleaseIntegrityChecks": 13,
+    "localPackagingNote": "The first full Node run had 250 passes and one packaging failure because the new content-addressed book was not yet staged. After staging, the focused seven-test deployment suite and site assembly passed. No source or test rule was weakened to resolve it; CI will rerun the full suite from the committed tree.",
+    "browser": {
+      "checked": [
+        {
+          "number": 225,
+          "englishExact": true,
+          "arabicExact": true,
+          "englishBlocks": 2,
+          "arabicBlocks": 1,
+          "font": "28px",
+          "scrollWidth": 320,
+          "width": 320
+        },
+        {
+          "number": 226,
+          "englishExact": true,
+          "arabicExact": true,
+          "englishBlocks": 3,
+          "arabicBlocks": 1,
+          "font": "28px",
+          "scrollWidth": 320,
+          "width": 320
+        },
+        {
+          "number": 227,
+          "englishExact": true,
+          "arabicExact": true,
+          "englishBlocks": 2,
+          "arabicBlocks": 1,
+          "font": "28px",
+          "scrollWidth": 320,
+          "width": 320
+        },
+        {
+          "number": 228,
+          "englishExact": true,
+          "arabicExact": true,
+          "englishBlocks": 3,
+          "arabicBlocks": 1,
+          "font": "28px",
+          "scrollWidth": 320,
+          "width": 320
+        },
+        {
+          "number": 229,
+          "englishExact": true,
+          "arabicExact": true,
+          "englishBlocks": 2,
+          "arabicBlocks": 1,
+          "font": "28px",
+          "scrollWidth": 320,
+          "width": 320
+        },
+        {
+          "number": 230,
+          "englishExact": true,
+          "arabicExact": true,
+          "englishBlocks": 2,
+          "arabicBlocks": 1,
+          "font": "28px",
+          "scrollWidth": 320,
+          "width": 320
+        },
+        {
+          "number": 231,
+          "englishExact": true,
+          "arabicExact": true,
+          "englishBlocks": 3,
+          "arabicBlocks": 1,
+          "font": "28px",
+          "scrollWidth": 320,
+          "width": 320
+        },
+        {
+          "number": 232,
+          "englishExact": true,
+          "arabicExact": true,
+          "englishBlocks": 2,
+          "arabicBlocks": 1,
+          "font": "28px",
+          "scrollWidth": 320,
+          "width": 320
+        },
+        {
+          "number": 233,
+          "englishExact": true,
+          "arabicExact": true,
+          "englishBlocks": 2,
+          "arabicBlocks": 1,
+          "font": "28px",
+          "scrollWidth": 320,
+          "width": 320
+        },
+        {
+          "number": 234,
+          "englishExact": true,
+          "arabicExact": true,
+          "englishBlocks": 3,
+          "arabicBlocks": 1,
+          "font": "28px",
+          "scrollWidth": 320,
+          "width": 320
+        },
+        {
+          "number": 235,
+          "englishExact": true,
+          "arabicExact": true,
+          "englishBlocks": 2,
+          "arabicBlocks": 1,
+          "font": "28px",
+          "scrollWidth": 320,
+          "width": 320
+        },
+        {
+          "number": 236,
+          "englishExact": true,
+          "arabicExact": true,
+          "englishBlocks": 4,
+          "arabicBlocks": 1,
+          "font": "28px",
+          "scrollWidth": 320,
+          "width": 320
+        },
+        {
+          "number": 237,
+          "englishExact": true,
+          "arabicExact": true,
+          "englishBlocks": 4,
+          "arabicBlocks": 1,
+          "font": "28px",
+          "scrollWidth": 320,
+          "width": 320
+        },
+        {
+          "number": 238,
+          "englishExact": true,
+          "arabicExact": true,
+          "englishBlocks": 3,
+          "arabicBlocks": 1,
+          "font": "28px",
+          "scrollWidth": 320,
+          "width": 320
+        },
+        {
+          "number": 239,
+          "englishExact": true,
+          "arabicExact": true,
+          "englishBlocks": 2,
+          "arabicBlocks": 1,
+          "font": "28px",
+          "scrollWidth": 320,
+          "width": 320
+        },
+        {
+          "number": 240,
+          "englishExact": true,
+          "arabicExact": true,
+          "englishBlocks": 2,
+          "arabicBlocks": 1,
+          "font": "28px",
+          "scrollWidth": 320,
+          "width": 320
+        },
+        {
+          "number": 241,
+          "englishExact": true,
+          "arabicExact": true,
+          "englishBlocks": 2,
+          "arabicBlocks": 1,
+          "font": "28px",
+          "scrollWidth": 320,
+          "width": 320
+        },
+        {
+          "number": 242,
+          "englishExact": true,
+          "arabicExact": true,
+          "englishBlocks": 2,
+          "arabicBlocks": 1,
+          "font": "28px",
+          "scrollWidth": 320,
+          "width": 320
+        },
+        {
+          "number": 243,
+          "englishExact": true,
+          "arabicExact": true,
+          "englishBlocks": 3,
+          "arabicBlocks": 1,
+          "font": "28px",
+          "scrollWidth": 320,
+          "width": 320
+        },
+        {
+          "number": 244,
+          "englishExact": true,
+          "arabicExact": true,
+          "englishBlocks": 3,
+          "arabicBlocks": 1,
+          "font": "28px",
+          "scrollWidth": 320,
+          "width": 320
+        }
+      ],
+      "continueBefore": "#read/191",
+      "chapterBlocks": 20,
+      "nightLargest": {
+        "chains": 2,
+        "font": "28px",
+        "scrollWidth": 320,
+        "width": 320
+      },
+      "continueAfterBrowsing": "#read/191",
+      "readingReadyOffline": true,
+      "offline": {
+        "previewServerStopped": true,
+        "continueAfterReload": "#read/191",
+        "finalEnglishExact": true,
+        "finalArabicExact": true,
+        "sourceGapVisible": true,
+        "chapter72Exact": true,
+        "exactPhraseSearch244": "#read/244",
+        "continueAfterBrowsing": "#read/191"
+      }
+    },
+    "screenshot": "/private/tmp/hadith-ablution-final-reader.png"
+  },
+  "remaining": [
+    "Begin source intake for the next book, Ghusl, with explicit edition/reference and chapter mapping.",
+    "Resolve the untranslated phrase in 187, complete English chapter introductions and obtain independent Arabic, English, reference and context reviews.",
+    "Expand reviewed Cedar recordings beyond 6 and complete full-collection, accessibility and physical iPhone acceptance. Desktop offline checks do not certify locked-screen behavior."
+  ]
+}

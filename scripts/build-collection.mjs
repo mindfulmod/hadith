@@ -31,7 +31,11 @@ function validateComparisons(comparisons,config,segments){
  const khanReference=new RegExp('^1\\.'+config.number+'\\.[1-9]\\d*[a-z]?$');
  assert.deepEqual(comparisons.map(c=>c.id).sort(),[config.bewleySourceId,'islamhouse-khan'].sort(),'Expected distinct English comparison records');
  const bewley=comparisons.find(c=>c.id===config.bewleySourceId),khan=comparisons.find(c=>c.id==='islamhouse-khan');
- assert(/^[1-9]\d*$/.test(bewley.reference)&&bewley.status===undefined,'Invalid Bewley comparison');
+ assert(/^[1-9]\d*$/.test(bewley.reference),'Invalid Bewley comparison');
+ if(bewley.status!==undefined){
+  assert.equal(bewley.status,'cross-reference-with-transmission-note','Unknown Bewley comparison form');
+  assert(/^[1-9]\d*$/.test(bewley.referencedReference)&&Number(bewley.referencedReference)<Number(bewley.reference)&&typeof bewley.note==='string'&&bewley.note.trim(),'Cross-reference comparison needs its earlier reference and explanation');
+ }else assert.equal(bewley.referencedReference,undefined,'A comparison pointer needs an explicit status');
  assert(bewley.part===undefined&&bewley.splitReferences===undefined,'Unexpected Bewley part metadata');
  if(khan.status==='back-reference-only'){
   assert(khanReference.test(khan.reference)&&khanReference.test(khan.referencedReference),'Invalid backward-reference comparison');
@@ -64,8 +68,25 @@ function validateComparisons(comparisons,config,segments){
    for(const [i,p]of parts.entries()){
     assert(khanReference.test(p.reference),'Invalid split reference');
     if(i)assert(Number(p.reference.split('.')[2])>Number(parts[i-1].reference.split('.')[2]),'Split references must be distinct and ordered');
-    comparisonEvidence(p.reference,p.referenceEvidence);
+    const record=comparisonEvidence(p.reference,p.referenceEvidence);
     assert(Array.isArray(p.segmentIds)&&p.segmentIds.length,'Split comparison needs segment coverage');
+    if(p.status!==undefined){
+     assert(Array.isArray(p.checkedBody)&&p.checkedBody.length===2&&p.checkedBody.every(v=>typeof v==='string')&&hash(p.checkedBody)===record.textSha256,'Abbreviated comparison part differs from its pinned body');
+     assert(/^Narrated .+:$/.test(p.checkedBody[0].trim())&&typeof p.note==='string'&&p.note.trim(),'Abbreviated comparison part needs a narrator and explanation');
+     if(p.status==='back-reference-only'){
+      const pointer=/^as above \(([1-9]\d*)\)\.$/.exec(p.checkedBody[1].trim());
+      assert(pointer&&p.referencedReference===`1.${config.number}.${pointer[1]}`&&Number(pointer[1])<Number(p.reference.split('.')[2]),'Invalid split backward pointer');
+      assert.equal(p.continuedByReference,undefined,'Backward pointer cannot claim a forward continuation');
+      comparisonEvidence(p.referencedReference,p.referencedReferenceEvidence);
+      assert(p.segmentIds.every(id=>segments.find(s=>s.id===id)?.kind==='chain'),'Backward-only part may only correspond to an abbreviated chain');
+     }else{
+      assert.equal(p.status,'forward-incipit-only','Unknown abbreviated comparison part');
+      assert.equal(p.checkedBody[1].trim(),"While Allah's Apostle was prostrating (as stated below).",'Unexpected forward incipit');
+      assert(p.continuedByReference===parts[i+1]?.reference&&Number(p.continuedByReference.split('.')[2])===Number(p.reference.split('.')[2])+1,'Forward incipit needs its adjacent continuation');
+      assert(p.referencedReference===undefined&&p.referencedReferenceEvidence===undefined,'Forward incipit cannot claim a backward reference');
+      const kinds=p.segmentIds.map(id=>segments.find(s=>s.id===id)?.kind);assert.deepEqual(kinds,['chain','report'],'Forward incipit must retain its chain and opening report');
+     }
+    }else assert(p.checkedBody===undefined&&p.referencedReference===undefined&&p.referencedReferenceEvidence===undefined&&p.continuedByReference===undefined,'Abbreviated comparison metadata needs an explicit status');
    }
    assert.deepEqual(parts.flatMap(p=>p.segmentIds),segments.map(s=>s.id),'Split references must cover the selected segments exactly once in order');
    return;
@@ -111,7 +132,7 @@ function khanCitation(record){
  if(record.status==='back-reference-only'){const [volume,book,number]=record.reference.split('.');return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Number ${number} · backward reference only`,scope:record.note};}
 
  if(record.status==='reference-only-body-absent'){const [volume,book,number]=record.reference.split('.');return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Number ${number} · reference only; statement body absent`,scope:record.note};}
- if(record.splitReferences){const [volume,book]=record.reference.split('.');return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Numbers ${record.splitReferences.map(p=>p.reference.split('.')[2]).join(', ')} · separately numbered comparison parts`,scope:record.note+' The reader retains one complete numbered entry from its selected Arabic source.'};}
+ if(record.splitReferences){const [volume,book]=record.reference.split('.'),abbreviated=record.splitReferences.some(p=>p.status);return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Numbers ${record.splitReferences.map(p=>p.reference.split('.')[2]).join(', ')} · separately numbered comparison parts${abbreviated?' · includes an abbreviated part':''}`,scope:record.note+' The reader retains one complete numbered entry from its selected Arabic source.'};}
  if(record.status==='not-present-in-checked-sequence')return {id:'khan',sourceId:'islamhouse-khan',locator:`No corresponding report in the checked sequence: ${record.checkedReferences.join(' → ')}`,scope:record.note+' This is documented absence in that sequence, not a completed English comparison or a claim about every occurrence elsewhere in the collection.'};
  const [volume,book,number]=record.reference.split('.');
  return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Number ${number}${record.part?` · report ${record.part.index} of ${record.part.count}`:''}`,scope:record.part?'This English reference contains multiple reports. Only the identified report is matched here; the reader retains separate entries and full chains from its selected Arabic source.':'Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed.'};
@@ -152,7 +173,7 @@ export function buildBookBatch(inventory,review,manifest,config){
   for(const [i,s] of row.segments.entries()){
    const block=blockIds.indexOf(s.paragraphId);assert(block>=0&&Number.isSafeInteger(s.start)&&Number.isSafeInteger(s.end));
    assert.equal(s.arabic,Array.from(arabic_blocks[block]).slice(s.start,s.end).join(''),'Changed Arabic span');assert.equal(s.arabicSha256,sha(s.arabic));assert.equal(s.englishSha256,sha(s.english));
-   if(['chain','transmission-note'].includes(s.kind))for(const [arabic,english]of [['حدثنا','related to us'],['حدثني','related to me'],['أخبرنا','informed us'],['أخبرني','informed me'],['سمعت','i heard']])assert.equal(s.arabic.replace(/\p{M}/gu,'').split(arabic).length,s.english.toLowerCase().split(english).length,'Reporting verb mismatch in '+s.id);
+   if(['chain','transmission-note'].includes(s.kind))for(const [arabic,english]of [[['حدثنا'],'related to us'],[['حدثني','حدثتني'],'related to me'],[['أخبرنا'],'informed us'],[['أخبرني'],'informed me'],[['سمعت'],'i heard']])assert.equal(arabic.reduce((n,word)=>n+s.arabic.replace(/\p{M}/gu,'').split(word).length-1,0),s.english.toLowerCase().split(english).length-1,'Reporting verb mismatch in '+s.id);
    const supplement=row.arabicSupplements?.find(a=>a.id===s.paragraphId),origin=supplement?{provenance:{kind:'printed-supplement',id:supplement.id}}:{};
    presentation.arabic.push({block,start:s.start,end:s.end,kind:s.kind,...origin});presentation.english.push({block:i,start:0,end:Array.from(s.english).length,kind:s.kind,...origin});
   }
@@ -194,7 +215,7 @@ export function assembleCollection(opening,inventory,review,manifest,config=BOOK
   const r=review.entries.find(r=>r.number===e.number),chapter=review.chapters.find(c=>c.entryNumbers.includes(e.number));
   references.entries.push({id:e.id,number:e.number,entrySha256:hash(e),translation:{label:'Personal prototype · English working translation',description:e.english_status+' This is a new working translation, not the Darussalam translation.'},citations:[
    {id:'base',sourceId:config.arabicSourceId,locator:`Book of ${config.title} · source entry ${r.sourceLayout?.sourceReference.label??e.number} · ${chapter.titleArabic}`,scope:r.sourceLayout?'Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence.':r.arabicCorrections?'Derived Arabic with an explicitly recorded correction supported by two printed witnesses. The unchanged digital paragraph, before/after wording and evidence are preserved in the offline source notes.':'Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes.'},
-   {id:'bewley',sourceId:config.bewleySourceId,locator:`Book of ${config.bewleyTitle} · entry ${r.comparisons.find(c=>c.id===config.bewleySourceId).reference}`,scope:r.sourceForm?.kind==='chain-only'?'Named English comparison for this abbreviated transmission; no repeated report body is supplied here.':'Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain.'},
+   {id:'bewley',sourceId:config.bewleySourceId,locator:`Book of ${config.bewleyTitle} · entry ${r.comparisons.find(c=>c.id===config.bewleySourceId).reference}`,scope:r.sourceForm?.kind==='chain-only'?'Named English comparison for this abbreviated transmission; no repeated report body is supplied here.':r.comparisons.find(c=>c.id===config.bewleySourceId).status==='cross-reference-with-transmission-note'?r.comparisons.find(c=>c.id===config.bewleySourceId).note:'Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain.'},
    khanCitation(r.comparisons.find(c=>c.id==='islamhouse-khan')),
    ...r.printedWitnesses.map(printedCitation),
    ...structuredClone(r.additionalCitations||[])
