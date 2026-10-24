@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The personal reader is at `reader/`: 453 complete selected Bukhari entries across eight books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The personal reader is at `reader/`: 468 complete selected Bukhari entries across eight books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Run
 
@@ -758,3 +758,14 @@ The literal comparison references **1.8.450f** and **1.8.450m** retain their suf
 Validation: **371 Node + 78 Python tests**, all thirteen integrity commands, and exact rendered Arabic/English comparisons for every new report. With the preview server stopped, reload, next navigation, sources, seven chapter sections, three introductions and exact phrase search worked. Free browsing preserved Continue. Standard 21px day and largest 28px night text were checked at the browser's actual 1280px width. A requested 320px viewport override did not apply; this release does not claim a new narrow-screen or physical iPhone acceptance result. Evidence: `research/prayer-eighth-verification.json`.
 
 The compact reading pack is approximately **13.24 MB**. Existing artwork and recordings remain unchanged. Complete narration scripts now cover 453 entries; actual Cedar audio remains **1–6**. The next source batch starts at Prayer 454, with 45 Prayer candidates still outside the reader.
+
+
+### Prayer 454–468 and numbered-only daily sessions — 23 October 2026
+
+The personal reader now contains **468 complete selected numbered entries across eight books**. Fifteen reports, thirty-nine English segments and nine complete Prayer chapters have been added. All fifteen selected Arabic paragraphs and all previous 453 entry objects are unchanged. Three further Arabic chapter introductions are available separately when browsing, saved offline and excluded from daily sessions and narration. Their English translation remains pending.
+
+The repeated call at 459, closing chains at 460–463, memory correction and abbreviated pointer at 466, and complete movements and indirect final attribution at 468 remain intact. Differences involving omitted clauses, names, prayer-time wording and English comparison omissions are documented alongside the exact Arabic and source pages. The selected 465 omission is explicitly attested as a variant in the consulted commentary; it is not silently repaired. All new English remains a working translation pending independent review.
+
+Validation: **379 Node + 78 Python tests**, all thirteen integrity commands, and exact rendered Arabic and English for every new report. With the preview server stopped, reload, next navigation, nine chapter sections, three introductions and exact phrase search worked. Both the normal update and free browsing preserved Continue. Standard 21px day and largest 28px night text fit at the actual 1280px browser width; complete honorific phrases remain smaller. No new narrow-screen or physical iPhone acceptance is claimed. Evidence: `research/prayer-ninth-verification.json`.
+
+The complete reading download is **13,610,385 bytes (13.61 MB)**. The other seven book packs, existing artwork and recordings are unchanged. Complete scripts cover 468 entries; actual Cedar audio remains **1–6**. Prayer 469 starts the next source batch; 30 Prayer candidates remain outside the reader. Independent text, chapter, reference and spoken-word review remain unfinished.
