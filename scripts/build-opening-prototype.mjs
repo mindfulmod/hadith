@@ -4,6 +4,7 @@ import {readFileSync,writeFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {pathToFileURL} from 'node:url';
 import assert from 'node:assert/strict';
+import {publicJSON} from './public-json.mjs';
 import {validateSourceStructure} from '../reader/source-structure.mjs';
 import {escapeHTML as esc} from '../reader/source-format.mjs';
 const root=new URL('../',import.meta.url);
@@ -89,7 +90,7 @@ export function buildOpeningPrototype(original,draft,decisions,originalLedger){
   const row=rows.find(r=>r.number===e.number),originalEntry=draft.entries.find(d=>d.number===e.number);
   return `<article id="hadith-${e.number}"><p class="eyebrow">INDEPENDENT ARABIC, ENGLISH AND CONTEXT REVIEW PENDING</p><h2>Hadith ${e.number}</h2><a href="./#read/${e.number}">Open this hadith in the reader →</a>${e.review.decisions.map(d=>`<h3>${esc(d.topic)}</h3><p>${esc(d.decision)}</p>${d.englishEdits.map(edit=>`<p><strong>Earlier draft:</strong> ${esc(edit.before)}<br><strong>Personal prototype:</strong> ${esc(edit.after)}</p>`).join('')}`).join('')}<details><summary>Complete working English</summary>${e.english_blocks.map(t=>`<p>${esc(t)}</p>`).join('')}</details><details><summary>Unchanged digital Arabic input</summary><div class="arabic" lang="ar" dir="rtl">${originalEntry.arabicParagraphIds.map(id=>`<p>${esc(originalEntry.segments.filter(s=>s.paragraphId===id).map(s=>s.arabic).join(''))}</p>`).join('')}</div></details><details><summary>Earlier comparison findings</summary><ul>${e.review.comparisonChecks.map(c=>`<li><strong>${esc(c.topic)}</strong><br>${esc(c.finding)}</li>`).join('')}</ul></details><details><summary>Sources and exact locations</summary><ul>${row.citations.map(c=>{const s=referenceSources.find(s=>s.id===c.sourceId);const u=new URL(s.url);if(c.pdfPage)u.hash='page='+c.pdfPage;return `<li><a href="${esc(u.href)}" target="_blank" rel="noopener">${esc(s.label)} ↗</a><p>${esc(c.locator)}<br>${esc(c.scope)}</p></li>`;}).join('')}</ul></details></article>`;
  }).join('')}<p>${esc(source.license.attribution)}</p><p>${esc(source.license.changes)} <a href="${esc(source.license.url)}">CC BY-SA 4.0</a>.</p><a href="./">Return to your session →</a></main></body></html>\n`;
- return {source,ledger,files:new Map([['research/bukhari-opening-prototype.json',bytes(source)],['content/review/opening-prototype-ledger.json',bytes(ledger)],['reader/prototype-inputs.json',bytes(inputs)],['reader/prototype-review.html',html]])};
+ return {source,ledger,files:new Map([['research/bukhari-opening-prototype.json',bytes(source)],['content/review/opening-prototype-ledger.json',bytes(ledger)],['reader/prototype-inputs.json',publicJSON(inputs)],['reader/prototype-review.html',html]])};
 }
 export function prototypeFiles(){return buildOpeningPrototype(read('research/bukhari-opening-review.json'),read('content/review/opening-next-drafts.json'),read('content/review/opening-prototype-decisions.json'),read('content/review/opening-ledger.json'));}
 if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href){

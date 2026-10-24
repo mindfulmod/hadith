@@ -3,6 +3,7 @@ import {readFileSync,writeFileSync,mkdirSync,readdirSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {pathToFileURL} from 'node:url';
 import assert from 'node:assert/strict';
+import {publicJSON} from './public-json.mjs';
 import {validateChapters} from '../reader/navigation.mjs';
 import {validateSourceStructure} from '../reader/source-structure.mjs';
 import {validateSourceReferences} from '../reader/source-references.mjs';
@@ -90,12 +91,12 @@ export function buildBooks(source,ledger,{production=false}={}){
   const citedIds=new Set(referenceRows.flatMap(row=>row.citations.map(c=>c.sourceId)));
   const sourceReferences={schemaVersion:2,entriesSha256:objectHash(selected),sources:ledger.sourceReferences.sources.filter(s=>citedIds.has(s.id)),entries:referenceRows};
   const pack={schemaVersion:2,namespace:ledger.namespace,publication:mode,book:{id:book.id,number:book.number,title:book.title,...(book.sourceEntryCount!==undefined?{sourceEntryCount:book.sourceEntryCount}:{}),...(book.chapters?{chapters:book.chapters}:{}),...(book.introduction?{introduction:book.introduction}:{})},sourceReferences,entries:selected};
-  const bytes=JSON.stringify(pack,null,2)+'\n',sha256=digest(bytes),path=`books/${book.id}-${sha256.slice(0,16)}.json`;
+  const bytes=publicJSON(pack),sha256=digest(bytes),path=`books/${book.id}-${sha256.slice(0,16)}.json`;
   files.set(path,bytes);
   catalog.books.push({...book,path,bytes:Buffer.byteLength(bytes),sha256});
   catalog.entries.push(...selected.map(e=>({id:e.id,number:e.number,bookId:book.id,book:e.book,englishWords:e.english_blocks.join(' ').trim().split(/\s+/u).length})));
  }
- files.set('books/catalog.json',JSON.stringify(catalog,null,2)+'\n');
+ files.set('books/catalog.json',publicJSON(catalog));
  return {catalog,files};
 }
 export function publishBooks({check=false,production=false}={}){

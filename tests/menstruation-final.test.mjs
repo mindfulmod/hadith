@@ -1,3 +1,4 @@
+import {assertHistoricalBook} from './helpers/stable-book.mjs';
 import {ENTRY_COUNT,LAST_NUMBER} from './published-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -14,7 +15,7 @@ const rehash=r=>{delete r.reviewRecordSha256;r.reviewRecordSha256=objectHash(r);
 test('final Menstruation batch preserves all prior 309 entries and five other packs',()=>{
  const {source,ledger}=collectionFiles(),published=buildBooks(source,ledger),stable=['opening-revelation-0a534f10d205292c','faith-ad873aab8759ca02','knowledge-e3d5ef7956421322','ablution-4012bd796dae0e95','ghusl-1382b7bd3720f4ff'];
  assert.deepEqual(source.entries.slice(0,309),[...stable,'menstruation-0f3c3cdf2218693b'].flatMap(n=>read('reader/books/'+n+'.json').entries));assert.equal(source.entries.length,ENTRY_COUNT);
- for(const n of stable)assert.equal(published.files.get('books/'+n+'.json'),readFileSync(new URL('../reader/books/'+n+'.json',import.meta.url),'utf8'));
+ for(const n of stable)assertHistoricalBook(published,'books/'+n+'.json');
  assert.throws(()=>buildBooks(source,ledger,{production:true}));
 });
 test('seventeen reports and forty-four segments cover the complete source and narration order',()=>{

@@ -1,3 +1,4 @@
+import {assertHistoricalBook} from './helpers/stable-book.mjs';
 import {ENTRY_COUNT,LAST_NUMBER} from './published-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -60,6 +61,6 @@ test('chapter/report and shared-report boundaries reconstruct their exact unchan
 });
 test('completed selected book keeps numbered sessions, stable other books, audio and production gates separate',()=>{
  const {source,ledger}=collectionFiles(),saved={numbers:[224],cursor:224,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,243),saved);assert.equal(nextSession(source.entries,saved,5).cursor,225);assert.deepEqual(planSession(source.entries,LAST_NUMBER,5).numbers,[LAST_NUMBER]);assert.equal(nextSession(source.entries,{numbers:[LAST_NUMBER],cursor:LAST_NUMBER,ended:true},5),null);
- const built=buildBooks(source,ledger);for(const path of ['books/opening-revelation-0a534f10d205292c.json','books/faith-ad873aab8759ca02.json','books/knowledge-e3d5ef7956421322.json'])assert.equal(built.files.get(path),readFileSync(new URL('../reader/'+path,import.meta.url),'utf8'));
+ const built=buildBooks(source,ledger);for(const path of ['books/opening-revelation-0a534f10d205292c.json','books/faith-ad873aab8759ca02.json','books/knowledge-e3d5ef7956421322.json'])assertHistoricalBook(built,path);
  assert.deepEqual(read('reader/audio/catalog.json').coverage.recorded,[1,2,3,4,5,6]);assert.throws(()=>buildBooks(source,ledger,{production:true}));
 });

@@ -1,3 +1,4 @@
+import {assertHistoricalBook} from './helpers/stable-book.mjs';
 import {ENTRY_COUNT,LAST_NUMBER} from './published-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -49,9 +50,9 @@ test('chapter introductions and embedded heading statements stay out of sessions
  assert.match(book.chapters.find(c=>c.id==='chapter-43').title,/‘Umar performed ablution/);assert(!source.entries.find(e=>e.number===190).english_blocks.join(' ').includes('Christian woman'));
  const saved={numbers:[180],cursor:180,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,191),saved);assert.equal(nextSession(source.entries,saved,5).cursor,181);assert(planSession(source.entries,180,5).numbers.includes(181));assert.deepEqual(planSession(source.entries,LAST_NUMBER,5).numbers,[LAST_NUMBER]);assert.equal(nextSession(source.entries,{numbers:[LAST_NUMBER],cursor:LAST_NUMBER,ended:true},5),null);
 });
-test('the first real schema-two expansion keeps all three unaffected book files and existing audio coverage',()=>{
+test('the first real schema-two expansion keeps all three unaffected book payloads and existing audio coverage',()=>{
  const{source,ledger}=collectionFiles(),result=buildBooks(source,ledger);
  const paths=['books/opening-revelation-0a534f10d205292c.json','books/faith-ad873aab8759ca02.json','books/knowledge-e3d5ef7956421322.json'];
- for(const path of paths){assert(result.catalog.books.some(b=>b.path===path));assert.equal(result.files.get(path),readFileSync(new URL('../reader/'+path,import.meta.url),'utf8'));}
+ for(const path of paths){assertHistoricalBook(result,path);}
  assert.notEqual(result.catalog.books.find(b=>b.id==='ablution').path,'books/ablution-bbd47f3cd65faa06.json');assert.deepEqual(read('reader/audio/catalog.json').coverage.recorded,[1,2,3,4,5,6]);assert.throws(()=>buildBooks(source,ledger,{production:true}));
 });

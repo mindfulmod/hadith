@@ -1,3 +1,4 @@
+import {assertHistoricalBook} from './helpers/stable-book.mjs';
 import {ENTRY_COUNT,BOOK_COUNT} from './published-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -15,7 +16,7 @@ test('Prayer admission preserves all selected Arabic, complete segment order and
  assert.deepEqual(a.slice(0,3),before);assert.equal(batch.entries.length,10);
  for(const row of a[1].entries){const entry=batch.entries.find(e=>e.number===row.number),arabic=a[0].blocks.find(b=>b.htmlId===row.paragraphIds[0]).text;assert.equal(row.segments.map(s=>s.arabic).join(''),arabic);assert.equal(entry.arabic_blocks.join(''),arabic);assert.deepEqual(entry.english_blocks,row.segments.map(s=>s.english));assert.equal(plan.entries.find(e=>e.number===row.number).script,entry.english_blocks.join('\n\n'));}
  assert.equal(source.entries.length,ENTRY_COUNT);assert.equal(ledger.books.length,BOOK_COUNT);assert.throws(()=>buildBooks(source,ledger,{production:true}));
- const previous=read('reader/books/catalog.json').books.filter(b=>b.id!=='prayer');assert.deepEqual(previous.map(b=>b.path),['books/opening-revelation-0a534f10d205292c.json','books/faith-ad873aab8759ca02.json','books/knowledge-e3d5ef7956421322.json','books/ablution-4012bd796dae0e95.json','books/ghusl-1382b7bd3720f4ff.json','books/menstruation-95605644e549c484.json','books/tayammum-d329407c8ce82c99.json']);
+ const published=buildBooks(source,ledger);for(const path of ['books/opening-revelation-0a534f10d205292c.json','books/faith-ad873aab8759ca02.json','books/knowledge-e3d5ef7956421322.json','books/ablution-4012bd796dae0e95.json','books/ghusl-1382b7bd3720f4ff.json','books/menstruation-95605644e549c484.json','books/tayammum-d329407c8ce82c99.json'])assertHistoricalBook(published,path);
 });
 test('shared Bewley reference distinguishes the Night Journey continuation from the Aisha report',()=>{
  const {ledger}=collectionFiles();const cite=n=>ledger.sourceReferences.entries.find(e=>e.number===n).citations.find(c=>c.id==='bewley');

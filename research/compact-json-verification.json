@@ -1,0 +1,293 @@
+{
+  "checkedAt": "2026-10-23",
+  "status": "implemented-and-browser-verified",
+  "contentStatus": "Personal prototype; independent text and audio review remain pending.",
+  "change": "Public JSON files omit structural indentation. No source strings, numeric values, arrays, key order, references, review decisions or schema versions are changed. Editing and research records retain their readable formatting. Content-addressed filenames and release checksums are regenerated for the smaller bytes.",
+  "sizeAudit": {
+    "checkedAt": "2026-10-23",
+    "baselineCommit": "6304179c7d2b1458ce0bc122add186b279b2935e",
+    "previousRelease": "opening-63d7dfe3acd5",
+    "currentRelease": "opening-08b2d8d83919",
+    "readerEntries": 445,
+    "sourceRecordSha256": "f3096199f81c4294b2fdddd55c765a02e4666e3b9338b7c7bbae5a33b719cf30",
+    "previousReadingBytes": 15145553,
+    "currentReadingBytes": 13046164,
+    "bytesSaved": 2099389,
+    "reductionPercent": 13.861421897239408,
+    "jsonFilesCompared": 18,
+    "files": [
+      {
+        "path": "books/catalog.json",
+        "previousPath": "books/catalog.json",
+        "previousBytes": 302657,
+        "currentBytes": 184751,
+        "parsedContentUnchanged": true
+      },
+      {
+        "path": "source-record.json",
+        "previousPath": "source-record.json",
+        "previousBytes": 2036210,
+        "currentBytes": 1607128,
+        "parsedContentUnchanged": true
+      },
+      {
+        "path": "prototype-inputs.json",
+        "previousPath": "prototype-inputs.json",
+        "previousBytes": 95632,
+        "currentBytes": 77195,
+        "parsedContentUnchanged": true
+      },
+      {
+        "path": "faith-inputs.json",
+        "previousPath": "faith-inputs.json",
+        "previousBytes": 314892,
+        "currentBytes": 253021,
+        "parsedContentUnchanged": true
+      },
+      {
+        "path": "knowledge-inputs.json",
+        "previousPath": "knowledge-inputs.json",
+        "previousBytes": 490836,
+        "currentBytes": 397500,
+        "parsedContentUnchanged": true
+      },
+      {
+        "path": "ablution-inputs.json",
+        "previousPath": "ablution-inputs.json",
+        "previousBytes": 1028252,
+        "currentBytes": 796211,
+        "parsedContentUnchanged": true
+      },
+      {
+        "path": "ghusl-inputs.json",
+        "previousPath": "ghusl-inputs.json",
+        "previousBytes": 288645,
+        "currentBytes": 229667,
+        "parsedContentUnchanged": true
+      },
+      {
+        "path": "menstruation-inputs.json",
+        "previousPath": "menstruation-inputs.json",
+        "previousBytes": 258254,
+        "currentBytes": 205983,
+        "parsedContentUnchanged": true
+      },
+      {
+        "path": "tayammum-inputs.json",
+        "previousPath": "tayammum-inputs.json",
+        "previousBytes": 188521,
+        "currentBytes": 151873,
+        "parsedContentUnchanged": true
+      },
+      {
+        "path": "prayer-inputs.json",
+        "previousPath": "prayer-inputs.json",
+        "previousBytes": 981296,
+        "currentBytes": 771908,
+        "parsedContentUnchanged": true
+      },
+      {
+        "path": "books/opening-revelation-c9cf4f7b6c4ba6da.json",
+        "previousPath": "books/opening-revelation-0a534f10d205292c.json",
+        "previousBytes": 96992,
+        "currentBytes": 75201,
+        "parsedContentUnchanged": true
+      },
+      {
+        "path": "books/faith-557769677b20c554.json",
+        "previousPath": "books/faith-ad873aab8759ca02.json",
+        "previousBytes": 334872,
+        "currentBytes": 259037,
+        "parsedContentUnchanged": true
+      },
+      {
+        "path": "books/knowledge-a280a8eb778f2ab3.json",
+        "previousPath": "books/knowledge-e3d5ef7956421322.json",
+        "previousBytes": 528181,
+        "currentBytes": 411618,
+        "parsedContentUnchanged": true
+      },
+      {
+        "path": "books/ablution-0923e409e3c51644.json",
+        "previousPath": "books/ablution-4012bd796dae0e95.json",
+        "previousBytes": 868191,
+        "currentBytes": 656317,
+        "parsedContentUnchanged": true
+      },
+      {
+        "path": "books/ghusl-bf3dc34e28a46ebb.json",
+        "previousPath": "books/ghusl-1382b7bd3720f4ff.json",
+        "previousBytes": 307964,
+        "currentBytes": 238445,
+        "parsedContentUnchanged": true
+      },
+      {
+        "path": "books/menstruation-361e7592fc0b396b.json",
+        "previousPath": "books/menstruation-95605644e549c484.json",
+        "previousBytes": 269556,
+        "currentBytes": 208176,
+        "parsedContentUnchanged": true
+      },
+      {
+        "path": "books/tayammum-bf0e2117af123f4b.json",
+        "previousPath": "books/tayammum-d329407c8ce82c99.json",
+        "previousBytes": 152109,
+        "currentBytes": 117591,
+        "parsedContentUnchanged": true
+      },
+      {
+        "path": "books/prayer-22c4e6375c21864b.json",
+        "previousPath": "books/prayer-891c1472937f52ad.json",
+        "previousBytes": 832481,
+        "currentBytes": 634530,
+        "parsedContentUnchanged": true
+      }
+    ],
+    "allOtherReadingAndAudioAssetsUnchanged": true,
+    "scope": "Decoded file and Cache Storage body sizes. Does not claim exact network-transfer savings because HTTP compression is server-dependent. Existing older cached copies are retained until the user removes them."
+  },
+  "verification": {
+    "nodeTests": 365,
+    "pythonTests": 78,
+    "totalTests": 443,
+    "newRegressionTests": 2,
+    "integrityCommands": [
+      {
+        "command": "node scripts/build-opening-prototype.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-wikisource-book.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/audit-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/resolve-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-collection.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-audio.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node reader/check-content.mjs",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/import-bukhari.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-bukhari-jk.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-english.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-opening.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/check-opening-review.py",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/build-opening-review.py --check",
+        "exitCode": 0
+      }
+    ],
+    "canonicalSourceUnchanged": true,
+    "all445EntriesCompared": true,
+    "originalReviewAndAdmissionFilesUnchanged": true,
+    "sourceNotesHTMLUnchanged": true,
+    "audioAndArtworkUnchanged": true,
+    "productionGateStillRejectsPrototype": true
+  },
+  "regressionScope": [
+    "Both indented and compact download sets reconstruct the complete current source record, chapter context and citations through the real verified content loader.",
+    "An interrupted upgrade rejects truncated bytes without marking the new collection ready; the previous cached release remains usable. Retrying downloads only the unfinished changed files and reconstructs the complete collection from cache.",
+    "Thirteen historical tests retain their original content-addressed fixtures, comparing every parsed value through a shared helper. Existing real 167-to-180 expansion tests still require unchanged books to retain byte-identical files across content-only releases."
+  ],
+  "browser": {
+    "checkedAt": "2026-10-23",
+    "initialContinue": "#read/1",
+    "bookmarkOriginallySaved": false,
+    "bookmarkSavedBeforeUpdate": true,
+    "waitedForOldReader": true,
+    "oldReaderStayedIntact": true,
+    "continueAfterUpdate": "#read/1",
+    "downloadReady": true,
+    "bookmarkPreserved": true,
+    "offlineReload": true,
+    "entries": [
+      {
+        "number": 7,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 58,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 134,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 244,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 289,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 326,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 341,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 444,
+        "englishExact": true,
+        "arabicExact": true
+      }
+    ],
+    "offlineChapterSourceExact": true,
+    "offlineSearch": true,
+    "continueAfterBrowsing": "#read/1",
+    "downloadPanel": {
+      "reading": "All reading material445 available hadith, source notes and artwork. 13.0 MBReady offlineSaved ✓",
+      "scrollWidth": 390,
+      "width": 390
+    }
+  },
+  "browserLimits": [
+    "Eight reports, one from each book, had their complete rendered Arabic and English compared offline. All 445 entries were compared in the automated loader and source audit; this is not a claim that every page was visually inspected.",
+    "Desktop browser update and offline behavior do not establish physical iPhone lock-screen or interruption behavior.",
+    "Older cache versions remain available for recovery; this release does not automatically reclaim their storage.",
+    "The all-reading pack still contains complete evidence; this does not resolve full-corpus search indexing, larger source-note pages or the remaining collection."
+  ],
+  "nextWork": [
+    "Continue Prayer source review from selected 446.",
+    "Evaluate source-note partitioning and full-collection search as the collection grows.",
+    "Complete independent text/audio review and physical iPhone cross-recording acceptance."
+  ]
+}

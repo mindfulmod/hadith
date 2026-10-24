@@ -1,3 +1,4 @@
+import {assertHistoricalBook} from './helpers/stable-book.mjs';
 import {ENTRY_COUNT,LAST_NUMBER} from './published-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -15,7 +16,7 @@ test('completed Ghusl retains all previous 273 entries and four stable book pack
  const stable=['opening-revelation-0a534f10d205292c','faith-ad873aab8759ca02','knowledge-e3d5ef7956421322','ablution-4012bd796dae0e95'];
  const previous=[...stable,'ghusl-b69cf6e20716bdec'].flatMap(n=>read('reader/books/'+n+'.json').entries);
  assert.deepEqual(source.entries.slice(0,273),previous);assert.equal(source.entries.length,ENTRY_COUNT);assert.deepEqual(a.slice(0,3),before);
- for(const n of stable)assert.equal(published.files.get('books/'+n+'.json'),readFileSync(new URL('../reader/books/'+n+'.json',import.meta.url),'utf8'));
+ for(const n of stable)assertHistoricalBook(published,'books/'+n+'.json');
  assert.equal(batch.chapters.length,10);assert.deepEqual(batch.entries.map(e=>e.number),Array.from({length:16},(_,i)=>274+i));
  const plan=narrationPlan(source);for(const row of a[1].entries){const e=batch.entries.find(e=>e.number===row.number);assert.equal(row.segments.map(s=>s.arabic).join(''),e.arabic_blocks[0]);assert.deepEqual(e.english_blocks,row.segments.map(s=>s.english));assert.equal(plan.entries.find(p=>p.number===e.number).script,e.english_blocks.join('\n\n'));}
  assert.throws(()=>buildBooks(source,ledger,{production:true}));

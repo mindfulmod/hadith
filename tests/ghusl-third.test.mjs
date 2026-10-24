@@ -1,3 +1,4 @@
+import {assertHistoricalBook} from './helpers/stable-book.mjs';
 import {ENTRY_COUNT,LAST_NUMBER} from './published-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -14,7 +15,7 @@ test('Ghusl third batch preserves all prior 261 entries, four stable packs and e
  const stable=['opening-revelation-0a534f10d205292c','faith-ad873aab8759ca02','knowledge-e3d5ef7956421322','ablution-4012bd796dae0e95'];
  const previous=[...stable,'ghusl-9ac831861e9b4847'].flatMap(n=>read('reader/books/'+n+'.json').entries);
  assert.deepEqual(source.entries.slice(0,261),previous);assert.equal(source.entries.length,ENTRY_COUNT);assert.deepEqual(args.slice(0,3),original);
- for(const n of stable)assert.equal(published.files.get('books/'+n+'.json'),readFileSync(new URL('../reader/books/'+n+'.json',import.meta.url),'utf8'));
+ for(const n of stable)assertHistoricalBook(published,'books/'+n+'.json');
  assert.equal(batch.chapters.length,10);assert.deepEqual(batch.entries.map(e=>e.number),Array.from({length:12},(_,i)=>262+i));
  for(const row of args[1].entries){const entry=batch.entries.find(e=>e.number===row.number);assert.equal(row.segments.map(s=>s.arabic).join(''),entry.arabic_blocks[0]);assert.deepEqual(entry.english_blocks,row.segments.map(s=>s.english));}
  assert.throws(()=>buildBooks(source,ledger,{production:true}));

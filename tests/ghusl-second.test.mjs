@@ -1,3 +1,4 @@
+import {assertHistoricalBook} from './helpers/stable-book.mjs';
 import {ENTRY_COUNT,LAST_NUMBER} from './published-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -11,12 +12,12 @@ import {bookView} from '../reader/library.mjs';
 const read=p=>JSON.parse(readFileSync(new URL('../'+p,import.meta.url),'utf8'));
 const input=()=>[read('content/staging/bukhari-ghusl-wikisource/catalog.json'),read('content/review/ghusl-second-review.json'),read('content/sources/wikisource-ghusl/manifest.json'),BOOK_CONFIGS.ghusl];
 const rehash=row=>{row.englishSha256=digest(row.segments.map(s=>s.english).join('\n\n'));delete row.reviewRecordSha256;row.reviewRecordSha256=objectHash(row);};
-test('Ghusl second batch preserves the first 250 entries and four stable book files exactly',()=>{
+test('Ghusl second batch preserves the first 250 entries and four historical book payloads exactly',()=>{
  const {source,ledger}=collectionFiles(),published=buildBooks(source,ledger),args=input(),before=structuredClone(args.slice(0,3)),batch=buildBookBatch(...args);
  const stable=['opening-revelation-0a534f10d205292c','faith-ad873aab8759ca02','knowledge-e3d5ef7956421322','ablution-4012bd796dae0e95'];
  const previous=[...stable,'ghusl-63bd0e04e12cecc5'].flatMap(n=>read('reader/books/'+n+'.json').entries);
  assert.deepEqual(source.entries.slice(0,250),previous);assert.equal(source.entries.length,ENTRY_COUNT);
- for(const n of stable)assert.equal(published.files.get('books/'+n+'.json'),readFileSync(new URL('../reader/books/'+n+'.json',import.meta.url),'utf8'));
+ for(const n of stable)assertHistoricalBook(published,'books/'+n+'.json');
  assert.deepEqual(args.slice(0,3),before);assert.equal(batch.chapters.length,6);assert.deepEqual(batch.entries.map(e=>e.number),Array.from({length:11},(_,i)=>251+i));
  for(const row of args[1].entries){const e=batch.entries.find(e=>e.number===row.number),original=args[0].blocks.find(b=>b.htmlId===row.paragraphIds[0]).text;assert.deepEqual(e.arabic_blocks,[original]);assert.equal(row.segments.map(s=>s.arabic).join(''),original);assert.deepEqual(e.english_blocks,row.segments.map(s=>s.english));}
  assert.throws(()=>buildBooks(source,ledger,{production:true}));

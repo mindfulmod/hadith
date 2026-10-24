@@ -1,3 +1,4 @@
+import {assertHistoricalBook} from './helpers/stable-book.mjs';
 import {ENTRY_COUNT,BOOK_COUNT,LAST_NUMBER} from './published-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -14,7 +15,7 @@ const rehash=r=>{delete r.reviewRecordSha256;r.reviewRecordSha256=objectHash(r);
 test('Tayammum admission leaves all 326 previous entries and six packs unchanged',()=>{
  const {source,ledger}=collectionFiles(),built=buildBooks(source,ledger),stable=['opening-revelation-0a534f10d205292c','faith-ad873aab8759ca02','knowledge-e3d5ef7956421322','ablution-4012bd796dae0e95','ghusl-1382b7bd3720f4ff','menstruation-95605644e549c484'];
  assert.deepEqual(source.entries.slice(0,326),stable.flatMap(n=>read('reader/books/'+n+'.json').entries));assert.equal(source.entries.length,ENTRY_COUNT);assert.equal(ledger.books.length,BOOK_COUNT);
- for(const n of stable)assert.equal(built.files.get('books/'+n+'.json'),readFileSync(new URL('../reader/books/'+n+'.json',import.meta.url),'utf8'));
+ for(const n of stable)assertHistoricalBook(built,'books/'+n+'.json');
  assert.throws(()=>buildBooks(source,ledger,{production:true}));
 });
 test('all five complete reports preserve their exact Arabic, full chains and narration order',()=>{

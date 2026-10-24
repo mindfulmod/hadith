@@ -1,3 +1,4 @@
+import {assertHistoricalBook} from './helpers/stable-book.mjs';
 import {ENTRY_COUNT,LAST_NUMBER} from './published-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -50,5 +51,5 @@ test('new chapter context stays outside numbered sessions and the former endpoin
  const args=input(),{source,ledger,files}=collectionFiles(),book=ledger.books.find(b=>b.id==='ablution');assert.deepEqual(args[1].chapters.map(c=>c.id),Array.from({length:8},(_,i)=>'chapter-'+(45+i)));
  const text=args[0].blocks.find(b=>b.htmlId==='mwASE').text;assert(files.get('reader/ablution-review.html').includes(text));assert(!source.entries.some(e=>e.arabic_blocks.includes(text)));assert.equal(book.chapters.find(c=>c.id==='chapter-50').sourceContext.introduction.arabicParagraphs,1);
  const saved={numbers:[191],cursor:191,ended:true};assert.deepEqual(resolveSession(source.entries,saved,5,208),saved);assert.equal(nextSession(source.entries,saved,5).cursor,192);assert(planSession(source.entries,191,5).numbers.includes(192));assert.deepEqual(planSession(source.entries,LAST_NUMBER,5).numbers,[LAST_NUMBER]);assert.equal(nextSession(source.entries,{numbers:[LAST_NUMBER],cursor:LAST_NUMBER,ended:true},5),null);
- const built=buildBooks(source,ledger);for(const path of ['books/opening-revelation-0a534f10d205292c.json','books/faith-ad873aab8759ca02.json','books/knowledge-e3d5ef7956421322.json'])assert.equal(built.files.get(path),readFileSync(new URL('../reader/'+path,import.meta.url),'utf8'));assert.deepEqual(read('reader/audio/catalog.json').coverage.recorded,[1,2,3,4,5,6]);assert.throws(()=>buildBooks(source,ledger,{production:true}));
+ const built=buildBooks(source,ledger);for(const path of ['books/opening-revelation-0a534f10d205292c.json','books/faith-ad873aab8759ca02.json','books/knowledge-e3d5ef7956421322.json'])assertHistoricalBook(built,path);assert.deepEqual(read('reader/audio/catalog.json').coverage.recorded,[1,2,3,4,5,6]);assert.throws(()=>buildBooks(source,ledger,{production:true}));
 });

@@ -1,3 +1,4 @@
+import {assertHistoricalBook} from './helpers/stable-book.mjs';
 import {ENTRY_COUNT,LAST_NUMBER} from './published-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -18,7 +19,7 @@ test('Ghusl adds six complete entries while every previous entry and stable book
  const {source,ledger}=collectionFiles(),args=input(),before=structuredClone(args.slice(0,3)),batch=buildBookBatch(...args),published=buildBooks(source,ledger);
  const names=['opening-revelation-0a534f10d205292c','faith-ad873aab8759ca02','knowledge-e3d5ef7956421322','ablution-4012bd796dae0e95'];
  assert.deepEqual(source.entries.slice(0,244),names.flatMap(n=>read('reader/books/'+n+'.json').entries));
- for(const n of names){const path='books/'+n+'.json';assert.equal(published.files.get(path),readFileSync(new URL('../reader/'+path,import.meta.url),'utf8'));}
+ for(const n of names){const path='books/'+n+'.json';assertHistoricalBook(published,path);}
  assert.deepEqual(args.slice(0,3),before);assert.deepEqual(batch.entries.map(e=>e.number),[245,246,247,248,249,250]);assert.equal(batch.chapters.length,3);assert.equal(source.entries.length,ENTRY_COUNT);
  for(const row of args[1].entries){const entry=batch.entries.find(e=>e.number===row.number);assert.equal(entry.arabic_blocks[0],args[0].blocks.find(b=>b.htmlId===row.paragraphIds[0]).text);assert.deepEqual(entry.english_blocks,row.segments.map(s=>s.english));}
 });

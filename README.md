@@ -736,3 +736,14 @@ Validation: **363 Node + 78 Python tests**, all thirteen integrity commands, and
 The complete reading download is approximately **15.15 MB**. The verification record includes its largest files; longer source-note pages and comparison inputs need further scaling work before substantially larger books. This browser check does not certify full-corpus or physical iPhone performance.
 
 Complete scripts cover 445 entries; actual Cedar audio remains **1–6**. Prayer 446 starts the next source batch; 53 Prayer candidates remain outside the reader. Independent Arabic, English, chapter, reference and spoken-word review remain unfinished.
+
+
+### Smaller complete reading downloads — 23 October 2026
+
+Public book JSON, the collection catalog, the offline source record and the comparison-input files now omit structural indentation. Every parsed source value is unchanged. The canonical 445-entry source hash remains `f3096199f81c4294b2fdddd55c765a02e4666e3b9338b7c7bbae5a33b719cf30`; review/admission records, source-note HTML, all recordings and artwork are unchanged. Editable research and source-review records keep their readable formatting. Do not manually minify source strings or remove their internal whitespace.
+
+The current reading pack falls from **15,145,553 to 13,046,164 bytes**, saving **2,099,389 bytes (13.86%)**. These are decoded file/Cache Storage body sizes; actual wire savings depend on server compression. All eight book filenames change once because their bytes change. Older files remain available, and subsequent source-only additions still preserve unchanged book files. Older cached copies are not automatically removed.
+
+Validation: **365 Node + 78 Python tests** and all thirteen source/release integrity commands pass. The complete parsed contents of eighteen changed JSON files match the previous release, except the catalog’s expected file-path/size/hash descriptors. Both encodings reconstruct all 445 entries and references through the verified loader. An interrupted upgrade preserves the old offline release, refuses partial new content and resumes with only unfinished downloads. Historical batch tests retain their fixed original content fixtures; byte stability across content-only releases remains separately tested.
+
+In the browser, the updater waited for the older reader tab to close, preserving its open report. The bookmark and Continue place survived activation. After saving the compact pack and stopping the preview server, complete Arabic/English from all eight books, chapter source notes and exact phrase search remained available. Evidence and scope limits: `research/compact-json-verification.json`. This remains a personal prototype with independent content review and further iPhone acceptance pending; the next source batch starts at Prayer 446.
