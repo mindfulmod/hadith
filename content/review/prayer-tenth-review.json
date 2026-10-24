@@ -1,0 +1,1976 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-23",
+  "status": "personal-prototype-only",
+  "independentReview": "pending",
+  "sourceId": "wikisource-bukhari-prayer-r522110",
+  "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+  "inventorySha256": "c20bf799ffe65f7a219cc0f8ac3b8f82bc7627b60666bcff2ba7756a04934884",
+  "sourceLayout": {
+    "schemaVersion": 1,
+    "sourceId": "wikisource-bukhari-prayer-r522110",
+    "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+    "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+    "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6"
+  },
+  "sources": [
+    {
+      "id": "arabic-prayer",
+      "label": "Arabic Wikisource · fixed revision 522110",
+      "kind": "arabic-input",
+      "format": "web",
+      "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_الصلاة&oldid=522110"
+    },
+    {
+      "id": "bewley-prayer",
+      "label": "Aisha Bewley · Book of Prayer and Clothing in the Prayer",
+      "kind": "english-comparison",
+      "format": "web",
+      "url": "https://aishabewley.org/bukhari5"
+    },
+    {
+      "id": "islamhouse-khan",
+      "label": "IslamHouse · Khan-family English comparison",
+      "kind": "english-comparison",
+      "format": "web",
+      "url": "https://islamhouse.com/en/books/70510"
+    },
+    {
+      "id": "brill-1862",
+      "label": "Historical Arabic print · Brill 1862",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf",
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+    },
+    {
+      "id": "dar-ibn-kathir-2002",
+      "label": "Arabic print · Dar Ibn Kathir 2002",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+    },
+    {
+      "id": "bewley-prayer-sutra",
+      "label": "Aisha Bewley · Bukhari · chapters on the sutrah",
+      "kind": "english-comparison",
+      "format": "web",
+      "url": "https://aishabewley.org/bukhari6"
+    },
+    {
+      "id": "fath-prayer-stops-470",
+      "label": "Ibn Hajar · Fath al-Bari · prayer stops on the Madinah road",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/ar/library/content/52/920/?idfrom=&idto=&start="
+    },
+    {
+      "id": "dorar-sarhah-470",
+      "label": "Dorar · explanation of the sarhah tree near al-Ruwaythah",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://dorar.net/hadith/sharh/22408"
+    }
+  ],
+  "scope": "Complete selected Prayer reports 469–484 and chapters 88–96, including a standalone heading with no numbered hadith. One Arabic chapter introduction remains separately browseable, outside daily sessions and narration, with English pending.",
+  "editionNote": "All sixteen selected Arabic reports remain unchanged. The nine accounts grouped in 470 remain complete, with only one complete English comparison and an explicitly recorded omission notice in the second source. Edition book boundaries, differing English page locations, the absent comparison at 484, variant names and full closing transmissions remain documented. AI-assisted personal prototype; independent review pending.",
+  "chapters": [
+    {
+      "id": "chapter-88",
+      "headingId": "باب_المساجد_التي_على_طرق_المدينة_والمواضع_التي_صلى_فيها_النبي_ﷺ",
+      "contextIds": [],
+      "entryNumbers": [
+        469,
+        470
+      ],
+      "title": "Mosques on the roads to Madinah and places where the Prophet prayed",
+      "titleArabic": "باب المساجد التي على طرق المدينة والمواضع التي صلى فيها النبي ﷺ",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-89",
+      "headingId": "أبواب_سترة_المصلي",
+      "contextIds": [],
+      "entryNumbers": [],
+      "title": "Chapters on the barrier before a person praying",
+      "titleArabic": "أبواب سترة المصلي",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-90",
+      "headingId": "باب_سترة_الإمام_سترة_من_خلفه",
+      "contextIds": [],
+      "entryNumbers": [
+        471,
+        472,
+        473
+      ],
+      "title": "The imam’s barrier is a barrier for those behind him",
+      "titleArabic": "باب سترة الإمام سترة من خلفه",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-91",
+      "headingId": "باب_قدر_كم_ينبغي_أن_تكون_بين_المصلي_والسترة",
+      "contextIds": [],
+      "entryNumbers": [
+        474,
+        475
+      ],
+      "title": "How much space should be between the person praying and the barrier",
+      "titleArabic": "باب قدر كم ينبغي أن تكون بين المصلي والسترة",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-92",
+      "headingId": "باب_الصلاة_إلى_الحربة",
+      "contextIds": [],
+      "entryNumbers": [
+        476
+      ],
+      "title": "Prayer facing a spear",
+      "titleArabic": "باب الصلاة إلى الحربة",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-93",
+      "headingId": "باب_الصلاة_إلى_العنزة",
+      "contextIds": [],
+      "entryNumbers": [
+        477,
+        478
+      ],
+      "title": "Prayer facing a short spear",
+      "titleArabic": "باب الصلاة إلى العنزة",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-94",
+      "headingId": "باب_السترة_بمكة_وغيرها",
+      "contextIds": [],
+      "entryNumbers": [
+        479
+      ],
+      "title": "The barrier in Makkah and elsewhere",
+      "titleArabic": "باب السترة بمكة وغيرها",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-95",
+      "headingId": "باب_الصلاة_إلى_الأسطوانة",
+      "contextIds": [
+        "mwAgc"
+      ],
+      "entryNumbers": [
+        480,
+        481
+      ],
+      "title": "Prayer facing a pillar",
+      "titleArabic": "باب الصلاة إلى الأسطوانة",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "Original Arabic chapter introduction preserved separately; English translation remains pending."
+    },
+    {
+      "id": "chapter-96",
+      "headingId": "باب_الصلاة_بين_السواري_في_غير_جماعة",
+      "contextIds": [],
+      "entryNumbers": [
+        482,
+        483,
+        484
+      ],
+      "title": "Prayer between pillars outside congregational prayer",
+      "titleArabic": "باب الصلاة بين السواري في غير جماعة",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    }
+  ],
+  "entries": [
+    {
+      "number": 469,
+      "id": "bukhari:469",
+      "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAd0:0",
+      "chapterId": "chapter-88",
+      "paragraphIds": [
+        "mwAd0"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-prayer-r522110",
+        "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+        "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+        "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+        "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAd0:0",
+        "sourceReference": {
+          "label": "469",
+          "number": 469,
+          "markerId": "mwAd0:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAd0",
+            "textSha256": "c44b066aa471223516e1a2e8c171122da13c9ab018ed2801af478396856488f2",
+            "origin": {
+              "blockId": "mwAd0",
+              "blockSha256": "c44b066aa471223516e1a2e8c171122da13c9ab018ed2801af478396856488f2",
+              "start": 0,
+              "end": 353
+            }
+          }
+        ]
+      },
+      "segments": [
+        {
+          "id": "469-1",
+          "paragraphId": "mwAd0",
+          "start": 0,
+          "end": 91,
+          "kind": "chain",
+          "arabic": "[469] حدثنا محمد بن أبي بكر المقدمي قال: حدثنا فضيل بن سليمان قال: حدثنا موسى بن عقبة قال: ",
+          "english": "Muhammad ibn Abi Bakr al-Muqaddami related to us. He said: Fudayl ibn Sulayman related to us. He said: Musa ibn ‘Uqbah related to us. He said:",
+          "arabicSha256": "508f18029c703a884d2c7c5b338d51fe2fc0addd81bd521baa1424913b3cebb3",
+          "englishSha256": "dcd418f9a64596e5d7a0c4b5e384165a702b98bf5b704e733b11070896217ac8"
+        },
+        {
+          "id": "469-2",
+          "paragraphId": "mwAd0",
+          "start": 91,
+          "end": 211,
+          "kind": "report",
+          "arabic": "رأيت سالم بن عبد الله يتحرى أماكن من الطريق فيصلي فيها ويحدث أن أباه كان يصلي فيها وأنه رأى النبي ﷺ يصلي في تلك الأمكنة ",
+          "english": "I saw Salim ibn ‘Abd Allah seek out places along the road and pray in them. He related that his father used to pray in them and that he had seen the Prophet, may Allah bless him and grant him peace, pray in those places.",
+          "arabicSha256": "3cbb030661de9ef451195e6b6a2c4bd5c83b61e16ba2d229d2535daa78e50d56",
+          "englishSha256": "47575c1192e84c1f2b8006c40be40ede877aac2dcd92ec8e58d08bb9fc6755dd"
+        },
+        {
+          "id": "469-3",
+          "paragraphId": "mwAd0",
+          "start": 211,
+          "end": 353,
+          "kind": "transmission-note",
+          "arabic": "وحدثني نافع عن ابن عمر أنه كان يصلي في تلك الأمكنة وسألت سالما فلا أعلمه إلا وافق نافعا في الأمكنة كلها إلا أنهما اختلفا في مسجد بشرف الروحاء ",
+          "english": "And Nafi‘ related to me, from Ibn ‘Umar, that he used to pray in those places. I asked Salim, and I know of nothing other than his agreement with Nafi‘ about all the places, except that they differed about a mosque at Sharaf al-Rawha’.",
+          "arabicSha256": "47dfad26d737f39e30b375d228fb6df2ef436df583079e63e0b73c1b3403f273",
+          "englishSha256": "7ca2401dd96e24e4876edddd4ea5a7cff132877efc1069026f2b8bc4e0d15ab5"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            132,
+            133
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            128,
+            129
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "469"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.8.470",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.470",
+            "recordSha256": "713133123b5b385e9c768617daf3f638635414e68ea3f077b163a62f48add0d2"
+          }
+        }
+      ],
+      "notes": [
+        "The complete chain and closing Nafi‘ transmission remain. The first-person speaker in I saw and I asked is not changed to Ibn ‘Umar. The closing agreement and exception for the mosque at Sharaf al-Rawha’ remain visible outside the opening chain."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and two individually matched English comparison families. Omissions, shared references and wording variants remain documented. Independent Arabic, English, lexical, chapter and reference review is pending; this is not certification.",
+      "arabicSha256": "c44b066aa471223516e1a2e8c171122da13c9ab018ed2801af478396856488f2",
+      "englishSha256": "55d50683fe5fb8e57562b869faf64387b42d67392151f02550ce68599956ab44",
+      "reviewRecordSha256": "e40da37c19f4bbe41a65c3d0bfff732542ebe75565dc1decef570e9f62373787"
+    },
+    {
+      "number": 470,
+      "id": "bukhari:470",
+      "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAd8:0",
+      "chapterId": "chapter-88",
+      "paragraphIds": [
+        "mwAd8"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-prayer-r522110",
+        "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+        "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+        "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+        "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAd8:0",
+        "sourceReference": {
+          "label": "470",
+          "number": 470,
+          "markerId": "mwAd8:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAd8",
+            "textSha256": "61baa0e978e8e8b70780afebfcf1e8e2ca10d0927a9561a95121712973386ebd",
+            "origin": {
+              "blockId": "mwAd8",
+              "blockSha256": "61baa0e978e8e8b70780afebfcf1e8e2ca10d0927a9561a95121712973386ebd",
+              "start": 0,
+              "end": 2620
+            }
+          }
+        ]
+      },
+      "segments": [
+        {
+          "id": "470-1",
+          "paragraphId": "mwAd8",
+          "start": 0,
+          "end": 103,
+          "kind": "chain",
+          "arabic": "[470] حدثنا إبراهيم بن المنذر قال: حدثنا أنس بن عياض قال: حدثنا موسى بن عقبة عن نافع أن عبد الله أخبره ",
+          "english": "Ibrahim ibn al-Mundhir related to us. He said: Anas ibn ‘Iyad related to us. He said: Musa ibn ‘Uqbah related to us, from Nafi‘, that ‘Abd Allah informed him:",
+          "arabicSha256": "d52b98fe974e1d610192664e8782c00cfddb91d9f1f8950fb4e149592b0d1756",
+          "englishSha256": "926141cad5b9064bdf97888074fd72cacf9b58545110214ba994a6fa554dae70"
+        },
+        {
+          "id": "470-2",
+          "paragraphId": "mwAd8",
+          "start": 103,
+          "end": 550,
+          "kind": "report",
+          "arabic": "أن رسول الله ﷺ كان ينزل بذي الحليفة حين يعتمر وفي حجته حين حج تحت سمرة في موضع المسجد الذي بذي الحليفة وكان إذا رجع من غزو كان في تلك الطريق أو حج أو عمرة هبط من بطن واد فإذا ظهر من بطن واد أناخ بالبطحاء التي على شفير الوادي الشرقية فعرس ثم حتى يصبح ليس عند المسجد الذي بحجارة ولا على الأكمة التي عليها المسجد كان ثم خليج يصلي عبد الله عنده في بطنه كثب كان رسول الله ﷺ ثم يصلي فدحا السيل فيه بالبطحاء حتى دفن ذلك المكان الذي كان عبد الله يصلي فيه ",
+          "english": "The Messenger of Allah, may Allah bless him and grant him peace, used to stop at Dhu al-Hulayfah when performing ‘umrah, and on his Hajj when he performed Hajj, under a samurah tree at the site of the mosque at Dhu al-Hulayfah. When he returned from an expedition on that road, or from Hajj or ‘umrah, he descended into the valley bed. When he emerged from the valley bed, he made his camel kneel on the pebbly ground at the eastern edge of the valley and rested there until morning. It was not by the mosque built of stones, nor on the hill on which the mosque stood. There was a channel there, beside which ‘Abd Allah used to pray. In its bed were heaps of sand. The Messenger of Allah, may Allah bless him and grant him peace, used to pray there. Then the flood pushed pebbles into it until it buried the place where ‘Abd Allah used to pray.",
+          "arabicSha256": "953a4132adeb55d2b197d505f186bb98d15fa61b0422987eb1b61f682bfe980a",
+          "englishSha256": "6e5c52c8beccd9d6174cb6d3c871de78c7ba61fef49fb179606bb3360606eff7"
+        },
+        {
+          "id": "470-3",
+          "paragraphId": "mwAd8",
+          "start": 550,
+          "end": 836,
+          "kind": "report",
+          "arabic": "وأن عبد الله بن عمر حدثه أن النبي ﷺ صلى حيث المسجد الصغير الذي دون المسجد الذي بشرف الروحاء وقد كان عبد الله يعلم المكان الذي كان صلى فيه النبي ﷺ يقول: ثم عن يمينك حين تقوم في المسجد تصلي وذلك المسجد على حافة الطريق اليمنى وأنت ذاهب إلى مكة بينه وبين المسجد الأكبر رمية بحجر أو نحو ذلك ",
+          "english": "And ‘Abd Allah ibn ‘Umar related to him that the Prophet, may Allah bless him and grant him peace, prayed where the small mosque stood, before the mosque at Sharaf al-Rawha’. ‘Abd Allah used to mark out the place where the Prophet, may Allah bless him and grant him peace, had prayed, saying: “There, on your right when you stand in the mosque to pray.” That mosque was on the right edge of the road as you go toward Makkah. Between it and the larger mosque was a stone’s throw, or about that.",
+          "arabicSha256": "3734ffa433e4cf1045c44bca7d5252ca5fca9967fddf49e853a1e8469be45248",
+          "englishSha256": "3f462a48bfdf2a16e49e84c9c373b6e7ebf1e5cbb3508887b3ae7eeb1efa3aed"
+        },
+        {
+          "id": "470-4",
+          "paragraphId": "mwAd8",
+          "start": 836,
+          "end": 1250,
+          "kind": "report",
+          "arabic": "وأن بن عمر كان يصلي إلى العرق الذي عند منصرف الروحاء وذلك العرق انتهاء طرفه على حافة الطريق دون المسجد الذي بينه وبين المنصرف وأنت ذاهب إلى مكة وقد ابتني ثم مسجد فلم يكن عبد الله يصلي في ذلك المسجد كان يتركه عن يساره ووراءه ويصلي أمامه إلى العرق نفسه وكان عبد الله يروح من الروحاء فلا يصلي الظهر حتى يأتي ذلك المكان فيصلي فيه الظهر وإذا أقبل من مكة فإن مر به قبل الصبح بساعة أو من آخر السحر عرس حتى يصلي بها الصبح ",
+          "english": "And Ibn ‘Umar used to pray toward al-‘Irq at Munsaraf al-Rawha’. The end of al-‘Irq reached the edge of the road, before the mosque between it and al-Munsaraf as you go toward Makkah. A mosque had been built there, but ‘Abd Allah did not pray in that mosque. He left it to his left and behind him, and prayed in front of it toward al-‘Irq itself. ‘Abd Allah used to leave al-Rawha’ and not pray Dhuhr until he reached that place, where he prayed Dhuhr. When coming from Makkah, if he passed it a while before dawn or at the end of the pre-dawn period, he rested until he prayed Subh there.",
+          "arabicSha256": "3bad749c72ccf59d2e14e30d8d639ab427a194a29bb1648343d7376ac573b1cb",
+          "englishSha256": "8bd431af4554ceb7e3e8685dce11bf6b8f2219f6f891ddd7a4e0a59c507f50f6"
+        },
+        {
+          "id": "470-5",
+          "paragraphId": "mwAd8",
+          "start": 1250,
+          "end": 1471,
+          "kind": "report",
+          "arabic": "وأن عبد الله حدثه أن النبي ﷺ كان ينزل تحت سرحة ضخمة دون الرويثة عن يمين الطريق ووجاه الطريق في مكان بطح سهل حتى يفضي من أكمة دوين بريد الرويثة بميلين وقد انكسر أعلاها فانثنى في جوفها وهي قائمة على ساق وفي ساقها كثب كثيرة ",
+          "english": "And ‘Abd Allah related to him that the Prophet, may Allah bless him and grant him peace, used to stop under a large sarhah tree before al-Ruwaythah, to the right of the road and facing the road, in a broad, level place, until he emerged from a hill two miles before the postal stop at al-Ruwaythah. Its top had broken and bent into its hollow. It remained standing on a trunk, with many heaps of sand at its base.",
+          "arabicSha256": "8bca7868abde2ff8374667aa3c6836ee639fe73cfeeb6844f16b5a219070827e",
+          "englishSha256": "7d6de251b743237c2b650b34800313f2d147785c6747d2bce921e6b5c3704f76"
+        },
+        {
+          "id": "470-6",
+          "paragraphId": "mwAd8",
+          "start": 1471,
+          "end": 1740,
+          "kind": "report",
+          "arabic": "وأن عبد الله بن عمر حدثه أن النبي ﷺ صلى في طرف تلعة من وراء العرج وأنت ذاهب إلى هضبة عند ذلك المسجد قبران أو ثلاثة على القبور رضم من حجارة عن يمين الطريق عند سلمات الطريق بين أولئك السلمات كان عبد الله يروح من العرج بعد أن تميل الشمس بالهاجرة فيصلي الظهر في ذلك المسجد ",
+          "english": "And ‘Abd Allah ibn ‘Umar related to him that the Prophet, may Allah bless him and grant him peace, prayed at the edge of a watercourse beyond al-‘Arj as you go toward a hill. Beside that mosque were two or three graves, with heaps of stones on the graves, to the right of the road by the roadside rocks. ‘Abd Allah used to leave al-‘Arj after the sun had declined in the midday heat and pray Dhuhr in that mosque among those rocks.",
+          "arabicSha256": "d3f02fc9469d46b0f9aa46b6fb0f1eb30d0f03a8d9b550bcdcfcd763c7fed924",
+          "englishSha256": "08e0e35ef05811e78d64751164edd9d69f902835cc962c277bbf8a24937fd848"
+        },
+        {
+          "id": "470-7",
+          "paragraphId": "mwAd8",
+          "start": 1740,
+          "end": 1949,
+          "kind": "report",
+          "arabic": "وأن عبد الله بن عمر حدثه أن رسول الله ﷺ نزل عند سرحات عن يسار الطريق في مسيل دون هرشي ذلك المسيل لاصق بكراع هرشي بينه وبين الطريق قريب من غلوة وكان عبد الله يصلي إلى سرحة هي أقرب السرحات إلى الطريق وهي أطولهن ",
+          "english": "And ‘Abd Allah ibn ‘Umar related to him that the Messenger of Allah, may Allah bless him and grant him peace, stopped by sarhah trees to the left of the road in a watercourse before Harsha. That watercourse adjoined the spur of Harsha, with about a bowshot between it and the road. ‘Abd Allah used to pray toward the sarhah tree nearest the road, which was the tallest of them.",
+          "arabicSha256": "f55411e0cacef7e1b27e9bdf116d17c7500c8dfe991c810e37aa5c6c0cafa982",
+          "englishSha256": "5db5d8e0d5d4bb4d93acbd71fe01d2c6403d2605793f10870a65898782e46834"
+        },
+        {
+          "id": "470-8",
+          "paragraphId": "mwAd8",
+          "start": 1949,
+          "end": 2169,
+          "kind": "report",
+          "arabic": "وأن عبد الله بن عمر حدثه أن النبي ﷺ كان ينزل في المسيل الذي في أدنى مر الظهران قبل المدينة حين يهبط من الصفراوات ينزل في بطن ذلك المسيل عن يسار الطريق وأنت ذاهب إلى مكة ليس بين منزل رسول الله ﷺ وبين الطريق إلا رمية بحجر ",
+          "english": "And ‘Abd Allah ibn ‘Umar related to him that the Prophet, may Allah bless him and grant him peace, used to stop in the watercourse at the nearest part of Marr al-Zahran toward Madinah when descending from al-Safrawat. He stopped in the bed of that watercourse, to the left of the road as you go toward Makkah. Between the stopping place of the Messenger of Allah, may Allah bless him and grant him peace, and the road was only a stone’s throw.",
+          "arabicSha256": "b1f82188ff9e5725daa94e843369460655f8f1592eb3483a7946e17b2386e62d",
+          "englishSha256": "e07bd38859c1f2f9ad87a2c9e2b82687cfaa2130569110863430fe067f88d4e5"
+        },
+        {
+          "id": "470-9",
+          "paragraphId": "mwAd8",
+          "start": 2169,
+          "end": 2356,
+          "kind": "report",
+          "arabic": "وأن عبد الله بن عمر حدثه أن النبي ﷺ كان ينزل بذي طوى ويبيت حتى يصبح يصلي الصبح حين يقدم مكة ومصلى رسول الله ﷺ ذلك على أكمة غليظة ليس في المسجد الذي بني ثم ولكن أسفل من ذلك على أكمة غليظة ",
+          "english": "And ‘Abd Allah ibn ‘Umar related to him that the Prophet, may Allah bless him and grant him peace, used to stop at Dhu Tuwa and spend the night until morning, praying Subh when he came to Makkah. That prayer place of the Messenger of Allah, may Allah bless him and grant him peace, was on a rough hill. It was not in the mosque built there, but lower down on a rough hill.",
+          "arabicSha256": "a9817ee910bae477edb73c8f2539514071e543c5c8eb4c7e208af76cb351f082",
+          "englishSha256": "73fbf87be669d4f93e196adaf027a93d349297dbb80febcf728907228c9396cc"
+        },
+        {
+          "id": "470-10",
+          "paragraphId": "mwAd8",
+          "start": 2356,
+          "end": 2620,
+          "kind": "report",
+          "arabic": "وأن عبد الله حدثه أن النبي ﷺ استقبل فرضتي الجبل الذي بينه وبين الجبل الطويل نحو الكعبة فجعل المسجد الذي بني ثم يسار المسجد بطرف الأكمة ومصلى النبي ﷺ أسفل منه على الأكمة السوداء تدع من الأكمة عشرة أذرع أو نحوها ثم تصلي مستقبل الفرضتين من الجبل الذي بينك وبين الكعبة",
+          "english": "And ‘Abd Allah related to him that the Prophet, may Allah bless him and grant him peace, faced the two gaps in the mountain between him and the tall mountain toward the Ka‘bah. He placed the mosque built there to the left of the mosque at the edge of the hill. The prayer place of the Prophet, may Allah bless him and grant him peace, was lower down on the black hill. Leave about ten cubits of the hill, or thereabouts, then pray facing the two gaps in the mountain between you and the Ka‘bah.",
+          "arabicSha256": "35a7fa93c5a3096c4cf5d312d43c27a8e07314cd1d0a32afddf53ba34ee4841b",
+          "englishSha256": "cc5638cf8388e2669650d4683994eedeb53440c3c0056950757d804b409265e1"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            133,
+            134,
+            135
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            129,
+            130
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "470"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.8.471",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.471",
+            "recordSha256": "9e9913025e900edae2f022a3de58fe0ff76ee607b92bf035996fc3246c9cb0e6"
+          },
+          "status": "translation-omitted",
+          "checkedBody": [
+            "Narrated Hadith is about the various places on the way from Medina to Mecca where the Prophet prayed and their In locations impossible to translate. "
+          ],
+          "note": "The exact pinned body is an omission notice, not an English translation. The full selected Arabic is compared with both printed witnesses and Bewley 470; no complete second English comparison is claimed."
+        }
+      ],
+      "notes": [
+        "This one selected entry contains nine accounts of prayer stops. Both printed witnesses were inspected across their complete spans; the modern print numbers the accounts 484–492. All repeated attributions, location clauses and thirteen Prophet honorifics remain. The English is a new provisional translation, not copied from the comparison.",
+        "The pinned Khan-family reference 1.8.471 contains only an omission notice saying that the locations are impossible to translate; it supplies no English report body. Bewley 470 provides a complete English comparison, read in full. This entry therefore has only one complete English comparison, alongside two Arabic prints and the selected digital Arabic.",
+        "Ibn Hajar’s lexical discussion was consulted for marks out, al-‘Irq, the road features, place names and measures. Samurah and sarhah remain distinct transliterated tree terms. The selected until is retained although the historical print has when. Miles and cubits are not converted into modern measures.",
+        "The sarhah’s broken top, trunk and sand heaps remain. Dorar’s explanation explicitly identifies the tree as the antecedent. The road’s salimat is provisionally rendered rocks; Ibn Hajar records a different vocalization denoting trees. The final repeated mosque wording and changes of grammatical person are preserved without silently repairing the geography. Independent lexical, place-name and syntactic review remains pending."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and two individually matched English comparison families. Omissions, shared references and wording variants remain documented. Independent Arabic, English, lexical, chapter and reference review is pending; this is not certification.",
+      "arabicSha256": "61baa0e978e8e8b70780afebfcf1e8e2ca10d0927a9561a95121712973386ebd",
+      "englishSha256": "c45529fa8e804ae71afa7e5a566ea8b02873da874c24b932231f70828c01a696",
+      "additionalCitations": [
+        {
+          "id": "lexical-stops",
+          "sourceId": "fath-prayer-stops-470",
+          "locator": "Fath al-Bari · volume 1, pages 678–680 · road stops and lexical variants",
+          "scope": "Consulted for selected geographical terms, marks out, variant readings and measures. Commentary stays separate; independent review remains pending."
+        },
+        {
+          "id": "sarhah-antecedent",
+          "sourceId": "dorar-sarhah-470",
+          "locator": "Explanation of modern Bukhari 487 · broken sarhah tree",
+          "scope": "Consulted for the tree antecedent in the description of the broken top, trunk and sand heaps. No explanatory narrative is inserted."
+        }
+      ],
+      "reviewRecordSha256": "94e082cad2bd853148bbfe521be34b4066cd1b3b273abd3eda5e10ac0312c228"
+    },
+    {
+      "number": 471,
+      "id": "bukhari:471",
+      "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAfE:0",
+      "chapterId": "chapter-90",
+      "paragraphIds": [
+        "mwAfE"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-prayer-r522110",
+        "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+        "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+        "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+        "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAfE:0",
+        "sourceReference": {
+          "label": "471",
+          "number": 471,
+          "markerId": "mwAfE:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAfE",
+            "textSha256": "58042ca2f1033e3c0fe40ceabb6825a4ea91cb20aef8a6b03d095a6164d7c6de",
+            "origin": {
+              "blockId": "mwAfE",
+              "blockSha256": "58042ca2f1033e3c0fe40ceabb6825a4ea91cb20aef8a6b03d095a6164d7c6de",
+              "start": 0,
+              "end": 300
+            }
+          }
+        ]
+      },
+      "segments": [
+        {
+          "id": "471-1",
+          "paragraphId": "mwAfE",
+          "start": 0,
+          "end": 119,
+          "kind": "chain",
+          "arabic": "[471] حدثنا عبد الله بن يوسف قال: أخبرنا مالك عن ابن شهاب عن عبيد الله بن عبد الله بن عتبة عن عبد الله بن عباس أنه قال ",
+          "english": "‘Abd Allah ibn Yusuf related to us. He said: Malik informed us, from Ibn Shihab, from ‘Ubayd Allah ibn ‘Abd Allah ibn ‘Utbah, from ‘Abd Allah ibn ‘Abbas, who said:",
+          "arabicSha256": "6ae8ed2366ebaa5537be3db2bd86601bf47cae0f60771ce2c2c7ded2675ce392",
+          "englishSha256": "ad0c5f3896adc40066abc829cad3305ec9fc170a80bbcbdc3c84b6c4d1c0fb30"
+        },
+        {
+          "id": "471-2",
+          "paragraphId": "mwAfE",
+          "start": 119,
+          "end": 300,
+          "kind": "report",
+          "arabic": "أقبلت راكبا على حمار أتان وأنا يومئذ قد ناهزت الاحتلام ورسول الله ﷺ يصلي بالناس بمنى إلى غير جدار فمررت بين يدي بعض الصف فنزلت وأرسلت الأتان ترتع ودخلت في الصف فلم ينكر ذلك علي أحد ",
+          "english": "I came riding a she-donkey when I was nearing puberty. The Messenger of Allah, may Allah bless him and grant him peace, was leading the people in prayer at Mina without facing a wall. I passed in front of part of the row, dismounted, and let the donkey graze. I entered the row, and no one objected to me for that.",
+          "arabicSha256": "768f770751db8bf01552dc3e37920a036cf37eac39821e1682c6e4b4cd2831b0",
+          "englishSha256": "2a08b6f01b9bccafb03c292cf094a8a2ed2f3e7297aa2a2ff741c6ad04949d6b"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            135
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            130
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "471",
+          "sourceId": "bewley-prayer-sutra"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.9.472",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.9.472",
+            "recordSha256": "83f7b31acc24bb8b101f60df8b6b27500981f685a4eba8c0c6a58d72aea01180"
+          }
+        }
+      ],
+      "notes": [
+        "Nearing puberty follows أناهز الاحتلام rather than the comparison’s just attained puberty. The selected without facing a wall remains although absent from one English comparison. The she-donkey, passing before part of the row, grazing, joining the row and absence of rebuke remain. The Khan-family source changes to Book 9 here; this is a separately evidenced reference, not a numbering formula."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and two individually matched English comparison families. Omissions, shared references and wording variants remain documented. Independent Arabic, English, lexical, chapter and reference review is pending; this is not certification.",
+      "arabicSha256": "58042ca2f1033e3c0fe40ceabb6825a4ea91cb20aef8a6b03d095a6164d7c6de",
+      "englishSha256": "bea66f2349ac2ce22bc17bba8f327705cdbe2395f1863820276a16e67e483013",
+      "reviewRecordSha256": "3eb42603c9f7aeb22afdee714906eb3e78ea2cf0365e26cc37b8b1ca30b7af24"
+    },
+    {
+      "number": 472,
+      "id": "bukhari:472",
+      "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAfM:0",
+      "chapterId": "chapter-90",
+      "paragraphIds": [
+        "mwAfM"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-prayer-r522110",
+        "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+        "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+        "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+        "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAfM:0",
+        "sourceReference": {
+          "label": "472",
+          "number": 472,
+          "markerId": "mwAfM:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAfM",
+            "textSha256": "0c32b039a040b6345dbf5ac552b5aad7f1d8dd85538e0d11aab6205c6d41d711",
+            "origin": {
+              "blockId": "mwAfM",
+              "blockSha256": "0c32b039a040b6345dbf5ac552b5aad7f1d8dd85538e0d11aab6205c6d41d711",
+              "start": 0,
+              "end": 220
+            }
+          }
+        ]
+      },
+      "segments": [
+        {
+          "id": "472-1",
+          "paragraphId": "mwAfM",
+          "start": 0,
+          "end": 86,
+          "kind": "chain",
+          "arabic": "[472] حدثنا إسحاق قال: حدثنا عبد الله بن نمير قال: حدثنا عبيد الله عن نافع عن ابن عمر ",
+          "english": "Ishaq related to us. He said: ‘Abd Allah ibn Numayr related to us. He said: ‘Ubayd Allah related to us, from Nafi‘, from Ibn ‘Umar:",
+          "arabicSha256": "c6c5d2eb97439babeec93634616d9bd4428d3b00b7abf75703a36a9c240ae73d",
+          "englishSha256": "9aa751f83bc14adcf8c86efc56dea3f5e56b430b8ae2032f4fadcfac2eab4759"
+        },
+        {
+          "id": "472-2",
+          "paragraphId": "mwAfM",
+          "start": 86,
+          "end": 198,
+          "kind": "report",
+          "arabic": "أن رسول الله ﷺ كان إذا خرج يوم العيد أمر بالحربة فتوضع بين يديه فيصلي إليها والناس وراءه وكان يفعل ذلك في السفر ",
+          "english": "When the Messenger of Allah, may Allah bless him and grant him peace, went out on the day of Eid, he ordered a spear to be set before him. He prayed facing it, with the people behind him, and he used to do that when travelling.",
+          "arabicSha256": "64c31fcd0294e3f153997e74c78c129bc8ce6e3bd0373a36fb207d571b73235b",
+          "englishSha256": "6c923b98d7fc2d6e9eb008a61b6cf9925657e0cd0cd393fa85b68da6fca9bffe"
+        },
+        {
+          "id": "472-3",
+          "paragraphId": "mwAfM",
+          "start": 198,
+          "end": 220,
+          "kind": "transmission-note",
+          "arabic": "فمن ثم اتخذها الأمراء ",
+          "english": "From that, the rulers adopted it.",
+          "arabicSha256": "e8717806b4ddea03bc84607ae3c4541307832d918981edd9cc73701e3490d45b",
+          "englishSha256": "ad82438b33bc56dabb45f2016311c0d0846640c5fdf621d89799b7137b1190b3"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            135
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            130
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "472",
+          "sourceId": "bewley-prayer-sutra"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.9.473",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.9.473",
+            "recordSha256": "860dfd5e32b81c879d0e6c54a1d85a5158b1200ca619a99cb58b33cd688fd935"
+          }
+        }
+      ],
+      "notes": [
+        "The complete spear, Eid and travel account remains. The closing rulers adopted it clause is kept as a visible transmission note, not silently omitted or turned into a new command. Harbah is provisionally spear, distinguished from the short spear used for ‘anazah in later reports."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and two individually matched English comparison families. Omissions, shared references and wording variants remain documented. Independent Arabic, English, lexical, chapter and reference review is pending; this is not certification.",
+      "arabicSha256": "0c32b039a040b6345dbf5ac552b5aad7f1d8dd85538e0d11aab6205c6d41d711",
+      "englishSha256": "9531a1da5bb4dc106e3c5261ac685dace6996dbbce73cc56e19aebcbf9e500f4",
+      "reviewRecordSha256": "452e290701a4c23edfd9ebbcaf7c2e32fdae2d184829624ae951d602537b3c5c"
+    },
+    {
+      "number": 473,
+      "id": "bukhari:473",
+      "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAfU:0",
+      "chapterId": "chapter-90",
+      "paragraphIds": [
+        "mwAfU"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-prayer-r522110",
+        "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+        "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+        "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+        "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAfU:0",
+        "sourceReference": {
+          "label": "473",
+          "number": 473,
+          "markerId": "mwAfU:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAfU",
+            "textSha256": "913a0b0206607db264ad1a83e1f31001ac548e12fdbf715c1b39e59026995dc9",
+            "origin": {
+              "blockId": "mwAfU",
+              "blockSha256": "913a0b0206607db264ad1a83e1f31001ac548e12fdbf715c1b39e59026995dc9",
+              "start": 0,
+              "end": 171
+            }
+          }
+        ]
+      },
+      "segments": [
+        {
+          "id": "473-1",
+          "paragraphId": "mwAfU",
+          "start": 0,
+          "end": 73,
+          "kind": "chain",
+          "arabic": "[473] حدثنا أبو الوليد قال: حدثنا شعبة عن عون بن أبي جحيفة قال: سمعت أبي ",
+          "english": "Abu al-Walid related to us. He said: Shu‘bah related to us, from ‘Awn ibn Abi Juhayfah. He said: I heard my father:",
+          "arabicSha256": "af2025986214699542d1384f9e9e6736ce9cf71d61bb573ada71daa55efe71b5",
+          "englishSha256": "e31d47ec9d05149212e961904a003b219acbf9667110bdc881167390e61481e4"
+        },
+        {
+          "id": "473-2",
+          "paragraphId": "mwAfU",
+          "start": 73,
+          "end": 171,
+          "kind": "report",
+          "arabic": "أن النبي ﷺ صلى بهم بالبطحاء وبين يديه عنزة الظهر ركعتين والعصر ركعتين يمر بين يديه المرأة والحمار ",
+          "english": "The Prophet, may Allah bless him and grant him peace, led them in prayer at al-Batha’, with a short spear in front of him: Dhuhr as two rak‘ahs and ‘Asr as two rak‘ahs. A woman and a donkey were passing in front of him.",
+          "arabicSha256": "9b4927e017877687fc6103e9b6f7974dd6244e6e491728b658f5310a76861c08",
+          "englishSha256": "b4cca1ad9ef1e0b6f39418bc6911762c4e13cf27b9e154c9b54adb5a7eb9f79f"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            135
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            131
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "473",
+          "sourceId": "bewley-prayer-sutra"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.9.474",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.9.474",
+            "recordSha256": "bf0f071ee816d4c60ae5bb464d610761589728c865f827982d9af490fbfb73f1"
+          }
+        }
+      ],
+      "notes": [
+        "The selected led them and a woman and a donkey were passing in front of him remain. Beyond the spear is not inserted from the English comparison or the different wording of 477. Both named prayers and their two-rak‘ah counts remain."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and two individually matched English comparison families. Omissions, shared references and wording variants remain documented. Independent Arabic, English, lexical, chapter and reference review is pending; this is not certification.",
+      "arabicSha256": "913a0b0206607db264ad1a83e1f31001ac548e12fdbf715c1b39e59026995dc9",
+      "englishSha256": "2d3bf83100597190e9a0e101b6bdf6e610e78a55e44e10f51813ab0be12eef1e",
+      "reviewRecordSha256": "7523d430f4c0894476a0a6fe6c8415e344c5375267dd68af06fad728d5e9dede"
+    },
+    {
+      "number": 474,
+      "id": "bukhari:474",
+      "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAfg:0",
+      "chapterId": "chapter-91",
+      "paragraphIds": [
+        "mwAfg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-prayer-r522110",
+        "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+        "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+        "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+        "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAfg:0",
+        "sourceReference": {
+          "label": "474",
+          "number": 474,
+          "markerId": "mwAfg:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAfg",
+            "textSha256": "c64634f3e370e93f04836ba27601220ae8dec96d2dfe0f2c9de8168a9265fe17",
+            "origin": {
+              "blockId": "mwAfg",
+              "blockSha256": "c64634f3e370e93f04836ba27601220ae8dec96d2dfe0f2c9de8168a9265fe17",
+              "start": 0,
+              "end": 128
+            }
+          }
+        ]
+      },
+      "segments": [
+        {
+          "id": "474-1",
+          "paragraphId": "mwAfg",
+          "start": 0,
+          "end": 81,
+          "kind": "chain",
+          "arabic": "[474] حدثنا عمرو بن زرارة قال: أخبرنا عبد العزيز بن أبي حازم عن أبيه عن سهل قال: ",
+          "english": "‘Amr ibn Zurarah related to us. He said: ‘Abd al-‘Aziz ibn Abi Hazim informed us, from his father, from Sahl, who said:",
+          "arabicSha256": "3507f26eb87b5413eab74e35aa46271bdfdcf8ff494f826893814051e86399e1",
+          "englishSha256": "14c4fb41e6b210803289de6833dd6078504ca8fbea9eea3b3abe1d5805c8fe8b"
+        },
+        {
+          "id": "474-2",
+          "paragraphId": "mwAfg",
+          "start": 81,
+          "end": 128,
+          "kind": "report",
+          "arabic": "كان بين مصلى رسول الله ﷺ وبين الجدار ممر الشاة ",
+          "english": "Between the prayer place of the Messenger of Allah, may Allah bless him and grant him peace, and the wall was room for a sheep to pass.",
+          "arabicSha256": "4b019c0e5338f642007901aa96a058c8a932196cf17da0a11264e0241c6d7cc8",
+          "englishSha256": "171fcc5a4c7729d02669c80552fce844e291a078d9c64dc82c17dd9631ed7b74"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            135
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            131
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "474",
+          "sourceId": "bewley-prayer-sutra"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.9.475",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.9.475",
+            "recordSha256": "1ec31b264c1adf9f0cfccae6324cac89114b0ab0aa737b9ca14bab1374545f78"
+          }
+        }
+      ],
+      "notes": [
+        "The prayer place is not expanded to head position during prostration, a detail present in an English explanation but absent from this selected report. The sheep passage and full opening chain remain."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and two individually matched English comparison families. Omissions, shared references and wording variants remain documented. Independent Arabic, English, lexical, chapter and reference review is pending; this is not certification.",
+      "arabicSha256": "c64634f3e370e93f04836ba27601220ae8dec96d2dfe0f2c9de8168a9265fe17",
+      "englishSha256": "b77a315ac3fe11a4089aed457fe0ef835074f2f13e1fc3e3d2e4daacbfd458fc",
+      "reviewRecordSha256": "2a192dee145a30ff3012a1aeabfc2266b826fdbd19f0940a1f41ddc70ca6e7d9"
+    },
+    {
+      "number": 475,
+      "id": "bukhari:475",
+      "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAfo:0",
+      "chapterId": "chapter-91",
+      "paragraphIds": [
+        "mwAfo"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-prayer-r522110",
+        "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+        "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+        "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+        "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAfo:0",
+        "sourceReference": {
+          "label": "475",
+          "number": 475,
+          "markerId": "mwAfo:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAfo",
+            "textSha256": "2eb6ce97e50d29490faa884488c20a3e3c3e2833bc7c4e8118691edf2e2ab2cc",
+            "origin": {
+              "blockId": "mwAfo",
+              "blockSha256": "2eb6ce97e50d29490faa884488c20a3e3c3e2833bc7c4e8118691edf2e2ab2cc",
+              "start": 0,
+              "end": 107
+            }
+          }
+        ]
+      },
+      "segments": [
+        {
+          "id": "475-1",
+          "paragraphId": "mwAfo",
+          "start": 0,
+          "end": 59,
+          "kind": "chain",
+          "arabic": "[475] حدثنا المكي قال: حدثنا يزيد بن أبي عبيد عن سلمة قال: ",
+          "english": "Al-Makki related to us. He said: Yazid ibn Abi ‘Ubayd related to us, from Salamah, who said:",
+          "arabicSha256": "76a5fbeba574d91286a145a42b7c5f6ba7f0db29b14ba79e79534ae09e61b03b",
+          "englishSha256": "6f63ba0bd10c370037f9b00d67153bf2c3c1af24f9d45fd6cefdb7c6d7c31b87"
+        },
+        {
+          "id": "475-2",
+          "paragraphId": "mwAfo",
+          "start": 59,
+          "end": 107,
+          "kind": "report",
+          "arabic": "كان جدار المسجد عند المنبر ما كادت الشاة تجوزها ",
+          "english": "The wall of the mosque by the pulpit was such that a sheep could scarcely pass.",
+          "arabicSha256": "f12bfed9ab1bb9bbfcd370a80c839846c265f5de42b32e0e558856c8b5c78934",
+          "englishSha256": "ebb30d1178b6acab4239799b2041f7d8ce11c475a51b6c8efc8d8cd27359b38b"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            135
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            131
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "475",
+          "sourceId": "bewley-prayer-sutra"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.9.476",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.9.476",
+            "recordSha256": "2c2b4a0cb00aa5dedfc329409c697f7f87716196ac2419c7cd69e50326068469"
+          }
+        }
+      ],
+      "notes": [
+        "The selected al-Makki is not expanded with ibn Ibrahim from the historical print or the different chain in 480. The wall by the pulpit and scarcely pass wording remain. No Prophet honorific is added where the selected report has none."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and two individually matched English comparison families. Omissions, shared references and wording variants remain documented. Independent Arabic, English, lexical, chapter and reference review is pending; this is not certification.",
+      "arabicSha256": "2eb6ce97e50d29490faa884488c20a3e3c3e2833bc7c4e8118691edf2e2ab2cc",
+      "englishSha256": "333e5ef3a8858478c7976913327aa56507c1d16c61382fa94e2fe999a2da16b5",
+      "reviewRecordSha256": "c99ad6466e59857603b040b3676a006c43cdb311e565699ce47a71fac99995c8"
+    },
+    {
+      "number": 476,
+      "id": "bukhari:476",
+      "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAfw:0",
+      "chapterId": "chapter-92",
+      "paragraphIds": [
+        "mwAfw"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-prayer-r522110",
+        "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+        "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+        "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+        "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAfw:0",
+        "sourceReference": {
+          "label": "476",
+          "number": 476,
+          "markerId": "mwAfw:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAfw",
+            "textSha256": "c78f4432bddab8b467b7f1c589af75fd2f948e01c215d2b3a970d1fd7726b2ec",
+            "origin": {
+              "blockId": "mwAfw",
+              "blockSha256": "c78f4432bddab8b467b7f1c589af75fd2f948e01c215d2b3a970d1fd7726b2ec",
+              "start": 0,
+              "end": 112
+            }
+          }
+        ]
+      },
+      "segments": [
+        {
+          "id": "476-1",
+          "paragraphId": "mwAfw",
+          "start": 0,
+          "end": 70,
+          "kind": "chain",
+          "arabic": "[476] حدثنا مسدد قال: حدثنا يحيى عن عبيد الله أخبرني نافع عن عبد الله ",
+          "english": "Musaddad related to us. He said: Yahya related to us, from ‘Ubayd Allah: Nafi‘ informed me, from ‘Abd Allah:",
+          "arabicSha256": "17235f34bfe8ca36febde72082779e90f94702abee5d20aeed6bcb554b890b22",
+          "englishSha256": "2c8a680e79ff8fdb9b9c5568c753a0aabc8a76885a1a9d4c793b7cdd9b7af7d7"
+        },
+        {
+          "id": "476-2",
+          "paragraphId": "mwAfw",
+          "start": 70,
+          "end": 112,
+          "kind": "report",
+          "arabic": "أن النبي ﷺ كان يركز له الحربة فيصلي إليها ",
+          "english": "A spear used to be planted for the Prophet, may Allah bless him and grant him peace, and he would pray facing it.",
+          "arabicSha256": "eb755460624b62bce33df4580d44221664ef9479b804dc509609e32848f2d4b3",
+          "englishSha256": "8d49cc345537335719865fbe35fe35dd1c687b401324857640d2f634969aaf1c"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            135
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            131
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "476",
+          "sourceId": "bewley-prayer-sutra"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.9.477",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.9.477",
+            "recordSha256": "5317e1cbd6c2ab8dad541765aed3d7cc00db8d20fa641ded0f0a62495349d851"
+          }
+        }
+      ],
+      "notes": [
+        "The chain preserves Nafi‘ informed me and the selected unexpanded ‘Abd Allah. Ibn ‘Umar from the historical print is not inserted. The complete short spear-placement report remains; no Eid or travel setting is imported from 472."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and two individually matched English comparison families. Omissions, shared references and wording variants remain documented. Independent Arabic, English, lexical, chapter and reference review is pending; this is not certification.",
+      "arabicSha256": "c78f4432bddab8b467b7f1c589af75fd2f948e01c215d2b3a970d1fd7726b2ec",
+      "englishSha256": "9e5b8f97e08173345b9fcb1d0033d0cb21a2b0e6c2900acdc226d1866fa20aee",
+      "reviewRecordSha256": "8847fdf78e8da8ab0e066217aa782d20889c64390601939bfc7eb6973ec8eca7"
+    },
+    {
+      "number": 477,
+      "id": "bukhari:477",
+      "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAf8:0",
+      "chapterId": "chapter-93",
+      "paragraphIds": [
+        "mwAf8"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-prayer-r522110",
+        "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+        "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+        "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+        "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAf8:0",
+        "sourceReference": {
+          "label": "477",
+          "number": 477,
+          "markerId": "mwAf8:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAf8",
+            "textSha256": "65e4bd1830cc436d9aefd4c799c6d770714bd3f55b24f543c43e3f9e64ad8026",
+            "origin": {
+              "blockId": "mwAf8",
+              "blockSha256": "65e4bd1830cc436d9aefd4c799c6d770714bd3f55b24f543c43e3f9e64ad8026",
+              "start": 0,
+              "end": 195
+            }
+          }
+        ]
+      },
+      "segments": [
+        {
+          "id": "477-1",
+          "paragraphId": "mwAf8",
+          "start": 0,
+          "end": 78,
+          "kind": "chain",
+          "arabic": "[477] حدثنا آدم قال: حدثنا شعبة قال: حدثنا عون بن أبي جحيفة قال: سمعت أبي قال ",
+          "english": "Adam related to us. He said: Shu‘bah related to us. He said: ‘Awn ibn Abi Juhayfah related to us. He said: I heard my father say:",
+          "arabicSha256": "30b214b0fa8c709fc90260b26c6112eae9f6a50d88c8c0ded6caf5effbadc5c9",
+          "englishSha256": "24c504b2aeb96c179ec24ab1eac407a57b43b1ba69eaeaed8f15299ead311641"
+        },
+        {
+          "id": "477-2",
+          "paragraphId": "mwAf8",
+          "start": 78,
+          "end": 195,
+          "kind": "report",
+          "arabic": "خرج علينا رسول الله ﷺ بالهاجرة فأتي بوضوء فتوضأ فصلى بنا الظهر والعصر وبين يديه عنزة والمرأة والحمار يمرون من ورائها ",
+          "english": "The Messenger of Allah, may Allah bless him and grant him peace, came out to us in the midday heat. Water for ablution was brought to him, and he performed ablution. Then he led us in Dhuhr and ‘Asr, with a short spear in front of him. A woman and a donkey were passing beyond it.",
+          "arabicSha256": "50fb33b63a79c37cc341bd9ad76b3a607c3651e1f792fc2f50905762e6b10524",
+          "englishSha256": "1ea8f8982f232b5c7a6b771c1dac14a1a8fdc51c5e4057326faede8954a1d547"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            136
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            131
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "477",
+          "sourceId": "bewley-prayer-sutra"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.9.478",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.9.478",
+            "recordSha256": "d7f10126637a7927c97289e6bdc18987fed0753972fc1e50a93814ff51fe9961"
+          }
+        }
+      ],
+      "notes": [
+        "The selected sequence retains coming out, water brought, ablution, both prayers and the short spear. Beyond it differs from 473’s in front of him and is preserved. Two rak‘ahs is not inserted where absent from this report."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and two individually matched English comparison families. Omissions, shared references and wording variants remain documented. Independent Arabic, English, lexical, chapter and reference review is pending; this is not certification.",
+      "arabicSha256": "65e4bd1830cc436d9aefd4c799c6d770714bd3f55b24f543c43e3f9e64ad8026",
+      "englishSha256": "08f548b6e72bd03de3ff45245eadd59ffc0c49a1c4731dbacf4fa217120d63d6",
+      "reviewRecordSha256": "f0e7b778356d3e805b226050272fe8a6a3a0eec4f1c20cad3a0592415342557e"
+    },
+    {
+      "number": 478,
+      "id": "bukhari:478",
+      "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAgE:0",
+      "chapterId": "chapter-93",
+      "paragraphIds": [
+        "mwAgE"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-prayer-r522110",
+        "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+        "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+        "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+        "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAgE:0",
+        "sourceReference": {
+          "label": "478",
+          "number": 478,
+          "markerId": "mwAgE:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAgE",
+            "textSha256": "0b4785a3f340321f9ebcd089473dc0f7a680ae129fc2299ce81d88d5de40b7b5",
+            "origin": {
+              "blockId": "mwAgE",
+              "blockSha256": "0b4785a3f340321f9ebcd089473dc0f7a680ae129fc2299ce81d88d5de40b7b5",
+              "start": 0,
+              "end": 223
+            }
+          }
+        ]
+      },
+      "segments": [
+        {
+          "id": "478-1",
+          "paragraphId": "mwAgE",
+          "start": 0,
+          "end": 107,
+          "kind": "chain",
+          "arabic": "[478] حدثنا محمد بن حاتم بن بزيع قال: حدثنا شاذان عن شعبة عن عطاء بن أبي ميمونة قال: سمعت أنس بن مالك قال: ",
+          "english": "Muhammad ibn Hatim ibn Bazi‘ related to us. He said: Shadhan related to us, from Shu‘bah, from ‘Ata’ ibn Abi Maymunah. He said: I heard Anas ibn Malik say:",
+          "arabicSha256": "4231fff557837fc06d265a560697307134fc7b77dc41a650207ca720aaac5425",
+          "englishSha256": "46643d790fb139afc8dd44d2af158904f59a00933223168e69288ca7b8a5c46b"
+        },
+        {
+          "id": "478-2",
+          "paragraphId": "mwAgE",
+          "start": 107,
+          "end": 223,
+          "kind": "report",
+          "arabic": "كان النبي ﷺ إذا خرج لحاجته تبعته أنا وغلام ومعنا عكازة أو عصا أو عنزة ومعنا إداوة فإذا فرغ من حاجته ناولناه الإداوة ",
+          "english": "When the Prophet, may Allah bless him and grant him peace, went out to relieve himself, I and a boy would follow him, and we had a staff, or a stick, or a short spear. We also had a small water container. When he finished relieving himself, we handed him the water container.",
+          "arabicSha256": "5f9f3c4e3975621788fbea7f56f4ec31b343aab35b4acfb4da5894fb7c781fcd",
+          "englishSha256": "d05e319409169a5eba5d1f39b13374f94abc71cb2d29e4a6b912995eda26dfe7"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            136
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            131
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "478",
+          "sourceId": "bewley-prayer-sutra"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.9.479",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.9.479",
+            "recordSha256": "c36451d153fcf59e42e6f137bf2d86f7b47e1eaacb8d79dd8587d6374529c9ab"
+          }
+        }
+      ],
+      "notes": [
+        "The selected Shadhan name and I heard Anas hearing link remain. All three alternatives—staff, stick or short spear—are retained, not collapsed into one object. The small water container and handing it over after he finished remain. No expanded transmitter name is imported."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and two individually matched English comparison families. Omissions, shared references and wording variants remain documented. Independent Arabic, English, lexical, chapter and reference review is pending; this is not certification.",
+      "arabicSha256": "0b4785a3f340321f9ebcd089473dc0f7a680ae129fc2299ce81d88d5de40b7b5",
+      "englishSha256": "f1e8c9a08a37e9f7ad2935b8f7cd1b4e37b80a4c05b598c8192952c06e47418d",
+      "reviewRecordSha256": "053f86f098f09556a0df03a7498f3728e1919870a533b30ae5ed0acd781ac68b"
+    },
+    {
+      "number": 479,
+      "id": "bukhari:479",
+      "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAgQ:0",
+      "chapterId": "chapter-94",
+      "paragraphIds": [
+        "mwAgQ"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-prayer-r522110",
+        "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+        "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+        "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+        "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAgQ:0",
+        "sourceReference": {
+          "label": "479",
+          "number": 479,
+          "markerId": "mwAgQ:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAgQ",
+            "textSha256": "2108cdf8a9aa452e2480152b7cb55574b74c8aed3eef7072c80c4d47c850d241",
+            "origin": {
+              "blockId": "mwAgQ",
+              "blockSha256": "2108cdf8a9aa452e2480152b7cb55574b74c8aed3eef7072c80c4d47c850d241",
+              "start": 0,
+              "end": 178
+            }
+          }
+        ]
+      },
+      "segments": [
+        {
+          "id": "479-1",
+          "paragraphId": "mwAgQ",
+          "start": 0,
+          "end": 68,
+          "kind": "chain",
+          "arabic": "[479] حدثنا سليمان بن حرب قال: حدثنا شعبة عن الحكم عن أبي جحيفة قال ",
+          "english": "Sulayman ibn Harb related to us. He said: Shu‘bah related to us, from al-Hakam, from Abu Juhayfah, who said:",
+          "arabicSha256": "f2b410d44283f07c34f63690801793cf47e10b053a130468d7abe09585a6a877",
+          "englishSha256": "54efd4b50daafba1ca5c573ee5ad939ca3f2268d2ba4e25330ff92c6d874b67b"
+        },
+        {
+          "id": "479-2",
+          "paragraphId": "mwAgQ",
+          "start": 68,
+          "end": 178,
+          "kind": "report",
+          "arabic": "خرج رسول الله ﷺ بالهاجرة فصلى بالبطحاء الظهر والعصر ركعتين ونصب بين يديه عنزة وتوضأ فجعل الناس يتمسحون بوضوئه ",
+          "english": "The Messenger of Allah, may Allah bless him and grant him peace, came out in the midday heat and prayed Dhuhr and ‘Asr at al-Batha’, two rak‘ahs, with a short spear set before him. He performed ablution, and the people began rubbing themselves with his ablution water.",
+          "arabicSha256": "e7da4510e4455aa68fc55f6af42c6eb577e24e51d4adfcf5fcb6e641d49fd22e",
+          "englishSha256": "e8cef06a57a91d9687463e719a010ba7430e82feffad05a0313820ce255916dd"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            136
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            131
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "479",
+          "sourceId": "bewley-prayer-sutra"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.9.480",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.9.480",
+            "recordSha256": "596977526f133c444a79d578dbde8200b6f6aa24d8c098909a4a86410bbd63c2"
+          }
+        }
+      ],
+      "notes": [
+        "The order follows the selected text: coming out, prayer, the spear, ablution and people rubbing themselves with the ablution water. It is not rearranged for chronology. The selected two rak‘ahs is retained without adding each, and no particular body part is supplied."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and two individually matched English comparison families. Omissions, shared references and wording variants remain documented. Independent Arabic, English, lexical, chapter and reference review is pending; this is not certification.",
+      "arabicSha256": "2108cdf8a9aa452e2480152b7cb55574b74c8aed3eef7072c80c4d47c850d241",
+      "englishSha256": "cc6a2587be3c6debae8c7652ade036812c5b9eee7eea8c50a14897d662760067",
+      "reviewRecordSha256": "0a431b24fc3d1e7b1a83ad88dfe36f1e3801cddb431641ea98fcd9f906042980"
+    },
+    {
+      "number": 480,
+      "id": "bukhari:480",
+      "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAgg:0",
+      "chapterId": "chapter-95",
+      "paragraphIds": [
+        "mwAgg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-prayer-r522110",
+        "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+        "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+        "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+        "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAgg:0",
+        "sourceReference": {
+          "label": "480",
+          "number": 480,
+          "markerId": "mwAgg:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAgg",
+            "textSha256": "3915bd43a1ea3208467dc9f933cef818ec8fd5294e4a2e2eb575333e375b4078",
+            "origin": {
+              "blockId": "mwAgg",
+              "blockSha256": "3915bd43a1ea3208467dc9f933cef818ec8fd5294e4a2e2eb575333e375b4078",
+              "start": 0,
+              "end": 220
+            }
+          }
+        ]
+      },
+      "segments": [
+        {
+          "id": "480-1",
+          "paragraphId": "mwAgg",
+          "start": 0,
+          "end": 62,
+          "kind": "chain",
+          "arabic": "[480] حدثنا المكي بن إبراهيم قال: حدثنا يزيد بن أبي عبيد قال: ",
+          "english": "Al-Makki ibn Ibrahim related to us. He said: Yazid ibn Abi ‘Ubayd related to us. He said:",
+          "arabicSha256": "f5d7849576ff997c062d7d2e55304bd5285693271ccfd0d049ed45b0dc3105bb",
+          "englishSha256": "f2fd15995a32a025ea7267bab911253ef06ca3ecc123146704b57e8f29d88e32"
+        },
+        {
+          "id": "480-2",
+          "paragraphId": "mwAgg",
+          "start": 62,
+          "end": 220,
+          "kind": "report",
+          "arabic": "كنت آتي مع سلمة بن الأكوع فيصلي عند الأسطوانة التي عند المصحف فقلت: يا أبا مسلم أراك تتحرى الصلاة عند هذه الأسطوانة قال: فإني رأيت النبي ﷺ يتحرى الصلاة عندها ",
+          "english": "I used to come with Salamah ibn al-Akwa‘, and he would pray by the pillar beside the written copy of the Qur’an. I said: “Abu Muslim, I see that you seek out prayer by this pillar.” He said: “I saw the Prophet, may Allah bless him and grant him peace, seek out prayer by it.”",
+          "arabicSha256": "2a01b4216d60db5e3f4272e4274163ba468205898c688756d6b6eb481f322cc5",
+          "englishSha256": "002db1188644891e4e57a2ce97ff4d1e72fac767ffcd74c70eaceb7f1e5a6206"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            136
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            132
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "480",
+          "sourceId": "bewley-prayer-sutra"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.9.481",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.9.481",
+            "recordSha256": "3f37ce5c652c69b54bef2abb1d0132d6390e09669645e35e91278325cbd72882"
+          }
+        }
+      ],
+      "notes": [
+        "The written copy of the Qur’an provisionally renders al-Mushaf; it is not pluralized. Prayer by the pillar follows إلى rather than introducing behind. Abu Muslim’s address and the repeated seeking out of this place remain. The historical print says Messenger where the selected source and modern print say Prophet; the selected wording is retained."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and two individually matched English comparison families. Omissions, shared references and wording variants remain documented. Independent Arabic, English, lexical, chapter and reference review is pending; this is not certification.",
+      "arabicSha256": "3915bd43a1ea3208467dc9f933cef818ec8fd5294e4a2e2eb575333e375b4078",
+      "englishSha256": "b2e4e7971c8e30630dc0872916a619c2c4911ad1302091066d1b91ef308f2d9d",
+      "reviewRecordSha256": "1bc3324e203cd4e0636e429f7a5605c5996ea9935d8eed949f6217baaea497f3"
+    },
+    {
+      "number": 481,
+      "id": "bukhari:481",
+      "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAgo:0",
+      "chapterId": "chapter-95",
+      "paragraphIds": [
+        "mwAgo"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-prayer-r522110",
+        "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+        "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+        "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+        "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAgo:0",
+        "sourceReference": {
+          "label": "481",
+          "number": 481,
+          "markerId": "mwAgo:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAgo",
+            "textSha256": "fced127ea789176e3ef56362850a5b738fe5443595c6ce13f6166980e62f4278",
+            "origin": {
+              "blockId": "mwAgo",
+              "blockSha256": "fced127ea789176e3ef56362850a5b738fe5443595c6ce13f6166980e62f4278",
+              "start": 0,
+              "end": 158
+            }
+          }
+        ]
+      },
+      "segments": [
+        {
+          "id": "481-1",
+          "paragraphId": "mwAgo",
+          "start": 0,
+          "end": 62,
+          "kind": "chain",
+          "arabic": "[481] حدثنا قبيصة قال: حدثنا سفيان عن عمرو بن عامر عن أنس قال ",
+          "english": "Qabisah related to us. He said: Sufyan related to us, from ‘Amr ibn ‘Amir, from Anas, who said:",
+          "arabicSha256": "c5df0b90e7a80168a195820407c0ba1299e7252369d7878c69904b711dc5f48a",
+          "englishSha256": "ccbb3d53b7572823f7a89a65ba7a7786a171bd34a549d468df75f641a4b23f30"
+        },
+        {
+          "id": "481-2",
+          "paragraphId": "mwAgo",
+          "start": 62,
+          "end": 117,
+          "kind": "report",
+          "arabic": "لقد رأيت كبار أصحاب النبي ﷺ يبتدرون السواري عند المغرب ",
+          "english": "I saw the senior companions of the Prophet, may Allah bless him and grant him peace, hastening toward the pillars at Maghrib.",
+          "arabicSha256": "aeae4939f561a614013a4b25d00583b9cde94c51f9872307a007d59d226059d1",
+          "englishSha256": "532f6a9874a61896fa179b1bcfb43ac128ae8b075dcfeac5fc3c9380ece560be"
+        },
+        {
+          "id": "481-3",
+          "paragraphId": "mwAgo",
+          "start": 117,
+          "end": 158,
+          "kind": "transmission-note",
+          "arabic": "وزاد شعبة عن عمرو عن أنس حتى يخرج النبي ﷺ",
+          "english": "Shu‘bah added, from ‘Amr, from Anas: “Until the Prophet, may Allah bless him and grant him peace, came out.”",
+          "arabicSha256": "32dc62ab8b26502c5ff92db2bc538e235ca61882ae14ba91cb8221293cfd820d",
+          "englishSha256": "ce533b954524105248c8684ca5100b29ff27f34f827def5dc9c63049c760aa65"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            136
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            132
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "481",
+          "sourceId": "bewley-prayer-sutra"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.9.482",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.9.482",
+            "recordSha256": "73cc5b18feedadfd11aeb9039e91b6e8cbc5ada297918506cf5e94523118157f"
+          }
+        }
+      ],
+      "notes": [
+        "The closing Shu‘bah to ‘Amr to Anas transmission remains visible and in the full script. One English comparison joins the words into the body, while the other abbreviates the chain. Neither omission is adopted. Senior companions provisionally renders كبار and both Prophet honorifics remain.",
+        "The preceding chapter introduction remains separate Arabic material. The selected and modern print attribute the second action to ‘Umar; the historical print has Ibn ‘Umar. No English chapter translation is supplied and the variant remains pending review."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and two individually matched English comparison families. Omissions, shared references and wording variants remain documented. Independent Arabic, English, lexical, chapter and reference review is pending; this is not certification.",
+      "arabicSha256": "fced127ea789176e3ef56362850a5b738fe5443595c6ce13f6166980e62f4278",
+      "englishSha256": "20858e9cd39e8725e82debb7cb0a0c0666622727966f11f330cb2e350acebec8",
+      "reviewRecordSha256": "c412ca73167d98b4f7b04a42b12b2a59073217df989e4c8948f3b2d80d340ee2"
+    },
+    {
+      "number": 482,
+      "id": "bukhari:482",
+      "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAg4:0",
+      "chapterId": "chapter-96",
+      "paragraphIds": [
+        "mwAg4"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-prayer-r522110",
+        "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+        "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+        "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+        "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAg4:0",
+        "sourceReference": {
+          "label": "482",
+          "number": 482,
+          "markerId": "mwAg4:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAg4",
+            "textSha256": "4323f5cfb94f275787448aa98e02fbade1953b62d899610d4d5826f717c49046",
+            "origin": {
+              "blockId": "mwAg4",
+              "blockSha256": "4323f5cfb94f275787448aa98e02fbade1953b62d899610d4d5826f717c49046",
+              "start": 0,
+              "end": 208
+            }
+          }
+        ]
+      },
+      "segments": [
+        {
+          "id": "482-1",
+          "paragraphId": "mwAg4",
+          "start": 0,
+          "end": 69,
+          "kind": "chain",
+          "arabic": "[482] حدثنا موسى بن إسماعيل قال: حدثنا جويرية عن نافع عن ابن عمر قال ",
+          "english": "Musa ibn Isma‘il related to us. He said: Juwayriyah related to us, from Nafi‘, from Ibn ‘Umar, who said:",
+          "arabicSha256": "5cbd29e182281f31fa532854e5bc9f36c4c8a64bd2ec4293be88576c2c8971bc",
+          "englishSha256": "9d005377c1d37f441377a7bf0f3917f09ee1db28a1bd27faefd510f4f6d5b9f3"
+        },
+        {
+          "id": "482-2",
+          "paragraphId": "mwAg4",
+          "start": 69,
+          "end": 208,
+          "kind": "report",
+          "arabic": "دخل النبي ﷺ البيت وأسامة بن زيد وعثمان بن طلحة وبلال فأطال ثم خرج كنت أول الناس دخل على أثره فسألت بلالا أين صلى قال بين العمودين المقدمين ",
+          "english": "The Prophet, may Allah bless him and grant him peace, entered the House, with Usamah ibn Zayd, ‘Uthman ibn Talhah and Bilal. He stayed a long time and then came out. I was the first of the people to enter after him. I met Bilal and asked him where he had prayed. He said: “Between the two front pillars.”",
+          "arabicSha256": "2c9ec19110244bec3e4e9c38c4797a448024cb14f7a4eae09acdc637fa65fa2a",
+          "englishSha256": "8af9237e05deec9a6195320b632ccca4911e33e5f19598577978f1f60ef42cfd"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            136,
+            137
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            132
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "482",
+          "sourceId": "bewley-prayer-sutra"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.9.483",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.9.483",
+            "recordSha256": "54836f8782178ae214f086f0903007354ec432f41b2de0d78eb142fc9d04dbd2"
+          }
+        }
+      ],
+      "notes": [
+        "The selected House remains unexpanded inside the narration, and Usamah, ‘Uthman and Bilal retain their source order. The long stay, first entry afterward, meeting Bilal, question and two front pillars remain."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and two individually matched English comparison families. Omissions, shared references and wording variants remain documented. Independent Arabic, English, lexical, chapter and reference review is pending; this is not certification.",
+      "arabicSha256": "4323f5cfb94f275787448aa98e02fbade1953b62d899610d4d5826f717c49046",
+      "englishSha256": "2c51938c9196d7b5959ef8d6d918a9757990e065cc3faa147836609da3d03974",
+      "reviewRecordSha256": "88928219ee9fb9fdf4c6ba03f042bac08d6c841a4c898f827331dfc04974b2ba"
+    },
+    {
+      "number": 483,
+      "id": "bukhari:483",
+      "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAhA:0",
+      "chapterId": "chapter-96",
+      "paragraphIds": [
+        "mwAhA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-prayer-r522110",
+        "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+        "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+        "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+        "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAhA:0",
+        "sourceReference": {
+          "label": "483",
+          "number": 483,
+          "markerId": "mwAhA:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAhA",
+            "textSha256": "4c85a10758d0ae1fd99c2676814a0915a470bb38119b72436812b83ea013e6cf",
+            "origin": {
+              "blockId": "mwAhA",
+              "blockSha256": "4c85a10758d0ae1fd99c2676814a0915a470bb38119b72436812b83ea013e6cf",
+              "start": 0,
+              "end": 347
+            }
+          }
+        ]
+      },
+      "segments": [
+        {
+          "id": "483-1",
+          "paragraphId": "mwAhA",
+          "start": 0,
+          "end": 73,
+          "kind": "chain",
+          "arabic": "[483] حدثنا عبد الله بن يوسف قال: أخبرنا مالك عن نافع عن عبد الله بن عمر ",
+          "english": "‘Abd Allah ibn Yusuf related to us. He said: Malik informed us, from Nafi‘, from ‘Abd Allah ibn ‘Umar:",
+          "arabicSha256": "ad4169166499fa8b8338882cd874bdac71ffb39ad2a8cb06010d21b8103f305c",
+          "englishSha256": "d6e64b8cc30bf1fe56e4eb9f484845c54ec36556a967d3003662d4e49ad71bad"
+        },
+        {
+          "id": "483-2",
+          "paragraphId": "mwAhA",
+          "start": 73,
+          "end": 298,
+          "kind": "report",
+          "arabic": "أن رسول الله ﷺ دخل الكعبة وأسامة بن زيد وبلال وعثمان بن طلحة الحجبي فأغلقها عليه ومكث فيها فسألت بلالا حين خرج ما صنع النبي ﷺ قال: جعل عمودا عن يساره وعمودا عن يمينه وثلاثة أعمدة وراءه وكان البيت يومئذ على ستة أعمدة ثم صلى، و",
+          "english": "The Messenger of Allah, may Allah bless him and grant him peace, entered the Ka‘bah with Usamah ibn Zayd, Bilal and ‘Uthman ibn Talhah al-Hajabi. He closed it behind him and stayed inside. I asked Bilal when he came out: “What did the Prophet, may Allah bless him and grant him peace, do?” He said: “He placed one pillar to his left, one pillar to his right and three pillars behind him. The House then had six pillars. Then he prayed.”",
+          "arabicSha256": "70f3125ae092bbd364d78b1d8a6d48892f295b026041707e1964c76fe1447fdd",
+          "englishSha256": "240424f65c5a3ad5897c905fa8edaa724f9e9787a3553b2a29328fe4ba109c4e"
+        },
+        {
+          "id": "483-3",
+          "paragraphId": "mwAhA",
+          "start": 298,
+          "end": 347,
+          "kind": "transmission-note",
+          "arabic": "قال لنا إسماعيل حدثني مالك، وقال عمودين عن يمينه ",
+          "english": "Isma‘il said to us: Malik related to me, and said: “Two pillars to his right.”",
+          "arabicSha256": "e7db1ca0792a09231ca36f7fc572ba75723c796c6f3fa9f83ca2a63d29472206",
+          "englishSha256": "b061501f3094e4b6dc52cd144d26ee4b0c9328779e135a2d02b8e4486847661d"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            137
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            132
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "483",
+          "sourceId": "bewley-prayer-sutra"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.9.484",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.9.484",
+            "recordSha256": "5d0617252bf227098cf1b5654b49626fe1814ebbb1c277a8a77371f310c86055"
+          }
+        }
+      ],
+      "notes": [
+        "The complete names, closed door, question, six total pillars and selected one pillar to the left, one to the right and three behind remain. The final Isma‘il to Malik transmission separately gives two on the right. The two readings are not harmonized; the full closing transmission remains visible. Al-Hajabi is retained as supplied in this report."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and two individually matched English comparison families. Omissions, shared references and wording variants remain documented. Independent Arabic, English, lexical, chapter and reference review is pending; this is not certification.",
+      "arabicSha256": "4c85a10758d0ae1fd99c2676814a0915a470bb38119b72436812b83ea013e6cf",
+      "englishSha256": "121752ab735e28e22d073871b57994e611e30783036173a4b91cfb6ce2867c60",
+      "reviewRecordSha256": "8223ee4842ba02f8a27335286d0ad54eee0105406f45b7eb728324d570d3115f"
+    },
+    {
+      "number": 484,
+      "id": "bukhari:484",
+      "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAhM:0",
+      "chapterId": "chapter-96",
+      "paragraphIds": [
+        "mwAhM"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-prayer-r522110",
+        "sourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
+        "layoutAuditSha256": "1851513205ba9da47cab5ae46da1f32ccdaadc65c25e7804baf28fd79333bc50",
+        "layoutReviewSha256": "d55697f4162bd4c949c1144507f5ff9c837625be211c46bb8e175e3185cb93d6",
+        "sourceRecordId": "wikisource-bukhari-prayer-r522110:mwAhM:0",
+        "sourceReference": {
+          "label": "484",
+          "number": 484,
+          "markerId": "mwAhM:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAhM",
+            "textSha256": "b937a4a092f5c148323d7845ed1b358576e2eb9854aa4b225bb8d5bacc56496d",
+            "origin": {
+              "blockId": "mwAhM",
+              "blockSha256": "b937a4a092f5c148323d7845ed1b358576e2eb9854aa4b225bb8d5bacc56496d",
+              "start": 0,
+              "end": 327
+            }
+          }
+        ]
+      },
+      "segments": [
+        {
+          "id": "484-1",
+          "paragraphId": "mwAhM",
+          "start": 0,
+          "end": 82,
+          "kind": "chain",
+          "arabic": "[484] حدثنا إبراهيم بن المنذر قال: حدثنا أبو ضمرة قال: حدثنا موسى بن عقبة عن نافع ",
+          "english": "Ibrahim ibn al-Mundhir related to us. He said: Abu Damrah related to us. He said: Musa ibn ‘Uqbah related to us, from Nafi‘:",
+          "arabicSha256": "dd13c20d733a46283ade7395d0d734d3774f0d45415a2bd439378c35821ee341",
+          "englishSha256": "728e153de618ff8202bb1c28eaadf152cc2b0fbe52a000b17168b178b87725ab"
+        },
+        {
+          "id": "484-2",
+          "paragraphId": "mwAhM",
+          "start": 82,
+          "end": 275,
+          "kind": "report",
+          "arabic": "أن عبد الله كان إذا دخل الكعبة مشى قبل وجهه حين يدخل وجعل الباب قبل ظهره فمشى حتى يكون بينه وبين الجدار الذي قبل وجهه قريبا من ثلاثة أذرع صلى يتوخى المكان الذي أخبره به بلال أن النبي ﷺ صلى فيه ",
+          "english": "When ‘Abd Allah entered the Ka‘bah, he went straight ahead, leaving the door behind him. He walked until about three cubits remained between him and the wall in front of him. Then he prayed, seeking the place where Bilal had informed him that the Prophet, may Allah bless him and grant him peace, had prayed.",
+          "arabicSha256": "fdf4f6fcf2b5fa9df260b09026c454dd13f83217848acc8a75a4e1f251d9e474",
+          "englishSha256": "9d982683beb10fd52383703e95c36e94d169374ccbaca818cf6f6d5b0a8c09b3"
+        },
+        {
+          "id": "484-3",
+          "paragraphId": "mwAhM",
+          "start": 275,
+          "end": 327,
+          "kind": "transmission-note",
+          "arabic": "قال وليس على أحدنا بأس إن صلى في أي نواحي البيت شاء ",
+          "english": "He said: There is no harm in any of us praying in any part of the House he wishes.",
+          "arabicSha256": "e22e51ef22ffefc1252002ec81cdfa446eb693b87de1dceafdbd83dd8532b465",
+          "englishSha256": "44bc21466b8663347d157a78dcf84f9fa3c28599d49355ad9202e1586fa7b515"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            137
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            132
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "484",
+          "sourceId": "bewley-prayer-sutra"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": null,
+          "status": "not-present-in-checked-sequence",
+          "checkedReferences": [
+            "1.9.484",
+            "1.9.485"
+          ],
+          "checkedReferenceEvidence": [
+            {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.9.484",
+              "recordSha256": "5d0617252bf227098cf1b5654b49626fe1814ebbb1c277a8a77371f310c86055"
+            },
+            {
+              "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+              "sourceRecordId": "islamhouse-bukhari-epub-2010:1.9.485",
+              "recordSha256": "cf1229eddfbeb5da535a0094c33f1b83fb937f403d9c2e4af306d85393b1b4cf"
+            }
+          ],
+          "note": "These adjacent pinned records match selected reports 483 and 485. Neither contains selected 484, including its three-cubit approach and closing statement. Bewley 484 and both inspected Arabic prints supply comparisons; no second English body is claimed."
+        }
+      ],
+      "notes": [
+        "The straight approach, door behind, approximately three cubits, Bilal’s information and sought prayer place remain. The closing He said is retained without naming an unspecified speaker or attributing the statement to the Prophet.",
+        "The selected report is absent between the checked adjacent Khan-family references 1.9.484 and 1.9.485, which match selected 483 and 485 respectively. Bewley 484 and both Arabic printed witnesses contain it. This is an absence in the inspected sequence, not a claim about the whole English collection.",
+        "Both inspected prints introduce an untitled chapter before this report. The selected digital source keeps it under chapter 96; that grouping is retained and the printed division is disclosed rather than silently inserted into the numbered report."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and two individually matched English comparison families. Omissions, shared references and wording variants remain documented. Independent Arabic, English, lexical, chapter and reference review is pending; this is not certification.",
+      "arabicSha256": "b937a4a092f5c148323d7845ed1b358576e2eb9854aa4b225bb8d5bacc56496d",
+      "englishSha256": "53def83c1b30a54e338e4256432b8c92c485fe4e6adb910274e22b115bdbacc8",
+      "reviewRecordSha256": "caab1c0729433df8e7e56de3205116dcfdf90df1abc9de74bd93cedfafd51775"
+    }
+  ]
+}

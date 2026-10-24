@@ -89,6 +89,15 @@ class EnglishIntakeTests(unittest.TestCase):
         self.assertTrue(all(a['reason'] == 'narrator-only-body' for a in anomalies))
         self.assertIn('islamhouse-bukhari-epub-2010:3.29.74', {a['reference'] for a in anomalies})
 
+    def test_omission_notice_is_classified_without_changing_the_body(self):
+        notice = 'Narrated Hadith is about the various places on the way from Medina to Mecca where the Prophet prayed and their In locations impossible to translate. '
+        record = next(r for r in self.result['records'] if r['id'].endswith(':1.8.471'))
+        self.assertEqual(record['bodyForm'], 'translation-omission-notice')
+        self.assertEqual(record['textSha256'], intake.text_digest([notice]))
+        self.assertEqual(sum(r.get('bodyForm') == 'translation-omission-notice' for r in self.result['records']), 1)
+        _, records = intake.inventory_section('test.html', section(['Volume 1, Book 8, Number 471:', 'Narrated Name:', 'A report mentions something impossible to translate.']), 'fixture')
+        self.assertNotIn('bodyForm', records[0])
+
     def test_words_spaces_entities_paragraphs_and_raw_bytes_are_preserved(self):
         data = section(['  Before <span>ﷺ &amp; after</span>&nbsp; ', 'next\nline &lt;ok&gt;'])
         result = intake.parse_section(data)

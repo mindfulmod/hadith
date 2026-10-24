@@ -23,7 +23,7 @@ export const BOOK_CONFIGS=Object.freeze({
  ghusl:Object.freeze({id:'ghusl',number:5,title:'Ghusl',first:245,arabicSourceId:'arabic-ghusl',bewleySourceId:'bewley-ghusl',bewleyTitle:'Ghusl',revision:484873,bookIntroduction:'preserved-arabic'}),
  menstruation:Object.freeze({id:'menstruation',number:6,title:'Menstruation',first:290,arabicSourceId:'arabic-menstruation',bewleySourceId:'bewley-menstruation',bewleyTitle:'Menstruation',revision:484869,bookIntroduction:'preserved-arabic'}),
  tayammum:Object.freeze({id:'tayammum',number:7,title:'Tayammum',first:327,arabicSourceId:'arabic-tayammum',bewleySourceId:'bewley-tayammum',bewleyTitle:'Tayammum',revision:484871,sourceLayout:'mapped'}),
- prayer:Object.freeze({id:'prayer',number:8,title:'Prayer',first:342,arabicSourceId:'arabic-prayer',bewleySourceId:'bewley-prayer',bewleyTitle:'Prayer',revision:522110,sourceLayout:'mapped'})
+ prayer:Object.freeze({id:'prayer',number:8,khanBooks:Object.freeze([8,9]),title:'Prayer',first:342,arabicSourceId:'arabic-prayer',bewleySourceId:'bewley-prayer',bewleyTitle:'Prayer',revision:522110,sourceLayout:'mapped'})
 });
 function bookConfig(config){assert(Object.values(BOOK_CONFIGS).includes(config),'Unknown book configuration');return config;}
 let englishInventory;
@@ -40,7 +40,7 @@ function validateBewleyPart(part){
  assert(Number.isSafeInteger(part.index)&&Number.isSafeInteger(part.count)&&part.count>1&&part.index>=1&&part.index<=part.count,'Invalid Bewley comparison part');
 }
 function validateComparisons(comparisons,config,segments){
- const khanReference=new RegExp('^1\\.'+config.number+'\\.[1-9]\\d*[a-z]?$');
+ const khanReference=new RegExp('^1\\.(?:'+(config.khanBooks||[config.number]).join('|')+')\\.[1-9]\\d*[a-z]?$');
  assert.deepEqual(comparisons.map(c=>c.id).sort(),[config.bewleySourceId,'islamhouse-khan'].sort(),'Expected distinct English comparison records');
  const bewley=comparisons.find(c=>c.id===config.bewleySourceId),khan=comparisons.find(c=>c.id==='islamhouse-khan');
  assert(/^[1-9]\d*$/.test(bewley.reference),'Invalid Bewley comparison');
@@ -67,6 +67,19 @@ function validateComparisons(comparisons,config,segments){
    assert(Array.isArray(part.segmentIds)&&part.segmentIds.length,'Split comparison needs segment coverage');
   }
   assert.deepEqual(parts.flatMap(p=>p.segmentIds),segments.map(s=>s.id),'Split references must cover the selected segments exactly once in order');
+ }
+ // Omission notices are not translated bodies, even if a review forgets the status.
+ englishInventory??=read('content/staging/bukhari-en-islamhouse/catalog.json');
+ const pinned=khan.reference&&englishInventory.records.find(r=>r.id===englishInventory.namespace+':'+khan.reference);
+ if(pinned?.bodyForm==='translation-omission-notice')assert.equal(khan.status,'translation-omitted','An omission notice cannot be a complete English comparison');
+ if(khan.reference&&Number(khan.reference.split('.')[1])!==config.number)comparisonEvidence(khan.reference,khan.referenceEvidence);
+ if(khan.status==='translation-omitted'){
+  assert(khanReference.test(khan.reference),'Invalid omitted-translation reference');
+  for(const key of ['part','splitReferences','checkedReferences','referencedReference','referencedReferenceEvidence','continuedByReference'])assert.equal(khan[key],undefined,'An omission notice cannot claim translated report coverage');
+  const record=comparisonEvidence(khan.reference,khan.referenceEvidence);
+  assert.equal(record.bodyForm,'translation-omission-notice','Expected a pinned omission notice');
+  assert(Array.isArray(khan.checkedBody)&&khan.checkedBody.length===1&&typeof khan.checkedBody[0]==='string'&&hash(khan.checkedBody)===record.textSha256,'Omission notice differs from its pinned body');
+  assert(typeof khan.note==='string'&&khan.note.trim(),'Omitted translation needs an explanation');return;
  }
  if(khan.status==='unnumbered-back-reference-only'){
   assert(khanReference.test(khan.reference),'Invalid unnumbered-pointer comparison');
@@ -109,6 +122,7 @@ function validateComparisons(comparisons,config,segments){
     assert(khanReference.test(p.reference),'Invalid split reference');
     if(i)assert(Number(p.reference.split('.')[2])>Number(parts[i-1].reference.split('.')[2]),'Split references must be distinct and ordered');
     const record=comparisonEvidence(p.reference,p.referenceEvidence);
+    assert.notEqual(record.bodyForm,'translation-omission-notice','An omission notice cannot be a translated split part');
     assert(Array.isArray(p.segmentIds)&&p.segmentIds.length,'Split comparison needs segment coverage');
     if(p.status!==undefined){
      assert(Array.isArray(p.checkedBody)&&p.checkedBody.length===2&&p.checkedBody.every(v=>typeof v==='string')&&hash(p.checkedBody)===record.textSha256,'Abbreviated comparison part differs from its pinned body');
@@ -151,12 +165,13 @@ function validateComparisons(comparisons,config,segments){
  assert.equal(englishInventory.records[positions[0]].section,englishInventory.records[positions[1]].section,'Checked sequence cannot cross source sections');
  assert(typeof khan.note==='string'&&khan.note.trim(),'Missing comparison absence explanation');
  // Literal suffixes are edition labels, not decimal numbers. Bind their exact records.
- if(khan.checkedReferenceEvidence!==undefined||khan.checkedReferences.some(r=>/[a-z]$/.test(r))){
+ if(khan.checkedReferenceEvidence!==undefined||khan.checkedReferences.some(r=>/[a-z]$/.test(r)||Number(r.split('.')[1])!==config.number)){
   assert(Array.isArray(khan.checkedReferenceEvidence)&&khan.checkedReferenceEvidence.length===khan.checkedReferences.length,'Incomplete checked-sequence evidence');
   khan.checkedReferences.forEach((reference,index)=>comparisonEvidence(reference,khan.checkedReferenceEvidence[index]));
  }
 }
 function entryTranslationStatus(row){
+ if(row.comparisons.some(c=>c.status==='translation-omitted'))return 'Personal prototype: AI-assisted working translation; two Arabic printed witnesses and one complete English comparison were checked. The second English reference contains an omission notice, not a translation. Independent Arabic, English and context review pending.';
  if(row.sourceForm?.kind==='chain-only')return 'Personal prototype: the selected Arabic entry records a narrator chain without repeating the report body. The complete selected chain is translated; related accounts and abbreviated comparisons remain separate. Two Arabic prints and two English comparison families were inspected. Independent Arabic, English and context review pending.';
  if(row.arabicSupplements?.some(s=>s.englishComparisons))return 'Personal prototype: AI-assisted working translation with a separately identified closing transmission note transcribed from an Arabic print. Two printed witnesses, the unchanged digital text and the differing coverage of the English comparisons remain accessible. Independent Arabic, English and context review pending.';
  if(row.arabicSupplements)return 'Personal prototype: AI-assisted working translation with a separately identified closing transmission note transcribed from an Arabic print. Two printed witnesses and the original digital text remain accessible; the English comparisons omit that closing note. Independent Arabic, English and context review pending.';
@@ -183,9 +198,10 @@ function printedCitation(w){
 function bewleyCitation(row,config){
  const c=row.comparisons.find(c=>c.id===config.bewleySourceId);
  const describe=p=>p.reference+(p.part?` (part ${p.part.index} of ${p.part.count})`:'');
- return {id:'bewley',sourceId:config.bewleySourceId,locator:`Book of ${config.bewleyTitle} · ${c.splitReferences?'entries '+c.splitReferences.map(describe).join(', '):'entry '+describe(c)}`,scope:c.splitReferences||c.part?c.note:row.sourceForm?.kind==='chain-only'?'Named English comparison for this abbreviated transmission; no repeated report body is supplied here.':c.status!==undefined?c.note:'Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain.'};
+ return {id:'bewley',sourceId:c.sourceId||config.bewleySourceId,locator:`Book of ${config.bewleyTitle} · ${c.splitReferences?'entries '+c.splitReferences.map(describe).join(', '):'entry '+describe(c)}`,scope:c.splitReferences||c.part?c.note:row.sourceForm?.kind==='chain-only'?'Named English comparison for this abbreviated transmission; no repeated report body is supplied here.':c.status!==undefined?c.note:'Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain.'};
 }
 function khanCitation(record){
+ if(record.status==='translation-omitted'){const [volume,book,number]=record.reference.split('.');return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Number ${number} · translation omitted`,scope:record.note};}
  if(record.status==='unnumbered-back-reference-only'){const [volume,book,number]=record.reference.split('.');return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Number ${number} · unnumbered backward pointer only`,scope:record.note};}
  if(record.status==='back-reference-only'){const [volume,book,number]=record.reference.split('.');return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Number ${number} · backward reference only`,scope:record.note};}
 
@@ -208,7 +224,10 @@ export function buildBookBatch(inventory,review,manifest,config){
  const blocks=new Map(inventory.blocks.map(b=>[b.htmlId,b])),entries=[];
  const comparisonGroups=new Map();
  for(const row of review.entries){
-  validateComparisons(row.comparisons,config,row.segments);const c=row.comparisons.find(c=>c.id==='islamhouse-khan');
+  validateComparisons(row.comparisons,config,row.segments);
+  const bewley=row.comparisons.find(c=>c.id===config.bewleySourceId);
+  if(bewley.sourceId!==undefined)assert(review.sources.some(s=>s.id===bewley.sourceId&&s.kind==='english-comparison'),'Comparison source override must name an included English comparison');
+  const c=row.comparisons.find(c=>c.id==='islamhouse-khan');
   if(c.status!==undefined)continue;
   for(const part of c.splitReferences||[c]){const group=comparisonGroups.get(part.reference)||[];group.push(part);comparisonGroups.set(part.reference,group);}
  }

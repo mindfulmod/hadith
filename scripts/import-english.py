@@ -114,6 +114,8 @@ def inventory_section(path, data, namespace):
     for record in records:
         texts = [paragraphs[i] for i in record['bodyParagraphs']]
         record['textSha256'] = text_digest(texts)
+        if len(texts) == 1 and re.fullmatch(r'Narrated Hadith is about .+ impossible to translate\.', texts[0].strip()):
+            record['bodyForm'] = 'translation-omission-notice'
         if not texts:
             anomalies.append({'reference': record['id'], 'reason': 'empty-body'})
         elif len(texts) == 1 and texts[0].strip().startswith('Narrated ') and texts[0].strip().endswith(':'):
