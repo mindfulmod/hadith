@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The personal reader is at `reader/`: 407 complete selected Bukhari entries across eight books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The personal reader is at `reader/`: 424 complete selected Bukhari entries across eight books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Run
 
@@ -710,3 +710,16 @@ One chapter quotation appears in both Arabic prints but is absent from the selec
 Validation: **350 Node + 78 Python tests**, all 13 integrity commands, exact rendered Arabic and English for all fifteen new entries, and offline reload, backward/next navigation, source access, eight chapter headings, both introductions, correction originals and phrase search with the preview server stopped. Free browsing preserves Continue. Standard 21px day and largest 28px night text fit at 320px. All seven other book packs, actual recordings and artwork remain unchanged. Evidence: `research/prayer-fifth-verification.json`.
 
 Complete scripts cover 407 entries; actual Cedar audio remains **1–6**. This remains a personal prototype awaiting independent review. Prayer 408 starts the next batch; 91 Prayer candidates remain outside the reader.
+
+
+### Prayer 408–424, complete transmissions and chapter context — 23 October 2026
+
+The personal reader now contains **424 complete numbered entries across eight books**. This batch adds seventeen reports, forty-six English segments and fifteen complete Prayer chapters. All prior 407 entry objects are unchanged. Sixteen new Arabic reports retain their exact digital wording; a declared hamzah correction at 415 is supported by both Arabic prints, with the untouched original available offline.
+
+The repeated exchange at 411, the narrator’s standing at 412, the complete conversation and closing confirmation at 415, both separately sourced verse lines at 418 and the later-hearing note at 419 remain complete. English comparisons are individually matched and hash-bound; disagreements and provisional lexical choices are recorded separately from the narration. No independent review or scholarly certification is claimed.
+
+Six original chapter introductions and a separate printed compiler definition are browseable in Arabic with English pending. The printed definition preserves the dual/plural vocalization and records both source pages. Chapter material remains outside daily numbered sessions and complete narration scripts, following the user’s preference.
+
+Validation: **356 Node + 78 Python tests**, all thirteen integrity commands, and exact rendered Arabic/English checks for all seventeen new reports. With the preview server stopped, reload, next navigation, source notes, fifteen headings, seven introductions, correction originals and phrase search worked. Free browsing preserves Continue. Standard 21px day and largest 28px night text fit at 320px. All seven other book packs, recordings and artwork remain unchanged. Evidence: `research/prayer-sixth-verification.json`.
+
+Complete scripts cover 424 entries; actual Cedar audio remains **1–6**. This remains a personal prototype awaiting independent review. Prayer 425 starts the next batch; 74 Prayer candidates remain outside the reader.
