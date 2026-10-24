@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The personal reader is at `reader/`: 445 complete selected Bukhari entries across eight books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The personal reader is at `reader/`: 453 complete selected Bukhari entries across eight books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Run
 
@@ -747,3 +747,14 @@ The current reading pack falls from **15,145,553 to 13,046,164 bytes**, saving *
 Validation: **365 Node + 78 Python tests** and all thirteen source/release integrity commands pass. The complete parsed contents of eighteen changed JSON files match the previous release, except the catalog’s expected file-path/size/hash descriptors. Both encodings reconstruct all 445 entries and references through the verified loader. An interrupted upgrade preserves the old offline release, refuses partial new content and resumes with only unfinished downloads. Historical batch tests retain their fixed original content fixtures; byte stability across content-only releases remains separately tested.
 
 In the browser, the updater waited for the older reader tab to close, preserving its open report. The bookmark and Continue place survived activation. After saving the compact pack and stopping the preview server, complete Arabic/English from all eight books, chapter source notes and exact phrase search remained available. Evidence and scope limits: `research/compact-json-verification.json`. This remains a personal prototype with independent content review and further iPhone acceptance pending; the next source batch starts at Prayer 446.
+
+
+### Prayer 446–453 and separate chapter browsing — 23 October 2026
+
+The personal reader now contains **453 complete selected numbered entries across eight books**. Eight reports and seven digital source chapters have been added after AI comparison with two visually inspected Arabic prints and individually matched English references. All eight selected Arabic paragraphs and all previous 445 entries are unchanged. Three Arabic chapter introductions remain separate browsing material, saved offline but excluded from numbered daily sessions and narration scripts. Their English translation remains pending.
+
+The literal comparison references **1.8.450f** and **1.8.450m** retain their suffixes. Entry 448 preserves its abbreviated wording, narrator uncertainty and final grave-prayer clause despite that clause being absent from one English comparison. Entry 449 preserves the embedded uncertainty, full selected quotation and Rawh's closing note. Entry 453 has its own full chain and exact source-layout mapping; both prints have an untitled chapter marker absent from the digital source, and that difference is documented. All translations remain provisional and await independent review.
+
+Validation: **371 Node + 78 Python tests**, all thirteen integrity commands, and exact rendered Arabic/English comparisons for every new report. With the preview server stopped, reload, next navigation, sources, seven chapter sections, three introductions and exact phrase search worked. Free browsing preserved Continue. Standard 21px day and largest 28px night text were checked at the browser's actual 1280px width. A requested 320px viewport override did not apply; this release does not claim a new narrow-screen or physical iPhone acceptance result. Evidence: `research/prayer-eighth-verification.json`.
+
+The compact reading pack is approximately **13.24 MB**. Existing artwork and recordings remain unchanged. Complete narration scripts now cover 453 entries; actual Cedar audio remains **1–6**. The next source batch starts at Prayer 454, with 45 Prayer candidates still outside the reader.
