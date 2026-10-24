@@ -1,0 +1,820 @@
+{
+  "checkedAt": "2026-10-23",
+  "status": "personal-prototype-only",
+  "independentReview": "pending",
+  "range": "393–407",
+  "entriesAdded": 15,
+  "englishSegments": 30,
+  "readerEntries": 407,
+  "readerBooks": 8,
+  "chaptersAdded": 8,
+  "separateArabicIntroductionsAdded": 1,
+  "separatePrintedIntroductionsAdded": 1,
+  "sourceRecordSha256": "9e4f311fa2d6f632de1fa833f17a915272a243c1c89a400a95c3bccd31fe0568",
+  "reviewRecord": "content/review/prayer-fifth-review.json",
+  "reviewSha256": "419186f999424118244572a49ee1f772d7519f448f9be7a0cc23f56832ea2f4a",
+  "printedWitnesses": [
+    {
+      "id": "brill-1862",
+      "label": "Historical Arabic print · Brill 1862",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf",
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+    },
+    {
+      "id": "dar-ibn-kathir-2002",
+      "label": "Arabic print · Dar Ibn Kathir 2002",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+    }
+  ],
+  "individualComparisons": [
+    {
+      "number": 393,
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            113
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            111
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "393"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.8.395",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.395",
+            "recordSha256": "ca6336f085354353e01de2040ac33863faf47e109c9eef53d59bd14f08436983"
+          }
+        }
+      ]
+    },
+    {
+      "number": 394,
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            113
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            111
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "394",
+          "status": "abbreviated-report",
+          "referencedReference": "393",
+          "note": "The comparison says Anas was heard to relate this; it abbreviates the preceding report rather than repeating its body."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.8.396",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.396",
+            "recordSha256": "6fb374918038c760ceec9a585732b89d6514d6e8c1847b4fd6646789b724db83"
+          },
+          "status": "back-reference-only",
+          "checkedBody": [
+            "Narrated Anas: ",
+            "as above (395). "
+          ],
+          "referencedReference": "1.8.395",
+          "referencedReferenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.395",
+            "recordSha256": "ca6336f085354353e01de2040ac33863faf47e109c9eef53d59bd14f08436983"
+          },
+          "note": "The exact EPUB record contains only a narrator attribution and as above (395). The earlier target is separately hash-bound; its report body is not repeated here."
+        }
+      ]
+    },
+    {
+      "number": 395,
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            113
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            111
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "395"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.8.397",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.397",
+            "recordSha256": "5ed0d9b32260d1960b42009e92093fd7ec31c5723491a950860e4b0bd29f855d"
+          }
+        }
+      ]
+    },
+    {
+      "number": 396,
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            113,
+            114
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            111
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "396"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.8.398",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.398",
+            "recordSha256": "1abf58ea0fa666128866ad195702ce12948e6a5267e76ec60b35562fdc67998a"
+          }
+        }
+      ]
+    },
+    {
+      "number": 397,
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            114
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            111
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "397"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.8.399",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.399",
+            "recordSha256": "e93832457bb5c29a8813dca2e706a2f3f2c699b926f43d28ddc6ee338f05c8f9"
+          }
+        }
+      ]
+    },
+    {
+      "number": 398,
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            114
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            111
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "398"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.8.400",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.400",
+            "recordSha256": "96556a47279e371a77fe6d7b1f66badf529106d43b7657f065675efa529d74e3"
+          }
+        }
+      ]
+    },
+    {
+      "number": 399,
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            114
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            112
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "399"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.8.401",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.401",
+            "recordSha256": "0f4ae58516aba3a8c58e2314210b5e54167d58b2c20e2214269b58440df899a1"
+          }
+        }
+      ]
+    },
+    {
+      "number": 400,
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            114
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            112
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "400"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.8.402",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.402",
+            "recordSha256": "9d8685cb72147e4fb6aaf85a6bb154209d6949c901f2a5b95142260cc37f79ec"
+          }
+        }
+      ]
+    },
+    {
+      "number": 401,
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            114,
+            115
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            112
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "401",
+          "status": "abbreviated-report",
+          "referencedReference": "400",
+          "note": "The comparison begins with the same account and then points to 400 with slightly different wording; it does not reproduce the full selected body."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.8.403",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.403",
+            "recordSha256": "015991277921e09025bf2d25bad43f9f816b956a94e68d9841609e9ac766354d"
+          }
+        }
+      ]
+    },
+    {
+      "number": 402,
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            115
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            112
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "402"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.8.404",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.404",
+            "recordSha256": "c3cbc3ff8bd5fc3d853fce1c2447aaacfdfc747f83f458cabbc06df9bdb7bffc"
+          }
+        }
+      ]
+    },
+    {
+      "number": 403,
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            115
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            112
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "403"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.8.405",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.405",
+            "recordSha256": "119c221ee7a5cb8f00cc6433d7347b43a9b7c6d8d1d381391cbb8b2a02988fdb"
+          }
+        }
+      ]
+    },
+    {
+      "number": 404,
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            115
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            112
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "404"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.8.406",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.406",
+            "recordSha256": "d558b288a5aab85e2ebf284df285a350d8a89e311c94c93e5785eddbf1392afd"
+          }
+        }
+      ]
+    },
+    {
+      "number": 405,
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            115
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            113
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "405"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.8.407",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.407",
+            "recordSha256": "7260a89571f00924f44773f1b1c105c863700bee75cb624a49e352c4a17000e1"
+          }
+        }
+      ]
+    },
+    {
+      "number": 406,
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            115
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            113
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "406"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.8.408",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.408",
+            "recordSha256": "f6b9d6aba80a45f0e28ba5043d06e47152052717fa05c2b44c68deb1ddf4c770"
+          }
+        }
+      ]
+    },
+    {
+      "number": 407,
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            115,
+            116
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            113
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer",
+          "reference": "407"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.8.409",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.8.409",
+            "recordSha256": "189ff527694f3838db744a99c85e17aa46448092374b5e04027f2ff26dc4a88c"
+          }
+        }
+      ]
+    }
+  ],
+  "sourceFindings": [
+    "Prayer 393–407 adds fifteen complete numbered source entries and eight complete chapters (32–39). Fourteen Arabic reports remain unchanged. Entry 401 has one declared final-letter correction, ولا عن يمينة to ولا عن يمينه, supported by both inspected Arabic prints; the original full digital report remains accessible offline.",
+    "Historical print PDF pages 113–116 and modern print PDF pages 111–113 were visually inspected. The modern print groups these entries under 402–417: 394 is an additional chain under 402, while selected 400 combines modern 408–409 and selected 401 combines 410–411. These are recorded edition-specific groupings, not a universal number offset.",
+    "Every English comparison body was individually read: Bewley 393–407 and the pinned Khan-family EPUB 1.8.395–1.8.409. The latter contains only Narrated Anas: and as above (395). for selected 394. Both the exact pointer body and its earlier target record are hash-bound. No preceding narration is silently copied into the selected chain-only entry.",
+    "394 keeps its complete abbreviated chain visible and supplies a separate backward link to 393. 393 retains I agreed with my Lord and its full three matters; 395 keeps the imperative, unnamed visitor, morning and tonight wording. 396 keeps the plural reply and two prostrations without importing uncertainty from 392.",
+    "The digital chapter 34 omits an Ibn Abbas quotation present in both Arabic prints. A separate, evidence-bound printed-introduction record preserves both readings, exact pages and transcription policy without changing the digital chapter blocks. The one original digital introduction in chapter 32 and this printed quotation remain Arabic with English pending, outside numbered daily sessions and narration.",
+    "397 keeps the selected plural feet and explicit or uncertainty; the prints have a singular foot. 399 retains its three lexical alternatives. 400 keeps both narrators and one pebble. 401 preserves both honorifics and its distinct informed-him wording. 402–403 receive no extra left-foot qualification from another witness or heading.",
+    "404 retains the closing al-Zuhri/Humayd transmission omitted from the English EPUB and does not substitute Abu Hurayrah. 405 keeps the unqualified sin/expiation statement. 406 preserves place-of-prayer wording, without adding an angel identity or witness-only honorific. 407 preserves both uncertainties and the complete garment demonstration. Primary commentary locators 423, 425, 427–429 inform comparison notes without importing commentary into the narration.",
+    "Printed chapter material is validated at intake and in the reader catalog. Invalid placement, stale source/reading evidence, missing second witnesses, unreviewed English, invented approval and inconsistent paragraph metadata are rejected. The printed quotation has separate attribution in the source record and never enters report text or speech scripts."
+  ],
+  "regression": {
+    "nodeTests": 350,
+    "pythonTests": 78,
+    "totalTests": 428,
+    "newTests": 9,
+    "integrityCommands": [
+      {
+        "command": "node scripts/build-opening-prototype.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-wikisource-book.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/audit-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/resolve-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-collection.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-audio.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node reader/check-content.mjs",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/import-bukhari.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-bukhari-jk.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-english.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-opening.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/check-opening-review.py",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/build-opening-review.py --check",
+        "exitCode": 0
+      }
+    ],
+    "result": "All complete suites passed.",
+    "productionGate": "Production publication continues to reject personal-prototype content."
+  },
+  "browser": {
+    "entries": [
+      {
+        "number": 393,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 394,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 395,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 396,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 397,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 398,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 399,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 400,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 401,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 402,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 403,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 404,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 405,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 406,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 407,
+        "englishExact": true,
+        "arabicExact": true
+      }
+    ],
+    "initialContinue": "#read/1",
+    "downloadReady": true,
+    "offlineReload": true,
+    "abbreviatedChainVisible": true,
+    "offlineBackwardLink": true,
+    "offlineNext": true,
+    "offlinePrintedChapterNotice": true,
+    "chapterLayout": {
+      "scrollWidth": 320,
+      "width": 320
+    },
+    "finalRelease": "opening-b9ab76f3ef02",
+    "offlineArabicExact": true,
+    "offlineChapters": [
+      {
+        "id": "chapter-32",
+        "exact": true
+      },
+      {
+        "id": "chapter-33",
+        "exact": true
+      },
+      {
+        "id": "chapter-34",
+        "exact": true
+      },
+      {
+        "id": "chapter-35",
+        "exact": true
+      },
+      {
+        "id": "chapter-36",
+        "exact": true
+      },
+      {
+        "id": "chapter-37",
+        "exact": true
+      },
+      {
+        "id": "chapter-38",
+        "exact": true
+      },
+      {
+        "id": "chapter-39",
+        "exact": true
+      }
+    ],
+    "offlinePrintedIntroductionExact": true,
+    "offlinePrintedWitnessLinks": [
+      {
+        "href": "https://upload.wikimedia.org/wikipedia/commons/8/8a/%D8%B5%D8%AD%D9%8A%D8%AD_%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A_%D8%B11.pdf#page=114",
+        "text": "Historical Arabic print · Brill 1862 · PDF page 114 ↗"
+      },
+      {
+        "href": "https://archive.org/download/waq79565/79565.pdf#page=112",
+        "text": "Arabic print · Dar Ibn Kathir 2002 · PDF page 112 ↗"
+      }
+    ],
+    "offlineCorrectionReadings": [
+      "ولا عن يمينة",
+      "ولا عن يمينه"
+    ],
+    "offlineCorrectionOriginalExact": true,
+    "offlineSearch": true,
+    "smallScreenDay": {
+      "fontSize": "21px",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    "smallScreenNight": {
+      "fontSize": "28px",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    "continueAfterBrowsing": "#read/1",
+    "method": "Desktop in-app browser. Exact rendered Arabic and English checked for all fifteen new reports. Final release saved through the normal update flow, then preview server stopped before reload, backward/next navigation, Arabic sources, all eight chapter headings, one original introduction, one separate printed introduction with both page links, the correction original and exact phrase search. Standard 21px day and largest 28px night layouts fit at 320px. Free browsing preserves Continue. These checks do not certify physical iPhone background audio."
+  },
+  "unchangedBookPacks": [
+    {
+      "id": "opening-revelation",
+      "path": "books/opening-revelation-0a534f10d205292c.json",
+      "sha256": "0a534f10d205292cd8ebfea683219367146e1940754c1607cffb2813e7d73f45"
+    },
+    {
+      "id": "faith",
+      "path": "books/faith-ad873aab8759ca02.json",
+      "sha256": "ad873aab8759ca02927b2b331edd40ec0ea25a00cfad6b28433bd003ae235da9"
+    },
+    {
+      "id": "knowledge",
+      "path": "books/knowledge-e3d5ef7956421322.json",
+      "sha256": "e3d5ef7956421322449d73c21fb39b8814640ee1a1cc684eb85106142ea13ea6"
+    },
+    {
+      "id": "ablution",
+      "path": "books/ablution-4012bd796dae0e95.json",
+      "sha256": "4012bd796dae0e95ee6ccb1b710179aee95220fc2853d87ec5578fc5ee6d9f6c"
+    },
+    {
+      "id": "ghusl",
+      "path": "books/ghusl-1382b7bd3720f4ff.json",
+      "sha256": "1382b7bd3720f4ff47c992a6f87db9036093546b2239fef0f1a4418a31445d59"
+    },
+    {
+      "id": "menstruation",
+      "path": "books/menstruation-95605644e549c484.json",
+      "sha256": "95605644e549c4842747f9850cee0f97af86e710d8d6f9a471c94b3fef5e68ac"
+    },
+    {
+      "id": "tayammum",
+      "path": "books/tayammum-d329407c8ce82c99.json",
+      "sha256": "d329407c8ce82c99bf0ca6c0afb6ddb6785d62a004f8e000387a81c7b2e40f61"
+    }
+  ],
+  "previousEntriesUnchanged": 392,
+  "audio": {
+    "scriptEntries": 407,
+    "actualRecordedNumbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "newRecordings": 0,
+    "note": "Full narration scripts retain complete chains, source order and transmission notes. Chapter introductions never enter narration. Existing recordings and artwork are unchanged."
+  },
+  "nextWork": [
+    "Continue Prayer with complete chapters beginning at selected 408, comparing individual report bodies, chapter boundaries and printed witnesses.",
+    "Complete English chapter introductions and independent Arabic, English, lexical and reference review.",
+    "Extend Cedar recordings beyond 6 when generation access is available; complete physical iPhone separate-recording acceptance."
+  ]
+}

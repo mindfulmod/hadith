@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The personal reader is at `reader/`: 392 complete selected Bukhari entries across eight books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The personal reader is at `reader/`: 407 complete selected Bukhari entries across eight books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Run
 
@@ -697,3 +697,16 @@ The full dual honorific “may Allah Most High be pleased with them both” now 
 Validation: **341 Node + 78 Python tests**, all 13 integrity commands, exact rendered Arabic and English for all fifteen new reports, offline reload/next/source panels, nine chapter headings, four introductions and phrase search with the preview server stopped. Free browsing and the normal update flow preserve Continue. Standard 21px day and largest 28px night text fit at 320px. All seven other book packs, actual recordings and artwork remain unchanged. Evidence: `research/prayer-fourth-verification.json`.
 
 Scripts cover 392 entries; actual Cedar audio remains **1–6**. This remains a personal prototype awaiting independent review. Prayer 393 starts the next batch; 106 Prayer candidates remain outside the reader.
+
+
+### Prayer 393–407 and separate printed chapter quotations — 23 October 2026
+
+The personal reader now contains **407 complete numbered entries across eight books**. This batch adds fifteen reports and eight complete Prayer chapters. All prior 392 entry objects are unchanged. Fourteen new Arabic reports retain their exact digital wording. A one-letter correction at 401 is explicitly recorded with both inspected print readings and the complete original digital report available offline.
+
+Entry 394 is a complete abbreviated narrator chain referring to 393. It stays expanded, with a separate link to the preceding account. Neither the reader nor the narration script duplicates that earlier report. The English comparison contains an exact backward pointer; both that body and its target record are checked against pinned evidence.
+
+One chapter quotation appears in both Arabic prints but is absent from the selected digital chapter. `scripts/printed-chapter-context.mjs` validates its separate provenance, position, readings and pending-review status. The catalog also rejects inconsistent printed-introduction metadata. This quotation and the new original chapter introduction stay outside daily sessions and narration, available separately in Arabic with English pending. Their source notes and exact print-page links are saved with reading material.
+
+Validation: **350 Node + 78 Python tests**, all 13 integrity commands, exact rendered Arabic and English for all fifteen new entries, and offline reload, backward/next navigation, source access, eight chapter headings, both introductions, correction originals and phrase search with the preview server stopped. Free browsing preserves Continue. Standard 21px day and largest 28px night text fit at 320px. All seven other book packs, actual recordings and artwork remain unchanged. Evidence: `research/prayer-fifth-verification.json`.
+
+Complete scripts cover 407 entries; actual Cedar audio remains **1–6**. This remains a personal prototype awaiting independent review. Prayer 408 starts the next batch; 91 Prayer candidates remain outside the reader.

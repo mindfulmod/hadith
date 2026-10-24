@@ -1,6 +1,6 @@
 {
   "checkedAt": "2026-10-23",
-  "status": "first-thirty-one-chapters-admitted-as-personal-prototype",
+  "status": "first-thirty-nine-chapters-admitted-as-personal-prototype",
   "source": {
     "id": "wikisource-bukhari-prayer-r522110",
     "revision": 522110,
@@ -50,13 +50,14 @@
   },
   "layoutReview": "content/review/prayer-layout-review.json",
   "admitted": {
-    "range": "342–392",
-    "reports": 51,
-    "chapters": 31,
-    "separateArabicIntroductionParagraphs": 14,
+    "range": "342–407",
+    "reports": 66,
+    "chapters": 39,
+    "separateArabicIntroductionParagraphs": 15,
+    "separatePrintedIntroductionParagraphs": 1,
     "englishIntroductions": "pending",
     "review": "content/review/prayer-batches.json",
-    "verification": "research/prayer-first-verification.json; research/prayer-second-verification.json; research/prayer-third-verification.json; research/prayer-fourth-verification.json"
+    "verification": "research/prayer-first-verification.json; research/prayer-second-verification.json; research/prayer-third-verification.json; research/prayer-fourth-verification.json; research/prayer-fifth-verification.json"
   },
   "findings": [
     "Two newline characters before selected 453 are retained as a separate blank span. Both printed witnesses show a distinct new chain there and an untitled chapter 79 which the digital source omits. This whole-book structural inventory does not admit the later report or silently insert its missing heading.",
@@ -84,7 +85,15 @@
     "The comparison validator now checks adjacency in actual pinned EPUB record order and requires exact record evidence for suffixed absence boundaries. It rejects invented, reversed or nonadjacent boundaries and missing or altered evidence rather than applying decimal arithmetic to edition labels.",
     "383 retains al-Layth’s closing transmission. 384 keeps protection wording without an inserted legal interpretation. 385 preserves all three chains and both narration bodies, including the middle chain omitted from the English EPUB, and distinguishes slaughter as we slaughter from eat what we slaughter. 386 retains east then west and the complete closing chain.",
     "387 retains both We asked introductions and the closing Jabir report despite a different modern printed division. 388 retains both references to two rakahs and the selected door wording; 389 retains the differing account of prayer outside the Ka’bah without harmonization. 390 retains sixteen-or-seventeen uncertainty and third-person testimony. 391 adds no optional-prayer gloss. 392 keeps Ibrahim’s uncertainty between the opening and resumed report, without importing the five-prayer-unit account from a different report.",
-    "All nine chapter headings and four Arabic introductions remain separately browsable offline. English introductions remain pending; they never enter numbered sessions or narration. The complete dual honorific may Allah Most High be pleased with them both now uses one smaller presentation span, including earlier entries 8, 10 and 12, without changing stored text or narration scripts."
+    "All nine chapter headings and four Arabic introductions remain separately browsable offline. English introductions remain pending; they never enter numbered sessions or narration. The complete dual honorific may Allah Most High be pleased with them both now uses one smaller presentation span, including earlier entries 8, 10 and 12, without changing stored text or narration scripts.",
+    "Prayer 393–407 adds fifteen complete numbered source entries and eight complete chapters (32–39). Fourteen Arabic reports remain unchanged. Entry 401 has one declared final-letter correction, ولا عن يمينة to ولا عن يمينه, supported by both inspected Arabic prints; the original full digital report remains accessible offline.",
+    "Historical print PDF pages 113–116 and modern print PDF pages 111–113 were visually inspected. The modern print groups these entries under 402–417: 394 is an additional chain under 402, while selected 400 combines modern 408–409 and selected 401 combines 410–411. These are recorded edition-specific groupings, not a universal number offset.",
+    "Every English comparison body was individually read: Bewley 393–407 and the pinned Khan-family EPUB 1.8.395–1.8.409. The latter contains only Narrated Anas: and as above (395). for selected 394. Both the exact pointer body and its earlier target record are hash-bound. No preceding narration is silently copied into the selected chain-only entry.",
+    "394 keeps its complete abbreviated chain visible and supplies a separate backward link to 393. 393 retains I agreed with my Lord and its full three matters; 395 keeps the imperative, unnamed visitor, morning and tonight wording. 396 keeps the plural reply and two prostrations without importing uncertainty from 392.",
+    "The digital chapter 34 omits an Ibn Abbas quotation present in both Arabic prints. A separate, evidence-bound printed-introduction record preserves both readings, exact pages and transcription policy without changing the digital chapter blocks. The one original digital introduction in chapter 32 and this printed quotation remain Arabic with English pending, outside numbered daily sessions and narration.",
+    "397 keeps the selected plural feet and explicit or uncertainty; the prints have a singular foot. 399 retains its three lexical alternatives. 400 keeps both narrators and one pebble. 401 preserves both honorifics and its distinct informed-him wording. 402–403 receive no extra left-foot qualification from another witness or heading.",
+    "404 retains the closing al-Zuhri/Humayd transmission omitted from the English EPUB and does not substitute Abu Hurayrah. 405 keeps the unqualified sin/expiation statement. 406 preserves place-of-prayer wording, without adding an angel identity or witness-only honorific. 407 preserves both uncertainties and the complete garment demonstration. Primary commentary locators 423, 425, 427–429 inform comparison notes without importing commentary into the narration.",
+    "Printed chapter material is validated at intake and in the reader catalog. Invalid placement, stale source/reading evidence, missing second witnesses, unreviewed English, invented approval and inconsistent paragraph metadata are rejected. The printed quotation has separate attribution in the source record and never enters report text or speech scripts."
   ],
-  "remaining": "106 candidate Prayer reports (393–498), later chapter comparisons, English chapter introductions and independent Arabic/English/lexical/reference review remain. Full original source material is retained; unadmitted candidates are not reader content."
+  "remaining": "91 candidate Prayer reports (408–498), later chapter comparisons, English chapter introductions and independent Arabic/English/lexical/reference review remain. Full original source material is retained; unadmitted candidates are not reader content."
 }
