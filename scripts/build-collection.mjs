@@ -72,7 +72,7 @@ function validateComparisons(comparisons,config,segments){
  englishInventory??=read('content/staging/bukhari-en-islamhouse/catalog.json');
  const pinned=khan.reference&&englishInventory.records.find(r=>r.id===englishInventory.namespace+':'+khan.reference);
  if(pinned?.bodyForm==='translation-omission-notice')assert.equal(khan.status,'translation-omitted','An omission notice cannot be a complete English comparison');
- if(khan.reference&&Number(khan.reference.split('.')[1])!==config.number)comparisonEvidence(khan.reference,khan.referenceEvidence);
+ if(khan.reference&&!khan.splitReferences&&Number(khan.reference.split('.')[1])!==config.number)comparisonEvidence(khan.reference,khan.referenceEvidence);
  if(khan.status==='translation-omitted'){
   assert(khanReference.test(khan.reference),'Invalid omitted-translation reference');
   for(const key of ['part','splitReferences','checkedReferences','referencedReference','referencedReferenceEvidence','continuedByReference'])assert.equal(khan[key],undefined,'An omission notice cannot claim translated report coverage');
@@ -95,7 +95,7 @@ function validateComparisons(comparisons,config,segments){
   const record=comparisonEvidence(khan.reference,khan.referenceEvidence);
   assert(Array.isArray(khan.checkedBody)&&khan.checkedBody.length===2&&khan.checkedBody.every(p=>typeof p==='string')&&hash(khan.checkedBody)===record.textSha256,'Backward pointer differs from its pinned body');
   const pointer=/^(?:The Prophet said )?as above \(([1-9]\d*)\)\.$/.exec(khan.checkedBody[1].trim());
-  assert(/^Narrated .+:$/.test(khan.checkedBody[0].trim())&&pointer&&khan.referencedReference===`1.${config.number}.${pointer[1]}`&&Number(pointer[1])<Number(khan.reference.split('.')[2]),'Invalid or forward comparison pointer');
+  assert(/^Narrated .+:$/.test(khan.checkedBody[0].trim())&&pointer&&khan.referencedReference===`1.${khan.reference.split('.')[1]}.${pointer[1]}`&&Number(pointer[1])<Number(khan.reference.split('.')[2]),'Invalid or forward comparison pointer');
   if(!khan.checkedBody[1].trim().startsWith('The Prophet said ')||khan.referencedReferenceEvidence!==undefined)comparisonEvidence(khan.referencedReference,khan.referencedReferenceEvidence);
   assert(typeof khan.note==='string'&&khan.note.trim(),'Backward reference needs an explanation');return;
  }
@@ -129,13 +129,13 @@ function validateComparisons(comparisons,config,segments){
      assert(/^Narrated .+:$/.test(p.checkedBody[0].trim())&&typeof p.note==='string'&&p.note.trim(),'Abbreviated comparison part needs a narrator and explanation');
      if(p.status==='back-reference-only'){
       const pointer=/^as above \(([1-9]\d*)\)\.$/.exec(p.checkedBody[1].trim());
-      assert(pointer&&p.referencedReference===`1.${config.number}.${pointer[1]}`&&Number(pointer[1])<Number(p.reference.split('.')[2]),'Invalid split backward pointer');
+      assert(pointer&&p.referencedReference===`1.${p.reference.split('.')[1]}.${pointer[1]}`&&Number(pointer[1])<Number(p.reference.split('.')[2]),'Invalid split backward pointer');
       assert.equal(p.continuedByReference,undefined,'Backward pointer cannot claim a forward continuation');
       comparisonEvidence(p.referencedReference,p.referencedReferenceEvidence);
       assert(p.segmentIds.every(id=>segments.find(s=>s.id===id)?.kind==='chain'),'Backward-only part may only correspond to an abbreviated chain');
      }else if(p.status==='forward-reference-only'){
-      const pointer=/^as the following Hadith ([1-9]\d*)\.$/.exec(p.checkedBody[1].trim());
-      assert(pointer&&p.continuedByReference===`1.${config.number}.${pointer[1]}`&&p.continuedByReference===parts[i+1]?.reference&&Number(pointer[1])===Number(p.reference.split('.')[2])+1,'Forward-only pointer needs its exact adjacent continuation');
+      const pointer=/^(?:as the following Hadith ([1-9]\d*)\.|The Prophet said, \(what is ascribed to him in the following Hadith ([1-9]\d*)\):)$/.exec(p.checkedBody[1].trim()),target=pointer&&(pointer[1]||pointer[2]);
+      assert(target&&p.continuedByReference===`1.${p.reference.split('.')[1]}.${target}`&&p.continuedByReference===parts[i+1]?.reference&&Number(target)===Number(p.reference.split('.')[2])+1,'Forward-only pointer needs its exact adjacent continuation');
       assert(p.referencedReference===undefined&&p.referencedReferenceEvidence===undefined,'Forward-only pointer cannot claim a backward reference');
       assert(p.segmentIds.every(id=>segments.find(s=>s.id===id)?.kind==='chain'),'Forward-only part may only correspond to an abbreviated chain');
      }else{
