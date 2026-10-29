@@ -18,7 +18,14 @@ export function deriveArabicBlocks(row,originals,sources){
   assert.equal(points.slice(c.start,c.end).join(''),c.before,'Correction does not match original wording');
   assert(typeof c.reason==='string'&&c.reason.trim(),'Correction lacks a reason');
   assert.deepEqual(c.witnesses.map(w=>w.sourceId).sort(),['brill-1862','dar-ibn-kathir-2002'],'Correction requires two distinct printed witnesses');
-  for(const w of c.witnesses){const source=sources.find(s=>s.id===w.sourceId),print=row.printedWitnesses.find(p=>p.id===w.sourceId);assert(source?.kind==='arabic-witness'&&/^[a-f0-9]{64}$/.test(source.sha256),'Correction source is not a pinned Arabic witness');assert.equal(w.sourceSha256,source.sha256,'Correction witness changed');assert.equal(w.reading,c.after,'Correction differs from its recorded printed reading');assert(Number.isSafeInteger(w.pdfPage)&&print?.status===undefined&&print.pdfPages.includes(w.pdfPage),'Correction lacks a matching inspected page');}
+  for(const w of c.witnesses){const source=sources.find(s=>s.id===w.sourceId),print=row.printedWitnesses.find(p=>p.id===w.sourceId);assert(source?.kind==='arabic-witness'&&/^[a-f0-9]{64}$/.test(source.sha256),'Correction source is not a pinned Arabic witness');assert.equal(w.sourceSha256,source.sha256,'Correction witness changed');let reading=w.reading;
+   if(w.spellingEquivalence!==undefined){
+    assert.equal(w.spellingEquivalence,'ibn-alif-omitted','Unknown printed spelling equivalence');
+    assert(typeof reading==='string'&&reading.split(' ابن ').length===2,'Spelling equivalence needs exactly one medial ibn');
+    reading=reading.replace(' ابن ',' بن ');
+    assert.notEqual(w.reading,c.after,'Unnecessary printed spelling equivalence');
+   }
+   assert.equal(reading,c.after,'Correction differs from its recorded printed reading');assert(Number.isSafeInteger(w.pdfPage)&&print?.status===undefined&&print.pdfPages.includes(w.pdfPage),'Correction lacks a matching inspected page');}
   const notice=row.contextNotes?.find(n=>n.id===c.contextNoteId);assert(notice?.label?.trim()&&notice.text?.trim()&&['base',...c.witnesses.map(w=>w.sourceId)].every(id=>notice.citations.includes(id)),'Correction lacks its visible source notice');
   const segment=row.segments.find(s=>s.id===c.englishSegmentId);assert(segment&&typeof c.englishRendering==='string'&&c.englishRendering.trim()&&segment.english.includes(c.englishRendering),'Correction lacks its matching English rendering');
   points.splice(c.start,c.end-c.start,...Array.from(c.after));result[index]=points.join('');assert.equal(c.correctedParagraphSha256,sha(result[index]),'Incorrect derived paragraph hash');

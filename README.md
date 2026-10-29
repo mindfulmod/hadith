@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The personal reader is at `reader/`: 530 complete selected Bukhari entries across nine books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The personal reader is at `reader/`: 549 complete selected Bukhari entries across nine books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Run
 
@@ -841,3 +841,14 @@ Existing `*-review.html#hadith-N`, chapter and introduction links remain valid. 
 Validation: **510 tests (428 Node, 82 Python)** and all thirteen integrity commands passed. Every section’s text/markup and resolved source citations matched the canonical pages. An interrupted download retained the previous offline edition and retried only missing or failed files. In the actual browser, an older 180-entry saved reader updated to 530 while preserving Continue at Hadith 180 and its bookmark. With the preview server stopped, source links across all eight books, printed headings, separate introductions, chapters without numbered hadith, manual index navigation, reload and return to reading worked at 320px without horizontal overflow. Evidence and limitations: `research/source-note-partition-verification.json`.
 
 This does not certify content or full-corpus performance. Physical iPhone source-note acceptance, full bilingual memory/loading measurements, remaining translations and independent reviews are still required. Source work continues at Prayer Times 531; Cedar recordings remain **1–6**.
+
+
+### Prayer Times 531–549 — 29 October 2026
+
+The personal reader now contains **549 complete selected numbered entries across nine books**. This batch adds nineteen reports, 48 working English segments, ten complete chapters and three separately browseable Arabic introductions. Prayer Times now covers 51 of its 79 selected numbered entries and 26 of 41 chapters. All previous 530 entry objects and the other eight active book records remain unchanged.
+
+Eighteen new Arabic paragraphs are unchanged. Entry 534 restores the missing given name and patronymic of Ata ibn Suhayb, with an explicit source notice, the unchanged digital paragraph and both inspected printed spellings. The correction validator accepts the declared medial ابن/بن spelling difference only when every other character matches; unknown or unnecessary transformations fail. Entry 549 preserves two additional chains without inventing a repeated report body, opens its complete chain text by default and links separately to 548. Bewley 547 is an abbreviated pointer; the checked Khan-family sequence has no separate equivalent of 549. These comparison limitations, differing printed chapter wording, uncertainties and closing remarks remain explicit.
+
+Validation covers **434 Node and 82 Python tests**, thirteen integrity commands, exact rendered Arabic and English for every new entry, and all ten chapter sources. The initial packaging test correctly refused new source-note pages before they were staged; its seven checks passed after staging, with no relaxed expectation. At an actual 320px viewport, default day text and the longest report at 28px in night mode had no horizontal overflow. With the preview server stopped, reload, exact-phrase search, next navigation, the 549-to-548 context link, original correction evidence and all ten chapter routes worked. Continue remained at Hadith 180 and the existing bookmark was preserved. Evidence and limits: `research/prayer-times-third-verification.json`. This is desktop verification, not new physical iPhone acceptance.
+
+The reading download is **15,779,422 bytes (15.78 MB)**. Complete scripts cover 549 entries; actual Cedar recordings remain **1–6**. English remains AI-assisted working translation, not Darussalam wording or independently certified text. Source work continues at 550, with 28 Prayer Times reports still outside the reader. Independent reviews, remaining chapter translations, the full collection, additional reviewed recordings and full bilingual scale checks remain unfinished.
