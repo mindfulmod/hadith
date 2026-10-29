@@ -1,0 +1,941 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-29T17:24:08.657Z",
+  "status": "personal-prototype-integration-verified-not-yet-published",
+  "baselineCommit": "a6d55223d3d863f2583ba67aa27edd139e9d7d6a",
+  "readerRelease": "opening-3b7d74d240a6",
+  "scope": {
+    "newReferences": [
+      632,
+      633,
+      634,
+      635,
+      636,
+      637,
+      638,
+      639,
+      640,
+      641,
+      642,
+      643,
+      644,
+      645,
+      646,
+      647,
+      648,
+      649,
+      650,
+      651,
+      652,
+      653,
+      654,
+      655,
+      656,
+      657,
+      658,
+      659,
+      660,
+      661,
+      662,
+      663,
+      664,
+      665,
+      666,
+      667,
+      668,
+      669,
+      670,
+      671,
+      672,
+      673,
+      674,
+      675,
+      676,
+      677,
+      678,
+      679,
+      680,
+      681,
+      682,
+      683,
+      684,
+      685,
+      686,
+      687,
+      688,
+      689,
+      690,
+      691,
+      692,
+      693,
+      694,
+      695,
+      696,
+      697,
+      698
+    ],
+    "newEntries": 67,
+    "newDigitalChapters": 43,
+    "newBrowsingSections": 44,
+    "newSeparateArabicIntroductionParagraphs": 11,
+    "workingEnglishSegments": 168,
+    "arabicCorrections": 3,
+    "printedHeadings": 1
+  },
+  "collection": {
+    "books": 10,
+    "entries": 699,
+    "lastNumericReference": 698,
+    "suffixedReferences": [
+      "619b"
+    ],
+    "sourceRecordSha256": "ff06f9ba34b0d70fdc44047eb5ca72465ad52fb1244c10bc25c31943788de258",
+    "prior632EntryObjectsUnchanged": true,
+    "otherNineBookFilesUnchanged": true,
+    "completeNarrationScripts": 699,
+    "recordedReferences": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "releaseFiles": 167,
+    "completeSelectedAdhan": {
+      "reports": 122,
+      "digitalChapters": 80,
+      "browsingSections": 81,
+      "arabicIntroductionParagraphs": 20,
+      "boundary": "Complete only for the pinned digital Adhan section ending at 698. Other editions continue the Book of Adhan beyond this selected section."
+    },
+    "readingBytes": 19303253
+  },
+  "sourceReview": {
+    "digitalRevision": 484867,
+    "digitalSha256": "b3c5c0eef7cb8d0f543f1c1e5d7cb4868ed732f159fc39d7df1bc2aed3b7ee8d",
+    "originalDigitalInputsAndStagedInventoryUnchanged": true,
+    "reviewPackets": [
+      {
+        "path": "content/review/adhan-fourth-review.json",
+        "first": 632,
+        "last": 650,
+        "sha256": "957e5855c7a4017bd4ffd29a16aea7e3d0862a59c425c2806d30e1f382b5c606"
+      },
+      {
+        "path": "content/review/adhan-fifth-review.json",
+        "first": 651,
+        "last": 669,
+        "sha256": "fa480a1b84f8a1f7e9f04d51624c136ac9ce8c17fdc252ea294bbcedca4b8d55"
+      },
+      {
+        "path": "content/review/adhan-final-review.json",
+        "first": 670,
+        "last": 698,
+        "sha256": "44af122c92f1057bf10efa1913b7c2f34804650ac8a1b78b119779dbf2032275"
+      }
+    ],
+    "historicalEvidenceArchive": "content/review/candidates/adhan-632-698/snapshot.json",
+    "admissionChanges": "Scope and review-status wording only. Translation segments, selected Arabic, chapter text and source evidence match the archived packets exactly.",
+    "corrections": [
+      {
+        "reference": 638,
+        "before": "سأل السقف",
+        "after": "سال السقف",
+        "witnessPages": [
+          174,
+          167
+        ]
+      },
+      {
+        "reference": 663,
+        "before": "المحنث",
+        "after": "المخنث",
+        "witnessPages": [
+          181,
+          174
+        ]
+      },
+      {
+        "reference": 681,
+        "before": "ذهب أبا بكر",
+        "after": "ذهب أبو بكر",
+        "witnessPages": [
+          186,
+          178
+        ]
+      }
+    ],
+    "printedHeading": {
+      "beforeReference": 674,
+      "id": "chapter-63-print-64",
+      "witnessPages": [
+        184,
+        176
+      ],
+      "originalDigitalGroupingPreserved": true
+    },
+    "reviewStatus": "AI-assisted working English, not Darussalam wording or independent certification. Arabic, English, chapter, context, reference and spoken-word reviews remain pending."
+  },
+  "automated": {
+    "nodeTests": 505,
+    "pythonTests": 93,
+    "total": 598,
+    "integrityChecks": [
+      {
+        "command": "node scripts/build-opening-prototype.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-wikisource-book.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/audit-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/resolve-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-collection.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-audio.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node reader/check-content.mjs",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/import-bukhari.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-bukhari-jk.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-english.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-opening.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/check-opening-review.py",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/build-opening-review.py --check",
+        "exitCode": 0
+      }
+    ],
+    "allPassed": true,
+    "productionGateRefusesPendingReviews": true
+  },
+  "browser": {
+    "environment": "Desktop in-app browser; local isolated origin; 320 × 740 viewport. No new physical iPhone or screen-locked audio test.",
+    "rendered": [
+      {
+        "number": 632,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 633,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 634,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 635,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 636,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 637,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 638,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 639,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 640,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 641,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 642,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 643,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 644,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 645,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 646,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 647,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 648,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 649,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 650,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 651,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 652,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 653,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 654,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 655,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 656,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 657,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 658,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 659,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 660,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 661,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 662,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 663,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 664,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 665,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 666,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 667,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 668,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 669,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 670,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 671,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 672,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 673,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 674,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 675,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 676,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 677,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 678,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 679,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 680,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 681,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 682,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 683,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 684,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 685,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 686,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 687,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 688,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 689,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 690,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 691,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 692,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 693,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 694,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 695,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 696,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 697,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 698,
+        "englishExact": true,
+        "arabicExact": true
+      }
+    ],
+    "chapters": [
+      {
+        "id": "chapter-38",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-39",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-40",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-41",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-42",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-43",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-44",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-45",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-46",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-47",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-48",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-49",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-50",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-51",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-52",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-53",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-54",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-55",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-56",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-57",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-58",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-59",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-60",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-61",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-62",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-63",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-63-print-64",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-64",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-65",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-66",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-67",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-68",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-69",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-70",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-71",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-72",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-73",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-74",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-75",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-76",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-77",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-78",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-79",
+        "titleExact": true,
+        "reportsExact": true
+      },
+      {
+        "id": "chapter-80",
+        "titleExact": true,
+        "reportsExact": true
+      }
+    ],
+    "readingSaved": true,
+    "nightLargest": {
+      "fontSize": "28px",
+      "scrollWidth": 320,
+      "theme": "night",
+      "width": 320
+    },
+    "expanded632Chains": {
+      "expanded": 2,
+      "scrollWidth": 320,
+      "width": 320
+    },
+    "freeBrowsingPreservedContinue": "#read/632",
+    "offlineRestartContinue": "#read/632",
+    "dayStandard": {
+      "fontSize": "21px",
+      "scrollWidth": 320,
+      "theme": "day",
+      "width": 320
+    },
+    "offlinePhraseSearch": [
+      "#read/669",
+      "#read/673"
+    ],
+    "offlineSearch_Muhadir": [
+      "#read/680"
+    ],
+    "offlineSearch_619b": [
+      "#read/619b"
+    ],
+    "offlineBookmarks": [
+      "#read/638",
+      "#read/663",
+      "#read/681",
+      "#read/698"
+    ],
+    "offlineSources": [
+      {
+        "number": 638,
+        "originalPreserved": true,
+        "selectedCorrection": true,
+        "url": "http://127.0.0.1:50345/reader/notes/adhan-hadith-626-641.html#hadith-638"
+      },
+      {
+        "number": 663,
+        "originalPreserved": true,
+        "selectedCorrection": true,
+        "url": "http://127.0.0.1:50345/reader/notes/adhan-hadith-658-673.html#hadith-663"
+      },
+      {
+        "number": 681,
+        "originalPreserved": true,
+        "selectedCorrection": true,
+        "url": "http://127.0.0.1:50345/reader/notes/adhan-hadith-674-689.html#hadith-681"
+      }
+    ],
+    "offlineChapterArabic": [
+      "chapter-38",
+      "chapter-39",
+      "chapter-40",
+      "chapter-41",
+      "chapter-42",
+      "chapter-43",
+      "chapter-44",
+      "chapter-45",
+      "chapter-46",
+      "chapter-47",
+      "chapter-48",
+      "chapter-49",
+      "chapter-50",
+      "chapter-51",
+      "chapter-52",
+      "chapter-53",
+      "chapter-54",
+      "chapter-55",
+      "chapter-56",
+      "chapter-57",
+      "chapter-58",
+      "chapter-59",
+      "chapter-60",
+      "chapter-61",
+      "chapter-62",
+      "chapter-63",
+      "chapter-64",
+      "chapter-65",
+      "chapter-66",
+      "chapter-67",
+      "chapter-68",
+      "chapter-69",
+      "chapter-70",
+      "chapter-71",
+      "chapter-72",
+      "chapter-73",
+      "chapter-74",
+      "chapter-75",
+      "chapter-76",
+      "chapter-77",
+      "chapter-78",
+      "chapter-79",
+      "chapter-80"
+    ],
+    "offlinePrintedHeading": {
+      "id": "chapter-63-print-64",
+      "arabic": "باب الإيجاز في الصلاة وإكمالها",
+      "witnessPages": [
+        184,
+        176
+      ],
+      "originalGroupingRetained": true
+    },
+    "offlineFinalArabicExact": true,
+    "backupExport": {
+      "version": 2,
+      "saved": [
+        638,
+        663,
+        681,
+        698
+      ],
+      "session": {
+        "numbers": [
+          631,
+          632,
+          633,
+          634,
+          635,
+          636
+        ],
+        "cursor": 632,
+        "ended": false
+      },
+      "verifiedDownloadedJSON": true
+    },
+    "screenshot": "content/review/evidence/adhan-632-698-reader.jpg"
+  },
+  "remaining": [
+    "Independent source and English reviews; English chapter introductions; remaining Bukhari sections; further reviewed Cedar recordings; physical iPhone acceptance for this release; full bilingual collection scale qualification.",
+    "External publication of this separate 699-entry release has not been approved. The live website remains at the approved 632-entry commit."
+  ]
+}

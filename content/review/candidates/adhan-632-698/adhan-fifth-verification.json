@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-10-29",
+  "status": "unregistered-candidate-not-in-reader",
+  "review": {
+    "path": "content/review/adhan-fifth-review.json",
+    "bytes": 125016,
+    "sha256": "82412529f98b0c73d5de5c978a9de28fbe0f858596dd7a9069af9818c89d32e7",
+    "objectSha256": "7367ca2b6e54ca677de063cb403c630a6d6125e503eb7c11b776401337e16f9c"
+  },
+  "scope": {
+    "references": [
+      651,
+      652,
+      653,
+      654,
+      655,
+      656,
+      657,
+      658,
+      659,
+      660,
+      661,
+      662,
+      663,
+      664,
+      665,
+      666,
+      667,
+      668,
+      669
+    ],
+    "entries": 19,
+    "chapters": [
+      "chapter-47",
+      "chapter-48",
+      "chapter-49",
+      "chapter-50",
+      "chapter-51",
+      "chapter-52",
+      "chapter-53",
+      "chapter-54",
+      "chapter-55",
+      "chapter-56",
+      "chapter-57",
+      "chapter-58",
+      "chapter-59",
+      "chapter-60"
+    ],
+    "segments": 46,
+    "separateArabicIntroductions": 5,
+    "introductionEnglish": "pending"
+  },
+  "source": {
+    "pinnedFiles": [
+      {
+        "path": "content/sources/wikisource-adhan/source.html",
+        "bytes": 290325,
+        "sha256": "b3c5c0eef7cb8d0f543f1c1e5d7cb4868ed732f159fc39d7df1bc2aed3b7ee8d"
+      },
+      {
+        "path": "content/sources/islamhouse-bukhari/source.epub",
+        "bytes": 1379875,
+        "sha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c"
+      },
+      {
+        "path": "content/staging/bukhari-adhan-wikisource/catalog.json",
+        "bytes": 371179,
+        "sha256": "4c2c7fbff3556f93c1fb68e2326ea8044b57dab134ad0a1dce153876d76047f1"
+      },
+      {
+        "path": "content/staging/bukhari-en-islamhouse/catalog.json",
+        "bytes": 7542938,
+        "sha256": "15607043ad8bf20083ef6fd9ec31fc86a30ea4b7f3b7ee90a28fa2064c72ae96"
+      }
+    ],
+    "printedWitnesses": [
+      {
+        "id": "brill-1862",
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+        "pdfPages": [
+          177,
+          178,
+          179,
+          180,
+          181,
+          182,
+          183
+        ],
+        "visuallyInspected": true
+      },
+      {
+        "id": "dar-ibn-kathir-2002",
+        "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+        "pdfPages": [
+          170,
+          171,
+          172,
+          173,
+          174,
+          175
+        ],
+        "visuallyInspected": true
+      }
+    ],
+    "englishComparisons": [
+      {
+        "source": "Aisha Bewley",
+        "references": "651–669",
+        "access": "Individually read from the previously retrieved complete Adhan page.",
+        "url": "https://aishabewley.org/bukhari7",
+        "cachedHTMLSha256": "813b590dcba8e7a03f8e15410a21db0e87c4d97146500cdb9c10273f514e3592",
+        "abbreviatedReferences": [
+          664,
+          669
+        ]
+      },
+      {
+        "source": "Pinned Khan-family EPUB",
+        "mapping": "651–657 → 1.11.651–657; 658 → full body 1.11.658 plus the unnumbered pointer 1.11.659; 659–662 → individually matched 1.11.660–663; 663 absent from the checked adjacent 1.11.663–664 sequence; 664–669 → 1.11.664–669.",
+        "evidence": "Exact record identities and hashes retained. The 1.11.659 body is retained verbatim in comparison evidence, with no invented target or repeated body."
+      }
+    ],
+    "originalDigitalInputUnchanged": true,
+    "declaredCorrections": [
+      {
+        "reference": 663,
+        "before": "المحنث",
+        "after": "المخنث",
+        "witnessPages": [
+          181,
+          174
+        ],
+        "originalPreserved": true,
+        "noticePrepared": true
+      }
+    ],
+    "reviewStatus": "AI-assisted working English; not Darussalam wording, not independent certification. Arabic, English, chapter, context and spoken-word reviews remain pending."
+  },
+  "preservationFindings": [
+    "651–655: distinct narrator attributions, complete dialogues, four repeated questions, three water requests and fainting sequences, ten selected prophetic honorifics in 655 and its distinct peace formula; Ali is identified only in the closing note.",
+    "656–657: the selected digital and modern-print omissions remain; the standing instruction repeated twice in 657 remains twice. The al-Humaydi comment is separately attributed and visible.",
+    "658: three related-to-me links, and he was not a liar, complete prostration account and Abu Nuaym/Sufyan/Abu Ishaq closing route. The English comparison pointer has no specified target and is not treated as a repeated report body.",
+    "659–664: both alternative questions and head/form alternatives, individually matched numbering shifts, elliptical for-you/against-them wording, local comparison absence for 663, visible al-Zubaydi/al-Zuhri comment and complete Prophet-to-Abu-Dharr attribution.",
+    "665–669: four/five/two and thirteen prayer-unit counts, ghatit/khatit alternative, Bukayr’s confirmation through Kurayb, unnamed aunt where selected, complete repeated Muadh opening, both threefold expressions and Amr’s explicit lack of recollection."
+  ],
+  "automated": {
+    "candidateTestFile": "tests/adhan-fifth-candidate.test.mjs",
+    "candidateTests": 8,
+    "candidatePassed": 8,
+    "fullSuites": [
+      {
+        "command": "node --test tests/*.test.mjs",
+        "tests": 493,
+        "passed": 493,
+        "failed": 0,
+        "logSha256": "e67a7087d57de60e18b175cfa0ca954a684a5252be8323834e288ed529df4a74"
+      },
+      {
+        "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p 'test_*.py'",
+        "tests": 93,
+        "passed": 93,
+        "failed": 0,
+        "logSha256": "1cd7fb115cc60273dfea8c9df97b6b83150a8130fa20c7c0f38decc49f30da77"
+      }
+    ],
+    "integrityChecks": [
+      {
+        "command": "python3 scripts/resolve-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-collection.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-audio.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node reader/check-content.mjs",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-english.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "git diff --check",
+        "exitCode": 0
+      }
+    ],
+    "negativeChecks": [
+      "Changed source spans and origins",
+      "Changed pinned comparison hash",
+      "Mismatched reporting verbs",
+      "Changed unnumbered pointer wording, invented pointer targets or pointer coverage assigned to a report body",
+      "Nonadjacent absence evidence or a false matching reference",
+      "Missing correction witness, wrong reading, hidden notice, wrong span or unmatched English",
+      "Incomplete report order or chapter coverage"
+    ]
+  },
+  "releaseIsolation": {
+    "preparedCommit": "a6d55223d3d863f2583ba67aa27edd139e9d7d6a",
+    "preparedEntryCount": 632,
+    "preparedSourceSha256": "464f46954f82d8b68a54c77fa1cfcbc25c8ea8d6ce8856e5f49d29b2f7154822",
+    "registered": false,
+    "readerAndBatchManifestAndNarrationPlanUnchanged": true,
+    "newAudioGenerated": false,
+    "livePublicationPerformed": false,
+    "reason": "Publication approval remains pending for the earlier exact release. This source packet and its validator change are separate and are not included in that decision."
+  },
+  "limits": [
+    "Automated checks verify structure and preservation, not independent linguistic or scholarly correctness.",
+    "No browser or physical iPhone acceptance is claimed for these unadmitted candidates.",
+    "These scripts have no recordings and are not spoken-word-reviewed.",
+    "Independent source and translation review remains pending.",
+    "Before admission, remove candidate-only wording from review scope, bind the final review hashes, explicitly register the batch, update the independent publication fixture, rebuild and validate all release artifacts, and check the actual reader presentation."
+  ]
+}

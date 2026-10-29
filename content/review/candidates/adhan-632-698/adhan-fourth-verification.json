@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-10-29",
+  "status": "unregistered-candidate-not-in-reader",
+  "review": {
+    "path": "content/review/adhan-fourth-review.json",
+    "bytes": 121556,
+    "sha256": "6596813e93b4f19c5ae484199ab4b65e24b1df8882db40cd634c1e6fd47d2719",
+    "objectSha256": "3aa16744b7135decb8e342320f9fe1e72ea9f5c35db2eb3a7ac2712a6a8bbe60"
+  },
+  "scope": {
+    "references": [
+      632,
+      633,
+      634,
+      635,
+      636,
+      637,
+      638,
+      639,
+      640,
+      641,
+      642,
+      643,
+      644,
+      645,
+      646,
+      647,
+      648,
+      649,
+      650
+    ],
+    "entries": 19,
+    "chapters": [
+      "chapter-38",
+      "chapter-39",
+      "chapter-40",
+      "chapter-41",
+      "chapter-42",
+      "chapter-43",
+      "chapter-44",
+      "chapter-45",
+      "chapter-46"
+    ],
+    "segments": 53,
+    "separateArabicIntroductions": 1,
+    "introductionEnglish": "pending"
+  },
+  "source": {
+    "pinnedFiles": [
+      {
+        "path": "content/sources/wikisource-adhan/source.html",
+        "bytes": 290325,
+        "sha256": "b3c5c0eef7cb8d0f543f1c1e5d7cb4868ed732f159fc39d7df1bc2aed3b7ee8d"
+      },
+      {
+        "path": "content/sources/islamhouse-bukhari/source.epub",
+        "bytes": 1379875,
+        "sha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c"
+      },
+      {
+        "path": "content/staging/bukhari-adhan-wikisource/catalog.json",
+        "bytes": 371179,
+        "sha256": "4c2c7fbff3556f93c1fb68e2326ea8044b57dab134ad0a1dce153876d76047f1"
+      },
+      {
+        "path": "content/staging/bukhari-en-islamhouse/catalog.json",
+        "bytes": 7542938,
+        "sha256": "15607043ad8bf20083ef6fd9ec31fc86a30ea4b7f3b7ee90a28fa2064c72ae96"
+      }
+    ],
+    "printedWitnesses": [
+      {
+        "id": "brill-1862",
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+        "pdfPages": [
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177
+        ],
+        "visuallyInspected": true
+      },
+      {
+        "id": "dar-ibn-kathir-2002",
+        "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+        "pdfPages": [
+          165,
+          166,
+          167,
+          168,
+          169,
+          170
+        ],
+        "visuallyInspected": true
+      }
+    ],
+    "englishComparisons": [
+      "Aisha Bewley 632–650: individually compared from the previously retrieved complete Adhan page.",
+      "Pinned Khan-family EPUB 1.11.632–1.11.650: individually matched; exact record identity and hash retained for each comparison."
+    ],
+    "originalDigitalInputUnchanged": true,
+    "declaredCorrections": [
+      {
+        "reference": 638,
+        "before": "سأل السقف",
+        "after": "سال السقف",
+        "witnessPages": [
+          174,
+          167
+        ],
+        "originalPreserved": true,
+        "noticePrepared": true
+      }
+    ],
+    "reviewStatus": "AI-assisted working English; not Darussalam wording, not independent certification. Arabic, English, chapter, context and spoken-word reviews remain pending."
+  },
+  "preservationFindings": [
+    "632: two opening routes, differing names, both repeated questions and all closing transmission notices; no invented pronoun antecedent.",
+    "633–634: complete illness accounts, question to al-A‘mash and nod, partial and supplementary routes, and later identification of the unnamed man remain separately attributed.",
+    "635–639: wind/rain distinction, hardship/sin variants, Abu Salamah’s question and the later Duha question remain explicit.",
+    "642: both complete sayings and routes, actual hearing of the imam, final Ibrahim ibn al-Mundhir route and Wahb’s Madinan identity remain.",
+    "645: selected negative wording about intending prayer remains, with a separate context notice; no clause imported from another route.",
+    "646–650: repeated requests and objections, the messenger, full companionship description, all honorifics, source passive wording and complete final alternative routes remain."
+  ],
+  "automated": {
+    "candidateTestFile": "tests/adhan-fourth-candidate.test.mjs",
+    "tests": 6,
+    "passed": 6,
+    "failed": 0,
+    "integrityChecks": [
+      {
+        "command": "python3 scripts/resolve-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-collection.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-audio.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node reader/check-content.mjs",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-english.py --check",
+        "exitCode": 0
+      }
+    ],
+    "negativeChecks": [
+      "Changed source spans and origins",
+      "Changed pinned comparison hash",
+      "Mismatched reporting verbs",
+      "Missing correction witness, wrong reading, hidden notice, wrong span or unmatched English",
+      "Incomplete report order or chapter coverage"
+    ]
+  },
+  "releaseIsolation": {
+    "preparedCommit": "a6d55223d3d863f2583ba67aa27edd139e9d7d6a",
+    "preparedEntryCount": 632,
+    "preparedSourceSha256": "464f46954f82d8b68a54c77fa1cfcbc25c8ea8d6ce8856e5f49d29b2f7154822",
+    "registered": false,
+    "readerAndBatchManifestAndNarrationPlanUnchanged": true,
+    "newAudioGenerated": false,
+    "livePublicationPerformed": false,
+    "reason": "Publication approval remains pending for the earlier exact release. This source packet is separate and is not included in that decision."
+  },
+  "limits": [
+    "No browser or physical iPhone acceptance is claimed for these unadmitted candidates.",
+    "These scripts have no recordings and are not spoken-word-reviewed.",
+    "Independent source and translation review remains pending.",
+    "Before admission, remove candidate-only wording from review scope, bind the final review hashes, explicitly register the batch, update the independent publication fixture, rebuild and validate all release artifacts, and check the actual reader presentation."
+  ]
+}

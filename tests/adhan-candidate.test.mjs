@@ -18,7 +18,7 @@ test('a suffixed source map is verified explicitly while ordinary import and unr
  const book=read('reader/books/catalog.json').books.find(b => b.id === 'adhan');
  assert.deepEqual(book.entryNumbers,BOOK_RANGES.find(b=>b.id==='adhan').references);
  assert(book.entryNumbers.includes('619b'));
- assert(!book.entryNumbers.includes(632));
+ assert.deepEqual(book.entryNumbers,inventory.records.map(r=>r.number));
  assert(release.files.some(f => f.path.includes('adhan')));
 });
 

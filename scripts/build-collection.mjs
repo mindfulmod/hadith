@@ -137,6 +137,10 @@ function validateComparisons(comparisons,config,segments){
       assert.equal(p.continuedByReference,undefined,'Backward pointer cannot claim a forward continuation');
       comparisonEvidence(p.referencedReference,p.referencedReferenceEvidence);
       assert(p.segmentIds.every(id=>segments.find(s=>s.id===id)?.kind==='chain'),'Backward-only part may only correspond to an abbreviated chain');
+     }else if(p.status==='unnumbered-back-reference-only'){
+      assert.equal(p.checkedBody[1].trim(),'as above.','Unexpected unnumbered split pointer');
+      assert(p.referencedReference===undefined&&p.referencedReferenceEvidence===undefined&&p.continuedByReference===undefined,'An unnumbered split pointer cannot invent a target');
+      assert(p.segmentIds.every(id=>['chain','transmission-note'].includes(segments.find(s=>s.id===id)?.kind)),'Unnumbered split pointer cannot stand in for a report body');
      }else if(p.status==='forward-reference-only'){
       const pointer=/^(?:as the following Hadith ([1-9]\d*)\.|The Prophet said, \(what is ascribed to him in the following Hadith ([1-9]\d*)\):)$/.exec(p.checkedBody[1].trim()),target=pointer&&(pointer[1]||pointer[2]);
       assert(target&&p.continuedByReference===`1.${p.reference.split('.')[1]}.${target}`&&p.continuedByReference===parts[i+1]?.reference&&Number(target)===Number(p.reference.split('.')[2])+1,'Forward-only pointer needs its exact adjacent continuation');
