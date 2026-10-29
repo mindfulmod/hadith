@@ -26,7 +26,8 @@ export const BOOK_CONFIGS=Object.freeze({
  menstruation:Object.freeze({id:'menstruation',number:6,title:'Menstruation',first:290,arabicSourceId:'arabic-menstruation',bewleySourceId:'bewley-menstruation',bewleyTitle:'Menstruation',revision:484869,bookIntroduction:'preserved-arabic'}),
  tayammum:Object.freeze({id:'tayammum',number:7,title:'Tayammum',first:327,arabicSourceId:'arabic-tayammum',bewleySourceId:'bewley-tayammum',bewleyTitle:'Tayammum',revision:484871,sourceLayout:'mapped'}),
  prayer:Object.freeze({id:'prayer',number:8,khanBooks:Object.freeze([8,9]),title:'Prayer',first:342,arabicSourceId:'arabic-prayer',bewleySourceId:'bewley-prayer',bewleyTitle:'Prayer',revision:522110,sourceLayout:'mapped'}),
- 'prayer-times':Object.freeze({id:'prayer-times',number:9,khanBooks:Object.freeze([10]),title:'Prayer Times',first:499,arabicSourceId:'arabic-prayer-times',bewleySourceId:'bewley-prayer-times',bewleyTitle:'Prayer Times',revision:484870})
+ 'prayer-times':Object.freeze({id:'prayer-times',number:9,khanBooks:Object.freeze([10]),title:'Prayer Times',first:499,arabicSourceId:'arabic-prayer-times',bewleySourceId:'bewley-prayer-times',bewleyTitle:'Prayer Times',revision:484870}),
+ adhan:Object.freeze({id:'adhan',number:10,khanBooks:Object.freeze([11]),title:'Adhan',first:578,arabicSourceId:'arabic-adhan',bewleySourceId:'bewley-adhan',bewleyTitle:'Adhan',revision:484867,sourceLayout:'mapped'})
 });
 function bookConfig(config){assert(Object.values(BOOK_CONFIGS).includes(config),'Unknown book configuration');return config;}
 let englishInventory;

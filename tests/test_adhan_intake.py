@@ -16,7 +16,7 @@ class AdhanIntakeTests(unittest.TestCase):
    self.assertEqual(position,len(b['text']));self.assertEqual(''.join(parts),b['text'])
  def test_ordinary_import_refuses_ambiguous_numbering(self):
   with self.assertRaisesRegex(ValueError,'duplicate-number-label'):book.extract(self.raw,self.manifest)
- def test_candidate_is_reproducible_and_cannot_enter_the_reader(self):
+ def test_candidate_is_reproducible_and_only_the_reviewed_prefix_is_admitted(self):
   self.assertEqual(self.data,json.loads((ROOT/'content/staging/bukhari-adhan-wikisource/layout-audit.json').read_text()));self.assertFalse(self.data['readerEligible']);self.assertEqual(self.data['status'],'candidate-layout-review-required');self.assertNotIn('records',self.data)
-  registry=json.loads((ROOT/'content/sources/wikisource-books.json').read_text());row=next(x for x in registry['pendingLayoutAudits']if x['id']=='adhan');self.assertEqual(row['resolution'],'content/review/adhan-layout-review.json');self.assertEqual(row['inventory'],'content/staging/bukhari-adhan-wikisource/catalog.json');self.assertFalse(any(b['id']=='adhan'for b in json.loads((ROOT/'reader/books/catalog.json').read_text())['books']));self.assertNotIn('wikisource-adhan',(ROOT/'reader/release.mjs').read_text())
+  registry=json.loads((ROOT/'content/sources/wikisource-books.json').read_text());row=next(x for x in registry['pendingLayoutAudits']if x['id']=='adhan');self.assertEqual(row['resolution'],'content/review/adhan-layout-review.json');self.assertEqual(row['inventory'],'content/staging/bukhari-adhan-wikisource/catalog.json');self.assertEqual(next(b for b in json.loads((ROOT/'reader/books/catalog.json').read_text())['books']if b['id']=='adhan')['entryNumbers'],list(range(578,596)));self.assertNotIn('wikisource-adhan',(ROOT/'reader/release.mjs').read_text())
 if __name__=='__main__':unittest.main()

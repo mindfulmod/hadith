@@ -1,0 +1,392 @@
+{
+  "checkedAt": "2026-10-29",
+  "status": "personal-prototype-admission-verified",
+  "baselineCommit": "64759576b1f8f6f70a48cc69e4f59106fcb93ead",
+  "readerRelease": "opening-7f449f1378ab",
+  "scope": {
+    "book": "Adhan",
+    "references": [
+      578,
+      579,
+      580,
+      581,
+      582,
+      583,
+      584,
+      585,
+      586,
+      587,
+      588,
+      589,
+      590,
+      591,
+      592,
+      593,
+      594,
+      595
+    ],
+    "newEntries": 18,
+    "chapters": 12,
+    "separateArabicIntroductionParagraphs": 4,
+    "workingEnglishSegments": 41,
+    "arabicCorrections": 0,
+    "arabicAdditions": 0
+  },
+  "publishedContent": {
+    "books": 10,
+    "entries": 595,
+    "sourceRecordSha256": "603295dc14a8d6a204eadde73032661a88a67f018bd6a879af47d50ed58c699d",
+    "prior577EntryObjectsUnchanged": true,
+    "priorNineBookRecordsUnchanged": true,
+    "recordedReferences": "1–6",
+    "completeNarrationScripts": 595,
+    "readingBytes": 16744875,
+    "releaseFiles": 157
+  },
+  "sourceReview": {
+    "record": "content/review/adhan-first-review.json",
+    "digitalRevision": 484867,
+    "digitalSha256": "b3c5c0eef7cb8d0f543f1c1e5d7cb4868ed732f159fc39d7df1bc2aed3b7ee8d",
+    "selectedArabicUnchanged": true,
+    "printedWitnesses": [
+      {
+        "edition": "Brill 1862",
+        "pdfPages": [
+          160,
+          161,
+          162,
+          163
+        ],
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+        "visuallyInspected": true
+      },
+      {
+        "edition": "Dar Ibn Kathir 2002",
+        "pdfPages": [
+          154,
+          155,
+          156,
+          157
+        ],
+        "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+        "visuallyInspected": true
+      }
+    ],
+    "englishComparisons": [
+      "Aisha Bewley, Book of Adhan, 578–595, individually read; 588 includes its unnumbered continuation.",
+      "Pinned IslamHouse Khan-family EPUB, individually matched 1.11.577–1.11.594; exact source-record evidence retained in the review."
+    ],
+    "preservationFindings": [
+      "Full chains, repeated speech, ellipses, honorifics and closing transmissions remain in source order.",
+      "581 preserves the selected narrator names and reporting formulas; differing printed expansions are recorded separately.",
+      "588 retains its own chain and Something similar continuation, with a separate link to 587; modern print division 612/613 is explicit.",
+      "591 retains عزمة as obligation with its pronoun, while exposing disagreement with the two English comparisons and citing Ibn Hajar separately.",
+      "593 retains اعتكف المؤذن and exposes differing printed readings and classical discussion; no silent substitution of the historical print or English comparison.",
+      "The exact source brace in 585 remains unchanged; expanded comparison parentheticals and invocation endings are not inserted."
+    ],
+    "reviewStatus": "AI-assisted working English, not Darussalam wording or independent certification. Arabic, English, context and spoken-word reviews remain pending."
+  },
+  "automated": {
+    "nodeTests": 468,
+    "pythonTests": 93,
+    "total": 561,
+    "allPassed": true,
+    "integrityChecks": [
+      {
+        "command": "node scripts/build-opening-prototype.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-wikisource-book.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/audit-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/resolve-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-collection.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-audio.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node reader/check-content.mjs",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/import-bukhari.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-bukhari-jk.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-english.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-opening.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/check-opening-review.py",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/build-opening-review.py --check",
+        "exitCode": 0
+      }
+    ],
+    "negativeChecks": [
+      "Changed source spans or origins",
+      "Omitted chapter context or gaps",
+      "Stale English comparison evidence",
+      "Changed translation after registered review",
+      "Unreviewed remainder, including distinct 619 and 619b"
+    ]
+  },
+  "browser": {
+    "environment": "Desktop in-app browser at actual 320 × 740 viewport, isolated localhost origin. No new physical iPhone or screen-locked audio acceptance.",
+    "renderChecks": [
+      {
+        "number": 578,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 579,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 580,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 581,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 582,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 583,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 584,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 585,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 586,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 587,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 588,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 589,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 590,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 591,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 592,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 593,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 594,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 595,
+        "englishExact": true,
+        "arabicExact": true
+      }
+    ],
+    "chapterChecks": [
+      {
+        "id": "chapter-01",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-01"
+      },
+      {
+        "id": "chapter-02",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-02"
+      },
+      {
+        "id": "chapter-03",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-03"
+      },
+      {
+        "id": "chapter-04",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-04"
+      },
+      {
+        "id": "chapter-05",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-05"
+      },
+      {
+        "id": "chapter-06",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-06"
+      },
+      {
+        "id": "chapter-07",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-07"
+      },
+      {
+        "id": "chapter-08",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-08"
+      },
+      {
+        "id": "chapter-09",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-09"
+      },
+      {
+        "id": "chapter-10",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-10"
+      },
+      {
+        "id": "chapter-11",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-11"
+      },
+      {
+        "id": "chapter-12",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-12"
+      }
+    ],
+    "chapterArabic": [
+      {
+        "id": "chapter-01",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-02",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-03",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-04",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-05",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-06",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-07",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-08",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-09",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-10",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-11",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-12",
+        "arabicExact": true
+      }
+    ],
+    "offline": {
+      "serverStopped": true,
+      "reloadContinue": 180,
+      "bookmarkCount": 1,
+      "exactPhrase": "al-Wasilah",
+      "result": 589,
+      "next": 590,
+      "arabic": 593,
+      "comparisonNotes": 593,
+      "chapterSource": "chapter-01",
+      "lastAvailable": 595
+    },
+    "online": {
+      "continuationLink": "588 -> 587/chain",
+      "chainExpanded": true,
+      "sessionPreserved": 180
+    },
+    "viewport": {
+      "width": 320,
+      "height": 740,
+      "dayStandard21": true,
+      "nightLargest28": true,
+      "horizontalOverflow": false
+    },
+    "consoleErrors": []
+  },
+  "remaining": [
+    "Continue complete-chapter source work from 596. The remaining 104 Adhan candidate reports, including 619b, remain excluded.",
+    "Independent Arabic, English and chapter/context review; English chapter introductions; remaining collection; further reviewed Cedar recordings; full bilingual performance qualification."
+  ]
+}

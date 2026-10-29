@@ -13,9 +13,11 @@ test('a suffixed source map is verified explicitly while ordinary import and unr
  assert.throws(() => validateBookInventory(inventory, {}, {id:'adhan'}), /explicit reader provenance support/);
  validateBookInventory(inventory, {sourceLayout:layoutEvidence(inventory)}, {id:'adhan',sourceLayout:'mapped'});
  assert.throws(() => validateBookInventory({...inventory,schemaVersion:2}, {}, {id:'adhan',sourceLayout:'mapped'}), /authoritative checked source map/);
- assert.equal(BOOK_CONFIGS.adhan, undefined);
- assert(!read('reader/books/catalog.json').books.some(b => b.id === 'adhan'));
- assert(!release.files.some(f => f.path.includes('adhan')));
+ assert.equal(BOOK_CONFIGS.adhan.sourceLayout, 'mapped');
+ const book=read('reader/books/catalog.json').books.find(b => b.id === 'adhan');
+ assert.deepEqual(book.entryNumbers,Array.from({length:18},(_,i)=>578+i));
+ assert(!book.entryNumbers.includes('619b'));
+ assert(release.files.some(f => f.path.includes('adhan')));
 });
 
 test('the Adhan suffix retains its exact source origin, comparison reference and printed boundary pages',()=>{
