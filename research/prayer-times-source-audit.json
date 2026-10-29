@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-10-28",
+  "sourceReviewedAt": "2026-10-23",
+  "status": "first-batch-admitted-personal-prototype",
+  "source": {
+    "manifest": "content/sources/wikisource-prayer-times/manifest.json",
+    "revision": 484870,
+    "sha256": "4eb1bf371c4aeb6b8475802af8dd56211038e565fc6c08d5d44ae80a667890d7",
+    "bytes": 193558,
+    "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_مواقيت_الصلاة&oldid=484870"
+  },
+  "candidateInventory": {
+    "path": "content/staging/bukhari-prayer-times-wikisource/catalog.json",
+    "reports": 79,
+    "range": "499–577",
+    "chapters": 41,
+    "introductionParagraphs": 8,
+    "blocks": 128,
+    "codePoints": 24713,
+    "blankBlocks": 0,
+    "readerEligible": false
+  },
+  "admitted": {
+    "range": "499–514",
+    "reports": 16,
+    "chapters": 10,
+    "separateArabicIntroductionParagraphs": 1,
+    "arabicCorrections": [
+      499,
+      511
+    ],
+    "verification": "research/prayer-times-first-verification.json"
+  },
+  "findings": [
+    "Pinned revision 484870 contains 79 numbered reports (499–577), 41 digital chapters, eight separate Arabic introduction paragraphs and 128 owned blocks. No blank block or structural ambiguity was observed. This is structural coverage of the selected source, not certification of its wording or completeness against other editions.",
+    "The first sixteen reports (499–514), forty-four English segments and ten chapters are admitted as a clearly labelled personal prototype. The first chapter introduction remains separate Arabic material, excluded from numbered sessions and narration. Its English translation is pending. All prior 498 entry objects and all eight earlier active book packs remain unchanged.",
+    "Historical Arabic print PDF pages 141–145 and modern Arabic print PDF pages 137–140 were visually inspected on 23 October. Bewley 499–514 and pinned Khan-family references 1.10.500–1.10.514 were individually matched. Selected 506 and 507 correspond to distinct accounts within the same English reference 1.10.507; each retains an explicit part identity, exact evidence and its own Arabic number.",
+    "Two declared Arabic corrections at 499 and 511 are supported by both inspected prints. 499 removes intrusive letters from al-Mughirah ibn Shubah’s name; 511 changes the initial hamza in the calling verb. The exact originals, corrected spans, hashes, witness readings and visible notices are retained. The other fourteen new Arabic reports remain unchanged.",
+    "499 retains reading-to-Malik, five separately stated prayer sequences, every selected salutation and the final Aisha account with its attribution. The historical Jibril honorific differs; the selected symbol is retained. Ibn Hajar was consulted for the sunlight rising out of the chamber; no clock time or wall description is added.",
+    "500 retains the singular sacred month and all four vessel terms without importing Ramadan or explanatory additions. 501 retains related-to-us and the selected Messenger wording. 502 preserves pronoun uncertainty, singular child and neighbour, unexpanded commanding and forbidding, and the closing Masruq attribution. The him-or-it rendering remains explicitly provisional because classical commentaries differ on its referent.",
+    "503 retains the unnamed man and woman and complete embedded quotation without comparison glosses. 504 retains the owner-of-this-house gesture, at-its-time wording and closing narrator statement. 505 retains both named transmitters, the related-to-me variant and joined digital Arabic spelling; the longer historical chapter title is recorded without insertion.",
+    "506 records its selected neglected wording against the printed did variant. 507 retains the alias, brother relationship, Damascus setting and closing Bakr transmission. 508 retains all three appended transmissions, singular/plural feet and alternative wording. 509 preserves grammatical-person changes and marks balanced as a provisional lexical choice.",
+    "510 preserves both complete routes and their shared attribution; modern 533–534 remains one selected entry. 511 retains both repeated alternatives and the narrator’s final observation outside the Prophetic quotation. 512 retains we memorized, both breaths and their stated order without importing explanatory season assignments; modern 536–537 remains one selected entry.",
+    "513 retains all three closing corroborators despite their omission in one English comparison. 514 retains the full chain, repeated instruction, narrator perspective and closing Ibn Abbas lexical statement within the selected numbered paragraph. The latter remains a visible transmission note and part of the complete script; it is not discarded because the comparison translations omit it."
+  ],
+  "remaining": "63 selected reports (515–577) remain outside the reader. English chapter introductions, further source comparison and independent Arabic, English, chapter, lexical, reference and spoken-word review remain pending."
+}

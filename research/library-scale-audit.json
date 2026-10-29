@@ -1,0 +1,190 @@
+{
+  "checkedAt": "2026-10-28",
+  "scope": "Desktop Node search-function measurement only. Excludes browser loading, parsing, rendering, iPhone timings and full bilingual corpus qualification.",
+  "environment": {
+    "node": "v24.18.0",
+    "platform": "darwin",
+    "arch": "arm64",
+    "cpu": "Apple M2"
+  },
+  "current": {
+    "entries": 514,
+    "books": 9,
+    "search": [
+      {
+        "query": "Allah",
+        "total": 501,
+        "iterations": 15,
+        "medianMs": 2.899,
+        "p95Ms": 3.995
+      },
+      {
+        "query": "prayer",
+        "total": 117,
+        "iterations": 15,
+        "medianMs": 6.213,
+        "p95Ms": 6.562
+      },
+      {
+        "query": "\"riding camels\"",
+        "total": 1,
+        "iterations": 15,
+        "medianMs": 7.248,
+        "p95Ms": 7.522
+      },
+      {
+        "query": "unlikelywordwithoutmatch",
+        "total": 0,
+        "iterations": 15,
+        "medianMs": 7.067,
+        "p95Ms": 7.32
+      },
+      {
+        "query": "577",
+        "total": 0,
+        "iterations": 15,
+        "medianMs": 0.027,
+        "p95Ms": 0.04
+      }
+    ]
+  },
+  "comparisonFixture": {
+    "records": 7111,
+    "source": "Pinned IslamHouse EPUB; every extracted record body checked against its catalog text digest. Ordinal number fields are benchmark-only, not reader references.",
+    "epubSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+    "bytes": 4422433,
+    "languages": [
+      "English"
+    ],
+    "notPublished": true,
+    "search": [
+      {
+        "query": "Allah",
+        "total": 4543,
+        "iterations": 15,
+        "medianMs": 29.457,
+        "p95Ms": 30.598
+      },
+      {
+        "query": "prayer",
+        "total": 1167,
+        "iterations": 15,
+        "medianMs": 30.338,
+        "p95Ms": 32.024
+      },
+      {
+        "query": "\"riding camels\"",
+        "total": 3,
+        "iterations": 15,
+        "medianMs": 31.751,
+        "p95Ms": 31.979
+      },
+      {
+        "query": "unlikelywordwithoutmatch",
+        "total": 0,
+        "iterations": 15,
+        "medianMs": 32.179,
+        "p95Ms": 44.029
+      },
+      {
+        "query": "577",
+        "total": 1,
+        "iterations": 15,
+        "medianMs": 0.089,
+        "p95Ms": 0.445
+      }
+    ]
+  },
+  "downloads": {
+    "release": "opening-1b91bbaee6b8",
+    "totalReleaseBytes": 23387966,
+    "packs": [
+      {
+        "id": "reading",
+        "bytes": 14699382,
+        "files": 71
+      },
+      {
+        "id": "cedar-opening",
+        "bytes": 2783728,
+        "files": 3
+      },
+      {
+        "id": "cedar-hadith-3",
+        "bytes": 2773264,
+        "files": 1
+      },
+      {
+        "id": "cedar-hadith-4",
+        "bytes": 775935,
+        "files": 1
+      },
+      {
+        "id": "cedar-hadith-5",
+        "bytes": 1134588,
+        "files": 1
+      },
+      {
+        "id": "cedar-hadith-6",
+        "bytes": 592077,
+        "files": 1
+      },
+      {
+        "id": "narration-review",
+        "bytes": 628992,
+        "files": 1
+      }
+    ],
+    "activeBooks": [
+      {
+        "id": "opening-revelation",
+        "bytes": 75201
+      },
+      {
+        "id": "faith",
+        "bytes": 259037
+      },
+      {
+        "id": "knowledge",
+        "bytes": 411618
+      },
+      {
+        "id": "ablution",
+        "bytes": 656317
+      },
+      {
+        "id": "ghusl",
+        "bytes": 238445
+      },
+      {
+        "id": "menstruation",
+        "bytes": 208176
+      },
+      {
+        "id": "tayammum",
+        "bytes": 117591
+      },
+      {
+        "id": "prayer",
+        "bytes": 955009
+      },
+      {
+        "id": "prayer-times",
+        "bytes": 90972
+      }
+    ],
+    "sourceRecordBytes": 1867915,
+    "historicalBookFiles": 78,
+    "historicalBookBytes": 23866772,
+    "note": "Pack byte totals are declared uncompressed file bytes, not compressed transfer or browser storage usage. Historical book files support tests and old releases; they are outside the active reading download. No historical asset was deleted."
+  },
+  "guidance": {
+    "url": "https://web.dev/articles/optimize-long-tasks",
+    "finding": "Browser main-thread tasks over 50 ms are long tasks. Node measurements are a planning signal, not an INP or iPhone measurement."
+  },
+  "nextActions": [
+    "Build a reusable normalized exact-text index in a worker, with a yielding fallback; preserve matching, ordering, source origin and pagination. Bind the index to the exact source hash and reject stale results.",
+    "Measure real browser input-to-result timing on desktop and iPhone before extending to full bilingual scale.",
+    "Partition duplicate source-note payloads by book and establish a compatibility policy for historical public assets before removing any files."
+  ]
+}

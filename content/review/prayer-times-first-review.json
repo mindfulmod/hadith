@@ -1,0 +1,1677 @@
+{
+  "schemaVersion": 1,
+  "status": "personal-prototype-only",
+  "independentReview": "pending",
+  "sourceId": "wikisource-bukhari-prayer-times-r484870",
+  "sourceSha256": "4eb1bf371c4aeb6b8475802af8dd56211038e565fc6c08d5d44ae80a667890d7",
+  "inventorySha256": "5b76cc4c422007512357299dfe872c70473c974a23cc2e60ea0690c33ad4c3cc",
+  "createdAt": "2026-10-23",
+  "sources": [
+    {
+      "id": "arabic-prayer-times",
+      "label": "Arabic Wikisource · fixed revision 484870",
+      "kind": "arabic-input",
+      "format": "web",
+      "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_مواقيت_الصلاة&oldid=484870"
+    },
+    {
+      "id": "bewley-prayer-times",
+      "label": "Aisha Bewley · Prayer Times",
+      "kind": "english-comparison",
+      "format": "web",
+      "url": "https://aishabewley.org/bukhari6"
+    },
+    {
+      "id": "islamhouse-khan",
+      "label": "IslamHouse · Khan-family English comparison",
+      "kind": "english-comparison",
+      "format": "web",
+      "url": "https://islamhouse.com/en/books/70510"
+    },
+    {
+      "id": "brill-1862",
+      "label": "Historical Arabic print · Brill 1862",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf",
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+    },
+    {
+      "id": "dar-ibn-kathir-2002",
+      "label": "Arabic print · Dar Ibn Kathir 2002",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+    },
+    {
+      "id": "fath-sunlight-499",
+      "label": "Ibn Hajar · Fath al-Bari · sunlight in the chamber",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://ablibrary.net/book_content/b/2606/20"
+    },
+    {
+      "id": "classical-fitna-502",
+      "label": "Classical commentaries · the pronoun alternative and misleading reports",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamarchive.cc/hadith/174137"
+    },
+    {
+      "id": "fath-cooling-511",
+      "label": "Ibn Hajar · Fath al-Bari · the narrator’s shadow observation",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://islamweb.net/ar/library/content/52/1002/باب-الإبراد-بالظهر-في-شدة-الحر"
+    },
+    {
+      "id": "fath-cooling-514",
+      "label": "Ibn Hajar · Fath al-Bari · shadows and the Ibn Abbas lexical note",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/ar/library/content/52/1009/باب-الإبراد-بالظهر-في-السفر"
+    },
+    {
+      "id": "nawawi-cooling",
+      "label": "Al-Nawawi · Commentary on Muslim · cooling, heat and shadows",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://islamweb.net/ar/library/content/53/1676/باب-استحباب-الإبراد-بالظهر-في-شدة-الحر-لمن-يمضي-إلى-جماعة-ويناله-الحر-في-طريقه"
+    }
+  ],
+  "scope": "Complete selected Prayer Times reports 499–514 and chapters 1–10. The first Arabic chapter introduction remains separately browseable, outside numbered sessions and narration; its English is pending. Later candidate entries are not admitted.",
+  "editionNote": "Two explicit digital corrections at 499 and 511 are supported by both inspected Arabic prints, with unchanged originals and visible notices. Complete chains, repeated sequences, uncertainties, shared English references and closing transmissions remain. Independent review is pending.",
+  "chapters": [
+    {
+      "id": "chapter-01",
+      "headingId": "باب_مواقيت_الصلاة_وفضلها",
+      "contextIds": [
+        "mwBg"
+      ],
+      "entryNumbers": [
+        499
+      ],
+      "title": "Prayer times and their merit",
+      "titleArabic": "باب مواقيت الصلاة وفضلها",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "Original Arabic chapter introduction preserved separately; English translation remains pending."
+    },
+    {
+      "id": "chapter-02",
+      "headingId": "باب_{_منيبين_إليه_واتقوه_وأقيموا_الصلاة_ولا_تكونوا_من_المشركين_}",
+      "contextIds": [],
+      "entryNumbers": [
+        500
+      ],
+      "title": "“Turning to Him, fear Him, establish prayer, and do not be among the polytheists”",
+      "titleArabic": "باب { منيبين إليه واتقوه وأقيموا الصلاة ولا تكونوا من المشركين }",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-03",
+      "headingId": "باب_البيعة_على_إقامة_الصلاة",
+      "contextIds": [],
+      "entryNumbers": [
+        501
+      ],
+      "title": "Pledging allegiance to establish prayer",
+      "titleArabic": "باب البيعة على إقامة الصلاة",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-04",
+      "headingId": "باب_الصلاة_كفارة",
+      "contextIds": [],
+      "entryNumbers": [
+        502,
+        503
+      ],
+      "title": "Prayer is expiation",
+      "titleArabic": "باب الصلاة كفارة",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-05",
+      "headingId": "باب_فضل_الصلاة_لوقتها",
+      "contextIds": [],
+      "entryNumbers": [
+        504
+      ],
+      "title": "The merit of prayer at its time",
+      "titleArabic": "باب فضل الصلاة لوقتها",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-06",
+      "headingId": "باب_الصلوات_الخمس_كفارة",
+      "contextIds": [],
+      "entryNumbers": [
+        505
+      ],
+      "title": "The five prayers are expiation",
+      "titleArabic": "باب الصلوات الخمس كفارة",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-07",
+      "headingId": "باب_تضييع_الصلاة_عن_وقتها",
+      "contextIds": [],
+      "entryNumbers": [
+        506,
+        507
+      ],
+      "title": "Neglecting prayer beyond its time",
+      "titleArabic": "باب تضييع الصلاة عن وقتها",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-08",
+      "headingId": "باب_المصلي_يناجي_ربه_عز_وجل",
+      "contextIds": [],
+      "entryNumbers": [
+        508,
+        509
+      ],
+      "title": "The person praying speaks privately with his Lord, mighty and majestic",
+      "titleArabic": "باب المصلي يناجي ربه عز وجل",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-09",
+      "headingId": "باب_الإبراد_بالظهر_في_شدة_الحر",
+      "contextIds": [],
+      "entryNumbers": [
+        510,
+        511,
+        512,
+        513
+      ],
+      "title": "Delaying Dhuhr until it is cooler in intense heat",
+      "titleArabic": "باب الإبراد بالظهر في شدة الحر",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-10",
+      "headingId": "باب_الإبراد_بالظهر_في_السفر",
+      "contextIds": [],
+      "entryNumbers": [
+        514
+      ],
+      "title": "Delaying Dhuhr until it is cooler while travelling",
+      "titleArabic": "باب الإبراد بالظهر في السفر",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    }
+  ],
+  "entries": [
+    {
+      "number": 499,
+      "id": "bukhari:499",
+      "sourceRecordId": "wikisource-bukhari-prayer-times-r484870:499",
+      "chapterId": "chapter-01",
+      "paragraphIds": [
+        "mwBw"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "499-1",
+          "paragraphId": "mwBw",
+          "start": 0,
+          "end": 60,
+          "kind": "chain",
+          "arabic": "[499] حدثنا عبد الله بن مسلمة قال قرأت على مالك عن ابن شهاب ",
+          "english": "‘Abd Allah ibn Maslamah related to us. He said: I read to Malik, from Ibn Shihab:",
+          "arabicSha256": "e5a3ccddaf8dd99188eb997bd1628642cb2b761679a678bbb598b5d2dd074145",
+          "englishSha256": "7eaa7d3755d2916d38304ab81d0fd57c231af2171634d1f0f394abcdfd79e04c"
+        },
+        {
+          "id": "499-2",
+          "paragraphId": "mwBw",
+          "start": 60,
+          "end": 465,
+          "kind": "report",
+          "arabic": "أن عمر بن عبد العزيز أخر الصلاة يوما فدخل عليه عروة بن الزبير فأخبره أن المغيرة بن شعبة أخر الصلاة يوما وهو بالعراق فدخل عليه أبو مسعود الأنصارى، فقال: ما هذا يا مغيرة أليس قد علمت أن جبريل ﷺ نزل فصلى فصلى رسول الله ﷺ ثم صلى فصلى رسول الله ﷺ ثم صلى فصلى رسول الله ﷺ ثم صلى فصلى رسول الله ﷺ ثم صلى فصلى رسول الله ﷺ، ثم قال بهذا أمرت، فقال عمر لعروة أعلم ما تحدث أو إن جبريل هو أقام لرسول الله ﷺ وقت الصلاة ",
+          "english": "That ‘Umar ibn ‘Abd al-‘Aziz delayed the prayer one day. ‘Urwah ibn al-Zubayr came in to him and informed him that al-Mughirah ibn Shu‘bah had delayed the prayer one day while he was in Iraq. Abu Mas‘ud al-Ansari came in to him and said: “What is this, Mughirah? Did you not know that Jibril, may Allah bless him and grant him peace, descended and prayed, and the Messenger of Allah, may Allah bless him and grant him peace, prayed? Then he prayed, and the Messenger of Allah, may Allah bless him and grant him peace, prayed. Then he prayed, and the Messenger of Allah, may Allah bless him and grant him peace, prayed. Then he prayed, and the Messenger of Allah, may Allah bless him and grant him peace, prayed. Then he prayed, and the Messenger of Allah, may Allah bless him and grant him peace, prayed. Then he said: ‘This is what I was commanded to do.’” ‘Umar said to ‘Urwah: “Know what you are relating. Was it indeed Jibril who established the time of prayer for the Messenger of Allah, may Allah bless him and grant him peace?”",
+          "arabicSha256": "f9499509093a340f7d1d66973870fa063cf8191b0c12e30a7b446f04a48b8619",
+          "englishSha256": "30ad5538e1b59340c0848e9326718f9a70d0bdfcaf6a8563295fbbe0d89ee8c7"
+        },
+        {
+          "id": "499-3",
+          "paragraphId": "mwBw",
+          "start": 465,
+          "end": 541,
+          "kind": "transmission-note",
+          "arabic": "قال عروة كذلك كان بشير بن أبي مسعود يحدث عن أبيه قال عروة ولقد حدثتني عائشة ",
+          "english": "‘Urwah said: That is how Bashir ibn Abi Mas‘ud used to relate it from his father. ‘Urwah said: And ‘A’ishah related to me:",
+          "arabicSha256": "e1f1a27c75a7933f2c03ac01f78b32e1c70ab6eb471158cf8fe2dbfb85ceca31",
+          "englishSha256": "d085dc46f23df800baf61723bfb426681e203d07f62f19bc87e8c3190efe4bfb"
+        },
+        {
+          "id": "499-4",
+          "paragraphId": "mwBw",
+          "start": 541,
+          "end": 599,
+          "kind": "report",
+          "arabic": "أن رسول الله ﷺ كان يصلي العصر والشمس في حجرتها قبل أن تظهر",
+          "english": "That the Messenger of Allah, may Allah bless him and grant him peace, used to pray ‘Asr while the sunlight was in her chamber, before it rose out of it.",
+          "arabicSha256": "cb6b356915057e5350ef65224ac8a9a25cc48cc6f02d359bd9e95f6af3c8966e",
+          "englishSha256": "00253ac2f36b1fec45df5906739f6642ee58425f22548b85939fa1d4543c5dbc"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            141,
+            142
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            137
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer-times",
+          "reference": "499"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.10.500",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.10.500",
+            "recordSha256": "b74d28ffe25fe779edbea0e0d90686821fec0aa82db1cadd98127b6c7b38853e"
+          }
+        }
+      ],
+      "notes": [
+        "The digital string المغيرة بن ييلسلشعبة contains an intrusive sequence inside the name. Both inspected prints read المغيرة بن شعبة. A declared correction selects that reading, preserving the exact original and span. The historical print uses a peace honorific for Jibril; the selected digital salutation symbol remains and is expanded in English without silent replacement.",
+        "Both five-step prayer sequences and all selected honorifics remain. No names of the five prayers are inserted. The source reading-to-Malik formula is retained. The first-person reading of أمرت follows the inspected printed vowel and both English comparisons; other vocalizations are a matter for independent review.",
+        "The modern print numbers the closing Aisha report separately as 522, after 521; the selected source retains one entry. The Bashir attribution and Aisha’s related-to-me link remain visible. Ibn Hajar explains ظهور here as the sunlight rising out of the chamber; the working English preserves that spatial sense without adding a clock time or wall description."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparisons. Original inputs, declared corrections, comparison omissions, variant wording and uncertain lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review is pending; this is not certification.",
+      "arabicSha256": "38da3d56b547f02ca71aa94919d1948f69fd187f5b51a57e5060028847350176",
+      "englishSha256": "6e5fe38f6202e7fb5e7aaf7f57b335b6faa294909319b695e94b7d119a6e52c5",
+      "originalArabicSha256": "e75c6e37f38efbf01056a32a13cd1be79c33bdde5286dbf8fc37704442113080",
+      "contextNotes": [
+        {
+          "id": "499-source-correction",
+          "label": "A recorded Arabic correction",
+          "text": "Both inspected Arabic prints read المغيرة بن شعبة. The intrusive letters in the digital name are removed only in the explicitly derived reading; the original remains unchanged. Independent review is pending.",
+          "citations": [
+            "base",
+            "brill-1862",
+            "dar-ibn-kathir-2002"
+          ],
+          "related": []
+        }
+      ],
+      "arabicCorrections": [
+        {
+          "id": "499-printed-reading",
+          "paragraphId": "mwBw",
+          "start": 132,
+          "end": 152,
+          "before": "المغيرة بن ييلسلشعبة",
+          "after": "المغيرة بن شعبة",
+          "originalParagraphSha256": "e75c6e37f38efbf01056a32a13cd1be79c33bdde5286dbf8fc37704442113080",
+          "correctedParagraphSha256": "38da3d56b547f02ca71aa94919d1948f69fd187f5b51a57e5060028847350176",
+          "status": "chosen-for-personal-prototype",
+          "reviewerKind": "ai",
+          "independentReview": "pending",
+          "reason": "Both inspected Arabic prints read المغيرة بن شعبة. The intrusive letters in the digital name are removed only in the explicitly derived reading; the original remains unchanged.",
+          "witnesses": [
+            {
+              "sourceId": "brill-1862",
+              "pdfPage": 141,
+              "reading": "المغيرة بن شعبة",
+              "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+            },
+            {
+              "sourceId": "dar-ibn-kathir-2002",
+              "pdfPage": 137,
+              "reading": "المغيرة بن شعبة",
+              "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+            }
+          ],
+          "contextNoteId": "499-source-correction",
+          "englishSegmentId": "499-2",
+          "englishRendering": "al-Mughirah ibn Shu‘bah"
+        }
+      ],
+      "additionalCitations": [
+        {
+          "id": "commentary-fath-sunlight-499",
+          "sourceId": "fath-sunlight-499",
+          "locator": "Fath al-Bari · volume 2, page 20 · the spatial meaning of appearance",
+          "scope": "Consulted for lexical, attribution or variant review. Commentary stays separate from the selected report; independent review remains pending."
+        }
+      ],
+      "reviewRecordSha256": "7a7ec94d18e346ca2c424ab585d9527774539dbf94efb9cc094022c462cb4a67"
+    },
+    {
+      "number": 500,
+      "id": "bukhari:500",
+      "sourceRecordId": "wikisource-bukhari-prayer-times-r484870:500",
+      "chapterId": "chapter-02",
+      "paragraphIds": [
+        "mwEQ"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "500-1",
+          "paragraphId": "mwEQ",
+          "start": 0,
+          "end": 82,
+          "kind": "chain",
+          "arabic": "[500] حدثنا قتيبة بن سعيد قال: حدثنا عباد هو ابن عباد عن أبي جمرة عن ابن عباس قال ",
+          "english": "Qutaybah ibn Sa‘id related to us. He said: ‘Abbad—he is Ibn ‘Abbad—related to us, from Abu Jamrah, from Ibn ‘Abbas, who said:",
+          "arabicSha256": "5568e848e9d9cf2b090620b07cd04e7a7975ae577dff9bae5a69ef033cec12be",
+          "englishSha256": "5c1d73a92dc84c9b8e9a957c0166db4d34b994073142ab199af7045fc2cd38d5"
+        },
+        {
+          "id": "500-2",
+          "paragraphId": "mwEQ",
+          "start": 82,
+          "end": 420,
+          "kind": "report",
+          "arabic": "قدم وفد عبد القيس على رسول الله ﷺ فقالوا إنا من هذا الحي من ربيعة ولسنا نصل إليك إلا في الشهر الحرام فمرنا بشيء نأخذه عنك وندعو إليه من وراءنا، فقال آمركم بأربع وأنهاكم عن أربع الإيمان بالله ثم فسرها لهم شهادة أن لا إله إلا الله وأني رسول الله وإقام الصلاة وإيتاء الزكاة وأن تؤدوا إلي خمس ما غنمتم وأنهى عن الدباء والحنتم والمقير والنقير ",
+          "english": "The delegation of ‘Abd al-Qays came to the Messenger of Allah, may Allah bless him and grant him peace, and said: “We are from this clan of Rabi‘ah, and we cannot reach you except in the sacred month. Instruct us in something that we may take from you and call those we have left behind to it.” He said: “I command you to do four things and forbid you four things: belief in Allah”—then he explained it to them—“testifying that there is no god but Allah and that I am the Messenger of Allah, establishing prayer, giving zakat, and delivering to me one fifth of what you take as spoils. And I forbid al-dubba’, al-hantam, al-muqayyar and al-naqir.”",
+          "arabicSha256": "82db62fa4722ecc3a943ec649daf9c3bd236f38a5b7c79b6d93bb449a51970dd",
+          "englishSha256": "11161a63e955c9222511d1da852bc855fd5fd270a2184bca6c8c686169ecb53d"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            142
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            137,
+            138
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer-times",
+          "reference": "500"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.10.501",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.10.501",
+            "recordSha256": "4093d3c8031301e9c44a0593bab331acbade4146799221f2fc696f577a6caace"
+          }
+        }
+      ],
+      "notes": [
+        "The selected sacred month remains singular. The source’s first-person I am the Messenger of Allah remains. The complete list and intervening then he explained it to them are retained without importing Ramadan fasting, numerical bullet structure or explanatory legal parentheses from parallels.",
+        "The four vessel names retain source terms as in earlier entries 53 and 87. The selected المقير spelling remains without normalization. The chain retains ‘Abbad—he is Ibn ‘Abbad—rather than replacing it with an expanded name."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparisons. Original inputs, declared corrections, comparison omissions, variant wording and uncertain lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review is pending; this is not certification.",
+      "arabicSha256": "75713683099dcee590e10d9f23d6554ffb6db2af53f7ec489d28bf70db429c1f",
+      "englishSha256": "e3a4139599dbd961391bf14b4ab6745e0b9aed732408ec45a833a828f66042f4",
+      "reviewRecordSha256": "1e0f25079319e5d86490d8f19aff0f529825bb869f8543f312d6c2577083cce4"
+    },
+    {
+      "number": 501,
+      "id": "bukhari:501",
+      "sourceRecordId": "wikisource-bukhari-prayer-times-r484870:501",
+      "chapterId": "chapter-03",
+      "paragraphIds": [
+        "mwFA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "501-1",
+          "paragraphId": "mwFA",
+          "start": 0,
+          "end": 101,
+          "kind": "chain",
+          "arabic": "[501] حدثنا محمد بن المثنى قال: حدثنا يحيى قال: حدثنا إسماعيل قال: حدثنا قيس عن جرير بن عبد الله قال ",
+          "english": "Muhammad ibn al-Muthanna related to us. He said: Yahya related to us. He said: Isma‘il related to us. He said: Qays related to us, from Jarir ibn ‘Abd Allah, who said:",
+          "arabicSha256": "8f6999b09cad226fa38d40cffee5ab07318bb2ac9eb7b2b4dc4cd79c0a90eb25",
+          "englishSha256": "00469ab13faf44db3a8eabd0c802daf9b0062ef94c817e145d8e218d284dfd55"
+        },
+        {
+          "id": "501-2",
+          "paragraphId": "mwFA",
+          "start": 101,
+          "end": 165,
+          "kind": "report",
+          "arabic": "بايعت رسول الله ﷺ على إقام الصلاة وإيتاء الزكاة والنصح لكل مسلم ",
+          "english": "I pledged allegiance to the Messenger of Allah, may Allah bless him and grant him peace, to establish prayer, give zakat and be sincere toward every Muslim.",
+          "arabicSha256": "c4309e37b2a88cea5ff2934a3fe790aed8587e0c7317458c1d35ec4d56ca36a4",
+          "englishSha256": "b4e3174f6efa393b56801c5e59ffb4439ee08b395051a86b08bd160f83f6cb07"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            142
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            138
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer-times",
+          "reference": "501"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.10.502",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.10.502",
+            "recordSha256": "9e7a9086ea8e559e77169e7e2c5afaec0bb2331a780f23087982570225676c42"
+          }
+        }
+      ],
+      "notes": [
+        "The full chain remains, including Qays related to us rather than the related-to-me form in earlier 57. Its Qays name is not expanded. Be sincere toward every Muslim follows the earlier working rendering of النصح, not an inserted duty to offer unsolicited advice. The historical print says the Prophet, while the selected source and modern print say the Messenger of Allah."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparisons. Original inputs, declared corrections, comparison omissions, variant wording and uncertain lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review is pending; this is not certification.",
+      "arabicSha256": "3def5693db5de05610aea1e9c4b8e7c1659a2f8b58cb9c1167f2741ab769ed92",
+      "englishSha256": "de0e2ee9bff0c30e14c9a4892d1598c17c23f1f072bc1af16a0591498728cd7c",
+      "reviewRecordSha256": "97bd9538ee7b94f29c52cd396222d7816e8a5d82e6d11f8cc46675e339e72df2"
+    },
+    {
+      "number": 502,
+      "id": "bukhari:502",
+      "sourceRecordId": "wikisource-bukhari-prayer-times-r484870:502",
+      "chapterId": "chapter-04",
+      "paragraphIds": [
+        "mwFw"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "502-1",
+          "paragraphId": "mwFw",
+          "start": 0,
+          "end": 79,
+          "kind": "chain",
+          "arabic": "[502] حدثنا مسدد قال: حدثنا يحيى عن الأعمش قال: حدثني شقيق قال: سمعت حذيفة قال ",
+          "english": "Musaddad related to us. He said: Yahya related to us, from al-A‘mash, who said: Shaqiq related to me. He said: I heard Hudhayfah say:",
+          "arabicSha256": "88dc78ef55d77eb68dc5821065f86086f34a49f593e07a8ca243febfc6dac69c",
+          "englishSha256": "979e3ae7d7ac9bdb89710b8d69c7d2410622ed61f6ec10de2ce18aeb8b63476a"
+        },
+        {
+          "id": "502-2",
+          "paragraphId": "mwFw",
+          "start": 79,
+          "end": 456,
+          "kind": "report",
+          "arabic": "كنا جلوسا عند عمر رضى الله تعالى عنه، فقال أيكم يحفظ قول رسول الله ﷺ في الفتنة قلت: أنا كما قاله قال إنك عليه أو عليها لجريء قلت: فتنة الرجل في أهله وماله وولده وجاره تكفرها الصلاة والصوم والصدقة والأمر والنهي قال ليس هذا أريد ولكن الفتنة التي تموج كما يموج البحر قال ليس عليك منها بأس يا أمير المؤمنين إن بينك وبينها بابا مغلقا قال أيكسر أم يفتح قال يكسر قال إذا لا يغلق أبدا ",
+          "english": "We were sitting with ‘Umar, may Allah Most High be pleased with him. He said: “Which of you remembers the statement of the Messenger of Allah, may Allah bless him and grant him peace, about tribulation?” I said: “I do, as he said it.” He said: “You are certainly bold about him—or about it.” I said: “A man’s trial in his family, his wealth, his child and his neighbour is expiated by prayer, fasting, charity, commanding and forbidding.” He said: “This is not what I mean, but the tribulation that surges as the sea surges.” He said: “You have nothing to fear from it, Commander of the Believers. Between you and it is a closed door.” He said: “Will it be broken or opened?” He said: “It will be broken.” He said: “Then it will never be closed.”",
+          "arabicSha256": "c8cf1484cf229189870ab5f31291d205d9dd7056cd6cbce5e35473fd1c0bae94",
+          "englishSha256": "2b244fcdf719e857aacad95734fb7b149a9d3356d63d54d91f6d6edbe6356fdc"
+        },
+        {
+          "id": "502-3",
+          "paragraphId": "mwFw",
+          "start": 456,
+          "end": 599,
+          "kind": "transmission-note",
+          "arabic": "قلنا أكان عمر يعلم الباب قال: نعم كما أن دون الغد الليلة إني حدثته بحديث ليس بالأغاليط فهبنا أن نسأل حذيفة فأمرنا مسروقا فسأله، فقال الباب عمر ",
+          "english": "We said: “Did ‘Umar know the door?” He said: “Yes, just as tonight comes before tomorrow. I related to him a report containing no misleading statements.” We were afraid to ask Hudhayfah, so we told Masruq to do so. He asked him, and he said: “The door is ‘Umar.”",
+          "arabicSha256": "082101976f02076a898132a16789f4985cdccfe095c1c52d0a008105e94f2cf8",
+          "englishSha256": "c13a678b1e4334e71bd6cfdd1dc55d3edf4a1d1021f61bc2388d234a704bad63"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            142,
+            143
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            138
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer-times",
+          "reference": "502"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.10.503",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.10.503",
+            "recordSha256": "2a2face6ce1078365b9227226d0b36df91529ba9580b336cb28a29ec1613bec8"
+          }
+        }
+      ],
+      "notes": [
+        "The masculine-or-feminine pronoun uncertainty عليه أو عليها is retained as him—or it, following the personal/report referents explained by al-Qastallani. Al-Ayni instead connects the masculine pronoun to the statement; this lexical choice remains provisional and the original Arabic and ambiguity are retained. No confident referent name replaces either pronoun.",
+        "The source singular child and neighbour, selected Most High honorific, and unexpanded commanding and forbidding remain. The explicit good/evil objects in other versions are not inserted. The closing tonight-before-tomorrow wording is not reversed to night follows day.",
+        "The closing question, certainty statement, Masruq attribution and door answer remain a visible transmission note. Ibn Rajab and al-Ayni explain aghalit as misleading matters; misleading statements is a provisional working rendering, without inserting their explanation about legal certainty or the history of Umar’s death."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparisons. Original inputs, declared corrections, comparison omissions, variant wording and uncertain lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review is pending; this is not certification.",
+      "arabicSha256": "108c32f9b297d6fe95f2e85573c4a50d52af9b98b94f0971ca370f4bab8644cc",
+      "englishSha256": "c4e353a9eaa9687884dcfe9a202e9f60de634c5b72c26f8037bb9e6c79dc961e",
+      "additionalCitations": [
+        {
+          "id": "commentary-classical-fitna-502",
+          "sourceId": "classical-fitna-502",
+          "locator": "Al-Qastallani, al-Ayni and Ibn Rajab · pronoun alternative and aghalit",
+          "scope": "Consulted for lexical, attribution or variant review. Commentary stays separate from the selected report; independent review remains pending."
+        }
+      ],
+      "reviewRecordSha256": "0381cf0fa9c78f6cc3d2d0314ab04f900b29b4b72ce40e01f5f66f9670bfb2ab"
+    },
+    {
+      "number": 503,
+      "id": "bukhari:503",
+      "sourceRecordId": "wikisource-bukhari-prayer-times-r484870:503",
+      "chapterId": "chapter-04",
+      "paragraphIds": [
+        "mwGQ"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "503-1",
+          "paragraphId": "mwGQ",
+          "start": 0,
+          "end": 92,
+          "kind": "chain",
+          "arabic": "[503] حدثنا قتيبة قال: حدثنا يزيد بن زريع عن سليمان التيمي عن أبي عثمان النهدي عن ابن مسعود ",
+          "english": "Qutaybah related to us. He said: Yazid ibn Zuray‘ related to us, from Sulayman al-Taymi, from Abu ‘Uthman al-Nahdi, from Ibn Mas‘ud:",
+          "arabicSha256": "895d5d6023e87b1a7deb634255aa98b614835861f1950b061fa67ff9898bb848",
+          "englishSha256": "7026a858611147145b440801bd9bd34a835a91ed548e35235a65c9363745e714"
+        },
+        {
+          "id": "503-2",
+          "paragraphId": "mwGQ",
+          "start": 92,
+          "end": 270,
+          "kind": "report",
+          "arabic": "أن رجلا أصاب من امرأة قبلة فأتى النبي ﷺ فأخبره فأنزل الله { أقم الصلاة طرفي النهار وزلفا من الليل إن الحسنات يذهبن السيئات }، فقال الرجل يا رسول الله ألي هذا قال لجميع أمتي كلهم ",
+          "english": "That a man obtained a kiss from a woman. He came to the Prophet, may Allah bless him and grant him peace, and informed him. Allah revealed: “Establish prayer at the two ends of the day and in the near parts of the night. Good deeds remove bad deeds.” The man said: “Messenger of Allah, is this for me?” He said: “For all of my community, every one of them.”",
+          "arabicSha256": "5e6678168e8b930bca69bd13ad10f1f1e1aa11a7a408d45e17d67684df2739ee",
+          "englishSha256": "3b6fd28a6bbe7a69d3ee3894d5efc166be051eaee0163fb4c56ebd218f8b10f9"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            143
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            138
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer-times",
+          "reference": "503"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.10.504",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.10.504",
+            "recordSha256": "e05520e6d380192bd9fb26e56e81f059d2367d48222ae7f8d88fadb51ae92a20"
+          }
+        }
+      ],
+      "notes": [
+        "The man and woman remain unnamed. Obtained a kiss from a woman preserves the selected construction without choosing the comparison’s additional unlawful gloss or naming the man from Bewley’s bracketed note. The complete embedded Quran quotation is translated from its selected Arabic rather than replaced with comparison parentheses about compulsory prayers or minor sins."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparisons. Original inputs, declared corrections, comparison omissions, variant wording and uncertain lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review is pending; this is not certification.",
+      "arabicSha256": "50734d435effad7f2f00343f9d4775d4bc670a05572c7ff8d20c032b5c38bdcf",
+      "englishSha256": "689c696b30f512164247bf38a4ed4dd087fdedd5bcfc855fe43407733eeaca9e",
+      "reviewRecordSha256": "b49f4952451d2158adf285feb20046676aab4d6b239207fbe19e1a5d4d50bcb4"
+    },
+    {
+      "number": 504,
+      "id": "bukhari:504",
+      "sourceRecordId": "wikisource-bukhari-prayer-times-r484870:504",
+      "chapterId": "chapter-05",
+      "paragraphIds": [
+        "mwHA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "504-1",
+          "paragraphId": "mwHA",
+          "start": 0,
+          "end": 120,
+          "kind": "chain",
+          "arabic": "[504] حدثنا أبو الوليد هشام بن عبد الملك قال: حدثنا شعبة قال الوليد بن العيزار أخبرني قال: سمعت أبا عمرو الشيباني يقول: ",
+          "english": "Abu al-Walid Hisham ibn ‘Abd al-Malik related to us. He said: Shu‘bah related to us. He said: Al-Walid ibn al-‘Ayzar informed me. He said: I heard Abu ‘Amr al-Shaybani say:",
+          "arabicSha256": "1d1e53bf31a0642c26f471f8cf2fb5ccb110b3f88767ef937fd64980295b4f19",
+          "englishSha256": "a655fd88a6f788a694a9e555b002a4c9f428c2bd5f922da39b6d01bdb3f6e64e"
+        },
+        {
+          "id": "504-2",
+          "paragraphId": "mwHA",
+          "start": 120,
+          "end": 169,
+          "kind": "transmission-note",
+          "arabic": "حدثنا صاحب هذه الدار وأشار إلى دار عبد الله قال: ",
+          "english": "The owner of this house related to us—and he pointed to the house of ‘Abd Allah. He said:",
+          "arabicSha256": "c8841fa41a20a49e6d8ac14e4656c7418053103a2ad3d41d49b1c011a7136f75",
+          "englishSha256": "0bee82cf75c90a607faf92a7f751c4e3ad12db31560d27d96f3fffda93ab495d"
+        },
+        {
+          "id": "504-3",
+          "paragraphId": "mwHA",
+          "start": 169,
+          "end": 288,
+          "kind": "report",
+          "arabic": "سألت النبي ﷺ أي العمل أحب إلى الله قال الصلاة على وقتها قال ثم أي قال ثم بر الوالدين قال ثم أي قال الجهاد في سبيل الله ",
+          "english": "I asked the Prophet, may Allah bless him and grant him peace: “Which deed is most beloved to Allah?” He said: “Prayer at its time.” He said: “Then which?” He said: “Then kindness to parents.” He said: “Then which?” He said: “Jihad in Allah’s path.”",
+          "arabicSha256": "5bdd344e8d8f746568283ba9e2b678fb1dc5b050e5afa28ef5e84e98aec73657",
+          "englishSha256": "08f6e8f7122cf4d8db20b51c89af51a1319e05852023cdbc9246eca980c83e64"
+        },
+        {
+          "id": "504-4",
+          "paragraphId": "mwHA",
+          "start": 288,
+          "end": 322,
+          "kind": "transmission-note",
+          "arabic": "قال: حدثني بهن ولو استزدته لزادني ",
+          "english": "He said: He related to me these things, and if I had asked him for more, he would have given me more.",
+          "arabicSha256": "eb1feb940ecdbdab6b55c068713c647fb845db30e51c28336b55923b886bea67",
+          "englishSha256": "b42219ecba69bf588e61dae981cfc5d39b09eb4f8839e80696dd6d2cccacaff3"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            143
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            138
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer-times",
+          "reference": "504"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.10.505",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.10.505",
+            "recordSha256": "4936e4a1f75467fe54e4d908eb311af1bd418a4f708db04375bb81f7ad7f38e6"
+          }
+        }
+      ],
+      "notes": [
+        "The owner-of-this-house attribution and pointing gesture remain visible instead of being shortened to Abdullah. The selected text does not include ibn Masud here; the historical print’s expansion is not imported. The prayer-at-its-time wording is not expanded to early fixed times. The final if-I-had-asked statement remains a separate transmission note with its related-to-me verb."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparisons. Original inputs, declared corrections, comparison omissions, variant wording and uncertain lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review is pending; this is not certification.",
+      "arabicSha256": "d1cd1963816146196fa6641e0ffb140d2c1ffb209176659a306ec697e3c13920",
+      "englishSha256": "22af29d7db2819d0ef3f47c451bc650c78e22a04ac5c89d5302acd693fd905a7",
+      "reviewRecordSha256": "e27ea8c282edab1412e0aa1b5550a59c8b78e4c541c3f1a3d099415d483dae5b"
+    },
+    {
+      "number": 505,
+      "id": "bukhari:505",
+      "sourceRecordId": "wikisource-bukhari-prayer-times-r484870:505",
+      "chapterId": "chapter-06",
+      "paragraphIds": [
+        "mwHw"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "505-1",
+          "paragraphId": "mwHw",
+          "start": 0,
+          "end": 155,
+          "kind": "chain",
+          "arabic": "[505] حدثنا إبراهيم بن حمزة قال: حدثني ابن أبي حازم والدراوردي عن يزيد عن محمد بن إبراهيم عن أبي سلمة بن عبد الرحمن عن أبي هريرة أنه سمع رسول الله ﷺ يقول: ",
+          "english": "Ibrahim ibn Hamzah related to us. He said: Ibn Abi Hazim and al-Darawardi related to me, from Yazid, from Muhammad ibn Ibrahim, from Abu Salamah ibn ‘Abd al-Rahman, from Abu Hurayrah, that he heard the Messenger of Allah, may Allah bless him and grant him peace, say:",
+          "arabicSha256": "f478475a266e41850de086f703f5749c2efa4373c25976d170e2958717ec8c31",
+          "englishSha256": "4a7f30fbababd620c6a84df21032e56564cc7ace016a671a5c34a4ff901e0b1d"
+        },
+        {
+          "id": "505-2",
+          "paragraphId": "mwHw",
+          "start": 155,
+          "end": 307,
+          "kind": "report",
+          "arabic": "أرأيتم لو أن نهرا بباب أحدكم يغتسل فيه كل يوم خمسا ما تقول ذلك يبقي من درنه قالوا لا يبقي من درنه شيئا قال: فذلك مثل الصلوات الخمس يمحوالله بها الخطايا ",
+          "english": "“What do you think: if there were a river at the door of one of you in which he washed five times every day, what do you say that would leave of his dirt?” They said: “It would leave none of his dirt.” He said: “That is the likeness of the five prayers: Allah wipes away sins through them.”",
+          "arabicSha256": "f60c0ac234a46863ae31444d0b3e276d4607e2ed1e19b989e92615dd750cb1bf",
+          "englishSha256": "985b1d57aaccc5c8e4aca2da99bac53dbb0631a7e117dc8a4d820b1c1449305c"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            143
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            139
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer-times",
+          "reference": "505"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.10.506",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.10.506",
+            "recordSha256": "d8e002b71f6dd331affc9d36d64b7f19ed8b2989f3c418857159beb884d7fac7"
+          }
+        }
+      ],
+      "notes": [
+        "Both Ibn Abi Hazim and al-Darawardi remain in the chain with the selected related-to-me verb; the historical print uses related-to-us. Yazid is not expanded. The question, five daily washes and reply remain in full. The joined digital word يمحوالله is retained exactly; its English rendering follows the two words’ meaning without silently inserting a source-space correction.",
+        "The historical print has additional words in the chapter heading about congregation and other circumstances. The selected shorter heading, also present in the modern print, remains; the longer wording is not inserted."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparisons. Original inputs, declared corrections, comparison omissions, variant wording and uncertain lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review is pending; this is not certification.",
+      "arabicSha256": "5fd3a21a7a3d64605a47c8bb1d1cd38479fe595f23275f05c092169d84c5b143",
+      "englishSha256": "b2ef4e454989fb8e9ac52baa4db16d34ec34881cd1ddaf4d82c44f1fa695e672",
+      "reviewRecordSha256": "2b05b18216cea7bb7f06ee5d84a2f72bd02b89dc210d7d9a990762e8e6ad1f68"
+    },
+    {
+      "number": 506,
+      "id": "bukhari:506",
+      "sourceRecordId": "wikisource-bukhari-prayer-times-r484870:506",
+      "chapterId": "chapter-07",
+      "paragraphIds": [
+        "mwIg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "506-1",
+          "paragraphId": "mwIg",
+          "start": 0,
+          "end": 65,
+          "kind": "chain",
+          "arabic": "[506] حدثنا موسى بن إسماعيل قال: حدثنا مهدي عن غيلان عن أنس قال: ",
+          "english": "Musa ibn Isma‘il related to us. He said: Mahdi related to us, from Ghaylan, from Anas, who said:",
+          "arabicSha256": "257da39953f7181cf64bf11717ac96ffa780b5ace734c9fcad5a73e98014f367",
+          "englishSha256": "16f7ec0866d13bb73e226f34332e8ac9663a73ddbbdbc6ef6fa683c456203601"
+        },
+        {
+          "id": "506-2",
+          "paragraphId": "mwIg",
+          "start": 65,
+          "end": 142,
+          "kind": "report",
+          "arabic": "ما أعرف شيئا مما كان على عهد النبي ﷺ قيل الصلاة قال أليس ضيعتم ما ضيعتم فيها ",
+          "english": "“I do not recognize anything of what existed in the time of the Prophet, may Allah bless him and grant him peace.” It was said: “The prayer.” He said: “Have you not neglected what you have neglected in it?”",
+          "arabicSha256": "9c2658dad8561053e1cc4d93eb7e9b307ef5feae6e0da59efd4257caf78cd7da",
+          "englishSha256": "92436198cadefed125ec6d5e3173257f162684819dd8dc807b6681a23cd087b4"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            143,
+            144
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            139
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer-times",
+          "reference": "506"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.10.507",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.10.507",
+            "recordSha256": "db35e6d3ef25305b0678264ee70513fba05bc14ceba60ec6b260c1495625eb06"
+          },
+          "part": {
+            "index": 1,
+            "count": 2
+          }
+        }
+      ],
+      "notes": [
+        "The selected ضيعتم is retained and translated as neglected. Both inspected prints use صنعتم, rendered did in the English comparisons. This is recorded as a wording difference rather than silently harmonized.",
+        "Khan-family reference 1.10.507 contains two accounts. This entry corresponds only to its first account; selected 507 corresponds to its second. Separate Arabic numbers, full chains and exact comparison-part identities remain."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparisons. Original inputs, declared corrections, comparison omissions, variant wording and uncertain lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review is pending; this is not certification.",
+      "arabicSha256": "7ec9f102dc2d565777139b8577d224ed0835cc1910e7f61bb515550e40a5d32e",
+      "englishSha256": "75ddc091a2fb882620a26e293fcf0f083e252891be25dcfa866e8f788f53bf4d",
+      "reviewRecordSha256": "06ad8b17c434dd18a6e633960f963c240ca57820b5c633287cf219c1ba561cd8"
+    },
+    {
+      "number": 507,
+      "id": "bukhari:507",
+      "sourceRecordId": "wikisource-bukhari-prayer-times-r484870:507",
+      "chapterId": "chapter-07",
+      "paragraphIds": [
+        "mwJA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "507-1",
+          "paragraphId": "mwJA",
+          "start": 0,
+          "end": 132,
+          "kind": "chain",
+          "arabic": "[507] حدثنا عمرو بن زرارة قال: أخبرنا عبد الواحد بن واصل أبو عبيدة الحداد عن عثمان بن أبي رواد أخي عبد العزيز قال: سمعت الزهري يقول ",
+          "english": "‘Amr ibn Zurarah related to us. He said: ‘Abd al-Wahid ibn Wasil, Abu ‘Ubaydah al-Haddad, informed us, from ‘Uthman ibn Abi Rawwad, the brother of ‘Abd al-‘Aziz, who said: I heard al-Zuhri say:",
+          "arabicSha256": "d4c2f881c24ec43f02177590f690289218b36116a8998af0d33dea7fddc156c8",
+          "englishSha256": "ff0f4440dd6d6855899155df0e2fc9726a122687820127071980ea1eaee2c4e6"
+        },
+        {
+          "id": "507-2",
+          "paragraphId": "mwJA",
+          "start": 132,
+          "end": 248,
+          "kind": "report",
+          "arabic": "دخلت على أنس بن مالك بدمشق وهو يبكي فقلت: ما يبكيك، فقال لا أعرف شيئا مما أدركت إلا هذه الصلاة وهذه الصلاة قد ضيعت، ",
+          "english": "I went in to Anas ibn Malik in Damascus while he was weeping. I said: “What makes you weep?” He said: “I do not recognize anything of what I experienced except this prayer, and this prayer has been neglected.”",
+          "arabicSha256": "d546d9ed840accbe6ac124cdd8ccb28226b3af34a2b5673645727b393ac3ddab",
+          "englishSha256": "7ced8c50055bc0463d98f1929d0a8e8f3a085976d5130bb952dbf0f07f31ebb7"
+        },
+        {
+          "id": "507-3",
+          "paragraphId": "mwJA",
+          "start": 248,
+          "end": 314,
+          "kind": "transmission-note",
+          "arabic": "وقال بكر حدثنا محمد بن بكر البرساني أخبرنا عثمان بن أبي رواد نحوه ",
+          "english": "And Bakr said: Muhammad ibn Bakr al-Bursani related to us; ‘Uthman ibn Abi Rawwad informed us of something similar.",
+          "arabicSha256": "764782e678fa7f57ff781a34bbc8d0ccf512365848ac945ea39acf469fc85d97",
+          "englishSha256": "8567c6a39d05fbe3cc4c746f80cd3e19a66a385d5886e6658a5f33b1562d0097"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            144
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            139
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer-times",
+          "reference": "507"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.10.507",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.10.507",
+            "recordSha256": "db35e6d3ef25305b0678264ee70513fba05bc14ceba60ec6b260c1495625eb06"
+          },
+          "part": {
+            "index": 2,
+            "count": 2
+          }
+        }
+      ],
+      "notes": [
+        "The full chain, Abu Ubaydah alias, brother-of-Abd-al-Aziz relationship, Damascus setting and closing Bakr / Muhammad ibn Bakr / Uthman transmission remain. The selected al-Bursani name remains. Historical Ibn Khalaf after Bakr is not imported.",
+        "The passive neglected wording remains; a claim about an exact prayer delay is not inserted. This is the second account within pinned Khan-family 1.10.507, not a duplicate comparison of its first account. The comparison omits the closing transmission, which remains in the reader and script."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparisons. Original inputs, declared corrections, comparison omissions, variant wording and uncertain lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review is pending; this is not certification.",
+      "arabicSha256": "61901cbd14bf9d39d30e87ee0c99e7f14fb263783ba96b4080ec410543535452",
+      "englishSha256": "6112fd2f3939f1b7a2707bed9f6c32d5d7d67ac023465832cd022445a6767294",
+      "reviewRecordSha256": "cd30effd2f319e12a9dde1f0b1cb61d188ab47590ace765a516cbee2850c5847"
+    },
+    {
+      "number": 508,
+      "id": "bukhari:508",
+      "sourceRecordId": "wikisource-bukhari-prayer-times-r484870:508",
+      "chapterId": "chapter-08",
+      "paragraphIds": [
+        "mwJg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "508-1",
+          "paragraphId": "mwJg",
+          "start": 0,
+          "end": 77,
+          "kind": "chain",
+          "arabic": "[508] حدثنا مسلم بن إبراهيم قال: حدثنا هشام عن قتادة عن أنس قال: قال النبي ﷺ ",
+          "english": "Muslim ibn Ibrahim related to us. He said: Hisham related to us, from Qatadah, from Anas, who said: The Prophet, may Allah bless him and grant him peace, said:",
+          "arabicSha256": "280eb5b3d7cc746d7dc7001f6edeaab26e8f21b5e4c70be3672e32868a60d1d4",
+          "englishSha256": "6eec79ff9565016adf7edfbb0d96ada83d6f0b154ab25cdd8c33391d3e49e2ea"
+        },
+        {
+          "id": "508-2",
+          "paragraphId": "mwJg",
+          "start": 77,
+          "end": 145,
+          "kind": "report",
+          "arabic": "إن أحدكم إذا صلى يناجي ربه فلا يتفلن عن يمينه ولكن تحت قدمه اليسرى، ",
+          "english": "“When one of you prays, he speaks privately with his Lord. He must not spit to his right, but under his left foot.”",
+          "arabicSha256": "e93221ab6fa65b6ee9e7b9d52ee3aaac3612a3bc75860a93e3671e7de57a8023",
+          "englishSha256": "63b079890fa71533d954042b362dd0c99bd74b4a9949fff0f691c1ea96d49dda"
+        },
+        {
+          "id": "508-3",
+          "paragraphId": "mwJg",
+          "start": 145,
+          "end": 285,
+          "kind": "transmission-note",
+          "arabic": "وقال سعيد عن قتادة لا يتفل قدامه أو بين يديه ولكن عن يساره أو تحت قدميه، وقال شعبة لا يبزق بين يديه ولا عن يمينه ولكن عن يساره أو تحت قدمه، ",
+          "english": "And Sa‘id said, from Qatadah: “He should not spit in front of him, or before him, but to his left or under his feet.” And Shu‘bah said: “He should not spit before him or to his right, but to his left or under his foot.”",
+          "arabicSha256": "0626f441719c617959e535667502e370702f2ba3314c5108268078308a59c69f",
+          "englishSha256": "a39ec843458d0e5934ffd0db0a24a5dc551864f80b0dd7a4f243f7b67fa57b3f"
+        },
+        {
+          "id": "508-4",
+          "paragraphId": "mwJg",
+          "start": 285,
+          "end": 313,
+          "kind": "transmission-note",
+          "arabic": "وقال حميد عن أنس عن النبي ﷺ ",
+          "english": "And Humayd said, from Anas, from the Prophet, may Allah bless him and grant him peace:",
+          "arabicSha256": "e1919029d28c07dff66b11e7803638e48b94322f1a77f12b08a4a1155c957201",
+          "englishSha256": "a282025142448dab31512bb399641ee9a1362b9cdf340aad76d491fa284dd104"
+        },
+        {
+          "id": "508-5",
+          "paragraphId": "mwJg",
+          "start": 313,
+          "end": 370,
+          "kind": "report",
+          "arabic": "لا يبزق في القبلة ولا عن يمينه ولكن عن يساره أو تحت قدمه ",
+          "english": "“He should not spit toward the qiblah or to his right, but to his left or under his foot.”",
+          "arabicSha256": "8a308338ef8581cbeca3eadbca5c8d055970ffb4d6f9ac2b364bc45d31191819",
+          "englishSha256": "3e0abc816d869bce2cd7bef8a7eab54e186f9a1166e722d56cb0ccace6625e22"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            144
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            139
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer-times",
+          "reference": "508"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.10.508",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.10.508",
+            "recordSha256": "bb3cdb7a2c5a9862b283272f06c898109c818dc6872a0ed51450ea6d7494f11e"
+          }
+        }
+      ],
+      "notes": [
+        "All three appended transmissions remain, with Sa‘id from Qatadah, Shu‘bah, and Humayd from Anas from the Prophet. The singular left foot, later plural feet, alternative front/before wording and final qiblah phrase stay distinct. A shortened English chain is not used to remove the named intermediaries."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparisons. Original inputs, declared corrections, comparison omissions, variant wording and uncertain lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review is pending; this is not certification.",
+      "arabicSha256": "a4cfcb1838c34d0ffb23e99296f3a41fbf03e464720c3cb1e323da1b2d452b84",
+      "englishSha256": "98a469369b48ec5ff3d0fa4d83a2e67b2e3acfcdeece182328f43fb04f6ea73d",
+      "reviewRecordSha256": "ed02a8d6ab3a4030c1524f767267ef92c86fc38c988168fed75e25b7161a45c0"
+    },
+    {
+      "number": 509,
+      "id": "bukhari:509",
+      "sourceRecordId": "wikisource-bukhari-prayer-times-r484870:509",
+      "chapterId": "chapter-08",
+      "paragraphIds": [
+        "mwKQ"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "509-1",
+          "paragraphId": "mwKQ",
+          "start": 0,
+          "end": 90,
+          "kind": "chain",
+          "arabic": "[509] حدثنا حفص بن عمر قال: حدثنا يزيد بن إبراهيم قال: حدثنا قتادة عن أنس عن النبي ﷺ قال: ",
+          "english": "Hafs ibn ‘Umar related to us. He said: Yazid ibn Ibrahim related to us. He said: Qatadah related to us, from Anas, from the Prophet, may Allah bless him and grant him peace, who said:",
+          "arabicSha256": "40e4d2ac8f462fa4dbe98830cf6af9b0120cb663c0d65b6e5c33d6c8ce4931b9",
+          "englishSha256": "00ca03b6b0164055bd2048de12ee6d3c71dcbc235b5ec9dfdc711fff7a0b5c28"
+        },
+        {
+          "id": "509-2",
+          "paragraphId": "mwKQ",
+          "start": 90,
+          "end": 187,
+          "kind": "report",
+          "arabic": "اعتدلوا في السجود ولا يبسط ذراعيه كالكلب وإذا بزق فلا يبزقن بين يديه ولا عن يمينه فإنه يناجي ربه ",
+          "english": "“Be balanced in prostration. He should not spread his forearms like a dog. When he spits, he must not spit before him or to his right, for he is speaking privately with his Lord.”",
+          "arabicSha256": "746c975ef6cd4664aa167d6cef73d883ac2e4c7b723673f8d54287a199849f56",
+          "englishSha256": "4ca890a6f68fc95a60899f47c6019c96a2168211325de1414fa080fe3530d608"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            144
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            139
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer-times",
+          "reference": "509"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.10.509",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.10.509",
+            "recordSha256": "d6df8ae4115b681bae7674e2732dee460f65b969ccdd35ba09172db6f99db676"
+          }
+        }
+      ],
+      "notes": [
+        "The selected command followed by third-person pronouns remains in English rather than adding one of you or changing the source to an unvarying grammatical person. Balanced is a provisional rendering of اعتدلوا; no anatomical instruction, elbow explanation or legal ruling is inserted."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparisons. Original inputs, declared corrections, comparison omissions, variant wording and uncertain lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review is pending; this is not certification.",
+      "arabicSha256": "c501ffbeff16f0033e58017cb0f0f7561b4802ade4763cc415785fca42a6599f",
+      "englishSha256": "ca1a56c7c3a97be379df5a9f03becf6b4897be9dd340650f824778657979422f",
+      "reviewRecordSha256": "d9c05612c0d7224940cf6d74badb6297da8f6ee8385aa4508c07c0712431ca97"
+    },
+    {
+      "number": 510,
+      "id": "bukhari:510",
+      "sourceRecordId": "wikisource-bukhari-prayer-times-r484870:510",
+      "chapterId": "chapter-09",
+      "paragraphIds": [
+        "mwLA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "510-1",
+          "paragraphId": "mwLA",
+          "start": 0,
+          "end": 198,
+          "kind": "chain",
+          "arabic": "[510] حدثنا أيوب بن سليمان قال: حدثنا أبو بكر عن سليمان قال صالح بن كيسان حدثنا الأعرج عبد الرحمن وغيره عن أبي هريرة ونافع مولى عبد الله بن عمر عن عبد الله بن عمر أنهما حدثاه عن رسول الله ﷺ أنه قال ",
+          "english": "Ayyub ibn Sulayman related to us. He said: Abu Bakr related to us, from Sulayman. He said: Salih ibn Kaysan said: Al-A‘raj ‘Abd al-Rahman and others related to us, from Abu Hurayrah; and Nafi‘, the freedman of ‘Abd Allah ibn ‘Umar, from ‘Abd Allah ibn ‘Umar—that the two of them related to him from the Messenger of Allah, may Allah bless him and grant him peace, that he said:",
+          "arabicSha256": "a4aad2629bbc2af2d990dcddaac3b92585b037bd3475e6a3bcc4f79be568c87c",
+          "englishSha256": "c708da987255f05b53818cf6ee6f0bd4557b67fb83f0158803772c47f3ea0451"
+        },
+        {
+          "id": "510-2",
+          "paragraphId": "mwLA",
+          "start": 198,
+          "end": 255,
+          "kind": "report",
+          "arabic": "إذا اشتد الحر فأبردوا عن الصلاة فإن شدة الحر من فيح جهنم ",
+          "english": "“When the heat becomes intense, delay the prayer until it is cooler, for intense heat is from the blast of Jahannam.”",
+          "arabicSha256": "38b36deaef70f94370ae5f22517882e9d3b6996dd230cfe61f48257e4a09a232",
+          "englishSha256": "c74d81dc573f1b107a01f3cdd90c0ff26251fdd1544abe038da423506b39f35d"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            144
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            140
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer-times",
+          "reference": "510"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.10.510",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.10.510",
+            "recordSha256": "bbd70c8d8674da5f1c76ff1ce8ea2161f76ffe188d7da1cf8f827d7771db127f"
+          }
+        }
+      ],
+      "notes": [
+        "The two routes through al-A‘raj ‘Abd al-Rahman and others / Abu Hurayrah, and Nafi‘ / ‘Abd Allah ibn ‘Umar remain complete. The source’s the two of them related to him attribution remains. Abu Bakr is not expanded with the name supplied by the historical print. The modern print labels these routes 533–534 while the selected source retains a single entry.",
+        "The original عن الصلاة is preserved; the historical print’s بالصلاة is not substituted. Al-Nawawi discusses these expressions as equivalent in this context. No named prayer is inserted into this numbered report from the Dhuhr chapter heading."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparisons. Original inputs, declared corrections, comparison omissions, variant wording and uncertain lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review is pending; this is not certification.",
+      "arabicSha256": "9199eb17d338173e5ea8735f42758eeae0825c1ac093747fd343b1bb35ab863e",
+      "englishSha256": "ffe636df4ca486b6c6ca4ac1571ce828259c276eec5ea0c2a35b37cd64575d1a",
+      "additionalCitations": [
+        {
+          "id": "commentary-nawawi-cooling",
+          "sourceId": "nawawi-cooling",
+          "locator": "Al-Nawawi · cooling expressions and lexical meaning of fayh",
+          "scope": "Consulted for lexical, attribution or variant review. Commentary stays separate from the selected report; independent review remains pending."
+        }
+      ],
+      "reviewRecordSha256": "6f5d39ff68c38670b8d36d6331539be507bfa20aa75b2b5307d8d0acaa821a5f"
+    },
+    {
+      "number": 511,
+      "id": "bukhari:511",
+      "sourceRecordId": "wikisource-bukhari-prayer-times-r484870:511",
+      "chapterId": "chapter-09",
+      "paragraphIds": [
+        "mwLg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "511-1",
+          "paragraphId": "mwLg",
+          "start": 0,
+          "end": 103,
+          "kind": "chain",
+          "arabic": "[511] حدثنا ابن بشار قال: حدثنا غندر قال: حدثنا شعبة عن المهاجر أبي الحسن سمع زيد بن وهب عن أبي ذر قال ",
+          "english": "Ibn Bashshar related to us. He said: Ghundar related to us. He said: Shu‘bah related to us, from al-Muhajir Abu al-Hasan, who heard Zayd ibn Wahb, from Abu Dharr, who said:",
+          "arabicSha256": "fa4d535f10d8741caec0315ade9ce92c537210f637192a7e3d25530f132db493",
+          "englishSha256": "82056f79d7db1f7a4aae9bf8a9b23e3d6e1e517ae9092c105b98ae7235f0be14"
+        },
+        {
+          "id": "511-2",
+          "paragraphId": "mwLg",
+          "start": 103,
+          "end": 221,
+          "kind": "report",
+          "arabic": "أذن مؤذن النبي ﷺ الظهر، فقال أبرد أبرد أو قال انتظر انتظر، وقال شدة الحر من فيح جهنم فإذا اشتد الحر فأبردوا عن الصلاة ",
+          "english": "The caller to prayer of the Prophet, may Allah bless him and grant him peace, called for Dhuhr. He said: “Let it become cooler, let it become cooler”—or he said: “Wait, wait.” And he said: “Intense heat is from the blast of Jahannam. When the heat becomes intense, delay the prayer until it is cooler.”",
+          "arabicSha256": "8df70a83a6be6160e613c5c540483a7db6ec58a1d71250337508c4f252ebec61",
+          "englishSha256": "ba62be91f388c7a8011ebb3aa4804b3d05319ba40f8fa60d7f0da021fbca01e7"
+        },
+        {
+          "id": "511-3",
+          "paragraphId": "mwLg",
+          "start": 221,
+          "end": 242,
+          "kind": "transmission-note",
+          "arabic": "حتى رأينا فيء التلول ",
+          "english": "Until we saw the shadows of the hillocks.",
+          "arabicSha256": "d7d290fa7392a63d851404c756ded45661c6216abfe2cc656647c53cb488726d",
+          "englishSha256": "8ae715130b1c7d1eff792475152d9405f16948596a6b3ff147e0e33f11e3de64"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            144,
+            145
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            140
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer-times",
+          "reference": "511"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.10.511",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.10.511",
+            "recordSha256": "a1f21dd5e76ffb47d1cb99492414cc078fa6585119bb697cde38a497482594f2"
+          }
+        }
+      ],
+      "notes": [
+        "The digital إذن مؤذن has a hamza below the alif, where both inspected prints read أذن مؤذن as the calling verb. A declared one-letter correction follows the printed reading, retaining the original unchanged. Ibn Bashshar is not expanded to Muhammad from the prints.",
+        "The two repeated alternatives, let it become cooler and wait, remain. The final until we saw is a narrator observation outside the Prophetic quotation, kept in its selected position. Ibn Hajar explicitly discusses its position here and connection to waiting; no chronological rearrangement or elapsed time is inserted."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparisons. Original inputs, declared corrections, comparison omissions, variant wording and uncertain lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review is pending; this is not certification.",
+      "arabicSha256": "c27c0e826e3758c89ded6d8ad7318c07499c48db36b197851e22615965421841",
+      "englishSha256": "288c2da597bc0fc79c8b9435b2ebd7b8b86f313590c3751c5841210557569550",
+      "originalArabicSha256": "35d6a23c24fb6143b008de1ef41cff4f24fbdd10779354def8cf02548f434c86",
+      "contextNotes": [
+        {
+          "id": "511-source-correction",
+          "label": "A recorded Arabic correction",
+          "text": "Both inspected Arabic prints have the hamza above the alif for the calling verb. The single initial letter is corrected in the derived reading; the original remains unchanged. Independent review is pending.",
+          "citations": [
+            "base",
+            "brill-1862",
+            "dar-ibn-kathir-2002"
+          ],
+          "related": []
+        }
+      ],
+      "arabicCorrections": [
+        {
+          "id": "511-printed-reading",
+          "paragraphId": "mwLg",
+          "start": 103,
+          "end": 111,
+          "before": "إذن مؤذن",
+          "after": "أذن مؤذن",
+          "originalParagraphSha256": "35d6a23c24fb6143b008de1ef41cff4f24fbdd10779354def8cf02548f434c86",
+          "correctedParagraphSha256": "c27c0e826e3758c89ded6d8ad7318c07499c48db36b197851e22615965421841",
+          "status": "chosen-for-personal-prototype",
+          "reviewerKind": "ai",
+          "independentReview": "pending",
+          "reason": "Both inspected Arabic prints have the hamza above the alif for the calling verb. The single initial letter is corrected in the derived reading; the original remains unchanged.",
+          "witnesses": [
+            {
+              "sourceId": "brill-1862",
+              "pdfPage": 144,
+              "reading": "أذن مؤذن",
+              "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+            },
+            {
+              "sourceId": "dar-ibn-kathir-2002",
+              "pdfPage": 140,
+              "reading": "أذن مؤذن",
+              "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+            }
+          ],
+          "contextNoteId": "511-source-correction",
+          "englishSegmentId": "511-2",
+          "englishRendering": "called for Dhuhr"
+        }
+      ],
+      "additionalCitations": [
+        {
+          "id": "commentary-fath-cooling-511",
+          "sourceId": "fath-cooling-511",
+          "locator": "Fath al-Bari · volume 2, page 23 · position of the narrator observation",
+          "scope": "Consulted for lexical, attribution or variant review. Commentary stays separate from the selected report; independent review remains pending."
+        }
+      ],
+      "reviewRecordSha256": "743a74eca115d1ccb5749e940bfea8620d3125a7165817b73322bbd9f9d90ef9"
+    },
+    {
+      "number": 512,
+      "id": "bukhari:512",
+      "sourceRecordId": "wikisource-bukhari-prayer-times-r484870:512",
+      "chapterId": "chapter-09",
+      "paragraphIds": [
+        "mwMA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "512-1",
+          "paragraphId": "mwMA",
+          "start": 0,
+          "end": 113,
+          "kind": "chain",
+          "arabic": "[512] حدثنا علي بن عبد الله قال: حدثنا سفيان قال حفظناه من الزهري عن سعيد بن المسيب عن أبي هريرة عن النبي ﷺ قال: ",
+          "english": "‘Ali ibn ‘Abd Allah related to us. He said: Sufyan related to us. He said: We memorized it from al-Zuhri, from Sa‘id ibn al-Musayyab, from Abu Hurayrah, from the Prophet, may Allah bless him and grant him peace, who said:",
+          "arabicSha256": "1a2021d467806964920f77fc100db76249c21dcf6e6c7a5013a321e9389cc5f0",
+          "englishSha256": "40fb1c93ea9efc19736796be1a5efa42f458b3182ba2d66b49ab12357a301547"
+        },
+        {
+          "id": "512-2",
+          "paragraphId": "mwMA",
+          "start": 113,
+          "end": 312,
+          "kind": "report",
+          "arabic": "إذا اشتد الحر فأبردوا بالصلاة فإن شدة الحر من فيح جهنم واشتكت النار إلى ربها فقالت: يا رب أكل بعضي بعضا فأذن لها بنفسين نفس في الشتاء ونفس في الصيف فهو أشد ما تجدون من الحر وأشد ما تجدون من الزمهرير ",
+          "english": "“When the heat becomes intense, delay the prayer until it is cooler, for intense heat is from the blast of Jahannam. The Fire complained to its Lord, saying: ‘My Lord, parts of me have consumed other parts.’ So He allowed it two breaths: a breath in winter and a breath in summer. It is the most intense heat that you experience and the most intense bitter cold that you experience.”",
+          "arabicSha256": "01dd4fee0396e71c6db0425c83261994b4eb1f9eb5956852c9e77a9c33cbd9b1",
+          "englishSha256": "1dadd7bbdfd8a786f83d699416463ce92bf0571390257187e16f502171cf94a4"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            145
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            140
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer-times",
+          "reference": "512"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.10.512",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.10.512",
+            "recordSha256": "ad834b369b28c841a8b7c1a5b3046cb299fd6d3597e7d617c6222c8b96c58041"
+          }
+        }
+      ],
+      "notes": [
+        "The complete we memorized it from al-Zuhri link remains. Both breaths, winter-before-summer order, and the final heat and bitter-cold wording are preserved. The modern print labels the complaint separately as 537 after 536, but the selected source remains one report. The English does not import an explicit one-to-one assignment of each season’s breath from the comparison paraphrase."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparisons. Original inputs, declared corrections, comparison omissions, variant wording and uncertain lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review is pending; this is not certification.",
+      "arabicSha256": "ccc326966d323cf539b3c10f22e73678a1c3969928737c8c02bd9bd904e8fdb2",
+      "englishSha256": "497a4d12ff0b6a6f860568a135b1b38291f99e21e25ecdf4e2f43094bce934ae",
+      "additionalCitations": [
+        {
+          "id": "commentary-nawawi-cooling",
+          "sourceId": "nawawi-cooling",
+          "locator": "Al-Nawawi · fayh and zamharir terminology",
+          "scope": "Consulted for lexical, attribution or variant review. Commentary stays separate from the selected report; independent review remains pending."
+        }
+      ],
+      "reviewRecordSha256": "ccfb3cfe5b8381d2069f650600e3d8aff013fc7765e801787ecc063beb346802"
+    },
+    {
+      "number": 513,
+      "id": "bukhari:513",
+      "sourceRecordId": "wikisource-bukhari-prayer-times-r484870:513",
+      "chapterId": "chapter-09",
+      "paragraphIds": [
+        "mwMg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "513-1",
+          "paragraphId": "mwMg",
+          "start": 0,
+          "end": 105,
+          "kind": "chain",
+          "arabic": "[513] حدثنا عمر بن حفص قال: حدثنا أبي قال: حدثنا الأعمش حدثنا أبو صالح عن أبي سعيد قال: قال رسول الله ﷺ: ",
+          "english": "‘Umar ibn Hafs related to us. He said: My father related to us. He said: Al-A‘mash related to us. Abu Salih related to us, from Abu Sa‘id, who said: The Messenger of Allah, may Allah bless him and grant him peace, said:",
+          "arabicSha256": "639e8a30f2372e012c2e1688bd2fa653a117e50ec5bdad997a26831f60a7fc4b",
+          "englishSha256": "1e3f6909a0ba3e78931e3ae3e4c39e6c6c7f643c955c5fac2c6a20b2d2b19c5a"
+        },
+        {
+          "id": "513-2",
+          "paragraphId": "mwMg",
+          "start": 105,
+          "end": 144,
+          "kind": "report",
+          "arabic": "أبردوا بالظهر فإن شدة الحر من فيح جهنم ",
+          "english": "“Delay Dhuhr until it is cooler, for intense heat is from the blast of Jahannam.”",
+          "arabicSha256": "d3e82edc2840f414579e7f718288ed6085c8c61c1cb7a952018a6721ac6d7c0c",
+          "englishSha256": "8525246f43810a2e55a5b0963cfc9f62df38041412e26309906f747a18df98c5"
+        },
+        {
+          "id": "513-3",
+          "paragraphId": "mwMg",
+          "start": 144,
+          "end": 183,
+          "kind": "transmission-note",
+          "arabic": "تابعه سفيان ويحيى وأبو عوانة عن الأعمش ",
+          "english": "Sufyan, Yahya and Abu ‘Awanah corroborated it from al-A‘mash.",
+          "arabicSha256": "473c51d6f1f1b89e838d022c0603fa1d4735220bd8729a88dc4db9277ff8ae2a",
+          "englishSha256": "0b58c226b4c4654c50d35267572d3d1894ea9c57286fa2ba883ba7a9b34df286"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            145
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            140
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer-times",
+          "reference": "513"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.10.513",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.10.513",
+            "recordSha256": "7d035842f66e0efbdfbd86ed9836cde75954b070740d89bdf19859e62e21168d"
+          }
+        }
+      ],
+      "notes": [
+        "The full father attribution, repeated related-to-us links and all three closing corroborators remain. The Khan-family comparison omits the closing transmission; both inspected prints and Bewley contain it. The report explicitly names Dhuhr here, unlike 510–512."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparisons. Original inputs, declared corrections, comparison omissions, variant wording and uncertain lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review is pending; this is not certification.",
+      "arabicSha256": "442b26061247650bf561f82cf049d4fc63f1acd84bbf3fd4af231aece0a3860b",
+      "englishSha256": "fe55d6b02641dbb3b7fac0a0df933387c5e60b6b9ffc4149fcf9c178076b222f",
+      "reviewRecordSha256": "5a0b3b0cd647b75a8c3686dd010a4dc02ed3c8ccc1a39c42bc13bcf0618c2ba4"
+    },
+    {
+      "number": 514,
+      "id": "bukhari:514",
+      "sourceRecordId": "wikisource-bukhari-prayer-times-r484870:514",
+      "chapterId": "chapter-10",
+      "paragraphIds": [
+        "mwNQ"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "514-1",
+          "paragraphId": "mwNQ",
+          "start": 0,
+          "end": 133,
+          "kind": "chain",
+          "arabic": "[514] حدثنا آدم بن أبي إياس قال: حدثنا شعبة قال: حدثنا مهاجر أبو الحسن مولى لبني تيم الله قال: سمعت زيد بن وهب عن أبي ذر الغفاري قال ",
+          "english": "Adam ibn Abi Iyas related to us. He said: Shu‘bah related to us. He said: Muhajir Abu al-Hasan, a freedman of Banu Taym Allah, related to us. He said: I heard Zayd ibn Wahb, from Abu Dharr al-Ghifari, who said:",
+          "arabicSha256": "7118ac83f3fc8c17e874c5ed45bd548687e66e68f36b3c15aa4964f9c5280aa7",
+          "englishSha256": "12147671d3c4df3263d31b58e67779822287c901eb39413e2700e826dd6bf333"
+        },
+        {
+          "id": "514-2",
+          "paragraphId": "mwNQ",
+          "start": 133,
+          "end": 322,
+          "kind": "report",
+          "arabic": "كنا مع النبي ﷺ في سفر فأراد المؤذن أن يؤذن للظهر، فقال النبي ﷺ أبرد ثم أراد أن يؤذن، فقال له أبرد حتى رأينا فيء التلول، فقال النبي ﷺ إن شدة الحر من فيح جهنم فإذا اشتد الحر فأبردوا بالصلاة، ",
+          "english": "We were with the Prophet, may Allah bless him and grant him peace, on a journey. The caller to prayer wanted to call for Dhuhr, but the Prophet, may Allah bless him and grant him peace, said: “Let it become cooler.” Then he wanted to call, and he said to him: “Let it become cooler,” until we saw the shadows of the hillocks. The Prophet, may Allah bless him and grant him peace, said: “Intense heat is from the blast of Jahannam. When the heat becomes intense, delay the prayer until it is cooler.”",
+          "arabicSha256": "64feef82599e599b53b6fd5813aceee4aaf7444ee51861dd5fdc75991e504fb6",
+          "englishSha256": "f98b2f081ab8fe074eecd5c5877475daa90b6b6a924ca24bc2f68d54f105add1"
+        },
+        {
+          "id": "514-3",
+          "paragraphId": "mwNQ",
+          "start": 322,
+          "end": 352,
+          "kind": "transmission-note",
+          "arabic": "وقال ابن عباس { يتفيأ } يتميل ",
+          "english": "And Ibn ‘Abbas said: “Yatafayya’u” means “it inclines.”",
+          "arabicSha256": "f430c76e04586f63a405661871410d98ef47ebf5fa89dbab7158c3c6ed161338",
+          "englishSha256": "203a159d179dc8c65685612f4197e7657c06fc924a03eadaf500f528eccae6ef"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            145
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            140
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer-times",
+          "reference": "514"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.10.514",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.10.514",
+            "recordSha256": "b66870fb5526e5e83a19d25bc19e65661148fe0af23394ba3654230c781cfbaf"
+          }
+        }
+      ],
+      "notes": [
+        "The full Adam ibn Abi Iyas name, freedman relationship, repeated delay instruction and narrator’s we-saw perspective remain. The muadhdhin is not given an absent personal name, and no duration is inserted.",
+        "The closing Ibn Abbas lexical statement is part of this selected numbered paragraph and remains as a visible transmission note, also included in the complete script. Both prints retain it while the inspected English comparisons omit it. Ibn Hajar identifies its connection to Quran 16:48 and records y/t readings; the selected yatafayya’u form remains and is glossed only by the selected inclines wording."
+      ],
+      "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparisons. Original inputs, declared corrections, comparison omissions, variant wording and uncertain lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review is pending; this is not certification.",
+      "arabicSha256": "12728ea52ba94a0554b0106086574d6f6e90fc8aa954b271087011eb330481ea",
+      "englishSha256": "fad13d9f9d8d57ac47ceb4dde6a5fa4b63c2c91567ca749ddaf9a97bdbb90a3b",
+      "additionalCitations": [
+        {
+          "id": "commentary-fath-cooling-514",
+          "sourceId": "fath-cooling-514",
+          "locator": "Fath al-Bari · shadows and the closing Ibn Abbas lexical statement",
+          "scope": "Consulted for lexical, attribution or variant review. Commentary stays separate from the selected report; independent review remains pending."
+        }
+      ],
+      "reviewRecordSha256": "5f288bb27978a0a0d0543cb208a2ede63da4978a09bae077631aaccb3b8222dc"
+    }
+  ]
+}

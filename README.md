@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The personal reader is at `reader/`: 498 complete selected Bukhari entries across eight books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The personal reader is at `reader/`: 514 complete selected Bukhari entries across nine books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Run
 
@@ -791,3 +791,14 @@ The new reports were compared individually against two Arabic prints and two Eng
 Validation: **397 Node + 79 Python tests**, all thirteen integrity commands and exact rendered Arabic and English for each new report. With the preview server stopped, reload, previous/next navigation, exact phrase search and all twelve new chapter sections worked. The final report ends at the collection without inventing another hadith. Updating and browsing preserved Continue. The recorded browser width was 1280px; no new narrow-screen or physical iPhone acceptance is claimed. Evidence: `research/prayer-final-verification.json`.
 
 The reading download is **14,352,549 bytes (14.35 MB)**. The other seven active book packs, artwork and recordings are unchanged. Complete scripts cover 498 entries; actual Cedar audio remains **1–6**. Next source work begins with Prayer Times at selected 499. Independent text, chapter, historical, reference and spoken-word review remain unfinished.
+
+
+### Prayer Times begins in the personal prototype — 28 October 2026
+
+The reader now contains **514 selected numbered entries across nine books**. Prayer Times adds sixteen complete reports (499–514), forty-four English segments and ten chapters. Its full pinned candidate intake contains 79 reports (499–577), 41 chapters and eight separate Arabic introduction paragraphs; 63 reports remain outside the reader. The admitted first-chapter introduction stays separately browseable Arabic, with English pending, and does not enter numbered sessions or narration.
+
+Source review on 23 October compared each new report with two inspected Arabic prints and two English translation families. Corrections at 499 and 511 retain the original digital paragraphs, exact changed spans, both printed readings and visible notices. Shared English reference 1.10.507 maps explicitly to separate selected reports 506 and 507. Variants, omitted transmissions and provisional lexical choices remain documented. This is AI-assisted working English, not Darussalam text or independently certified content. All prior 498 entries and the eight earlier active book packs remain unchanged.
+
+Verification on 28 October: **405 Node + 82 Python tests**, all thirteen integrity checks, exact displayed English and Arabic for every new entry, visible transmission notes and corrections, and all ten chapter sections. With the server stopped, reload, previous-book/new-book navigation, phrase search and chapter notes worked. Continue remained at Hadith 1 during free browsing. The browser retained a 581px viewport despite a requested 393px override; this does not establish physical iPhone acceptance. Evidence: `research/prayer-times-first-verification.json`.
+
+The reading download is **14,699,382 bytes (14.70 MB)**. Complete scripts cover 514 entries; actual Cedar recordings remain **1–6**. `research/library-scale-audit.json` records a repeatable desktop search baseline for the current bilingual collection and a separate pinned English-only comparison fixture. It excludes loading, rendering and iPhone timings. Next engineering work is asynchronous exact-text search before major expansion; source work continues at 515. Independent review, complete English chapter material, the full corpus and additional reviewed recordings remain unfinished.
