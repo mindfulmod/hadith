@@ -14,7 +14,7 @@ test('Adhan opening keeps every original Arabic character, complete English segm
  const a=input(),batch=buildBookBatch(...a),{source,ledger}=collectionFiles(),plan=narrationPlan(source);
  assert.deepEqual(batch.entries.map(e=>e.number),Array.from({length:18},(_,i)=>578+i));assert.equal(batch.chapters.length,12);
  for(const row of a[1].entries){const e=batch.entries.find(e=>e.number===row.number),original=row.paragraphIds.map(id=>a[0].blocks.find(b=>b.htmlId===id).text);assert.deepEqual(e.arabic_blocks,original);assert.deepEqual(row.paragraphIds.map(id=>row.segments.filter(s=>s.paragraphId===id).map(s=>s.arabic).join('')),original);assert.deepEqual(e.english_blocks,row.segments.map(s=>s.english));assert.equal((original.join('').match(/ﷺ/g)||[]).length,(e.english_blocks.join(' ').match(/may Allah bless him and grant him peace/g)||[]).length);assert.equal(plan.entries.find(e=>e.number===row.number).script,e.english_blocks.join('\n\n'));assert.equal(row.comparisons[1].reference,'1.11.'+(row.number-1));assert.equal(row.sourceLayout.sourceRecordId,row.sourceRecordId);}
- assert.equal(source.entries.length,595);assert.equal(ledger.books.length,10);assert.throws(()=>buildBooks(source,ledger,{production:true}));
+ assert.equal(source.entries.length,618);assert.equal(ledger.books.length,10);assert.throws(()=>buildBooks(source,ledger,{production:true}));
 });
 test('Adhan chapter introductions are separately browseable and excluded from numbered sessions and narration',()=>{
  const a=input(),b=buildBookBatch(...a),{source,ledger}=collectionFiles(),book=ledger.books.find(b=>b.id==='adhan');

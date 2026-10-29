@@ -1,0 +1,481 @@
+{
+  "checkedAt": "2026-10-29",
+  "status": "personal-prototype-admission-verified",
+  "baselineCommit": "f61c2e1240f1353c6bfb07c81597dc229267da14",
+  "readerRelease": "opening-52e1b37e8fd5",
+  "scope": {
+    "book": "Adhan",
+    "references": [
+      596,
+      597,
+      598,
+      599,
+      600,
+      601,
+      602,
+      603,
+      604,
+      605,
+      606,
+      607,
+      608,
+      609,
+      610,
+      611,
+      612,
+      613,
+      614,
+      615,
+      616,
+      617,
+      618
+    ],
+    "newEntries": 23,
+    "chapters": 17,
+    "separateArabicIntroductionParagraphs": 4,
+    "workingEnglishSegments": 53,
+    "arabicCorrections": 0,
+    "separatePrintedAdditions": 1
+  },
+  "publishedContent": {
+    "books": 10,
+    "entries": 618,
+    "sourceRecordSha256": "86f4733f426a81a1233b88869c7e3eaae4d720c5f82bf8b223a1e9260f120401",
+    "prior595EntryObjectsUnchanged": true,
+    "otherNineBookRecordsUnchanged": true,
+    "recordedReferences": "1–6",
+    "completeNarrationScripts": 618,
+    "readingBytes": 17285121,
+    "releaseFiles": 159
+  },
+  "sourceReview": {
+    "record": "content/review/adhan-second-review.json",
+    "digitalRevision": 484867,
+    "digitalSha256": "b3c5c0eef7cb8d0f543f1c1e5d7cb4868ed732f159fc39d7df1bc2aed3b7ee8d",
+    "allOriginalDigitalParagraphsUnchanged": true,
+    "printedWitnesses": [
+      {
+        "edition": "Brill 1862",
+        "pdfPages": [
+          163,
+          164,
+          165,
+          166,
+          167,
+          168
+        ],
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+        "visuallyInspected": true
+      },
+      {
+        "edition": "Dar Ibn Kathir 2002",
+        "pdfPages": [
+          157,
+          158,
+          159,
+          160,
+          161,
+          162
+        ],
+        "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+        "visuallyInspected": true
+      }
+    ],
+    "englishComparisons": [
+      "Aisha Bewley, 596–618, individually read from the previously retrieved complete page.",
+      "Pinned Khan-family EPUB, individually matched 1.11.595–1.11.617; exact record evidence retained per report."
+    ],
+    "printedAddition": {
+      "reference": 612,
+      "arabic": "تابعه علي بن المبارك",
+      "witnessPages": [
+        167,
+        161
+      ],
+      "digitalOriginalUnchanged": true,
+      "englishComparisonsBothOmitNote": true,
+      "visibleNotice": true
+    },
+    "preservationFindings": [
+      "596 retains alternatives and Zuhayr’s finger demonstration; comparison attribution and gesture interpretation remain explicit.",
+      "597 retains both full routes and its chain-switch sign; 610 retains two full routes without adding an absent sign.",
+      "599 retains no interval in the body and the separately attributed only a little closing transmission.",
+      "603 has three cooling instructions; the historical additional repetition is recorded, not silently inserted.",
+      "605 retains both uncertainties and separates the narrator’s memory remark.",
+      "607 retains informed him of the prayer; 608 retains the third-to-first-person shift.",
+      "611 retains written transmission; 617 displays the narrator question separately.",
+      "615 retains the Prophet’s oath and source timing; absent cursing and explanatory details are not imported.",
+      "618 retains both oaths and contemplated action; the differing lexical senses are explicitly disclosed with commentary separate."
+    ],
+    "reviewStatus": "AI-assisted working English, not Darussalam wording or independent certification. Arabic, English, chapter, context and spoken-word review remain pending."
+  },
+  "automated": {
+    "nodeTests": 474,
+    "pythonTests": 93,
+    "total": 567,
+    "allPassed": true,
+    "integrityChecks": [
+      {
+        "command": "node scripts/build-opening-prototype.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-wikisource-book.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/audit-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/resolve-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-collection.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-audio.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node reader/check-content.mjs",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/import-bukhari.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-bukhari-jk.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-english.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-opening.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/check-opening-review.py",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/build-opening-review.py --check",
+        "exitCode": 0
+      }
+    ],
+    "negativeChecks": [
+      "Changed Arabic spans and source origins",
+      "Missing complete chapters or report ranges",
+      "Missing printed witness, source notice or translated addition",
+      "Stale English comparison record evidence",
+      "Altered English after review admission"
+    ]
+  },
+  "browser": {
+    "environment": "Desktop in-app browser at actual 320 × 740 viewport, isolated localhost origin. No new physical iPhone or screen-locked audio acceptance.",
+    "renderChecks": [
+      {
+        "number": 596,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 597,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 598,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 599,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 600,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 601,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 602,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 603,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 604,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 605,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 606,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 607,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 608,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 609,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 610,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 611,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 612,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 613,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 614,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 615,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 616,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 617,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "number": 618,
+        "englishExact": true,
+        "arabicExact": true
+      }
+    ],
+    "chapterChecks": [
+      {
+        "id": "chapter-13",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-13"
+      },
+      {
+        "id": "chapter-14",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-14"
+      },
+      {
+        "id": "chapter-15",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-15"
+      },
+      {
+        "id": "chapter-16",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-16"
+      },
+      {
+        "id": "chapter-17",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-17"
+      },
+      {
+        "id": "chapter-18",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-18"
+      },
+      {
+        "id": "chapter-19",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-19"
+      },
+      {
+        "id": "chapter-20",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-20"
+      },
+      {
+        "id": "chapter-21",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-21"
+      },
+      {
+        "id": "chapter-22",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-22"
+      },
+      {
+        "id": "chapter-23",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-23"
+      },
+      {
+        "id": "chapter-24",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-24"
+      },
+      {
+        "id": "chapter-25",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-25"
+      },
+      {
+        "id": "chapter-26",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-26"
+      },
+      {
+        "id": "chapter-27",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-27"
+      },
+      {
+        "id": "chapter-28",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-28"
+      },
+      {
+        "id": "chapter-29",
+        "titleExact": true,
+        "sourceLink": "adhan-review.html#chapter-29"
+      }
+    ],
+    "chapterArabic": [
+      {
+        "id": "chapter-13",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-14",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-15",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-16",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-17",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-18",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-19",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-20",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-21",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-22",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-23",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-24",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-25",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-26",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-27",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-28",
+        "arabicExact": true
+      },
+      {
+        "id": "chapter-29",
+        "arabicExact": true
+      }
+    ],
+    "offline": {
+      "serverStopped": true,
+      "reloadContinue": 180,
+      "bookmark": 600,
+      "exactPhrase": "wrote to me",
+      "result": 611,
+      "next": 612,
+      "arabic": 612,
+      "printedNoteEvidence": 612,
+      "chapterSource": "chapter-19",
+      "chapterArabicExact": true,
+      "lastAvailable": 618
+    },
+    "viewport": {
+      "width": 320,
+      "height": 740,
+      "standard21Day": true,
+      "largest28Night": true,
+      "horizontalOverflow": false
+    },
+    "consoleErrors": []
+  },
+  "remaining": [
+    "Continue with the complete chapter containing 619, 619b and 620. The remaining 81 Adhan candidate reports remain excluded.",
+    "Independent source and translation reviews, English chapter introductions, remaining Bukhari collection, further reviewed Cedar recordings and full bilingual scale qualification."
+  ]
+}
