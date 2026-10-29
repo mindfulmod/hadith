@@ -61,7 +61,7 @@ function startReader(library) {
   const route=location.hash;
   let pack;try{pack=await library.loadForNumber(number);}catch{announce('Sources could not load. Reconnect and try Arabic & sources again.');return;}
   if(location.hash!==route)return;
-  const e=library.getEntry(number);
+  const e=pack.entries.find(e=>e.number===number);
   $('#source-title').textContent=`Hadith ${e.number} · Arabic & sources`;
   $('#source-content').innerHTML=sourceDialogHTML(e,pack,{hasAudio:!!recordedChapter(e.number)});
   $('#sources').showModal();
@@ -120,7 +120,7 @@ function startReader(library) {
   restoring=true;
   document.body.dataset.view=mode;
   $('#listening-support').innerHTML='';
-  if(current){write({last:current,session:visitSession(session(),current)});main.innerHTML=reader(library.getEntry(current),currentPack);document.title=`Hadith ${current} · Sahih al-Bukhari`;}
+  if(current){write({last:current,session:visitSession(session(),current)});main.innerHTML=reader(currentPack.entries.find(e=>e.number===current),currentPack);document.title=`Hadith ${current} · Sahih al-Bukhari`;}
   else if(mode==='listen'){prepareListening(Number(match[2]));main.innerHTML=listening();$('#listening-support').innerHTML=queue();document.title='Listen · Sahih al-Bukhari';}
   else if(mode==='collection'){main.innerHTML=collectionView(data,store.get(),libraryLocation.page);document.title='Collection · Sahih al-Bukhari';}
   else if(mode==='book'){main.innerHTML=bookView(data,store.get(),libraryLocation);document.title=(libraryLocation.chapter?.title||libraryLocation.book.title)+' · Hadith';}

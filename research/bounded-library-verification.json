@@ -1,0 +1,494 @@
+{
+  "checkedAt": "2026-10-29",
+  "status": "personal-prototype-engineering-verified-independent-content-review-pending",
+  "baselineCommit": "7c243d7d6b5464c5ead179ede66411734a96a77d",
+  "readerRelease": "opening-60f2626ba35c",
+  "sourceRecordSha256": "0e9c7654eb905e974e9a42b3a2004368926714a3e634c580414fcf9c8205a4cc",
+  "collection": {
+    "entries": 577,
+    "books": 9,
+    "newReaderEntries": 0,
+    "recordedEntries": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sourceRecordUnchanged": true,
+    "bookPacks": [
+      {
+        "id": "opening-revelation",
+        "path": "reader/books/opening-revelation-c9cf4f7b6c4ba6da.json",
+        "sha256": "c9cf4f7b6c4ba6dac72a9b08129faab5c0d598743c860b7671bfea3ac756ec06",
+        "unchanged": true
+      },
+      {
+        "id": "faith",
+        "path": "reader/books/faith-557769677b20c554.json",
+        "sha256": "557769677b20c554acfd3f994a835e8d3b8f1ff29c1b7a6c0fdc3e59e2208094",
+        "unchanged": true
+      },
+      {
+        "id": "knowledge",
+        "path": "reader/books/knowledge-a280a8eb778f2ab3.json",
+        "sha256": "a280a8eb778f2ab3581f563dea6dfe4c05720a88c00d6be8a66ac8f0d689f1e9",
+        "unchanged": true
+      },
+      {
+        "id": "ablution",
+        "path": "reader/books/ablution-0923e409e3c51644.json",
+        "sha256": "0923e409e3c51644ff87798dc1d7b2469d9ec3892d4b4c00dc90e12fe5bd266b",
+        "unchanged": true
+      },
+      {
+        "id": "ghusl",
+        "path": "reader/books/ghusl-bf3dc34e28a46ebb.json",
+        "sha256": "bf3dc34e28a46ebb37bebbf8a25d656220c092cece8e75642bc10f96faaf9155",
+        "unchanged": true
+      },
+      {
+        "id": "menstruation",
+        "path": "reader/books/menstruation-361e7592fc0b396b.json",
+        "sha256": "361e7592fc0b396b65c2a52b74c156f7afaafaf572198e895d478869f4627858",
+        "unchanged": true
+      },
+      {
+        "id": "tayammum",
+        "path": "reader/books/tayammum-bf0e2117af123f4b.json",
+        "sha256": "bf0e2117af123f4b3d9e855bccba7be025d7d4fb564f860491861f9222387508",
+        "unchanged": true
+      },
+      {
+        "id": "prayer",
+        "path": "reader/books/prayer-9cd174e568b06a5f.json",
+        "sha256": "9cd174e568b06a5ffd8b47e58fe9356b432784517b72d8147f1b1299d4a74fa1",
+        "unchanged": true
+      },
+      {
+        "id": "prayer-times",
+        "path": "reader/books/prayer-times-ed42d63e07fe8411.json",
+        "sha256": "ed42d63e07fe8411520b4a8b591c817e96aa4143557a7a294cd953d8cf0e9a89",
+        "unchanged": true
+      }
+    ]
+  },
+  "memoryPolicy": {
+    "maxCachedBooks": 4,
+    "maxCachedEncodedBytes": 4194304,
+    "eviction": "Least recently used complete verified book; a single oversized book remains complete. Returned packs remain valid after eviction. Reloads are hash checked again.",
+    "search": "One verified book at a time; retains exact display blocks, normalized matching keys, source provenance and minimal entry summaries. Does not retain complete review records or citation trees.",
+    "limits": "The byte budget measures encoded book files, not JavaScript heap or total app memory. Search still scales with total bilingual text. Active callers may retain returned packs."
+  },
+  "measurements": {
+    "method": "Three separate Node processes per mode before and after; retained heap delta following forced garbage collection; current 577-entry bilingual collection. No network or UI rendering.",
+    "reproduceCurrent": "node --expose-gc scripts/measure-library-memory.mjs reading|search",
+    "scope": "Desktop Node only; not iPhone memory, transient allocation peaks, UI latency or full-corpus production qualification.",
+    "results": {
+      "reading": {
+        "samples": {
+          "before": [
+            {
+              "mode": "reading",
+              "entries": 577,
+              "books": 9,
+              "retainedHeapDelta": 8589368,
+              "elapsedMs": 106,
+              "cachedBooks": 9,
+              "cachedEncodedBytes": 3332391,
+              "indexReusable": false
+            },
+            {
+              "mode": "reading",
+              "entries": 577,
+              "books": 9,
+              "retainedHeapDelta": 8589656,
+              "elapsedMs": 100,
+              "cachedBooks": 9,
+              "cachedEncodedBytes": 3332391,
+              "indexReusable": false
+            },
+            {
+              "mode": "reading",
+              "entries": 577,
+              "books": 9,
+              "retainedHeapDelta": 8590232,
+              "elapsedMs": 102,
+              "cachedBooks": 9,
+              "cachedEncodedBytes": 3332391,
+              "indexReusable": false
+            }
+          ],
+          "after": [
+            {
+              "mode": "reading",
+              "entries": 577,
+              "books": 9,
+              "retainedHeapDelta": 6122272,
+              "elapsedMs": 99,
+              "cachedBooks": 4,
+              "cachedEncodedBytes": 1691773,
+              "indexReusable": false
+            },
+            {
+              "mode": "reading",
+              "entries": 577,
+              "books": 9,
+              "retainedHeapDelta": 6121168,
+              "elapsedMs": 102,
+              "cachedBooks": 4,
+              "cachedEncodedBytes": 1691773,
+              "indexReusable": false
+            },
+            {
+              "mode": "reading",
+              "entries": 577,
+              "books": 9,
+              "retainedHeapDelta": 6121168,
+              "elapsedMs": 102,
+              "cachedBooks": 4,
+              "cachedEncodedBytes": 1691773,
+              "indexReusable": false
+            }
+          ]
+        },
+        "medianRetainedHeapBytes": {
+          "before": 8589656,
+          "after": 6121168
+        },
+        "medianReductionPercent": 28.74
+      },
+      "search": {
+        "samples": {
+          "before": [
+            {
+              "mode": "search",
+              "entries": 577,
+              "books": 9,
+              "retainedHeapDelta": 9813144,
+              "elapsedMs": 114,
+              "cachedBooks": 9,
+              "cachedEncodedBytes": 3332391,
+              "matches": 561,
+              "exactSnippet": "Al-Humaydi, ‘Abdullah ibn al-Zubayr, related to us: Sufyan related to us: Yahya ibn Sa‘id al-Ansari related to us: Muhammad ibn Ibrahim al-Taymi informed me that he heard ‘Alqamah ibn Waqqas al-Laythi say: I heard ‘Umar ibn al-Khattab, may Allah Most High be pleased with him, on the pulpit. He said:",
+              "indexReusable": true
+            },
+            {
+              "mode": "search",
+              "entries": 577,
+              "books": 9,
+              "retainedHeapDelta": 9813864,
+              "elapsedMs": 112,
+              "cachedBooks": 9,
+              "cachedEncodedBytes": 3332391,
+              "matches": 561,
+              "exactSnippet": "Al-Humaydi, ‘Abdullah ibn al-Zubayr, related to us: Sufyan related to us: Yahya ibn Sa‘id al-Ansari related to us: Muhammad ibn Ibrahim al-Taymi informed me that he heard ‘Alqamah ibn Waqqas al-Laythi say: I heard ‘Umar ibn al-Khattab, may Allah Most High be pleased with him, on the pulpit. He said:",
+              "indexReusable": true
+            },
+            {
+              "mode": "search",
+              "entries": 577,
+              "books": 9,
+              "retainedHeapDelta": 9776632,
+              "elapsedMs": 109,
+              "cachedBooks": 9,
+              "cachedEncodedBytes": 3332391,
+              "matches": 561,
+              "exactSnippet": "Al-Humaydi, ‘Abdullah ibn al-Zubayr, related to us: Sufyan related to us: Yahya ibn Sa‘id al-Ansari related to us: Muhammad ibn Ibrahim al-Taymi informed me that he heard ‘Alqamah ibn Waqqas al-Laythi say: I heard ‘Umar ibn al-Khattab, may Allah Most High be pleased with him, on the pulpit. He said:",
+              "indexReusable": true
+            }
+          ],
+          "after": [
+            {
+              "mode": "search",
+              "entries": 577,
+              "books": 9,
+              "retainedHeapDelta": 7994752,
+              "elapsedMs": 109,
+              "cachedBooks": 4,
+              "cachedEncodedBytes": 1691773,
+              "matches": 561,
+              "exactSnippet": "Al-Humaydi, ‘Abdullah ibn al-Zubayr, related to us: Sufyan related to us: Yahya ibn Sa‘id al-Ansari related to us: Muhammad ibn Ibrahim al-Taymi informed me that he heard ‘Alqamah ibn Waqqas al-Laythi say: I heard ‘Umar ibn al-Khattab, may Allah Most High be pleased with him, on the pulpit. He said:",
+              "indexReusable": true
+            },
+            {
+              "mode": "search",
+              "entries": 577,
+              "books": 9,
+              "retainedHeapDelta": 7994128,
+              "elapsedMs": 110,
+              "cachedBooks": 4,
+              "cachedEncodedBytes": 1691773,
+              "matches": 561,
+              "exactSnippet": "Al-Humaydi, ‘Abdullah ibn al-Zubayr, related to us: Sufyan related to us: Yahya ibn Sa‘id al-Ansari related to us: Muhammad ibn Ibrahim al-Taymi informed me that he heard ‘Alqamah ibn Waqqas al-Laythi say: I heard ‘Umar ibn al-Khattab, may Allah Most High be pleased with him, on the pulpit. He said:",
+              "indexReusable": true
+            },
+            {
+              "mode": "search",
+              "entries": 577,
+              "books": 9,
+              "retainedHeapDelta": 7995704,
+              "elapsedMs": 108,
+              "cachedBooks": 4,
+              "cachedEncodedBytes": 1691773,
+              "matches": 561,
+              "exactSnippet": "Al-Humaydi, ‘Abdullah ibn al-Zubayr, related to us: Sufyan related to us: Yahya ibn Sa‘id al-Ansari related to us: Muhammad ibn Ibrahim al-Taymi informed me that he heard ‘Alqamah ibn Waqqas al-Laythi say: I heard ‘Umar ibn al-Khattab, may Allah Most High be pleased with him, on the pulpit. He said:",
+              "indexReusable": true
+            }
+          ]
+        },
+        "medianRetainedHeapBytes": {
+          "before": 9813144,
+          "after": 7994752
+        },
+        "medianReductionPercent": 18.53
+      }
+    }
+  },
+  "tests": {
+    "node": 449,
+    "python": 85,
+    "total": 534,
+    "integrity": [
+      {
+        "command": "node scripts/build-opening-prototype.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-wikisource-book.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/audit-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/resolve-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-collection.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-audio.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node reader/check-content.mjs",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/import-bukhari.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-bukhari-jk.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-english.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-opening.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/check-opening-review.py",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/build-opening-review.py --check",
+        "exitCode": 0
+      }
+    ],
+    "syntheticScaleFixture": {
+      "books": 97,
+      "entries": 7760,
+      "purpose": "Complete sequential indexing, source order and partial-load refusal only. Synthetic content is not corpus evidence or actual full-collection performance."
+    }
+  },
+  "browser": {
+    "environment": "Desktop in-app browser, actual 320px viewport; preview server stopped for offline checks.",
+    "proof": {
+      "beforeContinue": "#read/180",
+      "crossBookReads": [
+        {
+          "number": 1,
+          "exact": true,
+          "overflow": false,
+          "width": 320
+        },
+        {
+          "number": 8,
+          "exact": true,
+          "overflow": false,
+          "width": 320
+        },
+        {
+          "number": 59,
+          "exact": true,
+          "overflow": false,
+          "width": 320
+        },
+        {
+          "number": 135,
+          "exact": true,
+          "overflow": false,
+          "width": 320
+        },
+        {
+          "number": 245,
+          "exact": true,
+          "overflow": false,
+          "width": 320
+        },
+        {
+          "number": 290,
+          "exact": true,
+          "overflow": false,
+          "width": 320
+        },
+        {
+          "number": 327,
+          "exact": true,
+          "overflow": false,
+          "width": 320
+        },
+        {
+          "number": 342,
+          "exact": true,
+          "overflow": false,
+          "width": 320
+        },
+        {
+          "number": 499,
+          "exact": true,
+          "overflow": false,
+          "width": 320
+        },
+        {
+          "number": 1,
+          "exact": true,
+          "overflow": false,
+          "width": 320
+        },
+        {
+          "number": 572,
+          "exact": true,
+          "overflow": false,
+          "width": 320
+        }
+      ],
+      "offline": {
+        "serverStopped": true,
+        "searchPages": [
+          {
+            "query": "Allah",
+            "offset": 0,
+            "total": 561,
+            "results": 30,
+            "exact": true
+          },
+          {
+            "query": "Allah",
+            "offset": 30,
+            "total": 561,
+            "results": 30,
+            "exact": true
+          },
+          {
+            "query": "يونس",
+            "offset": 0,
+            "total": 25,
+            "results": 25,
+            "exact": true
+          }
+        ],
+        "reads": [
+          {
+            "number": 31,
+            "englishExact": true,
+            "arabicExact": true
+          },
+          {
+            "number": 1,
+            "englishExact": true,
+            "arabicExact": true
+          },
+          {
+            "number": 135,
+            "englishExact": true,
+            "arabicExact": true
+          },
+          {
+            "number": 245,
+            "englishExact": true,
+            "arabicExact": true
+          },
+          {
+            "number": 342,
+            "englishExact": true,
+            "arabicExact": true
+          },
+          {
+            "number": 499,
+            "englishExact": true,
+            "arabicExact": true
+          },
+          {
+            "number": 8,
+            "englishExact": true,
+            "arabicExact": true
+          },
+          {
+            "number": 1,
+            "englishExact": true,
+            "arabicExact": true
+          }
+        ],
+        "narratorSearch": {
+          "query": "Yatafayya’u",
+          "number": 514,
+          "text": "And Ibn ‘Abbas said: “Yatafayya’u” means “it inclines.”"
+        }
+      },
+      "afterContinue": "#read/180",
+      "screenshot": "Local browser screenshot retained with the work session; not part of the public reading download."
+    },
+    "physicalIPhoneAcceptance": "User reported smooth search, pagination and opening a result on earlier release opening-62053d90951b; no new physical-device memory or locked-audio claim."
+  },
+  "readingDownloadBytes": 16312980,
+  "nextSourceIntake": {
+    "book": "Adhan",
+    "revision": 484867,
+    "status": "candidate-layout-review-required",
+    "readerEligible": false,
+    "blocks": 224,
+    "headings": 80,
+    "numberedMarkers": 122,
+    "uniqueNumericLabels": 121,
+    "range": [
+      578,
+      698
+    ],
+    "duplicateLabel": 619,
+    "duplicateBlockIds": [
+      "mwiA",
+      "mwig"
+    ],
+    "sourceCodePoints": 39955,
+    "coveredCodePoints": 39955,
+    "rawSha256": "b3c5c0eef7cb8d0f543f1c1e5d7cb4868ed732f159fc39d7df1bc2aed3b7ee8d",
+    "next": "Compare the complete structure and both distinct 619 paragraphs against inspected Arabic prints and English references before resolution, translation or admission. No renumbering or deduplication."
+  },
+  "unfinished": [
+    "Full selected Bukhari collection",
+    "Independent Arabic and English content review",
+    "English chapter introductions",
+    "Additional reviewed Cedar recordings",
+    "Physical iPhone memory and full bilingual scale measurements"
+  ]
+}

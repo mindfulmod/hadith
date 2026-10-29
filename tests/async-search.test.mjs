@@ -6,7 +6,7 @@ const yieldFast=()=>Promise.resolve(),hash='a'.repeat(64),version='search-test-r
 const makeEntries=(count=95)=>Array.from({length:count},(_,i)=>({id:'fixture:'+i,number:i+1,book:'Fixture',english_blocks:['Chain '+i,'A shared phrase.'],arabic_blocks:['نص مستقل '+i]}));
 function fixture(entries=makeEntries()){
  const catalog={sourceRecordSha256:hash,books:[{id:'one'},{id:'two'}],entries:entries.map(e=>({id:e.id,number:e.number,book:e.book}))};let fail=false,loads=0;
- const library={catalog,async loadBook(){loads++;if(fail===true||typeof fail==='function'&&fail(arguments[0]))throw new Error('Unavailable');},getEntry:n=>entries.find(e=>e.number===n)};
+ const library={catalog,async loadBook(id){loads++;if(fail===true||typeof fail==='function'&&fail(id))throw new Error('Unavailable');const split=Math.ceil(entries.length/2);return {entries:id==='one'?entries.slice(0,split):entries.slice(split)};},getEntry:n=>entries.find(e=>e.number===n)};
  return {catalog,library,loadLibrary:async()=>library,setFail:v=>{fail=v;},loads:()=>loads};
 }
 function fakeWorker(){return {messages:[],terminated:false,postMessage(message){this.messages.push(message);},terminate(){this.terminated=true;},emit(data){this.onmessage?.({data});}};}
@@ -16,12 +16,12 @@ function client(f,worker,options={}){return createSearchClient({catalog:f.catalo
 const tick=()=>new Promise(r=>setImmediate(r));
 test('indexed search preserves original Unicode, paragraph boundaries, language precedence and printed provenance',async()=>{
  const entries=[{id:'x',number:1,book:'Fixture',english_blocks:['Narrator\u00a0 said: Café’s words.','Next paragraph'],arabic_blocks:['عربي أصلي'],presentation:{english:[{block:0,provenance:{kind:'printed-supplement'}}]}}],before=JSON.stringify(entries),index=await createSearchIndex(entries,{yieldTask:yieldFast});
- for(const query of ["cafe\u0301's words",'narrator said','words. Next','عربي','Hadith 1','#1','""','missing'])assert.deepEqual(await index.search(query),searchEntries(entries,query));
+ for(const query of ["cafe\u0301's words",'narrator said','words. Next','عربي','Hadith 1','#1','""','missing'])assert.deepEqual(await index.search(query),thin(searchEntries(entries,query)));
  const result=await index.search("cafe\u0301's words");assert.equal(result.results[0].text,entries[0].english_blocks[0]);assert.equal(result.results[0].sourceOrigin,'printed-supplement');assert.equal(JSON.stringify(entries),before);
 });
 test('indexed search matches current bilingual source checks and complete pagination',async()=>{
  const entries=JSON.parse(readFileSync(new URL('../reader/source-record.json',import.meta.url))).entries,index=await createSearchIndex(entries,{yieldTask:yieldFast});
- for(const query of ['Allah','prayer','"Yatafayya’u"','[١٦٢]','يونس','514','Sahih al-Bukhari 1',"‘Umar",'not-in-this-text'])for(const offset of [0,30,90])assert.deepEqual(await index.search(query,30,offset),searchEntries(entries,query,30,offset));
+ for(const query of ['Allah','prayer','"Yatafayya’u"','[١٦٢]','يونس','514','Sahih al-Bukhari 1',"‘Umar",'not-in-this-text'])for(const offset of [0,30,90])assert.deepEqual(await index.search(query,30,offset),thin(searchEntries(entries,query,30,offset)));
  const sample=makeEntries(),small=await createSearchIndex(sample,{yieldTask:yieldFast}),numbers=[];for(let offset=0;offset<95;offset+=30){const r=await small.search('shared phrase',30,offset);assert.equal(r.total,95);numbers.push(...r.results.map(x=>x.entry.number));}assert.deepEqual(numbers,sample.map(e=>e.number));
 });
 test('fallback indexing yields, reuses a completed query for pagination and cancels obsolete scans',async()=>{

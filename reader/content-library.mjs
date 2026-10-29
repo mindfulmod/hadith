@@ -2,6 +2,7 @@ import {verifyResponse,objectDigest} from './integrity.mjs';
 import {validateChapters} from './navigation.mjs';
 import {validateSourceStructure} from './source-structure.mjs';
 import {validateSourceReferences,externalSourceURL} from './source-references.mjs';
+export const BOOK_CACHE_LIMITS=Object.freeze({books:4,bytes:4*1024*1024});
 const freeze=value=>{if(value&&typeof value==='object'){Object.values(value).forEach(freeze);Object.freeze(value);}return value;};
 const requireValue=(value,message)=>{if(!value)throw new Error(message);};
 function validateCatalog(catalog){
@@ -32,7 +33,8 @@ function validateCatalog(catalog){
  for(const b of catalog.books)requireValue(JSON.stringify(catalog.entries.filter(e=>e.bookId===b.id).map(e=>e.number))===JSON.stringify(b.entryNumbers),'Book references mismatch');
  return catalog;
 }
-export async function createContentLibrary({files,base=new URL('./',import.meta.url),fetcher=fetch,timeoutMs=15000}){
+export async function createContentLibrary({files,base=new URL('./',import.meta.url),fetcher=fetch,timeoutMs=15000,maxCachedBooks=BOOK_CACHE_LIMITS.books,maxCachedBytes=BOOK_CACHE_LIMITS.bytes}){
+ requireValue(Number.isSafeInteger(maxCachedBooks)&&maxCachedBooks>0&&Number.isSafeInteger(maxCachedBytes)&&maxCachedBytes>0,'Invalid book cache limits');
  const descriptors=new Map(files.map(f=>[f.path,f]));
  async function read(file){
   const shipped=descriptors.get(file.path);
@@ -43,13 +45,20 @@ export async function createContentLibrary({files,base=new URL('./',import.meta.
  }
  const index=descriptors.get('books/catalog.json');requireValue(index,'Collection index unavailable');
  const catalog=freeze(validateCatalog(await read(index))),pending=new Map(),loaded=new Map();
- const summaries=new Map(catalog.entries.map(e=>[e.number,e]));
+ const summaries=new Map(catalog.entries.map(e=>[e.number,e])),bookDescriptors=new Map(catalog.books.map(b=>[b.id,b]));
+ let cachedBytes=0;
+ function cachedBook(id){const pack=loaded.get(id);if(pack){loaded.delete(id);loaded.set(id,pack);}return pack;}
+ function remember(id,pack){
+  loaded.set(id,pack);cachedBytes+=bookDescriptors.get(id).bytes;
+  // Keep a whole book even when it alone exceeds the budget; never truncate source text.
+  while(loaded.size>1&&(loaded.size>maxCachedBooks||cachedBytes>maxCachedBytes)){const oldest=loaded.keys().next().value;loaded.delete(oldest);cachedBytes-=bookDescriptors.get(oldest).bytes;}
+ }
  for(const book of catalog.books)if(book.introduction)requireValue(descriptors.has(book.introduction.notes.path),'Offline book introduction is missing from this release');
  for(const book of catalog.books)for(const chapter of book.chapters||[])if(chapter.sourceContext)requireValue(descriptors.has(chapter.sourceContext.notes.path),'Offline chapter source notes are missing from this release');
  function loadBook(id){
-  if(loaded.has(id))return Promise.resolve(loaded.get(id));
+  if(loaded.has(id))return Promise.resolve(cachedBook(id));
   if(pending.has(id))return pending.get(id);
-  const descriptor=catalog.books.find(b=>b.id===id);
+  const descriptor=bookDescriptors.get(id);
   if(!descriptor)return Promise.reject(new Error('Book not in this collection'));
   const task=(async()=>{
    const pack=await read(descriptor);
@@ -73,18 +82,19 @@ export async function createContentLibrary({files,base=new URL('./',import.meta.
    if(catalog.schemaVersion===2)pack.sourceRecord=catalog.sourceRecord;
    externalSourceURL(pack.sourceRecord.license.url);
    for(const row of pack.sourceReferences.entries)requireValue(descriptors.has(row.localNotes.path),'Offline comparison notes are missing from this release');
-   freeze(pack);loaded.set(id,pack);return pack;
+   freeze(pack);remember(id,pack);return pack;
   })();
   pending.set(id,task);
   task.finally(()=>{if(pending.get(id)===task)pending.delete(id);}).catch(()=>{});
   return task;
  }
  async function loadForNumber(number){const summary=summaries.get(number);requireValue(summary,'Hadith not in this collection');return loadBook(summary.bookId);}
- function getEntry(number){const summary=summaries.get(number);return loaded.get(summary?.bookId)?.entries.find(e=>e.number===number);}
+ function getEntry(number){const summary=summaries.get(number);return cachedBook(summary?.bookId)?.entries.find(e=>e.number===number);}
  async function loadAllEntries(){
-  // On-demand exact search only. Do not silently search a partially loaded library.
-  for(const book of catalog.books)await loadBook(book.id);
-  return catalog.entries.map(e=>getEntry(e.number));
+  // Explicit bulk consumer: hold returned entries, never depend on all books staying cached.
+  const entries=[];for(const book of catalog.books)entries.push(...(await loadBook(book.id)).entries);
+  return entries;
  }
- return Object.freeze({catalog,loadBook,loadForNumber,getEntry,loadAllEntries});
+ const cacheInfo=()=>Object.freeze({bookIds:Object.freeze([...loaded.keys()]),encodedBytes:cachedBytes,maxCachedBooks,maxCachedBytes});
+ return Object.freeze({catalog,loadBook,loadForNumber,getEntry,loadAllEntries,cacheInfo});
 }

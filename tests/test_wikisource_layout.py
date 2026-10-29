@@ -41,7 +41,7 @@ class WikisourceLayoutTests(unittest.TestCase):
   d=ROOT/'content/sources/wikisource-opening';manifest=json.loads((d/'manifest.json').read_text());raw=(d/'source.html').read_bytes();position=raw.index(b'</p>',raw.index(b'[7]'));raw=raw[:position]+b' [99] extra report'+raw[position:];manifest['file'].update(bytes=len(raw),sha256=book.sha(raw))
   with self.assertRaisesRegex(ValueError,'explicit boundary review'):audit.opening.extract(raw,manifest)
  def test_committed_audit_is_reproducible_and_corruption_is_refused(self):
-  registry=json.loads((ROOT/'content/sources/wikisource-books.json').read_text());result=dict(audit.build_registered(registry,True));self.assertEqual(result['ablution'],self.result);self.assertEqual(set(result),{'ablution','tayammum','prayer'})
+  registry=json.loads((ROOT/'content/sources/wikisource-books.json').read_text());result=dict(audit.build_registered(registry,True));self.assertEqual(result['ablution'],self.result);self.assertEqual(set(result),{'ablution','tayammum','prayer','adhan'})
   with tempfile.TemporaryDirectory()as tmp:
    d=Path(tmp)
    for mutate in [lambda m:m['file'].update(bytes=1),lambda m:m.update(revision=1),lambda m:m['expected']['layoutSummary'].update(numberedMarkers=103),lambda m:m['file'].update(path='../source.html')]:
