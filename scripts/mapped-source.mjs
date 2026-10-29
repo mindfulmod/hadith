@@ -6,7 +6,7 @@ import {escapeHTML as esc} from '../reader/source-format.mjs';
 const root=new URL('../',import.meta.url);
 const verified=new Map();
 function checkedInventory(id){
- assert(['ablution','tayammum','prayer','adhan'].includes(id),'Unknown mapped source book');
+ assert(['ablution','tayammum','prayer','adhan','prayer-description'].includes(id),'Unknown mapped source book');
  if(!verified.has(id)){
   // The Python resolver checks the raw revision, audit, every original span and its review.
   // Keep this build-time dependency out of the browser and avoid a second layout algorithm.

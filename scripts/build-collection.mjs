@@ -27,7 +27,8 @@ export const BOOK_CONFIGS=Object.freeze({
  tayammum:Object.freeze({id:'tayammum',number:7,title:'Tayammum',first:327,arabicSourceId:'arabic-tayammum',bewleySourceId:'bewley-tayammum',bewleyTitle:'Tayammum',revision:484871,sourceLayout:'mapped'}),
  prayer:Object.freeze({id:'prayer',number:8,khanBooks:Object.freeze([8,9]),title:'Prayer',first:342,arabicSourceId:'arabic-prayer',bewleySourceId:'bewley-prayer',bewleyTitle:'Prayer',revision:522110,sourceLayout:'mapped'}),
  'prayer-times':Object.freeze({id:'prayer-times',number:9,khanBooks:Object.freeze([10]),title:'Prayer Times',first:499,arabicSourceId:'arabic-prayer-times',bewleySourceId:'bewley-prayer-times',bewleyTitle:'Prayer Times',revision:484870}),
- adhan:Object.freeze({id:'adhan',number:10,khanBooks:Object.freeze([11]),title:'Adhan',first:578,arabicSourceId:'arabic-adhan',bewleySourceId:'bewley-adhan',bewleyTitle:'Adhan',revision:484867,sourceLayout:'mapped'})
+ adhan:Object.freeze({id:'adhan',number:10,khanBooks:Object.freeze([11]),title:'Adhan',first:578,arabicSourceId:'arabic-adhan',bewleySourceId:'bewley-adhan',bewleyTitle:'Adhan',revision:484867,sourceLayout:'mapped'}),
+ 'prayer-description':Object.freeze({id:'prayer-description',number:11,khanBooks:Object.freeze([12]),title:'Description of Prayer',first:699,arabicSourceId:'arabic-prayer-description',bewleySourceId:'bewley-prayer-description',bewleyTitle:'the Description of the Prayer',revision:253001,sourceLayout:'mapped'})
 });
 function bookConfig(config){assert(Object.values(BOOK_CONFIGS).includes(config),'Unknown book configuration');return config;}
 let englishInventory;
@@ -271,7 +272,7 @@ export function buildBookBatch(inventory,review,manifest,config){
   for(const [i,s] of row.segments.entries()){
    const block=blockIds.indexOf(s.paragraphId);assert(block>=0&&Number.isSafeInteger(s.start)&&Number.isSafeInteger(s.end));
    assert.equal(s.arabic,Array.from(arabic_blocks[block]).slice(s.start,s.end).join(''),'Changed Arabic span');assert.equal(s.arabicSha256,sha(s.arabic));assert.equal(s.englishSha256,sha(s.english));
-   if(['chain','transmission-note'].includes(s.kind))for(const [arabic,english]of [[['حدثنا','حدثتنا'],'related to us'],[['حدثني','حدثتني'],'related to me'],[['أخبرنا'],'informed us'],[['أخبرني','أخبرتني'],'informed me'],[['سمعت'],'i heard']])assert.equal(arabic.reduce((n,word)=>n+s.arabic.replace(/\p{M}/gu,'').split(word).length-1,0),s.english.toLowerCase().split(english).length-1,'Reporting verb mismatch in '+s.id);
+   if(['chain','transmission-note'].includes(s.kind))for(const [arabic,english]of [[['حدثنا','حدثتنا'],'related to us'],[['حدثني','حدثتني'],'related to me'],[['أخبرنا','أنبأنا'],'informed us'],[['أخبرني','أخبرتني'],'informed me'],[['سمعت'],'i heard']])assert.equal(arabic.reduce((n,word)=>n+s.arabic.replace(/\p{M}/gu,'').split(word).length-1,0),s.english.toLowerCase().split(english).length-1,'Reporting verb mismatch in '+s.id);
    const supplement=row.arabicSupplements?.find(a=>a.id===s.paragraphId),origin=supplement?{provenance:{kind:'printed-supplement',id:supplement.id}}:{};
    presentation.arabic.push({block,start:s.start,end:s.end,kind:s.kind,...origin});presentation.english.push({block:i,start:0,end:Array.from(s.english).length,kind:s.kind,...origin});
   }

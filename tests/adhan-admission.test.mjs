@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {buildBooks} from '../scripts/publish-books.mjs';
+import {ENTRY_COUNT} from './published-fixture.mjs';
 const bytes=p=>readFileSync(new URL('../'+p,import.meta.url));
 const read=p=>JSON.parse(bytes(p));
 const hash=b=>createHash('sha256').update(b).digest('hex');
@@ -25,7 +26,8 @@ test('Adhan admission retains its exact historical evidence and changes no trans
 
 test('expanded Adhan remains a personal prototype and cannot pass the production publication gate',()=>{
  const source=read('research/bukhari-personal-collection.json'),ledger=read('content/review/personal-collection-ledger.json');
- assert.equal(source.entries.length,699);
+ assert.equal(source.entries.length,ENTRY_COUNT);
+ assert.deepEqual(source.entries.slice(0,699).map(e=>e.number),[...Array.from({length:619},(_,i)=>i+1),'619b',...Array.from({length:79},(_,i)=>620+i)]);
  assert.equal(ledger.publication,'personal-prototype');
  assert.throws(()=>buildBooks(source,ledger,{production:true}),/cannot enter a production collection/);
 });

@@ -1,0 +1,633 @@
+{
+  "checkedAt": "2026-10-29T18:28:38.764859+00:00",
+  "status": "tested-local-personal-prototype-not-published",
+  "readerRelease": "opening-e77c89cc6fc3",
+  "liveRelease": {
+    "commit": "a6d55223d3d863f2583ba67aa27edd139e9d7d6a",
+    "entries": 632,
+    "verification": "research/adhan-third-deployment.json"
+  },
+  "prior699Preview": {
+    "commit": "39b193492e5213ed82503a3bed73de76754adc85",
+    "status": "publication-approval-pending"
+  },
+  "scope": {
+    "newReports": [
+      699,
+      700,
+      701,
+      702,
+      703,
+      704,
+      705,
+      706,
+      707,
+      708,
+      709,
+      710,
+      711,
+      712,
+      713,
+      714,
+      715,
+      716
+    ],
+    "workingEnglishSegments": 43,
+    "digitalChapters": 9,
+    "browseableChapters": 10,
+    "separateArabicIntroductionParagraphs": 2,
+    "remainingSelectedReports": 119
+  },
+  "collection": {
+    "entries": 717,
+    "books": 11,
+    "sourceRecordSha256": "58166f872661490926984b3c3eb165975e52fa42ad6249518aa0dc25d92fcc95",
+    "prior699EntryObjectsUnchanged": true,
+    "priorTenBookRecordsAndFilesUnchanged": true,
+    "stableSourceArtworkAndAudioFiles": [
+      {
+        "path": "content/sources/wikisource-prayer-description/manifest.json",
+        "sha256": "955d7f2f032646e60a99fd2f3e8683c4a08a69a2c00ed2fe9e36a37244a9b865"
+      },
+      {
+        "path": "content/sources/wikisource-prayer-description/source.html",
+        "sha256": "c4063d7c083086e58a1be160d9aa7f7053bfc7a3c0986291f930f9312bbbbece"
+      },
+      {
+        "path": "content/staging/bukhari-prayer-description-wikisource/catalog.json",
+        "sha256": "56eba0379a2e48e52ad44a46a0f35c68463071c748055b7d84281183bd075cfe"
+      },
+      {
+        "path": "content/staging/bukhari-prayer-description-wikisource/layout-audit.json",
+        "sha256": "02f920913a9fbead8cff5af49a74a19cc3cc83f9e168eb0379995101b0ff12a5"
+      },
+      {
+        "path": "reader/assets/detail-day.jpg",
+        "sha256": "1b66659dec07f547c60aa4d3242759190cfc69417b651292d30d97a221c21242"
+      },
+      {
+        "path": "reader/assets/detail-night.jpg",
+        "sha256": "76f8209acda2bdbf9ad948dedda8f0e6ab6d86d482dc38c8b48af0f8a1b3b7e8"
+      },
+      {
+        "path": "reader/assets/garden-day.jpg",
+        "sha256": "d7f765db9319baeb63566f8589d816bc8f1fcef5d71988040c93b72e93651f04"
+      },
+      {
+        "path": "reader/assets/garden-night.jpg",
+        "sha256": "85bb6876f4b96fb42ef2ecc936e3ee381fd5472e2c5afa02197b69ccfb69fa5e"
+      },
+      {
+        "path": "reader/assets/garden-provenance.json",
+        "sha256": "fecba0e01c4f27df174258eb4bb073f4f3a43b57128dfe417a2ce1c532be0031"
+      },
+      {
+        "path": "reader/assets/originals/detail-day.png",
+        "sha256": "8e86bfddce8c97363686ec581e18f73117a4fab30eecea1a7358f0b1c19f840d"
+      },
+      {
+        "path": "reader/assets/originals/detail-night.png",
+        "sha256": "86b4dd1de52eb7807c2eff46ef71457ff97cdbefa4991eb1de4253c7a518c3d1"
+      },
+      {
+        "path": "reader/assets/originals/garden-day.png",
+        "sha256": "5d0e5116b96da64e03102051492cb7e7af08734b35e1ac1105c585fc8dce24f6"
+      },
+      {
+        "path": "reader/assets/originals/garden-night.png",
+        "sha256": "1adfc6060efa2282eaf18df895f0ce80201a6cf5a27b5095bbf5b4a46f71c0c7"
+      },
+      {
+        "path": "reader/assets/provenance.json",
+        "sha256": "3e2bab5771a0c12a17ccdbd7b9837fbba5c87da8579f2b8acf8a771dde3246da"
+      },
+      {
+        "path": "reader/assets/veranda-day.png",
+        "sha256": "1a39fcce53d9fee3a7413b58708ad8720bff819d69584e5fbe9ed3fa206a8374"
+      },
+      {
+        "path": "reader/assets/veranda-night.png",
+        "sha256": "6ad6124a808556afec6808af44fc631d67efaaaa8bb3d44cefbc3b981209237d"
+      },
+      {
+        "path": "reader/audio/hadith-1-cedar-alternate-v1.mp3",
+        "sha256": "65bfa3245404165a0125173b70a66485ebf069da57e7b64594221656e82b69d7"
+      },
+      {
+        "path": "reader/audio/hadith-1-cedar-v1.mp3",
+        "sha256": "058393ae06605aeff20ad53822495aa7a4a3acd22d469147010dbff2228b2b1e"
+      },
+      {
+        "path": "reader/audio/hadith-2-cedar-v1.mp3",
+        "sha256": "9309ec6efa66a3a907216fe188d37de7f85dd2fa720a1fdee7a9e0d4f765226f"
+      },
+      {
+        "path": "reader/audio/hadith-3-cedar-v1.m4a",
+        "sha256": "4a1a0f2cdd91e4548cb6b0e7b0d79beea7f5c3981ba3ad25de988cb6f825e71b"
+      },
+      {
+        "path": "reader/audio/hadith-3-provenance.json",
+        "sha256": "0c332a9627b13ef48afe0a11049eb5871d3678d808769656acd0dcc56055d705"
+      },
+      {
+        "path": "reader/audio/hadith-4-cedar-v1.m4a",
+        "sha256": "ed671dd065107a71104555a3946094c83f8e68df6d11547eb8d4061b3c385d99"
+      },
+      {
+        "path": "reader/audio/hadith-4-provenance.json",
+        "sha256": "6cb53d22cbbf84e4c901ff8e636f162ea7c54aefe4edbab3ad9bac3ea1ae0998"
+      },
+      {
+        "path": "reader/audio/hadith-5-cedar-v1.m4a",
+        "sha256": "32a1542adf8c7ccbd702e9acf5741d4aef440ef1eddfe9ef940fa5f848096e21"
+      },
+      {
+        "path": "reader/audio/hadith-5-provenance.json",
+        "sha256": "b56a275a08d19b5b528b169aaa7d721d1d8aa29f543a7856071e7d817ddd6c25"
+      },
+      {
+        "path": "reader/audio/hadith-6-cedar-v1.m4a",
+        "sha256": "f76d59cc7bea58ab553968798eddab0e7366c12930f4c5e3e5654c30835ab9a0"
+      },
+      {
+        "path": "reader/audio/hadith-6-provenance.json",
+        "sha256": "75c251aeed3b498f376cecddf5f3dfb89498d7d9ac3b173e78740e94c1e09360"
+      },
+      {
+        "path": "reader/audio/opening-cedar-v1.m4a",
+        "sha256": "f52c79d53227837caf400dcfa1f1adc66130f88926ccc1e00787c286d09aa6c1"
+      },
+      {
+        "path": "reader/audio/provenance.json",
+        "sha256": "f92803ad13e27fd5e35ce91542ec1fd4d037ff7676ab0f25d292a6a6bb3c10e4"
+      }
+    ],
+    "completeNarrationScripts": 717,
+    "recordedReferences": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "releaseFiles": 173,
+    "readingBytes": 19763712
+  },
+  "sourceReview": {
+    "reviewPacket": "content/review/prayer-description-first-review.json",
+    "reviewSha256": "9473d2b75bf3469f14ffd59dbeb4422e37079fb63a2da77ae48564b4f34009d4",
+    "digitalRevision": 253001,
+    "originalDigitalInputsAndInventoryUnchanged": true,
+    "visuallyInspectedFullPdfPages": {
+      "brill-1862": [
+        189,
+        190,
+        191,
+        192,
+        193
+      ],
+      "dar-ibn-kathir-2002": [
+        181,
+        182,
+        183,
+        184,
+        185
+      ]
+    },
+    "comparisons": "Individually matched pinned Bewley and Khan-family records for all eighteen reports. Bewley 700 and 701 are abbreviated pointers, explicitly recorded; they do not replace full selected reports. Third-party comparison translation bodies are not republished.",
+    "corrections": [
+      {
+        "id": "707-prophet-phrase",
+        "paragraphId": "mwHg",
+        "start": 177,
+        "end": 187,
+        "before": "النبي الله",
+        "after": "النبي",
+        "originalParagraphSha256": "14be09dd4e35a97016bcc32b65426137ad68553a0564624b1b628692eca5c368",
+        "correctedParagraphSha256": "50befb1f9c3fe0e03833b7c86f16f288e0d37123f3b85bd1fcb41a2f4ee9448c",
+        "status": "chosen-for-personal-prototype",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "reason": "Both inspected prints read النبي here without the extra الله in the digital phrase. Remove only that extra word and retain the entire original paragraph.",
+        "witnesses": [
+          {
+            "sourceId": "brill-1862",
+            "pdfPage": 192,
+            "reading": "النبي",
+            "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+          },
+          {
+            "sourceId": "dar-ibn-kathir-2002",
+            "pdfPage": 183,
+            "reading": "النبي",
+            "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+          }
+        ],
+        "contextNoteId": "707-source-corrections",
+        "englishSegmentId": "707-3",
+        "englishRendering": "the Prophet"
+      },
+      {
+        "id": "707-passive-attribution",
+        "paragraphId": "mwHg",
+        "start": 190,
+        "end": 210,
+        "before": "قال إسماعيل ينمي ذلك",
+        "after": "قال إسماعيل ينمى ذلك",
+        "originalParagraphSha256": "14be09dd4e35a97016bcc32b65426137ad68553a0564624b1b628692eca5c368",
+        "correctedParagraphSha256": "50befb1f9c3fe0e03833b7c86f16f288e0d37123f3b85bd1fcb41a2f4ee9448c",
+        "status": "chosen-for-personal-prototype",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "reason": "Both inspected prints distinguish Ismail’s passive ينمى from the following active ينمي. Correct only the selected final-letter form within this phrase; no vowel marks or commentary are added to the source.",
+        "witnesses": [
+          {
+            "sourceId": "brill-1862",
+            "pdfPage": 192,
+            "reading": "قال إسماعيل ينمى ذلك",
+            "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+          },
+          {
+            "sourceId": "dar-ibn-kathir-2002",
+            "pdfPage": 183,
+            "reading": "قال إسماعيل ينمى ذلك",
+            "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+          }
+        ],
+        "contextNoteId": "707-source-corrections",
+        "englishSegmentId": "707-3",
+        "englishRendering": "It is attributed"
+      }
+    ],
+    "printedHeading": {
+      "beforeReference": 712,
+      "id": "chapter-08-print-90",
+      "arabic": "باب",
+      "witnessPages": [
+        192,
+        184
+      ],
+      "originalDigitalGrouping": [
+        710,
+        711,
+        712
+      ],
+      "readerDigitalChapter": [
+        710,
+        711
+      ],
+      "printedSection": [
+        712
+      ]
+    },
+    "transmissionNotes": "Complete alternative routes at 706, active/passive attribution at 707, uncertainty at 711 and both uncertainty phrases and closing lexical forms at 712 remain visible.",
+    "status": "AI-assisted working translation; not Darussalam wording or independent accuracy certification."
+  },
+  "automated": {
+    "nodeTests": 512,
+    "pythonTests": 100,
+    "total": 612,
+    "allPassed": true,
+    "integrityChecks": [
+      {
+        "command": "node scripts/build-opening-prototype.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-wikisource-book.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/audit-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/resolve-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-collection.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-audio.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node reader/check-content.mjs",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/import-bukhari.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-bukhari-jk.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-english.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-opening.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/check-opening-review.py",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/build-opening-review.py --check",
+        "exitCode": 0
+      }
+    ],
+    "productionGateRefusesPendingReviews": true
+  },
+  "browser": {
+    "environment": "Desktop in-app browser at 320 × 740. Server stopped after Save reading reached Ready offline. No new physical iPhone or screen-locked audio acceptance.",
+    "online": [
+      {
+        "number": 699,
+        "englishExact": true,
+        "arabicExact": true,
+        "chainExpanded": true
+      },
+      {
+        "number": 700,
+        "englishExact": true,
+        "arabicExact": true,
+        "chainExpanded": true
+      },
+      {
+        "number": 701,
+        "englishExact": true,
+        "arabicExact": true,
+        "chainExpanded": true
+      },
+      {
+        "number": 702,
+        "englishExact": true,
+        "arabicExact": true,
+        "chainExpanded": true
+      },
+      {
+        "number": 703,
+        "englishExact": true,
+        "arabicExact": true,
+        "chainExpanded": true
+      },
+      {
+        "number": 704,
+        "englishExact": true,
+        "arabicExact": true,
+        "chainExpanded": true
+      },
+      {
+        "number": 705,
+        "englishExact": true,
+        "arabicExact": true,
+        "chainExpanded": true
+      },
+      {
+        "number": 706,
+        "englishExact": true,
+        "arabicExact": true,
+        "chainExpanded": true
+      },
+      {
+        "number": 707,
+        "englishExact": true,
+        "arabicExact": true,
+        "chainExpanded": true
+      },
+      {
+        "number": 708,
+        "englishExact": true,
+        "arabicExact": true,
+        "chainExpanded": true
+      },
+      {
+        "number": 709,
+        "englishExact": true,
+        "arabicExact": true,
+        "chainExpanded": true
+      },
+      {
+        "number": 710,
+        "englishExact": true,
+        "arabicExact": true,
+        "chainExpanded": true
+      },
+      {
+        "number": 711,
+        "englishExact": true,
+        "arabicExact": true,
+        "chainExpanded": true
+      },
+      {
+        "number": 712,
+        "englishExact": true,
+        "arabicExact": true,
+        "chainExpanded": true
+      },
+      {
+        "number": 713,
+        "englishExact": true,
+        "arabicExact": true,
+        "chainExpanded": true
+      },
+      {
+        "number": 714,
+        "englishExact": true,
+        "arabicExact": true,
+        "chainExpanded": true
+      },
+      {
+        "number": 715,
+        "englishExact": true,
+        "arabicExact": true,
+        "chainExpanded": true
+      },
+      {
+        "number": 716,
+        "englishExact": true,
+        "arabicExact": true,
+        "chainExpanded": true
+      }
+    ],
+    "chapters": [
+      {
+        "id": "chapter-01",
+        "titleExact": true,
+        "entriesExact": true
+      },
+      {
+        "id": "chapter-02",
+        "titleExact": true,
+        "entriesExact": true
+      },
+      {
+        "id": "chapter-03",
+        "titleExact": true,
+        "entriesExact": true
+      },
+      {
+        "id": "chapter-04",
+        "titleExact": true,
+        "entriesExact": true
+      },
+      {
+        "id": "chapter-05",
+        "titleExact": true,
+        "entriesExact": true
+      },
+      {
+        "id": "chapter-06",
+        "titleExact": true,
+        "entriesExact": true
+      },
+      {
+        "id": "chapter-07",
+        "titleExact": true,
+        "entriesExact": true
+      },
+      {
+        "id": "chapter-08",
+        "titleExact": true,
+        "entriesExact": true
+      },
+      {
+        "id": "chapter-08-print-90",
+        "titleExact": true,
+        "entriesExact": true
+      },
+      {
+        "id": "chapter-09",
+        "titleExact": true,
+        "entriesExact": true
+      }
+    ],
+    "layoutNight": {
+      "scrollWidth": 320,
+      "text": "28px",
+      "width": 320
+    },
+    "sessionBoundary": {
+      "continuedAt": "#read/699"
+    },
+    "offline": {
+      "serverStopped": true,
+      "homeReloaded": true,
+      "continueHref": "#read/699",
+      "correctionArabic707": [
+        "[707] حدثنا عبد الله بن مسلمة عن مالك عن أبي حازم عن سهل بن سعد قال: كان الناس يؤمرون أن يضع الرجل اليد اليمنى على ذراعه اليسرى في الصلاة قال أبو حازم لا أعلمه إلا ينمي ذلك إلى النبي ﷺ قال إسماعيل ينمى ذلك ولم يقل ينمي "
+      ],
+      "original707": "Hadith 707\n\nAI-assisted working translation. Independent review pending.\n\nOpen this hadith →\nComparison findings\nThe narrator’s qualification remains rather than the stronger claim of certainty in the Khan-family comparison. The grammatical contrast in the closing Ismail note is translated, not omitted. Two explicitly recorded Arabic corrections have two-print support; the raw digital paragraph remains unchanged.\n\nAI-assisted translation of complete selected source spans, checked against two visually inspected Arabic prints and individually matched English comparisons. Explicit corrections and chapter divisions remain separately documented. Independent Arabic, English, chapter, reference and spoken-word review is pending; this is not accuracy certification.\n\nComplete working English\nArabic used in the reader · declared correction\nRecorded Arabic correction\n\nApplied only to this personal prototype. AI-evaluated; independent review pending.\n\nBoth inspected prints read النبي here without the extra الله in the digital phrase. Remove only that extra word and retain the entire original paragraph.\n\nOriginal wording:\n\nالنبي الله\n\nReader wording:\n\nالنبي\n\nBoth inspected prints distinguish Ismail’s passive ينمى from the following active ينمي. Correct only the selected final-letter form within this phrase; no vowel marks or commentary are added to the source.\n\nOriginal wording:\n\nقال إسماعيل ينمي ذلك\n\nReader wording:\n\nقال إسماعيل ينمى ذلك\n\nUnchanged original digital report\n\n[707] حدثنا عبد الله بن مسلمة عن مالك عن أبي حازم عن سهل بن سعد قال: كان الناس يؤمرون أن يضع الرجل اليد اليمنى على ذراعه اليسرى في الصلاة قال أبو حازم لا أعلمه إلا ينمي ذلك إلى النبي الله ﷺ قال إسماعيل ينمي ذلك ولم يقل ينمي\n\nOriginal source labels and boundaries\nChapter heading and introduction\nSources and exact locations",
+      "witnesses707": "Hadith 707\n\nAI-assisted working translation. Independent review pending.\n\nOpen this hadith →\nComparison findings\nThe narrator’s qualification remains rather than the stronger claim of certainty in the Khan-family comparison. The grammatical contrast in the closing Ismail note is translated, not omitted. Two explicitly recorded Arabic corrections have two-print support; the raw digital paragraph remains unchanged.\n\nAI-assisted translation of complete selected source spans, checked against two visually inspected Arabic prints and individually matched English comparisons. Explicit corrections and chapter divisions remain separately documented. Independent Arabic, English, chapter, reference and spoken-word review is pending; this is not accuracy certification.\n\nComplete working English\nArabic used in the reader · declared correction\nRecorded Arabic correction\n\nApplied only to this personal prototype. AI-evaluated; independent review pending.\n\nBoth inspected prints read النبي here without the extra الله in the digital phrase. Remove only that extra word and retain the entire original paragraph.\n\nOriginal wording:\n\nالنبي الله\n\nReader wording:\n\nالنبي\n\nBoth inspected prints distinguish Ismail’s passive ينمى from the following active ينمي. Correct only the selected final-letter form within this phrase; no vowel marks or commentary are added to the source.\n\nOriginal wording:\n\nقال إسماعيل ينمي ذلك\n\nReader wording:\n\nقال إسماعيل ينمى ذلك\n\nUnchanged original digital report\n\n[707] حدثنا عبد الله بن مسلمة عن مالك عن أبي حازم عن سهل بن سعد قال: كان الناس يؤمرون أن يضع الرجل اليد اليمنى على ذراعه اليسرى في الصلاة قال أبو حازم لا أعلمه إلا ينمي ذلك إلى النبي الله ﷺ قال إسماعيل ينمي ذلك ولم يقل ينمي\n\nOriginal source labels and boundaries\nChapter heading and introduction\nSources and exact locations\nArabic Wikisource · fixed revision 253001 ↗\n\nBook of Description of Prayer · source entry 707 · باب وضع اليمنى على اليسرى\nExact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence.\n\nAisha Bewley · The Description of the Prayer ↗\n\nBook of the Description of the Prayer · entry 707\nNamed English comparison for the report body. The shortened chain does not replace the selected full Arabic chain.\n\nIslamHouse · Khan-family English comparison ↗\n\nVolume 1, Book 12, Number 707\nKhan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed.\n\nHistorical Arabic print · Brill 1862 ↗\n\nPDF pages 191, 192\nPrinted Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes.\n\nArabic print · Dar Ibn Kathir 2002 ↗\n\nPDF page 183\nPrinted Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes.\n\nIbn Hajar · Fath al-Bari · the active and passive attribution forms ↗\n\nFath al-Bari · placing the right hand on the left\nConsulted for narrator attribution or a lexical distinction. Commentary remains separate from the selected hadith wording; independent review is pending.",
+      "printedChapter712": "CHAPTER MATERIAL · SUPPLIED FROM ARABIC PRINTS\n\nUntitled chapter\n\nOpen this chapter →\n\nThis heading is absent from the pinned digital chapter. It is preserved here from the printed witnesses without changing the original digital grouping. The heading stays separate from the numbered hadith and its narration.\n\nChapter heading from Arabic prints\n\nBoth printed witnesses begin an untitled chapter 90 before the account corresponding to selected 712. The digital source omits this division and groups 710–712 together. Preserve the printed heading separately without altering any narration or original chapter block.\n\nAI transcription and working English; independent review pending. The printed heading contains only the word chapter. Its editorial number and decorative rule are separate metadata; no subject title is invented. Independent transcription review is pending.\n\nباب\n\nUntitled chapter\n\nBoth printed readings and exact pages\n\nHistorical Arabic print · Brill 1862 · PDF page 192 ↗\n\nباب\n\nArabic print · Dar Ibn Kathir 2002 · PDF page 184 ↗ · Selected wording\n\nباب\n\nOriginal digital chapter and grouping\n\nNumbered reports in this section: 712.",
+      "freeBrowsingKeepsSession": true,
+      "search712": "1 hadith matches. Showing 1–1.\n\nHadith 712 →\n\nNafi‘ said: I think he said, “From the earth’s khashish, or khashash.”\n\nDescription of Prayer · Complete hadith and sources\nClear search",
+      "suffixedSearch": "1 hadith matches. Showing 1–1.\n\nHadith 619b →\n\n“Congregational prayer surpasses the prayer of a person alone by twenty-five degrees.”\n\nAdhan · Complete hadith and sources\nClear search",
+      "bookmarksAfterReload": [
+        "707Hadith 707Description of Prayer→",
+        "712Hadith 712Description of Prayer→"
+      ],
+      "chapterNotes": [
+        {
+          "arabic": [
+            "باب إيجاب التكبير وافتتاح الصلاة"
+          ],
+          "heading": "The obligation of the takbir and the opening of prayer",
+          "id": "chapter-01",
+          "exactInputMatch": true
+        },
+        {
+          "arabic": [
+            "باب رفع اليدين في التكبيرة الأولى مع الافتتاح سواء"
+          ],
+          "heading": "Raising both hands with the first takbir at the opening",
+          "id": "chapter-02",
+          "exactInputMatch": true
+        },
+        {
+          "arabic": [
+            "باب رفع اليدين إذا كبر وإذا ركع وإذا رفع"
+          ],
+          "heading": "Raising both hands when saying the takbir, bowing and rising",
+          "id": "chapter-03",
+          "exactInputMatch": true
+        },
+        {
+          "arabic": [
+            "باب إلى أين يرفع يديه",
+            "وقال أبو حميد في أصحابه رفع النبي ﷺ حذو منكبيه "
+          ],
+          "heading": "How high the hands are raised",
+          "id": "chapter-04",
+          "exactInputMatch": true
+        },
+        {
+          "arabic": [
+            "باب رفع اليدين إذا قام من الركعتين"
+          ],
+          "heading": "Raising both hands when standing after the two rak‘ahs",
+          "id": "chapter-05",
+          "exactInputMatch": true
+        },
+        {
+          "arabic": [
+            "باب وضع اليمنى على اليسرى"
+          ],
+          "heading": "Placing the right hand on the left",
+          "id": "chapter-06",
+          "exactInputMatch": true
+        },
+        {
+          "arabic": [
+            "باب الخشوع في الصلاة"
+          ],
+          "heading": "Humility in prayer",
+          "id": "chapter-07",
+          "exactInputMatch": true
+        },
+        {
+          "arabic": [
+            "باب ما يقول بعد التكبير"
+          ],
+          "heading": "What is said after the takbir",
+          "id": "chapter-08",
+          "exactInputMatch": true
+        },
+        {
+          "arabic": [
+            "باب",
+            "باب",
+            "باب"
+          ],
+          "heading": "Untitled chapter",
+          "id": "chapter-08-print-90"
+        },
+        {
+          "arabic": [
+            "باب رفع البصر إلى الإمام في الصلاة",
+            "وقالت عائشة قال النبي ﷺ في صلاة الكسوف فرأيت جهنم يحطم بعضها بعضا حين رأيتموني تأخرت "
+          ],
+          "heading": "Looking up towards the imam during prayer",
+          "id": "chapter-09",
+          "exactInputMatch": true
+        }
+      ],
+      "original707VisibleWordingMatches": true,
+      "original707ComparisonScope": "Visible innerText comparison ignores trailing whitespace; exact raw source bytes are separately preserved and integrity-tested."
+    }
+  },
+  "screenshot": "content/review/evidence/prayer-description-first-reader.png",
+  "limitations": [
+    "Independent Arabic, English, chapter, lexical, reference and spoken-word reviews remain pending.",
+    "English chapter introductions, remaining Bukhari sections and reviewed Cedar recordings beyond 6 are unfinished.",
+    "The earlier 699-entry preview and this 717-entry preview have no external publication approval.",
+    "Full bilingual corpus and physical iPhone performance qualification remain pending."
+  ]
+}
