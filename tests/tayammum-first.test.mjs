@@ -1,3 +1,4 @@
+import {ENTRY_NUMBERS} from './published-fixture.mjs';
 import {assertHistoricalBook} from './helpers/stable-book.mjs';
 import {ENTRY_COUNT,BOOK_COUNT,LAST_NUMBER} from './published-fixture.mjs';
 import test from 'node:test';
@@ -38,5 +39,5 @@ test('comparison additions and attribution differences do not replace selected n
  const {source}=collectionFiles(),e=n=>source.entries[n-1];assert.match(e(327).english_blocks[0],/Malik informed us/);assert.match(e(327).english_blocks.at(-1),/Usayd ibn al-Hudayr/);assert.doesNotMatch(e(328).english_blocks.at(-1),/enemies|Day of Resurrection|al-Faqir/);assert.match(e(329).english_blocks[1],/sent a man.*came upon them/);assert.doesNotMatch(e(329).english_blocks[1],/Ibn ‘Umar|al-Jurf|without ablution/);assert.doesNotMatch(e(330).english_blocks.at(-1),/mud|dust/);assert.match(e(331).english_blocks[1],/This alone would have been enough for you/);assert.doesNotMatch(e(331).english_blocks[1],/blew off the dust/);
 });
 test('existing sessions remain fixed while new sessions can continue into Tayammum',()=>{
- const {source}=collectionFiles(),saved={numbers:[326],cursor:326,ended:true},before=structuredClone(saved);assert.deepEqual(resolveSession(source.entries,saved,5,331),before);assert.equal(nextSession(source.entries,saved,5).cursor,327);assert.deepEqual(saved,before);assert.deepEqual(planSession(source.entries,LAST_NUMBER,10).numbers,[LAST_NUMBER]);assert.equal(nextSession(source.entries,{numbers:[LAST_NUMBER],cursor:LAST_NUMBER,ended:true},5),null);assert(source.entries.every(e=>Number.isSafeInteger(e.number)));
+ const {source}=collectionFiles(),saved={numbers:[326],cursor:326,ended:true},before=structuredClone(saved);assert.deepEqual(resolveSession(source.entries,saved,5,331),before);assert.equal(nextSession(source.entries,saved,5).cursor,327);assert.deepEqual(saved,before);assert.deepEqual(planSession(source.entries,LAST_NUMBER,10).numbers,[LAST_NUMBER]);assert.equal(nextSession(source.entries,{numbers:[LAST_NUMBER],cursor:LAST_NUMBER,ended:true},5),null);assert.deepEqual(source.entries.map(e=>e.number),ENTRY_NUMBERS);
 });

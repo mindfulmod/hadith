@@ -1,4 +1,4 @@
-import {LAST_NUMBER} from './published-fixture.mjs';
+import {ENTRY_NUMBERS,LAST_NUMBER} from './published-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -178,7 +178,7 @@ test('the completed Knowledge book contains every source report and chapter with
  const [inventory]=input(),{source,ledger,files}=collectionFiles(),book=ledger.books.find(b=>b.id==='knowledge');assert.deepEqual(book.entryNumbers,inventory.records.map(e=>e.number));assert.deepEqual(book.chapters.map(c=>c.id),inventory.chapters.map(c=>c.id));
  assert.equal(book.entryNumbers.length,76);assert.equal(book.chapters.length,54);assert.equal(book.chapters.reduce((n,c)=>n+c.sourceContext.introduction.arabicParagraphs,0),13);assert.deepEqual(book.chapters.filter(c=>!c.entryNumbers.length).map(c=>c.id),['chapter-01','chapter-06','chapter-11']);
  const inputs=JSON.parse(files.get('reader/knowledge-inputs.json')),ids=new Set(inventory.chapters.flatMap(c=>[c.headingId,...c.contextIds]).concat(inventory.records.flatMap(e=>e.paragraphIds)));assert.deepEqual(inputs.selectedBlocks,inventory.blocks.filter(b=>ids.has(b.htmlId)));assert.equal(inputs.selectedBlocks.length,177);
- assert.deepEqual(planSession(source.entries,LAST_NUMBER,5).numbers,[LAST_NUMBER]);assert.equal(nextSession(source.entries,{numbers:[LAST_NUMBER],cursor:LAST_NUMBER,ended:true},5),null);assert(planSession(source.entries,129,5).numbers.includes(130));assert(source.entries.every(e=>Number.isSafeInteger(e.number)));
+ assert.deepEqual(planSession(source.entries,LAST_NUMBER,5).numbers,[LAST_NUMBER]);assert.equal(nextSession(source.entries,{numbers:[LAST_NUMBER],cursor:LAST_NUMBER,ended:true},5),null);assert(planSession(source.entries,129,5).numbers.includes(130));assert.deepEqual(source.entries.map(e=>e.number),ENTRY_NUMBERS);
 });
 test('a reference-only English record is disclosed without claiming a second complete body comparison',()=>{
  const {source,ledger,files}=collectionFiles(),e=source.entries.find(e=>e.number===127),ref=ledger.sourceReferences.entries.find(e=>e.number===127),c=ref.citations.find(c=>c.id==='khan');assert.match(e.english_status,/one complete English comparison body/);assert.match(e.english_status,/only a backward pointer/);assert.match(c.locator,/Number 129 · reference only; statement body absent/);assert.match(c.scope,/not a second completed/);assert.match(files.get('reader/knowledge-review.html'),/reference only; statement body absent/);assert.match(ref.contextNotes[0].text,/‘Ali’s words/);

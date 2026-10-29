@@ -1,4 +1,4 @@
-from published_fixture import LAST_NUMBER,BOOK_IDS
+from published_fixture import ENTRY_NUMBERS,LAST_NUMBER,BOOK_IDS
 import copy,importlib.util,json,tempfile,unittest
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -57,5 +57,5 @@ class WikisourceLayoutTests(unittest.TestCase):
    with self.assertRaises(ValueError):audit.audit_paths(registry,root)
  def test_full_candidate_is_not_automatically_admitted_to_the_reader(self):
   catalog=json.loads((ROOT/'reader/books/catalog.json').read_text());self.assertEqual([b['id']for b in catalog['books']],BOOK_IDS);self.assertEqual(catalog['entries'][-1]['number'],LAST_NUMBER)
-  release=(ROOT/'reader/release.mjs').read_text();self.assertNotIn('layout-audit',release);self.assertFalse(any(e['number']>LAST_NUMBER for e in catalog['entries']))
+  release=(ROOT/'reader/release.mjs').read_text();self.assertNotIn('layout-audit',release);self.assertEqual([e['number'] for e in catalog['entries']],ENTRY_NUMBERS)
 if __name__=='__main__':unittest.main()

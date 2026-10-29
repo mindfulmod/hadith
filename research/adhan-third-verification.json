@@ -1,0 +1,350 @@
+{
+  "checkedAt": "2026-10-29",
+  "status": "personal-prototype-admission-verified",
+  "baselineCommit": "b68b6866797beddce421bfb5c63e8d654c1cab3a",
+  "readerRelease": "opening-4260b1c9921c",
+  "scope": {
+    "book": "Adhan",
+    "references": [
+      619,
+      "619b",
+      620,
+      621,
+      622,
+      623,
+      624,
+      625,
+      626,
+      627,
+      628,
+      629,
+      630,
+      631
+    ],
+    "newEntries": 14,
+    "chapters": 8,
+    "separateArabicIntroductionParagraphs": 1,
+    "workingEnglishSegments": 35,
+    "arabicCorrections": 1,
+    "separatePrintedAdditions": 0
+  },
+  "publishedContent": {
+    "books": 10,
+    "entries": 632,
+    "lastNumericReference": 631,
+    "suffixedReferences": [
+      "619b"
+    ],
+    "sourceRecordSha256": "464f46954f82d8b68a54c77fa1cfcbc25c8ea8d6ce8856e5f49d29b2f7154822",
+    "prior618EntryObjectsUnchanged": true,
+    "otherNineBookRecordsUnchanged": true,
+    "recordedReferences": "1–6",
+    "completeNarrationScripts": 632,
+    "readingBytes": 17628455,
+    "releaseFiles": 161
+  },
+  "sourceReview": {
+    "record": "content/review/adhan-third-review.json",
+    "digitalRevision": 484867,
+    "digitalSha256": "b3c5c0eef7cb8d0f543f1c1e5d7cb4868ed732f159fc39d7df1bc2aed3b7ee8d",
+    "originalDigitalInputUnchanged": true,
+    "printedWitnesses": [
+      {
+        "edition": "Brill 1862",
+        "pdfPages": [
+          168,
+          169,
+          170,
+          171
+        ],
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+        "visuallyInspected": true
+      },
+      {
+        "edition": "Dar Ibn Kathir 2002",
+        "pdfPages": [
+          162,
+          163,
+          164,
+          165
+        ],
+        "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+        "visuallyInspected": true
+      }
+    ],
+    "englishComparisons": [
+      "Aisha Bewley, 619, 619b, 620–631, individually read from the previously retrieved complete page.",
+      "Pinned Khan-family EPUB, individually matched 1.11.618–1.11.631; exact record evidence retained per report."
+    ],
+    "recordedCorrection": {
+      "reference": 625,
+      "before": "أن يعروا",
+      "after": "أن يعروا المدينة",
+      "witnessPages": [
+        170,
+        164
+      ],
+      "originalPreserved": true,
+      "visibleNotice": true
+    },
+    "preservationFindings": [
+      "Distinct 619 and 619b reports preserve their original identical labels and different source paragraphs, chains, twenty-seven/twenty-five wordings and individually matched comparisons.",
+      "620 retains bless him; 628 retains forgive him, following the selected Arabic and both prints.",
+      "621 keeps both opening transmitters, Abu Hurayrah’s attributed recitation and Shu‘ayb’s complete additional chain; the modern separate numbering does not split the selected entry.",
+      "624 retains every connected statement without inserting Zuhr into the body from the chapter or comparisons.",
+      "625 preserves both Mujahid comments and the complete additional chain. Only the missing Madinah word is restored; other printed variants remain explicitly recorded.",
+      "626 retains contemplation and not yet; 629 retains all seven descriptions without imported parenthetical interpretation.",
+      "630 keeps the narrated question visible outside the collapsed chain.",
+      "631 keeps the selected and/or distinction; lexical commentary stays separate."
+    ],
+    "reviewStatus": "AI-assisted working English, not Darussalam wording or independent certification. Arabic, English, chapter, context and spoken-word review remain pending."
+  },
+  "automated": {
+    "nodeTests": 479,
+    "pythonTests": 93,
+    "total": 572,
+    "initialFailuresResolved": [
+      "Deployment test ran before the new public files were staged; staged artifact and all deployment checks passed.",
+      "One historical test still required every reference to be an integer. Replaced with exact coverage against the independently maintained fixture; all affected tests passed."
+    ],
+    "integrityChecks": [
+      {
+        "command": "node scripts/build-opening-prototype.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-wikisource-book.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/audit-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/resolve-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-collection.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-audio.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node reader/check-content.mjs",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/import-bukhari.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-bukhari-jk.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-english.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-opening.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/check-opening-review.py",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/build-opening-review.py --check",
+        "exitCode": 0
+      }
+    ],
+    "negativeChecks": [
+      "Missing suffix mapping, wrong original occurrence or abbreviated printed evidence",
+      "Changed Arabic span or stale English comparison hash",
+      "Missing correction witness, mismatched reading, hidden correction notice or invalid translation",
+      "Incomplete selected report order and chapter coverage",
+      "Attempted production publication with pending independent reviews"
+    ],
+    "allPassed": true,
+    "finalFullNodeRun": {
+      "tests": 479,
+      "passed": 479,
+      "failed": 0
+    }
+  },
+  "browser": {
+    "environment": "Desktop in-app browser at actual 320 × 740 viewport, isolated localhost origin. Preview server stopped for offline checks. No new physical iPhone or screen-locked audio acceptance.",
+    "renderedBlocks": [
+      {
+        "reference": 619,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": "619b",
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 620,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 621,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 622,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 623,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 624,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 625,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 626,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 627,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 628,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 629,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 630,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 631,
+        "englishExact": true,
+        "arabicExact": true
+      }
+    ],
+    "dayStandard": {
+      "fontSize": "21px",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    "chapters": [
+      {
+        "chapter": "chapter-30",
+        "titleExact": true,
+        "reportsPresent": true
+      },
+      {
+        "chapter": "chapter-31",
+        "titleExact": true,
+        "reportsPresent": true
+      },
+      {
+        "chapter": "chapter-32",
+        "titleExact": true,
+        "reportsPresent": true
+      },
+      {
+        "chapter": "chapter-33",
+        "titleExact": true,
+        "reportsPresent": true
+      },
+      {
+        "chapter": "chapter-34",
+        "titleExact": true,
+        "reportsPresent": true
+      },
+      {
+        "chapter": "chapter-35",
+        "titleExact": true,
+        "reportsPresent": true
+      },
+      {
+        "chapter": "chapter-36",
+        "titleExact": true,
+        "reportsPresent": true
+      },
+      {
+        "chapter": "chapter-37",
+        "titleExact": true,
+        "reportsPresent": true
+      }
+    ],
+    "nightLargest": {
+      "fontSize": "28px",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    "nextPreviousThroughSuffix": true,
+    "freeBrowsingPreservedContinue": true,
+    "readingSaved": true,
+    "backupExport": {
+      "version": 2,
+      "saved": [
+        619,
+        "619b"
+      ],
+      "cursor": "619b",
+      "verifiedDownloadedJSON": true
+    },
+    "offlineRestartContinue": true,
+    "offlineSuffixSearch": [
+      "#read/619b"
+    ],
+    "offlineNumericSearch": [
+      "#read/619"
+    ],
+    "offlineChainSearch": [
+      "#read/619b"
+    ],
+    "offlineCorrectionNotice": true,
+    "offlineCorrectedArabic": true,
+    "offlineOriginal625": true,
+    "offlineSourceLink": "http://127.0.0.1:51403/reader/notes/adhan-hadith-610-625.html#hadith-625",
+    "offlineSuffixNotes": true,
+    "offlineChapterArabicExact": [
+      "chapter-30",
+      "chapter-31",
+      "chapter-32",
+      "chapter-33",
+      "chapter-34",
+      "chapter-35",
+      "chapter-36",
+      "chapter-37"
+    ],
+    "offlineBookmarks": [
+      "#read/619",
+      "#read/619b"
+    ]
+  },
+  "remaining": [
+    "Continue with Adhan 632 and subsequent complete chapters. There are 67 remaining Adhan candidate reports and 43 chapters.",
+    "Independent source and translation reviews, English chapter introductions, remaining Bukhari collection, further reviewed Cedar recordings and full bilingual scale qualification."
+  ]
+}

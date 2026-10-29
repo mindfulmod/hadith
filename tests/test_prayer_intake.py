@@ -1,4 +1,4 @@
-from published_fixture import LAST_NUMBER,BOOK_RANGES
+from published_fixture import ENTRY_NUMBERS,LAST_NUMBER,BOOK_RANGES
 import copy,importlib.util,unittest
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -21,5 +21,5 @@ class PrayerIntakeTests(unittest.TestCase):
    with self.assertRaises(ValueError):m.resolve(self.audit,review,self.english)
  def test_intake_does_not_publish_unadmitted_candidates(self):
   r=self.result;self.assertFalse(r['readerEligible']);self.assertEqual([e['number']for e in r['records']],list(range(342,499)));self.assertEqual(len(r['chapters']),108)
-  c=m.read(ROOT/'reader/books/catalog.json');self.assertEqual([e['number']for e in c['entries']if e['bookId']=='prayer'],list(BOOK_RANGES['prayer']));self.assertFalse(any(e['number']>LAST_NUMBER for e in c['entries']))
+  c=m.read(ROOT/'reader/books/catalog.json');self.assertEqual([e['number']for e in c['entries']if e['bookId']=='prayer'],list(BOOK_RANGES['prayer']));self.assertEqual([e['number'] for e in c['entries']],ENTRY_NUMBERS)
 if __name__=='__main__':unittest.main()

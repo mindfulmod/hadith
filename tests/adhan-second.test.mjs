@@ -1,3 +1,4 @@
+import {ENTRY_COUNT} from './published-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -14,7 +15,7 @@ test('next Adhan chapters retain every digital character and all complete narrat
  assert.deepEqual(batch.entries.map(e=>e.number),Array.from({length:23},(_,i)=>596+i));assert.equal(batch.chapters.length,17);
  assert.equal(a[1].entries.reduce((n,r)=>n+r.segments.length,0),53);
  for(const r of a[1].entries){const e=batch.entries.find(e=>e.number===r.number),ar=r.paragraphIds.map(id=>a[0].blocks.find(b=>b.htmlId===id).text);assert.deepEqual(e.arabic_blocks.slice(0,ar.length),ar);assert.deepEqual(r.paragraphIds.map(id=>r.segments.filter(s=>s.paragraphId===id).map(s=>s.arabic).join('')),ar);assert.deepEqual(e.english_blocks,r.segments.map(s=>s.english));assert.equal((e.arabic_blocks.join('').match(/ﷺ/g)||[]).length,(e.english_blocks.join(' ').match(/may Allah bless him and grant him peace/g)||[]).length);assert.equal(plan.entries.find(x=>x.number===r.number).script,e.english_blocks.join('\n\n'));assert.equal(r.comparisons[1].reference,'1.11.'+(r.number-1));}
- assert.equal(source.entries.length,618);assert.throws(()=>buildBooks(source,ledger,{production:true}));
+ assert.equal(source.entries.length,ENTRY_COUNT);assert.throws(()=>buildBooks(source,ledger,{production:true}));
 });
 test('chapter quotations remain separate, and ordinary browsing preserves the session',()=>{
  const a=input(),b=buildBookBatch(...a),{source,ledger}=collectionFiles(),book=ledger.books.find(b=>b.id==='adhan');
