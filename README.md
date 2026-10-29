@@ -826,3 +826,18 @@ All **505 tests (423 Node, 82 Python)** and thirteen integrity checks pass. Ever
 The user separately confirmed that the requested iPhone search/pagination/result-opening flow felt smooth on release `opening-62053d90951b` (514 entries). This is user acceptance of that flow, not an instrumented performance score or full-corpus qualification. See `research/iphone-search-acceptance.json`.
 
 The reading download is **14,991,312 bytes (14.99 MB)**. Complete scripts cover 530 entries; actual Cedar recordings remain **1–6**. Next source work begins at selected 531, with 47 Prayer Times reports still outside the reader. Full-collection work, English chapter introductions, independent reviews, further reviewed recordings and full bilingual scale checks remain unfinished.
+
+
+### Smaller source-note pages with preserved links — 29 October 2026
+
+The reader still contains **530 entries across nine books**. All hadith, chapter records, review admissions, book packs, narration scripts and recordings remain unchanged. The eight larger source-note books now deliver **890 complete sections in 62 static pages**, grouped in stable sixteen-reference ranges. Book introductions stay separate. Opening Revelation’s existing small source pages are unchanged.
+
+A comparison no longer requires loading a whole book’s notes: the former largest page was **1,112,316 bytes**; the largest new page is **119,034 bytes**, with separate indexes of 8,797–37,060 bytes. These are file-size measurements, not an iPhone timing claim. The complete reading download grows from **14,991,312 to 15,385,010 bytes** because each static page carries its navigation and attribution. Every page is included in Save reading.
+
+Existing `*-review.html#hadith-N`, chapter and introduction links remain valid. A lightweight index sends a known fragment to its complete static page using replacement navigation, so Back does not bounce through an extra redirect. If automatic opening is unavailable, every section has a real link; the notes themselves do not require JavaScript. No historical public book pack is removed.
+
+`scripts/build-collection.mjs` still generates the canonical complete source notes from the review records. Its publication step uses `scripts/source-notes.mjs` to relocate complete article elements and links, producing the indexes, pages and `reader/source-notes.json`. Edit review records and regenerate; do not edit generated pages. Collection checks and site assembly refuse changed text, missing routes, broken cross-links or missing offline dependencies.
+
+Validation: **510 tests (428 Node, 82 Python)** and all thirteen integrity commands passed. Every section’s text/markup and resolved source citations matched the canonical pages. An interrupted download retained the previous offline edition and retried only missing or failed files. In the actual browser, an older 180-entry saved reader updated to 530 while preserving Continue at Hadith 180 and its bookmark. With the preview server stopped, source links across all eight books, printed headings, separate introductions, chapters without numbered hadith, manual index navigation, reload and return to reading worked at 320px without horizontal overflow. Evidence and limitations: `research/source-note-partition-verification.json`.
+
+This does not certify content or full-corpus performance. Physical iPhone source-note acceptance, full bilingual memory/loading measurements, remaining translations and independent reviews are still required. Source work continues at Prayer Times 531; Cedar recordings remain **1–6**.

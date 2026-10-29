@@ -8,6 +8,8 @@ import assert from 'node:assert/strict';
 import {publishBooks} from './publish-books.mjs';
 import {audioFiles} from './build-audio.mjs';
 import {release} from '../reader/release.mjs';
+import {collectionFiles} from './build-collection.mjs';
+import {partitionSourceNotes,checkSourceNotePublication} from './source-notes.mjs';
 const repository=fileURLToPath(new URL('../',import.meta.url));
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
 const extension=/\.(?:html|css|js|mjs|json|webmanifest|png|jpg|jpeg|webp|svg|mp3|m4a|wav|pdf)$/i;
@@ -48,6 +50,10 @@ export function checkSourceNoteLinks(packs,{read=path=>readFileSync(resolve(repo
 export function buildSite(destination){
  audioFiles({check:true});
  const books=publishBooks({check:true});verifyFiles(release.files);
+ const notes=partitionSourceNotes(collectionFiles().files);
+ for(const [path,body]of notes.published)assert.equal(readFileSync(resolve(repository,path),'utf8'),body,'Stale source-note publication: '+path);
+ assert.deepEqual(JSON.parse(readFileSync(resolve(repository,'reader/source-notes.json'),'utf8')),notes.manifest,'Stale source-note manifest');
+ checkSourceNotePublication(notes.manifest,{read:path=>readFileSync(resolve(repository,'reader',path),'utf8'),releaseFiles:release.files});
  checkSourceNoteLinks(books.catalog.books.map(book=>JSON.parse(books.files.get(book.path))));
  const version=JSON.parse(readFileSync(resolve(repository,'reader-version.json'),'utf8'));assert.equal(version.release,release.id,'Stale update marker');
  const paths=execFileSync('git',['ls-files','-z'],{cwd:repository,encoding:'utf8'}).split('\0').filter(isPublicFile).sort();

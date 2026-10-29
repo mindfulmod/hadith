@@ -6,7 +6,8 @@ import {buildBookIntroduction,bookIntroductionNotes} from './book-introductions.
 import {deriveArabicBlocks} from './arabic-corrections.mjs';
 import {derivePrintedBlocks,validatePrintedHeading,reviewedChapterViews,printedHeadingContext,printedAdditionDetails} from './printed-supplements.mjs';
 import {sourceLocationCorrections,resolveSourceLocation} from './source-locations.mjs';
-import {readFileSync,writeFileSync} from 'node:fs';
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import {partitionSourceNotes} from './source-notes.mjs';
 import {createHash} from 'node:crypto';
 import {pathToFileURL} from 'node:url';
 import assert from 'node:assert/strict';
@@ -356,6 +357,6 @@ export function collectionFiles(){
  return result;
 }
 if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href){
- const result=collectionFiles();for(const [path,body]of result.files){const url=new URL(path,root);if(process.argv.includes('--check'))assert.equal(readFileSync(url,'utf8'),body,'Stale collection file: '+path);else writeFileSync(url,body);}
+ const result=collectionFiles(),publication=partitionSourceNotes(result.files);for(const [path,body]of publication.files){const url=new URL(path,root);if(process.argv.includes('--check'))assert.equal(readFileSync(url,'utf8'),body,'Stale collection file: '+path);else {mkdirSync(new URL('./',url),{recursive:true});writeFileSync(url,body);}}
  console.log(`${result.ledger.books.length} books, ${result.source.entries.length} complete prototype source entries; source ${hash(result.source)}`);
 }

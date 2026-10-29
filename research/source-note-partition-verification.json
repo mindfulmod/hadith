@@ -1,0 +1,376 @@
+{
+  "checkedAt": "2026-10-29",
+  "status": "implemented-desktop-and-offline-verified",
+  "readerRelease": "opening-2b916240f038",
+  "readerEntries": 530,
+  "sourceRecordSha256": "5037df3c047a0b749147995c2e99dec4910b9f35874e13e2da9c5211c32af4b1",
+  "contentChanged": false,
+  "previousCommit": "fe4b0aa4d439202b2a4ef0bd0b9e9836e8221388",
+  "delivery": {
+    "booksPartitioned": 8,
+    "sections": 890,
+    "pages": 62,
+    "grouping": "Stable sixteen-reference ranges for numbered reports and source chapter numbers. Printed subdivisions remain with their source chapter range; book introductions use separate pages.",
+    "canonicalMaterial": "The unchanged canonical HTML is still generated from the existing review records. The publication layer relocates only href/src destinations inside complete article elements. All article text and other markup compare exactly.",
+    "compatibility": "Existing book review URLs remain lightweight indexes with every earlier section ID and a real link to its complete page. A small local module replaces the current navigation for known fragments; unknown fragments remain on the index. Manual links and the static destination pages do not require JavaScript.",
+    "offline": "All eight indexes, 62 pages, the router and manifest are hash-checked members of the reading pack. No source pages or historical book packs are deleted.",
+    "gate": "Collection regeneration and site assembly compare every delivered page to the canonical generated output and verify every destination, cross-link and release dependency."
+  },
+  "measurements": [
+    {
+      "book": "faith",
+      "previousPageBytes": 309637,
+      "indexBytes": 12983,
+      "pages": 7,
+      "largestPageBytes": 86537,
+      "sections": 93
+    },
+    {
+      "book": "knowledge",
+      "previousPageBytes": 460489,
+      "indexBytes": 18396,
+      "pages": 9,
+      "largestPageBytes": 86574,
+      "sections": 130
+    },
+    {
+      "book": "ablution",
+      "previousPageBytes": 745914,
+      "indexBytes": 26790,
+      "pages": 12,
+      "largestPageBytes": 108164,
+      "sections": 187
+    },
+    {
+      "book": "ghusl",
+      "previousPageBytes": 266086,
+      "indexBytes": 13582,
+      "pages": 6,
+      "largestPageBytes": 86167,
+      "sections": 75
+    },
+    {
+      "book": "menstruation",
+      "previousPageBytes": 235018,
+      "indexBytes": 13370,
+      "pages": 6,
+      "largestPageBytes": 89343,
+      "sections": 68
+    },
+    {
+      "book": "tayammum",
+      "previousPageBytes": 135401,
+      "indexBytes": 8797,
+      "pages": 2,
+      "largestPageBytes": 119034,
+      "sections": 24
+    },
+    {
+      "book": "prayer",
+      "previousPageBytes": 1112316,
+      "indexBytes": 37060,
+      "pages": 17,
+      "largestPageBytes": 114247,
+      "sections": 265
+    },
+    {
+      "book": "prayer-times",
+      "previousPageBytes": 186060,
+      "indexBytes": 12303,
+      "pages": 3,
+      "largestPageBytes": 90594,
+      "sections": 48
+    }
+  ],
+  "readingBytes": 15385010,
+  "previousReadingBytes": 14991312,
+  "readingOverheadBytes": 393698,
+  "tests": {
+    "node": 428,
+    "python": 82,
+    "total": 510,
+    "newTests": 5,
+    "integrityCommands": [
+      {
+        "command": "node scripts/build-opening-prototype.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-wikisource-book.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/audit-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/resolve-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-collection.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-audio.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node reader/check-content.mjs",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/import-bukhari.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-bukhari-jk.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-english.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-opening.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/check-opening-review.py",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/build-opening-review.py --check",
+        "exitCode": 0
+      }
+    ],
+    "coverage": [
+      "All 890 complete article bodies and exact resolved citations across eight books.",
+      "Every current report, book introduction and chapter route; all local cross-links.",
+      "Missing pages, stale hashes, missing offline dependencies, unsafe or absent fragments, duplicate IDs, nested articles and unowned material refused.",
+      "Interrupted offline update retains the previous complete notes and retries only missing or failed files.",
+      "Existing content, source gates, sessions, backups, search and deployment checks."
+    ]
+  },
+  "browser": {
+    "checkedAt": "2026-10-29",
+    "release": "opening-2b916240f038",
+    "migration": {
+      "fromEntries": 180,
+      "toEntries": 530,
+      "continueBefore": "#read/180",
+      "continueAfter": "#read/180",
+      "savedLinkAfter": "#saved"
+    },
+    "saved": true,
+    "firstOfflineNote": {
+      "url": "http://127.0.0.1:8777/reader/notes/prayer-times-hadith-515-530.html#hadith-530",
+      "content": {
+        "arabic": [
+          "[530] حدثنا عبد الله بن يوسف قال: حدثنا مالك عن أبي الزناد عن الأعرج عن أبي هريرة أن رسول الله ﷺ قال: يتعاقبون فيكم ملائكة بالليل وملائكة بالنهار ويجتمعون في صلاة الفجر وصلاة العصر ثم يعرج الذين باتوا فيكم فيسألهم وهو أعلم بهم كيف تركتم عبادي فيقولون تركناهم وهم يصلون وأتيناهم وهم يصلون "
+        ],
+        "english": [
+          "‘Abd Allah ibn Yusuf related to us. He said: Malik related to us, from Abu al-Zinad, from al-A‘raj, from Abu Hurayrah, that the Messenger of Allah, may Allah bless him and grant him peace, said:",
+          "“Angels take turns among you by night and angels by day, and they gather at the Fajr prayer and the ‘Asr prayer. Then those who spent the night among you ascend, and He asks them—though He knows them better—‘How did you leave My servants?’ They say: ‘We left them while they were praying, and we came to them while they were praying.’”"
+        ],
+        "scrollWidth": 320,
+        "width": 320
+      }
+    },
+    "offlineSamples": [
+      {
+        "book": "faith",
+        "number": 8,
+        "url": "http://127.0.0.1:8777/reader/notes/faith-hadith-8-23.html#hadith-8",
+        "found": true,
+        "englishExact": true,
+        "arabicExact": true,
+        "width": 320,
+        "scrollWidth": 320
+      },
+      {
+        "book": "knowledge",
+        "number": 99,
+        "url": "http://127.0.0.1:8777/reader/notes/knowledge-hadith-91-106.html#hadith-99",
+        "found": true,
+        "englishExact": true,
+        "arabicExact": true,
+        "width": 320,
+        "scrollWidth": 320
+      },
+      {
+        "book": "ablution",
+        "number": 155,
+        "url": "http://127.0.0.1:8777/reader/notes/ablution-hadith-151-166.html#hadith-155",
+        "found": true,
+        "englishExact": true,
+        "arabicExact": true,
+        "width": 320,
+        "scrollWidth": 320
+      },
+      {
+        "book": "ghusl",
+        "number": 250,
+        "url": "http://127.0.0.1:8777/reader/notes/ghusl-hadith-245-260.html#hadith-250",
+        "found": true,
+        "englishExact": true,
+        "arabicExact": true,
+        "width": 320,
+        "scrollWidth": 320
+      },
+      {
+        "book": "menstruation",
+        "number": 300,
+        "url": "http://127.0.0.1:8777/reader/notes/menstruation-hadith-290-305.html#hadith-300",
+        "found": true,
+        "englishExact": true,
+        "arabicExact": true,
+        "width": 320,
+        "scrollWidth": 320
+      },
+      {
+        "book": "tayammum",
+        "number": 339,
+        "url": "http://127.0.0.1:8777/reader/notes/tayammum-hadith-327-342.html#hadith-339",
+        "found": true,
+        "englishExact": true,
+        "arabicExact": true,
+        "width": 320,
+        "scrollWidth": 320
+      },
+      {
+        "book": "prayer",
+        "number": 401,
+        "url": "http://127.0.0.1:8777/reader/notes/prayer-hadith-390-405.html#hadith-401",
+        "found": true,
+        "englishExact": true,
+        "arabicExact": true,
+        "width": 320,
+        "scrollWidth": 320
+      },
+      {
+        "book": "prayer-times",
+        "number": 530,
+        "url": "http://127.0.0.1:8777/reader/notes/prayer-times-hadith-515-530.html#hadith-530",
+        "found": true,
+        "englishExact": true,
+        "arabicExact": true,
+        "width": 320,
+        "scrollWidth": 320
+      }
+    ],
+    "printedChapterOffline": true,
+    "printedChapterCrossLink": {
+      "url": "http://127.0.0.1:8777/reader/notes/ablution-chapters-17-32.html#chapter-20",
+      "found": true
+    },
+    "separateMaterial": [
+      {
+        "book": "knowledge",
+        "fragment": "chapter-01",
+        "url": "http://127.0.0.1:8777/reader/notes/knowledge-chapters-1-16.html#chapter-01",
+        "content": {
+          "arabicParagraphs": 2,
+          "article": true,
+          "heading": "The virtue of knowledge",
+          "scrollWidth": 320,
+          "separate": true,
+          "width": 320
+        }
+      },
+      {
+        "book": "ghusl",
+        "fragment": "book-introduction",
+        "url": "http://127.0.0.1:8777/reader/notes/ghusl-book-introduction.html#book-introduction",
+        "content": {
+          "arabicParagraphs": 1,
+          "article": true,
+          "heading": "Opening quotations",
+          "scrollWidth": 320,
+          "separate": true,
+          "width": 320
+        }
+      },
+      {
+        "book": "tayammum",
+        "fragment": "chapter-03",
+        "url": "http://127.0.0.1:8777/reader/notes/tayammum-chapters-1-16.html#chapter-03",
+        "content": {
+          "arabicParagraphs": 3,
+          "article": true,
+          "heading": "Tayammum while resident when one finds no water and fears missing the prayer",
+          "scrollWidth": 320,
+          "separate": true,
+          "width": 320
+        }
+      },
+      {
+        "book": "prayer",
+        "fragment": "chapter-89",
+        "url": "http://127.0.0.1:8777/reader/notes/prayer-chapters-81-96.html#chapter-89",
+        "content": {
+          "arabicParagraphs": 1,
+          "article": true,
+          "heading": "Chapters on the barrier before a person praying",
+          "scrollWidth": 320,
+          "separate": true,
+          "width": 320
+        }
+      }
+    ],
+    "backAfterLegacyLink": {
+      "url": "http://127.0.0.1:8777/reader/prayer-times-review.html",
+      "indexLinks": 48
+    },
+    "manualFallback": {
+      "url": "http://127.0.0.1:8777/reader/notes/prayer-times-hadith-515-530.html#hadith-530",
+      "found": true
+    },
+    "offlineReload": true,
+    "returnToHadith": true,
+    "continueAfterNotes": "#read/180",
+    "savedAfterNotes": true
+  },
+  "unchangedFiles": [
+    "reader/source-record.json",
+    "research/bukhari-personal-collection.json",
+    "content/review/personal-collection-ledger.json",
+    "reader/books/catalog.json",
+    "content/audio/narration-plan.json",
+    "reader/audio/catalog.json",
+    "content/audio/recordings.json",
+    "reader/books/opening-revelation-c9cf4f7b6c4ba6da.json",
+    "reader/books/faith-557769677b20c554.json",
+    "reader/books/knowledge-a280a8eb778f2ab3.json",
+    "reader/books/ablution-0923e409e3c51644.json",
+    "reader/books/ghusl-bf3dc34e28a46ebb.json",
+    "reader/books/menstruation-361e7592fc0b396b.json",
+    "reader/books/tayammum-bf0e2117af123f4b.json",
+    "reader/books/prayer-9cd174e568b06a5f.json",
+    "reader/books/prayer-times-f843ae0095952555.json"
+  ],
+  "limitations": [
+    "This is a delivery and architecture change, not independent text or audio certification.",
+    "The byte measurements do not claim a measured iPhone speedup or full bilingual corpus memory qualification.",
+    "Browser tests used an actual 320px desktop viewport. Physical iPhone acceptance of this source-note change is pending.",
+    "Static manual navigation was exercised; JavaScript was not disabled in the browser. The destination pages contain the complete notes without scripting.",
+    "Future unusually large individual reports or chapter introductions can exceed the current per-page byte measurement. Complete source sections are never truncated to meet a size target."
+  ],
+  "references": [
+    {
+      "title": "MDN: URI fragment",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/URI/Reference/Fragment",
+      "finding": "Fragments are processed by the client and are not sent to the server; the compatibility index retains the mapping."
+    },
+    {
+      "title": "MDN: Location.replace",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Location/replace",
+      "finding": "Replacing navigation avoids keeping an intermediate compatibility page as an extra Back-button step. This behavior was also checked in the local browser."
+    }
+  ],
+  "nextWork": [
+    "Continue complete Prayer Times source review at selected 531.",
+    "Measure full bilingual loading and memory use; retain the historical public book-pack compatibility policy.",
+    "Extend reviewed Cedar recordings and complete independent source/translation/audio review."
+  ]
+}
