@@ -1,0 +1,1525 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-29",
+  "status": "excluded-overlapping-alternate-text",
+  "reviewerKind": "ai",
+  "independentReview": "pending",
+  "readerEligible": false,
+  "selectedSource": {
+    "path": "content/sources/wikisource-adhan/source.html",
+    "sha256": "b3c5c0eef7cb8d0f543f1c1e5d7cb4868ed732f159fc39d7df1bc2aed3b7ee8d"
+  },
+  "alternateSource": {
+    "path": "content/sources/wikisource-congregation-overlap/source.html",
+    "sha256": "ac4c7f70faee399fb531e3f26aab6334956a1b2babe5a70f4db132c85fe35ea9"
+  },
+  "scope": "Exact positional alignment from the selected Adhan chapter on the obligation of congregational prayer to its end. This establishes overlapping source locations, not semantic deduplication or approval of alternate wording. Both raw HTML files remain unchanged.",
+  "policy": "Do not append the alternate page as a new book, replace selected wording, or admit its added tail. Preserve every genuine repeated report and both distinct 619 identities from the selected Adhan inventory.",
+  "summary": {
+    "matchedBlocks": 147,
+    "exactMatches": 143,
+    "headings": 52,
+    "reports": 82,
+    "uniqueNumberLabels": 81,
+    "trailingSpaceDifferences": 3,
+    "substantiveDifferences": 1
+  },
+  "selectedOnlyBlankBlocks": [
+    {
+      "htmlId": "mwAaw",
+      "textSha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "codePoints": 1
+    }
+  ],
+  "pairs": [
+    {
+      "selectedId": "باب_وجوب_صلاة_الجماعة",
+      "alternateId": "باب_وجوب_صلاة_الجماعة",
+      "tag": "h3",
+      "selectedSha256": "d4272544edbdbc976295af490d7d971cb3130dfab4f6e6b5853f8b5d86d2d607",
+      "alternateSha256": "d4272544edbdbc976295af490d7d971cb3130dfab4f6e6b5853f8b5d86d2d607",
+      "selectedCodePoints": 21,
+      "alternateCodePoints": 21,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwgw",
+      "alternateId": "mwBg",
+      "tag": "p",
+      "selectedSha256": "1171036c917e97c460e9190afe2c50ed2f0b89189291216ead4a24516508239a",
+      "alternateSha256": "1171036c917e97c460e9190afe2c50ed2f0b89189291216ead4a24516508239a",
+      "selectedCodePoints": 59,
+      "alternateCodePoints": 59,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwhA",
+      "alternateId": "mwBw",
+      "tag": "p",
+      "selectedSha256": "d0ad313309d1249863c657d9267a7794f92a1a1f1fc2740344f1abc6cf323e4a",
+      "alternateSha256": "d0ad313309d1249863c657d9267a7794f92a1a1f1fc2740344f1abc6cf323e4a",
+      "selectedCodePoints": 310,
+      "alternateCodePoints": 310,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_فضل_صلاة_الجماعة",
+      "alternateId": "باب_فضل_صلاة_الجماعة",
+      "tag": "h3",
+      "selectedSha256": "896a9347f4eaafb959b438f185cbac2e897786778b8408633c94108918738a48",
+      "alternateSha256": "896a9347f4eaafb959b438f185cbac2e897786778b8408633c94108918738a48",
+      "selectedCodePoints": 20,
+      "alternateCodePoints": 20,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwhw",
+      "alternateId": "mwCg",
+      "tag": "p",
+      "selectedSha256": "a7b8e4d5e3a095e14f0206ad27da18eb096cd534e229a5638de7439d8eb3eb59",
+      "alternateSha256": "a7b8e4d5e3a095e14f0206ad27da18eb096cd534e229a5638de7439d8eb3eb59",
+      "selectedCodePoints": 98,
+      "alternateCodePoints": 98,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwiA",
+      "alternateId": "mwCw",
+      "tag": "p",
+      "selectedSha256": "19cef548f59e14a6085a292eaed49b244f776c254303847a82220ad1cd3be189",
+      "alternateSha256": "19cef548f59e14a6085a292eaed49b244f776c254303847a82220ad1cd3be189",
+      "selectedCodePoints": 138,
+      "alternateCodePoints": 138,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwig",
+      "alternateId": "mwDQ",
+      "tag": "p",
+      "selectedSha256": "1de754ecbb03b9e6d868eb50b4d186889a999ef232a17920abc1710ac4ad3907",
+      "alternateSha256": "1de754ecbb03b9e6d868eb50b4d186889a999ef232a17920abc1710ac4ad3907",
+      "selectedCodePoints": 169,
+      "alternateCodePoints": 169,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwjA",
+      "alternateId": "mwDw",
+      "tag": "p",
+      "selectedSha256": "1964bfed946cb90ca576ecf2d30055b94bfcd6b8b1db7d122f77f3547584837d",
+      "alternateSha256": "1964bfed946cb90ca576ecf2d30055b94bfcd6b8b1db7d122f77f3547584837d",
+      "selectedCodePoints": 438,
+      "alternateCodePoints": 438,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_فضل_صلاة_الفجر_في_جماعة",
+      "alternateId": "باب_فضل_صلاة_الفجر_في_جماعة",
+      "tag": "h3",
+      "selectedSha256": "e3d513272b6104e7b43ef799da214c88f902661dea17480499b10ca00c034a7d",
+      "alternateSha256": "e3d513272b6104e7b43ef799da214c88f902661dea17480499b10ca00c034a7d",
+      "selectedCodePoints": 27,
+      "alternateCodePoints": 27,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwjw",
+      "alternateId": "mwEg",
+      "tag": "p",
+      "selectedSha256": "660b3296cd5431485f679bb1a64199322df19b6e25d8e6dcd06e478749753870",
+      "alternateSha256": "660b3296cd5431485f679bb1a64199322df19b6e25d8e6dcd06e478749753870",
+      "selectedCodePoints": 373,
+      "alternateCodePoints": 373,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwkQ",
+      "alternateId": "mwFA",
+      "tag": "p",
+      "selectedSha256": "360f400b6be8281ce52cc7f2c4a0c4ada16ee57c10c0f8d67ecd68037420b8b6",
+      "alternateSha256": "360f400b6be8281ce52cc7f2c4a0c4ada16ee57c10c0f8d67ecd68037420b8b6",
+      "selectedCodePoints": 202,
+      "alternateCodePoints": 202,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwkw",
+      "alternateId": "mwFg",
+      "tag": "p",
+      "selectedSha256": "7956398a9d69b1ca2e06fc7e8aa8b8734446312805b86cb1c58197504f1f9cb6",
+      "alternateSha256": "7956398a9d69b1ca2e06fc7e8aa8b8734446312805b86cb1c58197504f1f9cb6",
+      "selectedCodePoints": 226,
+      "alternateCodePoints": 226,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_فضل_التهجير_إلى_الظهر",
+      "alternateId": "باب_فضل_التهجير_إلى_الظهر",
+      "tag": "h3",
+      "selectedSha256": "223604f702afd1fd1504ee06291f295237562686584727772bea851375154fb7",
+      "alternateSha256": "223604f702afd1fd1504ee06291f295237562686584727772bea851375154fb7",
+      "selectedCodePoints": 25,
+      "alternateCodePoints": 25,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwlg",
+      "alternateId": "mwGQ",
+      "tag": "p",
+      "selectedSha256": "c344cddb15abb1c87b93e31310518a2390696828dd0435bea6c55aac449e1c05",
+      "alternateSha256": "c344cddb15abb1c87b93e31310518a2390696828dd0435bea6c55aac449e1c05",
+      "selectedCodePoints": 421,
+      "alternateCodePoints": 421,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_احتساب_الآثار",
+      "alternateId": "باب_احتساب_الآثار",
+      "tag": "h3",
+      "selectedSha256": "01231f22a4c7282fb9016ab3702af5a42ab3d6b050762603aad137024e4ceb92",
+      "alternateSha256": "01231f22a4c7282fb9016ab3702af5a42ab3d6b050762603aad137024e4ceb92",
+      "selectedCodePoints": 17,
+      "alternateCodePoints": 17,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwmQ",
+      "alternateId": "mwHA",
+      "tag": "p",
+      "selectedSha256": "5df0c2f31f70b11fbaf02a8da5c3c09a0b9d15b82cb5998de9b8dc7b42bf1e34",
+      "alternateSha256": "5df0c2f31f70b11fbaf02a8da5c3c09a0b9d15b82cb5998de9b8dc7b42bf1e34",
+      "selectedCodePoints": 417,
+      "alternateCodePoints": 417,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_فضل_العشاء_في_الجماعة",
+      "alternateId": "باب_فضل_العشاء_في_الجماعة",
+      "tag": "h3",
+      "selectedSha256": "c04160c1209ed4db12caf4f9491198ead0ad3eba4137045ad22cc21a9bed7c0e",
+      "alternateSha256": "c04160c1209ed4db12caf4f9491198ead0ad3eba4137045ad22cc21a9bed7c0e",
+      "selectedCodePoints": 25,
+      "alternateCodePoints": 25,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwng",
+      "alternateId": "mwIQ",
+      "tag": "p",
+      "selectedSha256": "973802fcc079f4cf6c188f0c6ec937c71d7e09aae610a5b0b35148c50a2b975e",
+      "alternateSha256": "973802fcc079f4cf6c188f0c6ec937c71d7e09aae610a5b0b35148c50a2b975e",
+      "selectedCodePoints": 294,
+      "alternateCodePoints": 294,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_اثنان_فما_فوقهما_جماعة",
+      "alternateId": "باب_اثنان_فما_فوقهما_جماعة",
+      "tag": "h3",
+      "selectedSha256": "56b96a72a785b04492d9cdd399b54aec6f11f77f59e5b1ab09d8d09923ac7bbd",
+      "alternateSha256": "56b96a72a785b04492d9cdd399b54aec6f11f77f59e5b1ab09d8d09923ac7bbd",
+      "selectedCodePoints": 26,
+      "alternateCodePoints": 26,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwoQ",
+      "alternateId": "mwJA",
+      "tag": "p",
+      "selectedSha256": "026164cefff8f88073eb6d418394bf9cc5982c2608f7118ad4e04a8e13768549",
+      "alternateSha256": "026164cefff8f88073eb6d418394bf9cc5982c2608f7118ad4e04a8e13768549",
+      "selectedCodePoints": 153,
+      "alternateCodePoints": 153,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_من_جلس_في_المسجد_ينتظر_الصلاة_وفضل_المساجد",
+      "alternateId": "باب_من_جلس_في_المسجد_ينتظر_الصلاة_وفضل_المساجد",
+      "tag": "h3",
+      "selectedSha256": "409258243b692f5d76fb72af1aa13134a3ded347c7c79212e7290c4de910204d",
+      "alternateSha256": "409258243b692f5d76fb72af1aa13134a3ded347c7c79212e7290c4de910204d",
+      "selectedCodePoints": 46,
+      "alternateCodePoints": 46,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwpA",
+      "alternateId": "mwJw",
+      "tag": "p",
+      "selectedSha256": "18341714741ac805da5f52e724926c7900592cfed7a9494adf18c3a5a564f66a",
+      "alternateSha256": "79b8fe916b9196e3ac291f924a208907decb2ab88df12eed1bdc052049a640ea",
+      "selectedCodePoints": 253,
+      "alternateCodePoints": 281,
+      "comparison": "added-tail"
+    },
+    {
+      "selectedId": "mwpg",
+      "alternateId": "mwKQ",
+      "tag": "p",
+      "selectedSha256": "5ba49f6c8f085ca93ce517bdac24a01dd2bc924c7a0332e3ea40699565e19f8f",
+      "alternateSha256": "5ba49f6c8f085ca93ce517bdac24a01dd2bc924c7a0332e3ea40699565e19f8f",
+      "selectedCodePoints": 407,
+      "alternateCodePoints": 407,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwqA",
+      "alternateId": "mwKw",
+      "tag": "p",
+      "selectedSha256": "49ef30a42fbc232825626bbb39ef0d27cbd24a239ead7389748dbcabdda171dc",
+      "alternateSha256": "131ba27d138aa164fa1872770f132125682b98a036f5e137585d9849ffe9c9a8",
+      "selectedCodePoints": 258,
+      "alternateCodePoints": 257,
+      "comparison": "trailing-space-only"
+    },
+    {
+      "selectedId": "باب_فضل_من_غدا_إلى_المسجد_ومن_راح",
+      "alternateId": "باب_فضل_من_غدا_إلى_المسجد_ومن_راح",
+      "tag": "h3",
+      "selectedSha256": "de6245ea96ac4d7b2dc61b4ef1bb9b67637ce33427a3566389221184af0e6a90",
+      "alternateSha256": "de6245ea96ac4d7b2dc61b4ef1bb9b67637ce33427a3566389221184af0e6a90",
+      "selectedCodePoints": 33,
+      "alternateCodePoints": 33,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwqw",
+      "alternateId": "mwLg",
+      "tag": "p",
+      "selectedSha256": "b45b998a2928861f20661c2c1291bbc32bd00596b8beb834c531f8210a05e6d6",
+      "alternateSha256": "b45b998a2928861f20661c2c1291bbc32bd00596b8beb834c531f8210a05e6d6",
+      "selectedCodePoints": 203,
+      "alternateCodePoints": 203,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_إذا_أقيمت_الصلاة_فلا_صلاة_إلا_المكتوبة",
+      "alternateId": "باب_إذا_أقيمت_الصلاة_فلا_صلاة_إلا_المكتوبة",
+      "tag": "h3",
+      "selectedSha256": "0d78f9754f64805b1ae8981a29155c1e9f54fd687f812bf0b7714b38e804714b",
+      "alternateSha256": "0d78f9754f64805b1ae8981a29155c1e9f54fd687f812bf0b7714b38e804714b",
+      "selectedCodePoints": 42,
+      "alternateCodePoints": 42,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwrg",
+      "alternateId": "mwMQ",
+      "tag": "p",
+      "selectedSha256": "3f7a1f6e164cb2f9ceaee4c43779c2d4bda198e26be0dcab52abdacb05909f82",
+      "alternateSha256": "3f7a1f6e164cb2f9ceaee4c43779c2d4bda198e26be0dcab52abdacb05909f82",
+      "selectedCodePoints": 543,
+      "alternateCodePoints": 543,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_حد_المريض_أن_يشهد_الجماعة",
+      "alternateId": "باب_حد_المريض_أن_يشهد_الجماعة",
+      "tag": "h3",
+      "selectedSha256": "27751760792acac99e013a093bbc3b915704963c42da7b14140b88186aaba04d",
+      "alternateSha256": "27751760792acac99e013a093bbc3b915704963c42da7b14140b88186aaba04d",
+      "selectedCodePoints": 29,
+      "alternateCodePoints": 29,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwtA",
+      "alternateId": "mwNw",
+      "tag": "p",
+      "selectedSha256": "d7e83bfc39cd8c1c54c424bd97053b5d00569c6b92120b1a6e179352a7c597c7",
+      "alternateSha256": "d7e83bfc39cd8c1c54c424bd97053b5d00569c6b92120b1a6e179352a7c597c7",
+      "selectedCodePoints": 772,
+      "alternateCodePoints": 772,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwuQ",
+      "alternateId": "mwPA",
+      "tag": "p",
+      "selectedSha256": "f758b74c352e11718632b91123d39f10ba7fd0712bcfc7310ef17c76f41b9c4b",
+      "alternateSha256": "f758b74c352e11718632b91123d39f10ba7fd0712bcfc7310ef17c76f41b9c4b",
+      "selectedCodePoints": 365,
+      "alternateCodePoints": 365,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_الرخصة_في_المطر_والعلة_أن_يصلي_في_رحله",
+      "alternateId": "باب_الرخصة_في_المطر_والعلة_أن_يصلي_في_رحله",
+      "tag": "h3",
+      "selectedSha256": "6c75d53ace3f130e4b773e58245720ef9089ccd32a19b440fe193a04b04ab52e",
+      "alternateSha256": "6c75d53ace3f130e4b773e58245720ef9089ccd32a19b440fe193a04b04ab52e",
+      "selectedCodePoints": 42,
+      "alternateCodePoints": 42,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwvA",
+      "alternateId": "mwPw",
+      "tag": "p",
+      "selectedSha256": "c42086a84f6dc52725fa3dbb3b985d3653541ef84aa029ae31f7f4ba103a3390",
+      "alternateSha256": "c42086a84f6dc52725fa3dbb3b985d3653541ef84aa029ae31f7f4ba103a3390",
+      "selectedCodePoints": 215,
+      "alternateCodePoints": 215,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwvg",
+      "alternateId": "mwQQ",
+      "tag": "p",
+      "selectedSha256": "e1c2b0525395d4630282b942481b4123bf2a8d85b74712f0bcfc2b9d19223f5b",
+      "alternateSha256": "e1c2b0525395d4630282b942481b4123bf2a8d85b74712f0bcfc2b9d19223f5b",
+      "selectedCodePoints": 320,
+      "alternateCodePoints": 320,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_هل_يصلي_الإمام_بمن_حضر_وهل_يخطب_يوم_الجمعة_في_المطر",
+      "alternateId": "باب_هل_يصلي_الإمام_بمن_حضر_وهل_يخطب_يوم_الجمعة_في_المطر",
+      "tag": "h3",
+      "selectedSha256": "4d819308c61c2a641a49253950a9c95e9cb75a5fc02de5431cca881209a0c782",
+      "alternateSha256": "4d819308c61c2a641a49253950a9c95e9cb75a5fc02de5431cca881209a0c782",
+      "selectedCodePoints": 55,
+      "alternateCodePoints": 55,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwww",
+      "alternateId": "mwRg",
+      "tag": "p",
+      "selectedSha256": "8f78fa070cd673e8bebaf6a9a88643f2697c6dd79a9e04d7721f5b1f3fc73633",
+      "alternateSha256": "8f78fa070cd673e8bebaf6a9a88643f2697c6dd79a9e04d7721f5b1f3fc73633",
+      "selectedCodePoints": 452,
+      "alternateCodePoints": 452,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwxQ",
+      "alternateId": "mwSA",
+      "tag": "p",
+      "selectedSha256": "3809d8eb3acf4b3ad543ddbb456e6677be1a82bf1ff8c80186a0610fc85bb094",
+      "alternateSha256": "3809d8eb3acf4b3ad543ddbb456e6677be1a82bf1ff8c80186a0610fc85bb094",
+      "selectedCodePoints": 227,
+      "alternateCodePoints": 227,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwxw",
+      "alternateId": "mwSg",
+      "tag": "p",
+      "selectedSha256": "e41562e8db467432c286b78f465fcb4f72d04efa4c9bb03333b0d223e19a80f9",
+      "alternateSha256": "e41562e8db467432c286b78f465fcb4f72d04efa4c9bb03333b0d223e19a80f9",
+      "selectedCodePoints": 300,
+      "alternateCodePoints": 300,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_إذا_حضر_الطعام_وأقيمت_الصلاة",
+      "alternateId": "باب_إذا_حضر_الطعام_وأقيمت_الصلاة",
+      "tag": "h3",
+      "selectedSha256": "9db3d0674124fb4ea2143b5fe23f2448281617ddbf72233c673840f92a88781b",
+      "alternateSha256": "9db3d0674124fb4ea2143b5fe23f2448281617ddbf72233c673840f92a88781b",
+      "selectedCodePoints": 32,
+      "alternateCodePoints": 32,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwyw",
+      "alternateId": "mwTg",
+      "tag": "p",
+      "selectedSha256": "9b488da58d1d0a3f3ddeaeec185f16abc74b24e7dd982344972ce1973245b50d",
+      "alternateSha256": "9b488da58d1d0a3f3ddeaeec185f16abc74b24e7dd982344972ce1973245b50d",
+      "selectedCodePoints": 104,
+      "alternateCodePoints": 104,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwzA",
+      "alternateId": "mwTw",
+      "tag": "p",
+      "selectedSha256": "e9b87ee929cb4898f233955bb1a77043c88fb69560071e8e18974d39b52ce61e",
+      "alternateSha256": "e9b87ee929cb4898f233955bb1a77043c88fb69560071e8e18974d39b52ce61e",
+      "selectedCodePoints": 136,
+      "alternateCodePoints": 136,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwzg",
+      "alternateId": "mwUQ",
+      "tag": "p",
+      "selectedSha256": "4a757f683bf84ff6241a94e9384cb6de1bb4ce99bb384e8c3abdbc71234f0639",
+      "alternateSha256": "4a757f683bf84ff6241a94e9384cb6de1bb4ce99bb384e8c3abdbc71234f0639",
+      "selectedCodePoints": 169,
+      "alternateCodePoints": 169,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mw0A",
+      "alternateId": "mwUw",
+      "tag": "p",
+      "selectedSha256": "1dbe0e6f7c324384817212fb71773ce1fb6ae76a19f3d09bb23b0e111f89d2a8",
+      "alternateSha256": "953cfbdf9ba51e0ed7145cb3c99f5fc5ccbf60c1a9d0718f8949dbbaa5e66603",
+      "selectedCodePoints": 448,
+      "alternateCodePoints": 447,
+      "comparison": "trailing-space-only"
+    },
+    {
+      "selectedId": "باب_إذا_دعي_الإمام_إلى_الصلاة_وبيده_ما_يأكل",
+      "alternateId": "باب_إذا_دعي_الإمام_إلى_الصلاة_وبيده_ما_يأكل",
+      "tag": "h3",
+      "selectedSha256": "b03f27eaf1dca6d29245c48a288631a766465742218237b756dabb2ac5a0b13f",
+      "alternateSha256": "b03f27eaf1dca6d29245c48a288631a766465742218237b756dabb2ac5a0b13f",
+      "selectedCodePoints": 43,
+      "alternateCodePoints": 43,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mw1A",
+      "alternateId": "mwVw",
+      "tag": "p",
+      "selectedSha256": "26e06b87969ab24ad5380976d552e91a56f3a78f2007df04ea7c2a6a1f33b3c8",
+      "alternateSha256": "26e06b87969ab24ad5380976d552e91a56f3a78f2007df04ea7c2a6a1f33b3c8",
+      "selectedCodePoints": 206,
+      "alternateCodePoints": 206,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_من_كان_في_حاجة_أهله_فأقيمت_الصلاة_فخرج",
+      "alternateId": "باب_من_كان_في_حاجة_أهله_فأقيمت_الصلاة_فخرج",
+      "tag": "h3",
+      "selectedSha256": "a4a9cbf86d5d14ee51e9c7e15a43b7fd26d46f93ea30219be755982bda646868",
+      "alternateSha256": "a4a9cbf86d5d14ee51e9c7e15a43b7fd26d46f93ea30219be755982bda646868",
+      "selectedCodePoints": 42,
+      "alternateCodePoints": 42,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mw1w",
+      "alternateId": "mwWg",
+      "tag": "p",
+      "selectedSha256": "5ade558966720dc0924579c692e5063c8816898bea31723fe9f6e0ceb28e18c8",
+      "alternateSha256": "5ade558966720dc0924579c692e5063c8816898bea31723fe9f6e0ceb28e18c8",
+      "selectedCodePoints": 188,
+      "alternateCodePoints": 188,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_من_صلى_بالناس_وهو_لا_يريد_إلا_أن_يعلمهم_صلاة_النبي_ﷺ_وسنته",
+      "alternateId": "باب_من_صلى_بالناس_وهو_لا_يريد_إلا_أن_يعلمهم_صلاة_النبي_ﷺ_وسنته",
+      "tag": "h3",
+      "selectedSha256": "e017ed035c1203ee2485a7145aa12fa71190660664dc69969ac9a203c2cb23ff",
+      "alternateSha256": "e017ed035c1203ee2485a7145aa12fa71190660664dc69969ac9a203c2cb23ff",
+      "selectedCodePoints": 62,
+      "alternateCodePoints": 62,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mw2w",
+      "alternateId": "mwXg",
+      "tag": "p",
+      "selectedSha256": "48ce23a433bff4cd05347301f224527155fa9f3c084c28ccfa5743431f234fb7",
+      "alternateSha256": "48ce23a433bff4cd05347301f224527155fa9f3c084c28ccfa5743431f234fb7",
+      "selectedCodePoints": 295,
+      "alternateCodePoints": 295,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_أهل_العلم_والفضل_أحق_بالإمامة",
+      "alternateId": "باب_أهل_العلم_والفضل_أحق_بالإمامة",
+      "tag": "h3",
+      "selectedSha256": "5db77bf12c1aef7d5d064b9434cecec718b0ce90fc69a47e38096c65244798a3",
+      "alternateSha256": "5db77bf12c1aef7d5d064b9434cecec718b0ce90fc69a47e38096c65244798a3",
+      "selectedCodePoints": 33,
+      "alternateCodePoints": 33,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mw3g",
+      "alternateId": "mwYQ",
+      "tag": "p",
+      "selectedSha256": "7af21e2a5544ad1720b47d4b0022921554629d51ff559fee5334b68d60d48016",
+      "alternateSha256": "7af21e2a5544ad1720b47d4b0022921554629d51ff559fee5334b68d60d48016",
+      "selectedCodePoints": 349,
+      "alternateCodePoints": 349,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mw4Q",
+      "alternateId": "mwZA",
+      "tag": "p",
+      "selectedSha256": "8dfb7a5970fc2b7406a61cadc237de7319d0320fe1824c52b6ea672bb696a41d",
+      "alternateSha256": "8dfb7a5970fc2b7406a61cadc237de7319d0320fe1824c52b6ea672bb696a41d",
+      "selectedCodePoints": 484,
+      "alternateCodePoints": 484,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mw5A",
+      "alternateId": "mwZw",
+      "tag": "p",
+      "selectedSha256": "7a1e92e4225ac4886b525f8b47b73921175ef341675c0ca5576964b7327b9d16",
+      "alternateSha256": "7a1e92e4225ac4886b525f8b47b73921175ef341675c0ca5576964b7327b9d16",
+      "selectedCodePoints": 449,
+      "alternateCodePoints": 449,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mw6w",
+      "alternateId": "mwbg",
+      "tag": "p",
+      "selectedSha256": "e89b4d8aa0c66a27b6f477d6273b27a8469136e8f54edba6b5cb3d0e0ec4c1de",
+      "alternateSha256": "e89b4d8aa0c66a27b6f477d6273b27a8469136e8f54edba6b5cb3d0e0ec4c1de",
+      "selectedCodePoints": 323,
+      "alternateCodePoints": 323,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mw8g",
+      "alternateId": "mwdQ",
+      "tag": "p",
+      "selectedSha256": "ef86a80ac08edc2885f6de39f2632ed19c7abd72431c1dad859e725a68dacf54",
+      "alternateSha256": "ef86a80ac08edc2885f6de39f2632ed19c7abd72431c1dad859e725a68dacf54",
+      "selectedCodePoints": 406,
+      "alternateCodePoints": 406,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_من_قام_إلى_جنب_الإمام_لعلة",
+      "alternateId": "باب_من_قام_إلى_جنب_الإمام_لعلة",
+      "tag": "h3",
+      "selectedSha256": "6f2c9d3d9516fae23d2d682f38b0436ed0f12eb14f439ee3f8ef8b2584dd7480",
+      "alternateSha256": "6f2c9d3d9516fae23d2d682f38b0436ed0f12eb14f439ee3f8ef8b2584dd7480",
+      "selectedCodePoints": 30,
+      "alternateCodePoints": 30,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mw9g",
+      "alternateId": "mweQ",
+      "tag": "p",
+      "selectedSha256": "ed55d63638637e935ab689455e6200c4e9ba3329ee80bc6d40de164b4041e1b2",
+      "alternateSha256": "ed55d63638637e935ab689455e6200c4e9ba3329ee80bc6d40de164b4041e1b2",
+      "selectedCodePoints": 368,
+      "alternateCodePoints": 368,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_من_دخل_ليؤم_الناس_فجاء_الإمام_الأول_فتأخر_الآخر_أو_لم_يتأخر_جازت_صلاته",
+      "alternateId": "باب_من_دخل_ليؤم_الناس_فجاء_الإمام_الأول_فتأخر_الآخر_أو_لم_يتأخر_جازت_صلاته",
+      "tag": "h3",
+      "selectedSha256": "721ab1c0ccfe836fa05ee1a8ccc8cf73757f2f9d06cf55ed6137ae996735f5d1",
+      "alternateSha256": "721ab1c0ccfe836fa05ee1a8ccc8cf73757f2f9d06cf55ed6137ae996735f5d1",
+      "selectedCodePoints": 74,
+      "alternateCodePoints": 74,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mw_A",
+      "alternateId": "mwfw",
+      "tag": "p",
+      "selectedSha256": "d2c120048a377951800e5a5662596811b9c1722e4635263e34b3128425cc7d4b",
+      "alternateSha256": "d2c120048a377951800e5a5662596811b9c1722e4635263e34b3128425cc7d4b",
+      "selectedCodePoints": 20,
+      "alternateCodePoints": 20,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mw_g",
+      "alternateId": "mwgQ",
+      "tag": "p",
+      "selectedSha256": "379ff2eba253a0b75d54b3359ea83f390bd2672233bdffb19cc116fe12568920",
+      "alternateSha256": "379ff2eba253a0b75d54b3359ea83f390bd2672233bdffb19cc116fe12568920",
+      "selectedCodePoints": 781,
+      "alternateCodePoints": 781,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_إذا_استووا_في_القراءة_فليؤمهم_أكبرهم",
+      "alternateId": "باب_إذا_استووا_في_القراءة_فليؤمهم_أكبرهم",
+      "tag": "h3",
+      "selectedSha256": "f0354ead82374ee8e86cf92cead6a784e008737b44d3e40abbfe19d4b4cc9432",
+      "alternateSha256": "f0354ead82374ee8e86cf92cead6a784e008737b44d3e40abbfe19d4b4cc9432",
+      "selectedCodePoints": 40,
+      "alternateCodePoints": 40,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAQg",
+      "alternateId": "mwiw",
+      "tag": "p",
+      "selectedSha256": "939e50a9543b90e4ec83176a7ee52a709fc182ec47893088977886b72c4c5c25",
+      "alternateSha256": "939e50a9543b90e4ec83176a7ee52a709fc182ec47893088977886b72c4c5c25",
+      "selectedCodePoints": 311,
+      "alternateCodePoints": 311,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_إذا_زار_الإمام_قوما_فأمهم",
+      "alternateId": "باب_إذا_زار_الإمام_قوما_فأمهم",
+      "tag": "h3",
+      "selectedSha256": "38ce58267b493114812c403365f86deb2ee689322e5a10c58c976f2f00a8d319",
+      "alternateSha256": "38ce58267b493114812c403365f86deb2ee689322e5a10c58c976f2f00a8d319",
+      "selectedCodePoints": 29,
+      "alternateCodePoints": 29,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAQw",
+      "alternateId": "mwjw",
+      "tag": "p",
+      "selectedSha256": "83fe83849929b9109df553f3f3329e4c9ccb64b6a7dadeb390e986bed41edcda",
+      "alternateSha256": "83fe83849929b9109df553f3f3329e4c9ccb64b6a7dadeb390e986bed41edcda",
+      "selectedCodePoints": 241,
+      "alternateCodePoints": 241,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_إنما_جعل_الإمام_ليؤتم_به",
+      "alternateId": "باب_إنما_جعل_الإمام_ليؤتم_به",
+      "tag": "h3",
+      "selectedSha256": "d7544fa9c8e664172675987041fd2908eea25cf8a563f1891527037d58801fc1",
+      "alternateSha256": "d7544fa9c8e664172675987041fd2908eea25cf8a563f1891527037d58801fc1",
+      "selectedCodePoints": 28,
+      "alternateCodePoints": 28,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAQ8",
+      "alternateId": "mwkg",
+      "tag": "p",
+      "selectedSha256": "f170ee292053cf7e2aa33637bf2f3c1a7f482a1c54186d2b6ee9fb15e5fa2cb3",
+      "alternateSha256": "f170ee292053cf7e2aa33637bf2f3c1a7f482a1c54186d2b6ee9fb15e5fa2cb3",
+      "selectedCodePoints": 267,
+      "alternateCodePoints": 267,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwARE",
+      "alternateId": "mwlA",
+      "tag": "p",
+      "selectedSha256": "1fb6a710463160576a17a8c8b0094b3791874d6037071ee0a8493541e3e4e6d7",
+      "alternateSha256": "1fb6a710463160576a17a8c8b0094b3791874d6037071ee0a8493541e3e4e6d7",
+      "selectedCodePoints": 1323,
+      "alternateCodePoints": 1323,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwARw",
+      "alternateId": "mwnw",
+      "tag": "p",
+      "selectedSha256": "3aaec465f237db8b24b6c660fa60b4eaf2f876d337d180a0b7116cc0f4cf8cb9",
+      "alternateSha256": "3aaec465f237db8b24b6c660fa60b4eaf2f876d337d180a0b7116cc0f4cf8cb9",
+      "selectedCodePoints": 288,
+      "alternateCodePoints": 288,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAR4",
+      "alternateId": "mwoQ",
+      "tag": "p",
+      "selectedSha256": "8b150dd534e37aeeefa7ddd58200304811bf00f37822353a0f7330c5449accfb",
+      "alternateSha256": "8b150dd534e37aeeefa7ddd58200304811bf00f37822353a0f7330c5449accfb",
+      "selectedCodePoints": 564,
+      "alternateCodePoints": 564,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_متى_يسجد_من_خلف_الإمام",
+      "alternateId": "باب_متى_يسجد_من_خلف_الإمام",
+      "tag": "h3",
+      "selectedSha256": "120ad24b6d098e7100703c2ac5678fb6804739d96edb1cb3c01982a2d3b4922e",
+      "alternateSha256": "120ad24b6d098e7100703c2ac5678fb6804739d96edb1cb3c01982a2d3b4922e",
+      "selectedCodePoints": 26,
+      "alternateCodePoints": 26,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwASM",
+      "alternateId": "mwpg",
+      "tag": "p",
+      "selectedSha256": "cff8cbf5e90d4d7540ce954a1ee260091f5c3efc1c535b3b3d5a43b0e2a3a690",
+      "alternateSha256": "cff8cbf5e90d4d7540ce954a1ee260091f5c3efc1c535b3b3d5a43b0e2a3a690",
+      "selectedCodePoints": 24,
+      "alternateCodePoints": 24,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwASQ",
+      "alternateId": "mwpw",
+      "tag": "p",
+      "selectedSha256": "4db7d351ebd13de62002878cfc011f8b986faf08a07ca6caa6cc4fdd75db0330",
+      "alternateSha256": "db2e1d094883a7db13cd0ff950e2ca631150124998677f6aa7004b2a8a4b6bf5",
+      "selectedCodePoints": 283,
+      "alternateCodePoints": 284,
+      "comparison": "trailing-space-only"
+    },
+    {
+      "selectedId": "باب_إثم_من_رفع_رأسه_قبل_الإمام",
+      "alternateId": "باب_إثم_من_رفع_رأسه_قبل_الإمام",
+      "tag": "h3",
+      "selectedSha256": "f12eea1d7fe6e66fba07d4b875b600f160a265deed3843102301fd5747cccf88",
+      "alternateSha256": "f12eea1d7fe6e66fba07d4b875b600f160a265deed3843102301fd5747cccf88",
+      "selectedCodePoints": 30,
+      "alternateCodePoints": 30,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwASg",
+      "alternateId": "mwqw",
+      "tag": "p",
+      "selectedSha256": "a3c75404017011077c878c98f24fbedce5fbf60f71812514f6bf2db140ef2eb1",
+      "alternateSha256": "a3c75404017011077c878c98f24fbedce5fbf60f71812514f6bf2db140ef2eb1",
+      "selectedCodePoints": 204,
+      "alternateCodePoints": 204,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_إمامة_العبد_والمولى",
+      "alternateId": "باب_إمامة_العبد_والمولى",
+      "tag": "h3",
+      "selectedSha256": "7dfc3e1f8f06f9cdf18b574c745999d3e6ab6e92459fe0fd66113c946eba3a24",
+      "alternateSha256": "7dfc3e1f8f06f9cdf18b574c745999d3e6ab6e92459fe0fd66113c946eba3a24",
+      "selectedCodePoints": 23,
+      "alternateCodePoints": 23,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwASs",
+      "alternateId": "mwrg",
+      "tag": "p",
+      "selectedSha256": "ee316340c03b23091d092990a21eba9b4e99d17a59ad3bcaef94212d9c6fecc9",
+      "alternateSha256": "ee316340c03b23091d092990a21eba9b4e99d17a59ad3bcaef94212d9c6fecc9",
+      "selectedCodePoints": 121,
+      "alternateCodePoints": 121,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAS0",
+      "alternateId": "mwsA",
+      "tag": "p",
+      "selectedSha256": "e3c1eb90a34a566e7c6c11df5c5bd7b6c0da5d31137cf3bcefb7c1632ff77b11",
+      "alternateSha256": "e3c1eb90a34a566e7c6c11df5c5bd7b6c0da5d31137cf3bcefb7c1632ff77b11",
+      "selectedCodePoints": 202,
+      "alternateCodePoints": 202,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAS8",
+      "alternateId": "mwsg",
+      "tag": "p",
+      "selectedSha256": "c244c7c7e778a6825d2267c87ba0122a83f017b2bf917de09425f20ddb54a5aa",
+      "alternateSha256": "c244c7c7e778a6825d2267c87ba0122a83f017b2bf917de09425f20ddb54a5aa",
+      "selectedCodePoints": 138,
+      "alternateCodePoints": 138,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_إذا_لم_يتم_الإمام_وأتم_من_خلفه",
+      "alternateId": "باب_إذا_لم_يتم_الإمام_وأتم_من_خلفه",
+      "tag": "h3",
+      "selectedSha256": "dbe693e821bd1290029ed1f10ab7e1525d101350e23e9848d3f520e18e6a749b",
+      "alternateSha256": "dbe693e821bd1290029ed1f10ab7e1525d101350e23e9848d3f520e18e6a749b",
+      "selectedCodePoints": 34,
+      "alternateCodePoints": 34,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwATI",
+      "alternateId": "mwtQ",
+      "tag": "p",
+      "selectedSha256": "6b22fe13485f3bf53b3a6f39f73c45fe14a2e17f5af04f21b68bcf97290d4510",
+      "alternateSha256": "6b22fe13485f3bf53b3a6f39f73c45fe14a2e17f5af04f21b68bcf97290d4510",
+      "selectedCodePoints": 213,
+      "alternateCodePoints": 213,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_إمامة_المفتون_والمبتدع",
+      "alternateId": "باب_إمامة_المفتون_والمبتدع",
+      "tag": "h3",
+      "selectedSha256": "9e2eec5af322b46f7e393281b29afc51cc79d82e371028fcfb43a155b9bb8f6b",
+      "alternateSha256": "9e2eec5af322b46f7e393281b29afc51cc79d82e371028fcfb43a155b9bb8f6b",
+      "selectedCodePoints": 26,
+      "alternateCodePoints": 26,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwATU",
+      "alternateId": "mwuA",
+      "tag": "p",
+      "selectedSha256": "53aba3a0f641ad81ad37245326465d8f384505aa449a7615537d0e28bebc4c4d",
+      "alternateSha256": "53aba3a0f641ad81ad37245326465d8f384505aa449a7615537d0e28bebc4c4d",
+      "selectedCodePoints": 26,
+      "alternateCodePoints": 26,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwATY",
+      "alternateId": "mwuQ",
+      "tag": "p",
+      "selectedSha256": "ff5569547ef7c9a560ba4b21c03445d7aa864bb46365bfebe88f42fa7fb9f3d0",
+      "alternateSha256": "ff5569547ef7c9a560ba4b21c03445d7aa864bb46365bfebe88f42fa7fb9f3d0",
+      "selectedCodePoints": 401,
+      "alternateCodePoints": 401,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwATc",
+      "alternateId": "mwug",
+      "tag": "p",
+      "selectedSha256": "e675429ede6585a85f4e7b2949524a752664bb3845e444dd4ba684e3eee0456a",
+      "alternateSha256": "e675429ede6585a85f4e7b2949524a752664bb3845e444dd4ba684e3eee0456a",
+      "selectedCodePoints": 133,
+      "alternateCodePoints": 133,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_يقوم_عن_يمين_الإمام_بحذائه_سواء_إذا_كانا_اثنين",
+      "alternateId": "باب_يقوم_عن_يمين_الإمام_بحذائه_سواء_إذا_كانا_اثنين",
+      "tag": "h3",
+      "selectedSha256": "b51a4e182a8518fed2471f1894fbddda9f5958fd18296a89691c1a42edd72ea1",
+      "alternateSha256": "b51a4e182a8518fed2471f1894fbddda9f5958fd18296a89691c1a42edd72ea1",
+      "selectedCodePoints": 50,
+      "alternateCodePoints": 50,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwATo",
+      "alternateId": "mwvQ",
+      "tag": "p",
+      "selectedSha256": "3cc7a23f4f0fe7e5fdcbb69cdb37d20302ccb93f57ca7a6e243110e2e1018b78",
+      "alternateSha256": "3cc7a23f4f0fe7e5fdcbb69cdb37d20302ccb93f57ca7a6e243110e2e1018b78",
+      "selectedCodePoints": 312,
+      "alternateCodePoints": 312,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_إذا_قام_الرجل_عن_يسار_الإمام_فحوله_الإمام_إلى_يمينه_لم_تفسد_صلاتهما",
+      "alternateId": "باب_إذا_قام_الرجل_عن_يسار_الإمام_فحوله_الإمام_إلى_يمينه_لم_تفسد_صلاتهما",
+      "tag": "h3",
+      "selectedSha256": "238c243ba2c5b54d646338a6543bff9e48d772dc290a62d3533856b9a8ef8778",
+      "alternateSha256": "238c243ba2c5b54d646338a6543bff9e48d772dc290a62d3533856b9a8ef8778",
+      "selectedCodePoints": 71,
+      "alternateCodePoints": 71,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAT0",
+      "alternateId": "mwwA",
+      "tag": "p",
+      "selectedSha256": "9ffbcd1ada0d553de72bed440823bfe8288e95e8dd0d38a9083fb8b0db164461",
+      "alternateSha256": "9ffbcd1ada0d553de72bed440823bfe8288e95e8dd0d38a9083fb8b0db164461",
+      "selectedCodePoints": 380,
+      "alternateCodePoints": 380,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_إذا_لم_ينو_الإمام_أن_يؤم_ثم_جاء_قوم_فأمهم",
+      "alternateId": "باب_إذا_لم_ينو_الإمام_أن_يؤم_ثم_جاء_قوم_فأمهم",
+      "tag": "h3",
+      "selectedSha256": "c67cad1e4a3fe2387b400941985364b9a580c109505ef3dbf1b0738db4b688be",
+      "alternateSha256": "c67cad1e4a3fe2387b400941985364b9a580c109505ef3dbf1b0738db4b688be",
+      "selectedCodePoints": 45,
+      "alternateCodePoints": 45,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAUA",
+      "alternateId": "mwww",
+      "tag": "p",
+      "selectedSha256": "976b93ded3ea1ddc848fc62d0464e511a8f21a91469281aceafd6010cfd88577",
+      "alternateSha256": "976b93ded3ea1ddc848fc62d0464e511a8f21a91469281aceafd6010cfd88577",
+      "selectedCodePoints": 203,
+      "alternateCodePoints": 203,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_إذا_طول_الإمام_وكان_للرجل_حاجة_فخرج_فصلى",
+      "alternateId": "باب_إذا_طول_الإمام_وكان_للرجل_حاجة_فخرج_فصلى",
+      "tag": "h3",
+      "selectedSha256": "82d8a0343c1ba0dee1b2ef0363f378615feb2b15aca7a09293eaa2d4ea873259",
+      "alternateSha256": "82d8a0343c1ba0dee1b2ef0363f378615feb2b15aca7a09293eaa2d4ea873259",
+      "selectedCodePoints": 44,
+      "alternateCodePoints": 44,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAUM",
+      "alternateId": "mwxg",
+      "tag": "p",
+      "selectedSha256": "4255f4a2c17e4856587244ad40c282d7eb3f831958fe4f7797de928c82f140fa",
+      "alternateSha256": "4255f4a2c17e4856587244ad40c282d7eb3f831958fe4f7797de928c82f140fa",
+      "selectedCodePoints": 114,
+      "alternateCodePoints": 114,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAUU",
+      "alternateId": "mwyA",
+      "tag": "p",
+      "selectedSha256": "02b4d2ed12d8dbdfd93beeaf4dcf71539851139008184aeda49276817d196ffa",
+      "alternateSha256": "02b4d2ed12d8dbdfd93beeaf4dcf71539851139008184aeda49276817d196ffa",
+      "selectedCodePoints": 327,
+      "alternateCodePoints": 327,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_تخفيف_الإمام_في_القيام_وإتمام_الركوع_والسجود",
+      "alternateId": "باب_تخفيف_الإمام_في_القيام_وإتمام_الركوع_والسجود",
+      "tag": "h3",
+      "selectedSha256": "73830e4aaedc87784fb8e587217ac45eddc06e3dda7da482bbb38e333e32c64d",
+      "alternateSha256": "73830e4aaedc87784fb8e587217ac45eddc06e3dda7da482bbb38e333e32c64d",
+      "selectedCodePoints": 48,
+      "alternateCodePoints": 48,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAUk",
+      "alternateId": "mwzA",
+      "tag": "p",
+      "selectedSha256": "169d1b89f1606ba98645a484a0656653718ce901b3bd598731f3f10152aa1432",
+      "alternateSha256": "169d1b89f1606ba98645a484a0656653718ce901b3bd598731f3f10152aa1432",
+      "selectedCodePoints": 314,
+      "alternateCodePoints": 314,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_إذا_صلى_لنفسه_فليطول_ما_شاء",
+      "alternateId": "باب_إذا_صلى_لنفسه_فليطول_ما_شاء",
+      "tag": "h3",
+      "selectedSha256": "665539e256d773f114777b2197d10a7cc878d6c97a0e542042ca482074252336",
+      "alternateSha256": "665539e256d773f114777b2197d10a7cc878d6c97a0e542042ca482074252336",
+      "selectedCodePoints": 31,
+      "alternateCodePoints": 31,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAUw",
+      "alternateId": "mwzw",
+      "tag": "p",
+      "selectedSha256": "3da516e6f7f9a8ba6fd5f881950077121f47a4d2be1ad796fa4cd17d3bd7d682",
+      "alternateSha256": "3da516e6f7f9a8ba6fd5f881950077121f47a4d2be1ad796fa4cd17d3bd7d682",
+      "selectedCodePoints": 197,
+      "alternateCodePoints": 197,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_من_شكا_إمامه_إذا_طول",
+      "alternateId": "باب_من_شكا_إمامه_إذا_طول",
+      "tag": "h3",
+      "selectedSha256": "cd46be84c4051e0adf588f18ae1340b8c78523eb550c64dd724347e0a17c5472",
+      "alternateSha256": "cd46be84c4051e0adf588f18ae1340b8c78523eb550c64dd724347e0a17c5472",
+      "selectedCodePoints": 24,
+      "alternateCodePoints": 24,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAU8",
+      "alternateId": "mw0g",
+      "tag": "p",
+      "selectedSha256": "4fe37caf4e7f983ca4c01df5bf19a6173b18d743552150bb801d52d0537b710e",
+      "alternateSha256": "4fe37caf4e7f983ca4c01df5bf19a6173b18d743552150bb801d52d0537b710e",
+      "selectedCodePoints": 30,
+      "alternateCodePoints": 30,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAVA",
+      "alternateId": "mw0w",
+      "tag": "p",
+      "selectedSha256": "eabd589f1678860f7b99c25b7542dafbdbb6ff2256d481410d46522d1a6b7252",
+      "alternateSha256": "eabd589f1678860f7b99c25b7542dafbdbb6ff2256d481410d46522d1a6b7252",
+      "selectedCodePoints": 326,
+      "alternateCodePoints": 326,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAVI",
+      "alternateId": "mw1Q",
+      "tag": "p",
+      "selectedSha256": "60029aedb7552663e617a4453c4af478ce0a38db4a0f8f7628f985a4ff60cec0",
+      "alternateSha256": "60029aedb7552663e617a4453c4af478ce0a38db4a0f8f7628f985a4ff60cec0",
+      "selectedCodePoints": 594,
+      "alternateCodePoints": 594,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAVU",
+      "alternateId": "mw2A",
+      "tag": "p",
+      "selectedSha256": "cd3f73dcb0d217bfa1cc25f5ec8a3a1b8f43c18417eba01c063752ce5f48f91d",
+      "alternateSha256": "cd3f73dcb0d217bfa1cc25f5ec8a3a1b8f43c18417eba01c063752ce5f48f91d",
+      "selectedCodePoints": 109,
+      "alternateCodePoints": 109,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_من_أخف_الصلاة_عند_بكاء_الصبي",
+      "alternateId": "باب_من_أخف_الصلاة_عند_بكاء_الصبي",
+      "tag": "h3",
+      "selectedSha256": "938565c58b7797c85fc1f820426d66e4420de2a26d93ad42f56009b4ff64007a",
+      "alternateSha256": "938565c58b7797c85fc1f820426d66e4420de2a26d93ad42f56009b4ff64007a",
+      "selectedCodePoints": 32,
+      "alternateCodePoints": 32,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAVg",
+      "alternateId": "mw2w",
+      "tag": "p",
+      "selectedSha256": "d1781d608fd19a58c76466b1bf9b5fa4b3580c1ca5adf0498d682800fda59f64",
+      "alternateSha256": "d1781d608fd19a58c76466b1bf9b5fa4b3580c1ca5adf0498d682800fda59f64",
+      "selectedCodePoints": 287,
+      "alternateCodePoints": 287,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAVo",
+      "alternateId": "mw3Q",
+      "tag": "p",
+      "selectedSha256": "516ea2c296a67d57065b50731010b77e9db0a224c68389aa4ed50e63d0973f46",
+      "alternateSha256": "516ea2c296a67d57065b50731010b77e9db0a224c68389aa4ed50e63d0973f46",
+      "selectedCodePoints": 205,
+      "alternateCodePoints": 205,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAVw",
+      "alternateId": "mw3w",
+      "tag": "p",
+      "selectedSha256": "7f65d6f0eccbd98cab5d8b91197170ca8eaf03886b396ef0061c198aae9f7792",
+      "alternateSha256": "7f65d6f0eccbd98cab5d8b91197170ca8eaf03886b396ef0061c198aae9f7792",
+      "selectedCodePoints": 225,
+      "alternateCodePoints": 225,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAV4",
+      "alternateId": "mw4Q",
+      "tag": "p",
+      "selectedSha256": "9f0ec6511cac3fe6c9c1e04e492c31a8e3bbe4bfd94ef961175c19e398b0b95c",
+      "alternateSha256": "9f0ec6511cac3fe6c9c1e04e492c31a8e3bbe4bfd94ef961175c19e398b0b95c",
+      "selectedCodePoints": 247,
+      "alternateCodePoints": 247,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_إذا_صلى_ثم_أم_قوما",
+      "alternateId": "باب_إذا_صلى_ثم_أم_قوما",
+      "tag": "h3",
+      "selectedSha256": "c2764c9d937e843d1de919d5fa6bff4533a263f3154396ccfdffafda9f709d0c",
+      "alternateSha256": "c2764c9d937e843d1de919d5fa6bff4533a263f3154396ccfdffafda9f709d0c",
+      "selectedCodePoints": 22,
+      "alternateCodePoints": 22,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAWI",
+      "alternateId": "mw5Q",
+      "tag": "p",
+      "selectedSha256": "e8e57e84234d173aa7e25cc5546c823c6e7ee7202d157f1f1f0cc8be83976154",
+      "alternateSha256": "e8e57e84234d173aa7e25cc5546c823c6e7ee7202d157f1f1f0cc8be83976154",
+      "selectedCodePoints": 149,
+      "alternateCodePoints": 149,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_من_أسمع_الناس_تكبير_الإمام",
+      "alternateId": "باب_من_أسمع_الناس_تكبير_الإمام",
+      "tag": "h3",
+      "selectedSha256": "f18b7c3a105dc75e4b2f39c27bb1712bc3677164c23cd5f044e452d9507d3fa4",
+      "alternateSha256": "f18b7c3a105dc75e4b2f39c27bb1712bc3677164c23cd5f044e452d9507d3fa4",
+      "selectedCodePoints": 30,
+      "alternateCodePoints": 30,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAWU",
+      "alternateId": "mw6A",
+      "tag": "p",
+      "selectedSha256": "35f7f589a19a09737511a3f1cbbf4e954c3d7dd6a21a5a49d10378626d54add3",
+      "alternateSha256": "35f7f589a19a09737511a3f1cbbf4e954c3d7dd6a21a5a49d10378626d54add3",
+      "selectedCodePoints": 571,
+      "alternateCodePoints": 571,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_الرجل_يأتم_بالإمام_ويأتم_الناس_بالمأموم",
+      "alternateId": "باب_الرجل_يأتم_بالإمام_ويأتم_الناس_بالمأموم",
+      "tag": "h3",
+      "selectedSha256": "9391893023a79483eda39ec4afaa281d3087497bfe75e651f012aa543575098c",
+      "alternateSha256": "9391893023a79483eda39ec4afaa281d3087497bfe75e651f012aa543575098c",
+      "selectedCodePoints": 43,
+      "alternateCodePoints": 43,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAWo",
+      "alternateId": "mw7Q",
+      "tag": "p",
+      "selectedSha256": "7625c153735fa3a3fd887677a14928a77c49e1247ab0a4061eb5a605478ae3df",
+      "alternateSha256": "7625c153735fa3a3fd887677a14928a77c49e1247ab0a4061eb5a605478ae3df",
+      "selectedCodePoints": 47,
+      "alternateCodePoints": 47,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAWw",
+      "alternateId": "mw7w",
+      "tag": "p",
+      "selectedSha256": "ddfbb1b9c2a84b783d76e580f3b7077fbfd8d513a5288aa78ef009b8a3687836",
+      "alternateSha256": "ddfbb1b9c2a84b783d76e580f3b7077fbfd8d513a5288aa78ef009b8a3687836",
+      "selectedCodePoints": 767,
+      "alternateCodePoints": 767,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_هل_يأخذ_الإمام_إذا_شك_بقول_الناس",
+      "alternateId": "باب_هل_يأخذ_الإمام_إذا_شك_بقول_الناس",
+      "tag": "h3",
+      "selectedSha256": "4f00f20d55bf55e1c5b24a551e07f9171c3364b0dc6fe5e43c824e0856736fb3",
+      "alternateSha256": "4f00f20d55bf55e1c5b24a551e07f9171c3364b0dc6fe5e43c824e0856736fb3",
+      "selectedCodePoints": 36,
+      "alternateCodePoints": 36,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAXQ",
+      "alternateId": "mw9w",
+      "tag": "p",
+      "selectedSha256": "7b1701ad0b7bb9f1bce5a539b65675f1b89070417ce49352c59770ddc5695325",
+      "alternateSha256": "7b1701ad0b7bb9f1bce5a539b65675f1b89070417ce49352c59770ddc5695325",
+      "selectedCodePoints": 313,
+      "alternateCodePoints": 313,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAXg",
+      "alternateId": "mw-w",
+      "tag": "p",
+      "selectedSha256": "2cf81bf804ca6e5bbf599d452e70fc2ecf963c9cce7f709919132429cb85bca8",
+      "alternateSha256": "2cf81bf804ca6e5bbf599d452e70fc2ecf963c9cce7f709919132429cb85bca8",
+      "selectedCodePoints": 160,
+      "alternateCodePoints": 160,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_إذا_بكى_الإمام_في_الصلاة",
+      "alternateId": "باب_إذا_بكى_الإمام_في_الصلاة",
+      "tag": "h3",
+      "selectedSha256": "6dab434da8f39dd2ff5edace6a02ffd4f255e633df5be5e96be0e463999c24e0",
+      "alternateSha256": "6dab434da8f39dd2ff5edace6a02ffd4f255e633df5be5e96be0e463999c24e0",
+      "selectedCodePoints": 28,
+      "alternateCodePoints": 28,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAXs",
+      "alternateId": "mw_g",
+      "tag": "p",
+      "selectedSha256": "c8c4007a75c6b2d41f8c331263a6a7874e01934b88d59d0f77b6a406e3ee0d1c",
+      "alternateSha256": "c8c4007a75c6b2d41f8c331263a6a7874e01934b88d59d0f77b6a406e3ee0d1c",
+      "selectedCodePoints": 93,
+      "alternateCodePoints": 93,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAXw",
+      "alternateId": "mw_w",
+      "tag": "p",
+      "selectedSha256": "25a4414df07c3d3d7429480c5d561a506565245002e810a1138f7e2c1e51241c",
+      "alternateSha256": "25a4414df07c3d3d7429480c5d561a506565245002e810a1138f7e2c1e51241c",
+      "selectedCodePoints": 469,
+      "alternateCodePoints": 469,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_تسوية_الصفوف_عند_الإقامة_وبعدها",
+      "alternateId": "باب_تسوية_الصفوف_عند_الإقامة_وبعدها",
+      "tag": "h3",
+      "selectedSha256": "158e9b9be5591179531aa345633661e9ca13e63a3d160dce8673fc556c8ea1de",
+      "alternateSha256": "158e9b9be5591179531aa345633661e9ca13e63a3d160dce8673fc556c8ea1de",
+      "selectedCodePoints": 35,
+      "alternateCodePoints": 35,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAYA",
+      "alternateId": "mwAQM",
+      "tag": "p",
+      "selectedSha256": "546065c81f4f46c252ecae408f80d49b64d8211395f8ebff5983f5ae37ae91d1",
+      "alternateSha256": "546065c81f4f46c252ecae408f80d49b64d8211395f8ebff5983f5ae37ae91d1",
+      "selectedCodePoints": 193,
+      "alternateCodePoints": 193,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAYI",
+      "alternateId": "mwAQU",
+      "tag": "p",
+      "selectedSha256": "750fd23b745b436e14c6b973e177eff18b291d2bf2d568073be535b180dc219c",
+      "alternateSha256": "750fd23b745b436e14c6b973e177eff18b291d2bf2d568073be535b180dc219c",
+      "selectedCodePoints": 114,
+      "alternateCodePoints": 114,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_إقبال_الإمام_على_الناس_عند_تسوية_الصفوف",
+      "alternateId": "باب_إقبال_الإمام_على_الناس_عند_تسوية_الصفوف",
+      "tag": "h3",
+      "selectedSha256": "b11e7defa8fc936533ee3dadb8db3ff32bd40b493992a4d01ab08b9ed854627b",
+      "alternateSha256": "b11e7defa8fc936533ee3dadb8db3ff32bd40b493992a4d01ab08b9ed854627b",
+      "selectedCodePoints": 43,
+      "alternateCodePoints": 43,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAYU",
+      "alternateId": "mwAQg",
+      "tag": "p",
+      "selectedSha256": "24b1ae6c308d1b1763af79066e612ab2264c7443840caa59ebdb6c2fc34e2c46",
+      "alternateSha256": "24b1ae6c308d1b1763af79066e612ab2264c7443840caa59ebdb6c2fc34e2c46",
+      "selectedCodePoints": 213,
+      "alternateCodePoints": 213,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_الصف_الأول",
+      "alternateId": "باب_الصف_الأول",
+      "tag": "h3",
+      "selectedSha256": "0a063b56c120dfae39c49f20669d70bf96f816f7972927ca56a3e0d859d49a91",
+      "alternateSha256": "0a063b56c120dfae39c49f20669d70bf96f816f7972927ca56a3e0d859d49a91",
+      "selectedCodePoints": 14,
+      "alternateCodePoints": 14,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAYg",
+      "alternateId": "mwAQs",
+      "tag": "p",
+      "selectedSha256": "a63eec02992ccdcd74bb47470f7174b5cc25557be8158be737d7512fa57355c4",
+      "alternateSha256": "a63eec02992ccdcd74bb47470f7174b5cc25557be8158be737d7512fa57355c4",
+      "selectedCodePoints": 243,
+      "alternateCodePoints": 243,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_إقامة_الصف_من_تمام_الصلاة",
+      "alternateId": "باب_إقامة_الصف_من_تمام_الصلاة",
+      "tag": "h3",
+      "selectedSha256": "8ea6e877f9bd790fbedf94fadd1e693d6cef21e30afe251622ef0de54619ed45",
+      "alternateSha256": "8ea6e877f9bd790fbedf94fadd1e693d6cef21e30afe251622ef0de54619ed45",
+      "selectedCodePoints": 29,
+      "alternateCodePoints": 29,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAYs",
+      "alternateId": "mwAQ4",
+      "tag": "p",
+      "selectedSha256": "f2e77d925fd2427a65a07dd445755872a03a00b24a0e299903c564ab1be9f652",
+      "alternateSha256": "f2e77d925fd2427a65a07dd445755872a03a00b24a0e299903c564ab1be9f652",
+      "selectedCodePoints": 318,
+      "alternateCodePoints": 318,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAY0",
+      "alternateId": "mwARA",
+      "tag": "p",
+      "selectedSha256": "241c2e0e8813813bc0700bcd627be6a44d1a43b6d25493df1096908e13cbb1e9",
+      "alternateSha256": "241c2e0e8813813bc0700bcd627be6a44d1a43b6d25493df1096908e13cbb1e9",
+      "selectedCodePoints": 116,
+      "alternateCodePoints": 116,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_إثم_من_لم_يتم_الصفوف",
+      "alternateId": "باب_إثم_من_لم_يتم_الصفوف",
+      "tag": "h3",
+      "selectedSha256": "8a96b88739ba034333de09f617328d5c446a20e97b85a6e6269f9e4cb3b7f0ba",
+      "alternateSha256": "8a96b88739ba034333de09f617328d5c446a20e97b85a6e6269f9e4cb3b7f0ba",
+      "selectedCodePoints": 24,
+      "alternateCodePoints": 24,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAZA",
+      "alternateId": "mwARM",
+      "tag": "p",
+      "selectedSha256": "f4e313a68b2047e8bac16bb147f8419a4a50a229c9117b0e632fbd6e127a08ab",
+      "alternateSha256": "f4e313a68b2047e8bac16bb147f8419a4a50a229c9117b0e632fbd6e127a08ab",
+      "selectedCodePoints": 299,
+      "alternateCodePoints": 299,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_إلزاق_المنكب_بالمنكب_والقدم_بالقدم_في_الصف",
+      "alternateId": "باب_إلزاق_المنكب_بالمنكب_والقدم_بالقدم_في_الصف",
+      "tag": "h3",
+      "selectedSha256": "e59c879118f45c9603b1addc2ba5ee9f6503f176395ba54cb0a35281d009539f",
+      "alternateSha256": "e59c879118f45c9603b1addc2ba5ee9f6503f176395ba54cb0a35281d009539f",
+      "selectedCodePoints": 46,
+      "alternateCodePoints": 46,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAZM",
+      "alternateId": "mwARY",
+      "tag": "p",
+      "selectedSha256": "e63e9c6c3ebb348b7d12620952a81ba1d2be8ad0a3aad1fd210d9ce3eaf91566",
+      "alternateSha256": "e63e9c6c3ebb348b7d12620952a81ba1d2be8ad0a3aad1fd210d9ce3eaf91566",
+      "selectedCodePoints": 57,
+      "alternateCodePoints": 57,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAZQ",
+      "alternateId": "mwARc",
+      "tag": "p",
+      "selectedSha256": "af064177c62c4a383001c985dbb8c6f9da972d4706c6de7c6f90879f0ebce63e",
+      "alternateSha256": "af064177c62c4a383001c985dbb8c6f9da972d4706c6de7c6f90879f0ebce63e",
+      "selectedCodePoints": 156,
+      "alternateCodePoints": 156,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_إذا_قام_الرجل_عن_يسار_الإمام_وحوله_الإمام_خلفه_إلى_يمينه_تمت_صلاته",
+      "alternateId": "باب_إذا_قام_الرجل_عن_يسار_الإمام_وحوله_الإمام_خلفه_إلى_يمينه_تمت_صلاته",
+      "tag": "h3",
+      "selectedSha256": "e78fdf103e3056c4a963a33f181c03efb4922af5a43550342cf5040b81dca375",
+      "alternateSha256": "e78fdf103e3056c4a963a33f181c03efb4922af5a43550342cf5040b81dca375",
+      "selectedCodePoints": 70,
+      "alternateCodePoints": 70,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAZc",
+      "alternateId": "mwARo",
+      "tag": "p",
+      "selectedSha256": "39d5f7f1a853c3b07f72e69f643b7772e96339b5be284fa37f8ce1eba113f850",
+      "alternateSha256": "39d5f7f1a853c3b07f72e69f643b7772e96339b5be284fa37f8ce1eba113f850",
+      "selectedCodePoints": 248,
+      "alternateCodePoints": 248,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_المرأة_وحدها_تكون_صفا",
+      "alternateId": "باب_المرأة_وحدها_تكون_صفا",
+      "tag": "h3",
+      "selectedSha256": "7c488606fcb02bda461b3cff7cf38d4e7d9a29d1d6f418bc6ff313f7b07a62f9",
+      "alternateSha256": "7c488606fcb02bda461b3cff7cf38d4e7d9a29d1d6f418bc6ff313f7b07a62f9",
+      "selectedCodePoints": 25,
+      "alternateCodePoints": 25,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAZs",
+      "alternateId": "mwAR4",
+      "tag": "p",
+      "selectedSha256": "b4955bdb01081df2771a2a6ebb975780dc76db3785c9366efc5f3b9ed4da3634",
+      "alternateSha256": "b4955bdb01081df2771a2a6ebb975780dc76db3785c9366efc5f3b9ed4da3634",
+      "selectedCodePoints": 129,
+      "alternateCodePoints": 129,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_ميمنة_المسجد_والإمام",
+      "alternateId": "باب_ميمنة_المسجد_والإمام",
+      "tag": "h3",
+      "selectedSha256": "0b001096554d843ba5294a1f4667a7ce5a077e88ed3d99186d12c334f69fa1f3",
+      "alternateSha256": "0b001096554d843ba5294a1f4667a7ce5a077e88ed3d99186d12c334f69fa1f3",
+      "selectedCodePoints": 24,
+      "alternateCodePoints": 24,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAZ4",
+      "alternateId": "mwASE",
+      "tag": "p",
+      "selectedSha256": "fec4f1d00715e6eaa7ab3976641dba73299c4b7b8683042ca8a285c59428ecd5",
+      "alternateSha256": "fec4f1d00715e6eaa7ab3976641dba73299c4b7b8683042ca8a285c59428ecd5",
+      "selectedCodePoints": 183,
+      "alternateCodePoints": 183,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_إذا_كان_بين_الإمام_وبين_القوم_حائط_أو_سترة",
+      "alternateId": "باب_إذا_كان_بين_الإمام_وبين_القوم_حائط_أو_سترة",
+      "tag": "h3",
+      "selectedSha256": "fe8894f684aad47086793a461fe3d52054d77c98ec939d803b5ad188b660c932",
+      "alternateSha256": "fe8894f684aad47086793a461fe3d52054d77c98ec939d803b5ad188b660c932",
+      "selectedCodePoints": 46,
+      "alternateCodePoints": 46,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAaE",
+      "alternateId": "mwASQ",
+      "tag": "p",
+      "selectedSha256": "bfc458d1eb8cdd9902feb6d553eb2122dd3fdda7fa22985224de41a985fe0939",
+      "alternateSha256": "bfc458d1eb8cdd9902feb6d553eb2122dd3fdda7fa22985224de41a985fe0939",
+      "selectedCodePoints": 119,
+      "alternateCodePoints": 119,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAaI",
+      "alternateId": "mwASU",
+      "tag": "p",
+      "selectedSha256": "12760ffec2558fa47dd41a6cc65f94e43a1a97ce4572ac9a9e1cc6e9ea8b0dde",
+      "alternateSha256": "12760ffec2558fa47dd41a6cc65f94e43a1a97ce4572ac9a9e1cc6e9ea8b0dde",
+      "selectedCodePoints": 385,
+      "alternateCodePoints": 385,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "باب_صلاة_الليل",
+      "alternateId": "باب_صلاة_الليل",
+      "tag": "h3",
+      "selectedSha256": "9e4a46d60edd1c022417e34b5a85ab039b363056ca25ab2f6fe3151ca4d7ef66",
+      "alternateSha256": "9e4a46d60edd1c022417e34b5a85ab039b363056ca25ab2f6fe3151ca4d7ef66",
+      "selectedCodePoints": 14,
+      "alternateCodePoints": 14,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAac",
+      "alternateId": "mwASo",
+      "tag": "p",
+      "selectedSha256": "5acec9cf87ab6b7f6145842232bc02a3b80b1de23de9a21c0512e2787883084a",
+      "alternateSha256": "5acec9cf87ab6b7f6145842232bc02a3b80b1de23de9a21c0512e2787883084a",
+      "selectedCodePoints": 221,
+      "alternateCodePoints": 221,
+      "comparison": "exact"
+    },
+    {
+      "selectedId": "mwAak",
+      "alternateId": "mwASw",
+      "tag": "p",
+      "selectedSha256": "74e92e1888612432e36fae9bb7c9d0705688817a4a36d5d42d161cd66ba7d863",
+      "alternateSha256": "74e92e1888612432e36fae9bb7c9d0705688817a4a36d5d42d161cd66ba7d863",
+      "selectedCodePoints": 432,
+      "alternateCodePoints": 432,
+      "comparison": "exact"
+    }
+  ],
+  "substantiveDifference": {
+    "selectedReference": 628,
+    "selectedId": "mwpA",
+    "alternateId": "mwJw",
+    "kind": "extra-clause-after-selected-text",
+    "selectedBodyReview": {
+      "path": "content/review/adhan-third-review.json",
+      "sha256": "0c0b30fc141af3e6093db97fd9287aaaf968d4a0aab1b665b86b1d7e8d44ab8e"
+    },
+    "selectedBodyWitnessPages": {
+      "brill-1862": [
+        171
+      ],
+      "dar-ibn-kathir-2002": [
+        165
+      ]
+    },
+    "note": "The extra clause is not present in the selected Adhan paragraph or its existing reviewed English. Do not present this alternate text as an additional hadith or source correction. This comparison does not establish who added it or why."
+  }
+}
