@@ -1,3 +1,4 @@
+import {validReference} from './references.mjs';
 import {verifyResponse,objectDigest} from './integrity.mjs';
 import {validateChapters} from './navigation.mjs';
 import {validateSourceStructure} from './source-structure.mjs';
@@ -25,7 +26,7 @@ function validateCatalog(catalog){
  }
  const numbers=new Set(),ids=new Set();
  for(const e of catalog.entries){
-  requireValue(Number.isSafeInteger(e.number)&&e.number>0&&!numbers.has(e.number)&&typeof e.id==='string'&&!ids.has(e.id),'Duplicate or invalid reference');
+  requireValue(validReference(e.number)&&!numbers.has(e.number)&&typeof e.id==='string'&&!ids.has(e.id),'Duplicate or invalid reference');
   requireValue(books.has(e.bookId)&&typeof e.book==='string'&&Number.isSafeInteger(e.englishWords)&&e.englishWords>0,'Invalid entry metadata');
   numbers.add(e.number);ids.add(e.id);
  }

@@ -1,4 +1,5 @@
 /* Entry-specific provenance. Citations and context are never narration text. */
+import {validReference} from './references.mjs';
 import {escapeHTML as escape} from './source-format.mjs';
 const requireValue=(value,message)=>{if(!value)throw new Error(message);};
 const text=value=>typeof value==='string'&&value.trim().length>0;
@@ -28,7 +29,7 @@ export function validateSourceReferences(bundle,entries,{sourceRecordSha256,entr
  const known=new Map(knownEntries.map(e=>[e.id,e.number]));
  for(const [index,row] of bundle.entries.entries()){
   const entry=entries[index];
-  requireValue(row.id===entry.id&&row.number===entry.number&&hash(row.entrySha256),'Source reference identity mismatch');
+  requireValue(validReference(row.number)&&row.id===entry.id&&row.number===entry.number&&hash(row.entrySha256),'Source reference identity mismatch');
   requireValue(text(row.translation?.label)&&text(row.translation?.description),'Missing translation attribution');
   requireValue(Array.isArray(row.citations)&&row.citations.length>0,'Missing entry citations');
   const citationIds=new Set();

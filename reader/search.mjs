@@ -1,10 +1,11 @@
 /* Normalization is only an index operation. Displayed source is untouched. */
+import {parseReference} from './references.mjs';
 export function searchKey(text){return String(text).normalize('NFC').toLocaleLowerCase('en').replace(/[‘’]/g,"'").replace(/\s+/gu,' ').trim();}
 function queryParts(input){
  const query=String(input).trim().slice(0,200).replace(/^"(.*)"$/s,'$1');
  if(!query)return null;
- const reference=query.match(/^(?:(?:sahih\s+al[- ]?bukhari|bukhari|hadith)\s*|#)?(\d+)$/i);
- return {reference:reference?Number(reference[1]):null,key:searchKey(query)};
+ const reference=query.match(/^(?:(?:sahih\s+al[- ]?bukhari|bukhari|hadith)\s*|#)?([0-9]+[a-z]?)$/i);
+ return {reference:reference?parseReference(reference[1],{ignoreCase:true}):null,key:searchKey(query)};
 }
 function matchResult(entry,language,block){
  const field=language==='en'?'english':'arabic';

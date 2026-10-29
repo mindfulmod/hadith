@@ -4,6 +4,7 @@ import {createHash} from 'node:crypto';
 import {pathToFileURL} from 'node:url';
 import assert from 'node:assert/strict';
 import {publicJSON} from './public-json.mjs';
+import {validReference} from '../reader/references.mjs';
 import {validateChapters} from '../reader/navigation.mjs';
 import {validateSourceStructure} from '../reader/source-structure.mjs';
 import {validateSourceReferences} from '../reader/source-references.mjs';
@@ -54,7 +55,7 @@ export function buildBooks(source,ledger,{production=false}={}){
   assert.equal(ledger.sourceRecordSha256,evaluationSourceHash,'Unapproved evaluation source change');
  }
  for(const entry of source.entries){
-  assert(Number.isSafeInteger(entry.number)&&entry.number>0,'Invalid reference');
+  assert(validReference(entry.number),'Invalid reference');
   assert(typeof entry.id==='string'&&entry.id,'Missing source ID');
   validateSourceStructure(entry);
   const record=ledger.entries.find(r=>r.number===entry.number);

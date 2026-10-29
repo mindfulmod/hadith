@@ -5,6 +5,7 @@ import {store} from './store.js';
 import {collectionView,bookView,savedView,mountSearch,mountBookJump} from './library.mjs';
 import {libraryRoute,bookForNumber,chapterForNumber,bookRoute} from './navigation.mjs';
 import {initPersonalTools} from './personal-tools.mjs';
+import {parseReference} from './references.mjs';
 import {listen,listenAlong,listenSession,prepareListening,getPlaybackState,getActiveRecording,getListeningState} from './audio.mjs';
 import {refreshOffline,offlinePanel} from './offline.mjs';
 import {resolveSession,followTarget,readingSeconds,startSession,nextSession,visitSession} from './session.mjs';
@@ -42,7 +43,7 @@ function startReader(library) {
   const s=store.get(),plan=session(),begun=plan.numbers.some(n=>Object.hasOwn(s.positions,n)),ended=plan.ended,count=plan.numbers.length;
   const books=[...new Set(plan.numbers.map(n=>entry(n).bookId))].map(id=>data.books.find(b=>b.id===id));
   const seconds=plan.numbers.reduce((sum,n)=>sum+readingSeconds(entry(n)),0),upcoming=nextSession(data.entries,plan,s.minutes);
-  const audioPlan=listeningPlan(plan.numbers,recordings);
+  const audioPlan=listeningPlan(plan.numbers,recordings,data.entries);
   const countText=count===1?'One':count===2?'Two':count;
   return `<section class="session-start" aria-labelledby="session-title"><p class="eyebrow">${ended?'YOUR FINISHED SESSION':'YOUR CURRENT SESSION'} · ${books.length===1?'BOOK '+String(books[0].number).padStart(2,'0'):books.length+' BOOKS'}</p><div class="session-invitation"><div><h1 id="session-title">A little time.<br>${countText} hadith.</h1><p class="session-context">${escape(books[0].title)}${books.length>1?`<br><span>Continuing through ${escape(books.at(-1).title)}</span>`:''}<span>Sahih al-Bukhari · in book order</span></p></div><div class="session-art" role="img" aria-label="An imagined warm limestone garden with quiet water."></div></div><div class="session-actions">${ended?(upcoming?`<button class="primary" data-next-session>Next session <span aria-hidden="true">→</span></button>`:'<button class="primary" data-restart>Read this session again <span aria-hidden="true">→</span></button>'):`<a class="primary" href="#read/${plan.cursor}">${begun?'Continue':'Begin reading'} <span aria-hidden="true">→</span></a>`}${audioPlan.steps.length?`<button data-listen-session class="listen-choice">${getListeningState()?.key===audioPlan.key&&!getListeningState().complete?'Continue listening':audioPlan.steps.some(step=>s.audio?.release===step.recordingId&&s.audio.seconds>step.start&&s.audio.seconds<step.start+step.duration)?'Resume listening':'Listen to this session'} <span>${duration(audioPlan.duration)} audio · ${audioPlan.playable.length} of ${plan.numbers.length} hadith${audioPlan.nextNumber?` · then read Hadith ${audioPlan.nextNumber}`:''}</span></button>`:`<p class="audio-availability">No audio from the start of this session yet.<br><a href="#listen/${recording.chapters[0].number}">Browse recorded hadith →</a></p>`}</div><ol class="session-path">${plan.numbers.map(n=>{const audio=recordedChapter(n);return `<li ${n===plan.cursor?'class="current"':''}><a href="#read/${n}" ${n===plan.cursor?'aria-current="step"':''}><span class="path-number">${String(n).padStart(2,'0')}</span><span><strong>Hadith ${n}</strong><small>${s.finished.includes(n)?'Marked as read':n===plan.cursor&&begun?'Your session place':'Full narration and narrator chain'}</small></span><span class="path-time">${audio?duration(audio.duration):'~'+Math.max(1,Math.ceil(readingSeconds(entry(n))/60))+' min'}<small>${audio?'audio':'reading'}</small></span></a></li>`;}).join('')}</ol><p class="sample-note">About ${Math.max(1,Math.ceil(seconds/60))} ${Math.max(1,Math.ceil(seconds/60))===1?'minute':'minutes'} of reading, at your pace. ${seconds>s.minutes*60?'This session runs longer than your preference so the final hadith stays complete. ':''}Your ${s.minutes}-minute preference applies when you start a new session. <button class="text-button" data-open-settings>Change preference</button></p><a class="quiet-link" href="#collection">Browse the collection <span aria-hidden="true">→</span></a>${data.publication!=='production'?`<p class="review-note">Personal prototype · AI-assisted English · Independent review pending<br>${recordings.flatMap(r=>r.chapters).length} of ${data.entries.length} available hadith have Cedar audio.</p>`:''}${offlinePanel(release)}</section>`;
  }
@@ -74,7 +75,7 @@ function startReader(library) {
   document.querySelectorAll('[data-playing-number]').forEach(el=>el.textContent=state.number);
   document.querySelectorAll('[data-read-playing]').forEach(el=>{el.href=`#read/${state.number}`;el.textContent=`Read Hadith ${state.number}`;});
   document.querySelectorAll('[data-sources-playing]').forEach(el=>el.dataset.sources=state.number);
-  document.querySelectorAll('.listening-queue [data-listen]').forEach(el=>{if(Number(el.dataset.listen)===state.number)el.setAttribute('aria-current','true');else el.removeAttribute('aria-current');});
+  document.querySelectorAll('.listening-queue [data-listen]').forEach(el=>{if(parseReference(el.dataset.listen)===state.number)el.setAttribute('aria-current','true');else el.removeAttribute('aria-current');});
   $('#audio-room').href=`#listen/${state.number}`;
   const activeQueue=getListeningState(),nextAudioEntry=activeQueue?(activeQueue.complete&&activeQueue.nextNumber?entry(activeQueue.nextNumber):null):neighbors(state.number).next,offerReading=state.ended&&(mode==='listen'||mode==='read'&&current===state.number)&&nextAudioEntry;
   $('#audio-next-step').hidden=!offerReading;
@@ -101,18 +102,18 @@ function startReader(library) {
   unmountSearch();
   const version=++renderVersion;
   capture();clearTimeout(scrollTimer);
-  const hash=location.hash||'#home',match=hash.match(/^#(read|listen)\/(\d+)(?:\/(chain))?$/),chainRequested=match?.[1]==='read'&&match[3]==='chain',valid=match&&(!match[3]||chainRequested)&&entry(Number(match[2]))&&(match[1]==='read'||recordedChapter(Number(match[2])));
-  const libraryLocation=libraryRoute(hash,data),audioMissing=match?.[1]==='listen'&&!match[3]&&entry(Number(match[2]))&&!recordedChapter(Number(match[2]));
+  const hash=location.hash||'#home',match=hash.match(/^#(read|listen)\/([0-9]+[a-z]?)(?:\/(chain))?$/),chainRequested=match?.[1]==='read'&&match[3]==='chain',valid=match&&(!match[3]||chainRequested)&&entry(parseReference(match[2]))&&(match[1]==='read'||recordedChapter(parseReference(match[2])));
+  const libraryLocation=libraryRoute(hash,data),audioMissing=match?.[1]==='listen'&&!match[3]&&entry(parseReference(match[2]))&&!recordedChapter(parseReference(match[2]));
   const main=$('#main');let currentPack;
   if(valid&&match[1]==='read'){
    restoring=true;main.setAttribute('aria-busy','true');
-   if(!library.getEntry(Number(match[2]))){mode='loading';document.body.dataset.view='home';$('#dock').innerHTML='<a href="#home">Session</a><a href="#collection">Collection</a>';main.innerHTML='<section class="collection"><h1>Opening your hadith…</h1><p role="status">Loading the complete text and source references.</p></section>';}
-   try{currentPack=await library.loadForNumber(Number(match[2]));}
+   if(!library.getEntry(parseReference(match[2]))){mode='loading';document.body.dataset.view='home';$('#dock').innerHTML='<a href="#home">Session</a><a href="#collection">Collection</a>';main.innerHTML='<section class="collection"><h1>Opening your hadith…</h1><p role="status">Loading the complete text and source references.</p></section>';}
+   try{currentPack=await library.loadForNumber(parseReference(match[2]));}
    catch{if(version!==renderVersion)return;current=null;mode='error';restoring=false;$('#listening-support').innerHTML='';document.body.dataset.view='home';main.removeAttribute('aria-busy');main.innerHTML='<section class="collection"><h1>This hadith could not open.</h1><p>The complete text could not be downloaded and checked. Reconnect and try again. Your saved place is unchanged.</p><button class="primary" data-retry-content>Try again</button><p><a href="#home">Back to your session</a></p></section>';$('#dock').innerHTML=dock();main.focus();return;}
   }
   if(version!==renderVersion)return;main.removeAttribute('aria-busy');
   mode=valid?match[1]:audioMissing?'audio-missing':libraryLocation?libraryLocation.mode:hash==='#end'?'end':/^#(?:read|listen|book|collection|saved)(?:\/|$)/.test(hash)?'missing':'home';
-  current=mode==='read'?Number(match[2]):null;
+  current=mode==='read'?parseReference(match[2]):null;
   const automatic=current!==null&&autoDestination===current;autoDestination=null;
   // A manual route (including Back) wins over audio following.
   if(current&&!automatic&&getPlaybackState().active&&getPlaybackState().number!==current)write({followAudio:false});
@@ -121,11 +122,11 @@ function startReader(library) {
   document.body.dataset.view=mode;
   $('#listening-support').innerHTML='';
   if(current){write({last:current,session:visitSession(session(),current)});main.innerHTML=reader(currentPack.entries.find(e=>e.number===current),currentPack);document.title=`Hadith ${current} · Sahih al-Bukhari`;}
-  else if(mode==='listen'){prepareListening(Number(match[2]));main.innerHTML=listening();$('#listening-support').innerHTML=queue();document.title='Listen · Sahih al-Bukhari';}
+  else if(mode==='listen'){prepareListening(parseReference(match[2]));main.innerHTML=listening();$('#listening-support').innerHTML=queue();document.title='Listen · Sahih al-Bukhari';}
   else if(mode==='collection'){main.innerHTML=collectionView(data,store.get(),libraryLocation.page);document.title='Collection · Sahih al-Bukhari';}
   else if(mode==='book'){main.innerHTML=bookView(data,store.get(),libraryLocation);document.title=(libraryLocation.chapter?.title||libraryLocation.book.title)+' · Hadith';}
   else if(mode==='saved'){main.innerHTML=savedView(data,store.get(),libraryLocation.page);document.title='Saved readings · Hadith';}
-  else if(mode==='audio-missing'){main.innerHTML=`<section class="collection"><h1>Audio isn’t available yet.</h1><p>Hadith ${Number(match[2])} is available to read. A recording has not been added for it.</p><a class="primary" href="#read/${Number(match[2])}">Read Hadith ${Number(match[2])} →</a><p><a href="#home">Back to your session</a></p></section>`;document.title='Audio unavailable · Hadith';}
+  else if(mode==='audio-missing'){main.innerHTML=`<section class="collection"><h1>Audio isn’t available yet.</h1><p>Hadith ${parseReference(match[2])} is available to read. A recording has not been added for it.</p><a class="primary" href="#read/${parseReference(match[2])}">Read Hadith ${parseReference(match[2])} →</a><p><a href="#home">Back to your session</a></p></section>`;document.title='Audio unavailable · Hadith';}
   else if(mode==='missing'){main.innerHTML='<section class="collection"><h1>This page is not available.</h1><p>The reference may belong to a different edition or a later release. Your reading place has not changed.</p><a class="primary" href="#collection">Browse the available collection →</a></section>';document.title='Page unavailable · Hadith';}
   else if(mode==='end'){main.innerHTML=end();document.title='A place to pause · Hadith';}
   else{main.innerHTML=home();document.title='Your session · Sahih al-Bukhari';}
@@ -142,19 +143,19 @@ function startReader(library) {
  document.addEventListener('click',event=>{
   const target=event.target.closest('button,a');if(!target)return;
   if(target.hasAttribute('data-listen')){
-   if(!recordedChapter(Number(target.dataset.listen)))return;
-   const n=Number(target.dataset.listen);startingAudio=true;
-   try{if(target.hasAttribute('data-queue-chapter')&&getListeningState()){listenSession(getListeningState().numbers,{number:n});}else if(mode==='read'){listenAlong(n);if(store.get().followAudio)revealChains();}else{listen(n);location.hash=`#listen/${n}`;}}finally{startingAudio=false;}
+   if(!recordedChapter(parseReference(target.dataset.listen)))return;
+   const n=parseReference(target.dataset.listen);startingAudio=true;
+   try{if(target.hasAttribute('data-queue-chapter')&&getListeningState()){listenSession(getListeningState().numbers,{number:n,entries:data.entries});}else if(mode==='read'){listenAlong(n);if(store.get().followAudio)revealChains();}else{listen(n);location.hash=`#listen/${n}`;}}finally{startingAudio=false;}
    updateListening();
   }
-  if(target.tagName==='A'&&/^#read\/\d+(?:\/chain)?$/.test(target.getAttribute('href')||'')&&!target.hasAttribute('data-read-playing')&&!event.metaKey&&!event.ctrlKey){
+  if(target.tagName==='A'&&/^#read\/[0-9]+[a-z]?(?:\/chain)?$/.test(target.getAttribute('href')||'')&&!target.hasAttribute('data-read-playing')&&!event.metaKey&&!event.ctrlKey){
    stopFollowingForNavigation();
-   if(target.hasAttribute('data-read-step')){const n=Number(target.hash.split('/')[1]);write({positions:{...store.get().positions,[n]:0}});}
+   if(target.hasAttribute('data-read-step')){const n=parseReference(target.hash.split('/')[1]);write({positions:{...store.get().positions,[n]:0}});}
   }
   if(target.id==='audio-follow'){const enabled=!store.get().followAudio;setFollow(enabled);if(enabled&&current)revealChains();announce(enabled?'Following the playing hadith.':'Follow is off. You can browse freely.');}
-  if(target.hasAttribute('data-listen-session')){if(listenSession(session().numbers))location.hash=`#listen/${getPlaybackState().number}`;}
+  if(target.hasAttribute('data-listen-session')){if(listenSession(session().numbers,{entries:data.entries}))location.hash=`#listen/${getPlaybackState().number}`;}
   if(target.hasAttribute('data-source-related')&&!event.metaKey&&!event.ctrlKey&&!event.shiftKey)target.closest('dialog')?.close();
-  if(target.hasAttribute('data-sources'))sourceDialog(Number(target.dataset.sources));
+  if(target.hasAttribute('data-sources'))sourceDialog(parseReference(target.dataset.sources));
   if(target.hasAttribute('data-retry-content'))render();
   if(target.hasAttribute('data-open-settings'))$('#settings').showModal();
   if(target.id==='bookmark'){const saved=store.get().saved.includes(current);write({saved:saved?store.get().saved.filter(n=>n!==current):[...store.get().saved,current]});target.textContent=saved?'Save':'Saved ✓';target.setAttribute('aria-pressed',String(!saved));announce(saved?'Bookmark removed':'Hadith saved');}
@@ -162,7 +163,7 @@ function startReader(library) {
   if(target.hasAttribute('data-end-session')){stopFollowingForNavigation();write({session:{...session(),ended:true}});location.hash='#end';}
   if(target.hasAttribute('data-restart')){const plan=session();beginPlan({...plan,cursor:plan.numbers[0],ended:false});}
   if(target.hasAttribute('data-next-session')){const plan=nextSession(data.entries,session(),store.get().minutes);if(plan)beginPlan(plan);}
-  if(target.hasAttribute('data-start-session')){const n=Number(target.dataset.startSession);if(entry(n))beginPlan(startSession(data.entries,n,store.get().minutes));}
+  if(target.hasAttribute('data-start-session')){const n=parseReference(target.dataset.startSession);if(entry(n))beginPlan(startSession(data.entries,n,store.get().minutes));}
  });
  document.querySelectorAll('[data-minutes]').forEach(b=>b.onclick=()=>{write({minutes:Number(b.dataset.minutes)});appearance();if(mode==='home'){const before=window.scrollY;render();requestAnimationFrame(()=>{$('#settings').focus({preventScroll:true});window.scrollTo(0,before);});}});
  $('.skip').onclick=e=>{e.preventDefault();$('#main').focus();};

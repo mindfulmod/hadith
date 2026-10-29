@@ -1,4 +1,5 @@
 /* Split generated source notes without changing source paragraphs or review decisions. */
+import {parseReference,referenceBase} from '../reader/references.mjs';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {posix} from 'node:path';
@@ -10,8 +11,8 @@ const articlePattern=/<article id="([a-z0-9-]+)">[\s\S]*?<\/article>/g;
 const anchors=html=>[...html.matchAll(/\s+id="([^"]+)"/g)].map(m=>m[1]);
 const hrefPattern=/\b(href|src)="([^"]+)"/g;
 function groupFor(id,first){
- let match=/^hadith-(\d+)$/.exec(id);
- if(match){const start=first+Math.floor((Number(match[1])-first)/16)*16;return `hadith-${start}-${start+15}`;}
+ let match=/^hadith-([0-9]+[a-z]?)$/.exec(id);
+ if(match){const start=first+Math.floor((referenceBase(parseReference(match[1]))-first)/16)*16;return `hadith-${start}-${start+15}`;}
  if(id==='book-introduction')return id;
  match=/^chapter-(\d+)(?:-print-\d+)?$/.exec(id);
  assert(match,'Unknown source-note section: '+id);
@@ -36,7 +37,7 @@ export function partitionSourceNotes(canonicalFiles){
   const id=match[1],index=fullPath.slice(7),articles=[...html.matchAll(articlePattern)].map(m=>({id:m[1],html:m[0],start:m.index}));
   assert(articles.length&&articles.length===(html.match(/<article\b/g)||[]).length,'Unsupported source-note article structure');
   assert.equal(new Set(articles.map(a=>a.id)).size,articles.length,'Duplicate source-note section');
-  const first=Number(articles.find(a=>a.id.startsWith('hadith-'))?.id.slice(7));assert(Number.isSafeInteger(first)&&first>0);
+  const first=referenceBase(parseReference(articles.find(a=>a.id.startsWith('hadith-'))?.id.slice(7)));assert(Number.isSafeInteger(first)&&first>0);
   const start=articles[0].start,last=articles.at(-1),end=last.start+last.html.length;
   assert.equal(html.slice(start,end),articles.map(a=>a.html).join(''),'Unowned material between source-note sections');
   const prefix=html.slice(0,start),footer=html.slice(end),shell=prefix.slice(0,prefix.indexOf('<main class="review-page">')+'<main class="review-page">'.length);

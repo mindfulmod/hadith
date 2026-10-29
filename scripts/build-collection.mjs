@@ -1,4 +1,5 @@
 /* Assemble reviewed personal-prototype batches; never infer Arabic edits or sign-offs. */
+import {validReference,parseReference,referenceBase,referenceSpan,compareReferences} from '../reader/references.mjs';
 import {validateBookInventory,validateEntryLayout,layoutInputEvidence,layoutSourceNotice,layoutSourceDetails,chapterLayoutDetails} from './mapped-source.mjs';
 import {validateSourceForm} from './source-forms.mjs';
 import {validatePrintedIntroductions,printedIntroductionContext,printedIntroductionDetails} from './printed-chapter-context.mjs';
@@ -45,11 +46,11 @@ function validateComparisons(comparisons,config,segments){
  const khanReference=new RegExp('^1\\.(?:'+(config.khanBooks||[config.number]).join('|')+')\\.[1-9]\\d*[a-z]?$');
  assert.deepEqual(comparisons.map(c=>c.id).sort(),[config.bewleySourceId,'islamhouse-khan'].sort(),'Expected distinct English comparison records');
  const bewley=comparisons.find(c=>c.id===config.bewleySourceId),khan=comparisons.find(c=>c.id==='islamhouse-khan');
- assert(/^[1-9]\d*$/.test(bewley.reference),'Invalid Bewley comparison');
+ assert(parseReference(bewley.reference)!==null,'Invalid Bewley comparison');
  if(bewley.status!==undefined){
   assert(['cross-reference-with-transmission-note','abbreviated-report'].includes(bewley.status),'Unknown Bewley comparison form');
   assert(typeof bewley.note==='string'&&bewley.note.trim(),'Abbreviated comparison needs an explanation');
-  if(bewley.status==='cross-reference-with-transmission-note'||bewley.referencedReference!==undefined)assert(/^[1-9]\d*$/.test(bewley.referencedReference)&&Number(bewley.referencedReference)<Number(bewley.reference),'Cross-reference comparison needs its earlier reference');
+  if(bewley.status==='cross-reference-with-transmission-note'||bewley.referencedReference!==undefined)assert(parseReference(bewley.referencedReference)!==null&&compareReferences(parseReference(bewley.referencedReference),parseReference(bewley.reference))<0,'Cross-reference comparison needs its earlier reference');
  }else assert.equal(bewley.referencedReference,undefined,'A comparison pointer needs an explicit status');
  if(bewley.part!==undefined){
   validateBewleyPart(bewley.part);
@@ -65,7 +66,7 @@ function validateComparisons(comparisons,config,segments){
   for(const [index,part]of parts.entries()){
    assert.deepEqual(Object.keys(part).sort(),(part.part===undefined?['reference','segmentIds']:['part','reference','segmentIds']),'Unexpected split comparison metadata');
    if(part.part!==undefined)validateBewleyPart(part.part);
-   assert(/^[1-9]\d*$/.test(part.reference)&&(!index||Number(part.reference)>Number(parts[index-1].reference)),'Split comparison references must be distinct and ordered');
+   assert(parseReference(part.reference)!==null&&(!index||compareReferences(parseReference(part.reference),parseReference(parts[index-1].reference))>0),'Split comparison references must be distinct and ordered');
    assert(Array.isArray(part.segmentIds)&&part.segmentIds.length,'Split comparison needs segment coverage');
   }
   assert.deepEqual(parts.flatMap(p=>p.segmentIds),segments.map(s=>s.id),'Split references must cover the selected segments exactly once in order');
@@ -222,7 +223,7 @@ export function buildBookBatch(inventory,review,manifest,config){
  assert.equal(review.inventorySha256,hash(inventory),'Stale source inventory');assert.equal(review.sourceSha256,inventory.sourceSha256);assert.equal(review.sourceId,inventory.sourceId);assert.equal(manifest.file.sha256,inventory.sourceSha256);
  const bookIntroduction=buildBookIntroduction(inventory,review,manifest,config);
  const numbers=review.entries.map(e=>e.number);assert(numbers.length,'Empty book batch');
- assert.deepEqual(numbers,inventory.records.filter(r=>r.number>=numbers[0]&&r.number<=numbers.at(-1)).map(r=>r.number),'Book batch must be in complete source order');
+ assert.deepEqual(numbers,referenceSpan(inventory.records.map(r=>r.number),numbers[0],numbers.at(-1)),'Book batch must be in complete source order');
  const blocks=new Map(inventory.blocks.map(b=>[b.htmlId,b])),entries=[];
  const comparisonGroups=new Map();
  for(const row of review.entries){
@@ -255,7 +256,7 @@ export function buildBookBatch(inventory,review,manifest,config){
   assert.equal(row.status,'personal-prototype-only');assert.equal(row.reviewerKind,'ai');assert.equal(row.independentReview,'pending');
   const original=inventory.records.find(r=>r.number===row.number);assert(original&&original.id===row.sourceRecordId&&row.id===`bukhari:${row.number}`,'Source identity mismatch');
   assert.deepEqual(row.paragraphIds,original.paragraphIds);assert.equal(row.chapterId,original.chapterId);
-  validateEntryLayout(inventory,row,original);
+  validateEntryLayout(inventory,row,original,config);
   assert(row.notes.length&&row.printedWitnesses.length===2&&row.comparisons.length===2,'Missing comparison evidence');
   validatePrintedWitnesses(row.printedWitnesses);validateSourceForm(row,review.sources);
   const originalArabic=row.paragraphIds.map(id=>blocks.get(id).text),corrected=deriveArabicBlocks(row,originalArabic,review.sources);
@@ -295,12 +296,12 @@ export function buildBookBatch(inventory,review,manifest,config){
 export function assembleCollection(opening,inventory,review,manifest,config=BOOK_CONFIGS.faith){
  const batch=buildBookBatch(inventory,review,manifest,config),sources=structuredClone(opening.source.sources);
  assert(!opening.ledger.books.some(b=>b.id===config.id),'Book already assembled');
- assert.equal(opening.source.entries.at(-1).number+1,config.first,'Collection book order must be consecutive');
+ assert.equal(referenceBase(opening.source.entries.at(-1).number)+1,config.first,'Collection book order must be consecutive');
  for(const s of review.sources)if(!sources.some(v=>v.id===s.id))sources.push(resolveSourceLocation(s));
  const range=`${batch.entries[0].number}–${batch.entries.at(-1).number}`;
  const correctedNumbers=review.entries.filter(e=>e.arabicCorrections).map(e=>e.number);
  const source={...opening.source,scope:config.id==='faith'?`Personal prototype: opening entries 1–7 and Book of Faith entries ${range}. The rest of the collection remains in preparation.`:`Personal prototype: complete numbered entries 1–${batch.entries.at(-1).number} across ${opening.ledger.books.length+1} books. The rest of the collection remains in preparation.`,
-  license:{...opening.source.license,attribution:config.id==='faith'?'Sahih al-Bukhari by Muhammad ibn Ismail al-Bukhari; Arabic digital transcription by Arabic Wikisource contributors, opening revision 484874 and Faith revision 490285.':opening.source.license.attribution+` Book of ${config.title}: revision ${config.revision}.`,changes:opening.source.license.changes+` ${correctedNumbers.length?`Hadith ${range} derive from revision ${config.revision}; only ${correctedNumbers.join(', ')} have declared Arabic corrections, with unchanged original inputs preserved separately`:`Hadith ${range} retain their Arabic ${inventory.schemaVersion===2?'source spans':'paragraphs'} unchanged from revision ${config.revision}`}; their new English and available chapter titles are AI-assisted.${review.chapters.some(c=>c.status==='heading-discrepancy-pending')?' A disputed chapter heading is explicitly withheld.':''}${inventory.schemaVersion===2?' Exact source origins and original labels are retained; any different reader reference is explicitly mapped.':''} Chapter introductions are preserved separately in Arabic, with English translation still pending.${review.chapters.some(c=>c.printedIntroductions?.length)?' A declared printed chapter introduction supplies material omitted by the digital source; original chapter blocks are unchanged and both printed readings and exact pages remain separately recorded.':''}${review.entries.some(e=>e.arabicSupplements||e.printedHeading)?(review.entries.some(e=>e.printedHeading)?(review.entries.some(e=>e.arabicSupplements)?' Declared printed additions supply a missing closing transmission note and chapter heading; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately.':' A declared printed addition supplies a missing chapter heading; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately.'):' A declared printed addition supplies a missing closing transmission note; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately.'):''}`},sources,
+  license:{...opening.source.license,attribution:config.id==='faith'?'Sahih al-Bukhari by Muhammad ibn Ismail al-Bukhari; Arabic digital transcription by Arabic Wikisource contributors, opening revision 484874 and Faith revision 490285.':opening.source.license.attribution+` Book of ${config.title}: revision ${config.revision}.`,changes:opening.source.license.changes+` ${correctedNumbers.length?`Hadith ${range} derive from revision ${config.revision}; only ${correctedNumbers.join(', ')} have declared Arabic corrections, with unchanged original inputs preserved separately`:`Hadith ${range} retain their Arabic ${inventory.schemaVersion>=2?'source spans':'paragraphs'} unchanged from revision ${config.revision}`}; their new English and available chapter titles are AI-assisted.${review.chapters.some(c=>c.status==='heading-discrepancy-pending')?' A disputed chapter heading is explicitly withheld.':''}${inventory.schemaVersion>=2?' Exact source origins and original labels are retained; any different reader reference is explicitly mapped.':''} Chapter introductions are preserved separately in Arabic, with English translation still pending.${review.chapters.some(c=>c.printedIntroductions?.length)?' A declared printed chapter introduction supplies material omitted by the digital source; original chapter blocks are unchanged and both printed readings and exact pages remain separately recorded.':''}${review.entries.some(e=>e.arabicSupplements||e.printedHeading)?(review.entries.some(e=>e.printedHeading)?(review.entries.some(e=>e.arabicSupplements)?' Declared printed additions supply a missing closing transmission note and chapter heading; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately.':' A declared printed addition supplies a missing chapter heading; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately.'):' A declared printed addition supplies a missing closing transmission note; original digital blocks remain unchanged, and the selected printed wording, differences and exact pages are recorded separately.'):''}`},sources,
   prototypeReview:config.id==='faith'?{...opening.source.prototypeReview,openingSourceSha256:hash(opening.source),faithReviewSha256:hash(review),faithSourceSha256:manifest.file.sha256}:{...opening.source.prototypeReview,[config.id+'ReviewSha256']:hash(review),[config.id+'SourceSha256']:manifest.file.sha256},entries:[...opening.source.entries,...batch.entries]};
  const sourceHash=hash(source),references=structuredClone(opening.ledger.sourceReferences);references.sourceRecordSha256=sourceHash;
  for(const {id,label,kind,format,url}of review.sources.map(resolveSourceLocation)){const existing=references.sources.find(s=>s.id===id);if(existing)assert.deepEqual(existing,{id,label,kind,format,url},'Conflicting shared source');else references.sources.push({id,label,kind,format,url});}
@@ -319,7 +320,7 @@ export function assembleCollection(opening,inventory,review,manifest,config=BOOK
  ledger.entries.push(...batch.entries.map(e=>({number:e.number,id:e.id,entrySha256:hash(e),arabicSha256:e.arabic_sha256,englishSha256:sha(e.english_blocks.join('\n\n')),status:'personal-prototype-only',arabicReview:{status:'pending'},englishReview:{status:'pending'},contextReview:{status:'pending'}})));
  ledger.rights.evidence.push(`reader/${config.id}-inputs.json`,`reader/${config.id}-review.html`);
  const selectedIds=new Set([...(review.bookIntroduction?.blocks.map(b=>b.htmlId)||[]),...review.chapters.flatMap(c=>[c.headingId,...c.contextIds]),...review.entries.flatMap(e=>e.paragraphIds)]);
- const inputs={schemaVersion:1,sourceLocationCorrections,status:'personal-prototype-only',manifest,completeInventorySha256:hash(inventory),scope:`Only the blocks used by Hadith ${range} and their chapter context.${review.bookIntroduction?' The separately reviewed book introduction is also retained.':''} The complete source inventory remains separately preserved.`,selectedBlocks:inventory.blocks.filter(b=>selectedIds.has(b.htmlId)),...(inventory.schemaVersion===2?{sourceLayout:layoutInputEvidence(inventory,selectedIds)}:{}),review};
+ const inputs={schemaVersion:1,sourceLocationCorrections,status:'personal-prototype-only',manifest,completeInventorySha256:hash(inventory),scope:`Only the blocks used by Hadith ${range} and their chapter context.${review.bookIntroduction?' The separately reviewed book introduction is also retained.':''} The complete source inventory remains separately preserved.`,selectedBlocks:inventory.blocks.filter(b=>selectedIds.has(b.htmlId)),...(inventory.schemaVersion>=2?{sourceLayout:layoutInputEvidence(inventory,selectedIds)}:{}),review};
  const chapterNotes=batch.chapterViews.map(c=>{
   if(c.printedHeading)return `<article id="${esc(c.id)}"><p class="eyebrow">Chapter material · supplied from Arabic prints</p><h2>${esc(c.title)}</h2><p><a href="./#book/${config.id}/chapter/${esc(c.id)}">Open this chapter →</a></p><p>This heading is absent from the pinned digital chapter. It is preserved here from the printed witnesses without changing the original digital grouping. The heading stays separate from the numbered hadith and its narration.</p>${printedAdditionDetails(c.printedHeading,review.sources.map(resolveSourceLocation))}<p><a href="#${esc(c.printedHeading.sourceChapterId)}">Original digital chapter and grouping</a></p><p>Numbered reports in this section: ${c.entryNumbers.map(n=>`<a href="./#read/${n}">${n}</a>`).join(', ')}.</p></article>`;
   const sourceURL=new URL(manifest.url);sourceURL.hash=inventory.blocks.find(b=>b.htmlId===c.headingId).origin?.blockId??c.headingId;
@@ -334,20 +335,23 @@ export function assembleCollection(opening,inventory,review,manifest,config=BOOK
 export function combineBookReviews(registry,config,readReview=read){
  bookConfig(config);
  assert.equal(registry.schemaVersion,1);assert(registry.batches.length,'No book review batches');
- const reviews=[];let next=config.first;
+ const sourceNumbers=read(`content/staging/bukhari-${config.id}-wikisource/catalog.json`).records.map(r=>r.number);
+ assert.equal(sourceNumbers[0],config.first,'Source book begins at the wrong reference');
+ const reviews=[];let position=0;
  for(const batch of registry.batches){
   assert(new RegExp('^content/review/'+config.id+'-[a-z-]+-review\\.json$').test(batch.path),'Unsafe batch path');
-  assert.equal(batch.first,next,'Book batches must be consecutive');assert(Number.isSafeInteger(batch.last)&&batch.last>=batch.first);
+  assert.equal(batch.first,sourceNumbers[position],'Book batches must be consecutive');assert(validReference(batch.last),'Invalid last batch reference');
+  const selected=referenceSpan(sourceNumbers,batch.first,batch.last);
   const review=readReview(batch.path);assert.equal(hash(review),batch.sha256,'Changed book batch record');
-  assert.deepEqual(review.entries.map(e=>e.number),Array.from({length:batch.last-batch.first+1},(_,i)=>batch.first+i),'Incomplete registered book batch');
+  assert.deepEqual(review.entries.map(e=>e.number),selected,'Incomplete registered book batch');
   if(reviews.length)for(const key of ['schemaVersion','status','independentReview','sourceId','sourceSha256','inventorySha256','sourceLayout','bookIntroduction'])assert.deepEqual(review[key],reviews[0][key],'Conflicting book batch source');
-  reviews.push(review);next=batch.last+1;
+  reviews.push(review);position+=selected.length;
  }
  const sources=[];
  for(const review of reviews)for(const source of review.sources){const existing=sources.find(s=>s.id===source.id);if(existing)assert.deepEqual(existing,source,'Conflicting book batch source');else sources.push(source);}
  const entries=reviews.flatMap(r=>r.entries),chapters=reviews.flatMap(r=>r.chapters);
  assert.equal(new Set(chapters.map(c=>c.id)).size,chapters.length,'A chapter cannot be split across review batches');
- return {...reviews[0],sources,entries,chapters,scope:`Complete numbered reports ${config.first}–${next-1}. Available chapter titles use provisional English. Disputed headings are labelled under review; unnumbered chapter introductions remain separately preserved in Arabic.`,editionNote:reviews.map(r=>r.editionNote).join(' '),batches:registry.batches};
+ return {...reviews[0],sources,entries,chapters,scope:`Complete numbered reports ${config.first}–${entries.at(-1).number}. Available chapter titles use provisional English. Disputed headings are labelled under review; unnumbered chapter introductions remain separately preserved in Arabic.`,editionNote:reviews.map(r=>r.editionNote).join(' '),batches:registry.batches};
 }
 export function buildFaithBatch(inventory,review,manifest){return buildBookBatch(inventory,review,manifest,BOOK_CONFIGS.faith);}
 export function combineFaithReviews(registry,readReview=read){return combineBookReviews(registry,BOOK_CONFIGS.faith,readReview);}

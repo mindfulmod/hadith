@@ -111,8 +111,8 @@ function playQueueStep(index,seconds){
  if(!target)return false;
  queueIndex=index;queueComplete=false;selectRecording(target);activate();setPosition(seconds??step.start);save();play();return true;
 }
-export function listenSession(numbers,{number}={}){
- const plan=listeningPlan(numbers,recordings);if(!plan?.steps.length)return false;
+export function listenSession(numbers,{number,entries}={}){
+ const plan=listeningPlan(numbers,recordings,entries);if(!plan?.steps.length)return false;
  if(number!==undefined&&!plan.playable.includes(number))return false;
  if(number===undefined&&queuePlan?.key===plan.key&&!queueComplete){play();return true;}
  const saved=store.get().audio,restart=number===undefined&&(queueComplete&&queuePlan?.key===plan.key||plan.steps.some(s=>s.recordingId===saved?.release&&saved.seconds>=playbackRecordings.find(r=>r.id===s.recordingId).duration));

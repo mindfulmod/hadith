@@ -6,7 +6,7 @@ import {escapeHTML as esc} from '../reader/source-format.mjs';
 const root=new URL('../',import.meta.url);
 const verified=new Map();
 function checkedInventory(id){
- assert(['ablution','tayammum','prayer'].includes(id),'Unknown mapped source book');
+ assert(['ablution','tayammum','prayer','adhan'].includes(id),'Unknown mapped source book');
  if(!verified.has(id)){
   // The Python resolver checks the raw revision, audit, every original span and its review.
   // Keep this build-time dependency out of the browser and avoid a second layout algorithm.
@@ -21,7 +21,7 @@ export function validateBookInventory(inventory,review,config){
   assert(inventory.schemaVersion===1&&!('layoutReview' in inventory)&&!('layoutReviewSha256' in inventory)&&!('originalBlocks' in inventory),'Mapped source inventories need explicit reader provenance support before admission');
   assert.equal(review.sourceLayout,undefined,'Ordinary inventory cannot claim a layout map');return;
  }
- assert.equal(inventory.schemaVersion,2,'Mapped book requires its structural inventory');
+ assert([2,3].includes(inventory.schemaVersion),'Mapped book requires its structural inventory');
  assert.deepEqual(inventory,checkedInventory(config.id),'Mapped inventory differs from the authoritative checked source map');
  assert.deepEqual(review.sourceLayout,layoutEvidence(inventory),'Batch must explicitly bind its source layout review');
 }
@@ -32,12 +32,12 @@ export function entryLayoutEvidence(inventory,record){
  const blocks=new Map(inventory.blocks.map(b=>[b.htmlId,b]));
  return {...layoutEvidence(inventory),sourceRecordId:record.id,sourceReference:structuredClone(record.sourceReference),paragraphs:record.paragraphIds.map(id=>{const b=blocks.get(id);assert(b,'Unknown mapped source unit');return {id,textSha256:b.textSha256,origin:structuredClone(b.origin),...(b.layoutDecisionId?{layoutDecisionId:b.layoutDecisionId}:{})};}),...(record.referenceMapping?{referenceMapping:structuredClone(record.referenceMapping)}:{})};
 }
-export function validateEntryLayout(inventory,row,record){
- if(inventory.schemaVersion!==2){assert.equal(row.sourceLayout,undefined,'Unexpected mapped entry evidence');return;}
+export function validateEntryLayout(inventory,row,record,config){
+ if(![2,3].includes(inventory.schemaVersion)){assert.equal(row.sourceLayout,undefined,'Unexpected mapped entry evidence');return;}
  assert.deepEqual(row.sourceLayout,entryLayoutEvidence(inventory,record),'Entry must retain exact source origins and reference mapping');
  if(record.referenceMapping){
   const m=record.referenceMapping;
-  assert.equal(row.comparisons.find(c=>c.id==='bewley-ablution')?.reference,m.bewley.reference,'Mapped Bewley comparison changed');
+  assert.equal(row.comparisons.find(c=>c.id===(config?.bewleySourceId||'bewley-ablution'))?.reference,m.bewley.reference,'Mapped Bewley comparison changed');
   assert.equal(row.comparisons.find(c=>c.id==='islamhouse-khan')?.reference,m.khan.reference,'Mapped Khan comparison changed');
   for(const witness of inventory.layoutReview.decisions.find(d=>d.id===inventory.blocks.find(b=>b.htmlId===record.paragraphIds[0]).layoutDecisionId).printedWitnesses){
    const actual=row.printedWitnesses.find(w=>w.id===witness.id);assert(actual&&witness.pdfPages.every(p=>actual.pdfPages.includes(p)),'Mapped reference requires the inspected printed boundary pages');

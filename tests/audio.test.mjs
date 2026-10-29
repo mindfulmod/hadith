@@ -138,3 +138,20 @@ test('the actual opening queue crosses all five files and stops before unrecorde
  for(const number of [3,4,5,6]){finish(h);await tick();assert.equal(h.audio,element);assert.equal(h.api.getPlaybackState().number,number);}
  finish(h);await tick();assert.equal(h.audio.playCalls,5);assert.equal(h.api.getListeningState().nextNumber,7);assert(h.elements.get('#audio-message').textContent.includes('Hadith 7'));
 });
+
+test('the media queue traverses a suffixed reference without coalescing or skipping it',async()=>{
+ const entries=[619,'619b',620].map(number=>({number}));
+ const items=entries.map(({number},i)=>({...otherRecording,id:`suffix-fixture-${number}`,src:`audio/synthetic-${number}.m4a`,duration:20,chapters:[{number,start:0,duration:20}]}));
+ const h=harness({},items),original=h.audio;
+ assert.equal(h.api.listenSession([619,'619b',620],{entries,number:619}),true);await tick();
+ assert.equal(h.api.getPlaybackState().number,619);
+ finish(h);await tick();assert.equal(h.api.getPlaybackState().number,'619b');assert.equal(h.audio,original);
+ h.api.prepareListening('619b');assert(h.api.getListeningState());
+ finish(h);await tick();assert.equal(h.api.getPlaybackState().number,620);
+ finish(h);await tick();assert.equal(h.api.getListeningState().complete,true);assert.equal(h.audio.playCalls,3);
+ const missing=harness({},[items[0],items[2]]);
+ missing.api.listenSession([619,'619b',620],{entries});await tick();finish(missing);await tick();
+ assert.equal(missing.api.getListeningState().nextNumber,'619b');assert.equal(missing.audio.playCalls,1);
+ assert(missing.elements.get('#audio-message').textContent.includes('Hadith 619b'));
+ assert.equal(missing.api.listenSession([619,620],{entries}),false);
+});
