@@ -14,14 +14,25 @@ def need(condition,message):
  if not condition:raise ValueError(message)
 def positive(value):return type(value)is int and value>0
 
-def validate_mapping(mapping,label,number,english):
+def reference_key(value):
+ if positive(value):return (value,'')
+ if isinstance(value,str)and re.fullmatch(r'[1-9][0-9]*[a-z]',value):return (int(value[:-1]),value[-1])
+ raise ValueError('Invalid reviewed report reference')
+
+MAPPING_PROFILES={
+ 'wikisource-bukhari-ablution-r273249':('https://aishabewley.org/bukhari3',r'1\.4\.[1-9]\d*'),
+ 'wikisource-bukhari-adhan-r484867':('https://aishabewley.org/bukhari7',r'1\.11\.[1-9]\d*'),
+}
+def validate_mapping(mapping,label,number,english,source_id):
  need(set(mapping)=={'status','sourceLabel','sourceNumber','number','bewley','modernPrintReference','khan','note'},'Unexpected reference mapping fields')
  need(mapping['status']=='ai-matched-not-approved','Invalid mapping status')
  need(mapping['sourceLabel']==label and mapping['sourceNumber']==int(label)and mapping['number']==number,'Mapping differs from exact source label or chosen reference')
- need(mapping['bewley']=={'url':'https://aishabewley.org/bukhari3','reference':str(number)},'Missing matched Bewley reference')
+ need(source_id in MAPPING_PROFILES,'Unsupported reference-mapping source')
+ bewley_url,khan_pattern=MAPPING_PROFILES[source_id]
+ need(mapping['bewley']=={'url':bewley_url,'reference':str(number)},'Missing matched Bewley reference')
  need(isinstance(mapping['modernPrintReference'],str)and mapping['modernPrintReference'].isascii()and mapping['modernPrintReference'].isdigit(),'Invalid printed reference')
  need(isinstance(mapping['note'],str)and mapping['note'].strip(),'Missing reference-mapping explanation')
- k=mapping['khan'];need(isinstance(k,dict)and re.fullmatch(r'1\.4\.[1-9]\d*',k.get('reference','')),'Invalid English comparison reference')
+ k=mapping['khan'];need(isinstance(k,dict)and re.fullmatch(khan_pattern,k.get('reference','')),'Invalid English comparison reference')
  record=next((r for r in english['records']if r['id']==english['namespace']+':'+k['reference']),None)
  need(record is not None,'Missing English comparison record')
  need(k=={'reference':k['reference'],'sourceSha256':english['sourceSha256'],'sourceRecordId':record['id'],'recordSha256':hashobj(record)},'Stale English reference evidence')
@@ -33,7 +44,7 @@ def resolve(audit,review,english):
  need(review.get('pageNumbering')=='One-based PDF page numbers, not printed page labels.','Ambiguous printed witness page numbering')
  need(len({b['htmlId']for b in audit['blocks']})==len(audit['blocks'])and all(b['textSha256']==layout.sha(b['text'])for b in audit['blocks']),'Changed or ambiguous original blocks')
  fresh=layout.inspect_blocks(audit['blocks']);need(all(audit[k]==v for k,v in fresh.items()),'Changed lexical audit evidence')
- expected=review['expected']['numbers'];need(isinstance(expected,list)and expected and all(positive(n)for n in expected)and expected==sorted(set(expected))and positive(review['expected']['chapters']),'Invalid reviewed coverage')
+ expected=review['expected']['numbers'];need(isinstance(expected,list)and expected and all(reference_key(n)for n in expected)and expected==sorted(set(expected),key=reference_key)and positive(review['expected']['chapters']),'Invalid reviewed coverage')
  decisions=review['decisions'];needed={i['blockId']for i in audit['issues']}
  need(len({d['blockId']for d in decisions})==len(decisions)and {d['blockId']for d in decisions}==needed,'Missing, duplicated or unrelated layout decisions')
  need([d['blockId']for d in decisions]==[b['htmlId']for b in audit['blocks']if b['htmlId']in needed],'Layout decisions must follow source order')
@@ -63,9 +74,9 @@ def resolve(audit,review,english):
    markers=list(layout.MARKER.finditer(value));source_reference=None
    if kind=='report-start':
     match=re.match(r'^\[(\d+)\] ',value);need(match is not None and len(markers)==1,'Report span needs one exact initial marker')
-    number=span.get('number');need(positive(number),'Invalid selected report reference');label=match[1]
+    number=span.get('number');reference_key(number);label=match[1]
     source_reference={'label':label,'number':int(label),'markerId':f'{bid}:{start}','occurrence':next(m['occurrence']for m in audit['markers']if m['blockId']==bid and m['start']==start)}
-    if number!=int(label):validate_mapping(span.get('referenceMapping',{}),label,number,english)
+    if number!=int(label):validate_mapping(span.get('referenceMapping',{}),label,number,english,audit['sourceId'])
     else:need('referenceMapping'not in span,'Unnecessary reference mapping')
    else:need(not markers and 'number'not in span and 'referenceMapping'not in span,'A source marker cannot be hidden in another role')
    if kind=='blank':need(not value.strip(),'Nonblank content cannot be discarded as spacing')
@@ -102,7 +113,7 @@ def resolve(audit,review,english):
  owned=blanks+formatting+artifacts+[i for c in chapters for i in [c['headingId'],*c['contextIds']]]+[i for r in records for i in r['paragraphIds']]
  need(len(owned)==len(set(owned))and set(owned)=={u['htmlId']for u in units},'Source units lost or assigned more than once')
  need(len(records)==len(audit['markers']),'Observed source marker lost during classification')
- return {'schemaVersion':2,'sourceId':audit['sourceId'],'revision':audit['revision'],'sourceSha256':audit['sourceSha256'],'layoutAuditSha256':hashobj(audit),'layoutReviewSha256':hashobj(review),'status':'candidate-layout-mapped-not-approved','readerEligible':False,'textPolicy':'Exact source spans only. Every original code point is preserved in a heading, report/context, blank or formatting unit. Source labels and marker identities remain separate from the reviewed reference mapping. This structural map does not approve report wording, translation or publication.'+(' Separately classified editor placeholders remain in editorial-artifact units and original paragraphs; they are not narration.'if artifacts else ''),'chapters':chapters,'records':records,'blankIds':blanks,'formattingIds':formatting,**({'editorialArtifactIds':artifacts}if artifacts else {}),'blocks':units,'originalBlocks':copy.deepcopy(audit['blocks']),'layoutReview':copy.deepcopy(review)}
+ return {'schemaVersion':3 if any(isinstance(r['number'],str)for r in records)else 2,'sourceId':audit['sourceId'],'revision':audit['revision'],'sourceSha256':audit['sourceSha256'],'layoutAuditSha256':hashobj(audit),'layoutReviewSha256':hashobj(review),'status':'candidate-layout-mapped-not-approved','readerEligible':False,'textPolicy':'Exact source spans only. Every original code point is preserved in a heading, report/context, blank or formatting unit. Source labels and marker identities remain separate from the reviewed reference mapping. This structural map does not approve report wording, translation or publication.'+(' Separately classified editor placeholders remain in editorial-artifact units and original paragraphs; they are not narration.'if artifacts else ''),'chapters':chapters,'records':records,'blankIds':blanks,'formattingIds':formatting,**({'editorialArtifactIds':artifacts}if artifacts else {}),'blocks':units,'originalBlocks':copy.deepcopy(audit['blocks']),'layoutReview':copy.deepcopy(review)}
 
 def resolution_paths(registry,root=ROOT):
  paths=[]
