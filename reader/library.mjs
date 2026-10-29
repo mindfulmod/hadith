@@ -1,4 +1,3 @@
-import {searchEntries} from './search.mjs';
 import {escapeHTML as escape,sourceHTML} from './source-format.mjs';
 import {pageItems,bookRoute} from './navigation.mjs';
 const countLabel=(count,singular,plural=singular+'s')=>`${count} ${count===1?singular:plural}`;
@@ -42,29 +41,29 @@ export function mountBookJump(){
 export function searchForm(count){return `<form id="library-search" role="search"><label for="search-query">Find a hadith</label><div class="search-controls"><input id="search-query" type="search" maxlength="200" placeholder="A phrase or hadith number" autocomplete="off" spellcheck="false" aria-describedby="search-help"><button class="primary" type="submit">Search</button></div><p id="search-help" class="sample-note">Search the ${count} available hadith, including narrator chains. Phrases match in order; English ignores case.</p></form><section id="search-results" aria-label="Search results" hidden><p id="search-summary" role="status" tabindex="-1"></p><div id="search-matches"></div><nav id="search-pages" class="list-pages" aria-label="Search result pages" hidden><button type="button" id="search-previous">← Previous</button><span id="search-page"></span><button type="button" id="search-next">Next →</button></nav><button id="search-clear" class="text-button" type="button">Clear search</button></section>`;}
 // In-memory only: Back to Collection restores the last search; closing/reloading clears it.
 let rememberedSearch={query:'',page:1};
-export function mountSearch(loadEntries){
- const form=document.querySelector('#library-search');if(!form)return;
+export function mountSearch(client){
+ const form=document.querySelector('#library-search');if(!form)return ()=>{};
  const input=form.querySelector('input'),results=document.querySelector('#search-results'),summary=document.querySelector('#search-summary'),matches=document.querySelector('#search-matches'),browse=document.querySelector('#collection-entries');
  const pager=document.querySelector('#search-pages'),previous=document.querySelector('#search-previous'),next=document.querySelector('#search-next');
- let request=0,loaded=null,query='',page=1;
- const clear=()=>{request++;rememberedSearch={query:'',page:1};form.removeAttribute('aria-busy');input.value='';results.hidden=true;browse.hidden=false;input.focus();};
- const display=(focus=false)=>{
-  const found=searchEntries(loaded,query,30,(page-1)*30),pages=Math.max(1,Math.ceil(found.total/30));
-  if(page>pages){page=pages;display(focus);return;}
-  rememberedSearch={query,page};
-  summary.textContent=found.total?`${found.total} ${found.total===1?'hadith matches':'hadith match'}. Showing ${(page-1)*30+1}–${(page-1)*30+found.results.length}.`:'No matches in the available text. Try a shorter phrase or a hadith number.';
+ let request=0,query='',page=1;
+ const cancel=()=>{request++;client.cancel();form.removeAttribute('aria-busy');};
+ const clear=()=>{cancel();rememberedSearch={query:'',page:1};input.value='';results.hidden=true;browse.hidden=false;input.focus();};
+ const search=async(value,requestedPage=1,focus=false)=>{
+  const version=++request;query=value;page=requestedPage;results.hidden=false;browse.hidden=true;pager.hidden=true;matches.innerHTML='';summary.textContent='Searching the available text…';form.setAttribute('aria-busy','true');
+  let found;try{found=await client.search(value,{limit:30,offset:(requestedPage-1)*30});}
+  catch(error){if(version===request&&form.isConnected){form.removeAttribute('aria-busy');if(error.name!=='AbortError')summary.textContent='Search could not load and check all available text. Reconnect and press Search to try again.';}return;}
+  if(version!==request||!form.isConnected)return;
+  const pages=Math.max(1,Math.ceil(found.total/30));if(requestedPage>pages){search(value,pages,focus);return;}
+  form.removeAttribute('aria-busy');rememberedSearch={query:value,page:requestedPage};
+  summary.textContent=found.total?`${found.total} ${found.total===1?'hadith matches':'hadith match'}. Showing ${(requestedPage-1)*30+1}–${(requestedPage-1)*30+found.results.length}.`:'No matches in the available text. Try a shorter phrase or a hadith number.';
   matches.innerHTML=found.results.map(({entry,language,text,sourceOrigin})=>`<a class="search-result" href="#read/${entry.number}"><strong>Hadith ${entry.number}<span aria-hidden="true"> →</span></strong><p ${language==='ar'?'lang="ar" dir="rtl"':''}>${escape(text)}</p><small>${escape(entry.book)}${sourceOrigin==='printed-supplement'?' · Transmission note from an Arabic print':''} · Complete hadith and sources</small></a>`).join('');
-  pager.hidden=pages<=1;previous.disabled=page===1;next.disabled=page===pages;document.querySelector('#search-page').textContent=`Page ${page} of ${pages}`;
+  pager.hidden=pages<=1;previous.disabled=requestedPage===1;next.disabled=requestedPage===pages;document.querySelector('#search-page').textContent=`Page ${requestedPage} of ${pages}`;
   if(focus){summary.focus({preventScroll:true});summary.scrollIntoView({block:'start'});}
  };
- const search=async(value,requestedPage=1)=>{
-  const version=++request;query=value;page=requestedPage;results.hidden=false;browse.hidden=true;pager.hidden=true;matches.innerHTML='';summary.textContent='Loading the available text…';form.setAttribute('aria-busy','true');
-  let entries;try{entries=await loadEntries();}catch{if(version===request&&form.isConnected){form.removeAttribute('aria-busy');summary.textContent='Search could not load all available text. Reconnect and press Search to try again.';}return;}
-  if(version!==request||!form.isConnected)return;loaded=entries;form.removeAttribute('aria-busy');display();
- };
  document.querySelector('#search-clear').onclick=clear;
- previous.onclick=()=>{page--;display(true);};next.onclick=()=>{page++;display(true);};
- input.addEventListener('input',()=>{request++;form.removeAttribute('aria-busy');pager.hidden=true;if(!input.value){rememberedSearch={query:'',page:1};results.hidden=true;browse.hidden=false;}else if(!results.hidden){matches.innerHTML='';summary.textContent='Press Search to find the updated phrase.';}});
+ previous.onclick=()=>search(query,page-1,true);next.onclick=()=>search(query,page+1,true);
+ input.addEventListener('input',()=>{cancel();pager.hidden=true;if(!input.value){rememberedSearch={query:'',page:1};results.hidden=true;browse.hidden=false;}else if(!results.hidden){matches.innerHTML='';summary.textContent='Press Search to find the updated phrase.';}});
  form.addEventListener('submit',event=>{event.preventDefault();if(!input.value.trim()){clear();return;}search(input.value);});
- if(rememberedSearch.query){input.value=rememberedSearch.query;search(rememberedSearch.query,rememberedSearch.page);}
+ if(rememberedSearch.query){input.value=rememberedSearch.query;search(input.value,rememberedSearch.page);}
+ return cancel;
 }

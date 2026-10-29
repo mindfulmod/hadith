@@ -1,4 +1,5 @@
 import {createContentLibrary} from './content-library.mjs';
+import {createSearchClient} from './search-client.mjs';
 import {release} from './release.mjs';
 import {store} from './store.js';
 import {collectionView,bookView,savedView,mountSearch,mountBookJump} from './library.mjs';
@@ -15,6 +16,8 @@ import {sourceDialogHTML,sourceContextHTML} from './source-references.mjs';
 /* Source blocks are rendered verbatim. Personal session state never changes them. */
 function startReader(library) {
  const $=s=>document.querySelector(s), data=library.catalog;
+ const searchClient=createSearchClient({catalog:data,releaseId:release.id,loadLibrary:()=>library});
+ let unmountSearch=()=>{};
  const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const media=matchMedia('(prefers-color-scheme: dark)');
  let current=null, mode='home', scrollTimer, restoring=false, startingAudio=false, autoDestination=null, renderVersion=0;
@@ -95,6 +98,7 @@ function startReader(library) {
   return mode==='listen'?`<a href="#home">Session</a><a data-read-playing href="#read/1">Read Hadith 1</a><button data-sources-playing data-sources="1">Arabic & sources</button>`:`<a href="#home" ${mode==='home'||mode==='end'?'aria-current="page"':''}>Session</a><a href="#collection" ${mode==='collection'||mode==='book'?'aria-current="page"':''}>Collection</a><a href="#saved" ${mode==='saved'?'aria-current="page"':''}>Saved <span id="saved-count">${store.get().saved.length||''}</span></a>`;
  }
  async function render(){
+  unmountSearch();
   const version=++renderVersion;
   capture();clearTimeout(scrollTimer);
   const hash=location.hash||'#home',match=hash.match(/^#(read|listen)\/(\d+)(?:\/(chain))?$/),chainRequested=match?.[1]==='read'&&match[3]==='chain',valid=match&&(!match[3]||chainRequested)&&entry(Number(match[2]))&&(match[1]==='read'||recordedChapter(Number(match[2])));
@@ -125,7 +129,7 @@ function startReader(library) {
   else if(mode==='missing'){main.innerHTML='<section class="collection"><h1>This page is not available.</h1><p>The reference may belong to a different edition or a later release. Your reading place has not changed.</p><a class="primary" href="#collection">Browse the available collection →</a></section>';document.title='Page unavailable · Hadith';}
   else if(mode==='end'){main.innerHTML=end();document.title='A place to pause · Hadith';}
   else{main.innerHTML=home();document.title='Your session · Sahih al-Bukhari';}
-  $('#dock').innerHTML=dock();mountSearch(()=>library.loadAllEntries());mountBookJump();updateListening();refreshOffline();
+  $('#dock').innerHTML=dock();unmountSearch=mountSearch(searchClient);mountBookJump();updateListening();refreshOffline();
   if(current&&(chainRequested||(store.get().followAudio&&getPlaybackState().active&&getPlaybackState().number===current)))revealChains();
   restoring=true;requestAnimationFrame(()=>{if(version!==renderVersion)return;main.focus({preventScroll:true});window.scrollTo(0,current?Number(store.get().positions[current])||0:0);if(chainRequested){const chain=$('.reading .chain summary');if(chain){chain.focus({preventScroll:true});chain.scrollIntoView({block:'start'});announce(`Narrator chain for Hadith ${current}.`);}}else if(automatic){$('#hadith-title').scrollIntoView({block:'start'});announce(`Following Hadith ${current}.`);}requestAnimationFrame(()=>{if(version!==renderVersion)return;restoring=false;updateListening();});});
  }

@@ -1,0 +1,388 @@
+{
+  "checkedAt": "2026-10-28",
+  "status": "implemented-desktop-and-offline-verified-iphone-pending",
+  "readerRelease": "opening-62053d90951b",
+  "readerEntries": 514,
+  "sourceRecordSha256": "6dd56a35b53d75f4b78bf13d5831727305912f2b568faa305831371f101c90c5",
+  "readingBytes": 14709416,
+  "behavior": [
+    "A module worker loads, hashes and validates the catalog and every book against the current release, then builds an in-memory normalized index. The UI receives bounded result pages with untouched source snippets; no entire text collection is copied from the UI to the worker.",
+    "Query matching retains existing phrase, reference, case, Unicode and paragraph-boundary behavior. Original text and printed-supplement origin labels remain unchanged. The last complete match set is reused for pagination.",
+    "Requests are tied to protocol, release, source hash and monotonically increasing IDs. New queries, edits, clearing and route changes cancel obsolete work. Out-of-order or cancelled replies cannot replace the current results.",
+    "A failed or unavailable worker uses a cooperative fallback that yields between indexing/scanning batches. Worker stalls are bounded; invalid versions, malformed replies and content failures are refused. A failed book never yields partial-library totals; failed preparation can retry.",
+    "Search starts on demand and remains memory-only. Normal reading does not load every book or start a worker. Background and fallback modules are included in the verified offline reading pack."
+  ],
+  "regression": {
+    "nodeTests": 419,
+    "pythonTests": 82,
+    "totalTests": 501,
+    "newTests": 14,
+    "integrityCommands": [
+      {
+        "command": "node scripts/build-opening-prototype.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-wikisource-book.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/audit-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/resolve-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-collection.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-audio.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node reader/check-content.mjs",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/import-bukhari.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-bukhari-jk.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-english.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-opening.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/check-opening-review.py",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/build-opening-review.py --check",
+        "exitCode": 0
+      }
+    ],
+    "scope": "Exact current-source parity, original Unicode and source-origin preservation, full pagination, cooperative yield/cancellation, actual release-file validation, lazy reuse, stale replies, failed second-book admission, retry, worker absence/crash/message failure/stall, idle crash and malformed/version-mismatched response refusal."
+  },
+  "browser": {
+    "checkedAt": "2026-10-28",
+    "continueAfterUpdate": "#read/1",
+    "saved": true,
+    "harness": {
+      "release": "opening-0035a98d41db",
+      "checks": [
+        {
+          "name": "actual-module-worker",
+          "passed": true,
+          "ms": 69.09999990463257,
+          "framesDuring": 4,
+          "mainLibraryLoads": 0
+        },
+        {
+          "name": "rapid-search-latest-wins",
+          "passed": true
+        },
+        {
+          "name": "pagination",
+          "passed": true,
+          "total": 501
+        },
+        {
+          "name": "cancel",
+          "passed": true
+        },
+        {
+          "name": "cooperative-fallback",
+          "passed": true,
+          "ms": 188.80000019073486,
+          "framesDuring": 11
+        },
+        {
+          "name": "mismatched-release-refused",
+          "passed": true
+        }
+      ]
+    },
+    "pageTwo": "501 hadith match. Showing 31–60.",
+    "openedResult": true,
+    "restoredPage": "501 hadith match. Showing 31–60.",
+    "finalSaved": true,
+    "finalHarness": {
+      "release": "opening-62053d90951b",
+      "checks": [
+        {
+          "name": "actual-module-worker",
+          "passed": true,
+          "ms": 102.5,
+          "framesDuring": 6,
+          "mainLibraryLoads": 0
+        },
+        {
+          "name": "rapid-search-latest-wins",
+          "passed": true
+        },
+        {
+          "name": "pagination",
+          "passed": true,
+          "total": 501
+        },
+        {
+          "name": "cancel",
+          "passed": true
+        },
+        {
+          "name": "cooperative-fallback",
+          "passed": true,
+          "ms": 199.70000004768372,
+          "framesDuring": 12
+        },
+        {
+          "name": "mismatched-release-refused",
+          "passed": true
+        }
+      ]
+    },
+    "offlineFreshSearch": "1 hadith matches. Showing 1–1.\n\nHadith 514 →\n\nAnd Ibn ‘Abbas said: “Yatafayya’u” means “it inclines.”\n\nPrayer Times · Complete hadith and sources\nClear search",
+    "offlineArabicResult": "1 hadith matches. Showing 1–1.\n\nHadith 160 →\n\n[١٦٢] حدثنا عبد الله بن يوسف قال: أخبرنا مالك عن أبي الزناد عن الأعرج عن أبي هريرة أن رسول الله ﷺ قال:\n\nAblution · Complete hadith and sources\nClear search",
+    "printedSourceSearch": true,
+    "finalOfflinePageTwo": "501 hadith match. Showing 31–60.",
+    "editSuppressesOldResults": "Press Search to find the updated phrase.",
+    "clearRestoresBooks": true,
+    "offlineHarness": {
+      "release": "opening-62053d90951b",
+      "checks": [
+        {
+          "name": "actual-module-worker",
+          "passed": true,
+          "ms": 75.5,
+          "framesDuring": 4,
+          "mainLibraryLoads": 0
+        },
+        {
+          "name": "rapid-search-latest-wins",
+          "passed": true
+        },
+        {
+          "name": "pagination",
+          "passed": true,
+          "total": 501
+        },
+        {
+          "name": "cancel",
+          "passed": true
+        },
+        {
+          "name": "cooperative-fallback",
+          "passed": true,
+          "ms": 190.39999985694885,
+          "framesDuring": 12
+        },
+        {
+          "name": "mismatched-release-refused",
+          "passed": true
+        }
+      ]
+    },
+    "continueAfterSearch": "#read/1"
+  },
+  "benchmark": {
+    "checkedAt": "2026-10-28",
+    "environment": {
+      "node": "v24.18.0",
+      "cpu": "Apple M2",
+      "arch": "arm64"
+    },
+    "scope": "Node CPU baseline; microtask yielding models worker computation, not browser loading, message delivery, rendering or physical iPhone latency. Queries rotate through a sentinel to distinguish scanning from cached pagination.",
+    "searchModuleSha256": "6a8a13ddc7628bb8c7c027e3759570842bb4b9a42b814b20dd19a10cb7d43bde",
+    "current": {
+      "entries": 514,
+      "indexPreparationMs": 9.539,
+      "queries": [
+        {
+          "query": "Allah",
+          "total": 501,
+          "iterations": 15,
+          "previous": {
+            "medianMs": 2.9311,
+            "p95Ms": 4.7259
+          },
+          "indexedUncachedQuery": {
+            "medianMs": 0.2502,
+            "p95Ms": 0.4594
+          },
+          "indexedCachedPage": {
+            "medianMs": 0.0027,
+            "p95Ms": 0.0079
+          }
+        },
+        {
+          "query": "prayer",
+          "total": 117,
+          "iterations": 15,
+          "previous": {
+            "medianMs": 6.1075,
+            "p95Ms": 6.5748
+          },
+          "indexedUncachedQuery": {
+            "medianMs": 0.166,
+            "p95Ms": 0.1946
+          },
+          "indexedCachedPage": {
+            "medianMs": 0.0021,
+            "p95Ms": 0.0213
+          }
+        },
+        {
+          "query": "\"riding camels\"",
+          "total": 1,
+          "iterations": 15,
+          "previous": {
+            "medianMs": 7.2178,
+            "p95Ms": 7.4237
+          },
+          "indexedUncachedQuery": {
+            "medianMs": 0.2853,
+            "p95Ms": 0.3063
+          },
+          "indexedCachedPage": {
+            "medianMs": 0.0015,
+            "p95Ms": 0.0028
+          }
+        },
+        {
+          "query": "unlikelywordwithoutmatch",
+          "total": 0,
+          "iterations": 15,
+          "previous": {
+            "medianMs": 7.1548,
+            "p95Ms": 7.4176
+          },
+          "indexedUncachedQuery": {
+            "medianMs": 0.1836,
+            "p95Ms": 0.1952
+          },
+          "indexedCachedPage": {
+            "medianMs": 0.0012,
+            "p95Ms": 0.0014
+          }
+        }
+      ]
+    },
+    "englishComparisonFixture": {
+      "entries": 7111,
+      "indexPreparationMs": 32.463,
+      "queries": [
+        {
+          "query": "Allah",
+          "total": 4543,
+          "iterations": 15,
+          "previous": {
+            "medianMs": 29.6033,
+            "p95Ms": 31.1365
+          },
+          "indexedUncachedQuery": {
+            "medianMs": 2.525,
+            "p95Ms": 3.7829
+          },
+          "indexedCachedPage": {
+            "medianMs": 0.0035,
+            "p95Ms": 0.0083
+          }
+        },
+        {
+          "query": "prayer",
+          "total": 1167,
+          "iterations": 15,
+          "previous": {
+            "medianMs": 30.1069,
+            "p95Ms": 31.6161
+          },
+          "indexedUncachedQuery": {
+            "medianMs": 1.5915,
+            "p95Ms": 1.8919
+          },
+          "indexedCachedPage": {
+            "medianMs": 0.0026,
+            "p95Ms": 0.0065
+          }
+        },
+        {
+          "query": "\"riding camels\"",
+          "total": 3,
+          "iterations": 15,
+          "previous": {
+            "medianMs": 31.9351,
+            "p95Ms": 33.6332
+          },
+          "indexedUncachedQuery": {
+            "medianMs": 3.0138,
+            "p95Ms": 3.1774
+          },
+          "indexedCachedPage": {
+            "medianMs": 0.0038,
+            "p95Ms": 0.0089
+          }
+        },
+        {
+          "query": "unlikelywordwithoutmatch",
+          "total": 0,
+          "iterations": 15,
+          "previous": {
+            "medianMs": 31.1737,
+            "p95Ms": 32.2717
+          },
+          "indexedUncachedQuery": {
+            "medianMs": 1.7045,
+            "p95Ms": 2.0186
+          },
+          "indexedCachedPage": {
+            "medianMs": 0.0021,
+            "p95Ms": 0.006
+          }
+        }
+      ]
+    },
+    "comparisonSource": "Pinned IslamHouse EPUB, 7111 record bodies individually digest-checked; benchmark-only ordinal numbers. English only, not the approved full bilingual collection."
+  },
+  "sourceFilesUnchanged": [
+    "reader/source-record.json",
+    "reader/books/catalog.json",
+    "reader/audio/catalog.json",
+    "content/audio/narration-plan.json",
+    "reader/books/opening-revelation-c9cf4f7b6c4ba6da.json",
+    "reader/books/faith-557769677b20c554.json",
+    "reader/books/knowledge-a280a8eb778f2ab3.json",
+    "reader/books/ablution-0923e409e3c51644.json",
+    "reader/books/ghusl-bf3dc34e28a46ebb.json",
+    "reader/books/menstruation-361e7592fc0b396b.json",
+    "reader/books/tayammum-bf0e2117af123f4b.json",
+    "reader/books/prayer-9cd174e568b06a5f.json",
+    "reader/books/prayer-times-e964273ca526be98.json"
+  ],
+  "physicalDevice": "Physical iPhone performance and locked-screen separate-recording acceptance remain unverified by this update. Desktop frame counts are observed animation frames during one test run, not an INP score or a guarantee of no long tasks.",
+  "limitations": [
+    "The first search still loads and validates all available books. Index memory and full bilingual corpus scale require further measurement.",
+    "The fallback yields during indexing and scanning; a single JSON parse, source-validation operation or exceptionally large block is not guaranteed to remain under a frame budget.",
+    "A worker can finish some already-running computation after cancellation; stale results are discarded.",
+    "Full corpus, independent source/translation/audio review, English chapter introductions and additional Cedar recordings remain unfinished."
+  ],
+  "primaryGuidance": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers",
+      "finding": "Workers can fetch data and perform computation away from the UI; message payloads are copied. This design loads and verifies books inside the worker and returns only one result page."
+    },
+    {
+      "url": "https://web.dev/articles/optimize-long-tasks",
+      "finding": "Long main-thread tasks delay interactions; yielding work permits the browser to process other tasks. The fallback batches indexing and searching, while the preferred worker handles loading and validation away from the UI."
+    }
+  ]
+}
