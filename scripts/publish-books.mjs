@@ -8,12 +8,11 @@ import {validReference} from '../reader/references.mjs';
 import {validateChapters} from '../reader/navigation.mjs';
 import {validateSourceStructure} from '../reader/source-structure.mjs';
 import {validateSourceReferences} from '../reader/source-references.mjs';
+import {prototypeAdmissions} from './prototype-admissions.mjs';
 export const digest=value=>createHash('sha256').update(value).digest('hex');
 export const objectHash=value=>digest(JSON.stringify(value));
 const root=new URL('../',import.meta.url);
 const json=path=>JSON.parse(readFileSync(new URL(path,root),'utf8'));
-// Deliberate version admissions keep prototype growth separate from human production reviews.
-const prototypeAdmissions=json('content/review/prototype-admissions.json');
 // Retained for the original two-entry evaluation and its regression fixtures.
 const evaluationSourceHash='fea9b889d30bdc3ceb8e41de8cb390292905391d2079993ce69a85b138bd7f33';
 function approval(record,hash,label){
@@ -40,8 +39,7 @@ export function buildBooks(source,ledger,{production=false}={}){
   approval(ledger.rights,ledger.sourceRecordSha256,'Reuse rights');
   approval(ledger.collectionReview,ledger.catalogContextSha256,'Collection context');
  }else if(mode==='personal-prototype'){
-  assert.equal(prototypeAdmissions.schemaVersion,1);
-  const admission=prototypeAdmissions.admissions.find(a=>a.sourceRecordSha256===ledger.sourceRecordSha256&&(a.catalogContextSha256??objectHash(a.books))===ledger.catalogContextSha256);
+  const admission=prototypeAdmissions.get(ledger.sourceRecordSha256,ledger.catalogContextSha256);
   assert(admission,'Personal prototype source version is not admitted');
   assert.equal(admission.status,'personal-prototype-only');
   assert.equal(admission.catalogContextSha256??objectHash(admission.books),objectHash(admission.books),'Prototype context admission is stale');
@@ -54,13 +52,17 @@ export function buildBooks(source,ledger,{production=false}={}){
   assert.deepEqual(source.entries.map(e=>e.number),[1,2],'Evaluation is limited to the two existing entries');
   assert.equal(ledger.sourceRecordSha256,evaluationSourceHash,'Unapproved evaluation source change');
  }
+ const reviewByNumber=new Map(ledger.entries.map(record=>[record.number,record]));
+ const entryByNumber=new Map(source.entries.map(entry=>[entry.number,entry]));
+ const entryHashes=new Map();
  for(const entry of source.entries){
   assert(validReference(entry.number),'Invalid reference');
   assert(typeof entry.id==='string'&&entry.id,'Missing source ID');
   validateSourceStructure(entry);
-  const record=ledger.entries.find(r=>r.number===entry.number);
+  const record=reviewByNumber.get(entry.number);
   assert(record&&record.id===entry.id,'Missing review record');
-  assert.equal(record.entrySha256,objectHash(entry),'Entry or context changed since review');
+  const entryHash=objectHash(entry);entryHashes.set(entry.id,entryHash);
+  assert.equal(record.entrySha256,entryHash,'Entry or context changed since review');
   const ar=digest(entry.arabic_blocks.join('\n\n')),en=digest(entry.english_blocks.join('\n\n'));
   assert.equal(entry.arabic_sha256,ar,'Arabic integrity mismatch');
   assert.equal(record.arabicSha256,ar,'Arabic review hash mismatch');assert.equal(record.englishSha256,en,'English review hash mismatch');
@@ -72,7 +74,7 @@ export function buildBooks(source,ledger,{production=false}={}){
  }
  validateSourceReferences(ledger.sourceReferences,source.entries,{sourceRecordSha256:ledger.sourceRecordSha256});
  assert.equal(ledger.referencesSha256,objectHash(ledger.sourceReferences),'Source references changed since review');
- for(const row of ledger.sourceReferences.entries)assert.equal(row.entrySha256,objectHash(source.entries.find(e=>e.id===row.id)),'References do not match the exact entry');
+ for(const row of ledger.sourceReferences.entries)assert.equal(row.entrySha256,entryHashes.get(row.id),'References do not match the exact entry');
  if(mode==='production')approval(ledger.referencesReview,ledger.referencesSha256,'Source references');
  const assigned=ledger.books.flatMap(b=>b.entryNumbers);
  assert.deepEqual(assigned,source.entries.map(e=>e.number),'Book order must assign each entry exactly once');
@@ -82,13 +84,14 @@ export function buildBooks(source,ledger,{production=false}={}){
  // Preserve it once in the checked catalog; keep all review gates above unchanged.
  const catalog={schemaVersion:2,namespace:ledger.namespace,publication:mode,sourceRecordSha256:ledger.sourceRecordSha256,referencesSha256:ledger.referencesSha256,sourceRecord,books:[],entries:[]};
  const files=new Map();
+ const referencesByNumber=new Map(ledger.sourceReferences.entries.map(row=>[row.number,row]));
  for(const book of ledger.books){
   assert(/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(book.id),'Invalid book ID');
   assert(Number.isSafeInteger(book.number)&&book.number>0&&typeof book.title==='string'&&book.title.trim(),'Missing book context');
   validateChapters(book);
-  const selected=book.entryNumbers.map(n=>entries.find(e=>e.number===n));
+  const selected=book.entryNumbers.map(n=>entryByNumber.get(n));
   assert(selected.length,'Empty book');
-  const referenceRows=ledger.sourceReferences.entries.filter(row=>book.entryNumbers.includes(row.number));
+  const referenceRows=book.entryNumbers.map(n=>referencesByNumber.get(n));
   const citedIds=new Set(referenceRows.flatMap(row=>row.citations.map(c=>c.sourceId)));
   const sourceReferences={schemaVersion:2,entriesSha256:objectHash(selected),sources:ledger.sourceReferences.sources.filter(s=>citedIds.has(s.id)),entries:referenceRows};
   const pack={schemaVersion:2,namespace:ledger.namespace,publication:mode,book:{id:book.id,number:book.number,title:book.title,...(book.sourceEntryCount!==undefined?{sourceEntryCount:book.sourceEntryCount}:{}),...(book.chapters?{chapters:book.chapters}:{}),...(book.introduction?{introduction:book.introduction}:{})},sourceReferences,entries:selected};
@@ -101,6 +104,7 @@ export function buildBooks(source,ledger,{production=false}={}){
  return {catalog,files};
 }
 export function publishBooks({check=false,production=false}={}){
+ prototypeAdmissions.all();
  const result=buildBooks(json('research/bukhari-personal-collection.json'),json('content/review/personal-collection-ledger.json'),{production});
  const directory=new URL('reader/books/',root);
  if(!check)mkdirSync(directory,{recursive:true});

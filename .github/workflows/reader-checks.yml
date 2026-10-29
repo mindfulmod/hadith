@@ -23,6 +23,7 @@ jobs:
           node-version: '22'
       - name: Verify source and staged catalogue
         run: |
+          node scripts/prototype-admissions.mjs --check
           node scripts/build-opening-prototype.mjs --check
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/import-wikisource-book.py --check
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit-wikisource-layout.py --check

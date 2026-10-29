@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29",
+  "updatedAt": "2026-10-29T23:26:01.862063+00:00",
   "objective": "Production-ready English-first Sahih al-Bukhari reader with the full collection, precise source access, Cedar narration, whole-hadith sessions and dependable offline iPhone use.",
   "status": "in-progress",
   "decisions": {
@@ -31,7 +31,7 @@
     {
       "id": "content-review-gates",
       "status": "separate-personal-prototype-and-production-gates",
-      "evidence": "content/review/opening-ledger.json; scripts/publish-books.mjs; tests/content-library.test.mjs; reader/source-references.mjs; tests/source-references.test.mjs; content/review/opening-prototype-ledger.json; tests/opening-prototype.test.mjs; scripts/build-collection.mjs; content/review/prototype-admissions.json; tests/collection-batches.test.mjs; content/review/faith-batches.json; content/review/faith-next-review.json; content/review/faith-third-review.json; content/review/faith-final-review.json; research/chapter-material-verification.json; research/knowledge-first-verification.json; tests/knowledge-batch.test.mjs; research/knowledge-next-verification.json; research/knowledge-third-verification.json; research/knowledge-fourth-verification.json; scripts/arabic-corrections.mjs; research/knowledge-fifth-verification.json; research/knowledge-final-verification.json; research/ablution-second-verification.json; tests/ablution-second.test.mjs; research/ablution-third-verification.json; tests/printed-supplements.test.mjs; research/ablution-fourth-verification.json; tests/ablution-fourth.test.mjs; research/ablution-fifth-verification.json; tests/ablution-fifth.test.mjs; research/ablution-sixth-verification.json; tests/ablution-sixth.test.mjs; research/ablution-seventh-verification.json; tests/ablution-seventh.test.mjs; research/ablution-eighth-verification.json; tests/ablution-eighth.test.mjs; research/ablution-final-verification.json; tests/ablution-final.test.mjs; research/ghusl-first-verification.json; tests/ghusl-first.test.mjs; research/ghusl-second-verification.json; tests/ghusl-second.test.mjs; research/ghusl-third-verification.json; tests/ghusl-third.test.mjs; research/ghusl-final-verification.json; tests/ghusl-final.test.mjs; research/menstruation-first-verification.json; tests/menstruation-first.test.mjs; tests/test_menstruation_intake.py; research/menstruation-second-verification.json; tests/menstruation-second.test.mjs; research/menstruation-final-verification.json; tests/menstruation-final.test.mjs; research/prayer-description-first-verification.json; tests/prayer-description-first.test.mjs",
+      "evidence": "content/review/opening-ledger.json; scripts/publish-books.mjs; tests/content-library.test.mjs; reader/source-references.mjs; tests/source-references.test.mjs; content/review/opening-prototype-ledger.json; tests/opening-prototype.test.mjs; scripts/build-collection.mjs; content/review/prototype-admissions.json; tests/collection-batches.test.mjs; content/review/faith-batches.json; content/review/faith-next-review.json; content/review/faith-third-review.json; content/review/faith-final-review.json; research/chapter-material-verification.json; research/knowledge-first-verification.json; tests/knowledge-batch.test.mjs; research/knowledge-next-verification.json; research/knowledge-third-verification.json; research/knowledge-fourth-verification.json; scripts/arabic-corrections.mjs; research/knowledge-fifth-verification.json; research/knowledge-final-verification.json; research/ablution-second-verification.json; tests/ablution-second.test.mjs; research/ablution-third-verification.json; tests/printed-supplements.test.mjs; research/ablution-fourth-verification.json; tests/ablution-fourth.test.mjs; research/ablution-fifth-verification.json; tests/ablution-fifth.test.mjs; research/ablution-sixth-verification.json; tests/ablution-sixth.test.mjs; research/ablution-seventh-verification.json; tests/ablution-seventh.test.mjs; research/ablution-eighth-verification.json; tests/ablution-eighth.test.mjs; research/ablution-final-verification.json; tests/ablution-final.test.mjs; research/ghusl-first-verification.json; tests/ghusl-first.test.mjs; research/ghusl-second-verification.json; tests/ghusl-second.test.mjs; research/ghusl-third-verification.json; tests/ghusl-third.test.mjs; research/ghusl-final-verification.json; tests/ghusl-final.test.mjs; research/menstruation-first-verification.json; tests/menstruation-first.test.mjs; tests/test_menstruation_intake.py; research/menstruation-second-verification.json; tests/menstruation-second.test.mjs; research/menstruation-final-verification.json; tests/menstruation-final.test.mjs; research/prayer-description-first-verification.json; tests/prayer-description-first.test.mjs; scripts/prototype-admissions.mjs; tests/prototype-admissions.test.mjs; tests/publisher-scale.test.mjs; research/publisher-scale-verification.json",
       "remaining": "Obtain actual independent human reviews and reuse evidence. Current production publishing is deliberately refused. Extend edition/reference mapping before expanding beyond the evaluation namespace; audio review needs its own ledger. Source presentation and per-entry citations are validated and bound to exact review hashes. Reference metadata requires its own human approval for production."
     },
     {
@@ -385,5 +385,18 @@
     "verification": "research/prayer-description-third-verification.json",
     "liveEntries": 632,
     "liveCommit": "a6d55223d3d863f2583ba67aa27edd139e9d7d6a"
+  },
+  "publisherScale": {
+    "status": "local-verified-with-unchanged-reader-content",
+    "verification": "research/publisher-scale-verification.json",
+    "archiveBytesBefore": 9158435,
+    "archiveBytesAfter": 1088193,
+    "historicalAdmissionsPreserved": 54,
+    "syntheticBenchmarkEntries": [
+      7600,
+      15200
+    ],
+    "readerReleaseUnchanged": "opening-4c4393c67edd",
+    "remaining": "Publisher scaling is verified on desktop; full-corpus iPhone loading and memory, complete content, independent review and extended audio remain outstanding."
   }
 }

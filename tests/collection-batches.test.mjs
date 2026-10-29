@@ -1,5 +1,6 @@
 import {ENTRY_COUNT,BOOK_COUNT,LAST_NUMBER} from './published-fixture.mjs';
 import test from 'node:test';
+import {prototypeAdmissions} from '../scripts/prototype-admissions.mjs';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {buildFaithBatch,collectionFiles,combineFaithReviews,assembleCollection} from '../scripts/build-collection.mjs';
@@ -136,7 +137,7 @@ test('chapter source availability is exact and has its own admission without cha
  for(const chapter of ledger.books[1].chapters){const original=inventory.chapters.find(c=>c.id===chapter.id);assert.equal(chapter.sourceContext.introduction.arabicParagraphs,original.contextIds.length);assert.equal(chapter.sourceContext.introduction.englishStatus,original.contextIds.length?'pending':'not-applicable');assert.equal(chapter.sourceContext.notes.fragment,chapter.id);assert.equal((files.get('reader/faith-review.html').match(new RegExp('id="'+chapter.id+'"','g'))||[]).length,1);}
  assert.equal(ledger.books[1].chapters.filter(c=>c.sourceContext.introduction.englishStatus==='pending').length,14);
  assert.equal(ledger.books[1].chapters[19].sourceContext.headingStatus,'heading-discrepancy-pending');
- const old=read('content/review/prototype-admissions.json').admissions.filter(a=>a.sourceRecordSha256==='d2c67f16c4e4f2701e3e591b1ea58a06101b1f4e64eab060afd8bd9b91651243');assert.equal(old.length,2);assert.notDeepEqual(old[0].books,old[1].books);assert.equal(old[1].catalogContextSha256,historical.ledger.catalogContextSha256);
+ const old=prototypeAdmissions.forSource('d2c67f16c4e4f2701e3e591b1ea58a06101b1f4e64eab060afd8bd9b91651243');assert.equal(old.length,2);assert.notDeepEqual(old[0].books,old[1].books);assert.equal(old[1].catalogContextSha256,historical.ledger.catalogContextSha256);
  assert.equal(buildBooks(source,ledger).catalog.entries.length,ENTRY_COUNT);
  const bad=structuredClone(ledger);bad.books[1].chapters[0].sourceContext.introduction.arabicParagraphs=3;bad.catalogContextSha256=objectHash(bad.books);assert.throws(()=>buildBooks(source,bad),/not admitted/);
 });

@@ -5,11 +5,12 @@ import {buildBooks,objectHash,digest} from '../scripts/publish-books.mjs';
 import {createContentLibrary} from '../reader/content-library.mjs';
 import {validateSourceReferences} from '../reader/source-references.mjs';
 import {createOfflineStore,readerCacheName} from '../reader/offline-store.mjs';
+import {prototypeAdmissions} from '../scripts/prototype-admissions.mjs';
 const read=p=>JSON.parse(readFileSync(new URL('../'+p,import.meta.url),'utf8'));
 function admittedSnapshot(names){
  const current=read('reader/source-record.json'),ledger=structuredClone(read('content/review/personal-collection-ledger.json')),packs=names.map(p=>read('reader/books/'+p+'.json'));
  const source=Object.fromEntries(Object.keys(current).map(k=>[k,k==='entries'?packs.flatMap(p=>p.entries):packs[0].sourceRecord[k]]));
- const admission=read('content/review/prototype-admissions.json').admissions.find(a=>a.sourceRecordSha256===objectHash(source));assert(admission,'Historical fixture must be an exact admitted source version');
+ const admission=prototypeAdmissions.forSource(objectHash(source))[0];assert(admission,'Historical fixture must be an exact admitted source version');
  ledger.sourceRecordSha256=objectHash(source);ledger.books=admission.books;ledger.catalogContextSha256=objectHash(admission.books);ledger.entries=ledger.entries.filter(e=>source.entries.some(p=>p.number===e.number));
  const cited=new Set(packs.flatMap(p=>p.sourceReferences.sources.map(s=>s.id)));
  ledger.sourceReferences={...ledger.sourceReferences,sourceRecordSha256:objectHash(source),entries:packs.flatMap(p=>p.sourceReferences.entries),sources:ledger.sourceReferences.sources.filter(s=>cited.has(s.id))};ledger.referencesSha256=objectHash(ledger.sourceReferences);
