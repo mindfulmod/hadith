@@ -1,0 +1,348 @@
+{
+  "checkedAt": "2026-10-29T22:20:46.701Z",
+  "status": "verified-local-personal-prototype",
+  "baselineCommit": "802c4cfd64bb0529f16b81372f14100f003b9c0d",
+  "readerRelease": "opening-be81906d8d37",
+  "publication": "not-published",
+  "scope": {
+    "book": "Description of Prayer",
+    "references": [
+      717,
+      718,
+      719,
+      720,
+      721,
+      722,
+      723,
+      724,
+      "724b",
+      725,
+      726,
+      727,
+      728,
+      729,
+      730,
+      731,
+      732,
+      733,
+      734,
+      735,
+      736,
+      737,
+      738
+    ],
+    "newReports": 23,
+    "digitalReports": 22,
+    "separatelyTranscribedPrintedReports": 1,
+    "digitalChapters": 13,
+    "separateArabicIntroductionParagraphs": 2,
+    "englishSegments": 50
+  },
+  "collection": {
+    "entries": 740,
+    "books": 11,
+    "sourceRecordSha256": "44ec0eb73cec2acbba414c57ae7c45c7b17128b2b31fa303994b3e7dfe739e24",
+    "prior717EntryObjectsUnchanged": true,
+    "otherTenBookRecordsUnchanged": true,
+    "recordedReferences": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "readingBytes": 20296172,
+    "releaseFiles": 175
+  },
+  "sourceReview": {
+    "record": "content/review/prayer-description-second-review.json",
+    "sourceRevision": 253001,
+    "digitalSha256": "c4063d7c083086e58a1be160d9aa7f7053bfc7a3c0986291f930f9312bbbbece",
+    "originalDigitalInputUnchanged": true,
+    "arabicCorrections": 0,
+    "printedWitnesses": [
+      {
+        "id": "brill-1862",
+        "pdfPages": [
+          194,
+          195,
+          196,
+          197,
+          198
+        ],
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+        "visuallyInspected": true
+      },
+      {
+        "id": "dar-ibn-kathir-2002",
+        "pdfPages": [
+          185,
+          186,
+          187,
+          188,
+          189
+        ],
+        "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+        "visuallyInspected": true
+      }
+    ],
+    "englishComparisons": [
+      "Aisha Bewley 717–738; reference 725 has two separately matched complete accounts.",
+      "Pinned Khan-family EPUB 1.12.717–1.12.739; full bodies individually read and exact inventory-record hashes bound to each selected account."
+    ],
+    "printedReport": {
+      "appReference": "724b",
+      "referenceStatus": "provisional-editorial-app-reference",
+      "sourceRecordId": "dar-ibn-kathir-2002:758",
+      "missingBetween": [
+        724,
+        725
+      ],
+      "selectedPrintPage": 187,
+      "otherPrintPage": 196,
+      "fullChain": true,
+      "originalPrintReferenceVisible": true,
+      "bothReadingsPreserved": true,
+      "narratorNameVariantVisible": true,
+      "chapterPlacementVariantVisible": true,
+      "existingReferencesUnchanged": true
+    },
+    "findings": [
+      "The complete missing Sa‘d report has an independent print origin, not a fabricated digital paragraph or an addition merged into its neighbour.",
+      "Complete closing routes at 720 and the attributed observation at 722 remain separate and complete.",
+      "The digital chapter 12 heading discrepancy is disclosed; its English heading is withheld and its original Arabic is retained.",
+      "The selected Asr clause at 725 remains despite its omission in the modern print and Bewley comparison.",
+      "Singular/plural questions at 726/727 and the absent/explicit question at 732/734 remain distinct.",
+      "The alternative voice/recitation and closing thoughts at 735/736 remain alternatives.",
+      "The narrator’s forgetting at 737 stays separately marked and is supported by the recorded Ibn Hajar citation."
+    ],
+    "reviewStatus": "AI-assisted personal prototype. Independent transcription, Arabic, English, context, reference and spoken-word reviews remain pending; not Darussalam wording or accuracy certification."
+  },
+  "automated": {
+    "nodeTests": 519,
+    "pythonTests": 100,
+    "total": 619,
+    "allPassed": true,
+    "integrityChecks": [
+      {
+        "command": "node scripts/build-opening-prototype.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-wikisource-book.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/audit-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/resolve-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-collection.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-audio.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node reader/check-content.mjs",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/import-bukhari.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-bukhari-jk.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-english.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-opening.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/check-opening-review.py",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/build-opening-review.py --check",
+        "exitCode": 0
+      }
+    ],
+    "initialFailuresResolved": [
+      "New focused tests initially passed incorrect arguments to the source dialog renderer and expected a later validation error rather than the earlier invalid-PDF-source rejection; corrected the tests.",
+      "The independent publication test still expected only one suffixed reference. Updated its explicit expectation to both 619b and 724b, retained numeric completeness and added exact 724 → 724b → 725 ordering. All 519 Node tests then passed."
+    ],
+    "finalGuardRetest": "Seven focused tests and complete collection reproduction passed after adding duplicate printed-origin rejection and deterministic ordering for multiple missing reports in a gap.",
+    "negativeCoverage": [
+      "Forged digital identity or a digital source span attached to a print-only report",
+      "Missing witness, changed page/hash or unexplained variant",
+      "Stale digital neighbour evidence or moving the report across its declared gap",
+      "Missing visible origin note or citing the digital input as the print origin",
+      "Assigning the same printed report origin twice",
+      "Incomplete or duplicate parts of shared Bewley 725",
+      "Attempted production promotion with pending independent reviews"
+    ]
+  },
+  "browser": {
+    "environment": "Desktop in-app browser at 320 × 740. Server stopped after complete reading download; no new physical iPhone or locked-screen audio acceptance.",
+    "renderedBlocks": [
+      {
+        "reference": 717,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 718,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 719,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 720,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 721,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 722,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 723,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 724,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": "724b",
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 725,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 726,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 727,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 728,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 729,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 730,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 731,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 732,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 733,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 734,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 735,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 736,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 737,
+        "englishExact": true,
+        "arabicExact": true
+      },
+      {
+        "reference": 738,
+        "englishExact": true,
+        "arabicExact": true
+      }
+    ],
+    "dayStandard": {
+      "fontSize": "21px",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    "nightLargest": {
+      "fontSize": "28px",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    "sessionStartAtPrintedReport": true,
+    "freeBrowsingPreservedContinue": true,
+    "offlineReloadContinue": "#read/724b",
+    "offlineBookmarkPreserved": true,
+    "offlineSuffixSearch": "#read/724b",
+    "offlineNumericSearch": "#read/724",
+    "offlinePrintedWitnessesExact": true,
+    "offlineSourceNotes": "http://127.0.0.1:51405/reader/notes/prayer-description-hadith-715-730.html#hadith-724b",
+    "backupExport": {
+      "version": 2,
+      "saved": [
+        "724b"
+      ],
+      "cursor": "724b"
+    },
+    "screenshot": "content/review/evidence/prayer-description-second-reader.png"
+  },
+  "remaining": [
+    "Continue complete-chapter review from 739 through 835: 97 digital reports remain in this selected section.",
+    "Complete English chapter introductions and independent source/translation/reference review.",
+    "Expand reviewed Cedar recordings beyond 1–6; scripts are not recordings.",
+    "Full-corpus scale qualification and fresh physical iPhone/offline/locked-screen acceptance."
+  ]
+}

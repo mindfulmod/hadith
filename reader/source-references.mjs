@@ -43,6 +43,12 @@ export function validateSourceReferences(bundle,entries,{sourceRecordSha256,entr
   const notes=row.localNotes;
   requireValue(notes&&typeof notes.path==='string'&&/^[a-z0-9][a-z0-9/_.-]*\.html$/.test(notes.path)&&!notes.path.split('/').some(p=>p==='..'||p==='.'||!p)&&identifier(notes.fragment)&&text(notes.label),'Invalid offline comparison notes');
   requireValue(Array.isArray(row.contextNotes),'Missing source context list');
+  if(entry.review?.printedReport){
+   const p=entry.review.printedReport,base=row.citations.find(c=>c.id==='base'),origin=sources.get(base?.sourceId),selected=p.witnesses?.find(w=>w.sourceId===p.selectedWitnessId),note=row.contextNotes.find(n=>n.id===p.contextNoteId);
+   requireValue(p.kind==='complete-numbered-report'&&selected&&base?.sourceId===p.inputSourceId&&origin?.kind==='arabic-input'&&origin.format==='pdf'&&base.pdfPage===selected.pdfPage,'Printed report must cite its actual Arabic print');
+   requireValue(base.locator.includes(p.printReference)&&base.locator.includes(String(entry.number)),'Printed and app references must both remain visible');
+   requireValue(note&&['base',...p.witnesses.map(w=>w.sourceId)].every(id=>note.citations?.includes(id)),'Printed report needs its visible origin and witness note');
+  }
   if(entry.review?.sourceForm){const form=entry.review.sourceForm,note=row.contextNotes.find(n=>n.id===form.contextNoteId);requireValue(note&&note.related?.length&&['base',...(form.witnesses||[]).map(w=>w.sourceId)].every(id=>note.citations?.includes(id)),'Chain-only source needs its visible evidence note');}
   for(const note of row.contextNotes){
    requireValue(text(note.label)&&text(note.text)&&Array.isArray(note.citations)&&note.citations.length>0&&note.citations.every(id=>citationIds.has(id)),'Source context must cite its evidence');

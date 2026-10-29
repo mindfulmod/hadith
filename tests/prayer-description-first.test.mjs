@@ -68,7 +68,7 @@ test('the untitled printed division and both Arabic introductions stay outside n
  const printed=book.chapters.find(c=>c.id==='chapter-08-print-90');assert.equal(printed.title,'Untitled chapter');assert.deepEqual(printed.entryNumbers,[712]);
  assert.equal(printed.sourceContext.printedHeading.sourceChapterId,'chapter-08');
  assert.deepEqual(a[1].chapters[7].entryNumbers,[710,711,712]);
- assert.equal(book.chapters.reduce((n,c)=>n+c.sourceContext.introduction.arabicParagraphs,0),2);
+ assert.equal(batch.chapters.reduce((n,c)=>n+c.sourceContext.introduction.arabicParagraphs,0),2);
  for(const c of a[1].chapters)for(const id of c.contextIds){const text=a[0].blocks.find(b=>b.htmlId===id).text;assert(!batch.entries.some(e=>e.arabic_blocks.includes(text)));}
  assert(!narrationPlan(source).entries.find(e=>e.number===712).script.includes('Untitled chapter'));
  for(const mutate of [r=>r.printedHeading.witnesses.pop(),r=>r.printedHeading.beforeEntry=711,r=>r.printedHeading.arabic='Invented title']){const b=input(),r=entry(b,712);mutate(r);rehash(r);assert.throws(()=>buildBookBatch(...b));}

@@ -18,9 +18,9 @@
   "requirements": [
     {
       "id": "source-coverage",
-      "status": "717-entry-local-preview-first-18-description-of-prayer-reports",
-      "evidence": "content/sources/openiti-bukhari/manifest.json; content/staging/bukhari-ar/catalog.json; content/sources/openiti-bukhari-jk/manifest.json; content/staging/bukhari-ar-jk/catalog.json; research/arabic-reference-audit.json; content/sources/wikisource-books.json; content/sources/wikisource-knowledge/manifest.json; research/knowledge-source-audit.json; research/ablution-source-audit.json; research/ablution-layout-verification.json; content/review/ablution-layout-review.json; research/ablution-first-verification.json; tests/ablution-batch.test.mjs; research/ablution-second-verification.json; tests/ablution-second.test.mjs; research/ablution-third-verification.json; tests/printed-supplements.test.mjs; research/ablution-fourth-verification.json; tests/ablution-fourth.test.mjs; research/ablution-fifth-verification.json; tests/ablution-fifth.test.mjs; research/ablution-sixth-verification.json; tests/ablution-sixth.test.mjs; research/ablution-seventh-verification.json; tests/ablution-seventh.test.mjs; research/ablution-eighth-verification.json; tests/ablution-eighth.test.mjs; research/ablution-final-verification.json; tests/ablution-final.test.mjs; research/ghusl-source-audit.json; tests/test_wikisource_book.py; tests/book-introduction.test.mjs; research/ghusl-first-verification.json; tests/ghusl-first.test.mjs; research/ghusl-second-verification.json; tests/ghusl-second.test.mjs; research/ghusl-third-verification.json; tests/ghusl-third.test.mjs; research/ghusl-final-verification.json; tests/ghusl-final.test.mjs; research/menstruation-first-verification.json; tests/menstruation-first.test.mjs; tests/test_menstruation_intake.py; research/menstruation-second-verification.json; tests/menstruation-second.test.mjs; research/menstruation-final-verification.json; tests/menstruation-final.test.mjs; research/tayammum-first-verification.json; tests/tayammum-first.test.mjs; tests/test_tayammum_intake.py; research/tayammum-final-verification.json; tests/tayammum-final.test.mjs; research/prayer-first-verification.json; tests/prayer-first.test.mjs; tests/test_prayer_intake.py; research/prayer-second-verification.json; tests/prayer-second.test.mjs; tests/published-collection.test.mjs; research/prayer-third-verification.json; tests/prayer-third.test.mjs; research/prayer-fourth-verification.json; tests/prayer-fourth.test.mjs; research/prayer-fifth-verification.json; tests/prayer-fifth.test.mjs; research/prayer-sixth-verification.json; tests/prayer-sixth.test.mjs; research/prayer-seventh-verification.json; tests/prayer-seventh.test.mjs; research/prayer-eighth-verification.json; tests/prayer-eighth.test.mjs; research/prayer-ninth-verification.json; tests/prayer-ninth.test.mjs; research/prayer-tenth-verification.json; tests/prayer-tenth.test.mjs; research/prayer-final-verification.json; tests/prayer-final.test.mjs; research/prayer-times-first-verification.json; tests/prayer-times-first.test.mjs; tests/test_prayer_times_intake.py; research/prayer-times-second-verification.json; tests/prayer-times-second.test.mjs; research/adhan-third-deployment.json; research/adhan-complete-verification.json; research/prayer-description-source-audit.json; content/review/congregation-overlap-review.json; tests/test_prayer_description_intake.py; research/prayer-description-first-verification.json; tests/prayer-description-first.test.mjs",
-      "remaining": "The approved live personal prototype has 632 entries. The 699-entry preview at 39b1934 awaits publication approval. A further local preview contains 717 entries across eleven selected sections (1–716 plus 619b), adding the first eighteen Description of Prayer reports. Its remaining 119 reports stay outside the reader. Complete the remaining per-report reviews, reference mapping, English chapter material and independent reviews."
+      "status": "740-entry-local-preview-with-separately-sourced-complete-printed-report",
+      "evidence": "content/sources/openiti-bukhari/manifest.json; content/staging/bukhari-ar/catalog.json; content/sources/openiti-bukhari-jk/manifest.json; content/staging/bukhari-ar-jk/catalog.json; research/arabic-reference-audit.json; content/sources/wikisource-books.json; content/sources/wikisource-knowledge/manifest.json; research/knowledge-source-audit.json; research/ablution-source-audit.json; research/ablution-layout-verification.json; content/review/ablution-layout-review.json; research/ablution-first-verification.json; tests/ablution-batch.test.mjs; research/ablution-second-verification.json; tests/ablution-second.test.mjs; research/ablution-third-verification.json; tests/printed-supplements.test.mjs; research/ablution-fourth-verification.json; tests/ablution-fourth.test.mjs; research/ablution-fifth-verification.json; tests/ablution-fifth.test.mjs; research/ablution-sixth-verification.json; tests/ablution-sixth.test.mjs; research/ablution-seventh-verification.json; tests/ablution-seventh.test.mjs; research/ablution-eighth-verification.json; tests/ablution-eighth.test.mjs; research/ablution-final-verification.json; tests/ablution-final.test.mjs; research/ghusl-source-audit.json; tests/test_wikisource_book.py; tests/book-introduction.test.mjs; research/ghusl-first-verification.json; tests/ghusl-first.test.mjs; research/ghusl-second-verification.json; tests/ghusl-second.test.mjs; research/ghusl-third-verification.json; tests/ghusl-third.test.mjs; research/ghusl-final-verification.json; tests/ghusl-final.test.mjs; research/menstruation-first-verification.json; tests/menstruation-first.test.mjs; tests/test_menstruation_intake.py; research/menstruation-second-verification.json; tests/menstruation-second.test.mjs; research/menstruation-final-verification.json; tests/menstruation-final.test.mjs; research/tayammum-first-verification.json; tests/tayammum-first.test.mjs; tests/test_tayammum_intake.py; research/tayammum-final-verification.json; tests/tayammum-final.test.mjs; research/prayer-first-verification.json; tests/prayer-first.test.mjs; tests/test_prayer_intake.py; research/prayer-second-verification.json; tests/prayer-second.test.mjs; tests/published-collection.test.mjs; research/prayer-third-verification.json; tests/prayer-third.test.mjs; research/prayer-fourth-verification.json; tests/prayer-fourth.test.mjs; research/prayer-fifth-verification.json; tests/prayer-fifth.test.mjs; research/prayer-sixth-verification.json; tests/prayer-sixth.test.mjs; research/prayer-seventh-verification.json; tests/prayer-seventh.test.mjs; research/prayer-eighth-verification.json; tests/prayer-eighth.test.mjs; research/prayer-ninth-verification.json; tests/prayer-ninth.test.mjs; research/prayer-tenth-verification.json; tests/prayer-tenth.test.mjs; research/prayer-final-verification.json; tests/prayer-final.test.mjs; research/prayer-times-first-verification.json; tests/prayer-times-first.test.mjs; tests/test_prayer_times_intake.py; research/prayer-times-second-verification.json; tests/prayer-times-second.test.mjs; research/adhan-third-deployment.json; research/adhan-complete-verification.json; research/prayer-description-source-audit.json; content/review/congregation-overlap-review.json; tests/test_prayer_description_intake.py; research/prayer-description-first-verification.json; tests/prayer-description-first.test.mjs; content/review/prayer-description-second-review.json; scripts/printed-reports.mjs; tests/prayer-description-second.test.mjs; research/prayer-description-second-verification.json",
+      "remaining": "The approved live personal prototype has 632 entries at a6d5522. Local preview has 740 entries through 738 plus 619b and provisional 724b, across eleven selected sections. The latter is the separately transcribed printed reference 758 omitted between digital 724/725, with both witness readings and chapter-placement differences visible. Description of Prayer has 97 digital reports left from 739 through 835. Full collection and independent certification remain incomplete."
     },
     {
       "id": "english-full-collection",
@@ -78,8 +78,8 @@
     }
   ],
   "nextActions": [
-    "Keep the 699-entry commit 39b1934 and the newer 717-entry local preview separate from the approved 632-entry live release until publication is authorized.",
-    "Continue Description of Prayer per-report and complete-chapter review at 717. Reports 699–716 are admitted only to the local personal prototype; 119 selected reports remain. Preserve the mapped 817/818 boundary.",
+    "Keep the 699-entry approval candidate and subsequent local previews separate from the approved 632-entry live release until the specific publication is authorized.",
+    "Continue Description of Prayer complete-chapter review at 739. The local preview contains 40 digital reports 699–738 and one separately sourced printed report, provisionally 724b; 97 selected digital reports remain. Preserve the mapped 817/818 boundary.",
     "Preserve the overlapping congregation source as excluded evidence. It must not add duplicate entries or replace selected Adhan wording.",
     "Measure full bilingual loading and memory costs before further substantial expansion; existing scale tests and desktop checks do not establish physical iPhone performance for the full corpus.",
     "Complete the Arabic edition/reference map using the new exact-span inventory and pinned printed-witness findings; keep combined labels distinct from missing or misassigned bodies.",
@@ -347,7 +347,7 @@
     "remaining": "Independent review, English chapter introductions and additional reviewed audio. The section boundary is specific to this digital source; other editions continue Adhan beyond 698."
   },
   "prayerDescriptionIntake": {
-    "status": "first-18-reports-in-unpublished-personal-preview",
+    "status": "40-digital-reports-and-one-printed-report-in-unpublished-preview",
     "source": "content/sources/wikisource-prayer-description/manifest.json",
     "audit": "research/prayer-description-source-audit.json",
     "inventory": "content/staging/bukhari-prayer-description-wikisource/catalog.json",
@@ -357,25 +357,32 @@
     "introductionParagraphs": 20,
     "readerEligible": true,
     "remaining": [
-      "Review complete chapters from 717; 119 selected reports remain outside the reader.",
+      "Review complete chapters from 739; 97 selected digital reports remain outside the reader.",
       "Keep chapter-only material separate from numbered sessions and audio; English introductions remain pending.",
       "Record every wording difference explicitly and preserve unchanged raw sources.",
       "Obtain independent Arabic, English, chapter, reference and spoken-word reviews before production claims."
     ],
-    "readerEligibleRange": "699–716 only",
-    "readerReports": 18,
-    "readerDigitalChapters": 9,
-    "readerBrowsingSections": 10,
-    "readerArabicIntroductionParagraphs": 2,
-    "verification": "research/prayer-description-first-verification.json"
+    "readerEligibleRange": "699–738 plus provisional app reference 724b",
+    "readerReports": 41,
+    "readerDigitalChapters": 22,
+    "readerBrowsingSections": 23,
+    "readerArabicIntroductionParagraphs": 4,
+    "verification": "research/prayer-description-second-verification.json",
+    "printedReports": [
+      {
+        "appReference": "724b",
+        "printedSourceRecord": "dar-ibn-kathir-2002:758",
+        "status": "AI-transcribed; independent review and final app-reference choice pending"
+      }
+    ]
   },
   "currentLocalPreview": {
-    "entries": 717,
+    "entries": 740,
     "books": 11,
-    "release": "opening-e77c89cc6fc3",
-    "readingBytes": 19763712,
+    "release": "opening-be81906d8d37",
+    "readingBytes": 20296172,
     "publication": "not-published",
-    "verification": "research/prayer-description-first-verification.json",
+    "verification": "research/prayer-description-second-verification.json",
     "liveEntries": 632,
     "liveCommit": "a6d55223d3d863f2583ba67aa27edd139e9d7d6a"
   }
