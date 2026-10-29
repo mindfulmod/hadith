@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The personal reader is at `reader/`: 514 complete selected Bukhari entries across nine books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The personal reader is at `reader/`: 530 complete selected Bukhari entries across nine books, Cedar AI narration for Hadith 1–6, and separately checked reading/audio downloads. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Run
 
@@ -813,3 +813,16 @@ Unavailable, failed or stalled workers use a cooperative fallback. Failed conten
 All **501 tests (419 Node, 82 Python)** and thirteen integrity checks pass. Actual browser workers and forced fallback, rapid replacement, cancellation, pagination, source-origin labels and mismatch refusal were exercised. With the preview server stopped, a fresh worker loaded the complete saved collection and returned exact English/Arabic results without fallback. The reader’s Continue remained unchanged. The 514 entries, nine active book packs, source records, audio catalog and narration scripts are byte-for-byte unchanged.
 
 The pinned 7,111-record English-only comparison benchmark reduced uncached query medians from roughly 30–32 ms to 1.6–3.0 ms after indexing; cached pagination was smaller still. These are Node CPU measurements, not iPhone latency or proof of full bilingual production scale. The browser probe observed continued animation frames during initial search and forced fallback. Evidence and limitations: `research/async-search-verification.json`. Physical iPhone acceptance, full corpus, independent text/audio review and remaining chapter translations are still pending.
+
+
+### Prayer Times 515–530 and iPhone search acceptance — 28 October 2026
+
+The personal prototype now contains **530 complete selected numbered entries across nine books**. This batch adds sixteen unchanged Arabic report paragraphs, 41 working English segments, six complete chapters and one separately browseable Arabic introduction. Every earlier entry and the other eight active book packs remain unchanged. Full narrator chains, first-person wording, uncertainties, repeated accounts and closing transmissions remain in source order.
+
+Both pinned Arabic prints were visually inspected and individual Bewley/Khan-family references compared. Differences in report order, chapter placement, reporting verbs, omitted remarks and provisional lexical choices are recorded per entry. No new Arabic correction is made. English remains AI-assisted working translation pending independent review, not Darussalam wording or certified text.
+
+All **505 tests (423 Node, 82 Python)** and thirteen integrity checks pass. Every new Arabic and English block matched the rendered reader. With the server stopped, reload, next-hadith navigation, exact search, complete Arabic and all six chapter-source sections worked. Free browsing preserved Continue at Hadith 180. Standard 21px day and largest 28px night text fit an actual 320px viewport without horizontal overflow. Evidence: `research/prayer-times-second-verification.json`.
+
+The user separately confirmed that the requested iPhone search/pagination/result-opening flow felt smooth on release `opening-62053d90951b` (514 entries). This is user acceptance of that flow, not an instrumented performance score or full-corpus qualification. See `research/iphone-search-acceptance.json`.
+
+The reading download is **14,991,312 bytes (14.99 MB)**. Complete scripts cover 530 entries; actual Cedar recordings remain **1–6**. Next source work begins at selected 531, with 47 Prayer Times reports still outside the reader. Full-collection work, English chapter introductions, independent reviews, further reviewed recordings and full bilingual scale checks remain unfinished.

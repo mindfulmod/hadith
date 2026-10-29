@@ -1,6 +1,6 @@
 {
   "checkedAt": "2026-10-28",
-  "status": "implemented-desktop-and-offline-verified-iphone-pending",
+  "status": "desktop-and-offline-verified-iphone-flow-user-confirmed",
   "readerRelease": "opening-62053d90951b",
   "readerEntries": 514,
   "sourceRecordSha256": "6dd56a35b53d75f4b78bf13d5831727305912f2b568faa305831371f101c90c5",
@@ -368,7 +368,7 @@
     "reader/books/prayer-9cd174e568b06a5f.json",
     "reader/books/prayer-times-e964273ca526be98.json"
   ],
-  "physicalDevice": "Physical iPhone performance and locked-screen separate-recording acceptance remain unverified by this update. Desktop frame counts are observed animation frames during one test run, not an INP score or a guarantee of no long tasks.",
+  "physicalDevice": "User reported the requested iPhone search flow feels smooth on 28 October. No instrumented iPhone timings or full-corpus qualification are claimed. Locked-screen separate-recording acceptance remains pending.",
   "limitations": [
     "The first search still loads and validates all available books. Index memory and full bilingual corpus scale require further measurement.",
     "The fallback yields during indexing and scanning; a single JSON parse, source-validation operation or exceptionally large block is not guaranteed to remain under a frame budget.",
@@ -384,5 +384,6 @@
       "url": "https://web.dev/articles/optimize-long-tasks",
       "finding": "Long main-thread tasks delay interactions; yielding work permits the browser to process other tasks. The fallback batches indexing and searching, while the preferred worker handles loading and validation away from the UI."
     }
-  ]
+  ],
+  "iphoneAcceptance": "research/iphone-search-acceptance.json"
 }
