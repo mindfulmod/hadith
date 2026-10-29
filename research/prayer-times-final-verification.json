@@ -2,8 +2,8 @@
   "checkedAt": "2026-10-29",
   "status": "personal-prototype-source-and-browser-verified-independent-review-pending",
   "baselineCommit": "f07fd336613a983a00afd745050326cbbffb4bf5",
-  "readerRelease": "opening-1c808a74576a",
-  "sourceRecordSha256": "07b59180f171e38a2a3ef4d9ea8aca180b029170ed9c36c60409c5aef7f0e37d",
+  "readerRelease": "opening-6347315fee30",
+  "sourceRecordSha256": "e71302063e4ec44cefd45f20febad44b6c3d1114d6dbb8e6aad0eca7663f2d5e",
   "collection": {
     "entries": 577,
     "books": 9,
@@ -37,7 +37,7 @@
       576,
       577
     ],
-    "addedEnglishSegments": 76,
+    "addedEnglishSegments": 78,
     "addedChapters": [
       27,
       28,
@@ -97,7 +97,8 @@
     "englishComparisons": "Bewley 550–577 and the individually matched, hash-checked Khan-family EPUB records 1.10.549–1.10.576 were inspected. Bewley 574 is a frame and backward pointer to 516, not a second complete English body. Both 557 comparisons have only the short backward-reference form. Omitted narrator frames, chains and remarks are recorded separately.",
     "correction572": "Two quoted wordings reversed in the digital paragraph are restored to the order in both inspected prints. Each correction has immutable original Unicode offsets, both witnesses and its own English segment; each binds the complete final derived paragraph. The original digital paragraph remains accessible offline. Multiple corrections are permitted only in non-overlapping source order with shifted derived offsets.",
     "chainOnly557": "Full chain and short backward reference retained, open by default. Separate link to 556; no report body copied into this entry.",
-    "commentary": "Primary Ibn Hajar passages were consulted for the quoted command attribution, the waiting account, difficult words and the long guests report. These lexical and attribution decisions remain provisional."
+    "commentary": "Primary Ibn Hajar passages were consulted for the quoted command attribution, the waiting account, difficult words and the long guests report. These lexical and attribution decisions remain provisional.",
+    "attributionRepair574": "The I have forgotten remark is now a separate transmission note, consistent with parallel 516. The Arabic is unchanged and all other 576 entry objects are identical to the initial 577-entry build."
   },
   "preservation": {
     "previous549EntryObjectsUnchanged": true,
@@ -143,7 +144,7 @@
       {
         "command": "node scripts/build-collection.mjs --check",
         "exitCode": 0,
-        "output": "9 books, 577 complete prototype source entries; source 07b59180f171e38a2a3ef4d9ea8aca180b029170ed9c36c60409c5aef7f0e37d\n"
+        "output": "9 books, 577 complete prototype source entries; source e71302063e4ec44cefd45f20febad44b6c3d1114d6dbb8e6aad0eca7663f2d5e\n"
       },
       {
         "command": "node scripts/build-audio.mjs --check",
@@ -186,7 +187,8 @@
         "output": "Five-entry review artifact matches the pinned candidate text; reader unchanged\n"
       }
     ],
-    "packaging": "All 440 Node tests and 82 Python tests passed, including published source pages and public-artifact packaging. The narrow targeted test initially assumed a non-rendered context ID would be present in HTML; it was corrected to assert the visible evidence text. No production gate or source validation was relaxed."
+    "packaging": "All 440 Node tests and 82 Python tests passed, including published source pages and public-artifact packaging. The narrow targeted test initially assumed a non-rendered context ID would be present in HTML; it was corrected to assert the visible evidence text. No production gate or source validation was relaxed.",
+    "afterAttributionRepair": "All 17 targeted source, correction and offline source-page tests and all 13 integrity commands passed. Exact-commit CI reruns the full 440 Node and 82 Python tests before deployment."
   },
   "browser": {
     "renderedRecords": [
@@ -384,7 +386,7 @@
       },
       {
         "number": 574,
-        "englishBlocks": 2,
+        "englishBlocks": 4,
         "arabicBlocks": 1,
         "exact": true,
         "overflow": false,
@@ -592,9 +594,18 @@
     },
     "afterBrowsingContinue": "#read/180",
     "screenshot": "/private/tmp/hadith-prayer-times-final-preview.png",
-    "limitations": "Desktop browser verification at 320px, not a new physical iPhone or locked-screen audio acceptance. No new recordings were created."
+    "limitations": "Desktop browser verification at 320px, not a new physical iPhone or locked-screen audio acceptance. No new recordings were created.",
+    "attributionRepair574": {
+      "englishBlocks": 4,
+      "arabicUnchanged": true,
+      "exactRenderedText": true,
+      "narratorNoteSeparate": "Transmission note\n\nAnd I have forgotten what he said about Maghrib.",
+      "overflow": false,
+      "width": 320,
+      "offlineReloadExact": true
+    }
   },
-  "readingDownloadBytes": 16309248,
+  "readingDownloadBytes": 16310803,
   "releaseFiles": 150,
   "sourceNotes": {
     "pages": 67,

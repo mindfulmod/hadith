@@ -47969,7 +47969,9 @@
       "arabic_sha256": "f465e0b6278da1826609f978fd3de6501959ff6b0b254c14f62fa145bc937709",
       "english_blocks": [
         "Musaddad related to us. He said: Yahya related to us. He said: ‘Awf related to us. He said: Abu al-Minhal related to us. He said:",
-        "I went with my father to Abu Barzah al-Aslami. My father said to him: “Tell us how the Messenger of Allah, may Allah bless him and grant him peace, used to pray the prescribed prayer.” He said: “He used to pray the midday prayer—which you call the first—when the sun declined, and he prayed ‘Asr, then one of us would return to his family in the furthest part of Madinah while the sun was bright. I have forgotten what he said about Maghrib.” He said: “He liked to delay ‘Isha’.” He said: “He disliked sleeping before it and conversation after it. He used to finish the morning prayer when one of us could recognise the person sitting beside him, and he would recite from sixty to a hundred.”"
+        "I went with my father to Abu Barzah al-Aslami. My father said to him: “Tell us how the Messenger of Allah, may Allah bless him and grant him peace, used to pray the prescribed prayer.” He said: “He used to pray the midday prayer—which you call the first—when the sun declined, and he prayed ‘Asr, then one of us would return to his family in the furthest part of Madinah while the sun was bright.”",
+        "And I have forgotten what he said about Maghrib.",
+        "He said: “He liked to delay ‘Isha’.” He said: “He disliked sleeping before it and conversation after it. He used to finish the morning prayer when one of us could recognise the person sitting beside him, and he would recite from sixty to a hundred.”"
       ],
       "english_status": "Personal prototype: AI-assisted working translation; two Arabic prints and two English comparison families were inspected. One English comparison abbreviates the report; its omitted wording and any explicit Arabic correction are documented in the source notes. Independent Arabic, English and context review pending.",
       "presentation": {
@@ -47984,6 +47986,18 @@
           {
             "block": 0,
             "start": 75,
+            "end": 285,
+            "kind": "report"
+          },
+          {
+            "block": 0,
+            "start": 285,
+            "end": 308,
+            "kind": "transmission-note"
+          },
+          {
+            "block": 0,
+            "start": 308,
             "end": 454,
             "kind": "report"
           }
@@ -47998,7 +48012,19 @@
           {
             "block": 1,
             "start": 0,
-            "end": 692,
+            "end": 397,
+            "kind": "report"
+          },
+          {
+            "block": 2,
+            "start": 0,
+            "end": 48,
+            "kind": "transmission-note"
+          },
+          {
+            "block": 3,
+            "start": 0,
+            "end": 249,
             "kind": "report"
           }
         ]
@@ -48007,9 +48033,9 @@
         "status": "personal-prototype-only",
         "independentReview": "pending",
         "sourceRecordId": "wikisource-bukhari-prayer-times-r484870:574",
-        "reviewRecordSha256": "552bef7515fbf9f3d7221ac91165a3ca3ed6455f98209bde96fd6433afdee439",
+        "reviewRecordSha256": "4860b1896e91b7cea9dedf4cf5739e5dbea9b87fdad83232bc82eef2ef9667b1",
         "notes": [
-          "The complete father/son frame, explicit forgotten Maghrib detail, repeated He said, both disliked actions and the final recitation range remain. The counted unit is implicit in the selected paragraph; verses is not inserted.",
+          "The complete father/son frame, explicit forgotten Maghrib detail, repeated He said, both disliked actions and the final recitation range remain. The I have forgotten remark is a separate transmission note, consistent with 516, rather than part of Abu Barzah’s quoted description. The counted unit is implicit in the selected paragraph; verses is not inserted.",
           "Bewley 574 supplies only the opening frame and refers back to 516, noting an omitted alternative Isha name. It is recorded as an abbreviated comparison, not a second complete English body. The historical chapter heading adds a lexical explanation of samar absent from the selected heading and modern print; it is not imported."
         ],
         "reviewScope": "AI-assisted translation of the complete selected Arabic, compared with two visually inspected Arabic prints and individually matched English comparisons. Original inputs, declared corrections, comparison omissions, variant wording and uncertain lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review is pending; this is not certification."
@@ -48369,7 +48395,7 @@
     "tayammumSourceSha256": "e5ad7c8f11523b76e258adb2ad188a87bced650e99705e59bada404c416fb69f",
     "prayerReviewSha256": "532651deee10f3e836455a914b38b0b431cd00147777f8f60e757427b433b678",
     "prayerSourceSha256": "5b1b76c65bec1500bb4b02eaad08f877abd095720a37b8a497feee4359722dd7",
-    "prayer-timesReviewSha256": "515f3f265bdfd1358a6771a0af2915e1d53e093eeff2248c4cadd732b7123656",
+    "prayer-timesReviewSha256": "d29b1c5724bc56fa8629a871cc352e5c593b93ba2c2e80724e0c6344683c088b",
     "prayer-timesSourceSha256": "4eb1bf371c4aeb6b8475802af8dd56211038e565fc6c08d5d44ae80a667890d7"
   }
 }
