@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The local personal reader at `reader/` contains 801 selected Bukhari entries across eleven sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The local personal reader at `reader/` contains 820 selected Bukhari entries across eleven sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Publisher scaling · 29 October 2026
 
@@ -1016,3 +1016,14 @@ The 50 new English segments retain all chains, repetitions, uncertainty and clos
 All **652 tests (552 Node and 100 Python)** and fourteen integrity checks passed. With the local server stopped, every new rendered Arabic and English entry matched its stored text; all sixteen chapter sections matched their Arabic headings and introductions. Exact phrase search, the saved bookmark, per-report source differences and backup export worked offline. Browsing outside the 794–799 session preserved Continue at 799. Standard 21px day text and largest 28px night text fit at 320px. The normal update page recovered an older local cached build. These are desktop checks, not fresh physical iPhone or locked-screen acceptance. Evidence: `research/prayer-description-fifth-verification.json`.
 
 Reading downloads total **21,854,732 bytes (21.85 MB)**. Complete scripts cover 801 entries; actual Cedar recordings remain 1–6. The remaining 36 selected reports in this section, the rest of Bukhari, English introductions, independent reviews, further recordings and full-corpus qualification remain unfinished. This preview has not been published.
+
+
+### Description of Prayer 800–818 in a local preview
+
+The local preview now contains **820 entries**, adding 19 complete reports and chapters 68–78. All prior 801 entry objects, the other ten book contexts and packs, original digital inputs, artwork and actual recordings remain unchanged. The public website remains the approved 632-entry release.
+
+The 47 new English segments retain full chains, count differences, alternate wordings and compiler notes. Two recorded corrections restore a missing narrator link in 806 and a word in 810, with both pinned printed witnesses and unchanged originals accessible. Hadith 807 retains unnamed closing pronouns; 812 preserves all eight routes. Hadith 817 retains an attested closing variant and stays separate from 818 despite their shared physical source paragraph. Four Arabic chapter introductions remain separate from numbered sessions and audio.
+
+All **660 tests (560 Node and 100 Python)** and fourteen integrity checks passed. With the local server stopped, every new Arabic and English entry and all eleven chapter source sections matched their stored text exactly. Search, next-hadith navigation, the saved bookmark and original correction evidence worked offline. Browsing outside the session preserved Continue at 818. Standard 21px day text and largest 28px night text fit at 320px. These are desktop checks, not fresh physical iPhone, locked-screen audio or backup acceptance. Evidence: `research/prayer-description-sixth-verification.json`.
+
+Reading downloads total **22,332,764 bytes (22.33 MB)**. Complete scripts cover 820 entries; actual Cedar recordings remain 1–6. The remaining 17 selected reports in this section, the rest of Bukhari, English introductions, independent reviews, further recordings and full-corpus qualification remain unfinished. This preview has not been published.
