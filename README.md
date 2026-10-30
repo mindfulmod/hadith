@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The local personal reader at `reader/` contains 780 selected Bukhari entries across eleven sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The local personal reader at `reader/` contains 801 selected Bukhari entries across eleven sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Publisher scaling · 29 October 2026
 
@@ -1005,3 +1005,14 @@ The 52 new English segments retain full chains, repetitions, interleaved variant
 All **643 tests (543 Node and 100 Python)** and fourteen integrity checks passed. At 320px, the standard 21px day and largest 28px night text fit without horizontal overflow. With the final preview server stopped, all twenty rendered Arabic and English entries matched the source exactly; all thirteen chapter notes matched their stored Arabic; the preceding chain opened and Continue remained at 773. Search, bookmarks, correction evidence and the unchanged original were also checked offline. The normal update page recovered the reused local origin from an older synthetic test worker. These are desktop checks, not new physical iPhone or locked-screen audio acceptance. Evidence and limits: `research/prayer-description-fourth-verification.json`.
 
 Reading downloads total **21,331,257 bytes (21.33 MB)**. Complete scripts cover 780 entries; Cedar recordings still cover only 1–6. There are 57 selected digital reports left in Description of Prayer. The rest of Bukhari, English chapter material, independent review, further recordings and full-corpus qualification remain unfinished. The new preview has not been published.
+
+
+### Description of Prayer 779–799 in a local preview
+
+The local preview now contains **801 entries**, adding 21 complete reports and chapters 52–67. All prior 780 entry objects, the other ten book contexts and packs, original digital inputs, artwork and actual recordings remain unchanged. The public website remains the approved 632-entry release.
+
+The 50 new English segments retain all chains, repetitions, uncertainty and closing routes. No Arabic correction was made in this batch. At 785, classical commentary documents the selected and reading as well as the or reading in the two printed witnesses; the selected text remains intact, with a visible note. Both opening chains and both closing routes at 794 remain, as do the interleaved chain variant at 795 and the complete closing route at 798. Three Arabic chapter introductions stay separately browsable with English pending. The user confirmed app reference **724b** with printed reference **758**; this numbering decision does not certify its text.
+
+All **652 tests (552 Node and 100 Python)** and fourteen integrity checks passed. With the local server stopped, every new rendered Arabic and English entry matched its stored text; all sixteen chapter sections matched their Arabic headings and introductions. Exact phrase search, the saved bookmark, per-report source differences and backup export worked offline. Browsing outside the 794–799 session preserved Continue at 799. Standard 21px day text and largest 28px night text fit at 320px. The normal update page recovered an older local cached build. These are desktop checks, not fresh physical iPhone or locked-screen acceptance. Evidence: `research/prayer-description-fifth-verification.json`.
+
+Reading downloads total **21,854,732 bytes (21.85 MB)**. Complete scripts cover 801 entries; actual Cedar recordings remain 1–6. The remaining 36 selected reports in this section, the rest of Bukhari, English introductions, independent reviews, further recordings and full-corpus qualification remain unfinished. This preview has not been published.
