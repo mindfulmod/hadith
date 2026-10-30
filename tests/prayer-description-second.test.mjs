@@ -23,7 +23,7 @@ test('the next batch retains 22 digital reports unchanged and adds one independe
   assert.equal((e.arabic_blocks.join('').match(/ﷺ/g)||[]).length,(e.english_blocks.join(' ').match(/may Allah bless him and grant him peace/g)||[]).length);
   if(!r.printedReport)assert.deepEqual(e.arabic_blocks,r.paragraphIds.map(id=>a[0].blocks.find(b=>b.htmlId===id).text));
  }
- assert.equal(a[0].records.length,137);assert.equal(ledger.books.find(b=>b.id==='prayer-description').sourceEntryCount,138);
+ assert.equal(a[0].records.length,137);assert.equal(ledger.books.find(b=>b.id==='prayer-description').sourceEntryCount,140);
  assert.throws(()=>buildBooks(source,ledger,{production:true}),/Evaluation text cannot enter/);
 });
 

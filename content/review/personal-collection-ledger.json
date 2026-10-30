@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "namespace": "bukhari-opening-v1",
   "publication": "personal-prototype",
-  "sourceRecordSha256": "e863527b25dc75d89adb6fed016d42b0a09859544af86fa65dd97f03aeccccb7",
+  "sourceRecordSha256": "8d6b812f202871c6eb1d1b59375c3ca2caacdc6ec8638edd0419d32b1f43d053",
   "rights": {
     "status": "pending",
     "evidence": [
@@ -10521,7 +10521,7 @@
       "id": "prayer-description",
       "number": 11,
       "title": "Description of Prayer",
-      "sourceEntryCount": 138,
+      "sourceEntryCount": 140,
       "entryNumbers": [
         699,
         700,
@@ -10660,7 +10660,9 @@
         832,
         833,
         834,
-        835
+        835,
+        "835b",
+        "835c"
       ],
       "chapters": [
         {
@@ -12417,6 +12419,33 @@
             "notes": {
               "path": "prayer-description-review.html",
               "fragment": "chapter-84"
+            }
+          }
+        },
+        {
+          "id": "chapter-84-print-163",
+          "title": "Women praying behind men",
+          "entryNumbers": [
+            "835b",
+            "835c"
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "prayer-description-review.html",
+              "fragment": "chapter-84-print-163"
+            },
+            "printedHeading": {
+              "sourceChapterId": "chapter-84",
+              "beforeEntry": "835b",
+              "printedChapterNumber": 163,
+              "evidenceSha256": "f64dd14bb14f337fe159fd033dd8f22e6320e458984eb5664a024eec06d9ecb4"
             }
           }
         }
@@ -26639,7 +26668,7 @@
     {
       "number": 835,
       "id": "bukhari:835",
-      "entrySha256": "b75016bb5357ce94d1e8b5c9cd7b654588f89179f7d38ca50f4f11ed3e7aec0f",
+      "entrySha256": "dfe08e4490b5814115f300ba1d0224cf38f0c851dcf975e0c700ab1ea257d107",
       "arabicSha256": "8fec50558ad9b7a1f1ae23cc9e3cf8a3d289e39643a680010fe9b9f969328ed8",
       "englishSha256": "16cdb169b4a39eb61b81e44f668cd3c2086f9ddbe2d5650a365c9ac722815772",
       "status": "personal-prototype-only",
@@ -26652,15 +26681,49 @@
       "contextReview": {
         "status": "pending"
       }
+    },
+    {
+      "number": "835b",
+      "id": "bukhari:835b",
+      "entrySha256": "8e89d5f1f6f1bfcd32d20b320eb0a8440b043553f7d8067f9b518f5120e6ae8e",
+      "arabicSha256": "f4e3e32bba3cdf0320ef3d498de4a6570716e5b23e3a7bd0dd403631d2de64ab",
+      "englishSha256": "f4bbfa085b3fac669507f44fcea019c8d67db4a019de3e953c57bb9a5b48dba6",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": "835c",
+      "id": "bukhari:835c",
+      "entrySha256": "7f84c8f80ab284682b343195f54db5a9f9f724bbb300ba9d3cf4c106f8d905f0",
+      "arabicSha256": "1389dee17bf08b4291c1789dd41404e604e98f6ce22d785d7614a3ebbf3d369c",
+      "englishSha256": "3c309fbb54f90f1294c874e269fe1d52874bfbb510ce5b0afdd0b51488ec712a",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
     }
   ],
-  "catalogContextSha256": "ce30abd86ba9d3eb3373a7d883a02bf6498c94d1a55bd1afa9ac0453c0e2da60",
+  "catalogContextSha256": "d375c374ed5fa39b0ea1d581320b13cc5e5185d42bf7596f08820ac8abe180e2",
   "collectionReview": {
     "status": "pending"
   },
   "sourceReferences": {
     "schemaVersion": 1,
-    "sourceRecordSha256": "e863527b25dc75d89adb6fed016d42b0a09859544af86fa65dd97f03aeccccb7",
+    "sourceRecordSha256": "8d6b812f202871c6eb1d1b59375c3ca2caacdc6ec8638edd0419d32b1f43d053",
     "sources": [
       {
         "id": "arabic-base",
@@ -27858,6 +27921,34 @@
         "kind": "commentary",
         "format": "web",
         "url": "https://www.islamweb.net/ar/library/content/52/150/باب-متى-يصح-سماع-الصغير"
+      },
+      {
+        "id": "dar-tasil-2012-v1",
+        "label": "Arabic print · Dar al-Tasil 2012 · volume 1",
+        "kind": "arabic-witness",
+        "format": "pdf",
+        "url": "https://archive.org/download/FP144261FP/01_144261.pdf"
+      },
+      {
+        "id": "qastallani-prayer-tail",
+        "label": "Al-Qastallani · Irshad al-Sari · repeated chapter discussion",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://ablibrary.net/book_content/b/18673/154?lang=ar"
+      },
+      {
+        "id": "sunnah-tail-874",
+        "label": "Sunnah.com · Bukhari 874 · English comparison",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://sunnah.com/bukhari:874"
+      },
+      {
+        "id": "sunnah-tail-875",
+        "label": "Sunnah.com · Bukhari 875 · English comparison",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://sunnah.com/bukhari:875"
       }
     ],
     "entries": [
@@ -71677,7 +71768,7 @@
       {
         "id": "bukhari:835",
         "number": 835,
-        "entrySha256": "b75016bb5357ce94d1e8b5c9cd7b654588f89179f7d38ca50f4f11ed3e7aec0f",
+        "entrySha256": "dfe08e4490b5814115f300ba1d0224cf38f0c851dcf975e0c700ab1ea257d107",
         "translation": {
           "label": "Personal prototype · English working translation",
           "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
@@ -71734,10 +71825,172 @@
           "fragment": "hadith-835",
           "label": "Comparison notes and chapter source for this hadith"
         }
+      },
+      {
+        "id": "bukhari:835b",
+        "number": "835b",
+        "entrySha256": "8e89d5f1f6f1bfcd32d20b320eb0a8440b043553f7d8067f9b518f5120e6ae8e",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: a separate occurrence transcribed from an identified Arabic print and checked against a second print. Two English comparison families cover earlier parallel accounts; their wording and attribution differences are explicit. The app and printed references remain separate. Independent transcription, Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-print-dar-ibn-kathir-2002",
+            "pdfPage": 212,
+            "locator": "Printed reference 874 · app reference 835b",
+            "scope": "Manual unvowelled transcription of the complete printed reports, including every chain word and the Prophet honorific represented as ﷺ. Vowel marks, ornament, report numbers, quotation punctuation, editorial cross-references and footnote markers are outside the reading blocks. Lexical words are retained; no copy is represented as a verbatim facsimile. Independent transcription review remains pending."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-prayer-description",
+            "locator": "Book of the Description of the Prayer · entry 833",
+            "scope": "Earlier parallel occurrence only; this English page ends at 835 and does not separately list the tail. Matches the basic account. It says the orphan where the selected Arabic has an indefinite orphan; the working English retains an orphan."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Earlier parallel occurrence · 1.12.830",
+            "scope": "Earlier parallel account only; not a separately listed English tail occurrence. The account body agrees in action and ordering. The shortened English narrator introduction does not replace the complete selected Arabic chain."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 212",
+            "pdfPage": 212,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-tasil-2012-v1",
+            "sourceId": "dar-tasil-2012-v1",
+            "locator": "PDF page 727",
+            "pdfPage": 727,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "online-tail",
+            "sourceId": "sunnah-tail-874",
+            "locator": "Printed-number counterpart 874",
+            "scope": "Exact tail occurrence; English body only, without the full Arabic chain. Body sequence and positions agree. English adds stood in parentheses for Umm Sulaym; the working English uses the same grammatical completion as the existing parallel report. This does not establish independent chain translation or reuse rights."
+          },
+          {
+            "id": "edition-placement",
+            "sourceId": "qastallani-prayer-tail",
+            "locator": "Online page 154 · repeated chapter before Friday Prayer",
+            "scope": "Classical discussion of the repeated occurrence, omitted copies, reversed order and feminine qalat versus masculine qala. This is edition evidence, not independent approval of this translation."
+          }
+        ],
+        "contextNotes": [
+          {
+            "id": "835b-print-origin",
+            "label": "Separate printed occurrence · reference 874",
+            "text": "App reference 835b preserves a separately printed occurrence after the digital section ends. Its full chain and wording remain separate from the earlier parallel account. Independent review is pending.",
+            "citations": [
+              "base",
+              "dar-ibn-kathir-2002",
+              "dar-tasil-2012-v1",
+              "edition-placement"
+            ],
+            "related": [
+              {
+                "id": "bukhari:833",
+                "number": 833,
+                "label": "Earlier parallel account · Hadith 833"
+              }
+            ]
+          }
+        ],
+        "localNotes": {
+          "path": "prayer-description-review.html",
+          "fragment": "hadith-835b",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:835c",
+        "number": "835c",
+        "entrySha256": "7f84c8f80ab284682b343195f54db5a9f9f724bbb300ba9d3cf4c106f8d905f0",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: a separate occurrence transcribed from an identified Arabic print and checked against a second print. Two English comparison families cover earlier parallel accounts; their wording and attribution differences are explicit. The app and printed references remain separate. Independent transcription, Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-print-dar-ibn-kathir-2002",
+            "pdfPage": 212,
+            "locator": "Printed reference 875 · app reference 835c",
+            "scope": "Manual unvowelled transcription of the complete printed reports, including every chain word and the Prophet honorific represented as ﷺ. Vowel marks, ornament, report numbers, quotation punctuation, editorial cross-references and footnote markers are outside the reading blocks. Lexical words are retained; no copy is represented as a verbatim facsimile. Independent transcription review remains pending."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-prayer-description",
+            "locator": "Book of the Description of the Prayer · entry 832",
+            "scope": "Earlier parallel occurrence, not this separately numbered tail. Uses He said and I think and expands the final group to people who had finished prayer. The selected tail instead has feminine She said, plural We think and the men. These distinctions are retained."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Earlier parallel occurrence · 1.12.829",
+            "scope": "Earlier parallel account only; not a separately listed English tail occurrence. The body names al-Zuhri, uses an apparent transcription defect “for someone”, and says “get in touch”. The selected Arabic has feminine qalat, a little while, and the men catching up; the working English preserves those distinctions."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 212",
+            "pdfPage": 212,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-tasil-2012-v1",
+            "sourceId": "dar-tasil-2012-v1",
+            "locator": "PDF page 727",
+            "pdfPage": 727,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "online-tail",
+            "sourceId": "sunnah-tail-875",
+            "locator": "Printed-number counterpart 875",
+            "scope": "Exact tail occurrence; English body and closing comment, without complete chain. Broad action sequence agrees, but the English names al-Zuhri whereas the displayed Arabic and both prints have feminine qalat. The working English retains She said; the named attribution remains a comparison difference."
+          },
+          {
+            "id": "edition-placement",
+            "sourceId": "qastallani-prayer-tail",
+            "locator": "Online page 154 · repeated chapter before Friday Prayer",
+            "scope": "Classical discussion of the repeated occurrence, omitted copies, reversed order and feminine qalat versus masculine qala. This is edition evidence, not independent approval of this translation."
+          }
+        ],
+        "contextNotes": [
+          {
+            "id": "835c-print-origin",
+            "label": "Separate printed occurrence · reference 875",
+            "text": "App reference 835c preserves a separately printed occurrence after the digital section ends. Its full chain and wording remain separate from the earlier parallel account. The closing “She said” follows both selected prints; no narrator name has been supplied. Independent review is pending.",
+            "citations": [
+              "base",
+              "dar-ibn-kathir-2002",
+              "dar-tasil-2012-v1",
+              "edition-placement"
+            ],
+            "related": [
+              {
+                "id": "bukhari:832",
+                "number": 832,
+                "label": "Earlier parallel account · Hadith 832"
+              }
+            ]
+          }
+        ],
+        "localNotes": {
+          "path": "prayer-description-review.html",
+          "fragment": "hadith-835c",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
       }
     ]
   },
-  "referencesSha256": "aaf26203a694b972fdc98c3b72652fdb2c5706dae846282fa7a1a5715ff02b7e",
+  "referencesSha256": "877dddde3b9014ae1757211033b11dd4344b9f62d211436c2664386d670e754d",
   "referencesReview": {
     "status": "pending"
   }

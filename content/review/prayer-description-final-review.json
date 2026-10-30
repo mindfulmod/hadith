@@ -64,10 +64,47 @@
       "format": "web",
       "label": "Ibn Hajar · Fath al-Bari · the meaning of nahaztu",
       "url": "https://www.islamweb.net/ar/library/content/52/150/باب-متى-يصح-سماع-الصغير"
+    },
+    {
+      "id": "arabic-print-dar-ibn-kathir-2002",
+      "label": "Dar Ibn Kathir 2002 · Arabic print · independently transcribed report",
+      "kind": "arabic-input",
+      "format": "pdf",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+    },
+    {
+      "id": "dar-tasil-2012-v1",
+      "label": "Arabic print · Dar al-Tasil 2012 · volume 1",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://archive.org/download/FP144261FP/01_144261.pdf",
+      "sha256": "0136ed57436e607acebf53d33fd89695230bd88e76d7c7c10bd4b54ff1f5f0e6"
+    },
+    {
+      "id": "qastallani-prayer-tail",
+      "label": "Al-Qastallani · Irshad al-Sari · repeated chapter discussion",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://ablibrary.net/book_content/b/18673/154?lang=ar"
+    },
+    {
+      "id": "sunnah-tail-874",
+      "label": "Sunnah.com · Bukhari 874 · English comparison",
+      "kind": "english-comparison",
+      "format": "web",
+      "url": "https://sunnah.com/bukhari:874"
+    },
+    {
+      "id": "sunnah-tail-875",
+      "label": "Sunnah.com · Bukhari 875 · English comparison",
+      "kind": "english-comparison",
+      "format": "web",
+      "url": "https://sunnah.com/bukhari:875"
     }
   ],
-  "scope": "Complete selected digital reports 819–835 and chapters 79–84. This finishes the selected digital section, not every occurrence in every printed edition. Two additional modern-print occurrences are logged separately for edition-coverage review.",
-  "editionNote": "Every raw digital paragraph remains unchanged. Full chains, the first short account at 824, the chain switch at 829, closing exchanges and OR alternatives remain. English is AI-assisted working text, not Darussalam wording or independent certification.",
+  "scope": "Complete selected digital reports 819–835 and chapters 79–84, followed by separately sourced printed occurrences 835b and 835c. Printed numbering and the repeated chapter remain explicit.",
+  "editionNote": "Every raw digital paragraph remains unchanged. Full chains, the first short account at 824, the chain switch at 829, closing exchanges and OR alternatives remain. English is AI-assisted working text, not Darussalam wording or independent certification. The two tail occurrences are now admitted as user-confirmed app references 835b and 835c, with Dar Ibn Kathir and Dar al-Tasil witnesses. Earlier parallel English accounts are labelled as such; the feminine closing attribution is retained. This is not independent certification.",
   "chapters": [
     {
       "id": "chapter-79",
@@ -150,7 +187,9 @@
       "headingId": "باب_استئذان_المرأة_زوجها_بالخروج_إلى_المسجد",
       "contextIds": [],
       "entryNumbers": [
-        835
+        835,
+        "835b",
+        "835c"
       ],
       "title": "A woman asking her husband’s permission to go out to the mosque",
       "titleArabic": "باب استئذان المرأة زوجها بالخروج إلى المسجد",
@@ -1973,7 +2012,7 @@
       ],
       "notes": [
         "The selected text and both Arabic prints lack an at-night qualification and an explicit mosque object in this report. The Bewley entry repeats the expanded wording of 827; it is recorded as a comparison difference, not imported. The Khan-family comparison places to go to the mosque in parentheses; those words are not inserted.",
-        "The modern Arabic print continues with two further numbered occurrences, 874 and 875, under a repeated Women praying behind men heading. The selected digital section and historical print end here. Those occurrences are logged separately for edition-coverage review; they are neither merged into 832/833 nor claimed as admitted."
+        "The modern Arabic print continues with two further numbered occurrences, 874 and 875, under a repeated Women praying behind men heading. They are now preserved as app references 835b and 835c with a second Arabic print and explicit edition-placement evidence. They are not merged into the earlier parallel accounts."
       ],
       "reviewScope": "AI-assisted translation of every selected Arabic span, including complete chains, repeated actions, uncertainty, narrator variants and closing routes. Two visually inspected Arabic prints and two individually matched English comparisons were consulted. Independent Arabic, English, chapter, reference and spoken-word review remains pending.",
       "sourceLayout": {
@@ -2017,7 +2056,409 @@
           "related": []
         }
       ],
-      "reviewRecordSha256": "24f833c1e7cb006355fed25bc89fb24de9811084036ff6875fbe9767889a5030"
+      "reviewRecordSha256": "27a1866005ae399b37c23316a39c66b76f6e242a5d2e0b61a1c389d39b8b6044"
+    },
+    {
+      "number": "835b",
+      "id": "bukhari:835b",
+      "sourceRecordId": "dar-ibn-kathir-2002:874",
+      "chapterId": "chapter-84",
+      "paragraphIds": [
+        "printed-report-dar-ibn-kathir-874"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "835b-1",
+          "paragraphId": "printed-report-dar-ibn-kathir-874",
+          "start": 0,
+          "end": 55,
+          "kind": "chain",
+          "arabic": "حدثنا أبو نعيم قال حدثنا ابن عيينة عن إسحاق عن أنس قال ",
+          "english": "Abu Nu‘aym related to us. He said: Ibn ‘Uyaynah related to us, from Ishaq, from Anas, who said:",
+          "arabicSha256": "b37ebd4c84148154cfc435018506351aeca0d5639165740d3161a2c240a364fa",
+          "englishSha256": "b063b1f09624d36d41ffdf8773f309aed01d30dd855f7679cc68e3256d8665d0"
+        },
+        {
+          "id": "835b-2",
+          "paragraphId": "printed-report-dar-ibn-kathir-874",
+          "start": 55,
+          "end": 112,
+          "kind": "report",
+          "arabic": "صلى النبي ﷺ في بيت أم سليم فقمت ويتيم خلفه وأم سليم خلفنا",
+          "english": "The Prophet, may Allah bless him and grant him peace, prayed in the house of Umm Sulaym. An orphan and I stood behind him, and Umm Sulaym stood behind us.",
+          "arabicSha256": "df012cd0c4ff79c77f4df0a7e2303f1be8c1a742d2183fe8123dd4afd2a31a79",
+          "englishSha256": "ccab1b82bdf4e919da2b7aa1f39b5d6a09cf4381d88d2ba03a45fa62c74c6e5c"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            212
+          ]
+        },
+        {
+          "id": "dar-tasil-2012-v1",
+          "pdfPages": [
+            727
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer-description",
+          "reference": "833",
+          "status": "parallel-occurrence-only",
+          "note": "Earlier parallel occurrence only; this English page ends at 835 and does not separately list the tail. Matches the basic account. It says the orphan where the selected Arabic has an indefinite orphan; the working English retains an orphan."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.12.830",
+          "status": "parallel-occurrence-only",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.12.830",
+            "recordSha256": "61ec485464f38a1019b1dca725cfd254f8d339e6aa1a7f3208bdb99a07f5346e"
+          },
+          "checkedBody": [
+            "Narrated Anas: ",
+            "The Prophet prayed in the house of Um Sulaim; and I, along with an orphan stood behind him while Um Sulaim (stood) behind us. "
+          ],
+          "note": "Earlier parallel account only; not a separately listed English tail occurrence. The account body agrees in action and ordering. The shortened English narrator introduction does not replace the complete selected Arabic chain."
+        }
+      ],
+      "notes": [
+        "This is a separate occurrence after the selected digital section ends. The full short chain is retained; Ibn Uyaynah and Ishaq are not expanded from another witness.",
+        "The Anas honorific present in app 833 is absent here in both checked prints; it is not inserted. The Prophet honorific remains complete in English.",
+        "Dar Ibn Kathir printed reference 874 corresponds to Dar al-Tasil 884. Both complete readings agree lexically under the declared transcription policy. This occurrence remains separate from app 833.",
+        "English-family comparisons concern earlier parallel occurrences. An additional Sunnah.com comparison separately presents the tail; its scope and attribution difference are recorded."
+      ],
+      "reviewScope": "AI-assisted transcription and English of this complete printed occurrence, with two printed witnesses, two English-family parallel comparisons and a separately identified online tail comparison. Independent transcription, Arabic, English, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "f4e3e32bba3cdf0320ef3d498de4a6570716e5b23e3a7bd0dd403631d2de64ab",
+      "englishSha256": "f4bbfa085b3fac669507f44fcea019c8d67db4a019de3e953c57bb9a5b48dba6",
+      "printedReport": {
+        "schemaVersion": 2,
+        "kind": "complete-numbered-report",
+        "position": "after-book-end",
+        "status": "chosen-for-personal-prototype",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "selectedWitnessId": "dar-ibn-kathir-2002",
+        "inputSourceId": "arabic-print-dar-ibn-kathir-2002",
+        "printReference": "874",
+        "digitalSourceId": "wikisource-bukhari-prayer-description-r253001",
+        "digitalSourceSha256": "c4063d7c083086e58a1be160d9aa7f7053bfc7a3c0986291f930f9312bbbbece",
+        "digitalInventorySha256": "9c8c019c9a7a23a8c9e2d3146a7f6cda4dbddbe3fe53c141ed10d28ef5d65eaa",
+        "afterReference": 835,
+        "beforeReference": null,
+        "previousArabicSha256": "8fec50558ad9b7a1f1ae23cc9e3cf8a3d289e39643a680010fe9b9f969328ed8",
+        "nextArabicSha256": null,
+        "chapterId": "chapter-84",
+        "paragraphId": "printed-report-dar-ibn-kathir-874",
+        "arabic": "حدثنا أبو نعيم قال حدثنا ابن عيينة عن إسحاق عن أنس قال صلى النبي ﷺ في بيت أم سليم فقمت ويتيم خلفه وأم سليم خلفنا",
+        "arabicSha256": "f4e3e32bba3cdf0320ef3d498de4a6570716e5b23e3a7bd0dd403631d2de64ab",
+        "reason": "A separate numbered occurrence appears at the end of both checked Arabic prints, after the report corresponding to digital 835. It is absent from the selected digital section and historical print at this boundary. Earlier parallel accounts are preserved separately.",
+        "referenceNote": "835b is an app reference, not the selected print label. The selected print numbers this occurrence 874; Dar al-Tasil numbers it 884. Existing references and bookmarks are unchanged.",
+        "chapterPlacementNote": "After the final digital chapter’s boundary, under the separately printed repeated heading Women praying behind men. The chapter-84 identity is the digital boundary anchor, not a claim that the digital chapter contains this report. Both printed editions place this occurrence before Friday Prayer; their chapter numbering differs.",
+        "transcriptionPolicy": "Manual unvowelled transcription of the complete printed reports, including every chain word and the Prophet honorific represented as ﷺ. Vowel marks, ornament, report numbers, quotation punctuation, editorial cross-references and footnote markers are outside the reading blocks. Lexical words are retained; no copy is represented as a verbatim facsimile. Independent transcription review remains pending.",
+        "contextNoteId": "835b-print-origin",
+        "witnesses": [
+          {
+            "sourceId": "dar-ibn-kathir-2002",
+            "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+            "pdfPage": 212,
+            "printedPage": 212,
+            "reference": "874",
+            "reading": "حدثنا أبو نعيم قال حدثنا ابن عيينة عن إسحاق عن أنس قال صلى النبي ﷺ في بيت أم سليم فقمت ويتيم خلفه وأم سليم خلفنا",
+            "readingSha256": "f4e3e32bba3cdf0320ef3d498de4a6570716e5b23e3a7bd0dd403631d2de64ab",
+            "lexicalMatch": true,
+            "chapterPlacement": "Unnumbered repeated heading after chapter 166 and report 873; before the Friday Prayer book."
+          },
+          {
+            "sourceId": "dar-tasil-2012-v1",
+            "sourceSha256": "0136ed57436e607acebf53d33fd89695230bd88e76d7c7c10bd4b54ff1f5f0e6",
+            "pdfPage": 727,
+            "printedPage": 727,
+            "reference": "884",
+            "reading": "حدثنا أبو نعيم قال حدثنا ابن عيينة عن إسحاق عن أنس قال صلى النبي ﷺ في بيت أم سليم فقمت ويتيم خلفه وأم سليم خلفنا",
+            "readingSha256": "f4e3e32bba3cdf0320ef3d498de4a6570716e5b23e3a7bd0dd403631d2de64ab",
+            "lexicalMatch": true,
+            "chapterPlacement": "Chapter 163 after report 883, followed by reports 884 and 885 and the end of volume 1."
+          }
+        ],
+        "referenceDecision": {
+          "status": "user-confirmed",
+          "recordedAt": "2026-10-30T02:22:13.323Z",
+          "appReference": "835b",
+          "printedReference": "874",
+          "userReply": "Use 835b and 835c with printed references (Recommended)",
+          "scope": "Stable app reference and visible printed reference; no scholarly certification or publication approval."
+        },
+        "chapterHeading": {
+          "schemaVersion": 2,
+          "id": "chapter-84-print-163",
+          "kind": "chapter-heading",
+          "sourceChapterId": "chapter-84",
+          "beforeEntry": "835b",
+          "printedChapterNumber": 163,
+          "selectedWitnessId": "dar-tasil-2012-v1",
+          "status": "chosen-for-personal-prototype",
+          "reviewerKind": "ai",
+          "independentReview": "pending",
+          "arabic": "باب صلاة النساء خلف الرجال",
+          "english": "Women praying behind men",
+          "arabicSha256": "54e2b7475f9020de4070713c0b6e8f3e3d4265ac6dc7be823775c2f2fdf75fa9",
+          "englishSha256": "fcec91a6cc916559bbc3ce1e7195336ff1c34538c4a023b7018eb92310915907",
+          "reason": "Both Arabic prints retain this repeated heading after the last report in the selected digital section. Its occurrence remains separate from the earlier chapter with the same title.",
+          "transcriptionPolicy": "Unvowelled heading transcription; numbering is edition-specific. The selected heading number 163 belongs to Dar al-Tasil. Dar Ibn Kathir prints this repeated heading without a new chapter number.",
+          "witnesses": [
+            {
+              "sourceId": "dar-ibn-kathir-2002",
+              "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+              "pdfPage": 212,
+              "reading": "باب صلاة النساء خلف الرجال",
+              "readingSha256": "54e2b7475f9020de4070713c0b6e8f3e3d4265ac6dc7be823775c2f2fdf75fa9",
+              "chapterNumber": null,
+              "chapterPlacement": "Unnumbered repeated heading after chapter 166 and report 873; before the Friday Prayer book."
+            },
+            {
+              "sourceId": "dar-tasil-2012-v1",
+              "sourceSha256": "0136ed57436e607acebf53d33fd89695230bd88e76d7c7c10bd4b54ff1f5f0e6",
+              "pdfPage": 727,
+              "reading": "باب صلاة النساء خلف الرجال",
+              "readingSha256": "54e2b7475f9020de4070713c0b6e8f3e3d4265ac6dc7be823775c2f2fdf75fa9",
+              "chapterNumber": 163,
+              "chapterPlacement": "Chapter 163 after report 883, followed by reports 884 and 885 and the end of volume 1."
+            }
+          ]
+        }
+      },
+      "additionalCitations": [
+        {
+          "id": "online-tail",
+          "sourceId": "sunnah-tail-874",
+          "locator": "Printed-number counterpart 874",
+          "scope": "Exact tail occurrence; English body only, without the full Arabic chain. Body sequence and positions agree. English adds stood in parentheses for Umm Sulaym; the working English uses the same grammatical completion as the existing parallel report. This does not establish independent chain translation or reuse rights."
+        },
+        {
+          "id": "edition-placement",
+          "sourceId": "qastallani-prayer-tail",
+          "locator": "Online page 154 · repeated chapter before Friday Prayer",
+          "scope": "Classical discussion of the repeated occurrence, omitted copies, reversed order and feminine qalat versus masculine qala. This is edition evidence, not independent approval of this translation."
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "835b-print-origin",
+          "label": "Separate printed occurrence · reference 874",
+          "text": "App reference 835b preserves a separately printed occurrence after the digital section ends. Its full chain and wording remain separate from the earlier parallel account. Independent review is pending.",
+          "citations": [
+            "base",
+            "dar-ibn-kathir-2002",
+            "dar-tasil-2012-v1",
+            "edition-placement"
+          ],
+          "related": [
+            {
+              "id": "bukhari:833",
+              "number": 833,
+              "label": "Earlier parallel account · Hadith 833"
+            }
+          ]
+        }
+      ],
+      "reviewRecordSha256": "4c395799857276766354b8690ba560bc0e3941d2f735356638c9fb6c46ce4841"
+    },
+    {
+      "number": "835c",
+      "id": "bukhari:835c",
+      "sourceRecordId": "dar-ibn-kathir-2002:875",
+      "chapterId": "chapter-84",
+      "paragraphIds": [
+        "printed-report-dar-ibn-kathir-875"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "835c-1",
+          "paragraphId": "printed-report-dar-ibn-kathir-875",
+          "start": 0,
+          "end": 84,
+          "kind": "chain",
+          "arabic": "حدثنا يحيى بن قزعة حدثنا إبراهيم بن سعد عن الزهري عن هند بنت الحارث عن أم سلمة قالت ",
+          "english": "Yahya ibn Qaza‘ah related to us. Ibrahim ibn Sa‘d related to us, from al-Zuhri, from Hind bint al-Harith, from Umm Salamah, who said:",
+          "arabicSha256": "7687c990643c538bd0a5a49b55afd72cc0d8c62888420ee5efbec6d98f323527",
+          "englishSha256": "f2e64abe4c34137254e6ac0404db13bbc9936c7ece710c2e66c4baaa37a5936f"
+        },
+        {
+          "id": "835c-2",
+          "paragraphId": "printed-report-dar-ibn-kathir-875",
+          "start": 84,
+          "end": 171,
+          "kind": "report",
+          "arabic": "كان رسول الله ﷺ إذا سلم قام النساء حين يقضي تسليمه وهو يمكث في مقامه يسيرا قبل أن يقوم ",
+          "english": "When the Messenger of Allah, may Allah bless him and grant him peace, said the closing greeting, the women would rise as soon as he finished saying it. He would remain in his place a little while before rising.",
+          "arabicSha256": "f6cc5a5ab469f88bcc22ac3603e240789341b8b7a33350586ad7bdb4d6548dd2",
+          "englishSha256": "532d62451a68b386131a68bd8d10d28d379f6fb912f69ee920fcfcafccc1cb98"
+        },
+        {
+          "id": "835c-3",
+          "paragraphId": "printed-report-dar-ibn-kathir-875",
+          "start": 171,
+          "end": 239,
+          "kind": "transmission-note",
+          "arabic": "قالت نرى والله أعلم أن ذلك كان لكي ينصرف النساء قبل أن يدركهن الرجال",
+          "english": "She said: We think—and Allah knows best—that this was so the women could leave before the men caught up with them.",
+          "arabicSha256": "998ed3bcba4e15b1768a8603d5d1f42ec123aa75937e3c4a159ad64e2106ff96",
+          "englishSha256": "081c99b680171eae268c38224e4af8dfc93fbf735e430334552a6b3f1118ef0d"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            212
+          ]
+        },
+        {
+          "id": "dar-tasil-2012-v1",
+          "pdfPages": [
+            727
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prayer-description",
+          "reference": "832",
+          "status": "parallel-occurrence-only",
+          "note": "Earlier parallel occurrence, not this separately numbered tail. Uses He said and I think and expands the final group to people who had finished prayer. The selected tail instead has feminine She said, plural We think and the men. These distinctions are retained."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "1.12.829",
+          "status": "parallel-occurrence-only",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:1.12.829",
+            "recordSha256": "339cdc720ab8a2139b0131a06e1d7b08e01a8d67032da43fa978964d527c6b33"
+          },
+          "checkedBody": [
+            "Narrated Um Salama: ",
+            "Whenever Allah's Apostle completed the prayer with Taslim, the women used to get up immediately and Allah's Apostle would remain at his place for someone before getting up. (The sub-narrator (Az-Zuhri) said, \"We think, and Allah knows better, that he did so, so that the women might leave before men could get in touch with them).\" "
+          ],
+          "note": "Earlier parallel account only; not a separately listed English tail occurrence. The body names al-Zuhri, uses an apparent transcription defect “for someone”, and says “get in touch”. The selected Arabic has feminine qalat, a little while, and the men catching up; the working English preserves those distinctions."
+        }
+      ],
+      "notes": [
+        "The first qala after Yahya, the Umm Salamah honorific and the final ahad min in app 832 are absent here. The selected tail has wa-huwa yamkuthu instead of wa-yamkuthu huwa.",
+        "The closing qalat is feminine: She said is retained without assigning a name. Both inspected prints have this form; al-Qastallani records it and the masculine Ibn Asakir variant.",
+        "The English comparison names al-Zuhri, while its displayed Arabic says qalat. That attribution is not inserted into this working translation. The plural We think is retained.",
+        "Dar Ibn Kathir printed reference 875 corresponds to Dar al-Tasil 885. Both complete readings agree lexically under the declared transcription policy. This occurrence remains separate from app 832.",
+        "English-family comparisons concern earlier parallel occurrences. An additional Sunnah.com comparison separately presents the tail; its scope and attribution difference are recorded."
+      ],
+      "reviewScope": "AI-assisted transcription and English of this complete printed occurrence, with two printed witnesses, two English-family parallel comparisons and a separately identified online tail comparison. Independent transcription, Arabic, English, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "1389dee17bf08b4291c1789dd41404e604e98f6ce22d785d7614a3ebbf3d369c",
+      "englishSha256": "3c309fbb54f90f1294c874e269fe1d52874bfbb510ce5b0afdd0b51488ec712a",
+      "printedReport": {
+        "schemaVersion": 2,
+        "kind": "complete-numbered-report",
+        "position": "after-book-end",
+        "status": "chosen-for-personal-prototype",
+        "reviewerKind": "ai",
+        "independentReview": "pending",
+        "selectedWitnessId": "dar-ibn-kathir-2002",
+        "inputSourceId": "arabic-print-dar-ibn-kathir-2002",
+        "printReference": "875",
+        "digitalSourceId": "wikisource-bukhari-prayer-description-r253001",
+        "digitalSourceSha256": "c4063d7c083086e58a1be160d9aa7f7053bfc7a3c0986291f930f9312bbbbece",
+        "digitalInventorySha256": "9c8c019c9a7a23a8c9e2d3146a7f6cda4dbddbe3fe53c141ed10d28ef5d65eaa",
+        "afterReference": 835,
+        "beforeReference": null,
+        "previousArabicSha256": "8fec50558ad9b7a1f1ae23cc9e3cf8a3d289e39643a680010fe9b9f969328ed8",
+        "nextArabicSha256": null,
+        "chapterId": "chapter-84",
+        "paragraphId": "printed-report-dar-ibn-kathir-875",
+        "arabic": "حدثنا يحيى بن قزعة حدثنا إبراهيم بن سعد عن الزهري عن هند بنت الحارث عن أم سلمة قالت كان رسول الله ﷺ إذا سلم قام النساء حين يقضي تسليمه وهو يمكث في مقامه يسيرا قبل أن يقوم قالت نرى والله أعلم أن ذلك كان لكي ينصرف النساء قبل أن يدركهن الرجال",
+        "arabicSha256": "1389dee17bf08b4291c1789dd41404e604e98f6ce22d785d7614a3ebbf3d369c",
+        "reason": "A separate numbered occurrence appears at the end of both checked Arabic prints, after the report corresponding to digital 835. It is absent from the selected digital section and historical print at this boundary. Earlier parallel accounts are preserved separately.",
+        "referenceNote": "835c is an app reference, not the selected print label. The selected print numbers this occurrence 875; Dar al-Tasil numbers it 885. Existing references and bookmarks are unchanged.",
+        "chapterPlacementNote": "After the final digital chapter’s boundary, under the separately printed repeated heading Women praying behind men. The chapter-84 identity is the digital boundary anchor, not a claim that the digital chapter contains this report. Both printed editions place this occurrence before Friday Prayer; their chapter numbering differs.",
+        "transcriptionPolicy": "Manual unvowelled transcription of the complete printed reports, including every chain word and the Prophet honorific represented as ﷺ. Vowel marks, ornament, report numbers, quotation punctuation, editorial cross-references and footnote markers are outside the reading blocks. Lexical words are retained; no copy is represented as a verbatim facsimile. Independent transcription review remains pending.",
+        "contextNoteId": "835c-print-origin",
+        "witnesses": [
+          {
+            "sourceId": "dar-ibn-kathir-2002",
+            "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+            "pdfPage": 212,
+            "printedPage": 212,
+            "reference": "875",
+            "reading": "حدثنا يحيى بن قزعة حدثنا إبراهيم بن سعد عن الزهري عن هند بنت الحارث عن أم سلمة قالت كان رسول الله ﷺ إذا سلم قام النساء حين يقضي تسليمه وهو يمكث في مقامه يسيرا قبل أن يقوم قالت نرى والله أعلم أن ذلك كان لكي ينصرف النساء قبل أن يدركهن الرجال",
+            "readingSha256": "1389dee17bf08b4291c1789dd41404e604e98f6ce22d785d7614a3ebbf3d369c",
+            "lexicalMatch": true,
+            "chapterPlacement": "Unnumbered repeated heading after chapter 166 and report 873; before the Friday Prayer book."
+          },
+          {
+            "sourceId": "dar-tasil-2012-v1",
+            "sourceSha256": "0136ed57436e607acebf53d33fd89695230bd88e76d7c7c10bd4b54ff1f5f0e6",
+            "pdfPage": 727,
+            "printedPage": 727,
+            "reference": "885",
+            "reading": "حدثنا يحيى بن قزعة حدثنا إبراهيم بن سعد عن الزهري عن هند بنت الحارث عن أم سلمة قالت كان رسول الله ﷺ إذا سلم قام النساء حين يقضي تسليمه وهو يمكث في مقامه يسيرا قبل أن يقوم قالت نرى والله أعلم أن ذلك كان لكي ينصرف النساء قبل أن يدركهن الرجال",
+            "readingSha256": "1389dee17bf08b4291c1789dd41404e604e98f6ce22d785d7614a3ebbf3d369c",
+            "lexicalMatch": true,
+            "chapterPlacement": "Chapter 163 after report 883, followed by reports 884 and 885 and the end of volume 1."
+          }
+        ],
+        "referenceDecision": {
+          "status": "user-confirmed",
+          "recordedAt": "2026-10-30T02:22:13.323Z",
+          "appReference": "835c",
+          "printedReference": "875",
+          "userReply": "Use 835b and 835c with printed references (Recommended)",
+          "scope": "Stable app reference and visible printed reference; no scholarly certification or publication approval."
+        }
+      },
+      "additionalCitations": [
+        {
+          "id": "online-tail",
+          "sourceId": "sunnah-tail-875",
+          "locator": "Printed-number counterpart 875",
+          "scope": "Exact tail occurrence; English body and closing comment, without complete chain. Broad action sequence agrees, but the English names al-Zuhri whereas the displayed Arabic and both prints have feminine qalat. The working English retains She said; the named attribution remains a comparison difference."
+        },
+        {
+          "id": "edition-placement",
+          "sourceId": "qastallani-prayer-tail",
+          "locator": "Online page 154 · repeated chapter before Friday Prayer",
+          "scope": "Classical discussion of the repeated occurrence, omitted copies, reversed order and feminine qalat versus masculine qala. This is edition evidence, not independent approval of this translation."
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "835c-print-origin",
+          "label": "Separate printed occurrence · reference 875",
+          "text": "App reference 835c preserves a separately printed occurrence after the digital section ends. Its full chain and wording remain separate from the earlier parallel account. The closing “She said” follows both selected prints; no narrator name has been supplied. Independent review is pending.",
+          "citations": [
+            "base",
+            "dar-ibn-kathir-2002",
+            "dar-tasil-2012-v1",
+            "edition-placement"
+          ],
+          "related": [
+            {
+              "id": "bukhari:832",
+              "number": 832,
+              "label": "Earlier parallel account · Hadith 832"
+            }
+          ]
+        }
+      ],
+      "reviewRecordSha256": "db35f0316620b03310aec028068ace273c6c6ffa66abe0017c746ad993f6e939"
     }
   ]
 }

@@ -1,0 +1,284 @@
+{
+  "checkedAt": "2026-10-30T02:42:06.004Z",
+  "status": "verified-local-personal-prototype",
+  "baselineCommit": "34c3d1be66c700dfac85a6a32a6a672317b96baa",
+  "readerRelease": "opening-773d937234f4",
+  "publication": "not-published",
+  "scope": {
+    "references": [
+      "835b",
+      "835c"
+    ],
+    "printedReferences": [
+      "874",
+      "875"
+    ],
+    "secondPrintReferences": [
+      "884",
+      "885"
+    ],
+    "newReports": 2,
+    "englishSegments": 5,
+    "newPrintedChapters": 1,
+    "referenceDecisions": [
+      {
+        "status": "user-confirmed",
+        "recordedAt": "2026-10-30T02:22:13.323Z",
+        "appReference": "835b",
+        "printedReference": "874",
+        "userReply": "Use 835b and 835c with printed references (Recommended)",
+        "scope": "Stable app reference and visible printed reference; no scholarly certification or publication approval."
+      },
+      {
+        "status": "user-confirmed",
+        "recordedAt": "2026-10-30T02:22:13.323Z",
+        "appReference": "835c",
+        "printedReference": "875",
+        "userReply": "Use 835b and 835c with printed references (Recommended)",
+        "scope": "Stable app reference and visible printed reference; no scholarly certification or publication approval."
+      }
+    ]
+  },
+  "collection": {
+    "entries": 839,
+    "books": 11,
+    "sourceRecordSha256": "8d6b812f202871c6eb1d1b59375c3ca2caacdc6ec8638edd0419d32b1f43d053",
+    "allPrior837ArabicAndEnglishUnchanged": true,
+    "first836EntryObjectsUnchanged": true,
+    "entry835Change": "Review metadata updated to acknowledge the admitted tail; Arabic, English and presentation unchanged.",
+    "otherTenBookContextsAndPacksUnchanged": true,
+    "originalDigitalInputsUnchanged": true,
+    "artworkAndRecordingsUnchanged": true,
+    "recordedReferences": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "readingBytes": 22804413,
+    "releaseFiles": 185,
+    "descriptionOfPrayer": {
+      "reports": 140,
+      "digitalReports": 137,
+      "printedReports": 3,
+      "digitalChapters": 84,
+      "printedChapters": 2,
+      "browsingSections": 86,
+      "arabicIntroductionParagraphs": 20
+    }
+  },
+  "sourceReview": {
+    "record": "content/review/prayer-description-final-review.json",
+    "candidate": "content/review/prayer-description-tail-candidate.json",
+    "candidateSha256": "5f443b3e98072be7ab464842c5e83d7559d0e261f26fb137285b20a7b4fc890a",
+    "historicalCandidateVerification": "research/prayer-description-tail-verification.json",
+    "boundaryReview": "research/prayer-description-boundary-review.json",
+    "printedWitnesses": [
+      {
+        "id": "dar-ibn-kathir-2002",
+        "pdfPage": 212,
+        "references": [
+          "874",
+          "875"
+        ],
+        "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+        "visuallyInspected": true
+      },
+      {
+        "id": "dar-tasil-2012-v1",
+        "pdfPage": 727,
+        "references": [
+          "884",
+          "885"
+        ],
+        "sha256": "0136ed57436e607acebf53d33fd89695230bd88e76d7c7c10bd4b54ff1f5f0e6",
+        "visuallyInspected": true
+      }
+    ],
+    "transcriptionPolicy": "Manual unvowelled transcription of the complete printed reports, including every chain word and the Prophet honorific represented as ﷺ. Vowel marks, ornament, report numbers, quotation punctuation, editorial cross-references and footnote markers are outside the reading blocks. Lexical words are retained; no copy is represented as a verbatim facsimile. Independent transcription review remains pending.",
+    "comparisonScope": "Bewley 833/832 and the pinned Khan-family EPUB 1.12.830/829 are earlier parallel occurrences. Sunnah.com 874/875 separately presents the tail. These scopes are explicit; no third independent English family is claimed.",
+    "classicalCommentary": {
+      "url": "https://ablibrary.net/book_content/b/18673/154?lang=ar",
+      "scope": "Repeated chapter, copy differences, reversed order and feminine qalat versus masculine qala; evidence retained in the boundary review."
+    },
+    "findings": [
+      "Both complete chains, the source-specific absence of added honorifics and the distinct wording of each occurrence remain intact.",
+      "835c retains feminine She said and plural We think, without supplying the narrator name used by an English comparison.",
+      "The printed chapter is separately browseable and excluded from the numbered narration. The digital chapter identity is only a boundary anchor.",
+      "Earlier parallel accounts 833 and 832 are retained separately; no semantic deduplication or renumbering occurred."
+    ],
+    "reviewStatus": "AI-assisted personal prototype; independent transcription, Arabic, English, chapter, reference and spoken-word review pending. Not Darussalam wording or certified accuracy."
+  },
+  "automated": {
+    "nodeTests": 571,
+    "pythonTests": 100,
+    "total": 671,
+    "allPassed": true,
+    "integrityChecks": [
+      {
+        "command": "node scripts/prototype-admissions.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-opening-prototype.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-wikisource-book.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/audit-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/resolve-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-collection.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-audio.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node reader/check-content.mjs",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/import-bukhari.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-bukhari-jk.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-english.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-opening.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/check-opening-review.py",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/build-opening-review.py --check",
+        "exitCode": 0
+      }
+    ],
+    "prototypeAdmissions": 61,
+    "admissionHistoryNote": "The immutable history retains an intermediate local admission with source-format metadata rejected by the publisher. A subsequent exact admission records the corrected metadata; only the final validated pack is included in this change."
+  },
+  "browser": {
+    "environment": "Desktop in-app browser; local server stopped after Save reading finished",
+    "updatedFrom": "opening-55c7f81f0d5f",
+    "updatedTo": "opening-773d937234f4",
+    "priorSessionPreserved": {
+      "numbers": [
+        833,
+        834,
+        835
+      ],
+      "continue": 835
+    },
+    "priorBookmarkCount": 2,
+    "entries": [
+      {
+        "number": "835b",
+        "englishExact": true,
+        "arabicExact": true,
+        "printedReferenceVisible": 874,
+        "offline": true
+      },
+      {
+        "number": "835c",
+        "englishExact": true,
+        "arabicExact": true,
+        "printedReferenceVisible": 875,
+        "closingAttribution": "She said",
+        "offline": true
+      }
+    ],
+    "chapter": {
+      "id": "chapter-84-print-163",
+      "references": [
+        "835b",
+        "835c"
+      ],
+      "arabicHeadingExact": true,
+      "twoPrintPagesVisible": true,
+      "offline": true
+    },
+    "sourceNotes": {
+      "number": "835c",
+      "twoPrintReadingsVisible": true,
+      "parallelComparisonScopeVisible": true,
+      "feminineAttributionDifferenceVisible": true,
+      "offline": true
+    },
+    "session": {
+      "start": "835b",
+      "numbers": [
+        "835b",
+        "835c"
+      ],
+      "continue": "835c",
+      "outsideVisit": 832,
+      "preserved": true,
+      "offline": true
+    },
+    "bookmarks": {
+      "retained": [
+        812,
+        824
+      ],
+      "added": "835c",
+      "afterOfflineReload": true
+    },
+    "search": {
+      "phrase": "the men caught up with them",
+      "results": [
+        832,
+        "835c"
+      ],
+      "offline": true
+    },
+    "day": {
+      "documentWidth": 1280,
+      "font": "21px",
+      "width": 1280
+    },
+    "night": {
+      "documentWidth": 1280,
+      "font": "28px",
+      "width": 1280
+    },
+    "viewportLimitation": "Requested 320px viewport override did not apply: DOM and screenshot remained 1280px. This run confirms desktop layout only; no new mobile-width acceptance is claimed.",
+    "readingReadyOffline": true,
+    "serverUnavailableConfirmed": true,
+    "olderLinksRemain": true,
+    "collectionBoundary": {
+      "last": "835c",
+      "nextHadithAbsent": true
+    },
+    "evidence": [
+      "content/review/evidence/prayer-description-tail-preview.png"
+    ],
+    "limitations": "Desktop browser only. No new physical iPhone, locked-screen audio or backup acceptance. Mobile viewport override failed to apply; measured width stayed at 1280px."
+  },
+  "remaining": [
+    "Prepare Friday Prayer source intake with exact-span and edition/reference checks.",
+    "Complete the rest of Bukhari, English chapter introductions and independent source/translation reviews.",
+    "Complete reviewed Cedar recordings beyond 1–6 and qualify full-corpus physical iPhone/offline/locked-screen behavior.",
+    "Repeat current mobile-width visual checks when the browser viewport override works.",
+    "Publish only an explicitly approved update."
+  ]
+}

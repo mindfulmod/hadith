@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The local personal reader at `reader/` contains 837 selected Bukhari entries across eleven sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The local personal reader at `reader/` contains 839 selected Bukhari entries across eleven sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Publisher scaling · 29 October 2026
 
@@ -1047,3 +1047,14 @@ Reading downloads total **22,717,953 bytes (22.72 MB)**. Complete scripts cover 
 Two separately numbered occurrences after the selected digital Description of Prayer section are now prepared as unadmitted candidates in `content/review/prayer-description-tail-candidate.json`. Dar Ibn Kathir references 874–875 match Dar al-Tasil references 884–885 under the declared unvowelled transcription policy. Al-Qastallani explicitly discusses the repeated chapter, copy differences, reversed order and feminine closing attribution. The working English retains “She said” and does not insert a named narrator from the compared English version.
 
 The review packet is `research/prayer-description-tail-review.html`. Proposed app references 835b and 835c are pending; they preserve 835 and the next book’s digital reference 836. Both full chains, Arabic readings, English comparison limits and source locations are accessible. The 837-entry reader, its release, actual recordings and narration scripts remain unchanged. Ten targeted source and isolation tests passed, and rendered Arabic/English matched the candidate at 375px without horizontal overflow. Evidence: `research/prayer-description-tail-verification.json`. This is source preparation, not independent certification or publication.
+
+
+### Printed tail admitted to the local prototype: 835b and 835c
+
+The user confirmed stable app references **835b** and **835c**, with printed references **874** and **875** kept prominent. Both complete occurrences are now in the **839-entry local preview**, under their separately evidenced repeated printed chapter. Earlier Arabic and English wording, existing links and bookmarks remain unchanged. Description of Prayer now contains 140 reports and 86 browsing sections; its 20 Arabic introduction paragraphs remain separate from numbered sessions.
+
+The admission path requires two pinned print witnesses, complete transcription hashes, an explicit book-end position, the user-confirmed references and separate printed chapter evidence. English comparisons are labelled as earlier parallel occurrences where appropriate; they cannot silently become exact-occurrence checks. The closing feminine “She said” in 835c remains intact. This is AI-assisted personal-prototype content, not independent scholarly certification.
+
+Current verification is recorded in `research/prayer-description-tail-admission-verification.json`; the earlier candidate-only verification remains a historical record. Complete scripts cover 839 entries; actual Cedar recordings remain 1–6. The public website remains the approved 632-entry release. This preview has not been published.
+
+All **671 tests (571 Node and 100 Python)** and fourteen integrity checks passed for this admission. After updating and saving the reading pack, stopping the local server confirmed offline Arabic, English, chapter/source notes, exact phrase search, suffix navigation, session continuity and bookmarks after reload. Desktop day and largest night text had no horizontal overflow. The requested mobile viewport did not apply, so this run does not establish fresh mobile-width or physical iPhone acceptance. Reading downloads total **22,804,413 bytes (22.80 MB)**.

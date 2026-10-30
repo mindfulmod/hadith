@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "two-print-candidate-ready-reference-decision-pending",
+  "status": "two-print-tail-admitted-personal-prototype",
   "sourceSection": "Description of Prayer",
   "selectedRevision": 253001,
   "selectedLastReference": 835,
@@ -71,44 +71,8 @@
       "finding": "Both tail occurrences appear as 884 and 885 in chapter 163. They agree lexically with modern 874 and 875 under the stated unvowelled transcription policy. The printed note records omission in Abu Dharr and identifies the repeated chapter; further notes record Ibn Asakir variants."
     }
   ],
-  "unadmittedOccurrences": [
-    {
-      "printedReference": "874",
-      "sourceRecordId": "dar-ibn-kathir-2002:874",
-      "pdfPage": 212,
-      "closestSelectedReport": 833,
-      "finding": "Abu Nuaym → Ibn Uyaynah → Ishaq → Anas. The Umm Sulaym house prayer account appears again. Its separate occurrence and source-specific wording are not merged into 833.",
-      "readerAdmission": "pending",
-      "requiredBeforeAdmission": [
-        "Confirm stable app references for the two independently identified occurrences.",
-        "Extend checked printed-report admission to an explicit book-end boundary and a separately sourced repeated chapter.",
-        "Run source, narration-script, reference, session, search and offline checks; retain independent-review status."
-      ],
-      "secondPrintedReference": "884",
-      "proposedAppReference": "835b",
-      "candidateArabicSha256": "f4e3e32bba3cdf0320ef3d498de4a6570716e5b23e3a7bd0dd403631d2de64ab",
-      "sourceReview": "two-printed-witnesses-and-English-comparisons-recorded"
-    },
-    {
-      "printedReference": "875",
-      "sourceRecordId": "dar-ibn-kathir-2002:875",
-      "pdfPage": 212,
-      "closestSelectedReport": 832,
-      "finding": "Yahya ibn Qazaah → Ibrahim ibn Sad → Zuhri → Hind → Umm Salamah. The women leaving after the closing greeting account appears again, with wording differences including the final men phrase. It is not merged into 832.",
-      "readerAdmission": "pending",
-      "requiredBeforeAdmission": [
-        "Confirm stable app references for the two independently identified occurrences.",
-        "Extend checked printed-report admission to an explicit book-end boundary and a separately sourced repeated chapter.",
-        "Run source, narration-script, reference, session, search and offline checks; retain independent-review status."
-      ],
-      "secondPrintedReference": "885",
-      "proposedAppReference": "835c",
-      "candidateArabicSha256": "1389dee17bf08b4291c1789dd41404e604e98f6ce22d785d7614a3ebbf3d369c",
-      "sourceReview": "two-printed-witnesses-and-English-comparisons-recorded"
-    }
-  ],
-  "coverageConclusion": "The selected digital section remains fully covered. Two additional printed occurrences are now source-reviewed candidates, with Dar Ibn Kathir and Dar al-Tasil witnesses and al-Qastallani placement evidence. They remain unadmitted, and neither semantic deduplication nor independent certification is implied.",
-  "updatedAt": "2026-10-30T02:08:53.959Z",
+  "coverageConclusion": "All selected digital reports and the two separately sourced printed tail occurrences are now included in the personal prototype. The extra occurrences keep their own printed identity and full chain. This bounded comparison does not establish full-corpus coverage or independent certification.",
+  "updatedAt": "2026-10-30T02:25:18.655675+00:00",
   "candidate": "content/review/prayer-description-tail-candidate.json",
   "commentaryEvidence": {
     "id": "qastallani-repeated-tail",
@@ -120,5 +84,42 @@
     "locator": "Chapter 166 m, after reports 874–875 and before the Friday Prayer book",
     "excerpt": "وزاد في فرع اليونينية ، كهي ، هنا باب صلاة النساء خلف الرجال ، وهو ثابت فيه قبل ببابين ، فكرره فيه ونبّه على سقوط الأخير في الهامش بإزائه عند أبي ذر ، وهو ساقط في جميع الأصول التي وقفت عليها لكونه لا فائدة في تكريره . نعم ، فيه : حين يقضي تسليمه وهو يمكث ، وفي السابق : حين يقضي تسليمه ويمكث ، هو ، وفيه أيضًا : قالت ، بتاء التأنيث ، ولابن عساكر : قال : بالتذكير . وفي الأول : قال ، فقط وفي الأخير ، قدّم حديث أبي نعيم على حديث يحيى بن قزعة .",
     "finding": "Records the repeated chapter in a Yunini branch, omission in Abu Dharr and in copies the commentator inspected, reversal of the two report positions, and the feminine qalat reading with masculine qala attributed to Ibn Asakir. This supports preserving the occurrence and its variants; it does not certify this transcription or English."
-  }
+  },
+  "admittedOccurrences": [
+    {
+      "printedReference": "874",
+      "sourceRecordId": "dar-ibn-kathir-2002:874",
+      "pdfPage": 212,
+      "closestSelectedReport": 833,
+      "finding": "Abu Nuaym → Ibn Uyaynah → Ishaq → Anas. The Umm Sulaym house prayer account appears again. Its separate occurrence and source-specific wording are not merged into 833.",
+      "readerAdmission": "personal-prototype-only",
+      "secondPrintedReference": "884",
+      "candidateArabicSha256": "f4e3e32bba3cdf0320ef3d498de4a6570716e5b23e3a7bd0dd403631d2de64ab",
+      "sourceReview": "two-printed-witnesses-and-English-comparisons-recorded",
+      "appReference": "835b",
+      "referenceDecision": "user-confirmed",
+      "requiredBeforeProduction": [
+        "Independent transcription, Arabic, English, chapter and reference review.",
+        "Resolve production source and narration rights."
+      ]
+    },
+    {
+      "printedReference": "875",
+      "sourceRecordId": "dar-ibn-kathir-2002:875",
+      "pdfPage": 212,
+      "closestSelectedReport": 832,
+      "finding": "Yahya ibn Qazaah → Ibrahim ibn Sad → Zuhri → Hind → Umm Salamah. The women leaving after the closing greeting account appears again, with wording differences including the final men phrase. It is not merged into 832.",
+      "readerAdmission": "personal-prototype-only",
+      "secondPrintedReference": "885",
+      "candidateArabicSha256": "1389dee17bf08b4291c1789dd41404e604e98f6ce22d785d7614a3ebbf3d369c",
+      "sourceReview": "two-printed-witnesses-and-English-comparisons-recorded",
+      "appReference": "835c",
+      "referenceDecision": "user-confirmed",
+      "requiredBeforeProduction": [
+        "Independent transcription, Arabic, English, chapter and reference review.",
+        "Resolve production source and narration rights."
+      ]
+    }
+  ],
+  "unadmittedOccurrences": []
 }

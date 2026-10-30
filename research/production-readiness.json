@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30T01:58:15.632Z",
+  "updatedAt": "2026-10-30T02:42:06.004Z",
   "objective": "Production-ready English-first Sahih al-Bukhari reader with the full collection, precise source access, Cedar narration, whole-hadith sessions and dependable offline iPhone use.",
   "status": "in-progress",
   "decisions": {
@@ -19,9 +19,9 @@
   "requirements": [
     {
       "id": "source-coverage",
-      "status": "837-entry-local-preview-with-explicit-comparison-evidence",
-      "evidence": "content/sources/openiti-bukhari/manifest.json; content/staging/bukhari-ar/catalog.json; content/sources/openiti-bukhari-jk/manifest.json; content/staging/bukhari-ar-jk/catalog.json; research/arabic-reference-audit.json; content/sources/wikisource-books.json; content/sources/wikisource-knowledge/manifest.json; research/knowledge-source-audit.json; research/ablution-source-audit.json; research/ablution-layout-verification.json; content/review/ablution-layout-review.json; research/ablution-first-verification.json; tests/ablution-batch.test.mjs; research/ablution-second-verification.json; tests/ablution-second.test.mjs; research/ablution-third-verification.json; tests/printed-supplements.test.mjs; research/ablution-fourth-verification.json; tests/ablution-fourth.test.mjs; research/ablution-fifth-verification.json; tests/ablution-fifth.test.mjs; research/ablution-sixth-verification.json; tests/ablution-sixth.test.mjs; research/ablution-seventh-verification.json; tests/ablution-seventh.test.mjs; research/ablution-eighth-verification.json; tests/ablution-eighth.test.mjs; research/ablution-final-verification.json; tests/ablution-final.test.mjs; research/ghusl-source-audit.json; tests/test_wikisource_book.py; tests/book-introduction.test.mjs; research/ghusl-first-verification.json; tests/ghusl-first.test.mjs; research/ghusl-second-verification.json; tests/ghusl-second.test.mjs; research/ghusl-third-verification.json; tests/ghusl-third.test.mjs; research/ghusl-final-verification.json; tests/ghusl-final.test.mjs; research/menstruation-first-verification.json; tests/menstruation-first.test.mjs; tests/test_menstruation_intake.py; research/menstruation-second-verification.json; tests/menstruation-second.test.mjs; research/menstruation-final-verification.json; tests/menstruation-final.test.mjs; research/tayammum-first-verification.json; tests/tayammum-first.test.mjs; tests/test_tayammum_intake.py; research/tayammum-final-verification.json; tests/tayammum-final.test.mjs; research/prayer-first-verification.json; tests/prayer-first.test.mjs; tests/test_prayer_intake.py; research/prayer-second-verification.json; tests/prayer-second.test.mjs; tests/published-collection.test.mjs; research/prayer-third-verification.json; tests/prayer-third.test.mjs; research/prayer-fourth-verification.json; tests/prayer-fourth.test.mjs; research/prayer-fifth-verification.json; tests/prayer-fifth.test.mjs; research/prayer-sixth-verification.json; tests/prayer-sixth.test.mjs; research/prayer-seventh-verification.json; tests/prayer-seventh.test.mjs; research/prayer-eighth-verification.json; tests/prayer-eighth.test.mjs; research/prayer-ninth-verification.json; tests/prayer-ninth.test.mjs; research/prayer-tenth-verification.json; tests/prayer-tenth.test.mjs; research/prayer-final-verification.json; tests/prayer-final.test.mjs; research/prayer-times-first-verification.json; tests/prayer-times-first.test.mjs; tests/test_prayer_times_intake.py; research/prayer-times-second-verification.json; tests/prayer-times-second.test.mjs; research/adhan-third-deployment.json; research/adhan-complete-verification.json; research/prayer-description-source-audit.json; content/review/congregation-overlap-review.json; tests/test_prayer_description_intake.py; research/prayer-description-first-verification.json; tests/prayer-description-first.test.mjs; content/review/prayer-description-second-review.json; scripts/printed-reports.mjs; tests/prayer-description-second.test.mjs; research/prayer-description-second-verification.json; content/review/prayer-description-third-review.json; tests/prayer-description-third.test.mjs; research/prayer-description-third-verification.json; research/prayer-description-fourth-verification.json; research/prayer-description-fifth-verification.json; tests/prayer-description-fifth.test.mjs; research/prayer-description-sixth-verification.json; tests/prayer-description-sixth.test.mjs; research/prayer-description-final-verification.json; research/prayer-description-boundary-review.json; tests/prayer-description-final.test.mjs",
-      "remaining": "The approved live personal prototype remains 632 entries at a6d5522. Local preview contains 837 entries through 835 plus 619b and user-confirmed 724b. The selected digital Description of Prayer section is covered, but two modern-print tail occurrences remain pending edition review. Full collection coverage and independent certification remain unfinished."
+      "status": "839-entry-local-preview-with-explicit-comparison-evidence",
+      "evidence": "content/sources/openiti-bukhari/manifest.json; content/staging/bukhari-ar/catalog.json; content/sources/openiti-bukhari-jk/manifest.json; content/staging/bukhari-ar-jk/catalog.json; research/arabic-reference-audit.json; content/sources/wikisource-books.json; content/sources/wikisource-knowledge/manifest.json; research/knowledge-source-audit.json; research/ablution-source-audit.json; research/ablution-layout-verification.json; content/review/ablution-layout-review.json; research/ablution-first-verification.json; tests/ablution-batch.test.mjs; research/ablution-second-verification.json; tests/ablution-second.test.mjs; research/ablution-third-verification.json; tests/printed-supplements.test.mjs; research/ablution-fourth-verification.json; tests/ablution-fourth.test.mjs; research/ablution-fifth-verification.json; tests/ablution-fifth.test.mjs; research/ablution-sixth-verification.json; tests/ablution-sixth.test.mjs; research/ablution-seventh-verification.json; tests/ablution-seventh.test.mjs; research/ablution-eighth-verification.json; tests/ablution-eighth.test.mjs; research/ablution-final-verification.json; tests/ablution-final.test.mjs; research/ghusl-source-audit.json; tests/test_wikisource_book.py; tests/book-introduction.test.mjs; research/ghusl-first-verification.json; tests/ghusl-first.test.mjs; research/ghusl-second-verification.json; tests/ghusl-second.test.mjs; research/ghusl-third-verification.json; tests/ghusl-third.test.mjs; research/ghusl-final-verification.json; tests/ghusl-final.test.mjs; research/menstruation-first-verification.json; tests/menstruation-first.test.mjs; tests/test_menstruation_intake.py; research/menstruation-second-verification.json; tests/menstruation-second.test.mjs; research/menstruation-final-verification.json; tests/menstruation-final.test.mjs; research/tayammum-first-verification.json; tests/tayammum-first.test.mjs; tests/test_tayammum_intake.py; research/tayammum-final-verification.json; tests/tayammum-final.test.mjs; research/prayer-first-verification.json; tests/prayer-first.test.mjs; tests/test_prayer_intake.py; research/prayer-second-verification.json; tests/prayer-second.test.mjs; tests/published-collection.test.mjs; research/prayer-third-verification.json; tests/prayer-third.test.mjs; research/prayer-fourth-verification.json; tests/prayer-fourth.test.mjs; research/prayer-fifth-verification.json; tests/prayer-fifth.test.mjs; research/prayer-sixth-verification.json; tests/prayer-sixth.test.mjs; research/prayer-seventh-verification.json; tests/prayer-seventh.test.mjs; research/prayer-eighth-verification.json; tests/prayer-eighth.test.mjs; research/prayer-ninth-verification.json; tests/prayer-ninth.test.mjs; research/prayer-tenth-verification.json; tests/prayer-tenth.test.mjs; research/prayer-final-verification.json; tests/prayer-final.test.mjs; research/prayer-times-first-verification.json; tests/prayer-times-first.test.mjs; tests/test_prayer_times_intake.py; research/prayer-times-second-verification.json; tests/prayer-times-second.test.mjs; research/adhan-third-deployment.json; research/adhan-complete-verification.json; research/prayer-description-source-audit.json; content/review/congregation-overlap-review.json; tests/test_prayer_description_intake.py; research/prayer-description-first-verification.json; tests/prayer-description-first.test.mjs; content/review/prayer-description-second-review.json; scripts/printed-reports.mjs; tests/prayer-description-second.test.mjs; research/prayer-description-second-verification.json; content/review/prayer-description-third-review.json; tests/prayer-description-third.test.mjs; research/prayer-description-third-verification.json; research/prayer-description-fourth-verification.json; research/prayer-description-fifth-verification.json; tests/prayer-description-fifth.test.mjs; research/prayer-description-sixth-verification.json; tests/prayer-description-sixth.test.mjs; research/prayer-description-final-verification.json; research/prayer-description-boundary-review.json; tests/prayer-description-final.test.mjs; research/prayer-description-tail-admission-verification.json; tests/prayer-description-tail.test.mjs",
+      "remaining": "The approved live personal prototype remains 632 entries at a6d5522. Local preview contains 839 entries through 835, including 619b, 724b and the user-confirmed printed tail 835b/835c. Full Bukhari coverage and independent certification remain unfinished."
     },
     {
       "id": "english-full-collection",
@@ -80,7 +80,7 @@
   ],
   "nextActions": [
     "Keep the 699-entry approval candidate and subsequent local previews separate from the approved 632-entry live release until the specific publication is authorized.",
-    "Resolve the proposed app references 835b and 835c for modern-print occurrences 874 and 875, then implement an explicit printed book-end admission and repeated chapter with source checks. Prepare Friday Prayer intake independently. Do not claim cross-edition completeness from digital coverage alone.",
+    "Prepare Friday Prayer source intake with the same exact-span, complete-chain, printed-witness and comparison checks. Preserve the new 835b/835c suffixes and existing digital reference 836; keep all immutable source inputs and historical review records.",
     "Preserve the overlapping congregation source as excluded evidence. It must not add duplicate entries or replace selected Adhan wording.",
     "Measure full bilingual loading and memory costs before further substantial expansion; existing scale tests and desktop checks do not establish physical iPhone performance for the full corpus.",
     "Complete the Arabic edition/reference map using the new exact-span inventory and pinned printed-witness findings; keep combined labels distinct from missing or misassigned bodies.",
@@ -348,7 +348,7 @@
     "remaining": "Independent review, English chapter introductions and additional reviewed audio. The section boundary is specific to this digital source; other editions continue Adhan beyond 698."
   },
   "prayerDescriptionIntake": {
-    "status": "selected-digital-section-covered-printed-boundary-review-pending",
+    "status": "selected-digital-section-and-two-print-tail-admitted-to-local-prototype",
     "source": "content/sources/wikisource-prayer-description/manifest.json",
     "audit": "research/prayer-description-source-audit.json",
     "inventory": "content/staging/bukhari-prayer-description-wikisource/catalog.json",
@@ -358,17 +358,17 @@
     "introductionParagraphs": 20,
     "readerEligible": true,
     "remaining": [
-      "Two tail occurrences are now compared against Dar Ibn Kathir and Dar al-Tasil, with classical edition-placement evidence. Keep them outside the reader until stable app references and explicit book-end admission are handled; independent review remains pending.",
+      "The two printed tail occurrences are admitted as user-confirmed 835b/835c. Continue edition mapping for the following book; do not infer complete Bukhari coverage from this section.",
       "Keep chapter-only material separate from numbered sessions and audio; English introductions remain pending.",
       "Record every wording difference explicitly and preserve unchanged raw sources.",
       "Obtain independent Arabic, English, chapter, reference and spoken-word reviews before production claims."
     ],
-    "readerEligibleRange": "699–835 plus user-confirmed app reference 724b",
-    "readerReports": 138,
+    "readerEligibleRange": "699–835 plus user-confirmed app references 724b, 835b and 835c",
+    "readerReports": 140,
     "readerDigitalChapters": 84,
-    "readerBrowsingSections": 85,
+    "readerBrowsingSections": 86,
     "readerArabicIntroductionParagraphs": 20,
-    "verification": "research/prayer-description-final-verification.json",
+    "verification": "research/prayer-description-tail-admission-verification.json",
     "printedReports": [
       {
         "appReference": "724b",
@@ -382,19 +382,45 @@
           "userReply": "Use 724b with the printed reference (Recommended)",
           "scope": "Stable app reference and visible printed reference only; no text certification or new publication approval."
         }
+      },
+      {
+        "appReference": "835b",
+        "printedSourceRecord": "dar-ibn-kathir-2002:874",
+        "status": "AI-transcribed; independent review pending; app reference confirmed by user",
+        "referenceDecision": {
+          "status": "user-confirmed",
+          "recordedAt": "2026-10-30T02:22:13.323Z",
+          "appReference": "835b",
+          "printedReference": "874",
+          "userReply": "Use 835b and 835c with printed references (Recommended)",
+          "scope": "Stable app reference and visible printed reference; no scholarly certification or publication approval."
+        }
+      },
+      {
+        "appReference": "835c",
+        "printedSourceRecord": "dar-ibn-kathir-2002:875",
+        "status": "AI-transcribed; independent review pending; app reference confirmed by user",
+        "referenceDecision": {
+          "status": "user-confirmed",
+          "recordedAt": "2026-10-30T02:22:13.323Z",
+          "appReference": "835c",
+          "printedReference": "875",
+          "userReply": "Use 835b and 835c with printed references (Recommended)",
+          "scope": "Stable app reference and visible printed reference; no scholarly certification or publication approval."
+        }
       }
     ],
     "boundaryReview": "research/prayer-description-boundary-review.json",
     "boundaryCandidate": "content/review/prayer-description-tail-candidate.json",
-    "boundaryReviewStatus": "two-print-candidate-ready-reference-decision-pending"
+    "boundaryReviewStatus": "references-confirmed-and-printed-tail-admitted-local-only"
   },
   "currentLocalPreview": {
-    "entries": 837,
+    "entries": 839,
     "books": 11,
-    "release": "opening-55c7f81f0d5f",
-    "readingBytes": 22717953,
+    "release": "opening-773d937234f4",
+    "readingBytes": 22804413,
     "publication": "not-published",
-    "verification": "research/prayer-description-final-verification.json",
+    "verification": "research/prayer-description-tail-admission-verification.json",
     "liveEntries": 632,
     "liveCommit": "a6d55223d3d863f2583ba67aa27edd139e9d7d6a"
   },

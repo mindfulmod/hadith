@@ -14,8 +14,8 @@ const entry=(b,n)=>b.entries.find(e=>e.number===n),text=(b,n)=>entry(b,n).englis
 
 test('819–835 retain all Arabic spans, full honorifics and exact complete scripts',()=>{
  const a=input(),b=buildBookBatch(...a),{source,ledger}=collectionFiles(),plan=narrationPlan(source);
- assert.deepEqual(b.entries.map(e=>e.number),Array.from({length:17},(_,i)=>819+i));assert.equal(a[1].entries.flatMap(e=>e.segments).length,46);
- for(const r of a[1].entries){const e=entry(b,r.number),raw=a[0].blocks.find(x=>x.htmlId===r.paragraphIds[0]).text;
+ assert.deepEqual(b.entries.filter(e=>!e.review.printedReport).map(e=>e.number),Array.from({length:17},(_,i)=>819+i));assert.equal(a[1].entries.filter(e=>!e.printedReport).flatMap(e=>e.segments).length,46);
+ for(const r of a[1].entries.filter(e=>!e.printedReport)){const e=entry(b,r.number),raw=a[0].blocks.find(x=>x.htmlId===r.paragraphIds[0]).text;
   assert.equal(e.arabic_blocks.join(''),raw);assert.equal(r.segments.map(s=>s.arabic).join(''),raw);assert(!r.arabicCorrections);
   assert.deepEqual(e.english_blocks,r.segments.map(s=>s.english));assert.equal(sourceSegments(e,'english')[0].kind,'chain');
   assert.equal((raw.match(/ﷺ/g)||[]).length,(e.english_blocks.join(' ').match(/may Allah bless him and grant him peace/g)||[]).length);
@@ -54,17 +54,17 @@ test('source-specific age, attribution, OR and short wording resist comparison e
  assert(!text(b,835).includes('at night'));assert(!text(b,835).includes('mosque'));assert(text(b,835).endsWith('he must not prevent her.'));
 });
 
-test('selected section coverage is complete without claiming the two modern-print tail occurrences',()=>{
+test('selected digital coverage and separately admitted printed occurrences remain distinct',()=>{
  const [inventory,review]=input(),{source,ledger}=collectionFiles(),book=ledger.books.find(b=>b.id==='prayer-description');
  for(const original of inventory.records)assert(source.entries.some(e=>e.id==='bukhari:'+original.number));
- assert.equal(inventory.records.length,137);assert(source.entries.some(e=>e.id==='bukhari:724b'));assert.equal(book.chapters.length,85);
+ assert.equal(inventory.records.length,137);assert(source.entries.some(e=>e.id==='bukhari:724b'));assert.equal(book.chapters.length,86);
  assert.equal(review.chapters.length,6);assert.equal(review.chapters.flatMap(c=>c.contextIds).length,0);
- const boundary=read('research/prayer-description-boundary-review.json');assert.equal(boundary.status,'two-print-candidate-ready-reference-decision-pending');assert.deepEqual(boundary.unadmittedOccurrences.map(x=>x.printedReference),['874','875']);
- assert(boundary.unadmittedOccurrences.every(x=>x.readerAdmission==='pending'));assert(!review.entries.some(e=>e.printedReport));
- const session=startSession(source.entries,833,5);assert.deepEqual(session.numbers,[833,834,835]);assert.deepEqual(visitSession(session,819),session);
+ const boundary=read('research/prayer-description-boundary-review.json');assert.equal(boundary.status,'two-print-tail-admitted-personal-prototype');assert.deepEqual(boundary.admittedOccurrences.map(x=>x.printedReference),['874','875']);
+ assert.equal(boundary.unadmittedOccurrences.length,0);assert.equal(review.entries.filter(e=>e.printedReport).length,2);
+ const session=startSession(source.entries,833,5);assert.deepEqual(session.numbers,[833,834,835,'835b','835c']);assert.deepEqual(visitSession(session,819),session);
 });
 
 test('each final English comparison binds its exact inventory record',()=>{
- const a=input();for(const r of a[1].entries){const c=r.comparisons[1];assert.equal(c.reference,'1.12.'+(r.number-3));assert.equal(c.referenceEvidence.sourceRecordId,read('content/staging/bukhari-en-islamhouse/catalog.json').namespace+':'+c.reference);}
+ const a=input();for(const r of a[1].entries.filter(e=>!e.printedReport)){const c=r.comparisons[1];assert.equal(c.reference,'1.12.'+(r.number-3));assert.equal(c.referenceEvidence.sourceRecordId,read('content/staging/bukhari-en-islamhouse/catalog.json').namespace+':'+c.reference);}
  const b=input(),r=row(b,835);r.comparisons[1].referenceEvidence.recordSha256='0'.repeat(64);rehash(r);assert.throws(()=>buildBookBatch(...b));
 });

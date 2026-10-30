@@ -60,7 +60,7 @@ export function validatePrintedHeading(row,originals,sources){
 export function reviewedChapterViews(review){
  const views=[],ids=new Set(review.chapters.map(c=>c.id));
  for(const chapter of review.chapters){
-  const divisions=review.entries.filter(r=>r.chapterId===chapter.id&&r.printedHeading).map(r=>r.printedHeading);
+  const divisions=review.entries.filter(r=>r.chapterId===chapter.id&&(r.printedHeading||r.printedReport?.chapterHeading)).map(r=>r.printedHeading||r.printedReport.chapterHeading);
   if(!divisions.length){views.push(chapter);continue;}
   let cursor=0,current={...chapter,entryNumbers:[]};
   for(const d of divisions){
