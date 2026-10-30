@@ -1,6 +1,6 @@
 # Hadith · MindfulMod reader
 
-The local personal reader at `reader/` contains 760 selected Bukhari entries across eleven sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The local personal reader at `reader/` contains 780 selected Bukhari entries across eleven sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
 ## Publisher scaling · 29 October 2026
 
@@ -994,3 +994,14 @@ Review-status generation now discloses a missing second English comparison even 
 **626 tests (526 Node and 100 Python)** and thirteen integrity checks passed. The browser displayed exact Arabic and English for all twenty new reports. At an actual 320px width, 21px day and 28px night text fit without horizontal overflow. With the server stopped, reload, the saved session/bookmark, exact search, all sixteen new headings and six Arabic introductions, original correction inputs and comparison evidence remained available. These are desktop checks, not fresh physical iPhone or locked-screen acceptance. Evidence: `research/prayer-description-third-verification.json`.
 
 The approved live release remains **632 entries** at `a6d5522`; this preview has not been published. Independent reviews, English introductions, later recordings, 77 remaining reports in this selected section and the rest of Bukhari are still required.
+
+
+### Description of Prayer 759–778 in a local preview — 29 October 2026
+
+The local preview now contains **780 entries**, adding twenty complete reports and chapters 39–51. All prior 760 entry objects, the other ten book contexts and packs, raw digital inputs, artwork and actual recordings remain unchanged. The public website remains the approved 632-entry release.
+
+The 52 new English segments retain full chains, repetitions, interleaved variants, uncertainty and closing exchanges. One explicit printed-reading correction at 766 restores كثيرا, with its original paragraph and two exact print witnesses retained. Abu Burayd versus Abu Yazid, leg versus forearm and veil versus cloud remain documented edition differences. The inherited chain at 771 links to 770; the long report 773 remains one session unit with both final companion recollections. Chapter 44 is untitled; chapter 49 contains only separate Arabic context. Three Arabic introductions remain browsable with English pending. The final name check renders بدل as Badal.
+
+All **643 tests (543 Node and 100 Python)** and fourteen integrity checks passed. At 320px, the standard 21px day and largest 28px night text fit without horizontal overflow. With the final preview server stopped, all twenty rendered Arabic and English entries matched the source exactly; all thirteen chapter notes matched their stored Arabic; the preceding chain opened and Continue remained at 773. Search, bookmarks, correction evidence and the unchanged original were also checked offline. The normal update page recovered the reused local origin from an older synthetic test worker. These are desktop checks, not new physical iPhone or locked-screen audio acceptance. Evidence and limits: `research/prayer-description-fourth-verification.json`.
+
+Reading downloads total **21,331,257 bytes (21.33 MB)**. Complete scripts cover 780 entries; Cedar recordings still cover only 1–6. There are 57 selected digital reports left in Description of Prayer. The rest of Bukhari, English chapter material, independent review, further recordings and full-corpus qualification remain unfinished. The new preview has not been published.

@@ -1,0 +1,427 @@
+{
+  "checkedAt": "2026-10-30T00:01:59.622Z",
+  "status": "verified-local-personal-prototype",
+  "baselineCommit": "21cf8bd0a0b97b58f84dbe02145bf0442a2d9b88",
+  "readerRelease": "opening-85fc215009b4",
+  "publication": "not-published",
+  "scope": {
+    "references": [
+      759,
+      760,
+      761,
+      762,
+      763,
+      764,
+      765,
+      766,
+      767,
+      768,
+      769,
+      770,
+      771,
+      772,
+      773,
+      774,
+      775,
+      776,
+      777,
+      778
+    ],
+    "newReports": 20,
+    "englishSegments": 52,
+    "digitalChapters": 13,
+    "chaptersWithoutNumberedReports": [
+      49
+    ],
+    "separateArabicIntroductionParagraphs": 3
+  },
+  "collection": {
+    "entries": 780,
+    "books": 11,
+    "sourceRecordSha256": "e74a27ab7b6a0af62ef164ce6909b449e66a0b25c9af6b97f8ff1c40e908123f",
+    "prior760EntriesUnchanged": true,
+    "otherTenBookContextsAndPacksUnchanged": true,
+    "originalDigitalInputsUnchanged": true,
+    "artworkAndRecordingsUnchanged": true,
+    "recordedReferences": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "readingBytes": 21331257,
+    "releaseFiles": 179
+  },
+  "sourceReview": {
+    "record": "content/review/prayer-description-fourth-review.json",
+    "sourceRevision": 253001,
+    "digitalSha256": "c4063d7c083086e58a1be160d9aa7f7053bfc7a3c0986291f930f9312bbbbece",
+    "printedWitnesses": [
+      {
+        "id": "brill-1862",
+        "pdfPages": [
+          203,
+          204,
+          205,
+          206,
+          207,
+          208,
+          209
+        ],
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+        "visuallyInspected": true
+      },
+      {
+        "id": "dar-ibn-kathir-2002",
+        "pdfPages": [
+          194,
+          195,
+          196,
+          197,
+          198,
+          199
+        ],
+        "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+        "visuallyInspected": true
+      }
+    ],
+    "arabicCorrections": [
+      766
+    ],
+    "englishComparisons": [
+      {
+        "source": "Aisha Bewley",
+        "url": "https://aishabewley.org/bukhari8",
+        "references": "759–778",
+        "sourceSnapshotSha256": "b22d8cf79256575eda116ea71a8929a742f0700c67306713affa3193fefbe98f",
+        "bodyRead": true
+      },
+      {
+        "source": "Pinned Khan-family EPUB",
+        "references": "1.12.758–1.12.775",
+        "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+        "bodyRead": true,
+        "exactInventoryRecordHashesInReview": true,
+        "exception": "764 absent between 1.12.762/763; 770/771 are separately mapped parts of 1.12.768. The chapter material appended to 1.12.764 is excluded from numbered report 766."
+      }
+    ],
+    "findings": [
+      "766 explicitly restores كثيرا on the agreement of Brill PDF 205 and modern PDF 196, retaining the original paragraph, correction spans, hashes and visible notice.",
+      "769 retains digital/modern Abu Burayd and records historical/English Abu Yazid.",
+      "771 links the continuing chain in 770, without inserting a new chain, and separates the closing historical statement.",
+      "772 retains both interleaved wording variants and the full final narrator exchange. The selected leg reading is also recorded by al-Qastallani; both print witnesses have forearm.",
+      "773 remains one complete report. Repeated clauses, the digital veil reading, the elliptical wishing prompt, honorifics and both closing companion recollections remain.",
+      "774 retains the closing al-Layth route; 775 retains I think; 776/777 preserve passive commands and their different word order.",
+      "The name Badal is rendered without a doubled d, following the classical pronunciation note. No Arabic wording changes.",
+      "Chapter 44 remains untitled, chapter 49 has no numbered report, and all three Arabic introduction paragraphs remain separately browsable with English pending."
+    ],
+    "reviewStatus": "AI-assisted personal prototype; independent Arabic, English, chapter, reference and spoken-word reviews pending. Not Darussalam wording or certified accuracy.",
+    "narratorPronunciationWitness": {
+      "url": "https://www.islamweb.org/ar/library/content/303/8585/باب-ما-يمحق-الكذب-والكتمان-في-البيع",
+      "scope": "Al-Ayni, volume 11 page 199: indexed primary-source excerpt specifies short a vowels in Badal and doubled b in al-Muhabbar.",
+      "retrieval": "The search result exposed the pronunciation passage. Full-page web retrieval returned cache misses; direct responses did not expose that passage. No full-page consultation is claimed."
+    }
+  },
+  "automated": {
+    "nodeTests": 543,
+    "pythonTests": 100,
+    "total": 643,
+    "allPassed": true,
+    "integrityChecks": [
+      {
+        "command": "node scripts/prototype-admissions.mjs --check",
+        "exitCode": 0,
+        "output": "56 exact personal-prototype admissions checked; independent review and publication approval remain separate.\n"
+      },
+      {
+        "command": "node scripts/build-opening-prototype.mjs --check",
+        "exitCode": 0,
+        "output": "Personal prototype: 7 complete entries; original inputs retained; source d596d6aad6ad1f02839f3690c446d5b16791f7b7aa35c157b6e89a442db7b76a\n"
+      },
+      {
+        "command": "python3 scripts/import-wikisource-book.py --check",
+        "exitCode": 0,
+        "output": "faith: 51 numbered spans, 42 source headings, 163 exact blocks; candidate only\nknowledge: 76 numbered spans, 54 source headings, 178 exact blocks; candidate only\nghusl: 45 numbered spans, 29 source headings, 79 exact blocks; candidate only\nmenstruation: 37 numbered spans, 29 source headings, 74 exact blocks; candidate only\nprayer-times: 79 numbered spans, 41 source headings, 128 exact blocks; candidate only\n"
+      },
+      {
+        "command": "python3 scripts/audit-wikisource-layout.py --check",
+        "exitCode": 0,
+        "output": "ablution: {\"blocks\": 252, \"htmlHeadings\": 75, \"unparsedHeadings\": 1, \"numberedMarkers\": 110, \"uniqueNumericLabels\": 109, \"numericRange\": [135, 244], \"unobservedLabelsWithinRange\": [160], \"duplicateLabels\": [{\"number\": 162, \"occurrences\": 2}], \"sourceCodePoints\": 34517, \"coveredCodePoints\": 34517}; unresolved layout; not published\ntayammum: {\"blocks\": 25, \"htmlHeadings\": 7, \"unparsedHeadings\": 1, \"numberedMarkers\": 15, \"uniqueNumericLabels\": 15, \"numericRange\": [327, 341], \"unobservedLabelsWithinRange\": [], \"duplicateLabels\": [], \"sourceCodePoints\": 8062, \"coveredCodePoints\": 8062}; unresolved layout; not published\nprayer: {\"blocks\": 305, \"htmlHeadings\": 108, \"unparsedHeadings\": 0, \"numberedMarkers\": 157, \"uniqueNumericLabels\": 157, \"numericRange\": [342, 498], \"unobservedLabelsWithinRange\": [], \"duplicateLabels\": [], \"sourceCodePoints\": 56260, \"coveredCodePoints\": 56260}; unresolved layout; not published\nadhan: {\"blocks\": 224, \"htmlHeadings\": 80, \"unparsedHeadings\": 0, \"numberedMarkers\": 122, \"uniqueNumericLabels\": 121, \"numericRange\": [578, 698], \"unobservedLabelsWithinRange\": [], \"duplicateLabels\": [{\"number\": 619, \"occurrences\": 2}], \"sourceCodePoints\": 39955, \"coveredCodePoints\": 39955}; unresolved layout; not published\nprayer-description: {\"blocks\": 240, \"htmlHeadings\": 84, \"unparsedHeadings\": 0, \"numberedMarkers\": 137, \"uniqueNumericLabels\": 137, \"numericRange\": [699, 835], \"unobservedLabelsWithinRange\": [], \"duplicateLabels\": [], \"sourceCodePoints\": 45865, \"coveredCodePoints\": 45865}; unresolved layout; not published\n"
+      },
+      {
+        "command": "python3 scripts/resolve-wikisource-layout.py --check",
+        "exitCode": 0,
+        "output": "ablution: 110 candidate reports; 76 mapped chapters; all source spans retained; not published\ntayammum: 15 candidate reports; 8 mapped chapters; all source spans retained; not published\nprayer: 157 candidate reports; 108 mapped chapters; all source spans retained; not published\nadhan: 122 candidate reports; 80 mapped chapters; all source spans retained; not published\nprayer-description: 137 candidate reports; 84 mapped chapters; all source spans retained; not published\n"
+      },
+      {
+        "command": "node scripts/build-collection.mjs --check",
+        "exitCode": 0,
+        "output": "11 books, 780 complete prototype source entries; source e74a27ab7b6a0af62ef164ce6909b449e66a0b25c9af6b97f8ff1c40e908123f\n"
+      },
+      {
+        "command": "node scripts/build-audio.mjs --check",
+        "exitCode": 0,
+        "output": "780 complete narration scripts; 6 recorded hadith bound to exact text; spoken-word and pronunciation reviews remain separate.\n"
+      },
+      {
+        "command": "node reader/check-content.mjs",
+        "exitCode": 0,
+        "output": "Published book packs match the complete source record; Arabic integrity hashes pass.\n"
+      },
+      {
+        "command": "node scripts/import-bukhari.mjs --check",
+        "exitCode": 0,
+        "output": "   2506,\n    2516,\n    2540,\n    2556,\n    2584,\n    2608,\n    2667,\n    2670,\n    2677,\n    2696,\n    2712,\n    2725,\n    2732,\n    2789,\n    2800,\n    2878,\n    2895,\n    2963,\n    2973,\n    3079,\n    3132,\n    3187,\n    3363,\n    3454,\n    3517,\n    3518,\n    3519,\n    3520,\n    3521,\n    3522,\n    3523,\n    3524,\n    3525,\n    3526,\n    3527,\n    3723,\n    3741,\n    3940,\n    3979,\n    3981,\n    4013,\n    4018,\n    4036,\n    4061,\n    4137,\n    4158,\n    4161,\n    4179,\n    4181,\n    4204,\n    4222,\n    4224,\n    4241,\n    4245,\n    4247,\n    4249,\n    4306,\n    4308,\n    4319,\n    4327,\n    4342,\n    4345,\n    4354,\n    4375,\n    4434,\n    4444,\n    4453,\n    4456,\n    4457,\n    4465,\n    4550,\n    4835,\n    4880,\n    4958,\n    4979,\n    5111,\n    5118,\n    5215,\n    5257,\n    5291,\n    5322,\n    5324,\n    5326,\n    5328,\n    5455,\n    5472,\n    5491,\n    5526,\n    5587,\n    5642,\n    5710,\n    5711,\n    5720,\n    5721,\n    5816,\n    5898,\n    5909,\n    5912,\n    5956,\n    6028,\n    6074,\n    6075,\n    6143,\n    6283,\n    6286,\n    6379,\n    6381,\n    6601,\n    6618,\n    6634,\n    6828,\n    6836,\n    6838,\n    6843,\n    6860,\n    7051,\n    7063,\n    7103,\n    7104,\n    7106,\n    7107,\n    7169,\n    7177,\n    7185,\n    7194,\n    7200,\n    7223,\n    7259,\n    7279,\n    7285,\n    7342,\n    7351,\n    7388\n  ],\n  \"duplicateNumbers\": [],\n  \"emptyRecords\": [\n    1161,\n    1162,\n    1163,\n    1164,\n    1165,\n    2296,\n    2972,\n    2974,\n    3382,\n    4582\n  ],\n  \"unclassifiedNumericHeadings\": [],\n  \"limitations\": [\n    \"A marker count is not a content-completeness check.\",\n    \"missingNumbers lists absent numeric labels, not proven missing narrations; see research/arabic-reference-audit.json.\",\n    \"Every record requires Arabic witness comparison, numbering validation and a licensed or reviewed English text before publication.\",\n    \"Raw source retains front matter, chapter material, page references and editorial text. None is silently merged into a narration.\"\n  ]\n}\n"
+      },
+      {
+        "command": "python3 scripts/import-bukhari-jk.py --check",
+        "exitCode": 0,
+        "output": "{\n  \"sourceBytes\": 5524762,\n  \"coveredBytes\": 5524762,\n  \"sectionCount\": 100,\n  \"headingCount\": 3965,\n  \"reportCount\": 7129,\n  \"uniqueNumericLabels\": 7124,\n  \"missingNumericLabels\": [],\n  \"duplicateReferences\": [\n    {\n      \"label\": \"3905\",\n      \"count\": 2\n    }\n  ],\n  \"suffixedReferences\": [\n    \"619 م\",\n    \"4537 م\",\n    \"4626 م\",\n    \"6705 م\"\n  ],\n  \"numericChapterHeadings\": [\n    {\n      \"line\": 4808,\n      \"label\": \"39\",\n      \"text\": \"# 39 باب حد إتمام الركوع والاعتدال فيه والطمأنينة\"\n    },\n    {\n      \"line\": 20679,\n      \"label\": \"2\",\n      \"text\": \"# 2 باب قول الله تعالى @QB@ وإذ قال ربك للملائكة إني جاعل في الأرض خليفة\"\n    },\n    {\n      \"line\": 30190,\n      \"label\": \"192\",\n      \"text\": \"# 192 باب قوله @QB@ إلا من استرق السمع فأتبعه شهاب مبين @QE@\"\n    },\n    {\n      \"line\": 32250,\n      \"label\": \"372\",\n      \"text\": \"# 372 ms1348 باب قوله تعالى @QB@ من بعدي اسمه أحمد @QE@\"\n    },\n    {\n      \"line\": 41074,\n      \"label\": \"23\",\n      \"text\": \"# 23 باب الدعاء غير مستقبل القبلة\"\n    },\n    {\n      \"line\": 43213,\n      \"label\": \"8\",\n      \"text\": \"# 8 باب إذا أعتق في الكفارة لمن يكون ولاؤه\"\n    }\n  ],\n  \"emptyRecords\": [],\n  \"limitations\": [\n    \"A complete byte inventory is not a certification of Arabic transcription or narration completeness.\",\n    \"Section numbers and report labels belong to this edition; they are not a cross-edition reference map.\",\n    \"Heading context includes all intervening paragraphs. It is not silently folded into a report.\",\n    \"Upstream records a 2023 cleaning that removed editorial paratext and inconsistent heading annotation.\"\n  ]\n}\n"
+      },
+      {
+        "command": "python3 scripts/import-english.py --check",
+        "exitCode": 0,
+        "output": "bukhari-epub-2010:7.71.665e\", \"islamhouse-bukhari-epub-2010:7.72.790a\", \"islamhouse-bukhari-epub-2010:7.72.790b\", \"islamhouse-bukhari-epub-2010:8.73.56o\", \"islamhouse-bukhari-epub-2010:8.73.59o\", \"islamhouse-bukhari-epub-2010:8.73.59i\", \"islamhouse-bukhari-epub-2010:8.73.125d\", \"islamhouse-bukhari-epub-2010:8.73.125m\", \"islamhouse-bukhari-epub-2010:8.74.252e\", \"islamhouse-bukhari-epub-2010:8.74.253g\", \"islamhouse-bukhari-epub-2010:8.74.253k\", \"islamhouse-bukhari-epub-2010:8.75.317e\", \"islamhouse-bukhari-epub-2010:8.75.317o\", \"islamhouse-bukhari-epub-2010:8.76.559t\", \"islamhouse-bukhari-epub-2010:8.76.559e\", \"islamhouse-bukhari-epub-2010:8.82.800i\", \"islamhouse-bukhari-epub-2010:8.82.800e\", \"islamhouse-bukhari-epub-2010:8.82.811d\", \"islamhouse-bukhari-epub-2010:8.82.811e\", \"islamhouse-bukhari-epub-2010:9.83.38a\", \"islamhouse-bukhari-epub-2010:9.83.42e\", \"islamhouse-bukhari-epub-2010:9.86.90t\", \"islamhouse-bukhari-epub-2010:9.92.424t\", \"islamhouse-bukhari-epub-2010:9.93.525y\", \"islamhouse-bukhari-epub-2010:9.93.532c\", \"islamhouse-bukhari-epub-2010:9.93.532s\", \"islamhouse-bukhari-epub-2010:9.93.532v\"], \"anomalies\": [{\"section\": \"OPS/section-0031.html\", \"reference\": \"islamhouse-bukhari-epub-2010:3.29.74\", \"reason\": \"narrator-only-body\"}, {\"section\": \"OPS/section-0056.html\", \"reference\": \"islamhouse-bukhari-epub-2010:4.54.523\", \"reason\": \"narrator-only-body\"}, {\"section\": \"OPS/section-0063.html\", \"reference\": \"islamhouse-bukhari-epub-2010:6.60.189\", \"reason\": \"narrator-only-body\"}, {\"section\": \"OPS/section-0064.html\", \"reference\": \"islamhouse-bukhari-epub-2010:6.60.392\", \"reason\": \"narrator-only-body\"}, {\"section\": \"OPS/section-0068.html\", \"reference\": \"islamhouse-bukhari-epub-2010:7.64.267\", \"reason\": \"narrator-only-body\"}, {\"section\": \"OPS/section-0080.html\", \"reference\": \"islamhouse-bukhari-epub-2010:8.76.502\", \"reason\": \"narrator-only-body\"}, {\"section\": \"OPS/section-0082.html\", \"reference\": \"islamhouse-bukhari-epub-2010:8.78.642\", \"reason\": \"narrator-only-body\"}]}}\n"
+      },
+      {
+        "command": "python3 scripts/import-opening.py --check",
+        "exitCode": 0,
+        "output": "7 records, 17 exact text blocks; not published\n"
+      },
+      {
+        "command": "python3 scripts/check-opening-review.py",
+        "exitCode": 0,
+        "output": "5 drafts; 32 fully covered source segments; independent review pending\n"
+      },
+      {
+        "command": "python3 scripts/build-opening-review.py --check",
+        "exitCode": 0,
+        "output": "Five-entry review artifact matches the pinned candidate text; reader unchanged\n"
+      }
+    ],
+    "initialFindingsResolved": [
+      "The closing 774 translation was reordered to retain the checked related-to-me reporting phrase.",
+      "The final narrator pronunciation check changed Baddal to Badal. The affected complete Node suite, source/release checks and final offline text rendering were rerun."
+    ],
+    "admissionHistory": "Both newly created local prototype admissions are retained: the intermediate draft and the final name-checked source. Neither constitutes independent review or external publication approval."
+  },
+  "browser": {
+    "checkedAt": "2026-10-29T23:59:53.076Z",
+    "release": "opening-85fc215009b4",
+    "viewport": {
+      "width": 320,
+      "height": 760
+    },
+    "rendered": [
+      {
+        "number": 759,
+        "englishExact": true,
+        "arabicExact": true,
+        "offline": true
+      },
+      {
+        "number": 760,
+        "englishExact": true,
+        "arabicExact": true,
+        "offline": true
+      },
+      {
+        "number": 761,
+        "englishExact": true,
+        "arabicExact": true,
+        "offline": true
+      },
+      {
+        "number": 762,
+        "englishExact": true,
+        "arabicExact": true,
+        "offline": true
+      },
+      {
+        "number": 763,
+        "englishExact": true,
+        "arabicExact": true,
+        "offline": true
+      },
+      {
+        "number": 764,
+        "englishExact": true,
+        "arabicExact": true,
+        "offline": true
+      },
+      {
+        "number": 765,
+        "englishExact": true,
+        "arabicExact": true,
+        "offline": true
+      },
+      {
+        "number": 766,
+        "englishExact": true,
+        "arabicExact": true,
+        "offline": true
+      },
+      {
+        "number": 767,
+        "englishExact": true,
+        "arabicExact": true,
+        "offline": true
+      },
+      {
+        "number": 768,
+        "englishExact": true,
+        "arabicExact": true,
+        "offline": true
+      },
+      {
+        "number": 769,
+        "englishExact": true,
+        "arabicExact": true,
+        "offline": true
+      },
+      {
+        "number": 770,
+        "englishExact": true,
+        "arabicExact": true,
+        "offline": true
+      },
+      {
+        "number": 771,
+        "englishExact": true,
+        "arabicExact": true,
+        "offline": true
+      },
+      {
+        "number": 772,
+        "englishExact": true,
+        "arabicExact": true,
+        "offline": true
+      },
+      {
+        "number": 773,
+        "englishExact": true,
+        "arabicExact": true,
+        "offline": true
+      },
+      {
+        "number": 774,
+        "englishExact": true,
+        "arabicExact": true,
+        "offline": true
+      },
+      {
+        "number": 775,
+        "englishExact": true,
+        "arabicExact": true,
+        "offline": true
+      },
+      {
+        "number": 776,
+        "englishExact": true,
+        "arabicExact": true,
+        "offline": true
+      },
+      {
+        "number": 777,
+        "englishExact": true,
+        "arabicExact": true,
+        "offline": true
+      },
+      {
+        "number": 778,
+        "englishExact": true,
+        "arabicExact": true,
+        "offline": true
+      }
+    ],
+    "day": {
+      "scrollWidth": 320,
+      "textSize": "21px",
+      "width": 320
+    },
+    "night": {
+      "scrollWidth": 320,
+      "textSize": "28px",
+      "width": 320
+    },
+    "offline": {
+      "serverStopped": true,
+      "readingReady": true,
+      "continueHref": "#read/773",
+      "savedBookmark": 771,
+      "exactSearch": "thirty-odd angels → Hadith 766",
+      "precedingChain770Open": true,
+      "complete773English": true,
+      "original766ArabicExact": true,
+      "correctionWitnessLocations": "Historical PDF page 205; modern PDF pages 195, 196 (correction on 196)",
+      "chapterText": [
+        {
+          "id": "chapter-39",
+          "exact": true
+        },
+        {
+          "id": "chapter-40",
+          "exact": true
+        },
+        {
+          "id": "chapter-41",
+          "exact": true
+        },
+        {
+          "id": "chapter-42",
+          "exact": true
+        },
+        {
+          "id": "chapter-43",
+          "exact": true
+        },
+        {
+          "id": "chapter-44",
+          "exact": true
+        },
+        {
+          "id": "chapter-45",
+          "exact": true
+        },
+        {
+          "id": "chapter-46",
+          "exact": true
+        },
+        {
+          "id": "chapter-47",
+          "exact": true
+        },
+        {
+          "id": "chapter-48",
+          "exact": true
+        },
+        {
+          "id": "chapter-49",
+          "exact": true
+        },
+        {
+          "id": "chapter-50",
+          "exact": true
+        },
+        {
+          "id": "chapter-51",
+          "exact": true
+        }
+      ],
+      "chapterWithoutReport": 49
+    },
+    "updateRecovery": "The reused local origin initially served an older synthetic test worker. The normal update page activated opening-9cdfaa944c7c and the 780-entry reader before verification.",
+    "limitations": "Desktop in-app browser only; no new physical iPhone or locked-screen audio test.",
+    "screenshot": "content/review/evidence/prayer-description-fourth-reader.png",
+    "finalSourceCheck": "Final Badal spelling, all 20 Arabic and English records, 13 chapter notes, chain link and retained session verified with the final server stopped. Earlier layout, bookmark, search and correction checks used the same unchanged relevant text and code.",
+    "previewScreenshot": "content/review/evidence/prayer-description-fourth-preview.png"
+  },
+  "remaining": [
+    "Review 779–835: 57 selected digital reports remain in Description of Prayer.",
+    "Complete the rest of Bukhari and independent text/reference reviews.",
+    "Complete English chapter introductions and reviewed Cedar recordings beyond 1–6.",
+    "Qualify full-corpus memory/loading, accessibility and physical iPhone/offline/locked-screen behavior."
+  ]
+}

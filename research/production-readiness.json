@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T23:26:01.862063+00:00",
+  "updatedAt": "2026-10-30T00:01:59.622Z",
   "objective": "Production-ready English-first Sahih al-Bukhari reader with the full collection, precise source access, Cedar narration, whole-hadith sessions and dependable offline iPhone use.",
   "status": "in-progress",
   "decisions": {
@@ -79,7 +79,7 @@
   ],
   "nextActions": [
     "Keep the 699-entry approval candidate and subsequent local previews separate from the approved 632-entry live release until the specific publication is authorized.",
-    "Continue complete-chapter review from 759 through 835. The local preview includes 60 digital reports 699–758, separately sourced provisional 724b, 38 digital chapters and all ten introductory paragraphs encountered so far. Preserve the mapped 817/818 boundary.",
+    "Continue complete-chapter review from 779 through 835. The local preview includes 80 digital reports 699–778, separately sourced provisional 724b, 51 digital chapters and thirteen introductory paragraphs encountered so far. Preserve the mapped 817/818 boundary.",
     "Preserve the overlapping congregation source as excluded evidence. It must not add duplicate entries or replace selected Adhan wording.",
     "Measure full bilingual loading and memory costs before further substantial expansion; existing scale tests and desktop checks do not establish physical iPhone performance for the full corpus.",
     "Complete the Arabic edition/reference map using the new exact-span inventory and pinned printed-witness findings; keep combined labels distinct from missing or misassigned bodies.",
@@ -347,7 +347,7 @@
     "remaining": "Independent review, English chapter introductions and additional reviewed audio. The section boundary is specific to this digital source; other editions continue Adhan beyond 698."
   },
   "prayerDescriptionIntake": {
-    "status": "60-digital-reports-and-one-printed-report-in-unpublished-preview",
+    "status": "80-digital-reports-and-one-printed-report-in-unpublished-preview",
     "source": "content/sources/wikisource-prayer-description/manifest.json",
     "audit": "research/prayer-description-source-audit.json",
     "inventory": "content/staging/bukhari-prayer-description-wikisource/catalog.json",
@@ -357,17 +357,17 @@
     "introductionParagraphs": 20,
     "readerEligible": true,
     "remaining": [
-      "Review complete chapters from 759; 77 selected digital reports remain outside the reader.",
+      "Review complete chapters from 779; 57 selected digital reports remain outside the reader.",
       "Keep chapter-only material separate from numbered sessions and audio; English introductions remain pending.",
       "Record every wording difference explicitly and preserve unchanged raw sources.",
       "Obtain independent Arabic, English, chapter, reference and spoken-word reviews before production claims."
     ],
-    "readerEligibleRange": "699–758 plus provisional app reference 724b",
-    "readerReports": 61,
-    "readerDigitalChapters": 38,
-    "readerBrowsingSections": 39,
-    "readerArabicIntroductionParagraphs": 10,
-    "verification": "research/prayer-description-third-verification.json",
+    "readerEligibleRange": "699–778 plus provisional app reference 724b",
+    "readerReports": 81,
+    "readerDigitalChapters": 51,
+    "readerBrowsingSections": 52,
+    "readerArabicIntroductionParagraphs": 13,
+    "verification": "research/prayer-description-fourth-verification.json",
     "printedReports": [
       {
         "appReference": "724b",
@@ -377,12 +377,12 @@
     ]
   },
   "currentLocalPreview": {
-    "entries": 760,
+    "entries": 780,
     "books": 11,
-    "release": "opening-4c4393c67edd",
-    "readingBytes": 20802898,
+    "release": "opening-85fc215009b4",
+    "readingBytes": 21331257,
     "publication": "not-published",
-    "verification": "research/prayer-description-third-verification.json",
+    "verification": "research/prayer-description-fourth-verification.json",
     "liveEntries": 632,
     "liveCommit": "a6d55223d3d863f2583ba67aa27edd139e9d7d6a"
   },
