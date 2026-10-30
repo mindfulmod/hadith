@@ -59,7 +59,7 @@ test('selected section coverage is complete without claiming the two modern-prin
  for(const original of inventory.records)assert(source.entries.some(e=>e.id==='bukhari:'+original.number));
  assert.equal(inventory.records.length,137);assert(source.entries.some(e=>e.id==='bukhari:724b'));assert.equal(book.chapters.length,85);
  assert.equal(review.chapters.length,6);assert.equal(review.chapters.flatMap(c=>c.contextIds).length,0);
- const boundary=read('research/prayer-description-boundary-review.json');assert.equal(boundary.status,'edition-coverage-review-pending');assert.deepEqual(boundary.unadmittedOccurrences.map(x=>x.printedReference),['874','875']);
+ const boundary=read('research/prayer-description-boundary-review.json');assert.equal(boundary.status,'two-print-candidate-ready-reference-decision-pending');assert.deepEqual(boundary.unadmittedOccurrences.map(x=>x.printedReference),['874','875']);
  assert(boundary.unadmittedOccurrences.every(x=>x.readerAdmission==='pending'));assert(!review.entries.some(e=>e.printedReport));
  const session=startSession(source.entries,833,5);assert.deepEqual(session.numbers,[833,834,835]);assert.deepEqual(visitSession(session,819),session);
 });

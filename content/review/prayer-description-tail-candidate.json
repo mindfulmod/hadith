@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "status": "source-reviewed-candidate-not-admitted",
+  "createdAt": "2026-10-30T02:08:53.940Z",
+  "reviewerKind": "ai",
+  "independentReview": "pending",
+  "readerEligible": false,
+  "sourceSection": "Description of Prayer",
+  "baselineCommit": "34c3d1be66c700dfac85a6a32a6a672317b96baa",
+  "baselineSourceRecordSha256": "e863527b25dc75d89adb6fed016d42b0a09859544af86fa65dd97f03aeccccb7",
+  "digitalSourceId": "wikisource-bukhari-prayer-description-r253001",
+  "digitalSourceSha256": "c4063d7c083086e58a1be160d9aa7f7053bfc7a3c0986291f930f9312bbbbece",
+  "digitalInventorySha256": "9c8c019c9a7a23a8c9e2d3146a7f6cda4dbddbe3fe53c141ed10d28ef5d65eaa",
+  "insertion": {
+    "kind": "after-selected-book-end",
+    "afterReference": 835,
+    "previousArabicSha256": "8fec50558ad9b7a1f1ae23cc9e3cf8a3d289e39643a680010fe9b9f969328ed8",
+    "appReferences": [
+      "835b",
+      "835c"
+    ],
+    "decision": "pending",
+    "nextDigitalReferenceNotRenumbered": 836,
+    "reason": "Retain two separately numbered printed occurrences before the next book without renumbering existing entries or merging parallel reports."
+  },
+  "chapter": {
+    "proposedId": "printed-chapter-after-84",
+    "title": "Women praying behind men",
+    "titleArabic": "باب صلاة النساء خلف الرجال",
+    "modernPlacement": "Unnumbered repeated heading after chapter 166 and report 873; before the Friday Prayer book.",
+    "tasilPlacement": "Chapter 163 after report 883, followed by reports 884 and 885 and the end of volume 1.",
+    "earlierParallelChapter": "chapter-82",
+    "status": "ai-working-translation",
+    "introductoryParagraphs": []
+  },
+  "transcriptionPolicy": "Manual unvowelled transcription of the complete printed reports, including every chain word and the Prophet honorific represented as ﷺ. Vowel marks, ornament, report numbers, quotation punctuation, editorial cross-references and footnote markers are outside the reading blocks. Lexical words are retained; no copy is represented as a verbatim facsimile. Independent transcription review remains pending.",
+  "sources": [
+    {
+      "id": "dar-ibn-kathir-2002",
+      "label": "Arabic print · Dar Ibn Kathir 2002",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+      "pdfPage": 212,
+      "visuallyInspected": true
+    },
+    {
+      "id": "dar-tasil-2012-v1",
+      "label": "Arabic print · Dar al-Tasil 2012 · volume 1",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://archive.org/download/FP144261FP/01_144261.pdf",
+      "sha256": "0136ed57436e607acebf53d33fd89695230bd88e76d7c7c10bd4b54ff1f5f0e6",
+      "bytes": 13994607,
+      "pdfPages": [
+        4,
+        725,
+        726,
+        727
+      ],
+      "printedPages": [
+        4,
+        725,
+        726,
+        727
+      ],
+      "visuallyInspected": true,
+      "bibliography": "First edition, 1433 AH / 2012, Dar al-Tasil. Edition and publisher checked on page 4. Corresponding occurrences are 884 and 885, in chapter 163.",
+      "reuseNote": "Used as a comparison witness. No publisher page image or modern editorial annotation is copied into the reader. This does not establish redistribution or narration permission."
+    },
+    {
+      "id": "brill-1862",
+      "label": "Historical Arabic print · Brill 1862",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf",
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+      "pdfPage": 223,
+      "visuallyInspected": true
+    },
+    {
+      "id": "qastallani-repeated-tail",
+      "label": "Al-Qastallani · Irshad al-Sari · online page 154",
+      "url": "https://ablibrary.net/book_content/b/18673/154?lang=ar",
+      "kind": "classical-commentary",
+      "snapshotSha256": "11a10eafe7e3c576b6598c20d793c95f809dad6c695c8e7440946ba530238e12",
+      "bodySha256": "f78cfd3b4d2b9cf39d9feaabd393ba706956dc8a7ed01bed7ad9b06df3135ad7",
+      "locator": "Chapter 166 m, after reports 874–875 and before the Friday Prayer book",
+      "excerpt": "وزاد في فرع اليونينية ، كهي ، هنا باب صلاة النساء خلف الرجال ، وهو ثابت فيه قبل ببابين ، فكرره فيه ونبّه على سقوط الأخير في الهامش بإزائه عند أبي ذر ، وهو ساقط في جميع الأصول التي وقفت عليها لكونه لا فائدة في تكريره . نعم ، فيه : حين يقضي تسليمه وهو يمكث ، وفي السابق : حين يقضي تسليمه ويمكث ، هو ، وفيه أيضًا : قالت ، بتاء التأنيث ، ولابن عساكر : قال : بالتذكير . وفي الأول : قال ، فقط وفي الأخير ، قدّم حديث أبي نعيم على حديث يحيى بن قزعة .",
+      "finding": "Records the repeated chapter in a Yunini branch, omission in Abu Dharr and in copies the commentator inspected, reversal of the two report positions, and the feminine qalat reading with masculine qala attributed to Ibn Asakir. This supports preserving the occurrence and its variants; it does not certify this transcription or English."
+    }
+  ],
+  "entries": [
+    {
+      "sourceRecordId": "dar-ibn-kathir-2002:874",
+      "printedReference": "874",
+      "secondPrintedReference": "884",
+      "proposedAppReference": "835b",
+      "closestExistingAppReference": 833,
+      "segments": [
+        {
+          "kind": "chain",
+          "arabic": "حدثنا أبو نعيم قال حدثنا ابن عيينة عن إسحاق عن أنس قال ",
+          "english": "Abu Nu‘aym related to us. He said: Ibn ‘Uyaynah related to us, from Ishaq, from Anas, who said:"
+        },
+        {
+          "kind": "report",
+          "arabic": "صلى النبي ﷺ في بيت أم سليم فقمت ويتيم خلفه وأم سليم خلفنا",
+          "english": "The Prophet, may Allah bless him and grant him peace, prayed in the house of Umm Sulaym. An orphan and I stood behind him, and Umm Sulaym stood behind us."
+        }
+      ],
+      "differences": [
+        "This is a separate occurrence after the selected digital section ends. The full short chain is retained; Ibn Uyaynah and Ishaq are not expanded from another witness.",
+        "The Anas honorific present in app 833 is absent here in both checked prints; it is not inserted. The Prophet honorific remains complete in English."
+      ],
+      "comparisons": [
+        {
+          "id": "sunnah-khan",
+          "url": "https://sunnah.com/bukhari:874",
+          "reference": "874",
+          "bodyRead": true,
+          "scope": "Exact tail occurrence; English body only, without the full Arabic chain.",
+          "finding": "Body sequence and positions agree. English adds stood in parentheses for Umm Sulaym; the working English uses the same grammatical completion as the existing parallel report. This does not establish independent chain translation or reuse rights.",
+          "snapshotStatus": "Public page body read through web retrieval on 2026-10-30; direct HTML download returned 403, so no raw page snapshot is claimed."
+        },
+        {
+          "id": "bewley",
+          "url": "https://aishabewley.org/bukhari8",
+          "reference": "833",
+          "snapshotSha256": "b22d8cf79256575eda116ea71a8929a742f0700c67306713affa3193fefbe98f",
+          "bodyRead": true,
+          "scope": "Earlier parallel occurrence only; this English page ends at 835 and does not separately list the tail.",
+          "finding": "Matches the basic account. It says the orphan where the selected Arabic has an indefinite orphan; the working English retains an orphan."
+        }
+      ],
+      "readerAdmission": "pending",
+      "appReferenceStatus": "proposal-only",
+      "independentReview": "pending",
+      "arabic": "حدثنا أبو نعيم قال حدثنا ابن عيينة عن إسحاق عن أنس قال صلى النبي ﷺ في بيت أم سليم فقمت ويتيم خلفه وأم سليم خلفنا",
+      "arabicSha256": "f4e3e32bba3cdf0320ef3d498de4a6570716e5b23e3a7bd0dd403631d2de64ab",
+      "englishSha256": "e3c54e0e17a021e0d005e7cfafbed19403644359a14be15c27f17db6d45fe875",
+      "witnesses": [
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 212,
+          "printedPage": 212,
+          "reference": "874",
+          "reading": "حدثنا أبو نعيم قال حدثنا ابن عيينة عن إسحاق عن أنس قال صلى النبي ﷺ في بيت أم سليم فقمت ويتيم خلفه وأم سليم خلفنا",
+          "readingSha256": "f4e3e32bba3cdf0320ef3d498de4a6570716e5b23e3a7bd0dd403631d2de64ab",
+          "lexicalMatch": true
+        },
+        {
+          "sourceId": "dar-tasil-2012-v1",
+          "sourceSha256": "0136ed57436e607acebf53d33fd89695230bd88e76d7c7c10bd4b54ff1f5f0e6",
+          "pdfPage": 727,
+          "printedPage": 727,
+          "reference": "884",
+          "reading": "حدثنا أبو نعيم قال حدثنا ابن عيينة عن إسحاق عن أنس قال صلى النبي ﷺ في بيت أم سليم فقمت ويتيم خلفه وأم سليم خلفنا",
+          "readingSha256": "f4e3e32bba3cdf0320ef3d498de4a6570716e5b23e3a7bd0dd403631d2de64ab",
+          "lexicalMatch": true
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "dar-ibn-kathir-2002:875",
+      "printedReference": "875",
+      "secondPrintedReference": "885",
+      "proposedAppReference": "835c",
+      "closestExistingAppReference": 832,
+      "segments": [
+        {
+          "kind": "chain",
+          "arabic": "حدثنا يحيى بن قزعة حدثنا إبراهيم بن سعد عن الزهري عن هند بنت الحارث عن أم سلمة قالت ",
+          "english": "Yahya ibn Qaza‘ah related to us. Ibrahim ibn Sa‘d related to us, from al-Zuhri, from Hind bint al-Harith, from Umm Salamah, who said:"
+        },
+        {
+          "kind": "report",
+          "arabic": "كان رسول الله ﷺ إذا سلم قام النساء حين يقضي تسليمه وهو يمكث في مقامه يسيرا قبل أن يقوم ",
+          "english": "When the Messenger of Allah, may Allah bless him and grant him peace, said the closing greeting, the women would rise as soon as he finished saying it. He would remain in his place a little while before rising."
+        },
+        {
+          "kind": "transmission-note",
+          "arabic": "قالت نرى والله أعلم أن ذلك كان لكي ينصرف النساء قبل أن يدركهن الرجال",
+          "english": "She said: We think—and Allah knows best—that this was so the women could leave before the men caught up with them."
+        }
+      ],
+      "differences": [
+        "The first qala after Yahya, the Umm Salamah honorific and the final ahad min in app 832 are absent here. The selected tail has wa-huwa yamkuthu instead of wa-yamkuthu huwa.",
+        "The closing qalat is feminine: She said is retained without assigning a name. Both inspected prints have this form; al-Qastallani records it and the masculine Ibn Asakir variant.",
+        "The English comparison names al-Zuhri, while its displayed Arabic says qalat. That attribution is not inserted into this working translation. The plural We think is retained."
+      ],
+      "comparisons": [
+        {
+          "id": "sunnah-khan",
+          "url": "https://sunnah.com/bukhari:875",
+          "reference": "875",
+          "bodyRead": true,
+          "scope": "Exact tail occurrence; English body and closing comment, without complete chain.",
+          "finding": "Broad action sequence agrees, but the English names al-Zuhri whereas the displayed Arabic and both prints have feminine qalat. The working English retains She said; the named attribution remains a comparison difference.",
+          "snapshotStatus": "Public page body read through web retrieval on 2026-10-30; direct HTML download returned 403, so no raw page snapshot is claimed."
+        },
+        {
+          "id": "bewley",
+          "url": "https://aishabewley.org/bukhari8",
+          "reference": "832",
+          "snapshotSha256": "b22d8cf79256575eda116ea71a8929a742f0700c67306713affa3193fefbe98f",
+          "bodyRead": true,
+          "scope": "Earlier parallel occurrence, not this separately numbered tail.",
+          "finding": "Uses He said and I think and expands the final group to people who had finished prayer. The selected tail instead has feminine She said, plural We think and the men. These distinctions are retained."
+        }
+      ],
+      "readerAdmission": "pending",
+      "appReferenceStatus": "proposal-only",
+      "independentReview": "pending",
+      "arabic": "حدثنا يحيى بن قزعة حدثنا إبراهيم بن سعد عن الزهري عن هند بنت الحارث عن أم سلمة قالت كان رسول الله ﷺ إذا سلم قام النساء حين يقضي تسليمه وهو يمكث في مقامه يسيرا قبل أن يقوم قالت نرى والله أعلم أن ذلك كان لكي ينصرف النساء قبل أن يدركهن الرجال",
+      "arabicSha256": "1389dee17bf08b4291c1789dd41404e604e98f6ce22d785d7614a3ebbf3d369c",
+      "englishSha256": "18fc1ef27664e5f5d9e6d3c00e24a6959c79510ebeb10f46e5c7bf69a6bf7feb",
+      "witnesses": [
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 212,
+          "printedPage": 212,
+          "reference": "875",
+          "reading": "حدثنا يحيى بن قزعة حدثنا إبراهيم بن سعد عن الزهري عن هند بنت الحارث عن أم سلمة قالت كان رسول الله ﷺ إذا سلم قام النساء حين يقضي تسليمه وهو يمكث في مقامه يسيرا قبل أن يقوم قالت نرى والله أعلم أن ذلك كان لكي ينصرف النساء قبل أن يدركهن الرجال",
+          "readingSha256": "1389dee17bf08b4291c1789dd41404e604e98f6ce22d785d7614a3ebbf3d369c",
+          "lexicalMatch": true
+        },
+        {
+          "sourceId": "dar-tasil-2012-v1",
+          "sourceSha256": "0136ed57436e607acebf53d33fd89695230bd88e76d7c7c10bd4b54ff1f5f0e6",
+          "pdfPage": 727,
+          "printedPage": 727,
+          "reference": "885",
+          "reading": "حدثنا يحيى بن قزعة حدثنا إبراهيم بن سعد عن الزهري عن هند بنت الحارث عن أم سلمة قالت كان رسول الله ﷺ إذا سلم قام النساء حين يقضي تسليمه وهو يمكث في مقامه يسيرا قبل أن يقوم قالت نرى والله أعلم أن ذلك كان لكي ينصرف النساء قبل أن يدركهن الرجال",
+          "readingSha256": "1389dee17bf08b4291c1789dd41404e604e98f6ce22d785d7614a3ebbf3d369c",
+          "lexicalMatch": true
+        }
+      ]
+    }
+  ],
+  "conclusion": "Two separately numbered occurrences are supported by both inspected Arabic prints and by a classical discussion of their edition placement. Their similarity to earlier entries is not grounds for merging them. This candidate is not part of the reader, audio scripts, sessions or offline pack. Proposed app references remain pending. Independent scholarly review and production rights remain unresolved."
+}

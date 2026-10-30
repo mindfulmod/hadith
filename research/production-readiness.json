@@ -80,7 +80,7 @@
   ],
   "nextActions": [
     "Keep the 699-entry approval candidate and subsequent local previews separate from the approved 632-entry live release until the specific publication is authorized.",
-    "Resolve the two additional modern-print occurrences 874 and 875 at the Description of Prayer boundary before claiming section completeness across editions. Then prepare Friday Prayer source intake with the same exact-span, full-chain and independent-review gates. The local preview includes all 137 selected digital reports 699–835, separately sourced user-confirmed 724b, 84 digital chapters, one printed chapter and twenty Arabic introductory paragraphs.",
+    "Resolve the proposed app references 835b and 835c for modern-print occurrences 874 and 875, then implement an explicit printed book-end admission and repeated chapter with source checks. Prepare Friday Prayer intake independently. Do not claim cross-edition completeness from digital coverage alone.",
     "Preserve the overlapping congregation source as excluded evidence. It must not add duplicate entries or replace selected Adhan wording.",
     "Measure full bilingual loading and memory costs before further substantial expansion; existing scale tests and desktop checks do not establish physical iPhone performance for the full corpus.",
     "Complete the Arabic edition/reference map using the new exact-span inventory and pinned printed-witness findings; keep combined labels distinct from missing or misassigned bodies.",
@@ -358,7 +358,7 @@
     "introductionParagraphs": 20,
     "readerEligible": true,
     "remaining": [
-      "Resolve modern-print occurrences 874 and 875 with another appropriate Arabic witness and full edition/reference review. All 137 selected digital reports are included; coverage of every printed occurrence is not established.",
+      "Two tail occurrences are now compared against Dar Ibn Kathir and Dar al-Tasil, with classical edition-placement evidence. Keep them outside the reader until stable app references and explicit book-end admission are handled; independent review remains pending.",
       "Keep chapter-only material separate from numbered sessions and audio; English introductions remain pending.",
       "Record every wording difference explicitly and preserve unchanged raw sources.",
       "Obtain independent Arabic, English, chapter, reference and spoken-word reviews before production claims."
@@ -384,7 +384,9 @@
         }
       }
     ],
-    "boundaryReview": "research/prayer-description-boundary-review.json"
+    "boundaryReview": "research/prayer-description-boundary-review.json",
+    "boundaryCandidate": "content/review/prayer-description-tail-candidate.json",
+    "boundaryReviewStatus": "two-print-candidate-ready-reference-decision-pending"
   },
   "currentLocalPreview": {
     "entries": 837,
