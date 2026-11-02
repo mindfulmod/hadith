@@ -93,5 +93,5 @@ test('complete chapters, pending later reports and source-only context keep dist
  assert.equal(inv.records.length,40);assert.equal(inv.chapters.length,26);assert.equal(review.chapters.length,7);
  assert.equal(review.chapters.flatMap(c=>c.contextIds).length,0);assert.equal(inv.chapters.flatMap(c=>c.contextIds).length,7);
  assert.deepEqual(batch.entries.map(e=>e.number),Array.from({length:13},(_,i)=>906+i));
- assert(!source.entries.some(e=>e.number===919));assert.deepEqual(ledger.books.find(b=>b.id==='two-eids').chapters.map(c=>c.id),review.chapters.map(c=>c.id));
+ assert(!source.entries.some(e=>e.number===926));assert.deepEqual(ledger.books.find(b=>b.id==='two-eids').chapters.slice(0,7).map(c=>c.id),review.chapters.map(c=>c.id));
 });

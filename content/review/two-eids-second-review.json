@@ -1,0 +1,636 @@
+{
+  "schemaVersion": 1,
+  "status": "personal-prototype-only",
+  "independentReview": "pending",
+  "sourceId": "wikisource-bukhari-two-eids-r496076",
+  "sourceSha256": "f1ffdfcd05e365b305933df31732ef45ab13c38e32379d62bc0b184db9b80911",
+  "inventorySha256": "3f8641f03faa4d90381f9f07012684ef59ce647f13454f1231fb78d88a25d9ce",
+  "createdAt": "2026-11-02",
+  "sources": [
+    {
+      "id": "arabic-two-eids",
+      "label": "Arabic Wikisource · fixed revision 496076",
+      "kind": "arabic-input",
+      "format": "web",
+      "url": "https://ar.wikisource.org/w/index.php?title=%D8%B5%D8%AD%D9%8A%D8%AD_%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A%2F%D9%83%D8%AA%D8%A7%D8%A8_%D8%A7%D9%84%D8%B9%D9%8A%D8%AF%D9%8A%D9%86&oldid=496076"
+    },
+    {
+      "id": "bewley-two-eids",
+      "label": "Aisha Bewley · The Two Eids",
+      "kind": "english-comparison",
+      "format": "web",
+      "url": "https://aishabewley.org/bukhari9"
+    },
+    {
+      "id": "islamhouse-khan",
+      "label": "IslamHouse · Khan-family English comparison",
+      "kind": "english-comparison",
+      "format": "web",
+      "url": "https://islamhouse.com/en/books/70510"
+    },
+    {
+      "id": "brill-1862",
+      "label": "Historical Arabic print · Brill 1862",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf",
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+    },
+    {
+      "id": "dar-ibn-kathir-2002",
+      "label": "Arabic print · Dar Ibn Kathir 2002",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+    }
+  ],
+  "scope": "Complete selected Two Eids reports 919–925 and chapters 8–10, with two Arabic introductions kept separate. Report 926 is withheld for a documented material wording dispute; no replacement translation or source emendation is supplied.",
+  "editionNote": "The seven Arabic report bodies, headings and two chapter introductions are unchanged. Both pinned Arabic prints and individually matched English comparison bodies were inspected. Uncertainty, pronouns and narrator explanations are retained rather than harmonized from neighbouring occurrences. The next report, 926, has an unresolved variant discussed critically in Fath al-Bari. Its hold is separate from the unchanged reports admitted here. This is AI-assisted working English, not Darussalam wording or independent certification.",
+  "chapters": [
+    {
+      "id": "chapter-08",
+      "headingId": "باب_الخطبة_بعد_العيد",
+      "contextIds": [],
+      "entryNumbers": [
+        919,
+        920,
+        921,
+        922
+      ],
+      "title": "The sermon after Eid",
+      "titleArabic": "باب الخطبة بعد العيد",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-09",
+      "headingId": "باب_ما_يكره_من_حمل_السلاح_في_العيد_والحرم",
+      "contextIds": [
+        "mwOQ"
+      ],
+      "entryNumbers": [
+        923,
+        924
+      ],
+      "title": "What is disliked about carrying weapons on Eid and in the Sanctuary",
+      "titleArabic": "باب ما يكره من حمل السلاح في العيد والحرم",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "Complete selected Arabic introduction preserved separately; English translation remains pending."
+    },
+    {
+      "id": "chapter-10",
+      "headingId": "باب_التبكير_للعيد",
+      "contextIds": [
+        "mwPQ"
+      ],
+      "entryNumbers": [
+        925
+      ],
+      "title": "Going early to Eid",
+      "titleArabic": "باب التبكير للعيد",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "Complete selected Arabic introduction preserved separately; English translation remains pending."
+    }
+  ],
+  "entries": [
+    {
+      "number": 919,
+      "id": "bukhari:919",
+      "sourceRecordId": "wikisource-bukhari-two-eids-r496076:919",
+      "chapterId": "chapter-08",
+      "paragraphIds": [
+        "mwMA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "919-1",
+          "paragraphId": "mwMA",
+          "start": 0,
+          "end": 92,
+          "kind": "chain",
+          "arabic": "[919] حدثنا أبو عاصم قال: أخبرنا ابن جريج قال: أخبرني الحسن بن مسلم عن طاوس عن ابن عباس قال ",
+          "english": "Abu ‘Asim related to us. He said: Ibn Jurayj informed us. He said: Al-Hasan ibn Muslim informed me, from Tawus, from Ibn ‘Abbas. He said:",
+          "arabicSha256": "ef249aef98c90a671fce5769a12366e85b5ed1806885cee98bcaa392fa246b0f",
+          "englishSha256": "c727cd25fe8ffde748b46df3675809b81b10ae48ff0f571a2980f38ad216b7a6"
+        },
+        {
+          "id": "919-2",
+          "paragraphId": "mwMA",
+          "start": 92,
+          "end": 188,
+          "kind": "report",
+          "arabic": "شهدت العيد مع رسول الله ﷺ وأبي بكر وعمر وعثمان رضى الله تعالى عنهم فكلهم كانوا يصلون قبل الخطبة ",
+          "english": "I attended Eid with the Messenger of Allah, may Allah bless him and grant him peace, and Abu Bakr, ‘Umar and ‘Uthman, may Allah Most High be pleased with them. All of them would pray before the sermon.",
+          "arabicSha256": "d1d996535e58472d91ffe1491c0a3ce6fab231a9815c143c270ecd6d62442d33",
+          "englishSha256": "5c0f57fe87dda8ec8eec8203f12efbf59a5aae9ed120f4f7dc4ff7e24dda35cb"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            244,
+            245
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            234
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-two-eids",
+          "reference": "919"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.15.79",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.79",
+            "recordSha256": "f3b2dd26a3bef26763c326f8e7b0920a7285d417b44d26efeef682d86fec1e23"
+          }
+        }
+      ],
+      "notes": [
+        "The complete Abu ‘Asim → Ibn Jurayj → al-Hasan ibn Muslim → Tawus → Ibn ‘Abbas chain remains, including both informed-us and informed-me formulas. The collective honorific after the named companions is retained from the selected text.",
+        "The selected source says attended Eid. The comparison’s offered the Eid prayer is not substituted. This remains a distinct occurrence from the earlier reports about prayer before the sermon.",
+        "Modern printed reference 962; individually matched English references Bewley 919 and pinned EPUB 2.15.79. No Arabic characters were corrected."
+      ],
+      "reviewScope": "AI-assisted translation of every selected span; both identified Arabic prints visually inspected and both English comparison bodies individually read. Full chains, pronouns, alternatives and the closing transmission note remain. Independent Arabic, English, lexical, reference and spoken-word review remains pending.",
+      "arabicSha256": "04de74b1ee5821e5871680690eeb7e3564f730861fc8e9e4dc2982a07698f97d",
+      "englishSha256": "6b7e10bfa251501f3173ec689ca7f3d780d64b8f4906a7983352edeebb762814",
+      "reviewRecordSha256": "8ddd6ad8c0be66eaa0c75d3066b3a31e03c017a7dc1e2203f9900b4ef4909421"
+    },
+    {
+      "number": 920,
+      "id": "bukhari:920",
+      "sourceRecordId": "wikisource-bukhari-two-eids-r496076:920",
+      "chapterId": "chapter-08",
+      "paragraphIds": [
+        "mwMg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "920-1",
+          "paragraphId": "mwMg",
+          "start": 0,
+          "end": 95,
+          "kind": "chain",
+          "arabic": "[920] حدثنا يعقوب بن إبراهيم قال: حدثنا أبو أسامة قال: حدثنا عبيد الله عن نافع عن ابن عمر قال: ",
+          "english": "Ya‘qub ibn Ibrahim related to us. He said: Abu Usamah related to us. He said: ‘Ubaydullah related to us, from Nafi‘, from Ibn ‘Umar. He said:",
+          "arabicSha256": "0eef2a3cec37175515b7898dcde8021eda6f7003940cfaebb7290ca163fa5114",
+          "englishSha256": "044d95f95311e97ee39ec6cef0253e85c5bf21ef268f1603b3131020d6a24fdc"
+        },
+        {
+          "id": "920-2",
+          "paragraphId": "mwMg",
+          "start": 95,
+          "end": 171,
+          "kind": "report",
+          "arabic": "كان رسول الله ﷺ وأبو بكر وعمر رضى الله تعالى عنهما يصلون العيدين قبل الخطبة ",
+          "english": "The Messenger of Allah, may Allah bless him and grant him peace, and Abu Bakr and ‘Umar, may Allah Most High be pleased with them both, would pray the two Eids before the sermon.",
+          "arabicSha256": "e1675eceb7b59c1452cd5e375615a313893ae3f9c3866e83ef2438a3533a46c9",
+          "englishSha256": "ea41079f09941707fb1728c4143ea10b65f7b48728bc56b8980d7c093ef62a68"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            245
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            234
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-two-eids",
+          "reference": "920"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.15.80",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.80",
+            "recordSha256": "4d852b0791ccffa907f75e885e9e67cbf3d6d192152a9213b1bab221b0d057af"
+          }
+        }
+      ],
+      "notes": [
+        "The full chain and dual companion honorific remain. Both festivals are explicitly retained; the wording is not replaced by the singular festival of the preceding occurrence.",
+        "The selected digital source and modern print say Messenger of Allah; Brill says Prophet. The selected wording remains unchanged. The stray exclamation mark after Umar in the EPUB is not source wording.",
+        "Modern printed reference 963; individually matched English references Bewley 920 and pinned EPUB 2.15.80."
+      ],
+      "reviewScope": "AI-assisted translation of every selected span; both identified Arabic prints visually inspected and both English comparison bodies individually read. Full chains, pronouns, alternatives and the closing transmission note remain. Independent Arabic, English, lexical, reference and spoken-word review remains pending.",
+      "arabicSha256": "358c2168aab4547440541a5d2a9aceeee257560b13659204b8b903e49c95cb67",
+      "englishSha256": "7240500eb9a091933d89aeeedd6df268b173bec2d6d1d53b7703e6f913386108",
+      "reviewRecordSha256": "daa477dea7cf095d964308a122a2c8c5a2c95d04de7e620cd1d08ab810461ca0"
+    },
+    {
+      "number": 921,
+      "id": "bukhari:921",
+      "sourceRecordId": "wikisource-bukhari-two-eids-r496076:921",
+      "chapterId": "chapter-08",
+      "paragraphIds": [
+        "mwNA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "921-1",
+          "paragraphId": "mwNA",
+          "start": 0,
+          "end": 85,
+          "kind": "chain",
+          "arabic": "[921] حدثنا سليمان بن حرب قال: حدثنا شعبة عن عدي بن ثابت عن سعيد بن جبير عن ابن عباس ",
+          "english": "Sulayman ibn Harb related to us. He said: Shu‘bah related to us, from ‘Adi ibn Thabit, from Sa‘id ibn Jubayr, from Ibn ‘Abbas:",
+          "arabicSha256": "6b405bf26035b60f2f880bdc12132369b636447ad55836ed3ab5d5ac3b4c1967",
+          "englishSha256": "326b8e43e973c259314de11dff89f3a52ead0cbef9707c12762601d00db315b4"
+        },
+        {
+          "id": "921-2",
+          "paragraphId": "mwNA",
+          "start": 85,
+          "end": 217,
+          "kind": "report",
+          "arabic": "أن النبي ﷺ صلى يوم الفطر ركعتين لم يصل قبلها ولا بعدها ثم أتى النساء ومعه بلال فأمرهن بالصدقة فجعلن يلقين تلقي المرأة خرصها وسخابها ",
+          "english": "The Prophet, may Allah bless him and grant him peace, prayed two rak‘ahs on the day of Fitr. He did not pray before it or after it. Then he went to the women, with Bilal beside him, and commanded them to give charity. They began throwing things in: a woman would throw in her earring and her necklace.",
+          "arabicSha256": "6d19c0b38527053defa0b8172ad3fb7e56d0799f2b57b8bba75f33ee515311eb",
+          "englishSha256": "00a79b201ac3e5faace262506909a20abf1815a7ee5a01d406ec01731589db39"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            245
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            234
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-two-eids",
+          "reference": "921"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.15.81",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.81",
+            "recordSha256": "951c8e21de2f4176b6b7cf3f62c113ada9b0be11efe8f2fe15120912c12d1aff"
+          }
+        }
+      ],
+      "notes": [
+        "Both before-it and after-it clauses, Bilal’s presence and the complete charity description remain. The singular woman and earring follow the selected Arabic instead of the comparisons’ plural earrings.",
+        "The selected digital source and modern print join the earring and necklace with and; Brill has or. The selected conjunction remains, with no harmonization from another occurrence.",
+        "Modern printed reference 964; individually matched English references Bewley 921 and pinned EPUB 2.15.81. The full chain remains above the report."
+      ],
+      "reviewScope": "AI-assisted translation of every selected span; both identified Arabic prints visually inspected and both English comparison bodies individually read. Full chains, pronouns, alternatives and the closing transmission note remain. Independent Arabic, English, lexical, reference and spoken-word review remains pending.",
+      "arabicSha256": "c453616399a59775e92041150ffa0bfabbb14e2ee5c180dddec42fab68cc7ee8",
+      "englishSha256": "145dff01b00c7b0884f5ea2fde977363b831516f6c86ba3443d7a036c2bc0232",
+      "reviewRecordSha256": "8114823c55e49499676de0194ac331d415a43aa7c375dc90f85f3bab0c5e1486"
+    },
+    {
+      "number": 922,
+      "id": "bukhari:922",
+      "sourceRecordId": "wikisource-bukhari-two-eids-r496076:922",
+      "chapterId": "chapter-08",
+      "paragraphIds": [
+        "mwNg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "922-1",
+          "paragraphId": "mwNg",
+          "start": 0,
+          "end": 88,
+          "kind": "chain",
+          "arabic": "[922] حدثنا آدم قال: حدثنا شعبة قال: حدثنا زبيد قال: سمعت الشعبي عن البراء بن عازب قال: ",
+          "english": "Adam related to us. He said: Shu‘bah related to us. He said: Zubayd related to us. He said: I heard al-Sha‘bi, from al-Bara’ ibn ‘Azib. He said:",
+          "arabicSha256": "87efb9431418533a6b759bd7b7c8f850b7d381c1ff16ba092eae8b55ef3a0376",
+          "englishSha256": "5a6e1835cdce979a40211c66f10fde8e21b584b9e32a3082283664793ff10c49"
+        },
+        {
+          "id": "922-2",
+          "paragraphId": "mwNg",
+          "start": 88,
+          "end": 374,
+          "kind": "report",
+          "arabic": "قال النبي ﷺ إن أول ما نبدأ في يومنا هذا أن نصلي ثم نرجع فننحر فمن فعل ذلك فقد أصاب سنتنا ومن نحر قبل الصلاة فإنما هو لحم قدمه لأهله ليس من النسك في شيء، فقال رجل من الأنصار يقال له أبو بردة بن نيار يا رسول الله ذبحت وعندي جذعة خير من مسنة، فقال اجعله مكانه ولن توفي أو تجزي عن أحد بعدك ",
+          "english": "The Prophet, may Allah bless him and grant him peace, said, ‘The first thing we begin with on this day of ours is to pray, then return and sacrifice. Whoever does that has followed our practice. Whoever sacrifices before the prayer has merely presented meat to his family; it is no part of the sacrifice.’ A man of the Ansar called Abu Burdah ibn Niyar said, ‘Messenger of Allah, I have slaughtered, and I have a young she-goat better than a mature animal.’ He said, ‘Put it in its place, but it will not fulfil—or suffice—for anyone after you.’",
+          "arabicSha256": "b0753f81a3efd53655807ee61c72041e9325a8d765d006fa0b53e70c87523f5b",
+          "englishSha256": "ad1912210fb50c90aadf02feed6c823da0db497a583249caf4d0afb2aed2e805"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            245
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            234
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-two-eids",
+          "reference": "922"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.15.82",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.82",
+            "recordSha256": "e2798a4922f86a0d83d4a752ca058fc275bfa9e48bf2e156e151370f37744888"
+          }
+        }
+      ],
+      "notes": [
+        "The first-person I heard and every chain link remain. Abu Burdah ibn Niyar is named as a man of the Ansar, without borrowing the maternal-uncle description from another occurrence.",
+        "The closing source alternative توفي أو تجزي remains as fulfil—or suffice. It is not collapsed into the single verb in the pinned EPUB. Jadha‘ah is rendered young she-goat and musinnah mature animal; exact one-year/two-year ages or an older sheep are not inserted from the comparisons.",
+        "The nusuk clause concerns the sacrifice in this report. The comparison’s hajj-rite gloss is not added. Modern printed reference 965; Bewley 922 and pinned EPUB 2.15.82 were individually matched."
+      ],
+      "reviewScope": "AI-assisted translation of every selected span; both identified Arabic prints visually inspected and both English comparison bodies individually read. Full chains, pronouns, alternatives and the closing transmission note remain. Independent Arabic, English, lexical, reference and spoken-word review remains pending.",
+      "arabicSha256": "bd9554bd7c0680fa329c25fe5a036480c88146691ea49fb1995c845efea9fbc2",
+      "englishSha256": "431b728b706b8f53d2d5dde91b57d93d489d48a00cb151dfeb351afb58cc28bc",
+      "reviewRecordSha256": "bfdf958d16adfb85fb79e899089c78b4e3b92e10a750ae48626454e3259abfcb"
+    },
+    {
+      "number": 923,
+      "id": "bukhari:923",
+      "sourceRecordId": "wikisource-bukhari-two-eids-r496076:923",
+      "chapterId": "chapter-09",
+      "paragraphIds": [
+        "mwOg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "923-1",
+          "paragraphId": "mwOg",
+          "start": 0,
+          "end": 102,
+          "kind": "chain",
+          "arabic": "[923] حدثنا زكريا بن يحيى أبو السكين قال: حدثنا المحاربي قال: حدثنا محمد بن سوقة عن سعيد بن جبير قال: ",
+          "english": "Zakariyya ibn Yahya, Abu al-Sukayn, related to us. He said: Al-Muharibi related to us. He said: Muhammad ibn Suqah related to us, from Sa‘id ibn Jubayr. He said:",
+          "arabicSha256": "554ced3bc4ff659c7428bb75e08859d182955cfe97f10a030e87e5a6afa8152e",
+          "englishSha256": "c0d13e5ecd94552c0249e88dea74617d9290853863ecf82a772c1aaaaa3b8ab1"
+        },
+        {
+          "id": "923-2",
+          "paragraphId": "mwOg",
+          "start": 102,
+          "end": 366,
+          "kind": "report",
+          "arabic": "كنت مع ابن عمر حين أصابه سنان الرمح في أخمص قدمه فلزقت قدمه بالركاب فنزلت فنزعتها وذلك بمنى فبلغ الحجاج فجعل يعوده، فقال الحجاج لو نعلم من أصابك، فقال ابن عمر أنت أصبتني قال وكيف قال حملت السلاح في يوم لم يكن يحمل فيه وأدخلت السلاح الحرم ولم يكن السلاح يدخل الحرم ",
+          "english": "I was with Ibn ‘Umar when the point of a spear struck the arch of his foot, and his foot stuck to the stirrup. I dismounted and pulled it free. This was at Mina. News reached al-Hajjaj, and he began visiting him. Al-Hajjaj said, ‘If we knew who injured you!’ Ibn ‘Umar said, ‘You injured me.’ He said, ‘How?’ He said, ‘You carried weapons on a day when they were not carried, and you brought weapons into the Sanctuary when weapons were not brought into the Sanctuary.’",
+          "arabicSha256": "43b6868dfa362c5b2ab5302ec17b2e5e94077b23928b44383cd89a8763e57984",
+          "englishSha256": "82c8f28c6585884b05b56638082312a75cc2a0d5dde48571b2d2160466d4086c"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            245
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            234,
+            235
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-two-eids",
+          "reference": "923"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.15.83",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.83",
+            "recordSha256": "2feae69435161dfeec9256876cc87d46e5761e4d61a534550331941f03034c3e"
+          }
+        }
+      ],
+      "notes": [
+        "The full chain retains the Abu al-Sukayn designation and Muhammad ibn Suqah. The injury is to the arch of the foot; the foot sticks to the stirrup and is pulled free. The EPUB’s paddle wording is not used.",
+        "Both accusations and the complete How? exchange remain. The source’s carried/brought wording and descriptions of prior practice are retained without replacing them by the English comparisons’ allowed or forbidden glosses. The following report has its own explicit not-lawful wording.",
+        "The selected source and modern print have he began visiting him (فجعل يعوده); Brill has he came to visit him (فجاء يعوده). This difference is recorded without changing the selected Arabic.",
+        "Modern printed reference 966 spans PDF pages 234–235. Bewley 923 and pinned EPUB 2.15.83 were individually compared."
+      ],
+      "reviewScope": "AI-assisted translation of every selected span; both identified Arabic prints visually inspected and both English comparison bodies individually read. Full chains, pronouns, alternatives and the closing transmission note remain. Independent Arabic, English, lexical, reference and spoken-word review remains pending.",
+      "arabicSha256": "fe393a0e235cb810a2eb5f99f0942236a93ba76b24f13a35199d362bb5abb8d1",
+      "englishSha256": "82f73a48b70ff935e3628728d5d1326125059f1a00109fee9407d50b866b2b4f",
+      "reviewRecordSha256": "f9703eccb039fb6abdd831568003bfe988984817fc679d9c551dfdbe494a14a2"
+    },
+    {
+      "number": 924,
+      "id": "bukhari:924",
+      "sourceRecordId": "wikisource-bukhari-two-eids-r496076:924",
+      "chapterId": "chapter-09",
+      "paragraphIds": [
+        "mwOw"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "924-1",
+          "paragraphId": "mwOw",
+          "start": 0,
+          "end": 84,
+          "kind": "chain",
+          "arabic": "[924] حدثنا أحمد بن يعقوب قال: حدثني إسحاق بن سعيد بن عمرو بن سعيد بن العاص عن أبيه ",
+          "english": "Ahmad ibn Ya‘qub related to us. He said: Ishaq ibn Sa‘id ibn ‘Amr ibn Sa‘id ibn al-‘As related to me, from his father:",
+          "arabicSha256": "61c6e7168f27ff891666a520ad7fe11c04fbdb162c02e8563c7880b9a43c27e7",
+          "englishSha256": "04e9db227b5d4f2ab36d07f866b9c19f3380098e36ceabc8a4394ee373afcf23"
+        },
+        {
+          "id": "924-2",
+          "paragraphId": "mwOw",
+          "start": 84,
+          "end": 212,
+          "kind": "report",
+          "arabic": "قال دخل الحجاج على بن عمر وأنا عنده، فقال كيف هو، فقال صالح، فقال من أصابك قال أصابني من أمر بحمل السلاح في يوم لا يحل فيه حمله ",
+          "english": "He said: Al-Hajjaj entered upon Ibn ‘Umar while I was with him. He said, ‘How is he?’ He said, ‘Well.’ He said, ‘Who injured you?’ He said, ‘The one who ordered weapons to be carried on a day when carrying them is not lawful injured me.’",
+          "arabicSha256": "8b95e728e5733f84580455f7e530ca381aff3348e9890bcaafaa70bb7e1c28f5",
+          "englishSha256": "11bed5204332c5d43246e5bd9df8c423df1990692dee5d72ef1a88fd0309f46d"
+        },
+        {
+          "id": "924-3",
+          "paragraphId": "mwOw",
+          "start": 212,
+          "end": 224,
+          "kind": "transmission-note",
+          "arabic": "يعني الحجاج ",
+          "english": "Meaning al-Hajjaj.",
+          "arabicSha256": "45fda79a39c7c09f39944d933c9f757b5f44dfb67b661db2fcbd5b3f3022e6a1",
+          "englishSha256": "e0320cf08e8f67762b1516764d12aacce9e19ca52dab5bde757d1d4a63379875"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            245,
+            246
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            235
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-two-eids",
+          "reference": "924"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.15.84",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.84",
+            "recordSha256": "563bbac5b6c9f97b3a8d0d6146ff8eb0b0a822d467edf97df323db99d94e3abb"
+          }
+        }
+      ],
+      "notes": [
+        "The full father-and-son chain remains, including related to me. The account is reported from Ishaq’s father; it is not reassigned to Ishaq or expanded with a guessed full name.",
+        "The Arabic question كيف هو is retained as How is he? rather than silently replacing its third-person pronoun with the comparisons’ How are you? The reply and subsequent exchange remain complete.",
+        "The final meaning al-Hajjaj is a separate transmission note, not words placed in the speaker’s mouth. It remains in the complete narration script.",
+        "Modern printed reference 967; Bewley 924 and pinned EPUB 2.15.84 were individually compared. No Arabic corrections were made."
+      ],
+      "reviewScope": "AI-assisted translation of every selected span; both identified Arabic prints visually inspected and both English comparison bodies individually read. Full chains, pronouns, alternatives and the closing transmission note remain. Independent Arabic, English, lexical, reference and spoken-word review remains pending.",
+      "arabicSha256": "6a350fb848615457f70a7fa33313ee06578a749904b9eafdf46d55395594258f",
+      "englishSha256": "51e2c7139bea29c29b9721a00436bf083ad371a12bacc486cb8d11cd9748d21e",
+      "reviewRecordSha256": "aa6906622a9a83a2a75cda4908c0335a496bcae3db04f626a4b7567ca4cbf6d8"
+    },
+    {
+      "number": 925,
+      "id": "bukhari:925",
+      "sourceRecordId": "wikisource-bukhari-two-eids-r496076:925",
+      "chapterId": "chapter-10",
+      "paragraphIds": [
+        "mwPg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "925-1",
+          "paragraphId": "mwPg",
+          "start": 0,
+          "end": 74,
+          "kind": "chain",
+          "arabic": "[925] حدثنا سليمان بن حرب قال: حدثنا شعبة عن زبيد عن الشعبي عن البراء قال ",
+          "english": "Sulayman ibn Harb related to us. He said: Shu‘bah related to us, from Zubayd, from al-Sha‘bi, from al-Bara’. He said:",
+          "arabicSha256": "3ff5f6b46d675bc3383b8f901abd4eac503b553bbac766c99a4e241e8329f29f",
+          "englishSha256": "244abc18889c940df2998cf5f2d41d72209a548f3f47f5dd88f0c388f7a2926f"
+        },
+        {
+          "id": "925-2",
+          "paragraphId": "mwPg",
+          "start": 74,
+          "end": 395,
+          "kind": "report",
+          "arabic": "خطبنا النبي ﷺ يوم النحر قال إن أول ما نبدأ به في يومنا هذا أن نصلي ثم نرجع فننحر فمن فعل ذلك فقد أصاب سنتنا ومن ذبح قبل أن يصلي فإنما هو لحم عجله لأهله ليس من النسك في شيء فقام خالي أبو بردة بن نيار، فقال: يا رسول الله أنا ذبحت قبل أن أصلي وعندي جذعة خير من مسنة قال اجعلها مكانها أو قال اذبحها ولن تجزي جذعة عن أحد بعدك ",
+          "english": "The Prophet, may Allah bless him and grant him peace, addressed us on the Day of Sacrifice. He said, ‘The first thing we begin with on this day of ours is to pray, then return and sacrifice. Whoever does that has followed our practice. Whoever slaughters before praying has merely hastened meat for his family; it is no part of the sacrifice.’ My maternal uncle, Abu Burdah ibn Niyar, stood and said, ‘Messenger of Allah, I slaughtered before praying, and I have a young she-goat better than a mature animal.’ He said, ‘Put it in its place’—or he said, ‘Slaughter it’—‘and a young she-goat will not suffice for anyone after you.’",
+          "arabicSha256": "1fd631355c0a24867fdb792edd729797f1f102e945f7d6749e9a62138e43e864",
+          "englishSha256": "b111617b9dfc84f4ff464e0295cd4f8ebbdef8c39a5249b7a2583d4a60ce959d"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            246
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            235
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-two-eids",
+          "reference": "925"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.15.85",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.85",
+            "recordSha256": "b68ab7f4207c4f879f1cbdc06fceee7fa391b106fd09638875735b4ba10a4fea"
+          }
+        }
+      ],
+      "notes": [
+        "The short al-Bara’ name remains as selected; Brill and the Bewley comparison expand it to ibn ‘Azib. The complete chain, addressed-us wording and Day of Sacrifice remain.",
+        "This occurrence explicitly says my maternal uncle and I slaughtered before praying. The source alternative Place it in its place—or he said, Slaughter it remains; neither comparison’s shortened conclusion replaces it. No fixed animal age is supplied.",
+        "The chapter introduction’s ‘Abdullah ibn Busr follows the unchanged Arabic in both prints. Bewley’s ibn Yusr is a comparison discrepancy. The Arabic introduction remains separate from this report, with its English translation pending.",
+        "Modern printed reference 968; Bewley 925 and pinned EPUB 2.15.85 were individually compared. The repeated account remains a separate complete entry."
+      ],
+      "reviewScope": "AI-assisted translation of every selected span; both identified Arabic prints visually inspected and both English comparison bodies individually read. Full chains, pronouns, alternatives and the closing transmission note remain. Independent Arabic, English, lexical, reference and spoken-word review remains pending.",
+      "arabicSha256": "78e5b45c3b6411a00ec5b02e4236ca16b11501d00ad3713dd90caa9bb0796dd9",
+      "englishSha256": "c5e62efeb2bda3a0023309b13a31d081c8d7357ea6fe9a952dcbbea31012a0c4",
+      "reviewRecordSha256": "080bbf33564198737320f1a4bd84aac46cda5c61ad126ef73f341039aa32fe4d"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-02T18:33:20.326Z",
+  "checkedAt": "2026-11-02T18:54:34.171Z",
   "status": "complete-structural-intake-partial-wording-review",
   "source": {
     "id": "wikisource-bukhari-two-eids-r496076",
@@ -23,21 +23,22 @@
   "reviewedScope": {
     "references": [
       906,
-      918
+      925
     ],
-    "completeReports": 13,
+    "completeReports": 20,
     "chapters": [
       1,
-      7
+      10
     ],
-    "translatedSpans": 33,
+    "translatedSpans": 48,
     "arabicReportCorrections": 0,
-    "contextParagraphsInThisBatch": 0,
+    "contextParagraphsInReader": 2,
     "remainingReports": [
-      919,
+      926,
       945
     ],
-    "remainingArabicContexts": 7
+    "remainingArabicContexts": 5,
+    "heldReference": 926
   },
   "printedWitnesses": [
     {
@@ -55,7 +56,12 @@
         244
       ],
       "sectionEndBoundaryPdfPage": 251,
-      "scope": "First thirteen complete reports and the section-end boundary visually inspected. Later report wording is not approved by this boundary check."
+      "scope": "First thirteen complete reports and the section-end boundary visually inspected. Later report wording is not approved by this boundary check.",
+      "secondBatchVisuallyInspectedPdfPages": [
+        244,
+        245,
+        246
+      ]
     },
     {
       "id": "dar-ibn-kathir-2002",
@@ -71,7 +77,11 @@
         234
       ],
       "sectionEndBoundaryPdfPage": 240,
-      "scope": "First thirteen complete reports and the section-end boundary visually inspected. Later report wording is not approved by this boundary check."
+      "scope": "First thirteen complete reports and the section-end boundary visually inspected. Later report wording is not approved by this boundary check.",
+      "secondBatchVisuallyInspectedPdfPages": [
+        234,
+        235
+      ]
     }
   ],
   "englishInventory": {
@@ -84,7 +94,7 @@
       "2.15.69",
       "2.15.104"
     ],
-    "scope": "Whole section inventoried; only the individually listed first-batch bodies are compared here."
+    "scope": "Whole section inventoried. Individually listed reports 906–925 compared for admission; 2.15.86 inspected only for the unresolved 926 wording issue."
   },
   "bewley": {
     "url": "https://aishabewley.org/bukhari9",
@@ -92,8 +102,9 @@
     "htmlSha256": "633300895cb35acb77083d21507e430830fb1be5ede5c6b5eb7ec3ab2a8814fa",
     "readReferences": [
       906,
-      918
-    ]
+      925
+    ],
+    "additionalHeldReference": 926
   },
   "comparisons": [
     {
@@ -337,6 +348,125 @@
         "note": "The pinned English record combines four separately selected entries. This is part 4 of 4, corresponding only to app 918; the surrounding parts are retained separately as 915–918. The record’s damaged characters in the two-festival clause are not used as reader wording."
       },
       "englishBodySha256": "b090b38549069f7592381e73e5f4a6dae664ab41fc24fb6a6be7307606a7f06b"
+    },
+    {
+      "appReference": 919,
+      "modernPrintedReferences": [
+        962
+      ],
+      "bewleyReference": "919",
+      "khan": {
+        "id": "islamhouse-khan",
+        "reference": "2.15.79",
+        "referenceEvidence": {
+          "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+          "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.79",
+          "recordSha256": "f3b2dd26a3bef26763c326f8e7b0920a7285d417b44d26efeef682d86fec1e23"
+        }
+      },
+      "englishBodySha256": "280fc91021e98d37ec13c8109280266d08519ad4f4217975dd89cbfbf37d33e2"
+    },
+    {
+      "appReference": 920,
+      "modernPrintedReferences": [
+        963
+      ],
+      "bewleyReference": "920",
+      "khan": {
+        "id": "islamhouse-khan",
+        "reference": "2.15.80",
+        "referenceEvidence": {
+          "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+          "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.80",
+          "recordSha256": "4d852b0791ccffa907f75e885e9e67cbf3d6d192152a9213b1bab221b0d057af"
+        }
+      },
+      "englishBodySha256": "c29a9c916e16142c59a234b749c58f6c62972fccc90bae7647a3bb2b5f97e7d8"
+    },
+    {
+      "appReference": 921,
+      "modernPrintedReferences": [
+        964
+      ],
+      "bewleyReference": "921",
+      "khan": {
+        "id": "islamhouse-khan",
+        "reference": "2.15.81",
+        "referenceEvidence": {
+          "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+          "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.81",
+          "recordSha256": "951c8e21de2f4176b6b7cf3f62c113ada9b0be11efe8f2fe15120912c12d1aff"
+        }
+      },
+      "englishBodySha256": "8870a18c3decd89eead9df2233b4261aff2f281fb20ba15a00e8fa1fc898dd84"
+    },
+    {
+      "appReference": 922,
+      "modernPrintedReferences": [
+        965
+      ],
+      "bewleyReference": "922",
+      "khan": {
+        "id": "islamhouse-khan",
+        "reference": "2.15.82",
+        "referenceEvidence": {
+          "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+          "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.82",
+          "recordSha256": "e2798a4922f86a0d83d4a752ca058fc275bfa9e48bf2e156e151370f37744888"
+        }
+      },
+      "englishBodySha256": "d01ca7637ab47a5586cb0d79b5271e61d00075e837aeb6d69497938592bd2267"
+    },
+    {
+      "appReference": 923,
+      "modernPrintedReferences": [
+        966
+      ],
+      "bewleyReference": "923",
+      "khan": {
+        "id": "islamhouse-khan",
+        "reference": "2.15.83",
+        "referenceEvidence": {
+          "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+          "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.83",
+          "recordSha256": "2feae69435161dfeec9256876cc87d46e5761e4d61a534550331941f03034c3e"
+        }
+      },
+      "englishBodySha256": "b10edcd4e7e1b98d41b3a8b3d9325e5159fc13454a8f10133718c1265fb52d21"
+    },
+    {
+      "appReference": 924,
+      "modernPrintedReferences": [
+        967
+      ],
+      "bewleyReference": "924",
+      "khan": {
+        "id": "islamhouse-khan",
+        "reference": "2.15.84",
+        "referenceEvidence": {
+          "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+          "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.84",
+          "recordSha256": "563bbac5b6c9f97b3a8d0d6146ff8eb0b0a822d467edf97df323db99d94e3abb"
+        }
+      },
+      "englishBodySha256": "955420fe646b9e90e1e79ff9b18224e6a609fdb31494676d1bfbab933f0145f9"
+    },
+    {
+      "appReference": 925,
+      "modernPrintedReferences": [
+        968
+      ],
+      "bewleyReference": "925",
+      "khan": {
+        "id": "islamhouse-khan",
+        "reference": "2.15.85",
+        "referenceEvidence": {
+          "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+          "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.85",
+          "recordSha256": "b68ab7f4207c4f879f1cbdc06fceee7fa391b106fd09638875735b4ba10a4fea"
+        }
+      },
+      "englishBodySha256": "4707503d649867153d7ffde8f45b113a4f786adfd57eccce721964f88868a2ca"
     }
   ],
   "findings": [
@@ -345,8 +475,16 @@
     "The digital/printed Eid at 906 and ibn Niyar at 912 are not replaced by the differing Jumu‘a and ibn Dinar in the Bewley comparison.",
     "907 preserves the written shorter honorific, source uncertainty and full second account. 909 retains the interposed comment; 910 the full closing route; 911 the unresolved closing uncertainty; 913 the complete Marwan exchange.",
     "916–918 keep their continued opening words and link separately to 915. No earlier chain is copied into their source text.",
-    "The first and seventh chapter headings have documented edition variants. The selected heading wording remains unchanged."
+    "The first and seventh chapter headings have documented edition variants. The selected heading wording remains unchanged.",
+    "919–925 retain their full chains, companion honorifics, explicit verb alternatives and the separate closing explanation at 924. No source wording was changed.",
+    "The third-person question in 924 and the prior-practice language in 923 are not replaced by smoother English comparison wording. The separate chapter-10 introduction retains Busr in Arabic; the Bewley Yusr spelling is documented.",
+    "Matching core wording in both prints is insufficient for 926: Fath al-Bari explicitly disputes this variant. It remains excluded from reading, sessions and narration, with an enforced source hold and no substituted translation."
   ],
   "review": "content/review/two-eids-first-review.json",
-  "limits": "AI-assisted personal prototype only. Full-section wording review, the remaining 27 reports, English chapter introductions, independent review, rights clearance and narration remain unfinished. Structural coverage and source comparison are not scholarly certification."
+  "limits": "AI-assisted personal prototype only. Report 926 has an unresolved material wording hold. Reports 927–945, five later chapter contexts, all English chapter introductions, independent review, rights clearance and further recordings remain unfinished. Source matching is not scholarly certification.",
+  "reviews": [
+    "content/review/two-eids-first-review.json",
+    "content/review/two-eids-second-review.json"
+  ],
+  "wordingHold": "research/two-eids-926-wording-review.json"
 }

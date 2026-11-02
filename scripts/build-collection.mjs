@@ -2,6 +2,7 @@
 import {validReference,parseReference,referenceBase,referenceSpan,compareReferences} from '../reader/references.mjs';
 import {validateBookInventory,validateEntryLayout,layoutInputEvidence,layoutSourceNotice,layoutSourceDetails,chapterLayoutDetails} from './mapped-source.mjs';
 import {validateSourceForm} from './source-forms.mjs';
+import {validateSourceHolds} from './source-holds.mjs';
 import {validatePrintedIntroductions,printedIntroductionContext,printedIntroductionDetails} from './printed-chapter-context.mjs';
 import {buildBookIntroduction,bookIntroductionNotes} from './book-introductions.mjs';
 import {deriveArabicBlocks} from './arabic-corrections.mjs';
@@ -240,6 +241,7 @@ function khanCitation(record){
 export function buildBookBatch(inventory,review,manifest,config){
  bookConfig(config);
  validateBookInventory(inventory,review,config);
+ validateSourceHolds(inventory,review,config);
  assert.equal(inventory.records[0].number,config.first,'Source book begins at the wrong reference');
  assert.equal(manifest.revision,config.revision,'Unexpected source revision');
  assert.equal(review.schemaVersion,1);assert.equal(review.status,'personal-prototype-only');assert.equal(review.independentReview,'pending');

@@ -160,7 +160,7 @@ class FridayPrayerIntakeTests(unittest.TestCase):
         catalog = read('reader/books/catalog.json')
         self.assertIn('friday-prayer', [b['id'] for b in catalog['books']])
         self.assertEqual([e['number'] for e in catalog['entries'] if e['bookId'] == 'friday-prayer'], list(range(836, 900)))
-        self.assertTrue(all(n not in [e['number'] for e in catalog['entries']] for n in range(919, 926)))
+        self.assertTrue(all(n not in [e['number'] for e in catalog['entries']] for n in range(926, 933)))
 
 
 if __name__ == '__main__':

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-02T18:50:14.770Z",
+  "status": "unresolved-source-wording-hold",
+  "appReference": 926,
+  "modernPrintedReference": 969,
+  "source": {
+    "sourceId": "wikisource-bukhari-two-eids-r496076",
+    "sourceSha256": "f1ffdfcd05e365b305933df31732ef45ab13c38e32379d62bc0b184db9b80911",
+    "sourceRecordId": "wikisource-bukhari-two-eids-r496076:926",
+    "paragraphIds": [
+      "mwQg"
+    ],
+    "arabicSha256": "8e16a2330a327fd21686472a36cd80ef8fbb648736f822fbbd58320862b187c9",
+    "url": "https://ar.wikisource.org/w/index.php?title=%D8%B5%D8%AD%D9%8A%D8%AD_%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A%2F%D9%83%D8%AA%D8%A7%D8%A8_%D8%A7%D9%84%D8%B9%D9%8A%D8%AF%D9%8A%D9%86&oldid=496076"
+  },
+  "selectedPhrase": "ما العمل في أيام العشر أفضل من العمل في هذه",
+  "printedEvidence": [
+    {
+      "sourceId": "brill-1862",
+      "pdfPage": 246,
+      "fileSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+      "observation": "Contains the ten-days comparison with the same direction; uses منه and expands the first jihad question with في سبيل الله. Matching core wording is not independent confirmation that this variant is preferred."
+    },
+    {
+      "sourceId": "dar-ibn-kathir-2002",
+      "pdfPage": 235,
+      "printedReference": 969,
+      "fileSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+      "observation": "Contains the selected comparison clause. The chapter introduction follows a different Quran-quotation form from the digital source."
+    }
+  ],
+  "commentary": {
+    "author": "Ibn Hajar al-‘Asqalani",
+    "work": "Fath al-Bari",
+    "url": "https://islamweb.net/ar/library/content/52/1801/باب-فضل-العمل-في-أيام-التشريق",
+    "locator": "Book of the Two Eids · chapter on deeds during the days of Tashriq · discussion beginning قوله: ما العمل في أيام",
+    "finding": "Identifies this wording with Karimah’s transmission from al-Kushmihani, calls that form anomalous, and contrasts it with other transmitted forms. The issue concerns the wording variant, not a blanket rejection of the underlying hadith.",
+    "shortArabicQuotation": "والسياق الذي وقع في رواية كريمة شاذ"
+  },
+  "englishComparisons": {
+    "bewley": {
+      "reference": "926",
+      "url": "https://aishabewley.org/bukhari9",
+      "observation": "Its any-ten-days wording is not a literal equivalent of the selected definite ten-days clause."
+    },
+    "khan": {
+      "reference": "2.15.86",
+      "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+      "recordSha256": "1973b47a216dc649d81d6fc88c3365183109cad66f204c4e569f5b6eb64f922c",
+      "observation": "Uses other days versus these and supplies a parenthetical identifying the first ten days. This cannot silently replace or translate away the selected Arabic variant."
+    }
+  },
+  "decision": {
+    "readerEligible": false,
+    "narrationEligible": false,
+    "arabicChanged": false,
+    "englishTranslationSupplied": false,
+    "reason": "A material disputed wording cannot be settled by counting matching editions or by copying a smoother English comparison.",
+    "nextWork": "Inspect an additional identified Arabic edition and its variant apparatus, then prepare a source-selection decision for qualified review. Preserve this input and all variant evidence. Do not ask the user to adjudicate the Arabic meaning."
+  },
+  "scope": "App 926 only. Reports 919–925 remain separately reviewed. Reports 927–945 are inventoried but not admitted or certified by this check."
+}
