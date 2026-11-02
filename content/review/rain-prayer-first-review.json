@@ -1,0 +1,820 @@
+{
+  "schemaVersion": 1,
+  "status": "personal-prototype-only",
+  "independentReview": "pending",
+  "sourceId": "wikisource-bukhari-rain-prayer-r484861",
+  "sourceSha256": "134d33e313bd1082d028a0d38b4d1deb8cec13eabb6f1f088118dc83083ce499",
+  "inventorySha256": "e400c540c79eff29039241f25a7da1b76a5507be652573f380a9c257bfef505d",
+  "createdAt": "2026-11-02",
+  "sources": [
+    {
+      "id": "arabic-rain-prayer",
+      "label": "Arabic Wikisource · fixed revision 484861",
+      "kind": "arabic-input",
+      "format": "web",
+      "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_الاستسقاء&oldid=484861"
+    },
+    {
+      "id": "bewley-rain-prayer",
+      "label": "Aisha Bewley · Rain Prayer",
+      "kind": "english-comparison",
+      "format": "web",
+      "url": "https://aishabewley.org/bukhari10"
+    },
+    {
+      "id": "islamhouse-khan",
+      "label": "IslamHouse · Khan-family English comparison",
+      "kind": "english-comparison",
+      "format": "web",
+      "url": "https://islamhouse.com/en/books/70510"
+    },
+    {
+      "id": "brill-1862",
+      "label": "Historical Arabic print · Brill 1862",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf",
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+    },
+    {
+      "id": "dar-ibn-kathir-2002",
+      "label": "Arabic print · Dar Ibn Kathir 2002",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+    },
+    {
+      "id": "fath-rain-poetry",
+      "label": "Ibn Hajar · Fath al-Bari · Rain Prayer poetry",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://islamweb.net/ar/library/content/52/1870/باب-سؤال-الناس-الإمام-الاستسقاء-إذا-قحطوا"
+    },
+    {
+      "id": "fath-rain-abbas",
+      "label": "Ibn Hajar · Fath al-Bari · Umar and al-Abbas",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://islamweb.net/ar/library/content/52/1872/باب-سؤال-الناس-الإمام-الاستسقاء-إذا-قحطوا"
+    }
+  ],
+  "scope": "The first seven complete selected Rain Prayer reports, 960–966, with four digital chapter headings and one separately sourced empty printed chapter.",
+  "editionNote": "Selected Arabic remains unchanged. Both occurrences of the poem within 963 and every narrator chain and comment are preserved. Bewley 966 is displayed as 967 and is bound to its chapter-IV occurrence. The two printed versions of the omitted empty chapter heading remain separately visible; its English is pending. Later reports, the proposed 983b and both correction proposals remain outside this batch.",
+  "chapters": [
+    {
+      "id": "chapter-01",
+      "headingId": "باب_الاستسقاء_وخروج_النبي_ﷺ_في_الاستسقاء",
+      "contextIds": [],
+      "entryNumbers": [
+        960
+      ],
+      "title": "Seeking rain and the Prophet, may Allah bless him and grant him peace, going out to seek rain",
+      "titleArabic": "باب الاستسقاء وخروج النبي ﷺ في الاستسقاء",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-02",
+      "headingId": "باب_دعاء_النبي_ﷺ_اجعلها_عليهم_سنين_كسني_يوسف",
+      "contextIds": [],
+      "entryNumbers": [
+        961,
+        962
+      ],
+      "title": "The supplication of the Prophet, may Allah bless him and grant him peace: Bring upon them years like the years of Yusuf",
+      "titleArabic": "باب دعاء النبي ﷺ اجعلها عليهم سنين كسني يوسف",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-03",
+      "headingId": "باب_سؤال_الناس_الإمام_الاستسقاء_إذا_قحطوا",
+      "contextIds": [],
+      "entryNumbers": [
+        963,
+        964
+      ],
+      "title": "People asking the imam to seek rain when they suffer drought",
+      "titleArabic": "باب سؤال الناس الإمام الاستسقاء إذا قحطوا",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-04",
+      "headingId": "باب_تحويل_الرداء_في_الاستسقاء",
+      "contextIds": [],
+      "entryNumbers": [
+        965,
+        966
+      ],
+      "title": "Turning the cloak when seeking rain",
+      "titleArabic": "باب تحويل الرداء في الاستسقاء",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter.",
+      "printedEmptyChaptersAfter": [
+        {
+          "schemaVersion": 1,
+          "status": "chosen-for-personal-prototype",
+          "reviewerKind": "ai",
+          "independentReview": "pending",
+          "kind": "empty-chapter-heading",
+          "printedChapterNumber": 5,
+          "afterChapterId": "chapter-04",
+          "beforeChapterId": "chapter-05",
+          "afterReference": 966,
+          "beforeReference": 967,
+          "digitalSourceId": "wikisource-bukhari-rain-prayer-r484861",
+          "digitalSourceSha256": "134d33e313bd1082d028a0d38b4d1deb8cec13eabb6f1f088118dc83083ce499",
+          "digitalInventorySha256": "e400c540c79eff29039241f25a7da1b76a5507be652573f380a9c257bfef505d",
+          "entryNumbers": [],
+          "contextParagraphs": [],
+          "englishStatus": "pending",
+          "arabic": "باب انتقام الرب جل وعز من خلقه بالقحط إذا انتهكت محارم الله",
+          "arabicSha256": "2136f33309055000ffc415c25ad3029c26352922619f1a30e00c02a5767e11fc",
+          "selectedWitnessId": "dar-ibn-kathir-2002",
+          "witnesses": [
+            {
+              "sourceId": "brill-1862",
+              "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+              "pdfPage": 256,
+              "reading": "باب انتقام الرب عز وجل من خلقه بالقحط إذا انتهكت محارم الله",
+              "readingSha256": "8e4a7f784f919128be882dbf2c4c2fb55ab0ce2470dca38686bd8365f4f88a3c",
+              "chapterNumber": 5,
+              "differenceNote": "Brill orders the divine epithet as azza wa-jalla; the modern print has jalla wa-azza."
+            },
+            {
+              "sourceId": "dar-ibn-kathir-2002",
+              "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+              "pdfPage": 245,
+              "reading": "باب انتقام الرب جل وعز من خلقه بالقحط إذا انتهكت محارم الله",
+              "readingSha256": "2136f33309055000ffc415c25ad3029c26352922619f1a30e00c02a5767e11fc",
+              "chapterNumber": 5
+            }
+          ],
+          "reason": "Both printed witnesses have chapter 5 immediately between the cloak chapter and the communal-mosque chapter, with no numbered report or introduction below it. The digital source skips it. Preserve it as its own browseable chapter, never a hadith, narrated paragraph or introduction attached to the next chapter.",
+          "transcriptionPolicy": "AI manual unvowelled transcription. Vowel marks, report/chapter numbers, ornament, quotation punctuation and editorial cross-references are excluded. The printed Prophet honorific is represented as ﷺ in the selected modern reading; lexical words are retained. This is not a facsimile. Independent transcription review remains pending.",
+          "id": "chapter-04-print-05",
+          "afterChapterSha256": "36ffd34352d8a628b814667ffed5c89bbdc79ecaafdfe0c461c621653e14fce7",
+          "beforeChapterSha256": "1f3db87303826b7bc7cce037b30b91ecb881a10f70086b6b0c80f9f503bf006e",
+          "previousArabicSha256": "d7f1128fc4706992f49d7ba8943d33b7062ba070270efe04a08a18ab7a2ad09c",
+          "nextArabicSha256": "866f366b4a6c38f8d63722dfee7c71be6e9062da36c5ea5df2239c55b4b49b25"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "number": 960,
+      "id": "bukhari:960",
+      "sourceRecordId": "wikisource-bukhari-rain-prayer-r484861:960",
+      "chapterId": "chapter-01",
+      "paragraphIds": [
+        "mwBw"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "960-1",
+          "paragraphId": "mwBw",
+          "start": 0,
+          "end": 88,
+          "kind": "chain",
+          "arabic": "[960] حدثنا أبو نعيم قال: حدثنا سفيان عن عبد الله بن أبي بكر عن عباد بن تميم عن عمه قال ",
+          "english": "Abu Nu‘aym related to us. He said: Sufyan related to us, from ‘Abdullah ibn Abi Bakr, from ‘Abbad ibn Tamim, from his uncle, who said:",
+          "arabicSha256": "fb51167c4efd63e7320edc66636641d28eeb099145a66571600829cd5a6bf231",
+          "englishSha256": "dd3c13ef8f68a49fca0f7c3789417e8e0b6359e5ca65a3badfe1fa8d5af6fc83"
+        },
+        {
+          "id": "960-2",
+          "paragraphId": "mwBw",
+          "start": 88,
+          "end": 117,
+          "kind": "report",
+          "arabic": "خرج النبي ﷺ يستسقي وحول رداءه",
+          "english": "The Prophet, may Allah bless him and grant him peace, went out to seek rain and turned his cloak.",
+          "arabicSha256": "93df054e3f0f14d546973600906ce3ad90ee6cb06e4de701431aa351ba8d9a05",
+          "englishSha256": "5bdcf8d8eefadc913f60550e19dd91a3d731ccb734a8adb947b8cb8366c5b2fb"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            255
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            244
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-rain-prayer",
+          "reference": "960"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.17.119",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.17.119",
+            "recordSha256": "b646c92b1aeffce638583538075b470022133c496d79841386bff17f38b3620b"
+          }
+        }
+      ],
+      "notes": [
+        "Retains the full chain and the selected Abbad spelling. Turning the cloak is not expanded to inside out, a direction or an extra putting-on action.",
+        "Modern printed reference 1005. Both Arabic print locations and the English comparison bodies were individually matched. This is new AI-assisted English, not Darussalam wording."
+      ],
+      "reviewScope": "AI-assisted full-span working translation of the unchanged selected Arabic, checked against the located English bodies and visually inspected Arabic print pages. Independent Arabic, English, context, reference and spoken-word review remains pending.",
+      "arabicSha256": "7c61c0dcc46ad44da543e3478a66d66cd9c94215ced0e77e25a6555a513854f1",
+      "englishSha256": "d5bc433f82b3a92f2c90c34a3713232de33bb9ea5b449e1a5c62787659bc8f9a",
+      "reviewRecordSha256": "17248a14918d75742c27d6de63272dbbf36015878901cfbfc88c2eeb7cd5722c"
+    },
+    {
+      "number": 961,
+      "id": "bukhari:961",
+      "sourceRecordId": "wikisource-bukhari-rain-prayer-r484861:961",
+      "chapterId": "chapter-02",
+      "paragraphIds": [
+        "mwCw"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "961-1",
+          "paragraphId": "mwCw",
+          "start": 0,
+          "end": 81,
+          "kind": "chain",
+          "arabic": "[961] حدثنا قتيبة حدثنا مغيرة بن عبد الرحمن عن أبي الزناد عن الأعرج عن أبي هريرة ",
+          "english": "Qutaybah related to us. Mughirah ibn ‘Abd al-Rahman related to us, from Abu al-Zinad, from al-A‘raj, from Abu Hurayrah:",
+          "arabicSha256": "df8e09e8e33a074489f9c87cc808bf484ba600a92282ee3adf89c84967d38339",
+          "englishSha256": "758a17d6512fe573a7d61b2d9473c97c85c18804b6bb40d351d08bcb947834f0"
+        },
+        {
+          "id": "961-2",
+          "paragraphId": "mwCw",
+          "start": 81,
+          "end": 348,
+          "kind": "report",
+          "arabic": "أن النبي ﷺ كان إذا رفع رأسه من الركعة الآخرة يقول اللهم أنج عياش بن أبي ربيعة اللهم أنج سلمة بن هشام اللهم أنج الوليد بن الوليد اللهم أنج المستضعفين من المؤمنين اللهم اشدد وطأتك على مضر اللهم اجعلها سنين كسني يوسف وأن النبي ﷺ قال: غفار غفر الله لها وأسلم سالمها الله ",
+          "english": "When the Prophet, may Allah bless him and grant him peace, raised his head in the last unit of prayer, he would say, “O Allah, rescue ‘Ayyash ibn Abi Rabi‘ah. O Allah, rescue Salamah ibn Hisham. O Allah, rescue al-Walid ibn al-Walid. O Allah, rescue the oppressed believers. O Allah, intensify Your pressure upon Mudar. O Allah, make it years like the years of Yusuf.” And the Prophet, may Allah bless him and grant him peace, said, “Ghifar—may Allah forgive it; and Aslam—may Allah grant it peace.”",
+          "arabicSha256": "ceb9820f2ff748f59d5962f2ba76ed01a54a453e33fcd79632164b00936cfebb",
+          "englishSha256": "adb0a97175137ea7d2ec169e9c2999048878081493a4efa1e7c4e8e7ece92901"
+        },
+        {
+          "id": "961-3",
+          "paragraphId": "mwCw",
+          "start": 348,
+          "end": 392,
+          "kind": "transmission-note",
+          "arabic": "قال ابن أبي الزناد عن أبيه هذا كله في الصبح ",
+          "english": "Ibn Abi al-Zinad said, from his father: All of this was in the morning prayer.",
+          "arabicSha256": "0b0bcdc9c1724c85573784cde40c1edf84f2c56ac517a8adf909bad456127e26",
+          "englishSha256": "d3ed65afbfc9da6e7f8984a61f2b3162f0b20026919dc64e2f33da46063e2931"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            255
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            244
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-rain-prayer",
+          "reference": "961"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.17.120",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.17.120",
+            "recordSha256": "e252ab285929ac84064dbb182a56d4c77f5b5643670b5e0d2243bf8ccb695299"
+          }
+        }
+      ],
+      "notes": [
+        "The complete repeated invocations, both tribal names and both Prophet honorifics are retained. The morning-prayer comment remains separately attributed to Ibn Abi al-Zinad from his father.",
+        "The source names Mughirah ibn Abd al-Rahman, as does the modern print; Brill reads Ubayd al-Rahman. The selected wording is unchanged.",
+        "The Ghifar and Aslam formulas are rendered as invocations, as in the Khan comparison; no tribe explanation or legal ruling is inserted.",
+        "Modern printed reference 1006. Both Arabic print locations and the English comparison bodies were individually matched. This is new AI-assisted English, not Darussalam wording."
+      ],
+      "reviewScope": "AI-assisted full-span working translation of the unchanged selected Arabic, checked against the located English bodies and visually inspected Arabic print pages. Independent Arabic, English, context, reference and spoken-word review remains pending.",
+      "arabicSha256": "0590aac17f01d45b9ee9ab5cf80d459f6b9f753409cab52daa651f1ee7fb5508",
+      "englishSha256": "d6ca0737814b8becab4d2efad6eca3944534c5eb74a6733f1883cef84a2f0d52",
+      "reviewRecordSha256": "73e43461ab23619e88d164baf62452380d14a715a7ff2dd5272aa6950ff59923"
+    },
+    {
+      "number": 962,
+      "id": "bukhari:962",
+      "sourceRecordId": "wikisource-bukhari-rain-prayer-r484861:962",
+      "chapterId": "chapter-02",
+      "paragraphIds": [
+        "mwDg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "962-1",
+          "paragraphId": "mwDg",
+          "start": 0,
+          "end": 81,
+          "kind": "chain",
+          "arabic": "[962] حدثنا عثمان بن أبي شيبة قال: حدثنا جرير عن منصور عن أبي الضحى عن مسروق قال ",
+          "english": "‘Uthman ibn Abi Shaybah related to us. He said: Jarir related to us, from Mansur, from Abu al-Duha, from Masruq, who said:",
+          "arabicSha256": "7be89f083cade4c2fe7972245486aeec84150d6c66051faf4d0c448993303169",
+          "englishSha256": "b0f566106306f38c3aa551ff9b8fa8991fe2d62e475dd4b910e0ad285570929b"
+        },
+        {
+          "id": "962-2",
+          "paragraphId": "mwDg",
+          "start": 81,
+          "end": 511,
+          "kind": "report",
+          "arabic": "كنا عند عبد الله، فقال إن النبي ﷺ لما رأى من الناس إدبارا قال اللهم سبع كسبع يوسف فأخذتهم سنة حصت كل شيء حتى أكلوا الجلود والميتة والجيف وينظر أحدهم إلى السماء فيرى الدخان من الجوع فأتاه أبو سفيان، فقال: يا محمد إنك تأمر بطاعة الله وبصلة الرحم وإن قومك قد هلكوا فادع الله لهم قال الله تعالى { فارتقب يوم تأتي السماء بدخان مبين } إلى قوله { عائدون يوم نبطش البطشة الكبرى } فالبطشة يوم بدر وقد مضت الدخان والبطشة واللزام وآية الروم ",
+          "english": "We were with ‘Abdullah, and he said: When the Prophet, may Allah bless him and grant him peace, saw the people turning away, he said, “O Allah, seven like the seven of Yusuf.” A year of scarcity overtook them and consumed everything, until they ate hides, carrion and decaying carcasses. One of them would look at the sky and see smoke from hunger. Abu Sufyan came to him and said, “O Muhammad, you command obedience to Allah and maintaining ties of kinship. Your people have perished, so supplicate to Allah for them.” Allah Most High said, “So watch for the day when the sky brings clear smoke,” up to His words, “returning—the day We strike the greatest blow.” The blow was on the day of Badr. The smoke, the blow, al-lizam and the sign of the Romans have already passed.",
+          "arabicSha256": "d6069ec5632828068a95cac8b134573b710d8234437e10f8e02c7a99c963afaa",
+          "englishSha256": "6ea7c19e906d83550e5ec5b900c379773762052acef41d1fdd6cba65c11de20a"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            255,
+            256
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            244
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-rain-prayer",
+          "reference": "962"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.17.121",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.17.121",
+            "recordSha256": "96baad6d979386e1e12599061e4045ec5decd8a6996ab172e5195f6904e94e49"
+          }
+        }
+      ],
+      "notes": [
+        "The chosen digital Quranic excerpt is abbreviated. Its opening, up-to-His-words bridge and fragment beginning returning remain; missing words such as innakum are not silently supplied from the prints. This is not a standalone complete Quran translation.",
+        "The source supplies seven without a noun; the working English preserves that ellipsis. A year of scarcity renders sanah, without a claim that the total duration was exactly one year. The people are not expanded into a named tribe or a refusal of Islam.",
+        "Al-lizam remains a transliterated source term rather than replacing it with an inferred event; the final list contains four named items. No missing moon item is borrowed from parallel reports.",
+        "Modern printed reference 1007. Both Arabic print locations and the English comparison bodies were individually matched. This is new AI-assisted English, not Darussalam wording."
+      ],
+      "reviewScope": "AI-assisted full-span working translation of the unchanged selected Arabic, checked against the located English bodies and visually inspected Arabic print pages. Independent Arabic, English, context, reference and spoken-word review remains pending.",
+      "arabicSha256": "39b87a6b26cbb9d59be8fff8c8d2e42d7625dd5b472b05a344c0804f35af4186",
+      "englishSha256": "a02d2d2d0279641151c03802e06cddf71e42eb434974711953cc50318bb9dbc6",
+      "reviewRecordSha256": "da42ff0a5480927136a480e709819ffc7d3fe1bf7713ffb0b2241a52c3aba27c"
+    },
+    {
+      "number": 963,
+      "id": "bukhari:963",
+      "sourceRecordId": "wikisource-bukhari-rain-prayer-r484861:963",
+      "chapterId": "chapter-03",
+      "paragraphIds": [
+        "mwEQ",
+        "mwEg",
+        "mwEw",
+        "mwFA",
+        "mwFg",
+        "mwFw",
+        "mwGA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "963-1",
+          "paragraphId": "mwEQ",
+          "start": 0,
+          "end": 101,
+          "kind": "chain",
+          "arabic": "[963] حدثنا عمرو بن علي قال: حدثنا أبو قتيبة قال: حدثنا عبد الرحمن بن عبد الله بن دينار عن أبيه قال: ",
+          "english": "‘Amr ibn ‘Ali related to us. He said: Abu Qutaybah related to us. He said: ‘Abd al-Rahman ibn ‘Abdullah ibn Dinar related to us, from his father, who said:",
+          "arabicSha256": "477f58ea1fe5864eccdcf594cef935604b223ede0cc3b00f96f8200b1761cc8b",
+          "englishSha256": "fe0e71968de34e2964cbb551ead8e1b77fac3ab5316de271181089f3173ad660"
+        },
+        {
+          "id": "963-2",
+          "paragraphId": "mwEQ",
+          "start": 101,
+          "end": 134,
+          "kind": "report",
+          "arabic": "سمعت ابن عمر يتمثل بشعر أبي طالب ",
+          "english": "I heard Ibn ‘Umar reciting Abu Talib’s poetry:",
+          "arabicSha256": "3cf3404ef7aecdbd58ef357ea142a88357985a29fbf0e8256b63f82a5db67753",
+          "englishSha256": "4af113584c26d2a07b99b5a0e4c65cc3fa910eb93bec7ae3c0aa83289e490c6f"
+        },
+        {
+          "id": "963-3",
+          "paragraphId": "mwEg",
+          "start": 0,
+          "end": 26,
+          "kind": "report",
+          "arabic": "وأبيض يستسقي الغمام بوجهه ",
+          "english": "And a fair one, through whose face rain is sought from the clouds,",
+          "arabicSha256": "746de10ce41d05fd3906c54064160adf3e09b687fdb7138993b1b1e9bf4eff13",
+          "englishSha256": "32b2749137d1893d079e87d1d87b621c5a9f8537bd20eaa9f0f46e7f967c63a3"
+        },
+        {
+          "id": "963-4",
+          "paragraphId": "mwEw",
+          "start": 0,
+          "end": 25,
+          "kind": "report",
+          "arabic": "ثمال اليتامى عصمة للأرامل",
+          "english": "a refuge for orphans, a protection for widows.",
+          "arabicSha256": "f324b108dec5a539f5d1b30d013b8fc6712227e7dea87b3aa93087d1e89da1df",
+          "englishSha256": "0084437a05fbd4304436690f16b09e446fc2420c9953b4582931a02a6108e697"
+        },
+        {
+          "id": "963-5",
+          "paragraphId": "mwFA",
+          "start": 0,
+          "end": 36,
+          "kind": "chain",
+          "arabic": "وقال عمر بن حمزة حدثنا سالم عن أبيه ",
+          "english": "And ‘Umar ibn Hamzah said: Salim related to us, from his father:",
+          "arabicSha256": "8d8371c80c34c49671dab7e1766e51f4d52640379b24174f1be521f21a5129af",
+          "englishSha256": "30211b39b67fb2ae988a78c72e54b58dc84fcbb2151128ffdccc08ece0f5692f"
+        },
+        {
+          "id": "963-6",
+          "paragraphId": "mwFA",
+          "start": 36,
+          "end": 117,
+          "kind": "report",
+          "arabic": "ربما ذكرت قول الشاعر وأنا أنظر إلى وجه النبي ﷺ يستسقي فما ينزل حتى يجيش كل ميزاب ",
+          "english": "At times I remembered the poet’s words while looking at the face of the Prophet, may Allah bless him and grant him peace, as he sought rain. He would not come down until every waterspout gushed:",
+          "arabicSha256": "097b1c99443694400446e6fc6b12607fa1c42f8784f7d5ee05028284f1513992",
+          "englishSha256": "2a6ecd0a2cb24f09c8b93ada9272822202132295d62913618211a251acf8a5a5"
+        },
+        {
+          "id": "963-7",
+          "paragraphId": "mwFg",
+          "start": 0,
+          "end": 26,
+          "kind": "report",
+          "arabic": "وأبيض يستسقي الغمام بوجهه ",
+          "english": "And a fair one, through whose face rain is sought from the clouds,",
+          "arabicSha256": "746de10ce41d05fd3906c54064160adf3e09b687fdb7138993b1b1e9bf4eff13",
+          "englishSha256": "32b2749137d1893d079e87d1d87b621c5a9f8537bd20eaa9f0f46e7f967c63a3"
+        },
+        {
+          "id": "963-8",
+          "paragraphId": "mwFw",
+          "start": 0,
+          "end": 26,
+          "kind": "report",
+          "arabic": "ثمال اليتامى عصمة للأرامل ",
+          "english": "a refuge for orphans, a protection for widows.",
+          "arabicSha256": "617de9148bde64d42bdfd6db3aaf4c73322cfa2d60f799db1cee221c6dfc4f96",
+          "englishSha256": "0084437a05fbd4304436690f16b09e446fc2420c9953b4582931a02a6108e697"
+        },
+        {
+          "id": "963-9",
+          "paragraphId": "mwGA",
+          "start": 0,
+          "end": 17,
+          "kind": "transmission-note",
+          "arabic": "وهو قول أبي طالب ",
+          "english": "And these are Abu Talib’s words.",
+          "arabicSha256": "b1052446460299645185524fba717cb770bfb7c6f5f7a52be9e5374e383adbe8",
+          "englishSha256": "26af030f03a59aaf182e46aae590395cd09ee75947f43f5a57a356b1244c1737"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            256
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            245
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-rain-prayer",
+          "reference": "963"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.17.122",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.17.122",
+            "recordSha256": "c108ca26f80e2dc1c15ad810af6845b8d5c69a04ded092178c8c6cd4f220d74b"
+          }
+        }
+      ],
+      "notes": [
+        "Both poetry occurrences, both chain portions and the final attribution are retained in source order. Modern printed references 1008 and 1009 are already both present within selected 963; no extra app number is invented.",
+        "Bewley renders abyad as faultless and Khan as white, with an explanatory Prophet identification. Fair one is a provisional lexical rendering that does not add that identification. Through whose face and the clouds remain explicit; neither is paraphrased as a request to pray.",
+        "Ibn Hajar explains thimal with meanings including support and refuge, and ismah as protection from harm. Refuge and protection are provisional lexical choices here. No historical or legal commentary is added to the narration.",
+        "The source says he would not come down; the draft does not insert from the pulpit. The narrator genealogy remains Abd al-Rahman ibn Abdullah ibn Dinar from his father, despite the shortened English introductions.",
+        "Modern printed reference 1008, 1009. Both Arabic print locations and the English comparison bodies were individually matched. This is new AI-assisted English, not Darussalam wording."
+      ],
+      "reviewScope": "AI-assisted full-span working translation of the unchanged selected Arabic, checked against the located English bodies and visually inspected Arabic print pages. Independent Arabic, English, context, reference and spoken-word review remains pending.",
+      "arabicSha256": "edf7c1e46ef905f0e0000488a5a4ffc0225cd8dad19717e021bb558b54dba84e",
+      "englishSha256": "57571b7d4d54aa1a0fabbfe0d50e39d85db096bc045f344a33d2139199d3197c",
+      "additionalCitations": [
+        {
+          "id": "rain-963-lexical",
+          "sourceId": "fath-rain-poetry",
+          "locator": "Discussion of tamaththul, thimal and ismah",
+          "scope": "Lexical and source-context comparison only. Additional accounts and legal commentary are not inserted into the selected wording."
+        }
+      ],
+      "reviewRecordSha256": "87350b205cb63dfd154d42036f24b2e005d0599db5496c083f24f939f5285942"
+    },
+    {
+      "number": 964,
+      "id": "bukhari:964",
+      "sourceRecordId": "wikisource-bukhari-rain-prayer-r484861:964",
+      "chapterId": "chapter-03",
+      "paragraphIds": [
+        "mwGQ"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "964-1",
+          "paragraphId": "mwGQ",
+          "start": 0,
+          "end": 133,
+          "kind": "chain",
+          "arabic": "[964] حدثنا الحسن بن محمد قال: حدثنا محمد بن عبد الله الأنصارى قال: حدثني أبي عبد الله ابن المثنى عن ثمامة بن عبد الله بن أنس عن أنس ",
+          "english": "Al-Hasan ibn Muhammad related to us. He said: Muhammad ibn ‘Abdullah al-Ansari related to us. He said: My father, ‘Abdullah ibn al-Muthanna, related to me, from Thumamah ibn ‘Abdullah ibn Anas, from Anas:",
+          "arabicSha256": "2a83cc191fdb10864a71edba13e3ee35f31345a3e84cd3ba0ce8854453d8e378",
+          "englishSha256": "e6d1bb5ed1cd039b4363c9ee1716918b91565229ce1588f4c75ac69df0d02fa5"
+        },
+        {
+          "id": "964-2",
+          "paragraphId": "mwGQ",
+          "start": 133,
+          "end": 303,
+          "kind": "report",
+          "arabic": "أن عمر بن الخطاب رضى الله تعالى عنه كان إذا قحطوا استسقى بالعباس بن عبد المطلب، فقال اللهم إنا كنا نتوسل إليك بنبينا فتسقينا وإنا نتوسل إليك بعم نبينا فاسقنا قال: فيسقون ",
+          "english": "When they suffered drought, ‘Umar ibn al-Khattab, may Allah Most High be pleased with him, would seek rain through al-‘Abbas ibn ‘Abd al-Muttalib. He would say, “O Allah, we used to seek a means to You through our Prophet, and You would give us rain. We seek a means to You through the uncle of our Prophet, so give us rain.” He said: They would be given rain.",
+          "arabicSha256": "d644c226c4a6f344ef5c3d06fe00ffa755c7d84d57a11c8aba656c193b989461",
+          "englishSha256": "51cd72364b691304ee964d28a0aade6077f1c9741eb447b7f79ec9084da8a9c0"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            256
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            245
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-rain-prayer",
+          "reference": "964"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.17.123",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.17.123",
+            "recordSha256": "a192f7647d587b50e6b37905f8fe75b4640b98354050f090a9a15dd611c3baeb"
+          }
+        }
+      ],
+      "notes": [
+        "The past-tense opening and full Umar honorific remain. Seek a means to You is a working rendering of natawassalu ilayka; it does not insert the Khan paraphrase asking someone to invoke or add a living/dead qualification.",
+        "Ibn Hajar discusses this occurrence alongside fuller accounts. Those additional speeches, dates and explanations are not inserted into the selected report. This draft makes no new legal or theological ruling.",
+        "Modern printed reference 1010. Both Arabic print locations and the English comparison bodies were individually matched. This is new AI-assisted English, not Darussalam wording."
+      ],
+      "reviewScope": "AI-assisted full-span working translation of the unchanged selected Arabic, checked against the located English bodies and visually inspected Arabic print pages. Independent Arabic, English, context, reference and spoken-word review remains pending.",
+      "arabicSha256": "6392ac477464adc7e08d885bbe6033d2c470140c3c314d8e44a2155708d43c5e",
+      "englishSha256": "1eec3eecc43f6d65fde87d313438d9aba45518eb37515df30ed69428edbd54db",
+      "additionalCitations": [
+        {
+          "id": "rain-964-lexical",
+          "sourceId": "fath-rain-abbas",
+          "locator": "Commentary on Umar seeking rain through al-Abbas",
+          "scope": "Lexical and source-context comparison only. Additional accounts and legal commentary are not inserted into the selected wording."
+        }
+      ],
+      "reviewRecordSha256": "e896708379f6bc118b4d4cded39c4bafe43073409a6a9a740850671d977a8b56"
+    },
+    {
+      "number": 965,
+      "id": "bukhari:965",
+      "sourceRecordId": "wikisource-bukhari-rain-prayer-r484861:965",
+      "chapterId": "chapter-04",
+      "paragraphIds": [
+        "mwGw"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "965-1",
+          "paragraphId": "mwGw",
+          "start": 0,
+          "end": 104,
+          "kind": "chain",
+          "arabic": "[965] حدثنا إسحاق قال: حدثنا وهب قال: أخبرنا شعبة عن محمد بن أبي بكر عن عباد بن تميم عن عبد الله بن زيد ",
+          "english": "Ishaq related to us. He said: Wahb related to us. He said: Shu‘bah informed us, from Muhammad ibn Abi Bakr, from ‘Abbad ibn Tamim, from ‘Abdullah ibn Zayd:",
+          "arabicSha256": "6ba3faaa21f00d5f74b3d2f349f95659b104f0ec6503171d498e90fc3d4c955a",
+          "englishSha256": "a2b2c2dd70dc4f4694d240b3389576581abb3e13e4d6b4583c51488863a2b126"
+        },
+        {
+          "id": "965-2",
+          "paragraphId": "mwGw",
+          "start": 104,
+          "end": 133,
+          "kind": "report",
+          "arabic": "أن النبي ﷺ استسقى فقلب رداءه ",
+          "english": "The Prophet, may Allah bless him and grant him peace, sought rain and turned his cloak.",
+          "arabicSha256": "3331a629443a5f77f8366e1ebdf73c3ac179d38a8712eb788d5c8015401efd86",
+          "englishSha256": "ca95fc5709b7147b9717988849d4ae899bf7222a1596b0ba6e265c8089cb5a97"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            256
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            245
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-rain-prayer",
+          "reference": "965"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.17.124",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.17.124",
+            "recordSha256": "991dc9ffbfe178deeaee6d21bb6e1b5443188742efafeb037593f7f16b42c6b5"
+          }
+        }
+      ],
+      "notes": [
+        "Retains the selected abbreviated name Wahb, which Brill expands. The source says turned his cloak; neither inside out nor right-over-left is imported.",
+        "Modern printed reference 1011. Both Arabic print locations and the English comparison bodies were individually matched. This is new AI-assisted English, not Darussalam wording."
+      ],
+      "reviewScope": "AI-assisted full-span working translation of the unchanged selected Arabic, checked against the located English bodies and visually inspected Arabic print pages. Independent Arabic, English, context, reference and spoken-word review remains pending.",
+      "arabicSha256": "51afbbb4342b3e975155bb48a85b8a27b470844285d0bf7e6895c4f7ba00eb51",
+      "englishSha256": "3509ce74d295173f3d91fee30212238fd734ea76c0ddb98f28bce286dc242d57",
+      "reviewRecordSha256": "6928d2b6060e848b4c513a4f5c10177ba7e35c2c831e9b3797e3fb5c733755c1"
+    },
+    {
+      "number": 966,
+      "id": "bukhari:966",
+      "sourceRecordId": "wikisource-bukhari-rain-prayer-r484861:966",
+      "chapterId": "chapter-04",
+      "paragraphIds": [
+        "mwHQ"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "966-1",
+          "paragraphId": "mwHQ",
+          "start": 0,
+          "end": 123,
+          "kind": "chain",
+          "arabic": "[966] حدثنا علي بن عبد الله قال: حدثنا سفيان قال عبد الله بن أبي بكر أنه سمع عباد بن تميم يحدث أباه عن عمه عبد الله بن زيد ",
+          "english": "‘Ali ibn ‘Abdullah related to us. He said: Sufyan related to us. ‘Abdullah ibn Abi Bakr said that he heard ‘Abbad ibn Tamim relating to his father, from his uncle, ‘Abdullah ibn Zayd:",
+          "arabicSha256": "1b08699bd3e90b5d03469eab29105d3511f0a248fa42c3657e44e2410f9e9127",
+          "englishSha256": "98f815254a4a41f78d5356f39a7c78d9d218ac16c15dbdd0612d893551563943"
+        },
+        {
+          "id": "966-2",
+          "paragraphId": "mwHQ",
+          "start": 123,
+          "end": 195,
+          "kind": "report",
+          "arabic": "أن النبي ﷺ خرج إلى المصلى فاستسقى فاستقبل القبلة وقلب رداءه وصلى ركعتين ",
+          "english": "The Prophet, may Allah bless him and grant him peace, went out to the prayer ground and sought rain. He faced the qibla, turned his cloak and prayed two units.",
+          "arabicSha256": "5cf13aa9311065de8d78dadeb39ab49232ddf12d014886673828dba420f3e9c4",
+          "englishSha256": "719a491e6a7ffd7227c984aeb56ad367bb2d2c14aeccc2fb4681e6b0a28cbe68"
+        },
+        {
+          "id": "966-3",
+          "paragraphId": "mwHQ",
+          "start": 195,
+          "end": 309,
+          "kind": "transmission-note",
+          "arabic": "قال أبو عبد الله كان ابن عيينة يقول هو صاحب الأذان ولكنه وهم لأن هذا عبد الله بن زيد بن عاصم المازني مازن الأنصار ",
+          "english": "Abu ‘Abdullah said: Ibn ‘Uyaynah used to say that he was the one associated with the call to prayer, but he was mistaken, because this is ‘Abdullah ibn Zayd ibn ‘Asim al-Mazini, from the Mazin of the Ansar.",
+          "arabicSha256": "a62252fbae0f53968c24c76ebdfd1aaaf515154f284566016e9a56c8d825c209",
+          "englishSha256": "3fac9140cf00429e1268fd65f2d1a52238a22e91da24336d7fa3cbf3f28f288d"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            256
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            245
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-rain-prayer",
+          "reference": "967",
+          "occurrenceLocator": {
+            "id": "bewley-rain-prayer-966-located",
+            "sha256": "043859e10ef086052d20af343baaaad2cbe8cb9ac0cf7295c74902bf3730554e"
+          },
+          "note": "The chapter-IV report includes the closing narrator-name comment, which the pinned Khan body omits. Its displayed reference 967 is retained as a comparison label only."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.17.125",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.17.125",
+            "recordSha256": "6f69a05a2dfd87206dbf377dfce0f06a298b869da5e0829721f63e7ed5bff49c"
+          }
+        }
+      ],
+      "notes": [
+        "The full chain includes Abbad relating to his father from his uncle. The final Abu Abd Allah comment is separately presented and included in the complete English.",
+        "Wahima is rendered was mistaken, not a grading of the hadith as weak. The Khan comparison omits the closing correction; Bewley includes it under the displayed label 967 in chapter IV.",
+        "The name clarification distinguishes this Abd Allah ibn Zayd ibn Asim al-Mazini from the person associated with the call to prayer. No narrator names are silently harmonized.",
+        "Modern printed reference 1012. Both Arabic print locations and the English comparison bodies were individually matched. This is new AI-assisted English, not Darussalam wording."
+      ],
+      "reviewScope": "AI-assisted full-span working translation of the unchanged selected Arabic, checked against the located English bodies and visually inspected Arabic print pages. Independent Arabic, English, context, reference and spoken-word review remains pending.",
+      "arabicSha256": "d7f1128fc4706992f49d7ba8943d33b7062ba070270efe04a08a18ab7a2ad09c",
+      "englishSha256": "85accf080e303268df535e1f4d15ba53a04484535bbb9e15ba8e7618357359b9",
+      "reviewRecordSha256": "cec2538fd1d2c98f3d24f6c1b8d87eef5799332941ca67ab797d5f0cc943c348"
+    }
+  ]
+}

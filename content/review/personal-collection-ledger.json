@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "namespace": "bukhari-opening-v1",
   "publication": "personal-prototype",
-  "sourceRecordSha256": "70aec6181a137d421cb06ed3a7ad1871115180127f0f08be2afc1796c17cf35a",
+  "sourceRecordSha256": "fe6af129651df48d08f15b7bce2bd4cdbc3195ce3e194d68ad58d58ac3441c8a",
   "rights": {
     "status": "pending",
     "evidence": [
@@ -35,7 +35,9 @@
       "reader/two-eids-inputs.json",
       "reader/two-eids-review.html",
       "reader/witr-inputs.json",
-      "reader/witr-review.html"
+      "reader/witr-review.html",
+      "reader/rain-prayer-inputs.json",
+      "reader/rain-prayer-review.html"
     ]
   },
   "books": [
@@ -14300,6 +14302,132 @@
           "notes": {
             "path": "witr-review.html",
             "fragment": "hadith-957"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rain-prayer",
+      "number": 16,
+      "title": "Rain Prayer",
+      "sourceEntryCount": 33,
+      "entryNumbers": [
+        960,
+        961,
+        962,
+        963,
+        964,
+        965,
+        966
+      ],
+      "chapters": [
+        {
+          "id": "chapter-01",
+          "title": "Seeking rain and the Prophet, may Allah bless him and grant him peace, going out to seek rain",
+          "entryNumbers": [
+            960
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "rain-prayer-review.html",
+              "fragment": "chapter-01"
+            }
+          }
+        },
+        {
+          "id": "chapter-02",
+          "title": "The supplication of the Prophet, may Allah bless him and grant him peace: Bring upon them years like the years of Yusuf",
+          "entryNumbers": [
+            961,
+            962
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "rain-prayer-review.html",
+              "fragment": "chapter-02"
+            }
+          }
+        },
+        {
+          "id": "chapter-03",
+          "title": "People asking the imam to seek rain when they suffer drought",
+          "entryNumbers": [
+            963,
+            964
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "rain-prayer-review.html",
+              "fragment": "chapter-03"
+            }
+          }
+        },
+        {
+          "id": "chapter-04",
+          "title": "Turning the cloak when seeking rain",
+          "entryNumbers": [
+            965,
+            966
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "rain-prayer-review.html",
+              "fragment": "chapter-04"
+            }
+          }
+        },
+        {
+          "id": "chapter-04-print-05",
+          "title": "Printed chapter 5 · English heading pending",
+          "entryNumbers": [],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "heading-translation-pending",
+            "numberedReports": "none-in-source",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "rain-prayer-review.html",
+              "fragment": "chapter-04-print-05"
+            },
+            "printedEmptyHeading": {
+              "afterChapterId": "chapter-04",
+              "beforeChapterId": "chapter-05",
+              "afterReference": 966,
+              "beforeReference": 967,
+              "printedChapterNumber": 5,
+              "evidenceSha256": "6afb67fe414b3c44c02a7581a6acaf3519ab79f94d8a1e5c728204f5a8218dca"
+            }
           }
         }
       ]
@@ -30642,15 +30770,134 @@
       "contextReview": {
         "status": "pending"
       }
+    },
+    {
+      "number": 960,
+      "id": "bukhari:960",
+      "entrySha256": "2d591c2b1cb5e9ebf25a9dbab07305f8c844fb728512c7841d762b3b7c8067e3",
+      "arabicSha256": "7c61c0dcc46ad44da543e3478a66d66cd9c94215ced0e77e25a6555a513854f1",
+      "englishSha256": "d5bc433f82b3a92f2c90c34a3713232de33bb9ea5b449e1a5c62787659bc8f9a",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 961,
+      "id": "bukhari:961",
+      "entrySha256": "ad0e635adb51c6b9e6748710cb645613fea8a5705a28cda7644fdfd6187a1757",
+      "arabicSha256": "0590aac17f01d45b9ee9ab5cf80d459f6b9f753409cab52daa651f1ee7fb5508",
+      "englishSha256": "d6ca0737814b8becab4d2efad6eca3944534c5eb74a6733f1883cef84a2f0d52",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 962,
+      "id": "bukhari:962",
+      "entrySha256": "440e4e13f5b6ef988394113beec484a1c644dbf6897849d7a3d9b60551339cb7",
+      "arabicSha256": "39b87a6b26cbb9d59be8fff8c8d2e42d7625dd5b472b05a344c0804f35af4186",
+      "englishSha256": "a02d2d2d0279641151c03802e06cddf71e42eb434974711953cc50318bb9dbc6",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 963,
+      "id": "bukhari:963",
+      "entrySha256": "ed6710581b67d01fa01536e481900959f967aeaaf4866d109091e4970d2a0d36",
+      "arabicSha256": "edf7c1e46ef905f0e0000488a5a4ffc0225cd8dad19717e021bb558b54dba84e",
+      "englishSha256": "57571b7d4d54aa1a0fabbfe0d50e39d85db096bc045f344a33d2139199d3197c",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 964,
+      "id": "bukhari:964",
+      "entrySha256": "2a334e7922360c2fb934730423b28fea03eed08d30bf7ada8221d56aaf2ea5bd",
+      "arabicSha256": "6392ac477464adc7e08d885bbe6033d2c470140c3c314d8e44a2155708d43c5e",
+      "englishSha256": "1eec3eecc43f6d65fde87d313438d9aba45518eb37515df30ed69428edbd54db",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 965,
+      "id": "bukhari:965",
+      "entrySha256": "f9e27fa193ac3b6403eb1d5ea60c12a89b3db51e961864fd4b5198fcc8e81cee",
+      "arabicSha256": "51afbbb4342b3e975155bb48a85b8a27b470844285d0bf7e6895c4f7ba00eb51",
+      "englishSha256": "3509ce74d295173f3d91fee30212238fd734ea76c0ddb98f28bce286dc242d57",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 966,
+      "id": "bukhari:966",
+      "entrySha256": "59b77c118dd396a341d1595ce06d0034374dbeeb28569c4ad81ab4ee811d9d6d",
+      "arabicSha256": "d7f1128fc4706992f49d7ba8943d33b7062ba070270efe04a08a18ab7a2ad09c",
+      "englishSha256": "85accf080e303268df535e1f4d15ba53a04484535bbb9e15ba8e7618357359b9",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
     }
   ],
-  "catalogContextSha256": "d598a6edaa65b2634185bb6144f46350ad92443bd2b3bcc7513875086731081d",
+  "catalogContextSha256": "94357813ec1258b85ac5de49eafa55c2a38980c4bac24db4b4cd7bdf4081573e",
   "collectionReview": {
     "status": "pending"
   },
   "sourceReferences": {
     "schemaVersion": 1,
-    "sourceRecordSha256": "70aec6181a137d421cb06ed3a7ad1871115180127f0f08be2afc1796c17cf35a",
+    "sourceRecordSha256": "fe6af129651df48d08f15b7bce2bd4cdbc3195ce3e194d68ad58d58ac3441c8a",
     "sources": [
       {
         "id": "arabic-base",
@@ -32065,6 +32312,34 @@
         "kind": "commentary",
         "format": "web",
         "url": "https://www.islamweb.net/ar/library/content/303/4094/أبواب-الوتر"
+      },
+      {
+        "id": "arabic-rain-prayer",
+        "label": "Arabic Wikisource · fixed revision 484861",
+        "kind": "arabic-input",
+        "format": "web",
+        "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_الاستسقاء&oldid=484861"
+      },
+      {
+        "id": "bewley-rain-prayer",
+        "label": "Aisha Bewley · Rain Prayer",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://aishabewley.org/bukhari10"
+      },
+      {
+        "id": "fath-rain-poetry",
+        "label": "Ibn Hajar · Fath al-Bari · Rain Prayer poetry",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://islamweb.net/ar/library/content/52/1870/باب-سؤال-الناس-الإمام-الاستسقاء-إذا-قحطوا"
+      },
+      {
+        "id": "fath-rain-abbas",
+        "label": "Ibn Hajar · Fath al-Bari · Umar and al-Abbas",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://islamweb.net/ar/library/content/52/1872/باب-سؤال-الناس-الإمام-الاستسقاء-إذا-قحطوا"
       }
     ],
     "entries": [
@@ -82467,10 +82742,365 @@
           "fragment": "hadith-959",
           "label": "Comparison notes and chapter source for this hadith"
         }
+      },
+      {
+        "id": "bukhari:960",
+        "number": 960,
+        "entrySha256": "2d591c2b1cb5e9ebf25a9dbab07305f8c844fb728512c7841d762b3b7c8067e3",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-rain-prayer",
+            "locator": "Book of Rain Prayer · source entry 960 · باب الاستسقاء وخروج النبي ﷺ في الاستسقاء",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-rain-prayer",
+            "locator": "Book of Rain Prayer · entry 960",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 17, Number 119",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 255",
+            "pdfPage": 255,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 244",
+            "pdfPage": 244,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "rain-prayer-review.html",
+          "fragment": "hadith-960",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:961",
+        "number": 961,
+        "entrySha256": "ad0e635adb51c6b9e6748710cb645613fea8a5705a28cda7644fdfd6187a1757",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-rain-prayer",
+            "locator": "Book of Rain Prayer · source entry 961 · باب دعاء النبي ﷺ اجعلها عليهم سنين كسني يوسف",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-rain-prayer",
+            "locator": "Book of Rain Prayer · entry 961",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 17, Number 120",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 255",
+            "pdfPage": 255,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 244",
+            "pdfPage": 244,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "rain-prayer-review.html",
+          "fragment": "hadith-961",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:962",
+        "number": 962,
+        "entrySha256": "440e4e13f5b6ef988394113beec484a1c644dbf6897849d7a3d9b60551339cb7",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-rain-prayer",
+            "locator": "Book of Rain Prayer · source entry 962 · باب دعاء النبي ﷺ اجعلها عليهم سنين كسني يوسف",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-rain-prayer",
+            "locator": "Book of Rain Prayer · entry 962",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 17, Number 121",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF pages 255, 256",
+            "pdfPage": 255,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 244",
+            "pdfPage": 244,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "rain-prayer-review.html",
+          "fragment": "hadith-962",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:963",
+        "number": 963,
+        "entrySha256": "ed6710581b67d01fa01536e481900959f967aeaaf4866d109091e4970d2a0d36",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-rain-prayer",
+            "locator": "Book of Rain Prayer · source entry 963 · باب سؤال الناس الإمام الاستسقاء إذا قحطوا",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-rain-prayer",
+            "locator": "Book of Rain Prayer · entry 963",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 17, Number 122",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 256",
+            "pdfPage": 256,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 245",
+            "pdfPage": 245,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "rain-963-lexical",
+            "sourceId": "fath-rain-poetry",
+            "locator": "Discussion of tamaththul, thimal and ismah",
+            "scope": "Lexical and source-context comparison only. Additional accounts and legal commentary are not inserted into the selected wording."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "rain-prayer-review.html",
+          "fragment": "hadith-963",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:964",
+        "number": 964,
+        "entrySha256": "2a334e7922360c2fb934730423b28fea03eed08d30bf7ada8221d56aaf2ea5bd",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-rain-prayer",
+            "locator": "Book of Rain Prayer · source entry 964 · باب سؤال الناس الإمام الاستسقاء إذا قحطوا",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-rain-prayer",
+            "locator": "Book of Rain Prayer · entry 964",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 17, Number 123",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 256",
+            "pdfPage": 256,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 245",
+            "pdfPage": 245,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "rain-964-lexical",
+            "sourceId": "fath-rain-abbas",
+            "locator": "Commentary on Umar seeking rain through al-Abbas",
+            "scope": "Lexical and source-context comparison only. Additional accounts and legal commentary are not inserted into the selected wording."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "rain-prayer-review.html",
+          "fragment": "hadith-964",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:965",
+        "number": 965,
+        "entrySha256": "f9e27fa193ac3b6403eb1d5ea60c12a89b3db51e961864fd4b5198fcc8e81cee",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-rain-prayer",
+            "locator": "Book of Rain Prayer · source entry 965 · باب تحويل الرداء في الاستسقاء",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-rain-prayer",
+            "locator": "Book of Rain Prayer · entry 965",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 17, Number 124",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 256",
+            "pdfPage": 256,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 245",
+            "pdfPage": 245,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "rain-prayer-review.html",
+          "fragment": "hadith-965",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:966",
+        "number": 966,
+        "entrySha256": "59b77c118dd396a341d1595ce06d0034374dbeeb28569c4ad81ab4ee811d9d6d",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-rain-prayer",
+            "locator": "Book of Rain Prayer · source entry 966 · باب تحويل الرداء في الاستسقاء",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-rain-prayer",
+            "locator": "Chapter IV · displayed entry 967 · occurrence 1 of this label",
+            "scope": "This is the occurrence in chapter IV, labelled 967 on the checked English page. The displayed number differs from the selected Arabic/app reference. No printed label is silently repaired or treated as a shared report part. The chapter-IV report includes the closing narrator-name comment, which the pinned Khan body omits. Its displayed reference 967 is retained as a comparison label only."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 17, Number 125",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 256",
+            "pdfPage": 256,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 245",
+            "pdfPage": 245,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "rain-prayer-review.html",
+          "fragment": "hadith-966",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
       }
     ]
   },
-  "referencesSha256": "22fd5544d029c795a584dce47c49d4da986981450cfdd45cdec71c9434414e26",
+  "referencesSha256": "b7debfde8c032d6b7b9315db483f78523775402db2e47884a81f669627a1250d",
   "referencesReview": {
     "status": "pending"
   }

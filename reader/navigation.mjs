@@ -22,7 +22,12 @@ export function validateChapters(book) {
   const context=chapter.sourceContext;
   if(context!==undefined){
    const notes=context?.notes,introduction=context?.introduction;
-   if(context.schemaVersion!==1||!['ai-working-translation','heading-discrepancy-pending','reviewed-translation'].includes(context.headingStatus)||!['present','none-in-source','pending-review'].includes(context.numberedReports))throw new Error('Invalid chapter source status');
+   if(context.schemaVersion!==1||!['ai-working-translation','heading-discrepancy-pending','heading-translation-pending','reviewed-translation'].includes(context.headingStatus)||!['present','none-in-source','pending-review'].includes(context.numberedReports))throw new Error('Invalid chapter source status');
+   if(context.printedEmptyHeading!==undefined){
+    const h=context.printedEmptyHeading,index=book.chapters.indexOf(chapter),previous=book.chapters[index-1],next=book.chapters[index+1];
+    if(!h||h.afterChapterId!==previous?.id||h.afterReference!==previous?.entryNumbers.at(-1)||!validReference(h.beforeReference)||compareReferences(h.afterReference,h.beforeReference)>=0||!Number.isSafeInteger(h.printedChapterNumber)||h.printedChapterNumber<1||chapter.id!==h.afterChapterId+'-print-'+String(h.printedChapterNumber).padStart(2,'0')||!/^[a-f0-9]{64}$/.test(h.evidenceSha256)||context.numberedReports!=='none-in-source'||context.headingStatus!=='heading-translation-pending'||introduction?.arabicParagraphs!==0||context.printedHeading!==undefined||context.printedIntroduction!==undefined)throw new Error('Invalid empty printed chapter provenance');
+    if(!/^chapter-[0-9]+$/.test(h.beforeChapterId)||(next?(next.id!==h.beforeChapterId||next.entryNumbers[0]!==h.beforeReference):!(book.sourceEntryCount>book.entryNumbers.length+pending.length)))throw new Error('Empty printed chapter boundary is misplaced');
+   }else if(context.headingStatus==='heading-translation-pending')throw new Error('Pending printed heading needs its provenance');
    if(context.printedHeading!==undefined){
     const h=context.printedHeading;
     if(!ids.has(h.sourceChapterId)||!chapter.id.startsWith(h.sourceChapterId+'-print-')||h.beforeEntry!==chapter.entryNumbers[0]||!Number.isSafeInteger(h.printedChapterNumber)||h.printedChapterNumber<1||!/^[a-f0-9]{64}$/.test(h.evidenceSha256)||context.numberedReports!=='present'||introduction?.arabicParagraphs!==0)throw new Error('Invalid printed chapter provenance');

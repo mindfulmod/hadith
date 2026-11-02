@@ -59,5 +59,5 @@ class RainPrayerIntakeTests(unittest.TestCase):
    with self.assertRaises(ValueError):check.validate(*self.changed(1,mutate,rebind=True))
  def test_review_page_is_reproducible_and_candidates_are_not_in_reader(self):
   a,r,c,i,en=self.values;html=check.render(a,r,c);self.assertEqual((ROOT/'research/rain-prayer-source-review.html').read_text(),html)
-  catalog=check.read('reader/books/catalog.json');self.assertNotIn('rain-prayer',[b['id']for b in catalog['books']]);self.assertNotIn('983b',[e['number']for e in catalog['entries']]);self.assertIn('not added to the reader',html)
+  catalog=check.read('reader/books/catalog.json');self.assertNotIn('983b',[e['number']for e in catalog['entries']]);self.assertFalse(i['readerEligible']);self.assertIn('not added to the reader',html)
 if __name__=='__main__':unittest.main()

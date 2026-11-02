@@ -2,6 +2,7 @@
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {escapeHTML as esc} from '../reader/source-format.mjs';
+import {emptyPrintedChapterViews} from './printed-empty-chapters.mjs';
 const sha=s=>createHash('sha256').update(s).digest('hex');
 const hash=o=>sha(JSON.stringify(o));
 const identifier=s=>typeof s==='string'&&/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(s);
@@ -61,7 +62,7 @@ export function reviewedChapterViews(review){
  const views=[],ids=new Set(review.chapters.map(c=>c.id));
  for(const chapter of review.chapters){
   const divisions=review.entries.filter(r=>r.chapterId===chapter.id&&(r.printedHeading||r.printedReport?.chapterHeading)).map(r=>r.printedHeading||r.printedReport.chapterHeading);
-  if(!divisions.length){views.push(chapter);continue;}
+  if(!divisions.length){views.push(chapter,...emptyPrintedChapterViews(chapter));continue;}
   let cursor=0,current={...chapter,entryNumbers:[]};
   for(const d of divisions){
    assert(!ids.has(d.id),'Duplicate printed chapter identity');ids.add(d.id);
