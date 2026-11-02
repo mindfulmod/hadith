@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-02T19:28:46.787Z",
+  "status": "passed",
+  "baselineCommit": "0e23725263047e7d18c74650fcb568f07b0bb183",
+  "scope": "Candidate review only; no admission or reader update",
+  "browser": "Isolated Playwright Chromium; responsive desktop viewports",
+  "physicalIPhone": false,
+  "publicationPerformed": false,
+  "checks": [
+    {
+      "name": "All 316 reader files and the 929-entry release remain unchanged",
+      "detail": {
+        "files": 316,
+        "release": "opening-e28dc2bca4d1"
+      }
+    },
+    {
+      "name": "Every individually read EPUB body matches its pinned inventory hash; 18 distinct references cover 19 reports",
+      "detail": true
+    },
+    {
+      "name": "All nineteen complete Arabic bodies and fifty-five English segments display exactly as stored",
+      "detail": true
+    },
+    {
+      "name": "Every heading and all four separate Arabic contexts display exactly as stored",
+      "detail": true
+    },
+    {
+      "name": "Continued-chain and adjacent-candidate links keep the two reports separate",
+      "detail": true
+    },
+    {
+      "name": "light candidate layout fits at 320px with all Arabic and evidence expanded",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "client": 320
+      }
+    },
+    {
+      "name": "light candidate layout fits at 390px with all Arabic and evidence expanded",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "client": 390
+      }
+    },
+    {
+      "name": "light candidate layout fits at 1280px with all Arabic and evidence expanded",
+      "detail": {
+        "width": 1280,
+        "scroll": 1280,
+        "client": 1280
+      }
+    },
+    {
+      "name": "dark candidate layout fits at 320px with all Arabic and evidence expanded",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "client": 320
+      }
+    },
+    {
+      "name": "dark candidate layout fits at 390px with all Arabic and evidence expanded",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "client": 390
+      }
+    },
+    {
+      "name": "dark candidate layout fits at 1280px with all Arabic and evidence expanded",
+      "detail": {
+        "width": 1280,
+        "scroll": 1280,
+        "client": 1280
+      }
+    },
+    {
+      "name": "Candidate status is explicit and no unavailable reader route is offered",
+      "detail": true
+    },
+    {
+      "name": "Linked audit and held-report review are present in the staged artifact",
+      "detail": true
+    },
+    {
+      "name": "No uncaught page errors",
+      "detail": true
+    }
+  ],
+  "automatedChecks": {
+    "nodeTests": 14,
+    "failed": 0,
+    "collectionCheck": "passed; 14 books, 929 entries, unchanged source hash",
+    "fullSuiteRerun": false
+  },
+  "screenshots": [
+    {
+      "path": "content/review/evidence/two-eids-final-candidate-light.png",
+      "sha256": "cae1a36403f0e8340492ce71f176b586c0f43c76eeef623fc651ac4743db6a14",
+      "visuallyInspected": true
+    },
+    {
+      "path": "content/review/evidence/two-eids-final-candidate-dark.png",
+      "sha256": "8b9ab4356174b95ff37c1aa28f378737dbf488960131cbfeb364ddf9c0d6942a",
+      "visuallyInspected": true
+    },
+    {
+      "path": "content/review/evidence/two-eids-final-candidate-uncertainty.png",
+      "sha256": "8f98d7a56b2eb6a34cda111dbb23b6d15292c39822be7518cb03791d2a837a2d",
+      "visuallyInspected": true
+    }
+  ]
+}
