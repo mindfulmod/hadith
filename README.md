@@ -1140,3 +1140,11 @@ The local personal prototype contains **929 complete entries across 14 books**. 
 All **736 tests (623 Node and 113 Python)** and fourteen integrity checks passed. Desktop Chromium completed the actual 922→929 update, preserved the 835c bookmark/session, verified every new Arabic and English body, both separate chapter introductions, offline source notes, exact phrase search and largest-text layouts at 320, 390 and 1280 pixels. An unavailable 926 link exposes no report and leaves Continue unchanged. Both theme screenshots were visually inspected. Evidence: `research/two-eids-second-verification.json`.
 
 Release `opening-e28dc2bca4d1` contains 206 checked files; reading downloads total **25,028,921 bytes (25.03 MB)**. Actual recordings remain Hadith 1–6. No public deployment, scholarly certification or fresh physical iPhone acceptance is claimed. Remaining collection coverage, English chapter material, independent reviews, rights clearance and recordings are still open.
+
+### Two Eids 926: additional edition and apparatus review — 2 November 2026
+
+The local reader remains at **929 entries**, with release `opening-e28dc2bca4d1` unchanged. The focused [wording review](research/two-eids-926-apparatus-review.html) records the exact pinned Arabic, three separately labelled clause/ending forms, edition-specific references, chapter context and unresolved review questions. It follows the initial evidence snapshot without changing it.
+
+Dar al-Ta’sil volume 2, printed page 58/reference 979, retains the selected main-text clause and explicitly records alternatives in its apparatus. Al-Maknaz page 183/reference 977 also retains the selected main-text clause. The files, identity pages and exact hashes are recorded; shared printing ancestry is not counted as independent transmission evidence. The separate Ibn Abbas chapter introduction has documented variants too and remains unchanged. No English wording is supplied for 926, and no alternative is silently selected.
+
+The unresolved source hold now binds to the follow-up evidence. Full source selection, translation and independent review remain open. Reports 927–945 are not admitted by this review. No public deployment or new recording is included. Verification is recorded in `research/two-eids-926-apparatus-verification.json`.

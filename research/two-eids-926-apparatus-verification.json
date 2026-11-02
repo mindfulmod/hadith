@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-02T19:12:11.775Z",
+  "status": "passed",
+  "baselineCommit": "e1330ea5febb009d84ad7176576ff3b9db5cbd79",
+  "scope": "Additional source evidence and reviewer packet only; no reader content or application code changes",
+  "checks": [
+    {
+      "name": "Full input and chapter context exactly match pinned blocks; initial evidence snapshot is unchanged",
+      "detail": true
+    },
+    {
+      "name": "Unresolved hold is bound to the exact follow-up evidence; no translation or complete composite clause supplied",
+      "detail": true
+    },
+    {
+      "name": "All reader files remain byte-identical to the verified 929-entry release",
+      "detail": {
+        "entries": 929,
+        "release": "opening-e28dc2bca4d1",
+        "byteIdenticalFiles": 316
+      }
+    },
+    {
+      "name": "Displayed Arabic clauses, complete input and chapter context match the evidence exactly",
+      "detail": true
+    },
+    {
+      "name": "light layout fits at 320px with all evidence expanded",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "client": 320
+      }
+    },
+    {
+      "name": "light layout fits at 390px with all evidence expanded",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "client": 390
+      }
+    },
+    {
+      "name": "light layout fits at 1280px with all evidence expanded",
+      "detail": {
+        "width": 1280,
+        "scroll": 1280,
+        "client": 1280
+      }
+    },
+    {
+      "name": "dark layout fits at 320px with all evidence expanded",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "client": 320
+      }
+    },
+    {
+      "name": "dark layout fits at 390px with all evidence expanded",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "client": 390
+      }
+    },
+    {
+      "name": "dark layout fits at 1280px with all evidence expanded",
+      "detail": {
+        "width": 1280,
+        "scroll": 1280,
+        "client": 1280
+      }
+    },
+    {
+      "name": "Section navigation and native disclosure controls work",
+      "detail": true
+    },
+    {
+      "name": "Both evidence records are included in the staged public artifact",
+      "detail": true
+    },
+    {
+      "name": "No page errors",
+      "detail": true
+    }
+  ],
+  "browser": "Isolated Playwright Chromium desktop browser with responsive viewports",
+  "physicalIPhone": false,
+  "publicationPerformed": false,
+  "reader": {
+    "entries": 929,
+    "release": "opening-e28dc2bca4d1",
+    "byteIdenticalFiles": 316
+  },
+  "automated": {
+    "targetedNodeTests": 7,
+    "passed": 7,
+    "failed": 0,
+    "collectionCheck": "passed; 14 books, 929 complete source entries; source hash 8d369aef1734f416d415cc3f804d9351f1de434c904935805f4d1086ee3a200b",
+    "publicArtifactCheck": "passed; exact reader files, local links, source notes, publication and audio integrity checked by build-site",
+    "scope": "Evidence-only change. The prior 736-test result remains historical; the full suite was not rerun."
+  },
+  "evidence": {
+    "record": "research/two-eids-926-apparatus-review.json",
+    "page": "research/two-eids-926-apparatus-review.html",
+    "independentReview": "pending",
+    "screenshots": [
+      {
+        "path": "content/review/evidence/two-eids-926-apparatus-light.png",
+        "sha256": "8c724634ba9b0de44472fd3e929573ad3e235fb8a425533e717616d8cdebba19",
+        "visuallyInspected": true
+      },
+      {
+        "path": "content/review/evidence/two-eids-926-apparatus-dark.png",
+        "sha256": "e2a7b220ede07bfba1b86e65b197ed991b7e89563350fab69e80f7da8dc4dbd6",
+        "visuallyInspected": true
+      },
+      {
+        "path": "content/review/evidence/two-eids-926-apparatus-clause.png",
+        "sha256": "4d9f1ccfe6ea3f0f0aa4508e335b133087465dc082df9fcb3dfd6202ef2a2a82",
+        "visuallyInspected": true
+      }
+    ]
+  },
+  "toolingNote": "The browser first looked in an empty default cache, then was prevented from starting by the restricted environment. The completed check used the existing isolated browser runtime with the required launch permission."
+}

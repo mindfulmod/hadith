@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-02T19:10:43.782Z",
+  "status": "unresolved-source-wording-hold",
+  "appReference": 926,
+  "scope": "Focused source-selection review. No report is added, no English translation is supplied and no Arabic input is changed. Later reports 927–945 remain outside this review.",
+  "previousEvidence": {
+    "path": "research/two-eids-926-wording-review.json",
+    "sha256": "9ea5d790cba6ac606b71f9fb91b0b2bb55371b36187ddd164d3fef86c1744958",
+    "fileSha256": "4375b0c0340bc551ac3d7be1c2b601488f6a668565651f20ca7bcf450e4e0464",
+    "relationship": "Follow-up to the preserved initial two-print review; that snapshot remains unchanged."
+  },
+  "source": {
+    "sourceId": "wikisource-bukhari-two-eids-r496076",
+    "sourceSha256": "f1ffdfcd05e365b305933df31732ef45ab13c38e32379d62bc0b184db9b80911",
+    "sourceRecordId": "wikisource-bukhari-two-eids-r496076:926",
+    "paragraphIds": [
+      "mwQg"
+    ],
+    "arabicSha256": "8e16a2330a327fd21686472a36cd80ef8fbb648736f822fbbd58320862b187c9",
+    "url": "https://ar.wikisource.org/w/index.php?title=%D8%B5%D8%AD%D9%8A%D8%AD_%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A%2F%D9%83%D8%AA%D8%A7%D8%A8_%D8%A7%D9%84%D8%B9%D9%8A%D8%AF%D9%8A%D9%86&oldid=496076"
+  },
+  "selectedInput": {
+    "paragraphId": "mwQg",
+    "text": "[926] حدثنا محمد بن عرعرة قال: حدثنا شعبة عن سليمان عن مسلم البطين عن سعيد بن جبير عن ابن عباس عن النبي ﷺ أنه قال: ما العمل في أيام العشر أفضل من العمل في هذه قالوا ولا الجهاد قال ولا الجهاد إلا رجل خرج يخاطر بنفسه وماله فلم يرجع بشيء ",
+    "sha256": "8e16a2330a327fd21686472a36cd80ef8fbb648736f822fbbd58320862b187c9"
+  },
+  "variants": [
+    {
+      "id": "A",
+      "label": "Selected digital clause",
+      "text": "ما العمل في أيام العشر أفضل من العمل في هذه",
+      "form": "Exact substring of the pinned digital input",
+      "evidence": [
+        "wikisource-bukhari-two-eids-r496076:926",
+        "dar-ibn-kathir-2002:969",
+        "dar-tasil-2012-v2:979",
+        "maknaz-bukhari-98559:977"
+      ],
+      "note": "Present in the selected input and the main text of three inspected modern prints. Brill has the same comparison direction with a shorter pronoun expression. Matching printings do not decide which transmission should be selected."
+    },
+    {
+      "id": "B",
+      "label": "Alternative clause documented in the apparatus",
+      "text": "ما العمل في أيام أفضل منها في هذه",
+      "form": "Manual unvowelled rendering of the clause in Dar al-Ta’sil, volume 2, page 58, footnote 1; vowel marks and editorial punctuation omitted",
+      "evidence": [
+        "dar-tasil-2012-v2:979:footnote-1"
+      ],
+      "note": "The apparatus attributes this form to Abu Dharr, al-Asili, Ibn Asakir and Abu al-Waqt. It is an attested alternative, not a correction silently applied to the selected input."
+    },
+    {
+      "id": "C",
+      "label": "Alternative ending documented in the apparatus",
+      "text": "في هذا العشر",
+      "form": "Ending only, manually rendered without vowel marks from Dar al-Ta’sil, volume 2, page 58, footnote 1; not presented as a complete clause",
+      "evidence": [
+        "dar-tasil-2012-v2:979:footnote-1"
+      ],
+      "note": "The apparatus assigns this ending to al-Kushmihani in place of في هذه. The full report has not been reconstructed by joining fragments from different witnesses."
+    }
+  ],
+  "printedSources": [
+    {
+      "sourceId": "brill-1862",
+      "label": "Brill, 1862",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+      "fileBytes": 28290204,
+      "fileSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+      "inspection": "AI visual inspection of the identified PDF pages; independent review pending",
+      "pdfPage": 246,
+      "printedReference": null,
+      "observation": "The comparison has the same ten-days direction as the selected input, but uses منه instead of من العمل. The first jihad question includes في سبيل الله. This is not an exact whole-report match."
+    },
+    {
+      "sourceId": "dar-ibn-kathir-2002",
+      "label": "Dar Ibn Kathir, 2002",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "fileBytes": 45304371,
+      "fileSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+      "inspection": "AI visual inspection of the identified PDF pages; independent review pending",
+      "pdfPage": 235,
+      "printedPage": 235,
+      "printedReference": 969,
+      "observation": "Main text contains clause A. Its chapter introduction uses a different quotation form from the pinned digital input."
+    },
+    {
+      "sourceId": "dar-tasil-2012-v2",
+      "label": "Dar al-Ta’sil, 2012 · volume 2",
+      "url": "https://archive.org/download/FP144261FP/02_144262.pdf",
+      "fileBytes": 10053467,
+      "fileSha256": "81c1c4e877e40f8953274cb87f1a5f188fb7e178c03eb770390fcaec6a0f4340",
+      "inspection": "AI visual inspection of the identified PDF pages; independent review pending",
+      "pdfPage": 58,
+      "printedPage": 58,
+      "printedReference": 979,
+      "identityPages": [
+        3,
+        4
+      ],
+      "chapterContextPage": 57,
+      "observation": "Main text contains clause A. Footnote 1 records clause B for Abu Dharr, al-Asili, Ibn Asakir and Abu al-Waqt; it also records the al-Kushmihani ending in variant C. The footnote notes two case markings for أفضل in Abu Dharr’s transmission. Footnotes 2–3 record an expanded first jihad question and an alternative exception wording.",
+      "contextObservation": "Page 57 retains the واذكروا الله quotation form in its main chapter introduction. Footnote 5 records alternative forms. This is evidence for retaining the source quotation as transmitted, not replacing it automatically with a Quran verse."
+    },
+    {
+      "sourceId": "maknaz-bukhari-98559",
+      "label": "Jam‘iyyat al-Maknaz al-Islami",
+      "url": "https://archive.org/download/FP98559/98559.pdf",
+      "fileBytes": 40991897,
+      "fileSha256": "7847dbfb4faea532a3003ed130051d3977e39b2286b98df2bd51c2aa5816c699",
+      "inspection": "AI visual inspection of the identified PDF pages; independent review pending",
+      "pdfPage": 183,
+      "printedPage": 183,
+      "printedReference": 977,
+      "identityPages": [
+        1
+      ],
+      "editionDate": "Not established in this inspection",
+      "observation": "Main text contains clause A and the selected واذكروا الله chapter-introduction form. No variant apparatus is printed alongside this report on the inspected page. The catalog describes dependence on the Sultaniyya printing; this is not a new independent transmission witness."
+    }
+  ],
+  "classicalCommentary": {
+    "author": "Ibn Hajar al-‘Asqalani",
+    "work": "Fath al-Bari",
+    "url": "https://islamweb.net/ar/library/content/52/1801/باب-فضل-العمل-في-أيام-التشريق",
+    "locator": "Volume 2, printed pages 532–533; discussion beginning قوله: ما العمل في أيام. The chapter-introduction discussion is on printed page 531.",
+    "finding": "Identifies this wording with Karimah’s transmission from al-Kushmihani, calls that form anomalous, and contrasts it with other transmitted forms. The issue concerns the wording variant, not a blanket rejection of the underlying hadith.",
+    "observation": "Ibn Hajar identifies clause A with Karimah’s transmission from al-Kushmihani, records clause B for most transmitters, and judges the Karimah form anomalous when comparing other transmissions. He also records the explicit ten-days ending. This is his assessment of a wording variant, not a blanket rejection of the underlying hadith.",
+    "appInference": "The app cannot make clause A mean clause B through an unlabelled English rendering. Selecting a transmission and translating it are separate decisions."
+  },
+  "chapterContext": {
+    "chapterId": "chapter-11",
+    "heading": "باب فضل العمل في أيام التشريق",
+    "paragraphId": "mwQQ",
+    "text": "وقال ابن عباس { واذكروا الله في أيام } معلومات أيام العشر والأيام المعدودات أيام التشريق وكان ابن عمر وأبو هريرة يخرجان إلى السوق في أيام العشر يكبران ويكبر الناس بتكبيرهما وكبر محمد بن علي خلف النافلة ",
+    "sha256": "2042f715d9c8d5bd65a215bc676aee004a08a13c764183ccb22897762e626771",
+    "observation": "Dar al-Ta’sil page 57 and al-Maknaz page 183 retain the selected quotation form; Dar Ibn Kathir page 235 uses a different form. Fath al-Bari explicitly discusses variants of this Ibn Abbas introduction.",
+    "decision": "Preserve the original as transmitted chapter material. Do not silently replace it with a standard Quran quotation or use the chapter heading alone to settle the report’s referent. It is not part of the numbered narration.",
+    "readerEligible": false,
+    "englishTranslationSupplied": false
+  },
+  "englishComparisons": {
+    "bewley": {
+      "reference": "926",
+      "url": "https://aishabewley.org/bukhari9",
+      "observation": "Its any-ten-days wording is not a literal equivalent of the selected definite ten-days clause."
+    },
+    "khan": {
+      "reference": "2.15.86",
+      "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+      "recordSha256": "1973b47a216dc649d81d6fc88c3365183109cad66f204c4e569f5b6eb64f922c",
+      "observation": "Uses other days versus these and supplies a parenthetical identifying the first ten days. This cannot silently replace or translate away the selected Arabic variant."
+    }
+  },
+  "limitations": [
+    "The additional editions establish the existence of recorded alternatives; they do not independently certify a preferred reading.",
+    "Shared print ancestry means matching editions must not be counted as independent transmission witnesses.",
+    "Only identified pages and the stated apparatus were inspected for this question. This is not a collation of every manuscript, a validation of the entire editions, or a complete translation review.",
+    "A Sultaniyya volume 2 file could not be retrieved and is not counted as inspected evidence.",
+    "The Dar al-Ta’sil edition states that rights are reserved. This packet links to its pages and summarizes the apparatus; it does not reproduce the modern page images or editorial footnotes, nor claim reuse rights."
+  ],
+  "reviewerQuestions": [
+    "Which explicitly identified Bukhari transmission or edition should be the reading basis here, and why? Record the exact complete Arabic before approving English.",
+    "How should the comparison, the referent of هذه and the relationship to the chapter heading be rendered without inserting an interpretation into the translated report?",
+    "Which full-chain, jihad-question and exception forms belong to that chosen witness? Keep alternatives as source notes, not a composite report.",
+    "How should the separately transmitted Ibn Abbas introduction be documented and translated while preserving its quotation form?"
+  ],
+  "decision": {
+    "readerEligible": false,
+    "narrationEligible": false,
+    "arabicChanged": false,
+    "englishTranslationSupplied": false,
+    "sourceSelection": "unresolved",
+    "independentReview": "pending",
+    "reason": "The new apparatus confirms a recorded transmission difference. Counting matching main texts or borrowing a smoother English translation does not settle it.",
+    "nextWork": "Obtain a source-selection decision with exact Arabic and reviewer identity, then review its complete English and chapter context separately. Preserve this input and all variant evidence. Continue independent source preparation for later reports without admitting 926."
+  },
+  "publication": {
+    "performed": false,
+    "readerEntriesUnchanged": 929,
+    "readerReleaseUnchanged": "opening-e28dc2bca4d1",
+    "newRecordings": 0
+  },
+  "htmlReview": "research/two-eids-926-apparatus-review.html"
+}
