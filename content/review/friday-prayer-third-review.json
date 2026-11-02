@@ -1,0 +1,2537 @@
+{
+  "schemaVersion": 1,
+  "status": "personal-prototype-only",
+  "independentReview": "pending",
+  "sourceId": "wikisource-bukhari-friday-prayer-r484865",
+  "sourceSha256": "19f6c42edef071b00005381723dd996716fdbe446d4e82b4224ee7933a8591db",
+  "inventorySha256": "1c05e820b19e49ffec6e4a054506cb13cef4c75c444f548055dca1af2477b449",
+  "createdAt": "2026-11-02",
+  "sourceLayout": {
+    "schemaVersion": 1,
+    "sourceId": "wikisource-bukhari-friday-prayer-r484865",
+    "sourceSha256": "19f6c42edef071b00005381723dd996716fdbe446d4e82b4224ee7933a8591db",
+    "layoutAuditSha256": "279a04ca3009ab4ad3a1b6b31549fecf7b52c22f6a013f45d12000bbc2364720",
+    "layoutReviewSha256": "33df84ab937fa9047a965fff813da63877b40fdb32a487619748cc655dbbc38a"
+  },
+  "sources": [
+    {
+      "id": "arabic-friday-prayer",
+      "label": "Arabic Wikisource · fixed revision 484865",
+      "kind": "arabic-input",
+      "format": "web",
+      "url": "https://ar.wikisource.org/w/index.php?title=%D8%B5%D8%AD%D9%8A%D8%AD_%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A/%D9%83%D8%AA%D8%A7%D8%A8_%D8%A7%D9%84%D8%AC%D9%85%D8%B9%D8%A9&oldid=484865"
+    },
+    {
+      "id": "bewley-friday-prayer",
+      "label": "Aisha Bewley · Friday Prayer",
+      "kind": "english-comparison",
+      "format": "web",
+      "url": "https://aishabewley.org/bukhari9"
+    },
+    {
+      "id": "islamhouse-khan",
+      "label": "IslamHouse · Khan-family English comparison",
+      "kind": "english-comparison",
+      "format": "web",
+      "url": "https://islamhouse.com/en/books/70510"
+    },
+    {
+      "id": "brill-1862",
+      "label": "Historical Arabic print · Brill 1862",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf",
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+    },
+    {
+      "id": "dar-ibn-kathir-2002",
+      "label": "Arabic print · Dar Ibn Kathir 2002",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+    },
+    {
+      "id": "fath-friday-864",
+      "label": "Ibn Hajar · Fath al-Bari · the Friday-prayer qualification",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/ar/library/content/52/1686/باب-إذا-اشتد-الحر-يوم-الجمعة"
+    },
+    {
+      "id": "fath-friday-875",
+      "label": "Ibn Hajar · Fath al-Bari · al-Ghabah and the backward descent",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/ar/library/index.php?ID=0&ayano=0&bk_no=52&bookhad=1707&flag=1&idfrom=0&idto=0&page=bookcontents&surano=0"
+    },
+    {
+      "id": "fath-friday-876",
+      "label": "Ibn Hajar · Fath al-Bari · the narrator names and al-‘ishar",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/ar/library/content/52/1708/باب-الخطبة-على-المنبر"
+    }
+  ],
+  "scope": "Complete selected Friday Prayer reports 859–879 and digital chapters 13–27. Six Arabic chapter-context paragraphs remain separate, with English pending. Later reports are outside this batch.",
+  "editionNote": "Full selected chains, alternate routes, narrator qualifications and repetitions remain. A single explicit correction at 861 is supported by both pinned Arabic prints; its original digital wording remains accessible. Other edition differences are documented without silently replacing the selected wording. English is an AI-assisted working translation, not Darussalam wording or independent certification.",
+  "chapters": [
+    {
+      "id": "chapter-13",
+      "headingId": "باب_الرخصة_إن_لم_يحضر_الجمعة_في_المطر",
+      "contextIds": [],
+      "entryNumbers": [
+        859
+      ],
+      "title": "Permission not to attend Friday prayer in the rain",
+      "titleArabic": "باب الرخصة إن لم يحضر الجمعة في المطر",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-14",
+      "headingId": "باب_من_أين_تؤتى_الجمعة_وعلى_من_تجب",
+      "contextIds": [
+        "mwTA"
+      ],
+      "entryNumbers": [
+        860
+      ],
+      "title": "From where Friday prayer is attended and upon whom it is obligatory",
+      "titleArabic": "باب من أين تؤتى الجمعة وعلى من تجب",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "Original Arabic introduction retained separately; English translation pending."
+    },
+    {
+      "id": "chapter-15",
+      "headingId": "باب_وقت_الجمعة_إذا_زالت_الشمس",
+      "contextIds": [
+        "mwUg"
+      ],
+      "entryNumbers": [
+        861,
+        862,
+        863
+      ],
+      "title": "The time of Friday prayer when the sun has passed its zenith",
+      "titleArabic": "باب وقت الجمعة إذا زالت الشمس",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "Original Arabic introduction retained separately; English translation pending."
+    },
+    {
+      "id": "chapter-16",
+      "headingId": "باب_إذا_اشتد_الحر_يوم_الجمعة",
+      "contextIds": [],
+      "entryNumbers": [
+        864
+      ],
+      "title": "When the heat is intense on Friday",
+      "titleArabic": "باب إذا اشتد الحر يوم الجمعة",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-17",
+      "headingId": "باب_المشي_إلى_الجمعة",
+      "contextIds": [
+        "mwXA"
+      ],
+      "entryNumbers": [
+        865,
+        866,
+        867
+      ],
+      "title": "Walking to Friday prayer",
+      "titleArabic": "باب المشي إلى الجمعة",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "Original Arabic introduction retained separately; English translation pending."
+    },
+    {
+      "id": "chapter-18",
+      "headingId": "باب_لا_يفرق_بين_اثنين_يوم_الجمعة",
+      "contextIds": [],
+      "entryNumbers": [
+        868
+      ],
+      "title": "Not separating two people on Friday",
+      "titleArabic": "باب لا يفرق بين اثنين يوم الجمعة",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-19",
+      "headingId": "باب_لا_يقيم_الرجل_أخاه_يوم_الجمعة_ويقعد_في_مكانه",
+      "contextIds": [],
+      "entryNumbers": [
+        869
+      ],
+      "title": "A man must not make his brother get up on Friday and sit in his place",
+      "titleArabic": "باب لا يقيم الرجل أخاه يوم الجمعة ويقعد في مكانه",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-20",
+      "headingId": "باب_الأذان_يوم_الجمعة",
+      "contextIds": [],
+      "entryNumbers": [
+        870
+      ],
+      "title": "The call to prayer on Friday",
+      "titleArabic": "باب الأذان يوم الجمعة",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-21",
+      "headingId": "باب_المؤذن_الواحد_يوم_الجمعة",
+      "contextIds": [],
+      "entryNumbers": [
+        871
+      ],
+      "title": "One caller to prayer on Friday",
+      "titleArabic": "باب المؤذن الواحد يوم الجمعة",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-22",
+      "headingId": "باب_يجيب_الإمام_على_المنبر_إذا_سمع_النداء",
+      "contextIds": [],
+      "entryNumbers": [
+        872
+      ],
+      "title": "The imam responding on the pulpit when he hears the call",
+      "titleArabic": "باب يجيب الإمام على المنبر إذا سمع النداء",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-23",
+      "headingId": "باب_الجلوس_على_المنبر_عند_التأذين",
+      "contextIds": [],
+      "entryNumbers": [
+        873
+      ],
+      "title": "Sitting on the pulpit during the call to prayer",
+      "titleArabic": "باب الجلوس على المنبر عند التأذين",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-24",
+      "headingId": "باب_التأذين_عند_الخطبة",
+      "contextIds": [],
+      "entryNumbers": [
+        874
+      ],
+      "title": "Giving the call to prayer at the sermon",
+      "titleArabic": "باب التأذين عند الخطبة",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-25",
+      "headingId": "باب_الخطبة_على_المنبر",
+      "contextIds": [
+        "mweQ"
+      ],
+      "entryNumbers": [
+        875,
+        876,
+        877
+      ],
+      "title": "Delivering the sermon on the pulpit",
+      "titleArabic": "باب الخطبة على المنبر",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "Original Arabic introduction retained separately; English translation pending."
+    },
+    {
+      "id": "chapter-26",
+      "headingId": "باب_الخطبة_قائما",
+      "contextIds": [
+        "mwhg"
+      ],
+      "entryNumbers": [
+        878
+      ],
+      "title": "Delivering the sermon standing",
+      "titleArabic": "باب الخطبة قائما",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "Original Arabic introduction retained separately; English translation pending."
+    },
+    {
+      "id": "chapter-27",
+      "headingId": "باب_يستقبل_الإمام_القوم_واستقبال_الناس_الإمام_إذا_خطب",
+      "contextIds": [
+        "mwiw"
+      ],
+      "entryNumbers": [
+        879
+      ],
+      "title": "The imam facing the people and the people facing the imam when he delivers the sermon",
+      "titleArabic": "باب يستقبل الإمام القوم واستقبال الناس الإمام إذا خطب",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "Original Arabic introduction retained separately; English translation pending."
+    }
+  ],
+  "entries": [
+    {
+      "number": 859,
+      "id": "bukhari:859",
+      "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwSg:0",
+      "chapterId": "chapter-13",
+      "paragraphIds": [
+        "mwSg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "859-1",
+          "paragraphId": "mwSg",
+          "start": 0,
+          "end": 123,
+          "kind": "chain",
+          "arabic": "[859] حدثنا مسدد قال: حدثنا إسماعيل قال: أخبرني عبد الحميد صاحب الزيادي قال: حدثنا عبد الله بن الحارث ابن عم محمد بن سيرين ",
+          "english": "Musaddad related to us. He said: Isma‘il related to us. He said: ‘Abd al-Hamid, the companion of al-Ziyadi, informed me. He said: ‘Abdullah ibn al-Harith, the cousin of Muhammad ibn Sirin, related to us:",
+          "arabicSha256": "6424fcd187f48a58f54aca8be2248fa19e6d4003f1ac6b159814269899d74822",
+          "englishSha256": "41950bc3b67379955062b4e2cce39d7c01fe81797667c6ed7688fb057a8a5e16"
+        },
+        {
+          "id": "859-2",
+          "paragraphId": "mwSg",
+          "start": 123,
+          "end": 329,
+          "kind": "report",
+          "arabic": "قال ابن عباس لمؤذنه في يوم مطير إذا قلت: أشهد أن محمدا رسول الله فلا تقل حي على الصلاة قل صلوا في بيوتكم فكأن الناس استنكروا قال: فعله من هو خير مني إن الجمعة عزمة وإني كرهت أن أحرجكم فتمشون في الطين والدحض",
+          "english": "Ibn ‘Abbas said to his caller to prayer on a rainy day, “When you say, ‘I testify that Muhammad is the Messenger of Allah,’ do not say, ‘Come to prayer.’ Say, ‘Pray in your homes.’” It was as though the people disapproved. He said, “Someone better than me did this. Friday prayer is an obligation, but I disliked putting you in difficulty, so that you would walk through mud and slippery ground.”",
+          "arabicSha256": "4f072c715ea6401ddeddd43f60456b6026f5d21bf7d7b40fdc98e3853cd9d2c5",
+          "englishSha256": "be7c094038d28a4d0ce5136f6d0f64190d3b3744c13a1de50f55c6eb38c23fb2"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            229
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            218
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-friday-prayer",
+          "reference": "859"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.13.24",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.24",
+            "recordSha256": "4e31d48511b1f68ddf92672e8bd9a18735e180df05dbeeb1a3a9dbacbd95c31b"
+          }
+        }
+      ],
+      "notes": [
+        "The complete selected chain names ‘Abdullah ibn al-Harith as Muhammad ibn Sirin’s cousin. Both English comparisons instead head the report with Muhammad ibn Sirin; that attribution is not copied into this chain. The selected wording does not name the person better than Ibn ‘Abbas, and the Khan comparison’s explanatory identification is not inserted. Modern print reference: 901."
+      ],
+      "reviewScope": "AI-assisted translation of every selected source span. Both identified Arabic prints visually inspected and both English comparison bodies individually read. One declared correction, full chains, alternate routes, narrator qualifications and comparison differences remain explicit. Independent Arabic, English, context, reference and spoken-word review remains pending; this is not accuracy certification.",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-friday-prayer-r484865",
+        "sourceSha256": "19f6c42edef071b00005381723dd996716fdbe446d4e82b4224ee7933a8591db",
+        "layoutAuditSha256": "279a04ca3009ab4ad3a1b6b31549fecf7b52c22f6a013f45d12000bbc2364720",
+        "layoutReviewSha256": "33df84ab937fa9047a965fff813da63877b40fdb32a487619748cc655dbbc38a",
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwSg:0",
+        "sourceReference": {
+          "label": "859",
+          "number": 859,
+          "markerId": "mwSg:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwSg",
+            "textSha256": "d8733846349507a5efc45cfa869f5f3dd8ae858b89db9e9be54edcad7b5ff464",
+            "origin": {
+              "blockId": "mwSg",
+              "blockSha256": "d8733846349507a5efc45cfa869f5f3dd8ae858b89db9e9be54edcad7b5ff464",
+              "start": 0,
+              "end": 329
+            }
+          }
+        ]
+      },
+      "arabicSha256": "d8733846349507a5efc45cfa869f5f3dd8ae858b89db9e9be54edcad7b5ff464",
+      "englishSha256": "a1b8d5ee34051495fd803c3618ad084acfb0fd62d0fa6de97848c000615c01f9",
+      "reviewRecordSha256": "4bd76a516c7c38d0410d61c8198c8e114d9e346e8755510e6431b8a41cbbbd46"
+    },
+    {
+      "number": 860,
+      "id": "bukhari:860",
+      "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwTQ:0",
+      "chapterId": "chapter-14",
+      "paragraphIds": [
+        "mwTQ"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "860-1",
+          "paragraphId": "mwTQ",
+          "start": 0,
+          "end": 166,
+          "kind": "chain",
+          "arabic": "[860] حدثنا أحمد قال: حدثنا عبد الله بن وهب قال: أخبرني عمرو بن الحارث عن عبيد الله بن أبي جعفر أن محمد بن جعفر بن الزبير حدثه عن عروة بن الزبير عن عائشة زوج النبي ﷺ ",
+          "english": "Ahmad related to us. He said: ‘Abdullah ibn Wahb related to us. He said: ‘Amr ibn al-Harith informed me, from ‘Ubaydullah ibn Abi Ja‘far, that Muhammad ibn Ja‘far ibn al-Zubayr related to him, from ‘Urwah ibn al-Zubayr, from ‘A’ishah, the wife of the Prophet, may Allah bless him and grant him peace:",
+          "arabicSha256": "f477f5e24b619687e8f5b0ff129e19a5a3b5a2034f849c23ba221fee15de4e08",
+          "englishSha256": "2b568c28620e4ef9d94e05aab018394310e14300ce6d8ea37b36390b2034917e"
+        },
+        {
+          "id": "860-2",
+          "paragraphId": "mwTQ",
+          "start": 166,
+          "end": 351,
+          "kind": "report",
+          "arabic": "قالت كان الناس ينتابون يوم الجمعة من منازلهم والعوالي فيأتون في الغبار يصيبهم الغبار والعرق فيخرج منهم العرق فأتى رسول الله ﷺ إنسان منهم وهو عندي، فقال النبي ﷺ لو أنكم تطهرتم ليومكم هذا",
+          "english": "She said: People used to come on Friday from their homes and from al-‘Awali. They would come through the dust; dust and sweat would affect them, and sweat would come out of them. One of them came to the Messenger of Allah, may Allah bless him and grant him peace, while he was with me. The Prophet, may Allah bless him and grant him peace, said, “If only you would purify yourselves for this day of yours.”",
+          "arabicSha256": "16c87d8840ec3a69b3640f47102d7e08e021a78edac142d505bdda75215a6eed",
+          "englishSha256": "6f3219aaf02519f2f75a628aa035a1001a68f2b692d806ed12ab009e0622e973"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            229
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            218
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-friday-prayer",
+          "reference": "860"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.13.25",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.25",
+            "recordSha256": "bc5b1becbd996206e0e1175cb9ef17bdb4cb1ac9471bef8ffbbc697cc4c6d6f3"
+          }
+        }
+      ],
+      "notes": [
+        "The dust and sweat clauses are all retained, including the repeated mention of sweat. The source’s short Ahmad is not expanded to Ahmad ibn Salih as in Brill. Al-‘Awali remains a place name without importing distance estimates or the comparison’s added bath explanation into the report. Modern print reference: 902."
+      ],
+      "reviewScope": "AI-assisted translation of every selected source span. Both identified Arabic prints visually inspected and both English comparison bodies individually read. One declared correction, full chains, alternate routes, narrator qualifications and comparison differences remain explicit. Independent Arabic, English, context, reference and spoken-word review remains pending; this is not accuracy certification.",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-friday-prayer-r484865",
+        "sourceSha256": "19f6c42edef071b00005381723dd996716fdbe446d4e82b4224ee7933a8591db",
+        "layoutAuditSha256": "279a04ca3009ab4ad3a1b6b31549fecf7b52c22f6a013f45d12000bbc2364720",
+        "layoutReviewSha256": "33df84ab937fa9047a965fff813da63877b40fdb32a487619748cc655dbbc38a",
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwTQ:0",
+        "sourceReference": {
+          "label": "860",
+          "number": 860,
+          "markerId": "mwTQ:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwTQ",
+            "textSha256": "ddb3a5c9be46e2bd3a2b1f1838feed6da0f2b30ab565218961c8c047da27a99a",
+            "origin": {
+              "blockId": "mwTQ",
+              "blockSha256": "ddb3a5c9be46e2bd3a2b1f1838feed6da0f2b30ab565218961c8c047da27a99a",
+              "start": 0,
+              "end": 351
+            }
+          }
+        ]
+      },
+      "arabicSha256": "ddb3a5c9be46e2bd3a2b1f1838feed6da0f2b30ab565218961c8c047da27a99a",
+      "englishSha256": "03871789973ca24e8671d3715adc4d920336bd83f6d5141e0473f8fc013aad2f",
+      "reviewRecordSha256": "4f460b04c2b5ebc371107652dc9cbd063926226b8e1b1b48f4f6ec81870afb78"
+    },
+    {
+      "number": 861,
+      "id": "bukhari:861",
+      "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwUw:0",
+      "chapterId": "chapter-15",
+      "paragraphIds": [
+        "mwUw"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "861-1",
+          "paragraphId": "mwUw",
+          "start": 0,
+          "end": 97,
+          "kind": "chain",
+          "arabic": "[861] حدثنا عبدان قال: أخبرنا عبد الله قال: أخبرنا يحيى بن سعيد أنه سأل عمرة عن الغسل يوم الجمعة ",
+          "english": "‘Abdan related to us. He said: ‘Abdullah informed us. He said: Yahya ibn Sa‘id informed us that he asked ‘Amrah about bathing on Friday:",
+          "arabicSha256": "e44ebcd3f1fcb958a405ebbb24bac5dc7aa68e83b3da81453b328833ace0b8c0",
+          "englishSha256": "7bb2409a64b2a661b625fabe24a5aa18a50faba3821d5579dfc9d8d2b3445880"
+        },
+        {
+          "id": "861-2",
+          "paragraphId": "mwUw",
+          "start": 97,
+          "end": 220,
+          "kind": "report",
+          "arabic": "فقالت: قالت عائشة رضى الله تعالى عنها كان الناس مهنة أنفسهم وكانوا إذا راحوا إلى الجمعة راحوا في هيئتهم فقيل لهم لو اغتسلتم",
+          "english": "She said: ‘A’ishah, may Allah Most High be pleased with her, said: People used to do their own work. When they went to the Friday prayer, they went in their working condition. They were told, “If only you would bathe.”",
+          "arabicSha256": "d1d972e9a94ef706fe22d2aa1a483315ae22e703127334d61b3b9e63b3eb9888",
+          "englishSha256": "6a11ef0b0864006dbef3d4146d8d02503d9dda0d9a8fee664b234bf4a3f8ba5a"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            229
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            218,
+            219
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-friday-prayer",
+          "reference": "861"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.13.26",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.26",
+            "recordSha256": "d92d7f05abd4148b063b4b1b9d3cb6cf60537cc566c5e7999dacecdc8383232f"
+          }
+        }
+      ],
+      "notes": [
+        "The digital فقال before قالت عائشة is explicitly corrected to فقالت, as read in both Arabic prints. The unchanged original paragraph and exact before/after wording remain accessible. The reply is ‘Amrah’s quotation of ‘A’ishah; no named speaker is invented for the final passive instruction. Both English comparisons give ‘Amrah’s reply in the feminine, although the Bewley page spells her name ‘Amr. Modern print reference: 903."
+      ],
+      "reviewScope": "AI-assisted translation of every selected source span. Both identified Arabic prints visually inspected and both English comparison bodies individually read. One declared correction, full chains, alternate routes, narrator qualifications and comparison differences remain explicit. Independent Arabic, English, context, reference and spoken-word review remains pending; this is not accuracy certification.",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-friday-prayer-r484865",
+        "sourceSha256": "19f6c42edef071b00005381723dd996716fdbe446d4e82b4224ee7933a8591db",
+        "layoutAuditSha256": "279a04ca3009ab4ad3a1b6b31549fecf7b52c22f6a013f45d12000bbc2364720",
+        "layoutReviewSha256": "33df84ab937fa9047a965fff813da63877b40fdb32a487619748cc655dbbc38a",
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwUw:0",
+        "sourceReference": {
+          "label": "861",
+          "number": 861,
+          "markerId": "mwUw:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwUw",
+            "textSha256": "16f3bf215933bacbb199743fd91d54022758b232b66d7977ea5e3f255b2d17f9",
+            "origin": {
+              "blockId": "mwUw",
+              "blockSha256": "16f3bf215933bacbb199743fd91d54022758b232b66d7977ea5e3f255b2d17f9",
+              "start": 0,
+              "end": 219
+            }
+          }
+        ]
+      },
+      "arabicSha256": "e6a0da52775af6fcff3c49d67779e7a698e991c3a630f7d6b79808765bbee9d9",
+      "englishSha256": "229a49f51bd8a66867722e1e3b0fd47a44bff8c4b38631065f3f94f3f94a77d5",
+      "originalArabicSha256": "16f3bf215933bacbb199743fd91d54022758b232b66d7977ea5e3f255b2d17f9",
+      "arabicCorrections": [
+        {
+          "id": "861-reply-gender",
+          "paragraphId": "mwUw",
+          "start": 97,
+          "end": 101,
+          "before": "فقال",
+          "after": "فقالت",
+          "originalParagraphSha256": "16f3bf215933bacbb199743fd91d54022758b232b66d7977ea5e3f255b2d17f9",
+          "correctedParagraphSha256": "e6a0da52775af6fcff3c49d67779e7a698e991c3a630f7d6b79808765bbee9d9",
+          "status": "chosen-for-personal-prototype",
+          "reviewerKind": "ai",
+          "independentReview": "pending",
+          "reason": "Both Brill page 229 and the modern print page 219 read فقالت before قالت عائشة, making the reply feminine. The digital فقال is corrected only at this location. The original paragraph and punctuation remain preserved as evidence.",
+          "witnesses": [
+            {
+              "sourceId": "brill-1862",
+              "pdfPage": 229,
+              "reading": "فقالت",
+              "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+            },
+            {
+              "sourceId": "dar-ibn-kathir-2002",
+              "pdfPage": 219,
+              "reading": "فقالت",
+              "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+            }
+          ],
+          "contextNoteId": "861-source-correction",
+          "englishSegmentId": "861-2",
+          "englishRendering": "She said"
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "861-source-correction",
+          "label": "A recorded correction from both Arabic prints",
+          "text": "Both Arabic prints read “she said” for ‘Amrah’s reply. The digital text has “he said.” The prototype uses the printed form here; the unchanged original and both witnesses remain in Source details. Independent review is pending.",
+          "citations": [
+            "base",
+            "brill-1862",
+            "dar-ibn-kathir-2002"
+          ],
+          "related": []
+        }
+      ],
+      "reviewRecordSha256": "b0a7ca6b9fba099926b26381107bd0a64fff0e074864c7a72460d02793b657bd"
+    },
+    {
+      "number": 862,
+      "id": "bukhari:862",
+      "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwVA:0",
+      "chapterId": "chapter-15",
+      "paragraphIds": [
+        "mwVA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "862-1",
+          "paragraphId": "mwVA",
+          "start": 0,
+          "end": 127,
+          "kind": "chain",
+          "arabic": "[862] حدثنا سريج بن النعمان قال: حدثنا فليح بن سليمان عن عثمان بن عبد الرحمن بن عثمان التيمي عن أنس بن مالك رضى الله تعالى عنه ",
+          "english": "Surayj ibn al-Nu‘man related to us. He said: Fulayh ibn Sulayman related to us, from ‘Uthman ibn ‘Abd al-Rahman ibn ‘Uthman al-Taymi, from Anas ibn Malik, may Allah Most High be pleased with him:",
+          "arabicSha256": "8fce332477afd0562dda577899d5a1d76870f2b67ac5e22fc4b8c7c5ff74561c",
+          "englishSha256": "b675743f9006be70171701ea9a52be7135afe8c6ecaa08ef1304852706e826fc"
+        },
+        {
+          "id": "862-2",
+          "paragraphId": "mwVA",
+          "start": 127,
+          "end": 168,
+          "kind": "report",
+          "arabic": "أن النبي ﷺ كان يصلي الجمعة حين تميل الشمس",
+          "english": "The Prophet, may Allah bless him and grant him peace, used to pray the Friday prayer when the sun began to decline.",
+          "arabicSha256": "08c6f4aa03b82cce98517a11c3a287717838a48acd7ff8c0b35fe079d430fa03",
+          "englishSha256": "282328b22aa412b241260f1d7fade1baeac53f935af1ced313c8ed1b95875e22"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            229,
+            230
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            219
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-friday-prayer",
+          "reference": "862"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.13.27",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.27",
+            "recordSha256": "4fb518ef71558fe7eefe4c8e22211da7ec4b1c648c517a84a84c8fc9f4ca9834"
+          }
+        }
+      ],
+      "notes": [
+        "The selected report and Brill explicitly name the Friday prayer; the modern print has the shorter كان يصلي حين تميل الشمس. The selected clause remains. The astronomical wording is not replaced with a clock time or an added legal conclusion. Modern print reference: 904."
+      ],
+      "reviewScope": "AI-assisted translation of every selected source span. Both identified Arabic prints visually inspected and both English comparison bodies individually read. One declared correction, full chains, alternate routes, narrator qualifications and comparison differences remain explicit. Independent Arabic, English, context, reference and spoken-word review remains pending; this is not accuracy certification.",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-friday-prayer-r484865",
+        "sourceSha256": "19f6c42edef071b00005381723dd996716fdbe446d4e82b4224ee7933a8591db",
+        "layoutAuditSha256": "279a04ca3009ab4ad3a1b6b31549fecf7b52c22f6a013f45d12000bbc2364720",
+        "layoutReviewSha256": "33df84ab937fa9047a965fff813da63877b40fdb32a487619748cc655dbbc38a",
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwVA:0",
+        "sourceReference": {
+          "label": "862",
+          "number": 862,
+          "markerId": "mwVA:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwVA",
+            "textSha256": "f9892ef58557da13b647645eab29bb369f60ec7cd84417f6d79fffa57a0e2e3e",
+            "origin": {
+              "blockId": "mwVA",
+              "blockSha256": "f9892ef58557da13b647645eab29bb369f60ec7cd84417f6d79fffa57a0e2e3e",
+              "start": 0,
+              "end": 168
+            }
+          }
+        ]
+      },
+      "arabicSha256": "f9892ef58557da13b647645eab29bb369f60ec7cd84417f6d79fffa57a0e2e3e",
+      "englishSha256": "a7d8bbfff2bc1abeb0d8546dc21ec5346096c932f44f9d8ab228199889aecd02",
+      "reviewRecordSha256": "6cac783cef66a7663bdfe30c6785c317a6f6c7390323c60493852e6a708cf32f"
+    },
+    {
+      "number": 863,
+      "id": "bukhari:863",
+      "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwVg:0",
+      "chapterId": "chapter-15",
+      "paragraphIds": [
+        "mwVg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "863-1",
+          "paragraphId": "mwVg",
+          "start": 0,
+          "end": 63,
+          "kind": "chain",
+          "arabic": "[863] حدثنا عبدان قال: أخبرنا عبد الله قال: أخبرنا حميد عن أنس ",
+          "english": "‘Abdan related to us. He said: ‘Abdullah informed us. He said: Humayd informed us, from Anas:",
+          "arabicSha256": "a26d3071275ceda393002aef6b7d0707f8da6877c9847c54c2db55c567a36c62",
+          "englishSha256": "f19987fa63aee0955f034e9a9006a709c8ca91e4ae16feecabb5bd77325abed4"
+        },
+        {
+          "id": "863-2",
+          "paragraphId": "mwVg",
+          "start": 63,
+          "end": 100,
+          "kind": "report",
+          "arabic": "قال كنا نبكر بالجمعة ونقيل بعد الجمعة",
+          "english": "He said: We used to hold the Friday prayer early and take our midday rest after the Friday prayer.",
+          "arabicSha256": "2d3a74c2f5550c72f741182454a9de14c88c4ea6b80ba542119ab117b85a9d34",
+          "englishSha256": "54a93c963c78ee87f8494ac58c7d5de741771c22a57367714dd63ccfe8d821ef"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            230
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            219
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-friday-prayer",
+          "reference": "863"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.13.28",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.28",
+            "recordSha256": "8152854f2bd821d810c2ad877203c5cfb28908fec6a4a673b4984b5e8b23822e"
+          }
+        }
+      ],
+      "notes": [
+        "The selected short name Anas is not expanded to Anas ibn Malik as in Brill. Early and after the Friday prayer remain as stated; no exact time or position relative to the sun’s zenith is inserted. Modern print reference: 905."
+      ],
+      "reviewScope": "AI-assisted translation of every selected source span. Both identified Arabic prints visually inspected and both English comparison bodies individually read. One declared correction, full chains, alternate routes, narrator qualifications and comparison differences remain explicit. Independent Arabic, English, context, reference and spoken-word review remains pending; this is not accuracy certification.",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-friday-prayer-r484865",
+        "sourceSha256": "19f6c42edef071b00005381723dd996716fdbe446d4e82b4224ee7933a8591db",
+        "layoutAuditSha256": "279a04ca3009ab4ad3a1b6b31549fecf7b52c22f6a013f45d12000bbc2364720",
+        "layoutReviewSha256": "33df84ab937fa9047a965fff813da63877b40fdb32a487619748cc655dbbc38a",
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwVg:0",
+        "sourceReference": {
+          "label": "863",
+          "number": 863,
+          "markerId": "mwVg:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwVg",
+            "textSha256": "de734368f2e21e1015d9280d8af6e403abe73c39b6c3850fba243d00a6f38a18",
+            "origin": {
+              "blockId": "mwVg",
+              "blockSha256": "de734368f2e21e1015d9280d8af6e403abe73c39b6c3850fba243d00a6f38a18",
+              "start": 0,
+              "end": 100
+            }
+          }
+        ]
+      },
+      "arabicSha256": "de734368f2e21e1015d9280d8af6e403abe73c39b6c3850fba243d00a6f38a18",
+      "englishSha256": "874782d476096635ab0e8d228d38bce4b6048648304c7ee553c5a592f725d1c6",
+      "reviewRecordSha256": "db669d6dac31601228ecd0b0b1aa9dc7c5b85f178db38b07d7627a5d0bd5f884"
+    },
+    {
+      "number": 864,
+      "id": "bukhari:864",
+      "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwWA:0",
+      "chapterId": "chapter-16",
+      "paragraphIds": [
+        "mwWA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "864-1",
+          "paragraphId": "mwWA",
+          "start": 0,
+          "end": 125,
+          "kind": "chain",
+          "arabic": "[864] حدثنا محمد بن أبي بكر المقدمي قال: حدثنا حرمي بن عمارة قال: حدثنا أبو خلدة هو خالد بن دينار قال: سمعت أنس بن مالك يقول ",
+          "english": "Muhammad ibn Abi Bakr al-Muqaddami related to us. He said: Harami ibn ‘Umarah related to us. He said: Abu Khaldah—he is Khalid ibn Dinar—related to us. He said: I heard Anas ibn Malik say:",
+          "arabicSha256": "a096d27d50967f570db6a7a20cf0d7cfb55a549034607031d9d7674a99c4ddc3",
+          "englishSha256": "c32d7ff295a9c0c88eb51f0ee947496e678eec950a0bf1b45567e7f193c7f057"
+        },
+        {
+          "id": "864-2",
+          "paragraphId": "mwWA",
+          "start": 125,
+          "end": 192,
+          "kind": "report",
+          "arabic": "كان النبي ﷺ إذا اشتد البرد بكر بالصلاة وإذا اشتد الحر أبرد بالصلاة ",
+          "english": "When it was very cold, the Prophet, may Allah bless him and grant him peace, would pray early, and when it was very hot, he would delay the prayer until it was cooler.",
+          "arabicSha256": "303b1a48474237760860d73804753d6372a8cef7f5d9f4d78e60028a54b9d043",
+          "englishSha256": "45a4996b281fa6a5d5c343fa69676ef883d46df4cfba8c91b82eb88426234354"
+        },
+        {
+          "id": "864-3",
+          "paragraphId": "mwWA",
+          "start": 192,
+          "end": 204,
+          "kind": "transmission-note",
+          "arabic": "يعني الجمعة ",
+          "english": "Meaning the Friday prayer.",
+          "arabicSha256": "45d301f69eb59864a9b9b295ef33bc3d1744dd6801a16d1fe4f1359671735fec",
+          "englishSha256": "efd4c1b475433f45ae13bb43af36bd22f2ed8d695ceb00c3ba598aca5a264497"
+        },
+        {
+          "id": "864-4",
+          "paragraphId": "mwWA",
+          "start": 204,
+          "end": 268,
+          "kind": "transmission-note",
+          "arabic": "قال يونس بن بكير أخبرنا أبو خلدة، فقال بالصلاة ولم يذكر الجمعة، ",
+          "english": "Yunus ibn Bukayr said: Abu Khaldah informed us, and he said “the prayer” without mentioning the Friday prayer.",
+          "arabicSha256": "3ede43d8cb2b6fe05cd7cc92c8862c349551a7003284afb4695297573e1c99c0",
+          "englishSha256": "72e5ab64d7606f14a9401b92dd4bfc6f97b51477c5f035bc73a6da6bb5db24ac"
+        },
+        {
+          "id": "864-5",
+          "paragraphId": "mwWA",
+          "start": 268,
+          "end": 300,
+          "kind": "chain",
+          "arabic": "وقال بشر بن ثابت حدثنا أبو خلدة ",
+          "english": "Bishr ibn Thabit said: Abu Khaldah related to us:",
+          "arabicSha256": "1b43b25de248b4c1c021cd0418f0ecf621cba8dc533d37304bc595fa73fbf553",
+          "englishSha256": "2d4d49e0210346c3e64df615d098a2f15231e237d45860aab58d7e28578a9694"
+        },
+        {
+          "id": "864-6",
+          "paragraphId": "mwWA",
+          "start": 300,
+          "end": 382,
+          "kind": "report",
+          "arabic": "قال صلى بنا أمير الجمعة، ثم قال لأنس رضى الله تعالى عنه كيف كان النبي ﷺ يصلي الظهر",
+          "english": "He said: An emir led us in the Friday prayer, then said to Anas, may Allah Most High be pleased with him, “How did the Prophet, may Allah bless him and grant him peace, pray the noon prayer?”",
+          "arabicSha256": "8e549a002861789ffaf5bf5cb0159f64d3dc97441277c43b4f16f86ef3687a71",
+          "englishSha256": "f922791195ada899f1e58d680be6749ebd66f8cb2803205cd9cc17c19ccb1ff7"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            230
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            219
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-friday-prayer",
+          "reference": "864",
+          "status": "abbreviated-report",
+          "note": "Both later statements are present but their full alternate routes are abbreviated."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.13.29",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.29",
+            "recordSha256": "f0997249dd00a6c02913099edc105eb9a383ef9dda26ffa7d4aa06b97adb9f63"
+          }
+        }
+      ],
+      "notes": [
+        "The qualification meaning the Friday prayer is a separate transmission note, not silently attributed to the Prophet. Both alternate routes and the final question remain complete. The selected wording does not supply an answer to that question or name the emir. Khan omits both closing routes; Bewley preserves the distinction and question with abbreviated routes. Ibn Hajar discusses uncertainty about the qualification’s speaker; the app does not resolve it or derive a ruling. Modern print reference: 906."
+      ],
+      "reviewScope": "AI-assisted translation of every selected source span. Both identified Arabic prints visually inspected and both English comparison bodies individually read. One declared correction, full chains, alternate routes, narrator qualifications and comparison differences remain explicit. Independent Arabic, English, context, reference and spoken-word review remains pending; this is not accuracy certification.",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-friday-prayer-r484865",
+        "sourceSha256": "19f6c42edef071b00005381723dd996716fdbe446d4e82b4224ee7933a8591db",
+        "layoutAuditSha256": "279a04ca3009ab4ad3a1b6b31549fecf7b52c22f6a013f45d12000bbc2364720",
+        "layoutReviewSha256": "33df84ab937fa9047a965fff813da63877b40fdb32a487619748cc655dbbc38a",
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwWA:0",
+        "sourceReference": {
+          "label": "864",
+          "number": 864,
+          "markerId": "mwWA:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwWA",
+            "textSha256": "55eaa55e61741001e269e4c7db7292ee3e6f7c013edb8a8550503664049fe06b",
+            "origin": {
+              "blockId": "mwWA",
+              "blockSha256": "55eaa55e61741001e269e4c7db7292ee3e6f7c013edb8a8550503664049fe06b",
+              "start": 0,
+              "end": 382
+            }
+          }
+        ]
+      },
+      "arabicSha256": "55eaa55e61741001e269e4c7db7292ee3e6f7c013edb8a8550503664049fe06b",
+      "englishSha256": "d4f4581bdcd9dc848044c236b80c6ce97c4569edd75c481bcb4dba49c57d4fcb",
+      "additionalCitations": [
+        {
+          "id": "commentary-fath-friday-864",
+          "sourceId": "fath-friday-864",
+          "locator": "Fath al-Bari · commentary on selected report 864",
+          "scope": "Consulted for the uncertain speaker of the Friday-prayer qualification. No legal conclusion is added to the report."
+        }
+      ],
+      "reviewRecordSha256": "d6c66c812dc16793e3769b30b8ad76ef4cfc883864f37e070250b2997e27364b"
+    },
+    {
+      "number": 865,
+      "id": "bukhari:865",
+      "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwXQ:0",
+      "chapterId": "chapter-17",
+      "paragraphIds": [
+        "mwXQ"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "865-1",
+          "paragraphId": "mwXQ",
+          "start": 0,
+          "end": 108,
+          "kind": "chain",
+          "arabic": "[865] حدثنا علي بن عبد الله قال: حدثنا الوليد بن مسلم قال: حدثنا يزيد بن أبي مريم قال: حدثنا عباية بن رفاعة ",
+          "english": "‘Ali ibn ‘Abdullah related to us. He said: al-Walid ibn Muslim related to us. He said: Yazid ibn Abi Maryam related to us. He said: ‘Abayah ibn Rifa‘ah related to us:",
+          "arabicSha256": "e4ebda2f6b5601b27a5d0627f0993ef595a30ffdb06cb14c88885519178beffc",
+          "englishSha256": "5993c76626bf7cddb6821bbe10307d5014874fe94657aad9f0348e312a53ba04"
+        },
+        {
+          "id": "865-2",
+          "paragraphId": "mwXQ",
+          "start": 108,
+          "end": 221,
+          "kind": "report",
+          "arabic": "قال أدركني أبو عبس وأنا أذهب إلى الجمعة، فقال: سمعت النبي ﷺ يقول: من اغبرت قدماه في سبيل الله حرمه الله على النار",
+          "english": "He said: Abu ‘Abs caught up with me while I was going to the Friday prayer. He said, “I heard the Prophet, may Allah bless him and grant him peace, say, ‘Whoever’s feet become dusty in the path of Allah, Allah forbids him to the Fire.’”",
+          "arabicSha256": "de60fd1c693e339889f983cf355e209da166e1678bdabafedb37ed759f57d33f",
+          "englishSha256": "f50ff3ddcd4f518ae5e44ccea805ac52dbd957a2ce433f2c666cc2d9b42f1e11"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            230
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            219
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-friday-prayer",
+          "reference": "865"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.13.30",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.30",
+            "recordSha256": "cfa3260ea3f339deda162df3e7e8467fde8e1534ad681d564971a1020d15924c"
+          }
+        }
+      ],
+      "notes": [
+        "The encounter on the way to Friday prayer and Abu ‘Abs’s explicit hearing remain. The Khan comparison starts directly with Abu ‘Abs’s hearing and omits the encounter. The selected four related-to-us links remain in full. Modern print reference: 907."
+      ],
+      "reviewScope": "AI-assisted translation of every selected source span. Both identified Arabic prints visually inspected and both English comparison bodies individually read. One declared correction, full chains, alternate routes, narrator qualifications and comparison differences remain explicit. Independent Arabic, English, context, reference and spoken-word review remains pending; this is not accuracy certification.",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-friday-prayer-r484865",
+        "sourceSha256": "19f6c42edef071b00005381723dd996716fdbe446d4e82b4224ee7933a8591db",
+        "layoutAuditSha256": "279a04ca3009ab4ad3a1b6b31549fecf7b52c22f6a013f45d12000bbc2364720",
+        "layoutReviewSha256": "33df84ab937fa9047a965fff813da63877b40fdb32a487619748cc655dbbc38a",
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwXQ:0",
+        "sourceReference": {
+          "label": "865",
+          "number": 865,
+          "markerId": "mwXQ:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwXQ",
+            "textSha256": "d4d11efe986c23665693d7e81d772256b9c4857bf920e068418be3f162b56078",
+            "origin": {
+              "blockId": "mwXQ",
+              "blockSha256": "d4d11efe986c23665693d7e81d772256b9c4857bf920e068418be3f162b56078",
+              "start": 0,
+              "end": 221
+            }
+          }
+        ]
+      },
+      "arabicSha256": "d4d11efe986c23665693d7e81d772256b9c4857bf920e068418be3f162b56078",
+      "englishSha256": "66e910f35de384bcb7e370bdbccb790a3f40e9ab8f3edfc69005b593de1dae42",
+      "reviewRecordSha256": "1e842f73e85152fbde456fcbf8a99f8aa2dcb17731b79bc85d3f96a21d400182"
+    },
+    {
+      "number": 866,
+      "id": "bukhari:866",
+      "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwXw:0",
+      "chapterId": "chapter-17",
+      "paragraphIds": [
+        "mwXw"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "866-1",
+          "paragraphId": "mwXw",
+          "start": 0,
+          "end": 111,
+          "kind": "chain",
+          "arabic": "[866] حدثنا آدم قال: حدثنا ابن أبي ذئب قال الزهري عن سعيد وأبي سلمة عن أبي هريرة رضى الله تعالى عنه عن النبي ﷺ ",
+          "english": "Adam related to us. He said: Ibn Abi Dhi’b related to us. Al-Zuhri said, from Sa‘id and Abu Salamah, from Abu Hurayrah, may Allah Most High be pleased with him, from the Prophet, may Allah bless him and grant him peace.",
+          "arabicSha256": "1c025fbe2ace91de2724448fd480c06a85e0eea9543de4eabe507ba04bfbbf7b",
+          "englishSha256": "e34ed2114aa94b8213fedb8dc5ab10ce1619a28c7a6a7469f5c3a29d9fd09151"
+        },
+        {
+          "id": "866-2",
+          "paragraphId": "mwXw",
+          "start": 111,
+          "end": 204,
+          "kind": "chain",
+          "arabic": "وحدثنا أبو اليمان قال: أخبرنا شعيب عن الزهري قال: أخبرني أبو سلمة بن عبد الرحمن أن أبا هريرة ",
+          "english": "And Abu al-Yaman related to us. He said: Shu‘ayb informed us, from al-Zuhri, who said: Abu Salamah ibn ‘Abd al-Rahman informed me that Abu Hurayrah:",
+          "arabicSha256": "b0113275da09ebb152009a51630be28c10823bfb0686959ff78ea13d028ae1bf",
+          "englishSha256": "ed75034a2c2b59d3274d72bb88c19c3fffe8c8e929880ef67fff87acdddee8f2"
+        },
+        {
+          "id": "866-3",
+          "paragraphId": "mwXw",
+          "start": 204,
+          "end": 326,
+          "kind": "report",
+          "arabic": "قال: سمعت رسول الله ﷺ يقول: إذا أقيمت الصلاة فلا تأتوها تسعون وأتوها تمشون عليكم السكينة فما أدركتم فصلوا وما فاتكم فأتموا",
+          "english": "Said: I heard the Messenger of Allah, may Allah bless him and grant him peace, say, “When the prayer is established, do not come to it running. Come to it walking, keeping calm. Pray what you catch, and complete what you miss.”",
+          "arabicSha256": "e4dea4b25469229659f68ff7df475d6b04e852de14cc75ab42a45c2d2671484b",
+          "englishSha256": "420c2e3a86daeca24fb41ff8ea73c198d131360ac3087752a6a6672fbd8ce173"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            230
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            219,
+            220
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-friday-prayer",
+          "reference": "866"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.13.31",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.31",
+            "recordSha256": "bcddf318ab437b8ddc39b61185494a463cc9c8292343da53a39362dc1cd8bd70"
+          }
+        }
+      ],
+      "notes": [
+        "Both opening routes remain in their original order, including both Sa‘id and Abu Salamah in the first route and the separate informed-me link in the second. Brill has حدثنا الزهري where the selected source and modern print have قال الزهري; the selected said is retained. Neither English comparison supplies both complete chains. Modern print reference: 908."
+      ],
+      "reviewScope": "AI-assisted translation of every selected source span. Both identified Arabic prints visually inspected and both English comparison bodies individually read. One declared correction, full chains, alternate routes, narrator qualifications and comparison differences remain explicit. Independent Arabic, English, context, reference and spoken-word review remains pending; this is not accuracy certification.",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-friday-prayer-r484865",
+        "sourceSha256": "19f6c42edef071b00005381723dd996716fdbe446d4e82b4224ee7933a8591db",
+        "layoutAuditSha256": "279a04ca3009ab4ad3a1b6b31549fecf7b52c22f6a013f45d12000bbc2364720",
+        "layoutReviewSha256": "33df84ab937fa9047a965fff813da63877b40fdb32a487619748cc655dbbc38a",
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwXw:0",
+        "sourceReference": {
+          "label": "866",
+          "number": 866,
+          "markerId": "mwXw:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwXw",
+            "textSha256": "0856236a03cead412efe8d6a9bf748f4492f413e3d4805e81a10678dbc16dbf2",
+            "origin": {
+              "blockId": "mwXw",
+              "blockSha256": "0856236a03cead412efe8d6a9bf748f4492f413e3d4805e81a10678dbc16dbf2",
+              "start": 0,
+              "end": 326
+            }
+          }
+        ]
+      },
+      "arabicSha256": "0856236a03cead412efe8d6a9bf748f4492f413e3d4805e81a10678dbc16dbf2",
+      "englishSha256": "5f72dc9a4d62851b2a3350d4eeea45a03115aee61ae530c7a2c3c3c6e0383441",
+      "reviewRecordSha256": "3e67fcacf6550ea975e835c8f84b357ffc2bac7ba2f2f8f18070d42618a8ccc3"
+    },
+    {
+      "number": 867,
+      "id": "bukhari:867",
+      "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwYg:0",
+      "chapterId": "chapter-17",
+      "paragraphIds": [
+        "mwYg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "867-1",
+          "paragraphId": "mwYg",
+          "start": 0,
+          "end": 116,
+          "kind": "chain",
+          "arabic": "[867] حدثنا عمرو بن علي قال: حدثني أبو قتيبة قال: حدثنا علي بن المبارك عن يحيى بن أبي كثير عن عبد الله بن أبي قتادة ",
+          "english": "‘Amr ibn ‘Ali related to us. He said: Abu Qutaybah related to me. He said: ‘Ali ibn al-Mubarak related to us, from Yahya ibn Abi Kathir, from ‘Abdullah ibn Abi Qatadah:",
+          "arabicSha256": "547a14a05c862b81fd4801c0f86f9b541eb33a03a1821f848ff8f0920bc3b65e",
+          "englishSha256": "43dfc8bfc8a1d1686bcdec948f48267a93381ca4fc41aa9b67a4af000265622e"
+        },
+        {
+          "id": "867-2",
+          "paragraphId": "mwYg",
+          "start": 116,
+          "end": 137,
+          "kind": "transmission-note",
+          "arabic": "لا أعلمه إلا عن أبيه ",
+          "english": "I know it only as being from his father.",
+          "arabicSha256": "4848970c9f2ce60b010a778871af100d8b91c3302f363eec28956e0b55f762ca",
+          "englishSha256": "9094bae1bba098fc07a197b92233833081549f68135fa37331118c3464f2f3c3"
+        },
+        {
+          "id": "867-3",
+          "paragraphId": "mwYg",
+          "start": 137,
+          "end": 186,
+          "kind": "report",
+          "arabic": "عن النبي ﷺ قال لا تقوموا حتى تروني وعليكم السكينة",
+          "english": "From the Prophet, may Allah bless him and grant him peace, who said, “Do not stand up until you see me, and remain calm.”",
+          "arabicSha256": "ed0bd6df5c33a100aa92c7692599d830cdfc52df08901fd77628718d9751a2bc",
+          "englishSha256": "763ad566408db82015c6a9bf43a3c3f18b1993eaeca06bc7541c636fcc899366"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            230,
+            231
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            220
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-friday-prayer",
+          "reference": "867",
+          "status": "abbreviated-report",
+          "note": "The source qualification about the father’s link is omitted."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.13.32",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.32",
+            "recordSha256": "d8048c58d7039ec03c023b8ebe8add34bb568dc19b80d7dd9157c8d4df7be7b1"
+          }
+        }
+      ],
+      "notes": [
+        "The qualification لا أعلمه إلا عن أبيه remains a separate narrator statement rather than an unconditional added chain link. Brill explicitly prefixes it with Abu ‘Abdullah said; the selected source and modern print do not name its speaker. Both English comparisons omit this qualification. Modern print reference: 909."
+      ],
+      "reviewScope": "AI-assisted translation of every selected source span. Both identified Arabic prints visually inspected and both English comparison bodies individually read. One declared correction, full chains, alternate routes, narrator qualifications and comparison differences remain explicit. Independent Arabic, English, context, reference and spoken-word review remains pending; this is not accuracy certification.",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-friday-prayer-r484865",
+        "sourceSha256": "19f6c42edef071b00005381723dd996716fdbe446d4e82b4224ee7933a8591db",
+        "layoutAuditSha256": "279a04ca3009ab4ad3a1b6b31549fecf7b52c22f6a013f45d12000bbc2364720",
+        "layoutReviewSha256": "33df84ab937fa9047a965fff813da63877b40fdb32a487619748cc655dbbc38a",
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwYg:0",
+        "sourceReference": {
+          "label": "867",
+          "number": 867,
+          "markerId": "mwYg:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwYg",
+            "textSha256": "48fb36ce131445ce29cc21793ad11e28a562bc853eaf73c4e3f20af134e58148",
+            "origin": {
+              "blockId": "mwYg",
+              "blockSha256": "48fb36ce131445ce29cc21793ad11e28a562bc853eaf73c4e3f20af134e58148",
+              "start": 0,
+              "end": 186
+            }
+          }
+        ]
+      },
+      "arabicSha256": "48fb36ce131445ce29cc21793ad11e28a562bc853eaf73c4e3f20af134e58148",
+      "englishSha256": "ada43fb0e135f233195902062c932ac8ab12f9252eb6f7ffe7208114bdb96d99",
+      "reviewRecordSha256": "dac8820431454ec0320ecdcc1d8093d0f53fec7d58dcb3b7cb239bee05e801bd"
+    },
+    {
+      "number": 868,
+      "id": "bukhari:868",
+      "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwZQ:0",
+      "chapterId": "chapter-18",
+      "paragraphIds": [
+        "mwZQ"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "868-1",
+          "paragraphId": "mwZQ",
+          "start": 0,
+          "end": 117,
+          "kind": "chain",
+          "arabic": "[868] حدثنا عبدان قال: أخبرنا عبد الله قال: أخبرنا ابن أبي ذئب عن سعيد المقبري عن أبيه عن ابن وديعة عن سلمان الفارسي ",
+          "english": "‘Abdan related to us. He said: ‘Abdullah informed us. He said: Ibn Abi Dhi’b informed us, from Sa‘id al-Maqburi, from his father, from Ibn Wadi‘ah, from Salman al-Farisi:",
+          "arabicSha256": "e60c462fcd98a46e547c3b779fb456eb42a1373f4e9f03c86578f15ecb17876a",
+          "englishSha256": "92d1e2a96a50691414c6d7d6ff9b84b33f5a43e203574bcfef72d223d9c781b8"
+        },
+        {
+          "id": "868-2",
+          "paragraphId": "mwZQ",
+          "start": 117,
+          "end": 301,
+          "kind": "report",
+          "arabic": "قال: قال رسول الله ﷺ: من اغتسل يوم الجمعة وتطهر بما استطاع من طهر ثم ادهن أو مس من طيب ثم راح فلم يفرق بين اثنين فصلى ما كتب له ثم إذا خرج الإمام أنصت غفر له ما بينه وبين الجمعة الأخرى",
+          "english": "He said: The Messenger of Allah, may Allah bless him and grant him peace, said, “Whoever bathes on Friday and purifies himself as much as he can, then applies oil or some perfume, then goes without separating two people, prays what has been allotted to him, and then listens silently when the imam comes out, is forgiven for what lies between it and the other Friday.”",
+          "arabicSha256": "2c35a0e1a354b02db8a9d9deb5948c426e695407719cd5493b0f2060865b81c5",
+          "englishSha256": "23d2a5e3083344bebdabdf46c462bd8dfc156b9c8a8c8adc06bd412255fd0b7a"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            231
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            220
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-friday-prayer",
+          "reference": "868"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.13.33",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.33",
+            "recordSha256": "85396afa541699aa6303b54e60c4d71ba78008fd04a044bed8e2dacd6dc21f94"
+          }
+        }
+      ],
+      "notes": [
+        "The complete conditional sequence is preserved. The selected wording does not specify hair oil, perfume from his house, or a previous Friday; those comparison additions are not inserted. The condition when the imam comes out remains distinct from the comparison wording about the imam speaking. This occurrence retains its own chain rather than reusing 843. Modern print reference: 910."
+      ],
+      "reviewScope": "AI-assisted translation of every selected source span. Both identified Arabic prints visually inspected and both English comparison bodies individually read. One declared correction, full chains, alternate routes, narrator qualifications and comparison differences remain explicit. Independent Arabic, English, context, reference and spoken-word review remains pending; this is not accuracy certification.",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-friday-prayer-r484865",
+        "sourceSha256": "19f6c42edef071b00005381723dd996716fdbe446d4e82b4224ee7933a8591db",
+        "layoutAuditSha256": "279a04ca3009ab4ad3a1b6b31549fecf7b52c22f6a013f45d12000bbc2364720",
+        "layoutReviewSha256": "33df84ab937fa9047a965fff813da63877b40fdb32a487619748cc655dbbc38a",
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwZQ:0",
+        "sourceReference": {
+          "label": "868",
+          "number": 868,
+          "markerId": "mwZQ:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwZQ",
+            "textSha256": "256f240f08e9492f74837bde40b9f93a9a301e6e5ef7ed47f6e490619dcb31f7",
+            "origin": {
+              "blockId": "mwZQ",
+              "blockSha256": "256f240f08e9492f74837bde40b9f93a9a301e6e5ef7ed47f6e490619dcb31f7",
+              "start": 0,
+              "end": 301
+            }
+          }
+        ]
+      },
+      "arabicSha256": "256f240f08e9492f74837bde40b9f93a9a301e6e5ef7ed47f6e490619dcb31f7",
+      "englishSha256": "1f50438dca324d0883cae0a80c797108fbfc93bac172a46246748a1458fa1057",
+      "reviewRecordSha256": "285bf7e5d44c323271691d0fceb5c6c96a3cc1b47caa6f7cd157f198101d6103"
+    },
+    {
+      "number": 869,
+      "id": "bukhari:869",
+      "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwaA:0",
+      "chapterId": "chapter-19",
+      "paragraphIds": [
+        "mwaA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "869-1",
+          "paragraphId": "mwaA",
+          "start": 0,
+          "end": 119,
+          "kind": "chain",
+          "arabic": "[869] حدثنا محمد قال: أخبرنا مخلد بن يزيد قال: أخبرنا ابن جريج قال: سمعت نافعا يقول: سمعت ابن عمر رضى الله تعالى عنهما ",
+          "english": "Muhammad related to us. He said: Makhlad ibn Yazid informed us. He said: Ibn Jurayj informed us. He said: I heard Nafi‘ say: I heard Ibn ‘Umar, may Allah Most High be pleased with them both:",
+          "arabicSha256": "637366266b8882a83ca8298e7564c083f61cdb9380c997ac8b96dda60677789b",
+          "englishSha256": "7d36571698b3ccaab0fe44d2b1450644ef2ec67fac6da60985ea523a18dc8d3b"
+        },
+        {
+          "id": "869-2",
+          "paragraphId": "mwaA",
+          "start": 119,
+          "end": 174,
+          "kind": "report",
+          "arabic": "يقول نهى النبي ﷺ أن يقيم الرجل أخاه من مقعده ويجلس فيه ",
+          "english": "He said: The Prophet, may Allah bless him and grant him peace, forbade a man from making his brother get up from his seat and sitting in it.",
+          "arabicSha256": "d13c79a7f8a7479783e3ca4a1cffcc174ae43173582d95df4dbcdfbdf2cfae8d",
+          "englishSha256": "6be4c43b60496679a8be9c31332fcce7703e0a8a7c3b78292929b992cc2842f1"
+        },
+        {
+          "id": "869-3",
+          "paragraphId": "mwaA",
+          "start": 174,
+          "end": 208,
+          "kind": "transmission-note",
+          "arabic": "قلت لنافع الجمعة قال الجمعة وغيرها",
+          "english": "I said to Nafi‘, “Friday prayer?” He said, “Friday prayer and others.”",
+          "arabicSha256": "19639af98c37a6ffacf1beaf38a6af6261358e4af2df9175966647edbfbb9bb3",
+          "englishSha256": "34f06be84ed853d811834ae739718deaf4714f50bfb811aa6c265d439c1cd4cf"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            231
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            220
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-friday-prayer",
+          "reference": "869"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.13.34",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.34",
+            "recordSha256": "8b8d1a54c9ada1ee79d5abdb57d2fa87e4ced3d57df7cd35ea3f98ee07efa176"
+          }
+        }
+      ],
+      "notes": [
+        "Both hearing links and the subsequent question to Nafi‘ remain. The question is kept as its brief selected wording without importing only or an expanded question. Brill identifies Muhammad as Ibn Salam; the selected name remains short. The Khan EPUB’s Nazi’ transcription does not replace Nafi‘. Modern print reference: 911."
+      ],
+      "reviewScope": "AI-assisted translation of every selected source span. Both identified Arabic prints visually inspected and both English comparison bodies individually read. One declared correction, full chains, alternate routes, narrator qualifications and comparison differences remain explicit. Independent Arabic, English, context, reference and spoken-word review remains pending; this is not accuracy certification.",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-friday-prayer-r484865",
+        "sourceSha256": "19f6c42edef071b00005381723dd996716fdbe446d4e82b4224ee7933a8591db",
+        "layoutAuditSha256": "279a04ca3009ab4ad3a1b6b31549fecf7b52c22f6a013f45d12000bbc2364720",
+        "layoutReviewSha256": "33df84ab937fa9047a965fff813da63877b40fdb32a487619748cc655dbbc38a",
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwaA:0",
+        "sourceReference": {
+          "label": "869",
+          "number": 869,
+          "markerId": "mwaA:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwaA",
+            "textSha256": "007177bde1c90c9ea771f3b39a03af386ccb2ac567c76ab104bc1e5b3eb99f5d",
+            "origin": {
+              "blockId": "mwaA",
+              "blockSha256": "007177bde1c90c9ea771f3b39a03af386ccb2ac567c76ab104bc1e5b3eb99f5d",
+              "start": 0,
+              "end": 208
+            }
+          }
+        ]
+      },
+      "arabicSha256": "007177bde1c90c9ea771f3b39a03af386ccb2ac567c76ab104bc1e5b3eb99f5d",
+      "englishSha256": "f6bbb40937742937d2af25db4eed479a8b7d869afddd15269563b207bb576495",
+      "reviewRecordSha256": "fe52c26b697fc5a9bec547970bd6d611c6de62e0c521196de2a211986c8b8ff5"
+    },
+    {
+      "number": 870,
+      "id": "bukhari:870",
+      "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwaw:0",
+      "chapterId": "chapter-20",
+      "paragraphIds": [
+        "mwaw"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "870-1",
+          "paragraphId": "mwaw",
+          "start": 0,
+          "end": 67,
+          "kind": "chain",
+          "arabic": "[870] حدثنا آدم قال: حدثنا ابن أبي ذئب عن الزهري عن السائب بن يزيد ",
+          "english": "Adam related to us. He said: Ibn Abi Dhi’b related to us, from al-Zuhri, from al-Sa’ib ibn Yazid:",
+          "arabicSha256": "6e9f25d48ed24714b9df355e351457179f7e2f25aa67b19ce432dca92751b049",
+          "englishSha256": "3aac08182d12860c5c5623237fc06f1abdf243b5042021914615c796561077b0"
+        },
+        {
+          "id": "870-2",
+          "paragraphId": "mwaw",
+          "start": 67,
+          "end": 250,
+          "kind": "report",
+          "arabic": "قال: كان النداء يوم الجمعة أوله إذا جلس الإمام على المنبر على عهد النبي ﷺ وأبي بكر وعمر رضى الله تعالى عنهما فلما كان عثمان رضى الله تعالى عنه وكثر الناس زاد النداء الثالث على الزوراء",
+          "english": "He said: Originally, the call on Friday was made when the imam sat on the pulpit, during the time of the Prophet, may Allah bless him and grant him peace, Abu Bakr and ‘Umar, may Allah Most High be pleased with them both. When it was ‘Uthman’s time, may Allah Most High be pleased with him, and the people had increased in number, he added the third call at al-Zawra’.",
+          "arabicSha256": "68f7601568821fccbd691adef4ed172e35f93e43805c15e868fdf91a91e3d1bd",
+          "englishSha256": "74f815c26e45489595020c2898d227aee061892d925246997819f4225400f367"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            231
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            220
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-friday-prayer",
+          "reference": "870"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.13.35",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.35",
+            "recordSha256": "7becdbfbb11f97c672cf14f95f4255ed6c03a67070ecf24c3e94db719fc22a25"
+          }
+        }
+      ],
+      "notes": [
+        "The selected third call remains third. Brill and both English comparisons append Abu ‘Abdullah’s identification of al-Zawra’ as a place in Madinah’s market. That comment is absent from the selected digital record and the modern print; it is documented here rather than silently added. Modern print reference: 912."
+      ],
+      "reviewScope": "AI-assisted translation of every selected source span. Both identified Arabic prints visually inspected and both English comparison bodies individually read. One declared correction, full chains, alternate routes, narrator qualifications and comparison differences remain explicit. Independent Arabic, English, context, reference and spoken-word review remains pending; this is not accuracy certification.",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-friday-prayer-r484865",
+        "sourceSha256": "19f6c42edef071b00005381723dd996716fdbe446d4e82b4224ee7933a8591db",
+        "layoutAuditSha256": "279a04ca3009ab4ad3a1b6b31549fecf7b52c22f6a013f45d12000bbc2364720",
+        "layoutReviewSha256": "33df84ab937fa9047a965fff813da63877b40fdb32a487619748cc655dbbc38a",
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwaw:0",
+        "sourceReference": {
+          "label": "870",
+          "number": 870,
+          "markerId": "mwaw:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwaw",
+            "textSha256": "bc1e966d029336e25dc1b638a41290eefac656e03c4c49394dd294206748c0e0",
+            "origin": {
+              "blockId": "mwaw",
+              "blockSha256": "bc1e966d029336e25dc1b638a41290eefac656e03c4c49394dd294206748c0e0",
+              "start": 0,
+              "end": 250
+            }
+          }
+        ]
+      },
+      "arabicSha256": "bc1e966d029336e25dc1b638a41290eefac656e03c4c49394dd294206748c0e0",
+      "englishSha256": "57a2958a7b00342ecc6c128f3b658e597593deceda9a398427094e8fab728215",
+      "reviewRecordSha256": "0e59f36aac129f653e5ca8ee7fb73a0c289ea5544afaa50fec33acb426f2fa97"
+    },
+    {
+      "number": 871,
+      "id": "bukhari:871",
+      "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwbg:0",
+      "chapterId": "chapter-21",
+      "paragraphIds": [
+        "mwbg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "871-1",
+          "paragraphId": "mwbg",
+          "start": 0,
+          "end": 92,
+          "kind": "chain",
+          "arabic": "[871] حدثنا أبو نعيم قال: حدثنا عبد العزيز بن أبي سلمة الماجشون عن الزهري عن السائب بن يزيد ",
+          "english": "Abu Nu‘aym related to us. He said: ‘Abd al-‘Aziz ibn Abi Salamah al-Majishun related to us, from al-Zuhri, from al-Sa’ib ibn Yazid:",
+          "arabicSha256": "2c39f0f307f79619edf4fe1fdb2db00b03ef3b91927c6fc9fb148d41cfe7d474",
+          "englishSha256": "b6ac440df85916f9a69655fe3a87ba64e0fa784a5ff795d26d42ab6dfedc260d"
+        },
+        {
+          "id": "871-2",
+          "paragraphId": "mwbg",
+          "start": 92,
+          "end": 253,
+          "kind": "report",
+          "arabic": "أن الذي زاد التأذين الثالث يوم الجمعة عثمان بن عفان رضى الله تعالى عنه حين كثر أهل المدينة ولم يكن للنبي ﷺ مؤذن غير واحد وكان التأذين يوم الجمعة حين يجلس الإمام ",
+          "english": "The one who added the third call to prayer on Friday was ‘Uthman ibn ‘Affan, may Allah Most High be pleased with him, when the people of Madinah increased in number. The Prophet, may Allah bless him and grant him peace, had only one caller to prayer. The call to prayer on Friday was made when the imam sat down.",
+          "arabicSha256": "3e69b2c36033fa820874b3c084a4d9672b8aafdb121dcc708643124b4f4b3c4f",
+          "englishSha256": "5d5622e35bad76928dba9be713c637f2cc425f7a7a9c1a9c014e5ad48c3610ba"
+        },
+        {
+          "id": "871-3",
+          "paragraphId": "mwbg",
+          "start": 253,
+          "end": 268,
+          "kind": "transmission-note",
+          "arabic": "يعني على المنبر",
+          "english": "Meaning on the pulpit.",
+          "arabicSha256": "e0933926a2f6999e55f7741e89d7d05dce54eac64bc49c374cc504734ec6b4b1",
+          "englishSha256": "768efb57ff6b20ab34e3fa89a050dfead3067c527f23fa810273043fe6c1438c"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            231
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            220
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-friday-prayer",
+          "reference": "871"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.13.36",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.36",
+            "recordSha256": "3ccd6f356a1468aee0396d70cc9c5c20ad9fa60893212ef02f0c7717859133a4"
+          }
+        }
+      ],
+      "notes": [
+        "The third call, one caller and closing meaning on the pulpit remain distinct. The closing clarification is a transmission note, not extra words assigned to the Prophet. Modern print reference: 913."
+      ],
+      "reviewScope": "AI-assisted translation of every selected source span. Both identified Arabic prints visually inspected and both English comparison bodies individually read. One declared correction, full chains, alternate routes, narrator qualifications and comparison differences remain explicit. Independent Arabic, English, context, reference and spoken-word review remains pending; this is not accuracy certification.",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-friday-prayer-r484865",
+        "sourceSha256": "19f6c42edef071b00005381723dd996716fdbe446d4e82b4224ee7933a8591db",
+        "layoutAuditSha256": "279a04ca3009ab4ad3a1b6b31549fecf7b52c22f6a013f45d12000bbc2364720",
+        "layoutReviewSha256": "33df84ab937fa9047a965fff813da63877b40fdb32a487619748cc655dbbc38a",
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwbg:0",
+        "sourceReference": {
+          "label": "871",
+          "number": 871,
+          "markerId": "mwbg:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwbg",
+            "textSha256": "7f93ae966f84bfe930d28f7d19fe37e660db10ef7a1c183d6edfa302151c897b",
+            "origin": {
+              "blockId": "mwbg",
+              "blockSha256": "7f93ae966f84bfe930d28f7d19fe37e660db10ef7a1c183d6edfa302151c897b",
+              "start": 0,
+              "end": 268
+            }
+          }
+        ]
+      },
+      "arabicSha256": "7f93ae966f84bfe930d28f7d19fe37e660db10ef7a1c183d6edfa302151c897b",
+      "englishSha256": "0fca25e6165fd992968136a853d2a7971574905171fcb5a4cc5f86cf3eb014e3",
+      "reviewRecordSha256": "f869861ee3eb7b9fe0f922322dc804733f398b3de1da798cb6bdd55ef013b24f"
+    },
+    {
+      "number": 872,
+      "id": "bukhari:872",
+      "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwcQ:0",
+      "chapterId": "chapter-22",
+      "paragraphIds": [
+        "mwcQ"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "872-1",
+          "paragraphId": "mwcQ",
+          "start": 0,
+          "end": 116,
+          "kind": "chain",
+          "arabic": "[872] حدثنا ابن مقاتل قال: أخبرنا عبد الله قال: أخبرنا أبو بكر ابن عثمان بن سهل بن حنيف عن أبي أمامه بن سهل بن حنيف ",
+          "english": "Ibn Muqatil related to us. He said: ‘Abdullah informed us. He said: Abu Bakr ibn ‘Uthman ibn Sahl ibn Hunayf informed us, from Abu Umamah ibn Sahl ibn Hunayf:",
+          "arabicSha256": "2dac67cd657a1caf5234ba9b3e9ab50799263f73771dbf874fbebcaa20f5e785",
+          "englishSha256": "3c31f28a56503f0144796e0f6928b19856665dcc780212f2e08af600841562fa"
+        },
+        {
+          "id": "872-2",
+          "paragraphId": "mwcQ",
+          "start": 116,
+          "end": 444,
+          "kind": "report",
+          "arabic": "قال: سمعت معاوية بن أبي سفيان وهو جالس على المنبر إذن المؤذن قال الله أكبر الله أكبر قال معاوية الله أكبر الله أكبر قال أشهد أن لا إله إلا الله، فقال معاوية وأنا، فقال أشهد أن محمدا رسول الله، فقال معاوية وأنا فلما أن قضى التأذين قال: يا أيها الناس إني سمعت رسول الله ﷺ على هذا المجلس حين إذن المؤذن يقول: ما سمعتم مني من مقالتي",
+          "english": "He said: I heard Mu‘awiyah ibn Abi Sufyan while he was sitting on the pulpit. The caller to prayer gave the call and said, “Allah is greater. Allah is greater.” Mu‘awiyah said, “Allah is greater. Allah is greater.” He said, “I testify that there is no god but Allah.” Mu‘awiyah said, “And I.” He said, “I testify that Muhammad is the Messenger of Allah.” Mu‘awiyah said, “And I.” When the call was finished, he said, “People, I heard the Messenger of Allah, may Allah bless him and grant him peace, in this very place, when the caller gave the call, saying what you have heard me say.”",
+          "arabicSha256": "f8ddd0ada4c6d2bb25bbfdb9c826e501fda11477f0498b0bc9a02507b5dbe2e9",
+          "englishSha256": "882a585194779e2c8988a9d26bab5c066833f6d1e121b042abd45bdef4059d9a"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            231,
+            232
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            221
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-friday-prayer",
+          "reference": "872"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.13.37",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.37",
+            "recordSha256": "4b7949f89754f8b66298785eb9d41234b851ec3bc11d7bdfcdaca987c3cedf0c"
+          }
+        }
+      ],
+      "notes": [
+        "The four occurrences of Allah is greater, both testimonies, both And I replies and the final attribution remain in order. The selected name Ibn Muqatil stays short. Explanatory words in the English comparisons are not incorporated into the quoted call. Modern print reference: 914."
+      ],
+      "reviewScope": "AI-assisted translation of every selected source span. Both identified Arabic prints visually inspected and both English comparison bodies individually read. One declared correction, full chains, alternate routes, narrator qualifications and comparison differences remain explicit. Independent Arabic, English, context, reference and spoken-word review remains pending; this is not accuracy certification.",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-friday-prayer-r484865",
+        "sourceSha256": "19f6c42edef071b00005381723dd996716fdbe446d4e82b4224ee7933a8591db",
+        "layoutAuditSha256": "279a04ca3009ab4ad3a1b6b31549fecf7b52c22f6a013f45d12000bbc2364720",
+        "layoutReviewSha256": "33df84ab937fa9047a965fff813da63877b40fdb32a487619748cc655dbbc38a",
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwcQ:0",
+        "sourceReference": {
+          "label": "872",
+          "number": 872,
+          "markerId": "mwcQ:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwcQ",
+            "textSha256": "892998d24b653224da31163419ed7f63b3afd925fcb3de4e502047e2d0295513",
+            "origin": {
+              "blockId": "mwcQ",
+              "blockSha256": "892998d24b653224da31163419ed7f63b3afd925fcb3de4e502047e2d0295513",
+              "start": 0,
+              "end": 444
+            }
+          }
+        ]
+      },
+      "arabicSha256": "892998d24b653224da31163419ed7f63b3afd925fcb3de4e502047e2d0295513",
+      "englishSha256": "7e9d97d1866f1b06f29f91360f458e482822c8a6d629a65ac9ed098743369bf8",
+      "reviewRecordSha256": "8e63c8f035ca9120235895e116ca7c15fa4caa2b7305c4e188adb9b682a1c59b"
+    },
+    {
+      "number": 873,
+      "id": "bukhari:873",
+      "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwdA:0",
+      "chapterId": "chapter-23",
+      "paragraphIds": [
+        "mwdA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "873-1",
+          "paragraphId": "mwdA",
+          "start": 0,
+          "end": 86,
+          "kind": "chain",
+          "arabic": "[873] حدثنا يحيى بن بكير قال: حدثنا الليث عن عقيل عن ابن شهاب أن السائب بن يزيد أخبره ",
+          "english": "Yahya ibn Bukayr related to us. He said: al-Layth related to us, from ‘Uqayl, from Ibn Shihab, that al-Sa’ib ibn Yazid informed him:",
+          "arabicSha256": "16a9db0bc0ff5f47bfbc64f72f84cb3e9217e8b78e2a4cb4e82091637a8afae6",
+          "englishSha256": "f1af61adc7b50c3d724f40212b4c3036df2c054027a30863d063a51ef914d426"
+        },
+        {
+          "id": "873-2",
+          "paragraphId": "mwdA",
+          "start": 86,
+          "end": 186,
+          "kind": "report",
+          "arabic": "أن التأذين الثاني يوم الجمعة أمر به عثمان حين كثر أهل المسجد وكان التأذين يوم الجمعة حين يجلس الإمام",
+          "english": "The second call to prayer on Friday was ordered by ‘Uthman when the people of the mosque increased in number. The call to prayer on Friday was made when the imam sat down.",
+          "arabicSha256": "fc8ac66e82f89a896f99d37a2f68eb31f3212e49618659234bc946b24af638e1",
+          "englishSha256": "c01dc16f5f8f4a8dae09211adbd652f5ed804dfbe90f1e443d5354d0fa25f10d"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            232
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            221
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-friday-prayer",
+          "reference": "873"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.13.38",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.38",
+            "recordSha256": "f7ed253c206c60d2c960854840e97f83326144dfc76ced2096c14224d28d9c1d"
+          }
+        }
+      ],
+      "notes": [
+        "This source says second, whereas 870, 871 and 874 say third. Each wording remains as transmitted; the app does not harmonize their counts. No on-the-pulpit phrase is imported from other occurrences or the English comparison into this body. Modern print reference: 915."
+      ],
+      "reviewScope": "AI-assisted translation of every selected source span. Both identified Arabic prints visually inspected and both English comparison bodies individually read. One declared correction, full chains, alternate routes, narrator qualifications and comparison differences remain explicit. Independent Arabic, English, context, reference and spoken-word review remains pending; this is not accuracy certification.",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-friday-prayer-r484865",
+        "sourceSha256": "19f6c42edef071b00005381723dd996716fdbe446d4e82b4224ee7933a8591db",
+        "layoutAuditSha256": "279a04ca3009ab4ad3a1b6b31549fecf7b52c22f6a013f45d12000bbc2364720",
+        "layoutReviewSha256": "33df84ab937fa9047a965fff813da63877b40fdb32a487619748cc655dbbc38a",
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwdA:0",
+        "sourceReference": {
+          "label": "873",
+          "number": 873,
+          "markerId": "mwdA:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwdA",
+            "textSha256": "efed64802aa3cae4a88d616311943fa69d0d550512cbd7df76aca86cc93c7009",
+            "origin": {
+              "blockId": "mwdA",
+              "blockSha256": "efed64802aa3cae4a88d616311943fa69d0d550512cbd7df76aca86cc93c7009",
+              "start": 0,
+              "end": 186
+            }
+          }
+        ]
+      },
+      "arabicSha256": "efed64802aa3cae4a88d616311943fa69d0d550512cbd7df76aca86cc93c7009",
+      "englishSha256": "a2cf434e35797a64e2489d40e17588ead407059e4ffdbd53c1eb6f502443dc65",
+      "reviewRecordSha256": "e96c73035fb4a4773a4bca22f9e54503f309833a34d770e91b50a0cb3a27a9a0"
+    },
+    {
+      "number": 874,
+      "id": "bukhari:874",
+      "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwdg:0",
+      "chapterId": "chapter-24",
+      "paragraphIds": [
+        "mwdg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "874-1",
+          "paragraphId": "mwdg",
+          "start": 0,
+          "end": 99,
+          "kind": "chain",
+          "arabic": "[874] حدثنا محمد بن مقاتل قال: أخبرنا عبد الله قال: أخبرنا يونس عن الزهري قال: سمعت السائب بن يزيد ",
+          "english": "Muhammad ibn Muqatil related to us. He said: ‘Abdullah informed us. He said: Yunus informed us, from al-Zuhri, who said: I heard al-Sa’ib ibn Yazid:",
+          "arabicSha256": "f86f917beaf1fa6d766e38568c14ed7baa855886fb916a48850a5b05bf6ca742",
+          "englishSha256": "63344b5234840210e72bccddaf78ced1d28c760f3696fbed2008ad310261714b"
+        },
+        {
+          "id": "874-2",
+          "paragraphId": "mwdg",
+          "start": 99,
+          "end": 350,
+          "kind": "report",
+          "arabic": "يقول إن الأذان يوم الجمعة كان أوله حين يجلس الإمام يوم الجمعة على المنبر في عهد رسول الله ﷺ وأبي بكر وعمر رضى الله تعالى عنهما فلما كان في خلافة عثمان رضى الله تعالى عنه وكثروا أمر عثمان يوم الجمعة بالأذان الثالث فأذن به على الزوراء فثبت الأمر على ذلك",
+          "english": "He said: Originally, the call to prayer on Friday was made when the imam sat on the pulpit on Friday, during the time of the Messenger of Allah, may Allah bless him and grant him peace, Abu Bakr and ‘Umar, may Allah Most High be pleased with them both. During the caliphate of ‘Uthman, may Allah Most High be pleased with him, when they had increased in number, ‘Uthman ordered the third call to prayer on Friday. It was given at al-Zawra’, and the practice remained that way.",
+          "arabicSha256": "6e72f84a8169d3f92bfac03515172350f26bc9ad3136a54cc742a391f28cf35c",
+          "englishSha256": "11c889e772fe733555f9b879b783b2b4415efe47f84161d0ef18e3bdf66cf90a"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            232
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            221
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-friday-prayer",
+          "reference": "874"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.13.39",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.39",
+            "recordSha256": "c58a0c9242f50bce32f5473bc903810ba4c93d96585cf5ec95500decfb972c20"
+          }
+        }
+      ],
+      "notes": [
+        "The distinct chain, repeated Friday wording and final statement about the practice continuing are preserved. Brill expands the later ‘Uthman to ‘Uthman ibn ‘Affan; the selected short form remains. Modern print reference: 916."
+      ],
+      "reviewScope": "AI-assisted translation of every selected source span. Both identified Arabic prints visually inspected and both English comparison bodies individually read. One declared correction, full chains, alternate routes, narrator qualifications and comparison differences remain explicit. Independent Arabic, English, context, reference and spoken-word review remains pending; this is not accuracy certification.",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-friday-prayer-r484865",
+        "sourceSha256": "19f6c42edef071b00005381723dd996716fdbe446d4e82b4224ee7933a8591db",
+        "layoutAuditSha256": "279a04ca3009ab4ad3a1b6b31549fecf7b52c22f6a013f45d12000bbc2364720",
+        "layoutReviewSha256": "33df84ab937fa9047a965fff813da63877b40fdb32a487619748cc655dbbc38a",
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwdg:0",
+        "sourceReference": {
+          "label": "874",
+          "number": 874,
+          "markerId": "mwdg:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwdg",
+            "textSha256": "821392c0f2f86f75e02bf55bdcc1959c84de1ed90d4d18832334f85be2866e95",
+            "origin": {
+              "blockId": "mwdg",
+              "blockSha256": "821392c0f2f86f75e02bf55bdcc1959c84de1ed90d4d18832334f85be2866e95",
+              "start": 0,
+              "end": 350
+            }
+          }
+        ]
+      },
+      "arabicSha256": "821392c0f2f86f75e02bf55bdcc1959c84de1ed90d4d18832334f85be2866e95",
+      "englishSha256": "e37929bfc0a9225d5588b4139221098eb10c816046a986ed836a794c8b43df10",
+      "reviewRecordSha256": "5a73eed5dfb8a23dd3ed4870b86e7de06dd8014d7ce3c7351e6a767202714523"
+    },
+    {
+      "number": 875,
+      "id": "bukhari:875",
+      "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwew:0",
+      "chapterId": "chapter-25",
+      "paragraphIds": [
+        "mwew"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "875-1",
+          "paragraphId": "mwew",
+          "start": 0,
+          "end": 139,
+          "kind": "chain",
+          "arabic": "[875] حدثنا قتيبة بن سعيد قال: حدثنا يعقوب بن عبد الرحمن بن محمد بن عبد الله بن عبد القاري القرشي الإسكندراني قال: حدثنا أبو حازم بن دينار ",
+          "english": "Qutaybah ibn Sa‘id related to us. He said: Ya‘qub ibn ‘Abd al-Rahman ibn Muhammad ibn ‘Abdullah ibn ‘Abd, al-Qari al-Qurashi al-Iskandarani related to us. He said: Abu Hazim ibn Dinar related to us:",
+          "arabicSha256": "7367721c78e3135c20cddf108df519138ec55846e68d43e22c15c50bdf9bc2e0",
+          "englishSha256": "6862521b5c7c65d69446d23fb5d1c46eb2e93ac861f3eb21020e1892539be478"
+        },
+        {
+          "id": "875-2",
+          "paragraphId": "mwew",
+          "start": 139,
+          "end": 670,
+          "kind": "report",
+          "arabic": "أن رجالا أتوا سهل بن سعد الساعدي وقد امتروا في المنبر مم عوده فسألوه عن ذلك، فقال والله إني لأعرف مما هو ولقد رأيته أول يوم وضع وأول يوم جلس عليه رسول الله ﷺ أرسل رسول الله ﷺ إلى فلانة امرأة قد سماها سهل مري غلامك النجار أن يعمل لي أعوادا أجلس عليهن إذا كلمت الناس فأمرته فعملها من طرفاء الغابة ثم جاء بها فأرسلت إلى رسول الله ﷺ فأمر بها فوضعت ها هنا ثم رأيت رسول الله ﷺ صلى عليها وكبر وهو عليها ثم ركع وهو عليها ثم نزل القهقري فسجد في أصل المنبر ثم عاد فلما فرغ أقبل على الناس، فقال أيها الناس إنما صنعت هذا لتأتموا ولتعلموا صلاتي",
+          "english": "Some men came to Sahl ibn Sa‘d al-Sa‘idi, having disagreed about what wood the pulpit was made of. They asked him about it. He said, “By Allah, I certainly know what it is made of. I saw it on the first day it was put in place and the first day the Messenger of Allah, may Allah bless him and grant him peace, sat on it. The Messenger of Allah, may Allah bless him and grant him peace, sent to a certain woman, whom Sahl named: ‘Instruct your slave, the carpenter, to make me pieces of wood on which I can sit when I speak to the people.’ She instructed him, and he made them from tamarisk from al-Ghabah. Then he brought them, and she sent them to the Messenger of Allah, may Allah bless him and grant him peace. He ordered them to be put here. Then I saw the Messenger of Allah, may Allah bless him and grant him peace, pray on them and say the takbir while on them, then bow while on them. Then he descended backwards and prostrated at the foot of the pulpit, then returned. When he finished, he turned to the people and said, ‘People, I only did this so that you would follow me and learn my prayer.’”",
+          "arabicSha256": "79d17c003c45b60d3712027adf1e768f358e7f656c35bd3d40919726f2547ba3",
+          "englishSha256": "8d96dece4bc35f883fe4cb8109442195d016022da4a87d9d1172446990a6aa58"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            232,
+            233
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            221,
+            222
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-friday-prayer",
+          "reference": "875"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.13.40",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.40",
+            "recordSha256": "2396d5a0ddd37346792caac4e525a55a50f86629988a6d93145a7e016c566114"
+          }
+        }
+      ],
+      "notes": [
+        "The complete long lineage, both first-day observations, Sahl’s mention that he named the woman, all four honorifics, the takbir, bowing and backward descent remain. Brill adds from the Ansar after woman; the selected source and modern print do not. Brill’s chain names Qutaybah without ibn Sa‘id, and its closing لتأتموا بي adds with me; the selected forms are retained. Al-Ghabah is kept as a place name, supported by Ibn Hajar’s lexical discussion, rather than replaced with desert. Khan omits the separate first placement and takbir; Bewley does not explicitly retain the backward direction. Modern print reference: 917.",
+        "The comma after the ancestor ‘Abd in the English chain follows the vocalized printed form عبدٍ القاريُّ: ‘Abd is the ancestor’s name and al-Qari is the subsequent attribution. No Arabic wording is changed."
+      ],
+      "reviewScope": "AI-assisted translation of every selected source span. Both identified Arabic prints visually inspected and both English comparison bodies individually read. One declared correction, full chains, alternate routes, narrator qualifications and comparison differences remain explicit. Independent Arabic, English, context, reference and spoken-word review remains pending; this is not accuracy certification.",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-friday-prayer-r484865",
+        "sourceSha256": "19f6c42edef071b00005381723dd996716fdbe446d4e82b4224ee7933a8591db",
+        "layoutAuditSha256": "279a04ca3009ab4ad3a1b6b31549fecf7b52c22f6a013f45d12000bbc2364720",
+        "layoutReviewSha256": "33df84ab937fa9047a965fff813da63877b40fdb32a487619748cc655dbbc38a",
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwew:0",
+        "sourceReference": {
+          "label": "875",
+          "number": 875,
+          "markerId": "mwew:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwew",
+            "textSha256": "64bb878ad1bfb1fadb2d30158a6f87ae5154ff34dd0b6ccc4deece9077be35c1",
+            "origin": {
+              "blockId": "mwew",
+              "blockSha256": "64bb878ad1bfb1fadb2d30158a6f87ae5154ff34dd0b6ccc4deece9077be35c1",
+              "start": 0,
+              "end": 670
+            }
+          }
+        ]
+      },
+      "arabicSha256": "64bb878ad1bfb1fadb2d30158a6f87ae5154ff34dd0b6ccc4deece9077be35c1",
+      "englishSha256": "53b6c52f94f68c25d662951b18427daf37a1273110f7113aab665a8e52f4f215",
+      "additionalCitations": [
+        {
+          "id": "commentary-fath-friday-875",
+          "sourceId": "fath-friday-875",
+          "locator": "Fath al-Bari · commentary on selected report 875",
+          "scope": "Consulted for lexical and narrator-name distinctions only. Commentary is separate from the selected wording; independent review is pending."
+        }
+      ],
+      "reviewRecordSha256": "353c648e681e80523936f614fa74b21cc0bf0957bb174a7c90743cc0ebb89754"
+    },
+    {
+      "number": 876,
+      "id": "bukhari:876",
+      "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwgA:0",
+      "chapterId": "chapter-25",
+      "paragraphIds": [
+        "mwgA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "876-1",
+          "paragraphId": "mwgA",
+          "start": 0,
+          "end": 123,
+          "kind": "chain",
+          "arabic": "[876] حدثنا سعيد بن أبي مريم قال: حدثنا محمد بن جعفر قال: أخبرني يحيى بن سعيد قال: أخبرني ابن أنس أنه سمع جابر بن عبد الله ",
+          "english": "Sa‘id ibn Abi Maryam related to us. He said: Muhammad ibn Ja‘far related to us. He said: Yahya ibn Sa‘id informed me. He said: Ibn Anas informed me that he heard Jabir ibn ‘Abdullah:",
+          "arabicSha256": "1b6cd6d04b5ee822feb8e39cbedb715dc5f9001c4467636c75ca907f9b898cfc",
+          "englishSha256": "b7720d46cd8fd42fa9294b6f9ae89df7ad12c682ee8fb887af75152443261015"
+        },
+        {
+          "id": "876-2",
+          "paragraphId": "mwgA",
+          "start": 123,
+          "end": 232,
+          "kind": "report",
+          "arabic": "قال: كان جذع يقوم إليه النبي ﷺ فلما وضع له المنبر سمعنا للجذع مثل أصوات العشار حتى نزل النبي ﷺ فوضع يده عليه ",
+          "english": "He said: There was a trunk by which the Prophet, may Allah bless him and grant him peace, used to stand. When the pulpit was put in place for him, we heard from the trunk sounds like those of she-camels in late pregnancy, until the Prophet, may Allah bless him and grant him peace, came down and placed his hand on it.",
+          "arabicSha256": "b4f5e4b6525aa16cd57b6afeecfe7d5995fb4a7384e7999e86ce2ccba9b5bdd9",
+          "englishSha256": "278a7ca1dfb1a79be20105ab8dd36df22ac5907a90569cfefb61c0911cc0b1d9"
+        },
+        {
+          "id": "876-3",
+          "paragraphId": "mwgA",
+          "start": 232,
+          "end": 295,
+          "kind": "transmission-note",
+          "arabic": "قال سليمان عن يحيى أخبرني حفص بن عبيد الله بن أنس أنه سمع جابرا",
+          "english": "Sulayman said, from Yahya: Hafs ibn ‘Ubaydullah ibn Anas informed me that he heard Jabir.",
+          "arabicSha256": "62b3f6e64542fa1d6bc5d6eeef8e554dec3b72065a037c6b7ff2829b7dd200b0",
+          "englishSha256": "c1b61df4dda913f5e0403b6600af1e2abf9eb96bd1413a373542f5a01ee5218a"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            233
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            222
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-friday-prayer",
+          "reference": "876",
+          "status": "abbreviated-report",
+          "note": "The closing route is shortened to Anas hearing from Jabir; it does not preserve the selected name or full links."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.13.41",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.41",
+            "recordSha256": "1a3c0a4396f3f5ba20147e7352b3333289898b7e0a07046968ee3be1df595db7"
+          }
+        }
+      ],
+      "notes": [
+        "The initial Ibn Anas stays abbreviated and the closing route supplies its own full name. Brill gives expanded and different names in the opening route, including Muhammad ibn Ja‘far ibn Abi Kathir and Yahya ibn Muhammad, and expands the closing Jabir to Jabir ibn ‘Abdullah; the selected names agree with the modern print and remain unchanged. Bewley’s final Anas heard it from Jabir does not preserve this full closing route; Khan omits it. The plural العشار is rendered she-camels in late pregnancy, following Ibn Hajar’s lexical explanation. Modern print reference: 918."
+      ],
+      "reviewScope": "AI-assisted translation of every selected source span. Both identified Arabic prints visually inspected and both English comparison bodies individually read. One declared correction, full chains, alternate routes, narrator qualifications and comparison differences remain explicit. Independent Arabic, English, context, reference and spoken-word review remains pending; this is not accuracy certification.",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-friday-prayer-r484865",
+        "sourceSha256": "19f6c42edef071b00005381723dd996716fdbe446d4e82b4224ee7933a8591db",
+        "layoutAuditSha256": "279a04ca3009ab4ad3a1b6b31549fecf7b52c22f6a013f45d12000bbc2364720",
+        "layoutReviewSha256": "33df84ab937fa9047a965fff813da63877b40fdb32a487619748cc655dbbc38a",
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwgA:0",
+        "sourceReference": {
+          "label": "876",
+          "number": 876,
+          "markerId": "mwgA:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwgA",
+            "textSha256": "c9f442cb5247bce418f83319a82e1c2a4306b4ac41bcd349d8dc5adcc22ba337",
+            "origin": {
+              "blockId": "mwgA",
+              "blockSha256": "c9f442cb5247bce418f83319a82e1c2a4306b4ac41bcd349d8dc5adcc22ba337",
+              "start": 0,
+              "end": 295
+            }
+          }
+        ]
+      },
+      "arabicSha256": "c9f442cb5247bce418f83319a82e1c2a4306b4ac41bcd349d8dc5adcc22ba337",
+      "englishSha256": "342c64e9f47a3b63e70ca711f21e1ab558ac9f1051c0831ad96bd95e882d6edd",
+      "additionalCitations": [
+        {
+          "id": "commentary-fath-friday-876",
+          "sourceId": "fath-friday-876",
+          "locator": "Fath al-Bari · commentary on selected report 876",
+          "scope": "Consulted for lexical and narrator-name distinctions only. Commentary is separate from the selected wording; independent review is pending."
+        }
+      ],
+      "reviewRecordSha256": "84a64f5225e6fca1ccc6d722bd7d4d41706658c2d082f48923c3f34d33fc7da3"
+    },
+    {
+      "number": 877,
+      "id": "bukhari:877",
+      "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwgw:0",
+      "chapterId": "chapter-25",
+      "paragraphIds": [
+        "mwgw"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "877-1",
+          "paragraphId": "mwgw",
+          "start": 0,
+          "end": 65,
+          "kind": "chain",
+          "arabic": "[877] حدثنا آدم قال: حدثنا ابن أبي ذئب عن الزهري عن سالم عن أبيه ",
+          "english": "Adam related to us. He said: Ibn Abi Dhi’b related to us, from al-Zuhri, from Salim, from his father:",
+          "arabicSha256": "1931061ad6964cc6352958030e403ce9b5eb1de9e13098fa3d77692177d534bd",
+          "englishSha256": "5e0edfe703f65c78bfae2fa48258e2778126be28fa2f9100c373549ff5514267"
+        },
+        {
+          "id": "877-2",
+          "paragraphId": "mwgw",
+          "start": 65,
+          "end": 130,
+          "kind": "report",
+          "arabic": "قال: سمعت النبي ﷺ يخطب على المنبر، فقال من جاء إلى الجمعة فليغتسل",
+          "english": "He said: I heard the Prophet, may Allah bless him and grant him peace, delivering a sermon on the pulpit. He said, “Whoever comes to the Friday prayer, let him take a bath.”",
+          "arabicSha256": "bd723755eb159d46e59496d7cb6fb0cc735b43ec5f6c316cb5e6bd26c9ae09f3",
+          "englishSha256": "3c6a99cb0220af6ba749edfe32918ab97f7b1833b8beb1c1d897a8be2c42dfd9"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            233
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            222
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-friday-prayer",
+          "reference": "877"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.13.42",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.42",
+            "recordSha256": "fa3107fe2d6f1202bd6ad441819a392cc6e4fd6d819610e0a381beefe9da456c"
+          }
+        }
+      ],
+      "notes": [
+        "The selected short Adam and his father remain without names supplied from Brill or commentary. The sermon setting and the explicit hearing remain. The comparison’s before coming addition is not inserted. Modern print reference: 919."
+      ],
+      "reviewScope": "AI-assisted translation of every selected source span. Both identified Arabic prints visually inspected and both English comparison bodies individually read. One declared correction, full chains, alternate routes, narrator qualifications and comparison differences remain explicit. Independent Arabic, English, context, reference and spoken-word review remains pending; this is not accuracy certification.",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-friday-prayer-r484865",
+        "sourceSha256": "19f6c42edef071b00005381723dd996716fdbe446d4e82b4224ee7933a8591db",
+        "layoutAuditSha256": "279a04ca3009ab4ad3a1b6b31549fecf7b52c22f6a013f45d12000bbc2364720",
+        "layoutReviewSha256": "33df84ab937fa9047a965fff813da63877b40fdb32a487619748cc655dbbc38a",
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwgw:0",
+        "sourceReference": {
+          "label": "877",
+          "number": 877,
+          "markerId": "mwgw:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwgw",
+            "textSha256": "2e0bf39d1fe265acb9e9582b4ed2999c086901f903b5b5b324c9ccd9ac4a19da",
+            "origin": {
+              "blockId": "mwgw",
+              "blockSha256": "2e0bf39d1fe265acb9e9582b4ed2999c086901f903b5b5b324c9ccd9ac4a19da",
+              "start": 0,
+              "end": 130
+            }
+          }
+        ]
+      },
+      "arabicSha256": "2e0bf39d1fe265acb9e9582b4ed2999c086901f903b5b5b324c9ccd9ac4a19da",
+      "englishSha256": "32a247e921dfe7a5d08e11d0f092e92a21924319c4b5eaedfb5aca2f63ebf1ac",
+      "reviewRecordSha256": "f9d458e33658f9ed6e16854f349d95e3a39457f140be41d9d75ce87a17399341"
+    },
+    {
+      "number": 878,
+      "id": "bukhari:878",
+      "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwiA:0",
+      "chapterId": "chapter-26",
+      "paragraphIds": [
+        "mwiA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "878-1",
+          "paragraphId": "mwiA",
+          "start": 0,
+          "end": 126,
+          "kind": "chain",
+          "arabic": "[878] حدثنا عبيد الله بن عمر القواريري قال: حدثنا خالد بن الحارث قال: حدثنا عبيد الله عن نافع عن ابن عمر رضى الله تعالى عنهما ",
+          "english": "‘Ubaydullah ibn ‘Umar al-Qawariri related to us. He said: Khalid ibn al-Harith related to us. He said: ‘Ubaydullah related to us, from Nafi‘, from Ibn ‘Umar, may Allah Most High be pleased with them both:",
+          "arabicSha256": "9e44fa4c78833eb82cbe6bbadb98167c7302cb377036e025f80fabf442667649",
+          "englishSha256": "c0cfb43a612151092b467c90151fcf9fd76c891611468f2c2590b444403ac64f"
+        },
+        {
+          "id": "878-2",
+          "paragraphId": "mwiA",
+          "start": 126,
+          "end": 185,
+          "kind": "report",
+          "arabic": "قال: كان النبي ﷺ يخطب قائما ثم يقعد ثم يقوم كما تفعلون الآن",
+          "english": "He said: The Prophet, may Allah bless him and grant him peace, used to deliver the sermon standing, then sit down, then stand up, as you do now.",
+          "arabicSha256": "c5f8d0b59d82d12d542e90378056285c50ee0dc335df8a571d3ba28939f9fab8",
+          "englishSha256": "0e6dce4c78721d0b77ef620d02c46e30a0bbf7905fe08b70da85db9975c855d6"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            233
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            222
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-friday-prayer",
+          "reference": "878"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.13.43",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.43",
+            "recordSha256": "26f7f3d8e2c8b849d947a6c991b38ee7feede8562921477660c889a33c4ad934"
+          }
+        }
+      ],
+      "notes": [
+        "The sequence standing, sitting and standing again remains. The second ‘Ubaydullah stays short rather than taking ibn ‘Umar from Brill. Anas’s preceding quotation is separate chapter context and is not joined to this numbered report. Modern print reference: 920."
+      ],
+      "reviewScope": "AI-assisted translation of every selected source span. Both identified Arabic prints visually inspected and both English comparison bodies individually read. One declared correction, full chains, alternate routes, narrator qualifications and comparison differences remain explicit. Independent Arabic, English, context, reference and spoken-word review remains pending; this is not accuracy certification.",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-friday-prayer-r484865",
+        "sourceSha256": "19f6c42edef071b00005381723dd996716fdbe446d4e82b4224ee7933a8591db",
+        "layoutAuditSha256": "279a04ca3009ab4ad3a1b6b31549fecf7b52c22f6a013f45d12000bbc2364720",
+        "layoutReviewSha256": "33df84ab937fa9047a965fff813da63877b40fdb32a487619748cc655dbbc38a",
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwiA:0",
+        "sourceReference": {
+          "label": "878",
+          "number": 878,
+          "markerId": "mwiA:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwiA",
+            "textSha256": "c2c53a0cc97e12ef614b8a2b9690cd61d43148e647a2de3e609d643186ae4bcb",
+            "origin": {
+              "blockId": "mwiA",
+              "blockSha256": "c2c53a0cc97e12ef614b8a2b9690cd61d43148e647a2de3e609d643186ae4bcb",
+              "start": 0,
+              "end": 185
+            }
+          }
+        ]
+      },
+      "arabicSha256": "c2c53a0cc97e12ef614b8a2b9690cd61d43148e647a2de3e609d643186ae4bcb",
+      "englishSha256": "5ddda9cb88b91528f6ead4425fa9400921840d22a2b73eecf4f6aaa643031dca",
+      "reviewRecordSha256": "b150a6da4c930138ef56765c6d42bced562b1008207daea78130f61113ab10bf"
+    },
+    {
+      "number": 879,
+      "id": "bukhari:879",
+      "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwjA:0",
+      "chapterId": "chapter-27",
+      "paragraphIds": [
+        "mwjA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "879-1",
+          "paragraphId": "mwjA",
+          "start": 0,
+          "end": 115,
+          "kind": "chain",
+          "arabic": "[879] حدثنا معاذ بن فضالة قال: حدثنا هشام عن يحيى عن هلال بن أبي ميمونة حدثنا عطاء بن يسار أنه سمع أبا سعيد الخدري ",
+          "english": "Mu‘adh ibn Fadalah related to us. He said: Hisham related to us, from Yahya, from Hilal ibn Abi Maymunah. ‘Ata’ ibn Yasar related to us that he heard Abu Sa‘id al-Khudri:",
+          "arabicSha256": "bd5feb4f9b14013aa4cbcb84ec971c77fc40eda56776b969c0f437817317ef90",
+          "englishSha256": "a79d9f7223533a12ad0846501e899cbfba55fe0b16ff12a9b013dfa8972ef0a3"
+        },
+        {
+          "id": "879-2",
+          "paragraphId": "mwjA",
+          "start": 115,
+          "end": 164,
+          "kind": "report",
+          "arabic": "قال إن النبي ﷺ جلس ذات يوم على المنبر وجلسنا حوله",
+          "english": "He said: The Prophet, may Allah bless him and grant him peace, sat on the pulpit one day, and we sat around him.",
+          "arabicSha256": "3c94ed63f34f7df51b1ad30a2574fca7a3d3381b95d00c0d71a2976796735b0b",
+          "englishSha256": "f42f8639fb2ea311c685ede7a04007bf4210c94ca36cf1a675070f96a791e581"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            233
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            222
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-friday-prayer",
+          "reference": "879"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.13.44",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.44",
+            "recordSha256": "d2b0e1f9f5eb46b664e6739b6d5a6c7814e995100d29d4fa1ba7b8478faa4fa1"
+          }
+        }
+      ],
+      "notes": [
+        "The short report and complete chain are individually matched to pinned English record 2.13.44. That legacy number must not also be used as evidence for the following long Asma’ report, which is absent from this exact EPUB record. Brill has Abu Sa‘id without al-Khudri; the selected source and modern print include al-Khudri. Modern print reference: 921."
+      ],
+      "reviewScope": "AI-assisted translation of every selected source span. Both identified Arabic prints visually inspected and both English comparison bodies individually read. One declared correction, full chains, alternate routes, narrator qualifications and comparison differences remain explicit. Independent Arabic, English, context, reference and spoken-word review remains pending; this is not accuracy certification.",
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-friday-prayer-r484865",
+        "sourceSha256": "19f6c42edef071b00005381723dd996716fdbe446d4e82b4224ee7933a8591db",
+        "layoutAuditSha256": "279a04ca3009ab4ad3a1b6b31549fecf7b52c22f6a013f45d12000bbc2364720",
+        "layoutReviewSha256": "33df84ab937fa9047a965fff813da63877b40fdb32a487619748cc655dbbc38a",
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwjA:0",
+        "sourceReference": {
+          "label": "879",
+          "number": 879,
+          "markerId": "mwjA:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwjA",
+            "textSha256": "59c2eb745b4f844474ab01e0ea5d52ced751cc31c1fed260a76b775aee3731b2",
+            "origin": {
+              "blockId": "mwjA",
+              "blockSha256": "59c2eb745b4f844474ab01e0ea5d52ced751cc31c1fed260a76b775aee3731b2",
+              "start": 0,
+              "end": 164
+            }
+          }
+        ]
+      },
+      "arabicSha256": "59c2eb745b4f844474ab01e0ea5d52ced751cc31c1fed260a76b775aee3731b2",
+      "englishSha256": "b51848710137b882bf166969f64d73d22e21644a891c6d88476a523c9e27e1cd",
+      "reviewRecordSha256": "226b37a2376526ee674083370effa20d4d5926c19e8c6345a595ede27e815f01"
+    }
+  ]
+}
