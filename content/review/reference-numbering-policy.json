@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "stable-suffix-for-printed-omissions",
+  "status": "user-confirmed",
+  "recordedAt": "2026-11-02T23:22:48.544658+00:00",
+  "userReply": "Use this convention going forward (Recommended)",
+  "question": "Use app reference 983b, prominently retain printed reference 1030, and follow the same suffix convention for future omissions? This decides numbering only; wording review stays separate.",
+  "convention": {
+    "kind": "complete-reports-absent-from-selected-digital-source",
+    "keepExistingReferences": true,
+    "keepPrintedReferenceProminent": true,
+    "newReference": "Use the existing suffix convention, starting with b after the preceding app reference and advancing to the next unused letter for further distinct printed occurrences.",
+    "preserveSavedSessions": true
+  },
+  "confirmedCases": [
+    {
+      "appReference": "983b",
+      "printedReference": "1030",
+      "afterReference": 983,
+      "beforeReference": 984
+    }
+  ],
+  "limits": [
+    "Numbering only; does not approve transcription, translation, reuse rights, narration or external publication.",
+    "Each added report still needs its own complete source record, two printed witnesses, exact location, comparison limits and explicit personal-prototype admission."
+  ]
+}

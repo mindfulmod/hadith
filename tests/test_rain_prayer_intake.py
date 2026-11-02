@@ -60,4 +60,20 @@ class RainPrayerIntakeTests(unittest.TestCase):
  def test_review_page_is_reproducible_and_candidates_are_not_in_reader(self):
   a,r,c,i,en=self.values;html=check.render(a,r,c);self.assertEqual((ROOT/'research/rain-prayer-source-review.html').read_text(),html)
   catalog=check.read('reader/books/catalog.json');self.assertNotIn('983b',[e['number']for e in catalog['entries']]);self.assertFalse(i['readerEligible']);self.assertIn('not added to the reader',html)
+ def test_numbering_confirmation_preserves_the_original_audit_and_does_not_admit_wording(self):
+  a,r,c,i,en=self.values;original=copy.deepcopy(r);result=check.current_missing_report(a,r)
+  self.assertEqual(r,original);self.assertEqual(r['referenceDecision']['status'],'pending');self.assertEqual(result['referenceDecision']['status'],'user-confirmed')
+  self.assertEqual(result['referenceDecision']['appReference'],'983b');self.assertEqual(result['referenceDecision']['printedReference'],'1030')
+  self.assertFalse(result['readerEligible']);self.assertEqual(result['independentReview'],'pending');self.assertEqual(result['arabic'],original['arabic']);self.assertEqual(result['workingEnglish'],original['workingEnglish'])
+  self.assertEqual(result['witnesses'][1],original['witnesses'][1]);self.assertEqual(result['witnesses'][0]['reading'],original['witnesses'][0]['reading'].replace('وسلم أنه رفع','وسلم رفع'))
+ def test_followup_rejects_changed_sources_transcription_or_false_approval(self):
+  a,r,c,i,en=self.values;f=check.read('content/review/rain-prayer-missing-report-followup.json');p=check.read('content/review/reference-numbering-policy.json')
+  for mutate in [lambda f:f.update(originalCandidateSha256='0'*64),lambda f:f.update(sourceAuditSha256='0'*64),lambda f:f.update(readerEligible=True),lambda f:f.update(independentReview='approved'),lambda f:f['referenceDecision'].update(appReference='984b'),lambda f:f['witnessCorrections'][0].update(pdfPage=261),lambda f:f['witnessCorrections'][0].update(reading=r['witnesses'][0]['reading'])]:
+   changed=copy.deepcopy(f);mutate(changed)
+   with self.assertRaises(ValueError):check.current_missing_report(a,r,changed,p)
+ def test_numbering_policy_cannot_silently_renumber_or_expand_sessions(self):
+  a,r,c,i,en=self.values;f=check.read('content/review/rain-prayer-missing-report-followup.json');p=check.read('content/review/reference-numbering-policy.json')
+  for key in ['keepExistingReferences','keepPrintedReferenceProminent','preserveSavedSessions']:
+   changed=copy.deepcopy(p);changed['convention'][key]=False;followup=copy.deepcopy(f);followup['referencePolicySha256']=check.hashjson(changed)
+   with self.assertRaises(ValueError):check.current_missing_report(a,r,followup,changed)
 if __name__=='__main__':unittest.main()

@@ -1,0 +1,221 @@
+{
+  "numberingPolicy": {
+    "schemaVersion": 1,
+    "id": "stable-suffix-for-printed-omissions",
+    "status": "user-confirmed",
+    "recordedAt": "2026-11-02T23:22:48.544658+00:00",
+    "userReply": "Use this convention going forward (Recommended)",
+    "question": "Use app reference 983b, prominently retain printed reference 1030, and follow the same suffix convention for future omissions? This decides numbering only; wording review stays separate.",
+    "convention": {
+      "kind": "complete-reports-absent-from-selected-digital-source",
+      "keepExistingReferences": true,
+      "keepPrintedReferenceProminent": true,
+      "newReference": "Use the existing suffix convention, starting with b after the preceding app reference and advancing to the next unused letter for further distinct printed occurrences.",
+      "preserveSavedSessions": true
+    },
+    "confirmedCases": [
+      {
+        "appReference": "983b",
+        "printedReference": "1030",
+        "afterReference": 983,
+        "beforeReference": 984
+      }
+    ],
+    "limits": [
+      "Numbering only; does not approve transcription, translation, reuse rights, narration or external publication.",
+      "Each added report still needs its own complete source record, two printed witnesses, exact location, comparison limits and explicit personal-prototype admission."
+    ]
+  },
+  "followup": {
+    "schemaVersion": 1,
+    "status": "source-candidate-only-not-admitted",
+    "readerEligible": false,
+    "reviewerKind": "ai",
+    "independentReview": "pending",
+    "checkedAt": "2026-11-02T23:22:48.546668+00:00",
+    "originalCandidateSha256": "72ff42a93439be0ffdb3224bfa24b5490ecb5db97d0247357e9a3f9bc8838fdc",
+    "sourceAuditSha256": "d753a7a165f951d020cf7259f501610b372c2652b7188cae5998db4c2709955c",
+    "referencePolicyId": "stable-suffix-for-printed-omissions",
+    "referencePolicySha256": "ff6d91b7a4d337ff8ebaa111a6188b428f571d84c4b420da0cbfff2f46952cbd",
+    "referenceDecision": {
+      "status": "user-confirmed",
+      "appReference": "983b",
+      "printedReference": "1030",
+      "userReply": "Use this convention going forward (Recommended)"
+    },
+    "witnessCorrections": [
+      {
+        "sourceId": "brill-1862",
+        "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+        "pdfPage": 262,
+        "originalReadingSha256": "b2e4af3752541ea9cb95bec677a56d8b04c37163b81cfb8ee63b470cb03545bb",
+        "reading": "وقال الأويسي حدثني محمد بن جعفر عن يحيى بن سعيد وشريك سمعا أنسا عن النبي صلى الله عليه وسلم رفع يديه حتى رأيت بياض إبطيه",
+        "readingSha256": "a83701bd1cd2fb37b41c8ddb2c57d4b534754fa200d27ccfef93981ddebae0ae",
+        "differenceNote": "The historical print writes the honorific in full and proceeds directly to rafa‘a (raised), without annahu (that he). The selected modern print includes annahu. The gloss immediately before this chain belongs to the previous report.",
+        "reason": "Reinspection of the complete rendered Brill page 262 found that the intake transcription had incorrectly inserted annahu from the modern reading. Only this witness transcription is corrected; the selected modern Arabic and the immutable intake audit remain unchanged."
+      }
+    ],
+    "reviewNote": "983b is the user-confirmed app reference; printed reference 1030 remains prominent. The historical witness transcription below has been corrected after reinspection: unlike the modern print, it does not include annahu (that he). The original candidate and audit remain available as historical evidence. Reader admission and independent wording review are still pending."
+  },
+  "originalCandidate": {
+    "schemaVersion": 1,
+    "status": "source-candidate-only-not-admitted",
+    "reviewerKind": "ai",
+    "independentReview": "pending",
+    "readerEligible": false,
+    "kind": "complete-numbered-report",
+    "proposedAppReference": "983b",
+    "printedReference": "1030",
+    "referenceDecision": {
+      "status": "pending",
+      "basis": "Use the same suffix convention previously chosen for 724b and 835b/835c; this new reference is not yet user-confirmed."
+    },
+    "digitalSourceId": "wikisource-bukhari-rain-prayer-r484861",
+    "digitalSourceSha256": "134d33e313bd1082d028a0d38b4d1deb8cec13eabb6f1f088118dc83083ce499",
+    "digitalInventorySha256": "e400c540c79eff29039241f25a7da1b76a5507be652573f380a9c257bfef505d",
+    "afterReference": 983,
+    "beforeReference": 984,
+    "previousArabicSha256": "68afc1769390fab78dd127d6454d176b730411f12be04073a65d859bce96d77d",
+    "nextArabicSha256": "81580dbf58926d3c2367f3a914b81f72df87f141ec166c6e33c444be48b5f199",
+    "chapterId": "chapter-20",
+    "printedChapterNumber": 21,
+    "reason": "Both inspected prints contain the al-Uwaysi report after the account at selected reference 983 and before the next chapter and selected reference 984. It has its own chain and a distinct first-person report, not an editorial footnote. The modern edition numbers it 1030. The pinned digital source and Bewley sequence omit this separate occurrence.",
+    "selectedWitnessId": "dar-ibn-kathir-2002",
+    "arabic": "وقال الأويسي حدثني محمد بن جعفر عن يحيى بن سعيد وشريك سمعا أنسا عن النبي ﷺ أنه رفع يديه حتى رأيت بياض إبطيه",
+    "arabicSha256": "c139952e7de743640345357078ea86a7cc746c00bd7bbfdb5fb8b098a39cf599",
+    "transcriptionPolicy": "AI manual unvowelled transcription. Vowel marks, report/chapter numbers, ornament, quotation punctuation and editorial cross-references are excluded. The printed Prophet honorific is represented as ﷺ in the selected modern reading; lexical words are retained. This is not a facsimile. Independent transcription review remains pending.",
+    "witnesses": [
+      {
+        "sourceId": "brill-1862",
+        "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+        "pdfPage": 262,
+        "reading": "وقال الأويسي حدثني محمد بن جعفر عن يحيى بن سعيد وشريك سمعا أنسا عن النبي صلى الله عليه وسلم أنه رفع يديه حتى رأيت بياض إبطيه",
+        "readingSha256": "b2e4af3752541ea9cb95bec677a56d8b04c37163b81cfb8ee63b470cb03545bb",
+        "chapterPlacement": "After the first report in printed chapter 21 and before chapter 22.",
+        "differenceNote": "The printed honorific is written in full. The immediately preceding lexical gloss belongs to the previous report and is not part of this chain."
+      },
+      {
+        "sourceId": "dar-ibn-kathir-2002",
+        "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+        "pdfPage": 250,
+        "reading": "وقال الأويسي حدثني محمد بن جعفر عن يحيى بن سعيد وشريك سمعا أنسا عن النبي ﷺ أنه رفع يديه حتى رأيت بياض إبطيه",
+        "readingSha256": "c139952e7de743640345357078ea86a7cc746c00bd7bbfdb5fb8b098a39cf599",
+        "reference": "1030",
+        "chapterPlacement": "Printed reference 1030, within chapter 21; before chapter 22 and reference 1031."
+      }
+    ],
+    "workingEnglish": {
+      "status": "candidate-translation-not-admitted",
+      "chain": "And al-Uwaysi said: Muhammad ibn Ja‘far told me, from Yahya ibn Sa‘id and Sharik, who both heard Anas, from the Prophet ﷺ,",
+      "report": "that he raised his hands until I saw the whiteness of his armpits."
+    },
+    "comparisonLimits": [
+      {
+        "sourceId": "sunnah-com-1030",
+        "url": "https://sunnah.com/bukhari:1030",
+        "status": "individual-report-inspected",
+        "note": "Its Arabic contains this separate chain and first-person I saw. Its English abbreviates the chain and uses a passive description; that change is not copied. This is not evidence of reuse or narration rights."
+      },
+      {
+        "sourceId": "islamhouse-khan",
+        "status": "not-present-in-checked-sequence",
+        "checkedReferences": [
+          "2.17.140",
+          "2.17.141"
+        ],
+        "note": "The deprecated 2.17.140 label displayed on Sunnah.com is not a content match to the pinned EPUB record with that number: the EPUB 140 is the Abdullah ibn Zayd cloak report. The missing al-Uwaysi occurrence is absent between checked EPUB 140 and 141."
+      },
+      {
+        "sourceId": "bewley-rain-prayer",
+        "status": "not-present-in-checked-sequence",
+        "checkedReferences": [
+          "983",
+          "984"
+        ],
+        "note": "The checked page moves directly from the bedouin account to chapter XXI and 984. It has no separate al-Uwaysi report."
+      }
+    ]
+  },
+  "reviewedCandidate": {
+    "schemaVersion": 1,
+    "status": "source-candidate-only-not-admitted",
+    "reviewerKind": "ai",
+    "independentReview": "pending",
+    "readerEligible": false,
+    "kind": "complete-numbered-report",
+    "proposedAppReference": "983b",
+    "printedReference": "1030",
+    "referenceDecision": {
+      "status": "user-confirmed",
+      "appReference": "983b",
+      "printedReference": "1030",
+      "userReply": "Use this convention going forward (Recommended)"
+    },
+    "digitalSourceId": "wikisource-bukhari-rain-prayer-r484861",
+    "digitalSourceSha256": "134d33e313bd1082d028a0d38b4d1deb8cec13eabb6f1f088118dc83083ce499",
+    "digitalInventorySha256": "e400c540c79eff29039241f25a7da1b76a5507be652573f380a9c257bfef505d",
+    "afterReference": 983,
+    "beforeReference": 984,
+    "previousArabicSha256": "68afc1769390fab78dd127d6454d176b730411f12be04073a65d859bce96d77d",
+    "nextArabicSha256": "81580dbf58926d3c2367f3a914b81f72df87f141ec166c6e33c444be48b5f199",
+    "chapterId": "chapter-20",
+    "printedChapterNumber": 21,
+    "reason": "Both inspected prints contain the al-Uwaysi report after the account at selected reference 983 and before the next chapter and selected reference 984. It has its own chain and a distinct first-person report, not an editorial footnote. The modern edition numbers it 1030. The pinned digital source and Bewley sequence omit this separate occurrence.",
+    "selectedWitnessId": "dar-ibn-kathir-2002",
+    "arabic": "وقال الأويسي حدثني محمد بن جعفر عن يحيى بن سعيد وشريك سمعا أنسا عن النبي ﷺ أنه رفع يديه حتى رأيت بياض إبطيه",
+    "arabicSha256": "c139952e7de743640345357078ea86a7cc746c00bd7bbfdb5fb8b098a39cf599",
+    "transcriptionPolicy": "AI manual unvowelled transcription. Vowel marks, report/chapter numbers, ornament, quotation punctuation and editorial cross-references are excluded. The printed Prophet honorific is represented as ﷺ in the selected modern reading; lexical words are retained. This is not a facsimile. Independent transcription review remains pending.",
+    "witnesses": [
+      {
+        "sourceId": "brill-1862",
+        "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+        "pdfPage": 262,
+        "reading": "وقال الأويسي حدثني محمد بن جعفر عن يحيى بن سعيد وشريك سمعا أنسا عن النبي صلى الله عليه وسلم رفع يديه حتى رأيت بياض إبطيه",
+        "readingSha256": "a83701bd1cd2fb37b41c8ddb2c57d4b534754fa200d27ccfef93981ddebae0ae",
+        "chapterPlacement": "After the first report in printed chapter 21 and before chapter 22.",
+        "differenceNote": "The historical print writes the honorific in full and proceeds directly to rafa‘a (raised), without annahu (that he). The selected modern print includes annahu. The gloss immediately before this chain belongs to the previous report."
+      },
+      {
+        "sourceId": "dar-ibn-kathir-2002",
+        "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+        "pdfPage": 250,
+        "reading": "وقال الأويسي حدثني محمد بن جعفر عن يحيى بن سعيد وشريك سمعا أنسا عن النبي ﷺ أنه رفع يديه حتى رأيت بياض إبطيه",
+        "readingSha256": "c139952e7de743640345357078ea86a7cc746c00bd7bbfdb5fb8b098a39cf599",
+        "reference": "1030",
+        "chapterPlacement": "Printed reference 1030, within chapter 21; before chapter 22 and reference 1031."
+      }
+    ],
+    "workingEnglish": {
+      "status": "candidate-translation-not-admitted",
+      "chain": "And al-Uwaysi said: Muhammad ibn Ja‘far told me, from Yahya ibn Sa‘id and Sharik, who both heard Anas, from the Prophet ﷺ,",
+      "report": "that he raised his hands until I saw the whiteness of his armpits."
+    },
+    "comparisonLimits": [
+      {
+        "sourceId": "sunnah-com-1030",
+        "url": "https://sunnah.com/bukhari:1030",
+        "status": "individual-report-inspected",
+        "note": "Its Arabic contains this separate chain and first-person I saw. Its English abbreviates the chain and uses a passive description; that change is not copied. This is not evidence of reuse or narration rights."
+      },
+      {
+        "sourceId": "islamhouse-khan",
+        "status": "not-present-in-checked-sequence",
+        "checkedReferences": [
+          "2.17.140",
+          "2.17.141"
+        ],
+        "note": "The deprecated 2.17.140 label displayed on Sunnah.com is not a content match to the pinned EPUB record with that number: the EPUB 140 is the Abdullah ibn Zayd cloak report. The missing al-Uwaysi occurrence is absent between checked EPUB 140 and 141."
+      },
+      {
+        "sourceId": "bewley-rain-prayer",
+        "status": "not-present-in-checked-sequence",
+        "checkedReferences": [
+          "983",
+          "984"
+        ],
+        "note": "The checked page moves directly from the bedouin account to chapter XXI and 984. It has no separate al-Uwaysi report."
+      }
+    ],
+    "reviewNote": "983b is the user-confirmed app reference; printed reference 1030 remains prominent. The historical witness transcription below has been corrected after reinspection: unlike the modern print, it does not include annahu (that he). The original candidate and audit remain available as historical evidence. Reader admission and independent wording review are still pending."
+  }
+}

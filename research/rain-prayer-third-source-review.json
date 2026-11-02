@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-02T23:13:30.492242+00:00",
+  "status": "ai-source-comparison-independent-review-pending",
+  "sourceAuditSha256": "d753a7a165f951d020cf7259f501610b372c2652b7188cae5998db4c2709955c",
+  "sourceReviewSha256": "04ebceb9f30e3dd713a7ace90ae6d9c69ad4f7d4b6c5f43f8b6d98527215aab1",
+  "referenceRange": [
+    976,
+    983
+  ],
+  "printInspection": {
+    "method": "Complete rendered pages visually read, including continuation lines, chapter boundaries and variant wording; source PDF byte hashes verified.",
+    "brill-1862": {
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+      "pages": [
+        260,
+        261,
+        262
+      ]
+    },
+    "dar-ibn-kathir-2002": {
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+      "pages": [
+        249,
+        250
+      ]
+    }
+  },
+  "englishInspection": {
+    "bewleySnapshotSha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+    "bewleyReferences": [
+      976,
+      977,
+      978,
+      979,
+      980,
+      981,
+      982,
+      983
+    ],
+    "khanSnapshotSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+    "khanBodiesRead": [
+      "2.17.134",
+      "2.17.135",
+      "2.17.136",
+      "2.17.137",
+      "2.17.138",
+      "2.17.139",
+      "2.17.140",
+      "2.17.141"
+    ],
+    "missingInCheckedSequence": [
+      976,
+      983
+    ]
+  },
+  "findings": [
+    {
+      "reference": 976,
+      "decisions": [
+        "This is the complete companion account, followed by Abu Ishaq’s own closing statement; it is not recast as a direct account of the Prophet’s actions. The full chain, three named companions and both honorific forms remain.",
+        "The selected reading says Ibn Yazid had seen the Prophet. Brill reads that he narrated from the Prophet; the modern print agrees with had seen. Ibn Hajar records both readings. The selected digital wording remains unchanged.",
+        "The selected seeking-forgiveness phrase is present in the modern print but absent from the inspected Brill main text. It remains. No sermon, date, location or additional action is supplied."
+      ]
+    },
+    {
+      "reference": 977,
+      "decisions": [
+        "Retains the companion description and its separate honorific in the full chain, as well as both standing expressions. The uncle is not given an expanded name.",
+        "The selected final word is fasuqu, they were given rain; the inspected prints read fausqu. The selected wording is not changed. The pinned Khan body spells the narrator Abbas; the Arabic and Bewley have Abbad."
+      ]
+    },
+    {
+      "reference": 978,
+      "decisions": [
+        "Retains the complete independent chain and source sequence: going out, facing the qibla while supplicating, turning the cloak, then two rakahs with audible recitation in both. No inside-out explanation or explicit Quran wording is inserted."
+      ]
+    },
+    {
+      "reference": 979,
+      "decisions": [
+        "Preserves on the day he went out, as in the selected text and Brill, rather than the modern print’s when he went out. It retains He said, both then transitions, and led us.",
+        "This repeated report keeps its own full chain and does not acquire a name for the uncle or an inside-out explanation from an English comparison."
+      ]
+    },
+    {
+      "reference": 980,
+      "decisions": [
+        "Keeps the complete short occurrence and its full chain. Reversed renders qalaba; it is not expanded to inside out. The order of the two rakahs and the cloak remains as written."
+      ]
+    },
+    {
+      "reference": 981,
+      "decisions": [
+        "The closing Sufyan / al-Masudi / Abu Bakr transmission stays separate and complete. The final he remains a pronoun; the Khan wording explicitly names the Prophet, which is not inserted into this selected clause.",
+        "Ibn Hajar discusses the connected earlier chain and the additional transmission. His genealogy and expanded route are source context, not additions to the selected narration. The right on the left is kept without adding a second reciprocal action."
+      ]
+    },
+    {
+      "reference": 982,
+      "decisions": [
+        "Keeps the short name Muhammad and the selected initial action to pray. Brill expands the name to Muhammad ibn Salam and reads to supplicate at that point; the modern print agrees with the selected shorter name and prayer wording.",
+        "The alternative when he supplicated, or intended to supplicate stays in the source order. The Abu Abd Allah comment distinguishing Ibn Zayd from Ibn Yazid remains separate and complete; the Khan body omits this comment. Brill also expands Ibn Zayd in the comment to Abd Allah ibn Zayd."
+      ]
+    },
+    {
+      "reference": 983,
+      "decisions": [
+        "The complete selected report ends with the traveller and the blocked road. No later supplication or outcome is borrowed from parallel accounts, and the separate al-Uwaysi report is not merged into it.",
+        "The working rendering unable to proceed follows the impeded-travel sense discussed by Ibn Hajar; Ibn Rajab also records disagreement and variant readings. This does not establish one uncontested lexical meaning. The selected bashiq wording remains unchanged.",
+        "Brill adds a short lexical gloss after the report, uses the Messenger of Allah instead of Prophet of Allah at the second visit, and expands with him to with the Messenger of Allah with an additional honorific. The modern print agrees with the selected shorter report and does not include that gloss. None of those additions is silently inserted.",
+        "Dependants remains broader than children. Each of the three perishing clauses and each of the three selected honorifics remains, as does the repeated description of the man as a Bedouin from the desert people."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "fath-rain-standing",
+      "label": "Ibn Hajar · Fath al-Bari · standing supplication and Ibn Yazid",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/ar/library/content/52/1897/باب-الدعاء-في-الاستسقاء-قائما"
+    },
+    {
+      "id": "fath-rain-ground",
+      "label": "Ibn Hajar · Fath al-Bari · prayer ground and closing transmission",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/ar/library/content/52/1905/باب-الاستسقاء-في-المصلى"
+    },
+    {
+      "id": "fath-rain-traveller",
+      "label": "Ibn Hajar · Fath al-Bari · the traveller wording",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/ar/library/content/52/1911/?idfrom=&idto=&start="
+    },
+    {
+      "id": "rajab-rain-traveller",
+      "label": "Ibn Rajab · Fath al-Bari · the traveller wording",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/ar/library/content/302/1636/?idfrom=&idto=&start="
+    }
+  ],
+  "limits": [
+    "Only the specified print pages, English bodies and relevant classical passages were inspected, not the complete commentaries.",
+    "New English is AI-assisted and independently unreviewed; uncertainty is not silently harmonized.",
+    "No source text, missing printed report, numbering decision or independent approval is inferred."
+  ]
+}

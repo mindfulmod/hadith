@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "status": "source-candidate-only-not-admitted",
+  "readerEligible": false,
+  "reviewerKind": "ai",
+  "independentReview": "pending",
+  "checkedAt": "2026-11-02T23:22:48.546668+00:00",
+  "originalCandidateSha256": "72ff42a93439be0ffdb3224bfa24b5490ecb5db97d0247357e9a3f9bc8838fdc",
+  "sourceAuditSha256": "d753a7a165f951d020cf7259f501610b372c2652b7188cae5998db4c2709955c",
+  "referencePolicyId": "stable-suffix-for-printed-omissions",
+  "referencePolicySha256": "ff6d91b7a4d337ff8ebaa111a6188b428f571d84c4b420da0cbfff2f46952cbd",
+  "referenceDecision": {
+    "status": "user-confirmed",
+    "appReference": "983b",
+    "printedReference": "1030",
+    "userReply": "Use this convention going forward (Recommended)"
+  },
+  "witnessCorrections": [
+    {
+      "sourceId": "brill-1862",
+      "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+      "pdfPage": 262,
+      "originalReadingSha256": "b2e4af3752541ea9cb95bec677a56d8b04c37163b81cfb8ee63b470cb03545bb",
+      "reading": "وقال الأويسي حدثني محمد بن جعفر عن يحيى بن سعيد وشريك سمعا أنسا عن النبي صلى الله عليه وسلم رفع يديه حتى رأيت بياض إبطيه",
+      "readingSha256": "a83701bd1cd2fb37b41c8ddb2c57d4b534754fa200d27ccfef93981ddebae0ae",
+      "differenceNote": "The historical print writes the honorific in full and proceeds directly to rafa‘a (raised), without annahu (that he). The selected modern print includes annahu. The gloss immediately before this chain belongs to the previous report.",
+      "reason": "Reinspection of the complete rendered Brill page 262 found that the intake transcription had incorrectly inserted annahu from the modern reading. Only this witness transcription is corrected; the selected modern Arabic and the immutable intake audit remain unchanged."
+    }
+  ],
+  "reviewNote": "983b is the user-confirmed app reference; printed reference 1030 remains prominent. The historical witness transcription below has been corrected after reinspection: unlike the modern print, it does not include annahu (that he). The original candidate and audit remain available as historical evidence. Reader admission and independent wording review are still pending."
+}
