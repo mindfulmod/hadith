@@ -6,13 +6,14 @@ import {collectionFiles,buildBookBatch,BOOK_CONFIGS} from '../scripts/build-coll
 import {narrationPlan} from '../scripts/build-audio.mjs';
 import {chapterForNumber,validateChapters} from '../reader/navigation.mjs';
 import {compareReferences,validReference} from '../reader/references.mjs';
+import {ENTRY_COUNT} from './published-fixture.mjs';
 const read=p=>JSON.parse(readFileSync(new URL('../'+p,import.meta.url)));
 const hash=s=>createHash('sha256').update(s).digest('hex');
 const candidate=()=>read('content/review/prayer-description-tail-candidate.json');
 
 test('admitted tails preserve the reviewed text and earlier Arabic and English, with no invented recordings',()=>{
  const c=candidate(),{source,ledger}=collectionFiles(),plan=narrationPlan(source);
- assert.equal(source.entries.length,839);
+ assert.equal(source.entries.length,ENTRY_COUNT);assert.equal(source.entries.findIndex(e=>e.number==='835c')+1,839);
  for(const r of c.entries){const e=source.entries.find(e=>e.number===r.proposedAppReference);assert.equal(e.review.sourceRecordId,r.sourceRecordId);assert.equal(e.arabic_blocks.join(''),r.arabic);assert.deepEqual(e.english_blocks,r.segments.map(s=>s.english));assert.equal(e.review.printedReport.referenceDecision.status,'user-confirmed');assert.equal(plan.entries.find(p=>p.number===e.number).script,e.english_blocks.join('\n\n'));}
  const old=read('reader/books/prayer-description-0274c5ac052a45e0.json');for(const e of old.entries){const now=source.entries.find(n=>n.number===e.number);assert.deepEqual(now.arabic_blocks,e.arabic_blocks);assert.deepEqual(now.english_blocks,e.english_blocks);}
  const book=ledger.books.find(b=>b.id==='prayer-description');validateChapters(book);assert.equal(chapterForNumber(book,835).id,'chapter-84');assert.equal(chapterForNumber(book,'835b').id,'chapter-84-print-163');assert.deepEqual(chapterForNumber(book,'835c').entryNumbers,['835b','835c']);

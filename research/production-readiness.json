@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T15:49:38.364731+00:00",
+  "updatedAt": "2026-11-02T16:25:37.325657+00:00",
   "objective": "Production-ready English-first Sahih al-Bukhari reader with the full collection, precise source access, Cedar narration, whole-hadith sessions and dependable offline iPhone use.",
   "status": "in-progress",
   "decisions": {
@@ -80,7 +80,7 @@
   ],
   "nextActions": [
     "Keep the 699-entry approval candidate and subsequent local previews separate from the approved 632-entry live release until the specific publication is authorized.",
-    "Prepare the first Friday Prayer translation batch from the mapped 64-report source. The opening Quran quotation is separate chapter context; preserve 856 as the complete compound entry, review the missing printed heading before 857, and resolve the incompatible legacy English 44 reference for 880 before admitting those reports.",
+    "Continue Friday Prayer from 846 in complete chapter batches. Preserve compound 856, independently review the printed division before 857, and resolve the incompatible English legacy 44 identity and source differences at 880 before admitting those reports.",
     "Preserve the overlapping congregation source as excluded evidence. It must not add duplicate entries or replace selected Adhan wording.",
     "Measure full bilingual loading and memory costs before further substantial expansion; existing scale tests and desktop checks do not establish physical iPhone performance for the full corpus.",
     "Complete the Arabic edition/reference map using the new exact-span inventory and pinned printed-witness findings; keep combined labels distinct from missing or misassigned bodies.",
@@ -415,12 +415,12 @@
     "boundaryReviewStatus": "references-confirmed-and-printed-tail-admitted-local-only"
   },
   "currentLocalPreview": {
-    "entries": 839,
-    "books": 11,
-    "release": "opening-773d937234f4",
-    "readingBytes": 22804413,
+    "entries": 849,
+    "books": 12,
+    "release": "opening-728b151c3ba1",
+    "readingBytes": 23063681,
     "publication": "not-published",
-    "verification": "research/prayer-description-tail-admission-verification.json",
+    "verification": "research/friday-prayer-first-verification.json",
     "liveEntries": 632,
     "liveCommit": "a6d55223d3d863f2583ba67aa27edd139e9d7d6a"
   },
@@ -438,7 +438,7 @@
     "remaining": "Publisher scaling is verified on desktop; full-corpus iPhone loading and memory, complete content, independent review and extended audio remain outstanding."
   },
   "fridayPrayerIntake": {
-    "status": "source-pinned-layout-mapped-wording-review-pending",
+    "status": "first-ten-in-local-personal-prototype",
     "source": "content/sources/wikisource-friday-prayer/manifest.json",
     "inventory": "content/staging/bukhari-friday-prayer-wikisource/catalog.json",
     "audit": "research/friday-prayer-source-audit.json",
@@ -448,13 +448,26 @@
     "introductionParagraphs": 12,
     "readerEligible": false,
     "remaining": [
-      "Extend pinned English comparison validation to the correct Volume 2 references before the first Friday Prayer batch.",
-      "Review every report and full narrator chain against both Arabic prints and correctly identified English comparisons.",
-      "Keep all 12 chapter-context paragraphs separate from numbered narration; their English is still pending.",
-      "Handle the printed bare chapter before 857 through the existing explicit printed-heading mechanism.",
+      "Review complete remaining reports 846–899 against both Arabic prints and individually matched English bodies.",
+      "Keep all chapter context separate from numbered narration; its English remains pending.",
+      "Handle the printed bare chapter before 857 through explicit printed-heading evidence.",
       "Resolve the English reference collision and wording differences at 880 before its reader admission.",
-      "Prepare ordered translation batches and exact personal-prototype admissions without changing existing references. Independent review and publication permission remain separate."
+      "Independent review, additional narration and public publication remain separate."
     ],
-    "verification": "research/friday-prayer-intake-verification.json"
+    "intakeVerification": "research/friday-prayer-intake-verification.json",
+    "readerAddedReferences": [
+      836,
+      837,
+      838,
+      839,
+      840,
+      841,
+      842,
+      843,
+      844,
+      845
+    ],
+    "readerVerification": "research/friday-prayer-first-verification.json",
+    "comparisonSupport": "Explicit Volume 2, Book 13. Every new reference requires the exact pinned inventory identity; cross-volume and cross-book reference parts are refused."
   }
 }

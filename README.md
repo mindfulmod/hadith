@@ -1069,3 +1069,14 @@ The edition audit records two further traps. Selected entry 856 contains three p
 Evidence and remaining work: `research/friday-prayer-source-audit.json`. The first and last report identities are checked against the printed boundaries and English comparisons; complete wording review of the 64 reports remains pending. The existing **839-entry reader, release, audio and artwork are unchanged**.
 
 Verification: **678 tests (571 Node and 107 Python)** and fourteen integrity checks pass. The two registry tests now explicitly include Friday Prayer. Every tracked reader, audio, artwork and top-level web asset remains byte-identical to baseline `35616bf`. See `research/friday-prayer-intake-verification.json`. Volume 2 English comparison support and full wording review are prerequisites for the first reader batch. No new browser or physical iPhone acceptance is claimed.
+
+
+### Friday Prayer 836–845 in a local preview — 2 November 2026
+
+The local personal prototype now contains **849 complete entries across 12 books**. The opening ten Friday Prayer reports occupy six chapters, with two Arabic chapter-context paragraphs kept outside numbered sessions and narration. All selected Arabic characters remain unchanged. Complete chains, the two testimony statements in 840, ‘Amr’s uncertainty and Abu ‘Abdullah’s closing comment remain distinct and complete. The untitled chapter before 842 stays untitled. Comparison additions such as a first-hour label in 841 or a direction for “the other Friday” in 843 are documented rather than silently inserted.
+
+English comparison validation now supports explicitly configured **Volume 2, Book 13**, requires the exact pinned record for each new comparison, preserves the volume in backward/forward pointers and rejects split references crossing books or volumes. Existing Volume 1 constraints remain. Full-source, chapter, personal-prototype and production review gates still apply.
+
+All **685 tests (578 Node and 107 Python)** and fourteen integrity checks pass. The earlier 839 entries, eleven prior book packs and 205 prior media/source-note files remain unchanged. A fresh isolated Chromium check performed the actual 839→849 service-worker update, preserved the chosen 835c session and bookmark, saved the new reading pack, and verified complete English/Arabic text, source notes, separate Quran context and exact-phrase search offline. Day and largest night text were inspected; 320-, 390- and 1280-pixel layouts have no horizontal overflow. This is not physical iPhone or locked-screen audio acceptance.
+
+Release `opening-728b151c3ba1` contains 190 checked files. Reading downloads total **23,063,681 bytes (23.06 MB)**. The ten complete scripts are prepared; actual recordings remain Hadith 1–6. Evidence: `research/friday-prayer-first-verification.json`. The live website has not been changed; independent review and publication permission remain separate.

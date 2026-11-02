@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "namespace": "bukhari-opening-v1",
   "publication": "personal-prototype",
-  "sourceRecordSha256": "8d6b812f202871c6eb1d1b59375c3ca2caacdc6ec8638edd0419d32b1f43d053",
+  "sourceRecordSha256": "3303dd5365ff166b7c31f0e005901a8779ff02b60d4d7caac89d16065d8cce5b",
   "rights": {
     "status": "pending",
     "evidence": [
@@ -27,7 +27,9 @@
       "reader/adhan-inputs.json",
       "reader/adhan-review.html",
       "reader/prayer-description-inputs.json",
-      "reader/prayer-description-review.html"
+      "reader/prayer-description-review.html",
+      "reader/friday-prayer-inputs.json",
+      "reader/friday-prayer-review.html"
     ]
   },
   "books": [
@@ -12446,6 +12448,150 @@
               "beforeEntry": "835b",
               "printedChapterNumber": 163,
               "evidenceSha256": "f64dd14bb14f337fe159fd033dd8f22e6320e458984eb5664a024eec06d9ecb4"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "friday-prayer",
+      "number": 12,
+      "title": "Friday Prayer",
+      "sourceEntryCount": 64,
+      "entryNumbers": [
+        836,
+        837,
+        838,
+        839,
+        840,
+        841,
+        842,
+        843,
+        844,
+        845
+      ],
+      "chapters": [
+        {
+          "id": "chapter-01",
+          "title": "The obligation of Friday prayer",
+          "entryNumbers": [
+            836
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 1,
+              "englishStatus": "pending"
+            },
+            "notes": {
+              "path": "friday-prayer-review.html",
+              "fragment": "chapter-01"
+            }
+          }
+        },
+        {
+          "id": "chapter-02",
+          "title": "The merit of bathing on Friday",
+          "entryNumbers": [
+            837,
+            838,
+            839
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 1,
+              "englishStatus": "pending"
+            },
+            "notes": {
+              "path": "friday-prayer-review.html",
+              "fragment": "chapter-02"
+            }
+          }
+        },
+        {
+          "id": "chapter-03",
+          "title": "Perfume for Friday prayer",
+          "entryNumbers": [
+            840
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "friday-prayer-review.html",
+              "fragment": "chapter-03"
+            }
+          }
+        },
+        {
+          "id": "chapter-04",
+          "title": "The merit of Friday prayer",
+          "entryNumbers": [
+            841
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "friday-prayer-review.html",
+              "fragment": "chapter-04"
+            }
+          }
+        },
+        {
+          "id": "chapter-05",
+          "title": "Untitled chapter",
+          "entryNumbers": [
+            842
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "friday-prayer-review.html",
+              "fragment": "chapter-05"
+            }
+          }
+        },
+        {
+          "id": "chapter-06",
+          "title": "Using oil for Friday prayer",
+          "entryNumbers": [
+            843,
+            844,
+            845
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "friday-prayer-review.html",
+              "fragment": "chapter-06"
             }
           }
         }
@@ -26715,15 +26861,185 @@
       "contextReview": {
         "status": "pending"
       }
+    },
+    {
+      "number": 836,
+      "id": "bukhari:836",
+      "entrySha256": "a26dcc0ed909343f92805c2cca2f217101f1759b37ca83e6a3bfca4b653db85a",
+      "arabicSha256": "1e562ee0b497c5f8277f911a3ff92603b03ca25da9afb1f16c26a0d0e8ef9a89",
+      "englishSha256": "d3189fc329600aaebec3e70a6418ead86f7a588e4b40744a8be887cdf45e1941",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 837,
+      "id": "bukhari:837",
+      "entrySha256": "d615f76482aa7c43d48981d2ed07835db71b538a93d6c9372bcd18141de885b3",
+      "arabicSha256": "6829fd123fc3b3e124c8204ac951684ba1dd79b1032073648a25e1b61f712d37",
+      "englishSha256": "e13e49e78a14172717ead8ed64cb8d259a79cdf8ad43c4b8e9c3b0678344ed44",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 838,
+      "id": "bukhari:838",
+      "entrySha256": "d796618186afd6c52ee347fbfaa2cb58856c3cabcd66adf2ede8228b369df8fa",
+      "arabicSha256": "dd9c57b344c727af1ad29323b813aec8be558e3b4e234ef03e865530d4c2e338",
+      "englishSha256": "ac83e3b2570fe2972ee3d42f84dbe91bdac4cad0c4ec3754af62c8a15071e85b",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 839,
+      "id": "bukhari:839",
+      "entrySha256": "6c8cf269d41c2ac6a87e547b3b7f42506da7a6ac2290e47f983b7f996d629dbc",
+      "arabicSha256": "f06f60d6a5ad0e5eff1f15141682405f18c4774ecc09aedd9c7e02505113dadd",
+      "englishSha256": "9833168768eecaaee9914d7860efaef5731a614ee53aa03fa8b275286cce2a4d",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 840,
+      "id": "bukhari:840",
+      "entrySha256": "3b9de5b83952acd14e1d0a1baea28fae0cdeb9482310dbcfc3e48eafa09a68d5",
+      "arabicSha256": "5f12b4ea8a83e6ae8587c282a1251991b4741cc77b1054925ea811f63fb43653",
+      "englishSha256": "6a06413c76c0f743be49ce8b858fe0a3215c9242efea2964e4d2ed1551d19f42",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 841,
+      "id": "bukhari:841",
+      "entrySha256": "1f78ac046a6d50bb5136cee5fdccd23bfb983674054a733a797e59725c9c34d3",
+      "arabicSha256": "474438188b67da03f41916b9007c4f87e1fa247bc6ccf0c0f3958f6efd8f7fd9",
+      "englishSha256": "d0e2095c3b96c1026c47b9a4977ea0903471df6eb60bb5ee948cb3a44379eb5d",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 842,
+      "id": "bukhari:842",
+      "entrySha256": "1df6be9be87199230610f0167de556bbeaf8eee78291b0bf7a0d6c88bbc765b8",
+      "arabicSha256": "260f2283b658ba5087a837a99fb54551c3f0a1b256aff3ace4c7623e135b98b1",
+      "englishSha256": "a0c4ebadc4902948d2f51740c38d4c2d2c5fe396c4229cd7a94cb1cc1c8e05da",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 843,
+      "id": "bukhari:843",
+      "entrySha256": "91bcdb16d9abf4ced5a8900b5662c44c0310832deec37408ea091fb4b8a60084",
+      "arabicSha256": "5d46888ac6e8e11a348afad190821cf7bb59bd49657a7672af1cd7ffdbd11076",
+      "englishSha256": "c1607fd9495c76f3698ab3481e936047d886bfef080f03ca2ec481e523fd2510",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 844,
+      "id": "bukhari:844",
+      "entrySha256": "ca63c07bb2e45a703742492c47306f01515c803705e01ba1822ad5c612a1cceb",
+      "arabicSha256": "881cfb1a7b77e2fae092abfd5795f9726dc952523e4690c7dd144ee20d07cfd2",
+      "englishSha256": "8a255dcddeafc085ded9b9f17695949c9b62519302c6e2d0001874a7ece5b2a8",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 845,
+      "id": "bukhari:845",
+      "entrySha256": "410def62d1821c8edc04e9cd6b70b9038f4ecdd75f3fa6d36a938d3c06184332",
+      "arabicSha256": "5ceb06db5ba7d1a7645091fedc034780657acecca6f474b3c88ea6ffab32073f",
+      "englishSha256": "10919ef85beecbefce794048d6377360b4af50bb5f0df009ce4693d61e2ecb6e",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
     }
   ],
-  "catalogContextSha256": "d375c374ed5fa39b0ea1d581320b13cc5e5185d42bf7596f08820ac8abe180e2",
+  "catalogContextSha256": "822143dcabb5c8898bb523361821defb30160ba989fad91985b8e8f928301576",
   "collectionReview": {
     "status": "pending"
   },
   "sourceReferences": {
     "schemaVersion": 1,
-    "sourceRecordSha256": "8d6b812f202871c6eb1d1b59375c3ca2caacdc6ec8638edd0419d32b1f43d053",
+    "sourceRecordSha256": "3303dd5365ff166b7c31f0e005901a8779ff02b60d4d7caac89d16065d8cce5b",
     "sources": [
       {
         "id": "arabic-base",
@@ -27949,6 +28265,20 @@
         "kind": "english-comparison",
         "format": "web",
         "url": "https://sunnah.com/bukhari:875"
+      },
+      {
+        "id": "arabic-friday-prayer",
+        "label": "Arabic Wikisource · fixed revision 484865",
+        "kind": "arabic-input",
+        "format": "web",
+        "url": "https://ar.wikisource.org/w/index.php?title=%D8%B5%D8%AD%D9%8A%D8%AD_%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A/%D9%83%D8%AA%D8%A7%D8%A8_%D8%A7%D9%84%D8%AC%D9%85%D8%B9%D8%A9&oldid=484865"
+      },
+      {
+        "id": "bewley-friday-prayer",
+        "label": "Aisha Bewley · Friday Prayer",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://aishabewley.org/bukhari9"
       }
     ],
     "entries": [
@@ -71987,10 +72317,500 @@
           "fragment": "hadith-835c",
           "label": "Comparison notes and chapter source for this hadith"
         }
+      },
+      {
+        "id": "bukhari:836",
+        "number": 836,
+        "entrySha256": "a26dcc0ed909343f92805c2cca2f217101f1759b37ca83e6a3bfca4b653db85a",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-friday-prayer",
+            "locator": "Book of Friday Prayer · source entry 836 · باب فرض الجمعة",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-friday-prayer",
+            "locator": "Book of Friday Prayer · entry 836",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 13, Number 1",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 224",
+            "pdfPage": 224,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 213",
+            "pdfPage": 213,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "friday-prayer-review.html",
+          "fragment": "hadith-836",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:837",
+        "number": 837,
+        "entrySha256": "d615f76482aa7c43d48981d2ed07835db71b538a93d6c9372bcd18141de885b3",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-friday-prayer",
+            "locator": "Book of Friday Prayer · source entry 837 · باب فضل الغسل يوم الجمعة",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-friday-prayer",
+            "locator": "Book of Friday Prayer · entry 837",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 13, Number 2",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 224",
+            "pdfPage": 224,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 213",
+            "pdfPage": 213,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "friday-prayer-review.html",
+          "fragment": "hadith-837",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:838",
+        "number": 838,
+        "entrySha256": "d796618186afd6c52ee347fbfaa2cb58856c3cabcd66adf2ede8228b369df8fa",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-friday-prayer",
+            "locator": "Book of Friday Prayer · source entry 838 · باب فضل الغسل يوم الجمعة",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-friday-prayer",
+            "locator": "Book of Friday Prayer · entry 838",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 13, Number 3",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 224",
+            "pdfPage": 224,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 213",
+            "pdfPage": 213,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "friday-prayer-review.html",
+          "fragment": "hadith-838",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:839",
+        "number": 839,
+        "entrySha256": "6c8cf269d41c2ac6a87e547b3b7f42506da7a6ac2290e47f983b7f996d629dbc",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-friday-prayer",
+            "locator": "Book of Friday Prayer · source entry 839 · باب فضل الغسل يوم الجمعة",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-friday-prayer",
+            "locator": "Book of Friday Prayer · entry 839",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 13, Number 4",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 224",
+            "pdfPage": 224,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 214",
+            "pdfPage": 214,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "friday-prayer-review.html",
+          "fragment": "hadith-839",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:840",
+        "number": 840,
+        "entrySha256": "3b9de5b83952acd14e1d0a1baea28fae0cdeb9482310dbcfc3e48eafa09a68d5",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic prints and two English comparison families were inspected. One English comparison abbreviates the report; its omitted wording and any explicit Arabic correction are documented in the source notes. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-friday-prayer",
+            "locator": "Book of Friday Prayer · source entry 840 · باب الطيب للجمعة",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-friday-prayer",
+            "locator": "Book of Friday Prayer · entry 840",
+            "scope": "The main statement and ‘Amr’s uncertainty are present. Only an abbreviated closing route is given; Abu ‘Abdullah’s brother, name and kunyah details are absent."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 13, Number 5",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF pages 224, 225",
+            "pdfPage": 224,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 214",
+            "pdfPage": 214,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "friday-prayer-review.html",
+          "fragment": "hadith-840",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:841",
+        "number": 841,
+        "entrySha256": "1f78ac046a6d50bb5136cee5fdccd23bfb983674054a733a797e59725c9c34d3",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-friday-prayer",
+            "locator": "Book of Friday Prayer · source entry 841 · باب فضل الجمعة",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-friday-prayer",
+            "locator": "Book of Friday Prayer · entry 841",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 13, Number 6",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 225",
+            "pdfPage": 225,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 214",
+            "pdfPage": 214,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "friday-prayer-review.html",
+          "fragment": "hadith-841",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:842",
+        "number": 842,
+        "entrySha256": "1df6be9be87199230610f0167de556bbeaf8eee78291b0bf7a0d6c88bbc765b8",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-friday-prayer",
+            "locator": "Book of Friday Prayer · source entry 842 · باب",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-friday-prayer",
+            "locator": "Book of Friday Prayer · entry 842",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 13, Number 7",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 225",
+            "pdfPage": 225,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 214",
+            "pdfPage": 214,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "friday-prayer-review.html",
+          "fragment": "hadith-842",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:843",
+        "number": 843,
+        "entrySha256": "91bcdb16d9abf4ced5a8900b5662c44c0310832deec37408ea091fb4b8a60084",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-friday-prayer",
+            "locator": "Book of Friday Prayer · source entry 843 · باب الدهن للجمعة",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-friday-prayer",
+            "locator": "Book of Friday Prayer · entry 843",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 13, Number 8",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 225",
+            "pdfPage": 225,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF pages 214, 215",
+            "pdfPage": 214,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "friday-prayer-review.html",
+          "fragment": "hadith-843",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:844",
+        "number": 844,
+        "entrySha256": "ca63c07bb2e45a703742492c47306f01515c803705e01ba1822ad5c612a1cceb",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-friday-prayer",
+            "locator": "Book of Friday Prayer · source entry 844 · باب الدهن للجمعة",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-friday-prayer",
+            "locator": "Book of Friday Prayer · entry 844",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 13, Number 9",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF pages 225, 226",
+            "pdfPage": 225,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 215",
+            "pdfPage": 215,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "friday-prayer-review.html",
+          "fragment": "hadith-844",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:845",
+        "number": 845,
+        "entrySha256": "410def62d1821c8edc04e9cd6b70b9038f4ecdd75f3fa6d36a938d3c06184332",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-friday-prayer",
+            "locator": "Book of Friday Prayer · source entry 845 · باب الدهن للجمعة",
+            "scope": "Exact source spans with unchanged original labels and paragraphs preserved in the offline notes. Any separately declared wording correction is recorded with its evidence."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-friday-prayer",
+            "locator": "Book of Friday Prayer · entry 845",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 13, Number 10",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 226",
+            "pdfPage": 226,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 215",
+            "pdfPage": 215,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "friday-prayer-review.html",
+          "fragment": "hadith-845",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
       }
     ]
   },
-  "referencesSha256": "877dddde3b9014ae1757211033b11dd4344b9f62d211436c2664386d670e754d",
+  "referencesSha256": "ec915b117af18d797fdda11830e435024d9ac7e2c390264e4907e06bbedb2000",
   "referencesReview": {
     "status": "pending"
   }

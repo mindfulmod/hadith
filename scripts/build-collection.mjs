@@ -29,7 +29,8 @@ export const BOOK_CONFIGS=Object.freeze({
  prayer:Object.freeze({id:'prayer',number:8,khanBooks:Object.freeze([8,9]),title:'Prayer',first:342,arabicSourceId:'arabic-prayer',bewleySourceId:'bewley-prayer',bewleyTitle:'Prayer',revision:522110,sourceLayout:'mapped'}),
  'prayer-times':Object.freeze({id:'prayer-times',number:9,khanBooks:Object.freeze([10]),title:'Prayer Times',first:499,arabicSourceId:'arabic-prayer-times',bewleySourceId:'bewley-prayer-times',bewleyTitle:'Prayer Times',revision:484870}),
  adhan:Object.freeze({id:'adhan',number:10,khanBooks:Object.freeze([11]),title:'Adhan',first:578,arabicSourceId:'arabic-adhan',bewleySourceId:'bewley-adhan',bewleyTitle:'Adhan',revision:484867,sourceLayout:'mapped'}),
- 'prayer-description':Object.freeze({id:'prayer-description',number:11,khanBooks:Object.freeze([12]),title:'Description of Prayer',first:699,arabicSourceId:'arabic-prayer-description',bewleySourceId:'bewley-prayer-description',bewleyTitle:'the Description of the Prayer',revision:253001,sourceLayout:'mapped'})
+ 'prayer-description':Object.freeze({id:'prayer-description',number:11,khanBooks:Object.freeze([12]),title:'Description of Prayer',first:699,arabicSourceId:'arabic-prayer-description',bewleySourceId:'bewley-prayer-description',bewleyTitle:'the Description of the Prayer',revision:253001,sourceLayout:'mapped'}),
+ 'friday-prayer':Object.freeze({id:'friday-prayer',number:12,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([13]),title:'Friday Prayer',first:836,arabicSourceId:'arabic-friday-prayer',bewleySourceId:'bewley-friday-prayer',bewleyTitle:'Friday Prayer',revision:484865,sourceLayout:'mapped'})
 });
 function bookConfig(config){assert(Object.values(BOOK_CONFIGS).includes(config),'Unknown book configuration');return config;}
 let englishInventory;
@@ -46,7 +47,7 @@ function validateBewleyPart(part){
  assert(Number.isSafeInteger(part.index)&&Number.isSafeInteger(part.count)&&part.count>1&&part.index>=1&&part.index<=part.count,'Invalid Bewley comparison part');
 }
 function validateComparisons(comparisons,config,segments,row){
- const khanReference=new RegExp('^1\\.(?:'+(config.khanBooks||[config.number]).join('|')+')\\.[1-9]\\d*[a-z]?$');
+ const khanReference=new RegExp('^(?:'+(config.khanVolumes||[1]).join('|')+')\\.(?:'+(config.khanBooks||[config.number]).join('|')+')\\.[1-9]\\d*[a-z]?$');
  assert.deepEqual(comparisons.map(c=>c.id).sort(),[config.bewleySourceId,'islamhouse-khan'].sort(),'Expected distinct English comparison records');
  const bewley=comparisons.find(c=>c.id===config.bewleySourceId),khan=comparisons.find(c=>c.id==='islamhouse-khan');
  assert(parseReference(bewley.reference)!==null,'Invalid Bewley comparison');
@@ -87,7 +88,7 @@ function validateComparisons(comparisons,config,segments,row){
  englishInventory??=read('content/staging/bukhari-en-islamhouse/catalog.json');
  const pinned=khan.reference&&englishInventory.records.find(r=>r.id===englishInventory.namespace+':'+khan.reference);
  if(pinned?.bodyForm==='translation-omission-notice')assert.equal(khan.status,'translation-omitted','An omission notice cannot be a complete English comparison');
- if(khan.reference&&!khan.splitReferences&&Number(khan.reference.split('.')[1])!==config.number)comparisonEvidence(khan.reference,khan.referenceEvidence);
+ if(khan.reference&&!khan.splitReferences&&(Number(khan.reference.split('.')[0])!==1||Number(khan.reference.split('.')[1])!==config.number))comparisonEvidence(khan.reference,khan.referenceEvidence);
  if(khan.status==='translation-omitted'){
   assert(khanReference.test(khan.reference),'Invalid omitted-translation reference');
   for(const key of ['part','splitReferences','checkedReferences','referencedReference','referencedReferenceEvidence','continuedByReference'])assert.equal(khan[key],undefined,'An omission notice cannot claim translated report coverage');
@@ -110,7 +111,7 @@ function validateComparisons(comparisons,config,segments,row){
   const record=comparisonEvidence(khan.reference,khan.referenceEvidence);
   assert(Array.isArray(khan.checkedBody)&&khan.checkedBody.length===2&&khan.checkedBody.every(p=>typeof p==='string')&&hash(khan.checkedBody)===record.textSha256,'Backward pointer differs from its pinned body');
   const pointer=/^(?:The Prophet said )?as above \(([1-9]\d*)\)\.$/.exec(khan.checkedBody[1].trim());
-  assert(/^Narrated .+:$/.test(khan.checkedBody[0].trim())&&pointer&&khan.referencedReference===`1.${khan.reference.split('.')[1]}.${pointer[1]}`&&Number(pointer[1])<Number(khan.reference.split('.')[2]),'Invalid or forward comparison pointer');
+  assert(/^Narrated .+:$/.test(khan.checkedBody[0].trim())&&pointer&&khan.referencedReference===`${khan.reference.split('.')[0]}.${khan.reference.split('.')[1]}.${pointer[1]}`&&Number(pointer[1])<Number(khan.reference.split('.')[2]),'Invalid or forward comparison pointer');
   if(!khan.checkedBody[1].trim().startsWith('The Prophet said ')||khan.referencedReferenceEvidence!==undefined)comparisonEvidence(khan.referencedReference,khan.referencedReferenceEvidence);
   assert(typeof khan.note==='string'&&khan.note.trim(),'Backward reference needs an explanation');return;
  }
@@ -135,6 +136,7 @@ function validateComparisons(comparisons,config,segments,row){
    assert(typeof khan.note==='string'&&khan.note.trim(),'Split comparison needs an explanation');
    for(const [i,p]of parts.entries()){
     assert(khanReference.test(p.reference),'Invalid split reference');
+    assert.equal(p.reference.split('.').slice(0,2).join('.'),khan.reference.split('.').slice(0,2).join('.'),'Split references cannot cross English volumes or books');
     if(i)assert(Number(p.reference.split('.')[2])>Number(parts[i-1].reference.split('.')[2]),'Split references must be distinct and ordered');
     const record=comparisonEvidence(p.reference,p.referenceEvidence);
     assert.notEqual(record.bodyForm,'translation-omission-notice','An omission notice cannot be a translated split part');
@@ -144,7 +146,7 @@ function validateComparisons(comparisons,config,segments,row){
      assert(/^Narrated .+:$/.test(p.checkedBody[0].trim())&&typeof p.note==='string'&&p.note.trim(),'Abbreviated comparison part needs a narrator and explanation');
      if(p.status==='back-reference-only'){
       const pointer=/^as above \(([1-9]\d*)\)\.$/.exec(p.checkedBody[1].trim());
-      assert(pointer&&p.referencedReference===`1.${p.reference.split('.')[1]}.${pointer[1]}`&&Number(pointer[1])<Number(p.reference.split('.')[2]),'Invalid split backward pointer');
+      assert(pointer&&p.referencedReference===`${p.reference.split('.')[0]}.${p.reference.split('.')[1]}.${pointer[1]}`&&Number(pointer[1])<Number(p.reference.split('.')[2]),'Invalid split backward pointer');
       assert.equal(p.continuedByReference,undefined,'Backward pointer cannot claim a forward continuation');
       comparisonEvidence(p.referencedReference,p.referencedReferenceEvidence);
       assert(p.segmentIds.every(id=>segments.find(s=>s.id===id)?.kind==='chain'),'Backward-only part may only correspond to an abbreviated chain');
@@ -154,7 +156,7 @@ function validateComparisons(comparisons,config,segments,row){
       assert(p.segmentIds.every(id=>['chain','transmission-note'].includes(segments.find(s=>s.id===id)?.kind)),'Unnumbered split pointer cannot stand in for a report body');
      }else if(p.status==='forward-reference-only'){
       const pointer=/^(?:as the following Hadith ([1-9]\d*)\.|The Prophet said, \(what is ascribed to him in the following Hadith ([1-9]\d*)\):)$/.exec(p.checkedBody[1].trim()),target=pointer&&(pointer[1]||pointer[2]);
-      assert(target&&p.continuedByReference===`1.${p.reference.split('.')[1]}.${target}`&&p.continuedByReference===parts[i+1]?.reference&&Number(target)===Number(p.reference.split('.')[2])+1,'Forward-only pointer needs its exact adjacent continuation');
+      assert(target&&p.continuedByReference===`${p.reference.split('.')[0]}.${p.reference.split('.')[1]}.${target}`&&p.continuedByReference===parts[i+1]?.reference&&Number(target)===Number(p.reference.split('.')[2])+1,'Forward-only pointer needs its exact adjacent continuation');
       assert(p.referencedReference===undefined&&p.referencedReferenceEvidence===undefined,'Forward-only pointer cannot claim a backward reference');
       assert(p.segmentIds.every(id=>segments.find(s=>s.id===id)?.kind==='chain'),'Forward-only part may only correspond to an abbreviated chain');
      }else{
@@ -184,7 +186,7 @@ function validateComparisons(comparisons,config,segments,row){
  assert.equal(englishInventory.records[positions[0]].section,englishInventory.records[positions[1]].section,'Checked sequence cannot cross source sections');
  assert(typeof khan.note==='string'&&khan.note.trim(),'Missing comparison absence explanation');
  // Literal suffixes are edition labels, not decimal numbers. Bind their exact records.
- if(khan.checkedReferenceEvidence!==undefined||khan.checkedReferences.some(r=>/[a-z]$/.test(r)||Number(r.split('.')[1])!==config.number)){
+ if(khan.checkedReferenceEvidence!==undefined||khan.checkedReferences.some(r=>/[a-z]$/.test(r)||Number(r.split('.')[0])!==1||Number(r.split('.')[1])!==config.number)){
   assert(Array.isArray(khan.checkedReferenceEvidence)&&khan.checkedReferenceEvidence.length===khan.checkedReferences.length,'Incomplete checked-sequence evidence');
   khan.checkedReferences.forEach((reference,index)=>comparisonEvidence(reference,khan.checkedReferenceEvidence[index]));
  }

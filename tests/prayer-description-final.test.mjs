@@ -61,7 +61,7 @@ test('selected digital coverage and separately admitted printed occurrences rema
  assert.equal(review.chapters.length,6);assert.equal(review.chapters.flatMap(c=>c.contextIds).length,0);
  const boundary=read('research/prayer-description-boundary-review.json');assert.equal(boundary.status,'two-print-tail-admitted-personal-prototype');assert.deepEqual(boundary.admittedOccurrences.map(x=>x.printedReference),['874','875']);
  assert.equal(boundary.unadmittedOccurrences.length,0);assert.equal(review.entries.filter(e=>e.printedReport).length,2);
- const session=startSession(source.entries,833,5);assert.deepEqual(session.numbers,[833,834,835,'835b','835c']);assert.deepEqual(visitSession(session,819),session);
+ const session=startSession(source.entries,833,5);assert.deepEqual(session.numbers.slice(0,5),[833,834,835,'835b','835c']);assert.equal(session.numbers[5],836);assert.deepEqual(visitSession(session,819),session);
 });
 
 test('each final English comparison binds its exact inventory record',()=>{
