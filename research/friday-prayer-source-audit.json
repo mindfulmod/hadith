@@ -1,0 +1,422 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-30T02:56:42.473607+00:00",
+  "status": "source-intake-and-structural-map-only",
+  "readerEligible": false,
+  "readerEntriesUnchanged": 839,
+  "readerReleaseUnchanged": "opening-773d937234f4",
+  "source": {
+    "id": "wikisource-bukhari-friday-prayer-r484865",
+    "revision": 484865,
+    "url": "https://ar.wikisource.org/w/index.php?title=%D8%B5%D8%AD%D9%8A%D8%AD_%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A/%D9%83%D8%AA%D8%A7%D8%A8_%D8%A7%D9%84%D8%AC%D9%85%D8%B9%D8%A9&oldid=484865",
+    "fileSha256": "19f6c42edef071b00005381723dd996716fdbe446d4e82b4224ee7933a8591db",
+    "rawBytes": 178042,
+    "originalBlocks": 115,
+    "resolvedBlocks": 116,
+    "sourceCodePoints": 20570,
+    "references": [
+      836,
+      837,
+      838,
+      839,
+      840,
+      841,
+      842,
+      843,
+      844,
+      845,
+      846,
+      847,
+      848,
+      849,
+      850,
+      851,
+      852,
+      853,
+      854,
+      855,
+      856,
+      857,
+      858,
+      859,
+      860,
+      861,
+      862,
+      863,
+      864,
+      865,
+      866,
+      867,
+      868,
+      869,
+      870,
+      871,
+      872,
+      873,
+      874,
+      875,
+      876,
+      877,
+      878,
+      879,
+      880,
+      881,
+      882,
+      883,
+      884,
+      885,
+      886,
+      887,
+      888,
+      889,
+      890,
+      891,
+      892,
+      893,
+      894,
+      895,
+      896,
+      897,
+      898,
+      899
+    ],
+    "numberedReports": 64,
+    "chapters": 40,
+    "separateChapterContextParagraphs": 12,
+    "inventory": "content/staging/bukhari-friday-prayer-wikisource/catalog.json",
+    "layoutReview": "content/review/friday-prayer-layout-review.json"
+  },
+  "printedWitnesses": [
+    {
+      "id": "brill-1862",
+      "label": "Historical Arabic print · Brill 1862",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf",
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+      "visuallyInspectedPdfPages": [
+        223,
+        224,
+        228,
+        229,
+        233,
+        234,
+        238,
+        239
+      ]
+    },
+    {
+      "id": "dar-ibn-kathir-2002",
+      "label": "Arabic print · Dar Ibn Kathir 2002",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+      "visuallyInspectedPdfPages": [
+        213,
+        217,
+        222,
+        223,
+        226,
+        227
+      ]
+    }
+  ],
+  "englishComparisons": {
+    "bewley": {
+      "url": "https://aishabewley.org/bukhari9",
+      "downloadedBytes": 72446,
+      "sha256": "633300895cb35acb77083d21507e430830fb1be5ede5c6b5eb7ec3ab2a8814fa",
+      "selectedReferences": "836–899",
+      "observedReferenceCount": 64,
+      "scope": "This webpage also contains later books. Only the Friday Prayer section is relevant to this intake. The downloaded HTML is a local comparison copy; no reuse or independent accuracy approval is inferred."
+    },
+    "khan": {
+      "source": "content/sources/islamhouse-bukhari/source.epub",
+      "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+      "inventory": "content/staging/bukhari-en-islamhouse/catalog.json",
+      "section": "OPS/section-0015.html",
+      "references": "2.13.1–2.13.63",
+      "records": 63,
+      "scope": "Exact pinned EPUB inventory. First/last identities and specific structural differences were checked; full report-by-report wording review remains pending."
+    },
+    "matchedBoundaries": [
+      {
+        "reference": 836,
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwBg:110",
+        "paragraphIds": [
+          "mwBg@110-452"
+        ],
+        "arabicSha256": "1e562ee0b497c5f8277f911a3ff92603b03ca25da9afb1f16c26a0d0e8ef9a89",
+        "bewleyReference": "836",
+        "khan": {
+          "reference": "2.13.1",
+          "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+          "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.1",
+          "recordSha256": "b97087227dbb75ae997e4f90e657f142a083c94cbd44aba87f2b823cda039178",
+          "textSha256": "30d52cd4ee475fe7a47e8aa52b6504c166798ae9bbc7576d1285577d5544ed51"
+        },
+        "scope": "Identity and boundary comparison only; not full wording or translation approval."
+      },
+      {
+        "reference": 856,
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwQg:0",
+        "paragraphIds": [
+          "mwQg"
+        ],
+        "arabicSha256": "3f52ee0e681a3980414baad2db90e9331ae348b8efaaaae9deebccf6aae45aa8",
+        "bewleyReference": "856",
+        "khan": {
+          "reference": "2.13.21",
+          "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+          "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.21",
+          "recordSha256": "4d4e50517cbb05e1688452dedbd38e3fb276562bef8fa3bf765fcb206899059a",
+          "textSha256": "457d8c7de760a98784eed3e5845eb3bdf9aee034941d2fed2c18966007f6fd26"
+        },
+        "scope": "Identity and boundary comparison only; not full wording or translation approval."
+      },
+      {
+        "reference": 879,
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwjA:0",
+        "paragraphIds": [
+          "mwjA"
+        ],
+        "arabicSha256": "59c2eb745b4f844474ab01e0ea5d52ced751cc31c1fed260a76b775aee3731b2",
+        "bewleyReference": "879",
+        "khan": {
+          "reference": "2.13.44",
+          "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+          "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.44",
+          "recordSha256": "d2b0e1f9f5eb46b664e6739b6d5a6c7814e995100d29d4fa1ba7b8478faa4fa1",
+          "textSha256": "cdf0a129fa136f80ce132001010d231e622ebfc91b555fa43299461dce2358b3"
+        },
+        "scope": "Identity and boundary comparison only; not full wording or translation approval."
+      },
+      {
+        "reference": 881,
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwlQ:0",
+        "paragraphIds": [
+          "mwlQ"
+        ],
+        "arabicSha256": "477ae41b5cbbcd0542c69221e8f9eaad6df344d1d4bca909b478e11849ff8101",
+        "bewleyReference": "881",
+        "khan": {
+          "reference": "2.13.45",
+          "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+          "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.45",
+          "recordSha256": "2ed4d61c834fb631c94ae3d02280b632e34947fee3b4b9947d16810427e53a38",
+          "textSha256": "567f03312be34e8f081b1e6d0b8cec9b2d5a86b48909c8f627e8240b89040955"
+        },
+        "scope": "Identity and boundary comparison only; not full wording or translation approval."
+      },
+      {
+        "reference": 898,
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwyg:0",
+        "paragraphIds": [
+          "mwyg"
+        ],
+        "arabicSha256": "ef767a3dfedb775beaf6ba57a76ba817add069856049e0bc11a73928f0b55bd5",
+        "bewleyReference": "898",
+        "khan": {
+          "reference": "2.13.62",
+          "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+          "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.62",
+          "recordSha256": "560bc8b8de0df33a9711f7a302ee56bd790cd99f89917cbd424b1092f28a24bb",
+          "textSha256": "c396e62148e68af1529e134546e54dd560de0102b0491a8154f96c5318e362d9"
+        },
+        "scope": "Identity and boundary comparison only; not full wording or translation approval."
+      },
+      {
+        "reference": 899,
+        "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwyw:0",
+        "paragraphIds": [
+          "mwyw"
+        ],
+        "arabicSha256": "9293c8dd46bda1a3dada8ec5d220e0ba9c674d5c506d9812fbcb5ff7d62a4115",
+        "bewleyReference": "899",
+        "khan": {
+          "reference": "2.13.63",
+          "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+          "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.63",
+          "recordSha256": "8cf0cd4281287f4372e4ff55151a94f8205a12e9be76f81835b150f6b6510794",
+          "textSha256": "f3cf677c99aa1474e8e5300569232b83dce60b5bed59c87d6359c93e4af86dcd"
+        },
+        "scope": "Identity and boundary comparison only; not full wording or translation approval."
+      }
+    ]
+  },
+  "openingParagraph": {
+    "blockId": "mwBg",
+    "blockSha256": "b2d661e6382c22eb1421cfaab984ceff0c61f7d3dd744af7cc5b97ac3a959921",
+    "chapterContext": {
+      "id": "mwBg@0-110",
+      "start": 0,
+      "end": 110,
+      "endsWithOriginalNewline": true
+    },
+    "firstReport": {
+      "id": "mwBg@110-452",
+      "start": 110,
+      "end": 452,
+      "reference": 836,
+      "printedReference": "876"
+    },
+    "printedEvidence": [
+      {
+        "sourceId": "brill-1862",
+        "pdfPages": [
+          223,
+          224
+        ]
+      },
+      {
+        "sourceId": "dar-ibn-kathir-2002",
+        "pdfPages": [
+          213
+        ]
+      }
+    ],
+    "decision": "Keep the Quran quotation in chapter context. Start the numbered report only at its existing marker; preserve the complete chain and every source character."
+  },
+  "compoundReport": {
+    "reference": 856,
+    "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwQg:0",
+    "paragraphIds": [
+      "mwQg"
+    ],
+    "arabicSha256": "3f52ee0e681a3980414baad2db90e9331ae348b8efaaaae9deebccf6aae45aa8",
+    "status": "retain-one-selected-entry-with-complete-internal-structure",
+    "modernPrintReferences": [
+      "896",
+      "897",
+      "898"
+    ],
+    "modernPrintPdfPage": 217,
+    "historicalPrintPdfPage": 228,
+    "selectedSpans": [
+      {
+        "printedReference": "896",
+        "start": 0,
+        "end": 254,
+        "selectedTextSha256": "46cd9aaee486c10420b4a3a558121fa9f5b002e8ec24815ab3f78d5fa4572140"
+      },
+      {
+        "printedReference": "897",
+        "start": 254,
+        "end": 326,
+        "selectedTextSha256": "a0dde53b1363f82391fb77772c62bb974bc70e2242e4819be1a78be7ba40d6a4"
+      },
+      {
+        "printedReference": "898",
+        "start": 326,
+        "end": 445,
+        "selectedTextSha256": "dddbd7be2edba14ed8d429e6e80727aeee24472eef24dea5d4157cc1229c8442"
+      }
+    ],
+    "khanReference": "2.13.21",
+    "finding": "The modern print separately numbers the first statement, the continuation after silence, and the final corroborating route. The selected digital source, the inspected historical-print passage and both English comparison groupings retain them together. The numerical difference does not establish two missing texts. Preserve the pause, both statements and the complete closing route; do not add duplicate app entries solely to equalize counts."
+  },
+  "printedChapterGap": {
+    "status": "two-print-candidate-not-admitted",
+    "beforeSelectedReference": 857,
+    "sourceChapterId": "chapter-12",
+    "selectedFollowingChapterId": "chapter-13",
+    "arabicHeading": "باب",
+    "printedChapterNumber": 13,
+    "printedWitnesses": [
+      {
+        "sourceId": "brill-1862",
+        "pdfPages": [
+          228
+        ]
+      },
+      {
+        "sourceId": "dar-ibn-kathir-2002",
+        "pdfPages": [
+          217
+        ]
+      }
+    ],
+    "finding": "Both prints have a bare chapter heading before the report permitting women to go to mosques at night. The digital source keeps 857 and 858 under its previous chapter. The final printed chapter is numbered 41, while the digital source contains 40 headings. Preserve the raw grouping and use the separately evidenced printed-heading path before admitting this portion; complete chapter-by-chapter wording review remains pending."
+  },
+  "englishReferenceCollision": {
+    "status": "no-corresponding-record-in-the-pinned-friday-section",
+    "reference": 880,
+    "sourceRecordId": "wikisource-bukhari-friday-prayer-r484865:mwkQ:0",
+    "paragraphIds": [
+      "mwkQ"
+    ],
+    "arabicSha256": "e4cda02fd124489da84cdaed34af04996c1193e00d96eb43c2a11250ed65e4da",
+    "printedReference": "922",
+    "printedWitnesses": [
+      {
+        "sourceId": "brill-1862",
+        "pdfPages": [
+          233,
+          234
+        ]
+      },
+      {
+        "sourceId": "dar-ibn-kathir-2002",
+        "pdfPages": [
+          222,
+          223
+        ]
+      }
+    ],
+    "bewleyReference": "880",
+    "webWitness": {
+      "url": "https://sunnah.com/bukhari:922",
+      "observedAt": "2026-10-30T02:56:42.473607+00:00",
+      "scope": "The full Asma/Fatimah report appears online. This was read through the web tool; no raw HTML snapshot or reproduction right is claimed.",
+      "displayedLegacyReference": "Vol. 2, Book 13, Hadith 44"
+    },
+    "pinnedEpubRecordAtThatReference": {
+      "reference": "2.13.44",
+      "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+      "sourceRecordId": "islamhouse-bukhari-epub-2010:2.13.44",
+      "recordSha256": "d2b0e1f9f5eb46b664e6739b6d5a6c7814e995100d29d4fa1ba7b8478faa4fa1",
+      "textSha256": "cdf0a129fa136f80ce132001010d231e622ebfc91b555fa43299461dce2358b3"
+    },
+    "finding": "The pinned EPUB 2.13.44 contains only the short Abu Said report corresponding to selected 879; the next 2.13.45 contains Amr ibn Taghlib corresponding to 881. The selected 880 Asma/Fatimah report is not separately inventoried in that Friday section, and its identifying names/story do not appear in those 63 bodies. Sunnah.com labels its longer report with the same deprecated legacy 44 reference. Do not bind that online text to the EPUB record or assume equal reference numbers identify equal bodies. This finding is limited to this pinned Friday section, not absence of all parallel accounts elsewhere.",
+    "requiredBeforeAdmission": "Use an explicitly scoped English comparison for this full occurrence, with exact source identity and distinct-wording review; never reuse the unrelated EPUB 2.13.44 body hash."
+  },
+  "wordingHolds": [
+    {
+      "reference": 880,
+      "status": "unreviewed-digital-versus-print-difference",
+      "finding": "The selected paragraph has repeated masculine قال around the reply attributed to Aishah, whereas the inspected print reads قالت قال. Keep the raw source unchanged; investigate an explicit two-print correction during the wording review. The historical and modern openings also differ in how Mahmud’s route is introduced. No wording correction is made by this structural intake."
+    }
+  ],
+  "bookBoundaries": {
+    "first": {
+      "selectedReference": 836,
+      "modernPrintReference": "876",
+      "brillPdfPages": [
+        223,
+        224
+      ],
+      "modernPdfPage": 213
+    },
+    "last": {
+      "selectedReference": 899,
+      "modernPrintReference": "941",
+      "brillPdfPage": 238,
+      "modernPdfPage": 227
+    },
+    "followingBook": {
+      "title": "Fear Prayer",
+      "brillPdfPage": 239,
+      "modernPdfPage": 228,
+      "modernPageInspection": "Modern page 228 identified from the PDF outline; historical page 239 visually inspected."
+    },
+    "claim": "Opening and closing boundary alignment only. Complete cross-edition wording equivalence remains unproven."
+  },
+  "remaining": [
+    "Review every report and full narrator chain against both Arabic prints and correctly identified English comparisons.",
+    "Keep all 12 chapter-context paragraphs separate from numbered narration; their English is still pending.",
+    "Handle the printed bare chapter before 857 through the existing explicit printed-heading mechanism.",
+    "Resolve the English reference collision and wording differences at 880 before its reader admission.",
+    "Prepare ordered translation batches and exact personal-prototype admissions without changing existing references. Independent review and publication permission remain separate."
+  ]
+}

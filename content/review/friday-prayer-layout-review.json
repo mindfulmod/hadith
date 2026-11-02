@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "status": "ai-reviewed-layout-only",
+  "reviewerKind": "ai",
+  "independentReview": "pending",
+  "checkedAt": "2026-10-30T02:53:34.329401+00:00",
+  "sourceId": "wikisource-bukhari-friday-prayer-r484865",
+  "sourceSha256": "19f6c42edef071b00005381723dd996716fdbe446d4e82b4224ee7933a8591db",
+  "auditSha256": "279a04ca3009ab4ad3a1b6b31549fecf7b52c22f6a013f45d12000bbc2364720",
+  "sources": [
+    {
+      "id": "brill-1862",
+      "label": "Historical Arabic print · Brill 1862",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf",
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+    },
+    {
+      "id": "dar-ibn-kathir-2002",
+      "label": "Arabic print · Dar Ibn Kathir 2002",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+    }
+  ],
+  "scope": "Structural classification only. All 20,570 source code points remain in order. The opening Quran quotation is chapter context, ending with its original newline; the complete first report begins at the existing [836] marker. Two printed witnesses show that separation. This map does not approve wording, translation, printed variants or reader admission.",
+  "expected": {
+    "numbers": [
+      836,
+      837,
+      838,
+      839,
+      840,
+      841,
+      842,
+      843,
+      844,
+      845,
+      846,
+      847,
+      848,
+      849,
+      850,
+      851,
+      852,
+      853,
+      854,
+      855,
+      856,
+      857,
+      858,
+      859,
+      860,
+      861,
+      862,
+      863,
+      864,
+      865,
+      866,
+      867,
+      868,
+      869,
+      870,
+      871,
+      872,
+      873,
+      874,
+      875,
+      876,
+      877,
+      878,
+      879,
+      880,
+      881,
+      882,
+      883,
+      884,
+      885,
+      886,
+      887,
+      888,
+      889,
+      890,
+      891,
+      892,
+      893,
+      894,
+      895,
+      896,
+      897,
+      898,
+      899
+    ],
+    "chapters": 40
+  },
+  "pageNumbering": "One-based PDF page numbers, not printed page labels.",
+  "decisions": [
+    {
+      "id": "layout-mwBg",
+      "blockId": "mwBg",
+      "blockSha256": "b2d661e6382c22eb1421cfaab984ceff0c61f7d3dd744af7cc5b97ac3a959921",
+      "issueIndexes": [
+        0
+      ],
+      "note": "Brill PDF pages 223–224 begin the Friday Prayer book with the chapter heading and Quran quotation, then the independent Abu al-Yaman → Shuayb → Abu al-Zinad → Abd al-Rahman ibn Hurmuz → Abu Hurayrah chain. Modern PDF page 213 prints the same introductory quotation before separately numbered report 876. In the pinned digital paragraph, [836] begins at Unicode code-point offset 110. Preserve [0,110) as chapter context and [110,end) as the full numbered report, with no inserted punctuation, omitted newline or inferred English wording. Bewley 836 and the pinned Khan-family 2.13.1 independently identify the first report body; neither makes the preceding Quran quotation part of its narration.",
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPages": [
+            223,
+            224
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPages": [
+            213
+          ]
+        }
+      ],
+      "units": [
+        {
+          "start": 0,
+          "end": 110,
+          "kind": "text"
+        },
+        {
+          "start": 110,
+          "end": 452,
+          "kind": "report-start",
+          "number": 836
+        }
+      ]
+    }
+  ]
+}

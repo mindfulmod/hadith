@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-02T15:49:38.364731+00:00",
+  "status": "source-intake-verified-wording-review-pending",
+  "baselineCommit": "35616bf53e40f6d682451be35c92c77b099ca01c",
+  "scope": {
+    "reports": 64,
+    "references": "836–899",
+    "originalBlocks": 115,
+    "derivedBlocks": 116,
+    "preservedCodePoints": 20570,
+    "chapters": 40,
+    "separateChapterContextParagraphs": 12,
+    "readerAdmission": false
+  },
+  "reader": {
+    "entries": 839,
+    "release": "opening-773d937234f4",
+    "sourceSha256": "8d6b812f202871c6eb1d1b59375c3ca2caacdc6ec8638edd0419d32b1f43d053",
+    "protectedFilesByteEqualToBaseline": 399,
+    "protectedScope": "Every tracked reader, audio, landscape and narration-source file, plus top-level web assets and JSON files.",
+    "newRecordings": 0
+  },
+  "automated": {
+    "nodeTests": 571,
+    "pythonTests": 107,
+    "totalTests": 678,
+    "integrityChecks": [
+      {
+        "command": "node scripts/prototype-admissions.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-opening-prototype.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-wikisource-book.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/audit-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/resolve-wikisource-layout.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-collection.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-audio.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node reader/check-content.mjs",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/import-bukhari.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-bukhari-jk.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-english.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/import-opening.py --check",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/check-opening-review.py",
+        "exitCode": 0
+      },
+      {
+        "command": "python3 scripts/build-opening-review.py --check",
+        "exitCode": 0
+      }
+    ],
+    "coverage": "Exact source ownership and order, opening context/chain boundary, rejection of damaged or incomplete evidence, compound report identity, English reference collision and unchanged reader scope."
+  },
+  "evidence": "research/friday-prayer-source-audit.json",
+  "publication": {
+    "performed": false,
+    "lastObservedRemoteMain": "a6d55223d3d863f2583ba67aa27edd139e9d7d6a",
+    "checkedAt": "2026-11-02T15:49:38.364731+00:00"
+  },
+  "browser": {
+    "newBrowserChecks": false,
+    "reason": "This change contains source intake and its tests only; the protected reader and media files are byte-identical to the baseline.",
+    "newPhysicalIPhoneAcceptance": false
+  },
+  "remaining": [
+    "Complete report-by-report Arabic and English wording comparison before authoring the first reader batch.",
+    "Support correctly pinned Volume 2 English comparisons; current collection validation assumes Volume 1.",
+    "Review the printed chapter before 857 and the source/English differences at 880 before admitting those entries.",
+    "Independent translation review, audio review, rights clearance and publication approval remain separate."
+  ]
+}
