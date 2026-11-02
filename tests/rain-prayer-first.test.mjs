@@ -10,9 +10,9 @@ import {startSession,resolveSession}from'../reader/session.mjs';
 import {release}from'../reader/release.mjs';
 const read=p=>JSON.parse(readFileSync(new URL('../'+p,import.meta.url),'utf8')),hash=o=>createHash('sha256').update(JSON.stringify(o)).digest('hex');
 const inv=read('content/staging/bukhari-rain-prayer-wikisource/catalog.json'),manifest=read('content/sources/wikisource-rain-prayer/manifest.json'),review=()=>read('content/review/rain-prayer-first-review.json');
-const {source,ledger,files}=collectionFiles(),entries=source.entries.filter(e=>e.book==='Rain Prayer'),book=ledger.books.find(b=>b.id==='rain-prayer'),get=n=>entries.find(e=>e.number===n),text=n=>get(n).english_blocks.join('\n\n'),plan=narrationPlan(source);
+const {source,ledger,files}=collectionFiles(),entries=source.entries.filter(e=>e.book==='Rain Prayer'&&e.number<=966),book=ledger.books.find(b=>b.id==='rain-prayer'),get=n=>entries.find(e=>e.number===n),text=n=>get(n).english_blocks.join('\n\n'),plan=narrationPlan(source);
 test('opening Rain Prayer batch retains every exact paragraph, full-span role and complete script',()=>{
- assert.deepEqual(entries.map(e=>e.number),[960,961,962,963,964,965,966]);assert.equal(book.sourceEntryCount,33);assert.equal(book.chapters.length,5);validateChapters(book);assert.equal(review().entries.reduce((n,e)=>n+e.segments.length,0),23);
+ assert.deepEqual(entries.map(e=>e.number),[960,961,962,963,964,965,966]);assert.equal(book.sourceEntryCount,33);assert.deepEqual(book.chapters.slice(0,5).map(c=>c.id),['chapter-01','chapter-02','chapter-03','chapter-04','chapter-04-print-05']);validateChapters(book);assert.equal(review().entries.reduce((n,e)=>n+e.segments.length,0),23);
  for(const row of review().entries){const e=get(row.number);assert.deepEqual(e.arabic_blocks,row.paragraphIds.map(id=>inv.blocks.find(b=>b.htmlId===id).text));assert.equal(row.segments.map(s=>s.arabic).join(''),e.arabic_blocks.join(''));assert.deepEqual(e.english_blocks,row.segments.map(s=>s.english));assert.equal(plan.entries.find(p=>p.number===row.number).script,e.english_blocks.join('\n\n'));assert.equal(e.audio_status,'No recording yet.');assert.equal(e.review.independentReview,'pending');}
  assert(!entries.some(e=>e.number===967||e.number==='983b'));assert.deepEqual(read('reader/audio/catalog.json').coverage.recorded,[1,2,3,4,5,6]);
 });
@@ -27,9 +27,9 @@ test('selected details and closing comments are retained without borrowing compa
  assert.equal(get(966).presentation.english.at(-1).kind,'transmission-note');assert.match(text(966),/relating to his father, from his uncle/);assert.match(text(966),/he was mistaken/);assert.doesNotMatch(text(966),/was weak/);
 });
 test('the empty chapter remains separately browseable, source-bound and excluded from all sessions and scripts',()=>{
- const chapter=book.chapters.at(-1),r=review().chapters.at(-1).printedEmptyChaptersAfter[0];assert.deepEqual(chapter.entryNumbers,[]);assert.equal(chapter.sourceContext.headingStatus,'heading-translation-pending');assert.equal(chapter.sourceContext.printedEmptyHeading.evidenceSha256,hash(r));assert.equal(chapterForNumber(book,966).id,'chapter-04');assert.equal(libraryRoute('#book/rain-prayer/chapter/'+chapter.id,{books:[book]}).chapter,chapter);
+ const chapter=book.chapters.find(c=>c.id==='chapter-04-print-05'),r=review().chapters.at(-1).printedEmptyChaptersAfter[0];assert.deepEqual(chapter.entryNumbers,[]);assert.equal(chapter.sourceContext.headingStatus,'heading-translation-pending');assert.equal(chapter.sourceContext.printedEmptyHeading.evidenceSha256,hash(r));assert.equal(chapterForNumber(book,966).id,'chapter-04');assert.equal(libraryRoute('#book/rain-prayer/chapter/'+chapter.id,{books:[book]}).chapter,chapter);
  for(const e of source.entries)assert(!e.arabic_blocks.includes(r.arabic));for(const p of plan.entries)assert(!p.script.includes(r.arabic)&&!p.script.includes(chapter.title));
- const session=startSession(source.entries,960,10);assert(session.numbers.every(n=>typeof n==='number'&&n>=960&&n<=966));const saved={numbers:[958,959],cursor:959,ended:false};assert.deepEqual(resolveSession(source.entries,saved,5,960),saved);
+ const session=startSession(source.entries,960,10);assert.equal(session.numbers[0],960);assert(session.numbers.every(n=>source.entries.some(e=>e.number===n)));const saved={numbers:[958,959],cursor:959,ended:false};assert.deepEqual(resolveSession(source.entries,saved,5,960),saved);
  const notes=read('reader/source-notes.json').books.find(b=>b.id==='rain-prayer'),route=notes.routes.find(x=>x.id===chapter.id);assert(release.files.some(f=>f.path===route.path));const html=readFileSync(new URL('../reader/'+route.path,import.meta.url),'utf8');for(const w of r.witnesses)assert(html.includes(w.reading));assert.match(html,/English heading is pending/);
 });
 test('mislabelled comparison is visible and cannot revert to a guessed same-number citation',()=>{
@@ -37,7 +37,7 @@ test('mislabelled comparison is visible and cannot revert to a guessed same-numb
  for(const mutate of [r=>delete r.comparisons[0].occurrenceLocator,r=>r.comparisons[0].reference='966',r=>r.comparisons[0].occurrenceLocator.sha256='0'.repeat(64)]){const reviewCopy=review(),row=reviewCopy.entries.at(-1);mutate(row);delete row.reviewRecordSha256;row.reviewRecordSha256=hash(row);assert.throws(()=>buildBookBatch(inv,reviewCopy,manifest,BOOK_CONFIGS['rain-prayer']));}
 });
 test('empty heading cannot be removed from the approved collection context or enter production on prototype evidence',()=>{
- const altered=structuredClone(ledger);altered.books.find(b=>b.id==='rain-prayer').chapters.pop();altered.catalogContextSha256=hash(altered.books);assert.throws(()=>buildBooks(source,altered));assert.throws(()=>buildBooks(source,ledger,{production:true}),/production collection/);
+ const altered=structuredClone(ledger);const changedBook=altered.books.find(b=>b.id==='rain-prayer');changedBook.chapters=changedBook.chapters.filter(c=>c.id!=='chapter-04-print-05');altered.catalogContextSha256=hash(altered.books);assert.throws(()=>buildBooks(source,altered));assert.throws(()=>buildBooks(source,ledger,{production:true}),/production collection/);
  const copy=review();copy.chapters.at(-1).printedEmptyChaptersAfter[0].entryNumbers=[966];assert.throws(()=>buildBookBatch(inv,copy,manifest,BOOK_CONFIGS['rain-prayer']));
  assert(files.get('reader/rain-prayer-review.html').includes('AI-assisted'));
 });

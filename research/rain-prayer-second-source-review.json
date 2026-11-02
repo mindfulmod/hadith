@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-02T22:54:42.304087+00:00",
+  "status": "ai-source-comparison-independent-review-pending",
+  "sourceAuditSha256": "d753a7a165f951d020cf7259f501610b372c2652b7188cae5998db4c2709955c",
+  "sourceReviewSha256": "495a5d39fd764f301f2c0271b8068da8aa9ea26854d34cf98965ccf50db61de2",
+  "referenceRange": [
+    967,
+    975
+  ],
+  "printInspection": {
+    "method": "Read complete rendered pages, including continuation lines and chapter boundaries; verified PDF byte hashes before using the renders.",
+    "brill-1862": {
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+      "pages": [
+        256,
+        257,
+        258,
+        259,
+        260
+      ]
+    },
+    "dar-ibn-kathir-2002": {
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+      "pages": [
+        245,
+        246,
+        247,
+        248
+      ]
+    }
+  },
+  "findings": [
+    {
+      "reference": 967,
+      "decision": "Keep sitta and every terrain word in the selected source. Classical commentary records the six-day variant; the dictionary supports, but does not certify, the provisional thickets rendering.",
+      "sources": [
+        "fath-rain-mosque",
+        "lisan-ajam"
+      ]
+    },
+    {
+      "reference": 968,
+      "decision": "Explicitly derive Said from Sad using both inspected printed readings; retain original Arabic and the two separately located English labels.",
+      "sources": [
+        "brill-1862",
+        "dar-ibn-kathir-2002"
+      ]
+    },
+    {
+      "reference": 972,
+      "decision": "Keep the absence-of-mention statement separate and anonymous. Mark the Khan opening damaged instead of silently repairing or borrowing it.",
+      "sources": [
+        "bewley-rain-prayer",
+        "islamhouse-khan"
+      ]
+    },
+    {
+      "reference": 974,
+      "decision": "Retain the complete separately attributed addition. Ibn al-Mulaqqin relays criticism; Ibn Hajar disputes it and cites other transmissions. This review makes no grading decision.",
+      "sources": [
+        "tawdih-rain-asbat",
+        "fath-rain-asbat"
+      ]
+    },
+    {
+      "reference": 974,
+      "decision": "Further print inspection clarifies that both Brill 260 and modern 248 omit the explicit Abu Abd Allah attribution; the selected digital text and Fath base quotation contain it. The immutable intake audit mentioned only the modern omission.",
+      "sources": [
+        "brill-1862",
+        "dar-ibn-kathir-2002",
+        "fath-rain-asbat"
+      ]
+    },
+    {
+      "reference": 975,
+      "decision": "Preserve reddened trees, the explicit twice instruction and looking at the city within a surrounding wreath; do not replace these with the Khan paraphrases.",
+      "sources": [
+        "bewley-rain-prayer",
+        "islamhouse-khan",
+        "fath-rain-mosque"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "fath-rain-mosque",
+      "label": "Ibn Hajar · Fath al-Bari · communal mosque report",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/ar/library/content/52/1878/باب-الاستسقاء-في-المسجد-الجامع"
+    },
+    {
+      "id": "fath-rain-asbat",
+      "label": "Ibn Hajar · Fath al-Bari · Asbat addition",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/ar/library/content/52/1893/باب-إذا-استشفع-المشركون-بالمسلمين-عند-القحط"
+    },
+    {
+      "id": "tawdih-rain-asbat",
+      "label": "Ibn al-Mulaqqin · al-Tawdih · Asbat addition",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/ar/library/content/305/1709/باب-إذا-استشفع-المشركون-بالمسلمين-عند-القحط"
+    },
+    {
+      "id": "lisan-ajam",
+      "label": "Ibn Manzur · Lisan al-Arab · ajam",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/ar/library/content/122/52/أجم"
+    }
+  ],
+  "limits": [
+    "Only the relevant commentary passages were inspected, not the complete commentary works.",
+    "Translation, narrator/reference mapping and chapter titles remain independently unreviewed.",
+    "No new source has been declared complete or pristine."
+  ]
+}

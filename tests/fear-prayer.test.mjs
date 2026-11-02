@@ -65,6 +65,8 @@ test('three chapter paragraphs stay separate and the discrepant heading is visib
  assert.deepEqual(c.headingDiscrepancy.printedWitnesses.map(w=>w.pdfPages),[[241],[230]]);
  assert.equal(batch.entries.length,6);
  a[1].chapters.at(-1).title='A silently translated heading';assert.throws(()=>buildBookBatch(...a));
- const scripts=narrationPlan(collectionFiles().source).entries.filter(e=>e.number>=900);
+ const numbers=new Set(batch.entries.map(e=>e.number));
+ const scripts=narrationPlan(collectionFiles().source).entries.filter(e=>numbers.has(e.number));
+ assert.equal(scripts.length,6);
  assert(scripts.every(e=>!e.script.includes('al-Awza‘i')&&!e.script.includes('Makhul')));
 });
