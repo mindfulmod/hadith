@@ -30,7 +30,8 @@ export const BOOK_CONFIGS=Object.freeze({
  'prayer-times':Object.freeze({id:'prayer-times',number:9,khanBooks:Object.freeze([10]),title:'Prayer Times',first:499,arabicSourceId:'arabic-prayer-times',bewleySourceId:'bewley-prayer-times',bewleyTitle:'Prayer Times',revision:484870}),
  adhan:Object.freeze({id:'adhan',number:10,khanBooks:Object.freeze([11]),title:'Adhan',first:578,arabicSourceId:'arabic-adhan',bewleySourceId:'bewley-adhan',bewleyTitle:'Adhan',revision:484867,sourceLayout:'mapped'}),
  'prayer-description':Object.freeze({id:'prayer-description',number:11,khanBooks:Object.freeze([12]),title:'Description of Prayer',first:699,arabicSourceId:'arabic-prayer-description',bewleySourceId:'bewley-prayer-description',bewleyTitle:'the Description of the Prayer',revision:253001,sourceLayout:'mapped'}),
- 'friday-prayer':Object.freeze({id:'friday-prayer',number:12,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([13]),title:'Friday Prayer',first:836,arabicSourceId:'arabic-friday-prayer',bewleySourceId:'bewley-friday-prayer',bewleyTitle:'Friday Prayer',revision:484865,sourceLayout:'mapped'})
+ 'friday-prayer':Object.freeze({id:'friday-prayer',number:12,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([13]),title:'Friday Prayer',first:836,arabicSourceId:'arabic-friday-prayer',bewleySourceId:'bewley-friday-prayer',bewleyTitle:'Friday Prayer',revision:484865,sourceLayout:'mapped'}),
+ 'fear-prayer':Object.freeze({id:'fear-prayer',number:13,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([14]),title:'Fear Prayer',first:900,arabicSourceId:'arabic-fear-prayer',bewleySourceId:'bewley-fear-prayer',bewleyTitle:'Fear Prayer',revision:484864})
 });
 function bookConfig(config){assert(Object.values(BOOK_CONFIGS).includes(config),'Unknown book configuration');return config;}
 let englishInventory;
