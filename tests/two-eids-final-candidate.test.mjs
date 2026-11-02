@@ -58,9 +58,9 @@ test('fifteen complete chapters and four unchanged introductions stay outside th
  assert(inv.blocks.find(b=>b.htmlId==='mwdw').text.includes('مولاهم'));
 });
 
-test('candidate preparation leaves the active reader and unresolved source hold unchanged',()=>{
+test('the preserved candidate remains distinct from its later personal-prototype admission',()=>{
  const r=review(),registry=read('content/review/two-eids-batches.json'),{source}=collectionFiles(),audit=read('research/two-eids-final-candidate-audit.json');
- assert.equal(r.candidateStatus,'prepared-not-admitted');assert(!registry.batches.some(b=>b.path.endsWith('two-eids-final-candidate.json')));assert.equal(source.entries.length,929);assert(!source.entries.some(e=>e.number>=926));
+ assert.equal(r.candidateStatus,'prepared-not-admitted');assert(!registry.batches.some(b=>b.path.endsWith('two-eids-final-candidate.json')));assert.deepEqual(read('content/review/two-eids-final-review.json').entries,r.entries);assert(!source.entries.some(e=>e.number===926));assert(r.entries.every(e=>source.entries.some(s=>s.number===e.number)));
  assert.equal(audit.candidateSha256,sha(JSON.stringify(r)));assert.equal(audit.admission.registered,false);assert.equal(read('content/review/source-holds.json').holds[0].status,'unresolved');
  assert.deepEqual(read('reader/audio/catalog.json').coverage.recorded,[1,2,3,4,5,6]);
 });

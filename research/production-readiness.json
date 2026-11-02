@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T19:10:43.782Z",
+  "updatedAt": "2026-11-02T20:56:04.589Z",
   "objective": "Production-ready English-first Sahih al-Bukhari reader with the full collection, precise source access, Cedar narration, whole-hadith sessions and dependable offline iPhone use.",
   "status": "in-progress",
   "decisions": {
@@ -19,9 +19,9 @@
   "requirements": [
     {
       "id": "source-coverage",
-      "status": "929-entry-local-preview-with-explicit-wording-hold",
-      "evidence": "content/sources/openiti-bukhari/manifest.json; content/staging/bukhari-ar/catalog.json; content/sources/openiti-bukhari-jk/manifest.json; content/staging/bukhari-ar-jk/catalog.json; research/arabic-reference-audit.json; content/sources/wikisource-books.json; content/sources/wikisource-knowledge/manifest.json; research/knowledge-source-audit.json; research/ablution-source-audit.json; research/ablution-layout-verification.json; content/review/ablution-layout-review.json; research/ablution-first-verification.json; tests/ablution-batch.test.mjs; research/ablution-second-verification.json; tests/ablution-second.test.mjs; research/ablution-third-verification.json; tests/printed-supplements.test.mjs; research/ablution-fourth-verification.json; tests/ablution-fourth.test.mjs; research/ablution-fifth-verification.json; tests/ablution-fifth.test.mjs; research/ablution-sixth-verification.json; tests/ablution-sixth.test.mjs; research/ablution-seventh-verification.json; tests/ablution-seventh.test.mjs; research/ablution-eighth-verification.json; tests/ablution-eighth.test.mjs; research/ablution-final-verification.json; tests/ablution-final.test.mjs; research/ghusl-source-audit.json; tests/test_wikisource_book.py; tests/book-introduction.test.mjs; research/ghusl-first-verification.json; tests/ghusl-first.test.mjs; research/ghusl-second-verification.json; tests/ghusl-second.test.mjs; research/ghusl-third-verification.json; tests/ghusl-third.test.mjs; research/ghusl-final-verification.json; tests/ghusl-final.test.mjs; research/menstruation-first-verification.json; tests/menstruation-first.test.mjs; tests/test_menstruation_intake.py; research/menstruation-second-verification.json; tests/menstruation-second.test.mjs; research/menstruation-final-verification.json; tests/menstruation-final.test.mjs; research/tayammum-first-verification.json; tests/tayammum-first.test.mjs; tests/test_tayammum_intake.py; research/tayammum-final-verification.json; tests/tayammum-final.test.mjs; research/prayer-first-verification.json; tests/prayer-first.test.mjs; tests/test_prayer_intake.py; research/prayer-second-verification.json; tests/prayer-second.test.mjs; tests/published-collection.test.mjs; research/prayer-third-verification.json; tests/prayer-third.test.mjs; research/prayer-fourth-verification.json; tests/prayer-fourth.test.mjs; research/prayer-fifth-verification.json; tests/prayer-fifth.test.mjs; research/prayer-sixth-verification.json; tests/prayer-sixth.test.mjs; research/prayer-seventh-verification.json; tests/prayer-seventh.test.mjs; research/prayer-eighth-verification.json; tests/prayer-eighth.test.mjs; research/prayer-ninth-verification.json; tests/prayer-ninth.test.mjs; research/prayer-tenth-verification.json; tests/prayer-tenth.test.mjs; research/prayer-final-verification.json; tests/prayer-final.test.mjs; research/prayer-times-first-verification.json; tests/prayer-times-first.test.mjs; tests/test_prayer_times_intake.py; research/prayer-times-second-verification.json; tests/prayer-times-second.test.mjs; research/adhan-third-deployment.json; research/adhan-complete-verification.json; research/prayer-description-source-audit.json; content/review/congregation-overlap-review.json; tests/test_prayer_description_intake.py; research/prayer-description-first-verification.json; tests/prayer-description-first.test.mjs; content/review/prayer-description-second-review.json; scripts/printed-reports.mjs; tests/prayer-description-second.test.mjs; research/prayer-description-second-verification.json; content/review/prayer-description-third-review.json; tests/prayer-description-third.test.mjs; research/prayer-description-third-verification.json; research/prayer-description-fourth-verification.json; research/prayer-description-fifth-verification.json; tests/prayer-description-fifth.test.mjs; research/prayer-description-sixth-verification.json; tests/prayer-description-sixth.test.mjs; research/prayer-description-final-verification.json; research/prayer-description-boundary-review.json; tests/prayer-description-final.test.mjs; research/prayer-description-tail-admission-verification.json; tests/prayer-description-tail.test.mjs; research/friday-prayer-second-verification.json; tests/friday-prayer-second.test.mjs; research/friday-prayer-third-verification.json; tests/friday-prayer-third.test.mjs; research/friday-prayer-final-verification.json; tests/friday-prayer-final.test.mjs; research/fear-prayer-verification.json; tests/fear-prayer.test.mjs; tests/test_fear_prayer_intake.py; research/two-eids-first-verification.json; tests/two-eids-first.test.mjs; tests/test_two_eids_intake.py; research/two-eids-second-verification.json; tests/two-eids-second.test.mjs; research/two-eids-926-wording-review.json; research/two-eids-926-apparatus-review.json; research/two-eids-926-apparatus-review.html",
-      "remaining": "The last observed approved live personal prototype remains 632 entries at a6d5522. The local preview contains 929 entries through the first ten Two Eids chapters ending 925, including 619b, 724b and user-confirmed 835b/835c. Reference 926 has a material wording hold. Reports 927–945, later books, English chapter introductions and independent certification remain unfinished."
+      "status": "948-entry-local-preview-with-visible-pending-reference",
+      "evidence": "content/sources/openiti-bukhari/manifest.json; content/staging/bukhari-ar/catalog.json; content/sources/openiti-bukhari-jk/manifest.json; content/staging/bukhari-ar-jk/catalog.json; research/arabic-reference-audit.json; content/sources/wikisource-books.json; content/sources/wikisource-knowledge/manifest.json; research/knowledge-source-audit.json; research/ablution-source-audit.json; research/ablution-layout-verification.json; content/review/ablution-layout-review.json; research/ablution-first-verification.json; tests/ablution-batch.test.mjs; research/ablution-second-verification.json; tests/ablution-second.test.mjs; research/ablution-third-verification.json; tests/printed-supplements.test.mjs; research/ablution-fourth-verification.json; tests/ablution-fourth.test.mjs; research/ablution-fifth-verification.json; tests/ablution-fifth.test.mjs; research/ablution-sixth-verification.json; tests/ablution-sixth.test.mjs; research/ablution-seventh-verification.json; tests/ablution-seventh.test.mjs; research/ablution-eighth-verification.json; tests/ablution-eighth.test.mjs; research/ablution-final-verification.json; tests/ablution-final.test.mjs; research/ghusl-source-audit.json; tests/test_wikisource_book.py; tests/book-introduction.test.mjs; research/ghusl-first-verification.json; tests/ghusl-first.test.mjs; research/ghusl-second-verification.json; tests/ghusl-second.test.mjs; research/ghusl-third-verification.json; tests/ghusl-third.test.mjs; research/ghusl-final-verification.json; tests/ghusl-final.test.mjs; research/menstruation-first-verification.json; tests/menstruation-first.test.mjs; tests/test_menstruation_intake.py; research/menstruation-second-verification.json; tests/menstruation-second.test.mjs; research/menstruation-final-verification.json; tests/menstruation-final.test.mjs; research/tayammum-first-verification.json; tests/tayammum-first.test.mjs; tests/test_tayammum_intake.py; research/tayammum-final-verification.json; tests/tayammum-final.test.mjs; research/prayer-first-verification.json; tests/prayer-first.test.mjs; tests/test_prayer_intake.py; research/prayer-second-verification.json; tests/prayer-second.test.mjs; tests/published-collection.test.mjs; research/prayer-third-verification.json; tests/prayer-third.test.mjs; research/prayer-fourth-verification.json; tests/prayer-fourth.test.mjs; research/prayer-fifth-verification.json; tests/prayer-fifth.test.mjs; research/prayer-sixth-verification.json; tests/prayer-sixth.test.mjs; research/prayer-seventh-verification.json; tests/prayer-seventh.test.mjs; research/prayer-eighth-verification.json; tests/prayer-eighth.test.mjs; research/prayer-ninth-verification.json; tests/prayer-ninth.test.mjs; research/prayer-tenth-verification.json; tests/prayer-tenth.test.mjs; research/prayer-final-verification.json; tests/prayer-final.test.mjs; research/prayer-times-first-verification.json; tests/prayer-times-first.test.mjs; tests/test_prayer_times_intake.py; research/prayer-times-second-verification.json; tests/prayer-times-second.test.mjs; research/adhan-third-deployment.json; research/adhan-complete-verification.json; research/prayer-description-source-audit.json; content/review/congregation-overlap-review.json; tests/test_prayer_description_intake.py; research/prayer-description-first-verification.json; tests/prayer-description-first.test.mjs; content/review/prayer-description-second-review.json; scripts/printed-reports.mjs; tests/prayer-description-second.test.mjs; research/prayer-description-second-verification.json; content/review/prayer-description-third-review.json; tests/prayer-description-third.test.mjs; research/prayer-description-third-verification.json; research/prayer-description-fourth-verification.json; research/prayer-description-fifth-verification.json; tests/prayer-description-fifth.test.mjs; research/prayer-description-sixth-verification.json; tests/prayer-description-sixth.test.mjs; research/prayer-description-final-verification.json; research/prayer-description-boundary-review.json; tests/prayer-description-final.test.mjs; research/prayer-description-tail-admission-verification.json; tests/prayer-description-tail.test.mjs; research/friday-prayer-second-verification.json; tests/friday-prayer-second.test.mjs; research/friday-prayer-third-verification.json; tests/friday-prayer-third.test.mjs; research/friday-prayer-final-verification.json; tests/friday-prayer-final.test.mjs; research/fear-prayer-verification.json; tests/fear-prayer.test.mjs; tests/test_fear_prayer_intake.py; research/two-eids-first-verification.json; tests/two-eids-first.test.mjs; tests/test_two_eids_intake.py; research/two-eids-second-verification.json; tests/two-eids-second.test.mjs; research/two-eids-926-wording-review.json; research/two-eids-926-apparatus-review.json; research/two-eids-926-apparatus-review.html; research/two-eids-final-verification.json; tests/pending-source.test.mjs",
+      "remaining": "Last observed approved live prototype: 632 entries. The local personal prototype has 948 complete entries, through selected reference 945 with 926 explicitly pending, plus 619b, 724b and user-confirmed 835b/835c. The Two Eids has 39 available reports of 40, all 26 chapters and all seven separate Arabic contexts. Later books, the held report, English chapter material and independent certification remain unfinished."
     },
     {
       "id": "english-full-collection",
@@ -32,7 +32,7 @@
     {
       "id": "content-review-gates",
       "status": "separate-personal-prototype-and-production-gates",
-      "evidence": "content/review/opening-ledger.json; scripts/publish-books.mjs; tests/content-library.test.mjs; reader/source-references.mjs; tests/source-references.test.mjs; content/review/opening-prototype-ledger.json; tests/opening-prototype.test.mjs; scripts/build-collection.mjs; content/review/prototype-admissions.json; tests/collection-batches.test.mjs; content/review/faith-batches.json; content/review/faith-next-review.json; content/review/faith-third-review.json; content/review/faith-final-review.json; research/chapter-material-verification.json; research/knowledge-first-verification.json; tests/knowledge-batch.test.mjs; research/knowledge-next-verification.json; research/knowledge-third-verification.json; research/knowledge-fourth-verification.json; scripts/arabic-corrections.mjs; research/knowledge-fifth-verification.json; research/knowledge-final-verification.json; research/ablution-second-verification.json; tests/ablution-second.test.mjs; research/ablution-third-verification.json; tests/printed-supplements.test.mjs; research/ablution-fourth-verification.json; tests/ablution-fourth.test.mjs; research/ablution-fifth-verification.json; tests/ablution-fifth.test.mjs; research/ablution-sixth-verification.json; tests/ablution-sixth.test.mjs; research/ablution-seventh-verification.json; tests/ablution-seventh.test.mjs; research/ablution-eighth-verification.json; tests/ablution-eighth.test.mjs; research/ablution-final-verification.json; tests/ablution-final.test.mjs; research/ghusl-first-verification.json; tests/ghusl-first.test.mjs; research/ghusl-second-verification.json; tests/ghusl-second.test.mjs; research/ghusl-third-verification.json; tests/ghusl-third.test.mjs; research/ghusl-final-verification.json; tests/ghusl-final.test.mjs; research/menstruation-first-verification.json; tests/menstruation-first.test.mjs; tests/test_menstruation_intake.py; research/menstruation-second-verification.json; tests/menstruation-second.test.mjs; research/menstruation-final-verification.json; tests/menstruation-final.test.mjs; research/prayer-description-first-verification.json; tests/prayer-description-first.test.mjs; scripts/prototype-admissions.mjs; tests/prototype-admissions.test.mjs; tests/publisher-scale.test.mjs; research/publisher-scale-verification.json; scripts/source-holds.mjs; content/review/source-holds.json; research/two-eids-926-wording-review.json; tests/two-eids-second.test.mjs; research/two-eids-926-apparatus-review.json; research/two-eids-926-apparatus-review.html",
+      "evidence": "content/review/opening-ledger.json; scripts/publish-books.mjs; tests/content-library.test.mjs; reader/source-references.mjs; tests/source-references.test.mjs; content/review/opening-prototype-ledger.json; tests/opening-prototype.test.mjs; scripts/build-collection.mjs; content/review/prototype-admissions.json; tests/collection-batches.test.mjs; content/review/faith-batches.json; content/review/faith-next-review.json; content/review/faith-third-review.json; content/review/faith-final-review.json; research/chapter-material-verification.json; research/knowledge-first-verification.json; tests/knowledge-batch.test.mjs; research/knowledge-next-verification.json; research/knowledge-third-verification.json; research/knowledge-fourth-verification.json; scripts/arabic-corrections.mjs; research/knowledge-fifth-verification.json; research/knowledge-final-verification.json; research/ablution-second-verification.json; tests/ablution-second.test.mjs; research/ablution-third-verification.json; tests/printed-supplements.test.mjs; research/ablution-fourth-verification.json; tests/ablution-fourth.test.mjs; research/ablution-fifth-verification.json; tests/ablution-fifth.test.mjs; research/ablution-sixth-verification.json; tests/ablution-sixth.test.mjs; research/ablution-seventh-verification.json; tests/ablution-seventh.test.mjs; research/ablution-eighth-verification.json; tests/ablution-eighth.test.mjs; research/ablution-final-verification.json; tests/ablution-final.test.mjs; research/ghusl-first-verification.json; tests/ghusl-first.test.mjs; research/ghusl-second-verification.json; tests/ghusl-second.test.mjs; research/ghusl-third-verification.json; tests/ghusl-third.test.mjs; research/ghusl-final-verification.json; tests/ghusl-final.test.mjs; research/menstruation-first-verification.json; tests/menstruation-first.test.mjs; tests/test_menstruation_intake.py; research/menstruation-second-verification.json; tests/menstruation-second.test.mjs; research/menstruation-final-verification.json; tests/menstruation-final.test.mjs; research/prayer-description-first-verification.json; tests/prayer-description-first.test.mjs; scripts/prototype-admissions.mjs; tests/prototype-admissions.test.mjs; tests/publisher-scale.test.mjs; research/publisher-scale-verification.json; scripts/source-holds.mjs; content/review/source-holds.json; research/two-eids-926-wording-review.json; tests/two-eids-second.test.mjs; research/two-eids-926-apparatus-review.json; research/two-eids-926-apparatus-review.html; tests/pending-source.test.mjs; research/two-eids-final-verification.json",
       "remaining": "Obtain actual independent human reviews and reuse evidence. Current production publishing is deliberately refused. Extend edition/reference mapping before expanding beyond the evaluation namespace; audio review needs its own ledger. Source presentation and per-entry citations are validated and bound to exact review hashes. Reference metadata requires its own human approval for production."
     },
     {
@@ -80,7 +80,7 @@
   ],
   "nextActions": [
     "Keep the 699-entry approval candidate and subsequent local previews separate from the approved 632-entry live release until the specific publication is authorized.",
-    "Use the focused 926 comparison packet for a recorded source-selection decision; additional printed witnesses and variants are now identified. Preserve the original input and separate chapter quotation. Continue source preparation for 927–945 independently; do not admit the held report through an ordinary batch.",
+    "Continue source intake beyond the Two Eids after selected reference 945. Keep 926 visibly pending until a recorded source-selection decision and independent review are complete. Define saved-session compatibility before inserting any formerly held report into existing session sequences.",
     "Preserve the overlapping congregation source as excluded evidence. It must not add duplicate entries or replace selected Adhan wording.",
     "Measure full bilingual loading and memory costs before further substantial expansion; existing scale tests and desktop checks do not establish physical iPhone performance for the full corpus.",
     "Complete the Arabic edition/reference map using the new exact-span inventory and pinned printed-witness findings; keep combined labels distinct from missing or misassigned bodies.",
@@ -415,12 +415,12 @@
     "boundaryReviewStatus": "references-confirmed-and-printed-tail-admitted-local-only"
   },
   "currentLocalPreview": {
-    "entries": 929,
+    "entries": 948,
     "books": 14,
-    "release": "opening-e28dc2bca4d1",
-    "readingBytes": 25028921,
+    "release": "opening-7a1e5c6f40c0",
+    "readingBytes": 25469751,
     "publication": "not-published",
-    "verification": "research/two-eids-second-verification.json",
+    "verification": "research/two-eids-final-verification.json",
     "liveEntries": 632,
     "liveCommit": "a6d55223d3d863f2583ba67aa27edd139e9d7d6a"
   },
@@ -553,7 +553,7 @@
     ]
   },
   "twoEidsIntake": {
-    "status": "first-ten-chapters-admitted-locally-material-wording-hold-at-926",
+    "status": "selected-sequence-accounted-for-with-visible-926-hold",
     "sourceRevision": 496076,
     "sourceAudit": "research/two-eids-source-audit.json",
     "inventoryReferences": [
@@ -565,12 +565,12 @@
     "inventoryArabicContexts": 7,
     "readerReferences": [
       906,
-      925
+      945
     ],
-    "readerReports": 20,
-    "readerChapters": 10,
-    "readerArabicContexts": 2,
-    "verification": "research/two-eids-second-verification.json",
+    "readerReports": 39,
+    "readerChapters": 26,
+    "readerArabicContexts": 7,
+    "verification": "research/two-eids-final-verification.json",
     "sharedComparisonValidation": {
       "change": "Khan-family shared-reference groups must now include every declared part exactly once in source order, including groups with a single declared part.",
       "reason": "Earlier validation rejected duplicates and inconsistent totals but allowed a jointly inflated total or an orphan part. That could falsely describe comparison coverage.",
@@ -584,11 +584,11 @@
       "browserRetestScope": "This is build-only validation. All 205 browser-tested reader files were separately confirmed byte-identical after it."
     },
     "remaining": [
-      "The additional edition/apparatus investigation is complete for the stated pages. Resolve the declared Arabic source selection and complete English translation with independent review before admitting 926; see the focused comparison packet.",
-      "Reports 927–945 and five later Arabic chapter contexts remain inventoried but not admitted.",
-      "All English chapter introductions and independent Arabic, English, lexical, reference and pronunciation reviews remain unfinished.",
-      "Actual recordings remain Hadith 1–6. No fresh physical iPhone, locked-screen playback or backup acceptance is claimed.",
-      "Full-corpus performance, rights clearance and public publication remain separate unfinished work."
+      "Reference 926 requires a recorded source-selection decision and complete independent Arabic/English review. It remains excluded from reading text and narration.",
+      "The next source section after the Two Eids has not been added. Full Bukhari coverage remains unfinished.",
+      "English chapter introductions, independent Arabic/English/context review and reuse/narration rights clearance remain pending.",
+      "Actual Cedar recordings remain Hadith 1–6. No new physical iPhone, locked-screen playback or backup acceptance is claimed.",
+      "The final full-corpus bilingual performance and historical saved-session compatibility when a pending report is eventually admitted still require verification."
     ],
     "wordingHold": {
       "reference": 926,
@@ -596,7 +596,7 @@
       "registry": "content/review/source-holds.json",
       "buildGuard": "scripts/source-holds.mjs",
       "reason": "Two further identified editions retain the main-text comparison, while the Dar al-Ta’sil apparatus explicitly records alternatives. The material source-selection question remains unresolved.",
-      "effect": "The report is excluded from reader text, search, sessions and narration. Ordinary batch admission, changed source identity, altered evidence and unsupported resolution flags fail closed.",
+      "effect": "The report remains excluded from reading text, narration and session items. Its reserved reference, chapter and exact-number search explain the pending status. Ordinary batch admission, changed identity/evidence and unsupported resolution flags still fail closed.",
       "noReplacementText": true,
       "independentResolution": "pending",
       "previousEvidence": "research/two-eids-926-wording-review.json",
@@ -606,6 +606,14 @@
         "maknaz-bukhari-98559"
       ],
       "verification": "research/two-eids-926-apparatus-verification.json"
-    }
+    },
+    "pendingReferences": [
+      926
+    ]
+  },
+  "pendingSourceNavigation": {
+    "status": "implemented-locally",
+    "userDecision": "Continue with a clear pending-entry notice",
+    "verification": "research/two-eids-final-verification.json"
   }
 }

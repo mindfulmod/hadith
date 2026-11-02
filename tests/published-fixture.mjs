@@ -11,3 +11,5 @@ export const BOOK_COUNT=BOOK_RANGES.length;
 export const LAST_NUMBER=ENTRY_NUMBERS.at(-1);
 export const RECORDED_NUMBERS=Object.freeze(fixture.recordedNumbers);
 export const UNRECORDED_COUNT=ENTRY_COUNT-RECORDED_NUMBERS.length;
+
+export const PENDING_REFERENCES=Object.freeze(fixture.pendingReferences||[]);

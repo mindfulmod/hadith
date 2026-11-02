@@ -94,7 +94,7 @@ export function buildBooks(source,ledger,{production=false}={}){
   const referenceRows=book.entryNumbers.map(n=>referencesByNumber.get(n));
   const citedIds=new Set(referenceRows.flatMap(row=>row.citations.map(c=>c.sourceId)));
   const sourceReferences={schemaVersion:2,entriesSha256:objectHash(selected),sources:ledger.sourceReferences.sources.filter(s=>citedIds.has(s.id)),entries:referenceRows};
-  const pack={schemaVersion:2,namespace:ledger.namespace,publication:mode,book:{id:book.id,number:book.number,title:book.title,...(book.sourceEntryCount!==undefined?{sourceEntryCount:book.sourceEntryCount}:{}),...(book.chapters?{chapters:book.chapters}:{}),...(book.introduction?{introduction:book.introduction}:{})},sourceReferences,entries:selected};
+  const pack={schemaVersion:2,namespace:ledger.namespace,publication:mode,book:{id:book.id,number:book.number,title:book.title,...(book.sourceEntryCount!==undefined?{sourceEntryCount:book.sourceEntryCount}:{}),...(book.pendingEntries?{pendingEntries:book.pendingEntries}:{}),...(book.chapters?{chapters:book.chapters}:{}),...(book.introduction?{introduction:book.introduction}:{})},sourceReferences,entries:selected};
   const bytes=publicJSON(pack),sha256=digest(bytes),path=`books/${book.id}-${sha256.slice(0,16)}.json`;
   files.set(path,bytes);
   catalog.books.push({...book,path,bytes:Buffer.byteLength(bytes),sha256});

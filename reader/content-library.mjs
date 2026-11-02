@@ -24,10 +24,13 @@ function validateCatalog(catalog){
   validateChapters(b);
   for(const chapter of b.chapters||[])if(chapter.sourceContext)requireValue(typeof chapter.sourceContext.notes.path==='string','Missing chapter source path');
  }
+ const held=catalog.books.flatMap(b=>b.pendingEntries||[]);
+ requireValue(new Set(held.map(p=>p.number)).size===held.length,'Duplicate pending source reference');
  const numbers=new Set(),ids=new Set();
  for(const e of catalog.entries){
   requireValue(validReference(e.number)&&!numbers.has(e.number)&&typeof e.id==='string'&&!ids.has(e.id),'Duplicate or invalid reference');
   requireValue(books.has(e.bookId)&&typeof e.book==='string'&&Number.isSafeInteger(e.englishWords)&&e.englishWords>0,'Invalid entry metadata');
+  requireValue(!held.some(p=>p.number===e.number||p.id===e.id),'Pending source appears as a readable entry');
   numbers.add(e.number);ids.add(e.id);
  }
  requireValue(JSON.stringify(catalog.books.flatMap(b=>b.entryNumbers))===JSON.stringify(catalog.entries.map(e=>e.number)),'Book order mismatch');
@@ -54,6 +57,7 @@ export async function createContentLibrary({files,base=new URL('./',import.meta.
   // Keep a whole book even when it alone exceeds the budget; never truncate source text.
   while(loaded.size>1&&(loaded.size>maxCachedBooks||cachedBytes>maxCachedBytes)){const oldest=loaded.keys().next().value;loaded.delete(oldest);cachedBytes-=bookDescriptors.get(oldest).bytes;}
  }
+ for(const book of catalog.books)for(const p of book.pendingEntries||[])requireValue(descriptors.has(p.notes.path),'Offline pending source notes are missing from this release');
  for(const book of catalog.books)if(book.introduction)requireValue(descriptors.has(book.introduction.notes.path),'Offline book introduction is missing from this release');
  for(const book of catalog.books)for(const chapter of book.chapters||[])if(chapter.sourceContext)requireValue(descriptors.has(chapter.sourceContext.notes.path),'Offline chapter source notes are missing from this release');
  function loadBook(id){
@@ -66,6 +70,7 @@ export async function createContentLibrary({files,base=new URL('./',import.meta.
    requireValue(pack.schemaVersion===catalog.schemaVersion&&pack.namespace===catalog.namespace&&pack.publication===catalog.publication,'Book version mismatch');
    requireValue(pack.book?.id===id&&pack.book.number===descriptor.number&&pack.book.title===descriptor.title,'Book identity mismatch');
    requireValue(pack.book.sourceEntryCount===descriptor.sourceEntryCount,'Source coverage mismatch');
+   requireValue(JSON.stringify(pack.book.pendingEntries)===JSON.stringify(descriptor.pendingEntries),'Pending source coverage mismatch');
    requireValue(JSON.stringify(pack.book.introduction)===JSON.stringify(descriptor.introduction),'Book introduction context mismatch');
    requireValue(JSON.stringify(pack.book.chapters)===JSON.stringify(descriptor.chapters),'Chapter context mismatch');
    if(catalog.schemaVersion===1)requireValue(pack.sourceRecord&&Array.isArray(pack.sourceRecord.sources)&&pack.sourceRecord.license,'Missing source trail');

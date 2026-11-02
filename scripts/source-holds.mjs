@@ -1,5 +1,6 @@
 /* A documented wording dispute cannot be cleared by a routine translation batch. */
 import assert from 'node:assert/strict';
+import {escapeHTML as esc} from '../reader/source-format.mjs';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 const root=new URL('../',import.meta.url);
@@ -29,4 +30,16 @@ export function validateSourceHolds(inventory,review,config,registry=holds){
   assert(!review.entries.some(r=>r.number===hold.reference||r.sourceRecordId===hold.sourceRecordId),
    `Unresolved source wording hold: ${hold.id}. See ${hold.evidence.path}`);
  }
+ return registry.holds.filter(h=>h.bookId===config.id);
+}
+
+// Public pending metadata is derived only from an exact, validated source hold.
+export function pendingSourceEntry(hold,inventory,config){
+ const row=inventory.records.find(r=>r.id===hold.sourceRecordId);
+ return {id:hold.id,number:hold.reference,chapterId:row.chapterId,status:'source-review-pending',reason:hold.reason,sourceId:hold.sourceId,sourceSha256:hold.sourceSha256,sourceRecordId:hold.sourceRecordId,arabicSha256:hold.arabicSha256,evidenceSha256:hold.evidence.sha256,notes:{path:config.id+'-review.html',fragment:'hadith-'+hold.reference}};
+}
+export function pendingSourceNotes(hold,inventory,manifest){
+ const e=read(hold.evidence.path),arabic=hold.paragraphIds.map(id=>inventory.blocks.find(b=>b.htmlId===id).text);
+ const prints=e.printedSources||[],commentary=e.classicalCommentary;
+ return '<article id="hadith-'+hold.reference+'"><p class="eyebrow">SOURCE REVIEW PENDING · NOT AVAILABLE TO READ OR LISTEN</p><h2>Hadith '+hold.reference+' · source review pending</h2><p>'+esc(hold.reason)+'</p><p>This is an unresolved wording choice in the app’s selected source. It is not a judgment that the hadith itself is inauthentic. No English translation or recording is supplied. Reading continues to the next available report; this reference stays reserved.</p><p><a href="./#read/'+hold.reference+'">Return to the pending reference →</a></p><details><summary>Unchanged selected Arabic · source evidence only</summary><div class="arabic" lang="ar" dir="rtl">'+arabic.map(t=>'<p>'+esc(t)+'</p>').join('')+'</div></details><p><a href="'+esc(manifest.url)+'" target="_blank" rel="noopener">Pinned Arabic source ↗</a></p><h3>Documented source difference</h3><p>'+esc(e.decision.reason)+'</p>'+ (commentary?'<p>'+esc(commentary.observation)+'</p><p><a href="'+esc(commentary.url)+'" target="_blank" rel="noopener">'+esc(commentary.work)+' ↗</a> · '+esc(commentary.locator)+'</p>':'')+'<ul>'+prints.map(p=>'<li><a href="'+esc(p.url+'#page='+p.pdfPage)+'" target="_blank" rel="noopener">'+esc(p.label)+' · PDF page '+p.pdfPage+' ↗</a>'+ (p.printedReference?' · printed reference '+p.printedReference:'')+'<p>'+esc(p.observation)+'</p></li>').join('')+'</ul><p>The selected Arabic, this explanation and source locations are saved with the reading material. Opening an external edition requires an internet connection. Independent source selection and translation review remain pending.</p></article>';
 }

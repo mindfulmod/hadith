@@ -72,3 +72,6 @@ body:not([data-view=listen]):not([data-view=read]) #audio-close{grid-column:3}
 #audio-listen-next{font-size:13px;margin:4px 6px}#audio-listen-next[hidden]{display:none}
 
 .chapter-context-long summary{cursor:pointer;min-height:44px;padding:10px 0;color:var(--ink)}.chapter-context-long summary span{float:right;color:var(--muted);font-size:12px}.chapter-context-long p{margin:6px 0 16px}.chapter-context-long[open] summary{margin-bottom:6px}
+
+/* Keep a pending reference inside its explanatory sentence. */
+.pending-source p a{display:inline;margin:0}
