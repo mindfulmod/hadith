@@ -1,0 +1,352 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-02T18:33:20.326Z",
+  "status": "complete-structural-intake-partial-wording-review",
+  "source": {
+    "id": "wikisource-bukhari-two-eids-r496076",
+    "revision": 496076,
+    "url": "https://ar.wikisource.org/w/index.php?title=%D8%B5%D8%AD%D9%8A%D8%AD_%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A%2F%D9%83%D8%AA%D8%A7%D8%A8_%D8%A7%D9%84%D8%B9%D9%8A%D8%AF%D9%8A%D9%86&oldid=496076",
+    "bytes": 143777,
+    "sha256": "f1ffdfcd05e365b305933df31732ef45ab13c38e32379d62bc0b184db9b80911",
+    "blocks": 74,
+    "codePoints": 13730,
+    "numberedReports": 40,
+    "selectedReferenceRange": [
+      906,
+      945
+    ],
+    "chapters": 26,
+    "arabicContextParagraphs": 7,
+    "layoutIssues": 0,
+    "inventory": "content/staging/bukhari-two-eids-wikisource/catalog.json"
+  },
+  "reviewedScope": {
+    "references": [
+      906,
+      918
+    ],
+    "completeReports": 13,
+    "chapters": [
+      1,
+      7
+    ],
+    "translatedSpans": 33,
+    "arabicReportCorrections": 0,
+    "contextParagraphsInThisBatch": 0,
+    "remainingReports": [
+      919,
+      945
+    ],
+    "remainingArabicContexts": 7
+  },
+  "printedWitnesses": [
+    {
+      "id": "brill-1862",
+      "label": "Historical Arabic print · Brill 1862",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ج1.pdf",
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+      "retrievalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+      "firstBatchVisuallyInspectedPdfPages": [
+        241,
+        242,
+        243,
+        244
+      ],
+      "sectionEndBoundaryPdfPage": 251,
+      "scope": "First thirteen complete reports and the section-end boundary visually inspected. Later report wording is not approved by this boundary check."
+    },
+    {
+      "id": "dar-ibn-kathir-2002",
+      "label": "Arabic print · Dar Ibn Kathir 2002",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+      "firstBatchVisuallyInspectedPdfPages": [
+        231,
+        232,
+        233,
+        234
+      ],
+      "sectionEndBoundaryPdfPage": 240,
+      "scope": "First thirteen complete reports and the section-end boundary visually inspected. Later report wording is not approved by this boundary check."
+    }
+  ],
+  "englishInventory": {
+    "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+    "volume": 2,
+    "book": 15,
+    "section": "OPS/section-0017.html",
+    "records": 36,
+    "range": [
+      "2.15.69",
+      "2.15.104"
+    ],
+    "scope": "Whole section inventoried; only the individually listed first-batch bodies are compared here."
+  },
+  "bewley": {
+    "url": "https://aishabewley.org/bukhari9",
+    "htmlBytes": 72446,
+    "htmlSha256": "633300895cb35acb77083d21507e430830fb1be5ede5c6b5eb7ec3ab2a8814fa",
+    "readReferences": [
+      906,
+      918
+    ]
+  },
+  "comparisons": [
+    {
+      "appReference": 906,
+      "modernPrintedReferences": [
+        948
+      ],
+      "bewleyReference": "906",
+      "khan": {
+        "id": "islamhouse-khan",
+        "reference": "2.15.69",
+        "referenceEvidence": {
+          "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+          "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.69",
+          "recordSha256": "e5f11c7a6270d18449161ed3e4728a8e32179a7eb7a1ca139b94ae2f54e14104"
+        }
+      },
+      "englishBodySha256": "ae821e493b36a2d0c27f35604282c42f12dced21d558acf663f1851554f3a040"
+    },
+    {
+      "appReference": 907,
+      "modernPrintedReferences": [
+        949,
+        950
+      ],
+      "bewleyReference": "907",
+      "khan": {
+        "id": "islamhouse-khan",
+        "reference": "2.15.70",
+        "referenceEvidence": {
+          "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+          "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.70",
+          "recordSha256": "026dced1d823db450eaa48bb23c7ce98b6160645c2e9fe926bb2040159fd3bc4"
+        }
+      },
+      "englishBodySha256": "148a10e7cf12e85fa7bc6c4d0f77ad93b959ae5f59015f98c93064504c3dc90c"
+    },
+    {
+      "appReference": 908,
+      "modernPrintedReferences": [
+        951
+      ],
+      "bewleyReference": "908",
+      "khan": {
+        "id": "islamhouse-khan",
+        "reference": "2.15.71",
+        "referenceEvidence": {
+          "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+          "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.71",
+          "recordSha256": "368ddc579fa2821443bc02978c940ae21f40b9bb3c0628c7e3e54731b5ecba76"
+        }
+      },
+      "englishBodySha256": "f5c8f8516c657ea9a407b0fd42b6b41113a48d4be46bfe8b9bf3e7a51554069c"
+    },
+    {
+      "appReference": 909,
+      "modernPrintedReferences": [
+        952
+      ],
+      "bewleyReference": "909",
+      "khan": {
+        "id": "islamhouse-khan",
+        "reference": "2.15.72",
+        "referenceEvidence": {
+          "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+          "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.72",
+          "recordSha256": "352aa3619fefa19c53d3329bad91805c5902c397a7bf0a963aca14fbca7f1a19"
+        }
+      },
+      "englishBodySha256": "cac4cb2aad824f97add04e7f8157877a44460cfb168002e1f1e24b754defe64b"
+    },
+    {
+      "appReference": 910,
+      "modernPrintedReferences": [
+        953
+      ],
+      "bewleyReference": "910",
+      "khan": {
+        "id": "islamhouse-khan",
+        "reference": "2.15.73",
+        "referenceEvidence": {
+          "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+          "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.73",
+          "recordSha256": "429bb1cfd30b7b953e9dd15fa1fb25c0bdee33ea273548ba4d22529d3d86f3b9"
+        }
+      },
+      "englishBodySha256": "364cfeac6bc9d9aa76a8bd3f5decdb09c5a7a7a77724472b0e16b9c8f7e1fabc"
+    },
+    {
+      "appReference": 911,
+      "modernPrintedReferences": [
+        954
+      ],
+      "bewleyReference": "911",
+      "khan": {
+        "id": "islamhouse-khan",
+        "reference": "2.15.74",
+        "referenceEvidence": {
+          "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+          "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.74",
+          "recordSha256": "3627370031796d9906fe4e92fa796063b7d7c627691c571eec1dd7b58e5f6fd6"
+        }
+      },
+      "englishBodySha256": "0a9f60f279750878390fef491e3d0099ffd71a6b30d17f4ed6d4353cf1047817"
+    },
+    {
+      "appReference": 912,
+      "modernPrintedReferences": [
+        955
+      ],
+      "bewleyReference": "912",
+      "khan": {
+        "id": "islamhouse-khan",
+        "reference": "2.15.75",
+        "referenceEvidence": {
+          "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+          "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.75",
+          "recordSha256": "cbcd7241ffabd3678f78b29bf5758f61d740299dac27ef6115a0af1ddcf39c5f"
+        }
+      },
+      "englishBodySha256": "391d0e47182a0aca2f1b8df2737c72ee914ce3603b790ded649292ae774db7d6"
+    },
+    {
+      "appReference": 913,
+      "modernPrintedReferences": [
+        956
+      ],
+      "bewleyReference": "913",
+      "khan": {
+        "id": "islamhouse-khan",
+        "reference": "2.15.76",
+        "referenceEvidence": {
+          "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+          "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.76",
+          "recordSha256": "4f925f5b3e647a463736173fadeb494a8023fbe2f4924b6d3015d596c08020d6"
+        }
+      },
+      "englishBodySha256": "1a3d8842510e06f5d89170fadd2a3a7abe9127d8a66a2bcfb6ac267e696e3dcb"
+    },
+    {
+      "appReference": 914,
+      "modernPrintedReferences": [
+        957
+      ],
+      "bewleyReference": "914",
+      "khan": {
+        "id": "islamhouse-khan",
+        "reference": "2.15.77",
+        "referenceEvidence": {
+          "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+          "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.77",
+          "recordSha256": "a7dbde80d4dbe75b7acacf306c9ce70659beb5733f520cff3a0f0b9edba9aba3"
+        }
+      },
+      "englishBodySha256": "a72ffd3e42dd463bd0fa39a4d13257ce8c0338f337bcc0236c82df5ce87c3755"
+    },
+    {
+      "appReference": 915,
+      "modernPrintedReferences": [
+        958
+      ],
+      "bewleyReference": "915",
+      "khan": {
+        "id": "islamhouse-khan",
+        "reference": "2.15.78",
+        "referenceEvidence": {
+          "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+          "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.78",
+          "recordSha256": "0beefdcf31ffdeea0f5024603295c0c3cf3cf7c0dca710d33a71cd45aa7e05f9"
+        },
+        "part": {
+          "index": 1,
+          "count": 4
+        },
+        "note": "The pinned English record combines four separately selected entries. This is part 1 of 4, corresponding only to app 915; the surrounding parts are retained separately as 915–918. The record’s damaged characters in the two-festival clause are not used as reader wording."
+      },
+      "englishBodySha256": "b090b38549069f7592381e73e5f4a6dae664ab41fc24fb6a6be7307606a7f06b"
+    },
+    {
+      "appReference": 916,
+      "modernPrintedReferences": [
+        959
+      ],
+      "bewleyReference": "916",
+      "khan": {
+        "id": "islamhouse-khan",
+        "reference": "2.15.78",
+        "referenceEvidence": {
+          "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+          "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.78",
+          "recordSha256": "0beefdcf31ffdeea0f5024603295c0c3cf3cf7c0dca710d33a71cd45aa7e05f9"
+        },
+        "part": {
+          "index": 2,
+          "count": 4
+        },
+        "note": "The pinned English record combines four separately selected entries. This is part 2 of 4, corresponding only to app 916; the surrounding parts are retained separately as 915–918. The record’s damaged characters in the two-festival clause are not used as reader wording."
+      },
+      "englishBodySha256": "b090b38549069f7592381e73e5f4a6dae664ab41fc24fb6a6be7307606a7f06b"
+    },
+    {
+      "appReference": 917,
+      "modernPrintedReferences": [
+        960
+      ],
+      "bewleyReference": "917",
+      "khan": {
+        "id": "islamhouse-khan",
+        "reference": "2.15.78",
+        "referenceEvidence": {
+          "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+          "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.78",
+          "recordSha256": "0beefdcf31ffdeea0f5024603295c0c3cf3cf7c0dca710d33a71cd45aa7e05f9"
+        },
+        "part": {
+          "index": 3,
+          "count": 4
+        },
+        "note": "The pinned English record combines four separately selected entries. This is part 3 of 4, corresponding only to app 917; the surrounding parts are retained separately as 915–918. The record’s damaged characters in the two-festival clause are not used as reader wording."
+      },
+      "englishBodySha256": "b090b38549069f7592381e73e5f4a6dae664ab41fc24fb6a6be7307606a7f06b"
+    },
+    {
+      "appReference": 918,
+      "modernPrintedReferences": [
+        961
+      ],
+      "bewleyReference": "918",
+      "khan": {
+        "id": "islamhouse-khan",
+        "reference": "2.15.78",
+        "referenceEvidence": {
+          "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+          "sourceRecordId": "islamhouse-bukhari-epub-2010:2.15.78",
+          "recordSha256": "0beefdcf31ffdeea0f5024603295c0c3cf3cf7c0dca710d33a71cd45aa7e05f9"
+        },
+        "part": {
+          "index": 4,
+          "count": 4
+        },
+        "note": "The pinned English record combines four separately selected entries. This is part 4 of 4, corresponding only to app 918; the surrounding parts are retained separately as 915–918. The record’s damaged characters in the two-festival clause are not used as reader wording."
+      },
+      "englishBodySha256": "b090b38549069f7592381e73e5f4a6dae664ab41fc24fb6a6be7307606a7f06b"
+    }
+  ],
+  "findings": [
+    "907 remains one complete selected entry; its two portions are separately numbered 949/950 by the modern print. Ibn Hajar documents joined and separate transmission.",
+    "915–918 remain four separate entries despite sharing pinned EPUB 2.15.78. Each is bound to a distinct part, full record hash and its own Bewley/printed reference.",
+    "The digital/printed Eid at 906 and ibn Niyar at 912 are not replaced by the differing Jumu‘a and ibn Dinar in the Bewley comparison.",
+    "907 preserves the written shorter honorific, source uncertainty and full second account. 909 retains the interposed comment; 910 the full closing route; 911 the unresolved closing uncertainty; 913 the complete Marwan exchange.",
+    "916–918 keep their continued opening words and link separately to 915. No earlier chain is copied into their source text.",
+    "The first and seventh chapter headings have documented edition variants. The selected heading wording remains unchanged."
+  ],
+  "review": "content/review/two-eids-first-review.json",
+  "limits": "AI-assisted personal prototype only. Full-section wording review, the remaining 27 reports, English chapter introductions, independent review, rights clearance and narration remain unfinished. Structural coverage and source comparison are not scholarly certification."
+}

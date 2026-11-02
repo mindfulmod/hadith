@@ -31,7 +31,8 @@ export const BOOK_CONFIGS=Object.freeze({
  adhan:Object.freeze({id:'adhan',number:10,khanBooks:Object.freeze([11]),title:'Adhan',first:578,arabicSourceId:'arabic-adhan',bewleySourceId:'bewley-adhan',bewleyTitle:'Adhan',revision:484867,sourceLayout:'mapped'}),
  'prayer-description':Object.freeze({id:'prayer-description',number:11,khanBooks:Object.freeze([12]),title:'Description of Prayer',first:699,arabicSourceId:'arabic-prayer-description',bewleySourceId:'bewley-prayer-description',bewleyTitle:'the Description of the Prayer',revision:253001,sourceLayout:'mapped'}),
  'friday-prayer':Object.freeze({id:'friday-prayer',number:12,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([13]),title:'Friday Prayer',first:836,arabicSourceId:'arabic-friday-prayer',bewleySourceId:'bewley-friday-prayer',bewleyTitle:'Friday Prayer',revision:484865,sourceLayout:'mapped'}),
- 'fear-prayer':Object.freeze({id:'fear-prayer',number:13,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([14]),title:'Fear Prayer',first:900,arabicSourceId:'arabic-fear-prayer',bewleySourceId:'bewley-fear-prayer',bewleyTitle:'Fear Prayer',revision:484864})
+ 'fear-prayer':Object.freeze({id:'fear-prayer',number:13,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([14]),title:'Fear Prayer',first:900,arabicSourceId:'arabic-fear-prayer',bewleySourceId:'bewley-fear-prayer',bewleyTitle:'Fear Prayer',revision:484864}),
+ 'two-eids':Object.freeze({id:'two-eids',number:14,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([15]),title:'The Two Eids',first:906,arabicSourceId:'arabic-two-eids',bewleySourceId:'bewley-two-eids',bewleyTitle:'The Two Eids',revision:496076})
 });
 function bookConfig(config){assert(Object.values(BOOK_CONFIGS).includes(config),'Unknown book configuration');return config;}
 let englishInventory;
@@ -257,9 +258,11 @@ export function buildBookBatch(inventory,review,manifest,config){
   if(c.status!==undefined)continue;
   for(const part of c.splitReferences||[c]){const group=comparisonGroups.get(part.reference)||[];group.push(part);comparisonGroups.set(part.reference,group);}
  }
- for(const group of comparisonGroups.values())if(group.length>1){
+ for(const group of comparisonGroups.values())if(group.length>1||group.some(c=>c.part)){
   assert(group.every(c=>c.part&&c.part.count===group[0].part?.count),'A shared reference needs consistent report parts');
+  assert.equal(group.length,group[0].part.count,'A shared reference needs all declared report parts');
   assert.equal(new Set(group.map(c=>c.part.index)).size,group.length,'A comparison part cannot be assigned twice');
+  assert.deepEqual(group.map(c=>c.part.index),Array.from({length:group.length},(_,i)=>i+1),'Shared comparison parts must be complete, unique and in source order');
  }
 
  const bewleyGroups=new Map();
