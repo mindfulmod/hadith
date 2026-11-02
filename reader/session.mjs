@@ -1,4 +1,5 @@
 /* Estimates choose whole entries; they never shorten source text. */
+import {validReference,compareReferences,orderedReferences} from './references.mjs';
 export function readingSeconds(entry,wordsPerMinute=160){
  const words=entry.englishWords??entry.english_blocks.join(' ').trim().split(/\s+/u).length;
  return words/wordsPerMinute*60;
@@ -20,11 +21,24 @@ export function startSession(entries,startNumber,minutes=5){
 /* A valid saved session is finite: browsing and new publications cannot enlarge it. */
 export function resolveSession(entries,saved,minutes=5,last=entries[0]?.number){
  const all=entries.map(e=>e.number),numbers=saved?.numbers;
- const start=Array.isArray(numbers)?all.indexOf(numbers[0]):-1;
- const valid=start>=0&&numbers.length>0&&numbers.every((n,i)=>all[start+i]===n);
+ // New reports may be inserted between old entries. Preserve the saved ordered
+ // subset; duplicates, reversals and removed/unknown entries still recover.
+ const valid=orderedReferences(numbers,all);
  if(!valid)return startSession(entries,all.includes(last)?last:all[0],minutes);
  const cursor=numbers.includes(saved.cursor)?saved.cursor:numbers.includes(last)?last:numbers[0];
- return {numbers:[...numbers],cursor,ended:saved.ended===true};
+ return rememberSessionPending({numbers:[...numbers],cursor,ended:saved.ended===true},saved.pendingNumbers);
+}
+/* Remember leading and internal holds so a later addition can be offered apart
+   from the session. This metadata contains references only, never source text. */
+export function rememberSessionPending(saved,pending=[]){
+ const pendingNumbers=[...new Set([...(saved.pendingNumbers||[]),...(Array.isArray(pending)?pending:[])].filter(n=>validReference(n)&&!saved.numbers.includes(n)))].sort(compareReferences);
+ return pendingNumbers.length?{...saved,pendingNumbers}:saved;
+}
+export function sessionAvailable(entries,saved){
+ const selected=new Set(saved.numbers),remembered=new Set(saved.pendingNumbers||[]),first=entries.findIndex(e=>e.number===saved.numbers[0]),last=entries.findIndex(e=>e.number===saved.numbers.at(-1));
+ // Legacy sessions lack hold metadata. An omitted entry inside their finite
+ // span is still available separately; do not claim when it was published.
+ return entries.filter((e,i)=>!selected.has(e.number)&&(remembered.has(e.number)||first>=0&&i>first&&i<last));
 }
 export function visitSession(saved,number){return saved.numbers.includes(number)?{...saved,cursor:number}:saved;}
 export function nextSession(entries,saved,minutes=5){

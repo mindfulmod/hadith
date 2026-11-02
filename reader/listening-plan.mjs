@@ -1,9 +1,10 @@
-/* A finite contiguous prefix. A missing recording is a stopping point, never a skip. */
-import {validNumber,contiguousReferences} from './references.mjs';
+/* Play a finite prefix of the saved session. A missing recording for a selected
+   entry is a stopping point. Newly inserted collection entries are not added. */
+import {validNumber,orderedReferences} from './references.mjs';
 import {playbackVariants} from './recording.mjs';
 export function listeningPlan(numbers,recordings,entries){
  const all=entries?.map(e=>e.number);
- if(all?!contiguousReferences(numbers,all):!Array.isArray(numbers)||!numbers.length||numbers.some((n,i)=>!validNumber(n)||i&&n!==numbers[i-1]+1))return null;
+ if(all?!orderedReferences(numbers,all):!Array.isArray(numbers)||!numbers.length||numbers.some((n,i)=>!validNumber(n)||i&&n!==numbers[i-1]+1))return null;
  const steps=[],variants=playbackVariants(recordings);let i=0,reason='complete';
  while(i<numbers.length){
   const recording=recordings.find(r=>r.chapters.some(c=>c.number===numbers[i]));

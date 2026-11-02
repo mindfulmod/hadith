@@ -73,7 +73,7 @@ test('finite sessions follow catalogue order through the suffix while free brows
 });
 test('listening uses catalogue adjacency and stops at a missing suffixed recording',()=>{
  const {source}=referenceFixture(),recordings=[619,'619b',620].map(number=>({id:'fixture-'+number,duration:10,chapters:[{number,start:0,duration:10}]}));
- const plan=listeningPlan([619,'619b',620],recordings,source.entries);assert.deepEqual(plan.playable,[619,'619b',620]);assert.equal(plan.reason,'complete');assert.equal(listeningPlan([619,620],recordings,source.entries),null);
+ const plan=listeningPlan([619,'619b',620],recordings,source.entries);assert.deepEqual(plan.playable,[619,'619b',620]);assert.equal(plan.reason,'complete');assert.deepEqual(listeningPlan([619,620],recordings,source.entries).playable,[619,620]);
  const missing=listeningPlan([619,'619b',620],recordings.filter(r=>r.chapters[0].number!=='619b'),source.entries);assert.deepEqual(missing.playable,[619]);assert.equal(missing.nextNumber,'619b');assert.equal(missing.reason,'unrecorded');assert.equal(listeningPlan([619,'619b',620],recordings),null);
 });
 test('source-note partitioning preserves distinct suffix anchors and offline navigation',()=>{

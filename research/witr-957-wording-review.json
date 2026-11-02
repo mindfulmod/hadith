@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-02T21:44:51.597580+00:00",
+  "status": "unresolved-source-wording-hold",
+  "appReference": 957,
+  "scope": "Focused review of the selected report’s ambiguous group/treaty referents. No English report or composite Arabic reconstruction is supplied.",
+  "source": {
+    "sourceId": "wikisource-bukhari-witr-r484862",
+    "sourceSha256": "223319fe53322104022116d56399580413a19fb5ffe2821eccf881114e4b06de",
+    "sourceRecordId": "wikisource-bukhari-witr-r484862:957",
+    "paragraphIds": [
+      "mwJw"
+    ],
+    "arabicSha256": "7b487cfc22b903bd5d24b4c118cc90207f046383921d3db4af11ab6ae7f374e2",
+    "url": "https://ar.wikisource.org/w/index.php?title=%D8%B5%D8%AD%D9%8A%D8%AD+%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A%2F%D9%83%D8%AA%D8%A7%D8%A8+%D8%A7%D9%84%D9%88%D8%AA%D8%B1&oldid=484862"
+  },
+  "selectedInput": {
+    "paragraphId": "mwJw",
+    "text": "[957] حدثنا مسدد قال: حدثنا عبد الواحد قال: حدثنا عاصم قال: سألت أنس بن مالك عن القنوت، فقال قد كان القنوت قلت: قبل الركوع أو بعده قال قبله قال: فإن فلانا أخبرني عنك أنك قلت: بعد الركوع، فقال كذب إنما قنت رسول الله ﷺ بعد الركوع شهرا أراه كان بعث قوما يقال لهم القراء زهاء سبعين رجلا إلى قوم من المشركين دون أولئك وكان بينهم وبين رسول الله ﷺ عهد فقنت رسول الله ﷺ شهرا يدعو عليهم ",
+    "sha256": "7b487cfc22b903bd5d24b4c118cc90207f046383921d3db4af11ab6ae7f374e2"
+  },
+  "printedSources": [
+    {
+      "sourceId": "brill-1862",
+      "label": "Historical Arabic print · Brill 1862",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+      "fileSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+      "inspection": "AI visual inspection of the identified page; independent review pending",
+      "pdfPage": 254,
+      "printedReference": null,
+      "observation": "The selected دون أولئك phrase and adjacent treaty clause remain in the main text. Agreement in the main wording does not settle the referents."
+    },
+    {
+      "sourceId": "dar-ibn-kathir-2002",
+      "label": "Arabic print · Dar Ibn Kathir 2002",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "fileSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+      "inspection": "AI visual inspection of the identified page; independent review pending",
+      "pdfPage": 243,
+      "printedReference": 1002,
+      "observation": "The selected دون أولئك phrase and adjacent treaty clause remain in the main text. Agreement in the main wording does not settle the referents."
+    }
+  ],
+  "classicalCommentary": {
+    "author": "Ibn Hajar al-‘Asqalani",
+    "work": "Fath al-Bari",
+    "url": "https://www.islamweb.net/ar/library/content/52/7432/باب-غزوة-الرجيع-ورعل-وذكوان-وبئر-معونة",
+    "locator": "Volume 7, discussion of reference 3870, immediately before printed page 453; comparison with the report at the end of Witr.",
+    "observation": "Ibn Hajar explicitly calls the Witr phrase unclear, then cites a fuller version through al-Isma‘ili that distinguishes the groups. This is evidence of a real referent problem, not permission to insert the fuller wording into the selected source.",
+    "appInference": "An English fewer-in-number rendering cannot be treated as a settled literal equivalent merely because both comparison families use it."
+  },
+  "englishComparisons": [
+    {
+      "sourceId": "bewley-witr",
+      "reference": "957",
+      "url": "https://aishabewley.org/bukhari9",
+      "observation": "Uses a numerical comparison for the group phrase. That interpretation does not resolve the commentary’s referent problem."
+    },
+    {
+      "sourceId": "islamhouse-khan",
+      "reference": "2.16.116",
+      "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+      "recordSha256": "e9028f3d0f8df64befe44eb681c50923fecbb4594588870b5a3a7bb7b251f6b7",
+      "observation": "Uses a numerical comparison and supplies contextual explanations absent from the selected wording. It does not preserve the selected uncertainty marker explicitly."
+    }
+  ],
+  "decision": {
+    "readerEligible": false,
+    "narrationEligible": false,
+    "arabicChanged": false,
+    "englishTranslationSupplied": false,
+    "sourceSelection": "unresolved",
+    "independentReview": "pending",
+    "reason": "The selected phrase has an explicitly documented referent ambiguity. The app cannot silently add the fuller parallel account or choose a numerical interpretation to make a fluent English report.",
+    "nextWork": "Obtain an explicit source/translation decision identifying how the group and treaty pronouns are to be rendered. Retain the uncertainty marker and distinguish lexical discussion from source wording. Later reports remain available."
+  },
+  "limitations": [
+    "This is AI source comparison, not independent scholarly certification.",
+    "Matching prints may share transmission ancestry. Their agreement does not resolve the interpretive issue.",
+    "Only identified print pages, comparison bodies and the cited commentary passage were inspected."
+  ]
+}

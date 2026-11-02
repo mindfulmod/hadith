@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "namespace": "bukhari-opening-v1",
   "publication": "personal-prototype",
-  "sourceRecordSha256": "50ef6dbddc5454a2e70f16c49acbeecff31d7719fa34e91413f9aba9498dfaf2",
+  "sourceRecordSha256": "70aec6181a137d421cb06ed3a7ad1871115180127f0f08be2afc1796c17cf35a",
   "rights": {
     "status": "pending",
     "evidence": [
@@ -33,7 +33,9 @@
       "reader/fear-prayer-inputs.json",
       "reader/fear-prayer-review.html",
       "reader/two-eids-inputs.json",
-      "reader/two-eids-review.html"
+      "reader/two-eids-review.html",
+      "reader/witr-inputs.json",
+      "reader/witr-review.html"
     ]
   },
   "books": [
@@ -14111,6 +14113,193 @@
           "notes": {
             "path": "two-eids-review.html",
             "fragment": "hadith-926"
+          }
+        }
+      ]
+    },
+    {
+      "id": "witr",
+      "number": 15,
+      "title": "Witr",
+      "sourceEntryCount": 14,
+      "entryNumbers": [
+        946,
+        947,
+        948,
+        949,
+        950,
+        951,
+        952,
+        953,
+        954,
+        955,
+        956,
+        958,
+        959
+      ],
+      "chapters": [
+        {
+          "id": "chapter-01",
+          "title": "What has been reported about Witr",
+          "entryNumbers": [
+            946,
+            947,
+            948,
+            949
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "witr-review.html",
+              "fragment": "chapter-01"
+            }
+          }
+        },
+        {
+          "id": "chapter-02",
+          "title": "The times of Witr",
+          "entryNumbers": [
+            950,
+            951
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 1,
+              "englishStatus": "pending"
+            },
+            "notes": {
+              "path": "witr-review.html",
+              "fragment": "chapter-02"
+            }
+          }
+        },
+        {
+          "id": "chapter-03",
+          "title": "The Prophet, may Allah bless him and grant him peace, waking his family for Witr",
+          "entryNumbers": [
+            952
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "witr-review.html",
+              "fragment": "chapter-03"
+            }
+          }
+        },
+        {
+          "id": "chapter-04",
+          "title": "Making one’s last prayer Witr",
+          "entryNumbers": [
+            953
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "witr-review.html",
+              "fragment": "chapter-04"
+            }
+          }
+        },
+        {
+          "id": "chapter-05",
+          "title": "Witr on a riding animal",
+          "entryNumbers": [
+            954
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "witr-review.html",
+              "fragment": "chapter-05"
+            }
+          }
+        },
+        {
+          "id": "chapter-06",
+          "title": "Witr while travelling",
+          "entryNumbers": [
+            955
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "witr-review.html",
+              "fragment": "chapter-06"
+            }
+          }
+        },
+        {
+          "id": "chapter-07",
+          "title": "Qunut before and after bowing",
+          "entryNumbers": [
+            956,
+            958,
+            959
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "witr-review.html",
+              "fragment": "chapter-07"
+            }
+          }
+        }
+      ],
+      "pendingEntries": [
+        {
+          "id": "bukhari:957",
+          "number": 957,
+          "chapterId": "chapter-07",
+          "status": "source-review-pending",
+          "reason": "The group and treaty referents are explicitly identified as unclear in classical commentary; an exact English rendering remains under review.",
+          "sourceId": "wikisource-bukhari-witr-r484862",
+          "sourceSha256": "223319fe53322104022116d56399580413a19fb5ffe2821eccf881114e4b06de",
+          "sourceRecordId": "wikisource-bukhari-witr-r484862:957",
+          "arabicSha256": "7b487cfc22b903bd5d24b4c118cc90207f046383921d3db4af11ab6ae7f374e2",
+          "evidenceSha256": "5807d9906b217d58444157a7a201c5564639e13802a007d62485eac485fe7cc9",
+          "notes": {
+            "path": "witr-review.html",
+            "fragment": "hadith-957"
           }
         }
       ]
@@ -30232,15 +30421,236 @@
       "contextReview": {
         "status": "pending"
       }
+    },
+    {
+      "number": 946,
+      "id": "bukhari:946",
+      "entrySha256": "6bc9f2b3002219b1edb0956ab5ba24c989a0ed3839c08e64e7959989a7c39f53",
+      "arabicSha256": "fe156220f3559f342142d019eb3c336f11baefdeba07c3262e1afb5ee62b6645",
+      "englishSha256": "28345583c881631bfbcc0302999cfd2bb1f091c7439819e680b1cba0793a46ad",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 947,
+      "id": "bukhari:947",
+      "entrySha256": "e6e962f8fd4aae399c3325daf512235bae305177876912824f6f1772b44bb5f8",
+      "arabicSha256": "a522e24553627b052602634cbd87298ffa7358d2d4f73ed0a9b7617820fa84b1",
+      "englishSha256": "4908cd7371aa99a41dfa573f26cc051302b3663936b23ef5d79793ff6fd42230",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 948,
+      "id": "bukhari:948",
+      "entrySha256": "b28e0a2de7ea4b398d336009130dac426815923236076473e1683d24611e23fd",
+      "arabicSha256": "b1c9e5e946ce887198e821e9c8314b21c4abe23675e6786af76b3dcd8a4a8b59",
+      "englishSha256": "c12fd03a07a3001fb973902ee4f3b838e47d65e0d97ed9cde883979753a869c4",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 949,
+      "id": "bukhari:949",
+      "entrySha256": "1ba3d6894742249c09ae12b588f328971b5d98c0e0af9040a9400b651f2bb918",
+      "arabicSha256": "dbd56247747d84004505d8436a1a3290c6dc7a244bf4d523224b81656ccc83fd",
+      "englishSha256": "7a7a994fa6f1b87d4848fc799a59df17d3faac77a4b9afa01b57a3e2c69a240d",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 950,
+      "id": "bukhari:950",
+      "entrySha256": "dc97dbcf3a7dadb478014b59eedd957402747ffa671f0a7ddac234f27aad5665",
+      "arabicSha256": "252e6f90e268b468dd78ab8d53d44e378c04f8c9d11f76b65707cea7cf63c0e4",
+      "englishSha256": "69d37a0e0d0e4c4a4648a4640ffcb3886764491c1009691bd3447a1d2637ab3d",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 951,
+      "id": "bukhari:951",
+      "entrySha256": "24a7998d727a006a663752d49271907b09aff7d709f9cd4f4966780229ecc48b",
+      "arabicSha256": "ff4a170e9837811c1dc29ea372c0460075620ba5e1bab28e58046db32f71ba2c",
+      "englishSha256": "a91441328e357f5dbef6295aa4b398da85c44ec345cae78c932517af8d83632b",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 952,
+      "id": "bukhari:952",
+      "entrySha256": "0cb555d7ba60f2c0820267735d50ea0960364ece3537ca91a03593ff79d511cb",
+      "arabicSha256": "608634f86014f24e0cd899a48214d4d5c30c1f0dcba0a3d42795c58f6a0414bf",
+      "englishSha256": "a04ff9cd92bc18e5f7254ea3fe3e2270b402c6d6a93652bcd7f79c2fb61f43b0",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 953,
+      "id": "bukhari:953",
+      "entrySha256": "84130003bfbf3379969b81813aa6921f5758b596a049bd5c63f7a240fa54099d",
+      "arabicSha256": "439f38b4171665203d1a420e2b58a82d8b67f4d4033a5c1697e98a4cd180efbb",
+      "englishSha256": "5f0a619d1e2b702d6b406841e688a9308be139ba64660128343167bf23e95d4b",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 954,
+      "id": "bukhari:954",
+      "entrySha256": "7dce376f30d9b508e444b5328acb3d97bb5ee38513349645e9e78acc59a03056",
+      "arabicSha256": "f30a80e1f5e6d7dccf625db389457e2903e5e421830f4d7e3631751d145d5c50",
+      "englishSha256": "a685aa507a3b489c0f75281df650f7e71d21359d8c11fad282fc3bb0197a7abb",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 955,
+      "id": "bukhari:955",
+      "entrySha256": "6e214b1a61d608e48f3a5b5410b0a48741c5ed96a4c634a7a8de50b3f5ca695a",
+      "arabicSha256": "b8a43e735d73ea595aa32dfecce42d997f1095c57aafe2c86c31d703e05344a8",
+      "englishSha256": "c6eabb1dd527903b6e819a5ccd90c8e4690e7f88a6acc058803144f35a357a9a",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 956,
+      "id": "bukhari:956",
+      "entrySha256": "ebed7fc743aaed69698e5a4e8f6c3e938cd962e8cb203fe8bf66df4f994602ca",
+      "arabicSha256": "c566b4a304ec45b23c5348d133fda8bc5125c6c9c5bfc2d7ab16d65f2ee860ba",
+      "englishSha256": "240ccd42a512b71024d75fc9792859bd36fcad8052452eb4bebaf42e6e703d70",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 958,
+      "id": "bukhari:958",
+      "entrySha256": "1fa6153b6ba71d085feef9717b13473abb25541786f65d5ce8ea180ef65d8c82",
+      "arabicSha256": "2cc00dee0e5d3d01a0b8e72f440bdd9ecd6381b82e917d77b590930d55ca77f1",
+      "englishSha256": "5d6f05f1f737352385f5b095b98dc5891d136017987f624bda55d5164dfd8f30",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 959,
+      "id": "bukhari:959",
+      "entrySha256": "1e537763527210a062c94596ed45b1196f9235e413787c107a98897b58d0bafc",
+      "arabicSha256": "aff6aeca3c1839c75bf5d67a45d901ca9e0d07515061f43da75d906354a0b8ba",
+      "englishSha256": "0648235743227db50b2c2d46d52ae529c61e9c0dcc5adec5be3ba4960328d08a",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
     }
   ],
-  "catalogContextSha256": "cca5c520bc23403860360ebed276aec4b7a6ac9d15d3feaf8e0c64908500e0d9",
+  "catalogContextSha256": "d598a6edaa65b2634185bb6144f46350ad92443bd2b3bcc7513875086731081d",
   "collectionReview": {
     "status": "pending"
   },
   "sourceReferences": {
     "schemaVersion": 1,
-    "sourceRecordSha256": "50ef6dbddc5454a2e70f16c49acbeecff31d7719fa34e91413f9aba9498dfaf2",
+    "sourceRecordSha256": "70aec6181a137d421cb06ed3a7ad1871115180127f0f08be2afc1796c17cf35a",
     "sources": [
       {
         "id": "arabic-base",
@@ -31627,6 +32037,34 @@
         "kind": "commentary",
         "format": "web",
         "url": "https://islamweb.net/ar/library/content/52/1835/باب-إذا-فاته-العيد-يصلي-ركعتين-وكذلك-النساء-ومن-كان-في-البيوت-والقرى"
+      },
+      {
+        "id": "arabic-witr",
+        "label": "Arabic Wikisource · fixed revision 484862",
+        "kind": "arabic-input",
+        "format": "web",
+        "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_الوتر&oldid=484862"
+      },
+      {
+        "id": "bewley-witr",
+        "label": "Aisha Bewley · Witr",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://aishabewley.org/bukhari9"
+      },
+      {
+        "id": "fath-witr-times",
+        "label": "Ibn Hajar · Fath al-Bari · times of Witr",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://www.islamweb.net/ar/library/content/52/1848/باب-ساعات-الوتر"
+      },
+      {
+        "id": "ayni-witr",
+        "label": "Al-‘Ayni · ‘Umdat al-Qari · opening Witr discussion",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://www.islamweb.net/ar/library/content/303/4094/أبواب-الوتر"
       }
     ],
     "entries": [
@@ -81380,10 +81818,659 @@
           "fragment": "hadith-945",
           "label": "Comparison notes and chapter source for this hadith"
         }
+      },
+      {
+        "id": "bukhari:946",
+        "number": 946,
+        "entrySha256": "6bc9f2b3002219b1edb0956ab5ba24c989a0ed3839c08e64e7959989a7c39f53",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-witr",
+            "locator": "Book of Witr · source entry 946 · باب ما جاء في الوتر",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-witr",
+            "locator": "Book of Witr · entry 946",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 16, Number 105",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 252",
+            "pdfPage": 252,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 241",
+            "pdfPage": 241,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "witr-review.html",
+          "fragment": "hadith-946",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:947",
+        "number": 947,
+        "entrySha256": "e6e962f8fd4aae399c3325daf512235bae305177876912824f6f1772b44bb5f8",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-witr",
+            "locator": "Book of Witr · source entry 947 · باب ما جاء في الوتر",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-witr",
+            "locator": "Book of Witr · entry 947",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 16, Number 106",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 252",
+            "pdfPage": 252,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 241",
+            "pdfPage": 241,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "witr-review.html",
+          "fragment": "hadith-947",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:948",
+        "number": 948,
+        "entrySha256": "b28e0a2de7ea4b398d336009130dac426815923236076473e1683d24611e23fd",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-witr",
+            "locator": "Book of Witr · source entry 948 · باب ما جاء في الوتر",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-witr",
+            "locator": "Book of Witr · entry 948",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 16, Number 107",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF pages 252, 253",
+            "pdfPage": 252,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 241",
+            "pdfPage": 241,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "witr-948-lexical",
+            "sourceId": "ayni-witr",
+            "locator": "Discussion of al-Qasim’s closing remark",
+            "scope": "Lexical comparison only; no legal commentary inserted into the working report."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "witr-review.html",
+          "fragment": "hadith-948",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:949",
+        "number": 949,
+        "entrySha256": "1ba3d6894742249c09ae12b588f328971b5d98c0e0af9040a9400b651f2bb918",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-witr",
+            "locator": "Book of Witr · source entry 949 · باب ما جاء في الوتر",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-witr",
+            "locator": "Book of Witr · entry 949",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 16, Number 108",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 253",
+            "pdfPage": 253,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 242",
+            "pdfPage": 242,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "witr-review.html",
+          "fragment": "hadith-949",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:950",
+        "number": 950,
+        "entrySha256": "dc97dbcf3a7dadb478014b59eedd957402747ffa671f0a7ddac234f27aad5665",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-witr",
+            "locator": "Book of Witr · source entry 950 · باب ساعات الوتر",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-witr",
+            "locator": "Book of Witr · entry 950",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 16, Number 109",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 253",
+            "pdfPage": 253,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 242",
+            "pdfPage": 242,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "witr-review.html",
+          "fragment": "hadith-950",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:951",
+        "number": 951,
+        "entrySha256": "24a7998d727a006a663752d49271907b09aff7d709f9cd4f4966780229ecc48b",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-witr",
+            "locator": "Book of Witr · source entry 951 · باب ساعات الوتر",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-witr",
+            "locator": "Book of Witr · entry 951",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 16, Number 110",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 253",
+            "pdfPage": 253,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 242",
+            "pdfPage": 242,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "witr-951-lexical",
+            "sourceId": "fath-witr-times",
+            "locator": "Discussion of كل الليل and السحر",
+            "scope": "Lexical comparison only; no legal commentary inserted into the working report."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "witr-review.html",
+          "fragment": "hadith-951",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:952",
+        "number": 952,
+        "entrySha256": "0cb555d7ba60f2c0820267735d50ea0960364ece3537ca91a03593ff79d511cb",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-witr",
+            "locator": "Book of Witr · source entry 952 · باب إيقاظ النبي ﷺ أهله بالوتر",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-witr",
+            "locator": "Book of Witr · entry 952",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 16, Number 111",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 253",
+            "pdfPage": 253,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 242",
+            "pdfPage": 242,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "witr-review.html",
+          "fragment": "hadith-952",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:953",
+        "number": 953,
+        "entrySha256": "84130003bfbf3379969b81813aa6921f5758b596a049bd5c63f7a240fa54099d",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic prints and one complete English comparison were checked. The second English reference contains damaged wording and cannot confirm the missing words. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-witr",
+            "locator": "Book of Witr · source entry 953 · باب ليجعل آخر صلاته وترا",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-witr",
+            "locator": "Book of Witr · entry 953",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 16, Number 112 · damaged wording",
+            "scope": "Located comparison has a damaged command; missing Witr is not supplied from this body. See the entry notes and Witr intake evidence."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 253",
+            "pdfPage": 253,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 242",
+            "pdfPage": 242,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "witr-review.html",
+          "fragment": "hadith-953",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:954",
+        "number": 954,
+        "entrySha256": "7dce376f30d9b508e444b5328acb3d97bb5ee38513349645e9e78acc59a03056",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-witr",
+            "locator": "Book of Witr · source entry 954 · باب الوتر على الدابة",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-witr",
+            "locator": "Book of Witr · entry 954",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 16, Number 113",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF pages 253, 254",
+            "pdfPage": 253,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF pages 242, 243",
+            "pdfPage": 242,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "witr-review.html",
+          "fragment": "hadith-954",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:955",
+        "number": 955,
+        "entrySha256": "6e214b1a61d608e48f3a5b5410b0a48741c5ed96a4c634a7a8de50b3f5ca695a",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-witr",
+            "locator": "Book of Witr · source entry 955 · باب الوتر في السفر",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-witr",
+            "locator": "Book of Witr · entry 955",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 16, Number 114",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 254",
+            "pdfPage": 254,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 243",
+            "pdfPage": 243,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "witr-review.html",
+          "fragment": "hadith-955",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:956",
+        "number": 956,
+        "entrySha256": "ebed7fc743aaed69698e5a4e8f6c3e938cd962e8cb203fe8bf66df4f994602ca",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-witr",
+            "locator": "Book of Witr · source entry 956 · باب القنوت قبل الركوع وبعده",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-witr",
+            "locator": "Book of Witr · entry 956",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 16, Number 115",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 254",
+            "pdfPage": 254,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 243",
+            "pdfPage": 243,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "witr-review.html",
+          "fragment": "hadith-956",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:958",
+        "number": 958,
+        "entrySha256": "1fa6153b6ba71d085feef9717b13473abb25541786f65d5ce8ea180ef65d8c82",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-witr",
+            "locator": "Book of Witr · source entry 958 · باب القنوت قبل الركوع وبعده",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-witr",
+            "locator": "Book of Witr · entry 958",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 16, Number 117",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 254",
+            "pdfPage": 254,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 243",
+            "pdfPage": 243,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "witr-review.html",
+          "fragment": "hadith-958",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:959",
+        "number": 959,
+        "entrySha256": "1e537763527210a062c94596ed45b1196f9235e413787c107a98897b58d0bafc",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-witr",
+            "locator": "Book of Witr · source entry 959 · باب القنوت قبل الركوع وبعده",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-witr",
+            "locator": "Book of Witr · entry 959",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 16, Number 118",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 254",
+            "pdfPage": 254,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 243",
+            "pdfPage": 243,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "witr-review.html",
+          "fragment": "hadith-959",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
       }
     ]
   },
-  "referencesSha256": "9df8cc278b2391e919b16af66702cccfd48a2c8e466579e79dfcb90fc2446372",
+  "referencesSha256": "22fd5544d029c795a584dce47c49d4da986981450cfdd45cdec71c9434414e26",
   "referencesReview": {
     "status": "pending"
   }

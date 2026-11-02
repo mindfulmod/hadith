@@ -153,5 +153,12 @@ test('the media queue traverses a suffixed reference without coalescing or skipp
  missing.api.listenSession([619,'619b',620],{entries});await tick();finish(missing);await tick();
  assert.equal(missing.api.getListeningState().nextNumber,'619b');assert.equal(missing.audio.playCalls,1);
  assert(missing.elements.get('#audio-message').textContent.includes('Hadith 619b'));
- assert.equal(missing.api.listenSession([619,620],{entries}),false);
+ // A session saved before 619b became available keeps its original selection,
+ // even when a recording for the inserted report now exists.
+ const earlier=harness({},items);
+ assert.equal(earlier.api.listenSession([619,620],{entries}),true);await tick();
+ assert.equal(earlier.api.getPlaybackState().number,619);finish(earlier);await tick();
+ assert.equal(earlier.api.getPlaybackState().number,620);finish(earlier);await tick();
+ assert.equal(earlier.api.getListeningState().complete,true);assert.equal(earlier.audio.playCalls,2);
+ assert.equal(earlier.api.listenSession([620,619],{entries}),false);
 });

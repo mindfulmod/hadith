@@ -1,4 +1,5 @@
 import test from 'node:test';
+import {ENTRY_COUNT} from './published-fixture.mjs';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
@@ -16,7 +17,7 @@ const catalog=read('reader/books/catalog.json'),book=catalog.books.find(b=>b.id=
 
 test('all forty Two Eids occurrences are accounted for as 39 complete entries and one explicit hold',()=>{
  const {source,ledger}=collectionFiles(),b=ledger.books.find(b=>b.id==='two-eids');
- assert.equal(source.entries.length,948);assert.equal(b.entryNumbers.length,39);assert.equal(b.sourceEntryCount,40);assert.equal(b.chapters.length,26);
+ assert.equal(source.entries.length,ENTRY_COUNT);assert.equal(b.entryNumbers.length,39);assert.equal(b.sourceEntryCount,40);assert.equal(b.chapters.length,26);
  assert.deepEqual(b.pendingEntries.map(p=>p.number),[926]);assert.equal(b.pendingEntries[0].evidenceSha256,read('content/review/source-holds.json').holds[0].evidence.sha256);
  assert.deepEqual([...b.entryNumbers,926].sort((a,b)=>a-b),inv.records.map(r=>r.number));
  assert(!source.entries.some(e=>e.number===926));assert(!narrationPlan(source).entries.some(e=>e.number===926));

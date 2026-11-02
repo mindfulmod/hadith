@@ -33,7 +33,8 @@ export const BOOK_CONFIGS=Object.freeze({
  'prayer-description':Object.freeze({id:'prayer-description',number:11,khanBooks:Object.freeze([12]),title:'Description of Prayer',first:699,arabicSourceId:'arabic-prayer-description',bewleySourceId:'bewley-prayer-description',bewleyTitle:'the Description of the Prayer',revision:253001,sourceLayout:'mapped'}),
  'friday-prayer':Object.freeze({id:'friday-prayer',number:12,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([13]),title:'Friday Prayer',first:836,arabicSourceId:'arabic-friday-prayer',bewleySourceId:'bewley-friday-prayer',bewleyTitle:'Friday Prayer',revision:484865,sourceLayout:'mapped'}),
  'fear-prayer':Object.freeze({id:'fear-prayer',number:13,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([14]),title:'Fear Prayer',first:900,arabicSourceId:'arabic-fear-prayer',bewleySourceId:'bewley-fear-prayer',bewleyTitle:'Fear Prayer',revision:484864}),
- 'two-eids':Object.freeze({id:'two-eids',number:14,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([15]),title:'The Two Eids',first:906,arabicSourceId:'arabic-two-eids',bewleySourceId:'bewley-two-eids',bewleyTitle:'The Two Eids',revision:496076})
+ 'two-eids':Object.freeze({id:'two-eids',number:14,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([15]),title:'The Two Eids',first:906,arabicSourceId:'arabic-two-eids',bewleySourceId:'bewley-two-eids',bewleyTitle:'The Two Eids',revision:496076}),
+ witr:Object.freeze({id:'witr',number:15,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([16]),title:'Witr',first:946,arabicSourceId:'arabic-witr',bewleySourceId:'bewley-witr',bewleyTitle:'Witr',revision:484862})
 });
 function bookConfig(config){assert(Object.values(BOOK_CONFIGS).includes(config),'Unknown book configuration');return config;}
 let englishInventory;
@@ -128,7 +129,16 @@ function validateComparisons(comparisons,config,segments,row){
   assert(typeof khan.note==='string'&&khan.note.trim(),'Reference-only comparison needs an omission explanation');
   return;
  }
- assert.equal(khan.checkedBody,undefined,'Only a reference-only comparison may carry checked-body evidence');
+ if(khan.status==='damaged-comparison'){
+  assert(khanReference.test(khan.reference),'Invalid damaged comparison reference');
+  assert(khan.part===undefined&&khan.splitReferences===undefined&&khan.checkedReferences===undefined,'A damaged comparison cannot claim complete parts or absence');
+  const record=comparisonEvidence(khan.reference,khan.referenceEvidence);
+  assert(Array.isArray(khan.checkedBody)&&khan.checkedBody.length>=2&&khan.checkedBody.every(p=>typeof p==='string'),'Damaged comparison requires its exact checked body');
+  assert.equal(hash(khan.checkedBody),record.textSha256,'Damaged comparison body differs from its pinned record');
+  assert(typeof khan.damagedExcerpt==='string'&&khan.damagedExcerpt.trim()&&khan.checkedBody.some(p=>p.includes(khan.damagedExcerpt)),'Damage must identify wording present in the pinned body');
+  assert(typeof khan.note==='string'&&khan.note.trim(),'Damaged comparison needs an explanation');return;
+ }
+ assert.equal(khan.checkedBody,undefined,'Only an explicit incomplete comparison may carry checked-body evidence');
  if(khan.status===undefined){
   assert(khanReference.test(khan.reference),'Invalid Khan-family comparison');
   if(khan.splitReferences!==undefined){
@@ -195,6 +205,7 @@ function validateComparisons(comparisons,config,segments,row){
  }
 }
 function entryTranslationStatus(row){
+ if(row.comparisons.some(c=>c.status==='damaged-comparison'))return 'Personal prototype: AI-assisted working translation; two Arabic prints and one complete English comparison were checked. The second English reference contains damaged wording and cannot confirm the missing words. Independent Arabic, English and context review pending.';
  if(row.printedReport?.schemaVersion===2)return 'Personal prototype: a separate occurrence transcribed from an identified Arabic print and checked against a second print. Two English comparison families cover earlier parallel accounts; their wording and attribution differences are explicit. The app and printed references remain separate. Independent transcription, Arabic, English and context review pending.';
  if(row.printedReport)return 'Personal prototype: a complete report absent from the selected digital source, transcribed from an explicitly identified Arabic print and compared with a second print and two English witnesses. The app reference, original printed reference, narrator-name variant and chapter placement remain explicit. Independent transcription, Arabic, English and context review pending.';
  if(row.comparisons.some(c=>c.status==='translation-omitted'))return 'Personal prototype: AI-assisted working translation; two Arabic printed witnesses and one complete English comparison were checked. The second English reference contains an omission notice, not a translation. Independent Arabic, English and context review pending.';
@@ -227,6 +238,7 @@ function bewleyCitation(row,config){
  return {id:'bewley',sourceId:c.sourceId||config.bewleySourceId,locator:`Book of ${config.bewleyTitle} · ${c.splitReferences?'entries '+c.splitReferences.map(describe).join(', '):'entry '+describe(c)}`,scope:c.splitReferences||c.part?c.note:row.sourceForm?.kind==='chain-only'?'Named English comparison for this abbreviated transmission; no repeated report body is supplied here.':c.status!==undefined?c.note:'Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain.'};
 }
 function khanCitation(record){
+ if(record.status==='damaged-comparison'){const [volume,book,number]=record.reference.split('.');return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Number ${number} · damaged wording`,scope:record.note};}
  if(record.status==='parallel-occurrence-only')return {id:'khan',sourceId:'islamhouse-khan',locator:`Earlier parallel occurrence · ${record.reference}`,scope:record.note};
  if(record.status==='translation-omitted'){const [volume,book,number]=record.reference.split('.');return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Number ${number} · translation omitted`,scope:record.note};}
  if(record.status==='unnumbered-back-reference-only'){const [volume,book,number]=record.reference.split('.');return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Number ${number} · unnumbered backward pointer only`,scope:record.note};}

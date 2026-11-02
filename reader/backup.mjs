@@ -14,6 +14,7 @@ export function parseBackup(text){
  if(!isRecord(s)||!Array.isArray(s.saved)||!Array.isArray(s.finished)||!s.saved.every(valid)||!s.finished.every(valid)||!isRecord(s.positions)||!valid(s.last))throw new Error('This backup contains invalid reading data. Nothing has been restored.');
  if(!Object.entries(s.positions).every(([n,y])=>parseReference(n)!==null&&valid(parseReference(n))&&Number.isFinite(y)&&y>=0&&y<=10000000))throw new Error('This backup contains invalid reading positions. Nothing has been restored.');
  if(s.session!==undefined&&(!isRecord(s.session)||!Array.isArray(s.session.numbers)||!s.session.numbers.length||!s.session.numbers.every(valid)||new Set(s.session.numbers).size!==s.session.numbers.length||!s.session.numbers.includes(s.session.cursor)))throw new Error('This backup contains an invalid session. Nothing has been restored.');
+ if(s.session?.pendingNumbers!==undefined&&(!Array.isArray(s.session.pendingNumbers)||!s.session.pendingNumbers.every(n=>valid(n)&&!s.session.numbers.includes(n))||new Set(s.session.pendingNumbers).size!==s.session.pendingNumbers.length))throw new Error('This backup contains invalid pending session references. Nothing has been restored.');
  const normalized=normalizeState(s);
  return {state:normalized,exportedAt:typeof file.exportedAt==='string'&&!Number.isNaN(Date.parse(file.exportedAt))?new Date(file.exportedAt).toISOString():null};
 }

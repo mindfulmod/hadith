@@ -18,6 +18,7 @@ export function normalizeState(input){
  if(isRecord(value.audio)&&typeof value.audio.release==='string'&&value.audio.release.length<=100&&Number.isFinite(value.audio.seconds)&&value.audio.seconds>=0&&value.audio.seconds<=10000000)state.audio={release:value.audio.release,seconds:value.audio.seconds};
  const session=value.session;
  if(isRecord(session)&&Array.isArray(session.numbers)&&session.numbers.length&&session.numbers.every(validReference)&&new Set(session.numbers).size===session.numbers.length&&session.numbers.includes(session.cursor))state.session={numbers:[...session.numbers],cursor:session.cursor,ended:session.ended===true};
+ if(state.session){const pending=numbers(session.pendingNumbers).filter(n=>!state.session.numbers.includes(n));if(pending.length)state.session.pendingNumbers=pending;}
  return state;
 }
 export function createPersonalStore(storage){

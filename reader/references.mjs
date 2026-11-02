@@ -27,3 +27,8 @@ export function contiguousReferences(numbers,all) {
  if(!Array.isArray(numbers)||!numbers.length||!numbers.every(validReference)||new Set(numbers).size!==numbers.length||!Array.isArray(all))return false;
  const start=all.indexOf(numbers[0]);return start>=0&&numbers.every((n,i)=>all[start+i]===n);
 }
+export function orderedReferences(numbers,all) {
+ if(!Array.isArray(numbers)||!numbers.length||!numbers.every(validReference)||!Array.isArray(all))return false;
+ const positions=new Map(all.map((n,i)=>[n,i]));
+ return numbers.every((n,i)=>positions.has(n)&&(!i||positions.get(n)>positions.get(numbers[i-1])));
+}

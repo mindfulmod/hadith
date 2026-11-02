@@ -1,6 +1,14 @@
 # Hadith · MindfulMod reader
 
-The local personal reader at `reader/` contains 839 selected Bukhari entries across eleven sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The local personal reader at `reader/` contains 961 selected Bukhari entries across fifteen sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+
+## Witr and saved-session continuity · 2 November 2026
+
+The local preview now contains 961 complete entries. Witr adds 946–956 and 958–959, with seven chapter headings and one separate Arabic introduction. References 926 and 957 remain visibly pending; reading continues past them. The selected Arabic remains unchanged. Source comparisons document the six repeated pairs in 947, the damaged English comparison for 953 and the group/treaty ambiguity in 957. English is an AI-assisted working translation; independent review remains pending. No recordings were added.
+
+The user chose to keep a saved session intact when a pending report becomes available. Saved sessions now retain their ordered original entries, cursor and finished state after insertion elsewhere in the catalogue. An “Also available here” section on the session and completion screens links to additional reports separately. Browsing those links does not change Continue. The listening plan uses the same original selection; it never plays an unselected report inside a combined audio file, and still stops if a selected recording is unavailable.
+
+New session state remembers pending references, including one immediately before the session, and preserves that information in backups. Existing backups remain compatible. Legacy sessions without that metadata can identify added entries inside their saved span, but cannot reconstruct a previously pending reference before the first entry. No source hold is cleared by this personal-state feature. See `research/witr-verification.json`, `research/witr-intake-review.json` and `research/witr-957-wording-review.json`. This is local work, not a newly published release or physical-iPhone acceptance.
 
 ## Publisher scaling · 29 October 2026
 
