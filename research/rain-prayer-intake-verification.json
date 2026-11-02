@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-02T22:23:38.864928+00:00",
+  "status": "source-candidates-only-not-admitted",
+  "baselineCommit": "116319804686fa15577402969b982e7445208283",
+  "scope": {
+    "digitalReports": 33,
+    "range": "960–992",
+    "exactBlocks": 70,
+    "codePoints": 12369,
+    "digitalChapters": 28,
+    "separateContextParagraphs": 3,
+    "printedOccurrencesAccountedFor": 35,
+    "missingPrintedReport": "1030",
+    "proposedAppReference": "983b",
+    "referenceDecision": "pending",
+    "missingEmptyPrintedChapter": 5,
+    "proposedUnappliedCorrections": [
+      968,
+      986
+    ]
+  },
+  "reader": {
+    "entries": 961,
+    "release": "opening-2c751587dbcb",
+    "sourceRecordSha256": "70aec6181a137d421cb06ed3a7ad1871115180127f0f08be2afc1796c17cf35a",
+    "protectedFilesByteEqualToBaseline": 423,
+    "protectedScope": "Every tracked reader, audio, landscapes and narration file, plus top-level web and JSON files.",
+    "newRecordings": 0
+  },
+  "checks": {
+    "pythonTests": 125,
+    "allPassed": true,
+    "newIntakeTestsIncluded": 10,
+    "integrityChecks": [
+      "python3 scripts/check-rain-prayer-intake.py",
+      "python3 scripts/import-wikisource-book.py --check",
+      "node scripts/build-collection.mjs --check",
+      "node scripts/build-audio.mjs --check"
+    ],
+    "nodeRuntimeSuiteRerun": false,
+    "reason": "No reader, audio or collection-builder runtime code changed; source-intake and its evidence checker are covered by the complete Python suite.",
+    "browser": {
+      "scope": "Local source review page only; no iPhone or reader-runtime acceptance",
+      "results": [
+        {
+          "theme": "light",
+          "viewportWidth": 375,
+          "documentWidth": 375,
+          "exactEnglishArabicAndWitnesses": true,
+          "consoleErrors": 0,
+          "screenshot": "content/review/evidence/rain-prayer-source-light.png"
+        },
+        {
+          "theme": "dark",
+          "viewportWidth": 375,
+          "documentWidth": 375,
+          "exactEnglishArabicAndWitnesses": true,
+          "consoleErrors": 0,
+          "screenshot": "content/review/evidence/rain-prayer-source-dark.png"
+        }
+      ]
+    }
+  },
+  "sourceAudit": {
+    "path": "research/rain-prayer-source-audit.json",
+    "sha256": "d753a7a165f951d020cf7259f501610b372c2652b7188cae5998db4c2709955c"
+  },
+  "publication": {
+    "performed": false
+  },
+  "remaining": [
+    "Implement and test explicit evidence for duplicate English labels before treating the first and second displayed 968 as separate comparison records.",
+    "Implement and test empty printed chapters without assigning report numbers or narration.",
+    "Resolve the extra report reference and preserve its actual print origin; do not use the misleading deprecated English reference as a content match.",
+    "Complete lexical and classical-commentary checks for the poetry, tawassul wording and Asbat transmission addition.",
+    "Author complete span-mapped English working drafts, preserving every chain, repeated occurrence, narrator comment and selected variant.",
+    "Independently review Arabic transcription, English wording, context and narration before any production accuracy claim."
+  ],
+  "limits": [
+    "AI source comparison and candidate transcription only; independent review remains pending.",
+    "No new physical-iPhone, offline, locked-screen playback or backup acceptance claim."
+  ]
+}

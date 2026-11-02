@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "status": "source-candidate-only-not-admitted",
+  "readerEligible": false,
+  "reviewerKind": "ai",
+  "independentReview": "pending",
+  "kind": "empty-chapter-heading",
+  "proposedId": "chapter-04-print-05",
+  "printedChapterNumber": 5,
+  "afterChapterId": "chapter-04",
+  "beforeChapterId": "chapter-05",
+  "afterReference": 966,
+  "beforeReference": 967,
+  "digitalSourceId": "wikisource-bukhari-rain-prayer-r484861",
+  "digitalSourceSha256": "134d33e313bd1082d028a0d38b4d1deb8cec13eabb6f1f088118dc83083ce499",
+  "digitalInventorySha256": "e400c540c79eff29039241f25a7da1b76a5507be652573f380a9c257bfef505d",
+  "entryNumbers": [],
+  "contextParagraphs": [],
+  "englishStatus": "pending",
+  "arabic": "باب انتقام الرب جل وعز من خلقه بالقحط إذا انتهكت محارم الله",
+  "arabicSha256": "2136f33309055000ffc415c25ad3029c26352922619f1a30e00c02a5767e11fc",
+  "selectedWitnessId": "dar-ibn-kathir-2002",
+  "witnesses": [
+    {
+      "sourceId": "brill-1862",
+      "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+      "pdfPage": 256,
+      "reading": "باب انتقام الرب عز وجل من خلقه بالقحط إذا انتهكت محارم الله",
+      "readingSha256": "8e4a7f784f919128be882dbf2c4c2fb55ab0ce2470dca38686bd8365f4f88a3c",
+      "chapterNumber": 5,
+      "differenceNote": "Brill orders the divine epithet as azza wa-jalla; the modern print has jalla wa-azza."
+    },
+    {
+      "sourceId": "dar-ibn-kathir-2002",
+      "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+      "pdfPage": 245,
+      "reading": "باب انتقام الرب جل وعز من خلقه بالقحط إذا انتهكت محارم الله",
+      "readingSha256": "2136f33309055000ffc415c25ad3029c26352922619f1a30e00c02a5767e11fc",
+      "chapterNumber": 5
+    }
+  ],
+  "reason": "Both printed witnesses have chapter 5 immediately between the cloak chapter and the communal-mosque chapter, with no numbered report or introduction below it. The digital source skips it. Preserve it as its own browseable chapter, never a hadith, narrated paragraph or introduction attached to the next chapter.",
+  "transcriptionPolicy": "AI manual unvowelled transcription. Vowel marks, report/chapter numbers, ornament, quotation punctuation and editorial cross-references are excluded. The printed Prophet honorific is represented as ﷺ in the selected modern reading; lexical words are retained. This is not a facsimile. Independent transcription review remains pending.",
+  "architectureStatus": "The existing printed heading model divides a nonempty source chapter at a report. A separately validated empty printed chapter model is required before admission."
+}

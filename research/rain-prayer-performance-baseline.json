@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-02T22:18:39.889772+00:00",
+  "baselineCommit": "116319804686fa15577402969b982e7445208283",
+  "purpose": "Measure the existing 961-entry implementation before another section is admitted.",
+  "reading": {
+    "scope": "Node retained heap delta after GC; excludes browser/iPhone qualification and transient peak allocation",
+    "mode": "reading",
+    "node": "v24.18.0",
+    "release": "opening-2c751587dbcb",
+    "sourceRecordSha256": "70aec6181a137d421cb06ed3a7ad1871115180127f0f08be2afc1796c17cf35a",
+    "entries": 961,
+    "books": 15,
+    "retainedHeapDelta": 4963056,
+    "elapsedMs": 304,
+    "cache": {
+      "bookIds": [
+        "friday-prayer",
+        "fear-prayer",
+        "two-eids",
+        "witr"
+      ],
+      "encodedBytes": 692285,
+      "maxCachedBooks": 4,
+      "maxCachedBytes": 4194304
+    },
+    "indexReusable": false
+  },
+  "search": {
+    "scope": "Node retained heap delta after GC; excludes browser/iPhone qualification and transient peak allocation",
+    "mode": "search",
+    "node": "v24.18.0",
+    "release": "opening-2c751587dbcb",
+    "sourceRecordSha256": "70aec6181a137d421cb06ed3a7ad1871115180127f0f08be2afc1796c17cf35a",
+    "entries": 961,
+    "books": 15,
+    "retainedHeapDelta": 8603992,
+    "elapsedMs": 267,
+    "cache": {
+      "bookIds": [
+        "friday-prayer",
+        "fear-prayer",
+        "two-eids",
+        "witr"
+      ],
+      "encodedBytes": 692285,
+      "maxCachedBooks": 4,
+      "maxCachedBytes": 4194304
+    },
+    "matches": 928,
+    "indexReusable": true
+  },
+  "assessment": "These after-GC Node measurements keep the configured four-book cache bounded. They do not measure browser transient peaks or qualify an iPhone; no performance rewrite is justified by this baseline alone."
+}
