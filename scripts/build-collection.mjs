@@ -5,6 +5,7 @@ import {validateSourceForm} from './source-forms.mjs';
 import {validateSourceHolds,pendingSourceEntry,pendingSourceNotes} from './source-holds.mjs';
 import {validatePrintedIntroductions,printedIntroductionContext,printedIntroductionDetails} from './printed-chapter-context.mjs';
 import {validateEmptyPrintedChapters,emptyPrintedChapterContext,emptyPrintedChapterNotes} from './printed-empty-chapters.mjs';
+import {validateAbsentBewleyComparison} from './absent-english-comparisons.mjs';
 import {validateEnglishOccurrence,englishOccurrenceGroup,englishOccurrenceCitation} from './english-occurrences.mjs';
 import {buildBookIntroduction,bookIntroductionNotes} from './book-introductions.mjs';
 import {deriveArabicBlocks} from './arabic-corrections.mjs';
@@ -53,11 +54,12 @@ function validateBewleyPart(part){
  assert.deepEqual(Object.keys(part).sort(),['count','index'],'Unexpected Bewley part metadata');
  assert(Number.isSafeInteger(part.index)&&Number.isSafeInteger(part.count)&&part.count>1&&part.index>=1&&part.index<=part.count,'Invalid Bewley comparison part');
 }
-function validateComparisons(comparisons,config,segments,row){
+function validateComparisons(comparisons,config,segments,row,sources){
  const khanReference=new RegExp('^(?:'+(config.khanVolumes||[1]).join('|')+')\\.(?:'+(config.khanBooks||[config.number]).join('|')+')\\.[1-9]\\d*[a-z]?$');
  assert.deepEqual(comparisons.map(c=>c.id).sort(),[config.bewleySourceId,'islamhouse-khan'].sort(),'Expected distinct English comparison records');
  const bewley=comparisons.find(c=>c.id===config.bewleySourceId),khan=comparisons.find(c=>c.id==='islamhouse-khan');
- assert(parseReference(bewley.reference)!==null,'Invalid Bewley comparison');
+ const absentBewley=validateAbsentBewleyComparison(bewley,row,config,sources);
+ if(!absentBewley)assert(parseReference(bewley.reference)!==null,'Invalid Bewley comparison');
  if(comparisons.some(c=>c.status==='parallel-occurrence-only')){
   assert.equal(row?.printedReport?.schemaVersion,2,'Parallel-only evidence is defined for explicitly sourced printed tails');
   assert(comparisons.every(c=>c.status==='parallel-occurrence-only'&&typeof c.note==='string'&&c.note.trim()),'Both parallel comparison limits must be explicit');
@@ -67,7 +69,7 @@ function validateComparisons(comparisons,config,segments,row){
   assert(compareReferences(parseReference(bewley.reference),row.number)<0,'Parallel comparison must identify an earlier occurrence');
   return;
  }
- if(bewley.status!==undefined){
+ if(!absentBewley&&bewley.status!==undefined){
   assert(['cross-reference-with-transmission-note','abbreviated-report'].includes(bewley.status),'Unknown Bewley comparison form');
   assert(typeof bewley.note==='string'&&bewley.note.trim(),'Abbreviated comparison needs an explanation');
   if(bewley.status==='cross-reference-with-transmission-note'||bewley.referencedReference!==undefined)assert(parseReference(bewley.referencedReference)!==null&&compareReferences(parseReference(bewley.referencedReference),parseReference(bewley.reference))<0,'Cross-reference comparison needs its earlier reference');
@@ -208,6 +210,7 @@ function validateComparisons(comparisons,config,segments,row){
  }
 }
 function entryTranslationStatus(row){
+ if(row.comparisons.every(c=>c.status==='not-present-in-checked-sequence'))return 'Personal prototype: a complete report transcribed from an identified Arabic print and checked against a second print. Both selected English sequences omit this occurrence. A separate online English comparison shortens the chain and uses passive wording; the full printed chain and first-person wording are retained. Independent transcription, Arabic, English and context review pending.';
  if(row.comparisons.some(c=>c.status==='damaged-comparison'))return 'Personal prototype: AI-assisted working translation; two Arabic prints and one complete English comparison were checked. The second English reference contains damaged wording and cannot confirm the missing words. Independent Arabic, English and context review pending.';
  if(row.printedReport?.schemaVersion===2)return 'Personal prototype: a separate occurrence transcribed from an identified Arabic print and checked against a second print. Two English comparison families cover earlier parallel accounts; their wording and attribution differences are explicit. The app and printed references remain separate. Independent transcription, Arabic, English and context review pending.';
  if(row.printedReport)return 'Personal prototype: a complete report absent from the selected digital source, transcribed from an explicitly identified Arabic print and compared with a second print and two English witnesses. The app reference, original printed reference, narrator-name variant and chapter placement remain explicit. Independent transcription, Arabic, English and context review pending.';
@@ -237,6 +240,7 @@ function printedCitation(w){
 }
 function bewleyCitation(row,config){
  const c=row.comparisons.find(c=>c.id===config.bewleySourceId);
+ if(c.status==='not-present-in-checked-sequence')return {id:'bewley',sourceId:config.bewleySourceId,locator:'No corresponding report in the checked sequence: '+c.checkedReferences.join(' → '),scope:c.note+' This is documented absence in that sequence, not a completed English comparison.'};
  const located=englishOccurrenceCitation(c);if(located)return {id:'bewley',sourceId:c.sourceId||config.bewleySourceId,...located};
  const describe=p=>p.reference+(p.part?` (part ${p.part.index} of ${p.part.count})`:'');
  return {id:'bewley',sourceId:c.sourceId||config.bewleySourceId,locator:`Book of ${config.bewleyTitle} · ${c.splitReferences?'entries '+c.splitReferences.map(describe).join(', '):'entry '+describe(c)}`,scope:c.splitReferences||c.part?c.note:row.sourceForm?.kind==='chain-only'?'Named English comparison for this abbreviated transmission; no repeated report body is supplied here.':c.status!==undefined?c.note:'Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain.'};
@@ -273,7 +277,7 @@ export function buildBookBatch(inventory,review,manifest,config){
  const blocks=new Map([...inventory.blocks.map(b=>[b.htmlId,b]),...printedBlocks]),entries=[];
  const comparisonGroups=new Map();
  for(const row of review.entries){
-  validateComparisons(row.comparisons,config,row.segments,row);
+  validateComparisons(row.comparisons,config,row.segments,row,review.sources);
   validateEnglishOccurrence(row.comparisons.find(c=>c.id===config.bewleySourceId),row,config,review.sources);
   const bewley=row.comparisons.find(c=>c.id===config.bewleySourceId);
   if(bewley.sourceId!==undefined)assert(review.sources.some(s=>s.id===bewley.sourceId&&s.kind==='english-comparison'),'Comparison source override must name an included English comparison');
@@ -325,11 +329,12 @@ export function buildBookBatch(inventory,review,manifest,config){
  }
  const chapters=review.chapters.map(c=>{
   const original=inventory.chapters.find(r=>r.id===c.id);assert(original,'Unknown source chapter');
-  assert.deepEqual(c.entryNumbers.filter(n=>!review.entries.some(r=>r.number===n&&r.printedReport)),original.entryNumbers.filter(n=>!pendingReferences.includes(n)));assert.deepEqual(c.contextIds,original.contextIds);assert.equal(c.headingId,original.headingId);assert.equal(c.titleArabic,blocks.get(c.headingId).text);assert(['ai-working-translation','heading-discrepancy-pending'].includes(c.status));assert.equal(c.independentReview,'pending');assert(c.title.trim());
+  assert.deepEqual(c.entryNumbers.filter(n=>!review.entries.some(r=>r.number===n&&r.printedReport)),original.entryNumbers.filter(n=>!pendingReferences.includes(n)));assert.deepEqual(c.contextIds,original.contextIds);assert.equal(c.headingId,original.headingId);assert.equal(c.titleArabic,blocks.get(c.headingId).text);assert(['ai-working-translation','heading-discrepancy-pending','heading-translation-pending'].includes(c.status));assert.equal(c.independentReview,'pending');assert(c.title.trim());
+  if(c.status==='heading-translation-pending'){assert.equal(c.title,'Chapter heading translation pending');assert(typeof c.translationPendingReason==='string'&&c.translationPendingReason.trim(),'Pending heading needs an explanation');}
   if(c.status==='heading-discrepancy-pending'){assert.equal(c.title,'Chapter heading under review');assert.equal(c.headingDiscrepancy?.status,'unresolved');assert(c.titleArabic.includes(c.headingDiscrepancy.digitalPhrase));assert(c.headingDiscrepancy.printedPhrase&&c.headingDiscrepancy.printedWitnesses.length===2);}
   validateEmptyPrintedChapters(c,inventory,review);
   const printed=validatePrintedIntroductions(c,inventory,review),paragraphs=c.contextIds.length+printed.length;
-  return {id:c.id,title:c.title,entryNumbers:c.entryNumbers,sourceContext:{schemaVersion:1,headingStatus:c.status,numberedReports:c.entryNumbers.length?'present':original.entryNumbers.length?'pending-review':'none-in-source',introduction:{arabicParagraphs:paragraphs,englishStatus:paragraphs?'pending':'not-applicable'},...printedIntroductionContext(printed),notes:{path:config.id+'-review.html',fragment:c.id}}};
+  return {id:c.id,title:c.title,entryNumbers:c.entryNumbers,sourceContext:{schemaVersion:1,headingStatus:c.status,numberedReports:c.entryNumbers.length?'present':original.entryNumbers.length?'pending-review':'none-in-source',introduction:{arabicParagraphs:paragraphs,englishStatus:paragraphs?'pending':'not-applicable'},...printedIntroductionContext(printed),...(c.status==='heading-translation-pending'?{pendingHeading:{sourceId:inventory.sourceId,sourceSha256:inventory.sourceSha256,headingId:c.headingId,arabicSha256:sha(c.titleArabic),reason:c.translationPendingReason,evidenceSha256:hash(c)}}:{}),notes:{path:config.id+'-review.html',fragment:c.id}}};
  });
  assert.deepEqual(chapters.flatMap(c=>c.entryNumbers),entries.map(e=>e.number),'Chapter coverage mismatch');
  for(const p of pendingEntries)assert(chapters.some(c=>c.id===p.chapterId),'Pending report needs its preserved chapter');

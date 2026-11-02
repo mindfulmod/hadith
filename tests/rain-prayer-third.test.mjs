@@ -47,7 +47,7 @@ test('parallel accounts retain their own sequence and short narration forms',()=
 
 test('983 ends at its actual source boundary and exposes lexical uncertainty without appending the separate printed occurrence',()=>{
  const e=get(983),last=e.english_blocks.at(-1),notes=files.get('reader/rain-prayer-review.html');assert.match(last,/the traveller is unable to proceed and the road is blocked\.\u201d$/);assert.equal(text(983).split('have perished').length-1,3);
- assert.doesNotMatch(text(983),/around us|armpits|al-Uwaysi|Ibn Hajar|Ibn Rajab/);assert(!source.entries.some(e=>e.number==='983b'));assert(!plan.entries.some(e=>e.number==='983b'));
+ assert.doesNotMatch(text(983),/around us|armpits|al-Uwaysi|Ibn Hajar|Ibn Rajab/);assert(!batch.entries.some(e=>e.number==='983b'));assert(!text(983).includes('al-Uwaysi')); // The historical batch remains unchanged; a later admission owns the separate occurrence.
  for(const s of ['fath-rain-traveller','rajab-rain-traveller'])assert(ledger.sourceReferences.entries.find(e=>e.number===983).citations.some(c=>c.sourceId===s));assert(notes.includes('does not establish one uncontested lexical meaning'));
 });
 

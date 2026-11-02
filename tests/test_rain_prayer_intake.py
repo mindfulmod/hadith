@@ -57,9 +57,9 @@ class RainPrayerIntakeTests(unittest.TestCase):
  def test_no_false_approval_or_reader_admission_can_be_recorded(self):
   for mutate in [lambda r:r.update(readerEligible=True),lambda r:r.update(independentReview='approved'),lambda r:r['referenceDecision'].update(status='user-confirmed')]:
    with self.assertRaises(ValueError):check.validate(*self.changed(1,mutate,rebind=True))
- def test_review_page_is_reproducible_and_candidates_are_not_in_reader(self):
+ def test_review_page_distinguishes_historical_candidates_from_later_admission(self):
   a,r,c,i,en=self.values;html=check.render(a,r,c);self.assertEqual((ROOT/'research/rain-prayer-source-review.html').read_text(),html)
-  catalog=check.read('reader/books/catalog.json');self.assertNotIn('983b',[e['number']for e in catalog['entries']]);self.assertFalse(i['readerEligible']);self.assertIn('not added to the reader',html)
+  catalog=check.read('reader/books/catalog.json');self.assertIn('983b',[e['number']for e in catalog['entries']]);self.assertFalse(i['readerEligible']);self.assertFalse(r['readerEligible']);self.assertIn('separate local prototype admission',html)
  def test_numbering_confirmation_preserves_the_original_audit_and_does_not_admit_wording(self):
   a,r,c,i,en=self.values;original=copy.deepcopy(r);result=check.current_missing_report(a,r)
   self.assertEqual(r,original);self.assertEqual(r['referenceDecision']['status'],'pending');self.assertEqual(result['referenceDecision']['status'],'user-confirmed')

@@ -9,8 +9,9 @@ const read=p=>JSON.parse(readFileSync(new URL('../'+p,import.meta.url),'utf8'));
 test('admitted source, published packs and narration coverage match an independent explicit fixture',()=>{
  const {source,ledger}=collectionFiles(),catalog=read('reader/books/catalog.json'),audio=read('reader/audio/catalog.json');
  assert.equal(new Set(ENTRY_NUMBERS).size,ENTRY_NUMBERS.length);
- assert.deepEqual(ENTRY_NUMBERS.filter(n=>typeof n==='string'),['619b','724b','835b','835c']);
+ assert.deepEqual(ENTRY_NUMBERS.filter(n=>typeof n==='string'),['619b','724b','835b','835c','983b']);
  assert.deepEqual([...ENTRY_NUMBERS.filter(n=>typeof n==='number'),...PENDING_REFERENCES].sort((a,b)=>a-b),Array.from({length:referenceBase(LAST_NUMBER)},(_,i)=>i+1));
+ assert.deepEqual(ENTRY_NUMBERS.slice(ENTRY_NUMBERS.indexOf(983),ENTRY_NUMBERS.indexOf(984)+1),[983,'983b',984]);
  assert.deepEqual(ENTRY_NUMBERS.slice(ENTRY_NUMBERS.indexOf(835),ENTRY_NUMBERS.indexOf(836)+1),[835,'835b','835c',836]);
  assert.deepEqual(ENTRY_NUMBERS.slice(618,621),[619,'619b',620]);
  assert.deepEqual(ENTRY_NUMBERS.slice(ENTRY_NUMBERS.indexOf(724),ENTRY_NUMBERS.indexOf(725)+1),[724,'724b',725]);

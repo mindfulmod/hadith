@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "rain-prayer-983b",
+      "bookId": "rain-prayer",
+      "appReference": "983b",
+      "printedReference": "1030",
+      "sourceAudit": {
+        "path": "research/rain-prayer-source-audit.json",
+        "sha256": "d753a7a165f951d020cf7259f501610b372c2652b7188cae5998db4c2709955c"
+      },
+      "candidate": {
+        "path": "content/review/rain-prayer-missing-report-candidate.json",
+        "sha256": "72ff42a93439be0ffdb3224bfa24b5490ecb5db97d0247357e9a3f9bc8838fdc"
+      },
+      "sourceId": "bewley-rain-prayer",
+      "sourceSha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+      "checkedReferences": [
+        "983",
+        "984"
+      ],
+      "checkedOccurrences": [
+        {
+          "displayedReference": "983",
+          "occurrence": 1,
+          "bodySha256": "eab61671836f9eb3eec426893dba1462d0d8a3cbd23a7633cb8dbd74b6fda654"
+        },
+        {
+          "displayedReference": "984",
+          "occurrence": 1,
+          "bodySha256": "021fd08b78336e9ef419933bc14bb2c5a88d3fc7d81cdaf51cb5272a94ad3160"
+        }
+      ],
+      "referencePolicySha256": "ff6d91b7a4d337ff8ebaa111a6188b428f571d84c4b420da0cbfff2f46952cbd",
+      "individualComparison": {
+        "citationId": "rain-983b-online",
+        "sourceId": "sunnah-com-1030",
+        "url": "https://sunnah.com/bukhari:1030",
+        "scope": "Its Arabic contains this separate chain and first-person I saw. Its English abbreviates the chain and uses a passive description; that change is not copied. This is not evidence of reuse or narration rights."
+      }
+    }
+  ]
+}

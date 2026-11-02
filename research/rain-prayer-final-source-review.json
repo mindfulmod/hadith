@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-02T23:39:49.149808+00:00",
+  "status": "ai-source-comparison-independent-review-pending",
+  "sourceAuditSha256": "d753a7a165f951d020cf7259f501610b372c2652b7188cae5998db4c2709955c",
+  "sourceReviewSha256": "4cd73e03e29e0275e4489c541da7f55c335141956206c138a9e9b4b72b20552d",
+  "newReferences": [
+    "983b",
+    984,
+    985,
+    986,
+    987,
+    988,
+    989,
+    990,
+    991,
+    992
+  ],
+  "historicalReview": {
+    "path": "content/review/rain-prayer-third-review.json",
+    "sha256": "04ebceb9f30e3dd713a7ace90ae6d9c69ad4f7d4b6c5f43f8b6d98527215aab1",
+    "allEightEntriesUnchanged": true
+  },
+  "printInspection": {
+    "method": "Complete rendered pages visually read, including continuation lines, chapter boundaries and differing wording.",
+    "brill-1862": {
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+      "pages": [
+        262,
+        263,
+        264
+      ]
+    },
+    "dar-ibn-kathir-2002": {
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+      "pages": [
+        250,
+        251,
+        252
+      ]
+    }
+  },
+  "englishInspection": {
+    "bewleySnapshotSha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+    "references": [
+      984,
+      985,
+      986,
+      987,
+      988,
+      989,
+      990,
+      991,
+      992
+    ],
+    "khanSnapshotSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+    "khanBodiesRead": [
+      "2.17.140",
+      "2.17.141",
+      "2.17.142",
+      "2.17.143",
+      "2.17.144",
+      "2.17.145",
+      "2.17.146",
+      "2.17.147",
+      "2.17.148",
+      "2.17.149"
+    ],
+    "absentOccurrence": {
+      "schemaVersion": 1,
+      "id": "rain-prayer-983b",
+      "bookId": "rain-prayer",
+      "appReference": "983b",
+      "printedReference": "1030",
+      "sourceAudit": {
+        "path": "research/rain-prayer-source-audit.json",
+        "sha256": "d753a7a165f951d020cf7259f501610b372c2652b7188cae5998db4c2709955c"
+      },
+      "candidate": {
+        "path": "content/review/rain-prayer-missing-report-candidate.json",
+        "sha256": "72ff42a93439be0ffdb3224bfa24b5490ecb5db97d0247357e9a3f9bc8838fdc"
+      },
+      "sourceId": "bewley-rain-prayer",
+      "sourceSha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+      "checkedReferences": [
+        "983",
+        "984"
+      ],
+      "checkedOccurrences": [
+        {
+          "displayedReference": "983",
+          "occurrence": 1,
+          "bodySha256": "eab61671836f9eb3eec426893dba1462d0d8a3cbd23a7633cb8dbd74b6fda654"
+        },
+        {
+          "displayedReference": "984",
+          "occurrence": 1,
+          "bodySha256": "021fd08b78336e9ef419933bc14bb2c5a88d3fc7d81cdaf51cb5272a94ad3160"
+        }
+      ],
+      "referencePolicySha256": "ff6d91b7a4d337ff8ebaa111a6188b428f571d84c4b420da0cbfff2f46952cbd",
+      "individualComparison": {
+        "citationId": "rain-983b-online",
+        "sourceId": "sunnah-com-1030",
+        "url": "https://sunnah.com/bukhari:1030",
+        "scope": "Its Arabic contains this separate chain and first-person I saw. Its English abbreviates the chain and uses a passive description; that change is not copied. This is not evidence of reuse or narration rights."
+      }
+    }
+  },
+  "findings": [
+    {
+      "reference": "983b",
+      "decisions": [
+        "The complete al-Uwaysi chain and first-person I saw are preserved; this is a distinct occurrence, not a continuation inserted into 983.",
+        "The selected modern print includes annahu (that he). Brill does not and writes the honorific in full. The corrected Brill transcription is recorded in the follow-up; the historical intake candidate remains available.",
+        "Neither selected English sequence contains this occurrence. Sunnah.com 1030 is an individual comparison only, abbreviates the chain and uses a passive English description. Its deprecated 2.17.140 label must not be equated with the pinned EPUB record.",
+        "This is AI-assisted working English, not Darussalam wording. Numbering authorization is not independent wording approval, reuse permission or publication approval."
+      ]
+    },
+    {
+      "reference": 984,
+      "decisions": [
+        "The general negative statement and its exception for seeking rain remain as selected. The explanatory parenthesis in the Khan comparison is not part of this report and is not inserted or used to rewrite the statement.",
+        "Both Yahya and Ibn Abi ‘Adi remain in the chain. Brill has fa-innahu kana yarfa‘u where the selected source and modern print have wa-innahu yarfa‘u; neither variant changes the recorded height of the raised hands.",
+        "Modern printed reference 1031. Full relevant Arabic print pages and located English bodies were inspected. AI-assisted working English, not Darussalam wording."
+      ]
+    },
+    {
+      "reference": 985,
+      "decisions": [
+        "The selected source and modern print do not include Allahumma before the short prayer; Brill and both English comparisons do. No O Allah is inserted. Ibn Hajar records the presence and absence of that word in transmitted readings.",
+        "The selected chain retains ‘Abdullah before ‘Ubaydullah, also present in Brill. The inspected modern print omits ‘Abdullah at this point. Brill shortens Muhammad’s identification and adds an honorific after ‘A’ishah; the selected longer identification and its actual honorifics remain unchanged.",
+        "The complete closing corroboration names al-Qasim ibn Yahya from ‘Ubaydullah, followed by al-Awza‘i and ‘Uqayl from Nafi‘. Bewley abbreviates the first name sequence; Khan omits the closing transmission comment. The chapter’s separate Arabic lexical discussion is not narration text.",
+        "Modern printed reference 1032. Full relevant Arabic print pages and located English bodies were inspected. AI-assisted working English, not Darussalam wording."
+      ]
+    },
+    {
+      "reference": 986,
+      "decisions": [
+        "Both prints read sala (flowed), while the digital source has sa’ala (asked). The precise correction is explicit, with original input, exact offsets, both printed readings and the corresponding English segment retained.",
+        "The explicit uncertainty that the second visitor was that Bedouin or another man is retained, together with the sequence of days and the month-long flow of Qanat. No oath is borrowed from parallel accounts.",
+        "Mal is rendered broadly as property, and ‘iyal as dependants. The English comparisons narrow these in different ways. The source’s four honorifics remain; Brill omits the honorific at the second raising of the hands, adds an explicit Messenger of Allah and honorific in the pointing clause, and expands two chain names. These additions are not imported.",
+        "The repeated Arabic hat-ta links the clearing and the valley’s flow. The last clause is a separate English sentence for readability; it does not change the month-long duration or supply another outcome.",
+        "Modern printed reference 1033. Full relevant Arabic print pages and located English bodies were inspected. AI-assisted working English, not Darussalam wording."
+      ]
+    },
+    {
+      "reference": 987,
+      "decisions": [
+        "The selected report describes a discernible effect in the Prophet’s face without explicitly naming anxiety or a fear of divine wrath. Those explanatory words in the Khan comparison are not imported.",
+        "Brill expands Anas to Anas ibn Malik in the chain; the selected shorter name remains.",
+        "Modern printed reference 1034. Full relevant Arabic print pages and located English bodies were inspected. AI-assisted working English, not Darussalam wording."
+      ]
+    },
+    {
+      "reference": 988,
+      "decisions": [
+        "The two Arabic wind names are retained in the report and explained separately. No battle name, weather description or further historical narrative is added to the short statement.",
+        "Modern printed reference 1035. Full relevant Arabic print pages and located English bodies were inspected. AI-assisted working English, not Darussalam wording."
+      ]
+    },
+    {
+      "reference": 989,
+      "decisions": [
+        "Harj is retained with the source’s own repeated gloss killing, killing. The gloss is not assigned to a named speaker absent from this occurrence. Neither English comparison preserves the repeated gloss in full.",
+        "Knowledge is not expanded to religious knowledge or the death of scholars inside the report. Time draws close together is a working rendering of yataqarab al-zaman; no single explanatory interpretation is inserted. Both until clauses and the final overflow remain.",
+        "Modern printed reference 1036. Full relevant Arabic print pages and located English bodies were inspected. AI-assisted working English, not Darussalam wording."
+      ]
+    },
+    {
+      "reference": 990,
+      "decisions": [
+        "The selected text ends its chain at Ibn ‘Umar and does not explicitly say that the Prophet said this. Both prints likewise lack that explicit attribution here; additions in the English comparisons are not imported. No Prophet honorific is invented for this occurrence.",
+        "The selected source and Brill contain two complete blessing/request exchanges. The modern print has one such exchange followed by repeated said clauses. Both selected exchanges and the source’s reporting transitions remain.",
+        "Sham, Yemen and Najd remain the source place names; no modern territorial identification or judgment about present-day people is added.",
+        "Modern printed reference 1037. Full relevant Arabic print pages and located English bodies were inspected. AI-assisted working English, not Darussalam wording."
+      ]
+    },
+    {
+      "reference": 991,
+      "decisions": [
+        "The complete selected chain and both Prophet honorifics remain. The second title is Prophet, not Messenger as in Bewley.",
+        "The technical naw’ is retained and explained separately from the source’s later ordinary word for star. The selected elliptical by the naw’ of such-and-such is not expanded into a newly quoted sentence. All paired statements of belief and disbelief remain.",
+        "The chapter’s Quranic quotation and Ibn ‘Abbas’s separate gloss remain chapter material; they are not merged into this numbered account or its script.",
+        "Modern printed reference 1038. Full relevant Arabic print pages and located English bodies were inspected. AI-assisted working English, not Darussalam wording."
+      ]
+    },
+    {
+      "reference": 992,
+      "decisions": [
+        "The selected source and both prints read the singular miftah (key). The English comparisons use plural keys. The singular is retained with the five-item predicate; a separate note explains this source wording without silently normalising the Arabic. Al-‘Ayni records a plural variant in another transmission.",
+        "All five clauses remain, including what will be in the wombs rather than only the sex of an unborn child. No claims about modern prediction are added.",
+        "Brill expands Ibn ‘Umar to ‘Abdullah ibn ‘Umar and uses Prophet where the selected source and modern print have Messenger of Allah. The selected names and title remain.",
+        "Modern printed reference 1039. Full relevant Arabic print pages and located English bodies were inspected. AI-assisted working English, not Darussalam wording."
+      ]
+    }
+  ],
+  "limits": [
+    "The historical intake evidence remains immutable; this is a separate local prototype review.",
+    "Only specified pages and relevant classical passages were inspected, not complete commentaries.",
+    "No new recording, qualified independent sign-off, reuse right, physical iPhone acceptance or publication approval is asserted."
+  ]
+}
