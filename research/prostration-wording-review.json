@@ -1,0 +1,363 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-03T01:42:51.119857+00:00",
+  "status": "ai-assisted-source-comparison-independent-review-pending",
+  "sourceAuditSha256": "d3e81a0c4ab9a4367330f9efa278eb89b2fd715165ed98e813911cfd89626e4e",
+  "reviewSha256": "df8444b216471f6609598ae7e2098480e15fa006f4f90548a52763f41d9ae4b8",
+  "reviewHashMethod": "SHA-256 of UTF-8 JSON.stringify(review), preserving property order without whitespace.",
+  "references": [
+    1017,
+    1018,
+    1019,
+    1020,
+    1021,
+    1022,
+    1023,
+    1024,
+    1025,
+    1026,
+    1027,
+    1028,
+    1029
+  ],
+  "arabicChanged": false,
+  "exactTranslatedSpans": 30,
+  "separateArabicContextBlocks": 4,
+  "printInspection": [
+    {
+      "id": "brill-1862",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+      "bytes": 28290204,
+      "inspectedPdfPages": [
+        273,
+        274,
+        275,
+        276
+      ]
+    },
+    {
+      "id": "dar-ibn-kathir-2002",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+      "bytes": 45304371,
+      "inspectedPdfPages": [
+        261,
+        262,
+        263,
+        264
+      ]
+    }
+  ],
+  "englishInspection": {
+    "bewley": {
+      "url": "https://aishabewley.org/bukhari10",
+      "sha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+      "bytes": 102307,
+      "locatorPolicy": "Decode HTML and collapse whitespace. Bound Chapter 23 by Chapter 24, then locate labels 1017–1029 exactly once in order, allowing whitespace before periods. Each body ends at the next label and includes intervening chapter material; body hashes are locators, not wording approval.",
+      "locatedReports": 13
+    },
+    "khan": {
+      "sourcePath": "content/sources/islamhouse-bukhari/source.epub",
+      "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+      "locatedRecords": 13,
+      "range": "2.19.173–185",
+      "allRecordedBodyHashesCheckedAgainstPinnedEpub": true
+    }
+  },
+  "printedMapping": [
+    {
+      "reference": 1017,
+      "printedReferences": [
+        1067
+      ],
+      "printedPages": {
+        "brill-1862": [
+          273
+        ],
+        "dar-ibn-kathir-2002": [
+          261
+        ]
+      }
+    },
+    {
+      "reference": 1018,
+      "printedReferences": [
+        1068
+      ],
+      "printedPages": {
+        "brill-1862": [
+          273
+        ],
+        "dar-ibn-kathir-2002": [
+          261
+        ]
+      }
+    },
+    {
+      "reference": 1019,
+      "printedReferences": [
+        1069
+      ],
+      "printedPages": {
+        "brill-1862": [
+          273
+        ],
+        "dar-ibn-kathir-2002": [
+          261
+        ]
+      }
+    },
+    {
+      "reference": 1020,
+      "printedReferences": [
+        1070
+      ],
+      "printedPages": {
+        "brill-1862": [
+          273
+        ],
+        "dar-ibn-kathir-2002": [
+          261
+        ]
+      }
+    },
+    {
+      "reference": 1021,
+      "printedReferences": [
+        1071
+      ],
+      "printedPages": {
+        "brill-1862": [
+          273,
+          274
+        ],
+        "dar-ibn-kathir-2002": [
+          262
+        ]
+      }
+    },
+    {
+      "reference": 1022,
+      "printedReferences": [
+        1072
+      ],
+      "printedPages": {
+        "brill-1862": [
+          274
+        ],
+        "dar-ibn-kathir-2002": [
+          262
+        ]
+      }
+    },
+    {
+      "reference": 1023,
+      "printedReferences": [
+        1073
+      ],
+      "printedPages": {
+        "brill-1862": [
+          274
+        ],
+        "dar-ibn-kathir-2002": [
+          262
+        ]
+      }
+    },
+    {
+      "reference": 1024,
+      "printedReferences": [
+        1074
+      ],
+      "printedPages": {
+        "brill-1862": [
+          274
+        ],
+        "dar-ibn-kathir-2002": [
+          262
+        ]
+      }
+    },
+    {
+      "reference": 1025,
+      "printedReferences": [
+        1075
+      ],
+      "printedPages": {
+        "brill-1862": [
+          274
+        ],
+        "dar-ibn-kathir-2002": [
+          262
+        ]
+      }
+    },
+    {
+      "reference": 1026,
+      "printedReferences": [
+        1076
+      ],
+      "printedPages": {
+        "brill-1862": [
+          274
+        ],
+        "dar-ibn-kathir-2002": [
+          262,
+          263
+        ]
+      }
+    },
+    {
+      "reference": 1027,
+      "printedReferences": [
+        1077
+      ],
+      "printedPages": {
+        "brill-1862": [
+          275
+        ],
+        "dar-ibn-kathir-2002": [
+          263
+        ]
+      }
+    },
+    {
+      "reference": 1028,
+      "printedReferences": [
+        1078
+      ],
+      "printedPages": {
+        "brill-1862": [
+          275
+        ],
+        "dar-ibn-kathir-2002": [
+          263
+        ]
+      }
+    },
+    {
+      "reference": 1029,
+      "printedReferences": [
+        1079
+      ],
+      "printedPages": {
+        "brill-1862": [
+          275
+        ],
+        "dar-ibn-kathir-2002": [
+          263
+        ]
+      }
+    }
+  ],
+  "unresolvedTextualDifferences": [
+    {
+      "id": "chapter-05-ablution",
+      "paragraphId": "mwFA",
+      "sourceBlockSha256": "5c0198bd65ff2f5b9d52c02a06d7c57e12e8f41823a58d426fba052c0678d8f2",
+      "sourceReading": "على غير وضوء",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "transcriptionPolicy": "Short comparison snippets omit print vowel marks; original source text and source hash are unchanged.",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 273,
+          "reading": "على غير وضوء",
+          "readingSha256": "c41555dcd46801cb2bd50c6704c49f837424c2b22363cf11994abe81840ecf6b"
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 262,
+          "reading": "على وضوء",
+          "readingSha256": "1facb3fdd4d0007fecb8388aa3777dd6f9734835f606ac8fff8dff45a76c76b3"
+        }
+      ],
+      "finding": "Material chapter-context variant. The source and Brill retain ghayr; the modern print does not. Do not resolve a ritual ruling from this comparison or silently change the source. English context remains pending."
+    },
+    {
+      "id": "1018-surah-word",
+      "paragraphId": "mwCQ",
+      "sourceBlockSha256": "610d9e362fdfd73bc17c0f0f30a0de5e904515d8f966f714c785cf6b8cd0a058",
+      "sourceReading": "تنزيل",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "transcriptionPolicy": "Short comparison snippets omit print vowel marks; original source text and source hash are unchanged.",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 273,
+          "reading": "تنزيل السجدة",
+          "readingSha256": "3755210cf54a6945dd5bb5c531c6a210605f147b5b0f0dddfaebf481618eb89a"
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 261,
+          "reading": "تنزيل السجدة",
+          "readingSha256": "3755210cf54a6945dd5bb5c531c6a210605f147b5b0f0dddfaebf481618eb89a"
+        }
+      ],
+      "finding": "Both printed witnesses include al-Sajdah after Tanzil. The selected numbered paragraph does not. This is a wording-review item, not an applied correction; braces and orthographic presentation stay exact in the pinned source."
+    },
+    {
+      "id": "1027-narrator-name",
+      "paragraphId": "mwKA",
+      "sourceBlockSha256": "75ecc6ebc8758d519119e71b9f6b7d7971ebad8235704ef2b79d417e66362208",
+      "sourceReading": "عثمان بن عبد الرحمن",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "transcriptionPolicy": "Short comparison snippets omit print vowel marks; original source text and source hash are unchanged.",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 275,
+          "reading": "عثمان بن عبيد الرحمن",
+          "readingSha256": "6d84b8818c48bce742f48ffbd78ef84622431342c9a17e98219f61e3d9dc7412"
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 263,
+          "reading": "عثمان بن عبد الرحمن",
+          "readingSha256": "989ef79767bd505ad2b9886398368a953ca9f1eca389f02812690e35bb449f16"
+        }
+      ],
+      "finding": "The prints differ in the narrator patronymic. Preserve the selected reading and document the variant; a majority or name match alone is not independent review."
+    }
+  ],
+  "intakeFindingCorrection": {
+    "reference": 1029,
+    "previousFinding": "Keep this distinct Sadaqah route and its complete repeated crowding outcome. Brill expands Sadaqah and Yahya to Sadaqah ibn al-Fadl and Yahya ibn Said and includes maahu; the modern print retains the shorter chain but adds a companion honorific absent from the selected paragraph. Do not collapse these three Ibn Umar reports into one.",
+    "correctedFinding": "Keep this distinct Sadaqah route and its complete repeated crowding outcome. Brill expands Sadaqah and Yahya to Sadaqah ibn al-Fadl and Yahya ibn Said and includes maahu. The selected source and modern print both retain the Ibn Umar companion honorific; Brill does not. Do not collapse these three Ibn Umar reports into one.",
+    "reason": "Direct rereading of the pinned source confirms the companion honorific was already present. Corrected the audit note; source text is unchanged."
+  },
+  "lexicalReferences": [
+    {
+      "url": "https://www.islamweb.net/ar/library/content/52/1977/باب-سجدة-ص",
+      "sourceId": "fath-prostration-sad",
+      "use": "Firmly enjoined is a provisional rendering of عزائم. Ibn Hajar discusses emphatic prescription and distinguishes the interpretive question of obligation. This lexical check does not supply a ruling or independent translation approval."
+    },
+    {
+      "url": "https://www.islamweb.net/ar/library/content/303/4459/باب-من-رأى-أن-الله-عز-وجل-لم-يوجب-السجود",
+      "sourceId": "ayni-prostration-choice",
+      "use": "The final إلا أن نشاء is rendered closely as except if we wish. Its omitted object is not supplied. Al-Ayni discusses both wishing to prostrate and wishing to recite as interpretations; this draft does not choose an added object. This syntax needs independent review.",
+      "snapshot": {
+        "bytes": 265198,
+        "sha256": "087f125d57d0c539ca0d70f2414c64b76237e634cd4b7fe2d170183d858ae59e",
+        "scope": "Complete HTML fetched and relevant omitted-object discussion read directly; no commentary wording inserted into the report."
+      }
+    }
+  ],
+  "limitations": [
+    "Working English and chapter titles are AI-assisted; no independent Arabic, theological, lexical or translation certification.",
+    "The closing exception at 1027 and firmly enjoined rendering at 1019 remain explicit independent-review items.",
+    "Chapter context English remains pending; the ablution variant is not resolved into a ritual ruling.",
+    "No recordings or external publication are created by wording review."
+  ]
+}

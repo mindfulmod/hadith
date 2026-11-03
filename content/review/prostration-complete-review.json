@@ -1,0 +1,1363 @@
+{
+  "schemaVersion": 1,
+  "status": "personal-prototype-only",
+  "independentReview": "pending",
+  "sourceId": "wikisource-bukhari-prostration-r484859",
+  "sourceSha256": "1d3c14836d7c320caa9295c4a6eccd7ed0f052a289ac19c9ed5ed8e65bbc8b59",
+  "inventorySha256": "8d71f0cbf0182caef9e73ef39cef3b5a5dc761a6313502f1a4453300f4726ff5",
+  "createdAt": "2026-11-03",
+  "sources": [
+    {
+      "id": "arabic-prostration",
+      "label": "Arabic Wikisource · fixed revision 484859",
+      "kind": "arabic-input",
+      "format": "web",
+      "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_سجود_القرآن&oldid=484859"
+    },
+    {
+      "id": "bewley-prostration",
+      "label": "Aisha Bewley · Prostration of Quran Recitation",
+      "kind": "english-comparison",
+      "format": "web",
+      "url": "https://aishabewley.org/bukhari10"
+    },
+    {
+      "id": "islamhouse-khan",
+      "label": "IslamHouse · Khan-family English comparison",
+      "kind": "english-comparison",
+      "format": "web",
+      "url": "https://islamhouse.com/en/books/70510"
+    },
+    {
+      "id": "brill-1862",
+      "label": "Historical Arabic print · Brill 1862",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+    },
+    {
+      "id": "dar-ibn-kathir-2002",
+      "label": "Arabic print · Dar Ibn Kathir 2002",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+    },
+    {
+      "id": "fath-prostration-sad",
+      "label": "Ibn Hajar · Fath al-Bari · Prostration in Ṣād",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/ar/library/content/52/1977/باب-سجدة-ص"
+    },
+    {
+      "id": "ayni-prostration-choice",
+      "label": "Al-Ayni · Umdat al-Qari · The closing choice clause",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/ar/library/content/303/4459/باب-من-رأى-أن-الله-عز-وجل-لم-يوجب-السجود"
+    }
+  ],
+  "scope": "Complete selected Prostration reports 1017–1029 and all twelve chapter headings. Four chapter context paragraphs remain separately browsable in Arabic, with English pending.",
+  "editionNote": "Selected Arabic is unchanged. Repeated reports, every chain, source-specific honorific and closing transmission note remain complete. The chapter 5 ablution variant, the printed extra word in 1018 and the narrator-name variant in 1027 remain explicitly unresolved. English is newly authored AI-assisted working translation, not Darussalam wording or independent certification.",
+  "chapters": [
+    {
+      "id": "chapter-01",
+      "headingId": "باب_ما_جاء_في_سجود_القرآن_وسنتها",
+      "contextIds": [],
+      "entryNumbers": [
+        1017
+      ],
+      "title": "What has been related about prostration in the Quran and its practice",
+      "titleArabic": "باب ما جاء في سجود القرآن وسنتها",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-02",
+      "headingId": "باب_سجدة_تنزيل_السجدة",
+      "contextIds": [],
+      "entryNumbers": [
+        1018
+      ],
+      "title": "Prostration in Tanzil al-Sajdah",
+      "titleArabic": "باب سجدة تنزيل السجدة",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-03",
+      "headingId": "باب_سجدة_ص",
+      "contextIds": [],
+      "entryNumbers": [
+        1019
+      ],
+      "title": "Prostration in Ṣād",
+      "titleArabic": "باب سجدة ص",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-04",
+      "headingId": "باب_سجدة_النجم",
+      "contextIds": [
+        "mwDw"
+      ],
+      "entryNumbers": [
+        1020
+      ],
+      "title": "Prostration in al-Najm",
+      "titleArabic": "باب سجدة النجم",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "Original Arabic chapter context retained separately; English translation pending."
+    },
+    {
+      "id": "chapter-05",
+      "headingId": "باب_سجود_المسلمين_مع_المشركين",
+      "contextIds": [
+        "mwFA"
+      ],
+      "entryNumbers": [
+        1021
+      ],
+      "title": "Muslims prostrating with polytheists",
+      "titleArabic": "باب سجود المسلمين مع المشركين",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "Original Arabic chapter context retained separately; English translation pending.",
+      "contextDifferences": [
+        {
+          "auditPath": "research/prostration-source-audit.json",
+          "auditSha256": "d3e81a0c4ab9a4367330f9efa278eb89b2fd715165ed98e813911cfd89626e4e",
+          "differenceId": "chapter-05-ablution"
+        }
+      ]
+    },
+    {
+      "id": "chapter-06",
+      "headingId": "باب_من_قرأ_السجدة_ولم_يسجد",
+      "contextIds": [],
+      "entryNumbers": [
+        1022,
+        1023
+      ],
+      "title": "One who recites a prostration passage and does not prostrate",
+      "titleArabic": "باب من قرأ السجدة ولم يسجد",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-07",
+      "headingId": "باب_سجدة_إذا_السماء_انشقت",
+      "contextIds": [],
+      "entryNumbers": [
+        1024
+      ],
+      "title": "Prostration in Idha al-sama’u inshaqqat",
+      "titleArabic": "باب سجدة إذا السماء انشقت",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-08",
+      "headingId": "باب_من_سجد_لسجود_القارئ",
+      "contextIds": [
+        "mwIA"
+      ],
+      "entryNumbers": [
+        1025
+      ],
+      "title": "One who prostrates because the reciter prostrates",
+      "titleArabic": "باب من سجد لسجود القارئ",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "Original Arabic chapter context retained separately; English translation pending."
+    },
+    {
+      "id": "chapter-09",
+      "headingId": "باب_ازدحام_الناس_إذا_قرأ_الإمام_السجدة",
+      "contextIds": [],
+      "entryNumbers": [
+        1026
+      ],
+      "title": "People crowding together when the imam recites a prostration passage",
+      "titleArabic": "باب ازدحام الناس إذا قرأ الإمام السجدة",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-10",
+      "headingId": "باب_من_رأى_أن_الله_عز_وجل_لم_يوجب_السجود",
+      "contextIds": [
+        "mwJw"
+      ],
+      "entryNumbers": [
+        1027
+      ],
+      "title": "One who considers that Allah, Mighty and Majestic, has not made prostration obligatory",
+      "titleArabic": "باب من رأى أن الله عز وجل لم يوجب السجود",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "Original Arabic chapter context retained separately; English translation pending."
+    },
+    {
+      "id": "chapter-11",
+      "headingId": "باب_من_قرأ_السجدة_في_الصلاة_فسجد_بها",
+      "contextIds": [],
+      "entryNumbers": [
+        1028
+      ],
+      "title": "One who recites a prostration passage in prayer and prostrates during it",
+      "titleArabic": "باب من قرأ السجدة في الصلاة فسجد بها",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-12",
+      "headingId": "باب_من_لم_يجد_موضعا_للسجود_من_الزحام",
+      "contextIds": [],
+      "entryNumbers": [
+        1029
+      ],
+      "title": "One who finds no place to prostrate because of the crowding",
+      "titleArabic": "باب من لم يجد موضعا للسجود من الزحام",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    }
+  ],
+  "entries": [
+    {
+      "number": 1017,
+      "id": "bukhari:1017",
+      "sourceRecordId": "wikisource-bukhari-prostration-r484859:1017",
+      "chapterId": "chapter-01",
+      "paragraphIds": [
+        "mwBg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1017-1",
+          "paragraphId": "mwBg",
+          "start": 0,
+          "end": 123,
+          "kind": "chain",
+          "arabic": "[1017] حدثنا محمد بن بشار قال: حدثنا غندر قال: حدثنا شعبة عن أبي إسحاق قال: سمعت الأسود عن عبد الله رضى الله تعالى عنه قال ",
+          "english": "Muhammad ibn Bashshar related to us. He said: Ghundar related to us. He said: Shu‘bah related to us, from Abu Ishaq, who said: I heard al-Aswad, from ‘Abdullah, may Allah Most High be pleased with him, who said:",
+          "arabicSha256": "87003f781d04b1bf61f5d7a2fe7aca5e06a91b1ebd7b88f3f178106311ba1fac",
+          "englishSha256": "d7ef5ad9fa693366318e3ceeb580f2d217495d43a53d2eaeaf98ea7684fdd92f"
+        },
+        {
+          "id": "1017-2",
+          "paragraphId": "mwBg",
+          "start": 123,
+          "end": 257,
+          "kind": "report",
+          "arabic": "قرأ النبي ﷺ النجم بمكة فسجد فيها وسجد من معه غير شيخ أخذ كفا من حصى أو تراب فرفعه إلى جبهته، وقال يكفيني هذا فرأيته بعد ذلك قتل كافرا ",
+          "english": "The Prophet, may Allah bless him and grant him peace, recited al-Najm in Mecca and prostrated during it. Those with him prostrated, except for an old man who took a handful of pebbles or earth, raised it to his forehead and said, “This is enough for me.” After that, I saw him killed as a disbeliever.",
+          "arabicSha256": "441afb59b42f3a9500a68001129a55f796ae39db63a0281ed2cb345570ae6f19",
+          "englishSha256": "e717e400638b06d68da6a0680b1f6c5f663cbc108e551670594637f20c5126b6"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            273
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            261
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prostration",
+          "reference": "1017",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/prostration-source-audit.json",
+            "sha256": "d3e81a0c4ab9a4367330f9efa278eb89b2fd715165ed98e813911cfd89626e4e",
+            "sourceSha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+            "bodySha256": "69af575130d7c962898947d653d7aa044e03e43acd4d55cae3ff6efe8fac376f",
+            "occurrence": 1
+          },
+          "note": "The web body omits the source’s pebbles-or-earth alternative. The full selected Arabic uncertainty remains in the reader."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.19.173",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.19.173",
+            "recordSha256": "0789a10a20ce842b16e687ed8f2e99a6974aefab6f5af0992268ed78cef227e8"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated 'Abdullah bin Masud : ",
+            "The Prophet recited Suratan-Najm (103) at Mecca and prostrated while reciting it and those who were with him did the same except an old man who took a handful of small stones or earth and lifted it to his forehead and said, \"This is sufficient for me.\" Later on, I saw him killed as a non-believer. "
+          ],
+          "damagedExcerpt": "103",
+          "note": "The pinned English body adds the wrong surah number 103 to al-Najm. No surah number is imported into the working English."
+        }
+      ],
+      "notes": [
+        "Keep the Mecca setting, forehead and pebbles-or-earth uncertainty. Bewley omits the earth alternative; the Khan EPUB adds the wrong surah number 103. Brill omits the selected companion honorific and the closing dhalika; the modern witness retains them. Do not import English-added surah numbers or deduplicate this with 1020.",
+        "Modern printed reference 1067. Bewley 1017 and pinned Khan EPUB 2.19.173 were individually matched; shortened chains and documented comparison errors do not replace the complete selected Arabic."
+      ],
+      "reviewScope": "AI-assisted full-span working translation of unchanged selected Arabic, checked against the individually located English bodies and inspected Arabic print pages. Source differences and lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "67f24b81de620c1b2eac044544757cc0ac5b6aff2cda42380fe64d35e79de2ed",
+      "englishSha256": "5fdfd5bc28d3955a1b45c3ac410e13bdd43c2e7f6c7a21b047c1f2175c5e26e8",
+      "reviewRecordSha256": "b10a6eeacf8af604638409f49397836cc9b6e078dbe0294e23e7ced25a141716"
+    },
+    {
+      "number": 1018,
+      "id": "bukhari:1018",
+      "sourceRecordId": "wikisource-bukhari-prostration-r484859:1018",
+      "chapterId": "chapter-02",
+      "paragraphIds": [
+        "mwCQ"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1018-1",
+          "paragraphId": "mwCQ",
+          "start": 0,
+          "end": 107,
+          "kind": "chain",
+          "arabic": "[1018] حدثنا محمد بن يوسف حدثنا سفيان عن سعد بن إبراهيم عن عبد الرحمن عن أبي هريرة رضى الله تعالى عنه قال: ",
+          "english": "Muhammad ibn Yusuf related to us. Sufyan related to us, from Sa‘d ibn Ibrahim, from ‘Abd al-Rahman, from Abu Hurayrah, may Allah Most High be pleased with him, who said:",
+          "arabicSha256": "6ae22f1cd0ce5ac39667cc0ed0f2e657e27ff4c2315e1c4c73be58f2860a4484",
+          "englishSha256": "50306cfa4b66714c07b0d00e3273b3745d4c50fde319ba398fa09af0757b4740"
+        },
+        {
+          "id": "1018-2",
+          "paragraphId": "mwCQ",
+          "start": 107,
+          "end": 187,
+          "kind": "report",
+          "arabic": "كان النبي ﷺ يقرأ في الجمعة في صلاة الفجر { آلم تنزيل } و { هل أتى على الإنسان } ",
+          "english": "The Prophet, may Allah bless him and grant him peace, used to recite “Alif Lam Mim Tanzil” and “Hal ata ‘ala al-insan” in the dawn prayer on Friday.",
+          "arabicSha256": "0a5664fa04464cb5754deb6bf474d266c6fd1cf967a564704c5784b8b91e78ce",
+          "englishSha256": "0ce32fa3eaa86157685f7f7a937a0eab0ac1d34ec2405eb158acd5650b81c342"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            273
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            261
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prostration",
+          "reference": "1018",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/prostration-source-audit.json",
+            "sha256": "d3e81a0c4ab9a4367330f9efa278eb89b2fd715165ed98e813911cfd89626e4e",
+            "sourceSha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+            "bodySha256": "ed5711ebe302784549b1e5505b6ef870121d87f6a8a8aa2a05faf88844af2131",
+            "occurrence": 1
+          },
+          "note": "The web body adds an incorrect surah number 74 to Hal ata. The selected Arabic has no surah numbers; none is imported."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.19.174",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.19.174",
+            "recordSha256": "7eb6bd19e5f59c54774331d8664a1453cac42b159b9388cfeebc7d8a86739bae"
+          }
+        }
+      ],
+      "notes": [
+        "Both prints include al-Sajdah after the opening Alif Lam Mim Tanzil; that word is absent from the selected numbered paragraph, although present in its chapter heading. Record this as an unresolved textual difference, not a silent completion. Bewley adds the wrong surah number 74 for Hal ata; Khan adds separate first/second-unit explanations. None of those English-added references or explanations belongs to the selected Arabic.",
+        "The Quran opening words remain transliterated as in the selected Arabic; no surah number, complete Quran verse translation, first/second rak‘ah explanation or al-Sajdah addition is inserted.",
+        "Modern printed reference 1068. Bewley 1018 and pinned Khan EPUB 2.19.174 were individually matched; shortened chains and documented comparison errors do not replace the complete selected Arabic."
+      ],
+      "reviewScope": "AI-assisted full-span working translation of unchanged selected Arabic, checked against the individually located English bodies and inspected Arabic print pages. Source differences and lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "610d9e362fdfd73bc17c0f0f30a0de5e904515d8f966f714c785cf6b8cd0a058",
+      "englishSha256": "f082a6929c54c492a97703297a877c73043563e575b2ddb3a90d9885d1d85897",
+      "contextNotes": [
+        {
+          "id": "1018-wording",
+          "label": "A difference in the surah wording",
+          "text": "Both Arabic prints include al-Sajdah after Tanzil. The selected digital paragraph does not. This working translation retains the selected wording; the full readings remain in the source notes.",
+          "citations": [
+            "base",
+            "brill-1862",
+            "dar-ibn-kathir-2002"
+          ],
+          "related": []
+        }
+      ],
+      "reviewRecordSha256": "c470060cad9c01c06b60b2df9a2e5d1974e21dae27b9c2e2d86d6cc100ecfdf9"
+    },
+    {
+      "number": 1019,
+      "id": "bukhari:1019",
+      "sourceRecordId": "wikisource-bukhari-prostration-r484859:1019",
+      "chapterId": "chapter-03",
+      "paragraphIds": [
+        "mwDA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1019-1",
+          "paragraphId": "mwDA",
+          "start": 0,
+          "end": 111,
+          "kind": "chain",
+          "arabic": "[1019] حدثنا سليمان بن حرب وأبو النعمان قالا: حدثنا حماد عن أيوب عن عكرمة عن ابن عباس رضى الله تعالى عنهما قال ",
+          "english": "Sulayman ibn Harb and Abu al-Nu‘man related to us. They said: Hammad related to us, from Ayyub, from ‘Ikrimah, from Ibn ‘Abbas, may Allah Most High be pleased with them both, who said:",
+          "arabicSha256": "dc3c59caaf25fd404d52e2e548dd8fff772293b6a4a7c4049209ab65e5144f15",
+          "englishSha256": "8d8b97da5cad72d206ba12d1bdac995ad9e75e3ec7ad05db8ae8046ca99b0426"
+        },
+        {
+          "id": "1019-2",
+          "paragraphId": "mwDA",
+          "start": 111,
+          "end": 160,
+          "kind": "report",
+          "arabic": "ص ليس من عزائم السجود وقد رأيت النبي ﷺ يسجد فيها ",
+          "english": "Ṣād is not among the firmly enjoined prostrations, and I have seen the Prophet, may Allah bless him and grant him peace, prostrate during it.",
+          "arabicSha256": "342f823d0ddd9c908b54620b2dff0cd5e75c54e5f7dce10436644e49ff770378",
+          "englishSha256": "2aeb80132f4308138ec99a06273777eae19eba2129cae41214e6edd2cd86bfea"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            273
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            261
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prostration",
+          "reference": "1019"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.19.175",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.19.175",
+            "recordSha256": "dac27dd6b37409296a6046f45746afde7c87947f5da48152600d310a3b6e06c3"
+          }
+        }
+      ],
+      "notes": [
+        "Preserve Ibn Abbas as the speaker of the Sad assessment and the separate observation of the Prophet. The phrase azaim al-sujud needs explicit lexical review. Brill expands Hammad with wa-huwa Ibn Zayd; the selected source and modern print do not. Do not add a legal explanation or silently expand this chain.",
+        "Firmly enjoined is a provisional rendering of عزائم. Ibn Hajar discusses emphatic prescription and distinguishes the interpretive question of obligation. This lexical check does not supply a ruling or independent translation approval.",
+        "Modern printed reference 1069. Bewley 1019 and pinned Khan EPUB 2.19.175 were individually matched; shortened chains and documented comparison errors do not replace the complete selected Arabic."
+      ],
+      "reviewScope": "AI-assisted full-span working translation of unchanged selected Arabic, checked against the individually located English bodies and inspected Arabic print pages. Source differences and lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "7f5cdf45b70620daf94a06d27d34f7571cd54e1eb8d2ffcae554445310516339",
+      "englishSha256": "f77a690868447afc55af63a42f01ec2b5b16c041f1e11eaf13e21771615b2582",
+      "contextNotes": [
+        {
+          "id": "1019-wording",
+          "label": "A translation term under review",
+          "text": "Firmly enjoined renders the Arabic عزائم. The commentary discusses its emphatic force and the question of obligation. This is a provisional translation choice, with the Arabic and source discussion available for review.",
+          "citations": [
+            "base",
+            "brill-1862",
+            "dar-ibn-kathir-2002",
+            "lexical"
+          ],
+          "related": []
+        }
+      ],
+      "additionalCitations": [
+        {
+          "id": "lexical",
+          "sourceId": "fath-prostration-sad",
+          "locator": "Discussion of عزائم السجود",
+          "scope": "Classical commentary consulted to identify the translation issue. It is separate from the hadith wording and is not an independent review of this draft."
+        }
+      ],
+      "reviewRecordSha256": "d5ddf06f45376493746a5301f7cd53a0f174094cdbc8b325bc25b799144d0cc5"
+    },
+    {
+      "number": 1020,
+      "id": "bukhari:1020",
+      "sourceRecordId": "wikisource-bukhari-prostration-r484859:1020",
+      "chapterId": "chapter-04",
+      "paragraphIds": [
+        "mwEQ"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1020-1",
+          "paragraphId": "mwEQ",
+          "start": 0,
+          "end": 94,
+          "kind": "chain",
+          "arabic": "[1020] حدثنا حفص بن عمر قال: حدثنا شعبة عن أبي إسحاق عن الأسود عن عبد الله رضى الله تعالى عنه ",
+          "english": "Hafs ibn ‘Umar related to us. He said: Shu‘bah related to us, from Abu Ishaq, from al-Aswad, from ‘Abdullah, may Allah Most High be pleased with him:",
+          "arabicSha256": "d3cd501fb7c665eec7f1896367a76cad523d4f32dc845b7e7357b9f14c8a2347",
+          "englishSha256": "dba3ee840685869d92cea661ce0722b7dec9846f3cacf105bae4d5aff2e626ce"
+        },
+        {
+          "id": "1020-2",
+          "paragraphId": "mwEQ",
+          "start": 94,
+          "end": 252,
+          "kind": "report",
+          "arabic": "أن النبي ﷺ قرأ سورة النجم فسجد بها فما بقي أحد من القوم إلا سجد فأخذ رجل من القوم كفا من حصى أو تراب فرفعه إلى وجهه، وقال يكفيني هذا فلقد رأيته بعد قتل كافرا ",
+          "english": "The Prophet, may Allah bless him and grant him peace, recited Surat al-Najm and prostrated during it. No one among the people remained without prostrating. A man among the people took a handful of pebbles or earth, raised it to his face and said, “This is enough for me.” I certainly saw him afterwards, killed as a disbeliever.",
+          "arabicSha256": "71078c26396ff00bac1f600b14169692d846bc04bfacaced0192522654a7492f",
+          "englishSha256": "01632ca6d9c9f0d932a7e67f1f18f75649151184482ff0248db7523eb33107bd"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            273
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            261
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prostration",
+          "reference": "1020"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.19.176",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.19.176",
+            "recordSha256": "9420d985fd2b3207042d002bf37d931947572bedff60657cfe49fcd6941e7514"
+          }
+        }
+      ],
+      "notes": [
+        "Keep this separate occurrence, its own chain, face rather than forehead, and the pebbles-or-earth uncertainty. Brill explicitly inserts qala Abd Allah before the final observation; the selected source and modern print do not. Keep the preceding Ibn Abbas chapter attribution separate from this report.",
+        "Modern printed reference 1070. Bewley 1020 and pinned Khan EPUB 2.19.176 were individually matched; shortened chains and documented comparison errors do not replace the complete selected Arabic."
+      ],
+      "reviewScope": "AI-assisted full-span working translation of unchanged selected Arabic, checked against the individually located English bodies and inspected Arabic print pages. Source differences and lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "24942ed7604228d99f7230afc5febe844c60da007d73e5642703361070672110",
+      "englishSha256": "07a9f0948dc9fe299bacc8ae3686f7b8a5620d4fb3dc288e336bbec1fb36a759",
+      "reviewRecordSha256": "d3bd121a84b81c4fc200f77510e43b7a55d0982073ba03c25d8cb57a0e717548"
+    },
+    {
+      "number": 1021,
+      "id": "bukhari:1021",
+      "sourceRecordId": "wikisource-bukhari-prostration-r484859:1021",
+      "chapterId": "chapter-05",
+      "paragraphIds": [
+        "mwFQ"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1021-1",
+          "paragraphId": "mwFQ",
+          "start": 0,
+          "end": 98,
+          "kind": "chain",
+          "arabic": "[1021] حدثنا مسدد قال: حدثنا عبد الوارث قال: حدثنا أيوب عن عكرمة عن ابن عباس رضى الله تعالى عنهما ",
+          "english": "Musaddad related to us. He said: ‘Abd al-Warith related to us. He said: Ayyub related to us, from ‘Ikrimah, from Ibn ‘Abbas, may Allah Most High be pleased with them both:",
+          "arabicSha256": "316144fe40ea81b7959a83495cb2176134dedcd6f6f35f332a1353b213d820d3",
+          "englishSha256": "1aef748fd1a44e5edacdbe4ed76a1324b14a9bc6392e7a65f076f94c3f93d769"
+        },
+        {
+          "id": "1021-2",
+          "paragraphId": "mwFQ",
+          "start": 98,
+          "end": 163,
+          "kind": "report",
+          "arabic": "أن النبي ﷺ سجد بالنجم وسجد معه المسلمون والمشركون والجن والإنس ، ",
+          "english": "The Prophet, may Allah bless him and grant him peace, prostrated during al-Najm, and the Muslims, the polytheists, the jinn and human beings prostrated with him.",
+          "arabicSha256": "c749e0000d3253c73ad39529080ce3454a93f3d9d83ec146659ac7e7000b3470",
+          "englishSha256": "b2adc491c08200c7c24b3d6200eaba73a73e3d38574a1e0c5f09d6548796a7de"
+        },
+        {
+          "id": "1021-3",
+          "paragraphId": "mwFQ",
+          "start": 163,
+          "end": 187,
+          "kind": "transmission-note",
+          "arabic": "ورواه ابن طهمان عن أيوب ",
+          "english": "Ibn Tahman also related it from Ayyub.",
+          "arabicSha256": "fd05751fb980d896e9b2b652940cf6e19c3815ff630fcc0295d1bb802a6a5e4a",
+          "englishSha256": "008a428f031e4d1df84ea83bb6ac257776e4a49939eb96f9bf8e8544d835f9fd"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            273,
+            274
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            262
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prostration",
+          "reference": "1021"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.19.177",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.19.177",
+            "recordSha256": "0a2d01dbc257c4b29e0d6dcbc716a7246cb17ff1f84780811ee38d00b0a4351e"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Ibn Abbas: ",
+            "The Prophet I prostrated while reciting An-Najm and with him prostrated the Muslims, the pagans, the jinns, and all human beings. "
+          ],
+          "damagedExcerpt": "The Prophet I",
+          "note": "The pinned body includes a stray I and omits the closing Ibn Tahman-from-Ayyub transmission comment. That complete Arabic comment remains in the reader."
+        }
+      ],
+      "notes": [
+        "The full selected chain, four named groups and closing Ibn Tahman-from-Ayyub transmission comment are present. Bewley retains the comment; Khan has a stray I after Prophet and omits the comment. Brill expands Ibn Tahman to Ibrahim ibn Tahman. Chapter 5 has a material ablution variant recorded separately below; it is not a sentence of this report.",
+        "Modern printed reference 1071. Bewley 1021 and pinned Khan EPUB 2.19.177 were individually matched; shortened chains and documented comparison errors do not replace the complete selected Arabic."
+      ],
+      "reviewScope": "AI-assisted full-span working translation of unchanged selected Arabic, checked against the individually located English bodies and inspected Arabic print pages. Source differences and lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "0460025b42100c17aaf21ae8be34f326bea61e3c613728837dab879aca6497fa",
+      "englishSha256": "422a3458a73a1eb70b57c4e6cf5ec1bc5dbfe4c4332891b910c81853ba5af30e",
+      "reviewRecordSha256": "9e862b0738e73e247493671bb941f1e8d89ac444c48ab338a2878e9ffa5109ff"
+    },
+    {
+      "number": 1022,
+      "id": "bukhari:1022",
+      "sourceRecordId": "wikisource-bukhari-prostration-r484859:1022",
+      "chapterId": "chapter-06",
+      "paragraphIds": [
+        "mwGA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1022-1",
+          "paragraphId": "mwGA",
+          "start": 0,
+          "end": 120,
+          "kind": "chain",
+          "arabic": "[1022] حدثنا سليمان بن داود أبو الربيع قال: حدثنا إسماعيل بن جعفر قال: أخبرنا يزيد بن خصيفة عن ابن قسيط عن عطاء بن يسار ",
+          "english": "Sulayman ibn Dawud Abu al-Rabi‘ related to us. He said: Isma‘il ibn Ja‘far related to us. He said: Yazid ibn Khusayfah informed us, from Ibn Qusayt, from ‘Ata’ ibn Yasar:",
+          "arabicSha256": "3015c1f3d5ef1d9931c8cec15b6cdafa648c596ce8c6f74d013078a0c277f735",
+          "englishSha256": "4b236b1809f9b217e99e58aff463258255253277b658052a9920dec3cc206541"
+        },
+        {
+          "id": "1022-2",
+          "paragraphId": "mwGA",
+          "start": 120,
+          "end": 215,
+          "kind": "report",
+          "arabic": "أنه أخبره أنه سأل زيد بن ثابت رضى الله تعالى عنه فزعم أنه قرأ على النبي ﷺ والنجم فلم يسجد فيها ",
+          "english": "He informed him that he had asked Zayd ibn Thabit, may Allah Most High be pleased with him, who stated that he had recited al-Najm to the Prophet, may Allah bless him and grant him peace, and he did not prostrate during it.",
+          "arabicSha256": "50c7c7c1e3b06d7d4c61f3644b68cae9c5282fed3f0d73c7764754f1f791c14c",
+          "englishSha256": "b8c40a00c5c26850702496120632f7875deb8e0ffd417c7c68b26b4a99a9e1f0"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            274
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            262
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prostration",
+          "reference": "1022"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.19.178",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.19.178",
+            "recordSha256": "a39d5902f0eb3e9a61c446e8e612f6998dbb9f4af9ea8fe6d0def3dd2e799a53"
+          }
+        }
+      ],
+      "notes": [
+        "This Ata ibn Yasar question and Zayd ibn Thabit answer have their own complete chain and must remain separate from the following direct first-person occurrence. Keep the selected reporting verb fa-zaama and do not infer an extra ritual detail from the comparison translations.",
+        "The question’s subject is not stated in the selected Arabic, so no about prostration gloss is added. Stated renders زعم without importing an implication of falsehood. The selected third-person references are retained; the Prophet is the understood non-prostrating subject in both comparison bodies.",
+        "Modern printed reference 1072. Bewley 1022 and pinned Khan EPUB 2.19.178 were individually matched; shortened chains and documented comparison errors do not replace the complete selected Arabic."
+      ],
+      "reviewScope": "AI-assisted full-span working translation of unchanged selected Arabic, checked against the individually located English bodies and inspected Arabic print pages. Source differences and lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "0d1628b1a49472b6db119b8dfdae4a2301e3caad49d988c3cd88052434c436c6",
+      "englishSha256": "cecafac8994aae2a2a70f6fc3f70bb4fdf9b7210c54eb215b489ad85f3564a31",
+      "reviewRecordSha256": "cc508c6d93eb37608b030cc6118b2e14b9c250f82f8a860e749c57a9d361af57"
+    },
+    {
+      "number": 1023,
+      "id": "bukhari:1023",
+      "sourceRecordId": "wikisource-bukhari-prostration-r484859:1023",
+      "chapterId": "chapter-06",
+      "paragraphIds": [
+        "mwGg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1023-1",
+          "paragraphId": "mwGg",
+          "start": 0,
+          "end": 123,
+          "kind": "chain",
+          "arabic": "[1023] حدثنا آدم بن أبي إياس قال: حدثنا ابن أبي ذئب قال: حدثنا يزيد بن عبد الله بن قسيط عن عطاء بن يسار عن زيد بن ثابت قال ",
+          "english": "Adam ibn Abi Iyas related to us. He said: Ibn Abi Dhi’b related to us. He said: Yazid ibn ‘Abdullah ibn Qusayt related to us, from ‘Ata’ ibn Yasar, from Zayd ibn Thabit, who said:",
+          "arabicSha256": "eebe74b48e1d4670a68dc530e9b0a590366a60d39de9cd1f4a670bf1cb65704e",
+          "englishSha256": "58d9695184172171478cf6e2a19de59c372aa5e35aa8accfe0dce3620ff5f240"
+        },
+        {
+          "id": "1023-2",
+          "paragraphId": "mwGg",
+          "start": 123,
+          "end": 161,
+          "kind": "report",
+          "arabic": "قرأت على النبي ﷺ والنجم فلم يسجد فيها ",
+          "english": "I recited al-Najm to the Prophet, may Allah bless him and grant him peace, and he did not prostrate during it.",
+          "arabicSha256": "34bd2db1215fa2b6d9dda9a9d38ddb6d6ffc54b45477343071297533dc35dbe2",
+          "englishSha256": "bd36fcd223f6faa2e6bd2028c0e44c96a0f3fe6ba11b098820a7f0813af5209a"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            274
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            262
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prostration",
+          "reference": "1023"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.19.179",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.19.179",
+            "recordSha256": "a83d27fd44c287476c00694b87570b0b6d773d15d7f529a67767d16949c966bf"
+          }
+        }
+      ],
+      "notes": [
+        "This Adam ibn Abi Iyas route reports Zayd in the first person. Keep it as a distinct occurrence from 1022 despite the repeated event and outcome. The selected paragraph contains no companion honorific at Zayd; do not borrow one from another occurrence.",
+        "Modern printed reference 1073. Bewley 1023 and pinned Khan EPUB 2.19.179 were individually matched; shortened chains and documented comparison errors do not replace the complete selected Arabic."
+      ],
+      "reviewScope": "AI-assisted full-span working translation of unchanged selected Arabic, checked against the individually located English bodies and inspected Arabic print pages. Source differences and lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "bf9bae79aa779234993d4dfac682f8e3403b1937fef769e9857417df9bbda86b",
+      "englishSha256": "af2baf546cf42f60b5ebce99389ae11b2ad3b4d528bb052ca843c5a7ae764948",
+      "reviewRecordSha256": "4e3a4f3c8a66de264797a8452181ed2fd256188b2785a6e519777082be7d0458"
+    },
+    {
+      "number": 1024,
+      "id": "bukhari:1024",
+      "sourceRecordId": "wikisource-bukhari-prostration-r484859:1024",
+      "chapterId": "chapter-07",
+      "paragraphIds": [
+        "mwHQ"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1024-1",
+          "paragraphId": "mwHQ",
+          "start": 0,
+          "end": 76,
+          "kind": "chain",
+          "arabic": "[1024] حدثنا مسلم ومعاذ بن فضالة قالا: أخبرنا هشام عن يحيى عن أبي سلمة قال: ",
+          "english": "Muslim and Mu‘adh ibn Fadalah related to us. They said: Hisham informed us, from Yahya, from Abu Salamah, who said:",
+          "arabicSha256": "937747095894e502c6fa78577333c75b7f1baf5cc42df325b639b74a7aa77675",
+          "englishSha256": "657182a176f3958e12492ad2c414fc6fa91579555938df40f64bc3fe2ae41abd"
+        },
+        {
+          "id": "1024-2",
+          "paragraphId": "mwHQ",
+          "start": 76,
+          "end": 205,
+          "kind": "report",
+          "arabic": "رأيت أبا هريرة رضى الله تعالى عنه قرأ إذا السماء انشقت فسجد بها فقلت: يا أبا هريرة ألم أرك تسجد قال لو لم أر النبي ﷺ يسجد لم أسجد",
+          "english": "I saw Abu Hurayrah, may Allah Most High be pleased with him, recite “Idha al-sama’u inshaqqat” and prostrate during it. I said, “Abu Hurayrah, did I not see you prostrate?” He said, “Had I not seen the Prophet, may Allah bless him and grant him peace, prostrate, I would not have prostrated.”",
+          "arabicSha256": "3c6cbd116f8c2ab2729b89541b1d8c34be134f82cc896a93686e3ba9591ecc83",
+          "englishSha256": "d70744d93aa7fdf14800fc1e01b77d30784d94c262387a5f96c768931d0f99cd"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            274
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            262
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prostration",
+          "reference": "1024"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.19.180",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.19.180",
+            "recordSha256": "0c2f276d341b22b61df4934425ff49d1a1f9da92f36835d4c4e6d65ff268bbd3"
+          }
+        }
+      ],
+      "notes": [
+        "Preserve Abu Salamah as the observer, the negative question to Abu Hurayrah and the closing conditional. Brill expands Muslim to Muslim ibn Ibrahim, changes the Hisham transmission verb and adds an before the Prophet in the conditional. The selected source and modern print use the shorter chain and conditional. Bewley phrases the question positively; do not silently copy that form.",
+        "Modern printed reference 1074. Bewley 1024 and pinned Khan EPUB 2.19.180 were individually matched; shortened chains and documented comparison errors do not replace the complete selected Arabic."
+      ],
+      "reviewScope": "AI-assisted full-span working translation of unchanged selected Arabic, checked against the individually located English bodies and inspected Arabic print pages. Source differences and lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "78df8e31ceb4fb962273e67a0d380278e9728fffef82abda01ce92b53e0844e6",
+      "englishSha256": "07c44e498a9dd18ad0493dbbb400013852924904bd3779eae1be92b45dec4a32",
+      "reviewRecordSha256": "1a6462b23c10a9bc7d72a8713e3f547995a5ef398ce1d22584f8e50bbc41abce"
+    },
+    {
+      "number": 1025,
+      "id": "bukhari:1025",
+      "sourceRecordId": "wikisource-bukhari-prostration-r484859:1025",
+      "chapterId": "chapter-08",
+      "paragraphIds": [
+        "mwIQ"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1025-1",
+          "paragraphId": "mwIQ",
+          "start": 0,
+          "end": 100,
+          "kind": "chain",
+          "arabic": "[1025] حدثنا مسدد قال: حدثنا يحيى عن عبيد الله قال: حدثني نافع عن ابن عمر رضى الله تعالى عنهما قال: ",
+          "english": "Musaddad related to us. He said: Yahya related to us, from ‘Ubayd Allah, who said: Nafi‘ related to me, from Ibn ‘Umar, may Allah Most High be pleased with them both, who said:",
+          "arabicSha256": "9d8e18e09b2f39e3aa8d20e30c8586c79fcdc388c48e94798302e5bfdc00f45c",
+          "englishSha256": "c546cf35d0b45a7661314443f15b250e63c82e2dbcde01d1962e9a01e4bd428d"
+        },
+        {
+          "id": "1025-2",
+          "paragraphId": "mwIQ",
+          "start": 100,
+          "end": 182,
+          "kind": "report",
+          "arabic": "كان النبي ﷺ يقرأ علينا السورة فيها السجدة فيسجد ونسجد حتى ما يجد أحدنا موضع جبهته ",
+          "english": "The Prophet, may Allah bless him and grant him peace, used to recite to us a surah containing a prostration passage. He would prostrate and we would prostrate, until one of us could find no place for his forehead.",
+          "arabicSha256": "d8aef08cc520c9adb43eae8f576de99359d72276c0556a1ec79030a9c14c1991",
+          "englishSha256": "0e9e04ec79f70d3131495fa079820398f20dce45f4455022a2372fd2c874b1f0"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            274
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            262
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prostration",
+          "reference": "1025",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/prostration-source-audit.json",
+            "sha256": "d3e81a0c4ab9a4367330f9efa278eb89b2fd715165ed98e813911cfd89626e4e",
+            "sourceSha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+            "bodySha256": "03013f9dc31c37f0fc4428c4783dc5744031df95964a543539e1da32d22a0c2b",
+            "occurrence": 1
+          },
+          "note": "The web body changes the crowding outcome to provided we could find a place. The selected Arabic says that one could find no place for his forehead."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.19.181",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.19.181",
+            "recordSha256": "d9e7324f312b31f29947fc1fccd3fd1ea6c6b307c43cfd6621fbc5cd253b185f"
+          }
+        }
+      ],
+      "notes": [
+        "Preserve the complete crowding outcome: until one of them could find no place for his forehead. Bewley changes this to provided we could find a place, which is not a reliable wording match. Brill uses haddathana at Ubayd Allah where the selected source and modern witness use an. Keep the preceding Ibn Masud/Tamim statement as chapter context, not narration.",
+        "Modern printed reference 1075. Bewley 1025 and pinned Khan EPUB 2.19.181 were individually matched; shortened chains and documented comparison errors do not replace the complete selected Arabic."
+      ],
+      "reviewScope": "AI-assisted full-span working translation of unchanged selected Arabic, checked against the individually located English bodies and inspected Arabic print pages. Source differences and lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "d63e63966f0b527a51874aebf2e76ffaf2053d0cdd3126acf8e21201fca8bd46",
+      "englishSha256": "7e4dcbacb4c2f12c6623150c49d2737889a7c954146dd1c6182c04ba127a235b",
+      "reviewRecordSha256": "e0cda13d5a0b929d0052c4cfa493ba24db6a94002c4ab4d55b565c681a191cf5"
+    },
+    {
+      "number": 1026,
+      "id": "bukhari:1026",
+      "sourceRecordId": "wikisource-bukhari-prostration-r484859:1026",
+      "chapterId": "chapter-09",
+      "paragraphIds": [
+        "mwJA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1026-1",
+          "paragraphId": "mwJA",
+          "start": 0,
+          "end": 93,
+          "kind": "chain",
+          "arabic": "[1026] حدثنا بشر بن آدم قال: حدثنا علي بن مسهر قال: أخبرنا عبيد الله عن نافع عن ابن عمر قال: ",
+          "english": "Bishr ibn Adam related to us. He said: ‘Ali ibn Mus-hir related to us. He said: ‘Ubayd Allah informed us, from Nafi‘, from Ibn ‘Umar, who said:",
+          "arabicSha256": "674d51a81183a931ba8310fe9de25ebbfbe79f19ab769f66a0e910871f74014f",
+          "englishSha256": "60a80d49997bd3f3be4b60d24c2681503b659785415273f8298c5c4c54475c45"
+        },
+        {
+          "id": "1026-2",
+          "paragraphId": "mwJA",
+          "start": 93,
+          "end": 190,
+          "kind": "report",
+          "arabic": "كان النبي ﷺ يقرأ السجدة ونحن عنده فيسجد ونسجد معه فنزدحم حتى ما يجد أحدنا لجبهته موضعا يسجد عليه ",
+          "english": "The Prophet, may Allah bless him and grant him peace, used to recite a prostration passage while we were with him. He would prostrate and we would prostrate with him, crowding together until one of us could find no place for his forehead on which to prostrate.",
+          "arabicSha256": "dc59f92da38643f75dd19f923dbe8356a288aaa94a43c89e5e32a12333526f01",
+          "englishSha256": "b8c3cddef4f86af6bdb8e58bcc7366f84f6defdc14a3d5610cb2ccb475d1a06d"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            274
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            262,
+            263
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prostration",
+          "reference": "1026"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.19.182",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.19.182",
+            "recordSha256": "cd8bc8c47af1a31016ebac3f0d6edf5f79b9a4b8f830cfc11d40039a9eb736e8"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Ibn 'Umar, ",
+            "When the Prophet recited Surat As-Sajda and we were with him, he would prostrate and we also would prostrate with him and some of us (because of the heavy rush) would not find a place (for our foreheads) to prostrate on. "
+          ],
+          "damagedExcerpt": "Surat As-Sajda",
+          "note": "The pinned body specifies Surat As-Sajda where the selected Arabic has the generic prostration passage. No specific surah is supplied."
+        }
+      ],
+      "notes": [
+        "Keep this crowding occurrence separate from 1025 and 1029, with Bishr ibn Adam and Ali ibn Mushir in its chain. The selected generic al-sajdah must not acquire Khan’s specific Surat As-Sajda label. The following chapter 10 quotations are separate context, even though the bounded Bewley locator includes them after this body.",
+        "Modern printed reference 1076. Bewley 1026 and pinned Khan EPUB 2.19.182 were individually matched; shortened chains and documented comparison errors do not replace the complete selected Arabic."
+      ],
+      "reviewScope": "AI-assisted full-span working translation of unchanged selected Arabic, checked against the individually located English bodies and inspected Arabic print pages. Source differences and lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "b886d9db60417f42b5d47a64297bc812e6b830ed7b3e6dd2cb81275f739a25bd",
+      "englishSha256": "2511e878b520a05e076009c3eec7a4a9886db16e582561e79f9c07ca3820b3f9",
+      "reviewRecordSha256": "3729ea95577954d1195604f6267f136407dfb08de491817e2cb3abfaac45d895"
+    },
+    {
+      "number": 1027,
+      "id": "bukhari:1027",
+      "sourceRecordId": "wikisource-bukhari-prostration-r484859:1027",
+      "chapterId": "chapter-10",
+      "paragraphIds": [
+        "mwKA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1027-1",
+          "paragraphId": "mwKA",
+          "start": 0,
+          "end": 175,
+          "kind": "chain",
+          "arabic": "[1027] حدثنا إبراهيم بن موسى قال: أخبرنا هشام بن يوسف ان ابن جريج أخبرهم قال: أخبرني أبو بكر ابن أبي مليكة عن عثمان بن عبد الرحمن التيمي عن ربيعة بن عبد الله بن الهدير التيمي ",
+          "english": "Ibrahim ibn Musa related to us. He said: Hisham ibn Yusuf informed us that Ibn Jurayj informed them. He said: Abu Bakr ibn Abi Mulaykah informed me, from ‘Uthman ibn ‘Abd al-Rahman al-Taymi, from Rabi‘ah ibn ‘Abdullah ibn al-Hudayr al-Taymi.",
+          "arabicSha256": "1cf5b6736d457d98eb9c8cff21c9289589e49ec30f21ca9d31a4f2b9ba2c9b97",
+          "englishSha256": "ea1806b9fa84f6c7ae028f6ca9216dff5176a14bf393bec84b241443cca9223a"
+        },
+        {
+          "id": "1027-2",
+          "paragraphId": "mwKA",
+          "start": 175,
+          "end": 212,
+          "kind": "transmission-note",
+          "arabic": "قال أبو بكر وكان ربيعة من خيار الناس ",
+          "english": "Abu Bakr said: Rabi‘ah was among the best of people.",
+          "arabicSha256": "f5a5d750387833e955277044ec1f64a53aed15de689eda7d0d2097c2975d002a",
+          "englishSha256": "dc572c00261398adfa682e1b99ee6867bd103d26f4500cea0d70d29b86c66150"
+        },
+        {
+          "id": "1027-3",
+          "paragraphId": "mwKA",
+          "start": 212,
+          "end": 262,
+          "kind": "report",
+          "arabic": "عما حضر ربيعة من عمر بن الخطاب رضى الله تعالى عنه ",
+          "english": "Concerning what Rabi‘ah witnessed of ‘Umar ibn al-Khattab, may Allah Most High be pleased with him:",
+          "arabicSha256": "c20a917b4483cbef0d093e43024508a65796a0fe5e9ae93642d656764c83f55a",
+          "englishSha256": "d31953a11de0fca6e831b3e6dc9f9d90c4522887cc593804f7e4ab87b2bfadfe"
+        },
+        {
+          "id": "1027-4",
+          "paragraphId": "mwKA",
+          "start": 262,
+          "end": 503,
+          "kind": "report",
+          "arabic": "قرأ يوم الجمعة على المنبر بسورة النحل حتى إذا جاء السجدة نزل فسجد وسجد الناس حتى إذا كانت الجمعة القابلة قرأ بها حتى إذا جاء السجدة قال: يا أيها الناس إنا نمر بالسجود فمن سجد فقد أصاب ومن لم يسجد فلا إثم عليه ولم يسجد عمر رضى الله تعالى عنه ",
+          "english": "He recited Surat al-Nahl on the pulpit on Friday. When he reached the prostration passage, he came down and prostrated, and the people prostrated. On the following Friday he recited it, and when he reached the prostration passage he said, “O people, we come across passages of prostration. Whoever prostrates has acted rightly, and whoever does not prostrate incurs no sin.” ‘Umar, may Allah Most High be pleased with him, did not prostrate.",
+          "arabicSha256": "b610b52b2446ea4aa257ad4385987000f47f963c94a06c293d5bfee156d4fb76",
+          "englishSha256": "1edb8f1e8adf41d7856675717dc3bcfaca7a14462659275df134a352a873a110"
+        },
+        {
+          "id": "1027-5",
+          "paragraphId": "mwKA",
+          "start": 503,
+          "end": 574,
+          "kind": "transmission-note",
+          "arabic": "وزاد نافع عن ابن عمر رضي الله عنهما إن الله لم يفرض السجود إلا أن نشاء ",
+          "english": "Nafi‘ added, from Ibn ‘Umar, may Allah be pleased with them both: “Indeed, Allah has not made prostration obligatory, except if we wish.”",
+          "arabicSha256": "58be12f00bf038df99e60142c2bf675df81a780b32a9fbf3eee5b739ed9b25ca",
+          "englishSha256": "92e8962c0ba10e7dcc62198138ef6a775f7b081f6c6627c8ec4547f3ae44aefc"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            275
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            263
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prostration",
+          "reference": "1027",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/prostration-source-audit.json",
+            "sha256": "d3e81a0c4ab9a4367330f9efa278eb89b2fd715165ed98e813911cfd89626e4e",
+            "sourceSha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+            "bodySha256": "437bf571ddf17ddc13e8b7a6aabe88f33387537bd45a0867506f8410aff23aa4",
+            "occurrence": 1
+          },
+          "note": "The web body shortens the closing Nafi-from-Ibn-Umar route and omits Abu Bakr’s appraisal within the chain. Both source passages remain complete."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.19.183",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.19.183",
+            "recordSha256": "985e8c8d080d7d75d559e8849511ca511323d0d7cdca26c25ecc4e42ab7ffcb2"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Rabi'a: ",
+            "'Umar bin Al-Khattab recited Surat-an-Nahl on a Friday on the pulpit and when he reached the verse of Sajda he got down from the pulpit and prostrated and the people also prostrated. The next Friday 'Umar bin Al-Khattab recited the same Sura and when he reached the verse of Sajda he said, \"O people! When we recite the verses of Sajda (during the sermon) whoever prostrates does the right thing, yet it is no sin for the one who does not prostrate.\" And 'Umar did not prostrate (that day). Added Ibn 'Umar \"Allah has not made the prostration of recitation compulsory but if we wish we can do it.\" "
+          ],
+          "damagedExcerpt": "Added Ibn",
+          "note": "The pinned body abbreviates the closing Nafi-from-Ibn-Umar route and omits Abu Bakr’s appraisal of Rabi‘ah. The full selected chain and closing statement remain."
+        }
+      ],
+      "notes": [
+        "This is an account of Umar, not a quotation attributed to the Prophet. Retain the complete chain, Abu Bakr’s appraisal of Rabiah, both successive Fridays, Umar’s speech and non-prostration, and the closing Nafi-from-Ibn-Umar route and statement. Both English comparisons abbreviate that closing route. Brill reads Uthman ibn Ubayd al-Rahman where the selected source and modern print read Abd al-Rahman; its closing addition also includes alayna. Record variants without merging them into the selected text.",
+        "The final إلا أن نشاء is rendered closely as except if we wish. Its omitted object is not supplied. Al-Ayni discusses both wishing to prostrate and wishing to recite as interpretations; this draft does not choose an added object. This syntax needs independent review.",
+        "The source’s Abu Bakr appraisal is a transmission note at its original position. The following Rabi‘ah/Umar framing remains visible with the report so the account cannot appear attributed to the Prophet or to Abu Bakr. The final Nafi route remains a separate closing transmission note, outside Umar’s quoted speech.",
+        "Modern printed reference 1077. Bewley 1027 and pinned Khan EPUB 2.19.183 were individually matched; shortened chains and documented comparison errors do not replace the complete selected Arabic."
+      ],
+      "reviewScope": "AI-assisted full-span working translation of unchanged selected Arabic, checked against the individually located English bodies and inspected Arabic print pages. Source differences and lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "75ecc6ebc8758d519119e71b9f6b7d7971ebad8235704ef2b79d417e66362208",
+      "englishSha256": "101b7d3c081bb63dbe1ca369b640f74c73cce2d7131d4bf360ca3779abb430e5",
+      "contextNotes": [
+        {
+          "id": "1027-wording",
+          "label": "A closing phrase under review",
+          "text": "The closing Arabic إلا أن نشاء does not state the object of wish. This draft keeps except if we wish without supplying one. The commentary records different interpretations; independent wording review remains pending.",
+          "citations": [
+            "base",
+            "brill-1862",
+            "dar-ibn-kathir-2002",
+            "lexical"
+          ],
+          "related": []
+        }
+      ],
+      "additionalCitations": [
+        {
+          "id": "lexical",
+          "sourceId": "ayni-prostration-choice",
+          "locator": "Discussion of the omitted object in إلا أن نشاء",
+          "scope": "Classical commentary consulted to identify the translation issue. It is separate from the hadith wording and is not an independent review of this draft."
+        }
+      ],
+      "reviewRecordSha256": "04bd44f99f3fe91f4558888d350fc61176ef8f785245db4f43605625d8712483"
+    },
+    {
+      "number": 1028,
+      "id": "bukhari:1028",
+      "sourceRecordId": "wikisource-bukhari-prostration-r484859:1028",
+      "chapterId": "chapter-11",
+      "paragraphIds": [
+        "mwKg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1028-1",
+          "paragraphId": "mwKg",
+          "start": 0,
+          "end": 80,
+          "kind": "chain",
+          "arabic": "[1028] حدثنا مسدد قال: حدثنا معتمر قال: سمعت أبي قال: حدثني بكر عن أبي رافع قال ",
+          "english": "Musaddad related to us. He said: Mu‘tamir related to us. He said: I heard my father say: Bakr related to me, from Abu Rafi‘, who said:",
+          "arabicSha256": "eb9cf5e1594c9d93073b978aa2ac3731772e00af76629dab2baa83503ef74886",
+          "englishSha256": "3ef51c20e3c63f70e3cee4bfbbbcd776a2081e950da42bd45535933ff3a18d36"
+        },
+        {
+          "id": "1028-2",
+          "paragraphId": "mwKg",
+          "start": 80,
+          "end": 204,
+          "kind": "report",
+          "arabic": "صليت مع أبي هريرة العتمة فقرأ إذا السماء انشقت فسجد فقلت: ما هذه قال سجدت بها خلف أبي القاسم ﷺ فلا أزال أسجد فيها حتى ألقاه ",
+          "english": "I prayed the late-evening prayer with Abu Hurayrah. He recited “Idha al-sama’u inshaqqat” and prostrated. I said, “What is this?” He said, “I prostrated during it behind Abu al-Qasim, may Allah bless him and grant him peace, so I will continue to prostrate during it until I meet him.”",
+          "arabicSha256": "f35e35e908b9deee4f3740daedfd3fdfca7905eab7196086636aa8d059190ea0",
+          "englishSha256": "db5772cf15a17da46b9602a6e41d50e743a0402d9cc0ec99d933d41d50cb3dbf"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            275
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            263
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prostration",
+          "reference": "1028"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.19.184",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.19.184",
+            "recordSha256": "ace2bbb5bcd415f2d97163f28477ba24b1ea3d5d71f445868a5f9e4b411a2fe6"
+          }
+        }
+      ],
+      "notes": [
+        "Preserve Abu Rafi’s observation, al-atamah prayer wording, the question, the Abu al-Qasim honorific and the until-I-meet-him ending. Keep this separate from 1024 despite its related recitation. The complete chain includes Muatamir, his father, Bakr and Abu Rafi; English comparison bodies shorten it.",
+        "Late-evening prayer renders العتمة. The opening مع is retained as with Abu Hurayrah; only the later خلف is rendered behind Abu al-Qasim.",
+        "Modern printed reference 1078. Bewley 1028 and pinned Khan EPUB 2.19.184 were individually matched; shortened chains and documented comparison errors do not replace the complete selected Arabic."
+      ],
+      "reviewScope": "AI-assisted full-span working translation of unchanged selected Arabic, checked against the individually located English bodies and inspected Arabic print pages. Source differences and lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "f770d2eb6716691a161185336003dcc9a6ffcd42cb09384a7f8851c86a5f6968",
+      "englishSha256": "a561e87769273d67c9cfffa1a3b289f46845acb5e076a36b8fdde3b0b4d7c4cf",
+      "reviewRecordSha256": "384057883de645cbf840bceefc8151efb88464d2c9c8f06a0e85438667c02084"
+    },
+    {
+      "number": 1029,
+      "id": "bukhari:1029",
+      "sourceRecordId": "wikisource-bukhari-prostration-r484859:1029",
+      "chapterId": "chapter-12",
+      "paragraphIds": [
+        "mwLQ"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1029-1",
+          "paragraphId": "mwLQ",
+          "start": 0,
+          "end": 93,
+          "kind": "chain",
+          "arabic": "[1029] حدثنا صدقة قال: أخبرنا يحيى عن عبيد الله عن نافع عن ابن عمر رضى الله تعالى عنهما قال: ",
+          "english": "Sadaqah related to us. He said: Yahya informed us, from ‘Ubayd Allah, from Nafi‘, from Ibn ‘Umar, may Allah Most High be pleased with them both, who said:",
+          "arabicSha256": "279ec28dbca8483a5aedb8b3747eab211546fdfbc4d6f45cd5ea3b9f82cab59a",
+          "englishSha256": "4f12c46e0558058077a682f45ca88bafd07eb8100a8af6a200951143dc51cd69"
+        },
+        {
+          "id": "1029-2",
+          "paragraphId": "mwLQ",
+          "start": 93,
+          "end": 181,
+          "kind": "report",
+          "arabic": "كان النبي ﷺ يقرأ السورة التي فيها السجدة فيسجد ونسجد حتى ما يجد أحدنا مكانا لموضع جبهته ",
+          "english": "The Prophet, may Allah bless him and grant him peace, used to recite the surah containing the prostration passage. He would prostrate and we would prostrate, until one of us could find no space to place his forehead.",
+          "arabicSha256": "610b2d1d2d7d05d9f95e25e226734fe1619647095a0fe31a0834d252385d5da6",
+          "englishSha256": "0abe715091b1d0ed82c44fe92521321fffd610c842d2d7f86e2d5e58c582b392"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            275
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            263
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-prostration",
+          "reference": "1029"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.19.185",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.19.185",
+            "recordSha256": "232bff57fb41fbdfa55e22114fa78af3c71a98ec97c5f9f68917c444ee63ea8d"
+          }
+        }
+      ],
+      "notes": [
+        "Keep this distinct Sadaqah route and its complete repeated crowding outcome. Brill expands Sadaqah and Yahya to Sadaqah ibn al-Fadl and Yahya ibn Said and includes maahu. The selected source and modern print both retain the Ibn Umar companion honorific; Brill does not. Do not collapse these three Ibn Umar reports into one.",
+        "The original intake note mistakenly described the companion honorific as absent. The actual pinned Arabic includes رضى الله تعالى عنهما, and this draft retains it. The finding has been corrected without changing any source text.",
+        "Modern printed reference 1079. Bewley 1029 and pinned Khan EPUB 2.19.185 were individually matched; shortened chains and documented comparison errors do not replace the complete selected Arabic."
+      ],
+      "reviewScope": "AI-assisted full-span working translation of unchanged selected Arabic, checked against the individually located English bodies and inspected Arabic print pages. Source differences and lexical choices remain explicit. Independent Arabic, English, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "7a862486cfac200b728a9998bebd459c9eae8a6df0ace27c5a3766ffc8fcddf3",
+      "englishSha256": "a9291e26c7e7667afa001d7e36ba7f7560022e0874619cefc4c7623e12d001b5",
+      "reviewRecordSha256": "c4d744917e08959a4e013ba09ed408cd63ffd15190a63df8b61d4465438e03da"
+    }
+  ]
+}

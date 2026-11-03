@@ -3,6 +3,8 @@ export const honorifics = Object.freeze([
  'may Allah bless him and grant him peace',
  'peace be upon him',
  'may Allah have mercy on him',
+ 'may Allah be pleased with him',
+ 'may Allah be pleased with them both',
  'may Allah Most High be pleased with him',
  'may Allah Most High be pleased with her',
  'may Allah Most High be pleased with them both',

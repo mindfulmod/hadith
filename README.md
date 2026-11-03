@@ -1,6 +1,16 @@
 # Hadith · MindfulMod reader
 
-The local personal reader at `reader/` contains 1,019 selected Bukhari entries across seventeen sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The local personal reader at `reader/` contains 1,032 selected Bukhari entries across eighteen sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+
+## Prostration reader and visible chapter differences · 3 November 2026
+
+The local personal prototype now includes all 13 selected Prostration reports, 1017–1029, across twelve chapters. Thirty complete Arabic/English spans retain every chain, repeated occurrence, source-specific honorific and closing transmission note. All 1,019 prior entries, previous book packs/source-note pages and recordings remain unchanged. The four chapter-context paragraphs remain separately browsable in Arabic, with English pending. This is AI-assisted working English, not Darussalam wording or independent certification.
+
+Chapter 5 now visibly flags its unresolved ablution wording in browsing. Its offline source notes preserve the selected phrase and both printed readings with exact page links. The build requires registered evidence bound to the original chapter paragraph and rejects missing or changed evidence. This reusable support keeps chapter differences out of numbered sessions and narration. The printed extra surah word at 1018 and narrator-name variant at 1027 are recorded without altering the selected Arabic. The 1019 lexical choice and the 1027 closing clause remain explicit independent-review items. A mistaken intake note about the 1029 honorific was corrected after rereading the pinned text; the source itself never changed.
+
+The Abu Bakr appraisal and closing Nafi route in 1027 retain their original positions. The intervening Rabiah/Umar attribution stays visible with the report. Two shorter companion-honorific forms, used at 724b and 1027, now receive the same smaller presentation as other honorifics; the words and complete narration scripts are unchanged. Actual recordings still cover only Hadith 1–6.
+
+`research/prostration-wording-review.json` records the source decisions; `research/prostration-reader-verification.json` records automated checks, exact prior-content preservation and the desktop offline update. Saved sessions and suffixed bookmarks survive the update, and the new reports, chapter context and source details remain available offline. No new recording, external publication or physical-iPhone acceptance is claimed.
 
 ## Prostration source intake · 3 November 2026
 
@@ -8,7 +18,7 @@ The next section is staged for wording review: 13 reports (1017–1029), 12 chap
 
 `research/prostration-source-review.html` exposes the complete Arabic, print locations and comparison limits. The two prints differ materially in chapter 5’s ablution wording; 1018 has an additional surah word in both prints, and 1027 has a narrator-name variant. None is silently applied. The two located English sequences contain added or wrong surah references, shortened transmission notes and other wording problems. Exact comparison-body hashes and the limits of each occurrence are retained in `research/prostration-source-audit.json`. English drafting, chapter translation and independent review remain pending.
 
-Run `PYTHONDONTWRITEBYTECODE=1 python3 scripts/check-prostration-intake.py` to reproduce the source checks and review page. Its tests reject lost repeated reports, changed chains, dropped closing notes, misassigned print pages, erased variants and fabricated approval. This intake adds no reader entries or recordings: the existing 1,019-entry reader remains byte-identical. `research/prostration-intake-verification.json` records the completed checks and their scope. No external publication is included.
+Run `PYTHONDONTWRITEBYTECODE=1 python3 scripts/check-prostration-intake.py` to reproduce the source checks and review page. Its tests reject lost repeated reports, changed chains, dropped closing notes, misassigned print pages, erased variants and fabricated approval. That intake added no reader entries or recordings: the then-existing 1,019-entry reader remained byte-identical. `research/prostration-intake-verification.json` records the completed checks and their scope. No external publication is included.
 
 ## Final Eclipses reports · 3 November 2026
 

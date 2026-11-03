@@ -36,6 +36,10 @@ export function validateChapters(book) {
     const h=context.printedHeading;
     if(!ids.has(h.sourceChapterId)||!chapter.id.startsWith(h.sourceChapterId+'-print-')||h.beforeEntry!==chapter.entryNumbers[0]||!Number.isSafeInteger(h.printedChapterNumber)||h.printedChapterNumber<1||!/^[a-f0-9]{64}$/.test(h.evidenceSha256)||context.numberedReports!=='present'||introduction?.arabicParagraphs!==0)throw new Error('Invalid printed chapter provenance');
    }
+   if(context.textualDifferences!==undefined){
+    const d=context.textualDifferences;
+    if(!d||!Number.isSafeInteger(d.count)||d.count<1||!/^[a-f0-9]{64}$/.test(d.evidenceSha256)||d.status!=='unresolved'||d.englishStatus!=='pending'||!introduction?.arabicParagraphs||introduction.englishStatus!=='pending')throw new Error('Invalid unresolved chapter wording');
+   }
    if(context.printedIntroduction!==undefined){
     const p=context.printedIntroduction;
     if(!p||!Number.isSafeInteger(p.arabicParagraphs)||p.arabicParagraphs<1||p.arabicParagraphs>introduction?.arabicParagraphs||!/^[a-f0-9]{64}$/.test(p.evidenceSha256)||introduction?.englishStatus!=='pending'||context.printedHeading!==undefined)throw new Error('Invalid printed chapter introduction provenance');
