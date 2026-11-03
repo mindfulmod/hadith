@@ -1,0 +1,256 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-03T03:55:06.255914+00:00",
+  "status": "source-intake-validated-no-reader-admission",
+  "baselineCommit": "6abdb5e4c7ce749282d30e46975753174a4297f4",
+  "sourceAudit": "research/night-prayer-source-audit.json",
+  "sourceInventory": {
+    "unchangedArabicCodePoints": 16329,
+    "blocks": 92,
+    "chapters": 27,
+    "numberedReports": 50,
+    "separateContextBlocks": 7,
+    "blankBlocks": 1
+  },
+  "comparisons": {
+    "printedPdfPagesVisuallyInspected": {
+      "brill-1862": [
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295
+      ],
+      "dar-ibn-kathir-2002": [
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283
+      ]
+    },
+    "bothPdfBytesRehashed": true,
+    "modernPrintedReferencesAccountedFor": 52,
+    "combinedDigitalReferences": [
+      1070,
+      1105
+    ],
+    "sharedPrintedReferences": [
+      {
+        "printedReference": 1132,
+        "digitalReferences": [
+          1080,
+          1081
+        ]
+      }
+    ],
+    "missingPrintedReports": [],
+    "bewleySnapshotRehashedAndLocatorBodiesChecked": 50,
+    "khanActualEpubRecordsChecked": 49,
+    "khanBoundedAbsenceReferences": [
+      1102
+    ],
+    "khanReorderedReferenceMap": {
+      "1115": "2.21.259",
+      "1116": "2.21.260",
+      "1117": "2.21.261",
+      "1118": "2.21.262",
+      "1109": "2.21.263",
+      "1110": "2.21.264",
+      "1111": "2.21.265",
+      "1112": "2.21.266",
+      "1113": "2.21.267",
+      "1114": "2.21.268"
+    },
+    "unresolvedTextualDifferencesNotApplied": [
+      "1069-praise-sequence",
+      "1078-standing-praying-alternative",
+      "1091-knot-wording",
+      "1108-fajr-qualifier",
+      "1114-itban-visitors",
+      "1115-abu-al-nadr-route",
+      "1118-umm-al-kitab",
+      "chapter-01-waking-gloss",
+      "chapter-06-heading-extent",
+      "chapter-11-quran-ending",
+      "chapter-14-dawn-quotation"
+    ],
+    "proposedCorrectionsNotApplied": [],
+    "untitledPrintedHeadingBeforeReference": 1102,
+    "selectedLastReference": 1118,
+    "wholePrintedBookCompletionClaimed": false
+  },
+  "checks": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p 'test_*.py'",
+      "passed": 186,
+      "failed": 0,
+      "scope": "Full Python suite, including eighteen new Night Prayer tests. Initial run identified the expected-source fixture still listing twelve sources; updated it to include Night Prayer and reran the entire suite successfully.",
+      "affectedRerunPassed": 18
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 scripts/import-wikisource-book.py --check",
+      "status": "passed",
+      "scope": "All thirteen registered Arabic inventories, exact block ownership and candidate-only status."
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 scripts/check-night-prayer-intake.py --bewley-html <retained-page> --brill-pdf <retained-print> --modern-pdf <retained-print>",
+      "status": "passed",
+      "scope": "Unchanged Arabic, all comparison locations, actual EPUB body hashes, both retained PDF hashes and generated review page."
+    },
+    {
+      "command": "node --test tests/deployment.test.mjs",
+      "passed": 7,
+      "failed": 0,
+      "scope": "Public file boundaries, required assets and local/source-note links. Reader runtime is byte-identical to the prior tested release; its full Node suite was not rerun for this intake."
+    },
+    {
+      "command": "node scripts/build-site.mjs <fresh-local-output>",
+      "status": "passed",
+      "publicFiles": 637,
+      "readerRelease": "opening-3658d101f8f9",
+      "scope": "Public file boundaries, required release hashes, source notes, audio bindings and local HTML links."
+    },
+    {
+      "command": "git diff --cached --check",
+      "status": "passed",
+      "note": "Source end-of-line spaces are serialized as HTML character references in the generated page; decoded Arabic remains exact."
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -p test_night_prayer_intake.py -k test_render_preserves_complete_arabic_and_unique_fragment_targets",
+      "passed": 1,
+      "failed": 0,
+      "scope": "Final rendered Arabic, exact chapter text, unique fragment targets and source attribution after HTML-only serialization refinement; counted within the existing eighteen tests."
+    }
+  ],
+  "browser": {
+    "checkedAt": "2026-11-03T03:56:19.897Z",
+    "scope": "Isolated desktop Chromium source-review page; not physical iPhone or reader-runtime acceptance",
+    "results": [
+      {
+        "theme": "light",
+        "viewportWidth": 320,
+        "documentWidth": 320,
+        "exactReports": 50,
+        "exactChapterBlocks": 34,
+        "variantExpanded": true,
+        "allArabicAccessible": true,
+        "referenceTargetsAtLeast44px": true
+      },
+      {
+        "theme": "light",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "exactReports": 50,
+        "exactChapterBlocks": 34,
+        "variantExpanded": true,
+        "allArabicAccessible": true,
+        "referenceTargetsAtLeast44px": true
+      },
+      {
+        "theme": "light",
+        "viewportWidth": 1280,
+        "documentWidth": 1280,
+        "exactReports": 50,
+        "exactChapterBlocks": 34,
+        "variantExpanded": true,
+        "allArabicAccessible": true,
+        "referenceTargetsAtLeast44px": true
+      },
+      {
+        "theme": "dark",
+        "viewportWidth": 320,
+        "documentWidth": 320,
+        "exactReports": 50,
+        "exactChapterBlocks": 34,
+        "variantExpanded": true,
+        "allArabicAccessible": true,
+        "referenceTargetsAtLeast44px": true
+      },
+      {
+        "theme": "dark",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "exactReports": 50,
+        "exactChapterBlocks": 34,
+        "variantExpanded": true,
+        "allArabicAccessible": true,
+        "referenceTargetsAtLeast44px": true
+      },
+      {
+        "theme": "dark",
+        "viewportWidth": 1280,
+        "documentWidth": 1280,
+        "exactReports": 50,
+        "exactChapterBlocks": 34,
+        "variantExpanded": true,
+        "allArabicAccessible": true,
+        "referenceTargetsAtLeast44px": true
+      }
+    ],
+    "errors": [],
+    "status": "passed"
+  },
+  "screenshotsVisuallyInspected": [
+    "content/review/evidence/night-prayer-intake-light.png",
+    "content/review/evidence/night-prayer-intake-dark.png",
+    "content/review/evidence/night-prayer-poetry-light.png",
+    "content/review/evidence/night-prayer-poetry-dark.png"
+  ],
+  "preservation": {
+    "filesChecked": 482,
+    "changedFiles": [],
+    "scope": "All previously tracked reader, audio, audio generation jobs/raw segments, landscape assets, top-level web files, source holds and numbering policy compared byte-for-byte with the baseline commit.",
+    "readerEntries": 1071,
+    "readerBooks": 19,
+    "readerRelease": "opening-3658d101f8f9",
+    "actualRecordedReferences": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "heldReferences": [
+      926,
+      957
+    ]
+  },
+  "limitations": [
+    "Intake mapping and AI comparison are not exhaustive lexical agreement, English wording approval or independent scholarly certification.",
+    "No new reader entry, correction, chapter translation or recording was admitted. The selected digital subsection does not complete the differently grouped printed Night Prayer book.",
+    "Desktop source-review checks do not establish fresh physical-iPhone, offline-player or locked-screen acceptance.",
+    "No external publication or communication performed."
+  ],
+  "distinctTestsPassed": 193,
+  "packaging": {
+    "previousPublicFiles": 634,
+    "currentPublicFiles": 637,
+    "changedPreviousPublicFiles": [
+      "research/production-readiness.json"
+    ],
+    "newPublicFiles": [
+      "research/night-prayer-intake-verification.json",
+      "research/night-prayer-source-audit.json",
+      "research/night-prayer-source-review.html"
+    ],
+    "rawSourceAndCandidateAudioExcluded": true,
+    "checkedBeforeCommit": true
+  }
+}

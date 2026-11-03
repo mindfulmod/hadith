@@ -1,0 +1,2769 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-03T03:45:06.494218+00:00",
+  "status": "source-intake-compared-wording-review-pending",
+  "readerAdmission": false,
+  "reviewerKind": "ai",
+  "independentReview": "pending",
+  "scope": "Complete selected source ownership and printed-occurrence mapping with individually located English comparisons. This is a non-exhaustive textual comparison, not independent accuracy certification, translation approval, religious interpretation or reuse-rights clearance.",
+  "source": {
+    "path": "content/sources/wikisource-night-prayer/source.html",
+    "id": "wikisource-bukhari-night-prayer-r39522",
+    "revision": 39522,
+    "sha256": "7de702821576c9be6749b4af7cc676cc6a1b67185c622c52b2473e66930c6306",
+    "bytes": 157391,
+    "inventorySha256": "457e9ade09e59547b9ea038d0b31f37e9b78305b6ff63026d7404b64311585e3",
+    "blocks": 92,
+    "codePoints": 16329,
+    "numberedReports": 50,
+    "chapters": 27,
+    "separateContextIds": [
+      "mwBg",
+      "mwHQ",
+      "mwKw",
+      "mwTA",
+      "mwWA",
+      "mwXA",
+      "mwkw"
+    ],
+    "blankIds": [
+      "mwkA"
+    ],
+    "arabicChanged": false
+  },
+  "printedComparisons": [
+    {
+      "id": "brill-1862",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+      "bytes": 28290204,
+      "inspectedPdfPages": [
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295
+      ]
+    },
+    {
+      "id": "dar-ibn-kathir-2002",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+      "bytes": 45304371,
+      "inspectedPdfPages": [
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283
+      ]
+    }
+  ],
+  "printedReferenceNamespace": "Dar Ibn Kathir 2002 numbering. Historical occurrences are matched by contents and PDF pages; they do not carry these modern numbers.",
+  "modernPrintedOccurrencesAccountedFor": 52,
+  "englishComparisons": {
+    "commonLimitations": [
+      "Both English families generally abbreviate the full opening chains. A located body is comparison evidence, never a complete narrator-chain translation or wording approval.",
+      "Headings, theological expressions, implicit references and translator explanations require separate review against the selected Arabic."
+    ],
+    "bewley": {
+      "url": "https://aishabewley.org/bukhari10",
+      "sha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+      "bytes": 102307,
+      "locatorPolicy": "Split HTML p/h1-h6 boundaries, decode entities and collapse whitespace inside blocks. Bound Chapter 25 at displayed label 1119 for this digital subsection. Report labels occur only at paragraph starts. A body ends before the next label and may contain the next chapter heading/context; that context is not part of the Arabic numbered report.",
+      "locatedBodies": 50,
+      "followingBoundaryLabel": "1119"
+    },
+    "khan": {
+      "sourcePath": "content/sources/islamhouse-bukhari/source.epub",
+      "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+      "section": "OPS/section-0023.html",
+      "locatedRecords": 49,
+      "mappedArabicReports": 49,
+      "absentReferences": [
+        1102
+      ],
+      "range": "2.21.221–268, with distinct 251r and 251n labels",
+      "allRecordedBodyHashesCheckedAgainstPinnedEpub": true,
+      "reorderedReferences": {
+        "1115": "2.21.259",
+        "1116": "2.21.260",
+        "1117": "2.21.261",
+        "1118": "2.21.262",
+        "1109": "2.21.263",
+        "1110": "2.21.264",
+        "1111": "2.21.265",
+        "1112": "2.21.266",
+        "1113": "2.21.267",
+        "1114": "2.21.268"
+      }
+    }
+  },
+  "records": [
+    {
+      "reference": 1069,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1069",
+      "chapterId": "chapter-01",
+      "paragraphIds": [
+        "mwBw"
+      ],
+      "arabicSha256": "5fc426fc237dbb2718098bcf54fce4982d88a1e2bc31285bf1999363974f2de0",
+      "printedReferences": [
+        1120
+      ],
+      "printedPages": {
+        "brill-1862": [
+          284
+        ],
+        "dar-ibn-kathir-2002": [
+          272
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1069",
+          "occurrence": 1,
+          "bodySha256": "8563c2a4d1760a85664cfc371c1760c35f12421cac592bd6a8629fa3d15eb905",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The light clause lacks the selected words about those within the heavens and earth, and the separate King clause is absent. The closing Sufyan/Sulayman route is abbreviated."
+          ]
+        },
+        "khan": {
+          "reference": "2.21.221",
+          "recordSha256": "620c12212debc4aac5e32e359330b5c5fd23a399953c2a70f00e37b95a6d1b25",
+          "bodySha256": "bd13f97240902d1e140f70a6fb989506da273cbdbc2020151587abd2071d31e8",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The transliteration and English are not identical in scope: the separate King clause appears only in the English, and the selected closing Sufyan/Sulayman/Tawus route is absent. The transliteration also has a Han spelling at the Paradise truth clause."
+          ]
+        }
+      },
+      "finding": "Retain every repeated praise clause, both no-god alternatives and both closing Sufyan comments. Historical praise order differs; comparison English is not a substitute for the selected Arabic."
+    },
+    {
+      "reference": 1070,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1070",
+      "chapterId": "chapter-02",
+      "paragraphIds": [
+        "mwDA"
+      ],
+      "arabicSha256": "118d0327e3386360a02268ab04f17ac64977b2543fb0acda275fb979f87e3ba1",
+      "printedReferences": [
+        1121,
+        1122
+      ],
+      "printedPages": {
+        "brill-1862": [
+          284
+        ],
+        "dar-ibn-kathir-2002": [
+          272,
+          273
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1070",
+          "occurrence": 1,
+          "bodySha256": "f93070ffbf602ec877ad04919472a9186490a3fbe0a87460395da92eb800d363",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The later figure is rendered as another man, while the selected Arabic and both inspected prints say another angel."
+          ]
+        },
+        "khan": {
+          "reference": "2.21.222",
+          "recordSha256": "7bc18817cc2de3c7d838512d5323a9014d2167a86adffe67adbb946d5fa408e0",
+          "bodySha256": "0ae7ec40f165c06aee48e45c5d8fe8df551c319611922f68888b02c3d44af04f",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "Two opening routes and the complete dream/Hafsah account are present. The modern edition divides this single digital paragraph into 1121 and 1122; neither is missing."
+    },
+    {
+      "reference": 1071,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1071",
+      "chapterId": "chapter-03",
+      "paragraphIds": [
+        "mwEw"
+      ],
+      "arabicSha256": "7bdb032cde6c545a2407501f35672e201584768a51ae36bd631241ead2dbad31",
+      "printedReferences": [
+        1123
+      ],
+      "printedPages": {
+        "brill-1862": [
+          285
+        ],
+        "dar-ibn-kathir-2002": [
+          273
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1071",
+          "occurrence": 1,
+          "bodySha256": "b412b7be7935bd37d324d19b56a2e1d7f943f741f3a34810fa45cda48d26c5ef",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.223",
+          "recordSha256": "b33fa6ec85b21e76087a7aaaefd7b5a276bac6380b9c4d87c2732f371ebc47eb",
+          "bodySha256": "281191b32d9ed272b07ebc8912446473fb1e96490873bbfcabfd75a7739c3aae",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The eleven-unit report, fifty-verse comparison, two Fajr units and right-side rest remain together."
+    },
+    {
+      "reference": 1072,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1072",
+      "chapterId": "chapter-04",
+      "paragraphIds": [
+        "mwFg"
+      ],
+      "arabicSha256": "9a2999097aada4ea1178972cd2e5a0ab0f8fcb43d2369957707ca9691f9c2413",
+      "printedReferences": [
+        1124
+      ],
+      "printedPages": {
+        "brill-1862": [
+          285
+        ],
+        "dar-ibn-kathir-2002": [
+          273
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1072",
+          "occurrence": 1,
+          "bodySha256": "fe639a46ba1dbde827d3efb8fa1e963b6c145604e24bcb45aeaa666e1c12881f",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.224",
+          "recordSha256": "321e33b8f18a527bb09c8a00b09c4c9ca05e914d23ba81838179b3afd318b01d",
+          "bodySha256": "77ed55fbb6af76bbae20293dd247283d5c63f61a9d854d0eb0e5fd03a7b84221",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "Retain the one-or-two-night uncertainty; this is a separate Jundub occurrence."
+    },
+    {
+      "reference": 1073,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1073",
+      "chapterId": "chapter-04",
+      "paragraphIds": [
+        "mwGA"
+      ],
+      "arabicSha256": "ca344e71e5356782c0c2f22b6dcb85547e7a3220e6a3a1073fb6f6539d3f303c",
+      "printedReferences": [
+        1125
+      ],
+      "printedPages": {
+        "brill-1862": [
+          285
+        ],
+        "dar-ibn-kathir-2002": [
+          273
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1073",
+          "occurrence": 1,
+          "bodySha256": "74c4c6845cc9cb5ee467444cd20df7e37e17873d3b84c3ece6526d3bc566c04e",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.225",
+          "recordSha256": "bff0cfcee08e69cae7648cb3482dad23c735ccfa97ae3d63e4b3b12488b4d09e",
+          "bodySha256": "32624cfc429f879596c87d58e4ef9cfc965285e67e5bdbe84e67a1319d0d117d",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The woman’s statement is rendered as deserted rather than the selected delay wording."
+          ]
+        }
+      },
+      "finding": "Retain both Gabriel and Prophet honorifics and the exact quoted Quran endpoint; this is distinct from the preceding illness report."
+    },
+    {
+      "reference": 1074,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1074",
+      "chapterId": "chapter-05",
+      "paragraphIds": [
+        "mwHw"
+      ],
+      "arabicSha256": "1b132a2047a113fc4ae865ea35fc8da90339a43859ee58836c900314da41c366",
+      "printedReferences": [
+        1126
+      ],
+      "printedPages": {
+        "brill-1862": [
+          285
+        ],
+        "dar-ibn-kathir-2002": [
+          273
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1074",
+          "occurrence": 1,
+          "bodySha256": "9497a500b9979fc7764a30225567684fc98aa8b2aca827b6342fce11f108b2f4",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The selected question about who will wake the occupants is rendered as an instruction to go and wake them."
+          ]
+        },
+        "khan": {
+          "reference": "2.21.226",
+          "recordSha256": "622e568aab8d58865bf2c24d38dc903a0e14ffe34d77923d798abea74ac779ec",
+          "bodySha256": "49913eacb5bba23826b594e07de252f76d454ca428b2d2c8c04497843a1eaa02",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The selected question about who will wake the occupants is rendered as an instruction, with added prayer and sleeping explanations."
+          ]
+        }
+      },
+      "finding": "The affliction, treasure, question about the occupants and clothing clauses remain complete. The English comparisons turn the question into an imperative."
+    },
+    {
+      "reference": 1075,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1075",
+      "chapterId": "chapter-05",
+      "paragraphIds": [
+        "mwIQ"
+      ],
+      "arabicSha256": "ddca208592151f09f8fd2beedc584c0238b87823cf9d288d7e80c90ee9a30aec",
+      "printedReferences": [
+        1127
+      ],
+      "printedPages": {
+        "brill-1862": [
+          285
+        ],
+        "dar-ibn-kathir-2002": [
+          273,
+          274
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1075",
+          "occurrence": 1,
+          "bodySha256": "222db3a232395b3f42ef06d10ddbb197d63da4259a7f7ad4f179698160f984d9",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.227",
+          "recordSha256": "ee47abea965ab71872be4ce0d634680fe47f855e55e19434fb18bcdb637c2be3",
+          "bodySha256": "880780614ebbd609dd842e37762f82752877f6436565774fc8e1f869226808be",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "Retain the full Ali/Husayn route, night visit, response, departure, thigh action and exact Quran excerpt."
+    },
+    {
+      "reference": 1076,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1076",
+      "chapterId": "chapter-05",
+      "paragraphIds": [
+        "mwIw"
+      ],
+      "arabicSha256": "5580f5d6f9cc3d3ecf906e3b439d079769c942f84663ca77a05e16a69376a508",
+      "printedReferences": [
+        1128
+      ],
+      "printedPages": {
+        "brill-1862": [
+          285,
+          286
+        ],
+        "dar-ibn-kathir-2002": [
+          274
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1076",
+          "occurrence": 1,
+          "bodySha256": "ab8ebe761d1dac9f595fe432c50acbcab73c9d6c885dc7fe8e30393e94dee52d",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.228",
+          "recordSha256": "12abc2518ddecc4887868aa7f86a865731e000b8ef64d9b32e2daf76c8175f3f",
+          "bodySha256": "3c06c483924c465b1a79828eb891848802471750121733a3e0cb8cd333526317",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "Retain the concern about obligation and both Duha statements without importing a legal explanation."
+    },
+    {
+      "reference": 1077,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1077",
+      "chapterId": "chapter-05",
+      "paragraphIds": [
+        "mwJg"
+      ],
+      "arabicSha256": "8de9de170e479320cfa949013b4dc4a618e6e2dd0e0c4969be5f7b003621fd2f",
+      "printedReferences": [
+        1129
+      ],
+      "printedPages": {
+        "brill-1862": [
+          286
+        ],
+        "dar-ibn-kathir-2002": [
+          274
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1077",
+          "occurrence": 1,
+          "bodySha256": "b239c5b20387399c736c2be633a45f5f930cf46432ddffe11c60275307131939",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.229",
+          "recordSha256": "21f12c0873d755674d3a62714352f6d276fe124246d993d5c21839dd3f27eb6a",
+          "bodySha256": "b397b9cc3158f976ee93cbb3f316f95e06ddb2d517074832b756fca51699498c",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The selected third or fourth night becomes third and fourth nights."
+          ]
+        }
+      },
+      "finding": "Retain third or fourth uncertainty, the morning explanation and Ramadan ending."
+    },
+    {
+      "reference": 1078,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1078",
+      "chapterId": "chapter-06",
+      "paragraphIds": [
+        "mwLA"
+      ],
+      "arabicSha256": "7f4b61ff1fbaec41d997d185fb85aa19cebbd5068d73524ecaf2cf3362da7a30",
+      "printedReferences": [
+        1130
+      ],
+      "printedPages": {
+        "brill-1862": [
+          286
+        ],
+        "dar-ibn-kathir-2002": [
+          274
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1078",
+          "occurrence": 1,
+          "bodySha256": "a856e3a3a9d97a74b0b197e76a945c29e28be4f93ef4e6b7bbf2c184b25b31e1",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.230",
+          "recordSha256": "3622f8cbb6761541c87923fe41fe25263ad6ce9544270db9bfd9438ed1995be4",
+          "bodySha256": "54bb2e18b6e6a0ae5672be89a8ee54ab809d00922b7f436d7c873f8ab2c4f45e",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The comparison includes an unbearable-prayer explanation absent from the selected report. Its alternative standing/praying wording follows the print difference separately recorded here."
+          ]
+        }
+      },
+      "finding": "Both prints preserve an or between standing and praying that is absent from the selected digital wording. No correction is applied at intake."
+    },
+    {
+      "reference": 1079,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1079",
+      "chapterId": "chapter-07",
+      "paragraphIds": [
+        "mwLw"
+      ],
+      "arabicSha256": "8afe5bb5c183f87520840e592423774f49af5728db07478b6158535954bb46ed",
+      "printedReferences": [
+        1131
+      ],
+      "printedPages": {
+        "brill-1862": [
+          286
+        ],
+        "dar-ibn-kathir-2002": [
+          274
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1079",
+          "occurrence": 1,
+          "bodySha256": "383aa158fb508ed5a7f0b2421b961771f8d0386b5d5cadcd3bf34b5afaa42b50",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.231",
+          "recordSha256": "4e887a8dcbcb075ecaa818b482f508e271660a51deeeedb279a69dfbdf303892",
+          "bodySha256": "23ccc7d63408d6cfc28e0098fa613067b954206b9f2138f0cee52494736ce073",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The half/third/sixth divisions and alternate-day fasting remain exact, with the source honorifics."
+    },
+    {
+      "reference": 1080,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1080",
+      "chapterId": "chapter-07",
+      "paragraphIds": [
+        "mwMQ"
+      ],
+      "arabicSha256": "89ee4fbfccd7feeabf1d93253fea44784d5fe8928e8673e8be999db16901ef16",
+      "printedReferences": [
+        1132
+      ],
+      "printedPages": {
+        "brill-1862": [
+          286
+        ],
+        "dar-ibn-kathir-2002": [
+          275
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1080",
+          "occurrence": 1,
+          "bodySha256": "2e53f857a3c768fea4949e83e7e0a81920eadb9a4e5a946fa4458dd95745a9e0",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.232",
+          "recordSha256": "a7c35b1756722f727d1a4a886725c0cbab7cfc3d2fd8dae7add58b2e6d06bd45",
+          "bodySha256": "ee2bad5ebdd53ed18fd589e36b0947651bdf82b8be5ce88f9da04b3caef1021f",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The complete Masruq question-and-answer account occupies the first part of printed 1132."
+    },
+    {
+      "reference": 1081,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1081",
+      "chapterId": "chapter-07",
+      "paragraphIds": [
+        "mwMw"
+      ],
+      "arabicSha256": "a6eb25b3093c376b975f242fd6a7baaa045eb4c07f9c8ad40d23d63968e622cb",
+      "printedReferences": [
+        1132
+      ],
+      "printedPages": {
+        "brill-1862": [
+          286
+        ],
+        "dar-ibn-kathir-2002": [
+          275
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1081",
+          "occurrence": 1,
+          "bodySha256": "980d90eec88d75a1186e1a2a69d20ca35b63d58e1879d9c671441b8987cd4ac1",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.233",
+          "recordSha256": "8f6df03039cf367c5d135bb47924ec202aeaa48940bee3fe5ea0c573c704d96f",
+          "bodySha256": "a63dd3793a2a89950a2dec132fa390072c2fecf5d3555e1e510920e97be14bb5",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "This separately numbered digital route occupies the second part of printed 1132 and depends on preceding context. Preserve its own app identity with the shared printed reference; do not merge or invent a complete chain."
+    },
+    {
+      "reference": 1082,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1082",
+      "chapterId": "chapter-07",
+      "paragraphIds": [
+        "mwNA"
+      ],
+      "arabicSha256": "b10040a3b1f8d02289c3389046bb7b8d68648c64704b60b3bcf19cdd4ad7648b",
+      "printedReferences": [
+        1133
+      ],
+      "printedPages": {
+        "brill-1862": [
+          286,
+          287
+        ],
+        "dar-ibn-kathir-2002": [
+          275
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1082",
+          "occurrence": 1,
+          "bodySha256": "2cf7ce185698fc79595a4815ec7c4711cd3adbb39313e4f533ccfb598be0b578",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The final clarification identifying the Prophet is not separately retained."
+          ]
+        },
+        "khan": {
+          "reference": "2.21.234",
+          "recordSha256": "1622958e93d60bb6a38dfbd010b35437444d02ccbef6d568feb1b25360243fae",
+          "bodySha256": "65ca2fa38f3069c1c644bb5281405af623a554923257c69e9f8d1757ee59fb1d",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "Retain the closing clarification identifying the Prophet; the historical page boundary splits the opening route."
+    },
+    {
+      "reference": 1083,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1083",
+      "chapterId": "chapter-08",
+      "paragraphIds": [
+        "mwNw"
+      ],
+      "arabicSha256": "668696120e8bc600b4b0d4b99eee49a47847eb2d826285c95a698dce26df288d",
+      "printedReferences": [
+        1134
+      ],
+      "printedPages": {
+        "brill-1862": [
+          287
+        ],
+        "dar-ibn-kathir-2002": [
+          275
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1083",
+          "occurrence": 1,
+          "bodySha256": "2b4157d321e3ac62bc6a8037dbcd3e4de8475c07254b8b7f61862ba0978e6e55",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.235",
+          "recordSha256": "5544abda6d868e513a28c91cc388da92106ac0bef8327b9960538caa88fd2504",
+          "bodySha256": "8bdd723f7ef2282b323929ba2757f53f276f20cdf1510a15d771f5bb519d57f1",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "Retain both the meal/prayer account and the later question to Anas with its fifty-verse answer."
+    },
+    {
+      "reference": 1084,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1084",
+      "chapterId": "chapter-09",
+      "paragraphIds": [
+        "mwOw"
+      ],
+      "arabicSha256": "a275b4165fd596f5ec17ca06be46e7bb25b148fe59bd24079b39022bbf329563",
+      "printedReferences": [
+        1135
+      ],
+      "printedPages": {
+        "brill-1862": [
+          287
+        ],
+        "dar-ibn-kathir-2002": [
+          275
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1084",
+          "occurrence": 1,
+          "bodySha256": "6296aac61425c39a2d03fc4f7b0eccf86eae4ac36b783ae964ac821dad774145",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.236",
+          "recordSha256": "d82be2dfadfa5ea15e3d84de7874225e83079c509ea8c8df03ea2258df2de8d5",
+          "bodySha256": "f91ec85f07516f080bcd09850411ff6d97750049dcd010e64382b2c1ffe2f998",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "Retain both the long standing account and the question clarifying the intended action."
+    },
+    {
+      "reference": 1085,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1085",
+      "chapterId": "chapter-09",
+      "paragraphIds": [
+        "mwPg"
+      ],
+      "arabicSha256": "57a822c5a11170d846de74855f6ea60562855870cda12d0362d314be55ae37b2",
+      "printedReferences": [
+        1136
+      ],
+      "printedPages": {
+        "brill-1862": [
+          287
+        ],
+        "dar-ibn-kathir-2002": [
+          275
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1085",
+          "occurrence": 1,
+          "bodySha256": "797ac7e7236009a9d1278ac10328598929d2e021b55029591a766710f4480399",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.237",
+          "recordSha256": "d5ac1b8c0af84d617dda1bd8751e69e0ef3c80318369b6e28501e46b08506f9d",
+          "bodySha256": "69a1c40e53cdef020308d116ca8fab996f42a964dcb4414a5084a7e7042dea3f",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The Hudhayfah night-prayer and siwak occurrence remains separate from the preceding report."
+    },
+    {
+      "reference": 1086,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1086",
+      "chapterId": "chapter-10",
+      "paragraphIds": [
+        "mwQw"
+      ],
+      "arabicSha256": "a541c94349458bde1dedd7169caa5d99aceddacfd0e02b7c108dd29b4333e796",
+      "printedReferences": [
+        1137
+      ],
+      "printedPages": {
+        "brill-1862": [
+          287
+        ],
+        "dar-ibn-kathir-2002": [
+          275
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1086",
+          "occurrence": 1,
+          "bodySha256": "eea6cea3f1b0f8708451509363b5f8be1d113d8833ef465392abaf7cba388577",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.238",
+          "recordSha256": "31c3bc28058017c0b1cafe4fbdc4203bff21d86ae200859c107e09b82c2e276e",
+          "bodySha256": "7b097d3b5b5e8f698fed57c5ab55ad7d679ed1b177bac7ebd404f78c771e4dc6",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "Retain the question, repeated two-by-two wording and single-unit ending."
+    },
+    {
+      "reference": 1087,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1087",
+      "chapterId": "chapter-10",
+      "paragraphIds": [
+        "mwRA"
+      ],
+      "arabicSha256": "bb3adb98586abff8e391746d795abb18d394f36bb01085eda4bbbec591175307",
+      "printedReferences": [
+        1138
+      ],
+      "printedPages": {
+        "brill-1862": [
+          287
+        ],
+        "dar-ibn-kathir-2002": [
+          276
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1087",
+          "occurrence": 1,
+          "bodySha256": "45eef17781370aa3e3522b79b340843bdd3830b2475eddd08a751daff44460d0",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.239",
+          "recordSha256": "5fd363ca62f749305d94d49edd08d1760b5c82fad58c08db8eefc868a8ee726a",
+          "bodySha256": "8efc4d027b0ccf956bf56344aa23442055be32b8b93bf1c160581078b3dc1278",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The thirteen-unit account includes its final night clarification."
+    },
+    {
+      "reference": 1088,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1088",
+      "chapterId": "chapter-10",
+      "paragraphIds": [
+        "mwRg"
+      ],
+      "arabicSha256": "370a8c61395d30aa388c83a9342582fa2408d58bdf3b4a618a50fbf4b3d13e9e",
+      "printedReferences": [
+        1139
+      ],
+      "printedPages": {
+        "brill-1862": [
+          287,
+          288
+        ],
+        "dar-ibn-kathir-2002": [
+          276
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1088",
+          "occurrence": 1,
+          "bodySha256": "b67101d3ad5df242eb2b4f6efc94798f5e734261fcf47a904644c5c0eeecf9f4",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.240",
+          "recordSha256": "11212c6c1bd5aebc1582249461f82b2e887ad649b4f537b68482c109ff82888c",
+          "bodySha256": "05e10b42d3b02349bc4c3a59cdcb8a91a4c41e744e3705072f7f5e1a602519f0",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "Keep seven, nine and eleven, the two-Fajr-unit exclusion and the complete route distinct from the next occurrence."
+    },
+    {
+      "reference": 1089,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1089",
+      "chapterId": "chapter-10",
+      "paragraphIds": [
+        "mwSA"
+      ],
+      "arabicSha256": "906d1e0d01e157c7bafac6ce26e3688899fb7a9445cb6b350d925ccdf6f7de57",
+      "printedReferences": [
+        1140
+      ],
+      "printedPages": {
+        "brill-1862": [
+          288
+        ],
+        "dar-ibn-kathir-2002": [
+          276
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1089",
+          "occurrence": 1,
+          "bodySha256": "d7a2dd0a1c19dbb2890eda0aba40121b9168560335b83cc651b71c3f412c81ee",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.241",
+          "recordSha256": "f6c09959c37063bb0741cbaa7cb3c9f95370ea337f3163bf244f779e0519aa90",
+          "bodySha256": "7e887b233e6ef31be1f29d757c89448ddbb5f7439ffe818c916fe1ca3cdc34ef",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "This thirteen-unit account explicitly includes Witr and the two Fajr units. Do not harmonize it with the preceding occurrence."
+    },
+    {
+      "reference": 1090,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1090",
+      "chapterId": "chapter-11",
+      "paragraphIds": [
+        "mwTQ"
+      ],
+      "arabicSha256": "395e21d60ab90ea99e24e61c3d530883eb291b6b9985debd1e3835edeb0eb98a",
+      "printedReferences": [
+        1141
+      ],
+      "printedPages": {
+        "brill-1862": [
+          288
+        ],
+        "dar-ibn-kathir-2002": [
+          276
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1090",
+          "occurrence": 1,
+          "bodySha256": "c7301825dbd6f2aba5f7f78c80815994f6ebddc409b5c586f6546c1caea1fda0",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The comparison says doing nothing but praying all night or doing nothing but sleeping; this should not be imported as an added exclusivity claim."
+          ]
+        },
+        "khan": {
+          "reference": "2.21.242",
+          "recordSha256": "e30091ed1a8b1143d7ec31eb8791313d1393b16d9c80f7fdabfa101a0964e287",
+          "bodySha256": "4cdbfe94e9898454e19894be96a914a4be60fa6948934fe66293953f4e4c8429",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The complete closing Sulayman and Abu Khalid al-Ahmar corroboration from Humayd is absent."
+          ]
+        }
+      },
+      "finding": "Both concluding corroborators from Humayd remain part of the source report."
+    },
+    {
+      "reference": 1091,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1091",
+      "chapterId": "chapter-12",
+      "paragraphIds": [
+        "mwUA"
+      ],
+      "arabicSha256": "7253d6a5cb177bce48a155b17c75d2d82ce620fb9f920874cca500461c2c6faf",
+      "printedReferences": [
+        1142
+      ],
+      "printedPages": {
+        "brill-1862": [
+          288,
+          289
+        ],
+        "dar-ibn-kathir-2002": [
+          276,
+          277
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1091",
+          "occurrence": 1,
+          "bodySha256": "bb1a6fa6a3d3e5542fa59e929d24c6d171c717b4a87dea8f97d4ef703c9902cf",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.243",
+          "recordSha256": "6c8e241a6fa74ba507cee4d135349a04711b510f3112cd1108471ae0a7039c42",
+          "bodySha256": "0055bd36dafe9503b7ea0caeaf6546f5a152d59d1d1acef11f4b59bcd18b8504",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "Reads and exhales is added where the selected occurrence has the striking/tying wording."
+          ]
+        }
+      },
+      "finding": "Retain all three separate untying conditions and both outcomes. The striking phrase differs across the selected source and prints."
+    },
+    {
+      "reference": 1092,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1092",
+      "chapterId": "chapter-12",
+      "paragraphIds": [
+        "mwUg"
+      ],
+      "arabicSha256": "01d09fbb3a89076cac68f5a2b3dd0f4bfb3d8324126d4f49240124c5ac190bba",
+      "printedReferences": [
+        1143
+      ],
+      "printedPages": {
+        "brill-1862": [
+          289
+        ],
+        "dar-ibn-kathir-2002": [
+          277
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1092",
+          "occurrence": 1,
+          "bodySha256": "e1caf8020e44822babf31eef28185a74c266182b12aebf265d2d51a3d032d8ef",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.244",
+          "recordSha256": "e4fc66803e4f63138f33dfcada516bff8b2cbfd630e996151aae5ca6541fbe70",
+          "bodySha256": "d72bc146911efcf07488bb267da0b9e2595d973b9c8290cc063ff119ca16c859",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The complete dream-report route and the Quran/obligatory-prayer clauses remain; no explanatory legal paraphrase is introduced."
+    },
+    {
+      "reference": 1093,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1093",
+      "chapterId": "chapter-13",
+      "paragraphIds": [
+        "mwVQ"
+      ],
+      "arabicSha256": "bdf128a0307dbde7ae6800a7dca51c685ddbfafc3570c3748f5ceadf91ee88e6",
+      "printedReferences": [
+        1144
+      ],
+      "printedPages": {
+        "brill-1862": [
+          289
+        ],
+        "dar-ibn-kathir-2002": [
+          277
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1093",
+          "occurrence": 1,
+          "bodySha256": "536610ed3107e6e1a279cc157b12646c09b4cb7f034d62399ed261f18c3a8fdf",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.245",
+          "recordSha256": "289e02d2e092d9d576c4faebb029fd3f62980efb7cec70dc9d526c72b8a5c3d5",
+          "bodySha256": "834b1344faf35e8f9db3c2d5802eaba42d134e8e749416348848919e8f4e5b87",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The selected singular ear is rendered as ears."
+          ]
+        }
+      },
+      "finding": "Retain the source singular ear and the reported sleep/prayer context."
+    },
+    {
+      "reference": 1094,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1094",
+      "chapterId": "chapter-14",
+      "paragraphIds": [
+        "mwWQ"
+      ],
+      "arabicSha256": "ee283a921adfc81966490ba7cf5c2a0a2e0c04b3c82b08ab43f71f03d1ebea32",
+      "printedReferences": [
+        1145
+      ],
+      "printedPages": {
+        "brill-1862": [
+          289
+        ],
+        "dar-ibn-kathir-2002": [
+          277
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1094",
+          "occurrence": 1,
+          "bodySha256": "f84b051cea6eff5c42e4295df47bd493c88f3f1cbe972b6127fadada95e5d944",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.246",
+          "recordSha256": "02e11450f1d6d7a482838c00e25f7d429d3e1fcc18abda60b34643a7beeb2c90",
+          "bodySha256": "d81c35899460a6cc43297b6f400d70108b155d6a645b05fd16dfaf6f88e76307",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "Preserve the full paired route, source honorific, final-third wording and all three questions. Theological wording requires independent review; no interpretive explanation is inserted."
+    },
+    {
+      "reference": 1095,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1095",
+      "chapterId": "chapter-15",
+      "paragraphIds": [
+        "mwXg"
+      ],
+      "arabicSha256": "57411a82ed85e1f3aa124f60614acd6ceefa93e828eb12b44fae7368e859cea5",
+      "printedReferences": [
+        1146
+      ],
+      "printedPages": {
+        "brill-1862": [
+          289
+        ],
+        "dar-ibn-kathir-2002": [
+          277
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1095",
+          "occurrence": 1,
+          "bodySha256": "453dc49df64886ae14ce67c753f21e8ce480cda0f200c481477a8e57485883cf",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.247",
+          "recordSha256": "23a3c2f64d07763b35ef92be9759ddb5a15cd261049b33786e54011f880b15a7",
+          "bodySha256": "468aa7f26efd143b4ca164128029041499526c96cfa1b65c930e76356389c883",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "Two opening routes and both washing/ablution alternatives remain; the entire account stays one entry."
+    },
+    {
+      "reference": 1096,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1096",
+      "chapterId": "chapter-16",
+      "paragraphIds": [
+        "mwYg"
+      ],
+      "arabicSha256": "bb8a256d8441f72820a041ded3e6d1c4474aa36914cea4694377a7525379dca5",
+      "printedReferences": [
+        1147
+      ],
+      "printedPages": {
+        "brill-1862": [
+          289,
+          290
+        ],
+        "dar-ibn-kathir-2002": [
+          278
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1096",
+          "occurrence": 1,
+          "bodySha256": "96218b6889a6ce4e6aae92fca6b4279c0ceba20f52d480a0bcb15ce3f1da65e7",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.248",
+          "recordSha256": "95e4571abd444586a3b21a2abebb6b1d8f209f99aae9b175e9cfdcf425bc2a95",
+          "bodySha256": "843a538c755dd55bc15cc9214ba848047a89ea54a5a28fb3582f8261838c7c9f",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "Retain both repeated four-unit beauty/length clauses, three-unit ending and the complete sleep/heart exchange."
+    },
+    {
+      "reference": 1097,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1097",
+      "chapterId": "chapter-16",
+      "paragraphIds": [
+        "mwZQ"
+      ],
+      "arabicSha256": "65663d873af4d50cd6de7e80d6e65b7acbe694bd62047c7a036bb59610a4ad83",
+      "printedReferences": [
+        1148
+      ],
+      "printedPages": {
+        "brill-1862": [
+          290
+        ],
+        "dar-ibn-kathir-2002": [
+          278
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1097",
+          "occurrence": 1,
+          "bodySha256": "79c389652c390bb6a32e4381890eadfa7cf60aeec8a91940a85a28be179c1931",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The explicit intermediate clause that he recited sitting when he grew old is compressed."
+          ]
+        },
+        "khan": {
+          "reference": "2.21.249",
+          "recordSha256": "2c04b7d9f7e9414d996e7f863afbcf34d3741a08843e67fc7e21eb82511b319d",
+          "bodySha256": "b125159ef1d4bcd8895e11282dd8d06ae2cba41fe63070e1854043a543ccadbd",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "Retain reciting seated after growing old, thirty or forty, standing, reciting and bowing, without borrowing parallel wording."
+    },
+    {
+      "reference": 1098,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1098",
+      "chapterId": "chapter-17",
+      "paragraphIds": [
+        "mwaA"
+      ],
+      "arabicSha256": "b18db3d6523a5a41341696dcec7fbcac93fd318dc10959befb4effe7b1feaf41",
+      "printedReferences": [
+        1149
+      ],
+      "printedPages": {
+        "brill-1862": [
+          290
+        ],
+        "dar-ibn-kathir-2002": [
+          278
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1098",
+          "occurrence": 1,
+          "bodySha256": "f5f34c7709861888ad383fcc17e51c656548ddc3d9eb6aa90f70b9d24fecc84a",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.250",
+          "recordSha256": "8a3ef8e930a3f5f538e252eb9109ee4b3820789cc87c929c9ee18f6d8b1c2d04",
+          "bodySha256": "923d9b7b8329bc58b007b6fcd126cac0384a221d1e3e0cb0065bbd172e878a8b",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The closing Abu Abdullah explanation of the sandal wording is absent, and most hopeful is recast as best."
+          ]
+        }
+      },
+      "finding": "The Abu Abdullah sandal-word gloss is already part of the selected report and must not be discarded."
+    },
+    {
+      "reference": 1099,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1099",
+      "chapterId": "chapter-18",
+      "paragraphIds": [
+        "mwaw"
+      ],
+      "arabicSha256": "ffe552cab90713208014c0d2bb30fbdbbd0134e47241f6184eb24387123fb85b",
+      "printedReferences": [
+        1150
+      ],
+      "printedPages": {
+        "brill-1862": [
+          290
+        ],
+        "dar-ibn-kathir-2002": [
+          278
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1099",
+          "occurrence": 1,
+          "bodySha256": "9e55ad1fad8a6ed92860b5eedb73eee94783ab3009739b78e4085640a954fb11",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.251r",
+          "recordSha256": "fa0b8aefbcc09cf44b961d83b6227ebfa720fb2db8ee7d466670779312493d5a",
+          "bodySha256": "f07730e33e5d1fe8d2ab46ff304cbb6992c5ae76d94a98a8e5beb93cb9e4c9f8",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The rope account remains separate; preserve tiredness and sitting language without an inserted mosque or legal ruling."
+    },
+    {
+      "reference": 1100,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1100",
+      "chapterId": "chapter-18",
+      "paragraphIds": [
+        "mwbg"
+      ],
+      "arabicSha256": "0ca7418dc6a6bd3ce6b7208f8b9d02a02bdec7a4353363ac88abc488dc891769",
+      "printedReferences": [
+        1151
+      ],
+      "printedPages": {
+        "brill-1862": [
+          290,
+          291
+        ],
+        "dar-ibn-kathir-2002": [
+          278
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1100",
+          "occurrence": 1,
+          "bodySha256": "381ecd55156b9ff077f71fb75cab5fdd6e48198ca13b450cc65bb63d20715112",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.251n",
+          "recordSha256": "eee3cbd2def391c928ceb3c34fe83f5ef9691f0e8084f701ab5011c5e223510f",
+          "bodySha256": "1b687040b165811f8fcd86bddb5bd6ad3b0ee5c9a8d622e8af523e55a900506f",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "Giving rewards and doing good deeds are explanatory additions to the closing wording. They must not be silently incorporated into a fresh translation."
+          ]
+        }
+      },
+      "finding": "The original قال، وقال introduction and complete Asad-woman report remain. Added theological glosses in English are not source wording."
+    },
+    {
+      "reference": 1101,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1101",
+      "chapterId": "chapter-19",
+      "paragraphIds": [
+        "mwcQ"
+      ],
+      "arabicSha256": "5f77fa1921e15825f5fecc33fa7065f818918c251621e5b6ce138156b1858520",
+      "printedReferences": [
+        1152
+      ],
+      "printedPages": {
+        "brill-1862": [
+          291
+        ],
+        "dar-ibn-kathir-2002": [
+          279
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1101",
+          "occurrence": 1,
+          "bodySha256": "199cb301b7bf283f3041ef787e02f7e6b754cb80d81579e13b7307c081e96be2",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The Hisham/Ibn Abi al-Ishrin/Yahya/Umar ibn al-Hakam/Abu Salamah closing route is replaced by a generic different-isnad note."
+          ]
+        },
+        "khan": {
+          "reference": "2.21.252",
+          "recordSha256": "2937a85441155a0268b8fa86b38ccf555ce1d6a42fe23a8396f70f6b68ba8cf9",
+          "bodySha256": "d6f1924cbe154afe7b03d5bfa8c08a30dc552f69fa34b5e0d5ba903cb1959cd2",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The complete closing Hisham route and Amr ibn Abi Salamah corroboration are absent."
+          ]
+        }
+      },
+      "finding": "Preserve both opening routes, the complete Hisham additional route and final Amr corroboration."
+    },
+    {
+      "reference": 1102,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1102",
+      "chapterId": "chapter-19",
+      "paragraphIds": [
+        "mwcw"
+      ],
+      "arabicSha256": "550a242a6a8036541e4173cbf924d4b75a37e3fed695b2d9986f8a0da30060ad",
+      "printedReferences": [
+        1153
+      ],
+      "printedPages": {
+        "brill-1862": [
+          291
+        ],
+        "dar-ibn-kathir-2002": [
+          279
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1102",
+          "occurrence": 1,
+          "bodySha256": "991b805a938a9712ff169c170e8060ca9b6a79e6ea4bc1997643a3f2e92a7cc3",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "status": "absent-from-checked-interval",
+          "reference": null,
+          "checkedReferences": [
+            {
+              "reference": "2.21.252",
+              "recordSha256": "2937a85441155a0268b8fa86b38ccf555ce1d6a42fe23a8396f70f6b68ba8cf9",
+              "bodySha256": "d6f1924cbe154afe7b03d5bfa8c08a30dc552f69fa34b5e0d5ba903cb1959cd2"
+            },
+            {
+              "reference": "2.21.253",
+              "recordSha256": "08cdd9147cb1b426fabf9b53dccd5b74bd90955b787793a61bf3a62166f36e55",
+              "bodySha256": "175c2bb6e752cf08c4b3f4bd0d14f068132d67149940daa928b9315637801964"
+            }
+          ],
+          "limitations": [
+            "The bounded adjacent records 252 and 253 move from the preceding night-prayer abandonment report to the following waking-remembrance report. They contain no matching body for selected 1102. This is a bounded absence finding, not a claim about every parallel in the corpus."
+          ]
+        }
+      },
+      "finding": "Both prints place an untitled chapter heading before this report; the digital source groups it under chapter 19. The matching report is absent from the checked adjacent Khan 252/253 interval."
+    },
+    {
+      "reference": 1103,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1103",
+      "chapterId": "chapter-20",
+      "paragraphIds": [
+        "mwdg"
+      ],
+      "arabicSha256": "fdefb88df6e6d8585bf0c0c348bb124af750ca023adff0245a6adeddb010d342",
+      "printedReferences": [
+        1154
+      ],
+      "printedPages": {
+        "brill-1862": [
+          291
+        ],
+        "dar-ibn-kathir-2002": [
+          279
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1103",
+          "occurrence": 1,
+          "bodySha256": "13ad805155119387f0f0573a518387554a40b001ecd09fd5b7cd751a0daecd32",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The selected explicit and prayed condition after ablution is not expressed."
+          ]
+        },
+        "khan": {
+          "reference": "2.21.253",
+          "recordSha256": "08cdd9147cb1b426fabf9b53dccd5b74bd90955b787793a61bf3a62166f36e55",
+          "bodySha256": "175c2bb6e752cf08c4b3f4bd0d14f068132d67149940daa928b9315637801964",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "Retain the complete remembrance sequence and both supplication alternatives, followed by ablution and prayer conditions."
+    },
+    {
+      "reference": 1104,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1104",
+      "chapterId": "chapter-20",
+      "paragraphIds": [
+        "mweA",
+        "mweg",
+        "mwew",
+        "mwfA",
+        "mwfQ",
+        "mwfg",
+        "mwfw",
+        "mwgA"
+      ],
+      "arabicSha256": "51fa9c45950283281c2a3db1e9eea06dbebc05328a21e2c97479acbfe472aeeb",
+      "printedReferences": [
+        1155
+      ],
+      "printedPages": {
+        "brill-1862": [
+          291,
+          292
+        ],
+        "dar-ibn-kathir-2002": [
+          279,
+          280
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1104",
+          "occurrence": 1,
+          "bodySha256": "9223ac5fe66d7bf0132c3bfb8f3cce54a8e5c0e40261d6f98b0a631475f37bb3",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The closing Uqayl corroboration and complete al-Zubaydi/al-Zuhri/Said/al-Araj route are reduced to an al-Araj corroboration. The poem uses a sun rendering for the selected dawn-light phrase."
+          ]
+        },
+        "khan": {
+          "reference": "2.21.254",
+          "recordSha256": "8139fa18943ff0d5050dc0aba067a939b3adbace0b44ab0e53221a5f8f57e427",
+          "bodySha256": "059a9dd0a11c3b209483b1974ba5a1330b56e7720f2d71285ba31e1334fcfd6b",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The statement about Ibn Rawahah is attributed to the Prophet rather than retained as Abu Hurayrah speaking while mentioning him. The full closing corroborating routes are absent."
+          ]
+        }
+      },
+      "finding": "Preserve the opening Abu Hurayrah attribution, six separate verse-lines and complete closing Uqayl/al-Zubaydi route. Poetry is part of this report, not decorative app prose."
+    },
+    {
+      "reference": 1105,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1105",
+      "chapterId": "chapter-20",
+      "paragraphIds": [
+        "mwgQ"
+      ],
+      "arabicSha256": "e1c5d03252a0fe1d5aa21218998aa8d19245f339527092e94be015a691c33439",
+      "printedReferences": [
+        1156,
+        1157,
+        1158
+      ],
+      "printedPages": {
+        "brill-1862": [
+          292
+        ],
+        "dar-ibn-kathir-2002": [
+          280
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1105",
+          "occurrence": 1,
+          "bodySha256": "07878be6401dd251fb4d6380f7d5d68ff75e1c57677dc703788882de1c581372",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The comparison supplies a twenty-seventh-night identification; the selected words instead describe the seventh night of the last ten. Its interpretation must not replace the selected wording."
+          ]
+        },
+        "khan": {
+          "reference": "2.21.255",
+          "recordSha256": "7b7544eb0ec23b616c2a400ae8085ba1e3731fe8f0663cf3ef9b29ac3d617365",
+          "bodySha256": "91c80e29675252e465b5e759a2c8f08ee7240a35717214ac13692108632c78bf",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The comparison supplies a twenty-seventh-night identification; preserve the selected seventh night of the last ten wording for separate review."
+          ]
+        }
+      },
+      "finding": "One digital paragraph contains the complete passages numbered 1156, 1157 and 1158 in the modern print; there is no missing report to suffix."
+    },
+    {
+      "reference": 1106,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1106",
+      "chapterId": "chapter-21",
+      "paragraphIds": [
+        "mwiA"
+      ],
+      "arabicSha256": "bc6ed5da8428387f4478e8f7cf93c090d116266cc5f07842496fd2d93c4ae9ce",
+      "printedReferences": [
+        1159
+      ],
+      "printedPages": {
+        "brill-1862": [
+          292
+        ],
+        "dar-ibn-kathir-2002": [
+          280
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1106",
+          "occurrence": 1,
+          "bodySha256": "c29944ec9a64a4ddc68536e2976907e87012a41452e537178b9df2a8f369396a",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.256",
+          "recordSha256": "717a336c02c3fb48023ba2dbbe326277ad6f5521f450620b4b36338fc6612761",
+          "bodySha256": "0d611cc605655716a9ae7b08f3648980d381d38cefb48b27d2524fd9f321603a",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "A parenthetical return at Tahajjud time is supplied but is not explicit in the selected occurrence."
+          ]
+        }
+      },
+      "finding": "Retain the eight units, two seated units, two between the calls and never-omitted ending. Do not import an unstated elapsed-time explanation."
+    },
+    {
+      "reference": 1107,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1107",
+      "chapterId": "chapter-22",
+      "paragraphIds": [
+        "mwiw"
+      ],
+      "arabicSha256": "68db67f79f32c38002678eb4a698ef61d6eb95d2d591742df91a68e9aa52fffd",
+      "printedReferences": [
+        1160
+      ],
+      "printedPages": {
+        "brill-1862": [
+          292,
+          293
+        ],
+        "dar-ibn-kathir-2002": [
+          280
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1107",
+          "occurrence": 1,
+          "bodySha256": "7577ac4704d8b5e20df7b507ce65dccb671a7397fbdf8e966571b52a787e05ea",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.257",
+          "recordSha256": "a892291014f5b05922d4e8f75e1a1e6a7d73d3c7ca7238f24d2db3004b86e4db",
+          "bodySha256": "6f93e8a21509f003239d8ef81f691262d5c29aba0b2257e113945b64d3d71578",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "This right-side rest occurrence remains independent, with its full route."
+    },
+    {
+      "reference": 1108,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1108",
+      "chapterId": "chapter-23",
+      "paragraphIds": [
+        "mwjg"
+      ],
+      "arabicSha256": "4938fd2caa0aa42d79c6c63256f46135b43eeff2d2890c73756265d24a05379d",
+      "printedReferences": [
+        1161
+      ],
+      "printedPages": {
+        "brill-1862": [
+          293
+        ],
+        "dar-ibn-kathir-2002": [
+          280
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1108",
+          "occurrence": 1,
+          "bodySha256": "a47f9ca642ca2e5bd8efc2762bdb2b73b8675c402886cc8cca67cbbfa7c33ea2",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The comparison supplies two rakahs although the selected occurrence only says when he prayed."
+          ]
+        },
+        "khan": {
+          "reference": "2.21.258",
+          "recordSha256": "1ccd127f1ee0e9862b4d2248b299bf8f7118dc244252a8034e3c1672e876625c",
+          "bodySha256": "781dbb6fbb8a6f8dbd8c6427c80913d5aa292e6926e726b2fdb7edf1c7445942",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "Fajr Sunnah and an iqamah specification are supplied where this selected occurrence is shorter; the modern print itself has a separately recorded Fajr qualifier."
+          ]
+        }
+      },
+      "finding": "The selected and historical wording is shorter than the modern Fajr-Sunnah wording. Keep the difference explicit before translation."
+    },
+    {
+      "reference": 1109,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1109",
+      "chapterId": "chapter-24",
+      "paragraphIds": [
+        "mwlA"
+      ],
+      "arabicSha256": "e491c2c497fe10ee9131efcbae82cefa7d48c06d0bd6df5f1c1d925454d00bc6",
+      "printedReferences": [
+        1162
+      ],
+      "printedPages": {
+        "brill-1862": [
+          293
+        ],
+        "dar-ibn-kathir-2002": [
+          281
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1109",
+          "occurrence": 1,
+          "bodySha256": "a9340477a1422fdd7ce2ce4e2077a8bd3d6290987b5d29b8983b3c3a4d015309",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.263",
+          "recordSha256": "78d998c39cc3bbdb42108bf473ddf64674be7133c06f200694acabad8a564114",
+          "bodySha256": "d26dfcec67cce2efc11ea3ade256bf20bbf8af18c7f51da232220f48623115ac",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "Retain both alternative temporal phrases, every supplication clause and the closing instruction naming the need. Khan reorders this block after the Fajr reports."
+    },
+    {
+      "reference": 1110,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1110",
+      "chapterId": "chapter-24",
+      "paragraphIds": [
+        "mwlg"
+      ],
+      "arabicSha256": "d75cbf1a0904e1682cd5a4c82ad8c198e0edc6dd3126686d3b168b614cd3ac25",
+      "printedReferences": [
+        1163
+      ],
+      "printedPages": {
+        "brill-1862": [
+          293
+        ],
+        "dar-ibn-kathir-2002": [
+          281
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1110",
+          "occurrence": 1,
+          "bodySha256": "47fca37ff64ddb45e1d1d202d5228173247696af8055b9bf0c5f526b21f65a64",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.264",
+          "recordSha256": "636f2a858f51aacbb0718be11d9a7690a1c0e3d8c1388fe5e254112c3c39bbea",
+          "bodySha256": "2ae6025e78fe3492a95d66709ac5c238866c4e034c5f7b9fc80f85dacb54de15",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "Retain the full Abu Qatadah route and the two-unit condition."
+    },
+    {
+      "reference": 1111,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1111",
+      "chapterId": "chapter-24",
+      "paragraphIds": [
+        "mwmA"
+      ],
+      "arabicSha256": "cdec76925ff048e442c9a2a5f267fb19bcaa6c2de0aff503576f3b685d2994b0",
+      "printedReferences": [
+        1164
+      ],
+      "printedPages": {
+        "brill-1862": [
+          293
+        ],
+        "dar-ibn-kathir-2002": [
+          281
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1111",
+          "occurrence": 1,
+          "bodySha256": "99e26dc7768f6df3653d146988c8790a16d35d13ce38399ad1642adf483741a5",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.265",
+          "recordSha256": "2b2aa827682233d9b8b6421d43800947082060f7031e4f4d9484b87412bbc31b",
+          "bodySha256": "26b7cabfbd7816c337a17475a8db35a226de48a1c75fc3f60a1e11f6b4a699e9",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "Preserve this short Anas occurrence separately rather than deduplicating its parallel prayer accounts."
+    },
+    {
+      "reference": 1112,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1112",
+      "chapterId": "chapter-24",
+      "paragraphIds": [
+        "mwmg"
+      ],
+      "arabicSha256": "362bb5e5b5669d99d1a55990c5ca8716b8a247453227875fb5fab9473e5eadb3",
+      "printedReferences": [
+        1165
+      ],
+      "printedPages": {
+        "brill-1862": [
+          294
+        ],
+        "dar-ibn-kathir-2002": [
+          281
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1112",
+          "occurrence": 1,
+          "bodySha256": "55fa4f2405b28b0a2da92ab8cbdbb1f04b96f3d3d4a1c0d5f864262eecf2ade2",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.266",
+          "recordSha256": "a56d0babf92878cc98c284767e727191144c22bdc6622db5e4bf0b2f682ef66d",
+          "bodySha256": "c9fb966f54ab482ffa2d99c5ac292a5c0ea2dece1e847a73a630992f2ce3385a",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The narrator line contains an extraneous Abu after Ibn Umar."
+          ]
+        }
+      },
+      "finding": "Keep all five pairs in their selected order: before/after Dhuhr, Jumuah, Maghrib and Isha."
+    },
+    {
+      "reference": 1113,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1113",
+      "chapterId": "chapter-24",
+      "paragraphIds": [
+        "mwnA"
+      ],
+      "arabicSha256": "6ed922e63c0b512f2c711972fed4d9d4eb46136804675d3fab09a9998695cdbc",
+      "printedReferences": [
+        1166
+      ],
+      "printedPages": {
+        "brill-1862": [
+          294
+        ],
+        "dar-ibn-kathir-2002": [
+          281
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1113",
+          "occurrence": 1,
+          "bodySha256": "f496f475b24e372b44d06e05b1af7253dc0cba4b6a1c4dd79de03db1f35cf4c7",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.267",
+          "recordSha256": "e3ba2fc7f55578f98f6ece0c76f43f04ed69282e1b17420ed31d40f49cd4f720",
+          "bodySha256": "8986297610475ba8490e29475dd51ac861b2c1d0ad6d7815b3158a1c9b3e24de",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "Preserve both sermon/imam-out alternatives and the two-unit ending."
+    },
+    {
+      "reference": 1114,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1114",
+      "chapterId": "chapter-24",
+      "paragraphIds": [
+        "mwng"
+      ],
+      "arabicSha256": "01ab8b95b0f6143af87d8634b367458f867c888c08f05dd357b6a5efb1c142ba",
+      "printedReferences": [
+        1167
+      ],
+      "printedPages": {
+        "brill-1862": [
+          294
+        ],
+        "dar-ibn-kathir-2002": [
+          281,
+          282
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1114",
+          "occurrence": 1,
+          "bodySha256": "9144ac135fb047ecb8aa0df4c4f6832eaef3d7e2f916bc22255477e0172dc0c5",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The Abu Abdullah attribution introducing the Abu Hurayrah comment is not retained."
+          ]
+        },
+        "khan": {
+          "reference": "2.21.268",
+          "recordSha256": "d262fa9c674a53dfea61e53c6dd9c8acb02e0b183d46a5df7d2ff741326e9d48",
+          "bodySha256": "bb972d2e76c17da8921864a80c65b8c1a3cfee143e7b0883a1993c6b5b993aa2",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "Preserve the full Kabah report and both Abu Hurayrah and Itban comments. Historical visitor wording adds Umar; do not silently combine editions."
+    },
+    {
+      "reference": 1115,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1115",
+      "chapterId": "chapter-25",
+      "paragraphIds": [
+        "mwpQ"
+      ],
+      "arabicSha256": "5601f4f743903a3c6325823a631eaaf2ea8f652cb49c9fe70356d66dd8d39512",
+      "printedReferences": [
+        1168
+      ],
+      "printedPages": {
+        "brill-1862": [
+          294
+        ],
+        "dar-ibn-kathir-2002": [
+          282
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1115",
+          "occurrence": 1,
+          "bodySha256": "f060f287a0f054e9494676f985dbef8bbd0a58454ece04883393aecba0d4b2d0",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.259",
+          "recordSha256": "8b3a2b073b1a74a38d094a827cb1c3819b9388d95e6d8b9818618675e71e1a84",
+          "bodySha256": "b53b40f40d1a2bd339fa266506c20fafccc7218eb7dc1e1985cc80922d167811",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The full closing exchange with Sufyan about the Fajr wording is absent. This body appears earlier in this English section than the selected Arabic order."
+          ]
+        }
+      },
+      "finding": "The selected and historical narrator phrase includes أبي while the modern route omits it. Retain the difference and full closing Sufyan exchange; no correction is applied."
+    },
+    {
+      "reference": 1116,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1116",
+      "chapterId": "chapter-26",
+      "paragraphIds": [
+        "mwqA"
+      ],
+      "arabicSha256": "7bd14a66a825aa9d27646b5f12bf89bdc675d0a202dec3bee009058df0303164",
+      "printedReferences": [
+        1169
+      ],
+      "printedPages": {
+        "brill-1862": [
+          294
+        ],
+        "dar-ibn-kathir-2002": [
+          282
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1116",
+          "occurrence": 1,
+          "bodySha256": "c0528f712618c56ff658ba92cce7b27baf7e11d5146071565e7d37ea3059ac5d",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.260",
+          "recordSha256": "dad4d29a1d5d03c78b471fffa230ad2ed09b86e5123e58493823ec95fe73f780",
+          "bodySha256": "b15bd4b9d12e22c5f4873e36b4b961c3e8058335fedc9236249cdd0ff162ec3d",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "Retain the emphasis on regularly observing the two Fajr units without adding a ruling."
+    },
+    {
+      "reference": 1117,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1117",
+      "chapterId": "chapter-27",
+      "paragraphIds": [
+        "mwqw"
+      ],
+      "arabicSha256": "2c38701ae83aaf90bbadc3a009456017fcdea16e1892ee5ddc0c345cab02a9ea",
+      "printedReferences": [
+        1170
+      ],
+      "printedPages": {
+        "brill-1862": [
+          295
+        ],
+        "dar-ibn-kathir-2002": [
+          282
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1117",
+          "occurrence": 1,
+          "bodySha256": "76fb0e08385ad21391ce9eca7cc0e67f46b6d0b89d7933ecafa94a0e3a2e105e",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.261",
+          "recordSha256": "63e2cd6efafccaa92b5c7f9ec4c583aca21a1b65600a8abe0fefc8b4c68083a3",
+          "bodySha256": "de14f2e197a773c793aa35b834033881b086decff9731bd40dcfb5e760f43d7d",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "Keep thirteen night units and the later two light units as stated."
+    },
+    {
+      "reference": 1118,
+      "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1118",
+      "chapterId": "chapter-27",
+      "paragraphIds": [
+        "mwrQ"
+      ],
+      "arabicSha256": "8a323e827d6c1bf9dd8975ce1ece2c88abfac3caa9224e5cc8a8fc00c08385d0",
+      "printedReferences": [
+        1171
+      ],
+      "printedPages": {
+        "brill-1862": [
+          295
+        ],
+        "dar-ibn-kathir-2002": [
+          282
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1118",
+          "occurrence": 1,
+          "bodySha256": "3b4af1ec20cb4366feb168ef11be00b2f644d5cfb715eb3833ff58684d258fb7",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The two narrator routes and the unfinished first introduction before the route switch are reduced to one short Aishah introduction."
+          ]
+        },
+        "khan": {
+          "reference": "2.21.262",
+          "recordSha256": "fcc322a1593867c0762f1f8a40b75d522d4dba27d9a6604e60436ad63e5f6b26",
+          "bodySha256": "f2be535fb18127a3e46011af32d345ab9ef55c4894f910b938a383d79e4a1463",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "Both narrator routes and the incomplete first introduction are reduced to one short Aishah introduction. This body appears earlier than the selected Arabic order."
+          ]
+        }
+      },
+      "finding": "Preserve both routes, the explicit route switch and unfinished first introduction. The historical main text ends with Umm al-Quran where selected and modern have Umm al-Kitab."
+    }
+  ],
+  "missingPrintedReports": [],
+  "combinedDigitalReferences": [
+    {
+      "reference": 1070,
+      "paragraphId": "mwDA",
+      "sourceBlockSha256": "118d0327e3386360a02268ab04f17ac64977b2543fb0acda275fb979f87e3ba1",
+      "printedReferences": [
+        1121,
+        1122
+      ],
+      "boundaries": [
+        {
+          "text": "فقصصتها على حفصة",
+          "start": 505
+        }
+      ],
+      "finding": "All mapped printed passages are already present in this single selected digital paragraph. Keep the complete entry and all printed references; no suffixed omission is established."
+    },
+    {
+      "reference": 1105,
+      "paragraphId": "mwgQ",
+      "sourceBlockSha256": "e1c5d03252a0fe1d5aa21218998aa8d19245f339527092e94be015a691c33439",
+      "printedReferences": [
+        1156,
+        1157,
+        1158
+      ],
+      "boundaries": [
+        {
+          "text": "فقصت حفصة",
+          "start": 267
+        },
+        {
+          "text": "وكانوا لا يزالون",
+          "start": 401
+        }
+      ],
+      "finding": "All mapped printed passages are already present in this single selected digital paragraph. Keep the complete entry and all printed references; no suffixed omission is established."
+    }
+  ],
+  "sharedPrintedReferences": [
+    {
+      "printedReference": 1132,
+      "digitalReferences": [
+        1080,
+        1081
+      ],
+      "sourceRecordIds": [
+        "wikisource-bukhari-night-prayer-r39522:1080",
+        "wikisource-bukhari-night-prayer-r39522:1081"
+      ],
+      "finding": "Both separately labelled digital occurrences are printed together under 1132. Preserve their existing digital identities and full wording, with shared printed-reference metadata."
+    }
+  ],
+  "printedHeadingProposals": [
+    {
+      "id": "night-prayer-untitled-before-1102",
+      "beforeReference": 1102,
+      "selectedChapterId": "chapter-19",
+      "headingArabic": "باب",
+      "headingSha256": "12706fd4063acdcf8fc0a9c8e635cd179f74105b7bea347b21cc3a3736c6a3e1",
+      "status": "proposed-not-applied",
+      "readerEligible": false,
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "pdfPage": 291,
+          "printedChapter": 20
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "pdfPage": 279,
+          "printedChapter": 20
+        }
+      ],
+      "finding": "Both prints have a separate untitled chapter before 1102; the selected digital source has no heading there. No descriptive English title or new hadith number is inferred."
+    }
+  ],
+  "proposedCorrections": [],
+  "unresolvedTextualDifferences": [
+    {
+      "id": "1069-praise-sequence",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwBw",
+      "sourceBlockSha256": "5fc426fc237dbb2718098bcf54fce4982d88a1e2bc31285bf1999363974f2de0",
+      "sourceReading": "ولك الحمد لك ملك السماوات والأرض ومن فيهن ولك الحمد أنت نور السماوات والأرض ومن فيهن ولك الحمد أنت ملك السماوات والأرض",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 284,
+          "reading": "ولك الحمد أنت نور السماوات والأرض ومن فيهن ولك الحمد لك ملك السماوات والأرض ومن فيهن",
+          "readingSha256": "967301232aa137078ad8e2868905db30aa129bcae3e96ccb5cb8135e205eb4ef",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 272,
+          "reading": "ولك الحمد لك ملك السماوات والأرض ومن فيهن ولك الحمد أنت نور السماوات والأرض ولك الحمد أنت ملك السماوات والأرض",
+          "readingSha256": "58447ad4e60d493f8b504e066b1da28c75c6e4085659a9e7f3eb45fd892ac409",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        }
+      ],
+      "finding": "The praise sequence and the scope of ومن فيهن differ. Preserve the selected complete clauses; do not patch one edition from another.",
+      "transcriptionPolicy": "Retain the original selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "1078-standing-praying-alternative",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwLA",
+      "sourceBlockSha256": "7f4b61ff1fbaec41d997d185fb85aa19cebbd5068d73524ecaf2cf3362da7a30",
+      "sourceReading": "ليقوم ليصلي",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 286,
+          "reading": "ليقوم أو ليصلي",
+          "readingSha256": "e86be1175ced1e25c5bd3960a979319c5c59c82db0e0deaa482a707ed32048d6",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 274,
+          "reading": "ليقوم أو ليصلي",
+          "readingSha256": "e86be1175ced1e25c5bd3960a979319c5c59c82db0e0deaa482a707ed32048d6",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        }
+      ],
+      "finding": "Both printed main texts include an alternative marker between standing and praying; the digital occurrence does not.",
+      "transcriptionPolicy": "Retain the original selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "1091-knot-wording",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwUA",
+      "sourceBlockSha256": "7253d6a5cb177bce48a155b17c75d2d82ce620fb9f920874cca500461c2c6faf",
+      "sourceReading": "يضرب كل عقدة",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 288,
+          "reading": "يضرب على كل عقدة",
+          "readingSha256": "8ac4df3838ea9a6df1c3ee5f811e7e09fbd0562695cf4e17723a6dcd7184659a",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 276,
+          "reading": "يضرب على مكان كل عقدة",
+          "readingSha256": "ac301da2e0405557ca696e26934fdacfb9977daed032f53457835a854b0821fc",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        }
+      ],
+      "finding": "The wording surrounding the striking of each knot is longer in both prints and differs between them.",
+      "transcriptionPolicy": "Retain the original selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "1108-fajr-qualifier",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwjg",
+      "sourceBlockSha256": "4938fd2caa0aa42d79c6c63256f46135b43eeff2d2890c73756265d24a05379d",
+      "sourceReading": "كان إذا صلى فإن كنت مستيقظة",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 293,
+          "reading": "كان إذا صلى فإن كنت مستيقظة",
+          "readingSha256": "8388e09d49ace804a03e2240886f143374d226ffc6766e902ecd15e1e4e2b978",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 280,
+          "reading": "كان إذا صلى سنة الفجر فإن كنت مستيقظة",
+          "readingSha256": "4b98482fca496b7e9605d17dba51758305eb5773a93a7e5152e98c36134e057b",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        }
+      ],
+      "finding": "The modern main text specifies the Fajr Sunnah; the selected and historical occurrence do not.",
+      "transcriptionPolicy": "Retain the original selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "1114-itban-visitors",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwng",
+      "sourceBlockSha256": "01ab8b95b0f6143af87d8634b367458f867c888c08f05dd357b6a5efb1c142ba",
+      "sourceReading": "وأبو بكر رضى الله تعالى عنه",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 294,
+          "reading": "وأبو بكر وعمر",
+          "readingSha256": "f0f5c8d34abb0b75c18fd88114f81606537a0f45e154b41175e024cc7f31db38",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 282,
+          "reading": "وأبو بكر رضي الله عنه",
+          "readingSha256": "f9535d7f94c077500cffce4bd98f85444bc7c4ebef22cc2e933033fc043cf1c8",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        }
+      ],
+      "finding": "The historical Itban comment includes Umar alongside Abu Bakr; selected and modern name Abu Bakr without Umar.",
+      "transcriptionPolicy": "Retain the original selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "1115-abu-al-nadr-route",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwpQ",
+      "sourceBlockSha256": "5601f4f743903a3c6325823a631eaaf2ea8f652cb49c9fe70356d66dd8d39512",
+      "sourceReading": "قال أبو النضر حدثني أبي عن أبي سلمة",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 294,
+          "reading": "قال أبو النضر حدثني أبي عن أبي سلمة",
+          "readingSha256": "cac3b29a02f29d6a625c5e4840e8658008f91cd9feb7c69fc8b6dd466cc1d05f",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 282,
+          "reading": "قال أبو النضر حدثني أبو سلمة",
+          "readingSha256": "ea8b4b02a54a93a49228fad9b0bfb02861195345e91d9cc15bc1343f4c362458",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        }
+      ],
+      "finding": "The selected and historical route includes أبي; the modern route directly names Abu Salamah. This is not a two-print-supported correction.",
+      "transcriptionPolicy": "Retain the original selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "1118-umm-al-kitab",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwrQ",
+      "sourceBlockSha256": "8a323e827d6c1bf9dd8975ce1ece2c88abfac3caa9224e5cc8a8fc00c08385d0",
+      "sourceReading": "هل قرأ بأم الكتاب",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 295,
+          "reading": "هل قرأ بأم القرآن",
+          "readingSha256": "9abb66bdad8d901ef769d2ee3053b7c499a160fec032b881dc8f79bfd0c05b7b",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 282,
+          "reading": "هل قرأ بأم الكتاب",
+          "readingSha256": "55208f841e890d66828123c0fb20a37b22f35c3075bf4b1e71d0cae98c8aba7a",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        }
+      ],
+      "finding": "The final surah designation differs in the historical main text. Retain the selected designation and expose the difference.",
+      "transcriptionPolicy": "Retain the original selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "chapter-01-waking-gloss",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwBg",
+      "sourceBlockSha256": "f40f3cf8f09003678536669cb5ce5eb24b0c75714657cdc7da649d3425f22615",
+      "sourceReading": "ومن الليل فتهجد به نافلة لك",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 283,
+          "reading": "ومن الليل فتهجد به نافلة لك أي استيقظ",
+          "readingSha256": "ad05304ae257c42cf6e8c0942580cce8afa19b7f9d12623b80fd35a82d74bfd1",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 272,
+          "reading": "ومن الليل فتهجد به نافلة لك",
+          "readingSha256": "79fa798a1876204d572353bb2fb59d972125effeeced6bacb46dbcc90200e4a8",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        }
+      ],
+      "finding": "The historical chapter quotation adds a waking gloss absent from the selected context and modern main text.",
+      "transcriptionPolicy": "Retain the original selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "chapter-06-heading-extent",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "باب_قيام_النبي_ﷺ_حتى_ترم_قدماه",
+      "sourceBlockSha256": "8d24d4b8872968403444e802116c5730d8fd1e8a24dcd5a14413217c5ba41bb6",
+      "sourceReading": "حتى ترم قدماه",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 286,
+          "reading": "حتى ترم قدماه",
+          "readingSha256": "198cf6333897eabdc8226a34ff542cb6965311709336bce6b462eaaf9f78a9c4",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 274,
+          "reading": null,
+          "readingSha256": null,
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        }
+      ],
+      "finding": "The selected and historical heading include the swollen-feet phrase. It is absent from the modern heading, although the following report includes it.",
+      "transcriptionPolicy": "Retain the original selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "chapter-11-quran-ending",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwTA",
+      "sourceBlockSha256": "60c543e09e68b033a393db352efc3fcf5f8a7a0457f04ba6dc6c35966b56b149",
+      "sourceReading": "هو خيرا وأعظم أجرا",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 288,
+          "reading": "هو خيرا وأعظم أجرا واستغفروا الله إن الله غفور رحيم",
+          "readingSha256": "b68d40787b3466fd3ffeaabb83931dffb8932f2410b83f29949b754a8253ff96",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 276,
+          "reading": "هو خيرا وأعظم أجرا",
+          "readingSha256": "1715516c7dd9b5126dd032336a537f3d6d2160659659650e65195bcda6710307",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        }
+      ],
+      "finding": "The historical chapter quotation continues with a further Quran phrase that is absent from the selected context and modern main text.",
+      "transcriptionPolicy": "Retain the original selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "chapter-14-dawn-quotation",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwWA",
+      "sourceBlockSha256": "69aff4ed4aaa19b37aa37083113672ee68a839152f3469b4ce56889751def843",
+      "sourceReading": "وبالأسحار هم يستغفرون",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 289,
+          "reading": null,
+          "readingSha256": null,
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 277,
+          "reading": "وبالأسحار هم يستغفرون",
+          "readingSha256": "975ccb9f3f8bee95590952999db3cad3bfe7ace09cba8626ece116b3d5ffe552",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        }
+      ],
+      "finding": "The selected and modern context includes the dawn-forgiveness quotation; it is absent from the inspected historical chapter context.",
+      "transcriptionPolicy": "Retain the original selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    }
+  ],
+  "chapterMaterial": [
+    {
+      "chapterId": "chapter-01",
+      "headingId": "باب_التهجد_بالليل",
+      "headingSha256": "9a227184bc60673eebdaf8b690132873c56cb8f425913c62b14877764ae19bf2",
+      "context": [
+        {
+          "paragraphId": "mwBg",
+          "arabicSha256": "f40f3cf8f09003678536669cb5ce5eb24b0c75714657cdc7da649d3425f22615"
+        }
+      ],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-02",
+      "headingId": "باب_فضل_قيام_الليل",
+      "headingSha256": "314f6ea5bd259244e5a46297d13aedf23ff61a4e510e7561b0f1fca5e10dbd14",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-03",
+      "headingId": "باب_طول_السجود_في_قيام_الليل",
+      "headingSha256": "279ba0f4467a3f99991464b8c99a6148b1c28ef79def1e11af646370f497cff3",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-04",
+      "headingId": "باب_ترك_القيام_للمريض",
+      "headingSha256": "f2509867ea412eb19f6b76c304a9c29d3d7507fae9807e0cf6c20067c8b0c7d2",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-05",
+      "headingId": "باب_تحريض_النبي_ﷺ_على_صلاة_الليل_والنوافل_من_غير_إيجاب",
+      "headingSha256": "7358bcc6e3485ca32e0e027fffa3a36b66f6f1495f339ec0e5b0e25a0aa0f24c",
+      "context": [
+        {
+          "paragraphId": "mwHQ",
+          "arabicSha256": "9c4d6e6edfbe5ba74a355481fab4c72e54bedac0266519fb3da50829e5d5bf5a"
+        }
+      ],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-06",
+      "headingId": "باب_قيام_النبي_ﷺ_حتى_ترم_قدماه",
+      "headingSha256": "8d24d4b8872968403444e802116c5730d8fd1e8a24dcd5a14413217c5ba41bb6",
+      "context": [
+        {
+          "paragraphId": "mwKw",
+          "arabicSha256": "69bdf401e20fc7f1b711abbfb376dd87c3719c684dfdae7892ac2035dce2dda2"
+        }
+      ],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-07",
+      "headingId": "باب_من_نام_عند_السحر",
+      "headingSha256": "0cab0af43fb39d2a34deccaf4c3a9b194bf626f612a8ee102e55e2d0dcfde235",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-08",
+      "headingId": "باب_من_تسحر_فلم_ينم_حتى_صلى_الصبح",
+      "headingSha256": "cff3540de32957a544f1b8a782e9b5f26c729203a247dbd67c17163e2167e143",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-09",
+      "headingId": "باب_طول_القيام_في_صلاة_الليل",
+      "headingSha256": "537bb83b4291366fa56d3b2b8bd503ea3dce7b0fff8ee0927197cc19c5c8dae1",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-10",
+      "headingId": "باب_كيف_كان_صلاة_النبي_ﷺ_وكم_كان_النبي_ﷺ_يصلي_من_الليل",
+      "headingSha256": "c66a090e6519d70ce8ea3c2b58e686f4be9c0b79363e4c9963be8eb92542f22c",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-11",
+      "headingId": "باب_قيام_النبي_ﷺ_بالليل_ونومه_وما_نسخ_من_قيام_الليل",
+      "headingSha256": "375b1e80f4eb5e919c2787cb18afb8e70a780114ac0b3f7be1ea5a9089b0603f",
+      "context": [
+        {
+          "paragraphId": "mwTA",
+          "arabicSha256": "60c543e09e68b033a393db352efc3fcf5f8a7a0457f04ba6dc6c35966b56b149"
+        }
+      ],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-12",
+      "headingId": "باب_عقد_الشيطان_على_قافية_الرأس_إذا_لم_يصل_بالليل",
+      "headingSha256": "d91795915d0e89ea7cc384d3069b23143ae085fda6d19c909f0740b10b666b74",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-13",
+      "headingId": "باب_إذا_نام_ولم_يصل_بال_الشيطان_في_أذنه",
+      "headingSha256": "4e12a6650b910e34cefc75a47bad3e1825c7257147fe112f7470b8fd280f6a4b",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-14",
+      "headingId": "باب_الدعاء_والصلاة_من_آخر_الليل",
+      "headingSha256": "2ddfedb129672211916f3b56a5a31be56605e8164b46ab16f9fc37d2633d5e3c",
+      "context": [
+        {
+          "paragraphId": "mwWA",
+          "arabicSha256": "69aff4ed4aaa19b37aa37083113672ee68a839152f3469b4ce56889751def843"
+        }
+      ],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-15",
+      "headingId": "باب_من_نام_أول_الليل_وأحيا_آخره",
+      "headingSha256": "f3deb33b05df31c510fc319326c978a76eb61f0c392facd3f5c92c7cec89af4c",
+      "context": [
+        {
+          "paragraphId": "mwXA",
+          "arabicSha256": "a33592e9bf247950849f101dd5593096365f6cec0cf40a04b0dc418fd8f7361e"
+        }
+      ],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-16",
+      "headingId": "باب_قيام_النبي_ﷺ_بالليل_في_رمضان_وغيره",
+      "headingSha256": "a40691ae7a67310aee5377e645ae6152fd2a96d60092979cc16dd45dbb74d6e6",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-17",
+      "headingId": "باب_فضل_الطهور_بالليل_والنهار_وفضل_الصلاة_بعد_الوضوء_بالليل_والنهار",
+      "headingSha256": "fd2fd7e5592808a9a0b6d6d3afe417dcfd89137741a821971e89725907dbdc97",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-18",
+      "headingId": "باب_ما_يكره_من_التشديد_في_العبادة",
+      "headingSha256": "eaf8bed6d82cf55a74c6ec5498c7a608992580e4793954920d89706c459fef38",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-19",
+      "headingId": "باب_ما_يكره_من_ترك_قيام_الليل_لمن_كان_يقومه",
+      "headingSha256": "84e9342f8e24ec24001c0d98fcbca9b7170280449714bcb3a9c71d2d72ce8ee0",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-20",
+      "headingId": "باب_فضل_من_تعار_من_الليل_فصلى",
+      "headingSha256": "ff36e38dd22a50b805dbf42048f58a3cff9e8bf8b8eafc9ea6ded6a23c20e438",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-21",
+      "headingId": "باب_المداومة_على_ركعتي_الفجر",
+      "headingSha256": "c2d54775caa3b3d77eabf297a5f0baf4d65950f1f6712e0d21f68734883281b9",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-22",
+      "headingId": "باب_الضجعة_على_الشق_الأيمن_بعد_ركعتي_الفجر",
+      "headingSha256": "e47f24571c21e0c7eab5a2ed0c03b7bdd7b90ec2d4381f4c8576888c148d8c7a",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-23",
+      "headingId": "باب_من_تحدث_بعد_الركعتين_ولم_يضطجع",
+      "headingSha256": "1bb18995f8b9a78be6ab5283eae97409050516d42fab9e19e9c20bb59cce49d0",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-24",
+      "headingId": "باب_ما_جاء_في_التطوع_مثنى_مثنى",
+      "headingSha256": "7766891ae22911a4312c047b5a26d99fa52f20ed070fcbd8f3c4133d3225c55d",
+      "context": [
+        {
+          "paragraphId": "mwkw",
+          "arabicSha256": "dccdbb2dbc71fc3ac5d639c4b83ed2629552f233a6d2d2bae5b9aa71560ddbe8"
+        }
+      ],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-25",
+      "headingId": "باب_الحديث_يعني_بعد_ركعتي_الفجر",
+      "headingSha256": "037c918445edb778a37b43a15a90ebbeb5d87fd45396cde9e124bfd230279f13",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-26",
+      "headingId": "باب_تعاهد_ركعتي_الفجر_ومن_سماهما_تطوعا",
+      "headingSha256": "3734adeb53f1410ce86f9690195f6a358ba84d16d0a3fa891ffe1bc0956f1d90",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-27",
+      "headingId": "باب_ما_يقرأ_في_ركعتي_الفجر",
+      "headingSha256": "dbaa9d25804ebee643f2c768cfe3a1d5d1e8a6f9579ed270724a7994832bb42f",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    }
+  ],
+  "poetryReport": {
+    "reference": 1104,
+    "paragraphIds": [
+      "mweA",
+      "mweg",
+      "mwew",
+      "mwfA",
+      "mwfQ",
+      "mwfg",
+      "mwfw",
+      "mwgA"
+    ],
+    "poetryParagraphIds": [
+      "mweg",
+      "mwew",
+      "mwfA",
+      "mwfQ",
+      "mwfg",
+      "mwfw"
+    ],
+    "closingRouteParagraphId": "mwgA",
+    "status": "part-of-numbered-report-not-chapter-material"
+  },
+  "sectionBoundary": {
+    "selectedLastReference": 1118,
+    "nextSelectedReference": 1119,
+    "nextSourceURL": "https://ar.wikisource.org/wiki/صحيح_البخاري/أبواب_التطوع",
+    "nextSourceRevision": 434953,
+    "nextHeadingArabic": "باب التطوع بعد المكتوبة",
+    "printedNextReferences": [
+      1172,
+      1173
+    ],
+    "printedPages": {
+      "brill-1862": [
+        295
+      ],
+      "dar-ibn-kathir-2002": [
+        283
+      ]
+    },
+    "finding": "The selected digital Night Prayer page ends at 1118. The printed book continues with material found on the separate Voluntary Prayer source page, beginning 1119. This intake covers the digital subsection, not the entire differently grouped printed book."
+  },
+  "nextActions": [
+    "Prepare complete working translations with exact presentation roles and all repeated occurrences retained.",
+    "Keep 1081 linked to its preceding narrator context; preserve combined printed mappings at 1070/1105 and separate 1080/1081 identities.",
+    "Review all recorded textual differences, especially 1069 praise clauses and 1115 narrator wording; intake applies no corrections.",
+    "Handle the separate printed untitled heading before 1102 through the existing chapter-material workflow.",
+    "Keep the poetry and closing route in 1104 complete; do not treat them as decorative art or chapter context."
+  ]
+}

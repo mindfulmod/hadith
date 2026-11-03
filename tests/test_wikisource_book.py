@@ -45,8 +45,8 @@ class KnowledgeInventoryTests(unittest.TestCase):
    with self.assertRaises(ValueError):book.extract(raw,m)
  def test_all_registered_sources_are_checked_and_intake_stays_unpublished(self):
   registry=json.loads((ROOT/'content/sources/wikisource-books.json').read_text());results=book.build_registered(registry,check=True)
-  self.assertEqual([id for id,_ in results],['faith','knowledge','ghusl','menstruation','prayer-times','fear-prayer','two-eids','witr','rain-prayer','eclipses','prostration','shortening'])
-  self.assertEqual([len(d['records'])for _,d in results],[51,76,45,37,79,6,40,14,33,24,13,39]);self.assertTrue(all(not d['readerEligible']for _,d in results))
+  self.assertEqual([id for id,_ in results],['faith','knowledge','ghusl','menstruation','prayer-times','fear-prayer','two-eids','witr','rain-prayer','eclipses','prostration','shortening','night-prayer'])
+  self.assertEqual([len(d['records'])for _,d in results],[51,76,45,37,79,6,40,14,33,24,13,39,50]);self.assertTrue(all(not d['readerEligible']for _,d in results))
   published=json.loads((ROOT/'reader/books/catalog.json').read_text());self.assertEqual(published['entries'][-1]['number'],LAST_NUMBER)
   self.assertEqual(next(b for b in published['books']if b['id']=='knowledge')['entryNumbers'],list(range(59,135)))
   self.assertNotIn('content/staging/bukhari-knowledge-wikisource', (ROOT/'reader/release.mjs').read_text())
