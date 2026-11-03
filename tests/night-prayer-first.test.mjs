@@ -86,8 +86,8 @@ test('known damaged English comparisons cannot lose their inspected evidence or 
 });
 
 test('nine complete chapters retain their three introductions outside numbered reports and narration',()=>{
- assert.equal(book.chapters.length,9);assert.deepEqual(book.chapters.flatMap(c=>c.entryNumbers),entries.map(e=>e.number));
- assert.equal(book.chapters.reduce((s,c)=>s+c.sourceContext.introduction.arabicParagraphs,0),3);
+ const firstChapters=book.chapters.slice(0,9);assert.equal(firstChapters.length,9);assert.deepEqual(firstChapters.flatMap(c=>c.entryNumbers),entries.map(e=>e.number));
+ assert.equal(firstChapters.reduce((s,c)=>s+c.sourceContext.introduction.arabicParagraphs,0),3);
  for(const id of ['mwBg','mwHQ','mwKw']){const b=inv.blocks.find(b=>b.htmlId===id);assert(!entries.some(e=>e.arabic_blocks.some(p=>p.includes(b.text))));}
  for(const change of [r=>r.chapters.splice(3,1),r=>r.chapters[5].contextIds=[],r=>r.entries.pop()]){const r=review();change(r);assert.throws(()=>buildBookBatch(inv,r,manifest,config));}
 });
@@ -113,6 +113,6 @@ test('saved sessions and source holds stay intact while the new book and its com
  const next=startSession(source.entries,1069,5);assert.equal(next.numbers[0],1069);assert(next.numbers.every(n=>source.entries.some(e=>e.number===n)));
  const notes=read('reader/source-notes.json').books.find(b=>b.id==='night-prayer');for(const route of notes.routes)assert(release.files.some(f=>f.path===route.path));
  const route=notes.routes.find(r=>r.id==='hadith-1081'),html=readFileSync(new URL('../reader/'+route.path,import.meta.url),'utf8');assert(html.includes('1132'));assert(html.includes('A separate context link opens 1080’s chain'));
- assert.deepEqual(ledger.books.flatMap(b=>b.pendingEntries||[]).map(p=>p.number),[926,957]);
+ assert.deepEqual(ledger.books.flatMap(b=>b.pendingEntries||[]).map(p=>p.number).filter(n=>n<=957),[926,957]);
  assert.equal(read('research/night-prayer-first-wording-review.json').reviewSha256,hash(review()));
 });

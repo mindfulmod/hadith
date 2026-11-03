@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-03T04:28:58.938910+00:00",
+  "status": "source-choice-pending",
+  "reviewerKind": "ai",
+  "independentReview": "pending",
+  "reference": 1115,
+  "sourceId": "wikisource-bukhari-night-prayer-r39522",
+  "sourceSha256": "7de702821576c9be6749b4af7cc676cc6a1b67185c622c52b2473e66930c6306",
+  "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1115",
+  "paragraphIds": [
+    "mwpQ"
+  ],
+  "originalArabicSha256": "5601f4f743903a3c6325823a631eaaf2ea8f652cb49c9fe70356d66dd8d39512",
+  "sourceAudit": "research/night-prayer-source-audit.json",
+  "decision": {
+    "status": "withhold-translation-and-narration",
+    "reason": "The selected digital source and historical print contain أبي between Abu al-Nadr and Abu Salamah. The modern print omits that extra narrator. Ibn Hajar explicitly calls the addition an error and points to direct routes. Retaining it as approved English or silently deleting it would conceal a material source choice. Preserve the exact original and closing Sufyan exchange pending independently reviewed source selection."
+  },
+  "classicalCommentary": {
+    "work": "Ibn Hajar · Fath al-Bari",
+    "url": "https://www.islamweb.net/ar/library/content/52/2146/",
+    "locator": "Night Prayer, Talking after the two rakahs of Fajr, closing تنبيه, volume 3 pages 54–55",
+    "observation": "Ibn Hajar explicitly rejects أبي as an unsupported addition caused by a mistaken reading of the narrator’s name and descriptor. He compares direct Abu al-Nadr → Abu Salamah routes and identifies Ali ibn al-Madini as the speaker of the closing question to Sufyan."
+  },
+  "printedSources": [
+    {
+      "label": "Historical Arabic print · Brill 1862",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+      "pdfPage": 294,
+      "printedReference": 1168,
+      "observation": "The chain includes أبي."
+    },
+    {
+      "label": "Arabic print · Dar Ibn Kathir 2002",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+      "pdfPage": 282,
+      "printedReference": 1168,
+      "observation": "The chain connects Abu al-Nadr directly to Abu Salamah, without أبي."
+    }
+  ],
+  "englishComparisons": {
+    "bewley": {
+      "displayedReference": "1115",
+      "occurrence": 1,
+      "bodySha256": "f060f287a0f054e9494676f985dbef8bbd0a58454ece04883393aecba0d4b2d0",
+      "status": "located-body-not-wording-approval",
+      "limitations": []
+    },
+    "khan": {
+      "reference": "2.21.259",
+      "recordSha256": "8b3a2b073b1a74a38d094a827cb1c3819b9388d95e6d8b9818618675e71e1a84",
+      "bodySha256": "b53b40f40d1a2bd339fa266506c20fafccc7218eb7dc1e1985cc80922d167811",
+      "status": "limited-comparison-not-wording-approval",
+      "limitations": [
+        "The full closing exchange with Sufyan about the Fajr wording is absent. This body appears earlier in this English section than the selected Arabic order."
+      ]
+    }
+  },
+  "limitations": [
+    "This is AI-assisted source research, not independent religious or linguistic review.",
+    "A pending reference is not a judgment that the hadith is inauthentic.",
+    "No change to selected Arabic, no translation, no recording and no suffix renumbering is made."
+  ]
+}

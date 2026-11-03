@@ -104,5 +104,5 @@ test('all 24 Eclipses source records and seven separate context blocks are accou
  assert.equal(book.chapters.reduce((sum,c)=>sum+c.sourceContext.introduction.arabicParagraphs,0),7);
  const last=book.chapters.find(c=>c.id==='chapter-15');assert.equal(last.sourceContext.introduction.arabicParagraphs,1);assert.equal(last.sourceContext.introduction.englishStatus,'pending');
  const context=inv.blocks.find(b=>b.htmlId==='mwWA').text;assert(entries.every(e=>!e.arabic_blocks.includes(context)));
- assert.deepEqual(read('reader/books/catalog.json').books.flatMap(b=>(b.pendingEntries||[]).map(p=>p.number)),[926,957]);
+ assert.deepEqual(read('reader/books/catalog.json').books.flatMap(b=>(b.pendingEntries||[]).map(p=>p.number)).filter(n=>n<=957),[926,957]);
 });

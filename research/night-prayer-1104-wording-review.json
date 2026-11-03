@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-03T04:28:58.938234+00:00",
+  "status": "source-choice-pending",
+  "reviewerKind": "ai",
+  "independentReview": "pending",
+  "reference": 1104,
+  "sourceId": "wikisource-bukhari-night-prayer-r39522",
+  "sourceSha256": "7de702821576c9be6749b4af7cc676cc6a1b67185c622c52b2473e66930c6306",
+  "sourceRecordId": "wikisource-bukhari-night-prayer-r39522:1104",
+  "paragraphIds": [
+    "mweA",
+    "mweg",
+    "mwew",
+    "mwfA",
+    "mwfQ",
+    "mwfg",
+    "mwfw",
+    "mwgA"
+  ],
+  "originalArabicSha256": "8e179bb804b9fb26aa114405cb6370cfccf8dee5bf3a52071eedb82e7c967afe",
+  "sourceAudit": "research/night-prayer-source-audit.json",
+  "decision": {
+    "status": "withhold-translation-and-narration",
+    "reason": "The selected Arabic does not explicitly settle the attribution in English. Ibn Hajar treats the introduction as Abu Hurayrah’s words; al-Ayni offers a Prophetic attribution through an unexpressed reporting link. The two English comparisons take different approaches. Preserve the full eight Arabic paragraphs, six verse lines and closing corroborating routes as evidence, without selecting a translated speaker."
+  },
+  "classicalCommentary": {
+    "work": "Ibn Hajar · Fath al-Bari",
+    "url": "https://www.islamweb.net/ar/library/content/52/2135/",
+    "locator": "Night Prayer, the Abu Hurayrah / Ibn Rawahah poem; discussion of إن أخا لكم and the closing Zubaydi route",
+    "observation": "Fath al-Bari identifies Abu Hurayrah as the speaker and disputes Ibn Battal’s attribution. Umdat al-Qari, in its discussion of the closing route, suggests that Abu Hurayrah omitted the reporting link to the Prophet. This is a material attribution decision, not permission to discard the poem or closing chain.",
+    "comparisonUrl": "https://www.islamweb.net/ar/library/content/303/4755/",
+    "comparisonLabel": "Al-Ayni · Umdat al-Qari · closing route discussion"
+  },
+  "printedSources": [
+    {
+      "label": "Historical Arabic print · Brill 1862",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+      "pdfPage": 291,
+      "printedReference": 1155,
+      "observation": "The complete poem and both closing routes were inspected. The present hold concerns attribution in translation, not missing Arabic paragraphs."
+    },
+    {
+      "label": "Arabic print · Dar Ibn Kathir 2002",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+      "pdfPage": 279,
+      "printedReference": 1155,
+      "observation": "The complete poem and both closing routes were inspected. The present hold concerns attribution in translation, not missing Arabic paragraphs."
+    }
+  ],
+  "englishComparisons": {
+    "bewley": {
+      "displayedReference": "1104",
+      "occurrence": 1,
+      "bodySha256": "9223ac5fe66d7bf0132c3bfb8f3cce54a8e5c0e40261d6f98b0a631475f37bb3",
+      "status": "limited-comparison-not-wording-approval",
+      "limitations": [
+        "The closing Uqayl corroboration and complete al-Zubaydi/al-Zuhri/Said/al-Araj route are reduced to an al-Araj corroboration. The poem uses a sun rendering for the selected dawn-light phrase."
+      ]
+    },
+    "khan": {
+      "reference": "2.21.254",
+      "recordSha256": "8139fa18943ff0d5050dc0aba067a939b3adbace0b44ab0e53221a5f8f57e427",
+      "bodySha256": "059a9dd0a11c3b209483b1974ba5a1330b56e7720f2d71285ba31e1334fcfd6b",
+      "status": "limited-comparison-not-wording-approval",
+      "limitations": [
+        "The statement about Ibn Rawahah is attributed to the Prophet rather than retained as Abu Hurayrah speaking while mentioning him. The full closing corroborating routes are absent."
+      ]
+    }
+  },
+  "limitations": [
+    "This is AI-assisted source research, not independent religious or linguistic review.",
+    "A pending reference is not a judgment that the hadith is inauthentic.",
+    "No change to selected Arabic, no translation, no recording and no suffix renumbering is made."
+  ]
+}
