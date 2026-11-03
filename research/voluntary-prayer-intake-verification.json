@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-03T04:54:15.934299+00:00",
+  "status": "source-intake-validated-no-reader-admission",
+  "baselineCommit": "adb4285cfd8fae9c62fcf5d9b5917c9f131f3811",
+  "sourceAudit": "research/voluntary-prayer-source-audit.json",
+  "sourceInventory": {
+    "unchangedArabicCodePoints": 4995,
+    "blocks": 24,
+    "chapters": 9,
+    "numberedReports": 13,
+    "separateContextBlocks": 2,
+    "blankBlocks": 0
+  },
+  "comparisons": {
+    "printedPdfPagesVisuallyInspected": {
+      "brill-1862": [
+        295,
+        296,
+        297,
+        298,
+        299
+      ],
+      "dar-ibn-kathir-2002": [
+        283,
+        284,
+        285,
+        286,
+        287
+      ]
+    },
+    "bothPdfBytesRehashed": true,
+    "modernPrintedReferencesAccountedFor": 16,
+    "combinedDigitalReferences": [
+      1119,
+      1126,
+      1130
+    ],
+    "missingPrintedReports": [],
+    "bewleySnapshotRehashedAndLocatorBodiesChecked": 13,
+    "khanActualEpubRecordsChecked": 13,
+    "khanIrregularReferenceMap": {
+      "1125": "2.21.275t"
+    },
+    "khanAbsenceReferences": [],
+    "unresolvedTextualDifferencesNotApplied": [
+      "1119-closing-order",
+      "1121-yahya-identification",
+      "1122-amr-reporting-verb",
+      "1123-messenger-designation",
+      "1124-abbas-identification",
+      "1124-friend-honorific",
+      "1125-jarud-name",
+      "1128-narrator-identifications",
+      "1129-abd-allah-identification",
+      "1129-messenger-designation",
+      "1130-opening-reporting-verbs",
+      "1130-malik-identification",
+      "chapter-08-honorific"
+    ],
+    "proposedCorrectionsNotApplied": [],
+    "selectedLastReference": 1131,
+    "fullPrintedBookWordingApprovalClaimed": false
+  },
+  "checks": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p 'test_*.py'",
+      "passed": 201,
+      "failed": 0,
+      "scope": "Full Python suite, including fifteen new source-integrity tests; the source registry fixture now includes the fourteenth inventory."
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 scripts/import-wikisource-book.py --check",
+      "status": "passed",
+      "scope": "All fourteen registered Arabic inventories, exact block ownership and candidate-only status."
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 scripts/check-voluntary-prayer-intake.py --bewley-html <retained-page> --brill-pdf <retained-print> --modern-pdf <retained-print>",
+      "status": "passed",
+      "scope": "Unchanged Arabic, exact print mapping, all thirteen web body locators, all thirteen actual EPUB body hashes including 275t, both retained PDF hashes and generated review page. An initial incorrect absence hypothesis was rejected by the adjacency check; the actual 275t body was located before final evidence was accepted."
+    },
+    {
+      "command": "node --test tests/deployment.test.mjs",
+      "passed": 7,
+      "failed": 0,
+      "scope": "Public artifact boundaries and link checks. Reader runtime remains byte-identical to the previously tested release; the full Node suite was not rerun for this source-only intake."
+    }
+  ],
+  "browser": {
+    "checkedAt": "2026-11-03T04:52:08.217Z",
+    "scope": "Isolated desktop Chromium source-review page; not physical iPhone or reader-runtime acceptance",
+    "results": [
+      {
+        "theme": "light",
+        "viewportWidth": 320,
+        "documentWidth": 320,
+        "exactReports": 13,
+        "exactChapterBlocks": 11,
+        "variantExpanded": true,
+        "allArabicAccessible": true,
+        "referenceTargetsAtLeast44px": true
+      },
+      {
+        "theme": "light",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "exactReports": 13,
+        "exactChapterBlocks": 11,
+        "variantExpanded": true,
+        "allArabicAccessible": true,
+        "referenceTargetsAtLeast44px": true
+      },
+      {
+        "theme": "light",
+        "viewportWidth": 1280,
+        "documentWidth": 1280,
+        "exactReports": 13,
+        "exactChapterBlocks": 11,
+        "variantExpanded": true,
+        "allArabicAccessible": true,
+        "referenceTargetsAtLeast44px": true
+      },
+      {
+        "theme": "dark",
+        "viewportWidth": 320,
+        "documentWidth": 320,
+        "exactReports": 13,
+        "exactChapterBlocks": 11,
+        "variantExpanded": true,
+        "allArabicAccessible": true,
+        "referenceTargetsAtLeast44px": true
+      },
+      {
+        "theme": "dark",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "exactReports": 13,
+        "exactChapterBlocks": 11,
+        "variantExpanded": true,
+        "allArabicAccessible": true,
+        "referenceTargetsAtLeast44px": true
+      },
+      {
+        "theme": "dark",
+        "viewportWidth": 1280,
+        "documentWidth": 1280,
+        "exactReports": 13,
+        "exactChapterBlocks": 11,
+        "variantExpanded": true,
+        "allArabicAccessible": true,
+        "referenceTargetsAtLeast44px": true
+      }
+    ],
+    "errors": [],
+    "status": "passed"
+  },
+  "screenshotsVisuallyInspected": [
+    "content/review/evidence/voluntary-prayer-intake-light.png",
+    "content/review/evidence/voluntary-prayer-intake-dark.png",
+    "content/review/evidence/voluntary-prayer-long-report-light.png",
+    "content/review/evidence/voluntary-prayer-long-report-dark.png"
+  ],
+  "preservation": {
+    "baselineCommit": "adb4285cfd8fae9c62fcf5d9b5917c9f131f3811",
+    "filesByteIdentical": 984,
+    "scope": "Every existing reader, audio, landscape, review, source and staged-source file; only the source registry gains the new candidate. No reader rebuild or runtime change.",
+    "readerEntries": 1119,
+    "readerSections": 20,
+    "recordings": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "pendingReferences": [
+      926,
+      957,
+      1104,
+      1115
+    ],
+    "readerRelease": "opening-9692ccd14042",
+    "preservedNarrationJob": "content/audio/jobs/hadith-7-cedar-v1.json"
+  },
+  "audioDecision": {
+    "userSelected": "Continue text expansion; keep audio on the free demo",
+    "paidApiAccessAuthorized": false,
+    "newGenerationAttempted": false,
+    "completeRecordingsRemain": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "partialHadith7Admitted": false
+  },
+  "limitations": [
+    "Source intake and AI comparison are not exhaustive lexical agreement, English wording approval or independent scholarly certification.",
+    "No new reader entry, correction, chapter translation or recording was admitted. Complete wording and role review remains the next step.",
+    "Desktop source-review checks do not establish new physical-iPhone or locked-screen acceptance.",
+    "No external publication or communication performed."
+  ],
+  "distinctTestsPassed": 208,
+  "packaging": {
+    "status": "passed",
+    "publicFiles": 657,
+    "readerRelease": "opening-9692ccd14042",
+    "readerFilesChanged": false,
+    "sourceIntakeAndAudioJobsExcluded": true,
+    "externalPublication": false
+  }
+}

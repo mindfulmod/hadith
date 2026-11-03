@@ -1,0 +1,1152 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-03T04:50:11.463303+00:00",
+  "status": "source-intake-compared-wording-review-pending",
+  "readerAdmission": false,
+  "reviewerKind": "ai",
+  "independentReview": "pending",
+  "scope": "Complete selected source ownership and printed-occurrence mapping with individually located English comparisons. Non-exhaustive AI comparison, not independent accuracy certification, English wording approval, religious interpretation or reuse-rights clearance.",
+  "source": {
+    "path": "content/sources/wikisource-voluntary-prayer/source.html",
+    "id": "wikisource-bukhari-voluntary-prayer-r434953",
+    "revision": 434953,
+    "sha256": "cacd4a2f596635630d33bbcc341d277d737597a22105709319e0b5caa4b6ccea",
+    "bytes": 103372,
+    "inventorySha256": "8570e672ec53e8071f37452b7ccf4fb84de7ba512d899ca5d5631f75a06b8e3d",
+    "blocks": 24,
+    "codePoints": 4995,
+    "numberedReports": 13,
+    "chapters": 9,
+    "separateContextIds": [
+      "mwFw",
+      "mwKg"
+    ],
+    "blankIds": [],
+    "arabicChanged": false
+  },
+  "printedComparisons": [
+    {
+      "id": "brill-1862",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+      "bytes": 28290204,
+      "inspectedPdfPages": [
+        295,
+        296,
+        297,
+        298,
+        299
+      ]
+    },
+    {
+      "id": "dar-ibn-kathir-2002",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+      "bytes": 45304371,
+      "inspectedPdfPages": [
+        283,
+        284,
+        285,
+        286,
+        287
+      ]
+    }
+  ],
+  "printedReferenceNamespace": "Dar Ibn Kathir 2002 numbering; historical occurrences matched by contents and PDF pages, not those modern numbers.",
+  "modernPrintedOccurrencesAccountedFor": 16,
+  "englishComparisons": {
+    "commonLimitations": [
+      "Both English families generally abbreviate opening chains and may handle honorifics differently. A located body is comparison evidence, not a complete chain translation or wording approval.",
+      "Headings, theological wording, implicit references and explanatory additions require separate review against the selected Arabic."
+    ],
+    "bewley": {
+      "url": "https://aishabewley.org/bukhari10",
+      "sha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+      "bytes": 102307,
+      "locatorPolicy": "Split HTML p/h1-h6 boundaries, decode entities and collapse whitespace inside blocks. Bound the subsection at displayed labels 1119 and 1132, with numeric labels only at paragraph starts. Each body may include the following chapter heading/context; those blocks do not thereby become part of a numbered Arabic report.",
+      "locatedBodies": 13,
+      "followingBoundaryLabel": "1132"
+    },
+    "khan": {
+      "sourcePath": "content/sources/islamhouse-bukhari/source.epub",
+      "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+      "section": "OPS/section-0023.html",
+      "locatedRecords": 13,
+      "mappedArabicReports": 13,
+      "absentReferences": [],
+      "range": "2.21.269–280, including the distinct 2.21.275t label",
+      "irregularReferenceMap": {
+        "1125": "2.21.275t"
+      },
+      "allRecordedBodyHashesCheckedAgainstPinnedEpub": true
+    }
+  },
+  "records": [
+    {
+      "reference": 1119,
+      "sourceRecordId": "wikisource-bukhari-voluntary-prayer-r434953:1119",
+      "chapterId": "chapter-01",
+      "paragraphIds": [
+        "mwBg"
+      ],
+      "arabicSha256": "e31bd232f6533c7f0d641093aae1ef2a94b9044865e9e7092b7d0fe79968917d",
+      "printedReferences": [
+        1172,
+        1173
+      ],
+      "printedPages": {
+        "brill-1862": [
+          295
+        ],
+        "dar-ibn-kathir-2002": [
+          283
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1119",
+          "occurrence": 1,
+          "bodySha256": "feed8e1d116b9a9217fcc3d6895003647703f544bc4fe4e7bb4afa98a1d1ca68",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The Hafsah passage and the family-at-Isha wording are rearranged, while the named Ibn Abi al-Zinad/Musa ibn Uqbah route and Kathir ibn Farqad/Ayyub corroboration are abbreviated. Do not use this comparison to reconstruct the complete selected closing routes."
+          ]
+        },
+        "khan": {
+          "reference": "2.21.269",
+          "recordSha256": "ffd64950138b6c1f8e819588750fa3d6c4c28de4e677fc36ff30cfc6259ee3d8",
+          "bodySha256": "5f37a3b4bc72ac4c5e69e70970b54f283f22f13bd50d3340cbb542143305a379",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The complete closing Ibn Abi al-Zinad/Musa ibn Uqbah/Nafi route and Kathir ibn Farqad/Ayyub corroboration are absent."
+          ]
+        }
+      },
+      "finding": "The complete five-pair account, Hafsah passage and both closing routes occupy one selected paragraph. Modern 1172/1173 split and repeat closing material; all selected passages remain one app reference."
+    },
+    {
+      "reference": 1120,
+      "sourceRecordId": "wikisource-bukhari-voluntary-prayer-r434953:1120",
+      "chapterId": "chapter-02",
+      "paragraphIds": [
+        "mwCw"
+      ],
+      "arabicSha256": "5e3359d192f76203d26b978785836c276f9518f9261b0277778aee302fa3aae1",
+      "printedReferences": [
+        1174
+      ],
+      "printedPages": {
+        "brill-1862": [
+          295
+        ],
+        "dar-ibn-kathir-2002": [
+          283
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1120",
+          "occurrence": 1,
+          "bodySha256": "b82fe3f9c1cc10cde30877874b8225fd16d6d350fd6c5fe834168273e269c53e",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "Prayer names are supplied in the initial eight/seven-unit statement. The selected statement gives the counts together without those parenthetical identifications."
+          ]
+        },
+        "khan": {
+          "reference": "2.21.270",
+          "recordSha256": "280e5f6abaad6a74d3f0071846ff76b6d8696ede524116262171fe343ce8f9c6",
+          "bodySha256": "ef9c8b6e59c16c08ff0eb4d543a6caf1d3812ea0452b43f2ca5bb94b05878511",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The opening eight/seven-unit statement supplies parenthetical prayer names absent from that selected clause."
+          ]
+        }
+      },
+      "finding": "Keep the eight-together/seven-together statement and the full later question and answer. The order of the Isha and Maghrib timing clauses stays as selected."
+    },
+    {
+      "reference": 1121,
+      "sourceRecordId": "wikisource-bukhari-voluntary-prayer-r434953:1121",
+      "chapterId": "chapter-03",
+      "paragraphIds": [
+        "mwDg"
+      ],
+      "arabicSha256": "480bb554ae69cce9c7a2e2e4f259718cf64f5ad607420fe405194e9c74684f76",
+      "printedReferences": [
+        1175
+      ],
+      "printedPages": {
+        "brill-1862": [
+          295,
+          296
+        ],
+        "dar-ibn-kathir-2002": [
+          283
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1121",
+          "occurrence": 1,
+          "bodySha256": "8e9d72f9bfdf57a8db62ad44a8602ba804da8e4090b031e15801d0a6430f16bf",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.271",
+          "recordSha256": "d20822276a8550f067da22dbb6ec18f4508cfbe5c7a3c599ededddd870d34320",
+          "bodySha256": "cbb1cbacfd2ca65cd3764f2edb142b3393b1c78b5eb9b67eff92cbcb77708ef9",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "Keep all four questions, the three negative answers and the final uncertainty; do not harmonize the answer with a later Duha report."
+    },
+    {
+      "reference": 1122,
+      "sourceRecordId": "wikisource-bukhari-voluntary-prayer-r434953:1122",
+      "chapterId": "chapter-03",
+      "paragraphIds": [
+        "mwEA"
+      ],
+      "arabicSha256": "d1dc77958f7faf02027e42de0e65e155155f7a0a21c62af6c7c30f960fa1f45f",
+      "printedReferences": [
+        1176
+      ],
+      "printedPages": {
+        "brill-1862": [
+          296
+        ],
+        "dar-ibn-kathir-2002": [
+          283
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1122",
+          "occurrence": 1,
+          "bodySha256": "f2d2d4fe0e27265d3c9e3e48dc0f948afda3dd170ac9ae9b46034657bb3c0f6c",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The selected lighter-prayer wording is rendered as more rudimentary. Preserve both the lightness comparison and the completion of bowing and prostration without importing that characterization."
+          ]
+        },
+        "khan": {
+          "reference": "2.21.272",
+          "recordSha256": "2bf4bc8d67538d5149421404a02a0f13906e89ad712b311dd02edfab852052ce",
+          "bodySha256": "8cb83d5ed6d338638caa0e161002fa04b9605170fcba99a45cdf7d97ed6a4b85",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The selected no-one-informed-us construction becomes narrated-to-me. The English also supplies Duha in a parenthesis after the eight units."
+          ]
+        }
+      },
+      "finding": "Keep both Prophet honorifics, entry into her home, bathing, eight units, lightness and completed bowing/prostration. Preserve the selected us and the shift to her first-person observation."
+    },
+    {
+      "reference": 1123,
+      "sourceRecordId": "wikisource-bukhari-voluntary-prayer-r434953:1123",
+      "chapterId": "chapter-04",
+      "paragraphIds": [
+        "mwFA"
+      ],
+      "arabicSha256": "dd77f6dc0a62eb0d3b089df386748c7ec0d836a2de45c05e3dd264fe617fb992",
+      "printedReferences": [
+        1177
+      ],
+      "printedPages": {
+        "brill-1862": [
+          296
+        ],
+        "dar-ibn-kathir-2002": [
+          283
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1123",
+          "occurrence": 1,
+          "bodySha256": "f11f79d36a8ca3dd72eb07315e35cfac3f131c03acbd8ed4806a03b77516ec55",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.273",
+          "recordSha256": "5205c8ba1d3aa0f2b6de3058e5573632fe5e92980956ddf689abc5d24f929900",
+          "bodySha256": "3a6f106ac9e04e0caa6ebeff5e049f519ce0af576950c838b4688ecd70a74af3",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The selected Messenger of Allah is rendered as Prophet; always is added to the final statement about performing the prayer."
+          ]
+        }
+      },
+      "finding": "The two short Duha clauses remain together, with the selected Messenger designation and no added always."
+    },
+    {
+      "reference": 1124,
+      "sourceRecordId": "wikisource-bukhari-voluntary-prayer-r434953:1124",
+      "chapterId": "chapter-05",
+      "paragraphIds": [
+        "mwGQ"
+      ],
+      "arabicSha256": "3dca9c2a8cd6eb4a333c81b630f52a5fc71711f4a38df5bab8b5e10f18ac2806",
+      "printedReferences": [
+        1178
+      ],
+      "printedPages": {
+        "brill-1862": [
+          296
+        ],
+        "dar-ibn-kathir-2002": [
+          284
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1124",
+          "occurrence": 1,
+          "bodySha256": "ab01de6eccd91434d09d0bae39b3ffbf0028df20b32a0407d359207e0e92336d",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.274",
+          "recordSha256": "bfc6539c7741a8e4a56e766b8146421d47e4386954b3f8eda6210bd813662479",
+          "bodySha256": "9adedf4a2bf6768cfe9288460889c1e9a704e3c078c76632dbed8eaf31fc254c",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The identification the Prophet is supplied in parentheses after my friend, although it is not explicit in this selected occurrence."
+          ]
+        }
+      },
+      "finding": "Keep Abbas al-Jurayri identified as Ibn Farrukh in the selected chain. All three recommendations and the until-death commitment remain; the historical witness has a different identification and additional honorific."
+    },
+    {
+      "reference": 1125,
+      "sourceRecordId": "wikisource-bukhari-voluntary-prayer-r434953:1125",
+      "chapterId": "chapter-05",
+      "paragraphIds": [
+        "mwGg"
+      ],
+      "arabicSha256": "f93a35ce3ccf688c78e78342729f153a5b0e539e57d86ccf0d6efbdd7af9fd47",
+      "printedReferences": [
+        1179
+      ],
+      "printedPages": {
+        "brill-1862": [
+          296
+        ],
+        "dar-ibn-kathir-2002": [
+          284
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1125",
+          "occurrence": 1,
+          "bodySha256": "d057928d99061de9c426faff92ec23f52fe9837cc99430231edc6596cf7461ca",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.275t",
+          "recordSha256": "72cb95bc905fc05399468896db1d653509964fa2be8c5e64adc0c3861ea926b2",
+          "bodySha256": "518197edf17810b23359cf37d39b39d5f7e1e1ddb8bdb022fc9a3132eb69966c",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The selected sprinkling of the mat is rendered as washing, and the name Jarud gains the definite article. The comparison supplies a Duha parenthesis in the closing answer. Its distinct displayed label 275t must not be confused with the following 275 entry."
+          ]
+        }
+      },
+      "finding": "Retain the full Anas ibn Sirin route, the entire home-prayer account and the later question by the unnamed son-of-son-of-Jarud. The English body uses the distinct label 2.21.275t; do not confuse it with the following 2.21.275 ten-unit report."
+    },
+    {
+      "reference": 1126,
+      "sourceRecordId": "wikisource-bukhari-voluntary-prayer-r434953:1126",
+      "chapterId": "chapter-06",
+      "paragraphIds": [
+        "mwHw"
+      ],
+      "arabicSha256": "e1ccec5aa009382883525e8aa4b8c5cf213318db1de400fd3c64b173135664a5",
+      "printedReferences": [
+        1180,
+        1181
+      ],
+      "printedPages": {
+        "brill-1862": [
+          296,
+          297
+        ],
+        "dar-ibn-kathir-2002": [
+          284
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1126",
+          "occurrence": 1,
+          "bodySha256": "34572aad57768f1d5e3ac0e4b9898024daace0ca0948d870cbdf155117576fd5",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The selected in-his-house phrase after Isha is absent, although the house phrase after Maghrib remains."
+          ]
+        },
+        "khan": {
+          "reference": "2.21.275",
+          "recordSha256": "4af9090b8b923b1dbbb959a89ff271c8a83760da0e3be4df8d770515b708943a",
+          "bodySha256": "c90818dbd71bffc4cbd9fbda225ae1fa34426660b7cc2e2f2eb194051a37239b",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The explanation of Nawafil and an explicit house object in the no-entry clause are supplied. Retain the selected clauses without importing those expansions."
+          ]
+        }
+      },
+      "finding": "Keep all five pairs, both separate in-his-house clauses and the complete Hafsah continuation. Modern 1180/1181 divide this single selected paragraph."
+    },
+    {
+      "reference": 1127,
+      "sourceRecordId": "wikisource-bukhari-voluntary-prayer-r434953:1127",
+      "chapterId": "chapter-06",
+      "paragraphIds": [
+        "mwIg"
+      ],
+      "arabicSha256": "3e379da21d4b85367d030d6aef70212edcc0c63d6e21c32fd7bbf4173e2c8f48",
+      "printedReferences": [
+        1182
+      ],
+      "printedPages": {
+        "brill-1862": [
+          297
+        ],
+        "dar-ibn-kathir-2002": [
+          284
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1127",
+          "occurrence": 1,
+          "bodySha256": "aa8d5b93cbe882c1ff3e83d3e62900de1429980ff3f39c7f12cb01ad7325f0bd",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.276",
+          "recordSha256": "bbb3b8ba3d85f30d316457437a97cb1dc5aa799fae6bc95b8623ea0daa5b0982",
+          "bodySha256": "9d90520986d9197906cde7d833268a611932f12bdb65febfcd59589df0c99c95",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The complete Ibn Abi Adi and Amr corroboration from Shubah is absent."
+          ]
+        }
+      },
+      "finding": "Keep the four-before-Dhuhr/two-before-morning wording and both closing corroborators from Shubah."
+    },
+    {
+      "reference": 1128,
+      "sourceRecordId": "wikisource-bukhari-voluntary-prayer-r434953:1128",
+      "chapterId": "chapter-07",
+      "paragraphIds": [
+        "mwJQ"
+      ],
+      "arabicSha256": "d24a9a23d5e45a426b10a67925f7017782bdeae0e5b4b583136ed89731a483ce",
+      "printedReferences": [
+        1183
+      ],
+      "printedPages": {
+        "brill-1862": [
+          297
+        ],
+        "dar-ibn-kathir-2002": [
+          284
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1128",
+          "occurrence": 1,
+          "bodySha256": "6e5bc50e1792b3e7a7522965b42a7e5f88668c1ebe24c225b56af3ebf1fd3d9d",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.277",
+          "recordSha256": "97c186d8bcaf74279563a9dff635dd174812e716a5d2fb2ce7f86a2d1364e269",
+          "bodySha256": "7f2b0c59d1c34f21eccba9b48b8167f9a2cfc0169187bbe16f93d91c6353f6eb",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The comparison supplies compulsory and an explanatory said-it-thrice parenthesis. Retain the actual quoted wording and the third-time qualifier without adding duplicated quotations."
+          ]
+        }
+      },
+      "finding": "Keep the third-time qualification and the closing sunna clause. Neither a legal ruling nor repeated quotation text is supplied by this intake."
+    },
+    {
+      "reference": 1129,
+      "sourceRecordId": "wikisource-bukhari-voluntary-prayer-r434953:1129",
+      "chapterId": "chapter-07",
+      "paragraphIds": [
+        "mwJw"
+      ],
+      "arabicSha256": "a4c3eb509d88f968a26b988192222dacc6fbd4a2b9071f546ac154e922c3ca4a",
+      "printedReferences": [
+        1184
+      ],
+      "printedPages": {
+        "brill-1862": [
+          297
+        ],
+        "dar-ibn-kathir-2002": [
+          284,
+          285
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1129",
+          "occurrence": 1,
+          "bodySha256": "ad56ac7142581ebd2b2cd5c58e11426aad15b3e4f0db95d577f0ef37e50fb43e",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The selected honorific following the Messenger of Allah is absent in this comparison body. Business is a narrower rendering of the closing occupation/preoccupation wording."
+          ]
+        },
+        "khan": {
+          "reference": "2.21.278",
+          "recordSha256": "5046e3a3f06b798a25c502a6044ca3bc65cc263b7440cc159e07c289c20bb8b5",
+          "bodySha256": "ac9cd5f479a7c10a3d59fde60b43b4f0d315bca6f9ab2cafe6044eed44bc729e",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "Business narrows the selected closing occupation/preoccupation wording."
+          ]
+        }
+      },
+      "finding": "Preserve the complete Marthad/Uqbah exchange and its closing reason. Historical chain identifications and Prophet designation differ from the selected source."
+    },
+    {
+      "reference": 1130,
+      "sourceRecordId": "wikisource-bukhari-voluntary-prayer-r434953:1130",
+      "chapterId": "chapter-08",
+      "paragraphIds": [
+        "mwLA"
+      ],
+      "arabicSha256": "86a31752c53a0001e52bae5eb5245c8ae9f699e26d27d363c23529d148215072",
+      "printedReferences": [
+        1185,
+        1186
+      ],
+      "printedPages": {
+        "brill-1862": [
+          297,
+          298
+        ],
+        "dar-ibn-kathir-2002": [
+          285,
+          286
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1130",
+          "occurrence": 1,
+          "bodySha256": "dbff13fa3d9846b7ffd3d3656b3fbaf5ae6741960351e7c3802740e998b1511b",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The Badr clause omits the selected with-the-Messenger phrase and its honorific; another Messenger honorific is represented by an asterisk. The eyesight request adds inability to lead prayer, and the food is glossed as meat soup. Loving and advising replaces the selected affection and conversation wording. These comparison choices must not overwrite the selected occurrence."
+          ]
+        },
+        "khan": {
+          "reference": "2.21.279",
+          "recordSha256": "a70aead51a3cd30a9755a4eb17cf2ef3383d1360481fef8e8fd49635ecfe8ebb",
+          "bodySha256": "8ec9a6dc6dd679b105855f87887cf871efaf8e566e3cec529720260efd262652",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The meal is changed from being prepared to which I had prepared, with an added food recipe. The selected face-of-Allah wording is paraphrased as sake/pleasures, affection and conversation becomes helping and talking, and the first-person return becomes when he returned. Retain the complete Abu Ayyub objection and later Itban rechecking without these substitutions."
+          ]
+        }
+      },
+      "finding": "Preserve the opening Mahmud memory, complete Itban account, Abu Ayyub objection, vow, Hajj-or-Umrah uncertainty and later rechecking through the final first-time comparison. Modern 1185/1186 split the opening memory from the remainder; do not shorten the entry at the Prophetic quotation."
+    },
+    {
+      "reference": 1131,
+      "sourceRecordId": "wikisource-bukhari-voluntary-prayer-r434953:1131",
+      "chapterId": "chapter-09",
+      "paragraphIds": [
+        "mwOg"
+      ],
+      "arabicSha256": "e061f82a36ab1dd55284e2750b68af8b6483cc6c37493aa0f76818d95b2479ae",
+      "printedReferences": [
+        1187
+      ],
+      "printedPages": {
+        "brill-1862": [
+          298,
+          299
+        ],
+        "dar-ibn-kathir-2002": [
+          286
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1131",
+          "occurrence": 1,
+          "bodySha256": "8ccb489b407f22076df46d02a8c2660c6885d64dd2d9b7cad6a6d82341f0e626",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.280",
+          "recordSha256": "ae05d2f92c3af9a9672cdeec3a7d1ee09da6ab173adcf2aa0d65bf941a4870a8",
+          "bodySha256": "7d4be332751dcc52b131f54a52cd0f7bc8e483888f00a4d1a03e61f7154ca5de",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The closing Abd al-Wahhab corroboration from Ayyub is absent."
+          ]
+        }
+      },
+      "finding": "Retain the paired Ayyub/Ubayd Allah route, full home/graves statement and Abd al-Wahhab corroboration. Both prints end the Night Prayer book here."
+    }
+  ],
+  "missingPrintedReports": [],
+  "combinedDigitalReferences": [
+    {
+      "reference": 1119,
+      "paragraphId": "mwBg",
+      "sourceBlockSha256": "e31bd232f6533c7f0d641093aae1ef2a94b9044865e9e7092b7d0fe79968917d",
+      "printedReferences": [
+        1172,
+        1173
+      ],
+      "boundaries": [
+        {
+          "text": "وحدثتني أختي حفصة",
+          "start": 245
+        }
+      ],
+      "finding": "The mapped printed passages are already present in this one selected digital paragraph. Keep the complete selected entry; no suffixed omission is established."
+    },
+    {
+      "reference": 1126,
+      "paragraphId": "mwHw",
+      "sourceBlockSha256": "e1ccec5aa009382883525e8aa4b8c5cf213318db1de400fd3c64b173135664a5",
+      "printedReferences": [
+        1180,
+        1181
+      ],
+      "boundaries": [
+        {
+          "text": "حدثتني حفصة",
+          "start": 271
+        }
+      ],
+      "finding": "The mapped printed passages are already present in this one selected digital paragraph. Keep the complete selected entry; no suffixed omission is established."
+    },
+    {
+      "reference": 1130,
+      "paragraphId": "mwLA",
+      "sourceBlockSha256": "86a31752c53a0001e52bae5eb5245c8ae9f699e26d27d363c23529d148215072",
+      "printedReferences": [
+        1185,
+        1186
+      ],
+      "boundaries": [
+        {
+          "text": "فزعم محمود",
+          "start": 164
+        }
+      ],
+      "finding": "The mapped printed passages are already present in this one selected digital paragraph. Keep the complete selected entry; no suffixed omission is established."
+    }
+  ],
+  "sharedPrintedReferences": [],
+  "printedHeadingProposals": [],
+  "proposedCorrections": [],
+  "unresolvedTextualDifferences": [
+    {
+      "id": "1119-closing-order",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwBg",
+      "sourceBlockSha256": "e31bd232f6533c7f0d641093aae1ef2a94b9044865e9e7092b7d0fe79968917d",
+      "sourceReading": "وقال ابن أبي الزناد عن موسى بن عقبة عن نافع بعد العشاء في أهله تابعه كثير بن فرقد وأيوب عن نافع",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 295,
+          "reading": "تابعه كثير بن فرقد وأيوب عن نافع وقال ابن أبي الزناد عن موسى بن عقبة عن نافع بعد العشاء في أهله",
+          "readingSha256": "2fafa23174d677f6cea57378da4ea8e592cf05367f819980a05813af4d0285dc",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 283,
+          "reading": "تابعه كثير بن فرقد وأيوب عن نافع وقال ابن أبي الزناد عن موسى بن عقبة عن نافع بعد العشاء في أهله",
+          "readingSha256": "2fafa23174d677f6cea57378da4ea8e592cf05367f819980a05813af4d0285dc",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        }
+      ],
+      "finding": "After the Hafsah passage, the historical and modern closing routes appear in the opposite order to the selected digital paragraph. Modern 1172 also has closing material before the separately numbered Hafsah continuation. Preserve the selected sequence; do not duplicate printed overlap.",
+      "transcriptionPolicy": "Retain the selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "1121-yahya-identification",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwDg",
+      "sourceBlockSha256": "480bb554ae69cce9c7a2e2e4f259718cf64f5ad607420fe405194e9c74684f76",
+      "sourceReading": "حدثنا يحيى عن شعبة",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 295,
+          "reading": "حدثنا يحيى بن سعيد عن شعبة",
+          "readingSha256": "05237091295bddbeb0f8f9b7c280caf9ffb293f3fd6631b496db5fd092bf0612",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 283,
+          "reading": "حدثنا يحيى عن شعبة",
+          "readingSha256": "d29b7652f41b30cc12a78432848f8d355b2823cada7866dc6f97f713b98309b5",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        }
+      ],
+      "finding": "The historical opening identifies Yahya as Ibn Said; the selected and modern opening use Yahya without this addition.",
+      "transcriptionPolicy": "Retain the selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "1122-amr-reporting-verb",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwEA",
+      "sourceBlockSha256": "d1dc77958f7faf02027e42de0e65e155155f7a0a21c62af6c7c30f960fa1f45f",
+      "sourceReading": "حدثنا عمرو بن مرة",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 296,
+          "reading": "حدثني عمرو بن مرة",
+          "readingSha256": "607badbc02c2ab7490530b1586cb946579d916dd3ab30d0afe634fea7724b9f5",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 283,
+          "reading": "حدثنا عمرو بن مرة",
+          "readingSha256": "480242075b1a592f8878f9937604b0d0aee029a766578d90ea73fb3b5d34a250",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        }
+      ],
+      "finding": "The historical route uses reported-to-me where selected and modern use reported-to-us. Preserve the selected reporting person.",
+      "transcriptionPolicy": "Retain the selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "1123-messenger-designation",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwFA",
+      "sourceBlockSha256": "dd77f6dc0a62eb0d3b089df386748c7ec0d836a2de45c05e3dd264fe617fb992",
+      "sourceReading": "ما رأيت رسول الله ﷺ",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 296,
+          "reading": "ما رأيت النبي صلى الله عليه وسلم",
+          "readingSha256": "aefc0bcf315ee750757f12015ab62b0c2cd38ee4f5fba59b252013d24901b117",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 283,
+          "reading": "ما رأيت رسول الله ﷺ",
+          "readingSha256": "17cc65481036d99cdf6d1ffedb213c0bb3e1932fce8fc0fea66dfea8dcdcfeb3",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        }
+      ],
+      "finding": "The historical main text uses Prophet; the selected and modern text use Messenger of Allah. The honorific glyph is represented as printed in the modern excerpt.",
+      "transcriptionPolicy": "Retain the selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "1124-abbas-identification",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwGQ",
+      "sourceBlockSha256": "3dca9c2a8cd6eb4a333c81b630f52a5fc71711f4a38df5bab8b5e10f18ac2806",
+      "sourceReading": "عباس الجريري هو ابن فروخ",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 296,
+          "reading": "عباس هو الجريري",
+          "readingSha256": "86ddfc4b871b4f6e0e1968da1ae99ac25ea5b5318d2fce1974cda625fc97224f",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 284,
+          "reading": "عباس الجريري هو ابن فروخ",
+          "readingSha256": "220cda94e0c59ddd36c26bd22855c76c6e02576d1a5f8ca12ceb2ba8e28ff0b8",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        }
+      ],
+      "finding": "The selected and modern route identify Abbas al-Jurayri as Ibn Farrukh; the historical main-text identification differs.",
+      "transcriptionPolicy": "Retain the selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "1124-friend-honorific",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwGQ",
+      "sourceBlockSha256": "3dca9c2a8cd6eb4a333c81b630f52a5fc71711f4a38df5bab8b5e10f18ac2806",
+      "sourceReading": "أوصاني خليلي بثلاث",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 296,
+          "reading": "أوصاني خليلي صلى الله عليه وسلم بثلاث",
+          "readingSha256": "3934b1f074f86335be240dd8ab6d5368b739c98f5ec86dbf17ff2032e6b9fa2b",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 284,
+          "reading": "أوصاني خليلي بثلاث",
+          "readingSha256": "d86670b1ee9059e02244e8ab1d989b4ceb6123b150930ae879e5879b24f909c5",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        }
+      ],
+      "finding": "The historical witness adds a Prophet honorific after my close friend. It is absent from the selected and modern clause; intake adds no honorific to the stored source.",
+      "transcriptionPolicy": "Retain the selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "1125-jarud-name",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwGg",
+      "sourceBlockSha256": "f93a35ce3ccf688c78e78342729f153a5b0e539e57d86ccf0d6efbdd7af9fd47",
+      "sourceReading": "فلان بن فلان بن جارود",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 296,
+          "reading": "فلان بن فلان بن الجارود",
+          "readingSha256": "313c903ab01318fa86446eb6353edcb80ab56339a9f43cce6a02d2eb58af47ac",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 284,
+          "reading": "فلان بن فلان بن جارود",
+          "readingSha256": "2b076bc4af7376756483235a9fad4a493591e92b2759e5adaa876b81114bc218",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        }
+      ],
+      "finding": "The historical name has the definite article before Jarud; the selected and modern spelling does not. Both unnamed placeholders remain unnamed.",
+      "transcriptionPolicy": "Retain the selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "1128-narrator-identifications",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwJQ",
+      "sourceBlockSha256": "d24a9a23d5e45a426b10a67925f7017782bdeae0e5b4b583136ed89731a483ce",
+      "sourceReading": "عن الحسين عن ابن بريدة",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 297,
+          "reading": "عن الحسين وهو المعلم عن عبد الله بن بريدة",
+          "readingSha256": "f0426c27d22554a93da8f38d7dcc59ce9b5fb4544af4dfc1495c268f557adc0b",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 284,
+          "reading": "عن الحسين عن ابن بريدة",
+          "readingSha256": "0de658e7703960d9eea49959773c40d14ffe3fd61bd33017d9385bbbb0fb3ac3",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        }
+      ],
+      "finding": "The historical route supplies al-Muallim and Abd Allah identifications absent from the selected and modern wording. Do not silently extend the selected chain.",
+      "transcriptionPolicy": "Retain the selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "1129-abd-allah-identification",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwJw",
+      "sourceBlockSha256": "a4c3eb509d88f968a26b988192222dacc6fbd4a2b9071f546ac154e922c3ca4a",
+      "sourceReading": "حدثنا عبد الله بن يزيد قال: حدثنا سعيد بن أبي أيوب",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 297,
+          "reading": "حدثنا عبد الله بن يزيد هو المقري قال حدثنا سعيد بن أبي أيوب",
+          "readingSha256": "87b72aee82993ba8f7eac0017493209cda2a624a822cb2f906d985153df9d4cb",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 284,
+          "reading": "حدثنا عبد الله بن يزيد قال حدثنا سعيد بن أبي أيوب",
+          "readingSha256": "51f2c19396c00d5adbb09eda61dd72d69fd204c6e071dd2474ab5ab84486ddff",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        }
+      ],
+      "finding": "The historical route identifies Abd Allah ibn Yazid as al-Muqri. The selected and modern main text does not include this identification.",
+      "transcriptionPolicy": "Retain the selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "1129-messenger-designation",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwJw",
+      "sourceBlockSha256": "a4c3eb509d88f968a26b988192222dacc6fbd4a2b9071f546ac154e922c3ca4a",
+      "sourceReading": "على عهد رسول الله ﷺ",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 297,
+          "reading": "على عهد النبي صلى الله عليه وسلم",
+          "readingSha256": "a884d0c7830e4512c7dd4cd67ca467ec42499464c6c940f83dfc5b75a66cce4c",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 285,
+          "reading": "على عهد رسول الله ﷺ",
+          "readingSha256": "004c73acced896c781756f6fca8f1e2b36201656a2e29d0e8abbadd6dd45f3b2",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        }
+      ],
+      "finding": "Historical uses Prophet where selected and modern use Messenger of Allah. Preserve the selected designation and honorific.",
+      "transcriptionPolicy": "Retain the selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "1130-opening-reporting-verbs",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwLA",
+      "sourceBlockSha256": "86a31752c53a0001e52bae5eb5245c8ae9f699e26d27d363c23529d148215072",
+      "sourceReading": "حدثني إسحاق حدثنا يعقوب بن إبراهيم",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 297,
+          "reading": "حدثنا إسحاق قال أخبرنا يعقوب بن إبراهيم",
+          "readingSha256": "91625764f1de76f277658c259e5abcd4b29cd1d7880b87a07f569c46accfeed0",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 285,
+          "reading": "حدثني إسحاق حدثنا يعقوب بن إبراهيم",
+          "readingSha256": "ec42e3a6e7a5e097ed673c3ee6a36919e11bb0c992c3ef1517bb2a1c7185815c",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        }
+      ],
+      "finding": "Both opening reporting verbs differ in the historical main text. Selected and modern agree on the to-me/to-us distinction.",
+      "transcriptionPolicy": "Retain the selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "1130-malik-identification",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwLA",
+      "sourceBlockSha256": "86a31752c53a0001e52bae5eb5245c8ae9f699e26d27d363c23529d148215072",
+      "sourceReading": "ما فعل مالك لا أراه",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 298,
+          "reading": "ما فعل مالك بن الدخشن لا أراه",
+          "readingSha256": "e85976b0878643d102aad5e9adf3d9b4af0e599c8849c497e9a205e685c17b32",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 285,
+          "reading": "ما فعل مالك لا أراه",
+          "readingSha256": "3ef0b356ef738c8eb0d5f1704366d9df8f267ce7ff88965d236f750bed828278",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        }
+      ],
+      "finding": "The historical main text adds a patronymic to Malik. Preserve the selected shorter name without importing that identification.",
+      "transcriptionPolicy": "Retain the selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "chapter-08-honorific",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwKg",
+      "sourceBlockSha256": "234e261db76047f8d4c31ef0cb43fcccb5cfcfc66eb8d1c81165088ce7cc9487",
+      "sourceReading": "ذكره أنس وعائشة رضى الله تعالى عنهما عن النبي ﷺ",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 297,
+          "reading": "ذكره أنس وعائشة عن النبي صلى الله عليه وسلم",
+          "readingSha256": "175ee1301f67e52aeb052c62504b4a488d9cac141ddc74c891d2447f27eb6dd9",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 285,
+          "reading": "ذكره أنس وعائشة رضي الله عنهما عن النبي ﷺ",
+          "readingSha256": "58514a60874e5d15707cb43833503e7a77a2db627431fb6524b63fa6b507b26f",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        }
+      ],
+      "finding": "The selected chapter comment includes a companion honorific with تعالى; modern has the honorific without تعالى and historical omits that companion honorific. Keep this separate chapter material intact.",
+      "transcriptionPolicy": "Retain the selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    }
+  ],
+  "chapterMaterial": [
+    {
+      "chapterId": "chapter-01",
+      "headingId": "باب_التطوع_بعد_المكتوبة",
+      "headingSha256": "4cf192ecd753eb0ac3dcd7b0f49a58e82da697087292fa58f90d7e282b4997bb",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-02",
+      "headingId": "باب_من_لم_يتطوع_بعد_المكتوبة",
+      "headingSha256": "e1be306e8b425a720025e00ebfdfcb685923656c6112b3cdb97c6b1f6132975a",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-03",
+      "headingId": "باب_صلاة_الضحى_في_السفر",
+      "headingSha256": "93c9f4d4381b141f6236e3dc7cec5874d220c042e03d74f51640b89e6fcb7332",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-04",
+      "headingId": "باب_من_لم_يصل_الضحى_ورآه_واسعا",
+      "headingSha256": "e2919e02ddda2caf051c15f76526267ceee53d868097c8487703ca4f38c38aa4",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-05",
+      "headingId": "باب_صلاة_الضحى_في_الحضر",
+      "headingSha256": "17fe3f0994ac527094569509f2f4ae9e7f5fe9aac2257e835bc62b2507e4f613",
+      "context": [
+        {
+          "paragraphId": "mwFw",
+          "arabicSha256": "1e99e47e0c35a1e2ee61736aa411e5900e7603173f3a3937a07c067829f4589a"
+        }
+      ],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-06",
+      "headingId": "باب_الركعتين_قبل_الظهر",
+      "headingSha256": "cf38b52390e7a3d0e7344acd3c718083472ffd31e75ea80e2ac0983a70294f12",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-07",
+      "headingId": "باب_الصلاة_قبل_المغرب",
+      "headingSha256": "70cc40568ec75ebc5bf24e945c0bfc6e6061589bdb406817207dfcd77564d2b2",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-08",
+      "headingId": "باب_صلاة_النوافل_جماعة",
+      "headingSha256": "ff133cbdc4071dbb027b50c6de86eecc57f9ffc7b000dddda2e09212d30b263a",
+      "context": [
+        {
+          "paragraphId": "mwKg",
+          "arabicSha256": "234e261db76047f8d4c31ef0cb43fcccb5cfcfc66eb8d1c81165088ce7cc9487"
+        }
+      ],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-09",
+      "headingId": "باب_التطوع_في_البيت",
+      "headingSha256": "62dc000f1bdd8c0a746a0c8de6e585aca44bb691ba178b599a2b195987acf793",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    }
+  ],
+  "sectionBoundary": {
+    "selectedLastReference": 1131,
+    "nextSelectedReference": 1132,
+    "nextHeadingArabic": "باب فضل الصلاة في مسجد مكة والمدينة",
+    "printedNextReferences": [
+      1188
+    ],
+    "printedPages": {
+      "brill-1862": [
+        299
+      ],
+      "dar-ibn-kathir-2002": [
+        287
+      ]
+    },
+    "finding": "Both printed witnesses close the Night Prayer book after the passage mapped to 1131 and begin the next book on prayer in the mosques of Mecca and Medina. This intake covers the separate selected Voluntary Prayer digital subsection, which is the final portion of that printed Night Prayer book."
+  },
+  "nextActions": [
+    "Prepare complete working translations and exact presentation roles for all thirteen selected reports, retaining all chains, honorifics, closing notes and repetitions.",
+    "Preserve combined mappings at 1119, 1126 and 1130; no new suffixed report is justified by these printed divisions.",
+    "Review recorded source differences and individual English comparison limits; keep chapter contexts separate and clearly labelled while English remains pending.",
+    "In 1130 retain the complete Abu Ayyub objection, vow, Hajj-or-Umrah uncertainty and later rechecking. Independently review theological wording; do not supply interpretation."
+  ]
+}
