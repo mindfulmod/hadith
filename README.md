@@ -1,6 +1,16 @@
 # Hadith · MindfulMod reader
 
-The local personal reader at `reader/` contains 1,180 selected Bukhari entries across twenty-four sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The local personal reader at `reader/` contains 1,194 selected Bukhari entries across twenty-five sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+
+## First Funerals reading batch · 3 November 2026
+
+The local personal reader now contains **1,194 entries across twenty-five sections**. This batch adds **fourteen entries, 1180–1193**, with 36 complete Arabic/English spans and six chapters. Every selected Arabic character is unchanged. Three chapter introductions stay separately available in Arabic, with English pending. The new English is an AI-assisted working translation, not Darussalam wording or independent certification.
+
+The final statement in **1181** remains attributed to the narrator. **1185** links to the preceding chain without merging the reports; the shared English record 2.23.333 has exact, narrator-delimited spans. In **1186**, the main “with me” wording and closing “with him” alternative retain their full routes. English 2.23.335 is explicitly only an inline “as above” pointer, and cannot stand in for report text or invent a target. **1192** preserves both printed occurrences 1249/1250 within its one selected digital entry. The compiler quotation in **1193** remains separate. Eighteen relevant print differences remain unapplied, including eleven recorded during this wording review.
+
+**1,154 automated tests passed: 858 Node and 296 Python**, plus 28 integrity checks and 22 desktop browser checks. The actual offline update preserved a saved 1179 session and the 983b bookmark. All fourteen reports, complete source notes, printed references and three chapter comments reopened offline; exact search and the preceding-chain link worked. Largest-text layouts fit at 320, 390 and 1280 pixels. Eight screenshots were inspected. Reading downloads total **31,545,392 bytes**. See `research/funerals-first-wording-review.json` and `research/funerals-first-reader-verification.json`.
+
+All earlier **1,180 entry objects**, twenty-four book contexts and packs, 143 source-note pages, source inputs, artwork, recordings and saved narration jobs remain unchanged. Holds **926/957/1104/1115** remain. Cedar recordings stay at **1–6**, using only the ordinary free demo; incomplete Hadith 7 remains unadmitted. Nothing was published. Continue wording review at **1194**: 136 selected Funerals entries and the separate missing printed report 1260 remain. Independent accuracy review, reuse rights, full coverage and fresh physical-iPhone acceptance are still unfinished.
 
 ## Funerals occurrence mapping complete · 1290–1330
 

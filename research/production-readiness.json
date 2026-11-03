@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T08:57:59.818227+00:00",
+  "updatedAt": "2026-11-03T09:29:33.785971+00:00",
   "objective": "Production-ready English-first Sahih al-Bukhari reader with the full collection, precise source access, Cedar narration, whole-hadith sessions and dependable offline iPhone use.",
   "status": "in-progress",
   "decisions": {
@@ -20,8 +20,8 @@
   "requirements": [
     {
       "id": "source-coverage",
-      "status": "1180-entry-local-preview-with-visible-pending-references",
-      "evidence": "content/sources/openiti-bukhari/manifest.json; content/staging/bukhari-ar/catalog.json; content/sources/openiti-bukhari-jk/manifest.json; content/staging/bukhari-ar-jk/catalog.json; research/arabic-reference-audit.json; content/sources/wikisource-books.json; content/sources/wikisource-knowledge/manifest.json; research/knowledge-source-audit.json; research/ablution-source-audit.json; research/ablution-layout-verification.json; content/review/ablution-layout-review.json; research/ablution-first-verification.json; tests/ablution-batch.test.mjs; research/ablution-second-verification.json; tests/ablution-second.test.mjs; research/ablution-third-verification.json; tests/printed-supplements.test.mjs; research/ablution-fourth-verification.json; tests/ablution-fourth.test.mjs; research/ablution-fifth-verification.json; tests/ablution-fifth.test.mjs; research/ablution-sixth-verification.json; tests/ablution-sixth.test.mjs; research/ablution-seventh-verification.json; tests/ablution-seventh.test.mjs; research/ablution-eighth-verification.json; tests/ablution-eighth.test.mjs; research/ablution-final-verification.json; tests/ablution-final.test.mjs; research/ghusl-source-audit.json; tests/test_wikisource_book.py; tests/book-introduction.test.mjs; research/ghusl-first-verification.json; tests/ghusl-first.test.mjs; research/ghusl-second-verification.json; tests/ghusl-second.test.mjs; research/ghusl-third-verification.json; tests/ghusl-third.test.mjs; research/ghusl-final-verification.json; tests/ghusl-final.test.mjs; research/menstruation-first-verification.json; tests/menstruation-first.test.mjs; tests/test_menstruation_intake.py; research/menstruation-second-verification.json; tests/menstruation-second.test.mjs; research/menstruation-final-verification.json; tests/menstruation-final.test.mjs; research/tayammum-first-verification.json; tests/tayammum-first.test.mjs; tests/test_tayammum_intake.py; research/tayammum-final-verification.json; tests/tayammum-final.test.mjs; research/prayer-first-verification.json; tests/prayer-first.test.mjs; tests/test_prayer_intake.py; research/prayer-second-verification.json; tests/prayer-second.test.mjs; tests/published-collection.test.mjs; research/prayer-third-verification.json; tests/prayer-third.test.mjs; research/prayer-fourth-verification.json; tests/prayer-fourth.test.mjs; research/prayer-fifth-verification.json; tests/prayer-fifth.test.mjs; research/prayer-sixth-verification.json; tests/prayer-sixth.test.mjs; research/prayer-seventh-verification.json; tests/prayer-seventh.test.mjs; research/prayer-eighth-verification.json; tests/prayer-eighth.test.mjs; research/prayer-ninth-verification.json; tests/prayer-ninth.test.mjs; research/prayer-tenth-verification.json; tests/prayer-tenth.test.mjs; research/prayer-final-verification.json; tests/prayer-final.test.mjs; research/prayer-times-first-verification.json; tests/prayer-times-first.test.mjs; tests/test_prayer_times_intake.py; research/prayer-times-second-verification.json; tests/prayer-times-second.test.mjs; research/adhan-third-deployment.json; research/adhan-complete-verification.json; research/prayer-description-source-audit.json; content/review/congregation-overlap-review.json; tests/test_prayer_description_intake.py; research/prayer-description-first-verification.json; tests/prayer-description-first.test.mjs; content/review/prayer-description-second-review.json; scripts/printed-reports.mjs; tests/prayer-description-second.test.mjs; research/prayer-description-second-verification.json; content/review/prayer-description-third-review.json; tests/prayer-description-third.test.mjs; research/prayer-description-third-verification.json; research/prayer-description-fourth-verification.json; research/prayer-description-fifth-verification.json; tests/prayer-description-fifth.test.mjs; research/prayer-description-sixth-verification.json; tests/prayer-description-sixth.test.mjs; research/prayer-description-final-verification.json; research/prayer-description-boundary-review.json; tests/prayer-description-final.test.mjs; research/prayer-description-tail-admission-verification.json; tests/prayer-description-tail.test.mjs; research/friday-prayer-second-verification.json; tests/friday-prayer-second.test.mjs; research/friday-prayer-third-verification.json; tests/friday-prayer-third.test.mjs; research/friday-prayer-final-verification.json; tests/friday-prayer-final.test.mjs; research/fear-prayer-verification.json; tests/fear-prayer.test.mjs; tests/test_fear_prayer_intake.py; research/two-eids-first-verification.json; tests/two-eids-first.test.mjs; tests/test_two_eids_intake.py; research/two-eids-second-verification.json; tests/two-eids-second.test.mjs; research/two-eids-926-wording-review.json; research/two-eids-926-apparatus-review.json; research/two-eids-926-apparatus-review.html; research/two-eids-final-verification.json; tests/pending-source.test.mjs; research/witr-intake-review.json; research/witr-verification.json; research/rain-prayer-first-verification.json; tests/rain-prayer-first.test.mjs; tests/source-context-extensions.test.mjs; research/rain-prayer-second-verification.json; tests/rain-prayer-second.test.mjs; research/rain-prayer-third-verification.json; tests/rain-prayer-third.test.mjs; research/rain-prayer-final-source-review.json; research/rain-prayer-final-verification.json; tests/rain-prayer-final.test.mjs; research/eclipses-source-audit.json; research/eclipses-first-source-review.json; research/eclipses-first-verification.json; tests/eclipses-first.test.mjs; research/prostration-reader-verification.json; tests/prostration.test.mjs; research/shortening-final-verification.json; tests/shortening-final.test.mjs; research/night-prayer-source-audit.json; research/night-prayer-intake-verification.json; tests/test_night_prayer_intake.py; research/night-prayer-first-verification.json; tests/night-prayer-first.test.mjs; research/night-prayer-complete-verification.json; tests/night-prayer-complete.test.mjs; research/voluntary-prayer-source-audit.json; research/voluntary-prayer-intake-verification.json; tests/test_voluntary_prayer_intake.py; research/voluntary-prayer-reader-verification.json; tests/voluntary-prayer.test.mjs; research/mosques-prayer-source-audit.json; research/mosques-prayer-intake-verification.json; tests/test_mosques_prayer_intake.py; research/mosques-prayer-reader-verification.json; tests/mosques-prayer.test.mjs; research/actions-prayer-source-audit.json; research/actions-prayer-intake-verification.json; tests/test_actions_prayer_intake.py; research/actions-prayer-reader-verification.json; tests/actions-prayer.test.mjs; research/forgetfulness-wording-review.json; research/forgetfulness-reader-verification.json; tests/forgetfulness.test.mjs; research/funerals-first-source-audit.json; research/funerals-intake-verification.json; tests/test_funerals_intake.py; research/funerals-second-source-audit.json; research/funerals-second-source-review.html; tests/test_funerals_second.py; research/funerals-third-source-audit.json; research/funerals-third-source-review.html; tests/test_funerals_third.py; research/funerals-final-source-audit.json; research/funerals-final-source-review.html; tests/test_funerals_final.py",
+      "status": "1194-entry-local-preview-with-visible-pending-references",
+      "evidence": "content/sources/openiti-bukhari/manifest.json; content/staging/bukhari-ar/catalog.json; content/sources/openiti-bukhari-jk/manifest.json; content/staging/bukhari-ar-jk/catalog.json; research/arabic-reference-audit.json; content/sources/wikisource-books.json; content/sources/wikisource-knowledge/manifest.json; research/knowledge-source-audit.json; research/ablution-source-audit.json; research/ablution-layout-verification.json; content/review/ablution-layout-review.json; research/ablution-first-verification.json; tests/ablution-batch.test.mjs; research/ablution-second-verification.json; tests/ablution-second.test.mjs; research/ablution-third-verification.json; tests/printed-supplements.test.mjs; research/ablution-fourth-verification.json; tests/ablution-fourth.test.mjs; research/ablution-fifth-verification.json; tests/ablution-fifth.test.mjs; research/ablution-sixth-verification.json; tests/ablution-sixth.test.mjs; research/ablution-seventh-verification.json; tests/ablution-seventh.test.mjs; research/ablution-eighth-verification.json; tests/ablution-eighth.test.mjs; research/ablution-final-verification.json; tests/ablution-final.test.mjs; research/ghusl-source-audit.json; tests/test_wikisource_book.py; tests/book-introduction.test.mjs; research/ghusl-first-verification.json; tests/ghusl-first.test.mjs; research/ghusl-second-verification.json; tests/ghusl-second.test.mjs; research/ghusl-third-verification.json; tests/ghusl-third.test.mjs; research/ghusl-final-verification.json; tests/ghusl-final.test.mjs; research/menstruation-first-verification.json; tests/menstruation-first.test.mjs; tests/test_menstruation_intake.py; research/menstruation-second-verification.json; tests/menstruation-second.test.mjs; research/menstruation-final-verification.json; tests/menstruation-final.test.mjs; research/tayammum-first-verification.json; tests/tayammum-first.test.mjs; tests/test_tayammum_intake.py; research/tayammum-final-verification.json; tests/tayammum-final.test.mjs; research/prayer-first-verification.json; tests/prayer-first.test.mjs; tests/test_prayer_intake.py; research/prayer-second-verification.json; tests/prayer-second.test.mjs; tests/published-collection.test.mjs; research/prayer-third-verification.json; tests/prayer-third.test.mjs; research/prayer-fourth-verification.json; tests/prayer-fourth.test.mjs; research/prayer-fifth-verification.json; tests/prayer-fifth.test.mjs; research/prayer-sixth-verification.json; tests/prayer-sixth.test.mjs; research/prayer-seventh-verification.json; tests/prayer-seventh.test.mjs; research/prayer-eighth-verification.json; tests/prayer-eighth.test.mjs; research/prayer-ninth-verification.json; tests/prayer-ninth.test.mjs; research/prayer-tenth-verification.json; tests/prayer-tenth.test.mjs; research/prayer-final-verification.json; tests/prayer-final.test.mjs; research/prayer-times-first-verification.json; tests/prayer-times-first.test.mjs; tests/test_prayer_times_intake.py; research/prayer-times-second-verification.json; tests/prayer-times-second.test.mjs; research/adhan-third-deployment.json; research/adhan-complete-verification.json; research/prayer-description-source-audit.json; content/review/congregation-overlap-review.json; tests/test_prayer_description_intake.py; research/prayer-description-first-verification.json; tests/prayer-description-first.test.mjs; content/review/prayer-description-second-review.json; scripts/printed-reports.mjs; tests/prayer-description-second.test.mjs; research/prayer-description-second-verification.json; content/review/prayer-description-third-review.json; tests/prayer-description-third.test.mjs; research/prayer-description-third-verification.json; research/prayer-description-fourth-verification.json; research/prayer-description-fifth-verification.json; tests/prayer-description-fifth.test.mjs; research/prayer-description-sixth-verification.json; tests/prayer-description-sixth.test.mjs; research/prayer-description-final-verification.json; research/prayer-description-boundary-review.json; tests/prayer-description-final.test.mjs; research/prayer-description-tail-admission-verification.json; tests/prayer-description-tail.test.mjs; research/friday-prayer-second-verification.json; tests/friday-prayer-second.test.mjs; research/friday-prayer-third-verification.json; tests/friday-prayer-third.test.mjs; research/friday-prayer-final-verification.json; tests/friday-prayer-final.test.mjs; research/fear-prayer-verification.json; tests/fear-prayer.test.mjs; tests/test_fear_prayer_intake.py; research/two-eids-first-verification.json; tests/two-eids-first.test.mjs; tests/test_two_eids_intake.py; research/two-eids-second-verification.json; tests/two-eids-second.test.mjs; research/two-eids-926-wording-review.json; research/two-eids-926-apparatus-review.json; research/two-eids-926-apparatus-review.html; research/two-eids-final-verification.json; tests/pending-source.test.mjs; research/witr-intake-review.json; research/witr-verification.json; research/rain-prayer-first-verification.json; tests/rain-prayer-first.test.mjs; tests/source-context-extensions.test.mjs; research/rain-prayer-second-verification.json; tests/rain-prayer-second.test.mjs; research/rain-prayer-third-verification.json; tests/rain-prayer-third.test.mjs; research/rain-prayer-final-source-review.json; research/rain-prayer-final-verification.json; tests/rain-prayer-final.test.mjs; research/eclipses-source-audit.json; research/eclipses-first-source-review.json; research/eclipses-first-verification.json; tests/eclipses-first.test.mjs; research/prostration-reader-verification.json; tests/prostration.test.mjs; research/shortening-final-verification.json; tests/shortening-final.test.mjs; research/night-prayer-source-audit.json; research/night-prayer-intake-verification.json; tests/test_night_prayer_intake.py; research/night-prayer-first-verification.json; tests/night-prayer-first.test.mjs; research/night-prayer-complete-verification.json; tests/night-prayer-complete.test.mjs; research/voluntary-prayer-source-audit.json; research/voluntary-prayer-intake-verification.json; tests/test_voluntary_prayer_intake.py; research/voluntary-prayer-reader-verification.json; tests/voluntary-prayer.test.mjs; research/mosques-prayer-source-audit.json; research/mosques-prayer-intake-verification.json; tests/test_mosques_prayer_intake.py; research/mosques-prayer-reader-verification.json; tests/mosques-prayer.test.mjs; research/actions-prayer-source-audit.json; research/actions-prayer-intake-verification.json; tests/test_actions_prayer_intake.py; research/actions-prayer-reader-verification.json; tests/actions-prayer.test.mjs; research/forgetfulness-wording-review.json; research/forgetfulness-reader-verification.json; tests/forgetfulness.test.mjs; research/funerals-first-source-audit.json; research/funerals-intake-verification.json; tests/test_funerals_intake.py; research/funerals-second-source-audit.json; research/funerals-second-source-review.html; tests/test_funerals_second.py; research/funerals-third-source-audit.json; research/funerals-third-source-review.html; tests/test_funerals_third.py; research/funerals-final-source-audit.json; research/funerals-final-source-review.html; tests/test_funerals_final.py; research/funerals-first-wording-review.json; research/funerals-first-reader-verification.json; tests/funerals-first.test.mjs",
       "remaining": "All 150 selected Funerals occurrences now have print and English-body comparison locations; 158 modern printed references include the separate missing report, and 149 distinct English bodies are accounted for. Next complete Arabic/English wording, speaker-role, honorific and chapter-context review before reader admission. Transcribe and review missing printed 1260 under proposed app reference 1200b. Preserve the unresolved Ghundar closing-note ownership at 1306/1307, absent EPUB counterpart for 1234, shared/split body mappings and original English labels for six trailing Zakat-related records. All selected source text stays unchanged. Cedar remains on the ordinary free demo; no paid API setup or spend."
     },
     {
@@ -81,7 +81,7 @@
   ],
   "nextActions": [
     "Keep the 699-entry approval candidate and subsequent local previews separate from the approved 632-entry live release until the specific publication is authorized.",
-    "All 150 selected Funerals occurrences now have print and English-body comparison locations; 158 modern printed references include the separate missing report, and 149 distinct English bodies are accounted for. Next complete Arabic/English wording, speaker-role, honorific and chapter-context review before reader admission. Transcribe and review missing printed 1260 under proposed app reference 1200b. Preserve the unresolved Ghundar closing-note ownership at 1306/1307, absent EPUB counterpart for 1234, shared/split body mappings and original English labels for six trailing Zakat-related records. All selected source text stays unchanged. Cedar remains on the ordinary free demo; no paid API setup or spend.",
+    "Continue complete wording and presentation-role review from Funerals 1194. The first 14 selected entries are in the labelled local prototype; 136 selected entries remain. All 150 selected occurrences already have print and English-body comparison locations. Transcribe and review missing printed 1260 under proposed app reference 1200b. Preserve the unresolved Ghundar closing-note ownership at 1306/1307, absent EPUB counterpart for 1234, shared/split mappings and original English labels for six trailing Zakat-related records. Keep original sources unchanged and independent review pending. Cedar remains on the ordinary free demo; no paid API setup or spend.",
     "Preserve the overlapping congregation source as excluded evidence. It must not add duplicate entries or replace selected Adhan wording.",
     "Use the new bilingual scale benchmark for future substantial expansion. The 1,166-entry collection and separate 8,000-entry artificial workload are measured; verify the eventual complete corpus, chapter/citation shape, transient/native memory, cold networks and fresh physical-iPhone behavior before claiming full production scale.",
     "Complete the Arabic edition/reference map using the new exact-span inventory and pinned printed-witness findings; keep combined labels distinct from missing or misassigned bodies.",
@@ -430,12 +430,12 @@
     "boundaryReviewStatus": "references-confirmed-and-printed-tail-admitted-local-only"
   },
   "currentLocalPreview": {
-    "entries": 1180,
-    "books": 24,
-    "release": "opening-72c30c8f20ac",
-    "readingBytes": 31102984,
+    "entries": 1194,
+    "books": 25,
+    "release": "opening-816b31f30e35",
+    "readingBytes": 31545392,
     "publication": "not-published",
-    "verification": "research/forgetfulness-reader-verification.json",
+    "verification": "research/funerals-first-reader-verification.json",
     "liveEntries": 632,
     "liveCommit": "a6d55223d3d863f2583ba67aa27edd139e9d7d6a"
   },
@@ -1615,5 +1615,60 @@
       "Resolve declared variants explicitly without changing original sources.",
       "Keep independent accuracy review and reuse rights pending."
     ]
+  },
+  "funeralsReader": {
+    "status": "first-fourteen-in-labelled-personal-prototype",
+    "references": [
+      1180,
+      1181,
+      1182,
+      1183,
+      1184,
+      1185,
+      1186,
+      1187,
+      1188,
+      1189,
+      1190,
+      1191,
+      1192,
+      1193
+    ],
+    "selectedEntriesAdmitted": 14,
+    "remainingSelectedEntries": 136,
+    "chapters": 6,
+    "arabicContextParagraphs": 3,
+    "translatedSpans": 36,
+    "arabicChanged": false,
+    "review": "content/review/funerals-first-review.json",
+    "wordingEvidence": "research/funerals-first-wording-review.json",
+    "sourceAddendum": "research/funerals-first-wording-addendum.json",
+    "verification": "research/funerals-first-reader-verification.json",
+    "inheritedChainLink": {
+      "from": 1185,
+      "to": 1184
+    },
+    "sharedEnglishBody": {
+      "reference": "2.23.333",
+      "appReferences": [
+        1184,
+        1185
+      ]
+    },
+    "inlineEnglishPointer": {
+      "reference": "2.23.335",
+      "appReference": 1186,
+      "targetNumberNotSupplied": true
+    },
+    "combinedPrintedOccurrences": {
+      "appReference": 1192,
+      "printedReferences": [
+        1249,
+        1250
+      ]
+    },
+    "independentReview": "pending",
+    "rightsReview": "pending",
+    "publication": "not-published"
   }
 }

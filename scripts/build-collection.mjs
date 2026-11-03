@@ -49,7 +49,8 @@ export const BOOK_CONFIGS=Object.freeze({
  'voluntary-prayer':Object.freeze({id:'voluntary-prayer',number:21,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([21]),title:'Voluntary Prayer',first:1119,arabicSourceId:'arabic-voluntary-prayer',bewleySourceId:'bewley-voluntary-prayer',bewleyTitle:'Voluntary Prayer',revision:434953}),
  'mosques-prayer':Object.freeze({id:'mosques-prayer',number:22,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([21]),title:'Mosques of Mecca and Medina',first:1132,arabicSourceId:'arabic-mosques-prayer',bewleySourceId:'bewley-mosques-prayer',bewleyTitle:'Mosques of Mecca and Medina',revision:142212}),
  'actions-prayer':Object.freeze({id:'actions-prayer',number:23,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([22]),title:'Actions during Prayer',first:1140,arabicSourceId:'arabic-actions-prayer',bewleySourceId:'bewley-actions-prayer',bewleyTitle:'Actions during Prayer',revision:39529}),
- 'forgetfulness':Object.freeze({id:'forgetfulness',number:24,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([22]),title:'Forgetfulness in Prayer',first:1166,arabicSourceId:'arabic-forgetfulness',bewleySourceId:'bewley-forgetfulness',bewleyTitle:'Forgetfulness',revision:39528})
+ 'forgetfulness':Object.freeze({id:'forgetfulness',number:24,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([22]),title:'Forgetfulness in Prayer',first:1166,arabicSourceId:'arabic-forgetfulness',bewleySourceId:'bewley-forgetfulness',bewleyTitle:'Forgetfulness',revision:39528}),
+ 'funerals':Object.freeze({id:'funerals',number:25,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([23]),title:'Funerals',first:1180,arabicSourceId:'arabic-funerals',bewleySourceId:'bewley-funerals',bewleyTitle:'Funerals',revision:393137,sourceLayout:'mapped'})
 });
 function bookConfig(config){assert(Object.values(BOOK_CONFIGS).includes(config),'Unknown book configuration');return config;}
 let englishInventory;
@@ -172,6 +173,14 @@ function validateComparisons(comparisons,config,segments,row,sources){
     const record=comparisonEvidence(p.reference,p.referenceEvidence);
     assert.notEqual(record.bodyForm,'translation-omission-notice','An omission notice cannot be a translated split part');
     assert(Array.isArray(p.segmentIds)&&p.segmentIds.length,'Split comparison needs segment coverage');
+    if(p.status==='inline-back-reference-only'){
+     assert(Array.isArray(p.checkedBody)&&p.checkedBody.length===1&&typeof p.checkedBody[0]==='string'&&hash(p.checkedBody)===record.textSha256,'Inline pointer differs from its pinned body');
+     assert(/^Narrated .+ as above\.$/.test(p.checkedBody[0].trim()),'Expected one narrator-and-pointer paragraph');
+     assert(p.referencedReference===undefined&&p.referencedReferenceEvidence===undefined&&p.continuedByReference===undefined,'An inline pointer cannot invent a target');
+     assert(p.segmentIds.every(id=>['chain','transmission-note'].includes(segments.find(s=>s.id===id)?.kind)),'Inline pointer cannot stand in for a report body');
+     assert(typeof p.note==='string'&&p.note.trim(),'Inline pointer needs an explicit coverage limitation');
+     continue;
+    }
     if(p.status!==undefined){
      assert(Array.isArray(p.checkedBody)&&p.checkedBody.length===2&&p.checkedBody.every(v=>typeof v==='string')&&hash(p.checkedBody)===record.textSha256,'Abbreviated comparison part differs from its pinned body');
      assert((/^Narrated .+:$/.test(p.checkedBody[0].trim())||(p.status==='same-as-reference-only'&&/^Narrated .+$/.test(p.checkedBody[0].trim())))&&typeof p.note==='string'&&p.note.trim(),'Abbreviated comparison part needs a narrator and explanation');
