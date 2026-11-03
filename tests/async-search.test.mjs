@@ -25,9 +25,9 @@ test('indexed search matches current bilingual source checks and complete pagina
  const sample=makeEntries(),small=await createSearchIndex(sample,{yieldTask:yieldFast}),numbers=[];for(let offset=0;offset<95;offset+=30){const r=await small.search('shared phrase',30,offset);assert.equal(r.total,95);numbers.push(...r.results.map(x=>x.entry.number));}assert.deepEqual(numbers,sample.map(e=>e.number));
 });
 test('fallback indexing yields, reuses a completed query for pagination and cancels obsolete scans',async()=>{
- let yields=0,current=true;const index=await createSearchIndex(makeEntries(),{batchSize:10,yieldTask:async()=>{yields++;}});assert(yields>=9);
+ let yields=0,current=true,clock=0;const now=()=>clock+=8,index=await createSearchIndex(makeEntries(),{batchSize:10,now,yieldTask:async()=>{yields++;}});assert(yields>=9);
  const result=await index.search('shared');assert.equal(result.total,95);const before=yields;await index.search('shared',30,30);assert.equal(yields,before);
- const cancelled=await createSearchIndex(makeEntries(),{batchSize:10,yieldTask:async()=>{if(yields++>before+12)current=false;}});current=true;await assert.rejects(cancelled.search('Chain',30,0,{isCurrent:()=>current}),{name:'AbortError'});
+ const cancelled=await createSearchIndex(makeEntries(),{batchSize:10,now,yieldTask:async()=>{if(yields++>before+12)current=false;}});current=true;await assert.rejects(cancelled.search('Chain',30,0,{isCurrent:()=>current}),{name:'AbortError'});
 });
 test('a failed book never yields partial search and can retry; wrong source version is refused',async()=>{
  const f=fixture(),engine=createLibrarySearch({...f,sourceRecordSha256:hash,yieldTask:yieldFast});f.setFail(id=>id==='two');await assert.rejects(engine.search('shared'));assert.equal(f.loads(),2);f.setFail(false);assert.equal((await engine.search('shared')).total,95);const loads=f.loads();await engine.search('Chain');assert.equal(f.loads(),loads);

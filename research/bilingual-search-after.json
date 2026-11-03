@@ -1,0 +1,1804 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-03T06:40:59.448Z",
+  "harnessSha256": "495f32589aa7419276c2800497cdfad4f6487319a816e07394f60db3ef455539",
+  "scope": "Desktop Chromium component benchmark using real content-library, worker/client, search rendering modules and reader CSS (including its four-line result previews). Loopback network, no service worker. CPU throttling is applied to the page CDP session; worker CPU is not independently throttled. This is diagnostic, not an iPhone simulation. The cold window starts after entering the query, excluding first-use automation injection. Heap excludes native memory, browser storage and unobserved allocation peaks.",
+  "environment": {
+    "node": "v24.18.0",
+    "cpu": "Apple M2",
+    "platform": "darwin",
+    "arch": "arm64",
+    "browser": "151.0.7922.34"
+  },
+  "moduleHashes": {
+    "content-library.mjs": "52f69cc21262bb475547febc8c8f91a9af3e8a6ffadde6d34763a5e697502482",
+    "search.mjs": "57755ff1dc38245df5ca23629b8a172fca667436fb1c6f94855cffb856852c04",
+    "search-client.mjs": "7d2bdd4a2e525b602a3ac177eb6703655e56c9a8a5527e71f8a5f531fab133df",
+    "search-worker.mjs": "476d6131ee89b51329c91390370a90c0f0b256ef112bb513a7624cf081d58c0a",
+    "library.mjs": "58a386a4f62e1a4e9dd5678c3400dda934f68f0aef5d662be006bec78997dff7",
+    "reader.css": "20ca7ce54aac35071697b88b2ff9010059774a104fdc04d55b84f73e386b80bf"
+  },
+  "datasets": [
+    {
+      "id": "current",
+      "entries": 1166,
+      "books": 23,
+      "scope": "Current unchanged personal-prototype bilingual entries; no new content admission.",
+      "catalogBytes": 478503,
+      "bookBytes": 6754014,
+      "largestBookBytes": 955009,
+      "sourceRecordSha256": "18bf6113a6aa7f65d0e7f54e3f0a5a0575145268e6fb747795b252700d209c9d"
+    },
+    {
+      "id": "synthetic-8000",
+      "entries": 8000,
+      "books": 93,
+      "scope": "Artificial repeated nonreligious English and Arabic. Stress volume, not an estimate of the full Bukhari text or an admission to the reader.",
+      "catalogBytes": 905045,
+      "bookBytes": 33927953,
+      "largestBookBytes": 369062,
+      "sourceRecordSha256": "8b7e8a234975b4735e83ef8df65a0f7229c0500ac0ce12bd63c90a9d9a8f9872"
+    }
+  ],
+  "runs": [
+    {
+      "dataset": "current",
+      "mode": "worker",
+      "cpuRate": 1,
+      "sample": 1,
+      "catalogMs": 14.799999952316284,
+      "initialLongTasks": [],
+      "coldSearchAndRenderMs": 178.93824999999998,
+      "probeRoundTripMs": 6.080749999999966,
+      "coldLongTasks": [],
+      "coldMaxFrameGapMs": 17.599999999999994,
+      "queries": [
+        {
+          "query": "Allah",
+          "milliseconds": 0.19999980926513672,
+          "total": 1132
+        },
+        {
+          "query": "يونس",
+          "milliseconds": 0.9000000953674316,
+          "total": 53
+        },
+        {
+          "query": "\"riding camels\"",
+          "milliseconds": 0.9000000953674316,
+          "total": 1
+        },
+        {
+          "query": "unlikelywordwithoutmatch",
+          "milliseconds": 0.5999999046325684,
+          "total": 0
+        },
+        {
+          "query": "724b",
+          "milliseconds": 0.09999990463256836,
+          "total": 1
+        }
+      ],
+      "pageMilliseconds": 0.5999999046325684,
+      "mainHeapBefore": {
+        "usedSize": 2021636,
+        "totalSize": 2949120,
+        "embedderHeapUsedSize": 1335392,
+        "backingStorageSize": 111268
+      },
+      "mainHeapAfter": {
+        "usedSize": 2862396,
+        "totalSize": 3538944,
+        "embedderHeapUsedSize": 1366528,
+        "backingStorageSize": 111844
+      },
+      "workerHeapAfter": {
+        "usedSize": 4922180,
+        "totalSize": 6815744,
+        "embedderHeapUsedSize": 57848,
+        "backingStorageSize": 90401
+      },
+      "cache": {
+        "bookIds": [],
+        "encodedBytes": 0,
+        "maxCachedBooks": 4,
+        "maxCachedBytes": 4194304
+      },
+      "requests": {
+        "count": 25,
+        "bytes": 7711020,
+        "bookCount": 23
+      },
+      "exactResults": true,
+      "renderedPagination": true,
+      "pageErrors": []
+    },
+    {
+      "dataset": "current",
+      "mode": "worker",
+      "cpuRate": 1,
+      "sample": 2,
+      "catalogMs": 15.099999904632568,
+      "initialLongTasks": [],
+      "coldSearchAndRenderMs": 189.6109580000001,
+      "probeRoundTripMs": 3.400457999999958,
+      "coldLongTasks": [],
+      "coldMaxFrameGapMs": 17.299999999999997,
+      "queries": [
+        {
+          "query": "Allah",
+          "milliseconds": 0.2999999523162842,
+          "total": 1132
+        },
+        {
+          "query": "يونس",
+          "milliseconds": 1,
+          "total": 53
+        },
+        {
+          "query": "\"riding camels\"",
+          "milliseconds": 1,
+          "total": 1
+        },
+        {
+          "query": "unlikelywordwithoutmatch",
+          "milliseconds": 0.7000000476837158,
+          "total": 0
+        },
+        {
+          "query": "724b",
+          "milliseconds": 0.19999980926513672,
+          "total": 1
+        }
+      ],
+      "pageMilliseconds": 0.7999999523162842,
+      "mainHeapBefore": {
+        "usedSize": 2021560,
+        "totalSize": 2949120,
+        "embedderHeapUsedSize": 415392,
+        "backingStorageSize": 111268
+      },
+      "mainHeapAfter": {
+        "usedSize": 2862384,
+        "totalSize": 3538944,
+        "embedderHeapUsedSize": 1387328,
+        "backingStorageSize": 111844
+      },
+      "workerHeapAfter": {
+        "usedSize": 4934532,
+        "totalSize": 6029312,
+        "embedderHeapUsedSize": 67432,
+        "backingStorageSize": 90401
+      },
+      "cache": {
+        "bookIds": [],
+        "encodedBytes": 0,
+        "maxCachedBooks": 4,
+        "maxCachedBytes": 4194304
+      },
+      "requests": {
+        "count": 25,
+        "bytes": 7711020,
+        "bookCount": 23
+      },
+      "exactResults": true,
+      "renderedPagination": true,
+      "pageErrors": []
+    },
+    {
+      "dataset": "current",
+      "mode": "worker",
+      "cpuRate": 1,
+      "sample": 3,
+      "catalogMs": 15.299999952316284,
+      "initialLongTasks": [],
+      "coldSearchAndRenderMs": 189.63420799999994,
+      "probeRoundTripMs": 2.574374999999918,
+      "coldLongTasks": [],
+      "coldMaxFrameGapMs": 17.599999999999994,
+      "queries": [
+        {
+          "query": "Allah",
+          "milliseconds": 0.2999999523162842,
+          "total": 1132
+        },
+        {
+          "query": "يونس",
+          "milliseconds": 0.9000000953674316,
+          "total": 53
+        },
+        {
+          "query": "\"riding camels\"",
+          "milliseconds": 0.8999998569488525,
+          "total": 1
+        },
+        {
+          "query": "unlikelywordwithoutmatch",
+          "milliseconds": 0.5,
+          "total": 0
+        },
+        {
+          "query": "724b",
+          "milliseconds": 0.09999990463256836,
+          "total": 1
+        }
+      ],
+      "pageMilliseconds": 0.5999999046325684,
+      "mainHeapBefore": {
+        "usedSize": 2021560,
+        "totalSize": 2949120,
+        "embedderHeapUsedSize": 415664,
+        "backingStorageSize": 111268
+      },
+      "mainHeapAfter": {
+        "usedSize": 2862396,
+        "totalSize": 3538944,
+        "embedderHeapUsedSize": 1386840,
+        "backingStorageSize": 111844
+      },
+      "workerHeapAfter": {
+        "usedSize": 4919772,
+        "totalSize": 6029312,
+        "embedderHeapUsedSize": 57384,
+        "backingStorageSize": 90401
+      },
+      "cache": {
+        "bookIds": [],
+        "encodedBytes": 0,
+        "maxCachedBooks": 4,
+        "maxCachedBytes": 4194304
+      },
+      "requests": {
+        "count": 25,
+        "bytes": 7711020,
+        "bookCount": 23
+      },
+      "exactResults": true,
+      "renderedPagination": true,
+      "pageErrors": []
+    },
+    {
+      "dataset": "current",
+      "mode": "fallback",
+      "cpuRate": 1,
+      "sample": 1,
+      "catalogMs": 15.599999904632568,
+      "initialLongTasks": [],
+      "coldSearchAndRenderMs": 172.8633749999999,
+      "probeRoundTripMs": 6.454833000000008,
+      "coldLongTasks": [],
+      "coldMaxFrameGapMs": 17.400000000000006,
+      "queries": [
+        {
+          "query": "Allah",
+          "milliseconds": 0.10000014305114746,
+          "total": 1132
+        },
+        {
+          "query": "يونس",
+          "milliseconds": 0.8999998569488525,
+          "total": 53
+        },
+        {
+          "query": "\"riding camels\"",
+          "milliseconds": 1,
+          "total": 1
+        },
+        {
+          "query": "unlikelywordwithoutmatch",
+          "milliseconds": 0.6000001430511475,
+          "total": 0
+        },
+        {
+          "query": "724b",
+          "milliseconds": 0.09999990463256836,
+          "total": 1
+        }
+      ],
+      "pageMilliseconds": 0.7000000476837158,
+      "mainHeapBefore": {
+        "usedSize": 2021560,
+        "totalSize": 2686976,
+        "embedderHeapUsedSize": 415392,
+        "backingStorageSize": 111270
+      },
+      "mainHeapAfter": {
+        "usedSize": 7735372,
+        "totalSize": 8781824,
+        "embedderHeapUsedSize": 1034504,
+        "backingStorageSize": 112752
+      },
+      "workerHeapAfter": null,
+      "cache": {
+        "bookIds": [
+          "night-prayer",
+          "voluntary-prayer",
+          "mosques-prayer",
+          "actions-prayer"
+        ],
+        "encodedBytes": 534756,
+        "maxCachedBooks": 4,
+        "maxCachedBytes": 4194304
+      },
+      "requests": {
+        "count": 24,
+        "bytes": 7232517,
+        "bookCount": 23
+      },
+      "exactResults": true,
+      "renderedPagination": true,
+      "pageErrors": []
+    },
+    {
+      "dataset": "current",
+      "mode": "fallback",
+      "cpuRate": 1,
+      "sample": 2,
+      "catalogMs": 15.200000047683716,
+      "initialLongTasks": [],
+      "coldSearchAndRenderMs": 173.16775000000007,
+      "probeRoundTripMs": 5.651207999999997,
+      "coldLongTasks": [],
+      "coldMaxFrameGapMs": 16.799999999999997,
+      "queries": [
+        {
+          "query": "Allah",
+          "milliseconds": 0.09999990463256836,
+          "total": 1132
+        },
+        {
+          "query": "يونس",
+          "milliseconds": 1,
+          "total": 53
+        },
+        {
+          "query": "\"riding camels\"",
+          "milliseconds": 0.9000000953674316,
+          "total": 1
+        },
+        {
+          "query": "unlikelywordwithoutmatch",
+          "milliseconds": 0.40000009536743164,
+          "total": 0
+        },
+        {
+          "query": "724b",
+          "milliseconds": 0.10000014305114746,
+          "total": 1
+        }
+      ],
+      "pageMilliseconds": 0.6000001430511475,
+      "mainHeapBefore": {
+        "usedSize": 2021536,
+        "totalSize": 2949120,
+        "embedderHeapUsedSize": 415392,
+        "backingStorageSize": 111270
+      },
+      "mainHeapAfter": {
+        "usedSize": 7746852,
+        "totalSize": 8781824,
+        "embedderHeapUsedSize": 1036912,
+        "backingStorageSize": 112752
+      },
+      "workerHeapAfter": null,
+      "cache": {
+        "bookIds": [
+          "night-prayer",
+          "voluntary-prayer",
+          "mosques-prayer",
+          "actions-prayer"
+        ],
+        "encodedBytes": 534756,
+        "maxCachedBooks": 4,
+        "maxCachedBytes": 4194304
+      },
+      "requests": {
+        "count": 24,
+        "bytes": 7232517,
+        "bookCount": 23
+      },
+      "exactResults": true,
+      "renderedPagination": true,
+      "pageErrors": []
+    },
+    {
+      "dataset": "current",
+      "mode": "fallback",
+      "cpuRate": 1,
+      "sample": 3,
+      "catalogMs": 15.099999904632568,
+      "initialLongTasks": [],
+      "coldSearchAndRenderMs": 173.94845900000018,
+      "probeRoundTripMs": 5.399332999999842,
+      "coldLongTasks": [],
+      "coldMaxFrameGapMs": 17.30000000000001,
+      "queries": [
+        {
+          "query": "Allah",
+          "milliseconds": 0.20000004768371582,
+          "total": 1132
+        },
+        {
+          "query": "يونس",
+          "milliseconds": 0.8999998569488525,
+          "total": 53
+        },
+        {
+          "query": "\"riding camels\"",
+          "milliseconds": 0.9000000953674316,
+          "total": 1
+        },
+        {
+          "query": "unlikelywordwithoutmatch",
+          "milliseconds": 0.5,
+          "total": 0
+        },
+        {
+          "query": "724b",
+          "milliseconds": 0.20000004768371582,
+          "total": 1
+        }
+      ],
+      "pageMilliseconds": 0.5999999046325684,
+      "mainHeapBefore": {
+        "usedSize": 2021560,
+        "totalSize": 2949120,
+        "embedderHeapUsedSize": 415664,
+        "backingStorageSize": 111270
+      },
+      "mainHeapAfter": {
+        "usedSize": 7735800,
+        "totalSize": 9043968,
+        "embedderHeapUsedSize": 1034288,
+        "backingStorageSize": 112752
+      },
+      "workerHeapAfter": null,
+      "cache": {
+        "bookIds": [
+          "night-prayer",
+          "voluntary-prayer",
+          "mosques-prayer",
+          "actions-prayer"
+        ],
+        "encodedBytes": 534756,
+        "maxCachedBooks": 4,
+        "maxCachedBytes": 4194304
+      },
+      "requests": {
+        "count": 24,
+        "bytes": 7232517,
+        "bookCount": 23
+      },
+      "exactResults": true,
+      "renderedPagination": true,
+      "pageErrors": []
+    },
+    {
+      "dataset": "current",
+      "mode": "worker",
+      "cpuRate": 4,
+      "sample": 1,
+      "catalogMs": 51.299999952316284,
+      "initialLongTasks": [],
+      "coldSearchAndRenderMs": 203.1820829999997,
+      "probeRoundTripMs": 7.939000000000306,
+      "coldLongTasks": [],
+      "coldMaxFrameGapMs": 17.30000000000001,
+      "queries": [
+        {
+          "query": "Allah",
+          "milliseconds": 0.5,
+          "total": 1132
+        },
+        {
+          "query": "يونس",
+          "milliseconds": 0.9000000953674316,
+          "total": 53
+        },
+        {
+          "query": "\"riding camels\"",
+          "milliseconds": 1,
+          "total": 1
+        },
+        {
+          "query": "unlikelywordwithoutmatch",
+          "milliseconds": 0.7999999523162842,
+          "total": 0
+        },
+        {
+          "query": "724b",
+          "milliseconds": 0.7000000476837158,
+          "total": 1
+        }
+      ],
+      "pageMilliseconds": 0.7000000476837158,
+      "mainHeapBefore": {
+        "usedSize": 2021724,
+        "totalSize": 2949120,
+        "embedderHeapUsedSize": 636632,
+        "backingStorageSize": 111268
+      },
+      "mainHeapAfter": {
+        "usedSize": 2862504,
+        "totalSize": 3538944,
+        "embedderHeapUsedSize": 1381448,
+        "backingStorageSize": 111844
+      },
+      "workerHeapAfter": {
+        "usedSize": 4933152,
+        "totalSize": 6029312,
+        "embedderHeapUsedSize": 48336,
+        "backingStorageSize": 90401
+      },
+      "cache": {
+        "bookIds": [],
+        "encodedBytes": 0,
+        "maxCachedBooks": 4,
+        "maxCachedBytes": 4194304
+      },
+      "requests": {
+        "count": 25,
+        "bytes": 7711020,
+        "bookCount": 23
+      },
+      "exactResults": true,
+      "renderedPagination": true,
+      "pageErrors": []
+    },
+    {
+      "dataset": "current",
+      "mode": "worker",
+      "cpuRate": 4,
+      "sample": 2,
+      "catalogMs": 47.299999952316284,
+      "initialLongTasks": [],
+      "coldSearchAndRenderMs": 202.5987500000001,
+      "probeRoundTripMs": 8.412332999999762,
+      "coldLongTasks": [],
+      "coldMaxFrameGapMs": 17.5,
+      "queries": [
+        {
+          "query": "Allah",
+          "milliseconds": 0.40000009536743164,
+          "total": 1132
+        },
+        {
+          "query": "يونس",
+          "milliseconds": 0.9000000953674316,
+          "total": 53
+        },
+        {
+          "query": "\"riding camels\"",
+          "milliseconds": 0.8999998569488525,
+          "total": 1
+        },
+        {
+          "query": "unlikelywordwithoutmatch",
+          "milliseconds": 1.1000001430511475,
+          "total": 0
+        },
+        {
+          "query": "724b",
+          "milliseconds": 0.2999999523162842,
+          "total": 1
+        }
+      ],
+      "pageMilliseconds": 1.0999999046325684,
+      "mainHeapBefore": {
+        "usedSize": 2020204,
+        "totalSize": 2949120,
+        "embedderHeapUsedSize": 453712,
+        "backingStorageSize": 111268
+      },
+      "mainHeapAfter": {
+        "usedSize": 2861172,
+        "totalSize": 3538944,
+        "embedderHeapUsedSize": 1132432,
+        "backingStorageSize": 111844
+      },
+      "workerHeapAfter": {
+        "usedSize": 4919588,
+        "totalSize": 5767168,
+        "embedderHeapUsedSize": 57248,
+        "backingStorageSize": 90401
+      },
+      "cache": {
+        "bookIds": [],
+        "encodedBytes": 0,
+        "maxCachedBooks": 4,
+        "maxCachedBytes": 4194304
+      },
+      "requests": {
+        "count": 25,
+        "bytes": 7711020,
+        "bookCount": 23
+      },
+      "exactResults": true,
+      "renderedPagination": true,
+      "pageErrors": []
+    },
+    {
+      "dataset": "current",
+      "mode": "worker",
+      "cpuRate": 4,
+      "sample": 3,
+      "catalogMs": 48.59999990463257,
+      "initialLongTasks": [],
+      "coldSearchAndRenderMs": 202.48141599999963,
+      "probeRoundTripMs": 9.828959000000395,
+      "coldLongTasks": [],
+      "coldMaxFrameGapMs": 17.599999999999994,
+      "queries": [
+        {
+          "query": "Allah",
+          "milliseconds": 0.5,
+          "total": 1132
+        },
+        {
+          "query": "يونس",
+          "milliseconds": 0.9000000953674316,
+          "total": 53
+        },
+        {
+          "query": "\"riding camels\"",
+          "milliseconds": 1.0999999046325684,
+          "total": 1
+        },
+        {
+          "query": "unlikelywordwithoutmatch",
+          "milliseconds": 0.8999998569488525,
+          "total": 0
+        },
+        {
+          "query": "724b",
+          "milliseconds": 0.20000004768371582,
+          "total": 1
+        }
+      ],
+      "pageMilliseconds": 0.5999999046325684,
+      "mainHeapBefore": {
+        "usedSize": 2020204,
+        "totalSize": 2686976,
+        "embedderHeapUsedSize": 454256,
+        "backingStorageSize": 111268
+      },
+      "mainHeapAfter": {
+        "usedSize": 2861172,
+        "totalSize": 3538944,
+        "embedderHeapUsedSize": 1133448,
+        "backingStorageSize": 111844
+      },
+      "workerHeapAfter": {
+        "usedSize": 4926792,
+        "totalSize": 6553600,
+        "embedderHeapUsedSize": 57784,
+        "backingStorageSize": 90401
+      },
+      "cache": {
+        "bookIds": [],
+        "encodedBytes": 0,
+        "maxCachedBooks": 4,
+        "maxCachedBytes": 4194304
+      },
+      "requests": {
+        "count": 25,
+        "bytes": 7711020,
+        "bookCount": 23
+      },
+      "exactResults": true,
+      "renderedPagination": true,
+      "pageErrors": []
+    },
+    {
+      "dataset": "current",
+      "mode": "fallback",
+      "cpuRate": 4,
+      "sample": 1,
+      "catalogMs": 46.5,
+      "initialLongTasks": [],
+      "coldSearchAndRenderMs": 582.8547499999995,
+      "probeRoundTripMs": 18.609999999999673,
+      "coldLongTasks": [],
+      "coldMaxFrameGapMs": 33.30000000000001,
+      "queries": [
+        {
+          "query": "Allah",
+          "milliseconds": 0.5,
+          "total": 1132
+        },
+        {
+          "query": "يونس",
+          "milliseconds": 3.8999998569488525,
+          "total": 53
+        },
+        {
+          "query": "\"riding camels\"",
+          "milliseconds": 4.099999904632568,
+          "total": 1
+        },
+        {
+          "query": "unlikelywordwithoutmatch",
+          "milliseconds": 1.9000000953674316,
+          "total": 0
+        },
+        {
+          "query": "724b",
+          "milliseconds": 0.5,
+          "total": 1
+        }
+      ],
+      "pageMilliseconds": 2.5,
+      "mainHeapBefore": {
+        "usedSize": 2020160,
+        "totalSize": 2686976,
+        "embedderHeapUsedSize": 454104,
+        "backingStorageSize": 111270
+      },
+      "mainHeapAfter": {
+        "usedSize": 7752176,
+        "totalSize": 9043968,
+        "embedderHeapUsedSize": 1504568,
+        "backingStorageSize": 112752
+      },
+      "workerHeapAfter": null,
+      "cache": {
+        "bookIds": [
+          "night-prayer",
+          "voluntary-prayer",
+          "mosques-prayer",
+          "actions-prayer"
+        ],
+        "encodedBytes": 534756,
+        "maxCachedBooks": 4,
+        "maxCachedBytes": 4194304
+      },
+      "requests": {
+        "count": 24,
+        "bytes": 7232517,
+        "bookCount": 23
+      },
+      "exactResults": true,
+      "renderedPagination": true,
+      "pageErrors": []
+    },
+    {
+      "dataset": "current",
+      "mode": "fallback",
+      "cpuRate": 4,
+      "sample": 2,
+      "catalogMs": 46.40000009536743,
+      "initialLongTasks": [],
+      "coldSearchAndRenderMs": 577.1527920000008,
+      "probeRoundTripMs": 20.413958999999522,
+      "coldLongTasks": [],
+      "coldMaxFrameGapMs": 17.700000000000045,
+      "queries": [
+        {
+          "query": "Allah",
+          "milliseconds": 0.5,
+          "total": 1132
+        },
+        {
+          "query": "يونس",
+          "milliseconds": 4.3999998569488525,
+          "total": 53
+        },
+        {
+          "query": "\"riding camels\"",
+          "milliseconds": 3.700000047683716,
+          "total": 1
+        },
+        {
+          "query": "unlikelywordwithoutmatch",
+          "milliseconds": 2.4000000953674316,
+          "total": 0
+        },
+        {
+          "query": "724b",
+          "milliseconds": 0.09999990463256836,
+          "total": 1
+        }
+      ],
+      "pageMilliseconds": 2.9000000953674316,
+      "mainHeapBefore": {
+        "usedSize": 2020236,
+        "totalSize": 3211264,
+        "embedderHeapUsedSize": 739216,
+        "backingStorageSize": 111270
+      },
+      "mainHeapAfter": {
+        "usedSize": 7751160,
+        "totalSize": 8781824,
+        "embedderHeapUsedSize": 1511304,
+        "backingStorageSize": 112752
+      },
+      "workerHeapAfter": null,
+      "cache": {
+        "bookIds": [
+          "night-prayer",
+          "voluntary-prayer",
+          "mosques-prayer",
+          "actions-prayer"
+        ],
+        "encodedBytes": 534756,
+        "maxCachedBooks": 4,
+        "maxCachedBytes": 4194304
+      },
+      "requests": {
+        "count": 24,
+        "bytes": 7232517,
+        "bookCount": 23
+      },
+      "exactResults": true,
+      "renderedPagination": true,
+      "pageErrors": []
+    },
+    {
+      "dataset": "current",
+      "mode": "fallback",
+      "cpuRate": 4,
+      "sample": 3,
+      "catalogMs": 48,
+      "initialLongTasks": [],
+      "coldSearchAndRenderMs": 570.6869589999997,
+      "probeRoundTripMs": 20.927708999999595,
+      "coldLongTasks": [],
+      "coldMaxFrameGapMs": 33.299999999999955,
+      "queries": [
+        {
+          "query": "Allah",
+          "milliseconds": 0.5,
+          "total": 1132
+        },
+        {
+          "query": "يونس",
+          "milliseconds": 3.4000000953674316,
+          "total": 53
+        },
+        {
+          "query": "\"riding camels\"",
+          "milliseconds": 3.6999998092651367,
+          "total": 1
+        },
+        {
+          "query": "unlikelywordwithoutmatch",
+          "milliseconds": 2.299999952316284,
+          "total": 0
+        },
+        {
+          "query": "724b",
+          "milliseconds": 0.5,
+          "total": 1
+        }
+      ],
+      "pageMilliseconds": 2.4000000953674316,
+      "mainHeapBefore": {
+        "usedSize": 2021724,
+        "totalSize": 2949120,
+        "embedderHeapUsedSize": 847360,
+        "backingStorageSize": 111270
+      },
+      "mainHeapAfter": {
+        "usedSize": 7739916,
+        "totalSize": 9043968,
+        "embedderHeapUsedSize": 1549728,
+        "backingStorageSize": 112752
+      },
+      "workerHeapAfter": null,
+      "cache": {
+        "bookIds": [
+          "night-prayer",
+          "voluntary-prayer",
+          "mosques-prayer",
+          "actions-prayer"
+        ],
+        "encodedBytes": 534756,
+        "maxCachedBooks": 4,
+        "maxCachedBytes": 4194304
+      },
+      "requests": {
+        "count": 24,
+        "bytes": 7232517,
+        "bookCount": 23
+      },
+      "exactResults": true,
+      "renderedPagination": true,
+      "pageErrors": []
+    },
+    {
+      "dataset": "synthetic-8000",
+      "mode": "worker",
+      "cpuRate": 1,
+      "sample": 1,
+      "catalogMs": 22.399999856948853,
+      "initialLongTasks": [],
+      "coldSearchAndRenderMs": 992.4577079999999,
+      "probeRoundTripMs": 2.5821670000004815,
+      "coldLongTasks": [],
+      "coldMaxFrameGapMs": 17.600000000000023,
+      "queries": [
+        {
+          "query": "Artificial report",
+          "milliseconds": 0.20000004768371582,
+          "total": 8000
+        },
+        {
+          "query": "كلمات تجريبية",
+          "milliseconds": 4.699999809265137,
+          "total": 8000
+        },
+        {
+          "query": "\"bilingual catalogue\"",
+          "milliseconds": 2,
+          "total": 8000
+        },
+        {
+          "query": "unlikelywordwithoutmatch",
+          "milliseconds": 6.400000095367432,
+          "total": 0
+        },
+        {
+          "query": "128b",
+          "milliseconds": 0.39999985694885254,
+          "total": 1
+        }
+      ],
+      "pageMilliseconds": 1.2000000476837158,
+      "mainHeapBefore": {
+        "usedSize": 2778408,
+        "totalSize": 3211264,
+        "embedderHeapUsedSize": 458408,
+        "backingStorageSize": 82218
+      },
+      "mainHeapAfter": {
+        "usedSize": 3619956,
+        "totalSize": 4325376,
+        "embedderHeapUsedSize": 2287632,
+        "backingStorageSize": 82806
+      },
+      "workerHeapAfter": {
+        "usedSize": 61876660,
+        "totalSize": 63700992,
+        "embedderHeapUsedSize": 98248,
+        "backingStorageSize": 63994
+      },
+      "cache": {
+        "bookIds": [],
+        "encodedBytes": 0,
+        "maxCachedBooks": 4,
+        "maxCachedBytes": 4194304
+      },
+      "requests": {
+        "count": 95,
+        "bytes": 35738043,
+        "bookCount": 93
+      },
+      "exactResults": true,
+      "renderedPagination": true,
+      "pageErrors": []
+    },
+    {
+      "dataset": "synthetic-8000",
+      "mode": "worker",
+      "cpuRate": 1,
+      "sample": 2,
+      "catalogMs": 22.59999990463257,
+      "initialLongTasks": [],
+      "coldSearchAndRenderMs": 1056.272833000001,
+      "probeRoundTripMs": 2.449125000001004,
+      "coldLongTasks": [],
+      "coldMaxFrameGapMs": 17.600000000000023,
+      "queries": [
+        {
+          "query": "Artificial report",
+          "milliseconds": 0.19999980926513672,
+          "total": 8000
+        },
+        {
+          "query": "كلمات تجريبية",
+          "milliseconds": 4.1000001430511475,
+          "total": 8000
+        },
+        {
+          "query": "\"bilingual catalogue\"",
+          "milliseconds": 1.6999998092651367,
+          "total": 8000
+        },
+        {
+          "query": "unlikelywordwithoutmatch",
+          "milliseconds": 6.8999998569488525,
+          "total": 0
+        },
+        {
+          "query": "128b",
+          "milliseconds": 0.5,
+          "total": 1
+        }
+      ],
+      "pageMilliseconds": 1.2999999523162842,
+      "mainHeapBefore": {
+        "usedSize": 2893000,
+        "totalSize": 3473408,
+        "embedderHeapUsedSize": 781896,
+        "backingStorageSize": 82261
+      },
+      "mainHeapAfter": {
+        "usedSize": 3734728,
+        "totalSize": 4587520,
+        "embedderHeapUsedSize": 2226912,
+        "backingStorageSize": 82849
+      },
+      "workerHeapAfter": {
+        "usedSize": 61885808,
+        "totalSize": 64225280,
+        "embedderHeapUsedSize": 100024,
+        "backingStorageSize": 63994
+      },
+      "cache": {
+        "bookIds": [],
+        "encodedBytes": 0,
+        "maxCachedBooks": 4,
+        "maxCachedBytes": 4194304
+      },
+      "requests": {
+        "count": 95,
+        "bytes": 35738043,
+        "bookCount": 93
+      },
+      "exactResults": true,
+      "renderedPagination": true,
+      "pageErrors": []
+    },
+    {
+      "dataset": "synthetic-8000",
+      "mode": "worker",
+      "cpuRate": 1,
+      "sample": 3,
+      "catalogMs": 22.200000047683716,
+      "initialLongTasks": [],
+      "coldSearchAndRenderMs": 989.2691669999986,
+      "probeRoundTripMs": 2.842583999999988,
+      "coldLongTasks": [],
+      "coldMaxFrameGapMs": 17.5,
+      "queries": [
+        {
+          "query": "Artificial report",
+          "milliseconds": 0.20000004768371582,
+          "total": 8000
+        },
+        {
+          "query": "كلمات تجريبية",
+          "milliseconds": 4.1000001430511475,
+          "total": 8000
+        },
+        {
+          "query": "\"bilingual catalogue\"",
+          "milliseconds": 1.7000000476837158,
+          "total": 8000
+        },
+        {
+          "query": "unlikelywordwithoutmatch",
+          "milliseconds": 6.900000095367432,
+          "total": 0
+        },
+        {
+          "query": "128b",
+          "milliseconds": 0.5,
+          "total": 1
+        }
+      ],
+      "pageMilliseconds": 1.2000000476837158,
+      "mainHeapBefore": {
+        "usedSize": 2893076,
+        "totalSize": 3735552,
+        "embedderHeapUsedSize": 844920,
+        "backingStorageSize": 82261
+      },
+      "mainHeapAfter": {
+        "usedSize": 3734548,
+        "totalSize": 4587520,
+        "embedderHeapUsedSize": 2287536,
+        "backingStorageSize": 82849
+      },
+      "workerHeapAfter": {
+        "usedSize": 61888668,
+        "totalSize": 64749568,
+        "embedderHeapUsedSize": 234312,
+        "backingStorageSize": 63994
+      },
+      "cache": {
+        "bookIds": [],
+        "encodedBytes": 0,
+        "maxCachedBooks": 4,
+        "maxCachedBytes": 4194304
+      },
+      "requests": {
+        "count": 95,
+        "bytes": 35738043,
+        "bookCount": 93
+      },
+      "exactResults": true,
+      "renderedPagination": true,
+      "pageErrors": []
+    },
+    {
+      "dataset": "synthetic-8000",
+      "mode": "fallback",
+      "cpuRate": 1,
+      "sample": 1,
+      "catalogMs": 22.299999952316284,
+      "initialLongTasks": [],
+      "coldSearchAndRenderMs": 969.666541999999,
+      "probeRoundTripMs": 14.845208000000639,
+      "coldLongTasks": [],
+      "coldMaxFrameGapMs": 17.700000000000045,
+      "queries": [
+        {
+          "query": "Artificial report",
+          "milliseconds": 0.10000014305114746,
+          "total": 8000
+        },
+        {
+          "query": "كلمات تجريبية",
+          "milliseconds": 4.299999952316284,
+          "total": 8000
+        },
+        {
+          "query": "\"bilingual catalogue\"",
+          "milliseconds": 2.0999999046325684,
+          "total": 8000
+        },
+        {
+          "query": "unlikelywordwithoutmatch",
+          "milliseconds": 7.3999998569488525,
+          "total": 0
+        },
+        {
+          "query": "128b",
+          "milliseconds": 0.40000009536743164,
+          "total": 1
+        }
+      ],
+      "pageMilliseconds": 1.6000001430511475,
+      "mainHeapBefore": {
+        "usedSize": 2893076,
+        "totalSize": 3735552,
+        "embedderHeapUsedSize": 844896,
+        "backingStorageSize": 82263
+      },
+      "mainHeapAfter": {
+        "usedSize": 65500000,
+        "totalSize": 67764224,
+        "embedderHeapUsedSize": 2401728,
+        "backingStorageSize": 86353
+      },
+      "workerHeapAfter": null,
+      "cache": {
+        "bookIds": [
+          "fixture-90",
+          "fixture-91",
+          "fixture-92",
+          "fixture-93"
+        ],
+        "encodedBytes": 1459288,
+        "maxCachedBooks": 4,
+        "maxCachedBytes": 4194304
+      },
+      "requests": {
+        "count": 94,
+        "bytes": 34832998,
+        "bookCount": 93
+      },
+      "exactResults": true,
+      "renderedPagination": true,
+      "pageErrors": []
+    },
+    {
+      "dataset": "synthetic-8000",
+      "mode": "fallback",
+      "cpuRate": 1,
+      "sample": 2,
+      "catalogMs": 24.200000047683716,
+      "initialLongTasks": [],
+      "coldSearchAndRenderMs": 977.6694580000003,
+      "probeRoundTripMs": 17.176625000000058,
+      "coldLongTasks": [],
+      "coldMaxFrameGapMs": 17.600000000000023,
+      "queries": [
+        {
+          "query": "Artificial report",
+          "milliseconds": 0.10000014305114746,
+          "total": 8000
+        },
+        {
+          "query": "كلمات تجريبية",
+          "milliseconds": 3.9000000953674316,
+          "total": 8000
+        },
+        {
+          "query": "\"bilingual catalogue\"",
+          "milliseconds": 1.7000000476837158,
+          "total": 8000
+        },
+        {
+          "query": "unlikelywordwithoutmatch",
+          "milliseconds": 6.700000047683716,
+          "total": 0
+        },
+        {
+          "query": "128b",
+          "milliseconds": 0.40000009536743164,
+          "total": 1
+        }
+      ],
+      "pageMilliseconds": 1.1000001430511475,
+      "mainHeapBefore": {
+        "usedSize": 2893044,
+        "totalSize": 3735552,
+        "embedderHeapUsedSize": 458152,
+        "backingStorageSize": 82263
+      },
+      "mainHeapAfter": {
+        "usedSize": 65495552,
+        "totalSize": 67502080,
+        "embedderHeapUsedSize": 1922088,
+        "backingStorageSize": 86353
+      },
+      "workerHeapAfter": null,
+      "cache": {
+        "bookIds": [
+          "fixture-90",
+          "fixture-91",
+          "fixture-92",
+          "fixture-93"
+        ],
+        "encodedBytes": 1459288,
+        "maxCachedBooks": 4,
+        "maxCachedBytes": 4194304
+      },
+      "requests": {
+        "count": 94,
+        "bytes": 34832998,
+        "bookCount": 93
+      },
+      "exactResults": true,
+      "renderedPagination": true,
+      "pageErrors": []
+    },
+    {
+      "dataset": "synthetic-8000",
+      "mode": "fallback",
+      "cpuRate": 1,
+      "sample": 3,
+      "catalogMs": 22.299999952316284,
+      "initialLongTasks": [],
+      "coldSearchAndRenderMs": 956.5498749999988,
+      "probeRoundTripMs": 11.62604199999987,
+      "coldLongTasks": [],
+      "coldMaxFrameGapMs": 17.69999999999999,
+      "queries": [
+        {
+          "query": "Artificial report",
+          "milliseconds": 0.09999990463256836,
+          "total": 8000
+        },
+        {
+          "query": "كلمات تجريبية",
+          "milliseconds": 4.099999904632568,
+          "total": 8000
+        },
+        {
+          "query": "\"bilingual catalogue\"",
+          "milliseconds": 1.6000001430511475,
+          "total": 8000
+        },
+        {
+          "query": "unlikelywordwithoutmatch",
+          "milliseconds": 6.800000190734863,
+          "total": 0
+        },
+        {
+          "query": "128b",
+          "milliseconds": 0.2999999523162842,
+          "total": 1
+        }
+      ],
+      "pageMilliseconds": 1.2000000476837158,
+      "mainHeapBefore": {
+        "usedSize": 2893000,
+        "totalSize": 3473408,
+        "embedderHeapUsedSize": 781896,
+        "backingStorageSize": 82263
+      },
+      "mainHeapAfter": {
+        "usedSize": 65495812,
+        "totalSize": 67502080,
+        "embedderHeapUsedSize": 1922360,
+        "backingStorageSize": 86353
+      },
+      "workerHeapAfter": null,
+      "cache": {
+        "bookIds": [
+          "fixture-90",
+          "fixture-91",
+          "fixture-92",
+          "fixture-93"
+        ],
+        "encodedBytes": 1459288,
+        "maxCachedBooks": 4,
+        "maxCachedBytes": 4194304
+      },
+      "requests": {
+        "count": 94,
+        "bytes": 34832998,
+        "bookCount": 93
+      },
+      "exactResults": true,
+      "renderedPagination": true,
+      "pageErrors": []
+    },
+    {
+      "dataset": "synthetic-8000",
+      "mode": "worker",
+      "cpuRate": 4,
+      "sample": 1,
+      "catalogMs": 83.09999990463257,
+      "initialLongTasks": [
+        {
+          "start": 83.09999990463257,
+          "duration": 51
+        }
+      ],
+      "coldSearchAndRenderMs": 1045.3172920000015,
+      "probeRoundTripMs": 9.443999999999505,
+      "coldLongTasks": [],
+      "coldMaxFrameGapMs": 17.699999999999932,
+      "queries": [
+        {
+          "query": "Artificial report",
+          "milliseconds": 0.5,
+          "total": 8000
+        },
+        {
+          "query": "كلمات تجريبية",
+          "milliseconds": 4.5,
+          "total": 8000
+        },
+        {
+          "query": "\"bilingual catalogue\"",
+          "milliseconds": 1.8999998569488525,
+          "total": 8000
+        },
+        {
+          "query": "unlikelywordwithoutmatch",
+          "milliseconds": 7.300000190734863,
+          "total": 0
+        },
+        {
+          "query": "128b",
+          "milliseconds": 1,
+          "total": 1
+        }
+      ],
+      "pageMilliseconds": 1.6000001430511475,
+      "mainHeapBefore": {
+        "usedSize": 2898056,
+        "totalSize": 3997696,
+        "embedderHeapUsedSize": 845608,
+        "backingStorageSize": 82261
+      },
+      "mainHeapAfter": {
+        "usedSize": 3739492,
+        "totalSize": 4849664,
+        "embedderHeapUsedSize": 2347408,
+        "backingStorageSize": 82849
+      },
+      "workerHeapAfter": {
+        "usedSize": 61897348,
+        "totalSize": 64225280,
+        "embedderHeapUsedSize": 154552,
+        "backingStorageSize": 63994
+      },
+      "cache": {
+        "bookIds": [],
+        "encodedBytes": 0,
+        "maxCachedBooks": 4,
+        "maxCachedBytes": 4194304
+      },
+      "requests": {
+        "count": 95,
+        "bytes": 35738043,
+        "bookCount": 93
+      },
+      "exactResults": true,
+      "renderedPagination": true,
+      "pageErrors": []
+    },
+    {
+      "dataset": "synthetic-8000",
+      "mode": "worker",
+      "cpuRate": 4,
+      "sample": 2,
+      "catalogMs": 83.10000014305115,
+      "initialLongTasks": [
+        {
+          "start": 83.5,
+          "duration": 50
+        }
+      ],
+      "coldSearchAndRenderMs": 1041.6920419999988,
+      "probeRoundTripMs": 9.831999999998516,
+      "coldLongTasks": [],
+      "coldMaxFrameGapMs": 17.799999999999955,
+      "queries": [
+        {
+          "query": "Artificial report",
+          "milliseconds": 1.1000001430511475,
+          "total": 8000
+        },
+        {
+          "query": "كلمات تجريبية",
+          "milliseconds": 4.5,
+          "total": 8000
+        },
+        {
+          "query": "\"bilingual catalogue\"",
+          "milliseconds": 2.5,
+          "total": 8000
+        },
+        {
+          "query": "unlikelywordwithoutmatch",
+          "milliseconds": 7.799999952316284,
+          "total": 0
+        },
+        {
+          "query": "128b",
+          "milliseconds": 0.7999999523162842,
+          "total": 1
+        }
+      ],
+      "pageMilliseconds": 1.5999999046325684,
+      "mainHeapBefore": {
+        "usedSize": 2898000,
+        "totalSize": 3997696,
+        "embedderHeapUsedSize": 845608,
+        "backingStorageSize": 82261
+      },
+      "mainHeapAfter": {
+        "usedSize": 3739448,
+        "totalSize": 4849664,
+        "embedderHeapUsedSize": 2350384,
+        "backingStorageSize": 82849
+      },
+      "workerHeapAfter": {
+        "usedSize": 61883480,
+        "totalSize": 63700992,
+        "embedderHeapUsedSize": 156776,
+        "backingStorageSize": 63994
+      },
+      "cache": {
+        "bookIds": [],
+        "encodedBytes": 0,
+        "maxCachedBooks": 4,
+        "maxCachedBytes": 4194304
+      },
+      "requests": {
+        "count": 95,
+        "bytes": 35738043,
+        "bookCount": 93
+      },
+      "exactResults": true,
+      "renderedPagination": true,
+      "pageErrors": []
+    },
+    {
+      "dataset": "synthetic-8000",
+      "mode": "worker",
+      "cpuRate": 4,
+      "sample": 3,
+      "catalogMs": 82.70000004768372,
+      "initialLongTasks": [
+        {
+          "start": 83.59999990463257,
+          "duration": 50
+        }
+      ],
+      "coldSearchAndRenderMs": 1054.7242499999993,
+      "probeRoundTripMs": 9.010416000000987,
+      "coldLongTasks": [],
+      "coldMaxFrameGapMs": 17.700000000000045,
+      "queries": [
+        {
+          "query": "Artificial report",
+          "milliseconds": 0.5,
+          "total": 8000
+        },
+        {
+          "query": "كلمات تجريبية",
+          "milliseconds": 4.099999904632568,
+          "total": 8000
+        },
+        {
+          "query": "\"bilingual catalogue\"",
+          "milliseconds": 2.3999998569488525,
+          "total": 8000
+        },
+        {
+          "query": "unlikelywordwithoutmatch",
+          "milliseconds": 7.400000095367432,
+          "total": 0
+        },
+        {
+          "query": "128b",
+          "milliseconds": 1,
+          "total": 1
+        }
+      ],
+      "pageMilliseconds": 1.2999999523162842,
+      "mainHeapBefore": {
+        "usedSize": 2897888,
+        "totalSize": 3997696,
+        "embedderHeapUsedSize": 846864,
+        "backingStorageSize": 82261
+      },
+      "mainHeapAfter": {
+        "usedSize": 3739648,
+        "totalSize": 4849664,
+        "embedderHeapUsedSize": 2331728,
+        "backingStorageSize": 82849
+      },
+      "workerHeapAfter": {
+        "usedSize": 61893876,
+        "totalSize": 64487424,
+        "embedderHeapUsedSize": 158960,
+        "backingStorageSize": 63994
+      },
+      "cache": {
+        "bookIds": [],
+        "encodedBytes": 0,
+        "maxCachedBooks": 4,
+        "maxCachedBytes": 4194304
+      },
+      "requests": {
+        "count": 95,
+        "bytes": 35738043,
+        "bookCount": 93
+      },
+      "exactResults": true,
+      "renderedPagination": true,
+      "pageErrors": []
+    },
+    {
+      "dataset": "synthetic-8000",
+      "mode": "fallback",
+      "cpuRate": 4,
+      "sample": 1,
+      "catalogMs": 82.5,
+      "initialLongTasks": [
+        {
+          "start": 83.89999985694885,
+          "duration": 50
+        }
+      ],
+      "coldSearchAndRenderMs": 3691.990958000002,
+      "probeRoundTripMs": 45.24645800000144,
+      "coldLongTasks": [],
+      "coldMaxFrameGapMs": 34.09999999999991,
+      "queries": [
+        {
+          "query": "Artificial report",
+          "milliseconds": 0.40000009536743164,
+          "total": 8000
+        },
+        {
+          "query": "كلمات تجريبية",
+          "milliseconds": 14.700000047683716,
+          "total": 8000
+        },
+        {
+          "query": "\"bilingual catalogue\"",
+          "milliseconds": 9.400000095367432,
+          "total": 8000
+        },
+        {
+          "query": "unlikelywordwithoutmatch",
+          "milliseconds": 33.700000047683716,
+          "total": 0
+        },
+        {
+          "query": "128b",
+          "milliseconds": 1.6999998092651367,
+          "total": 1
+        }
+      ],
+      "pageMilliseconds": 7.099999904632568,
+      "mainHeapBefore": {
+        "usedSize": 2898056,
+        "totalSize": 3997696,
+        "embedderHeapUsedSize": 845608,
+        "backingStorageSize": 82263
+      },
+      "mainHeapAfter": {
+        "usedSize": 65501076,
+        "totalSize": 68550656,
+        "embedderHeapUsedSize": 2371920,
+        "backingStorageSize": 86353
+      },
+      "workerHeapAfter": null,
+      "cache": {
+        "bookIds": [
+          "fixture-90",
+          "fixture-91",
+          "fixture-92",
+          "fixture-93"
+        ],
+        "encodedBytes": 1459288,
+        "maxCachedBooks": 4,
+        "maxCachedBytes": 4194304
+      },
+      "requests": {
+        "count": 94,
+        "bytes": 34832998,
+        "bookCount": 93
+      },
+      "exactResults": true,
+      "renderedPagination": true,
+      "pageErrors": []
+    },
+    {
+      "dataset": "synthetic-8000",
+      "mode": "fallback",
+      "cpuRate": 4,
+      "sample": 2,
+      "catalogMs": 82.59999990463257,
+      "initialLongTasks": [
+        {
+          "start": 83.70000004768372,
+          "duration": 50
+        }
+      ],
+      "coldSearchAndRenderMs": 3731.8597499999996,
+      "probeRoundTripMs": 12.605790999998135,
+      "coldLongTasks": [],
+      "coldMaxFrameGapMs": 33.5,
+      "queries": [
+        {
+          "query": "Artificial report",
+          "milliseconds": 0.5,
+          "total": 8000
+        },
+        {
+          "query": "كلمات تجريبية",
+          "milliseconds": 14.799999952316284,
+          "total": 8000
+        },
+        {
+          "query": "\"bilingual catalogue\"",
+          "milliseconds": 8,
+          "total": 8000
+        },
+        {
+          "query": "unlikelywordwithoutmatch",
+          "milliseconds": 28.899999856948853,
+          "total": 0
+        },
+        {
+          "query": "128b",
+          "milliseconds": 1.2000000476837158,
+          "total": 1
+        }
+      ],
+      "pageMilliseconds": 4.799999952316284,
+      "mainHeapBefore": {
+        "usedSize": 2897976,
+        "totalSize": 3735552,
+        "embedderHeapUsedSize": 454560,
+        "backingStorageSize": 82263
+      },
+      "mainHeapAfter": {
+        "usedSize": 65491232,
+        "totalSize": 68812800,
+        "embedderHeapUsedSize": 2445056,
+        "backingStorageSize": 86353
+      },
+      "workerHeapAfter": null,
+      "cache": {
+        "bookIds": [
+          "fixture-90",
+          "fixture-91",
+          "fixture-92",
+          "fixture-93"
+        ],
+        "encodedBytes": 1459288,
+        "maxCachedBooks": 4,
+        "maxCachedBytes": 4194304
+      },
+      "requests": {
+        "count": 94,
+        "bytes": 34832998,
+        "bookCount": 93
+      },
+      "exactResults": true,
+      "renderedPagination": true,
+      "pageErrors": []
+    },
+    {
+      "dataset": "synthetic-8000",
+      "mode": "fallback",
+      "cpuRate": 4,
+      "sample": 3,
+      "catalogMs": 81.29999995231628,
+      "initialLongTasks": [
+        {
+          "start": 81.69999980926514,
+          "duration": 50
+        }
+      ],
+      "coldSearchAndRenderMs": 3688.3856670000023,
+      "probeRoundTripMs": 47.564290999998775,
+      "coldLongTasks": [],
+      "coldMaxFrameGapMs": 17.700000000000273,
+      "queries": [
+        {
+          "query": "Artificial report",
+          "milliseconds": 0,
+          "total": 8000
+        },
+        {
+          "query": "كلمات تجريبية",
+          "milliseconds": 15.900000095367432,
+          "total": 8000
+        },
+        {
+          "query": "\"bilingual catalogue\"",
+          "milliseconds": 8.099999904632568,
+          "total": 8000
+        },
+        {
+          "query": "unlikelywordwithoutmatch",
+          "milliseconds": 26.899999856948853,
+          "total": 0
+        },
+        {
+          "query": "128b",
+          "milliseconds": 1.1999998092651367,
+          "total": 1
+        }
+      ],
+      "pageMilliseconds": 6.599999904632568,
+      "mainHeapBefore": {
+        "usedSize": 2897900,
+        "totalSize": 3997696,
+        "embedderHeapUsedSize": 738432,
+        "backingStorageSize": 82263
+      },
+      "mainHeapAfter": {
+        "usedSize": 65491596,
+        "totalSize": 68026368,
+        "embedderHeapUsedSize": 2507616,
+        "backingStorageSize": 86353
+      },
+      "workerHeapAfter": null,
+      "cache": {
+        "bookIds": [
+          "fixture-90",
+          "fixture-91",
+          "fixture-92",
+          "fixture-93"
+        ],
+        "encodedBytes": 1459288,
+        "maxCachedBooks": 4,
+        "maxCachedBytes": 4194304
+      },
+      "requests": {
+        "count": 94,
+        "bytes": 34832998,
+        "bookCount": 93
+      },
+      "exactResults": true,
+      "renderedPagination": true,
+      "pageErrors": []
+    }
+  ],
+  "status": "passed"
+}

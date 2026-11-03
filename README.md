@@ -2,6 +2,16 @@
 
 The local personal reader at `reader/` contains 1,166 selected Bukhari entries across twenty-three sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
+## Bilingual search at larger scale · 3 November 2026
+
+The local reader still contains **1,166 entries across twenty-three sections**. Search fallback scheduling now yields after an eight-millisecond work slice, while retaining the initial yield, cancellation checks and exact source behavior. It no longer pays a browser timer delay after every small 32-entry batch.
+
+In a separate **8,000-entry bilingual synthetic workload**, the median uncached warm fallback query fell from **1,122 ms to 3 ms** at normal desktop speed, and from **1,068 ms to 12 ms** with fourfold page CPU emulation. First search and rendering fell from **2,265 ms to 970 ms** at normal speed. These are component measurements, not physical-iPhone claims; worker CPU was not independently throttled. The current real collection was also measured. All 48 before/after cases retained exact matching, source snippets, language precedence, references and pagination. The final styled cold-search windows recorded no long tasks. Retained heap stayed essentially unchanged: the synthetic fallback used about 65.5 MB, and worker search about 61.9 MB in the worker plus 3.7 MB on the page. These figures exclude native memory and transient peaks.
+
+**827 Node tests and thirteen real-reader offline/browser checks passed.** An actual update from the preceding release preserved the 1165 session and 983b bookmark. English/Arabic search, result pagination, source access, suffixed references and held entries worked offline with both workers and a deliberately unavailable worker. Four screenshots were inspected. All **987 previously tracked source, review, admission, book, source-note, recording and artwork files** remain byte-identical. No new hadith, recording or external publication was added.
+
+See `research/bilingual-search-verification.json` and its two raw measurement files. The opt-in `scripts/benchmark-reader.mjs` serves fixtures only on loopback and never writes synthetic data to website assets. Actual full-corpus shape, peak memory, slow-network loading and fresh physical-iPhone testing remain open. Text intake resumes at **1166**; Cedar remains on the ordinary free demo.
+
 ## Complete selected Actions during Prayer · 3 November 2026
 
 The local personal reader contains **1,166 entries across twenty-three sections**. This batch adds all **26 selected reports 1140–1165**, with 70 complete Arabic/English spans and eighteen chapters. Six separate chapter comments remain Arabic only, with English pending; the context-only chapter stays outside daily sessions. The new English is an AI-assisted working translation, not Darussalam wording or independent certification.
