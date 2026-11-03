@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "namespace": "bukhari-opening-v1",
   "publication": "personal-prototype",
-  "sourceRecordSha256": "660294c2c7416f06eb4ade9693356e684cce1f4abbcd66d2ae98d980627baf36",
+  "sourceRecordSha256": "3461f3357f25e78ac7a90e2c18e6599bbb1212cb005776152d617e5a05d4842d",
   "rights": {
     "status": "pending",
     "evidence": [
@@ -47,7 +47,9 @@
       "reader/night-prayer-inputs.json",
       "reader/night-prayer-review.html",
       "reader/voluntary-prayer-inputs.json",
-      "reader/voluntary-prayer-review.html"
+      "reader/voluntary-prayer-review.html",
+      "reader/mosques-prayer-inputs.json",
+      "reader/mosques-prayer-review.html"
     ]
   },
   "books": [
@@ -17041,6 +17043,153 @@
             "notes": {
               "path": "voluntary-prayer-review.html",
               "fragment": "chapter-09"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "mosques-prayer",
+      "number": 22,
+      "title": "Mosques of Mecca and Medina",
+      "sourceEntryCount": 8,
+      "entryNumbers": [
+        1132,
+        1133,
+        1134,
+        1135,
+        1136,
+        1137,
+        1138,
+        1139
+      ],
+      "chapters": [
+        {
+          "id": "chapter-01",
+          "title": "The merit of prayer in the mosques of Mecca and Medina",
+          "entryNumbers": [
+            1132,
+            1133
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "mosques-prayer-review.html",
+              "fragment": "chapter-01"
+            }
+          }
+        },
+        {
+          "id": "chapter-02",
+          "title": "The Quba Mosque",
+          "entryNumbers": [
+            1134
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "mosques-prayer-review.html",
+              "fragment": "chapter-02"
+            }
+          }
+        },
+        {
+          "id": "chapter-03",
+          "title": "Coming to the Quba Mosque every Saturday",
+          "entryNumbers": [
+            1135
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "mosques-prayer-review.html",
+              "fragment": "chapter-03"
+            }
+          }
+        },
+        {
+          "id": "chapter-04",
+          "title": "Going to the Quba Mosque on foot and riding",
+          "entryNumbers": [
+            1136
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "textualDifferences": {
+              "count": 1,
+              "evidenceSha256": "f01b44ed76e554c864548f7f6602d71b0913a219934dad9474dd002f056fbb0d",
+              "status": "unresolved",
+              "englishStatus": "pending",
+              "includesHeading": true
+            },
+            "notes": {
+              "path": "mosques-prayer-review.html",
+              "fragment": "chapter-04"
+            }
+          }
+        },
+        {
+          "id": "chapter-05",
+          "title": "The merit of the space between the grave and the pulpit",
+          "entryNumbers": [
+            1137,
+            1138
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "mosques-prayer-review.html",
+              "fragment": "chapter-05"
+            }
+          }
+        },
+        {
+          "id": "chapter-06",
+          "title": "The mosque of Bayt al-Maqdis",
+          "entryNumbers": [
+            1139
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "mosques-prayer-review.html",
+              "fragment": "chapter-06"
             }
           }
         }
@@ -36291,15 +36440,151 @@
       "contextReview": {
         "status": "pending"
       }
+    },
+    {
+      "number": 1132,
+      "id": "bukhari:1132",
+      "entrySha256": "d9a9fdbf50c6cc1264805c3ddc34d9a609397c95d95fd3b04c093eb58e0b4495",
+      "arabicSha256": "a0e1508ca7e0d01e8d50f768124df95a611c4ab22cf00e20942d82e7c1322026",
+      "englishSha256": "ce51b554bccef5d9b2cd7e0e41393a963a0fca88ab5ca8d004ac4d7cfc45141d",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 1133,
+      "id": "bukhari:1133",
+      "entrySha256": "bb59e40758b176fbe5b9c20b55a330d4b7485f68ad6339db9647bcb6a7fc281c",
+      "arabicSha256": "236c390ae83decff3fe87b0bed45fefae19a493adf9249ea275862b6d9fe4d31",
+      "englishSha256": "937d287ca1b048ac45bb1294ef28d19af0175c543b1a21fbc0bae677f0d99257",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 1134,
+      "id": "bukhari:1134",
+      "entrySha256": "bcd180d509b1409a4444ffce612d5cb0b58de3f16dfb5a9684ba2826b98fa465",
+      "arabicSha256": "cd13319bd207d0c02c78c5a5146ebfa93a77561b651d9f3d142702402f9239d3",
+      "englishSha256": "2890ee958a49c4728b801db1a10757323ff8a5975f4d0069dc188723075e1a2d",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 1135,
+      "id": "bukhari:1135",
+      "entrySha256": "4f2ab86e220e70bd37236f4480edcf6c3d67d9d33c576efff79e5d518ce0ddd5",
+      "arabicSha256": "501942a621b3ffdd949024d11ec4049d2a969520333d5d55edaffdb60cadb1f5",
+      "englishSha256": "9ba9ddc038b9e74e592003fa515e30fae3088e44358b6ffc5deb653eff987b66",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 1136,
+      "id": "bukhari:1136",
+      "entrySha256": "7d8716e7da6192ddc9e4f38517570e0fe804793df1cc89e5a07c4b664a0698cf",
+      "arabicSha256": "aca4cab71e0c8cdf0877090c90411c5ea9451810a5ebf84aab4ea3a3eb58bf7e",
+      "englishSha256": "fe777fcc776a9c7598db0e996729e5072c2321313a493d31bdc7c1d566769e4a",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 1137,
+      "id": "bukhari:1137",
+      "entrySha256": "a3cfa1a1811f853884fc9c4c189d37a72bea4747299c38cc90c37bf9c9f298ce",
+      "arabicSha256": "8edd280088c1a6af86fbcf9f8dae19800fddd9254e970d0ad2174e2089a1ebc3",
+      "englishSha256": "681bb3f3971a7b584ce3b71c63c29674533cc3a564f493e2fe6834e45607e90c",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 1138,
+      "id": "bukhari:1138",
+      "entrySha256": "662626e39fd29fdedacc0b599030ddc8fba04a6e5f34c00224e7dc3549b167d8",
+      "arabicSha256": "2d05700a990d08999842853d2a6876963c4a4e402541590ce82f0de64182ef84",
+      "englishSha256": "d12cd7aa37716a409127cc4eec589db2ac53a680c68b5f21387a6a1678a4d886",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 1139,
+      "id": "bukhari:1139",
+      "entrySha256": "6c45b0d755e37af1a41631ad242bd62b1ebf71f333b4612167e96f330b9ae24d",
+      "arabicSha256": "47a7a955a74de689c70b25467e28d01fc7c61ce8f2b0d69f7682c57b01b548c6",
+      "englishSha256": "7f539d13a1824ffe58764579660b0f169c6f535959b20b60b565182b4a5e3574",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
     }
   ],
-  "catalogContextSha256": "c8dca5cb387fa0e74801eeac13c87870f8effd40cac69c59adefffb2ca31d6ed",
+  "catalogContextSha256": "88dc9688f8149d4bcddee098da9a2545882f063aeebfe5bf9398a506f2ae5a33",
   "collectionReview": {
     "status": "pending"
   },
   "sourceReferences": {
     "schemaVersion": 1,
-    "sourceRecordSha256": "660294c2c7416f06eb4ade9693356e684cce1f4abbcd66d2ae98d980627baf36",
+    "sourceRecordSha256": "3461f3357f25e78ac7a90e2c18e6599bbb1212cb005776152d617e5a05d4842d",
     "sources": [
       {
         "id": "arabic-base",
@@ -38092,6 +38377,34 @@
         "kind": "commentary",
         "format": "web",
         "url": "https://www.islamweb.net/ar/library/content/303/4856/باب-صلاة-النوافل-جماعة"
+      },
+      {
+        "id": "arabic-mosques-prayer",
+        "label": "Arabic Wikisource · fixed revision 142212",
+        "kind": "arabic-input",
+        "format": "web",
+        "url": "https://ar.wikisource.org/w/index.php?title=%D8%B5%D8%AD%D9%8A%D8%AD+%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A%2F%D9%83%D8%AA%D8%A7%D8%A8+%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9+%D9%81%D9%8A+%D9%85%D8%B3%D8%AC%D8%AF+%D9%85%D9%83%D8%A9+%D9%88%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9&oldid=142212"
+      },
+      {
+        "id": "bewley-mosques-prayer",
+        "label": "Aisha Bewley · Mosques of Mecca and Medina",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://aishabewley.org/bukhari10"
+      },
+      {
+        "id": "umdat-mosques-routes",
+        "label": "Al-Ayni · Umdat al-Qari · Two routes and the travel idiom",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://www.islamweb.net/ar/library/content/303/4866/باب-فضل-الصلاة-في-مسجد-مكة-والمدينة"
+      },
+      {
+        "id": "fath-mosques-house",
+        "label": "Ibn Hajar · Fath al-Bari · Heading and house wording",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://www.islamweb.net/ar/library/content/52/2202/باب-فضل-ما-بين-القبر-والمنبر"
       }
     ],
     "entries": [
@@ -97574,10 +97887,480 @@
           "fragment": "hadith-1131",
           "label": "Comparison notes and chapter source for this hadith"
         }
+      },
+      {
+        "id": "bukhari:1132",
+        "number": 1132,
+        "entrySha256": "d9a9fdbf50c6cc1264805c3ddc34d9a609397c95d95fd3b04c093eb58e0b4495",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation checked against two Arabic prints. Both English comparisons contain errors or omissions; neither supplies a complete reliable rendering of this selected entry. See the specific limits in the source notes. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-mosques-prayer",
+            "locator": "Book of Mosques of Mecca and Medina · source entry 1132 · باب فضل الصلاة في مسجد مكة والمدينة",
+            "scope": "Derived Arabic with an explicitly recorded correction supported by two printed witnesses. The unchanged digital paragraph, before/after wording and evidence are preserved in the offline source notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-mosques-prayer",
+            "locator": "Book of Mosques of Mecca and Medina · entry 1132",
+            "scope": "The displayed 1132 body stops after the Abu Said introduction and contains a stray pound-sign character. Its Abu Hurayrah three-mosques statement appears instead at the beginning of displayed label 1133, with the opening chain abbreviated. Neither label alone gives the complete selected 1132."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 21, Number 281 · damaged wording",
+            "scope": "Holy battles and the parenthetical following-narrative phrase are supplied in the first introduction. Preserve the selected expedition wording, unfinished introduction and explicit route switch without these additions."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 299",
+            "pdfPage": 299,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 287",
+            "pdfPage": 287,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "lexical",
+            "sourceId": "umdat-mosques-routes",
+            "locator": "The unfinished Abu Said account, distinct Abu Hurayrah route and shadd al-rihal idiom",
+            "scope": "Classical comparison of structure and lexical usage only. No legal scope or commentary is inserted into the hadith."
+          },
+          {
+            "id": "web-continuation",
+            "sourceId": "bewley-mosques-prayer",
+            "locator": "Displayed 1133, first report: three-mosques statement belonging to selected Arabic 1132",
+            "scope": "The exact misplaced comparison is documented in the pinned intake audit. It is not a separate app entry or complete-chain witness."
+          }
+        ],
+        "contextNotes": [
+          {
+            "id": "1132-two-routes",
+            "label": "Two narrator routes",
+            "text": "The selected source gives Abu Sa‘id’s brief introduction, then switches to a second narrator route and report. His four statements appear separately in Hadith 1139. Printed references 1188 and 1189 remain together in this entry.",
+            "citations": [
+              "base",
+              "brill-1862",
+              "dar-ibn-kathir-2002",
+              "lexical"
+            ],
+            "related": [
+              {
+                "id": "bukhari:1139",
+                "number": 1139,
+                "label": "Read the four statements · 1139"
+              }
+            ]
+          },
+          {
+            "id": "1132-repeated-said",
+            "label": "A recorded source correction",
+            "text": "The digital source repeats «قال: قال». Both inspected Arabic prints have «قال» once here. This prototype removes the duplicate and reads “He said” once. The original remains in the source notes; independent review is pending.",
+            "citations": [
+              "base",
+              "brill-1862",
+              "dar-ibn-kathir-2002"
+            ],
+            "related": []
+          }
+        ],
+        "localNotes": {
+          "path": "mosques-prayer-review.html",
+          "fragment": "hadith-1132",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:1133",
+        "number": 1133,
+        "entrySha256": "bb59e40758b176fbe5b9c20b55a330d4b7485f68ad6339db9647bcb6a7fc281c",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic prints and two English comparison families were inspected. One English comparison contains documented errors or omissions. See source notes for its limits. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-mosques-prayer",
+            "locator": "Book of Mosques of Mecca and Medina · source entry 1133 · باب فضل الصلاة في مسجد مكة والمدينة",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-mosques-prayer",
+            "locator": "Book of Mosques of Mecca and Medina · entry 1133",
+            "scope": "The displayed 1133 range begins with the three-mosques statement belonging to selected Arabic 1132, then gives the thousand-prayers report of selected 1133. Do not import the preceding statement or shift identities."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 21, Number 282",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 299",
+            "pdfPage": 299,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 287",
+            "pdfPage": 287,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "web-body-location",
+            "sourceId": "bewley-mosques-prayer",
+            "locator": "Displayed 1133, second report: thousand-prayers statement",
+            "scope": "The preceding three-mosques statement in this displayed range belongs to selected Arabic 1132 and is not included here."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "mosques-prayer-review.html",
+          "fragment": "hadith-1133",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:1134",
+        "number": 1134,
+        "entrySha256": "bcd180d509b1409a4444ffce612d5cb0b58de3f16dfb5a9684ba2826b98fa465",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic prints and one complete English comparison were checked. The second English reference contains damaged wording and cannot confirm the missing words. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-mosques-prayer",
+            "locator": "Book of Mosques of Mecca and Medina · source entry 1134 · باب مسجد قباء",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-mosques-prayer",
+            "locator": "Book of Mosques of Mecca and Medina · entry 1134",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 21, Number 283 · damaged wording",
+            "scope": "Kaaba and Ibrahim are supplied as identifications for the selected House and Maqam wording. Do not insert these identifiers into the selected report."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF pages 299, 300",
+            "pdfPage": 299,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 287",
+            "pdfPage": 287,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [
+          {
+            "id": "1134-printed-division",
+            "label": "One entry, two printed references",
+            "text": "This complete selected entry contains printed references 1191 and 1192. Its final statement remains part of the same entry here.",
+            "citations": [
+              "base",
+              "brill-1862",
+              "dar-ibn-kathir-2002"
+            ],
+            "related": []
+          }
+        ],
+        "localNotes": {
+          "path": "mosques-prayer-review.html",
+          "fragment": "hadith-1134",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:1135",
+        "number": 1135,
+        "entrySha256": "4f2ab86e220e70bd37236f4480edcf6c3d67d9d33c576efff79e5d518ce0ddd5",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-mosques-prayer",
+            "locator": "Book of Mosques of Mecca and Medina · source entry 1135 · باب من أتى مسجد قباء كل سبت",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-mosques-prayer",
+            "locator": "Book of Mosques of Mecca and Medina · entry 1135",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 21, Number 284",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 300",
+            "pdfPage": 300,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 288",
+            "pdfPage": 288,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "mosques-prayer-review.html",
+          "fragment": "hadith-1135",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:1136",
+        "number": 1136,
+        "entrySha256": "7d8716e7da6192ddc9e4f38517570e0fe804793df1cc89e5a07c4b664a0698cf",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation checked against two Arabic prints. Both English comparisons contain errors or omissions; neither supplies a complete reliable rendering of this selected entry. See the specific limits in the source notes. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-mosques-prayer",
+            "locator": "Book of Mosques of Mecca and Medina · source entry 1136 · باب إتيان مسجد قباء ماشيا وراكبا",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-mosques-prayer",
+            "locator": "Book of Mosques of Mecca and Medina · entry 1136",
+            "scope": "The explicit Ibn Numayr/Ubayd Allah/Nafi closing route is abbreviated to Nafi added. The complete route must remain in a new translation."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 21, Number 285 · damaged wording",
+            "scope": "The explicit Ibn Numayr/Ubayd Allah/Nafi closing route is abbreviated to Added Nafi, with a parenthetical another narration."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 300",
+            "pdfPage": 300,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 288",
+            "pdfPage": 288,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "mosques-prayer-review.html",
+          "fragment": "hadith-1136",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:1137",
+        "number": 1137,
+        "entrySha256": "a3cfa1a1811f853884fc9c4c189d37a72bea4747299c38cc90c37bf9c9f298ce",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-mosques-prayer",
+            "locator": "Book of Mosques of Mecca and Medina · source entry 1137 · باب فضل ما بين القبر والمنبر",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-mosques-prayer",
+            "locator": "Book of Mosques of Mecca and Medina · entry 1137",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 21, Number 286",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 300",
+            "pdfPage": 300,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 288",
+            "pdfPage": 288,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "lexical",
+            "sourceId": "fath-mosques-house",
+            "locator": "The grave-based chapter heading and house wording of the reports",
+            "scope": "Discussion of wording differences only, kept separate from the hadith; no independent authenticity decision or interpretation is supplied."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "mosques-prayer-review.html",
+          "fragment": "hadith-1137",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:1138",
+        "number": 1138,
+        "entrySha256": "662626e39fd29fdedacc0b599030ddc8fba04a6e5f34c00224e7dc3549b167d8",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation checked against two Arabic prints. Both English comparisons contain errors or omissions; neither supplies a complete reliable rendering of this selected entry. See the specific limits in the source notes. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-mosques-prayer",
+            "locator": "Book of Mosques of Mecca and Medina · source entry 1138 · باب فضل ما بين القبر والمنبر",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-mosques-prayer",
+            "locator": "Book of Mosques of Mecca and Medina · entry 1138",
+            "scope": "The bracketed explanation locating the grave follows the translated report but is not part of the selected Arabic. Keep it outside the hadith wording."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 21, Number 287 · damaged wording",
+            "scope": "The parenthetical identification Al-Kauthar after fountain tank is additional explanation absent from the selected report."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 300",
+            "pdfPage": 300,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 288",
+            "pdfPage": 288,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "lexical",
+            "sourceId": "fath-mosques-house",
+            "locator": "The grave-based chapter heading and house wording of the reports",
+            "scope": "Discussion of wording differences only, kept separate from the hadith; no independent authenticity decision or interpretation is supplied."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "mosques-prayer-review.html",
+          "fragment": "hadith-1138",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:1139",
+        "number": 1139,
+        "entrySha256": "6c45b0d755e37af1a41631ad242bd62b1ebf71f333b4612167e96f330b9ae24d",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-mosques-prayer",
+            "locator": "Book of Mosques of Mecca and Medina · source entry 1139 · باب مسجد بيت المقدس",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-mosques-prayer",
+            "locator": "Book of Mosques of Mecca and Medina · entry 1139",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 21, Number 288",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF pages 300, 301",
+            "pdfPage": 300,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 288",
+            "pdfPage": 288,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "lexical",
+            "sourceId": "umdat-mosques-routes",
+            "locator": "The four statements referenced by the earlier Abu Said introduction",
+            "scope": "Structural comparison with 1132 only; this complete occurrence stays separate."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "mosques-prayer-review.html",
+          "fragment": "hadith-1139",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
       }
     ]
   },
-  "referencesSha256": "2ceeffca9a16f5820733eb0ee638f743fc246a59685db8e37f34feacf89141ef",
+  "referencesSha256": "a7c0996c4dbabc1f4a65d9e65d83ca1dbc089222313c42f8dae1ebf02abccf04",
   "referencesReview": {
     "status": "pending"
   }

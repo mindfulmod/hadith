@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-03T05:31:26.382105+00:00",
+  "status": "ai-assisted-source-comparison-independent-review-pending",
+  "sourceAuditSha256": "a952de5b73503447fe37b6ca7ca1ac15bd3fa8d7979dfe288b30803780d92da9",
+  "reviewSha256": "22b0a03b5890513fdd6eb0efe81cc886ad9cb35ea18088eda252bca2ab2a3af0",
+  "reviewHashMethod": "SHA-256 of UTF-8 compact JSON preserving property order, finalized with JSON.stringify.",
+  "references": [
+    1132,
+    1133,
+    1134,
+    1135,
+    1136,
+    1137,
+    1138,
+    1139
+  ],
+  "pendingReferences": [],
+  "arabicChanged": true,
+  "exactTranslatedSpans": 21,
+  "selectedChapters": 6,
+  "separateArabicContextBlocks": 0,
+  "printedPagesPreviouslyInspected": {
+    "brill-1862": [
+      299,
+      300,
+      301,
+      302
+    ],
+    "dar-ibn-kathir-2002": [
+      287,
+      288,
+      289
+    ]
+  },
+  "printedMapping": [
+    {
+      "reference": 1132,
+      "printedReferences": [
+        1188,
+        1189
+      ],
+      "printedPages": {
+        "brill-1862": [
+          299
+        ],
+        "dar-ibn-kathir-2002": [
+          287
+        ]
+      }
+    },
+    {
+      "reference": 1133,
+      "printedReferences": [
+        1190
+      ],
+      "printedPages": {
+        "brill-1862": [
+          299
+        ],
+        "dar-ibn-kathir-2002": [
+          287
+        ]
+      }
+    },
+    {
+      "reference": 1134,
+      "printedReferences": [
+        1191,
+        1192
+      ],
+      "printedPages": {
+        "brill-1862": [
+          299,
+          300
+        ],
+        "dar-ibn-kathir-2002": [
+          287
+        ]
+      }
+    },
+    {
+      "reference": 1135,
+      "printedReferences": [
+        1193
+      ],
+      "printedPages": {
+        "brill-1862": [
+          300
+        ],
+        "dar-ibn-kathir-2002": [
+          288
+        ]
+      }
+    },
+    {
+      "reference": 1136,
+      "printedReferences": [
+        1194
+      ],
+      "printedPages": {
+        "brill-1862": [
+          300
+        ],
+        "dar-ibn-kathir-2002": [
+          288
+        ]
+      }
+    },
+    {
+      "reference": 1137,
+      "printedReferences": [
+        1195
+      ],
+      "printedPages": {
+        "brill-1862": [
+          300
+        ],
+        "dar-ibn-kathir-2002": [
+          288
+        ]
+      }
+    },
+    {
+      "reference": 1138,
+      "printedReferences": [
+        1196
+      ],
+      "printedPages": {
+        "brill-1862": [
+          300
+        ],
+        "dar-ibn-kathir-2002": [
+          288
+        ]
+      }
+    },
+    {
+      "reference": 1139,
+      "printedReferences": [
+        1197
+      ],
+      "printedPages": {
+        "brill-1862": [
+          300,
+          301
+        ],
+        "dar-ibn-kathir-2002": [
+          288
+        ]
+      }
+    }
+  ],
+  "englishBodiesReread": {
+    "bewley": [
+      1132,
+      1133,
+      1134,
+      1135,
+      1136,
+      1137,
+      1138,
+      1139
+    ],
+    "khan": [
+      "2.21.281",
+      "2.21.282",
+      "2.21.283",
+      "2.21.284",
+      "2.21.285",
+      "2.21.286",
+      "2.21.287",
+      "2.21.288"
+    ]
+  },
+  "englishBoundaryDifferenceIds": [
+    "bewley-1132-1133-boundary"
+  ],
+  "lexicalSources": [
+    {
+      "references": [
+        1132,
+        1139
+      ],
+      "sourceId": "umdat-mosques-routes",
+      "url": "https://www.islamweb.net/ar/library/content/303/4866/باب-فضل-الصلاة-في-مسجد-مكة-والمدينة"
+    },
+    {
+      "references": [
+        1137,
+        1138
+      ],
+      "sourceId": "fath-mosques-house",
+      "url": "https://www.islamweb.net/ar/library/content/52/2202/باب-فضل-ما-بين-القبر-والمنبر"
+    }
+  ],
+  "chapterDifferences": {
+    "chapter-04": [
+      "chapter-04-quba-heading"
+    ]
+  },
+  "limitations": [
+    "All working English, theological expressions, chapter headings and source choices require independent review.",
+    "One explicit, visible two-print correction removes the duplicate qala in 1132. The immutable digital original and historical intake finding remain unchanged. The house/grave difference does not change the selected report.",
+    "No new suffix is applied. Existing holds 926/957/1104/1115 remain unchanged.",
+    "No new recording, rights clearance, independent certification or external publication is included."
+  ],
+  "explicitCorrections": [
+    {
+      "reference": 1132,
+      "correctionId": "mosques-1132-repeated-said",
+      "originalArabicSha256": "f255288229ab49b9325688d0c28114ab991e880ca1ff0dc089dadea90850cb50",
+      "derivedArabicSha256": "a0e1508ca7e0d01e8d50f768124df95a611c4ab22cf00e20942d82e7c1322026",
+      "before": "قال: قال",
+      "after": "قال"
+    }
+  ],
+  "secondCompleteSpanReview": {
+    "checkedAt": "2026-11-03T05:36:49.698Z",
+    "scope": "All 21 Arabic/English spans reread for chains, attribution, honorifics, qualifiers, repeated clauses and closing transmissions. Both correction pages visually reinspected. AI-assisted only; independent review pending."
+  }
+}

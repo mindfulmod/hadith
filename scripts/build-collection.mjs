@@ -46,7 +46,8 @@ export const BOOK_CONFIGS=Object.freeze({
  prostration:Object.freeze({id:'prostration',number:18,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([19]),title:'Prostration of Quran Recitation',first:1017,arabicSourceId:'arabic-prostration',bewleySourceId:'bewley-prostration',bewleyTitle:'Prostration of Quran Recitation',revision:484859}),
  shortening:Object.freeze({id:'shortening',number:19,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([20]),title:'Shortening the Prayer',first:1030,arabicSourceId:'arabic-shortening',bewleySourceId:'bewley-shortening',bewleyTitle:'Shortening the Prayer',revision:278144}),
  'night-prayer':Object.freeze({id:'night-prayer',number:20,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([21]),title:'Night Prayer',first:1069,arabicSourceId:'arabic-night-prayer',bewleySourceId:'bewley-night-prayer',bewleyTitle:'Night Prayer',revision:39522}),
- 'voluntary-prayer':Object.freeze({id:'voluntary-prayer',number:21,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([21]),title:'Voluntary Prayer',first:1119,arabicSourceId:'arabic-voluntary-prayer',bewleySourceId:'bewley-voluntary-prayer',bewleyTitle:'Voluntary Prayer',revision:434953})
+ 'voluntary-prayer':Object.freeze({id:'voluntary-prayer',number:21,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([21]),title:'Voluntary Prayer',first:1119,arabicSourceId:'arabic-voluntary-prayer',bewleySourceId:'bewley-voluntary-prayer',bewleyTitle:'Voluntary Prayer',revision:434953}),
+ 'mosques-prayer':Object.freeze({id:'mosques-prayer',number:22,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([21]),title:'Mosques of Mecca and Medina',first:1132,arabicSourceId:'arabic-mosques-prayer',bewleySourceId:'bewley-mosques-prayer',bewleyTitle:'Mosques of Mecca and Medina',revision:142212})
 });
 function bookConfig(config){assert(Object.values(BOOK_CONFIGS).includes(config),'Unknown book configuration');return config;}
 let englishInventory;

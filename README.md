@@ -1,6 +1,16 @@
 # Hadith · MindfulMod reader
 
-The local personal reader at `reader/` contains 1,132 selected Bukhari entries across twenty-one sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The local personal reader at `reader/` contains 1,140 selected Bukhari entries across twenty-two sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+
+## Complete selected Mosques of Mecca and Medina · 3 November 2026
+
+The local personal reader contains **1,140 entries across twenty-two sections**. This batch adds all eight selected reports **1132–1139**, with 21 complete Arabic/English spans and six chapters. The English is an AI-assisted working translation, not Darussalam wording or independent certification.
+
+Both narrator routes and the unfinished introductory account in 1132 remain complete, with a separate link to the four statements in 1139. The combined printed references 1188/1189 and 1191/1192 stay within their existing app entries; no suffix is added. A single explicit correction removes the duplicated reporting word «قال: قال» in 1132, supported by both inspected Arabic prints. The original digital text is immutable and visible in source notes. Other recorded differences, including house/grave and the chapter heading, remain disclosed without substitution. The damaged English 1132/1133 boundary stays bound to its exact source evidence.
+
+**1,024 automated tests passed: 810 Node and 214 Python.** Twenty-two integrity checks and 22 desktop browser checks passed. An actual offline update preserved the saved 1131 session and 983b bookmark. All eight new reports, full source notes, printed references, chapter differences and exact search reopen offline. Long text fits the largest setting at 320, 390 and 1280 pixels. Eleven screenshots were inspected. Reading downloads total **30,055,674 bytes**. See `research/mosques-prayer-wording-review.json` and `research/mosques-prayer-reader-verification.json` for evidence and limits.
+
+All earlier 1,132 entry objects, twenty-one book contexts and packs, 135 source-note pages, source inventories, artwork, recordings and narration jobs remain unchanged. Holds **926/957/1104/1115** remain; complete recordings are **1–6**. Text expansion continues while Cedar stays on the free demo. The incomplete Hadith 7 recording remains unadmitted. Nothing was published. The next digital section begins at **1140**; independent review, full collection coverage and fresh physical-iPhone acceptance remain unfinished.
 
 ## Mosques of Mecca and Medina source intake · 3 November 2026
 
