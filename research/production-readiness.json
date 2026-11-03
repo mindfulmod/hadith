@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T06:48:01.820337+00:00",
+  "updatedAt": "2026-11-03T07:09:58.167495+00:00",
   "objective": "Production-ready English-first Sahih al-Bukhari reader with the full collection, precise source access, Cedar narration, whole-hadith sessions and dependable offline iPhone use.",
   "status": "in-progress",
   "decisions": {
@@ -81,7 +81,7 @@
   ],
   "nextActions": [
     "Keep the 699-entry approval candidate and subsequent local previews separate from the approved 632-entry live release until the specific publication is authorized.",
-    "Continue source intake from 1166 after the completed Actions during Prayer section. Preserve all 26 entries, both 1141 routes and the exact same-as comparison pointer, the 297m record, complete lexical and closing notes, the explicit 1153 conjunction choice, the retained 1162 singular wording, six chapter comments and context-only chapter 13. Keep text expansion moving while Cedar uses only the ordinary free demo allowance; no paid API setup or spend.",
+    "Complete wording and presentation-role review for the staged Forgetfulness entries 1166–1179. Preserve distinct 1170/1171 parts under printed 1228, narrator attribution, full Sad/Urwah and Ibn Jurayj closings, all takbirs and singular 1170 ending. All fourteen source differences remain unapplied; three separate chapter comments keep English pending. The following source intake begins at 1180 (Funerals). Continue text expansion while Cedar stays on the ordinary free demo allowance; no paid API setup or spend.",
     "Preserve the overlapping congregation source as excluded evidence. It must not add duplicate entries or replace selected Adhan wording.",
     "Use the new bilingual scale benchmark for future substantial expansion. The 1,166-entry collection and separate 8,000-entry artificial workload are measured; verify the eventual complete corpus, chapter/citation shape, transient/native memory, cold networks and fresh physical-iPhone behavior before claiming full production scale.",
     "Complete the Arabic edition/reference map using the new exact-span inventory and pinned printed-witness findings; keep combined labels distinct from missing or misassigned bodies.",
@@ -1309,5 +1309,52 @@
     "sourceTextChanged": false,
     "independentPhysicalDeviceMeasurement": false,
     "actualFullCorpusQualification": false
+  },
+  "forgetfulnessIntake": {
+    "status": "source-intake-compared-wording-review-pending",
+    "source": "content/sources/wikisource-forgetfulness/manifest.json",
+    "inventory": "content/staging/bukhari-forgetfulness-wikisource/catalog.json",
+    "audit": "research/forgetfulness-source-audit.json",
+    "reviewPage": "research/forgetfulness-source-review.html",
+    "verification": "research/forgetfulness-intake-verification.json",
+    "digitalReferences": [
+      1166,
+      1167,
+      1168,
+      1169,
+      1170,
+      1171,
+      1172,
+      1173,
+      1174,
+      1175,
+      1176,
+      1177,
+      1178,
+      1179
+    ],
+    "printedReferenceRange": [
+      1224,
+      1236
+    ],
+    "sharedPrintedNumber": 1228,
+    "sharedDigitalReferences": [
+      1170,
+      1171
+    ],
+    "sourceCodePoints": 5956,
+    "unchangedSourceBlocks": 27,
+    "numberedReports": 14,
+    "chapters": 9,
+    "separateChapterComments": 3,
+    "blankParagraphs": 1,
+    "textualDifferencesUnapplied": 14,
+    "englishComparisonRecords": {
+      "bewley": 14,
+      "khan": 14
+    },
+    "readerAdmission": false,
+    "independentReview": "pending",
+    "nextSourceReference": 1180
   }
 }

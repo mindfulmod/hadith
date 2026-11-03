@@ -2,6 +2,18 @@
 
 The local personal reader at `reader/` contains 1,166 selected Bukhari entries across twenty-three sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
+## Forgetfulness in Prayer source intake · 3 November 2026
+
+The next **14 digital entries, 1166–1179**, are staged for complete wording review. All **27 Arabic blocks and 5,956 code points** remain unchanged: nine headings, fourteen numbered paragraphs, three separate chapter comments and one trailing newline paragraph. The [source review](research/forgetfulness-source-review.html) exposes every complete entry, printed location, English comparison limit and recorded difference. This is evidence only, with no reader admission or new translation.
+
+Both Arabic print sequences account for the section. **1170 and 1171 share modern printed number 1228**, with distinct part identities; thirteen printed numbers cover fourteen digital occurrences. 1171 is a separately chained narrator discussion. No missing complete report or new suffix is established. The full Sa‘d / ‘Urwah closing account in 1169, the singular prostration ending in 1170, all four closing takbirs in 1172 and Ibn Jurayj corroboration in 1173 remain intact. Neither the shorter historical passage nor defective English comparisons can silently replace them.
+
+Fourteen recorded textual differences remain unapplied. Both English families are matched individually, including actual EPUB records **2.22.315–328**. Their limitations identify damaged dialogue, the supplied prayer-name alternative, a missing takbir, omitted closing transmission and an altered final address. All opening chains, honorifics, repeated occurrences and the complete longer Kuraib account remain required for later wording review. Three chapter comments remain separate, with English pending.
+
+**249 distinct automated tests passed:** 242 Python tests, including thirteen new integrity tests, and seven deployment checks. Six desktop theme/viewport checks preserve exact Arabic, usable reference links and no horizontal overflow; eight screenshots were inspected. An older page-generation mismatch was also fixed: the Actions review generator now preserves its already visible subsequent-review clarification. The saved page and historical evidence remain unchanged.
+
+All **1,488 prior tracked files** outside the six explicit documentation, registry, CI and page-generator changes remain byte-identical. The reader remains at **1,166 entries across twenty-three sections**, release `opening-14316537a3cb`; recordings remain 1–6. Nothing was published or generated through paid audio access. See `research/forgetfulness-intake-verification.json`. Next: complete wording and presentation-role review for 1166–1179; the following source intake begins at **1180**, Funerals.
+
 ## Bilingual search at larger scale · 3 November 2026
 
 The local reader still contains **1,166 entries across twenty-three sections**. Search fallback scheduling now yields after an eight-millisecond work slice, while retaining the initial yield, cancellation checks and exact source behavior. It no longer pays a browser timer delay after every small 32-entry batch.
