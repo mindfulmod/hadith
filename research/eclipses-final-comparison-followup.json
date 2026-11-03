@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "status": "ai-assisted-comparison-followup-independent-review-pending",
+  "sourceAudit": {
+    "path": "research/eclipses-source-audit.json",
+    "sha256": "5d7ffa346f8afce535cda88f304e45ae1259026b189fe6a07267b61bd91a6736"
+  },
+  "englishComparisons": {
+    "bewley": {
+      "url": "https://aishabewley.org/bukhari10",
+      "sha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+      "bytes": 102307,
+      "locatorPolicy": "Decode HTML text, collapse whitespace, select from the first 993 label to Chapter 23. Each body starts after its label and ends at the next label, including intervening chapter material. Allow whitespace before a label period because linked labels 997, 1002 and 1004 separate it. Require every label 993–1016 exactly once; hashes are locators, not wording approval.",
+      "locatedReports": 24
+    }
+  },
+  "records": [
+    {
+      "reference": 1014,
+      "sourceRecordId": "wikisource-bukhari-eclipses-r484860:1014",
+      "chapterId": "chapter-17",
+      "paragraphIds": [
+        "mwYg"
+      ],
+      "arabicSha256": "27042a35ac545a475d1ac216644a32219631885e974f0bca965f5815076fb906",
+      "printedReferences": [
+        1063
+      ],
+      "printedPages": {
+        "brill-1862": [
+          271,
+          272
+        ],
+        "dar-ibn-kathir-2002": [
+          259
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1014",
+          "occurrence": 1,
+          "bodySha256": "373e3b69bc766b78ca40c425b8c724ccd41ebb9cbc07752d3031951fa2a09f4f",
+          "status": "damaged-or-incomplete-comparison"
+        },
+        "khan": {
+          "status": "located-body-not-wording-approval",
+          "reference": "2.18.170",
+          "recordSha256": "ebf4b5e645a207c18aad5dcaff1f8eaa4bfe8de8c77f98460ab4df78f7be22ae",
+          "bodySha256": "59e079e836293b0faae74d9c96f87a638bb33fff0b4c07188d6031e85b4cc14a"
+        }
+      },
+      "finding": "The exact inspected web body omits the selected Arabic fa-injalat al-shams clause after the two rakahs and before the speech. Both inspected prints and the pinned Khan 2.18.170 body retain that clause.",
+      "checkedBewleyBody": "It is related that Abu Bakra said, \"The sun was eclipsed in the time of the Messenger of Allah, may Allah bless him and grant him peace, and he went out dragging his cloak until he reached the mosque. The people gathered to him and he led them in praying two rak'ats . He said, 'The sun and moon are two of Allah's signs. They do not eclipse for the death of anyone. When that happens, pray and make supplication until it clears.' That was when a son of the Prophet, may Allah bless him and grant him peace, called Ibrahim had died. People were saying that it happened because of that.\" XVIII: The first rak'at is longer in the eclipse"
+    }
+  ],
+  "independentReview": "pending"
+}

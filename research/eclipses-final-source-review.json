@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-03T01:15:29.150566+00:00",
+  "status": "ai-assisted-source-comparison-independent-review-pending",
+  "sourceAuditSha256": "5d7ffa346f8afce535cda88f304e45ae1259026b189fe6a07267b61bd91a6736",
+  "reviewSha256": "366259e6bb647619c0a6e54951b505d99816cc7c8ee0605a625be29d44a6fb39",
+  "reviewHashMethod": "SHA-256 of UTF-8 JSON.stringify(review), preserving property order without whitespace.",
+  "references": [
+    1011,
+    1012,
+    1013,
+    1014,
+    1015,
+    1016
+  ],
+  "arabicCorrections": [
+    {
+      "id": "eclipses-1011-ziyad",
+      "status": "chosen-for-personal-prototype",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "paragraphId": "mwWg",
+      "originalParagraphSha256": "4eb07603d92d71ff37a0fe0bb2c7179c68c3d3898820017f60ab3c125d29fff0",
+      "start": 52,
+      "end": 66,
+      "before": "زيادة بن علاقة",
+      "after": "زياد بن علاقة",
+      "correctedParagraphSha256": "c39cbffe82836f5cdc29811eb0a007c9da5fbdde94e3f47de1ad7a8c2ac8c48a",
+      "reason": "Both visually inspected Arabic prints read Ziyad ibn Ilaqah. The digital Ziyadah spelling remains in the immutable original; this single-letter correction is explicit.",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 271,
+          "reading": "زياد بن علاقة",
+          "readingSha256": "1a23fcdba260a116d77fa19e1af8fdc67d1a0e9ceca35c2028cfdd116fc52c88"
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 259,
+          "reading": "زياد بن علاقة",
+          "readingSha256": "1a23fcdba260a116d77fa19e1af8fdc67d1a0e9ceca35c2028cfdd116fc52c88"
+        }
+      ],
+      "contextNoteId": "1011-ziyad",
+      "englishSegmentId": "1011-1",
+      "englishRendering": "Ziyad ibn ‘Ilaqah"
+    }
+  ],
+  "otherArabicChanged": false,
+  "exactTranslatedSpans": 19,
+  "separateArabicContextBlocks": 1,
+  "printInspection": {
+    "method": "Complete rendered pages visually inspected; named correction, complete closing reports, honorifics, transmission routes, prayer counts and edition differences compared against the exact selected paragraphs.",
+    "brill-1862": {
+      "pdfPages": [
+        271,
+        272
+      ],
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+    },
+    "dar-ibn-kathir-2002": {
+      "pdfPages": [
+        259,
+        260
+      ],
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+    }
+  },
+  "englishInspection": {
+    "bewley": {
+      "url": "https://aishabewley.org/bukhari10",
+      "sha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+      "bytes": 102307,
+      "locatorPolicy": "Decode HTML text, collapse whitespace, select from the first 993 label to Chapter 23. Each body starts after its label and ends at the next label, including intervening chapter material. Allow whitespace before a label period because linked labels 997, 1002 and 1004 separate it. Require every label 993–1016 exactly once; hashes are locators, not wording approval.",
+      "locatedReports": 24
+    },
+    "khan": {
+      "pinnedInventory": "content/staging/bukhari-en-islamhouse/catalog.json",
+      "references": [
+        "2.18.168",
+        "2.18.169",
+        "2.18.170",
+        "2.18.171",
+        "2.18.172"
+      ],
+      "absentOccurrence": 1012,
+      "checkedAdjacentReferences": [
+        "2.18.168",
+        "2.18.169"
+      ]
+    },
+    "limitedBewleyReferences": [
+      1011,
+      1014
+    ],
+    "limitedKhanReferences": [
+      1016
+    ],
+    "followup": "research/eclipses-final-comparison-followup.json",
+    "limits": "Every available body was read. The missing short occurrence, omitted signs/clearing clauses, damaged recitation wording and narrator names remain explicitly disclosed. Comparison texts are not repaired silently."
+  },
+  "printedMapping": [
+    {
+      "reference": 1011,
+      "printedReferences": [
+        1060
+      ],
+      "printedPages": {
+        "brill-1862": [
+          271
+        ],
+        "dar-ibn-kathir-2002": [
+          259
+        ]
+      }
+    },
+    {
+      "reference": 1012,
+      "printedReferences": [
+        1061
+      ],
+      "printedPages": {
+        "brill-1862": [
+          271
+        ],
+        "dar-ibn-kathir-2002": [
+          259
+        ]
+      }
+    },
+    {
+      "reference": 1013,
+      "printedReferences": [
+        1062
+      ],
+      "printedPages": {
+        "brill-1862": [
+          271
+        ],
+        "dar-ibn-kathir-2002": [
+          259
+        ]
+      }
+    },
+    {
+      "reference": 1014,
+      "printedReferences": [
+        1063
+      ],
+      "printedPages": {
+        "brill-1862": [
+          271,
+          272
+        ],
+        "dar-ibn-kathir-2002": [
+          259
+        ]
+      }
+    },
+    {
+      "reference": 1015,
+      "printedReferences": [
+        1064
+      ],
+      "printedPages": {
+        "brill-1862": [
+          272
+        ],
+        "dar-ibn-kathir-2002": [
+          259
+        ]
+      }
+    },
+    {
+      "reference": 1016,
+      "printedReferences": [
+        1065,
+        1066
+      ],
+      "printedPages": {
+        "brill-1862": [
+          272
+        ],
+        "dar-ibn-kathir-2002": [
+          260
+        ]
+      }
+    }
+  ],
+  "findings": [
+    "1011 applies only the independently recorded Ziyadah-to-Ziyad narrator correction supported by both prints; the original snapshot and original paragraph hash remain intact.",
+    "1012 is its own full selected occurrence, despite no separate body in the bounded Khan sequence. Its ending is not extended from another report.",
+    "1013 and 1014 preserve solar reports under the source lunar heading. The heading does not modify report wording.",
+    "1014 retains the sun-clearing clause and the trailing Ibrahim context in source order; the newly registered web omission is supported by an immutable supplemental audit.",
+    "1015 retains the selected repeated ending and uses the explicitly documented prayer terminology, with commentary outside the report.",
+    "1016 retains both printed passages, the second Aishah route omitted by the modern print, all repeated counts and all closing transmission notes. Its brother-discussion rendering is an explicitly provisional syntactic choice, differing from the interrogative English comparisons."
+  ],
+  "lexicalReferences": [
+    {
+      "id": "tawdih-eclipse-counts",
+      "label": "Ibn al-Mulaqqin · Al-Tawdih · Eclipse prayer counts",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/ar/library/content/305/1788/باب-الركعة-الأولى-في-الكسوف-أطول"
+    },
+    {
+      "id": "fath-eclipse-transmissions",
+      "label": "Ibn Hajar · Fath al-Bari · Recitation and transmission routes",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/ar/library/content/52/1972/باب-الجهر-بالقراءة-في-الكسوف"
+    }
+  ],
+  "previousEclipsesArticlesUnchanged": 32,
+  "completedSection": {
+    "digitalEntries": 24,
+    "chapters": 19,
+    "arabicContextBlocks": 7,
+    "printedOccurrences": 27,
+    "combinedDigitalReferences": [
+      1002,
+      1007,
+      1016
+    ],
+    "missingPrintedReports": []
+  },
+  "limits": [
+    "Personal prototype only. Independent Arabic, English, lexical, theological, chapter and reference review pending.",
+    "The selected chapter-context Arabic is retained with English pending.",
+    "No new recording is supplied; complete future narration scripts remain available.",
+    "No external publication or reuse permission is implied."
+  ]
+}

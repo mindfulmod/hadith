@@ -96,5 +96,5 @@ test('two further chapter-context blocks remain outside numbered reading and nar
  assert.deepEqual(chapters.map(c=>c.sourceContext.introduction.arabicParagraphs),[0,0,0,1,1]);
  for(const c of chapters.filter(c=>c.sourceContext.introduction.arabicParagraphs))assert.equal(c.sourceContext.introduction.englishStatus,'pending');
  for(const c of review().chapters)for(const id of c.contextIds){const text=inv.blocks.find(b=>b.htmlId===id).text;assert(entries.every(e=>!e.arabic_blocks.includes(text)));}
- assert.equal(source.entries.some(e=>e.number===1011),false);
+ assert.equal(review().entries.some(e=>e.number===1011),false);
 });
