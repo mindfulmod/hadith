@@ -1,6 +1,14 @@
 # Hadith · MindfulMod reader
 
-The local personal reader at `reader/` contains 1,007 selected Bukhari entries across seventeen sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The local personal reader at `reader/` contains 1,013 selected Bukhari entries across seventeen sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+
+## Eclipses 1005–1010 and complete transmission notes · 3 November 2026
+
+Six further reports are available in the local prototype, across chapters ten through fourteen. All 1,007 earlier entries and 21 earlier Eclipses source-note articles remain exact. The batch retains 24 complete Arabic/English spans and two separately browsable Arabic chapter-context blocks. Selected Arabic is unchanged; chapter-context English and independent accuracy review remain pending. Recordings remain limited to Hadith 1–6.
+
+The three uncertainty comments in 1005 remain visibly separated at their exact positions, with no new speaker attribution. Magnified comparison confirms Brill’s closing “believer” against the selected source and modern print’s “certain”; the working English retains the selected reading. The source notes expose this variant, the damaged Khan narrator name and the provisional lexical choices. Report 1007 preserves both printed occurrences and its complete, distinct prayer sequence. Known omissions in its web comparison and the repeated comparison body at 1008 are registered and disclosed. No parallel wording, additional honorific or explanatory clause is silently inserted.
+
+`research/eclipses-third-source-review.json` records the source comparison. `research/eclipses-third-verification.json` records 710 Node tests, 140 Python tests, the 24-test affected rerun after the final note refinement, 17 integrity checks and 19 desktop browser checks. The actual offline update from 1,007 to 1,013 entries preserves saved sessions and suffixed bookmarks; complete new text, source notes, chapter context and search reopen offline. These are local prototype checks, not independent content certification or physical-iPhone acceptance. This batch is unpublished. Reports 1011–1016 and the proposed 1011 narrator correction remain outside it.
 
 ## Eclipses 999–1004 and explicit comparison limits · 3 November 2026
 
