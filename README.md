@@ -2,6 +2,16 @@
 
 The local personal reader at `reader/` contains 1,180 selected Bukhari entries across twenty-four sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
+## Funerals source comparison · 1250–1289
+
+The [third review packet](research/funerals-third-source-review.html) adds **40 occurrence comparisons**, bringing the total to **109 of 150 selected Funerals entries**. The remaining **41 entries, 1290–1330**, still need comparison. This stage locates **44 modern printed references** and checks **39 distinct English EPUB bodies** against the retained file.
+
+The evidence records **29 further unapplied print differences**. These include an additional historical narrator chain in 1261, a different closing narrator name in 1285, and comments or alternatives omitted from English passages. EPUB 431 combines selected 1282 and 1283; their separate ownership and the following matches are explicit. The linked opening of 1283 needs preceding-chain context, and repeated Uhud accounts keep their own wording rather than borrowing from longer parallels.
+
+The selected Arabic, earlier review evidence, reader, artwork and recordings are unchanged. All Funerals wording and independent review remain pending; no new translation, source correction or reader entry is admitted. The local reader stays at **1,180 entries across twenty-four sections**, with Cedar recordings **1–6** and free-demo-only audio generation. This stage does not publish the local preview.
+
+**289 distinct automated tests passed:** 282 source tests and seven deployment tests, plus eleven integrity checks and six browser viewport/theme checks. Six screenshots were visually inspected. All **1,558 prior tracked files** outside the three explicit documentation and CI updates remain byte-identical. See `research/funerals-third-verification.json`.
+
 ## Further Funerals comparisons · 3 November 2026
 
 The [second review packet](research/funerals-second-source-review.html) adds **40 occurrence comparisons, 1210–1249**: **69 of the 150 selected entries** have now been located against both Arabic prints and available English bodies; **81 entries, 1250–1330, remain pending**. This stage accounts for **43 modern printed references** and checks **40 distinct EPUB records**. The selected source, reader, artwork and recordings are unchanged.

@@ -1,0 +1,286 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-03T08:38:50.183686+00:00",
+  "status": "partial-source-comparison-verified-not-admitted",
+  "baselineCommit": "780324a1238c097799d105cce86c9eef3e594b61",
+  "sourceAudit": "research/funerals-third-source-audit.json",
+  "comparisonScope": {
+    "newlyLocatedSelectedEntries": 40,
+    "references": [
+      1250,
+      1289
+    ],
+    "cumulativeLocatedSelectedEntries": 109,
+    "remainingSelectedEntries": 41,
+    "remainingReferenceRange": [
+      1290,
+      1330
+    ],
+    "modernPrintedOccurrences": 44,
+    "modernPrintedRange": [
+      1312,
+      1355
+    ],
+    "actualEpubRecordsChecked": 39,
+    "epubRange": [
+      "2.23.399",
+      "2.23.437"
+    ],
+    "sharedEnglishBody": {
+      "reference": "2.23.431",
+      "selectedReferences": [
+        1282,
+        1283
+      ]
+    },
+    "knownNewUnappliedDifferences": 29,
+    "readerAdmission": false
+  },
+  "printedWitnesses": {
+    "allBytesRehashed": true,
+    "visuallyInspectedPdfPages": {
+      "brill-1862": [
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336,
+        337,
+        338,
+        339,
+        340
+      ],
+      "dar-ibn-kathir-2002": [
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327
+      ]
+    },
+    "detailRereads": [
+      "Historical 1261 additional chain and cross-page modern opening",
+      "Historical 1265 closing voice and 1277 comment attributions",
+      "Historical 1283 linked opening and 1285 closing narrator",
+      "Modern 1274 cross-page injury/honorific comparison",
+      "Historical and modern 1289 closing narrator attribution"
+    ],
+    "scope": "Pages were inspected to locate forty selected occurrences and known differences; not an exhaustive letter-by-letter collation."
+  },
+  "tests": {
+    "python": {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p 'test_*.py'",
+      "passed": 282,
+      "failed": 0,
+      "newRegressionTests": 12,
+      "logSha256": "f6f7b32a744d4a0ca88d57bb48a7e229332a97254215083bb61ba40955dfd6dc"
+    },
+    "deployment": {
+      "command": "node --test tests/deployment.test.mjs",
+      "passed": 7,
+      "failed": 0,
+      "logSha256": "064f9cdd605aea82a92ec06777169abca309a01e041eb46b1a37657d0b7f8ba2"
+    },
+    "totalDistinctTests": 289
+  },
+  "integrityChecks": [
+    {
+      "command": "python3 scripts/check-funerals-third.py --bewley-html /private/tmp/hadith-forgetfulness-sources/bewley.html --brill-pdf /private/tmp/hadith-friday-sources/brill.pdf --modern-pdf /private/tmp/hadith-friday-sources/modern.pdf",
+      "exitCode": 0,
+      "checkedAt": "2026-11-03T08:35:57.122445+00:00",
+      "outputSha256": "16708ae199b8fe0be7c05e47a24ddd177e53d80a04016636749e0001a1129c62"
+    },
+    {
+      "command": "python3 scripts/check-funerals-second.py --bewley-html /private/tmp/hadith-forgetfulness-sources/bewley.html --brill-pdf /private/tmp/hadith-friday-sources/brill.pdf --modern-pdf /private/tmp/hadith-friday-sources/modern.pdf",
+      "exitCode": 0,
+      "checkedAt": "2026-11-03T08:35:57.100217+00:00",
+      "outputSha256": "58f7ca1bebfb16a729bb062fe4e89b5343fa4e87d1e9ac23a9b28d6f8bb3325a"
+    },
+    {
+      "command": "python3 scripts/audit-wikisource-layout.py --check",
+      "exitCode": 0,
+      "checkedAt": "2026-11-03T08:35:57.076828+00:00",
+      "outputSha256": "79e6e3c09d04b68223c0e7dae34c56aad9c434b8304ceb8347ba3a35d6e90bce"
+    },
+    {
+      "command": "python3 scripts/resolve-wikisource-layout.py --check",
+      "exitCode": 0,
+      "checkedAt": "2026-11-03T08:35:57.193989+00:00",
+      "outputSha256": "531b8f6bbb4341c94aa40effef49c9736733c8db07c6c241d78a9c74e0095853"
+    },
+    {
+      "command": "python3 scripts/import-wikisource-book.py --check",
+      "exitCode": 0,
+      "checkedAt": "2026-11-03T08:35:57.380726+00:00",
+      "outputSha256": "a25b3e860192fd8c75865725a568fe0d0c0ab96deee405f7ac10727811845fb9"
+    },
+    {
+      "command": "python3 scripts/check-funerals-intake.py --bewley-html /private/tmp/hadith-forgetfulness-sources/bewley.html --brill-pdf /private/tmp/hadith-friday-sources/brill.pdf --modern-pdf /private/tmp/hadith-friday-sources/modern.pdf",
+      "exitCode": 0,
+      "checkedAt": "2026-11-03T08:35:57.389026+00:00",
+      "outputSha256": "e4de4ac9f05168bca421da1433568a493894a31b939a3f2339be895a62754c96"
+    },
+    {
+      "command": "node scripts/build-collection.mjs --check",
+      "exitCode": 0,
+      "checkedAt": "2026-11-03T08:36:00.886606+00:00",
+      "outputSha256": "40c3023d5a47fe5aca09da5fd6bab6b9d261998d48dcb931d4a06e198007359c"
+    },
+    {
+      "command": "node reader/check-content.mjs",
+      "exitCode": 0,
+      "checkedAt": "2026-11-03T08:35:57.804256+00:00",
+      "outputSha256": "ff9b6ac2d68ca97a9b501740f665ac1884f7385561be87d2bf29386471bed01a"
+    },
+    {
+      "command": "node scripts/publish-books.mjs --check",
+      "exitCode": 0,
+      "checkedAt": "2026-11-03T08:35:57.839236+00:00",
+      "outputSha256": "68f970d3c054282e46a61ffca32cf3f23da9096a1f32c066557c6466c93f0526"
+    },
+    {
+      "command": "node scripts/build-audio.mjs --check",
+      "exitCode": 0,
+      "checkedAt": "2026-11-03T08:35:57.562291+00:00",
+      "outputSha256": "5bf92285a93401fa919f2208597a01e536186b13363379ad97fcb5b0aa789e6d"
+    },
+    {
+      "command": "node scripts/prototype-admissions.mjs --check",
+      "exitCode": 0,
+      "checkedAt": "2026-11-03T08:35:57.794578+00:00",
+      "outputSha256": "5443d582fc97f7eca2e54473a80d72163fb6f03e943dab7474f023c291cb390f"
+    }
+  ],
+  "browser": {
+    "checkedAt": "2026-11-03T08:36:02.606Z",
+    "scope": "Isolated desktop Chromium review-page checks; not physical-iPhone or reader-runtime acceptance",
+    "results": [
+      {
+        "theme": "light",
+        "viewportWidth": 320,
+        "documentWidth": 320,
+        "exactReports": 40,
+        "chainDifferenceExpanded": true,
+        "sharedEnglishBodyDisclosed": true,
+        "allArabicAccessible": true,
+        "referenceTargetsAtLeast44px": true
+      },
+      {
+        "theme": "light",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "exactReports": 40,
+        "chainDifferenceExpanded": true,
+        "sharedEnglishBodyDisclosed": true,
+        "allArabicAccessible": true,
+        "referenceTargetsAtLeast44px": true
+      },
+      {
+        "theme": "light",
+        "viewportWidth": 1280,
+        "documentWidth": 1280,
+        "exactReports": 40,
+        "chainDifferenceExpanded": true,
+        "sharedEnglishBodyDisclosed": true,
+        "allArabicAccessible": true,
+        "referenceTargetsAtLeast44px": true
+      },
+      {
+        "theme": "dark",
+        "viewportWidth": 320,
+        "documentWidth": 320,
+        "exactReports": 40,
+        "chainDifferenceExpanded": true,
+        "sharedEnglishBodyDisclosed": true,
+        "allArabicAccessible": true,
+        "referenceTargetsAtLeast44px": true
+      },
+      {
+        "theme": "dark",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "exactReports": 40,
+        "chainDifferenceExpanded": true,
+        "sharedEnglishBodyDisclosed": true,
+        "allArabicAccessible": true,
+        "referenceTargetsAtLeast44px": true
+      },
+      {
+        "theme": "dark",
+        "viewportWidth": 1280,
+        "documentWidth": 1280,
+        "exactReports": 40,
+        "chainDifferenceExpanded": true,
+        "sharedEnglishBodyDisclosed": true,
+        "allArabicAccessible": true,
+        "referenceTargetsAtLeast44px": true
+      }
+    ],
+    "errors": [],
+    "status": "passed"
+  },
+  "screenshotsVisuallyInspected": [
+    {
+      "path": "content/review/evidence/funerals-third-chain-dark.png",
+      "sha256": "14290a53e1a98dcd1091e749f7e58c95a6ee9c1387e9983f16368e462350e221",
+      "visualReview": "Readable text and Arabic; no overlap or horizontal clipping. Long-report captures show a scrolled portion of the complete body."
+    },
+    {
+      "path": "content/review/evidence/funerals-third-chain-light.png",
+      "sha256": "e0785657b5e29c1249336f3c9c09da5866757b466e2d738505dea01f04b09db6",
+      "visualReview": "Readable text and Arabic; no overlap or horizontal clipping. Long-report captures show a scrolled portion of the complete body."
+    },
+    {
+      "path": "content/review/evidence/funerals-third-long-dark.png",
+      "sha256": "ca42233d8789afe66442f435c3313b3ae2a5adad7494020f432b2dcbee30596d",
+      "visualReview": "Readable text and Arabic; no overlap or horizontal clipping. Long-report captures show a scrolled portion of the complete body."
+    },
+    {
+      "path": "content/review/evidence/funerals-third-long-light.png",
+      "sha256": "7d376d5e8921dcf0517a3687b9ac8e519fad4e37a72a53618ef66b48583c59b2",
+      "visualReview": "Readable text and Arabic; no overlap or horizontal clipping. Long-report captures show a scrolled portion of the complete body."
+    },
+    {
+      "path": "content/review/evidence/funerals-third-overview-dark.png",
+      "sha256": "6c0d4fd8e430c79895328fee4d97768480da5ee0f3da41d9ce067c70a3f67e7e",
+      "visualReview": "Readable text and Arabic; no overlap or horizontal clipping. Long-report captures show a scrolled portion of the complete body."
+    },
+    {
+      "path": "content/review/evidence/funerals-third-overview-light.png",
+      "sha256": "b7cb2b0aeb456043351f6387803030cc9bd52699935878a28be91ce7f4bdb45c",
+      "visualReview": "Readable text and Arabic; no overlap or horizontal clipping. Long-report captures show a scrolled portion of the complete body."
+    }
+  ],
+  "preservation": {
+    "baselineCommit": "780324a1238c097799d105cce86c9eef3e594b61",
+    "unchangedTrackedFiles": 1558,
+    "unchangedPathHashMapSha256": "0e50d25f1a1c736ec7ca56cdc250abbc4ca24c72e458c591f968a0c4a0830ed8",
+    "changedPriorFiles": [
+      ".github/workflows/reader-checks.yml",
+      "README.md",
+      "research/production-readiness.json"
+    ],
+    "allPriorSourceAuditsUnchanged": true,
+    "allReaderFilesUnchanged": true,
+    "allOriginalSourceFilesUnchanged": true,
+    "allArtworkRecordingsAndNarrationJobsUnchanged": true,
+    "newReaderEntries": 0,
+    "newRecordings": 0
+  },
+  "limitations": [
+    "No new Arabic correction, English translation, printed supplement, reader entry or recording is admitted.",
+    "All Funerals wording, role and honorific review remains pending; independent accuracy review and rights clearance remain unfinished.",
+    "The missing printed report 1260 still needs transcription and review.",
+    "Desktop source-review checks do not establish physical-iPhone or locked-screen audio acceptance.",
+    "Reader remains 1180 entries across 24 sections, recordings 1–6. Audio remains free-demo only.",
+    "No external publication, push or message was performed."
+  ]
+}
