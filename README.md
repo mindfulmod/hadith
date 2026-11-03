@@ -1,6 +1,16 @@
 # Hadith · MindfulMod reader
 
-The local personal reader at `reader/` contains 1,166 selected Bukhari entries across twenty-three sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The local personal reader at `reader/` contains 1,180 selected Bukhari entries across twenty-four sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+
+## Complete selected Forgetfulness in Prayer · 3 November 2026
+
+The local personal reader contains **1,180 entries across twenty-four sections**. This batch adds all **fourteen selected entries 1166–1179**, with 38 complete Arabic/English spans and nine chapters. The Arabic is unchanged. Three separate chapter comments remain Arabic only, with English pending. The English is an AI-assisted working translation, not Darussalam wording or independent certification.
+
+Entries **1170 and 1171 share printed reference 1228** but retain separate app identities and visible links. The narrator’s question and answer in 1171 is explicitly attributed; it is not presented as a direct Prophetic saying. Full chains, honorifics, the Sa‘d / ‘Urwah closing account, the singular prostration ending, Muhammad’s named uncertainty, all four closing takbirs and Ibn Jurayj’s corroboration remain. The longer Kuraib and Sahl accounts stay complete. Fourteen recorded source differences remain unapplied and all known English comparison limitations stay visible.
+
+**1,083 automated tests passed: 841 Node and 242 Python.** Twenty-four integrity checks and twenty-four desktop browser checks passed. An actual offline update preserved the saved 1165 session and 983b bookmark. All fourteen reports, source notes, printed references, three chapter comments and exact search reopen offline. The largest text fits at 320, 390 and 1280 pixels; eight screenshots were inspected. Reading downloads total **31,102,984 bytes**. See `research/forgetfulness-wording-review.json` and `research/forgetfulness-reader-verification.json` for evidence and limits.
+
+All earlier **1,166 entry objects**, twenty-three book contexts and packs, 141 source-note pages, pinned inputs, artwork, recordings and narration jobs remain unchanged. Holds **926/957/1104/1115** remain. Complete recordings are **1–6**; Cedar stays on the free demo and the incomplete Hadith 7 recording is unadmitted. Nothing was published. Next: source intake from **1180**, Funerals. Independent review, rights clearance, full coverage and fresh physical-iPhone acceptance remain unfinished.
 
 ## Forgetfulness in Prayer source intake · 3 November 2026
 

@@ -48,7 +48,8 @@ export const BOOK_CONFIGS=Object.freeze({
  'night-prayer':Object.freeze({id:'night-prayer',number:20,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([21]),title:'Night Prayer',first:1069,arabicSourceId:'arabic-night-prayer',bewleySourceId:'bewley-night-prayer',bewleyTitle:'Night Prayer',revision:39522}),
  'voluntary-prayer':Object.freeze({id:'voluntary-prayer',number:21,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([21]),title:'Voluntary Prayer',first:1119,arabicSourceId:'arabic-voluntary-prayer',bewleySourceId:'bewley-voluntary-prayer',bewleyTitle:'Voluntary Prayer',revision:434953}),
  'mosques-prayer':Object.freeze({id:'mosques-prayer',number:22,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([21]),title:'Mosques of Mecca and Medina',first:1132,arabicSourceId:'arabic-mosques-prayer',bewleySourceId:'bewley-mosques-prayer',bewleyTitle:'Mosques of Mecca and Medina',revision:142212}),
- 'actions-prayer':Object.freeze({id:'actions-prayer',number:23,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([22]),title:'Actions during Prayer',first:1140,arabicSourceId:'arabic-actions-prayer',bewleySourceId:'bewley-actions-prayer',bewleyTitle:'Actions during Prayer',revision:39529})
+ 'actions-prayer':Object.freeze({id:'actions-prayer',number:23,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([22]),title:'Actions during Prayer',first:1140,arabicSourceId:'arabic-actions-prayer',bewleySourceId:'bewley-actions-prayer',bewleyTitle:'Actions during Prayer',revision:39529}),
+ 'forgetfulness':Object.freeze({id:'forgetfulness',number:24,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([22]),title:'Forgetfulness in Prayer',first:1166,arabicSourceId:'arabic-forgetfulness',bewleySourceId:'bewley-forgetfulness',bewleyTitle:'Forgetfulness',revision:39528})
 });
 function bookConfig(config){assert(Object.values(BOOK_CONFIGS).includes(config),'Unknown book configuration');return config;}
 let englishInventory;

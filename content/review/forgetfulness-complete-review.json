@@ -1,0 +1,1699 @@
+{
+  "schemaVersion": 1,
+  "status": "personal-prototype-only",
+  "independentReview": "pending",
+  "sourceId": "wikisource-bukhari-forgetfulness-r39528",
+  "sourceSha256": "ee449404d2b53adf1480d9e53820376cef4722ce5e289b3a7713829fa2c9e6e9",
+  "inventorySha256": "65aa7ea59a6262ee4bbb01cc5334a57570d9079501655c70eacbf461100dc9d9",
+  "createdAt": "2026-11-03",
+  "sources": [
+    {
+      "id": "arabic-forgetfulness",
+      "label": "Arabic Wikisource · fixed revision 39528",
+      "kind": "arabic-input",
+      "format": "web",
+      "url": "https://ar.wikisource.org/w/index.php?title=%D8%B5%D8%AD%D9%8A%D8%AD+%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A%2F%D9%83%D8%AA%D8%A7%D8%A8+%D8%B3%D8%AC%D9%88%D8%AF+%D8%A7%D9%84%D8%B3%D9%87%D9%88&oldid=39528"
+    },
+    {
+      "id": "bewley-forgetfulness",
+      "label": "Aisha Bewley · Forgetfulness in Prayer",
+      "kind": "english-comparison",
+      "format": "web",
+      "url": "https://aishabewley.org/bukhari11"
+    },
+    {
+      "id": "islamhouse-khan",
+      "label": "IslamHouse · Khan-family English comparison",
+      "kind": "english-comparison",
+      "format": "web",
+      "url": "https://islamhouse.com/en/books/70510"
+    },
+    {
+      "id": "brill-1862",
+      "label": "Historical Arabic print · Brill 1862",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+    },
+    {
+      "id": "dar-ibn-kathir-2002",
+      "label": "Arabic print · Dar Ibn Kathir 2002",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+    },
+    {
+      "id": "ibn-rajab-forgetfulness-ashi",
+      "label": "Ibn Rajab · Fath al-Bari · The two al-ashi prayers",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/amp/ar/library/content/302/1733/باب-يكبر-في-سجدتي-السهو"
+    }
+  ],
+  "scope": "All fourteen selected Forgetfulness in Prayer entries 1166–1179 and nine complete chapters. Three separate chapter comments remain Arabic only, with English pending.",
+  "editionNote": "Newly authored AI-assisted working English, not Darussalam wording or independent certification. Every selected Arabic paragraph remains unchanged. Complete chains, narrator discussion, repeated accounts, honorifics and closing material remain. Entries 1170 and 1171 share printed number 1228 but retain distinct app references and part locators. Recorded print and English comparison differences are disclosed, with independent review pending.",
+  "chapters": [
+    {
+      "id": "chapter-01",
+      "headingId": "باب_ما_جاء_في_السهو_إذا_قام_من_ركعتي_الفريضة",
+      "contextIds": [],
+      "entryNumbers": [
+        1166,
+        1167
+      ],
+      "title": "What has come concerning forgetfulness when standing after two rak‘ahs of an obligatory prayer",
+      "titleArabic": "باب ما جاء في السهو إذا قام من ركعتي الفريضة",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in this selected chapter."
+    },
+    {
+      "id": "chapter-02",
+      "headingId": "باب_إذا_صلى_خمسا",
+      "contextIds": [],
+      "entryNumbers": [
+        1168
+      ],
+      "title": "If one prays five rak‘ahs",
+      "titleArabic": "باب إذا صلى خمسا",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in this selected chapter."
+    },
+    {
+      "id": "chapter-03",
+      "headingId": "باب_إذا_سلم_في_ركعتين_أو_في_ثلاث_فسجد_سجدتين_مثل_سجود_الصلاة_أو_أطول",
+      "contextIds": [],
+      "entryNumbers": [
+        1169
+      ],
+      "title": "If one gives the greeting of peace after two or three rak‘ahs and makes two prostrations like those of the prayer or longer",
+      "titleArabic": "باب إذا سلم في ركعتين أو في ثلاث فسجد سجدتين مثل سجود الصلاة أو أطول",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in this selected chapter.",
+      "contextDifferences": [
+        {
+          "auditPath": "research/forgetfulness-source-audit.json",
+          "auditSha256": "5ccfd8c8471aba23c53e091cc0d6e63e4266c9026fce9a4e56c12003ebfc2e03",
+          "differenceId": "chapter-03-two-rakah-wording"
+        }
+      ]
+    },
+    {
+      "id": "chapter-04",
+      "headingId": "باب_من_لم_يتشهد_في_سجدتي_السهو",
+      "contextIds": [
+        "mwEw"
+      ],
+      "entryNumbers": [
+        1170,
+        1171
+      ],
+      "title": "One who does not recite the tashahhud in the two prostrations of forgetfulness",
+      "titleArabic": "باب من لم يتشهد في سجدتي السهو",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "Original Arabic chapter context retained separately; English translation pending."
+    },
+    {
+      "id": "chapter-05",
+      "headingId": "باب_من_يكبر_في_سجدتي_السهو",
+      "contextIds": [],
+      "entryNumbers": [
+        1172,
+        1173
+      ],
+      "title": "One who pronounces the takbir in the two prostrations of forgetfulness",
+      "titleArabic": "باب من يكبر في سجدتي السهو",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in this selected chapter."
+    },
+    {
+      "id": "chapter-06",
+      "headingId": "باب_إذا_لم_يدر_كم_صلى_ثلاثا_أو_أربعا_سجد_سجدتين_وهو_جالس",
+      "contextIds": [],
+      "entryNumbers": [
+        1174
+      ],
+      "title": "If one does not know whether one has prayed three or four, one makes two prostrations while seated",
+      "titleArabic": "باب إذا لم يدر كم صلى ثلاثا أو أربعا سجد سجدتين وهو جالس",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in this selected chapter."
+    },
+    {
+      "id": "chapter-07",
+      "headingId": "باب_السهو_في_الفرض_والتطوع",
+      "contextIds": [
+        "mwIw"
+      ],
+      "entryNumbers": [
+        1175
+      ],
+      "title": "Forgetfulness in obligatory and voluntary prayer",
+      "titleArabic": "باب السهو في الفرض والتطوع",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "Original Arabic chapter context retained separately; English translation pending."
+    },
+    {
+      "id": "chapter-08",
+      "headingId": "باب_إذا_كلم_وهو_يصلي_فأشار_بيده_واستمع",
+      "contextIds": [],
+      "entryNumbers": [
+        1176
+      ],
+      "title": "If one is spoken to while praying and signals with the hand and listens",
+      "titleArabic": "باب إذا كلم وهو يصلي فأشار بيده واستمع",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in this selected chapter."
+    },
+    {
+      "id": "chapter-09",
+      "headingId": "باب_الإشارة_في_الصلاة",
+      "contextIds": [
+        "mwKw"
+      ],
+      "entryNumbers": [
+        1177,
+        1178,
+        1179
+      ],
+      "title": "Gesturing in prayer",
+      "titleArabic": "باب الإشارة في الصلاة",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "Original Arabic chapter context retained separately; English translation pending."
+    }
+  ],
+  "entries": [
+    {
+      "number": 1166,
+      "id": "bukhari:1166",
+      "sourceRecordId": "wikisource-bukhari-forgetfulness-r39528:1166",
+      "chapterId": "chapter-01",
+      "paragraphIds": [
+        "mwBg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1166-1",
+          "paragraphId": "mwBg",
+          "start": 0,
+          "end": 130,
+          "kind": "chain",
+          "arabic": "[1166] حدثنا عبد الله بن يوسف أخبرنا مالك بن أنس عن ابن شهاب عن عبد الرحمن الأعرج عن عبد الله بن بحينة رضى الله تعالى عنه أنه قال ",
+          "english": "‘Abdullah ibn Yusuf related to us. Malik ibn Anas informed us, from Ibn Shihab, from ‘Abd al-Rahman al-A‘raj, from ‘Abdullah ibn Buhaynah, may Allah Most High be pleased with him, who said:",
+          "arabicSha256": "b6df60725b78dc4da121754fac4dcbf498529cbfc89a8807b723eed64eca9a91",
+          "englishSha256": "9e0fa5f12234079963387fdbe372de86a39a348051c39a577092d241f6193dac"
+        },
+        {
+          "id": "1166-2",
+          "paragraphId": "mwBg",
+          "start": 130,
+          "end": 276,
+          "kind": "report",
+          "arabic": "صلى لنا رسول الله ﷺ ركعتين من بعض الصلوات ثم قام فلم يجلس فقام الناس معه فلما قضى صلاته ونظرنا تسليمه كبر قبل التسليم فسجد سجدتين وهو جالس ثم سلم ",
+          "english": "The Messenger of Allah, may Allah bless him and grant him peace, led us in two rak‘ahs of one of the prayers. Then he stood up without sitting, and the people stood up with him. When he had completed his prayer and we were waiting for his greeting of peace, he pronounced the takbir before the greeting of peace and made two prostrations while seated. Then he gave the greeting of peace.",
+          "arabicSha256": "4939d5f530ebc1dbf030068152259ed8cb7dc4171f7305b1c318394f6f6c1bff",
+          "englishSha256": "8730bbb4c5278557202d082c89d7cacabd36b49f34e5bbcf76d5683434a05f64"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            308,
+            309
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            296
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-forgetfulness",
+          "reference": "1166"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.22.315",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.22.315",
+            "recordSha256": "ad804069e855ca367a3cd641bd68ca1c31ef044806a55c46b8302dbca2bd56ef"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated 'Abdullah bin Buhaina : ",
+            "Allah's Apostle once led us in a prayer and offered two Rakat and got up (for the third Raka) without sitting (after the second Raka). The people also got up with him, and when he was about to finish his prayer, we waited for him to finish the prayer with Taslim but he said Takbir before Taslim and performed two prostrations while sitting and then finished the prayer with Taslim. "
+          ],
+          "damagedExcerpt": "(for the third Raka)",
+          "note": "The third rakah and the second-rakah sitting are supplied in explanatory parentheses; the selected report itself does not name those added positions."
+        }
+      ],
+      "notes": [
+        "Preserve the full chain, one of the prayers qualification, expectation of the taslim and both sitting prostrations before the final taslim.",
+        "Retain the full Malik ibn Anas / Ibn Shihab / al-Araj chain, one of the prayers, the people rising with him, expectation of the greeting and both prostrations before it. No third-rakah explanation is inserted.",
+        "Printed reference 1224 · app reference 1166. Pinned Khan EPUB 2.22.315 and exact web label 1166 are comparisons only. Shorter chains, added explanations and omissions do not replace the selected Arabic."
+      ],
+      "reviewScope": "AI-assisted complete-span English compared with the unchanged selected Arabic, both inspected printed sequences and individually located English bodies. Independent linguistic, theological, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "dcd8d82027cce4859deb92cc3704ceb39e133e924381f7e0c3bbc48e644bb3cb",
+      "englishSha256": "93ff236b9993572e232ab07863bfc740e015070368713e04592bd9b18501818f",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1224 · app reference 1166",
+          "pdfPage": 296,
+          "scope": "Exact modern printed occurrence locator; the digital app reference remains unchanged."
+        }
+      ],
+      "reviewRecordSha256": "3885e3c5a756f27f86c693e0c36634007f0ccf79247044690db560e8f88e32b7"
+    },
+    {
+      "number": 1167,
+      "id": "bukhari:1167",
+      "sourceRecordId": "wikisource-bukhari-forgetfulness-r39528:1167",
+      "chapterId": "chapter-01",
+      "paragraphIds": [
+        "mwCA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1167-1",
+          "paragraphId": "mwCA",
+          "start": 0,
+          "end": 127,
+          "kind": "chain",
+          "arabic": "[1167] حدثنا عبد الله بن يوسف أخبرنا مالك عن يحيى بن سعيد عن عبد الرحمن الأعرج عن عبد الله بن بحينة رضى الله تعالى عنه أنه قال ",
+          "english": "‘Abdullah ibn Yusuf related to us. Malik informed us, from Yahya ibn Sa‘id, from ‘Abd al-Rahman al-A‘raj, from ‘Abdullah ibn Buhaynah, may Allah Most High be pleased with him, who said:",
+          "arabicSha256": "0597f585dcfe1e87d7f325ec223252015d9020ceef973d3c25f60fd6e892425c",
+          "englishSha256": "ce97850613d56e6bab45ebc102b9986e768f91b0d66d23b3f532cbe0cd018a62"
+        },
+        {
+          "id": "1167-2",
+          "paragraphId": "mwCA",
+          "start": 127,
+          "end": 221,
+          "kind": "report",
+          "arabic": "إن رسول الله ﷺ قام من اثنتين من الظهر لم يجلس بينهما فلما قضى صلاته سجد سجدتين ثم سلم بعد ذلك ",
+          "english": "The Messenger of Allah, may Allah bless him and grant him peace, stood up after two rak‘ahs of Dhuhr without sitting between them. When he had completed his prayer, he made two prostrations, then gave the greeting of peace after that.",
+          "arabicSha256": "38e6f51b62960e04475721f93473f38e31b25dcb78bb8ad0d63c124645b79b6e",
+          "englishSha256": "5ae0915ba514efa7fbf86f9f8c98c7d4c137d81ccc83a791efee415feb06b0a7"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            309
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            296
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-forgetfulness",
+          "reference": "1167"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.22.316",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.22.316",
+            "recordSha256": "d69b546e688ae24cc2e40c7ea24e1aed7dc3f0cabcf30e94088d7fb098c0dfe7"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated 'Abdullah bin Buhaina : ",
+            "Allah's Apostle got up after the second Raka of the Zuhr prayer without sitting in between (the second and the third Rakat). When he finished the prayer he performed two prostrations (of Sahu) and then finished the prayer with Tasllm. "
+          ],
+          "damagedExcerpt": "Tasllm",
+          "note": "The second/third-rakah explanation and of Sahu are editorial additions; Tasllm is a transcription defect."
+        }
+      ],
+      "notes": [
+        "Keep this separately transmitted Dhuhr occurrence, including the selected between-them wording, without importing the first reports chain or explanatory prayer positions.",
+        "Keep the distinct Malik / Yahya ibn Said route. The selected between-them phrase is retained without adding second/third-rakah parentheticals or a tashahhud explanation.",
+        "Printed reference 1225 · app reference 1167. Pinned Khan EPUB 2.22.316 and exact web label 1167 are comparisons only. Shorter chains, added explanations and omissions do not replace the selected Arabic."
+      ],
+      "reviewScope": "AI-assisted complete-span English compared with the unchanged selected Arabic, both inspected printed sequences and individually located English bodies. Independent linguistic, theological, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "f2dfb863959c48a05f17b6e337cb7934c90d182e3e6147af9a107452ecc81756",
+      "englishSha256": "4f70ed10d4368f69d05e5a8ea04cae5b118054fd7b5a06bb325900a3cc390d9a",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1225 · app reference 1167",
+          "pdfPage": 296,
+          "scope": "Exact modern printed occurrence locator; the digital app reference remains unchanged."
+        }
+      ],
+      "reviewRecordSha256": "eae393b42a8b72df1c4ca5c3323f16e2cef981d32cb067987f752f807e1c8a19"
+    },
+    {
+      "number": 1168,
+      "id": "bukhari:1168",
+      "sourceRecordId": "wikisource-bukhari-forgetfulness-r39528:1168",
+      "chapterId": "chapter-02",
+      "paragraphIds": [
+        "mwCw"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1168-1",
+          "paragraphId": "mwCw",
+          "start": 0,
+          "end": 95,
+          "kind": "chain",
+          "arabic": "[1168] حدثنا أبو الوليد حدثنا شعبة عن الحكم عن إبراهيم عن علقمة عن عبد الله رضى الله تعالى عنه ",
+          "english": "Abu al-Walid related to us. Shu‘bah related to us, from al-Hakam, from Ibrahim, from ‘Alqamah, from ‘Abdullah, may Allah Most High be pleased with him:",
+          "arabicSha256": "334994a6ea228d055d4bd3d59f068be7d9522c9bf41c6c9baa8c360fd45a8c07",
+          "englishSha256": "400ee0987f8ba2e75d5914a4b06c7da09acc900945f45d5bc593a589d5e0a2ad"
+        },
+        {
+          "id": "1168-2",
+          "paragraphId": "mwCw",
+          "start": 95,
+          "end": 199,
+          "kind": "report",
+          "arabic": "أن رسول الله ﷺ صلى الظهر خمسا فقيل له أزيد في الصلاة، فقال وما ذاك قال صليت خمسا فسجد سجدتين بعد ما سلم ",
+          "english": "The Messenger of Allah, may Allah bless him and grant him peace, prayed Dhuhr as five rak‘ahs. He was asked, “Has the prayer been increased?” He said, “What is that?” The reply was, “You prayed five.” So he made two prostrations after he had given the greeting of peace.",
+          "arabicSha256": "5d980860fdc4e118a866435ebd97c0e88319e193ed1d256de7d52970bda4cabd",
+          "englishSha256": "9df4b470660d99beae3ca1b13279a8dbb25c175734fff7b2b300f5f84161343b"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            309
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            296
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-forgetfulness",
+          "reference": "1168",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/forgetfulness-source-audit.json",
+            "sha256": "5ccfd8c8471aba23c53e091cc0d6e63e4266c9026fce9a4e56c12003ebfc2e03",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "28d15bd818e26430469ee970d77038b4fe5030c8015698ca98092229cc903f5d",
+            "occurrence": 1
+          },
+          "note": "The reply is rendered as a question about why the other person asks; the selected Arabic asks what that is. Do not adopt expanded dialogue automatically."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.22.317",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.22.317",
+            "recordSha256": "09c2872b79d24a2cb8f7887c9f9c7def0028a6c6575ebd7e4fd98b698f1a8c61"
+          }
+        }
+      ],
+      "notes": [
+        "Keep five, the question and reply, both prostrations and their position after the taslim.",
+        "Retain the five-rakah count, the exact question about increase, What is that reply and both prostrations after the greeting. The anonymous speaker stays unnamed.",
+        "Historical adds fa to the reply connective. Selected and modern agree here; do not conflate with the separate five-unit count.",
+        "Printed reference 1226 · app reference 1168. Pinned Khan EPUB 2.22.317 and exact web label 1168 are comparisons only. Shorter chains, added explanations and omissions do not replace the selected Arabic."
+      ],
+      "reviewScope": "AI-assisted complete-span English compared with the unchanged selected Arabic, both inspected printed sequences and individually located English bodies. Independent linguistic, theological, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "f45bd6506e51329cb584081fb3895aabf75255fa811dde5ded5f34e1a9c951aa",
+      "englishSha256": "36737af35f99eac5a9e9d451f6acead080701374a1e09de569c9c1545cca2ec9",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1226 · app reference 1168",
+          "pdfPage": 296,
+          "scope": "Exact modern printed occurrence locator; the digital app reference remains unchanged."
+        }
+      ],
+      "reviewRecordSha256": "f06618a14a87257ffac46cf5ee801cdb7f547a6ff808a50f54ffbc264e509cb3"
+    },
+    {
+      "number": 1169,
+      "id": "bukhari:1169",
+      "sourceRecordId": "wikisource-bukhari-forgetfulness-r39528:1169",
+      "chapterId": "chapter-03",
+      "paragraphIds": [
+        "mwDg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1169-1",
+          "paragraphId": "mwDg",
+          "start": 0,
+          "end": 94,
+          "kind": "chain",
+          "arabic": "[1169] حدثنا آدم حدثنا شعبة عن سعد بن إبراهيم عن أبي سلمة عن أبي هريرة رضى الله تعالى عنه قال ",
+          "english": "Adam related to us. Shu‘bah related to us, from Sa‘d ibn Ibrahim, from Abu Salamah, from Abu Hurayrah, may Allah Most High be pleased with him, who said:",
+          "arabicSha256": "25c9a31d0b33b02acb6d73ca1403f8d108b83c78133c34b57c2104babd3f5942",
+          "englishSha256": "15d6418da9d19027a117fb4bebcb98ed4cee3a5cb4f0fa779cd73ad2821b365c"
+        },
+        {
+          "id": "1169-2",
+          "paragraphId": "mwDg",
+          "start": 94,
+          "end": 253,
+          "kind": "report",
+          "arabic": "صلى بنا النبي ﷺ الظهر أو العصر فسلم، فقال له ذو اليدين الصلاة يا رسول الله أنقصت، فقال النبي ﷺ لأصحابه أحق ما يقول: قالوا نعم فصلى ركعتين أخريين ثم سجد سجدتين ",
+          "english": "The Prophet, may Allah bless him and grant him peace, led us in Dhuhr or ‘Asr and gave the greeting of peace. Dhu al-Yadayn said to him, “The prayer, O Messenger of Allah—has it been shortened?” The Prophet, may Allah bless him and grant him peace, said to his companions, “Is what he says true?” They said, “Yes.” So he prayed two more rak‘ahs, then made two prostrations.",
+          "arabicSha256": "663503a982edf97a69561a1ed096333f6f3ffff4dd9ccb1e6bcbbff48d266d51",
+          "englishSha256": "2f6bc996dbf107a5b3d88bcfdf75373aa171016b0d5bd38d2d902880acfd008c"
+        },
+        {
+          "id": "1169-3",
+          "paragraphId": "mwDg",
+          "start": 253,
+          "end": 362,
+          "kind": "transmission-note",
+          "arabic": "قال سعد ورأيت عروة بن الزبير صلى من المغرب ركعتين فسلم وتكلم ثم صلى ما بقى وسجد سجدتين، وقال هكذا فعل النبي ﷺ",
+          "english": "Sa‘d said: I saw ‘Urwah ibn al-Zubayr pray two rak‘ahs of Maghrib, give the greeting of peace and speak. Then he prayed what remained and made two prostrations. He said, “This is what the Prophet, may Allah bless him and grant him peace, did.”",
+          "arabicSha256": "b83885a8e0110d787e30f1ab6efb227156d79986667d5586c05d41e6f828a18d",
+          "englishSha256": "1098bbba466c745652aeb6cef91e8d0114636d5f38396d22df56cc3666c1e58a"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            309
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            296
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-forgetfulness",
+          "reference": "1169"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.22.318",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.22.318",
+            "recordSha256": "0fc4836abaa5561bdd701ba08e6ca1fbce0b1d11ed1bd2fed91be6a8e9f21206"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Abu Huraira: ",
+            "The Prophet led us in the 'Asr or the Zuhr prayer and finished it with Taslim. Dhul-Yadain said to him, \"O Allah's Apostle! Has the prayer been reduced?\" The Prophet asked his companions in the affirmative. So Allah's Apostle I offered two more Rakat and then performed two prostrations (of Sahu). Sad said, \"I saw that 'Ursa bin Az-Zubair had offered two Rakat in the Maghrib prayer and finished it with Taslim. He then talked (and when he was informed about it) he completed the rest of his prayer and performed two prostrations, and said, 'The Prophet prayed like this.' \" "
+          ],
+          "damagedExcerpt": "asked his companions in the affirmative",
+          "note": "The companions question and affirmative answer are damaged into a statement that he asked in the affirmative. The names Sad and Ursa and a stray I also require care; this body cannot confirm the complete selected dialogue."
+        }
+      ],
+      "notes": [
+        "Preserve both the Abu Hurayrah account and Sads complete later observation of Urwah, including speech, the remaining prayer and two prostrations. The historical main text lacks the intervening Sad/Urwah account; the modern print contains it.",
+        "Retain Dhuhr or Asr uncertainty, the actual companions question and affirmative reply, two more rakahs and the complete Sad/Urwah closing account. The historical shorter ending does not replace the selected text.",
+        "The historical main text jumps directly to the final attribution, without the selected intervening Sad/Urwah account. The modern print contains that account. Keep the full selected passage; no new numbered report or silent deletion is justified.",
+        "Printed reference 1227 · app reference 1169. Pinned Khan EPUB 2.22.318 and exact web label 1169 are comparisons only. Shorter chains, added explanations and omissions do not replace the selected Arabic."
+      ],
+      "reviewScope": "AI-assisted complete-span English compared with the unchanged selected Arabic, both inspected printed sequences and individually located English bodies. Independent linguistic, theological, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "75e86042b579cad9c637fc878b3c8a07aee510333c666d708754a7b0279ca3b0",
+      "englishSha256": "757f72d89df22bdd37ad0a9267b021902ffe8e7b8b967e9899514e7f49c01c1b",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1227 · app reference 1169",
+          "pdfPage": 296,
+          "scope": "Exact modern printed occurrence locator; the digital app reference remains unchanged."
+        }
+      ],
+      "reviewRecordSha256": "df72eddb8cf8b7aad80730b1ce2ad342dc00f21533bdce87b8cadd7226194044"
+    },
+    {
+      "number": 1170,
+      "id": "bukhari:1170",
+      "sourceRecordId": "wikisource-bukhari-forgetfulness-r39528:1170",
+      "chapterId": "chapter-04",
+      "paragraphIds": [
+        "mwFA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1170-1",
+          "paragraphId": "mwFA",
+          "start": 0,
+          "end": 129,
+          "kind": "chain",
+          "arabic": "[1170] حدثنا عبد الله بن يوسف أخبرنا مالك بن أنس عن أيوب بن أبي تميمة السختياني عن محمد بن سيرين عن أبي هريرة رضى الله تعالى عنه ",
+          "english": "‘Abdullah ibn Yusuf related to us. Malik ibn Anas informed us, from Ayyub ibn Abi Tamimah al-Sakhtiyani, from Muhammad ibn Sirin, from Abu Hurayrah, may Allah Most High be pleased with him:",
+          "arabicSha256": "88c7c2b0f940eff5e2760ba89639556d8415e438255a94663b1c128c0aa83b98",
+          "englishSha256": "9b5a1a90e2489f816296ac2375584e320fc02ed31babe1c829dd62deeb526abe"
+        },
+        {
+          "id": "1170-2",
+          "paragraphId": "mwFA",
+          "start": 129,
+          "end": 343,
+          "kind": "report",
+          "arabic": "أن رسول الله ﷺ انصرف من اثنتين، فقال له ذو اليدين أقصرت الصلاة أم نسيت يا رسول الله، فقال رسول الله ﷺ: أصدق ذو اليدين، فقال الناس نعم فقام رسول الله ﷺ فصلى اثنتين أخريين ثم سلم ثم كبر فسجد مثل سجوده أو أطول ثم رفع ",
+          "english": "The Messenger of Allah, may Allah bless him and grant him peace, ended after two rak‘ahs. Dhu al-Yadayn said to him, “Has the prayer been shortened, or did you forget, O Messenger of Allah?” The Messenger of Allah, may Allah bless him and grant him peace, said, “Has Dhu al-Yadayn spoken the truth?” The people said, “Yes.” So the Messenger of Allah, may Allah bless him and grant him peace, stood up and prayed two more rak‘ahs, then gave the greeting of peace. Then he pronounced the takbir and prostrated as he usually prostrated, or longer, then rose.",
+          "arabicSha256": "c465975839237fae047ca4985fdc5fff6a9ab79dced4bf831b3a6d696132a502",
+          "englishSha256": "907143f6845cae86aadffacdd225a4cc2431466ee6d3c9f31913cbd80cfa1a3d"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            309
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            297
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-forgetfulness",
+          "reference": "1170",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/forgetfulness-source-audit.json",
+            "sha256": "5ccfd8c8471aba23c53e091cc0d6e63e4266c9026fce9a4e56c12003ebfc2e03",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "08bdea8f7e603cf3b33c5969540272846fbe00373ee393d3e248e331011cabde",
+            "occurrence": 1
+          },
+          "note": "The comparison adds a little to the alternative longer prostration; the selected Arabic gives no degree. Preserve its singular prostration episode and exact ending."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.22.319",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.22.319",
+            "recordSha256": "d6d3fda70290d49b0c9f6b5e99c035c432bc61f406837cc371b13df68b77be52"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Abu Huraira. ",
+            "Once Allah's Apostle offered two Rakat and finished his prayer. So Dhul-Yadain asked him, \"Has the prayer been reduced or have you forgotten?\" Allah's Apostle said, \"Has DhulYadain spoken the truth?\" The people replied in the affirmative. Then Allah's Apostle stood up and offered the remaining two Rakat and performed Taslim, and then said Takbir and performed two prostrations like his usual prostrations, or a bit longer, and then got up. "
+          ],
+          "damagedExcerpt": "performed two prostrations",
+          "note": "The comparison says two prostrations where the selected Arabic describes a prostration and then rising. It adds remaining and a bit; the selected ending must not be completed from a parallel report."
+        }
+      ],
+      "notes": [
+        "Keep the singular prostration episode and the final rising exactly as this occurrence ends. Do not append a second episode from 1172 or the English comparison.",
+        "Retain every Prophetic honorific, both complete questions, the affirmative reply, two more rakahs and the singular prostration episode followed by rising. Do not append the second episode from a parallel occurrence. Printed 1228 part 1 remains separate from 1171.",
+        "Printed reference 1228 · part 1 of 2 · app reference 1170. Pinned Khan EPUB 2.22.319 and exact web label 1170 are comparisons only. Shorter chains, added explanations and omissions do not replace the selected Arabic."
+      ],
+      "reviewScope": "AI-assisted complete-span English compared with the unchanged selected Arabic, both inspected printed sequences and individually located English bodies. Independent linguistic, theological, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "7fe4c5f4b506d3513b83b78d84613a66d7edcdfe42f6fc5d196aebb512622c3d",
+      "englishSha256": "3c2ef93aba177b80bfa66a34e4e36e82980519b7460dced2e8ca409f7e77a0b4",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1228 · part 1 of 2 · app reference 1170",
+          "pdfPage": 297,
+          "scope": "Exact modern printed occurrence locator; the digital app reference remains unchanged."
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "1170-shared-print",
+          "label": "One printed number, two entries",
+          "text": "This is part 1 of two separately chained passages under printed reference 1228. The app keeps entries 1170 and 1171 separate, following the selected digital source.",
+          "citations": [
+            "base",
+            "printed-reference"
+          ],
+          "related": [
+            {
+              "number": 1171,
+              "label": "Related entry 1171",
+              "id": "bukhari:1171"
+            }
+          ]
+        }
+      ],
+      "reviewRecordSha256": "f586aa79f29cfcd0f260dda78d344f67177b05371dece27dd1a0e33e71a32b16"
+    },
+    {
+      "number": 1171,
+      "id": "bukhari:1171",
+      "sourceRecordId": "wikisource-bukhari-forgetfulness-r39528:1171",
+      "chapterId": "chapter-04",
+      "paragraphIds": [
+        "mwGA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1171-1",
+          "paragraphId": "mwGA",
+          "start": 0,
+          "end": 60,
+          "kind": "chain",
+          "arabic": "[1171] حدثنا سليمان بن حرب حدثنا حماد عن سلمة بن علقمة قال: ",
+          "english": "Sulayman ibn Harb related to us. Hammad related to us, from Salamah ibn ‘Alqamah, who said:",
+          "arabicSha256": "29559a5eafad67fb6741ba442837197f36721492a18bf802425cbb29f61c7fb7",
+          "englishSha256": "155984ce7b7fd2ef80dc0cee1ce2b3adc61bd19bcf7a18cfb509025aab570cde"
+        },
+        {
+          "id": "1171-2",
+          "paragraphId": "mwGA",
+          "start": 60,
+          "end": 116,
+          "kind": "report",
+          "arabic": "قلت لمحمد في سجدتي السهو تشهد قال ليس في حديث أبي هريرة ",
+          "english": "I said to Muhammad, “Is there a tashahhud in the two prostrations of forgetfulness?” He said, “It is not in the hadith of Abu Hurayrah.”",
+          "arabicSha256": "2df739820df2335d2d4fe22b0b92e0385f51fd35e2dab1042421dbe6801d9061",
+          "englishSha256": "bf83daccd5b79673b0a8653df9776ec49335df094b1bde11eb033c45ae72304e"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            309,
+            310
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            297
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-forgetfulness",
+          "reference": "1171",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/forgetfulness-source-audit.json",
+            "sha256": "5ccfd8c8471aba23c53e091cc0d6e63e4266c9026fce9a4e56c12003ebfc2e03",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "b13997f9e6f37dd3f0ca1df385d991d2f933442a0a6cb415521e134f94059b50",
+            "occurrence": 1
+          },
+          "note": "The Arabic dual prostrations is rendered as my prostrations. The complete selected question and Muhammads answer need their own attribution; they are not a direct Prophetic quotation."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.22.320",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.22.320",
+            "recordSha256": "ac9f47b92fddb2383807a697b983a8b3533d514fb3ccf38598a00e4b07ca5546"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Salama bin 'Alqama: ",
+            "I asked Muhammad (bin Sirin) whether Tashah-hud should be recited after the two prostrations of Sahu. He replied, \"It is not (mentioned) in Abu Huraira's narration . \" "
+          ],
+          "damagedExcerpt": "after the two prostrations",
+          "note": "The comparison uses after the two prostrations where the selected question uses fi; Muhammad ibn Sirin and should be recited are supplied explanations. Preserve the actual question and answer as attributed narrator discussion."
+        }
+      ],
+      "notes": [
+        "A distinct complete chain introduces Salama asking Muhammad about the two prostrations. Preserve Muhammads answer as a narrators statement, not a new direct Prophetic saying. This is printed beneath 1228 without another number.",
+        "The full Sulayman/Hammad/Salamah chain leads to Salamah asking Muhammad a question. The answer is Muhammads own attributed statement about Abu Hurayrahs report. The Arabic dual is two prostrations, not my prostrations; in is retained rather than after. No Prophetic attribution or honorific is invented.",
+        "Printed reference 1228 · part 2 of 2 · app reference 1171. Pinned Khan EPUB 2.22.320 and exact web label 1171 are comparisons only. Shorter chains, added explanations and omissions do not replace the selected Arabic."
+      ],
+      "reviewScope": "AI-assisted complete-span English compared with the unchanged selected Arabic, both inspected printed sequences and individually located English bodies. Independent linguistic, theological, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "8feaf25220f7407a793f7c56eb0b34cc38b3d721e9fc477dc271625584e756c9",
+      "englishSha256": "c30562f4517f54269de10d1454d4bda4f5052e803516224fb827d1e91c7aa433",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1228 · part 2 of 2 · app reference 1171",
+          "pdfPage": 297,
+          "scope": "Exact modern printed occurrence locator; the digital app reference remains unchanged."
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "1171-narrator-discussion",
+          "label": "A narrator’s question and answer",
+          "text": "Salamah ibn ‘Alqamah asks Muhammad about Abu Hurayrah’s report. The answer below is attributed to Muhammad; this entry does not present it as a direct saying of the Prophet.",
+          "citations": [
+            "base",
+            "printed-reference",
+            "bewley",
+            "khan"
+          ],
+          "related": []
+        },
+        {
+          "id": "1171-shared-print",
+          "label": "One printed number, two entries",
+          "text": "This is part 2 of two separately chained passages under printed reference 1228. The app keeps entries 1170 and 1171 separate, following the selected digital source.",
+          "citations": [
+            "base",
+            "printed-reference"
+          ],
+          "related": [
+            {
+              "number": 1170,
+              "label": "Related entry 1170",
+              "id": "bukhari:1170"
+            }
+          ]
+        }
+      ],
+      "reviewRecordSha256": "9e8e72cb1ab59db70a4ab0d0f97b2c9b948b75f9786281a8b7292b3ce8df7552"
+    },
+    {
+      "number": 1172,
+      "id": "bukhari:1172",
+      "sourceRecordId": "wikisource-bukhari-forgetfulness-r39528:1172",
+      "chapterId": "chapter-05",
+      "paragraphIds": [
+        "mwGg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1172-1",
+          "paragraphId": "mwGg",
+          "start": 0,
+          "end": 90,
+          "kind": "chain",
+          "arabic": "[1172] حدثنا حفص بن عمر حدثنا يزيد بن إبراهيم عن محمد عن أبي هريرة رضى الله تعالى عنه قال ",
+          "english": "Hafs ibn ‘Umar related to us. Yazid ibn Ibrahim related to us, from Muhammad, from Abu Hurayrah, may Allah Most High be pleased with him, who said:",
+          "arabicSha256": "8db191cad3cf92ff1905daad25df91ce0e0573d34761a38500a23641a8e68db6",
+          "englishSha256": "a60f5a9ecbd0d41fedb92788e116d63c2d61929584370cf8e9bb1898bd88cbbe"
+        },
+        {
+          "id": "1172-2",
+          "paragraphId": "mwGg",
+          "start": 90,
+          "end": 158,
+          "kind": "report",
+          "arabic": "صلى النبي ﷺ إحدى صلاتي العشي قال محمد وأكثر ظني العصر ركعتين ثم سلم ",
+          "english": "The Prophet, may Allah bless him and grant him peace, prayed one of the two afternoon prayers—Muhammad said: I think it was most likely ‘Asr—as two rak‘ahs, then gave the greeting of peace.",
+          "arabicSha256": "e61a3ef7b24cff5436063e57a9ab6d1373f7c4f84c92be376347757a9a31f230",
+          "englishSha256": "5953c9a59bffc83df674b8a6ae641434247e0a5666c7b2fb646888d7069934de"
+        },
+        {
+          "id": "1172-3",
+          "paragraphId": "mwGg",
+          "start": 158,
+          "end": 384,
+          "kind": "report",
+          "arabic": "ثم قام إلى خشبة في مقدم المسجد فوضع يده عليها وفيهم أبو بكر وعمر رضى الله تعالى عنهما فهابا أن يكلماه وخرج سرعان الناس فقالوا أقصرت الصلاة ورجل يدعوه النبي ﷺ ذو اليدين، فقال أنسيت أم قصرت، فقال لم أنس ولم تقصر قال بلى قد نسيت ",
+          "english": "Then he stood up and went to a piece of wood at the front of the mosque and placed his hand on it. Abu Bakr and ‘Umar, may Allah Most High be pleased with them both, were among them, but they were too awed to speak to him. Those who were hurrying left and said, “Has the prayer been shortened?” A man whom the Prophet, may Allah bless him and grant him peace, called Dhu al-Yadayn said, “Did you forget, or has it been shortened?” He said, “I did not forget, and it has not been shortened.” He said, “Yes, you have forgotten.”",
+          "arabicSha256": "890f28170585e9f1bf6cd5111de99bb3817da2999355fdaf931a499f4c1c2701",
+          "englishSha256": "6f903931ec8ebc6d69a23942f6e34cd5ce87d66625abe55c7012ee791d911f66"
+        },
+        {
+          "id": "1172-4",
+          "paragraphId": "mwGg",
+          "start": 384,
+          "end": 507,
+          "kind": "report",
+          "arabic": "فصلى ركعتين ثم سلم ثم كبر فسجد مثل سجوده أو أطول ثم رفع رأسه فكبر ثم وضع رأسه فكبر فسجد مثل سجوده أو أطول ثم رفع رأسه وكبر ",
+          "english": "So he prayed two rak‘ahs, then gave the greeting of peace. Then he pronounced the takbir and prostrated as he usually prostrated, or longer. Then he raised his head and pronounced the takbir. Then he lowered his head and pronounced the takbir and prostrated as he usually prostrated, or longer. Then he raised his head and pronounced the takbir.",
+          "arabicSha256": "fae57749f3fde9c97f7117ad864b7e11c466e254b85468a2721fda869b8ac96c",
+          "englishSha256": "a5c72b50fd8a4fb64aac2f964dd5bda7bf2a4ea873f8a49f9f4bb35e18b20074"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            310
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            297
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-forgetfulness",
+          "reference": "1172",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/forgetfulness-source-audit.json",
+            "sha256": "5ccfd8c8471aba23c53e091cc0d6e63e4266c9026fce9a4e56c12003ebfc2e03",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "40a80ae8d4ccecc3e5c865e5ecb60915e40efa6871ca756b5536d021e76c5910",
+            "occurrence": 1
+          },
+          "note": "The comparison supplies Asr or Isha as the two named alternatives. The selected Arabic instead uses one of the two al-ashi prayers and separately preserves Muhammads uncertainty about Asr. Do not insert the supplied Isha alternative."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.22.321",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.22.321",
+            "recordSha256": "83ff70d440a9edbbdc625514f23fc5a97602e3a9ef5dd152800768319d2005ac"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Abu Huraira: ",
+            "The Prophet offered one of the evening prayers (the sub-narrator Muhammad said, \"I think that it was most probably the 'Asr prayer\") and he finished it after offering two Rakat only. He then stood near a price of wood in front of the Mosque and put his hand over it. Abu Bakr and 'Umar were amongst those who were present, but they dared not talk to him about that (because of excessive respect for him), and those who were in a hurry went out. They said, \"Has the prayer been reduced?\" A man who was called DhulYadain by the Prophet said (to the Prophet), \"Has the prayer been reduced or have you forgotten?\" He said, \"Neither have I forgotten, nor has the prayer been reduced.\" He said, \"Certainly you have forgotten.\" So the Prophet offered two more Rakat and performed Tashm and then said Takbir and performed a prostration of Sahu like his ordinary prostration or a bit longer and then raised his head and said Takbir and then put his head down and performed a prostration like his ordinary prostration or a bit longer, and then raised his head and said Takbir. "
+          ],
+          "damagedExcerpt": "price of wood",
+          "note": "The body has price of wood and Tashm transcription defects. It omits the takbir explicitly following the second lowering of the head; explanations of excessive respect and Sahu are supplied."
+        }
+      ],
+      "notes": [
+        "Retain Muhammads explicit uncertainty, one of the two al-ashi prayers, both hand/head actions, all four takbirs in the closing prostration sequence and both longer alternatives.",
+        "Keep Muhammad named inside the uncertainty aside, both afternoon prayers as a generic pair without adding Isha, the two rakahs, singular hand, awe, hurrying people and every question and answer. All four takbirs and both longer alternatives in the closing sequence remain. The modern explicit pronoun and Messenger wording are not imported into Arabic.",
+        "Modern includes an explicit pronoun/copula construction; selected and historical do not. Retain the uncertainty in every case.",
+        "Both printed excerpts use dha rather than selected dhu in this calling clause. Record the inflected name difference without silently changing the source.",
+        "Modern names the Messenger of Allah; selected and historical use the Prophet.",
+        "Printed reference 1229 · app reference 1172. Pinned Khan EPUB 2.22.321 and exact web label 1172 are comparisons only. Shorter chains, added explanations and omissions do not replace the selected Arabic."
+      ],
+      "reviewScope": "AI-assisted complete-span English compared with the unchanged selected Arabic, both inspected printed sequences and individually located English bodies. Independent linguistic, theological, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "5911a6cc22349737ae89935cec384f39e38cfcec48a35ffd1664f434c46cef08",
+      "englishSha256": "ab0a5e4930b46b6cdba1c9f803a9360149f3a733a33fe98aa37635d999475c24",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1229 · app reference 1172",
+          "pdfPage": 297,
+          "scope": "Exact modern printed occurrence locator; the digital app reference remains unchanged."
+        },
+        {
+          "id": "lexical",
+          "sourceId": "ibn-rajab-forgetfulness-ashi",
+          "locator": "Explanation of salatay al-ashi in this occurrence",
+          "scope": "Lexical comparison for the phrase rendered two afternoon prayers. Commentary is not inserted into the narration; independent wording review remains pending."
+        }
+      ],
+      "reviewRecordSha256": "e9faf04596418f7f3306cbcfa97a90806b8e338ba7f37b5de3026b0cd48d8be1"
+    },
+    {
+      "number": 1173,
+      "id": "bukhari:1173",
+      "sourceRecordId": "wikisource-bukhari-forgetfulness-r39528:1173",
+      "chapterId": "chapter-05",
+      "paragraphIds": [
+        "mwHQ"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1173-1",
+          "paragraphId": "mwHQ",
+          "start": 0,
+          "end": 107,
+          "kind": "chain",
+          "arabic": "[1173] حدثنا قتيبة بن سعيد حدثنا ليث عن ابن شهاب عن الأعرج عن عبد الله بن بحينة الأسدي حليف بني عبد المطلب ",
+          "english": "Qutaybah ibn Sa‘id related to us. Al-Layth related to us, from Ibn Shihab, from al-A‘raj, from ‘Abdullah ibn Buhaynah al-Asdi, the ally of Banu ‘Abd al-Muttalib:",
+          "arabicSha256": "9d3f5b2a812967c6af7cc9101eaedf7e76ae46a3c8fde053a5ff735ed6333167",
+          "englishSha256": "c45683d0cc8950f73d54e7c43d23d5fee37004efde7e8ffe44749be3fb4ebef7"
+        },
+        {
+          "id": "1173-2",
+          "paragraphId": "mwHQ",
+          "start": 107,
+          "end": 254,
+          "kind": "report",
+          "arabic": "أن رسول الله ﷺ قام في صلاة الظهر وعليه جلوس فلما أتم صلاته سجد سجدتين فكبر في كل سجدة وهو جالس قبل أن يسلم وسجدهما الناس معه مكان ما نسي من الجلوس ",
+          "english": "The Messenger of Allah, may Allah bless him and grant him peace, stood up in the Dhuhr prayer when he was due to sit. When he had completed his prayer, he made two prostrations, pronouncing the takbir at each prostration while seated, before giving the greeting of peace. The people made them with him in place of the sitting he had forgotten.",
+          "arabicSha256": "de79f371723fe2899eb495b828ab8e689b5505d8eb56c1f625c06e7b0244b8bc",
+          "englishSha256": "d31bab804d9b0d5a720ed469502fd211a284bda7d2b9c6c4278879575b24edae"
+        },
+        {
+          "id": "1173-3",
+          "paragraphId": "mwHQ",
+          "start": 254,
+          "end": 291,
+          "kind": "transmission-note",
+          "arabic": "تابعه بن جريج عن ابن شهاب في التكبير ",
+          "english": "Ibn Jurayj corroborated it, from Ibn Shihab, concerning the takbir.",
+          "arabicSha256": "fc2650641d4d8220caabcfb21d55c15af25effe4ac7358f31f2f09c9f3c1195d",
+          "englishSha256": "7f3a8cd8011b7859381d36f2470db1f3a9091257872788d9883c3c0ef6584fce"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            310
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            297
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-forgetfulness",
+          "reference": "1173"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.22.322",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.22.322",
+            "recordSha256": "9000bfd7de8b4ded88428fd5c613aa481f9ab60858a77d2eb504393bed5bd6e1"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated 'Abdullah bin Buhaina Al-Asdi: ",
+            "(the ally of Bani 'Abdul Muttalib) Allah's Apostle stood up for the Zuhr prayer and he should have sat (after the second Raka but he stood up for the third Raka without sitting for Tashah-hud) and when he finished the prayer he performed two prostrations and said Takbir on each prostration while sitting, before ending (the prayer) with Taslim; and the people too performed the two prostrations with him instead of the sitting he forgot. "
+          ],
+          "damagedExcerpt": "before ending",
+          "note": "The complete closing Ibn Jurayj / Ibn Shihab corroboration concerning the takbir is absent. The added second/third-rakah and tashahhud explanation is not selected wording."
+        }
+      ],
+      "notes": [
+        "Retain the tribal/alliance identification, sitting, timing before the taslim, the peoples prostrations and the full Ibn Jurayj / Ibn Shihab corroboration about takbir.",
+        "Keep al-Asdi and the Banu Abd al-Muttalib alliance, the omitted sitting, two prostrations while seated before the greeting, the peoples participation and the full Ibn Jurayj/Ibn Shihab closing corroboration. No companion honorific absent from the source is invented.",
+        "Historical has the present reporting form; selected and modern have fa followed by the past form.",
+        "Printed reference 1230 · app reference 1173. Pinned Khan EPUB 2.22.322 and exact web label 1173 are comparisons only. Shorter chains, added explanations and omissions do not replace the selected Arabic."
+      ],
+      "reviewScope": "AI-assisted complete-span English compared with the unchanged selected Arabic, both inspected printed sequences and individually located English bodies. Independent linguistic, theological, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "f00281f74fc071f2c3e9bfa95cf6478b0d31561c48b3decb438719956bf2f7d2",
+      "englishSha256": "7a8cdc3fdf552fdfac76f78f83ff453ad93a2420d06353cc78d5d2c31c900dfe",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1230 · app reference 1173",
+          "pdfPage": 297,
+          "scope": "Exact modern printed occurrence locator; the digital app reference remains unchanged."
+        }
+      ],
+      "reviewRecordSha256": "52ad15bde96b1a825b35c519f1ef51efe6e85fbdab4d59cfa850d6959a959fa6"
+    },
+    {
+      "number": 1174,
+      "id": "bukhari:1174",
+      "sourceRecordId": "wikisource-bukhari-forgetfulness-r39528:1174",
+      "chapterId": "chapter-06",
+      "paragraphIds": [
+        "mwIA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1174-1",
+          "paragraphId": "mwIA",
+          "start": 0,
+          "end": 150,
+          "kind": "chain",
+          "arabic": "[1174] حدثنا معاذ بن فضالة حدثنا هشام بن أبي عبد الله الدستوائي عن يحيى بن أبي كثير عن أبي سلمة عن أبي هريرة رضى الله تعالى عنه قال: قال رسول الله ﷺ: ",
+          "english": "Mu‘adh ibn Fadalah related to us. Hisham ibn Abi ‘Abdullah al-Dastawa’i related to us, from Yahya ibn Abi Kathir, from Abu Salamah, from Abu Hurayrah, may Allah Most High be pleased with him, who said: The Messenger of Allah, may Allah bless him and grant him peace, said:",
+          "arabicSha256": "450bed8f7fd3538c46fa43da4a4da71d20dab95ec668d5163dc5a5a70d6f83be",
+          "englishSha256": "3907d952873315822606365f3bd9aa1f0a527d6d18afb9032c5361d33cb57ad7"
+        },
+        {
+          "id": "1174-2",
+          "paragraphId": "mwIA",
+          "start": 150,
+          "end": 420,
+          "kind": "report",
+          "arabic": "إذا نودي بالصلاة أدبر الشيطان وله ضراط حتى لا يسمع الأذان فإذا قضي الأذان أقبل فإذا ثوب بها أدبر فإذا قضي التثويب أقبل حتى يخطر بين المرء ونفسه يقول اذكر كذا وكذا ما لم يكن يذكر حتى يظل الرجل إن يدري كم صلى فإذا لم يدر أحدكم كم صلى ثلاثا أو أربعا فليسجد سجدتين وهو جالس ",
+          "english": "When the call to prayer is made, Satan turns away, passing wind so that he does not hear the adhan. When the adhan has ended, he comes back. When the iqamah is called for it, he turns away. When the iqamah has ended, he comes back, coming between a person and his own self, saying, “Remember such-and-such and such-and-such,” things he had not been remembering, until the man does not know how much he has prayed. If one of you does not know how much he has prayed, three or four, let him make two prostrations while seated.",
+          "arabicSha256": "046647de95a436cd8c8512d2ededef30eedfbcecef85407bf2401cd01231e82a",
+          "englishSha256": "a12fd25caf9ec5ea65e4388634858589f66529caa6cc3ddc362b5292eea0ef1f"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            310
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            298
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-forgetfulness",
+          "reference": "1174"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.22.323",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.22.323",
+            "recordSha256": "64b97999e8a90ac3743081a7ad7d4bf403b1ef890b40c2468ac1c68c6a15b7f4"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Abu Huraira: ",
+            "Allah's Apostle said, \"When the call for prayer is made, Satan takes to his heels passing wind so that he may not hear the Adhan and when the call is finished he comes back, and when the Iqama is pronounced, Satan again takes to his heels, and when the Iqama is finished he comes back again and tries to interfere with the person and his thoughts and say, \"Remember this and that (which he has not thought of before the prayer)\", till the praying person forgets how much he has prayed. If anyone of you does not remember whether he has offered three or four Rakat then he should perform two prostrations of Sahu while sitting. "
+          ],
+          "damagedExcerpt": "before the prayer",
+          "note": "Before the prayer and of Sahu are supplied explanations. The quoted instruction lacks its final closing quotation mark."
+        }
+      ],
+      "notes": [
+        "Preserve every call/return sequence, the complete inner prompt, uncertainty between three and four and the final two seated prostrations.",
+        "Keep the complete adhan/iqamah sequence, wind, returns, inner prompt, inability to know how much was prayed, three/four alternative and the final two seated prostrations. No before-the-prayer qualifier is supplied.",
+        "Printed reference 1231 · app reference 1174. Pinned Khan EPUB 2.22.323 and exact web label 1174 are comparisons only. Shorter chains, added explanations and omissions do not replace the selected Arabic."
+      ],
+      "reviewScope": "AI-assisted complete-span English compared with the unchanged selected Arabic, both inspected printed sequences and individually located English bodies. Independent linguistic, theological, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "15d88c35db884b0227dd7e9e66781e1578c87c139e00f642c7ae526397eac825",
+      "englishSha256": "c066f1d9835f2aa79e7c2c5a471f3d7f03e96d5d23d3fb55cb82ad0df3703e3b",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1231 · app reference 1174",
+          "pdfPage": 298,
+          "scope": "Exact modern printed occurrence locator; the digital app reference remains unchanged."
+        }
+      ],
+      "reviewRecordSha256": "6ceba91df4f469c7ee6bc74d1635fae6ad7fcc20b4e74bdbdb5b1b9557f46698"
+    },
+    {
+      "number": 1175,
+      "id": "bukhari:1175",
+      "sourceRecordId": "wikisource-bukhari-forgetfulness-r39528:1175",
+      "chapterId": "chapter-07",
+      "paragraphIds": [
+        "mwJA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1175-1",
+          "paragraphId": "mwJA",
+          "start": 0,
+          "end": 112,
+          "kind": "chain",
+          "arabic": "[1175] حدثنا عبد الله بن يوسف أخبرنا مالك عن ابن شهاب عن أبي سلمة بن عبد الرحمن عن أبي هريرة رضى الله تعالى عنه ",
+          "english": "‘Abdullah ibn Yusuf related to us. Malik informed us, from Ibn Shihab, from Abu Salamah ibn ‘Abd al-Rahman, from Abu Hurayrah, may Allah Most High be pleased with him:",
+          "arabicSha256": "d393d06979977abb9af45e9033af6da5726db9d414cadef3b31c61f2d20acee0",
+          "englishSha256": "fb25ee5478c39b0877b51c4bd07f0340cccf64116130e7b6c513423ae07f46c9"
+        },
+        {
+          "id": "1175-2",
+          "paragraphId": "mwJA",
+          "start": 112,
+          "end": 237,
+          "kind": "report",
+          "arabic": "أن رسول الله ﷺ قال: إن أحدكم إذا قام يصلي جاء الشيطان فلبس عليه حتى لا يدري كم صلى فإذا وجد ذلك أحدكم فليسجد سجدتين وهو جالس ",
+          "english": "The Messenger of Allah, may Allah bless him and grant him peace, said: When one of you stands to pray, Satan comes and confuses him until he does not know how much he has prayed. If one of you experiences that, let him make two prostrations while seated.",
+          "arabicSha256": "3b559ba2e8f16a23a26fa76527ed64c596152a1e9da69053c3f6c79704765917",
+          "englishSha256": "cda39f8cb3f45187447d97414fc86b892a98c317a6f6cb5ee66f54161e2d6bc7"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            311
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            298
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-forgetfulness",
+          "reference": "1175"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.22.324",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.22.324",
+            "recordSha256": "a30eb2c90bca5d7c62b09c3455270f92f45fc0ab0cce6baccfd99d063e6c9eef"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Abu Huraira: ",
+            "Allah's Apostle said, \"When anyone of you stands for the prayers, Satan comes and puts him in doubts till he forgets how many Rakat he has prayed. So if this happens to anyone of you, he should perform two prostrations of Sahu while sitting. "
+          ],
+          "damagedExcerpt": "of Sahu",
+          "note": "The rendered count includes rakahs and of Sahu beyond the selected words, and the quoted instruction lacks its final closing quotation mark."
+        }
+      ],
+      "notes": [
+        "A separate complete route and concise report; retain its own wording without importing the detailed adhan account from 1174.",
+        "Preserve this separately repeated concise route and wording without importing the longer call-to-prayer report. No rakah count or added legal explanation is supplied.",
+        "Printed reference 1232 · app reference 1175. Pinned Khan EPUB 2.22.324 and exact web label 1175 are comparisons only. Shorter chains, added explanations and omissions do not replace the selected Arabic."
+      ],
+      "reviewScope": "AI-assisted complete-span English compared with the unchanged selected Arabic, both inspected printed sequences and individually located English bodies. Independent linguistic, theological, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "92664150df09d4857f1c10f6d66e312c2fe3843fb4caae3c8c0cd4cc55750274",
+      "englishSha256": "fe49286209e7b7248257f43b87603d2503a93f6b7c8033139e12af5701262a05",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1232 · app reference 1175",
+          "pdfPage": 298,
+          "scope": "Exact modern printed occurrence locator; the digital app reference remains unchanged."
+        }
+      ],
+      "reviewRecordSha256": "c1258f5dbd76ed04ae944509abcc98d123cfad0ab125f2ecbf5acb9f4ca732ac"
+    },
+    {
+      "number": 1176,
+      "id": "bukhari:1176",
+      "sourceRecordId": "wikisource-bukhari-forgetfulness-r39528:1176",
+      "chapterId": "chapter-08",
+      "paragraphIds": [
+        "mwJw"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1176-1",
+          "paragraphId": "mwJw",
+          "start": 0,
+          "end": 80,
+          "kind": "chain",
+          "arabic": "[1176] حدثنا يحيى بن سليمان قال: حدثني ابن وهب قال: أخبرني عمرو عن بكير عن كريب ",
+          "english": "Yahya ibn Sulayman related to us. He said: Ibn Wahb related to me. He said: ‘Amr informed me, from Bukayr, from Kuraib:",
+          "arabicSha256": "e9083eb2731376defac5c6b3447553d12826479c8edfd3cb05c6f6b520fff578",
+          "englishSha256": "39a325d9974241eab495413c66092e046b3ce7c06878deac54fa2db6829c4374"
+        },
+        {
+          "id": "1176-2",
+          "paragraphId": "mwJw",
+          "start": 80,
+          "end": 370,
+          "kind": "report",
+          "arabic": "ان ابن عباس والمسور بن مخرمة وعبد الرحمن بن أزهر رضى الله تعالى عنهم أرسلوه إلى عائشة رضى الله تعالى عنها فقالوا اقرأ عليها السلام منا جميعا وسلها عن الركعتين بعد صلاة العصر وقل لها إنا أخبرنا أنك تصلينهما وقد بلغنا أن النبي ﷺ نهى عنها، وقال ابن عباس وكنت أضرب الناس مع عمر بن الخطاب عنها، ",
+          "english": "Ibn ‘Abbas, al-Miswar ibn Makhramah and ‘Abd al-Rahman ibn Azhar, may Allah Most High be pleased with them, sent him to ‘A’ishah, may Allah Most High be pleased with her. They said, “Convey greetings of peace to her from all of us. Ask her about the two rak‘ahs after the ‘Asr prayer, and say to her, ‘We have been informed that you pray them, but it has reached us that the Prophet, may Allah bless him and grant him peace, forbade them.’” Ibn ‘Abbas said, “I used to strike people for them along with ‘Umar ibn al-Khattab.”",
+          "arabicSha256": "9a5f9efdd70fa1d43c8293cd875f8bb5d6380a1ae634f1b920062ce2d3be0a8c",
+          "englishSha256": "755539a67849809c30ba9742785ba6e24fcd4d3b9b2c1ae452ce308fd68f8b95"
+        },
+        {
+          "id": "1176-3",
+          "paragraphId": "mwJw",
+          "start": 370,
+          "end": 528,
+          "kind": "report",
+          "arabic": "فقال كريب فدخلت على عائشة رضى الله تعالى عنها فبلغتها ما أرسلوني فقالت سل أم سلمة فخرجت إليهم فأخبرتهم بقولها فردوني إلى أم سلمة بمثل ما أرسلوني به إلى عائشة ",
+          "english": "Kuraib said: I went in to ‘A’ishah, may Allah Most High be pleased with her, and conveyed what they had sent me with. She said, “Ask Umm Salamah.” So I went out to them and told them what she had said. They sent me back to Umm Salamah with the same message they had sent me with to ‘A’ishah.",
+          "arabicSha256": "e53f5fb8e0ec7fd63495e21b7308b44714a33753c9ceb63bc420386d81d61b21",
+          "englishSha256": "311d8e67057c941e4a278d94e81c6413bb334f44a340b23b7402a560cf150776"
+        },
+        {
+          "id": "1176-4",
+          "paragraphId": "mwJw",
+          "start": 528,
+          "end": 830,
+          "kind": "report",
+          "arabic": "فقالت أم سلمة رضى الله تعالى عنها سمعت النبي ﷺ ينهى عنها ثم رأيته يصليهما حين صلى العصر ثم دخل وعندي نسوة من بني حرام من الأنصار فأرسلت إليه الجارية فقلت: قومي بجنبه قولي له تقول لك أم سلمة يا رسول الله سمعتك تنهى عن هاتين وأراك تصليهما فإن أشار بيده فاستأخري عنه ففعلت الجارية فأشار بيده فاستأخرت عنه ",
+          "english": "Umm Salamah, may Allah Most High be pleased with her, said: I heard the Prophet, may Allah bless him and grant him peace, forbid them. Then I saw him praying them when he had prayed ‘Asr. Then he entered, and I had with me women from Banu Haram of the Ansar. I sent the slave girl to him, saying, “Stand beside him. Say to him, ‘Umm Salamah says to you: O Messenger of Allah, I heard you forbid these two, and I see you praying them.’ If he signals with his hand, draw back from him.” The slave girl did so. He signalled with his hand, and she drew back from him.",
+          "arabicSha256": "dabd6de48c22172eb519b0b0f90018168d25ad43b6a46c5ec218251d3dc02244",
+          "englishSha256": "dbbbbe15ab7dd9a9e7a7875d8819b0780d9a8cac3ca8be1ce7d9806214170f4b"
+        },
+        {
+          "id": "1176-5",
+          "paragraphId": "mwJw",
+          "start": 830,
+          "end": 965,
+          "kind": "report",
+          "arabic": "فلما انصرف قال: يا بنت أبي أمية سألت عن الركعتين بعد العصر وإنه أتاني ناس من عبد القيس فشغلوني عن الركعتين اللتين بعد الظهر فهما هاتان ",
+          "english": "When he finished, he said, “O daughter of Abu Umayyah, you asked about the two rak‘ahs after ‘Asr. Some people from ‘Abd al-Qays came to me and occupied me, keeping me from the two rak‘ahs after Dhuhr. These are those two.”",
+          "arabicSha256": "4fdd63bb059ba8b5685c64b8be44af18ea5b0f8f7f9d0e2c7e2ad91d34dcca66",
+          "englishSha256": "35847cfd84df4c042049158650b8f27e2fb35886dba9253ed96811a2ff6442cf"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            311
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            298,
+            299
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-forgetfulness",
+          "reference": "1176",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/forgetfulness-source-audit.json",
+            "sha256": "5ccfd8c8471aba23c53e091cc0d6e63e4266c9026fce9a4e56c12003ebfc2e03",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "496be62be5a93f4f9c835a5844a40fa3b0860dfd7abdf3388537de2da4e63afa",
+            "occurrence": 1
+          },
+          "note": "The messenger is told to wait in the comparison, whereas the selected instruction and response use stepping or drawing back from him. Keep the action distinct from an explanatory rendering."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.22.325",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.22.325",
+            "recordSha256": "473699c41c6982d8e41819bfa337e89498cdfb241a1e965c71c92cd91a32f03a"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Kuraib: ",
+            "I was sent to Aisha by Ibn Abbas, Al-Miswar bin Makhrama and 'Abdur-Rahman bin Azhar . They told me to greet her on their behalf and to ask her about the offering of the two Rakat after the 'Asr prayer and to say to her, \"We were informed that you offer those two Rakat and we were told that the Prophet had forbidden offering them.\" Ibn Abbas said, \"I along with 'Umar bin Al-Khattab used to beat the people whenever they offered them.\" I went to Aisha and told her that message. 'Aisha said, \"Go and ask Um Salama about them.\" So I returned and informed them about her statement. They then told me to go to Um Salama with the same question with which t sent me to 'Aisha. Um Salama replied, \"I heard the Prophet forbidding them. Later I saw him offering them immediately after he prayed the 'Asr prayer. He then entered my house at a time when some of the Ansari women from the tribe of Bani Haram were sitting with me, so I sent my slave girl to him having said to her, 'Stand beside him and tell him that Um Salama says to you, \"O Allah's Apostle! I have heard you forbidding the offering of these (two Rakat after the 'Asr prayer) but I have seen you offering them.\" If he waves his hand then wait for him.' The slave girl did that. The Prophet beckoned her with his hand and she waited for him. When he had finished the prayer he said, \"O daughter of Bani Umaiya! You have asked me about the two Rakat after the 'Asr prayer. The people of the tribe of 'Abdul-Qais came to me and made me busy and I could not offer the two Rakat after the Zuhr prayer. These (two Rakat that I have just prayed) are for those (missed) ones. "
+          ],
+          "damagedExcerpt": "daughter of Bani Umaiya",
+          "note": "The final address is daughter of Bani Umaiya instead of the selected daughter of Abu Umayyah. Immediately, my house and the waiting interpretation are additions or expansions, and the closing quotation marks are incomplete."
+        }
+      ],
+      "notes": [
+        "Preserve the complete Kuraib mission, all senders and honorifics, Ibn Abbas statement, both visits, the servant instructions and movements and the final Abu Umayyah / Abd al-Qays explanation.",
+        "Preserve all three senders, their plural honorific, both visits, Ibn Abbas statement, both Aishah honorifics, Umm Salamahs honorific, all quoted instructions and hand movements. The selected entering clause has no upon me. Draw back is kept as an action, not wait; Abu Umayyah is not changed to Bani Umayyah. Both later two-rakah descriptions and the Abd al-Qays explanation remain.",
+        "Both print excerpts lack the selected fa connective at Kuraibs return to the narrative.",
+        "Both print excerpts include upon me after entering; the selected text lacks that phrase. It must not be imported from comparison wording without an explicit later decision.",
+        "Historical adds fa before say to him; selected and modern do not.",
+        "Printed reference 1233 · app reference 1176. Pinned Khan EPUB 2.22.325 and exact web label 1176 are comparisons only. Shorter chains, added explanations and omissions do not replace the selected Arabic."
+      ],
+      "reviewScope": "AI-assisted complete-span English compared with the unchanged selected Arabic, both inspected printed sequences and individually located English bodies. Independent linguistic, theological, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "5f5008a0f12fd0667fc0ac11972ce7faaaee3158ced00768e88e4b57c30d9562",
+      "englishSha256": "13c55e02d081f2c783fab2ef9c8c236f0b96f8cae6997719a675c4080a27abd0",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1233 · app reference 1176",
+          "pdfPage": 298,
+          "scope": "Exact modern printed occurrence locator; the digital app reference remains unchanged."
+        }
+      ],
+      "reviewRecordSha256": "1d1ca6f1df4b1407f0248d9498fd2893cf927a8ee2b35184a73f63eb4a610a54"
+    },
+    {
+      "number": 1177,
+      "id": "bukhari:1177",
+      "sourceRecordId": "wikisource-bukhari-forgetfulness-r39528:1177",
+      "chapterId": "chapter-09",
+      "paragraphIds": [
+        "mwLQ"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1177-1",
+          "paragraphId": "mwLQ",
+          "start": 0,
+          "end": 106,
+          "kind": "chain",
+          "arabic": "[1177] حدثنا قتيبة بن سعيد حدثنا يعقوب بن عبد الرحمن عن أبي حازم عن سهل بن سعد الساعدي رضى الله تعالى عنه ",
+          "english": "Qutaybah ibn Sa‘id related to us. Ya‘qub ibn ‘Abd al-Rahman related to us, from Abu Hazim, from Sahl ibn Sa‘d al-Sa‘idi, may Allah Most High be pleased with him:",
+          "arabicSha256": "ae2abf702fca7460f2e385d8d5244da412ccc902064e26f13cd6ac1d682955d5",
+          "englishSha256": "16c5748ca8252332090bd7577027fe036529172c8f1e566792970614af1c5cfd"
+        },
+        {
+          "id": "1177-2",
+          "paragraphId": "mwLQ",
+          "start": 106,
+          "end": 362,
+          "kind": "report",
+          "arabic": "أن رسول الله ﷺ بلغه أن بني عمرو بن عوف كان بينهم شيء فخرج رسول الله ﷺ يصلح بينهم في أناس معه فحبس رسول الله ﷺ وحانت الصلاة فجاء بلال إلى أبي بكر رضى الله تعالى عنه، فقال: يا أبا بكر إن رسول الله ﷺ قد حبس وقد حانت الصلاة فهل لك أن تؤم الناس قال: نعم إن شئت ",
+          "english": "It reached the Messenger of Allah, may Allah bless him and grant him peace, that something had happened among Banu ‘Amr ibn ‘Awf. The Messenger of Allah, may Allah bless him and grant him peace, went out with some people to reconcile them. The Messenger of Allah, may Allah bless him and grant him peace, was delayed, and the time for prayer came. Bilal came to Abu Bakr, may Allah Most High be pleased with him, and said, “O Abu Bakr, the Messenger of Allah, may Allah bless him and grant him peace, has been delayed, and the time for prayer has come. Would you lead the people?” He said, “Yes, if you wish.”",
+          "arabicSha256": "f665671ac57163910241d2e7773aaf28c61a8b1f41abd40d158764baeb0a957c",
+          "englishSha256": "3d019057954c62cd9640fe5db572c116cde46cb1f4b505a5f01261827bcc8fb0"
+        },
+        {
+          "id": "1177-3",
+          "paragraphId": "mwLQ",
+          "start": 362,
+          "end": 724,
+          "kind": "report",
+          "arabic": "فأقام بلال وتقدم أبو بكر رضى الله تعالى عنه فكبر للناس وجاء رسول الله ﷺ يمشي في الصفوف حتى قام في الصف فأخذ الناس في التصفيق وكان أبو بكر رضى الله تعالى عنه لا يلتفت في صلاته فلما أكثر الناس التفت فإذا رسول الله ﷺ فأشار إليه رسول الله ﷺ يأمره أن يصلي فرفع أبو بكر رضى الله تعالى عنه يديه فحمد الله ورجع القهقرى وراءه حتى قام في الصف فتقدم رسول الله ﷺ فصلى للناس ",
+          "english": "Bilal called the iqamah. Abu Bakr, may Allah Most High be pleased with him, went forward and pronounced the takbir for the people. The Messenger of Allah, may Allah bless him and grant him peace, came walking through the rows until he stood in the row. The people began clapping. Abu Bakr, may Allah Most High be pleased with him, did not turn around during his prayer. When the people increased it, he turned, and there was the Messenger of Allah, may Allah bless him and grant him peace. The Messenger of Allah, may Allah bless him and grant him peace, signalled to him, directing him to pray. Abu Bakr, may Allah Most High be pleased with him, raised his hands and praised Allah, then stepped backwards behind him until he stood in the row. The Messenger of Allah, may Allah bless him and grant him peace, went forward and led the people in prayer.",
+          "arabicSha256": "878266d9b21bbd27a5b8e981b17eef064c84d2a7b8166c454057b4b92f759488",
+          "englishSha256": "6ca4e410e73b4649b40c970e69b37f272deb477fcb8f16c8025cae83bf378ec7"
+        },
+        {
+          "id": "1177-4",
+          "paragraphId": "mwLQ",
+          "start": 724,
+          "end": 971,
+          "kind": "report",
+          "arabic": "فلما فرغ أقبل على الناس، فقال: يا أيها الناس ما لكم حين نابكم شيء في الصلاة أخذتم في التصفيق إنما التصفيق للنساء من نابه شيء في صلاته فليقل سبحان الله فإنه لا يسمعه أحد حين يقول سبحان الله إلا التفت يا أبا بكر ما منعك أن تصلي للناس حين أشرت إليك، ",
+          "english": "When he finished, he turned towards the people and said, “O people, why, when something happened to you in prayer, did you begin clapping? Clapping is only for women. Whoever has something happen to him in his prayer should say, ‘Glory be to Allah,’ for no one hears him when he says ‘Glory be to Allah’ without turning around. O Abu Bakr, what prevented you from leading the people in prayer when I signalled to you?”",
+          "arabicSha256": "e8838b1fdf561566f337f5eba2b5fb4192a4576dd47e5c7936838bbd07e23af4",
+          "englishSha256": "17a6a6811033ef0d0e8f6b7032df920d472308ba45d76c5baadb108b5faf2cc2"
+        },
+        {
+          "id": "1177-5",
+          "paragraphId": "mwLQ",
+          "start": 971,
+          "end": 1058,
+          "kind": "report",
+          "arabic": "فقال أبو بكر رضى الله تعالى عنه ما كان ينبغي لابن أبي قحافة أن يصلي بين يدي رسول الله ﷺ",
+          "english": "Abu Bakr, may Allah Most High be pleased with him, said, “It was not fitting for the son of Abu Quhafah to pray in front of the Messenger of Allah, may Allah bless him and grant him peace.”",
+          "arabicSha256": "5fbf78e9424cfdb99520ed45105cce74de718e151a53054e0b9b2b99f976ab94",
+          "englishSha256": "4763ec8d4c3f4d76673c113912d1987b6432809ccf549e1fcb343b46aa758d98"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            311,
+            312
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            299
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-forgetfulness",
+          "reference": "1177",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/forgetfulness-source-audit.json",
+            "sha256": "5ccfd8c8471aba23c53e091cc0d6e63e4266c9026fce9a4e56c12003ebfc2e03",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "0e58f60d79acc910125b694e1107a2d9c8e949e73881d0c0f47acedbe4961536",
+            "occurrence": 1
+          },
+          "note": "The selected statement that he went with other people is absent; first is added to the row although it is not in the selected wording."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.22.326",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.22.326",
+            "recordSha256": "d1e04ce26e25051d78df500a9669ae971b663cfe284710d787f6086fdf6a8481"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Sahl bin Sad As-Sa'idi : ",
+            "The news about the differences amongst the people of Bani'Amr bin 'Auf reached Allah's Apostle and so he went to them along with some of his companions to affect a reconciliation between them. Allah's Apostle was delayed there, and the time of the prayer was due. Bilal went to Abu Bakr and said to him, \"Allah's Apostle has been delayed (there) and the time of prayer is due. So will you lead the people in prayer?\" Abu Bakr said, \"Yes, if you wish.\" Bilal pronounced the Iqama and Abu Bakr, went forward and said Takbir for the people. In the mean-time Allah's Apostle came crossing the rows (of the praying people) and stood in the (first) row and the people started clapping. Abu Bakr, would never glance side-ways in his prayer but when the people clapped much he looked back and (saw) Allah's Apostle . Allah's Apostle beckoned him to carry on the prayer. Abu Bakr raised his hands and thanked Allah, and retreated till he reached the (first) row. Allah's Apostle went forward and led the people in the prayer. When he completed the prayer he faced the people and said, \"O people! Why did you start clapping when something unusual happened to you in the prayer? Clapping is only for women. So whoever amongst you comes across something in the prayer should say, 'Subhan-Allah' for there is none who will not turn round on hearing him saying Subhan-Allah. O Ab-u Bakr! What prevented you from leading the people in the prayer when I beckoned you to do so?\" Abu Bakr replied, \"How dare the son of Abu Quhafa lead the prayer in the presence of Allah's Apostle ?\" "
+          ],
+          "damagedExcerpt": "How dare",
+          "note": "The comparison adds first to the row and paraphrases the final it was not proper response as a rhetorical how dare question. Preserve the complete source sequence and wording independently."
+        }
+      ],
+      "notes": [
+        "Keep the full separate Sahl route, companions on the journey, prayer-time sequence, Abu Bakrs takbir, repeated gestures and the complete closing response. Do not substitute another version of this repeated account.",
+        "Preserve the complete Sahl route, accompanying people, prayer-time sequence, Abu Bakrs takbir for the people, row without first, raised hands in the plural, every honorific, both Glory be to Allah occurrences and the full final Ibn Abi Quhafah response. No wording is borrowed from 1143 or 1160.",
+        "Printed reference 1234 · app reference 1177. Pinned Khan EPUB 2.22.326 and exact web label 1177 are comparisons only. Shorter chains, added explanations and omissions do not replace the selected Arabic."
+      ],
+      "reviewScope": "AI-assisted complete-span English compared with the unchanged selected Arabic, both inspected printed sequences and individually located English bodies. Independent linguistic, theological, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "5ec9347c81c5dec46f679ecfa6f30978359ab441f6b58c4810d93e7e7b8c7d56",
+      "englishSha256": "5fa6f905e5d96b15e6aa4ba0527965d0609758ac284992f71d10e4c58e6ccb3b",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1234 · app reference 1177",
+          "pdfPage": 299,
+          "scope": "Exact modern printed occurrence locator; the digital app reference remains unchanged."
+        }
+      ],
+      "reviewRecordSha256": "8c8b6f2a4bf8ef07180d8c2c88d873d8c13b312e3bce809642324f53f788ce30"
+    },
+    {
+      "number": 1178,
+      "id": "bukhari:1178",
+      "sourceRecordId": "wikisource-bukhari-forgetfulness-r39528:1178",
+      "chapterId": "chapter-09",
+      "paragraphIds": [
+        "mwNw"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1178-1",
+          "paragraphId": "mwNw",
+          "start": 0,
+          "end": 91,
+          "kind": "chain",
+          "arabic": "[1178] حدثنا يحيى بن سليمان قال: حدثني ابن وهب حدثنا الثوري عن هشام عن فاطمة عن أسماء قالت ",
+          "english": "Yahya ibn Sulayman related to us. He said: Ibn Wahb related to me. Al-Thawri related to us, from Hisham, from Fatimah, from Asma’, who said:",
+          "arabicSha256": "afb6e33befb719e4873bcf59c1d6a4e1485b2ebc822627286418b759d716b499",
+          "englishSha256": "0c76c0720bc91880971cd7cf1ed69e7c79a2d3928e1e23d93f0618ca9544c966"
+        },
+        {
+          "id": "1178-2",
+          "paragraphId": "mwNw",
+          "start": 91,
+          "end": 227,
+          "kind": "report",
+          "arabic": "دخلت علي عائشة رضى الله تعالى عنها وهي تصلي قائمة والناس قيام فقلت: ما شأن الناس فأشارت برأسها إلى السماء فقلت: آية فقالت برأسها أي نعم ",
+          "english": "I went in to ‘A’ishah, may Allah Most High be pleased with her, while she was standing in prayer, and the people were standing. I said, “What is the matter with the people?” She gestured with her head towards the sky. I said, “A sign?” She said with her head—that is, “Yes.”",
+          "arabicSha256": "aabc1296f2ee306d4a27e404924d8d10cc142f68747990164b8fd162d05216b3",
+          "englishSha256": "5f72135444750535568c90ed93a291504f063b1ed9a78298a91a85ec550a81c5"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            312
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            299
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-forgetfulness",
+          "reference": "1178"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.22.327",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.22.327",
+            "recordSha256": "8fe562401ddc6b61e1f4b8a001fcce50f3dc31798c1f00b7719c5ef7a599db64"
+          }
+        }
+      ],
+      "notes": [
+        "Retain the complete route through al-Thawri, Hisham and Fatimah, both questions and the head gestures. The selected preposition spelling and the historical response wording remain disclosed.",
+        "Preserve the selected dotted-ya spelling without editing Arabic. The English follows the context of going in to Aishah; both printed prepositions and the historical response variant remain disclosed. Both questions and the said-with-her-head idiom stay complete.",
+        "The selected digital preposition ends in ya with dots, whereas both print excerpts use alif maqsura. Preserve the original even for this orthographic difference.",
+        "Historical lacks the fa connective before this question; selected and modern have it.",
+        "Historical says she gestured with her head; selected and modern use she said with her head. Preserve the selected expression for independent translation review.",
+        "Printed reference 1235 · app reference 1178. Pinned Khan EPUB 2.22.327 and exact web label 1178 are comparisons only. Shorter chains, added explanations and omissions do not replace the selected Arabic."
+      ],
+      "reviewScope": "AI-assisted complete-span English compared with the unchanged selected Arabic, both inspected printed sequences and individually located English bodies. Independent linguistic, theological, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "339251ee8a171a2c246181b80dec1ad143ff5f30577a9d53249dbd3ea8f7bec0",
+      "englishSha256": "ef227e9a7a8fdd8bff6f49ce2d60d3527cc014b5a21584e8562ee0f8a7b6e893",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1235 · app reference 1178",
+          "pdfPage": 299,
+          "scope": "Exact modern printed occurrence locator; the digital app reference remains unchanged."
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "1178-preposition",
+          "label": "An original spelling retained",
+          "text": "The digital Arabic writes «علي» in the phrase about entering to ‘A’ishah; both inspected prints have «على». The Arabic remains as selected. This orthographic difference and the comparison readings are available in the source notes.",
+          "citations": [
+            "base",
+            "brill-1862",
+            "printed-reference"
+          ],
+          "related": []
+        }
+      ],
+      "reviewRecordSha256": "f1d135a60f1365c1425b6f599c8191e5d9a5e0ce052db1061f2bf62dfa03bf01"
+    },
+    {
+      "number": 1179,
+      "id": "bukhari:1179",
+      "sourceRecordId": "wikisource-bukhari-forgetfulness-r39528:1179",
+      "chapterId": "chapter-09",
+      "paragraphIds": [
+        "mwOA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1179-1",
+          "paragraphId": "mwOA",
+          "start": 0,
+          "end": 104,
+          "kind": "chain",
+          "arabic": "[1179] حدثنا إسماعيل قال: حدثني مالك عن هشام عن أبيه عن عائشة رضى الله تعالى عنها زوج النبي ﷺ أنها قالت ",
+          "english": "Isma‘il related to us. He said: Malik related to me, from Hisham, from his father, from ‘A’ishah, may Allah Most High be pleased with her, the wife of the Prophet, may Allah bless him and grant him peace, who said:",
+          "arabicSha256": "295f587ab67a3915c1fdb683c81d71caee6e212065ceff40dc844ad6765f5f04",
+          "englishSha256": "fabf631959961912aaf5691ce3a7d460f01de8508fc86f82353fa10c6c7e0a29"
+        },
+        {
+          "id": "1179-2",
+          "paragraphId": "mwOA",
+          "start": 104,
+          "end": 259,
+          "kind": "report",
+          "arabic": "صلى رسول الله ﷺ في بيته وهو شاك جالسا وصلى وراءه قوم قياما فأشار إليهم أن اجلسوا فلما انصرف قال إنما جعل الإمام ليؤتم به فإذا ركع فاركعوا وإذا رفع فارفعوا ",
+          "english": "The Messenger of Allah, may Allah bless him and grant him peace, prayed in his house while ill, seated. Some people prayed behind him standing, so he signalled to them to sit down. When he finished, he said, “The imam has only been appointed to be followed. When he bows, bow, and when he rises, rise.”",
+          "arabicSha256": "9372d9cc2d730495573d2b779b1b60446a209646f24af1c655fa6329337709c1",
+          "englishSha256": "4a79323503566684729b12f5a1db35294227c66005ea354bcdf67443f8834e9b"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            312
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            299
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-forgetfulness",
+          "reference": "1179",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/forgetfulness-source-audit.json",
+            "sha256": "5ccfd8c8471aba23c53e091cc0d6e63e4266c9026fce9a4e56c12003ebfc2e03",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "0930e3dc7498928f6bd267d25589583ee696704dc7f90cf15481010383eb9af3",
+            "occurrence": 1
+          },
+          "note": "The body contains a stray asterisk after Messenger of Allah and an unclosed quotation. Head is made explicit in the final raising instruction although the selected Arabic does not name it."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.22.328",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.22.328",
+            "recordSha256": "880c56ce1d2c62fe95188482722b2e381bd580e2fc039cc06083ab2798729b40"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated 'Aisha the wife of the Prophet: ",
+            "Allah's Apostle during his illness prayed in his house sitting, whereas some people followed him standing, but the Prophet beckoned them to sit down. On completion of the prayer he said, \"The Imam is to be followed. So, bow when he bows, and raise your head when he raises his head.\" (See Hadith No. 657 Vol 1 for taking the verdict). "
+          ],
+          "damagedExcerpt": "for taking the verdict",
+          "note": "The final parenthetical reference for taking the verdict is an editorial addition, not part of the selected report. Head is made explicit in the raising instruction."
+        }
+      ],
+      "notes": [
+        "Keep the singular selected reporting verb, illness/seated setting, followers instruction and complete final bowing/raising clauses. The historical print differs in the reporting verb.",
+        "Preserve selected related to me, the complete Hisham/from his father chain, Aishahs wife attribution and both Prophetic honorifics, the illness and seated setting, followers instruction and bowing/rising clauses. No head noun, verdict pointer or historical related to us is inserted.",
+        "Historical uses related to us; selected and modern use related to me. Preserve the selected singular reporting form.",
+        "Printed reference 1236 · app reference 1179. Pinned Khan EPUB 2.22.328 and exact web label 1179 are comparisons only. Shorter chains, added explanations and omissions do not replace the selected Arabic."
+      ],
+      "reviewScope": "AI-assisted complete-span English compared with the unchanged selected Arabic, both inspected printed sequences and individually located English bodies. Independent linguistic, theological, chapter, reference and spoken-word review remains pending.",
+      "arabicSha256": "901f5779b1e8e849f6749bd667379c26b25a48394286dabd7656b0f1688fda4b",
+      "englishSha256": "425d2389745e92937057bd7957f5e414be670a6c2c43a66c1659e6095236c2cb",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1236 · app reference 1179",
+          "pdfPage": 299,
+          "scope": "Exact modern printed occurrence locator; the digital app reference remains unchanged."
+        }
+      ],
+      "reviewRecordSha256": "83286e88a9fa7d01ca6a88a93cb9731e605d26bb17922ae6f3689d9d75e26892"
+    }
+  ]
+}

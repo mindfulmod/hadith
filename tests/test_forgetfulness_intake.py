@@ -53,6 +53,6 @@ class ForgetfulnessIntakeTests(unittest.TestCase):
     def test_intake_cannot_admit_translation_or_claim_independent_review(self):
         self.rejected([lambda a:a.update(readerAdmission=True),lambda a:a.update(independentReview='approved'),lambda a:a['source'].update(arabicChanged=True),lambda a:a['proposedCorrections'].append({'reference':1178})])
         from published_fixture import ENTRY_NUMBERS
-        cat=json.loads((ROOT/'reader/books/catalog.json').read_text());self.assertEqual([r['number']for r in cat['entries']],ENTRY_NUMBERS);self.assertNotIn(1166,ENTRY_NUMBERS)
+        cat=json.loads((ROOT/'reader/books/catalog.json').read_text());self.assertEqual([r['number']for r in cat['entries']],ENTRY_NUMBERS);self.assertFalse(self.values[0]['readerAdmission'])
 
 if __name__=='__main__':unittest.main()
