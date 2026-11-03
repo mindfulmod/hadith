@@ -37,6 +37,7 @@ jobs:
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/check-funerals-intake.py
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/check-funerals-second.py
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/check-funerals-third.py
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/check-funerals-final.py
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit-wikisource-layout.py --check
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/resolve-wikisource-layout.py --check
           node scripts/build-collection.mjs --check
