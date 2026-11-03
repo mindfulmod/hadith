@@ -200,7 +200,55 @@ def render(audit, inventory):
         chapter_cards.append(f'<details><summary>Chapter {index+1} · Arabic source material · English pending</summary><p class="arabic" dir="rtl" lang="ar">{e(blocks[chapter["headingId"]])}</p>{context}</details>')
     chapters = ''.join(chapter_cards)
     style = ':root{color-scheme:light dark;--paper:#f5f0e6;--ink:#382d28;--muted:#6c5850;--line:#d7c8ba;--accent:#a94728;--card:#fffbf4}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.7 system-ui,sans-serif}main{width:min(850px,100%);margin:auto;padding:40px 22px 70px}a{color:var(--accent);overflow-wrap:anywhere;text-underline-offset:3px}h1,h2{font-family:Georgia,serif;font-weight:400;line-height:1.15}h1{font-size:clamp(36px,7vw,58px)}h2{font-size:29px}.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}.notice{border-left:3px solid var(--accent);padding:14px 18px;background:var(--card)}article{margin:25px 0;padding:24px;border:1px solid var(--line);border-radius:18px;background:var(--card)}.arabic{font:24px/2.1 "Geeza Pro",serif;overflow-wrap:anywhere;white-space:pre-wrap}summary{cursor:pointer;padding:15px 0;font-weight:600}details{border-top:1px solid var(--line);margin-top:18px}li{margin:10px 0}ul{padding-left:22px}nav{display:flex;flex-wrap:wrap;gap:8px}nav a{min-width:48px;min-height:44px;display:grid;place-items:center;border:1px solid var(--line);border-radius:8px}footer{border-top:1px solid var(--line);margin-top:35px;padding-top:20px;color:var(--muted)}@media(max-width:400px){main{padding:28px 16px}article{padding:18px}}@media(prefers-color-scheme:dark){:root{--paper:#241d27;--card:#302632;--ink:#f2e7d9;--muted:#cbb7ad;--line:#5c4856;--accent:#f6b773}}'
-    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Eclipses · Source review</title><style>{style}</style></head><body><main><p class="eyebrow">MindfulMod · Source intake</p><h1>Eclipses.<br>Every passage accounted for.</h1><p>24 digital entries · 19 chapters · 27 printed references.</p><div class="notice"><strong>Candidate evidence only.</strong> None of these entries has been added to the reader. The Arabic input is unchanged. Working English, complete wording review and independent qualified review remain pending. This page certifies neither accuracy nor reuse rights.</div><article><h2>What the comparison found</h2><ul><li>Entries 1002, 1007 and 1016 each contain two separately numbered printed passages. Their contents are already present; no new suffix reference is needed.</li><li>Both prints support a proposed narrator-name correction in 1011. The original digital spelling remains untouched.</li><li>The retained English comparisons include errors and shortened passages. Their exact locations and limits are recorded below.</li><li>1012 has no separate match in the checked Khan sequence. It remains a distinct source occurrence.</li><li>Seven chapter-context blocks stay separate from numbered reports and narration.</li></ul><p><a href="eclipses-source-audit.json">Complete evidence map and source hashes</a> · <a href="{e('https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_الكسوف&oldid=484860')}">Pinned Arabic revision</a></p></article><nav aria-label="Source references">{''.join(f'<a href="#report-{n}">{n}</a>' for n in range(993,1017))}</nav>{''.join(cards)}<article id="correction"><h2>One proposed correction</h2><p>Reference 1011 · digital spelling, then the reading in both inspected prints:</p><p class="arabic" lang="ar" dir="rtl">زيادة بن علاقة</p><p class="arabic" lang="ar" dir="rtl">زياد بن علاقة</p><p>The evidence points to Brill PDF page 271 and Dar Ibn Kathir PDF page 259. It remains a proposal, separate from the raw text and any future reader admission.</p></article><article id="chapters"><h2>Separate chapter material</h2><p>These headings and context blocks belong to browsing and source review. English remains pending; no chapter material has been assigned a hadith number.</p>{chapters}</article><footer><p>{e(audit['inspectionMethod'])}</p><p>Printed references refer to the Dar Ibn Kathir witness. Brill is matched by its page and contents. Source inspection does not imply that the two prints agree in every word.</p><p><a href="../reader/">Local reader</a> · <a href="rain-prayer-source-review.html">Previous section review</a></p></footer></main></body></html>\n'''
+    return f'''<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Eclipses · Source review</title>
+<style>{style}</style>
+</head>
+<body>
+<main>
+<p class="eyebrow">MindfulMod · Source intake</p>
+<h1>Eclipses.<br>Every passage accounted for.</h1>
+<p>24 digital entries · 19 chapters · 27 printed references.</p>
+<div class="notice">
+<strong>Candidate evidence only.</strong> This historical intake does not grant reader admission. The Arabic input is unchanged. <a href="../reader/eclipses-review.html">Current local prototype reviews</a> record later wording work and separate admissions. Independent qualified review remains pending. This page certifies neither accuracy nor reuse rights.</div>
+<article>
+<h2>What the comparison found</h2>
+<ul>
+<li>Entries 1002, 1007 and 1016 each contain two separately numbered printed passages. Their contents are already present; no new suffix reference is needed.</li>
+<li>Both prints support a proposed narrator-name correction in 1011. The original digital spelling remains untouched.</li>
+<li>The retained English comparisons include errors and shortened passages. Their exact locations and limits are recorded below.</li>
+<li>1012 has no separate match in the checked Khan sequence. It remains a distinct source occurrence.</li>
+<li>Seven chapter-context blocks stay separate from numbered reports and narration.</li>
+</ul>
+<p>
+<a href="eclipses-source-audit.json">Complete evidence map and source hashes</a> · <a href="{e('https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_الكسوف&oldid=484860')}">Pinned Arabic revision</a>
+</p>
+</article>
+<nav aria-label="Source references">{''.join(f'<a href="#report-{n}">{n}</a>' for n in range(993,1017))}</nav>{''.join(cards)}<article id="correction">
+<h2>One proposed correction</h2>
+<p>Reference 1011 · digital spelling, then the reading in both inspected prints:</p>
+<p class="arabic" lang="ar" dir="rtl">زيادة بن علاقة</p>
+<p class="arabic" lang="ar" dir="rtl">زياد بن علاقة</p>
+<p>The evidence points to Brill PDF page 271 and Dar Ibn Kathir PDF page 259. It remains a proposal, separate from the raw text and any future reader admission.</p>
+</article>
+<article id="chapters">
+<h2>Separate chapter material</h2>
+<p>These headings and context blocks belong to browsing and source review. English remains pending; no chapter material has been assigned a hadith number.</p>{chapters}</article>
+<footer>
+<p>{e(audit['inspectionMethod'])}</p>
+<p>Printed references refer to the Dar Ibn Kathir witness. Brill is matched by its page and contents. Source inspection does not imply that the two prints agree in every word.</p>
+<p>
+<a href="../reader/">Local reader</a> · <a href="rain-prayer-source-review.html">Previous section review</a>
+</p>
+</footer>
+</main>
+</body>
+</html>\n'''
 
 
 def load():

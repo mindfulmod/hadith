@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "namespace": "bukhari-opening-v1",
   "publication": "personal-prototype",
-  "sourceRecordSha256": "828188482aff3e8023d4dac1851401cbb119ffea38eee09fe2d2539871816467",
+  "sourceRecordSha256": "fe27adcf0de0c82757ebddab30eb12a4d319147629414ac83e8163bdf97d3f02",
   "rights": {
     "status": "pending",
     "evidence": [
@@ -37,7 +37,9 @@
       "reader/witr-inputs.json",
       "reader/witr-review.html",
       "reader/rain-prayer-inputs.json",
-      "reader/rain-prayer-review.html"
+      "reader/rain-prayer-review.html",
+      "reader/eclipses-inputs.json",
+      "reader/eclipses-review.html"
     ]
   },
   "books": [
@@ -14945,6 +14947,85 @@
             "notes": {
               "path": "rain-prayer-review.html",
               "fragment": "chapter-28"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "eclipses",
+      "number": 17,
+      "title": "Eclipses",
+      "sourceEntryCount": 24,
+      "entryNumbers": [
+        993,
+        994,
+        995,
+        996,
+        997,
+        998
+      ],
+      "chapters": [
+        {
+          "id": "chapter-01",
+          "title": "Prayer during a solar eclipse",
+          "entryNumbers": [
+            993,
+            994,
+            995,
+            996
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "eclipses-review.html",
+              "fragment": "chapter-01"
+            }
+          }
+        },
+        {
+          "id": "chapter-02",
+          "title": "Charity during an eclipse",
+          "entryNumbers": [
+            997
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "eclipses-review.html",
+              "fragment": "chapter-02"
+            }
+          }
+        },
+        {
+          "id": "chapter-03",
+          "title": "Calling out “The prayer is in congregation” during an eclipse",
+          "entryNumbers": [
+            998
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "eclipses-review.html",
+              "fragment": "chapter-03"
             }
           }
         }
@@ -31866,15 +31947,117 @@
       "contextReview": {
         "status": "pending"
       }
+    },
+    {
+      "number": 993,
+      "id": "bukhari:993",
+      "entrySha256": "932ca0739ecd4d2647f5c887f741add20b31ef33782aa92f3d158be53d550728",
+      "arabicSha256": "7f0af8c0c8189fc82a8a0e879442ce4da37c0e03bdccf44b3cf23bafaed36ee4",
+      "englishSha256": "7edf3d75a6dc460d072bb4ca2a5e95aae354a315506ae96a37164531c33d70d8",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 994,
+      "id": "bukhari:994",
+      "entrySha256": "982df47fe90afd03efbeeaa7882f8495fd4ff32c4043f6a1997c81ca4bff2a8e",
+      "arabicSha256": "3fc380ef0f50ea0e0d90e382f2a0a2c2a1b94f9bed0dc622654f38f5518a7777",
+      "englishSha256": "4ac21aa4826c910f33227d1f8cef37346a8a98e4fbb00f67ccacf0afb55a86ef",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 995,
+      "id": "bukhari:995",
+      "entrySha256": "9332ccc8b37732d7fe517d8687ec4d579ffc15a75488d3f22b78bc677a14b897",
+      "arabicSha256": "14f8c7b7ba40ff1398ced85beb0d99b8725b6efdbbe84939232d2ea1be635549",
+      "englishSha256": "fad1bbeeab704df79b28f7e7983e91a10fa5bd79ef62532e594801c324c8a5bb",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 996,
+      "id": "bukhari:996",
+      "entrySha256": "9f1a2e33812ee4067073d50c5f05ef4671f6d44422275d2a2ab7ce02e7e009bc",
+      "arabicSha256": "f9496e979c735c586298ce49409b66ba85a00c2583bf541b9a4ef242c49e604e",
+      "englishSha256": "609a15cca4a103c2d87bf91f6967960ffc5d58ef53e8bda686c0348991c6aa36",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 997,
+      "id": "bukhari:997",
+      "entrySha256": "c807e518d9dd1781ca3ed90a0c526b88d2456dabf253af57a32eb88c0b45bc5f",
+      "arabicSha256": "0a50c199c2400225bbff57293bcb0565a6dd8cd33ac7be0b89a7de242a90008f",
+      "englishSha256": "f4b5c028416fcb068409045c1eedb7cb1adbf401d8246577dea9196e0f864697",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 998,
+      "id": "bukhari:998",
+      "entrySha256": "529b43716155d20779a787597db12d858c1956748ebfa792d595750982bbed65",
+      "arabicSha256": "db3bde43e748791d31d09b37e0bd1cb384d1899ae872a218254feb9ef888c1ea",
+      "englishSha256": "f6ee724800984ba195385411d6801e3c5a115cb3e1ebbc4ef97ba3f8a89b0691",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
     }
   ],
-  "catalogContextSha256": "5b0aeccd1d72466b73e3058d4d564490c7f83128dfe5c7da5d38dba616ad78ad",
+  "catalogContextSha256": "4365b57dab01d085c80b95ff64dd28ea91037cc7c7111fdc443c0c1edd67850f",
   "collectionReview": {
     "status": "pending"
   },
   "sourceReferences": {
     "schemaVersion": 1,
-    "sourceRecordSha256": "828188482aff3e8023d4dac1851401cbb119ffea38eee09fe2d2539871816467",
+    "sourceRecordSha256": "fe27adcf0de0c82757ebddab30eb12a4d319147629414ac83e8163bdf97d3f02",
     "sources": [
       {
         "id": "arabic-base",
@@ -33408,6 +33591,34 @@
         "kind": "commentary",
         "format": "web",
         "url": "https://www.islamweb.net/ar/library/content/303/4279/باب-لا-يدري-متى-يجيء-المطر-إلا-الله"
+      },
+      {
+        "id": "arabic-eclipses",
+        "label": "Arabic Wikisource · fixed revision 484860",
+        "kind": "arabic-input",
+        "format": "web",
+        "url": "https://ar.wikisource.org/w/index.php?title=صحيح_البخاري/كتاب_الكسوف&oldid=484860"
+      },
+      {
+        "id": "bewley-eclipses",
+        "label": "Aisha Bewley · Eclipses",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://aishabewley.org/bukhari10"
+      },
+      {
+        "id": "fath-eclipses-charity",
+        "label": "Ibn Hajar · Fath al-Bari · Charity during an eclipse",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://islamweb.net/ar/library/content/52/1935/باب-الصدقة-في-الكسوف"
+      },
+      {
+        "id": "sunnah-eclipses-1044",
+        "label": "Sunnah.com · individually inspected report 1044",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://sunnah.com/bukhari:1044"
       }
     ],
     "entries": [
@@ -85657,10 +85868,316 @@
           "fragment": "hadith-992",
           "label": "Comparison notes and chapter source for this hadith"
         }
+      },
+      {
+        "id": "bukhari:993",
+        "number": 993,
+        "entrySha256": "932ca0739ecd4d2647f5c887f741add20b31ef33782aa92f3d158be53d550728",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-eclipses",
+            "locator": "Book of Eclipses · source entry 993 · باب الصلاة في كسوف الشمس",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-eclipses",
+            "locator": "Book of Eclipses · entry 993",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 18, Number 150",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF pages 264, 265",
+            "pdfPage": 264,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 253",
+            "pdfPage": 253,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "eclipses-review.html",
+          "fragment": "hadith-993",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:994",
+        "number": 994,
+        "entrySha256": "982df47fe90afd03efbeeaa7882f8495fd4ff32c4043f6a1997c81ca4bff2a8e",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-eclipses",
+            "locator": "Book of Eclipses · source entry 994 · باب الصلاة في كسوف الشمس",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-eclipses",
+            "locator": "Book of Eclipses · entry 994",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 18, Number 151",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 265",
+            "pdfPage": 265,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 253",
+            "pdfPage": 253,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "eclipses-review.html",
+          "fragment": "hadith-994",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:995",
+        "number": 995,
+        "entrySha256": "9332ccc8b37732d7fe517d8687ec4d579ffc15a75488d3f22b78bc677a14b897",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-eclipses",
+            "locator": "Book of Eclipses · source entry 995 · باب الصلاة في كسوف الشمس",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-eclipses",
+            "locator": "Book of Eclipses · entry 995",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 18, Number 152",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 265",
+            "pdfPage": 265,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 253",
+            "pdfPage": 253,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "eclipses-review.html",
+          "fragment": "hadith-995",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:996",
+        "number": 996,
+        "entrySha256": "9f1a2e33812ee4067073d50c5f05ef4671f6d44422275d2a2ab7ce02e7e009bc",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-eclipses",
+            "locator": "Book of Eclipses · source entry 996 · باب الصلاة في كسوف الشمس",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-eclipses",
+            "locator": "Book of Eclipses · entry 996",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 18, Number 153",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 265",
+            "pdfPage": 265,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 253",
+            "pdfPage": 253,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "eclipses-review.html",
+          "fragment": "hadith-996",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:997",
+        "number": 997,
+        "entrySha256": "c807e518d9dd1781ca3ed90a0c526b88d2456dabf253af57a32eb88c0b45bc5f",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic prints and one complete English comparison were checked. The second English reference contains damaged wording and cannot confirm the missing words. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-eclipses",
+            "locator": "Book of Eclipses · source entry 997 · باب الصدقة في الكسوف",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-eclipses",
+            "locator": "Book of Eclipses · entry 997",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 18, Number 154 · damaged wording",
+            "scope": "The pinned body contains a damaged preposition in the signs clause and explanatory renderings in the supplication and ghayrah clauses. It locates this report but cannot supply pristine wording for the complete selected Arabic or chain."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF pages 265, 266",
+            "pdfPage": 265,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 254",
+            "pdfPage": 254,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "eclipses-997-lexical",
+            "sourceId": "fath-eclipses-charity",
+            "locator": "Book of Eclipses · Charity during an eclipse · commentary on aghyar",
+            "scope": "Lexical context only. Commentary and explanatory theological formulations are not part of the selected hadith text."
+          },
+          {
+            "id": "eclipses-997-web",
+            "sourceId": "sunnah-eclipses-1044",
+            "locator": "Individually inspected report 1044 · deprecated English reference 2.18.154",
+            "scope": "A separately inspected comparison page; it repeats the preposition error found in the retained EPUB and is not an independent pristine English witness."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "eclipses-review.html",
+          "fragment": "hadith-997",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:998",
+        "number": 998,
+        "entrySha256": "529b43716155d20779a787597db12d858c1956748ebfa792d595750982bbed65",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-eclipses",
+            "locator": "Book of Eclipses · source entry 998 · باب النداء بالصلاة جامعة في الكسوف",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-eclipses",
+            "locator": "Book of Eclipses · entry 998",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 18, Number 155",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 266",
+            "pdfPage": 266,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 254",
+            "pdfPage": 254,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "eclipses-review.html",
+          "fragment": "hadith-998",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
       }
     ]
   },
-  "referencesSha256": "4fc5e7b8f70cb82d3c9d56a7964c18d1e1c73e66979437659637d35f4d41f7bd",
+  "referencesSha256": "365ad4e9557b357dad8c8e720cdf6ce50e4d6df07274721c05a56404f0b4d54c",
   "referencesReview": {
     "status": "pending"
   }

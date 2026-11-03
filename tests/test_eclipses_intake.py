@@ -50,8 +50,8 @@ class EclipsesIntakeTests(unittest.TestCase):
         self.assertEqual(len(inventory['chapters']), 19)
         self.assertEqual(len(inventory['blocks']), 51)
         self.assertFalse(inventory['readerEligible'])
-        catalogue = check.read('reader/books/catalog.json')
-        self.assertNotIn('eclipses', [b['id'] for b in catalogue['books']])
+        self.assertTrue(all(r['status'] == 'unreviewed' for r in inventory['records']))
+        # Later reader admissions live in separate review batches; intake stays unapproved.
 
     def test_combined_passages_cover_every_printed_occurrence_without_extra_app_numbers(self):
         audit = self.values[0]
@@ -152,7 +152,7 @@ class EclipsesIntakeTests(unittest.TestCase):
         blocks = {b['htmlId']: b['text'] for b in inventory['blocks']}
         self.assertEqual(parser.texts, {r['number']: '\n\n'.join(blocks[p] for p in r['paragraphIds']) for r in inventory['records']})
         self.assertIn('Candidate evidence only', rendered)
-        self.assertIn('None of these entries has been added', rendered)
+        self.assertIn('This historical intake does not grant reader admission', rendered)
         self.assertIn('English remains pending', rendered)
 
 

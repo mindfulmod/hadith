@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-03T00:29:02.099376+00:00",
+  "status": "ai-assisted-personal-prototype-independent-review-pending",
+  "sourceAuditSha256": "5d7ffa346f8afce535cda88f304e45ae1259026b189fe6a07267b61bd91a6736",
+  "sourceReviewSha256": "88875024435ddf380aab046a1ee0024a6a16f877bcb28bdd710e21da76b2c66d",
+  "newReferences": [
+    993,
+    994,
+    995,
+    996,
+    997,
+    998
+  ],
+  "selectedArabicChanged": false,
+  "translatedSpans": 14,
+  "chaptersAdded": 3,
+  "printInspection": {
+    "method": "Full relevant rendered Arabic pages inspected, with magnified reinspection of 995 and 997. Printed differences are retained in entry notes; they do not silently alter the selected digital text.",
+    "witnesses": [
+      {
+        "id": "brill-1862",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+        "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+        "bytes": 28290204,
+        "inspectedPdfPages": [
+          264,
+          265,
+          266
+        ]
+      },
+      {
+        "id": "dar-ibn-kathir-2002",
+        "url": "https://archive.org/download/waq79565/79565.pdf",
+        "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+        "bytes": 45304371,
+        "inspectedPdfPages": [
+          253,
+          254
+        ]
+      }
+    ]
+  },
+  "englishInspection": {
+    "bewley": {
+      "url": "https://aishabewley.org/bukhari10",
+      "sha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+      "bytes": 102307,
+      "locatorPolicy": "Decode HTML text, collapse whitespace, select from the first 993 label to Chapter 23. Each body starts after its label and ends at the next label, including intervening chapter material. Allow whitespace before a label period because linked labels 997, 1002 and 1004 separate it. Require every label 993–1016 exactly once; hashes are locators, not wording approval.",
+      "locatedReports": 24
+    },
+    "khan": {
+      "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+      "sourcePath": "content/sources/islamhouse-bukhari/source.epub",
+      "locatedRecords": 23,
+      "range": "2.18.150–172",
+      "allRecordedBodyHashesCheckedAgainstPinnedEpub": true
+    },
+    "scope": "The six opening bodies were individually compared. Source-intake hashes cover the larger section; this admission covers only 993–998.",
+    "matchedBodies": [
+      {
+        "reference": 993,
+        "comparisons": {
+          "bewley": {
+            "displayedReference": "993",
+            "occurrence": 1,
+            "bodySha256": "c77ad80988c1298b7a699ee0a26c810a8eecd78d7082311a2690b641984bf873",
+            "status": "located-body-not-wording-approval"
+          },
+          "khan": {
+            "status": "located-body-not-wording-approval",
+            "reference": "2.18.150",
+            "recordSha256": "14a663a960346d08c8f78ca9571beaadd9e6f8146af5c55a5836b2dc9d2f225d",
+            "bodySha256": "bc435ce45be458a677306a062a332ada190089275fb9509baa1e1b75c115ff4c"
+          }
+        }
+      },
+      {
+        "reference": 994,
+        "comparisons": {
+          "bewley": {
+            "displayedReference": "994",
+            "occurrence": 1,
+            "bodySha256": "60dd5cd87d8f6dbc18a8a94557fb147900e5f188aeeeae653d74a3d1b6abeaf0",
+            "status": "located-body-not-wording-approval"
+          },
+          "khan": {
+            "status": "located-body-not-wording-approval",
+            "reference": "2.18.151",
+            "recordSha256": "bb6ef3b33649a223708a6655026b67bb83aecae2b04bb2e405441f13d20c0448",
+            "bodySha256": "db5b85caf8a7b3f8be3c0c5b4b68f8a93ead1bdf6109e5be4f5ec1f2a69d12dc"
+          }
+        }
+      },
+      {
+        "reference": 995,
+        "comparisons": {
+          "bewley": {
+            "displayedReference": "995",
+            "occurrence": 1,
+            "bodySha256": "f38df7a66cb45368ad2cb9ebd4bc2dcc599ac5e0718672d90c2c225116a90030",
+            "status": "located-body-not-wording-approval"
+          },
+          "khan": {
+            "status": "located-body-not-wording-approval",
+            "reference": "2.18.152",
+            "recordSha256": "b963fb66f00147771d46b01c8b206552914b781857dd198db5da9993c5106343",
+            "bodySha256": "3ff5b102d45fbbedc1541d2c52ae25300f250e6f59a18be438c95a2f29f3f8c6"
+          }
+        }
+      },
+      {
+        "reference": 996,
+        "comparisons": {
+          "bewley": {
+            "displayedReference": "996",
+            "occurrence": 1,
+            "bodySha256": "ea7c2d3886fb66dd01240dda750e353f226d329a502b15c944f5b9b03638f03f",
+            "status": "located-body-not-wording-approval"
+          },
+          "khan": {
+            "status": "located-body-not-wording-approval",
+            "reference": "2.18.153",
+            "recordSha256": "2708c8ace0a432e284b9e1aed3862edd8b10065b58aa1d4d9a173ee60203f172",
+            "bodySha256": "1d6711e0b1298f6f19e2719f681084d76875a8f93861b8dc58b6657771940202"
+          }
+        }
+      },
+      {
+        "reference": 997,
+        "comparisons": {
+          "bewley": {
+            "displayedReference": "997",
+            "occurrence": 1,
+            "bodySha256": "ee1519b3b640223b2513fda6e37f158cef433cce995961c7bfaa1330831e97eb",
+            "status": "located-body-not-wording-approval"
+          },
+          "khan": {
+            "status": "damaged-or-incomplete-comparison",
+            "reference": "2.18.154",
+            "recordSha256": "0928898801a431cc9d874ef866bc05405ea8fa6f051b41598ee0b8a30bd9fed5",
+            "bodySha256": "4e66a7b610b611a45df57032bfc841c7f3230d3345aecddd3e547da9f8f61658"
+          }
+        }
+      },
+      {
+        "reference": 998,
+        "comparisons": {
+          "bewley": {
+            "displayedReference": "998",
+            "occurrence": 1,
+            "bodySha256": "e537a7d2e57cefd40d4b398ec7428236ddbe1d8117a8f7e0eba12cc9e2867c57",
+            "status": "located-body-not-wording-approval"
+          },
+          "khan": {
+            "status": "located-body-not-wording-approval",
+            "reference": "2.18.155",
+            "recordSha256": "bb7f1547529a06d3c324e697671384e7e9c0aa0bfe6dc892adb9fcde0f63251e",
+            "bodySha256": "cd5e4f9da4b3d28a5cd0671a78eb5b61217b16e7ee00e44d1129081a4e56d46b"
+          }
+        }
+      }
+    ]
+  },
+  "findings": [
+    {
+      "reference": 993,
+      "notes": [
+        "The selected source has three Prophet honorifics, all retained. Brill opens with the Prophet where the selected source and modern print say the Messenger of Allah. Brill also does not repeat the final honorific; the modern print agrees with the selected text.",
+        "The Bewley comparison adds a house location that is not explicit in this selected Arabic. The working English does not import that location. The closing expression retains what has befallen you rather than replacing it with an inferred explanation.",
+        "Modern printed reference 1040. Full relevant Arabic print pages and the individual English comparison bodies were checked. This is AI-assisted working English, not Darussalam wording or independent approval."
+      ]
+    },
+    {
+      "reference": 994,
+      "notes": [
+        "The full chain retains Qays saying I heard Abu Masud. The selected instruction to stand is kept, as is the reference to a person among the people.",
+        "This occurrence is not merged with 1008, whose selected wording and narrator chain differ.",
+        "Modern printed reference 1041. Full relevant Arabic print pages and the individual English comparison bodies were checked. This is AI-assisted working English, not Darussalam wording or independent approval."
+      ]
+    },
+    {
+      "reference": 995,
+      "notes": [
+        "The selected relative clause that Abd al-Rahman ibn al-Qasim related it to him is retained; no narrator name is silently added to its pronoun. Brill omits this relative clause, while the modern print retains it. Both singular informed-me verbs remain distinct.",
+        "The selected companion honorific includes Most High and both persons. Brill lacks this companion honorific; the modern print has the shorter form without Most High.",
+        "Life remains life; the birth gloss in the Khan comparison is not inserted. The full attribution to the Prophet remains in the expandable chain and complete narration script.",
+        "Modern printed reference 1042. Full relevant Arabic print pages and the individual English comparison bodies were checked. This is AI-assisted working English, not Darussalam wording or independent approval."
+      ]
+    },
+    {
+      "reference": 996,
+      "notes": [
+        "The selected source names Ibrahim without adding son or a historical date. The two Messenger honorifics remain complete.",
+        "The Bewley comparison includes a signs clause absent from this occurrence in the selected source and inspected prints. Brill adds a final divine epithet not present in the selected wording. Neither is imported.",
+        "When you see this supplies the understood object of the Arabic verb in English. It does not add a new event or change the following prayer and supplication instructions.",
+        "Modern printed reference 1043. Full relevant Arabic print pages and the individual English comparison bodies were checked. This is AI-assisted working English, not Darussalam wording or independent approval."
+      ]
+    },
+    {
+      "reference": 997,
+      "notes": [
+        "The selected description retains both standings and bowings before the first prostration, and the statement that the second rakah followed the first. Both closing addresses and both oaths are preserved. No additional prayer formula or recitation is supplied from another occurrence.",
+        "The pinned Khan body has against in the signs clause. It also paraphrases the selected supplicate instruction as remember and adds an explanatory prohibition in the ghayrah clause. Those features are not copied into the working English.",
+        "Ghayrah is deliberately retained as a transliterated term in this provisional English. Bewley uses jealous; Khan retains ghaira with a self-respect gloss. Ibn Hajar discusses the term and different explanatory approaches. No explanatory theological paraphrase is inserted into the hadith. Independent lexical and theological review remains pending.",
+        "Unlawful sexual intercourse preserves the scope of zina without limiting it to married persons. Servant retains each of the male and female forms in the selected wording. Proclaim His greatness renders the takbir instruction without importing a separate formula.",
+        "Brill includes an Aishah honorific not present in this selected paragraph or the modern print. Brill names the second unit as the other unit. The selected text and its exact honorific coverage are preserved unchanged.",
+        "Modern printed reference 1044. Full relevant Arabic print pages and the individual English comparison bodies were checked. This is AI-assisted working English, not Darussalam wording or independent approval."
+      ]
+    },
+    {
+      "reference": 998,
+      "notes": [
+        "The entire long narrator chain is retained, including the Habashi, Dimashqi and Zuhri affiliations and the companion honorific with Most High and both persons.",
+        "The selected Ishaq verb is related to me; both inspected prints have related to us. Brill also has singular verbs for Muawiyah and Yahya where the selected source and modern print have plural verbs. These source-specific differences are exposed rather than silently normalized or declared to be transcription errors.",
+        "The prayer is in congregation renders the quoted announcement. The caller is not identified, and no ordinary adhan wording is added.",
+        "Modern printed reference 1045. Full relevant Arabic print pages and the individual English comparison bodies were checked. This is AI-assisted working English, not Darussalam wording or independent approval."
+      ]
+    }
+  ],
+  "lexicalDecision": {
+    "reference": 997,
+    "selectedWord": "ghayrah",
+    "status": "transliteration-retained-independent-lexical-and-theological-review-pending",
+    "source": "https://islamweb.net/ar/library/content/52/1935/باب-الصدقة-في-الكسوف",
+    "note": "No explanatory theological paraphrase is inserted. The separate source note identifies the comparison renderings and commentary; this is a provisional translation choice."
+  },
+  "limits": [
+    "This is a new AI-assisted working translation, not Darussalam wording.",
+    "Matching sources and automated checks do not supply independent accuracy certification.",
+    "No later Eclipses entry, chapter context, proposed correction or new recording is admitted by this batch."
+  ]
+}

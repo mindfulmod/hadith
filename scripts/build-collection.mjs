@@ -38,7 +38,8 @@ export const BOOK_CONFIGS=Object.freeze({
  'fear-prayer':Object.freeze({id:'fear-prayer',number:13,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([14]),title:'Fear Prayer',first:900,arabicSourceId:'arabic-fear-prayer',bewleySourceId:'bewley-fear-prayer',bewleyTitle:'Fear Prayer',revision:484864}),
  'two-eids':Object.freeze({id:'two-eids',number:14,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([15]),title:'The Two Eids',first:906,arabicSourceId:'arabic-two-eids',bewleySourceId:'bewley-two-eids',bewleyTitle:'The Two Eids',revision:496076}),
  witr:Object.freeze({id:'witr',number:15,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([16]),title:'Witr',first:946,arabicSourceId:'arabic-witr',bewleySourceId:'bewley-witr',bewleyTitle:'Witr',revision:484862}),
- 'rain-prayer':Object.freeze({id:'rain-prayer',number:16,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([17]),title:'Rain Prayer',first:960,arabicSourceId:'arabic-rain-prayer',bewleySourceId:'bewley-rain-prayer',bewleyTitle:'Rain Prayer',revision:484861})
+ 'rain-prayer':Object.freeze({id:'rain-prayer',number:16,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([17]),title:'Rain Prayer',first:960,arabicSourceId:'arabic-rain-prayer',bewleySourceId:'bewley-rain-prayer',bewleyTitle:'Rain Prayer',revision:484861}),
+ eclipses:Object.freeze({id:'eclipses',number:17,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([18]),title:'Eclipses',first:993,arabicSourceId:'arabic-eclipses',bewleySourceId:'bewley-eclipses',bewleyTitle:'Eclipses',revision:484860})
 });
 function bookConfig(config){assert(Object.values(BOOK_CONFIGS).includes(config),'Unknown book configuration');return config;}
 let englishInventory;

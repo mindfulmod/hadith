@@ -21,7 +21,7 @@ test('final Rain Prayer batch preserves the old entries and completes every dist
  assert.deepEqual(review().entries.slice(0,8),read('content/review/rain-prayer-third-review.json').entries);
  assert.deepEqual(batch.entries.map(e=>e.number),[976,977,978,979,980,981,982,983,...newNumbers]);
  const book=ledger.books.find(b=>b.id==='rain-prayer');assert.equal(book.entryNumbers.length,34);assert.equal(book.sourceEntryCount,34);assert.equal(book.chapters.length,29);assert.equal(book.entryNumbers.at(-1),992);
- assert.deepEqual(source.entries.slice(-10).map(e=>e.number),newNumbers);assert.throws(()=>buildBooks(source,ledger,{production:true}),/production collection/);
+ assert.deepEqual(source.entries.filter(e=>e.book===cfg.title).slice(-10).map(e=>e.number),newNumbers);assert.throws(()=>buildBooks(source,ledger,{production:true}),/production collection/);
 });
 test('each new script covers the complete chain and body with every selected honorific',()=>{
  for(const n of newNumbers){const e=get(n),r=review().entries.find(e=>e.number===n);assert.equal(r.segments.map(s=>s.arabic).join(''),e.arabic_blocks.join(''));
