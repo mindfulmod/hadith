@@ -1,0 +1,228 @@
+{
+  "date": "2026-11-02",
+  "status": "partial-generation-preserved-not-admitted",
+  "scope": {
+    "readerEntries": 1032,
+    "recordedHadith": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "candidateHadith": 7,
+    "expectedSegments": 10,
+    "savedSegments": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "missingSegments": [
+      10
+    ],
+    "changedSourceWording": false,
+    "newReaderAudio": false,
+    "published": false
+  },
+  "generation": {
+    "source": "https://www.openai.fm/",
+    "modelLabel": "GPT-4o mini TTS",
+    "voice": "Cedar",
+    "delivery": "Exact selected Take A instructions from the pinned Hadith 3 provenance; identical to Hadith 6.",
+    "scriptSha256": "25be21831d8b2ffc4e4e910e26365581cde4a0075f94d1d1654f6a4b2a6d2fc3",
+    "scriptCodeUnits": 7266,
+    "savedInputCodeUnits": 6575,
+    "job": "content/audio/jobs/hadith-7-cedar-v1.json",
+    "jobSha256": "fef0906ba7f5eb8a9859a329eca73d59c5282963ae1a35438e0b8cccfb341455",
+    "serviceLimit": "The demo displayed Download limit reached and ten downloads per week before segment 10 could be downloaded. Nine distinct originals are retained. No limit bypass or alternate-account attempt was made.",
+    "downloadObservation": "One initial browser observation timed out and one download action produced no saved file; the completed files were individually identified and preserved. No extra or duplicate file is counted as an additional segment.",
+    "review": "Submitted-input integrity is separate from exact spoken-word, pronunciation, delivery and join review; all remain pending."
+  },
+  "numericalAudioCheck": {
+    "scope": "Numerical decoding of nine original candidate files only; no assembled or admitted Hadith 7 recording. This does not check spoken wording or pronunciation.",
+    "sampleRate": 44100,
+    "channels": 1,
+    "bitsPerSample": 16,
+    "parts": [
+      {
+        "part": 1,
+        "inputSha256": "0ef02f9df1ef471c557ed75a8fa6c7db2cac896a4443be3f5ef9d2a39b0419ac",
+        "original": {
+          "path": "content/audio/raw/hadith-7-cedar-part-01.mp3",
+          "bytes": 916992,
+          "sha256": "e88b4903d00cc698f2869927b8afdbf25e04acb243aa28f2bd0685ee46bf5517"
+        },
+        "frames": 2527459,
+        "duration": 57.31199546485261,
+        "peak": 21938,
+        "fullScaleSamples": 0,
+        "pcmSha256": "e2fd8bfc9f7621e8619318b4b7bdac2f7e8485aa420d485a4203664d9f95fc0d"
+      },
+      {
+        "part": 2,
+        "inputSha256": "e14f41ff9594abb51e0358b5b4f55c0cd10e1926518b93539dc986425fdf44a0",
+        "original": {
+          "path": "content/audio/raw/hadith-7-cedar-part-02.mp3",
+          "bytes": 738432,
+          "sha256": "53564ceef179c9c6b5d4104fb998ed63af63e0dfa5d5813e57369d07b55ee1e8"
+        },
+        "frames": 2035303,
+        "duration": 46.15199546485261,
+        "peak": 25607,
+        "fullScaleSamples": 0,
+        "pcmSha256": "6bd639a4fd169908c87f5cc0c6c7d483ab71839b851d1370d074d75d7608f00b"
+      },
+      {
+        "part": 3,
+        "inputSha256": "ee841891914d0dba9749054d0aade490c309c6b7a8c78e71bed3dfe6cc58e980",
+        "original": {
+          "path": "content/audio/raw/hadith-7-cedar-part-03.mp3",
+          "bytes": 412800,
+          "sha256": "c9eaf2e22603017ed13d5c49441df7b52af03f883f7c6129fdf65c627e4b63e0"
+        },
+        "frames": 1137780,
+        "duration": 25.8,
+        "peak": 20420,
+        "fullScaleSamples": 0,
+        "pcmSha256": "826a863146fd34f3e847f1eb119c67b49a7c77b2b786e4527eb175e2184eb607"
+      },
+      {
+        "part": 4,
+        "inputSha256": "a62a2add4f72685340123d78893897581c551604cdcc80c9bca5eb4513d574db",
+        "original": {
+          "path": "content/audio/raw/hadith-7-cedar-part-04.mp3",
+          "bytes": 606720,
+          "sha256": "5cb4e939224966830c813748a6a034dd518dabfefd17f00f08b7b432aeb7f854"
+        },
+        "frames": 1672272,
+        "duration": 37.92,
+        "peak": 19262,
+        "fullScaleSamples": 0,
+        "pcmSha256": "b91ae64e2eef9c53665cbd85dc3e622dbfa717d1fd026c72ff27bc0cf7260e8c"
+      },
+      {
+        "part": 5,
+        "inputSha256": "0b82a46e8f11b5a3275007dd25fcfdf9a256ea3a8d8181f48b9ae418861d60cd",
+        "original": {
+          "path": "content/audio/raw/hadith-7-cedar-part-05.mp3",
+          "bytes": 478464,
+          "sha256": "9e3cf2e71ab11f6c4cf17a08a44d3179e90c15c12f6ad7cca8c246dafb4c134a"
+        },
+        "frames": 1318766,
+        "duration": 29.903990929705216,
+        "peak": 21507,
+        "fullScaleSamples": 0,
+        "pcmSha256": "aaeb1011707bc61581fd38a25fd0f764477c9c9f9845ae8c5c2bb4c93aa74e47"
+      },
+      {
+        "part": 6,
+        "inputSha256": "b4ce7581d8c9e5d63dcdffe7dbc5afc5a0d60c8ad515763faa83f441f68544d1",
+        "original": {
+          "path": "content/audio/raw/hadith-7-cedar-part-06.mp3",
+          "bytes": 619392,
+          "sha256": "80de3219a40744d9a2bd1195813915e3c328b20faf2bac89f2ab7793b350f928"
+        },
+        "frames": 1707199,
+        "duration": 38.711995464852606,
+        "peak": 23189,
+        "fullScaleSamples": 0,
+        "pcmSha256": "f17f2582a5ac698e13a66022489b718a423da9472750047ff6f0fca4fcf5551a"
+      },
+      {
+        "part": 7,
+        "inputSha256": "b60fe21d5c4945f2b1fac39ea24aaef687c9cdc822bdf680228f2b8c0d2b6bda",
+        "original": {
+          "path": "content/audio/raw/hadith-7-cedar-part-07.mp3",
+          "bytes": 881664,
+          "sha256": "a929e16d8b07011b0ece0fadfafd07890d1e147aefcdd5be84ec967f34d8e8f9"
+        },
+        "frames": 2430086,
+        "duration": 55.10399092970521,
+        "peak": 19404,
+        "fullScaleSamples": 0,
+        "pcmSha256": "e6ab2af204e9ec1e9741c079d1d51514d1bd92b64f310c016c92723652a9966d"
+      },
+      {
+        "part": 8,
+        "inputSha256": "117c90e0f60dff40dcdf8a9c245d206495e7be2fc276071f9600bb2a28fbf401",
+        "original": {
+          "path": "content/audio/raw/hadith-7-cedar-part-08.mp3",
+          "bytes": 616320,
+          "sha256": "d15e9535e85d68c22094f327e855d2b8dd774f74678a72145f2118a223c1644c"
+        },
+        "frames": 1698732,
+        "duration": 38.52,
+        "peak": 22767,
+        "fullScaleSamples": 0,
+        "pcmSha256": "04d3a52339b3aaff21fe57969b1e18dd5ed76550ab8027d0c985683595c6a824"
+      },
+      {
+        "part": 9,
+        "inputSha256": "d7881086d4f77f02c75f3d23ac2b917f25f89f7de25f0933dc9fc85994fe0517",
+        "original": {
+          "path": "content/audio/raw/hadith-7-cedar-part-09.mp3",
+          "bytes": 656256,
+          "sha256": "3cba5fa825f49ccb91fb077048b1d6a5bdcaf072a7d34edd3428c56add4c2c2f"
+        },
+        "frames": 1808805,
+        "duration": 41.01598639455782,
+        "peak": 24057,
+        "fullScaleSamples": 0,
+        "pcmSha256": "39cf5dd1cd7fe49a6b9940405b17e8e154773b326623a784498fb353190f40ea"
+      }
+    ],
+    "totalSeconds": 370.43995464852605,
+    "fullScaleSamples": 0
+  },
+  "checks": {
+    "node": {
+      "passed": 32,
+      "failed": 0,
+      "command": "node --test tests/narration-job.test.mjs tests/narration-segments.test.mjs tests/audio-catalog.test.mjs tests/deployment.test.mjs",
+      "scope": "Resumable job integrity, partial-publication refusal, complete existing narration, and public asset exclusions."
+    },
+    "currentReader": "node scripts/build-audio.mjs --check and node reader/check-content.mjs passed.",
+    "preservation": {
+      "baselineCommit": "e81d2a82ed98c6939cc401a8be9c6140b111e4e2",
+      "byteIdenticalFiles": 356,
+      "scope": "Every tracked reader file plus the existing audio ledger and full narration plan."
+    },
+    "browser": "Generation was observed in the existing OpenAI.fm interface. No new app UI or playback was added; no new iPhone or offline acceptance is claimed.",
+    "packaging": {
+      "publicFiles": 618,
+      "readerRelease": "opening-87a365a83f0b",
+      "unchangedPriorPublicFiles": 616,
+      "changedPriorPublicFiles": [
+        "research/production-readiness.json"
+      ],
+      "newPublicFiles": [
+        "research/hadith-7-generation-verification.json"
+      ],
+      "removedPublicFiles": [],
+      "allPublicFileHashesChecked": true,
+      "generationJobAndRawCandidatesExcluded": true,
+      "scope": "Checked local artifact; clean committed artifact is rebuilt after saving this verification record."
+    }
+  },
+  "modelLifecycle": {
+    "checkedAt": "2026-11-02",
+    "source": "https://developers.openai.com/api/docs/guides/text-to-speech",
+    "model": "gpt-4o-mini-tts",
+    "documentedShutdown": "2027-01-06",
+    "action": "Evaluate the supported replacement with Cedar and the accepted delivery before bulk generation. Existing saved audio is independent of model availability."
+  },
+  "remaining": [
+    "Obtain the complete final segment through the same authorized generation route or a separately evaluated and budgeted API route.",
+    "Verify the current job, preserve the final original, export complete assembly inputs, assemble and bind the complete recording before reader admission.",
+    "Complete exact spoken wording, pronunciation, delivery and nine join reviews.",
+    "Check complete session transitions, separate offline download, and physical iPhone locked-screen playback.",
+    "Continue source intake for Shortening the Prayer while generation access is pending."
+  ]
+}

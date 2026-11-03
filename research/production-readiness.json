@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T01:56:14.174901+00:00",
+  "updatedAt": "2026-11-02",
   "objective": "Production-ready English-first Sahih al-Bukhari reader with the full collection, precise source access, Cedar narration, whole-hadith sessions and dependable offline iPhone use.",
   "status": "in-progress",
   "decisions": {
@@ -56,9 +56,9 @@
     },
     {
       "id": "full-audio",
-      "status": "six-recorded-hadith-with-finite-cross-recording-sessions",
-      "evidence": "content/audio/recordings.json; content/audio/narration-plan.json; scripts/build-audio.mjs; reader/audio/catalog.json; tests/audio-catalog.test.mjs; tests/audio.test.mjs; research/audio-catalog-verification.json; reader/audio/hadith-3-provenance.json; research/hadith-3-audio-verification.json; reader/listening-plan.mjs; research/listening-session-verification.json; research/opening-audio-continuation-verification.json",
-      "remaining": "Generate and review Cedar recordings beyond Hadith 6 and complete iPhone lock-screen/interruption acceptance across separate files. Every currently published entry has an exact complete input script; actual audio covers 1–6. New recordings need wording, pronunciation and delivery review, including the joins in 3 and 5. OpenAI.fm has reached its ten-downloads-per-week demo limit; no Hadith 7 recording is admitted."
+      "status": "six-recorded-hadith-next-complete-recording-awaits-final-segment",
+      "evidence": "content/audio/recordings.json; content/audio/narration-plan.json; scripts/build-audio.mjs; reader/audio/catalog.json; tests/audio-catalog.test.mjs; tests/audio.test.mjs; research/audio-catalog-verification.json; reader/audio/hadith-3-provenance.json; research/hadith-3-audio-verification.json; reader/listening-plan.mjs; research/listening-session-verification.json; research/opening-audio-continuation-verification.json; content/audio/jobs/hadith-7-cedar-v1.json; scripts/narration-job.mjs; tests/narration-job.test.mjs; research/hadith-7-generation-verification.json",
+      "remaining": "Hadith 7 has nine preserved candidate segments, but its tenth and final segment is missing after the demo download limit. The reader still offers only complete recordings 1–6. Resume the exact job or establish a budgeted API route; complete wording, pronunciation, delivery and iPhone checks before any production claim. The model retirement remains a production dependency."
     },
     {
       "id": "offline-at-scale",
@@ -81,7 +81,7 @@
   ],
   "nextActions": [
     "Keep the 699-entry approval candidate and subsequent local previews separate from the approved 632-entry live release until the specific publication is authorized.",
-    "Address the listening gap: prepare complete Cedar narration for the next unrecorded report, Hadith 7, using the accepted Take A delivery and full English honorifics. Continue source intake for Shortening the Prayer after the complete Prostration section. No source hold or independent content gate is bypassed.",
+    "Continue source intake for Shortening the Prayer. Resume Hadith 7 audio from its preserved generation job when the final segment can be obtained through an authorized route. Paid API access and budget are awaiting a user decision; the free-demo limit is not bypassed. Preserve source holds and independent content review.",
     "Preserve the overlapping congregation source as excluded evidence. It must not add duplicate entries or replace selected Adhan wording.",
     "Measure full bilingual loading and memory costs before further substantial expansion; existing scale tests and desktop checks do not establish physical iPhone performance for the full corpus.",
     "Complete the Arabic edition/reference map using the new exact-span inventory and pinned printed-witness findings; keep combined labels distinct from missing or misassigned bodies.",
@@ -191,18 +191,21 @@
     "bookIntroductions": "Implemented for Ghusl: a separate browser link to exact Arabic opening quotations and their print references, with English pending. Hash-bound introduction evidence is retained in the catalog, book pack and offline notes. Numbered sessions and narration remain separate."
   },
   "audioGeneration": {
-    "checkedAt": "2026-10-20",
+    "checkedAt": "2026-11-02",
     "source": "https://www.openai.fm/",
-    "observedLimit": "The demo displayed Download limit reached and ten downloads per week when requesting Hadith 7.",
-    "savedRange": "4–6",
-    "notSaved": "7",
-    "nextAction": "Use the selected Cedar delivery when generation becomes available, or establish an authorized API generation path; never bypass the demo limit. Input preparation is not recorded speech.",
+    "observedLimit": "The demo displayed its ten-downloads-per-week limit before the final Hadith 7 segment could be saved. Nine distinct downloaded originals are preserved; segment 10 is absent.",
+    "savedRange": "Complete admitted recordings 1–6; nine unadmitted candidate segments for 7.",
+    "notSaved": "Hadith 7 segment 10; no complete Hadith 7 recording.",
+    "nextAction": "Resume content/audio/jobs/hadith-7-cedar-v1.json at segment 10 when an authorized generation route is available. Validate against the current source and selected delivery before exporting complete assembly inputs. Do not regenerate or replace the nine preserved originals, bypass the demo limit, or publish a partial report. The user has been asked whether to configure paid API access with an agreed budget or continue text expansion while the demo allowance renews.",
     "modelLifecycle": {
       "source": "https://developers.openai.com/api/docs/guides/text-to-speech",
-      "checkedAt": "2026-10-20",
+      "checkedAt": "2026-11-02",
       "finding": "Official guidance marks gpt-4o-mini-tts deprecated, with shutdown on 6 January 2027, and points to the Realtime API as the replacement workflow. Existing saved recordings do not depend on the live generation model.",
       "action": "Evaluate a supported generation workflow and its available Cedar voice before bulk production. Preserve the selected delivery and require a new quality comparison rather than automatically replacing approved recordings."
-    }
+    },
+    "resumeJob": "content/audio/jobs/hadith-7-cedar-v1.json",
+    "resumeChecks": "node scripts/narration-job.mjs --check content/audio/jobs/hadith-7-cedar-v1.json",
+    "verification": "research/hadith-7-generation-verification.json"
   },
   "ablutionIntake": {
     "status": "all-selected-numbered-entries-admitted-as-personal-prototype",
