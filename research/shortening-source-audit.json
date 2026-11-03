@@ -1,0 +1,2277 @@
+{
+  "schemaVersion": 1,
+  "status": "source-intake-compared-wording-review-pending",
+  "readerAdmission": false,
+  "reviewerKind": "ai",
+  "independentReview": "pending",
+  "scope": "Full source ownership and printed-occurrence comparison, with individually located English witnesses. This is not exhaustive lexical agreement, translation approval or religious certification. Repeated source occurrences and transmission notes are not deduplicated.",
+  "source": {
+    "path": "content/sources/wikisource-shortening/source.html",
+    "id": "wikisource-bukhari-shortening-r278144",
+    "revision": 278144,
+    "sha256": "5ee33b82a4a314200c610937328731858a390684a9e1a14cc7cf764b4e5857f5",
+    "bytes": 131840,
+    "inventorySha256": "cc037ebfffcdb72dcf82f5c317a042c428c675bcb2d91f608969811e849cfb78",
+    "blocks": 66,
+    "codePoints": 10544,
+    "numberedReports": 39,
+    "chapters": 20,
+    "separateContextIds": [
+      "mwFg",
+      "mwIA",
+      "mwRQ",
+      "mwXA",
+      "mwbw",
+      "mwcw"
+    ],
+    "blankIds": [
+      "mweA"
+    ],
+    "arabicChanged": false
+  },
+  "printedComparisons": [
+    {
+      "id": "brill-1862",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+      "bytes": 28290204,
+      "inspectedPdfPages": [
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284
+      ]
+    },
+    {
+      "id": "dar-ibn-kathir-2002",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+      "bytes": 45304371,
+      "inspectedPdfPages": [
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272
+      ]
+    }
+  ],
+  "printedReferenceNamespace": "Dar Ibn Kathir 2002 numbering; historical pages are occurrence matches and do not carry these modern report numbers.",
+  "modernPrintedOccurrencesAccountedFor": 40,
+  "englishComparisons": {
+    "bewley": {
+      "url": "https://aishabewley.org/bukhari10",
+      "sha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+      "bytes": 102307,
+      "locatorPolicy": "Split at HTML paragraph/heading boundaries, decode entities and collapse whitespace within each block; source line breaks do not create blocks. Bound Chapter 24 by Chapter 25. Match labels only at block starts, never prose cross-references. Preserve ordered labels and repeated-label occurrence indices; body spans end at the next label and may include subsequent chapter context. Labels 1054 and the first 1055 locate digital 1053 and 1054; the second 1055 locates digital 1055. Locators are not wording approval.",
+      "locatedBodies": 39
+    },
+    "khan": {
+      "sourcePath": "content/sources/islamhouse-bukhari/source.epub",
+      "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+      "locatedRecords": 35,
+      "mappedArabicReports": 39,
+      "range": "2.20.186–220",
+      "spanPolicy": "Exact code-point spans of the pinned paragraph strings joined by two newlines. Shared English records 202, 207 and 209 are divided at their explicit narrator introductions without changing text.",
+      "allRecordedBodyHashesCheckedAgainstPinnedEpub": true
+    }
+  },
+  "records": [
+    {
+      "reference": 1030,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1030",
+      "chapterId": "chapter-01",
+      "paragraphIds": [
+        "mwBg"
+      ],
+      "arabicSha256": "14a5345befac71dd9e2ea6602fc9bc10fcb63c8c0b0f90d5cf5619611683ac75",
+      "printedReferences": [
+        1080
+      ],
+      "printedPages": {
+        "brill-1862": [
+          276
+        ],
+        "dar-ibn-kathir-2002": [
+          264
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1030",
+          "occurrence": 1,
+          "bodySha256": "253bf670c4f8e7b7e87a567820efec1e451f5a78d7b082b661f255ed545e0edb",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.20.186",
+          "recordSha256": "63f7539fc1fa469c8bbc61ecfc3c518c71b4e982eb4893bcad9ba42bca80b69f",
+          "bodySha256": "a53a27c90c20c9157c02eaa036e955b71404acf690152085bdd57a458e6cf62d",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 266,
+            "sha256": "e76e925500bfdae5cf911ee484917067b4cd2ed83056f510819ea7b4a2bad7ad"
+          },
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "Both occurrences located. Nineteen is repeated in the selected text. Historical print adds an explicit day word and residence phrase; the selected and modern wording is shorter. No travel ruling is inferred."
+    },
+    {
+      "reference": 1031,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1031",
+      "chapterId": "chapter-01",
+      "paragraphIds": [
+        "mwCA"
+      ],
+      "arabicSha256": "2d44d7fb6227ed8127982a4fa840f9385c0e13bd2f8284a78c312598e513d678",
+      "printedReferences": [
+        1081
+      ],
+      "printedPages": {
+        "brill-1862": [
+          276
+        ],
+        "dar-ibn-kathir-2002": [
+          264
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1031",
+          "occurrence": 1,
+          "bodySha256": "1b536444926a91a792bb7c8e280ca04f9f792ef3b847e41daf98910a9980c77d",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The displayed word for two is split typographically."
+          ]
+        },
+        "khan": {
+          "reference": "2.20.187",
+          "recordSha256": "f8b1433eae8eea883a6b396dc02c77f410dd6038b2a4a8dac0dc2868fbee6939",
+          "bodySha256": "a2e0baa11655fd5cc15c6047d597cc349554f3cb2f1cc3243b534b93add49af4",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 263,
+            "sha256": "de68514b56946c521f4567324100311ba4f630ddd376e4ed8751eccd595ac185"
+          },
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The complete route and the question about the stay in Makkah are present; ten remains distinct from nineteen in the preceding report."
+    },
+    {
+      "reference": 1032,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1032",
+      "chapterId": "chapter-02",
+      "paragraphIds": [
+        "mwCw"
+      ],
+      "arabicSha256": "a2528e5ac79d79355168ef814d5e3d4d72614e98cf167e07e8e7d8602cbd8f22",
+      "printedReferences": [
+        1082
+      ],
+      "printedPages": {
+        "brill-1862": [
+          276
+        ],
+        "dar-ibn-kathir-2002": [
+          264
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1032",
+          "occurrence": 1,
+          "bodySha256": "0c0dc22ca8f44c33cf140047dafaa1753f2364d68d7f196e854e7c03ab8481fc",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.20.188",
+          "recordSha256": "4a591efccdb41e765fbe6fe39df754e3c1338f2ece874ac841c629bfefb2b056",
+          "bodySha256": "883496c04bd7cdd1db456360a9bdd20366718147bc0a25286e1a2cfe9cdca4bc",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 229,
+            "sha256": "bb75c3ad1c4ac3339fa744b621855beafe35224774a245b61e8ced520a022f38"
+          },
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The successive Prophet, Abu Bakr, Umar and early Uthman references remain together. Later completion of prayer is not omitted."
+    },
+    {
+      "reference": 1033,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1033",
+      "chapterId": "chapter-02",
+      "paragraphIds": [
+        "mwDQ"
+      ],
+      "arabicSha256": "18d085c762bea068fef27742bdb18ca49c877a85d51a1fd3ec17141d19dce949",
+      "printedReferences": [
+        1083
+      ],
+      "printedPages": {
+        "brill-1862": [
+          276
+        ],
+        "dar-ibn-kathir-2002": [
+          264
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1033",
+          "occurrence": 1,
+          "bodySha256": "d9fb7d6e3b8ffa4b658507727b7a3026fe1e04dcaa62c985d3482ee3553b47e0",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.20.189",
+          "recordSha256": "6ce53b6b30dbe0e5f95c76e3e094a120a311dd98aac05499f4c60b68bd5e30d0",
+          "bodySha256": "58fb26f9946a661311a638672a75f85f586576a20b51bd34775d82385db60745",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 120,
+            "sha256": "66c557598aa9f198ee2ab5f2c9b8d2220ff2d7f501b4d066561b2acebf7b90e6"
+          },
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "Stray English character appears after the Prophet label."
+          ]
+        }
+      },
+      "finding": "The Mina report retains the security wording and its separate Harithah route. This occurrence is not deduplicated with the adjacent Mina reports."
+    },
+    {
+      "reference": 1034,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1034",
+      "chapterId": "chapter-02",
+      "paragraphIds": [
+        "mwDw"
+      ],
+      "arabicSha256": "5ff4f369f150d0417df14d189049c4fd1de90d2331585cfa63120e97fe7363a1",
+      "printedReferences": [
+        1084
+      ],
+      "printedPages": {
+        "brill-1862": [
+          276,
+          277
+        ],
+        "dar-ibn-kathir-2002": [
+          264
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1034",
+          "occurrence": 1,
+          "bodySha256": "74bf650cabe1457eb25e550a9a2ce3f5d1a8627e86e6bf41bd278adb679e1c9d",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.20.190",
+          "recordSha256": "e84e8192ea69c017d045613fbf2f43ad515b32e94bb50d6a7718d789f07481db",
+          "bodySha256": "a313e3a44df563c6fcae912941f1cd80cf952eed9c66246a532dd82f4700dd4e",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 437,
+            "sha256": "490fd20a1256ee4c34ff6b650116a469a65fabdb609b29ed36f0b62756477432"
+          },
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The complete Ibn Masud reaction and his concluding wish are retained. The full route and each repeated two-unit statement require individual translation."
+    },
+    {
+      "reference": 1035,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1035",
+      "chapterId": "chapter-03",
+      "paragraphIds": [
+        "mwEw"
+      ],
+      "arabicSha256": "1daf54132e6b8480ed1977e36f10e003780c55bd7058fdd4d7133152883c4702",
+      "printedReferences": [
+        1085
+      ],
+      "printedPages": {
+        "brill-1862": [
+          277
+        ],
+        "dar-ibn-kathir-2002": [
+          265
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1035",
+          "occurrence": 1,
+          "bodySha256": "bcfa923b35435258844793b6ab7937491e7b67b6941f13cba6f266443f52cfdb",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The closing corroboration is abridged and does not name Ata."
+          ]
+        },
+        "khan": {
+          "reference": "2.20.191",
+          "recordSha256": "18a01d4ca905bb9abfe23b613a7b898ae41ee28e40fe453abbd8a72903c113fa",
+          "bodySha256": "718147d953441f1f27ef85ae8bfd1e8d823f9fcabd1a24c34dd7a6275e41db11",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 356,
+            "sha256": "e1bfc223e08c5cfc7edead9d5e491326a24908d6f022f905e3395f115e50af7f"
+          },
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "Extraneous numeral occurs inside the parenthetical talbiyah explanation."
+          ]
+        }
+      },
+      "finding": "The fourth-morning report ends with Ata from Jabir corroboration; this is part of the selected report rather than a chapter note."
+    },
+    {
+      "reference": 1036,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1036",
+      "chapterId": "chapter-04",
+      "paragraphIds": [
+        "mwGA"
+      ],
+      "arabicSha256": "06ca9c4a5fec8a9234cdfff1f8385b8acc2c21dcf181778327001ff6fd35d42d",
+      "printedReferences": [
+        1086
+      ],
+      "printedPages": {
+        "brill-1862": [
+          277
+        ],
+        "dar-ibn-kathir-2002": [
+          265
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1036",
+          "occurrence": 1,
+          "bodySha256": "7abba6644daba2c82f4532b6a9d3e3bd1e68d87c004a087aabed54f9cc595b72",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.20.192",
+          "recordSha256": "4b81c3fd42e928558bd66711a62793fb6605a7976575bc16820fc4dbb2e19ec5",
+          "bodySha256": "7cfd78a51f811f20b3394fdd75bef7bdda5018e41b55dffa3944e70358e4b4d9",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 232,
+            "sha256": "9cf106da331f3254262b4394b9a0bcd98ddde7790bdfa3599644af07367eec2e"
+          },
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "Adds a more-than qualification not present in the selected three-day wording."
+          ]
+        }
+      },
+      "finding": "The first travel report includes Ishaq addressing Abu Usamah. The Arabic specifies three days without the added more-than qualification in the Khan comparison."
+    },
+    {
+      "reference": 1037,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1037",
+      "chapterId": "chapter-04",
+      "paragraphIds": [
+        "mwGg"
+      ],
+      "arabicSha256": "3b17ea68303a53b0ff19580e04e616e9b7433f2aded0f0f3e04c02d6b9459f03",
+      "printedReferences": [
+        1087
+      ],
+      "printedPages": {
+        "brill-1862": [
+          277
+        ],
+        "dar-ibn-kathir-2002": [
+          265
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1037",
+          "occurrence": 1,
+          "bodySha256": "4f85d0fc25a755905427d9aae9bd08bd108a38cef69f644e36fa4a9f8999a236",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "Cross-reference-only report body; the closing corroboration is abridged."
+          ]
+        },
+        "khan": {
+          "reference": "2.20.193",
+          "recordSha256": "66be1b69c8a9cd47334bf7f6afdee6f0a8933e59e587e4630227dd843084b7fd",
+          "bodySha256": "fae99eb565a96c51008cb6edf11353274bc95f04dc670e99667532ebd2e2a1e4",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 118,
+            "sha256": "8c2fcfc7a188eec193c9d98204775122ba53fc2d9cc98b06c2373133c0b574a8"
+          },
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "Adds a more-than qualification and omits the complete closing corroboration."
+          ]
+        }
+      },
+      "finding": "The separate Musaddad route and complete Ahmad/Ibn al-Mubarak corroboration remain. Bewley uses a cross-reference instead of giving a fresh report body."
+    },
+    {
+      "reference": 1038,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1038",
+      "chapterId": "chapter-04",
+      "paragraphIds": [
+        "mwHQ"
+      ],
+      "arabicSha256": "24e9da41e2792cf69888514b1c5ef0b88f82b019a63bcf66927f78a9470b94e6",
+      "printedReferences": [
+        1088
+      ],
+      "printedPages": {
+        "brill-1862": [
+          277
+        ],
+        "dar-ibn-kathir-2002": [
+          265
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1038",
+          "occurrence": 1,
+          "bodySha256": "52a917131f1a6826f72c8e7f6f40252c97fca0887c18ff5d464b3281f09c00cb",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The closing note names Malik but omits the other two selected corroborators."
+          ]
+        },
+        "khan": {
+          "reference": "2.20.194",
+          "recordSha256": "4f3f37e3b4f338de0a4c2426255a14f6f3fc369ad1fe24de90f6eee88b4efff9",
+          "bodySha256": "2aaf8e1950e81cb6ac3f1d18f6f2a850b084a60b7d4cc1573400a5c65d770305",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 181,
+            "sha256": "af8fd86d18515ff751ce7c66449dca34110ff40ed8a04ed6c6a331c830d15167"
+          },
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "Closing corroborating routes are omitted."
+          ]
+        }
+      },
+      "finding": "The one-day-and-night report and all three closing corroborating transmitters remain. Do not silently substitute a commentary definition for the selected term."
+    },
+    {
+      "reference": 1039,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1039",
+      "chapterId": "chapter-05",
+      "paragraphIds": [
+        "mwIQ"
+      ],
+      "arabicSha256": "d1dba228409fa76a91390ac0c205131f52383909a84a8f39ea320c52831bec67",
+      "printedReferences": [
+        1089
+      ],
+      "printedPages": {
+        "brill-1862": [
+          277
+        ],
+        "dar-ibn-kathir-2002": [
+          265
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1039",
+          "occurrence": 1,
+          "bodySha256": "e4a9ddc184d31f3cb0992b44ae370a81efd425fef7c3ec1762b821cf6ce7799a",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The explicit Asr prayer name is absent from this English body."
+          ]
+        },
+        "khan": {
+          "reference": "2.20.195",
+          "recordSha256": "6b249e7c4bcc85bb5907deef3251e2edb852d1992fafeae4dbdfa6b44850198c",
+          "bodySha256": "b4991de970b10149c2d02a700bb06bdaffa42d97057ad11c36a7cd38ddad08a6",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 164,
+            "sha256": "4dc419db7add6722d73201d6959bac260367a197c3a4ae3d4c4caad311b63408"
+          },
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The opening first-person pronoun is missing; Asr is supplied parenthetically."
+          ]
+        }
+      },
+      "finding": "Both reports located, but the modern printed main text lacks the explicit Asr name found in the selected source and the historical print. Both readings are recorded."
+    },
+    {
+      "reference": 1040,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1040",
+      "chapterId": "chapter-05",
+      "paragraphIds": [
+        "mwIw"
+      ],
+      "arabicSha256": "d17f18d90af29b959f1684d3e0258e0c4336852fe6847a3532d13d3495888a0a",
+      "printedReferences": [
+        1090
+      ],
+      "printedPages": {
+        "brill-1862": [
+          277,
+          278
+        ],
+        "dar-ibn-kathir-2002": [
+          266
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1040",
+          "occurrence": 1,
+          "bodySha256": "97c943965e6d5dcb5297a4997cc33a689efed80c7a076610fc94ac67fc62bb3d",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.20.196",
+          "recordSha256": "1fc939a0d7a6bfeeece6c7da103c96e597f4fdc6234dd752aeb84b190ae0030f",
+          "bodySha256": "5350764e3229fa8f3a46ea27e3b31cbcb3572f8dd8e8cc062e63b2ff509ce4af",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 317,
+            "sha256": "edd94874b88823ff9e7e2093e09ac89cf8141f47a0cfd7fa4f6fa6c89130c2df"
+          },
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The Aishah report includes the subsequent al-Zuhri/Urwah exchange. Interpretation is attributed to that exchange and must not be replaced by a new explanation."
+    },
+    {
+      "reference": 1041,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1041",
+      "chapterId": "chapter-06",
+      "paragraphIds": [
+        "mwJQ"
+      ],
+      "arabicSha256": "6f0cb50ffcbd5537714a52539a2e358a172fb1bdba872a80c7c26d093e5952fb",
+      "printedReferences": [
+        1091,
+        1092
+      ],
+      "printedPages": {
+        "brill-1862": [
+          278
+        ],
+        "dar-ibn-kathir-2002": [
+          266
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1041",
+          "occurrence": 1,
+          "bodySha256": "f5779cbcbaf9d3b338552e23a2973bc224446e4c46195f4c449e79d2592cfa99",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "A death-or-dying gloss for Safiyyah must not replace the selected alarm wording or its uncertainty."
+          ]
+        },
+        "khan": {
+          "reference": "2.20.197",
+          "recordSha256": "bc02771b572b7d335bee958c9613eb7f5b6d79b6d10ac977adac1b6afd840ea0",
+          "bodySha256": "642c01479afc4ffcdbeca65b0984516fa7c535382af1c2cb142adf1a380adaf9",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 1193,
+            "sha256": "13a8b0d00bb0ae497e7b90cd61d27b592544e5395d5d5833a12ba8a162d81641"
+          },
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "States that Safiyyah died; the selected Arabic describes an urgent call without that explicit assertion."
+          ]
+        }
+      },
+      "finding": "The complete digital paragraph spans modern references 1091 and 1092. Its al-Layth addition, repeated exchange, prayer sequence and closing night-prayer clause remain; no missing report is established."
+    },
+    {
+      "reference": 1042,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1042",
+      "chapterId": "chapter-07",
+      "paragraphIds": [
+        "mwKg"
+      ],
+      "arabicSha256": "112afff4aac17cf1c88be29fa901936f96199fd7763aaff02af4a1253fa49107",
+      "printedReferences": [
+        1093
+      ],
+      "printedPages": {
+        "brill-1862": [
+          278
+        ],
+        "dar-ibn-kathir-2002": [
+          266
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1042",
+          "occurrence": 1,
+          "bodySha256": "97f847f38830b5f7a8d35352f0c73379daa3c9f99c8d4c48ed5bc74ba89358c7",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.20.198",
+          "recordSha256": "0b15f437a25c269015a312752f1364f25a9ec7a3a56726db8f3f268abfae3962",
+          "bodySha256": "29ce017d9c769a966051a96eef43a1727971ec3f6351145e7924f7e6a97a075b",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 155,
+            "sha256": "897344f2888a9f8c895dbe691234bf103138867420f96b5672e61e8a07d31815"
+          },
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The Amir ibn Rabiah route and mounted-prayer report are separately located in both prints."
+    },
+    {
+      "reference": 1043,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1043",
+      "chapterId": "chapter-07",
+      "paragraphIds": [
+        "mwLA"
+      ],
+      "arabicSha256": "cee46f49aedeb4059647e54b9ebe96c31b3bbe26e3ca7c9e939b2ca933874a32",
+      "printedReferences": [
+        1094
+      ],
+      "printedPages": {
+        "brill-1862": [
+          278
+        ],
+        "dar-ibn-kathir-2002": [
+          266
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1043",
+          "occurrence": 1,
+          "bodySha256": "c555c9575db0862ac73b74b79de079dcff8aa05ed9861df8666a9d37f93ede53",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.20.199",
+          "recordSha256": "42e627e2f5f7196d491ac64e2ce5bf5160869ffecd292fb688337caaf5468b51",
+          "bodySha256": "07fcb7eb8385296fe4c708931f65d600f7a49d93d4eaf55019f189e6854b93cc",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 134,
+            "sha256": "06b5b49eb7771f6eb8cf439d5075c35301eb8f1e8bd4e1fa083f746ea7d01c91"
+          },
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The Jabir route retains voluntary prayer and the direction wording. It is separate from the preceding mounted-prayer occurrence."
+    },
+    {
+      "reference": 1044,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1044",
+      "chapterId": "chapter-07",
+      "paragraphIds": [
+        "mwLg"
+      ],
+      "arabicSha256": "b96048f1699e76e6d60409f5f5037dbc9d6b19e01c5a3f2c8e689d5d857d7d37",
+      "printedReferences": [
+        1095
+      ],
+      "printedPages": {
+        "brill-1862": [
+          278
+        ],
+        "dar-ibn-kathir-2002": [
+          266
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1044",
+          "occurrence": 1,
+          "bodySha256": "a2dbbbe4077b1cc3803ddfa5d7e9f7ae771fead8f7b9d90e5f99aa9b76fc0b7f",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.20.200",
+          "recordSha256": "eb5712064f6d4fa1e9e1782fff1eb42369c07c40d83e925b20150b3b975cf88e",
+          "bodySha256": "3184ebe89a8c73c27ceb097e0283c8c271cd0c156a7ce30bb3d86cf53059402a",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 149,
+            "sha256": "d80289cda1f8611a7be527cba72affbed9631fe9e065c01eaa693a6e2f73b407"
+          },
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The Nafi account includes Ibn Umar praying and performing Witr on his mount and his report of the Prophet doing so."
+    },
+    {
+      "reference": 1045,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1045",
+      "chapterId": "chapter-08",
+      "paragraphIds": [
+        "mwMQ"
+      ],
+      "arabicSha256": "32621945a4ccafa010508d663ceecf615c1f1ae278c34df07b0e953970ab5923",
+      "printedReferences": [
+        1096
+      ],
+      "printedPages": {
+        "brill-1862": [
+          278,
+          279
+        ],
+        "dar-ibn-kathir-2002": [
+          267
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1045",
+          "occurrence": 1,
+          "bodySha256": "b746eedb1459676d0f6b0946ad32980c42039b44b559c855b4ee0eaa3dc34e64",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.20.201",
+          "recordSha256": "a0aff56156c26959be129a2c19505880f810937db1a74c30510445efa5b63fd1",
+          "bodySha256": "85f8ece26a150cb9847131a2c5c53a31f8fcc1b3ae137704df74c7d5480d66be",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 188,
+            "sha256": "1952b3443ca5322d5a16706afa5ee33d9bcdf3be153b0ae7a69b78f3c87baf87"
+          },
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The separate Ibn Dinar route retains journey, direction and gesture wording; it is not merged into adjacent mounted-prayer reports."
+    },
+    {
+      "reference": 1046,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1046",
+      "chapterId": "chapter-09",
+      "paragraphIds": [
+        "mwNA"
+      ],
+      "arabicSha256": "c5c2028c9233b234ca9ffd5834231f9f88dd7583817945f34e3766773c167d96",
+      "printedReferences": [
+        1097
+      ],
+      "printedPages": {
+        "brill-1862": [
+          279
+        ],
+        "dar-ibn-kathir-2002": [
+          267
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1046",
+          "occurrence": 1,
+          "bodySha256": "f677692a8277b6a43b0636ed489c640730af0368905f6cf3cc8273239785eba1",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.20.202",
+          "recordSha256": "21d7bbdf387b32d82d8e55cf94aaaeabdfb37840715fee549b97cdf01fba10f1",
+          "bodySha256": "a2865584e9d92ac1ef801ee9ef5d96a168dd0ca81275acc410bc85dbdff62c11",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 201,
+            "sha256": "7b95a44ef9ad041bbdd1bf2c0fa2fe0986f8f032aad722d1a103e03408c3ffeb"
+          },
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The full Amir ibn Rabiah report retains the explicit exception for obligatory prayer. Khan combines this with the next Salim report, so exact spans distinguish them."
+    },
+    {
+      "reference": 1047,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1047",
+      "chapterId": "chapter-09",
+      "paragraphIds": [
+        "mwNw"
+      ],
+      "arabicSha256": "9328d1599f22fce94333b247fc972f220cc751d904f97d045051224ea4acdde1",
+      "printedReferences": [
+        1098
+      ],
+      "printedPages": {
+        "brill-1862": [
+          279
+        ],
+        "dar-ibn-kathir-2002": [
+          267
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1047",
+          "occurrence": 1,
+          "bodySha256": "397288f716e6a4069cb353d412838fd4e471d0204dfc2cb21bcfef12c923bff4",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.20.202",
+          "recordSha256": "21d7bbdf387b32d82d8e55cf94aaaeabdfb37840715fee549b97cdf01fba10f1",
+          "bodySha256": "a2865584e9d92ac1ef801ee9ef5d96a168dd0ca81275acc410bc85dbdff62c11",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 201,
+            "end": 559,
+            "sha256": "dd42b829982ba53a8eef752022edcff6f4bfc63cdfa66b4191a643a22cd02e9a"
+          },
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The al-Layth/Yunus route begins a separately numbered digital report. Salim framing, Ibn Umar attribution and obligatory-prayer exception all remain."
+    },
+    {
+      "reference": 1048,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1048",
+      "chapterId": "chapter-09",
+      "paragraphIds": [
+        "mwOQ"
+      ],
+      "arabicSha256": "a5fd6ccb9944462aab857f561a4d022e0deeadf1d31bdb4ff8a985f5bfc523d4",
+      "printedReferences": [
+        1099
+      ],
+      "printedPages": {
+        "brill-1862": [
+          279
+        ],
+        "dar-ibn-kathir-2002": [
+          267
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1048",
+          "occurrence": 1,
+          "bodySha256": "d60e486414363565865826f3be673fb4917282b95b504f0c170027b3a5732cd3",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.20.203",
+          "recordSha256": "a18c3f8d45afa16330befd9ac944cd940f2846046f9926fd9c08bd4e197a3898",
+          "bodySha256": "70cf2af3e94cf56ffc3bdff72786a1951eb2be0e46fd13a981e0fc2203c3ac34",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 190,
+            "sha256": "aa8cb7340dc05ebc5f3037d74b189cf033acb82f1667347b5ee684aeb80a22eb"
+          },
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The Jabir report retains eastward direction and dismounting/facing the qiblah for obligatory prayer."
+    },
+    {
+      "reference": 1049,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1049",
+      "chapterId": "chapter-10",
+      "paragraphIds": [
+        "mwPA"
+      ],
+      "arabicSha256": "27408dddc900fdd175cfc0bf2d28e0b85b7e5b15b6fb8d223b2b7cc8875b8b3a",
+      "printedReferences": [
+        1100
+      ],
+      "printedPages": {
+        "brill-1862": [
+          279
+        ],
+        "dar-ibn-kathir-2002": [
+          267
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1049",
+          "occurrence": 1,
+          "bodySha256": "590bb986d893b27d748a1bd9679136b1dc65fc81ae3dbf1e5db86bc6d35e7a2c",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The closing Ibn Tahman route is abridged."
+          ]
+        },
+        "khan": {
+          "reference": "2.20.204",
+          "recordSha256": "1ce75692367d4878889a74125108c1d0bf53f7e5b8caf01c11ecd11585ff4966",
+          "bodySha256": "db44bdfe3e8eda5ed690d9da2d6469636b3c39311505d745bd7a47f6332c3d37",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 415,
+            "sha256": "cd9b5c9aa5420be0670a3649daa4b612749a47b68ac95e47b8b5d2f660e339cd"
+          },
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "Closing Ibn Tahman route is omitted."
+          ]
+        }
+      },
+      "finding": "The Ain al-Tamr account retains the donkey, left-of-qiblah clarification and complete closing Ibn Tahman route."
+    },
+    {
+      "reference": 1050,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1050",
+      "chapterId": "chapter-11",
+      "paragraphIds": [
+        "mwQA"
+      ],
+      "arabicSha256": "4e7d1d66e89992bf548956ee91382d1bdab89dc14d1ccb3c365ab4541b18b6c3",
+      "printedReferences": [
+        1101
+      ],
+      "printedPages": {
+        "brill-1862": [
+          279,
+          280
+        ],
+        "dar-ibn-kathir-2002": [
+          267,
+          268
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1050",
+          "occurrence": 1,
+          "bodySha256": "b88e83e078dca30921df4086bfc6046270ae5043deeb4324e65c0c3ab089792f",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.20.205",
+          "recordSha256": "17071f16b26fd930d751381483a90be7f251170a8270b298cd6957c5bf255201",
+          "bodySha256": "0c09036fa3afb4c330a18ea3c1ebcd51bd7f73a0b50cbab6b7c2b3ea807320eb",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 240,
+            "sha256": "60da62795548aba7ce5bbf4fb071066fc97f0db760157fbf5719fe65841bf2de"
+          },
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The Hafs account includes the statement about not seeing voluntary prayer and the Quran quotation. Both remain attributed as selected."
+    },
+    {
+      "reference": 1051,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1051",
+      "chapterId": "chapter-11",
+      "paragraphIds": [
+        "mwQg"
+      ],
+      "arabicSha256": "ac147b0836d2e1d0ef1106f6298fa0f34e38abb85275706b7ff24d98ac7f96f6",
+      "printedReferences": [
+        1102
+      ],
+      "printedPages": {
+        "brill-1862": [
+          280
+        ],
+        "dar-ibn-kathir-2002": [
+          268
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1051",
+          "occurrence": 1,
+          "bodySha256": "329df2cb2c9746e684b8589ed3e50eb03faa224d7a2c7330d3499559ea0ebd3d",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.20.206",
+          "recordSha256": "50a722d696d3873527e231cc5b162d7483e3cd828c99a5ac7177bbe73eceace3",
+          "bodySha256": "88a8f9448ace3142670427fbef8d858d529a7f50c2bbae401948fa016df21cad",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 163,
+            "sha256": "05bc913bb3bc05af9b917b20279723da1a7800e6da58169b71eafc223bd5afb7"
+          },
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The separate Ibn Umar account retains Abu Bakr, Umar, Uthman and the final honorific; it is not deduplicated with 1050."
+    },
+    {
+      "reference": 1052,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1052",
+      "chapterId": "chapter-12",
+      "paragraphIds": [
+        "mwRw"
+      ],
+      "arabicSha256": "bd323efc430270dcd9d159f22805c06cb2f73cee3cc873606bdd33f76b8ffcfa",
+      "printedReferences": [
+        1103
+      ],
+      "printedPages": {
+        "brill-1862": [
+          280
+        ],
+        "dar-ibn-kathir-2002": [
+          268
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1052",
+          "occurrence": 1,
+          "bodySha256": "220e5c294a1a4cbe4f65f53b087717854f62cdd351ea3fced4e1eb1b7727e21e",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.20.207",
+          "recordSha256": "118cb23ed055f37712ab2a83121541127c08545f11b9b1281dd0a943281fd85f",
+          "bodySha256": "af17f581df26451bda185a43be667b88a173779196bbfde9487acc42f07830f5",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 326,
+            "sha256": "6c49c41ca480d2cb64310d31b9142825516f126c4c56aa64dc82d39d3140c8ca"
+          },
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The Umm Hani report preserves the limited witness claim, eight units and completeness of bowing/prostration. Khan appends the next report in the same body."
+    },
+    {
+      "reference": 1053,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1053",
+      "chapterId": "chapter-12",
+      "paragraphIds": [
+        "mwSg"
+      ],
+      "arabicSha256": "f0e028fcac53e5339d20808e73a5ec493e588d50cfecb21e0c5643c03a9fbdf8",
+      "printedReferences": [
+        1104
+      ],
+      "printedPages": {
+        "brill-1862": [
+          280
+        ],
+        "dar-ibn-kathir-2002": [
+          268
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1054",
+          "occurrence": 1,
+          "bodySha256": "d2fc5e8d1c23d1841be95a618be6bac2fd990a4cae4eeb9db5c24b558e01ea3f",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "Body displayed under 1054 rather than selected 1053."
+          ]
+        },
+        "khan": {
+          "reference": "2.20.207",
+          "recordSha256": "118cb23ed055f37712ab2a83121541127c08545f11b9b1281dd0a943281fd85f",
+          "bodySha256": "af17f581df26451bda185a43be667b88a173779196bbfde9487acc42f07830f5",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 326,
+            "end": 521,
+            "sha256": "4f8a8e0ec7679667813b080625ebaf2d9857cf0ea6d758ac5ef02460fbeb04a9"
+          },
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "This Amir report has its own digital number and al-Layth/Yunus route. Bewley labels its body 1054; Khan places it after Umm Hani inside 2.20.207."
+    },
+    {
+      "reference": 1054,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1054",
+      "chapterId": "chapter-12",
+      "paragraphIds": [
+        "mwTA"
+      ],
+      "arabicSha256": "6ceb7cdb5c155e479d642c15c133924f1d7142ef0516af013ef706214a72b7de",
+      "printedReferences": [
+        1105
+      ],
+      "printedPages": {
+        "brill-1862": [
+          280
+        ],
+        "dar-ibn-kathir-2002": [
+          268
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1055",
+          "occurrence": 1,
+          "bodySha256": "acafcb9ce79f271b96bc92194dfb6a6de84570f8fb2fea49d1a7dd2396ee181c",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "Body displayed under the first occurrence of 1055."
+          ]
+        },
+        "khan": {
+          "reference": "2.20.208",
+          "recordSha256": "f89810e90b21c39ac39515b37c6e776047b355814c15085052e5e7d402755bf4",
+          "bodySha256": "987e68f0904244fb26fa805024bef4b43de945c967ea36874dff4acb4014e617",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 188,
+            "sha256": "30bbb43a1197716718bff67cfcb986e2e3e800d250109ed778178ff739945e25"
+          },
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The Ibn Umar report is displayed as the first 1055 occurrence in Bewley. Body identity, not the displayed number alone, establishes the comparison."
+    },
+    {
+      "reference": 1055,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1055",
+      "chapterId": "chapter-13",
+      "paragraphIds": [
+        "mwTw"
+      ],
+      "arabicSha256": "4e78769b557d7c47f6b54460fb40db61595c177db5ab521b19ed6b1dc5fe3827",
+      "printedReferences": [
+        1106
+      ],
+      "printedPages": {
+        "brill-1862": [
+          280
+        ],
+        "dar-ibn-kathir-2002": [
+          268
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1055",
+          "occurrence": 2,
+          "bodySha256": "934b611caf60a53b972ce720f5f20557b4a40766c09fe37b3f5a0dd4ade70f1c",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The page repeats label 1055; this is its second occurrence."
+          ]
+        },
+        "khan": {
+          "reference": "2.20.209",
+          "recordSha256": "908e3f63d26b977060b09aceaaaf97ecfa5295241a2c08eda4d640714cda56dd",
+          "bodySha256": "6eae68580cee396da032e91806ea53682d3db5282983284e0e5452d2454d0951",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 135,
+            "sha256": "5291902d5d7eae50441ac08113dc9590ef28847d69200379b964575c1ca38c7c"
+          },
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The Salim-from-his-father report is the second Bewley 1055 occurrence and the first report within Khan 2.20.209."
+    },
+    {
+      "reference": 1056,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1056",
+      "chapterId": "chapter-13",
+      "paragraphIds": [
+        "mwUQ"
+      ],
+      "arabicSha256": "3e3b7ae44220a9ea1cca8da1514c478079640e229053233261b4343e6aace456",
+      "printedReferences": [
+        1107
+      ],
+      "printedPages": {
+        "brill-1862": [
+          280
+        ],
+        "dar-ibn-kathir-2002": [
+          268
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1056",
+          "occurrence": 1,
+          "bodySha256": "1db8d66394a92a55c4a7bf1d2c6fd9b86064c662879a66d3117f04e78a4a1980",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.20.209",
+          "recordSha256": "908e3f63d26b977060b09aceaaaf97ecfa5295241a2c08eda4d640714cda56dd",
+          "bodySha256": "6eae68580cee396da032e91806ea53682d3db5282983284e0e5452d2454d0951",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 135,
+            "end": 299,
+            "sha256": "2a0cf077a2dbd3d443db0774517c6dc455c2db2e339d5a97b5dde3b9cfe66f12"
+          },
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The Ibrahim ibn Tahman/Husayn/Ikrimah route and Ibn Abbas report are distinct; Khan includes this as the middle report in 2.20.209."
+    },
+    {
+      "reference": 1057,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1057",
+      "chapterId": "chapter-13",
+      "paragraphIds": [
+        "mwUw"
+      ],
+      "arabicSha256": "f24b4d4ec4a453abe9d248a34e6399c3268d33044ed93b2982db5adcc80ddeab",
+      "printedReferences": [
+        1108
+      ],
+      "printedPages": {
+        "brill-1862": [
+          280,
+          281
+        ],
+        "dar-ibn-kathir-2002": [
+          268,
+          269
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1057",
+          "occurrence": 1,
+          "bodySha256": "636c13e2003649a4dbcfd63849fc25e0b40161c1392fd2e3eff6269ba1719ca1",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The closing corroboration attributes it to Hafs instead of retaining the selected two corroborators."
+          ]
+        },
+        "khan": {
+          "reference": "2.20.209",
+          "recordSha256": "908e3f63d26b977060b09aceaaaf97ecfa5295241a2c08eda4d640714cda56dd",
+          "bodySha256": "6eae68580cee396da032e91806ea53682d3db5282983284e0e5452d2454d0951",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 299,
+            "end": 407,
+            "sha256": "0d7e0ec9233afe0e5c182d00bc864e7c7954faa606bd2458a1d729ebce4d4feb"
+          },
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "Closing corroborating transmitters are omitted."
+          ]
+        }
+      },
+      "finding": "The chain explicitly continues from Husayn in the preceding report. Its Ali ibn al-Mubarak and Harb corroboration remains and must not be attributed to Hafs alone."
+    },
+    {
+      "reference": 1058,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1058",
+      "chapterId": "chapter-14",
+      "paragraphIds": [
+        "mwVw"
+      ],
+      "arabicSha256": "67a179111579b9756d0a982c0074facf89fac68f0499741533d81185a1659c39",
+      "printedReferences": [
+        1109
+      ],
+      "printedPages": {
+        "brill-1862": [
+          281
+        ],
+        "dar-ibn-kathir-2002": [
+          269
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1058",
+          "occurrence": 1,
+          "bodySha256": "2641689bced58eda9d4d1eaffa766063e4ccb800adc8e666711ca95efae84fbd",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.20.210",
+          "recordSha256": "aee7a812bc57cbc300ad855152201ff27f6139f03bd6fd34f69dd9836e845713",
+          "bodySha256": "ebf8aab554307957c3db8d23d2ca5a4caccf2ba8015589d6bbbf0327a1dc687c",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 691,
+            "sha256": "a77e70463d4303f8ba2b7a77d2adfd8ce6d5bdf37cd1805f82298ddabdf3549f"
+          },
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The full Salim/Ibn Umar report preserves the separate iqamah, three then two units, and the negative clauses about intervening and subsequent voluntary prayer."
+    },
+    {
+      "reference": 1059,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1059",
+      "chapterId": "chapter-14",
+      "paragraphIds": [
+        "mwWQ"
+      ],
+      "arabicSha256": "67fbb7ac7c5210f2eb67c2719952b086d5a0e3eaaebe59b81ab560ab6ca2e9b7",
+      "printedReferences": [
+        1110
+      ],
+      "printedPages": {
+        "brill-1862": [
+          281
+        ],
+        "dar-ibn-kathir-2002": [
+          269
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1059",
+          "occurrence": 1,
+          "bodySha256": "c49fcdb82971705192bddc9132319d3fd90347a2fbef463bac092dc1f4bc2165",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.20.211",
+          "recordSha256": "4c81acfc6a6f243e4e4daebeb5212249417ae8ae9e51f6cd75da59d70221b103",
+          "bodySha256": "bf69d8fd182ecdaec5c3dd361f9a5ed47bc2b9fd39f999c2a80d8841533b39ae",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 119,
+            "sha256": "1da14cf1509dde280a24a06b5e14f5df02a27811ab87555464775369b9dd67ca"
+          },
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The separate Ishaq/Abd al-Samad/Harb route and clarification naming Maghrib and Isha are retained."
+    },
+    {
+      "reference": 1060,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1060",
+      "chapterId": "chapter-15",
+      "paragraphIds": [
+        "mwXg"
+      ],
+      "arabicSha256": "eb69625cbd7b07564debd17cd31a336f5ecfed3ab79df12cccae879a01218abe",
+      "printedReferences": [
+        1111
+      ],
+      "printedPages": {
+        "brill-1862": [
+          281
+        ],
+        "dar-ibn-kathir-2002": [
+          269
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1060",
+          "occurrence": 1,
+          "bodySha256": "31ed465f153e760e0439a730a39d2cf6f0caff4bc4101b602e4e1f4b2bc2868b",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.20.212",
+          "recordSha256": "8253deaa143674f0b88d193a5a3afd1cec350030266ce4721a2e64106bc817d5",
+          "bodySha256": "d68cb4c7b3d2f7569475ceff81ae6c2ad45556cee82d05db7010d05e8999822d",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 264,
+            "sha256": "d48e17953d06365d9d2fd0548a5a61e6f2d8c0c3e443b87382dc380e4570094f"
+          },
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The first Anas timing report is separately located. Historical wording around the combining clause needs its own lexical review; occurrence matching is not identical wording."
+    },
+    {
+      "reference": 1061,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1061",
+      "chapterId": "chapter-16",
+      "paragraphIds": [
+        "mwYQ"
+      ],
+      "arabicSha256": "31bd46e89965f6d00502097fe15f51e713285afd3dabdaa04def564a7b7be07c",
+      "printedReferences": [
+        1112
+      ],
+      "printedPages": {
+        "brill-1862": [
+          281,
+          282
+        ],
+        "dar-ibn-kathir-2002": [
+          269
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1061",
+          "occurrence": 1,
+          "bodySha256": "9ba7b3a2d2385690b1ee25c84e8a0f87f8509ddd3f731a583718da14eb29ce38",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.20.213",
+          "recordSha256": "1fe40492d63b37b885778567263a3b5bdbd8a0668e610f6291eb8c32b8febf07",
+          "bodySha256": "79d4f4805d52736a0a7065cf588170d640cf9cbc08cc1f038dc57fe70b862511",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 325,
+            "sha256": "3b2d1b937b19164446d4170c18c900ff929fc6fa92cced2246585328bac01806"
+          },
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The second Anas timing report is not merged with 1060; its dismounting and pre-departure wording remain as selected."
+    },
+    {
+      "reference": 1062,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1062",
+      "chapterId": "chapter-17",
+      "paragraphIds": [
+        "mwZA"
+      ],
+      "arabicSha256": "d59354944cc35c3d585c57aff6864df81d64c969282be35d973f92762d82cd8d",
+      "printedReferences": [
+        1113
+      ],
+      "printedPages": {
+        "brill-1862": [
+          282
+        ],
+        "dar-ibn-kathir-2002": [
+          270
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1062",
+          "occurrence": 1,
+          "bodySha256": "77b0ae838acf72fe2010dd614c03e643af60919b76a6f9a8e3dc7917af95e052",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.20.214",
+          "recordSha256": "a88baa21718a0d9ea53c5d0c082d667ca4ece9473d2452724162063f4a27a22b",
+          "bodySha256": "93b7664a7c4f360bf1e6d3476ed6bf4f2871929268a0f86578266a7ab51a96e9",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 329,
+            "sha256": "0481529c7a93ec29306d10050dfbf95357f5c708b99f59f08e2f4bc8bd2a7ffc"
+          },
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The Aishah illness report retains the gesture to sit and the complete selected closing instructions."
+    },
+    {
+      "reference": 1063,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1063",
+      "chapterId": "chapter-17",
+      "paragraphIds": [
+        "mwZg"
+      ],
+      "arabicSha256": "f46f29226fb28c42460598f9a2eea604a73035c7e1665253c203999b14abed6b",
+      "printedReferences": [
+        1114
+      ],
+      "printedPages": {
+        "brill-1862": [
+          282
+        ],
+        "dar-ibn-kathir-2002": [
+          270
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1063",
+          "occurrence": 1,
+          "bodySha256": "ade676715ebeae306874e3e22aeadd8948ed7bf1ad04e0c7db22b6d26e995926",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The locator body includes the first Imran-route fragment belonging to the following digital entry."
+          ]
+        },
+        "khan": {
+          "reference": "2.20.215",
+          "recordSha256": "feab2842d5ae73a4d18b0a8065f96da4eab942e917747a281f63d68a35a56f46",
+          "bodySha256": "574e37b4847f1862a10033a13cb76740012d2e1741932396319ee545d5787665",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 653,
+            "sha256": "654bdaf723d13fddbd3445430cb841d5e50153b79212234e2b20c796b0450768"
+          },
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "Says the followers prayed standing, while the selected text and both inspected prints say seated."
+          ]
+        }
+      },
+      "finding": "The Anas report retains the two alternative injury verbs and followers praying seated. Khan says standing at this point, contrary to the selected Arabic and both inspected prints."
+    },
+    {
+      "reference": 1064,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1064",
+      "chapterId": "chapter-17",
+      "paragraphIds": [
+        "mwaA"
+      ],
+      "arabicSha256": "d37f9fc4cbeb13e34248964a5564b16bd898587a3d1bbf747fc9db4f52ae782a",
+      "printedReferences": [
+        1115
+      ],
+      "printedPages": {
+        "brill-1862": [
+          282
+        ],
+        "dar-ibn-kathir-2002": [
+          270
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1064",
+          "occurrence": 1,
+          "bodySha256": "85696298ed701e2f488376587d594cf6c3aa92ee2c623869ef1d781f9d5c7e45",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The preceding Imran-route fragment is outside this displayed body."
+          ]
+        },
+        "khan": {
+          "reference": "2.20.216",
+          "recordSha256": "5a400c9666a3837ed8dda261f95e267a171cc310b5b155c112b51cde89417433",
+          "bodySha256": "24ffae0cad9b12d0fc4b335cd0ed678db7ad0575c37d49d5876a18570dffaf0b",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 327,
+            "sha256": "3af6f1e81a4bf56af718a5b7cf0d08af5f56866a96de759d3301bc262348e4f9"
+          },
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The full two-route structure is not provided."
+          ]
+        }
+      },
+      "finding": "Both narrator routes remain in a single modern reference 1115. The second route has Abi Buraydah in the digital source, while both prints have Ibn Buraydah; the correction is proposed separately and not applied."
+    },
+    {
+      "reference": 1065,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1065",
+      "chapterId": "chapter-18",
+      "paragraphIds": [
+        "mwbA"
+      ],
+      "arabicSha256": "e33fd40bbbb2ee0351921878badce3b4e9cd07b41bf2e37788f4084608252012",
+      "printedReferences": [
+        1116
+      ],
+      "printedPages": {
+        "brill-1862": [
+          282
+        ],
+        "dar-ibn-kathir-2002": [
+          270
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1065",
+          "occurrence": 1,
+          "bodySha256": "71a9fd91868119505e78287846ce2dff5f34582a2707dc0fb3743606ddb8f29b",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The alternate Abu Mamar introduction is abridged."
+          ]
+        },
+        "khan": {
+          "reference": "2.20.217",
+          "recordSha256": "12f2897b9d6670c1c9f1e6633d480f5f783d6f10d26fee97d86c58da33e4473c",
+          "bodySha256": "bf04b4383c761f4760b8afa8d2d76cb555729bb91d7efd07c3958829f9123f72",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 412,
+            "sha256": "e9e6b0a79f226ece2c4671b8e8964138886b05028aae475ac6ecf64022548fb1"
+          },
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The closing Abu Abdullah lexical comment is absent."
+          ]
+        }
+      },
+      "finding": "The Abu Mamar alternate introduction and final Abu Abdullah lexical comment remain in the selected source. The modern print includes that comment; the historical main text ends without it."
+    },
+    {
+      "reference": 1066,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1066",
+      "chapterId": "chapter-19",
+      "paragraphIds": [
+        "mwcA"
+      ],
+      "arabicSha256": "c833590dbefea00cef481678ccb9bbb343407b4a600acd0c1d9a5f7032557548",
+      "printedReferences": [
+        1117
+      ],
+      "printedPages": {
+        "brill-1862": [
+          283
+        ],
+        "dar-ibn-kathir-2002": [
+          270,
+          271
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1066",
+          "occurrence": 1,
+          "bodySha256": "3dadd1134d98ec9163475cc773ba796af4e37acffa5424e7f9d775b1bb276d50",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.20.218",
+          "recordSha256": "a226ac369d648d9632d14f1cb5ef500c08b64ab62720f2c205f9f3d81b69b17b",
+          "bodySha256": "d71cd6d3a747347a330beba8bdc5fd43da0f9b29264ba7232ee0c54f18366843",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 212,
+            "sha256": "4d5fa6e8b2b6c9fbacae3a250fe3238cc59c3ba216172769c7188dbbfd14777e"
+          },
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "Opening first-person pronoun is missing."
+          ]
+        }
+      },
+      "finding": "The Imran report retains his illness and the successive standing, sitting and side-position clauses. It is distinct from the reward reports before it."
+    },
+    {
+      "reference": 1067,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1067",
+      "chapterId": "chapter-20",
+      "paragraphIds": [
+        "mwdA"
+      ],
+      "arabicSha256": "9001137cfb1124e24c6b64459956b962c6d8e3556b42a96d639c02ce27426546",
+      "printedReferences": [
+        1118
+      ],
+      "printedPages": {
+        "brill-1862": [
+          283
+        ],
+        "dar-ibn-kathir-2002": [
+          271
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1067",
+          "occurrence": 1,
+          "bodySha256": "76fd19511ac626e24bd7559dfac8857a16b012c97f6c1eb1dcb6bbb5dbf6c797",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.20.219",
+          "recordSha256": "b28b1f9d8a702fee8cb6d9c4558839e11ca4fbab9fa4e98a547a89456ac7586a",
+          "bodySha256": "0dd5a5c89a9de5c2966e1babfeedc8c245d7cb687001bd61221fc108c753f53b",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 299,
+            "sha256": "b6baecfef4486b93ba6096f0a4b83c77413c55c86565b8b4d6467eab19cc6e81"
+          },
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The complete Aishah route and thirty-or-forty uncertainty remain; the next report is a separate occurrence."
+    },
+    {
+      "reference": 1068,
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1068",
+      "chapterId": "chapter-20",
+      "paragraphIds": [
+        "mwdg"
+      ],
+      "arabicSha256": "513dbb8743576bfc091441bc75dfe80f055b7ef5a6c769ca45eb204d9fda9b50",
+      "printedReferences": [
+        1119
+      ],
+      "printedPages": {
+        "brill-1862": [
+          283
+        ],
+        "dar-ibn-kathir-2002": [
+          271
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1068",
+          "occurrence": 1,
+          "bodySha256": "aced9e0aacc2e708461ccdf6b1e49cd80e7d6e339e28893e654e001422423389",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.20.220",
+          "recordSha256": "201d1a061f4112152e65c44c33fe9bb5f09e7b9333f376c117b67a32e4115bbc",
+          "bodySha256": "b3df69dc983de28659028c554a3290d133efa3873847005efda08f7cdb1059c7",
+          "span": {
+            "unit": "unicode-code-points",
+            "join": "two-newlines",
+            "start": 0,
+            "end": 462,
+            "sha256": "bdd879b2620c65ed4e973aa14f2412426dda7e4d9bd46b6c52a7e6124b61f3b6"
+          },
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "Adds a late-life parenthetical not present in this selected report."
+          ]
+        }
+      },
+      "finding": "The final Aishah report retains both units and the concluding awake/asleep exchange; both prints then transition to Night Prayer."
+    }
+  ],
+  "missingPrintedReports": [],
+  "combinedDigitalReferences": [
+    {
+      "reference": 1041,
+      "paragraphId": "mwJQ",
+      "sourceBlockSha256": "6f0cb50ffcbd5537714a52539a2e358a172fb1bdba872a80c7c26d093e5952fb",
+      "printedReferences": [
+        1091,
+        1092
+      ],
+      "boundaryText": "وزاد الليث",
+      "boundaryStart": 239,
+      "finding": "The main Salim report and al-Layth addition are already present inside one digital paragraph. Preserve both in one stable app entry with both printed references; this is not an omission or suffix candidate."
+    }
+  ],
+  "proposedCorrections": [
+    {
+      "id": "1064-second-route-name",
+      "kind": "correction-proposal",
+      "paragraphId": "mwaA",
+      "sourceBlockSha256": "d37f9fc4cbeb13e34248964a5564b16bd898587a3d1bbf747fc9db4f52ae782a",
+      "sourceReading": "عن أبي بريدة",
+      "status": "proposed-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 282,
+          "reading": "عن ابن بريدة",
+          "readingSha256": "8924c469714dd5e47dd2875b9beab30ad3363a0f8345e07a83de5d0456c40bcd",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 270,
+          "reading": "عن ابن بريدة",
+          "readingSha256": "8924c469714dd5e47dd2875b9beab30ad3363a0f8345e07a83de5d0456c40bcd",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        }
+      ],
+      "finding": "Both inspected prints use Ibn Buraydah in the second route. The original digital source is retained; this is a correction proposal, not an applied edit.",
+      "transcriptionPolicy": "Keep the selected Arabic unchanged at intake. Any correction, translation or explanatory note requires a separate review record."
+    }
+  ],
+  "unresolvedTextualDifferences": [
+    {
+      "id": "1030-residence-phrase",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwBg",
+      "sourceBlockSha256": "14a5345befac71dd9e2ea6602fc9bc10fcb63c8c0b0f90d5cf5619611683ac75",
+      "sourceReading": "تسعة عشر يقصر فنحن إذا سافرنا تسعة عشر",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 276,
+          "reading": "تسعة عشر يوما يقصر فنحن إذا سافرنا فأقمنا تسعة عشر",
+          "readingSha256": "8b921aa395ceb14891fecd147440594a9d7f0daea7e56e8e37ad817b14c306b0",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 264,
+          "reading": "تسعة عشر يقصر فنحن إذا سافرنا تسعة عشر",
+          "readingSha256": "eb58f648177269e342b918ffc5ea5fba65ab1dbdaec73403a10f865f4a4e5782",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        }
+      ],
+      "finding": "The historical print supplies explicit day and residence words. The shorter selected reading matches the inspected modern occurrence at these points.",
+      "transcriptionPolicy": "Keep the selected Arabic unchanged at intake. Any correction, translation or explanatory note requires a separate review record."
+    },
+    {
+      "id": "1039-asr-name",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwIQ",
+      "sourceBlockSha256": "d1dba228409fa76a91390ac0c205131f52383909a84a8f39ea320c52831bec67",
+      "sourceReading": "والعصر بذي الحليفة ركعتين",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 277,
+          "reading": "والعصر بذى الحليفة ركعتين",
+          "readingSha256": "6302f2de32ffc60f69dba58d498a27ea1802633aeb433c0c9105d167e8363959",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 265,
+          "reading": "وبذي الحليفة ركعتين",
+          "readingSha256": "96bd4081235c63215f3eef57438de149a4e30aa37ec2fe582279cdb99424264e",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        }
+      ],
+      "finding": "The selected source and historical print explicitly name Asr; the inspected modern main text does not.",
+      "transcriptionPolicy": "Keep the selected Arabic unchanged at intake. Any correction, translation or explanatory note requires a separate review record."
+    },
+    {
+      "id": "1041-closing-maghrib-verb",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwJQ",
+      "sourceBlockSha256": "6f0cb50ffcbd5537714a52539a2e358a172fb1bdba872a80c7c26d093e5952fb",
+      "sourceReading": "يؤخر المغرب فيصليها ثلاثا",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 278,
+          "reading": "يقيم المغرب فيصليها ثلاثا",
+          "readingSha256": "6f92454b2dabd939c476cb7e3f28b09a3f7ad0121c1fde9742701d770f69d949",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 266,
+          "reading": "يؤخر المغرب فيصليها ثلاثا",
+          "readingSha256": "45d7ef1929426dc8c2dd36cd7a0f979d1f723119b2ecaf6880c64e0e50570122",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        }
+      ],
+      "finding": "The final Abdullah statement differs at the Maghrib verb; the earlier delay statement must not be confused with this later occurrence.",
+      "transcriptionPolicy": "Keep the selected Arabic unchanged at intake. Any correction, translation or explanatory note requires a separate review record."
+    },
+    {
+      "id": "1065-closing-comment",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwbA",
+      "sourceBlockSha256": "e33fd40bbbb2ee0351921878badce3b4e9cd07b41bf2e37788f4084608252012",
+      "sourceReading": "قال أبو عبد الله نائما عندي مضطجعا ها هنا",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 282,
+          "reading": null,
+          "readingSha256": null,
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 270,
+          "reading": "قال أبو عبد الله نائما عندي مضطجعا هاهنا",
+          "readingSha256": "7197e664caa6cb1dcc2ff123d0fcafce95a0378f65e0a7f381ef5dfa53e8334d",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        }
+      ],
+      "finding": "The selected source and modern print retain the closing Abu Abdullah comment; it is absent from the inspected historical main text before chapter 19.",
+      "transcriptionPolicy": "Keep the selected Arabic unchanged at intake. Any correction, translation or explanatory note requires a separate review record."
+    },
+    {
+      "id": "chapter-20-position-order",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwcw",
+      "sourceBlockSha256": "6d3c0ad0b639b53984ed46d331876c911f9d89a47d099f6eb78ba95613b091b0",
+      "sourceReading": "ركعتين قائما وركعتين قاعدا",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 283,
+          "reading": "ركعتين قاعدا وركعتين قائما",
+          "readingSha256": "93f2e40f914fb5d998a1c0c999b4a60098e10eab8635f8730920513e95d78913",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 271,
+          "reading": "ركعتين قائما وركعتين قاعدا",
+          "readingSha256": "78bd8d44e28a6190062cc3f09c7dbdb345058bf8322195c40e341a78bcef2cc8",
+          "scope": "Main text; unvocalized excerpt, preserving the relevant words and their order."
+        }
+      ],
+      "finding": "The two postures appear in the reverse order in the historical chapter quotation. Chapter English remains pending and is outside numbered narration.",
+      "transcriptionPolicy": "Keep the selected Arabic unchanged at intake. Any correction, translation or explanatory note requires a separate review record."
+    }
+  ],
+  "chapterMaterial": [
+    {
+      "chapterId": "chapter-01",
+      "headingId": "باب_ما_جاء_في_التقصير_وكم_يقيم_حتى_يقصر",
+      "headingSha256": "9d5b0954da488a538d7604863730329cce04903f75308a0ecc17adfc03f64663",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-02",
+      "headingId": "باب_الصلاة_بمنى",
+      "headingSha256": "b9201047b58e5ed8a94fbdcc180a632fa46a55e01e9b7b6fb0f4a5aacb4625de",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-03",
+      "headingId": "باب_كم_أقام_النبي_ﷺ_في_حجته",
+      "headingSha256": "6176e1944cc876997e74dd4777a9ee941eb559b84560df107bd54bf63a83af32",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-04",
+      "headingId": "باب_في_كم_يقصر_الصلاة",
+      "headingSha256": "5779543c7cbd92a2a00a47c0cb2bf9d64c34fc339e88d1365188239debf0b844",
+      "context": [
+        {
+          "paragraphId": "mwFg",
+          "arabicSha256": "b162803f03ee3233d55eef09782b6a569c831a8004e76b375fcd5c5f2aaa1388"
+        }
+      ],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-05",
+      "headingId": "باب_يقصر_إذا_خرج_من_موضعه",
+      "headingSha256": "f6dc78224b1d7cdf5a7f3bb9310310e025209bc6fc183899b08ae8e8e2c2aa3d",
+      "context": [
+        {
+          "paragraphId": "mwIA",
+          "arabicSha256": "894edd7c289b3c8d023928023075bdb19950653910f296107bc093bad3e909c2"
+        }
+      ],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-06",
+      "headingId": "باب_يصلي_المغرب_ثلاثا_في_السفر",
+      "headingSha256": "a01be06c55779ddd7e849cc0c12f598a9a04b42c1a2c5f1e7eb6b139fa803653",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-07",
+      "headingId": "باب_صلاة_التطوع_على_الدواب_وحيثما_توجهت_به",
+      "headingSha256": "52c995fae6e0a5195ef740038a0998489aa6e5a7d97aa4712b7a98498eec7d24",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-08",
+      "headingId": "باب_الإيماء_على_الدابة",
+      "headingSha256": "6086e7b26185410003def49324c021a28a44a057dc7885a4cbe18f9120cde518",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-09",
+      "headingId": "باب_ينزل_للمكتوبة",
+      "headingSha256": "340ef8a72ba461fb0936c65e09a4c9d9a57bb6016def0354abf021fa3268dd09",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-10",
+      "headingId": "باب_صلاة_التطوع_على_الحمار",
+      "headingSha256": "42b46b8340ba1a5a53f54da41a5fc73aeeed8c4c4a444c61c73030214b48dce6",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-11",
+      "headingId": "باب_من_لم_يتطوع_في_السفر_دبر_الصلاة_وقبلها",
+      "headingSha256": "39001bc5c1b53d8136ae1a91307c46e85aa05213fe2deab85d345b300ae6a53c",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-12",
+      "headingId": "باب_من_تطوع_في_السفر_في_غير_دبر_الصلوات_وقبلها",
+      "headingSha256": "f04ddaa7dbc45f9e3a591aed5f0b6b70cf379efdb279a94ecf4014cc9a7916cd",
+      "context": [
+        {
+          "paragraphId": "mwRQ",
+          "arabicSha256": "addc5f7eee6fc91c4bb6330a627679492720836e8801e283ead56aee64d3fa22"
+        }
+      ],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-13",
+      "headingId": "باب_الجمع_في_السفر_بين_المغرب_والعشاء",
+      "headingSha256": "9170f4c603367a67624ed4bcf0c230eaf8fa82b11a763fa66a2cf3def1474bda",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-14",
+      "headingId": "باب_هل_يؤذن_أو_يقيم_إذا_جمع_بين_المغرب_والعشاء",
+      "headingSha256": "ecc7a31764b0857628cd3daa30451aa323ce10aa9dbdb9d05f5a09c4adfa927c",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-15",
+      "headingId": "باب_يؤخر_الظهر_إلى_العصر_إذا_ارتحل_قبل_أن_تزيغ_الشمس",
+      "headingSha256": "cbae652a456e2f6ccc7fdd4937b46e2f5f1689f03db859e630fa51416445c22c",
+      "context": [
+        {
+          "paragraphId": "mwXA",
+          "arabicSha256": "34f16a78fe86a4fba12b1f2a54b2368967081d1b3b5cc8c5c26b777854326cb9"
+        }
+      ],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-16",
+      "headingId": "باب_إذا_ارتحل_بعد_ما_زاغت_الشمس_صلى_الظهر_ثم_ركب",
+      "headingSha256": "8b5ccd69288a3dc5f362a731c5bb228ef59c6aaea9aa4a0d8da06cd157b5a7e3",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-17",
+      "headingId": "باب_صلاة_القاعد",
+      "headingSha256": "1f2de7a51b26eabbbbe7cc08316a99aba2ca636dff7910a56a4cf1e9a21dcb7e",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-18",
+      "headingId": "باب_صلاة_القاعد_بالإيماء",
+      "headingSha256": "2580a389166f4f170d1d5322b14ef1e7c0582c2adaa221d0bf0b63f895e4928a",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-19",
+      "headingId": "باب_إذا_لم_يطق_قاعدا_صلى_على_جنب",
+      "headingSha256": "b38a2334ff88f63b46c6e2591f972f9e8f3fcebd723c8ba57a6dba5ee80736cb",
+      "context": [
+        {
+          "paragraphId": "mwbw",
+          "arabicSha256": "cee1b18fc2fa6d85616e0f3321d679a3ee30984752d68c4378a877dc9039f2c4"
+        }
+      ],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-20",
+      "headingId": "باب_إذا_صلى_قاعدا_ثم_صح_أو_وجد_خفة_تمم_ما_بقى",
+      "headingSha256": "dfff2a606df74afb7aed30d4e13d86038fb8e0027df9ca8bd80f58aeef36c101",
+      "context": [
+        {
+          "paragraphId": "mwcw",
+          "arabicSha256": "6d3c0ad0b639b53984ed46d331876c911f9d89a47d099f6eb78ba95613b091b0"
+        }
+      ],
+      "englishStatus": "pending",
+      "readerEligible": false
+    }
+  ],
+  "chapterComparisonLimits": [
+    {
+      "paragraphId": "mwFg",
+      "sourceBlockSha256": "b162803f03ee3233d55eef09782b6a569c831a8004e76b375fcd5c5f2aaa1388",
+      "provider": "bewley",
+      "finding": "The English chapter quotation names Ibn Abbas but does not retain Ibn Umar from the selected Arabic."
+    },
+    {
+      "paragraphId": "mwcw",
+      "sourceBlockSha256": "6d3c0ad0b639b53984ed46d331876c911f9d89a47d099f6eb78ba95613b091b0",
+      "provider": "printed-witnesses",
+      "finding": "Posture order differs between the two printed chapter quotations; retain the selected Arabic and keep chapter English pending."
+    }
+  ],
+  "nextActions": [
+    "Prepare complete English working translations and exact presentation roles, retaining all chains, repeat occurrences and closing transmission comments.",
+    "Resolve the 1064 narrator-name correction proposal through the separate correction workflow before admission.",
+    "Register comparison limitations and chapter differences without claiming word-for-word print agreement.",
+    "Keep 1057 linked to the preceding narrator route and chapter material outside daily numbered sessions."
+  ]
+}

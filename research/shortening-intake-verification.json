@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-03T02:44:43.958449+00:00",
+  "status": "source-intake-validated-no-reader-admission",
+  "baselineCommit": "6956eeb3e2ef3655e44e7114af0f5a2b2a24bee3",
+  "sourceAudit": "research/shortening-source-audit.json",
+  "sourceInventory": {
+    "unchangedArabicCodePoints": 10544,
+    "blocks": 66,
+    "chapters": 20,
+    "numberedReports": 39,
+    "separateContextBlocks": 6,
+    "blankBlocks": 1
+  },
+  "comparisons": {
+    "printedPdfPagesVisuallyInspected": {
+      "brill-1862": [
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284
+      ],
+      "dar-ibn-kathir-2002": [
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272
+      ]
+    },
+    "bothPdfBytesRehashed": true,
+    "modernPrintedOccurrencesAccountedFor": 40,
+    "combinedDigitalReferences": [
+      1041
+    ],
+    "missingPrintedReports": [],
+    "bewleySnapshotRehashedAndLocatorBodiesChecked": 39,
+    "khanActualEpubRecordsChecked": 35,
+    "khanDistinctReportSpansChecked": 39,
+    "unresolvedTextualDifferencesNotApplied": [
+      "1030-residence-phrase",
+      "1039-asr-name",
+      "1041-closing-maghrib-verb",
+      "1065-closing-comment",
+      "chapter-20-position-order"
+    ],
+    "proposedCorrectionsNotApplied": [
+      "1064-second-route-name"
+    ]
+  },
+  "checks": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p 'test_*.py'",
+      "passed": 168,
+      "failed": 0,
+      "scope": "All Python source-intake tests, including 14 new negative and preservation checks."
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 scripts/import-wikisource-book.py --check",
+      "status": "passed",
+      "scope": "All twelve registered Arabic source inventories, exact source ownership and candidate-only status."
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 scripts/check-shortening-intake.py --bewley-html <retained-page> --brill-pdf <retained-print> --modern-pdf <retained-print>",
+      "status": "passed",
+      "scope": "Arabic inventory, exact comparison locators/spans, both pinned PDF identities, unresolved evidence and generated page."
+    },
+    {
+      "command": "node --test tests/deployment.test.mjs",
+      "passed": 7,
+      "failed": 0,
+      "scope": "Public-file boundaries, required assets and source-note links."
+    },
+    {
+      "command": "node scripts/build-site.mjs <fresh-local-output>",
+      "status": "passed",
+      "publicFiles": 621,
+      "readerRelease": "opening-87a365a83f0b",
+      "scope": "Actual local packaging with release hashes, reader source gates, audio bindings and all local links checked."
+    },
+    {
+      "command": "git diff --cached --check",
+      "status": "passed"
+    }
+  ],
+  "browser": {
+    "checkedAt": "2026-11-03T02:42:06.340Z",
+    "scope": "Isolated desktop Chromium source-review page; not physical iPhone or reader-runtime acceptance",
+    "results": [
+      {
+        "theme": "light",
+        "viewportWidth": 320,
+        "documentWidth": 320,
+        "exactReports": 39,
+        "exactChapterBlocks": 26,
+        "variantExpanded": true,
+        "allArabicAccessible": true,
+        "referenceTargetsAtLeast44px": true
+      },
+      {
+        "theme": "light",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "exactReports": 39,
+        "exactChapterBlocks": 26,
+        "variantExpanded": true,
+        "allArabicAccessible": true,
+        "referenceTargetsAtLeast44px": true
+      },
+      {
+        "theme": "dark",
+        "viewportWidth": 320,
+        "documentWidth": 320,
+        "exactReports": 39,
+        "exactChapterBlocks": 26,
+        "variantExpanded": true,
+        "allArabicAccessible": true,
+        "referenceTargetsAtLeast44px": true
+      },
+      {
+        "theme": "dark",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "exactReports": 39,
+        "exactChapterBlocks": 26,
+        "variantExpanded": true,
+        "allArabicAccessible": true,
+        "referenceTargetsAtLeast44px": true
+      }
+    ],
+    "errors": [],
+    "status": "passed",
+    "harnessCorrections": [
+      "Used the existing cached browser runtime after the default browser-cache path was absent.",
+      "Used an attribute selector for the numeric-leading evidence ID; this was a test selector issue, not a page markup change."
+    ]
+  },
+  "screenshotsVisuallyInspected": [
+    "content/review/evidence/shortening-source-light.png",
+    "content/review/evidence/shortening-source-dark.png",
+    "content/review/evidence/shortening-variant-light.png",
+    "content/review/evidence/shortening-variant-dark.png"
+  ],
+  "preservation": {
+    "filesChecked": 474,
+    "changedFiles": [],
+    "scope": "All previously tracked reader, audio, candidate-audio jobs, landscapes and top-level web files compared byte-for-byte with the baseline commit.",
+    "sourceRecordSha256": "692c4ec21c66bc23ff9afb926e21e5dac96a5085f828e9160799d184480fa78a",
+    "readerEntries": 1032,
+    "readerBooks": 18,
+    "readerRelease": "opening-87a365a83f0b",
+    "actualRecordedReferences": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "limitations": [
+    "Intake and comparison are not exhaustive lexical agreement, English wording approval or independent scholarly certification.",
+    "No new Arabic or English reader entry, correction, chapter translation or recording was admitted.",
+    "Desktop source-review checks do not establish new physical-iPhone, offline-player or locked-screen acceptance.",
+    "No external publication or communication performed."
+  ],
+  "distinctTestsPassed": 175,
+  "packaging": {
+    "previousPublicFiles": 618,
+    "currentPublicFiles": 621,
+    "changedPreviousPublicFiles": [
+      "research/production-readiness.json"
+    ],
+    "newPublicFiles": [
+      "research/shortening-intake-verification.json",
+      "research/shortening-source-audit.json",
+      "research/shortening-source-review.html"
+    ],
+    "rawSourceAndCandidateAudioExcluded": true,
+    "checkedBeforeCommit": true
+  }
+}

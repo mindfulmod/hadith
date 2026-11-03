@@ -2,6 +2,16 @@
 
 The local personal reader at `reader/` contains 1,032 selected Bukhari entries across eighteen sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
+## Shortening the Prayer source intake · 3 November 2026
+
+The next section is staged for wording review: **39 digital reports (1030–1068), 20 chapters and six separate context paragraphs**. All 66 source blocks and 10,544 code points remain exact. The two inspected print sequences account for 40 modern printed occurrences, 1080–1119. Digital 1041 already contains the passages numbered 1091 and 1092 in the modern edition; it needs both printed references, not a new suffixed entry. The standing suffix policy applies only when a complete printed report is absent from the selected digital source.
+
+The [source review](research/shortening-source-review.html) exposes every complete Arabic body, chapter heading/context and print location. Five textual differences remain unresolved. A separate proposal records the second narrator route at 1064: both inspected prints have Ibn Buraydah where the digital source has Abi Buraydah. Nothing is corrected or translated by this intake. The English comparisons contain repeated labels, combined reports, shortened chains and wording discrepancies; the checked EPUB at 1063 says standing where the selected Arabic and both inspected prints say seated. These limits are recorded individually, not treated as wording approval.
+
+The validation binds 39 English page locations and 39 exact report spans within 35 pinned EPUB records. Paragraph boundaries distinguish report labels from prose such as “See 1036,” and occurrence indices distinguish the two displayed 1055 labels. Shared EPUB records are divided only at their existing narrator introductions. Run `PYTHONDONTWRITEBYTECODE=1 python3 scripts/check-shortening-intake.py` to check the evidence and generated review page; optional local witness paths recheck the retained page and PDF hashes. CI also runs this check.
+
+The local reader remains **1,032 entries**, with actual Cedar recordings **1–6** and Hadith 7 generation still incomplete. No source wording, reader behavior or public deployment changes in this intake. Complete wording/role review, explicit correction handling and prototype admission remain next; independent review is still pending. Verification is recorded in `research/shortening-intake-verification.json`.
+
 ## Resumable Cedar generation — 2 November 2026
 
 Hadith 7 has nine original Cedar candidate segments preserved under `content/audio/raw/`, covering the first 6,575 UTF-16 code units of its complete 7,266-unit input script. The final segment, including the closing transmission note, is absent: OpenAI.fm displayed its ten-downloads-per-week limit. No assembled Hadith 7 recording, reader availability, new audio download or listening approval is claimed. Existing recordings 1–6 and all source wording remain unchanged.

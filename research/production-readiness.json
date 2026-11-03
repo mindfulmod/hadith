@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02",
+  "updatedAt": "2026-11-03T02:41:51.163378+00:00",
   "objective": "Production-ready English-first Sahih al-Bukhari reader with the full collection, precise source access, Cedar narration, whole-hadith sessions and dependable offline iPhone use.",
   "status": "in-progress",
   "decisions": {
@@ -81,7 +81,7 @@
   ],
   "nextActions": [
     "Keep the 699-entry approval candidate and subsequent local previews separate from the approved 632-entry live release until the specific publication is authorized.",
-    "Continue source intake for Shortening the Prayer. Resume Hadith 7 audio from its preserved generation job when the final segment can be obtained through an authorized route. Paid API access and budget are awaiting a user decision; the free-demo limit is not bypassed. Preserve source holds and independent content review.",
+    "Complete wording and presentation-role review for the 39 staged Shortening the Prayer reports. Keep the 1064 correction proposal and five textual differences explicit. Resume Hadith 7 audio from its preserved generation job when the final segment can be obtained through an authorized route. Paid API access and budget are awaiting a user decision; the free-demo limit is not bypassed. Preserve source holds and independent content review.",
     "Preserve the overlapping congregation source as excluded evidence. It must not add duplicate entries or replace selected Adhan wording.",
     "Measure full bilingual loading and memory costs before further substantial expansion; existing scale tests and desktop checks do not establish physical iPhone performance for the full corpus.",
     "Complete the Arabic edition/reference map using the new exact-span inventory and pinned printed-witness findings; keep combined labels distinct from missing or misassigned bodies.",
@@ -838,5 +838,37 @@
     "status": "implemented-with-registered-evidence-and-offline-browsing-notice",
     "evidence": "scripts/chapter-source-differences.mjs; content/review/chapter-context-differences.json; tests/prostration.test.mjs; research/prostration-reader-verification.json",
     "scope": "Known unresolved chapter-introduction differences require the exact registered audit, original paragraph and both inspected print readings. They remain separate from numbered sessions and audio, visible in chapter browsing and offline source notes; source Arabic is unchanged."
+  },
+  "shorteningIntake": {
+    "status": "source-intake-compared-wording-review-pending",
+    "source": "content/sources/wikisource-shortening/manifest.json",
+    "inventory": "content/staging/bukhari-shortening-wikisource/catalog.json",
+    "audit": "research/shortening-source-audit.json",
+    "reviewPage": "research/shortening-source-review.html",
+    "verification": "research/shortening-intake-verification.json",
+    "reports": 39,
+    "referenceSequence": "1030–1068",
+    "chapters": 20,
+    "sourceBlocks": 66,
+    "unchangedArabicCodePoints": 10544,
+    "separateContextBlocks": 6,
+    "printedReferences": "1080–1119",
+    "modernPrintedOccurrencesAccountedFor": 40,
+    "combinedDigitalReferences": [
+      1041
+    ],
+    "missingPrintedReports": [],
+    "proposedCorrectionReferences": [
+      1064
+    ],
+    "readerEligible": false,
+    "readerAddedReferences": [],
+    "independentReview": "pending",
+    "remaining": [
+      "Complete Arabic/English wording and presentation-role review; no English drafts are admitted by this intake.",
+      "Process the 1064 second-route narrator-name proposal through the explicit correction workflow, preserving the original digital source and both printed witnesses.",
+      "Preserve all five recorded textual differences and English comparison limitations; chapter English remains pending.",
+      "Keep 1057 linked to its preceding narrator route. Shared English bodies and repeated labels are comparison locations, not app reference identities."
+    ]
   }
 }
