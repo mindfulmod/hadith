@@ -14,8 +14,8 @@ const {source,ledger}=collectionFiles(),book=ledger.books.find(b=>b.id===config.
 const refs=n=>ledger.sourceReferences.entries.find(e=>e.number===n);
 const rehash=e=>{for(const s of e.segments){s.arabicSha256=sha(s.arabic);s.englishSha256=sha(s.english);}e.englishSha256=sha(e.segments.map(s=>s.english).join('\n\n'));delete e.reviewRecordSha256;e.reviewRecordSha256=hash(e);};
 
-test('Funerals admits only its first fourteen entries, six chapters and three separate context paragraphs',()=>{
- assert.deepEqual(book.entryNumbers,numbers);assert.equal(book.sourceEntryCount,150);assert.equal(book.chapters.length,6);assert.equal(review().entries.reduce((n,e)=>n+e.segments.length,0),36);assert.deepEqual(review().chapters.flatMap(c=>c.contextIds),['mwBg','mwJQ','mwKg']);assert.equal(inv.records.filter(r=>!numbers.includes(r.number)).length,136);assert.equal(get(1194),undefined);assert.equal(get('1200b'),undefined);
+test('Funerals preserves its first fourteen entries, six chapters and three separate context paragraphs',()=>{
+ assert.deepEqual(book.entryNumbers.slice(0,14),numbers);assert.equal(review().chapters.length,6);assert.equal(review().entries.reduce((n,e)=>n+e.segments.length,0),36);assert.deepEqual(review().chapters.flatMap(c=>c.contextIds),['mwBg','mwJQ','mwKg']);assert.equal(inv.records.filter(r=>!numbers.includes(r.number)).length,136);
 });
 test('complete original Arabic and mapped origins cannot be replaced by resealing the review',()=>{
  for(const e of review().entries){const original=e.paragraphIds.map(id=>inv.blocks.find(b=>b.htmlId===id).text);assert.equal(e.segments.map(s=>s.arabic).join(''),original.join(''));assert.deepEqual(get(e.number).arabic_blocks,original);assert.equal(e.arabicCorrections,undefined);}

@@ -37,7 +37,22 @@ export function validatePrintedReportRows(inventory,review){
   }
   assert.equal(p.previousArabicSha256,sha(previous.paragraphIds.map(id=>originals.get(id).text).join('\n\n')));
   if(!tail)assert.equal(p.nextArabicSha256,sha(next.paragraphIds.map(id=>originals.get(id).text).join('\n\n')));
-  assert([previous.chapterId,next?.chapterId].includes(row.chapterId),'Printed chapter must correspond to a neighbouring source chapter');
+  if([previous.chapterId,next?.chapterId].includes(row.chapterId)){
+   assert.equal(p.emptyDigitalChapter,undefined,'An adjacent chapter cannot claim empty-chapter placement');
+  }else{
+   const binding=p.emptyDigitalChapter,chapters=inventory.chapters,index=chapters.findIndex(c=>c.id===row.chapterId),chapter=chapters[index];
+   assert(!tail&&binding&&chapter,'Printed chapter needs explicit empty-chapter placement evidence');
+   assert.equal(index,chapters.findIndex(c=>c.id===previous.chapterId)+1,'Empty chapter must immediately follow the previous source chapter');
+   assert.equal(index,chapters.findIndex(c=>c.id===next.chapterId)-1,'Empty chapter must immediately precede the next source chapter');
+   assert.deepEqual(chapter.entryNumbers,[],'Printed placement must not displace a digital report');
+   const heading=originals.get(chapter.headingId).text;
+   assert.deepEqual(binding,{chapterId:chapter.id,headingId:chapter.headingId,headingSha256:sha(heading),context:chapter.contextIds.map(id=>({paragraphId:id,sha256:sha(originals.get(id).text)}))},'Empty chapter heading and context must match the pinned inventory');
+   const reviewed=review.chapters.find(c=>c.id===chapter.id);
+   assert(reviewed&&reviewed.headingId===chapter.headingId&&reviewed.titleArabic===heading,'Empty chapter must retain its original heading');
+   assert.deepEqual(reviewed.contextIds,chapter.contextIds,'Empty chapter must retain its separate context');
+   assert.deepEqual(reviewed.entryNumbers,[row.number],'The empty chapter must contain only its explicitly sourced report');
+   for(const w of p.witnesses){assert.equal(w.chapterHeading,heading,'Both prints must confirm the empty chapter heading');assert.equal(w.chapterHeadingSha256,sha(heading));}
+  }
   assert.equal(p.chapterId,row.chapterId);assert(text(p.chapterPlacementNote)&&text(p.reason)&&text(p.transcriptionPolicy)&&text(p.referenceNote));
   assert.equal(row.sourceLayout,undefined,'Printed report cannot impersonate a digital source span');
   for(const field of ['arabicCorrections','arabicSupplements','printedHeading','sourceForm'])assert.equal(row[field],undefined,'Whole printed report cannot claim another source form');
