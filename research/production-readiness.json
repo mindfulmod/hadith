@@ -122,8 +122,8 @@
     "url": "https://github.com/sunnah-com/api/issues/4160",
     "record": "research/source-access-request.json",
     "permissionsGranted": false,
-    "lastChecked": "2026-11-02T23:05:12.121464+00:00",
-    "latestObservation": "Connected GitHub issue and comments reads confirm the request remains open with zero comments. No permission response observed and no new external message sent."
+    "lastChecked": "2026-11-03T00:08:18.739505+00:00",
+    "latestObservation": "Connected GitHub issue and complete comments reads confirm issue 4160 is open with zero comments. No permission response observed and no new external message sent."
   },
   "deploymentMigration": {
     "mode": "GitHub Actions",
@@ -687,5 +687,38 @@
       "chapter-27"
     ],
     "englishComparisonAbsenceRegistry": "content/review/english-sequence-absences.json"
+  },
+  "eclipsesIntake": {
+    "status": "source-intake-compared-wording-review-pending",
+    "source": "content/sources/wikisource-eclipses/manifest.json",
+    "inventory": "content/staging/bukhari-eclipses-wikisource/catalog.json",
+    "audit": "research/eclipses-source-audit.json",
+    "reviewPage": "research/eclipses-source-review.html",
+    "verification": "research/eclipses-intake-verification.json",
+    "reports": 24,
+    "referenceSequence": "993–1016",
+    "chapters": 19,
+    "sourceBlocks": 51,
+    "printedReferences": "1040–1066",
+    "combinedDigitalReferences": [
+      1002,
+      1007,
+      1016
+    ],
+    "proposedCorrectionReferences": [
+      1011
+    ],
+    "missingPrintedReports": [],
+    "khanAbsenceReferences": [
+      1012
+    ],
+    "readerEligible": false,
+    "readerAddedReferences": [],
+    "remaining": [
+      "Complete span-level wording and translation review before admitting entries.",
+      "Keep edition-specific transmission, honorific and narrator differences explicit.",
+      "Independent Arabic, English, chapter and reference review remains pending.",
+      "Reuse rights, additional narration, publication and physical-iPhone acceptance remain separate."
+    ]
   }
 }

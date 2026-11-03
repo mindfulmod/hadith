@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-03T00:08:18.740716+00:00",
+  "status": "source-intake-validated-no-reader-admission",
+  "baselineCommit": "95f0bd7176ddb8ee83e3254a9bfd16c1a97fc509",
+  "sourceAudit": "research/eclipses-source-audit.json",
+  "sourceInventory": {
+    "unchangedArabicCodePoints": 11213,
+    "blocks": 51,
+    "chapters": 19,
+    "numberedReports": 24,
+    "separateContextBlocks": 7,
+    "blankBlocks": 1
+  },
+  "comparisons": {
+    "printedPdfPagesVisuallyInspected": {
+      "brill-1862": [
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272
+      ],
+      "dar-ibn-kathir-2002": [
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260
+      ]
+    },
+    "bothPdfBytesRehashed": true,
+    "modernPrintedOccurrencesAccountedFor": 27,
+    "combinedDigitalReferences": [
+      1002,
+      1007,
+      1016
+    ],
+    "bewleySnapshotRehashedAndLocatorBodiesChecked": 24,
+    "khanActualEpubBodiesChecked": 23,
+    "proposedArabicCorrectionsNotApplied": [
+      1011
+    ]
+  },
+  "checks": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p 'test_*.py'",
+      "passed": 140,
+      "failed": 0,
+      "scope": "Complete Python suite, including 12 new Eclipses intake tests."
+    },
+    {
+      "command": "node --test tests/deployment.test.mjs tests/wikisource-resolution.test.mjs tests/source-structure.test.mjs",
+      "passed": 14,
+      "failed": 0,
+      "scope": "Targeted source structure, intake admission and packaging tests; full Node suite not rerun for this intake-only change."
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 scripts/import-wikisource-book.py --check",
+      "passed": true,
+      "registeredSources": 10
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 scripts/check-eclipses-intake.py --bewley-html <retained HTML> --brill-pdf <retained PDF> --modern-pdf <retained PDF>",
+      "passed": true,
+      "scope": "Pinned input identity, exact ownership, complete printed map, comparison limits, actual EPUB bodies and generated page."
+    }
+  ],
+  "browser": {
+    "scope": "Desktop source-review page; not physical-iPhone or reader-runtime acceptance",
+    "results": [
+      {
+        "theme": "light",
+        "viewportWidth": 375,
+        "documentWidth": 375,
+        "exactSourceParagraphs": 24,
+        "expandedContinuationPreserved": true,
+        "consoleErrors": 0,
+        "screenshots": [
+          "content/review/evidence/eclipses-source-light.png",
+          "content/review/evidence/eclipses-source-expanded-light.png"
+        ]
+      },
+      {
+        "theme": "dark",
+        "viewportWidth": 375,
+        "documentWidth": 375,
+        "exactSourceParagraphs": 24,
+        "expandedContinuationPreserved": true,
+        "consoleErrors": 0,
+        "screenshots": [
+          "content/review/evidence/eclipses-source-dark.png",
+          "content/review/evidence/eclipses-source-expanded-dark.png"
+        ]
+      }
+    ]
+  },
+  "preservation": {
+    "baselineCommit": "95f0bd7176ddb8ee83e3254a9bfd16c1a97fc509",
+    "comparedTrackedFiles": 673,
+    "readerFiles": 337,
+    "audioFiles": 17,
+    "allExistingReviewAndAdmissionFilesUnchanged": true,
+    "allComparedFilesByteIdentical": true,
+    "newReaderOrAudioFiles": [],
+    "release": "opening-7c28bea35794",
+    "entries": 995,
+    "actualRecordedReferences": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "sourceInquiry": {
+    "url": "https://github.com/sunnah-com/api/issues/4160",
+    "state": "open",
+    "comments": 0,
+    "permissionsGranted": false,
+    "externalMessageSent": false
+  },
+  "publication": {
+    "performed": false,
+    "liveApprovedEntries": 632,
+    "liveApprovedCommit": "a6d55223d3d863f2583ba67aa27edd139e9d7d6a"
+  },
+  "limitations": [
+    "This is an AI source-intake comparison, not exhaustive lexical review or independent scholarly certification.",
+    "No Eclipses English translation or reader admission was created.",
+    "No reader-runtime/offline or physical-iPhone retest is claimed; all prior reader bytes are unchanged.",
+    "The two prints have wording differences. Page matching does not establish word-for-word agreement."
+  ],
+  "packaging": {
+    "command": "node scripts/build-site.mjs <new artifact directory>",
+    "passed": true,
+    "publicFiles": 586,
+    "allArtifactHashesChecked": true,
+    "unchangedReaderFiles": 335,
+    "existingPublicFilesChanged": [
+      "research/production-readiness.json"
+    ],
+    "newPublicFiles": [
+      "research/eclipses-intake-verification.json",
+      "research/eclipses-source-audit.json",
+      "research/eclipses-source-review.html"
+    ],
+    "sourceIntakeAndBuildToolsExcluded": true,
+    "readerReleaseUnchanged": "opening-7c28bea35794",
+    "scope": "Local artifact only; generated before the final commit. Final clean artifact can be reproduced from that commit."
+  }
+}
