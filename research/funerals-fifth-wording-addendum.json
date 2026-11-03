@@ -1,0 +1,1400 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-03T23:14:22.067038+00:00",
+  "status": "wording-review-addendum-independent-review-pending",
+  "independentReview": "pending",
+  "readerAdmission": false,
+  "source": {
+    "id": "wikisource-bukhari-funerals-r393137",
+    "sha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+    "inventorySha256": "b8fe53c6aa2ae70c52b5f14b43462f14ed9a3db2ac2f59a282e77686670dd2fe",
+    "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+    "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+    "arabicChanged": false,
+    "originalBlocks": 272,
+    "derivedUnits": 273,
+    "codePoints": 56803,
+    "numberedReports": 150,
+    "chapters": 96,
+    "contextIds": [
+      "mwBg",
+      "mwJQ",
+      "mwKg",
+      "mwNg",
+      "mwSg",
+      "mwTA",
+      "mwdA",
+      "mwkw",
+      "mwpw",
+      "mwyw",
+      "mw0Q",
+      "mw1g",
+      "mwAQA",
+      "mwARU",
+      "mwARo",
+      "mwASs",
+      "mwATU",
+      "mwATs",
+      "mwAUs",
+      "mwAWE",
+      "mwAXg",
+      "mwAZY",
+      "mwAZo",
+      "mwAaU",
+      "mwAbM",
+      "mwAdQ",
+      "mwAew"
+    ],
+    "blankIds": [],
+    "unobservedNumericLabels": [
+      1201
+    ]
+  },
+  "priorAudit": {
+    "path": "research/funerals-second-source-audit.json",
+    "sha256": "69084c9f291e25c2f4db942725e3269f2fa3871353f2a1a0686a9ede7781ed21"
+  },
+  "priorAudits": [
+    {
+      "path": "research/funerals-second-source-audit.json",
+      "sha256": "69084c9f291e25c2f4db942725e3269f2fa3871353f2a1a0686a9ede7781ed21"
+    },
+    {
+      "path": "research/funerals-third-source-audit.json",
+      "sha256": "0dc73a4365176d62a18921e760cde5862dd4eecfd1fae88c94fd89ad62c088a2"
+    }
+  ],
+  "printedComparisons": [
+    {
+      "id": "brill-1862",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+      "bytes": 28290204,
+      "inspectedPdfPages": [
+        327,
+        328,
+        329,
+        330,
+        331
+      ]
+    },
+    {
+      "id": "dar-ibn-kathir-2002",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+      "bytes": 45304371,
+      "inspectedPdfPages": [
+        314,
+        315,
+        316,
+        317,
+        318
+      ]
+    }
+  ],
+  "records": [
+    {
+      "reference": 1239,
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwzA:0",
+      "chapterId": "chapter-40",
+      "paragraphIds": [
+        "mwzA"
+      ],
+      "arabicSha256": "581678583db726fbbaf3dabc42123b5fd25c5c9129517011a0a7fb00ba065c9f",
+      "status": "occurrence-matched-wording-review-pending",
+      "printedReferences": [
+        1301
+      ],
+      "printedPages": {
+        "brill-1862": [
+          327,
+          328
+        ],
+        "dar-ibn-kathir-2002": [
+          314
+        ]
+      },
+      "finding": "The next web heading uses XLI. CHAPTER: instead of the usual Roman-numeral colon. Separate that chapter context from the report body before comparing or hashing it.",
+      "englishComparisons": {
+        "bewley": {
+          "status": "limited-comparison-not-wording-approval",
+          "displayedReference": "1239",
+          "bodySha256": "1775cd05f990b7ffcf061501122f5f606272e3e1606fd6ae275def8a39ca64b3",
+          "limitations": [
+            "Renders فرأيت as I think rather than preserving its seeing/reporting form. The original locator also captured the following differently punctuated chapter heading and its context; the revised locator separates that material."
+          ],
+          "rawDisplayedReference": "1239.",
+          "occurrence": 1
+        },
+        "khan": {
+          "status": "selected-occurrence-located-with-limits",
+          "references": [
+            "2.23.388"
+          ],
+          "parts": [
+            {
+              "reference": "2.23.388",
+              "recordSha256": "2e3878ab42c2a4d0502586dd29613a8a3b86a02cb2dc917512b20749bdc3d3c4",
+              "bodySha256": "07a9faf11ff0f4195512b025d183525dabe8fbfcb6c6f4d0dde18d1269b1f047",
+              "scope": "located-body"
+            }
+          ],
+          "limitations": [
+            "Adds washing/shrouding, morning, offspring and memorization explanations; changes the selected لعل صيغة and omits the closing seeing/reporting form."
+          ]
+        }
+      }
+    },
+    {
+      "reference": 1240,
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mw0g:0",
+      "chapterId": "chapter-41",
+      "paragraphIds": [
+        "mw0g"
+      ],
+      "arabicSha256": "dd1eac42633825a655658e9eb2fdd6c1eabaada93605b648a17e9b874a7b4af0",
+      "status": "occurrence-matched-wording-review-pending",
+      "printedReferences": [
+        1302
+      ],
+      "printedPages": {
+        "brill-1862": [
+          328
+        ],
+        "dar-ibn-kathir-2002": [
+          315
+        ]
+      },
+      "finding": "The complete occurrence was located by its body and chain in both inspected prints and English passages. Wording, role and honorific review remain pending.",
+      "englishComparisons": {
+        "bewley": {
+          "status": "located-comparison-only",
+          "displayedReference": "1240",
+          "bodySha256": "98488e29d6dadc520c2e2dd56582c85966023a92af32401628030994216b1069",
+          "limitations": [],
+          "rawDisplayedReference": "1240.",
+          "occurrence": 1
+        },
+        "khan": {
+          "status": "located-comparison-only",
+          "references": [
+            "2.23.389"
+          ],
+          "parts": [
+            {
+              "reference": "2.23.389",
+              "recordSha256": "79297d462b0ad5e4afff877604534c7ab657ac1f98791e13926fe4b2ef5c67d3",
+              "bodySha256": "45a1f39b401bda70e6cad73276cba2ae0ac57416790fc3436fd2634bd22f4aa6",
+              "scope": "located-body"
+            }
+          ],
+          "limitations": [
+            "The real and of-a-calamity expansions are not explicit in this occurrence. Preserve the short saying and full opening chain."
+          ]
+        }
+      }
+    },
+    {
+      "reference": 1241,
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mw2A:0",
+      "chapterId": "chapter-42",
+      "paragraphIds": [
+        "mw2A"
+      ],
+      "arabicSha256": "f5fcec1d0680b40ef6b29c7640b5de33ea4e656a0a50233572b61bd4028e61dd",
+      "status": "occurrence-matched-wording-review-pending",
+      "printedReferences": [
+        1303
+      ],
+      "printedPages": {
+        "brill-1862": [
+          328
+        ],
+        "dar-ibn-kathir-2002": [
+          315
+        ]
+      },
+      "finding": "Keep Ibrahim’s honorific, the complete closing corroborating route, and the lexical relationship review separate. The next web chapter heading is now excluded from this body.",
+      "englishComparisons": {
+        "bewley": {
+          "status": "limited-comparison-not-wording-approval",
+          "displayedReference": "1241",
+          "bodySha256": "46584452230754a2d79196d46605a9f4f24cdcad395bd14c4215f60a2b3bdb4f",
+          "limitations": [
+            "Calls Abu Sayf the father of Ibrahim’s wet-nurse, while the Khan comparison calls him her husband. The selected ظئرا needs explicit lexical review. The closing route omits Musa and Thabit, and the original locator includes the following unpunctuated chapter heading; the revised locator separates it.",
+            "Classical commentary identifies ظئر as foster father, the husband of the wet-nurse, not her father. It also records another tear or another utterance for ثم أتبعها بأخرى; this working translation leaves the unspecified noun unfilled."
+          ],
+          "rawDisplayedReference": "1241.",
+          "occurrence": 1
+        },
+        "khan": {
+          "status": "selected-occurrence-located-with-limits",
+          "references": [
+            "2.23.390"
+          ],
+          "parts": [
+            {
+              "reference": "2.23.390",
+              "recordSha256": "d68155a4f0c280c26ca1a0bd3fee5303e2c99b47e0567e4f853ab8470ef36766",
+              "bodySha256": "4db65f632d27068e1757c4139b64e2340b6142615e27e5e760f92863342c72e6",
+              "scope": "located-body"
+            }
+          ],
+          "limitations": [
+            "Omits the full closing Musa/Sulayman/Thabit/Anas route and adds explanatory identification. The exact ظئر relationship needs lexical review.",
+            "Do not supply weeping in the question or more tears in the unspecified then-he-followed-it-with-another phrase. Keep Ibrahim’s honorific, every Prophetic honorific and the complete closing route."
+          ]
+        }
+      }
+    },
+    {
+      "reference": 1242,
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mw3w:0",
+      "chapterId": "chapter-43",
+      "paragraphIds": [
+        "mw3w"
+      ],
+      "arabicSha256": "d8bc3a5d60f7c6244937569d7abad3e114f5bce1b0de66bff17b0632601d32e9",
+      "status": "occurrence-matched-wording-review-pending",
+      "printedReferences": [
+        1304
+      ],
+      "printedPages": {
+        "brill-1862": [
+          328,
+          329
+        ],
+        "dar-ibn-kathir-2002": [
+          315
+        ]
+      },
+      "finding": "Both Arabic prints and both English comparisons contain an Umar closing statement absent from the selected source. Record the omission; do not silently append it.",
+      "englishComparisons": {
+        "bewley": {
+          "status": "limited-comparison-not-wording-approval",
+          "displayedReference": "1242",
+          "bodySha256": "8ab4322aaad8ef1c4bd65a6872dc33c27680dedf8e4f1a5849b05b5b35dcd88f",
+          "limitations": [
+            "Contains the final Umar statement present in both prints but absent from the selected Arabic; it cannot be silently appended to this source translation."
+          ],
+          "rawDisplayedReference": "1242.",
+          "occurrence": 1
+        },
+        "khan": {
+          "status": "selected-occurrence-located-with-limits",
+          "references": [
+            "2.23.391"
+          ],
+          "parts": [
+            {
+              "reference": "2.23.391",
+              "recordSha256": "3c99d28a0279e696b28c5b51c6175a6b8b18c1627e0ab3e823f9e7cd78b73987",
+              "bodySha256": "4d712ff5604acf29144d529b0591695a9e5c74a926fc4b9a40ec94086cbefbf5",
+              "scope": "located-body"
+            }
+          ],
+          "limitations": [
+            "Contains the Umar closing statement absent from the selected Arabic and adds an explanatory parenthesis about the people concerned.",
+            "The selected بكاء is weeping, not wailing. The printed supplement does not explicitly say faces or add an object identifying people who wail."
+          ]
+        }
+      }
+    },
+    {
+      "reference": 1243,
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mw5A:0",
+      "chapterId": "chapter-44",
+      "paragraphIds": [
+        "mw5A"
+      ],
+      "arabicSha256": "639b860b1c17d9f6bef8a45651bda5b22c0e1f78d5c8c7385564d76be8a4a391",
+      "status": "occurrence-matched-wording-review-pending",
+      "printedReferences": [
+        1305
+      ],
+      "printedPages": {
+        "brill-1862": [
+          329
+        ],
+        "dar-ibn-kathir-2002": [
+          315,
+          316
+        ]
+      },
+      "finding": "The complete occurrence was located by its body and chain in both inspected prints and English passages. Wording, role and honorific review remain pending.",
+      "englishComparisons": {
+        "bewley": {
+          "status": "limited-comparison-not-wording-approval",
+          "displayedReference": "1243",
+          "bodySha256": "8da103fc72a0ae3aef08298261def0a2d7993720d3a115f422043763196fc445",
+          "limitations": [
+            "Drops Zayd ibn from Zayd ibn Harithah and omits the opening address to the Messenger. Preserve the named transmitter’s me/us uncertainty and every attribution.",
+            "Keep the oath, future-facing you-are-not-going-to-do-it wording, all honorifics, and the separate Amrah/Aishah attribution without implying doubt."
+          ],
+          "rawDisplayedReference": "1243.",
+          "occurrence": 1
+        },
+        "khan": {
+          "status": "selected-occurrence-located-with-limits",
+          "references": [
+            "2.23.392"
+          ],
+          "parts": [
+            {
+              "reference": "2.23.392",
+              "recordSha256": "5e8c1d8ab901e3d0ffce8780d8cdc234ae78b6348a3d9db331066f6cdafdbc10",
+              "bodySha256": "064eea42f60470f16c595936017c13d5ba741b95970e68cb0a818bf42862b27a",
+              "scope": "located-body"
+            }
+          ],
+          "limitations": [
+            "Adds explanatory parentheses and does not retain the selected reporting qualification فزعمت as such.",
+            "Preserve killed rather than martyrdom, both oaths, the exact me-or-us alternative, and you-are-not-going-to-do-it rather than could-not."
+          ]
+        }
+      }
+    },
+    {
+      "reference": 1244,
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mw6A:0",
+      "chapterId": "chapter-44",
+      "paragraphIds": [
+        "mw6A"
+      ],
+      "arabicSha256": "2633aa90af7fe228d725a791d4e6a85572b4d4f11db77c62e70975df8609cf0d",
+      "status": "occurrence-matched-wording-review-pending",
+      "printedReferences": [
+        1306
+      ],
+      "printedPages": {
+        "brill-1862": [
+          329
+        ],
+        "dar-ibn-kathir-2002": [
+          316
+        ]
+      },
+      "finding": "Keep both complete list alternatives and the first list’s daughter-of-Abu-Sabrah/wife-of-Muadh apposition.",
+      "englishComparisons": {
+        "bewley": {
+          "status": "limited-comparison-not-wording-approval",
+          "displayedReference": "1244",
+          "bodySha256": "1143369ebd978705d8483dc02d9bc217562278bea86d2f329c27282c5c195337",
+          "limitations": [
+            "Its punctuation makes the daughter of Abu Sabrah and the wife of Muadh appear as separate people in the first list, losing the apposition. Both list alternatives need careful translation.",
+            "The first list identifies the daughter of Abu Sabrah as Muadh’s wife; the second explicitly joins the two names with and. Both lists remain."
+          ],
+          "rawDisplayedReference": "1244.",
+          "occurrence": 1
+        },
+        "khan": {
+          "status": "located-comparison-only",
+          "references": [
+            "2.23.393"
+          ],
+          "parts": [
+            {
+              "reference": "2.23.393",
+              "recordSha256": "8c4c8b95caddd2dc1babce7d06417f4f82c6d6a86c479b9d0c3a61dd4d5742e3",
+              "bodySha256": "ad712996db037d930c454aca23b35b25b91e4870feb3051fb76028afeb8ac778",
+              "scope": "located-body"
+            }
+          ],
+          "limitations": []
+        }
+      }
+    },
+    {
+      "reference": 1245,
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mw6w:0",
+      "chapterId": "chapter-45",
+      "paragraphIds": [
+        "mw6w"
+      ],
+      "arabicSha256": "d34140ae0350b6c2eb0730a02ff13af09f55d645ee6d4ff01cd0711b26c0f0fd",
+      "status": "occurrence-matched-wording-review-pending",
+      "printedReferences": [
+        1307
+      ],
+      "printedPages": {
+        "brill-1862": [
+          329,
+          330
+        ],
+        "dar-ibn-kathir-2002": [
+          316
+        ]
+      },
+      "finding": "The complete occurrence was located by its body and chain in both inspected prints and English passages. Wording, role and honorific review remain pending.",
+      "englishComparisons": {
+        "bewley": {
+          "status": "limited-comparison-not-wording-approval",
+          "displayedReference": "1245",
+          "bodySha256": "b6c1b0fe3d3d6dae8399d764b18960e488d3f1125afdbcf39c607cd6e17bf081",
+          "limitations": [
+            "Names Amr rather than Amir ibn Rabiah and abridges the second Zuhri/Salim route."
+          ],
+          "rawDisplayedReference": "1245.",
+          "occurrence": 1
+        },
+        "khan": {
+          "status": "selected-occurrence-located-with-limits",
+          "references": [
+            "2.23.394"
+          ],
+          "parts": [
+            {
+              "reference": "2.23.394",
+              "recordSha256": "dcaba79d2bfa281204129a08fd2af4d16dc09f6d81cc58e4b74c78563d236f36",
+              "bodySha256": "6656cfa091412291040f28b15e0f2ac3d7705b6f4482e92282f8ee750884f4ea",
+              "scope": "located-body"
+            }
+          ],
+          "limitations": [
+            "Omits Sufyan’s full second Zuhri/Salim route; preserve that transmission and the separately attributed al-Humaydi addition."
+          ]
+        }
+      }
+    },
+    {
+      "reference": 1246,
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mw7w:0",
+      "chapterId": "chapter-46",
+      "paragraphIds": [
+        "mw7w"
+      ],
+      "arabicSha256": "e29d2ba2e2d28ca9639f3dc65bbe2e6980dfde16afa589206f853dcc57ae0d1b",
+      "status": "occurrence-matched-wording-review-pending",
+      "printedReferences": [
+        1308
+      ],
+      "printedPages": {
+        "brill-1862": [
+          330
+        ],
+        "dar-ibn-kathir-2002": [
+          316
+        ]
+      },
+      "finding": "The complete occurrence was located by its body and chain in both inspected prints and English passages. Wording, role and honorific review remain pending.",
+      "englishComparisons": {
+        "bewley": {
+          "status": "limited-comparison-not-wording-approval",
+          "displayedReference": "1246",
+          "bodySha256": "f010ee513d729383871d27160938e03131ab0b1fd89a2cd0956d44c3f82228fa",
+          "limitations": [
+            "Names Amr rather than Amir ibn Rabiah.",
+            "Both he-leaves-it-behind and it-leaves-him-behind remain. Ibn Hajar identifies the first or as transmission uncertainty; do not collapse it to one direction."
+          ],
+          "rawDisplayedReference": "1246.",
+          "occurrence": 1
+        },
+        "khan": {
+          "status": "located-comparison-only",
+          "references": [
+            "2.23.395"
+          ],
+          "parts": [
+            {
+              "reference": "2.23.395",
+              "recordSha256": "5d073d0a89be9ec3a33fe8e449d63cdb6bfb2de2e5b9fdfce92aef48666c82da",
+              "bodySha256": "471d4e37843ee7212e31cd76f940bed3d69733de23b21bbddf55afca23902d19",
+              "scope": "located-body"
+            }
+          ],
+          "limitations": []
+        }
+      }
+    },
+    {
+      "reference": 1247,
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mw8Q:0",
+      "chapterId": "chapter-46",
+      "paragraphIds": [
+        "mw8Q"
+      ],
+      "arabicSha256": "62c4f252b513ae362450bde4e71c56df5f9edb7f01dd79a31e9b6c46e11119eb",
+      "status": "occurrence-matched-wording-review-pending",
+      "printedReferences": [
+        1309
+      ],
+      "printedPages": {
+        "brill-1862": [
+          330
+        ],
+        "dar-ibn-kathir-2002": [
+          316
+        ]
+      },
+      "finding": "The historical print places 1248 before 1247 and associates these occurrences with different neighboring chapter divisions. Preserve selected order and chapter ownership.",
+      "englishComparisons": {
+        "bewley": {
+          "status": "limited-comparison-not-wording-approval",
+          "displayedReference": "1247",
+          "bodySha256": "d5cc62012c95a79c4485460b20d0b206262cde457524743ddaab4567bed6f1e9",
+          "limitations": [
+            "Adds Abu to Said al-Maqburi in the opening attribution."
+          ],
+          "rawDisplayedReference": "1247.",
+          "occurrence": 1
+        },
+        "khan": {
+          "status": "located-comparison-only",
+          "references": [
+            "2.23.396"
+          ],
+          "parts": [
+            {
+              "reference": "2.23.396",
+              "recordSha256": "ab71026fa7230d9044d2e2e7915c5844bae2c2f673d32b52af56f74aa8a8fcb5",
+              "bodySha256": "26e568b150dc8e11d4dfbf4a4c75e62772f39d51a55c81b0c7f0ebf9af7470c6",
+              "scope": "located-body"
+            }
+          ],
+          "limitations": []
+        }
+      }
+    },
+    {
+      "reference": 1248,
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mw9A:0",
+      "chapterId": "chapter-47",
+      "paragraphIds": [
+        "mw9A"
+      ],
+      "arabicSha256": "7ace466eb248cdfeb8a6c61f96a5da551aae0a83f3080df500a1d3e9915d0927",
+      "status": "occurrence-matched-wording-review-pending",
+      "printedReferences": [
+        1310
+      ],
+      "printedPages": {
+        "brill-1862": [
+          330
+        ],
+        "dar-ibn-kathir-2002": [
+          316,
+          317
+        ]
+      },
+      "finding": "The historical print places this occurrence before selected 1247; its first transmitter identification also differs. Matching the body is essential.",
+      "englishComparisons": {
+        "bewley": {
+          "status": "limited-comparison-not-wording-approval",
+          "displayedReference": "1248",
+          "bodySha256": "b5792184baa1ba2c6f26fb9f6c3b94a9dcf81d8e02b56a51f6f4a0f185c53b48",
+          "limitations": [
+            "The malformed opening no longer expressly attributes the saying to the Prophet; keep the selected full chain and Prophetic attribution."
+          ],
+          "rawDisplayedReference": "1248.",
+          "occurrence": 1
+        },
+        "khan": {
+          "status": "located-comparison-only",
+          "references": [
+            "2.23.397"
+          ],
+          "parts": [
+            {
+              "reference": "2.23.397",
+              "recordSha256": "27db4a6a6dc3d67c5c04b73f6420ab0f5374ddc11e3df92cae1a4e0af935f998",
+              "bodySha256": "762c2d71cf6d2bb1b66fff4fd6437d94ce52a3850e7788818e2480c188de3cb3",
+              "scope": "located-body"
+            }
+          ],
+          "limitations": []
+        }
+      }
+    },
+    {
+      "reference": 1249,
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mw9w:0",
+      "chapterId": "chapter-48",
+      "paragraphIds": [
+        "mw9w"
+      ],
+      "arabicSha256": "6b96e994abe41041c1e7afc350d4b843dc25b371024267cfeefc38dc7e275518",
+      "status": "occurrence-matched-wording-review-pending",
+      "printedReferences": [
+        1311
+      ],
+      "printedPages": {
+        "brill-1862": [
+          330
+        ],
+        "dar-ibn-kathir-2002": [
+          317
+        ]
+      },
+      "finding": "The selected standing pronoun differs from both prints; preserve each reading explicitly for wording review.",
+      "englishComparisons": {
+        "bewley": {
+          "status": "limited-comparison-not-wording-approval",
+          "displayedReference": "1249",
+          "bodySha256": "f7e8881406889ab2fb00a8ed5bd2d1f5e53be20a26817b192e7b4f2ee3c2bc2b",
+          "limitations": [
+            "Renders the standing relation as with him, while the selected له and modern به differ; preserve and review the selected form."
+          ],
+          "rawDisplayedReference": "1249.",
+          "occurrence": 1
+        },
+        "khan": {
+          "status": "selected-occurrence-located-with-limits",
+          "references": [
+            "2.23.398"
+          ],
+          "parts": [
+            {
+              "reference": "2.23.398",
+              "recordSha256": "4f2d2fc7efa3a89a1aeaa8d042da85d9a3d85be1b23872ffa8849ffbb17bb308",
+              "bodySha256": "63db3786ea174c62ff05d3a4e7f64659cd66a784a5752a7d414485d8fb52107f",
+              "scope": "located-body"
+            }
+          ],
+          "limitations": [
+            "Does not explicitly retain the selected له relation in the shared standing phrase."
+          ]
+        }
+      }
+    },
+    {
+      "reference": 1250,
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mw-Q:0",
+      "chapterId": "chapter-48",
+      "paragraphIds": [
+        "mw-Q"
+      ],
+      "arabicSha256": "37a375a196d78c28e9fa987c2869909315db3d8bc70535ae6b71863c8ed4fead",
+      "status": "occurrence-matched-wording-review-pending",
+      "printedReferences": [
+        1312,
+        1313
+      ],
+      "printedPages": {
+        "brill-1862": [
+          330
+        ],
+        "dar-ibn-kathir-2002": [
+          317
+        ]
+      },
+      "finding": "One selected entry contains modern printed 1312/1313 plus full closing corroborations; the EPUB omits those endings.",
+      "englishComparisons": {
+        "bewley": {
+          "status": "limited-comparison-not-wording-approval",
+          "displayedReference": "1250",
+          "bodySha256": "e232013b4c5141eaf194f0ffa41feb3fcb93521cbbdbdc34fef4e55acb6f720a",
+          "limitations": [
+            "Retains closing statements but omits their Abu Hamzah/A’mash/Amr and Zakariyya/Sha’bi transmission routes."
+          ],
+          "rawDisplayedReference": "1250.",
+          "occurrence": 1
+        },
+        "khan": {
+          "status": "selected-occurrence-located-with-limits",
+          "references": [
+            "2.23.399"
+          ],
+          "parts": [
+            {
+              "reference": "2.23.399",
+              "recordSha256": "9d567aba5b17965ae241ec7805afef5c0de472fac7369f8d5f16a1a5c01e0bf0",
+              "bodySha256": "53af2302fa7f914b55d657afd4a86fe726a6bf8389e8443493d061277e7770e4",
+              "scope": "located-body"
+            }
+          ],
+          "limitations": [
+            "Omits both complete closing corroborating routes and their statements."
+          ]
+        }
+      }
+    },
+    {
+      "reference": 1251,
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mw_Q:0",
+      "chapterId": "chapter-49",
+      "paragraphIds": [
+        "mw_Q"
+      ],
+      "arabicSha256": "994b90477e2bc82f7521347f84fa92badd24c768bafc55102eb7badf097d7295",
+      "status": "occurrence-matched-wording-review-pending",
+      "printedReferences": [
+        1314
+      ],
+      "printedPages": {
+        "brill-1862": [
+          331
+        ],
+        "dar-ibn-kathir-2002": [
+          317
+        ]
+      },
+      "finding": "The occurrence was located by its body and chain in both inspected prints and English passages. Wording, role and honorific review remain pending.",
+      "englishComparisons": {
+        "bewley": {
+          "status": "limited-comparison-not-wording-approval",
+          "displayedReference": "1251",
+          "bodySha256": "c7c86d404af9f40591a93fde506305435aac743e283db0bd7a1f1479a8236b51",
+          "limitations": [
+            "Changes the third-person wording يا ويلها أين يذهبون بها to mixed first/second-person speech; review the pronoun ownership from the selected Arabic.",
+            "The historical print has second-person تذهبون while selected and modern have third-person يذهبون. The English you therefore has a printed basis, but does not reproduce this selected occurrence; it is not evidence of an unequivocal error."
+          ],
+          "rawDisplayedReference": "1251.",
+          "occurrence": 1
+        },
+        "khan": {
+          "status": "selected-occurrence-located-with-limits",
+          "references": [
+            "2.23.400"
+          ],
+          "parts": [
+            {
+              "reference": "2.23.400",
+              "recordSha256": "066e56b98820bdd346dcd610aabf5bf6f199ae4e83b9bd24fe2cdeda25136f96",
+              "bodySha256": "b9281f3c0dc0be381257da402eda7a73964a8bc89d56ae39e9b9baf13b34f72d",
+              "scope": "located-body"
+            }
+          ],
+          "limitations": [
+            "Adds hurriedly and explanatory pronoun parentheses beyond the selected wording."
+          ]
+        }
+      }
+    },
+    {
+      "reference": 1252,
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAQE:0",
+      "chapterId": "chapter-50",
+      "paragraphIds": [
+        "mwAQE"
+      ],
+      "arabicSha256": "37090e597b32e21630d0538699f0bc945cb7fcf0c36ad13959977809098f39df",
+      "status": "occurrence-matched-wording-review-pending",
+      "printedReferences": [
+        1315
+      ],
+      "printedPages": {
+        "brill-1862": [
+          331
+        ],
+        "dar-ibn-kathir-2002": [
+          317
+        ]
+      },
+      "finding": "The occurrence was located by its body and chain in both inspected prints and English passages. Wording, role and honorific review remain pending.",
+      "englishComparisons": {
+        "bewley": {
+          "status": "limited-comparison-not-wording-approval",
+          "displayedReference": "1252",
+          "bodySha256": "325b94f2b1df496a920af43ecd9476e4874eef98b32a3366e4b44a06589e9441",
+          "limitations": [
+            "Supplies an endpoint in the good-outcome clause although the selected occurrence lacks the modern print’s إليه."
+          ],
+          "rawDisplayedReference": "1252 .",
+          "occurrence": 1
+        },
+        "khan": {
+          "status": "selected-occurrence-located-with-limits",
+          "references": [
+            "2.23.401"
+          ],
+          "parts": [
+            {
+              "reference": "2.23.401",
+              "recordSha256": "663a8e9e62641d29de88a35ad5d3d1e38d0cff292c17a16e5a22d85b567526be",
+              "bodySha256": "144cc46def3d43bb0dd28f37100832272887983d8f52dbda88ea7dbe51ae2d17",
+              "scope": "located-body"
+            }
+          ],
+          "limitations": [
+            "Supplies an endpoint in the good-outcome clause absent from selected text; the modern print separately has إليه.",
+            "The endpoint reading is supported by the modern print and by classical elliptical analyses. Its absence from the selected letters is an edition/translation limit, not proof of an unambiguous English error."
+          ]
+        }
+      }
+    },
+    {
+      "reference": 1253,
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAQQ:0",
+      "chapterId": "chapter-51",
+      "paragraphIds": [
+        "mwAQQ"
+      ],
+      "arabicSha256": "d9403444754151bdcabe16e993800f207150de0f1eb3500237c7284397b052d0",
+      "status": "occurrence-matched-wording-review-pending",
+      "printedReferences": [
+        1316
+      ],
+      "printedPages": {
+        "brill-1862": [
+          331
+        ],
+        "dar-ibn-kathir-2002": [
+          318
+        ]
+      },
+      "finding": "The occurrence was located by its body and chain in both inspected prints and English passages. Wording, role and honorific review remain pending.",
+      "englishComparisons": {
+        "bewley": {
+          "status": "limited-comparison-not-wording-approval",
+          "displayedReference": "1253",
+          "bodySha256": "3da6beade3ef4c22f7574763744879576cd52ff8101f8e8110ec1c6245abd2e1",
+          "limitations": [
+            "Changes the selected third-person woe/where-they-take-it wording to mixed first/second-person speech.",
+            "The historical print has second-person تذهبون while selected and modern have third-person يذهبون. Preserve this edition distinction, and retain Prophet used-to-say rather than replacing it with Messenger said."
+          ],
+          "rawDisplayedReference": "1253.",
+          "occurrence": 1
+        },
+        "khan": {
+          "status": "selected-occurrence-located-with-limits",
+          "references": [
+            "2.23.402"
+          ],
+          "parts": [
+            {
+              "reference": "2.23.402",
+              "recordSha256": "0d43c057f53662a6beb404cba2a2041b91b45307efe02ae31e7a980c2ba3dead",
+              "bodySha256": "8744d268e5298381debd2f5f50cf346a9d713ab7681239c15e20639bf2cb6333",
+              "scope": "located-body"
+            }
+          ],
+          "limitations": [
+            "Omits لأهلها and adds quickly."
+          ]
+        }
+      }
+    }
+  ],
+  "englishComparisons": {
+    "bewley": {
+      "url": "https://aishabewley.org/bukhari11",
+      "sha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+      "bytes": 118517
+    },
+    "khan": {
+      "sourcePath": "content/sources/islamhouse-bukhari/source.epub",
+      "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c"
+    }
+  },
+  "unresolvedTextualDifferences": [
+    {
+      "id": "1239-joint-action",
+      "reference": 1239,
+      "paragraphId": "mwzA",
+      "sourceBlockSha256": "581678583db726fbbaf3dabc42123b5fd25c5c9129517011a0a7fb00ba065c9f",
+      "sourceReading": "بما كان منهما",
+      "kind": "unresolved-textual-difference",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "finding": "The historical print has from-her; selected and modern have from-them-both.",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 328,
+          "reading": "بما كان منها",
+          "readingSha256": "68665cc1d5caf1a4e4be90e1d26cda4b478797f8d2f7d22669027b752e5e2d9c"
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 314,
+          "reading": "بما كان منهما",
+          "readingSha256": "a1da35351188f585bf676edcf996c60c74e9b4e01d01aa4e01b0c8c165435d6e"
+        }
+      ],
+      "transcriptionPolicy": "AI manual unvocalized excerpt in modern letter forms. Printed honorifics expand to words in excerpts. No correction to the selected source is applied."
+    },
+    {
+      "id": "1239-blessing-address",
+      "reference": 1239,
+      "paragraphId": "mwzA",
+      "sourceBlockSha256": "581678583db726fbbaf3dabc42123b5fd25c5c9129517011a0a7fb00ba065c9f",
+      "sourceReading": "لكما في ليلتكما",
+      "kind": "unresolved-textual-difference",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "finding": "The historical print uses third-person dual; selected and modern address the pair directly.",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 328,
+          "reading": "لهما في ليلتهما",
+          "readingSha256": "07f4e983fba30678a8b7b3a6f13354bd4314718cbe168a62974e8794b6774ebf"
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 314,
+          "reading": "لكما في ليلتكما",
+          "readingSha256": "55645fccc925d7a899c3d188ac95165414ef92f8355128619c0c898970e63700"
+        }
+      ],
+      "transcriptionPolicy": "AI manual unvocalized excerpt in modern letter forms. Printed honorifics expand to words in excerpts. No correction to the selected source is applied."
+    },
+    {
+      "id": "1240-opening-verb",
+      "reference": 1240,
+      "paragraphId": "mw0g",
+      "sourceBlockSha256": "dd1eac42633825a655658e9eb2fdd6c1eabaada93605b648a17e9b874a7b4af0",
+      "sourceReading": "حدثنا محمد بن بشار",
+      "kind": "unresolved-textual-difference",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "finding": "The historical first verb is related-to-me; selected and modern are related-to-us.",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 328,
+          "reading": "حدثني محمد بن بشار",
+          "readingSha256": "4d7d16b2131e64d8c7de83fd21aacab34137b988922bc326c1d7d2b50eaf1532"
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 315,
+          "reading": "حدثنا محمد بن بشار",
+          "readingSha256": "bbdac5e2de16e44cacb07ea187acd5434fc61509cf889459f1b663d3c6d2e246"
+        }
+      ],
+      "transcriptionPolicy": "AI manual unvocalized excerpt in modern letter forms. Printed honorifics expand to words in excerpts. No correction to the selected source is applied."
+    },
+    {
+      "id": "1241-opening-verb",
+      "reference": 1241,
+      "paragraphId": "mw2A",
+      "sourceBlockSha256": "f5fcec1d0680b40ef6b29c7640b5de33ea4e656a0a50233572b61bd4028e61dd",
+      "sourceReading": "حدثنا الحسن بن عبد العزيز",
+      "kind": "unresolved-textual-difference",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "finding": "The historical first verb is related-to-me; selected and modern are related-to-us.",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 328,
+          "reading": "حدثني الحسن بن عبد العزيز",
+          "readingSha256": "14f784d5d66b80b1999f6c98401e426317a0ac093c20c472140e68a588779d35"
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 315,
+          "reading": "حدثنا الحسن بن عبد العزيز",
+          "readingSha256": "dc20a390c197c9fe8b0f74b0d0aebb0a292544f43466ef0005f3ed97a134f3d0"
+        }
+      ],
+      "transcriptionPolicy": "AI manual unvocalized excerpt in modern letter forms. Printed honorifics expand to words in excerpts. No correction to the selected source is applied."
+    },
+    {
+      "id": "1244-opening-verb",
+      "reference": 1244,
+      "paragraphId": "mw6A",
+      "sourceBlockSha256": "2633aa90af7fe228d725a791d4e6a85572b4d4f11db77c62e70975df8609cf0d",
+      "sourceReading": "حدثنا عبد الله بن عبد الوهاب",
+      "kind": "unresolved-textual-difference",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "finding": "The historical first verb is related-to-me; selected and modern are related-to-us.",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 329,
+          "reading": "حدثني عبد الله بن عبد الوهاب",
+          "readingSha256": "0107796bdb34c28aa91e447064854d88be68ec03a6188160e09d1cda87795194"
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 316,
+          "reading": "حدثنا عبد الله بن عبد الوهاب",
+          "readingSha256": "674faa6f0894280f88531b2d4ce9f4872421a3c7eaa3cbaf0aa4605a1d39a761"
+        }
+      ],
+      "transcriptionPolicy": "AI manual unvocalized excerpt in modern letter forms. Printed honorifics expand to words in excerpts. No correction to the selected source is applied."
+    },
+    {
+      "id": "1241-ibrahim-honorific",
+      "reference": 1241,
+      "paragraphId": "mw2A",
+      "sourceBlockSha256": "f5fcec1d0680b40ef6b29c7640b5de33ea4e656a0a50233572b61bd4028e61dd",
+      "sourceReading": "لإبراهيم عليه السلام",
+      "kind": "unresolved-textual-difference",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "finding": "The selected and modern Ibrahim honorific is absent from this historical phrase. Preserve the selected honorific.",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 328,
+          "reading": "لإبراهيم",
+          "readingSha256": "c747b82dd4e822dcafe64d500d30de59a0d79064b002846ddf9da02fecb55037"
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 315,
+          "reading": "لإبراهيم عليه السلام",
+          "readingSha256": "b9a32041272e65ecd3ac1fd458b4afdaa6ad6a555f17fdb31f2e344b937fba57"
+        }
+      ],
+      "transcriptionPolicy": "AI manual unvocalized excerpt in modern letter forms. Printed honorifics expand to words in excerpts. No correction to the selected source is applied."
+    },
+    {
+      "id": "1242-weeping-designation",
+      "reference": 1242,
+      "paragraphId": "mw3w",
+      "sourceBlockSha256": "d8bc3a5d60f7c6244937569d7abad3e114f5bce1b0de66bff17b0632601d32e9",
+      "sourceReading": "فبكى النبي ﷺ",
+      "kind": "unresolved-textual-difference",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "finding": "The historical weeping attribution says Messenger; selected and modern say Prophet.",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 329,
+          "reading": "فبكى رسول الله صلى الله عليه وسلم",
+          "readingSha256": "bc6a304740bd054457e9437d2d3d936caea48b6bee9f178ceff64744fe69fcc6"
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 315,
+          "reading": "فبكى النبي صلى الله عليه وسلم",
+          "readingSha256": "9a161ea152094cd426bafc8576051d7ecd992ed3ea11fed5784d98b8396901ce"
+        }
+      ],
+      "transcriptionPolicy": "AI manual unvocalized excerpt in modern letter forms. Printed honorifics expand to words in excerpts. No correction to the selected source is applied."
+    },
+    {
+      "id": "1242-mercy-subject",
+      "reference": 1242,
+      "paragraphId": "mw3w",
+      "sourceBlockSha256": "d8bc3a5d60f7c6244937569d7abad3e114f5bce1b0de66bff17b0632601d32e9",
+      "sourceReading": "أو يرحم",
+      "kind": "unresolved-textual-difference",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "finding": "The historical clause repeats Allah explicitly; selected and modern do not.",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 329,
+          "reading": "أو يرحم الله",
+          "readingSha256": "0e2ecd08d99ee702f0c200f7ac0a0857d36826697f82d29528300df1260da227"
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 315,
+          "reading": "أو يرحم",
+          "readingSha256": "05a0df6bc3c2d504123e35411c3f1dd459cbe4e8b0b42c997a5a3a846d6a35f9"
+        }
+      ],
+      "transcriptionPolicy": "AI manual unvocalized excerpt in modern letter forms. Printed honorifics expand to words in excerpts. No correction to the selected source is applied."
+    },
+    {
+      "id": "1243-attribution-designation",
+      "reference": 1243,
+      "paragraphId": "mw5A",
+      "sourceBlockSha256": "639b860b1c17d9f6bef8a45651bda5b22c0e1f78d5c8c7385564d76be8a4a391",
+      "sourceReading": "فزعمت أن النبي ﷺ",
+      "kind": "unresolved-textual-difference",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "finding": "The historical attribution says Messenger; selected and modern say Prophet.",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 329,
+          "reading": "فزعمت أن رسول الله صلى الله عليه وسلم",
+          "readingSha256": "425afbfba076cea74ef6387e631711349003c417e9b9bde3c6b96c3f349443f1"
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 316,
+          "reading": "فزعمت أن النبي صلى الله عليه وسلم",
+          "readingSha256": "c8cc4fe891e8371eb0fd9fa39e39ab69bb8c335b561735ca50cd8c334df0d0f4"
+        }
+      ],
+      "transcriptionPolicy": "AI manual unvocalized excerpt in modern letter forms. Printed honorifics expand to words in excerpts. No correction to the selected source is applied."
+    },
+    {
+      "id": "1243-oath-connector",
+      "reference": 1243,
+      "paragraphId": "mw5A",
+      "sourceBlockSha256": "639b860b1c17d9f6bef8a45651bda5b22c0e1f78d5c8c7385564d76be8a4a391",
+      "sourceReading": "فوالله ما أنت بفاعل",
+      "kind": "unresolved-textual-difference",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "finding": "The historical oath lacks the selected and modern initial fa connector.",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 329,
+          "reading": "والله ما أنت بفاعل",
+          "readingSha256": "8d863039fb80a072a348a469beb69f2612d195d3fbedbe8fe9cece1209f790ed"
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 316,
+          "reading": "فوالله ما أنت بفاعل",
+          "readingSha256": "e911e6bd68c6ac7cef5e6625da541a5d4e1288e77428426bd6574a02c2eead74"
+        }
+      ],
+      "transcriptionPolicy": "AI manual unvocalized excerpt in modern letter forms. Printed honorifics expand to words in excerpts. No correction to the selected source is applied."
+    },
+    {
+      "id": "1248-companion-identification",
+      "reference": 1248,
+      "paragraphId": "mw9A",
+      "sourceBlockSha256": "7ace466eb248cdfeb8a6c61f96a5da551aae0a83f3080df500a1d3e9915d0927",
+      "sourceReading": "عن أبي سعيد الخدري",
+      "kind": "unresolved-textual-difference",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "finding": "The historical companion name lacks al-Khudri; selected and modern retain it.",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 330,
+          "reading": "عن أبي سعيد",
+          "readingSha256": "8df945114d71f396bacafccf1a77ff705f89a9e6c1a20d86c11ec6309c8b4021"
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 316,
+          "reading": "عن أبي سعيد الخدري",
+          "readingSha256": "433a4b7ee7222f41167fef7718407649aa31f3efa3fcebcc970969bc014ceb22"
+        }
+      ],
+      "transcriptionPolicy": "AI manual unvocalized excerpt in modern letter forms. Printed honorifics expand to words in excerpts. No correction to the selected source is applied."
+    },
+    {
+      "id": "1249-standing-connector-reread",
+      "reference": 1249,
+      "paragraphId": "mw9w",
+      "sourceBlockSha256": "6b96e994abe41041c1e7afc350d4b843dc25b371024267cfeefc38dc7e275518",
+      "sourceReading": "وقمنا له",
+      "kind": "unresolved-textual-difference",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "finding": "Fresh enlarged inspection corrects the earlier historical excerpt’s initial letter: the print has فقمنا, not وقمنا. The original intake remains immutable; this explicit correction supersedes that excerpt. All three source readings remain distinct.",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 330,
+          "reading": "فقمنا",
+          "readingSha256": "c4e718757ac279de983f092f09cc635984b8c94e744a9607cf5b7463dd1e8b91"
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 317,
+          "reading": "فقمنا به",
+          "readingSha256": "b5730903d1a1b519c1843d4c5ab68fdda366bc48436b1f510b45ec4312ea372f"
+        }
+      ],
+      "transcriptionPolicy": "AI manual unvocalized excerpt in modern letter forms. Printed honorifics expand to words in excerpts. No correction to the selected source is applied."
+    },
+    {
+      "id": "1250-closing-amr-name",
+      "reference": 1250,
+      "paragraphId": "mw-Q",
+      "sourceBlockSha256": "37a375a196d78c28e9fa987c2869909315db3d8bc70535ae6b71863c8ed4fead",
+      "sourceReading": "عن الأعمش عن عمرو عن ابن أبي ليلى",
+      "kind": "unresolved-textual-difference",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "finding": "The historical closing route adds ibn Murrah; selected and modern say Amr only. Do not import the longer name.",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 330,
+          "reading": "عن الأعمش عن عمرو بن مرة عن ابن أبي ليلى",
+          "readingSha256": "2877aa3da75102bf9453a7577ca0e3231080e35b431e775d2fd31efbbee9ef82"
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 317,
+          "reading": "عن الأعمش عن عمرو عن ابن أبي ليلى",
+          "readingSha256": "129dedeb257e8635536262e9491ac2e91c10ca2d08e3e7f49cc0101d29fe4acc"
+        }
+      ],
+      "transcriptionPolicy": "AI manual unvocalized excerpt in modern letter forms. Printed honorifics expand to words in excerpts. No correction to the selected source is applied."
+    },
+    {
+      "id": "1251-speech-person",
+      "reference": 1251,
+      "paragraphId": "mw_Q",
+      "sourceBlockSha256": "994b90477e2bc82f7521347f84fa92badd24c768bafc55102eb7badf097d7295",
+      "sourceReading": "أين يذهبون بها",
+      "kind": "unresolved-textual-difference",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "finding": "The historical wording asks where you are taking it; selected and modern ask where they are taking it. This is a printed variant, not an unequivocal error in an English comparison based on the other person.",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 331,
+          "reading": "أين تذهبون بها",
+          "readingSha256": "59fcf6e59a35a997eacebf171d86e4fea54c1cc384bf5608c1fd77e106264ebc"
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 317,
+          "reading": "أين يذهبون بها",
+          "readingSha256": "e78535af432b3806a32749ce2f5b9680a0c74f8857d60b2d2f7b077523c3afc5"
+        }
+      ],
+      "transcriptionPolicy": "AI manual unvocalized excerpt in modern letter forms. Printed honorifics expand to words in excerpts. No correction to the selected source is applied."
+    },
+    {
+      "id": "1253-speech-person",
+      "reference": 1253,
+      "paragraphId": "mwAQQ",
+      "sourceBlockSha256": "d9403444754151bdcabe16e993800f207150de0f1eb3500237c7284397b052d0",
+      "sourceReading": "أين يذهبون بها",
+      "kind": "unresolved-textual-difference",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "finding": "The historical wording asks where you are taking it; selected and modern ask where they are taking it. This is a printed variant, not an unequivocal error in an English comparison based on the other person.",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 331,
+          "reading": "أين تذهبون بها",
+          "readingSha256": "59fcf6e59a35a997eacebf171d86e4fea54c1cc384bf5608c1fd77e106264ebc"
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 318,
+          "reading": "أين يذهبون بها",
+          "readingSha256": "e78535af432b3806a32749ce2f5b9680a0c74f8857d60b2d2f7b077523c3afc5"
+        }
+      ],
+      "transcriptionPolicy": "AI manual unvocalized excerpt in modern letter forms. Printed honorifics expand to words in excerpts. No correction to the selected source is applied."
+    },
+    {
+      "id": "1251-fainting-particle",
+      "reference": 1251,
+      "paragraphId": "mw_Q",
+      "sourceBlockSha256": "994b90477e2bc82f7521347f84fa92badd24c768bafc55102eb7badf097d7295",
+      "sourceReading": "ولو سمعه صعق",
+      "kind": "unresolved-textual-difference",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "finding": "The historical consequence includes lam; selected and modern omit it here. The distinct explicit human subject in 1253 remains.",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 331,
+          "reading": "ولو سمعه لصعق",
+          "readingSha256": "55b3ac7e405b9a1204d3395fff85cdd2af95cce47b469e8350eb929ec2a48b55"
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 317,
+          "reading": "ولو سمعه صعق",
+          "readingSha256": "5c813204736c0dcd2c0f1cfadefd300b9bcda3c807f37ac0fc6a253a7684bc69"
+        }
+      ],
+      "transcriptionPolicy": "AI manual unvocalized excerpt in modern letter forms. Printed honorifics expand to words in excerpts. No correction to the selected source is applied."
+    },
+    {
+      "id": "chapter-50-walking-connector",
+      "reference": null,
+      "paragraphId": "mwAQA",
+      "sourceBlockSha256": "e3039b238c86ca3440c796980be714afcf6a40ea3b1ff18c02e575d8395d2ada",
+      "sourceReading": "وامش بين يديها",
+      "kind": "unresolved-textual-difference",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "finding": "The historical context has fa where selected and modern have waw. The complete selected Arabic introduction remains separate; English is pending.",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 331,
+          "reading": "فامش بين يديها",
+          "readingSha256": "d85901988d1dfa129ca5e976682e0cd4ff8b74539cea3c47903f3d44d131a06c"
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 317,
+          "reading": "وامش بين يديها",
+          "readingSha256": "0ed565f505d9e95d5670c76f05b181a2b7df7c0facd3b3abac2f477f2bce6c21"
+        }
+      ],
+      "transcriptionPolicy": "AI manual unvocalized excerpt in modern letter forms. Printed honorifics expand to words in excerpts. No correction to the selected source is applied."
+    }
+  ],
+  "proposedCorrections": [],
+  "priorEvidenceClarifications": [
+    {
+      "id": "1249-historical-connector-correction",
+      "supersedes": {
+        "path": "research/funerals-second-source-audit.json",
+        "sha256": "69084c9f291e25c2f4db942725e3269f2fa3871353f2a1a0686a9ede7781ed21",
+        "reference": 1249,
+        "field": "unresolvedTextualDifferences.1249-standing-pronoun.witnesses.brill-1862.reading"
+      },
+      "status": "prior-excerpt-corrected-no-source-change",
+      "finding": "Enlarged visual inspection of historical PDF page 330 reads فقمنا. The earlier audit transcribed وقمنا. The later exact witness reading and its hash supersede that excerpt only; the source snapshots and historical audit are preserved. Ibn Hajar explains selected له as referring to the standing, because he stood. This working English uses because he did, with the lexical basis kept separate.",
+      "sources": [
+        "https://www.islamweb.net/ar/library/content/52/2414/باب-من-قام-لجنازة-يهودي"
+      ]
+    },
+    {
+      "id": "1251-1253-printed-person-qualification",
+      "supersedes": {
+        "path": "research/funerals-third-source-audit.json",
+        "sha256": "0dc73a4365176d62a18921e760cde5862dd4eecfd1fae88c94fd89ad62c088a2",
+        "reference": 1251,
+        "field": "englishComparisons.bewley.limitations; also reference 1253"
+      },
+      "status": "prior-description-qualified-no-source-change",
+      "finding": "The historical print uses second-person تذهبون in both occurrences. The comparison’s you has that printed basis; its first-person woe and selected third-person mismatch remain comparison limits, but the second-person wording must not be called an unequivocal error. Selected and modern يذهبون remain unchanged.",
+      "sources": []
+    }
+  ],
+  "printedSupplementDecisions": [
+    {
+      "reference": 1242,
+      "id": "print-1242-closing-note",
+      "status": "labelled-personal-prototype-supplement",
+      "finding": "Both inspected prints contain the Umar closing note absent from the digital source. Add it as a separately labelled transmission note, preserving the original input and both witness readings. The modern honorific is absent in the historical witness. Independent review remains pending."
+    }
+  ],
+  "limitations": [
+    "AI-assisted comparison and working English are not independent accuracy certification.",
+    "All selected digital Arabic remains unchanged. One separately labelled closing note is supplied from two Arabic prints.",
+    "Four complete chapter introductions remain Arabic only, with English pending.",
+    "No new audio, paid access, rights clearance or external publication is implied."
+  ]
+}

@@ -18,7 +18,12 @@ export function validateDamagedBewleyComparison(c,row,config,sources,readEvidenc
  assert.equal(hash(audit),e.sha256,'Changed damaged-comparison audit');
  const documentedLimit=witness?.status==='limited-comparison-not-wording-approval'&&Array.isArray(witness.limitations)&&witness.limitations.length>0&&witness.limitations.every(note=>typeof note==='string'&&note.trim());
  assert(source&&witness&&(witness.status==='damaged-or-incomplete-comparison'||documentedLimit),'Audit does not identify a damaged comparison');
- assert.equal(record.sourceRecordId,row.sourceRecordId);assert.equal(record.arabicSha256,row.originalArabicSha256??row.arabicSha256,'Damage evidence is bound to different Arabic');
+ // Comparisons were located against the digital occurrence, before any separately
+ // labelled printed note. The addition validator independently checks this hash
+ // against the immutable inventory and verifies the complete derived wording.
+ const digitalHash=row.originalArabicSha256??row.arabicSupplements?.[0]?.digitalArabicSha256??row.arabicSha256;
+ for(const addition of row.arabicSupplements??[])assert.equal(addition.digitalArabicSha256,digitalHash,'Printed notes target different digital input');
+ assert.equal(record.sourceRecordId,row.sourceRecordId);assert.equal(record.arabicSha256,digitalHash,'Damage evidence is bound to different Arabic');
  assert.equal(c.id,config.bewleySourceId);assert.equal(c.reference,witness.displayedReference);
  assert.equal(sources.find(s=>s.id===c.id)?.url,source.url,'Damaged comparison points to another source');
  assert.deepEqual(e,{path:e.path,sha256:hash(audit),sourceSha256:source.sha256,bodySha256:witness.bodySha256,occurrence:witness.occurrence},'Damage evidence differs from the inspected occurrence');
