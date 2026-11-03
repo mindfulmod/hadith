@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T23:22:07.816929+00:00",
+  "updatedAt": "2026-11-03T23:42:43.384720+00:00",
   "objective": "Production-ready English-first Sahih al-Bukhari reader with the full collection, precise source access, Cedar narration, whole-hadith sessions and dependable offline iPhone use.",
   "status": "in-progress",
   "decisions": {
@@ -81,7 +81,7 @@
   ],
   "nextActions": [
     "Keep the 699-entry approval candidate and subsequent local previews separate from the approved 632-entry live release until the specific publication is authorized.",
-    "Continue complete wording and presentation-role review from Funerals 1254. The first 73 selected digital reports and separate printed 1260 as app 1200b are in the labelled local prototype; 77 selected entries remain. Preserve the explicit 1214 chain correction, 1242 printed closing supplement, immutable originals and both witnesses, unresolved Ghundar closing-note ownership at 1306/1307, absent pinned EPUB counterpart for 1234 and separate online comparison, shared/split mappings and original English labels for six trailing Zakat-related records. Independent review remains pending. Cedar remains on the ordinary free demo; no paid API setup or spend.",
+    "Continue complete wording and presentation-role review from Funerals 1271. Ninety selected digital reports and separate printed 1260 as app 1200b are in the labelled local prototype; 60 selected entries remain. Preserve the explicit 1214 chain correction, 1242 printed closing supplement, immutable originals and both witnesses, later 1259/1265 comparison corrections, unresolved Ghundar closing-note ownership at 1306/1307, absent pinned EPUB counterpart for 1234 and separate online comparison, shared/split mappings and original English labels for six trailing Zakat-related records. Independent review remains pending. Cedar remains on the ordinary free demo; no paid API setup or spend.",
     "Preserve the overlapping congregation source as excluded evidence. It must not add duplicate entries or replace selected Adhan wording.",
     "Use the new bilingual scale benchmark for future substantial expansion. The 1,166-entry collection and separate 8,000-entry artificial workload are measured; verify the eventual complete corpus, chapter/citation shape, transient/native memory, cold networks and fresh physical-iPhone behavior before claiming full production scale.",
     "Complete the Arabic edition/reference map using the new exact-span inventory and pinned printed-witness findings; keep combined labels distinct from missing or misassigned bodies.",
@@ -430,12 +430,12 @@
     "boundaryReviewStatus": "references-confirmed-and-printed-tail-admitted-local-only"
   },
   "currentLocalPreview": {
-    "entries": 1254,
+    "entries": 1271,
     "books": 25,
-    "release": "opening-1ea8889016c8",
-    "readingBytes": 33493598,
+    "release": "opening-e1ab2d1e030b",
+    "readingBytes": 33976051,
     "publication": "not-published",
-    "verification": "research/funerals-fifth-reader-verification.json",
+    "verification": "research/funerals-sixth-reader-verification.json",
     "liveEntries": 632,
     "liveCommit": "a6d55223d3d863f2583ba67aa27edd139e9d7d6a"
   },
@@ -1617,7 +1617,7 @@
     ]
   },
   "funeralsReader": {
-    "status": "seventy-four-reports-in-labelled-personal-prototype",
+    "status": "ninety-one-reports-in-labelled-personal-prototype",
     "references": [
       1180,
       1181,
@@ -1692,17 +1692,34 @@
       1250,
       1251,
       1252,
-      1253
+      1253,
+      1254,
+      1255,
+      1256,
+      1257,
+      1258,
+      1259,
+      1260,
+      1261,
+      1262,
+      1263,
+      1264,
+      1265,
+      1266,
+      1267,
+      1268,
+      1269,
+      1270
     ],
-    "selectedEntriesAdmitted": 73,
-    "remainingSelectedEntries": 77,
-    "chapters": 51,
-    "arabicContextParagraphs": 13,
-    "translatedSpans": 202,
+    "selectedEntriesAdmitted": 90,
+    "remainingSelectedEntries": 60,
+    "chapters": 64,
+    "arabicContextParagraphs": 18,
+    "translatedSpans": 250,
     "review": "content/review/funerals-batches.json",
-    "wordingEvidence": "research/funerals-fifth-wording-review.json",
-    "sourceAddendum": "research/funerals-fifth-wording-addendum.json",
-    "verification": "research/funerals-fifth-reader-verification.json",
+    "wordingEvidence": "research/funerals-sixth-wording-review.json",
+    "sourceAddendum": "research/funerals-sixth-wording-addendum.json",
+    "verification": "research/funerals-sixth-reader-verification.json",
     "inheritedChainLink": {
       "from": 1185,
       "to": 1184
@@ -1781,7 +1798,11 @@
     "priorEvidenceClarifications": [
       "1234-lexical-alternative-clarification",
       "1249-historical-connector-correction",
-      "1251-1253-printed-person-qualification"
+      "1251-1253-printed-person-qualification",
+      "1259-action-excerpt-correction",
+      "1265-singular-noun-correction",
+      "1257-closing-statement-clarification",
+      "1255-epub-parenthesis-clarification"
     ],
     "fifthBatchCombinedPrintedOccurrences": {
       "appReference": 1250,
@@ -1795,6 +1816,22 @@
       "id": "print-1242-closing-note",
       "selectedWitness": "dar-ibn-kathir-2002",
       "independentReview": "pending"
-    }
+    },
+    "sixthBatchCombinedPrintedOccurrences": [
+      {
+        "appReference": 1260,
+        "printedReferences": [
+          1323,
+          1324
+        ]
+      },
+      {
+        "appReference": 1263,
+        "printedReferences": [
+          1327,
+          1328
+        ]
+      }
+    ]
   }
 }

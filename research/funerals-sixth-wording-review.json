@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-03T23:33:38.666717+00:00",
+  "status": "ai-assisted-source-comparison-independent-review-pending",
+  "sourceAuditSha256": "0dc73a4365176d62a18921e760cde5862dd4eecfd1fae88c94fd89ad62c088a2",
+  "priorAudits": [
+    {
+      "path": "research/funerals-third-source-audit.json",
+      "sha256": "0dc73a4365176d62a18921e760cde5862dd4eecfd1fae88c94fd89ad62c088a2"
+    }
+  ],
+  "addendumSha256": "17d62589ec3a23b2a7209dd8f0b98618186e186ad5a0bc4f2b2714de9d18c2db",
+  "reviewSha256": "249acb21ad790db51cd5a4aa34a255e83685372c7089bb52b29002a3b3fa0265",
+  "reviewHashMethod": "SHA-256 of UTF-8 compact JSON preserving property order, finalized with JSON.stringify.",
+  "references": [
+    1254,
+    1255,
+    1256,
+    1257,
+    1258,
+    1259,
+    1260,
+    1261,
+    1262,
+    1263,
+    1264,
+    1265,
+    1266,
+    1267,
+    1268,
+    1269,
+    1270
+  ],
+  "pendingSelectedReferences": [
+    1271,
+    1272,
+    1273,
+    1274,
+    1275,
+    1276,
+    1277,
+    1278,
+    1279,
+    1280,
+    1281,
+    1282,
+    1283,
+    1284,
+    1285,
+    1286,
+    1287,
+    1288,
+    1289,
+    1290,
+    1291,
+    1292,
+    1293,
+    1294,
+    1295,
+    1296,
+    1297,
+    1298,
+    1299,
+    1300,
+    1301,
+    1302,
+    1303,
+    1304,
+    1305,
+    1306,
+    1307,
+    1308,
+    1309,
+    1310,
+    1311,
+    1312,
+    1313,
+    1314,
+    1315,
+    1316,
+    1317,
+    1318,
+    1319,
+    1320,
+    1321,
+    1322,
+    1323,
+    1324,
+    1325,
+    1326,
+    1327,
+    1328,
+    1329,
+    1330
+  ],
+  "originalDigitalArabicChanged": false,
+  "derivedArabicCorrections": [],
+  "printedSupplements": [],
+  "exactTranslatedSpans": 48,
+  "selectedChapters": 13,
+  "separateArabicContextBlocks": 5,
+  "printPagesReread": {
+    "brill-1862": [
+      331,
+      332,
+      333,
+      334,
+      335
+    ],
+    "dar-ibn-kathir-2002": [
+      318,
+      319,
+      320,
+      321,
+      322
+    ]
+  },
+  "englishBodiesReread": {
+    "bewley": [
+      1254,
+      1255,
+      1256,
+      1257,
+      1258,
+      1259,
+      1260,
+      1261,
+      1262,
+      1263,
+      1264,
+      1265,
+      1266,
+      1267,
+      1268,
+      1269,
+      1270
+    ],
+    "khan": [
+      "2.23.403",
+      "2.23.404",
+      "2.23.405",
+      "2.23.406",
+      "2.23.407",
+      "2.23.408",
+      "2.23.409",
+      "2.23.410",
+      "2.23.411",
+      "2.23.412",
+      "2.23.413",
+      "2.23.414",
+      "2.23.415",
+      "2.23.416",
+      "2.23.417",
+      "2.23.418",
+      "2.23.419"
+    ]
+  },
+  "lexicalSources": [
+    {
+      "id": "qastallani-isolated-grave",
+      "label": "Al-Qastallani · Irshad al-Sari · the isolated-grave and foundling readings",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://ablibrary.net/book_content/b/18673/148?lang=ar"
+    },
+    {
+      "id": "ibn-hajar-qirat-expression",
+      "label": "Ibn Hajar · Fath al-Bari · Ibn Umar’s expression, Aishah gloss and closing lexical note",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/ar/library/content/52/2436/باب-فضل-اتباع-الجنائز"
+    },
+    {
+      "id": "ibn-hajar-funeral-prayer-voice",
+      "label": "Ibn Hajar · Fath al-Bari · active and passive prayer readings",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/ar/library/content/52/2439/باب-من-انتظر-حتى-تدفن"
+    },
+    {
+      "id": "nawawi-nifas-word",
+      "label": "Al-Nawawi · Al-Majmu · the language of nifas",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/amp/ar/library/content/14/1154/أحكام-النفاس"
+    },
+    {
+      "id": "ibn-hajar-ashamah-name",
+      "label": "Ibn Hajar · Fath al-Bari · the repeated Ashamah name and corroboration",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/ar/library/content/52/2454/باب-التكبير-على-الجنازة-أربعا"
+    }
+  ],
+  "priorEvidenceClarifications": [
+    {
+      "id": "1259-action-excerpt-correction",
+      "supersedes": {
+        "path": "research/funerals-third-source-audit.json",
+        "sha256": "0dc73a4365176d62a18921e760cde5862dd4eecfd1fae88c94fd89ad62c088a2",
+        "reference": 1259,
+        "field": "unresolvedTextualDifferences.1259-added-action.witnesses.brill-1862.reading"
+      },
+      "status": "prior-excerpt-corrected-no-source-change",
+      "finding": "Fresh enlarged historical page 332 inspection reads فصلينا, we prayed, not the earlier فسلمنا excerpt. The new exact reading supersedes that excerpt alone. Original audit and source snapshots remain unchanged; the selected Arabic does not acquire this additional action.",
+      "sources": []
+    },
+    {
+      "id": "1265-singular-noun-correction",
+      "supersedes": {
+        "path": "research/funerals-third-source-audit.json",
+        "sha256": "0dc73a4365176d62a18921e760cde5862dd4eecfd1fae88c94fd89ad62c088a2",
+        "reference": 1265,
+        "field": "unresolvedTextualDifferences.1265-place-noun; englishComparisons.bewley.limitations; englishComparisons.khan.limitations"
+      },
+      "status": "prior-excerpt-corrected-no-source-change",
+      "finding": "Fresh enlarged historical page 334 inspection confirms singular مسجدا, as in selected Arabic and modern page 320. The old claim of historical plural مساجد is withdrawn. That print cannot support the comparisons’ plural noun. Both prints still differ in the later Aishah closing, which remains separately documented.",
+      "sources": []
+    },
+    {
+      "id": "1257-closing-statement-clarification",
+      "supersedes": {
+        "path": "research/funerals-third-source-audit.json",
+        "sha256": "0dc73a4365176d62a18921e760cde5862dd4eecfd1fae88c94fd89ad62c088a2",
+        "reference": 1257,
+        "field": "englishComparisons.bewley.limitations"
+      },
+      "status": "prior-description-qualified-no-source-change",
+      "finding": "The Abu al-Zubayr closing is a statement that Jabir was in the second row, not a question. The omitted route remains a comparison limitation.",
+      "sources": []
+    },
+    {
+      "id": "1255-epub-parenthesis-clarification",
+      "supersedes": {
+        "path": "research/funerals-third-source-audit.json",
+        "sha256": "0dc73a4365176d62a18921e760cde5862dd4eecfd1fae88c94fd89ad62c088a2",
+        "reference": 1255,
+        "field": "englishComparisons.khan.limitations"
+      },
+      "status": "prior-description-qualified-no-source-change",
+      "finding": "The located EPUB parenthesis explains leading the prayer; it does not add a setting. The current comparison note corrects that description without changing the prior audit.",
+      "sources": []
+    }
+  ],
+  "chapterDifferences": {
+    "chapter-55": [
+      "chapter-55-heading",
+      "chapter-55-prayer-word",
+      "chapter-55-takbir-article",
+      "chapter-55-divine-designation"
+    ],
+    "chapter-60": [
+      "chapter-60-hearing-person",
+      "chapter-60-answering-article"
+    ],
+    "chapter-64": [
+      "chapter-64-prayer-order"
+    ]
+  },
+  "limitations": [
+    "AI-assisted comparison and working English are not independent accuracy certification.",
+    "All selected digital Arabic remains unchanged. No printed supplement or correction is applied in this batch.",
+    "Five complete chapter introductions remain Arabic only, with English pending.",
+    "No new audio, paid access, rights clearance or external publication is implied."
+  ]
+}
