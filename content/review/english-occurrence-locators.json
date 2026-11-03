@@ -63,6 +63,69 @@
         "path": "research/rain-prayer-source-audit.json",
         "sha256": "d753a7a165f951d020cf7259f501610b372c2652b7188cae5998db4c2709955c"
       }
+    },
+    {
+      "id": "bewley-shortening-1053-located",
+      "sourceId": "bewley-shortening",
+      "sourceUrl": "https://aishabewley.org/bukhari10",
+      "sourceSnapshotSha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+      "sourceBytes": 102307,
+      "arabicSourceRecordId": "wikisource-bukhari-shortening-r278144:1053",
+      "originalArabicSha256": "f0e028fcac53e5339d20808e73a5ec493e588d50cfecb21e0c5643c03a9fbdf8",
+      "appReference": 1053,
+      "displayedReference": "1054",
+      "occurrence": 1,
+      "chapterLabel": "XII",
+      "locatedTextSha256": "d2fc5e8d1c23d1841be95a618be6bac2fd990a4cae4eeb9db5c24b558e01ea3f",
+      "locatorPolicy": "Split at HTML paragraph/heading boundaries, decode entities and collapse whitespace within each block; source line breaks do not create blocks. Bound Chapter 24 by Chapter 25. Match labels only at block starts, never prose cross-references. Preserve ordered labels and repeated-label occurrence indices; body spans end at the next label and may include subsequent chapter context. Labels 1054 and the first 1055 locate digital 1053 and 1054; the second 1055 locates digital 1055. Locators are not wording approval.",
+      "status": "located-comparison-not-wording-approval",
+      "note": "This Amir report has its own digital number and al-Layth/Yunus route. Bewley labels its body 1054; Khan places it after Umm Hani inside 2.20.207.",
+      "auditEvidence": {
+        "path": "research/shortening-source-audit.json",
+        "sha256": "334513abc8fb7b3f0c81a778cc59aeecc38aa97ee1f8a6f145369f58e32f45e1"
+      }
+    },
+    {
+      "id": "bewley-shortening-1054-located",
+      "sourceId": "bewley-shortening",
+      "sourceUrl": "https://aishabewley.org/bukhari10",
+      "sourceSnapshotSha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+      "sourceBytes": 102307,
+      "arabicSourceRecordId": "wikisource-bukhari-shortening-r278144:1054",
+      "originalArabicSha256": "6ceb7cdb5c155e479d642c15c133924f1d7142ef0516af013ef706214a72b7de",
+      "appReference": 1054,
+      "displayedReference": "1055",
+      "occurrence": 1,
+      "chapterLabel": "XII",
+      "locatedTextSha256": "acafcb9ce79f271b96bc92194dfb6a6de84570f8fb2fea49d1a7dd2396ee181c",
+      "locatorPolicy": "Split at HTML paragraph/heading boundaries, decode entities and collapse whitespace within each block; source line breaks do not create blocks. Bound Chapter 24 by Chapter 25. Match labels only at block starts, never prose cross-references. Preserve ordered labels and repeated-label occurrence indices; body spans end at the next label and may include subsequent chapter context. Labels 1054 and the first 1055 locate digital 1053 and 1054; the second 1055 locates digital 1055. Locators are not wording approval.",
+      "status": "located-comparison-not-wording-approval",
+      "note": "The Ibn Umar report is displayed as the first 1055 occurrence in Bewley. Body identity, not the displayed number alone, establishes the comparison.",
+      "auditEvidence": {
+        "path": "research/shortening-source-audit.json",
+        "sha256": "334513abc8fb7b3f0c81a778cc59aeecc38aa97ee1f8a6f145369f58e32f45e1"
+      }
+    },
+    {
+      "id": "bewley-shortening-1055-located",
+      "sourceId": "bewley-shortening",
+      "sourceUrl": "https://aishabewley.org/bukhari10",
+      "sourceSnapshotSha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+      "sourceBytes": 102307,
+      "arabicSourceRecordId": "wikisource-bukhari-shortening-r278144:1055",
+      "originalArabicSha256": "4e78769b557d7c47f6b54460fb40db61595c177db5ab521b19ed6b1dc5fe3827",
+      "appReference": 1055,
+      "displayedReference": "1055",
+      "occurrence": 2,
+      "chapterLabel": "XIII",
+      "locatedTextSha256": "934b611caf60a53b972ce720f5f20557b4a40766c09fe37b3f5a0dd4ade70f1c",
+      "locatorPolicy": "Split at HTML paragraph/heading boundaries, decode entities and collapse whitespace within each block; source line breaks do not create blocks. Bound Chapter 24 by Chapter 25. Match labels only at block starts, never prose cross-references. Preserve ordered labels and repeated-label occurrence indices; body spans end at the next label and may include subsequent chapter context. Labels 1054 and the first 1055 locate digital 1053 and 1054; the second 1055 locates digital 1055. Locators are not wording approval.",
+      "status": "located-comparison-not-wording-approval",
+      "note": "The Salim-from-his-father report is the second Bewley 1055 occurrence and the first report within Khan 2.20.209.",
+      "auditEvidence": {
+        "path": "research/shortening-source-audit.json",
+        "sha256": "334513abc8fb7b3f0c81a778cc59aeecc38aa97ee1f8a6f145369f58e32f45e1"
+      }
     }
   ]
 }

@@ -1,0 +1,2409 @@
+{
+  "schemaVersion": 1,
+  "status": "personal-prototype-only",
+  "independentReview": "pending",
+  "sourceId": "wikisource-bukhari-shortening-r278144",
+  "sourceSha256": "5ee33b82a4a314200c610937328731858a390684a9e1a14cc7cf764b4e5857f5",
+  "inventorySha256": "cc037ebfffcdb72dcf82f5c317a042c428c675bcb2d91f608969811e849cfb78",
+  "createdAt": "2026-11-03",
+  "sources": [
+    {
+      "id": "arabic-shortening",
+      "label": "Arabic Wikisource · fixed revision 278144",
+      "kind": "arabic-input",
+      "format": "web",
+      "url": "https://ar.wikisource.org/w/index.php?title=%D8%B5%D8%AD%D9%8A%D8%AD_%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A%2F%D9%83%D8%AA%D8%A7%D8%A8_%D8%AA%D9%82%D8%B5%D9%8A%D8%B1_%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9&oldid=278144"
+    },
+    {
+      "id": "bewley-shortening",
+      "label": "Aisha Bewley · Shortening the Prayer",
+      "kind": "english-comparison",
+      "format": "web",
+      "url": "https://aishabewley.org/bukhari10"
+    },
+    {
+      "id": "islamhouse-khan",
+      "label": "IslamHouse · Khan-family English comparison",
+      "kind": "english-comparison",
+      "format": "web",
+      "url": "https://islamhouse.com/en/books/70510"
+    },
+    {
+      "id": "brill-1862",
+      "label": "Historical Arabic print · Brill 1862",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+    },
+    {
+      "id": "dar-ibn-kathir-2002",
+      "label": "Arabic print · Dar Ibn Kathir 2002",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+    },
+    {
+      "id": "umdat-shortening-injury",
+      "label": "Al-Ayni · Umdat al-Qari · Injury wording",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/ar/library/content/303/4589/باب-صلاة-القاعد"
+    },
+    {
+      "id": "fath-shortening-lying",
+      "label": "Ibn Hajar · Fath al-Bari · Lying-down wording",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/ar/library/content/52/2060/باب-صلاة-القاعد-بالإيماء"
+    },
+    {
+      "id": "fath-shortening-habban",
+      "label": "Ibn Hajar · Fath al-Bari · Habban narrator name",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://islamweb.net/ar/library/content/52/2035/باب-صلاة-التطوع-على-الحمار"
+    }
+  ],
+  "scope": "Remaining 23 Shortening reports 1046–1068, chapters nine through twenty, retaining four separate Arabic context paragraphs.",
+  "editionNote": "Complete full-span working English; all source Arabic is unchanged except the declared two-print-supported Ibn Buraydah correction in 1064. Shared and mislabelled English comparisons have exact occurrence evidence. Additional historical differences at 1050/1060, the 1065 closing comment and chapter 20 posture order remain disclosed. Chapter 12 English heading and all chapter-context English remain pending. This is AI-assisted personal-prototype text, not Darussalam wording or independent certification.",
+  "chapters": [
+    {
+      "id": "chapter-09",
+      "headingId": "باب_ينزل_للمكتوبة",
+      "contextIds": [],
+      "entryNumbers": [
+        1046,
+        1047,
+        1048
+      ],
+      "title": "Dismounting for the obligatory prayer",
+      "titleArabic": "باب ينزل للمكتوبة",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-10",
+      "headingId": "باب_صلاة_التطوع_على_الحمار",
+      "contextIds": [],
+      "entryNumbers": [
+        1049
+      ],
+      "title": "Voluntary prayer on a donkey",
+      "titleArabic": "باب صلاة التطوع على الحمار",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-11",
+      "headingId": "باب_من_لم_يتطوع_في_السفر_دبر_الصلاة_وقبلها",
+      "contextIds": [],
+      "entryNumbers": [
+        1050,
+        1051
+      ],
+      "title": "One who does not perform voluntary prayers while travelling after the prayer and before it",
+      "titleArabic": "باب من لم يتطوع في السفر دبر الصلاة وقبلها",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-12",
+      "headingId": "باب_من_تطوع_في_السفر_في_غير_دبر_الصلوات_وقبلها",
+      "contextIds": [
+        "mwRQ"
+      ],
+      "entryNumbers": [
+        1052,
+        1053,
+        1054
+      ],
+      "title": "Chapter heading translation pending",
+      "titleArabic": "باب من تطوع في السفر في غير دبر الصلوات وقبلها",
+      "status": "heading-translation-pending",
+      "independentReview": "pending",
+      "contextStatus": "Original Arabic chapter context retained separately; English translation pending.",
+      "translationPendingReason": "The scope of غير and وقبلها in this heading needs an independent grammatical/contextual check. The exact Arabic heading and separate Fajr context remain available; a possibly misleading English scope is not supplied."
+    },
+    {
+      "id": "chapter-13",
+      "headingId": "باب_الجمع_في_السفر_بين_المغرب_والعشاء",
+      "contextIds": [],
+      "entryNumbers": [
+        1055,
+        1056,
+        1057
+      ],
+      "title": "Combining Maghrib and ‘Isha’ while travelling",
+      "titleArabic": "باب الجمع في السفر بين المغرب والعشاء",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-14",
+      "headingId": "باب_هل_يؤذن_أو_يقيم_إذا_جمع_بين_المغرب_والعشاء",
+      "contextIds": [],
+      "entryNumbers": [
+        1058,
+        1059
+      ],
+      "title": "Is the adhan or the iqamah said when Maghrib and ‘Isha’ are combined?",
+      "titleArabic": "باب هل يؤذن أو يقيم إذا جمع بين المغرب والعشاء",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-15",
+      "headingId": "باب_يؤخر_الظهر_إلى_العصر_إذا_ارتحل_قبل_أن_تزيغ_الشمس",
+      "contextIds": [
+        "mwXA"
+      ],
+      "entryNumbers": [
+        1060
+      ],
+      "title": "Delaying Dhuhr until ‘Asr when setting out before the sun declines",
+      "titleArabic": "باب يؤخر الظهر إلى العصر إذا ارتحل قبل أن تزيغ الشمس",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "Original Arabic chapter context retained separately; English translation pending."
+    },
+    {
+      "id": "chapter-16",
+      "headingId": "باب_إذا_ارتحل_بعد_ما_زاغت_الشمس_صلى_الظهر_ثم_ركب",
+      "contextIds": [],
+      "entryNumbers": [
+        1061
+      ],
+      "title": "When setting out after the sun has declined, praying Dhuhr before mounting",
+      "titleArabic": "باب إذا ارتحل بعد ما زاغت الشمس صلى الظهر ثم ركب",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-17",
+      "headingId": "باب_صلاة_القاعد",
+      "contextIds": [],
+      "entryNumbers": [
+        1062,
+        1063,
+        1064
+      ],
+      "title": "Prayer while sitting",
+      "titleArabic": "باب صلاة القاعد",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-18",
+      "headingId": "باب_صلاة_القاعد_بالإيماء",
+      "contextIds": [],
+      "entryNumbers": [
+        1065
+      ],
+      "title": "Prayer while sitting, by gestures",
+      "titleArabic": "باب صلاة القاعد بالإيماء",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in the selected digital chapter."
+    },
+    {
+      "id": "chapter-19",
+      "headingId": "باب_إذا_لم_يطق_قاعدا_صلى_على_جنب",
+      "contextIds": [
+        "mwbw"
+      ],
+      "entryNumbers": [
+        1066
+      ],
+      "title": "If one cannot sit, praying on one’s side",
+      "titleArabic": "باب إذا لم يطق قاعدا صلى على جنب",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "Original Arabic chapter context retained separately; English translation pending."
+    },
+    {
+      "id": "chapter-20",
+      "headingId": "باب_إذا_صلى_قاعدا_ثم_صح_أو_وجد_خفة_تمم_ما_بقى",
+      "contextIds": [
+        "mwcw"
+      ],
+      "entryNumbers": [
+        1067,
+        1068
+      ],
+      "title": "When one prays sitting, then recovers or feels relief, completing what remains",
+      "titleArabic": "باب إذا صلى قاعدا ثم صح أو وجد خفة تمم ما بقى",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "Original Arabic chapter context retained separately; English translation pending.",
+      "contextDifferences": [
+        {
+          "auditPath": "research/shortening-source-audit.json",
+          "auditSha256": "334513abc8fb7b3f0c81a778cc59aeecc38aa97ee1f8a6f145369f58e32f45e1",
+          "differenceId": "chapter-20-position-order"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "number": 1046,
+      "id": "bukhari:1046",
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1046",
+      "chapterId": "chapter-09",
+      "paragraphIds": [
+        "mwNA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1046-1",
+          "paragraphId": "mwNA",
+          "start": 0,
+          "end": 120,
+          "kind": "chain",
+          "arabic": "[1046] حدثنا يحيى بن بكير قال: حدثنا الليث عن عقيل عن ابن شهاب عن عبد الله بن عامر بن ربيعة أن عامر بن ربيعة أخبره قال: ",
+          "english": "Yahya ibn Bukayr related to us. He said: Al-Layth related to us, from ‘Uqayl, from Ibn Shihab, from ‘Abdullah ibn ‘Amir ibn Rabi‘ah, that ‘Amir ibn Rabi‘ah informed him. He said:",
+          "arabicSha256": "9defc1b0de017158cd1640e279c23e06e8bdcde5284060305b70e8560d955f27",
+          "englishSha256": "18124717383582efd6259698471ccaa3e5cf9cf28e7de6177cb928015410d88a"
+        },
+        {
+          "id": "1046-2",
+          "paragraphId": "mwNA",
+          "start": 120,
+          "end": 233,
+          "kind": "report",
+          "arabic": "رأيت رسول الله ﷺ وهو على الراحلة يسبح يومئ برأسه قبل أي وجه توجه ولم يكن رسول الله ﷺ يصنع ذلك في الصلاة المكتوبة ",
+          "english": "I saw the Messenger of Allah, may Allah bless him and grant him peace, on his mount, praying voluntary prayers and gesturing with his head, facing whichever direction he turned. The Messenger of Allah, may Allah bless him and grant him peace, did not do this in the obligatory prayer.",
+          "arabicSha256": "52a2d7458cb26548167ae47b1448cb7fb1f7a2ee71f63a8e9741babc2490e717",
+          "englishSha256": "115bd37c62ab56b6c8968d5719f1e58da5014f0ce0616e2bf7f5d5d4859ca3b0"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            279
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            267
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-shortening",
+          "reference": "1046"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.20.202",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.20.202",
+            "recordSha256": "21d7bbdf387b32d82d8e55cf94aaaeabdfb37840715fee549b97cdf01fba10f1"
+          },
+          "part": {
+            "index": 1,
+            "count": 2
+          },
+          "spanEvidence": {
+            "auditPath": "research/shortening-source-audit.json",
+            "auditSha256": "334513abc8fb7b3f0c81a778cc59aeecc38aa97ee1f8a6f145369f58e32f45e1",
+            "appReference": 1046,
+            "span": {
+              "unit": "unicode-code-points",
+              "join": "two-newlines",
+              "start": 0,
+              "end": 201,
+              "sha256": "7b95a44ef9ad041bbdd1bf2c0fa2fe0986f8f032aad722d1a103e03408c3ffeb"
+            }
+          },
+          "note": " Exact narrator-delimited part 1 of 2 within shared EPUB 2.20.202; this remains one comparison source."
+        }
+      ],
+      "notes": [
+        "The full Amir ibn Rabiah report retains the explicit exception for obligatory prayer. Khan combines this with the next Salim report, so exact spans distinguish them.",
+        "Both Prophet honorifics and the explicit obligatory-prayer exception remain. The shared EPUB is divided at its existing Narrated Salim boundary, not treated as two independent translation sources.",
+        "Modern printed reference 1097; checked Bewley displayed reference 1046, occurrence 1; pinned Khan EPUB 2.20.202. Shorter comparison chains do not replace the complete Arabic."
+      ],
+      "reviewScope": "Full-span AI-assisted working English checked against complete Arabic print pages and individually located comparison bodies. Exact occurrence matching does not certify every word. Independent Arabic, English, chapter, lexical, relationship terminology and spoken-word review remains pending.",
+      "arabicSha256": "c5c2028c9233b234ca9ffd5834231f9f88dd7583817945f34e3766773c167d96",
+      "englishSha256": "c65be04e9311680455e9e5089ead3f4cbb284d5eb25d7a9098afeb4c4f683f91",
+      "reviewRecordSha256": "c9beea07fa40cd441f90ba26cb97ab5dfa2009d1049035d9b796f731e736b56d"
+    },
+    {
+      "number": 1047,
+      "id": "bukhari:1047",
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1047",
+      "chapterId": "chapter-09",
+      "paragraphIds": [
+        "mwNw"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1047-1",
+          "paragraphId": "mwNw",
+          "start": 0,
+          "end": 55,
+          "kind": "chain",
+          "arabic": "[1047] وقال الليث حدثني يونس عن ابن شهاب قال: قال سالم ",
+          "english": "Al-Layth said: Yunus related to me, from Ibn Shihab, who said: Salim said:",
+          "arabicSha256": "be498d033e3ae6be3d3838cc83166a25e7a54792970e4c37a2996f8942381c3e",
+          "englishSha256": "1424c6ea46688d1adf6fab5bac8d539370fdb3ab56843a16d99e9a3b35ec864e"
+        },
+        {
+          "id": "1047-2",
+          "paragraphId": "mwNw",
+          "start": 55,
+          "end": 232,
+          "kind": "report",
+          "arabic": "كان عبد الله يصلي على دابته من الليل وهو مسافر ما يبالي حيث ما كان وجهه قال ابن عمر وكان رسول الله ﷺ يسبح على الراحلة قبل أي وجه توجه ويوتر عليها غير أنه لا يصلي عليها المكتوبة ",
+          "english": "‘Abdullah used to pray on his animal at night while travelling, without concern for the direction he faced. Ibn ‘Umar said: The Messenger of Allah, may Allah bless him and grant him peace, used to pray voluntary prayers on his mount, facing whichever direction he turned, and perform Witr on it, except that he did not perform the obligatory prayer on it.",
+          "arabicSha256": "6f8af4242429283b121fee95b9e69e0c1c1ca809f294aa11d9bba7d301a6a9fc",
+          "englishSha256": "21d95d20e711fdd57a67a1900e018d10f63ce330bf9cf76f1581e0fab9ea2ed9"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            279
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            267
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-shortening",
+          "reference": "1047"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.20.202",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.20.202",
+            "recordSha256": "21d7bbdf387b32d82d8e55cf94aaaeabdfb37840715fee549b97cdf01fba10f1"
+          },
+          "part": {
+            "index": 2,
+            "count": 2
+          },
+          "spanEvidence": {
+            "auditPath": "research/shortening-source-audit.json",
+            "auditSha256": "334513abc8fb7b3f0c81a778cc59aeecc38aa97ee1f8a6f145369f58e32f45e1",
+            "appReference": 1047,
+            "span": {
+              "unit": "unicode-code-points",
+              "join": "two-newlines",
+              "start": 201,
+              "end": 559,
+              "sha256": "dd42b829982ba53a8eef752022edcff6f4bfc63cdfa66b4191a643a22cd02e9a"
+            }
+          },
+          "note": " Exact narrator-delimited part 2 of 2 within shared EPUB 2.20.202; this remains one comparison source."
+        }
+      ],
+      "notes": [
+        "The al-Layth/Yunus route begins a separately numbered digital report. Salim framing, Ibn Umar attribution and obligatory-prayer exception all remain.",
+        "The independent al-Layth/Yunus/Ibn Shihab route, Salim framing, Abdullah name, Ibn Umar attribution, night wording and Witr/obligatory-prayer clauses all remain.",
+        "Modern printed reference 1098; checked Bewley displayed reference 1047, occurrence 1; pinned Khan EPUB 2.20.202. Shorter comparison chains do not replace the complete Arabic."
+      ],
+      "reviewScope": "Full-span AI-assisted working English checked against complete Arabic print pages and individually located comparison bodies. Exact occurrence matching does not certify every word. Independent Arabic, English, chapter, lexical, relationship terminology and spoken-word review remains pending.",
+      "arabicSha256": "9328d1599f22fce94333b247fc972f220cc751d904f97d045051224ea4acdde1",
+      "englishSha256": "b86f3d9ee26f74e256af7678d9095ccc2af105fc4b682e798f68022ba21929ae",
+      "reviewRecordSha256": "a60b58d037a9b1878998a4c90100b9db11016df0664a2df4a1979ddc09ae385e"
+    },
+    {
+      "number": 1048,
+      "id": "bukhari:1048",
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1048",
+      "chapterId": "chapter-09",
+      "paragraphIds": [
+        "mwOQ"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1048-1",
+          "paragraphId": "mwOQ",
+          "start": 0,
+          "end": 110,
+          "kind": "chain",
+          "arabic": "[1048] حدثنا معاذ بن فضالة قال: حدثنا هشام عن يحيى عن محمد بن عبد الرحمن بن ثوبان قال: حدثني جابر بن عبد الله ",
+          "english": "Mu‘adh ibn Fadalah related to us. He said: Hisham related to us, from Yahya, from Muhammad ibn ‘Abd al-Rahman ibn Thawban, who said: Jabir ibn ‘Abdullah related to me:",
+          "arabicSha256": "feee1475cd0cfb3f47cb48e58d6ec61157038bd5c94babbbd5a927cdbf76a798",
+          "englishSha256": "7a6f4a746ff1b5b8bbce1e6e2b77a9d99d5b897cfea1ee66e17c81ac1f51169b"
+        },
+        {
+          "id": "1048-2",
+          "paragraphId": "mwOQ",
+          "start": 110,
+          "end": 198,
+          "kind": "report",
+          "arabic": "أن النبي ﷺ كان يصلي على راحلته نحو المشرق فإذا أراد أن يصلي المكتوبة نزل فاستقبل القبلة ",
+          "english": "The Prophet, may Allah bless him and grant him peace, used to pray on his mount towards the east. When he wanted to perform the obligatory prayer, he dismounted and faced the qiblah.",
+          "arabicSha256": "e694d8fb0d93968566587013d127f67cb2684a1add9b68df4259a0b4fdb74b00",
+          "englishSha256": "2f381bcca19d5587b6cc89d6e20e0b45077ca6ac56844733d7b892383c08fff4"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            279
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            267
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-shortening",
+          "reference": "1048"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.20.203",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.20.203",
+            "recordSha256": "a18c3f8d45afa16330befd9ac944cd940f2846046f9926fd9c08bd4e197a3898"
+          }
+        }
+      ],
+      "notes": [
+        "The Jabir report retains eastward direction and dismounting/facing the qiblah for obligatory prayer.",
+        "The selected account says prayer without an explicit voluntary qualifier here; that qualifier is not borrowed from the English comparison. East, dismounting and qiblah remain.",
+        "Modern printed reference 1099; checked Bewley displayed reference 1048, occurrence 1; pinned Khan EPUB 2.20.203. Shorter comparison chains do not replace the complete Arabic."
+      ],
+      "reviewScope": "Full-span AI-assisted working English checked against complete Arabic print pages and individually located comparison bodies. Exact occurrence matching does not certify every word. Independent Arabic, English, chapter, lexical, relationship terminology and spoken-word review remains pending.",
+      "arabicSha256": "a5fd6ccb9944462aab857f561a4d022e0deeadf1d31bdb4ff8a985f5bfc523d4",
+      "englishSha256": "5f36188b04340cad74b16fe552aaf7690aaa3c7dff3df06a4dce40cbfa748a53",
+      "reviewRecordSha256": "17dc7f55d0dba18d2a5ff19e32dd4c10173dc628d0c5080cd21e89ed2b7ce736"
+    },
+    {
+      "number": 1049,
+      "id": "bukhari:1049",
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1049",
+      "chapterId": "chapter-10",
+      "paragraphIds": [
+        "mwPA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1049-1",
+          "paragraphId": "mwPA",
+          "start": 0,
+          "end": 82,
+          "kind": "chain",
+          "arabic": "[1049] حدثنا أحمد بن سعيد قال: حدثنا حبان قال: حدثنا همام قال: حدثنا أنس بن سيرين ",
+          "english": "Ahmad ibn Sa‘id related to us. He said: Habban related to us. He said: Hammam related to us. He said: Anas ibn Sirin related to us:",
+          "arabicSha256": "25539003cb9a175bc3957498d4cf7e04101e2a0c06b2a0a9232e05516dcfbddb",
+          "englishSha256": "9b137d5f1373f7988e7345b28e98066f0185b791c5ba61749b1aec5bcd5ff626"
+        },
+        {
+          "id": "1049-2",
+          "paragraphId": "mwPA",
+          "start": 82,
+          "end": 267,
+          "kind": "report",
+          "arabic": "استقبلنا أنسا حين قدم من الشام فلقيناه بعين التمر فرأيته يصلي على حمار ووجهه من ذا الجانب يعني عن يسار القبلة فقلت: رأيتك تصلي لغير القبلة، فقال لولا أني رأيت رسول الله ﷺ فعله لم أفعله ",
+          "english": "We went out to meet Anas when he arrived from al-Sham, and we met him at ‘Ayn al-Tamr. I saw him praying on a donkey, with his face towards this side, meaning to the left of the qiblah. I said, “I saw you praying in a direction other than the qiblah.” He said, “Had I not seen the Messenger of Allah, may Allah bless him and grant him peace, do it, I would not have done it.”",
+          "arabicSha256": "3ef749d47395210bb1c6113e4f3446e74e2b64b06aa276716a4afe133b858ee1",
+          "englishSha256": "79ef68f67ed31b156edb2f4218a7c2a009390bf835990f48e729e6dbcb3161a1"
+        },
+        {
+          "id": "1049-3",
+          "paragraphId": "mwPA",
+          "start": 267,
+          "end": 342,
+          "kind": "transmission-note",
+          "arabic": "رواه ابن طهمان عن حجاج عن أنس بن سيرين عن أنس رضى الله تعالى عنه عن النبي ﷺ",
+          "english": "Ibn Tahman related it from Hajjaj, from Anas ibn Sirin, from Anas, may Allah Most High be pleased with him, from the Prophet, may Allah bless him and grant him peace.",
+          "arabicSha256": "0bc64e5c11566a2a3b90e5bcbaae0cd55e1e578ccb3e716d247d9bc09d321787",
+          "englishSha256": "27b8de1cf309eae06c7b78a71369ae71ec39ccd601bb11e11002ef71a20195d9"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            279
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            267
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-shortening",
+          "reference": "1049",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/shortening-source-audit.json",
+            "sha256": "334513abc8fb7b3f0c81a778cc59aeecc38aa97ee1f8a6f145369f58e32f45e1",
+            "sourceSha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+            "bodySha256": "590bb986d893b27d748a1bd9679136b1dc65fc81ae3dbf1e5db86bc6d35e7a2c",
+            "occurrence": 1
+          },
+          "note": "The closing Ibn Tahman route is abridged."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.20.204",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.20.204",
+            "recordSha256": "1ce75692367d4878889a74125108c1d0bf53f7e5b8caf01c11ecd11585ff4966"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Anas bin Sirin: ",
+            "We went to receive Anas bin Malik when he returned from Sham and met him at a place called 'Ain-at-Tamr. I saw him praying riding the donkey, with his face to this direction, i.e. to the left of the Qibla. I said to him, \"I have seen you offering the prayer in a direction other than that of the Qibla.\" He replied, \"If I had not seen Allah's Apostle doing it, I would not have done it.\" "
+          ],
+          "damagedExcerpt": "I would not have done it.",
+          "note": "Closing Ibn Tahman route is omitted."
+        }
+      ],
+      "notes": [
+        "The Ain al-Tamr account retains the donkey, left-of-qiblah clarification and complete closing Ibn Tahman route.",
+        "Al-Sham is retained as the geographical name, rather than assigning it modern borders. The full Ibn Tahman/Hajjaj/Anas ibn Sirin/Anas/Prophet closing route and both closing honorifics remain. Historical expansions of Anas and Ibn Tahman are not imported.",
+        "Modern printed reference 1100; checked Bewley displayed reference 1049, occurrence 1; pinned Khan EPUB 2.20.204. Shorter comparison chains do not replace the complete Arabic.",
+        "The narrator حبان is rendered Habban, with initial a, following the vocalized print and Ibn Hajar’s explicit name gloss. His patronymic is not inserted into the selected chain."
+      ],
+      "reviewScope": "Full-span AI-assisted working English checked against complete Arabic print pages and individually located comparison bodies. Exact occurrence matching does not certify every word. Independent Arabic, English, chapter, lexical, relationship terminology and spoken-word review remains pending.",
+      "arabicSha256": "27408dddc900fdd175cfc0bf2d28e0b85b7e5b15b6fb8d223b2b7cc8875b8b3a",
+      "englishSha256": "7c6c9659c7742d34f25dbec9de065e60cbb900e7ae8b06be4165e9b7408d4aab",
+      "additionalCitations": [
+        {
+          "id": "lexical",
+          "sourceId": "fath-shortening-habban",
+          "locator": "Explicit initial-vowel gloss for حبان in this chain",
+          "scope": "Name vocalization checked against classical commentary; no expanded patronymic or interpretive material is inserted into the report."
+        }
+      ],
+      "reviewRecordSha256": "dfdda2681174af2c4f9c29a1f69facdc942516b02ee5ab71a24aa42fa716eb4a"
+    },
+    {
+      "number": 1050,
+      "id": "bukhari:1050",
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1050",
+      "chapterId": "chapter-11",
+      "paragraphIds": [
+        "mwQA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1050-1",
+          "paragraphId": "mwQA",
+          "start": 0,
+          "end": 94,
+          "kind": "chain",
+          "arabic": "[1050] حدثنا يحيى بن سليمان قال: حدثني ابن وهب قال: حدثني عمر بن محمد أن حفص بن عاصم حدثه قال ",
+          "english": "Yahya ibn Sulayman related to us. He said: Ibn Wahb related to me. He said: ‘Umar ibn Muhammad related to me that Hafs ibn ‘Asim related to him. He said:",
+          "arabicSha256": "90027addf315bfc1634cc584ae2dd5a87b9c766473d5088443dcc7a8e6e97486",
+          "englishSha256": "9a51e14ce9583cfb9f5a287328856bd382f6a2ad6f5fbfab347e3e1ec87dc0a5"
+        },
+        {
+          "id": "1050-2",
+          "paragraphId": "mwQA",
+          "start": 94,
+          "end": 221,
+          "kind": "report",
+          "arabic": "سافر بن عمر رضى الله تعالى عنهما، فقال صحبت النبي ﷺ فلم أره يسبح في السفر، وقال جل ذكره { لقد كان لكم في رسول الله أسوة حسنة } ",
+          "english": "Ibn ‘Umar, may Allah Most High be pleased with them both, travelled and said, “I accompanied the Prophet, may Allah bless him and grant him peace, and did not see him pray voluntary prayers while travelling. And He, exalted be His mention, said: ‘There has certainly been for you in the Messenger of Allah an excellent example.’”",
+          "arabicSha256": "3b63016e888cc4468a7c2728a8b8384ff4089483b81656cf68a231f4b20a491e",
+          "englishSha256": "595dc2392e99ceada6d3efb2e5c5e662c18852dfd3441590e92c3025d57f1a1c"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            279,
+            280
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            267,
+            268
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-shortening",
+          "reference": "1050"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.20.205",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.20.205",
+            "recordSha256": "17071f16b26fd930d751381483a90be7f251170a8270b298cd6957c5bf255201"
+          }
+        }
+      ],
+      "notes": [
+        "The Hafs account includes the statement about not seeing voluntary prayer and the Quran quotation. Both remain attributed as selected.",
+        "The selected Arabic says Ibn Umar travelled; the historical print reads سألت ابن عمر, I asked Ibn Umar. This edition difference remains unresolved; the selected reading and its first-person did not see qualification are retained. The Quran quotation is translated only to its selected endpoint, without inserting a verse number or the remainder of the verse. The divine honorific is retained.",
+        "Modern printed reference 1101; checked Bewley displayed reference 1050, occurrence 1; pinned Khan EPUB 2.20.205. Shorter comparison chains do not replace the complete Arabic."
+      ],
+      "reviewScope": "Full-span AI-assisted working English checked against complete Arabic print pages and individually located comparison bodies. Exact occurrence matching does not certify every word. Independent Arabic, English, chapter, lexical, relationship terminology and spoken-word review remains pending.",
+      "arabicSha256": "4e7d1d66e89992bf548956ee91382d1bdab89dc14d1ccb3c365ab4541b18b6c3",
+      "englishSha256": "21c4f3af741d67b0791c2191d21e44f916e2acf97f7c7457a0b7fd4671261dcd",
+      "contextNotes": [
+        {
+          "id": "1050-source-wording",
+          "label": "A difference in the opening wording",
+          "text": "The selected Arabic says Ibn Umar travelled. The historical print reads «سألت ابن عمر» (I asked Ibn Umar), while the modern print reads «سافر ابن عمر». This prototype preserves the selected reading; the difference remains unresolved.",
+          "citations": [
+            "base",
+            "brill-1862",
+            "dar-ibn-kathir-2002"
+          ],
+          "related": []
+        }
+      ],
+      "reviewRecordSha256": "cf236e03818e1757a73ede734a8f8c6f4af1ae55655dee1c52b1010d524fe453"
+    },
+    {
+      "number": 1051,
+      "id": "bukhari:1051",
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1051",
+      "chapterId": "chapter-11",
+      "paragraphIds": [
+        "mwQg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1051-1",
+          "paragraphId": "mwQg",
+          "start": 0,
+          "end": 93,
+          "kind": "chain",
+          "arabic": "[1051] حدثنا مسدد قال: حدثنا يحيى عن عيسى بن حفص بن عاصم قال: حدثني أبي أنه سمع ابن عمر يقول ",
+          "english": "Musaddad related to us. He said: Yahya related to us, from ‘Isa ibn Hafs ibn ‘Asim, who said: My father related to me that he heard Ibn ‘Umar say:",
+          "arabicSha256": "110107a5059049fd12ffd82494c3fb297da4616e3e3e4715c0ca6f0ac1c43c08",
+          "englishSha256": "d9c023c997aec1ef2b4bd36505086c355bf1ee7c35c7e43df30824fb7d064da6"
+        },
+        {
+          "id": "1051-2",
+          "paragraphId": "mwQg",
+          "start": 93,
+          "end": 189,
+          "kind": "report",
+          "arabic": "صحبت رسول الله ﷺ فكان لا يزيد في السفر على ركعتين وأبا بكر وعمر وعثمان كذلك رضى الله تعالى عنهم ",
+          "english": "I accompanied the Messenger of Allah, may Allah bless him and grant him peace, and he did not exceed two rak‘ahs while travelling. And Abu Bakr, ‘Umar and ‘Uthman likewise, may Allah Most High be pleased with them.",
+          "arabicSha256": "7bf93304d103fab92cd8aa8b1109f8d80b5b24022d47518c40a0a648d1c16961",
+          "englishSha256": "cba8afe2202470d18bc5029735a9c0b8b691e62629ef2cb85545d1ea5295368a"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            280
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            268
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-shortening",
+          "reference": "1051"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.20.206",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.20.206",
+            "recordSha256": "50a722d696d3873527e231cc5b162d7483e3cd828c99a5ac7177bbe73eceace3"
+          }
+        }
+      ],
+      "notes": [
+        "The separate Ibn Umar account retains Abu Bakr, Umar, Uthman and the final honorific; it is not deduplicated with 1050.",
+        "The complete Isa/Hafs chain, no-more-than-two clause and Abu Bakr/Umar/Uthman closing words and honorific remain separate from 1050.",
+        "Modern printed reference 1102; checked Bewley displayed reference 1051, occurrence 1; pinned Khan EPUB 2.20.206. Shorter comparison chains do not replace the complete Arabic."
+      ],
+      "reviewScope": "Full-span AI-assisted working English checked against complete Arabic print pages and individually located comparison bodies. Exact occurrence matching does not certify every word. Independent Arabic, English, chapter, lexical, relationship terminology and spoken-word review remains pending.",
+      "arabicSha256": "ac147b0836d2e1d0ef1106f6298fa0f34e38abb85275706b7ff24d98ac7f96f6",
+      "englishSha256": "95c85845c7014b0a65a5b0caa266cd39939a30a76d7295a8b2eaa1dddd65ae70",
+      "reviewRecordSha256": "deb544e3510ff54e71e2f534388e5b8576a81bf64387eb429db9088b0cb7c92e"
+    },
+    {
+      "number": 1052,
+      "id": "bukhari:1052",
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1052",
+      "chapterId": "chapter-12",
+      "paragraphIds": [
+        "mwRw"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1052-1",
+          "paragraphId": "mwRw",
+          "start": 0,
+          "end": 69,
+          "kind": "chain",
+          "arabic": "[1052] حدثنا حفص بن عمر قال: حدثنا شعبة عن عمرو عن ابن أبي ليلى قال: ",
+          "english": "Hafs ibn ‘Umar related to us. He said: Shu‘bah related to us, from ‘Amr, from Ibn Abi Layla, who said:",
+          "arabicSha256": "05898014118c1f6045861a885980bd28ba1a24a2a06c427447dc92c04e5c8417",
+          "englishSha256": "f4f8deb85790d2939fcf21804cf1754b591e1d8c7313b06eb63ad3138e25b1e4"
+        },
+        {
+          "id": "1052-2",
+          "paragraphId": "mwRw",
+          "start": 69,
+          "end": 235,
+          "kind": "report",
+          "arabic": "ما أنبأنا أحد أنه رأى النبي ﷺ صلى الضحى غير أم هانئ ذكرت أن النبي ﷺ يوم فتح مكة اغتسل في بيتها فصلى ثمان ركعات فما رأيته صلى صلاة أخف منها غير أنه يتم الركوع والسجود ",
+          "english": "No one informed us that he had seen the Prophet, may Allah bless him and grant him peace, pray Duha except Umm Hani’. She mentioned that on the day of the conquest of Mecca, the Prophet, may Allah bless him and grant him peace, bathed in her house and prayed eight rak‘ahs: “I never saw him pray a lighter prayer than that, yet he completed the bowing and prostration.”",
+          "arabicSha256": "8cedffaf19593b22ae32a2ec36556361fe4f005e3e4670ee0912a7bbb46cc24d",
+          "englishSha256": "a8bb610ddf8d7f52753f449bfe84f3a1f0f1d3d6cddf039a65e406063b90af6b"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            280
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            268
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-shortening",
+          "reference": "1052"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.20.207",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.20.207",
+            "recordSha256": "118cb23ed055f37712ab2a83121541127c08545f11b9b1281dd0a943281fd85f"
+          },
+          "part": {
+            "index": 1,
+            "count": 2
+          },
+          "spanEvidence": {
+            "auditPath": "research/shortening-source-audit.json",
+            "auditSha256": "334513abc8fb7b3f0c81a778cc59aeecc38aa97ee1f8a6f145369f58e32f45e1",
+            "appReference": 1052,
+            "span": {
+              "unit": "unicode-code-points",
+              "join": "two-newlines",
+              "start": 0,
+              "end": 326,
+              "sha256": "6c49c41ca480d2cb64310d31b9142825516f126c4c56aa64dc82d39d3140c8ca"
+            }
+          },
+          "note": " Exact narrator-delimited part 1 of 2 within shared EPUB 2.20.207; this remains one comparison source."
+        }
+      ],
+      "notes": [
+        "The Umm Hani report preserves the limited witness claim, eight units and completeness of bowing/prostration. Khan appends the next report in the same body.",
+        "The selected chain says Amr without ibn Murrah. The limited witness claim, two Prophet honorifics, eight rakahs and complete bowing/prostration remain. The first-person concluding observation is attributed to Umm Hani by quotation punctuation, without adding wording to the Arabic.",
+        "Modern printed reference 1103; checked Bewley displayed reference 1052, occurrence 1; pinned Khan EPUB 2.20.207. Shorter comparison chains do not replace the complete Arabic."
+      ],
+      "reviewScope": "Full-span AI-assisted working English checked against complete Arabic print pages and individually located comparison bodies. Exact occurrence matching does not certify every word. Independent Arabic, English, chapter, lexical, relationship terminology and spoken-word review remains pending.",
+      "arabicSha256": "bd323efc430270dcd9d159f22805c06cb2f73cee3cc873606bdd33f76b8ffcfa",
+      "englishSha256": "92537fbccb41faac38cab1f471ccdbe260a18bba66dffc315a123ac038237469",
+      "reviewRecordSha256": "ebef26febebf29c3a9e3f49c18098fafb1eaf7abb373304d1f21aa960946cdf1"
+    },
+    {
+      "number": 1053,
+      "id": "bukhari:1053",
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1053",
+      "chapterId": "chapter-12",
+      "paragraphIds": [
+        "mwSg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1053-1",
+          "paragraphId": "mwSg",
+          "start": 0,
+          "end": 92,
+          "kind": "chain",
+          "arabic": "[1053] وقال الليث حدثني يونس عن ابن شهاب قال: حدثني عبد الله بن عامر بن ربيعة أن أباه أخبره ",
+          "english": "Al-Layth said: Yunus related to me, from Ibn Shihab, who said: ‘Abdullah ibn ‘Amir ibn Rabi‘ah related to me that his father informed him:",
+          "arabicSha256": "32d65916b68e3d4dbc7893963db52f26a01621ccf6ce70b1e0d3f2c7a1d10273",
+          "englishSha256": "3ed5699176f4d54d5083a26ce28cfa6789f9d732a1c92579122ad11662e553a2"
+        },
+        {
+          "id": "1053-2",
+          "paragraphId": "mwSg",
+          "start": 92,
+          "end": 163,
+          "kind": "report",
+          "arabic": "أنه رأى النبي ﷺ صلى السبحة بالليل في السفر على ظهر راحلته حيث توجهت به ",
+          "english": "He saw the Prophet, may Allah bless him and grant him peace, perform voluntary prayer at night while travelling, on the back of his mount, in whichever direction it took him.",
+          "arabicSha256": "ddc24bc0cefd58f5a17ef9d39ad8db0de4cfff203c191b0a8d84b57db8a7e795",
+          "englishSha256": "1dd4f90566253cfadc8c0a52086c50affaaaf72ede88dc0c985ce331b7835da1"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            280
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            268
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-shortening",
+          "reference": "1054",
+          "occurrenceLocator": {
+            "id": "bewley-shortening-1053-located",
+            "sha256": "4aba6c7922125d56d3e74f1f4ee8f456bc9e51f9a6db592710b4f2c2bfeb77b1"
+          },
+          "note": "Body displayed under 1054 rather than selected 1053."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.20.207",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.20.207",
+            "recordSha256": "118cb23ed055f37712ab2a83121541127c08545f11b9b1281dd0a943281fd85f"
+          },
+          "part": {
+            "index": 2,
+            "count": 2
+          },
+          "spanEvidence": {
+            "auditPath": "research/shortening-source-audit.json",
+            "auditSha256": "334513abc8fb7b3f0c81a778cc59aeecc38aa97ee1f8a6f145369f58e32f45e1",
+            "appReference": 1053,
+            "span": {
+              "unit": "unicode-code-points",
+              "join": "two-newlines",
+              "start": 326,
+              "end": 521,
+              "sha256": "4f8a8e0ec7679667813b080625ebaf2d9857cf0ea6d758ac5ef02460fbeb04a9"
+            }
+          },
+          "note": " Exact narrator-delimited part 2 of 2 within shared EPUB 2.20.207; this remains one comparison source."
+        }
+      ],
+      "notes": [
+        "This Amir report has its own digital number and al-Layth/Yunus route. Bewley labels its body 1054; Khan places it after Umm Hani inside 2.20.207.",
+        "The selected full al-Layth/Yunus chain and explicit night/voluntary wording remain. The English page labels this 1054; the exact occurrence is registered without renumbering it. The EPUB appends this after Umm Hani in 2.20.207.",
+        "Modern printed reference 1104; checked Bewley displayed reference 1054, occurrence 1; pinned Khan EPUB 2.20.207. Shorter comparison chains do not replace the complete Arabic."
+      ],
+      "reviewScope": "Full-span AI-assisted working English checked against complete Arabic print pages and individually located comparison bodies. Exact occurrence matching does not certify every word. Independent Arabic, English, chapter, lexical, relationship terminology and spoken-word review remains pending.",
+      "arabicSha256": "f0e028fcac53e5339d20808e73a5ec493e588d50cfecb21e0c5643c03a9fbdf8",
+      "englishSha256": "bc7ecc6318f258c0011acbee035da552022949635a819288ce954ebf5049523a",
+      "reviewRecordSha256": "4fc85f437d66eba065a514a8feb94abb6539bac3d15323632110be44e4486fae"
+    },
+    {
+      "number": 1054,
+      "id": "bukhari:1054",
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1054",
+      "chapterId": "chapter-12",
+      "paragraphIds": [
+        "mwTA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1054-1",
+          "paragraphId": "mwTA",
+          "start": 0,
+          "end": 112,
+          "kind": "chain",
+          "arabic": "[1054] حدثنا أبو اليمان قال: أخبرنا شعيب عن الزهري قال: أخبرني سالم بن عبد الله عن ابن عمر رضى الله تعالى عنهما ",
+          "english": "Abu al-Yaman related to us. He said: Shu‘ayb informed us, from al-Zuhri, who said: Salim ibn ‘Abdullah informed me, from Ibn ‘Umar, may Allah Most High be pleased with them both:",
+          "arabicSha256": "a14292fa1f84c39396108707ec713e05e1234e333592c9d517e620a44e80cd12",
+          "englishSha256": "66f830472ac9851c174502038711b162db697a21ad61c7c3cd9c65956b59bdcd"
+        },
+        {
+          "id": "1054-2",
+          "paragraphId": "mwTA",
+          "start": 112,
+          "end": 194,
+          "kind": "report",
+          "arabic": "أن رسول الله ﷺ كان يسبح على ظهر راحلته حيث كان وجهه يومئ برأسه وكان ابن عمر يفعله ",
+          "english": "The Messenger of Allah, may Allah bless him and grant him peace, used to pray voluntary prayers on the back of his mount, whichever direction he faced, gesturing with his head. Ibn ‘Umar used to do this.",
+          "arabicSha256": "526f7829d94c625073709c8022c37b00de8b3658f2498a353cbf496b76bf79e8",
+          "englishSha256": "e4fc3d6e93224d99fccb7f5f4f29e69aec6306496be0627301f71b31d8bd9306"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            280
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            268
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-shortening",
+          "reference": "1055",
+          "occurrenceLocator": {
+            "id": "bewley-shortening-1054-located",
+            "sha256": "dd6c468c8dee4ca69eead1e9e96aca9eb438010cf805053d5b61eff1a0374909"
+          },
+          "note": "Body displayed under the first occurrence of 1055."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.20.208",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.20.208",
+            "recordSha256": "f89810e90b21c39ac39515b37c6e776047b355814c15085052e5e7d402755bf4"
+          }
+        }
+      ],
+      "notes": [
+        "The Ibn Umar report is displayed as the first 1055 occurrence in Bewley. Body identity, not the displayed number alone, establishes the comparison.",
+        "Head gestures and the concluding Ibn Umar practice remain. The exact first occurrence of the English page label 1055 is registered.",
+        "Modern printed reference 1105; checked Bewley displayed reference 1055, occurrence 1; pinned Khan EPUB 2.20.208. Shorter comparison chains do not replace the complete Arabic."
+      ],
+      "reviewScope": "Full-span AI-assisted working English checked against complete Arabic print pages and individually located comparison bodies. Exact occurrence matching does not certify every word. Independent Arabic, English, chapter, lexical, relationship terminology and spoken-word review remains pending.",
+      "arabicSha256": "6ceb7cdb5c155e479d642c15c133924f1d7142ef0516af013ef706214a72b7de",
+      "englishSha256": "bd3819580a48aa5774682d0bfdf9986a91e2708312d1ca866e8232ee65f3dc7f",
+      "reviewRecordSha256": "9b3ef498b9277818c9a084232dc48ad19edf6224018b58799ea2ad8a8d17a3fb"
+    },
+    {
+      "number": 1055,
+      "id": "bukhari:1055",
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1055",
+      "chapterId": "chapter-13",
+      "paragraphIds": [
+        "mwTw"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1055-1",
+          "paragraphId": "mwTw",
+          "start": 0,
+          "end": 84,
+          "kind": "chain",
+          "arabic": "[1055] حدثنا علي بن عبد الله قال: حدثنا سفيان قال: سمعت الزهري عن سالم عن أبيه قال: ",
+          "english": "‘Ali ibn ‘Abdullah related to us. He said: Sufyan related to us. He said: I heard al-Zuhri, from Salim, from his father, who said:",
+          "arabicSha256": "bd75f66ca502cb6202191c54e34635f9efe332f394c2efc3d57d30bc1ad8d6e7",
+          "englishSha256": "27ef49c1e82e299776b3b70d3a7429a7706bcbcf96be85a984190e37843a0ad8"
+        },
+        {
+          "id": "1055-2",
+          "paragraphId": "mwTw",
+          "start": 84,
+          "end": 136,
+          "kind": "report",
+          "arabic": "كان النبي ﷺ يجمع بين المغرب والعشاء إذا جد به السير ",
+          "english": "The Prophet, may Allah bless him and grant him peace, used to combine Maghrib and ‘Isha’ when travelling in haste.",
+          "arabicSha256": "ff16e1f38589710a3eff79f17e19ad3df39a1986d3ad70adf1b2a432f8e025fb",
+          "englishSha256": "7e5a5ccd5bf641d0434aeabd97a358ae836d728c52e1d8d746f195688f2e649f"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            280
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            268
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-shortening",
+          "reference": "1055",
+          "occurrenceLocator": {
+            "id": "bewley-shortening-1055-located",
+            "sha256": "eb5faee5cbd2272ddb04b132c47c34ea8a5f9899f185f0378c53bf1ea887c7de"
+          },
+          "note": "The page repeats label 1055; this is its second occurrence."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.20.209",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.20.209",
+            "recordSha256": "908e3f63d26b977060b09aceaaaf97ecfa5295241a2c08eda4d640714cda56dd"
+          },
+          "part": {
+            "index": 1,
+            "count": 3
+          },
+          "spanEvidence": {
+            "auditPath": "research/shortening-source-audit.json",
+            "auditSha256": "334513abc8fb7b3f0c81a778cc59aeecc38aa97ee1f8a6f145369f58e32f45e1",
+            "appReference": 1055,
+            "span": {
+              "unit": "unicode-code-points",
+              "join": "two-newlines",
+              "start": 0,
+              "end": 135,
+              "sha256": "5291902d5d7eae50441ac08113dc9590ef28847d69200379b964575c1ca38c7c"
+            }
+          },
+          "note": " Exact narrator-delimited part 1 of 3 within shared EPUB 2.20.209; this remains one comparison source."
+        }
+      ],
+      "notes": [
+        "The Salim-from-his-father report is the second Bewley 1055 occurrence and the first report within Khan 2.20.209.",
+        "This is the second English page occurrence labelled 1055, not the preceding mount report. Its selected chain says Salim from his father and is not expanded with an unstated name.",
+        "Modern printed reference 1106; checked Bewley displayed reference 1055, occurrence 2; pinned Khan EPUB 2.20.209. Shorter comparison chains do not replace the complete Arabic."
+      ],
+      "reviewScope": "Full-span AI-assisted working English checked against complete Arabic print pages and individually located comparison bodies. Exact occurrence matching does not certify every word. Independent Arabic, English, chapter, lexical, relationship terminology and spoken-word review remains pending.",
+      "arabicSha256": "4e78769b557d7c47f6b54460fb40db61595c177db5ab521b19ed6b1dc5fe3827",
+      "englishSha256": "cf4d2b5d73bf876fd0dc5dd122ca3f6e4e493c31edbdfa4f4d60ddbe3a6c96c5",
+      "reviewRecordSha256": "01a886638069bcf618384db809afaff7e9ede4bc5b9b80d75b1a624f24c5c01c"
+    },
+    {
+      "number": 1056,
+      "id": "bukhari:1056",
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1056",
+      "chapterId": "chapter-13",
+      "paragraphIds": [
+        "mwUQ"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1056-1",
+          "paragraphId": "mwUQ",
+          "start": 0,
+          "end": 113,
+          "kind": "chain",
+          "arabic": "[1056] وقال إبراهيم بن طهمان عن الحسين المعلم عن يحيى بن أبي كثير عن عكرمة عن ابن عباس رضى الله تعالى عنهما قال: ",
+          "english": "Ibrahim ibn Tahman said, from al-Husayn al-Mu‘allim, from Yahya ibn Abi Kathir, from ‘Ikrimah, from Ibn ‘Abbas, may Allah Most High be pleased with them both, who said:",
+          "arabicSha256": "e167714687c14787b30a85c2c7acd8a4a81e83cdcad1525b1f7479e274d33685",
+          "englishSha256": "272dae9ec44e32055e5bb3efa3a78125b250392352d400907e6d9829c36d6b71"
+        },
+        {
+          "id": "1056-2",
+          "paragraphId": "mwUQ",
+          "start": 113,
+          "end": 201,
+          "kind": "report",
+          "arabic": "كان رسول الله ﷺ يجمع بين صلاة الظهر والعصر إذا كان على ظهر سير ويجمع بين المغرب والعشاء ",
+          "english": "The Messenger of Allah, may Allah bless him and grant him peace, used to combine the Dhuhr and ‘Asr prayers when on a journey, and he would combine Maghrib and ‘Isha’.",
+          "arabicSha256": "b8fcc7c6574d341a645956b9c4743d8d9eb6587ec14c59169cd945a3f9550b2c",
+          "englishSha256": "2fee4f96afaefa58d76cb48d793a70f52671eab417727984249d42638aece2b8"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            280
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            268
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-shortening",
+          "reference": "1056"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.20.209",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.20.209",
+            "recordSha256": "908e3f63d26b977060b09aceaaaf97ecfa5295241a2c08eda4d640714cda56dd"
+          },
+          "part": {
+            "index": 2,
+            "count": 3
+          },
+          "spanEvidence": {
+            "auditPath": "research/shortening-source-audit.json",
+            "auditSha256": "334513abc8fb7b3f0c81a778cc59aeecc38aa97ee1f8a6f145369f58e32f45e1",
+            "appReference": 1056,
+            "span": {
+              "unit": "unicode-code-points",
+              "join": "two-newlines",
+              "start": 135,
+              "end": 299,
+              "sha256": "2a0cf077a2dbd3d443db0774517c6dc455c2db2e339d5a97b5dde3b9cfe66f12"
+            }
+          },
+          "note": " Exact narrator-delimited part 2 of 3 within shared EPUB 2.20.209; this remains one comparison source."
+        }
+      ],
+      "notes": [
+        "The Ibrahim ibn Tahman/Husayn/Ikrimah route and Ibn Abbas report are distinct; Khan includes this as the middle report in 2.20.209.",
+        "The full Ibrahim ibn Tahman route remains in this separate numbered report, including both pairs of prayers. The selected expression على ظهر سير is rendered when on a journey, without adding haste.",
+        "Modern printed reference 1107; checked Bewley displayed reference 1056, occurrence 1; pinned Khan EPUB 2.20.209. Shorter comparison chains do not replace the complete Arabic."
+      ],
+      "reviewScope": "Full-span AI-assisted working English checked against complete Arabic print pages and individually located comparison bodies. Exact occurrence matching does not certify every word. Independent Arabic, English, chapter, lexical, relationship terminology and spoken-word review remains pending.",
+      "arabicSha256": "3e3b7ae44220a9ea1cca8da1514c478079640e229053233261b4343e6aace456",
+      "englishSha256": "e45ec7ca18763b909a5539318da560a34b32aa51d600e1214e5d2c9bf8935a8b",
+      "reviewRecordSha256": "be1daa3b9d57fcd1a529afbb8a6e989b5239f76c272aea3b39ea6d5aee794920"
+    },
+    {
+      "number": 1057,
+      "id": "bukhari:1057",
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1057",
+      "chapterId": "chapter-13",
+      "paragraphIds": [
+        "mwUw"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1057-1",
+          "paragraphId": "mwUw",
+          "start": 0,
+          "end": 102,
+          "kind": "chain",
+          "arabic": "[1057] وعن حسين عن يحيى بن أبي كثير عن حفص بن عبيد الله بن أنس عن أنس بن مالك رضى الله تعالى عنه قال: ",
+          "english": "And from Husayn, from Yahya ibn Abi Kathir, from Hafs ibn ‘Ubayd Allah ibn Anas, from Anas ibn Malik, may Allah Most High be pleased with him, who said:",
+          "arabicSha256": "3b4eb87170c1c9ab730c331a96a862084437f96260bc3ada1d4d8d6ddbd0ea64",
+          "englishSha256": "8c54828062e27df8e6faa3669d1480c55bf6fee7574cd3daac065790d3d3c4cd"
+        },
+        {
+          "id": "1057-2",
+          "paragraphId": "mwUw",
+          "start": 102,
+          "end": 152,
+          "kind": "report",
+          "arabic": "كان النبي ﷺ يجمع بين صلاة المغرب والعشاء في السفر ",
+          "english": "The Prophet, may Allah bless him and grant him peace, used to combine the Maghrib and ‘Isha’ prayers while travelling.",
+          "arabicSha256": "adb46a4dcece0e3b43341613974a7cc145a4fc14132bb7e1ab6446f0b65fd689",
+          "englishSha256": "3176e13513df6687df525bd1e948010a2d86ace90e2b07c963a3458733d4f269"
+        },
+        {
+          "id": "1057-3",
+          "paragraphId": "mwUw",
+          "start": 152,
+          "end": 212,
+          "kind": "transmission-note",
+          "arabic": "وتابعه علي بن المبارك وحرب عن يحيى عن حفص عن أنس جمع النبي ﷺ",
+          "english": "‘Ali ibn al-Mubarak and Harb corroborated it from Yahya, from Hafs, from Anas: The Prophet, may Allah bless him and grant him peace, combined the prayers.",
+          "arabicSha256": "9c544a8695458e994e0d012a4cad086a459efc92739a158867be86787db76abe",
+          "englishSha256": "3832d9891f20569ffe15e40124db89d0ef7bbe90ae5ba030f072219b678cb219"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            280,
+            281
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            268,
+            269
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-shortening",
+          "reference": "1057",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/shortening-source-audit.json",
+            "sha256": "334513abc8fb7b3f0c81a778cc59aeecc38aa97ee1f8a6f145369f58e32f45e1",
+            "sourceSha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+            "bodySha256": "636c13e2003649a4dbcfd63849fc25e0b40161c1392fd2e3eff6269ba1719ca1",
+            "occurrence": 1
+          },
+          "note": "The closing corroboration attributes it to Hafs instead of retaining the selected two corroborators."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.20.209",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.20.209",
+            "recordSha256": "908e3f63d26b977060b09aceaaaf97ecfa5295241a2c08eda4d640714cda56dd"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Salim's father: ",
+            "The Prophet used to offer the Maghrib and Isha' prayers together whenever he was in a hurry on a journey. ",
+            "Narrated Ibn Abbas: Allah's Apostle used to offer the Zuhr and 'Asr prayers together on journeys, and also used to offer the Maghrib and 'Isha' prayers together. ",
+            "Narrated Anas bin Malik: The Prophet used to offer the Maghrib and the 'Isha' prayers together on journeys. "
+          ],
+          "damagedExcerpt": "Narrated Anas bin Malik:",
+          "note": "Closing corroborating transmitters are omitted. Exact narrator-delimited part 3 of 3 within shared EPUB 2.20.209; this remains one comparison source.",
+          "part": {
+            "index": 3,
+            "count": 3
+          },
+          "spanEvidence": {
+            "auditPath": "research/shortening-source-audit.json",
+            "auditSha256": "334513abc8fb7b3f0c81a778cc59aeecc38aa97ee1f8a6f145369f58e32f45e1",
+            "appReference": 1057,
+            "span": {
+              "unit": "unicode-code-points",
+              "join": "two-newlines",
+              "start": 299,
+              "end": 407,
+              "sha256": "0d7e0ec9233afe0e5c182d00bc864e7c7954faa606bd2458a1d729ebce4d4feb"
+            }
+          }
+        }
+      ],
+      "notes": [
+        "The chain explicitly continues from Husayn in the preceding report. Its Ali ibn al-Mubarak and Harb corroboration remains and must not be attributed to Hafs alone.",
+        "The chain starts And from Husayn and continues the preceding route; a separate visible link supplies context without repeating invented chain words. The complete Ali ibn al-Mubarak and Harb corroboration and second Prophet honorific remain. The prayers is the understood object supplied after combined in English.",
+        "Modern printed reference 1108; checked Bewley displayed reference 1057, occurrence 1; pinned Khan EPUB 2.20.209. Shorter comparison chains do not replace the complete Arabic."
+      ],
+      "reviewScope": "Full-span AI-assisted working English checked against complete Arabic print pages and individually located comparison bodies. Exact occurrence matching does not certify every word. Independent Arabic, English, chapter, lexical, relationship terminology and spoken-word review remains pending.",
+      "arabicSha256": "f24b4d4ec4a453abe9d248a34e6399c3268d33044ed93b2982db5adcc80ddeab",
+      "englishSha256": "6676d3cb5204d0d7cbbb4b37afd12cb19839e7ca3b6a97e0da2e1c75cff25949",
+      "contextNotes": [
+        {
+          "id": "1057-source-wording",
+          "label": "This chain continues from the preceding report",
+          "text": "The selected chain begins “And from Husayn,” continuing the narrator route in Hadith 1056. The present report and its closing corroboration remain complete.",
+          "citations": [
+            "base",
+            "brill-1862",
+            "dar-ibn-kathir-2002"
+          ],
+          "related": [
+            {
+              "id": "bukhari:1056",
+              "number": 1056,
+              "target": "chain",
+              "label": "View the preceding chain · 1056"
+            }
+          ]
+        }
+      ],
+      "reviewRecordSha256": "2a05065b0405fa5a267259abb37d88839abbe4df74d3c8aad36cda35dc837d02"
+    },
+    {
+      "number": 1058,
+      "id": "bukhari:1058",
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1058",
+      "chapterId": "chapter-14",
+      "paragraphIds": [
+        "mwVw"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1058-1",
+          "paragraphId": "mwVw",
+          "start": 0,
+          "end": 113,
+          "kind": "chain",
+          "arabic": "[1058] حدثنا أبو اليمان قال: أخبرنا شعيب عن الزهري قال: أخبرني سالم عن عبد الله بن عمر رضى الله تعالى عنهما قال: ",
+          "english": "Abu al-Yaman related to us. He said: Shu‘ayb informed us, from al-Zuhri, who said: Salim informed me, from ‘Abdullah ibn ‘Umar, may Allah Most High be pleased with them both, who said:",
+          "arabicSha256": "fd59f3ae4d59109acfa5644acc8bfba606fc97b79c2528fd8e41654c9a8440e8",
+          "englishSha256": "22ffaf38fbb4deeee1f198fb07944fe080a821fa26202f4e8273d9e8f9fd6adb"
+        },
+        {
+          "id": "1058-2",
+          "paragraphId": "mwVw",
+          "start": 113,
+          "end": 199,
+          "kind": "report",
+          "arabic": "رأيت رسول الله ﷺ إذا أعجله السير في السفر يؤخر صلاة المغرب حتى يجمع بينها وبين العشاء ",
+          "english": "I saw the Messenger of Allah, may Allah bless him and grant him peace, when travelling in haste on a journey, delay the Maghrib prayer until he combined it with ‘Isha’.",
+          "arabicSha256": "46148b6e4ea3a4499ec2155ac8ebf4cd6640c45f8f6f015a4a7190986ac11326",
+          "englishSha256": "ec4fffe8d2a1fb3590e247fdd832077dc136c730899dd60b9e6ef42960ef0f65"
+        },
+        {
+          "id": "1058-3",
+          "paragraphId": "mwVw",
+          "start": 199,
+          "end": 396,
+          "kind": "report",
+          "arabic": "قال سالم وكان عبد الله يفعله إذا أعجله السير ويقيم المغرب فيصليها ثلاثا ثم يسلم ثم قلما يلبث حتى يقيم العشاء فيصليها ركعتين ثم يسلم ولا يسبح بينهما بركعة ولا بعد العشاء بسجدة حتى يقوم من جوف الليل ",
+          "english": "Salim said: ‘Abdullah used to do this when travelling in haste. He would say the iqamah for Maghrib and pray it as three rak‘ahs, then say the taslim. Then he would wait only a little before saying the iqamah for ‘Isha’, praying it as two rak‘ahs, then saying the taslim. He would not pray a single voluntary rak‘ah between them, nor a prostration after ‘Isha’, until he rose during the middle of the night.",
+          "arabicSha256": "4895e732bda5312281e8a89d4c5535980e7c082cb0fc3e6b2c8629222467d0ba",
+          "englishSha256": "6036f0e746e66636f18355ef024f07e39147f42e72e5ff0751c735c5599cbcfa"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            281
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            269
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-shortening",
+          "reference": "1058"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.20.210",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.20.210",
+            "recordSha256": "aee7a812bc57cbc300ad855152201ff27f6139f03bd6fd34f69dd9836e845713"
+          }
+        }
+      ],
+      "notes": [
+        "The full Salim/Ibn Umar report preserves the separate iqamah, three then two units, and the negative clauses about intervening and subsequent voluntary prayer.",
+        "Salim’s account remains attributed. Both iqamahs, both taslims, three and two rakahs, the negative intervening-rakah and after-Isha prostration clauses and middle-of-night endpoint remain; the two negative units are not collapsed into one general sentence.",
+        "Modern printed reference 1109; checked Bewley displayed reference 1058, occurrence 1; pinned Khan EPUB 2.20.210. Shorter comparison chains do not replace the complete Arabic."
+      ],
+      "reviewScope": "Full-span AI-assisted working English checked against complete Arabic print pages and individually located comparison bodies. Exact occurrence matching does not certify every word. Independent Arabic, English, chapter, lexical, relationship terminology and spoken-word review remains pending.",
+      "arabicSha256": "67a179111579b9756d0a982c0074facf89fac68f0499741533d81185a1659c39",
+      "englishSha256": "5f47b5cfd479298a26f31884fcb653e85c723a476ad2e0b24f86b9fbcbb62cce",
+      "reviewRecordSha256": "76304222a3c35c999dde34b8fa6a545973ae45cd8b2c06d501949272848df18b"
+    },
+    {
+      "number": 1059,
+      "id": "bukhari:1059",
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1059",
+      "chapterId": "chapter-14",
+      "paragraphIds": [
+        "mwWQ"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1059-1",
+          "paragraphId": "mwWQ",
+          "start": 0,
+          "end": 123,
+          "kind": "chain",
+          "arabic": "[1059] حدثنا إسحاق حدثنا عبد الصمد حدثنا حرب حدثنا يحيى قال: حدثني حفص بن عبيد الله بن أنس أن أنسا رضى الله تعالى عنه حدثه ",
+          "english": "Ishaq related to us. ‘Abd al-Samad related to us. Harb related to us. Yahya related to us. He said: Hafs ibn ‘Ubayd Allah ibn Anas related to me that Anas, may Allah Most High be pleased with him, related to him:",
+          "arabicSha256": "b760111e4b1803448722c4a436a0d583dcf00bfff8ed298c941cab419e26a564",
+          "englishSha256": "1c2542c30ceca71a8311d6b47385da76c96f9ce61abbee773daf8f2fba8e984c"
+        },
+        {
+          "id": "1059-2",
+          "paragraphId": "mwWQ",
+          "start": 123,
+          "end": 194,
+          "kind": "report",
+          "arabic": "أن رسول الله ﷺ كان يجمع بين هاتين الصلاتين في السفر يعني المغرب والعشاء",
+          "english": "The Messenger of Allah, may Allah bless him and grant him peace, used to combine these two prayers while travelling, meaning Maghrib and ‘Isha’.",
+          "arabicSha256": "27ef1f3242da438ab25a4562ba5a1cdff625514eb0c05f52ed73acd7f1ad6518",
+          "englishSha256": "d0cd0261ef44c2da510281daf3b4ac7ce6117e0fb8a8bdd6f5826bd59ad9fc0c"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            281
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            269
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-shortening",
+          "reference": "1059"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.20.211",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.20.211",
+            "recordSha256": "4c81acfc6a6f243e4e4daebeb5212249417ae8ae9e51f6cd75da59d70221b103"
+          }
+        }
+      ],
+      "notes": [
+        "The separate Ishaq/Abd al-Samad/Harb route and clarification naming Maghrib and Isha are retained.",
+        "The selected chain gives Ishaq, Abd al-Samad, Harb and Yahya without expanded patronymics. The naming of the two prayers stays in the report as an explicit clarification.",
+        "Modern printed reference 1110; checked Bewley displayed reference 1059, occurrence 1; pinned Khan EPUB 2.20.211. Shorter comparison chains do not replace the complete Arabic."
+      ],
+      "reviewScope": "Full-span AI-assisted working English checked against complete Arabic print pages and individually located comparison bodies. Exact occurrence matching does not certify every word. Independent Arabic, English, chapter, lexical, relationship terminology and spoken-word review remains pending.",
+      "arabicSha256": "67fbb7ac7c5210f2eb67c2719952b086d5a0e3eaaebe59b81ab560ab6ca2e9b7",
+      "englishSha256": "4d0c5fbe0d4b4c9e6b055c2246efbb6ac90049f90f86d3021eccc82ffa16cf9e",
+      "reviewRecordSha256": "942d322530ed9524bcdd901ee76f2e9da677566df8faef920cae6d7f7299a94d"
+    },
+    {
+      "number": 1060,
+      "id": "bukhari:1060",
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1060",
+      "chapterId": "chapter-15",
+      "paragraphIds": [
+        "mwXg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1060-1",
+          "paragraphId": "mwXg",
+          "start": 0,
+          "end": 112,
+          "kind": "chain",
+          "arabic": "[1060] حدثنا حسان الواسطي قال: حدثنا المفضل بن فضالة عن عقيل عن ابن شهاب عن أنس بن مالك رضى الله تعالى عنه قال: ",
+          "english": "Hassan al-Wasiti related to us. He said: Al-Mufaddal ibn Fadalah related to us, from ‘Uqayl, from Ibn Shihab, from Anas ibn Malik, may Allah Most High be pleased with him, who said:",
+          "arabicSha256": "98273f3c2fb7af5bfb17b262032570dc3452956df65c7eb55ac6d48d8fb30dea",
+          "englishSha256": "b49c876c41523a59a723e999b38037e13da9f05b7306a5f5bc275f9717d492bc"
+        },
+        {
+          "id": "1060-2",
+          "paragraphId": "mwXg",
+          "start": 112,
+          "end": 218,
+          "kind": "report",
+          "arabic": "كان النبي ﷺ إذا ارتحل قبل أن تزيغ الشمس أخر الظهر إلى وقت العصر ثم يجمع بينهما وإذا زاغت صلى الظهر ثم ركب ",
+          "english": "When the Prophet, may Allah bless him and grant him peace, set out before the sun declined, he would delay Dhuhr until the time of ‘Asr, then combine them. If it had declined, he would pray Dhuhr, then mount.",
+          "arabicSha256": "010fccb2507cb4cb7bbafb9dcbd3dd1f726b68a47edb20d508e378135761861a",
+          "englishSha256": "2d259e550c40c7ffd2fcfea4c8bd61625a2ed48d47b41116deec9ceee056b0d4"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            281
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            269
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-shortening",
+          "reference": "1060"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.20.212",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.20.212",
+            "recordSha256": "8253deaa143674f0b88d193a5a3afd1cec350030266ce4721a2e64106bc817d5"
+          }
+        }
+      ],
+      "notes": [
+        "The first Anas timing report is separately located. Historical wording around the combining clause needs its own lexical review; occurrence matching is not identical wording.",
+        "The selected and modern print have ثم يجمع بينهما; the historical print has ثم يجمع بينهما ثم نزل فجمع بينهما and also the explicit before-departure clause. Those extra words are recorded here, not silently imported from that witness or from 1061. Sun declined denotes passage beyond the meridian, not sunset.",
+        "Modern printed reference 1111; checked Bewley displayed reference 1060, occurrence 1; pinned Khan EPUB 2.20.212. Shorter comparison chains do not replace the complete Arabic."
+      ],
+      "reviewScope": "Full-span AI-assisted working English checked against complete Arabic print pages and individually located comparison bodies. Exact occurrence matching does not certify every word. Independent Arabic, English, chapter, lexical, relationship terminology and spoken-word review remains pending.",
+      "arabicSha256": "eb69625cbd7b07564debd17cd31a336f5ecfed3ab79df12cccae879a01218abe",
+      "englishSha256": "7b8e616e0eac2d9e4e5109e2db60a7eac7c1d01df5e375328dd4c82c5392f428",
+      "contextNotes": [
+        {
+          "id": "1060-source-wording",
+          "label": "A difference between the printed readings",
+          "text": "The historical print includes an additional dismounting-and-combining clause. The selected digital text and modern print have the shorter wording; this translation follows that selected wording. Both readings remain in the source notes.",
+          "citations": [
+            "base",
+            "brill-1862",
+            "dar-ibn-kathir-2002"
+          ],
+          "related": []
+        }
+      ],
+      "reviewRecordSha256": "c4f7f28d8cf9482959b6343bb38461e6c4f2e2df58974411687ed20c71654ca1"
+    },
+    {
+      "number": 1061,
+      "id": "bukhari:1061",
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1061",
+      "chapterId": "chapter-16",
+      "paragraphIds": [
+        "mwYQ"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1061-1",
+          "paragraphId": "mwYQ",
+          "start": 0,
+          "end": 86,
+          "kind": "chain",
+          "arabic": "[1061] حدثنا قتيبة قال: حدثنا المفضل بن فضالة عن عقيل عن ابن شهاب عن أنس بن مالك قال: ",
+          "english": "Qutaybah related to us. He said: Al-Mufaddal ibn Fadalah related to us, from ‘Uqayl, from Ibn Shihab, from Anas ibn Malik, who said:",
+          "arabicSha256": "0675414e9d97c42abfe60b371f304238df9b89dc5d78c03f627183450c977f99",
+          "englishSha256": "02cb8b50e2d19411a29dd5449895f7f101ce1a3c35a2d17948a868e382934645"
+        },
+        {
+          "id": "1061-2",
+          "paragraphId": "mwYQ",
+          "start": 86,
+          "end": 218,
+          "kind": "report",
+          "arabic": "كان رسول الله ﷺ إذا ارتحل قبل أن تزيغ الشمس أخر الظهر إلى وقت العصر ثم نزل فجمع بينهما فإن زاغت الشمس قبل أن يرتحل صلى الظهر ثم ركب ",
+          "english": "When the Messenger of Allah, may Allah bless him and grant him peace, set out before the sun declined, he would delay Dhuhr until the time of ‘Asr, then dismount and combine them. If the sun declined before he set out, he would pray Dhuhr, then mount.",
+          "arabicSha256": "71378c4e3c763dcd23a2869a59f4a0aed201b48f564565781dc369281a836289",
+          "englishSha256": "6aa7aac32310dee06ddff84ea1d6633ce5767813a0320f0bbe33fbe56e9d8158"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            281,
+            282
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            269
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-shortening",
+          "reference": "1061"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.20.213",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.20.213",
+            "recordSha256": "1fe40492d63b37b885778567263a3b5bdbd8a0668e610f6291eb8c32b8febf07"
+          }
+        }
+      ],
+      "notes": [
+        "The second Anas timing report is not merged with 1060; its dismounting and pre-departure wording remain as selected.",
+        "This occurrence separately retains dismounting and the explicit before-departure clause. The selected Qutaybah name is not expanded from the historical print.",
+        "Modern printed reference 1112; checked Bewley displayed reference 1061, occurrence 1; pinned Khan EPUB 2.20.213. Shorter comparison chains do not replace the complete Arabic."
+      ],
+      "reviewScope": "Full-span AI-assisted working English checked against complete Arabic print pages and individually located comparison bodies. Exact occurrence matching does not certify every word. Independent Arabic, English, chapter, lexical, relationship terminology and spoken-word review remains pending.",
+      "arabicSha256": "31bd46e89965f6d00502097fe15f51e713285afd3dabdaa04def564a7b7be07c",
+      "englishSha256": "556f1a05ebfab5b57cfdb42dd3dc32961d5cc5f866958313778da8d17284fcc6",
+      "reviewRecordSha256": "9a5add5fb2c611227dce76877ace921d48d21f8c4b3c892a9ed5436d796abe6b"
+    },
+    {
+      "number": 1062,
+      "id": "bukhari:1062",
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1062",
+      "chapterId": "chapter-17",
+      "paragraphIds": [
+        "mwZA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1062-1",
+          "paragraphId": "mwZA",
+          "start": 0,
+          "end": 98,
+          "kind": "chain",
+          "arabic": "[1062] حدثنا قتيبة بن سعيد عن مالك عن هشام بن عروة عن أبيه عن عائشة رضى الله تعالى عنها أنها قالت ",
+          "english": "Qutaybah ibn Sa‘id related to us, from Malik, from Hisham ibn ‘Urwah, from his father, from ‘A’ishah, may Allah Most High be pleased with her, who said:",
+          "arabicSha256": "5a67e2fa81f199a9074a464d621708e39b74eb9feabcfaed75a26d1c054f0d88",
+          "englishSha256": "c5f29ed1255207f96940227b69d9d23e4952362cafe47d8b3ddc0090cf318469"
+        },
+        {
+          "id": "1062-2",
+          "paragraphId": "mwZA",
+          "start": 98,
+          "end": 258,
+          "kind": "report",
+          "arabic": "صلى رسول الله ﷺ في بيته وهو شاك فصلى جالسا وصلى وراءه قوم قياما فأشار إليهم أن اجلسوا فلما انصرف قال إنما جعل الإمام ليؤتم به فإذا ركع فاركعوا وإذا رفع فارفعوا ",
+          "english": "The Messenger of Allah, may Allah bless him and grant him peace, prayed in his house while he was ill. He prayed sitting, while people prayed behind him standing. He gestured to them to sit. When he had finished, he said, “The imam is appointed only to be followed. When he bows, bow; and when he rises, rise.”",
+          "arabicSha256": "7ae4ad93a3a1fdf9a26a908ed0080eab195ca8aedab6abca698ea5bffc58b604",
+          "englishSha256": "558e9f2c9fb695382bfbe06466dca530eb0df3373dd894a832616df7f1be4d68"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            282
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            270
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-shortening",
+          "reference": "1062"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.20.214",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.20.214",
+            "recordSha256": "a88baa21718a0d9ea53c5d0c082d667ca4ece9473d2452724162063f4a27a22b"
+          }
+        }
+      ],
+      "notes": [
+        "The Aishah illness report retains the gesture to sit and the complete selected closing instructions.",
+        "The illness, sitting imam, standing followers, gesture to sit and complete selected instructions remain. No additional instructions from parallel narrations are supplied.",
+        "Modern printed reference 1113; checked Bewley displayed reference 1062, occurrence 1; pinned Khan EPUB 2.20.214. Shorter comparison chains do not replace the complete Arabic."
+      ],
+      "reviewScope": "Full-span AI-assisted working English checked against complete Arabic print pages and individually located comparison bodies. Exact occurrence matching does not certify every word. Independent Arabic, English, chapter, lexical, relationship terminology and spoken-word review remains pending.",
+      "arabicSha256": "d59354944cc35c3d585c57aff6864df81d64c969282be35d973f92762d82cd8d",
+      "englishSha256": "c8c23ce8f40586db8a32a531d163430b9e6728739ef0f20f2ca59bd94f02de57",
+      "reviewRecordSha256": "87e9b595e383113af21301b395f07342c17114050b6f75f55da1df5d9e0b2549"
+    },
+    {
+      "number": 1063,
+      "id": "bukhari:1063",
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1063",
+      "chapterId": "chapter-17",
+      "paragraphIds": [
+        "mwZg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1063-1",
+          "paragraphId": "mwZg",
+          "start": 0,
+          "end": 83,
+          "kind": "chain",
+          "arabic": "[1063] حدثنا أبو نعيم قال: حدثنا ابن عيينة عن الزهري عن أنس رضى الله تعالى عنه قال ",
+          "english": "Abu Nu‘aym related to us. He said: Ibn ‘Uyaynah related to us, from al-Zuhri, from Anas, may Allah Most High be pleased with him, who said:",
+          "arabicSha256": "226dcc68a646919241b36004169f58e6e377e7770fd47a0cee93249fca03bd79",
+          "englishSha256": "c4053c181cc1fc556863d99f1be94fa85afa464444936fc57d1bbb5d83cfa9ea"
+        },
+        {
+          "id": "1063-2",
+          "paragraphId": "mwZg",
+          "start": 83,
+          "end": 315,
+          "kind": "report",
+          "arabic": "سقط رسول الله ﷺ من فرس فخدش أو فجحش شقه الأيمن فدخلنا عليه نعوده فحضرت الصلاة فصلى قاعدا فصلينا قعودا، وقال إنما جعل الإمام ليؤتم به فإذا كبر فكبروا وإذا ركع فاركعوا وإذا رفع فارفعوا وإذا قال سمع الله لمن حمده فقولوا ربنا ولك الحمد ",
+          "english": "The Messenger of Allah, may Allah bless him and grant him peace, fell from a horse, and his right side was scratched, or grazed. We went in to visit him during his illness. The time for prayer came, and he prayed sitting, so we prayed sitting. He said, “The imam is appointed only to be followed. When he says the takbir, say the takbir; when he bows, bow; when he rises, rise; and when he says, ‘Allah hears whoever praises Him,’ say, ‘Our Lord, and to You belongs praise.’”",
+          "arabicSha256": "f0e96d4037c146c916f856d4e7563cc3eca03f132e47229352bfb89c13d55926",
+          "englishSha256": "1335106b41dc584b3aa724ce58e0a03dd180bcadd638da500a1a0f38cd78569b"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            282
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            270
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-shortening",
+          "reference": "1063",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/shortening-source-audit.json",
+            "sha256": "334513abc8fb7b3f0c81a778cc59aeecc38aa97ee1f8a6f145369f58e32f45e1",
+            "sourceSha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+            "bodySha256": "ade676715ebeae306874e3e22aeadd8948ed7bf1ad04e0c7db22b6d26e995926",
+            "occurrence": 1
+          },
+          "note": "The locator body includes the first Imran-route fragment belonging to the following digital entry."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.20.215",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.20.215",
+            "recordSha256": "feab2842d5ae73a4d18b0a8065f96da4eab942e917747a281f63d68a35a56f46"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Anas bin Malik: ",
+            "Allah's Apostle (p.b.u.h) fell down from a horse and his right side was either injured or scratched, so we went to inquire about his health. The time for the prayer became due and he offered the prayer while sitting and we prayed while standing. He said, \"The Imam is to be followed; so if he says Takbir, you should also say Takbir, and if he bows you should also bow; and when he lifts his head you should also do the same and if he says: Sami'a-l-lahu Liman Hamidah (Allah hears whoever sends his praises to Him) you should say: Rabbana walakal-Hamd (O our Lord! All the praises are for You.\") (See Hadith No. 656 Vol. 1). "
+          ],
+          "damagedExcerpt": "we prayed while standing",
+          "note": "Says the followers prayed standing, while the selected text and both inspected prints say seated."
+        }
+      ],
+      "notes": [
+        "The Anas report retains the two alternative injury verbs and followers praying seated. Khan says standing at this point, contrary to the selected Arabic and both inspected prints.",
+        "Both injury alternatives are retained as scratched, or grazed; al-Ayni explains the two near-synonymous verbs and narrator uncertainty. The selected Arabic and both prints have followers seated; the EPUB standing reading is not imported. The complete takbir, bowing, rising and response clauses remain; Lord, and to You preserves the selected conjunction without importing the historical Allahumma.",
+        "Modern printed reference 1114; checked Bewley displayed reference 1063, occurrence 1; pinned Khan EPUB 2.20.215. Shorter comparison chains do not replace the complete Arabic."
+      ],
+      "reviewScope": "Full-span AI-assisted working English checked against complete Arabic print pages and individually located comparison bodies. Exact occurrence matching does not certify every word. Independent Arabic, English, chapter, lexical, relationship terminology and spoken-word review remains pending.",
+      "arabicSha256": "f46f29226fb28c42460598f9a2eea604a73035c7e1665253c203999b14abed6b",
+      "englishSha256": "def1a8f8acd1b16138c3e899fb80e6ff0821f66e92a0b0cb64ff9b7d726fba34",
+      "contextNotes": [
+        {
+          "id": "1063-source-wording",
+          "label": "A discrepancy in an English comparison",
+          "text": "The selected Arabic and both inspected Arabic prints say the followers prayed seated. One English comparison says standing. This working translation preserves the selected Arabic; independent review remains pending.",
+          "citations": [
+            "base",
+            "brill-1862",
+            "dar-ibn-kathir-2002"
+          ],
+          "related": []
+        }
+      ],
+      "additionalCitations": [
+        {
+          "id": "lexical",
+          "sourceId": "umdat-shortening-injury",
+          "locator": "Discussion of خدش / جحش",
+          "scope": "Classical commentary consulted for this lexical choice, separate from the report and not independent approval of the working translation."
+        }
+      ],
+      "reviewRecordSha256": "765e2a1da975136c57db917e1a94dfa1bea625581928066a7a05b489894b934e"
+    },
+    {
+      "number": 1064,
+      "id": "bukhari:1064",
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1064",
+      "chapterId": "chapter-17",
+      "paragraphIds": [
+        "mwaA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1064-1",
+          "paragraphId": "mwaA",
+          "start": 0,
+          "end": 122,
+          "kind": "chain",
+          "arabic": "[1064] حدثنا إسحاق بن منصور قال: أخبرنا روح بن عبادة أخبرنا حسين عن عبد الله بن بريدة عن عمران بن حصين رضى الله تعالى عنه ",
+          "english": "Ishaq ibn Mansur related to us. He said: Rawh ibn ‘Ubadah informed us. Husayn informed us, from ‘Abdullah ibn Buraydah, from ‘Imran ibn Husayn, may Allah Most High be pleased with him:",
+          "arabicSha256": "6a2bdb7a1087712ede5a4ca155efba803d4573cf4d68a8aab786263cf14bd203",
+          "englishSha256": "c9f86b4b989444e798cc965afba03797db63cfd0dd93aa72cb15e9b404390adf"
+        },
+        {
+          "id": "1064-2",
+          "paragraphId": "mwaA",
+          "start": 122,
+          "end": 141,
+          "kind": "report",
+          "arabic": "أنه سأل نبي الله ﷺ ",
+          "english": "He asked the Prophet of Allah, may Allah bless him and grant him peace.",
+          "arabicSha256": "9aa2a81fa6e39fcefff038b5cf743fa7bd8b34bb17c8b397122418a661a8b657",
+          "englishSha256": "74b613f09e63e8226ac5211aeeb5b2c344bfb7d9fce016b363355239426fa7b8"
+        },
+        {
+          "id": "1064-3",
+          "paragraphId": "mwaA",
+          "start": 141,
+          "end": 246,
+          "kind": "chain",
+          "arabic": "أخبرنا إسحاق قال: أخبرنا عبد الصمد قال: سمعت أبي قال: حدثنا الحسين عن ابن بريدة قال: حدثني عمران بن حصين ",
+          "english": "Ishaq informed us. He said: ‘Abd al-Samad informed us. He said: I heard my father say: Al-Husayn related to us, from Ibn Buraydah, who said: ‘Imran ibn Husayn related to me.",
+          "arabicSha256": "91e55c555883c2c4f15889afdfeaad0dd474d266b0ddbe44b570c814b41cf8c4",
+          "englishSha256": "f3589db68b228d42fb3a44c53b13f3b740645dd673351dcab5952f81e8ef1054"
+        },
+        {
+          "id": "1064-4",
+          "paragraphId": "mwaA",
+          "start": 246,
+          "end": 394,
+          "kind": "report",
+          "arabic": "وكان مبسورا قال: سألت رسول الله ﷺ عن صلاة الرجل قاعدا، فقال إن صلى قائما فهو أفضل ومن صلى قاعدا فله نصف أجر القائم ومن صلى نائما فله نصف أجر القاعد ",
+          "english": "He had hemorrhoids. He said: I asked the Messenger of Allah, may Allah bless him and grant him peace, about a man praying sitting. He said, “If he prays standing, that is better. Whoever prays sitting has half the reward of one who stands, and whoever prays lying down has half the reward of one who sits.”",
+          "arabicSha256": "d0affb5179ff929b9a5f338bfdc86acb0aafddffbbe652db0f26ee615ea7fe08",
+          "englishSha256": "a810ff13f414414968306994078c03f9aa78bb3f9390109b3fb90943f53849cf"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            282
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            270
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-shortening",
+          "reference": "1064",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/shortening-source-audit.json",
+            "sha256": "334513abc8fb7b3f0c81a778cc59aeecc38aa97ee1f8a6f145369f58e32f45e1",
+            "sourceSha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+            "bodySha256": "85696298ed701e2f488376587d594cf6c3aa92ee2c623869ef1d781f9d5c7e45",
+            "occurrence": 1
+          },
+          "note": "The preceding Imran-route fragment is outside this displayed body."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.20.216",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.20.216",
+            "recordSha256": "5a400c9666a3837ed8dda261f95e267a171cc310b5b155c112b51cde89417433"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated 'Imran bin Husain: ",
+            "(who had piles) I asked Allah's Apostle about the praying of a man while sitting. He said, \"If he prays while standing it is better and he who prays while sitting gets half the reward of that who prays standing; and whoever prays while Lying gets half the reward of that who prays while sitting.\" "
+          ],
+          "damagedExcerpt": "(who had piles)",
+          "note": "The full two-route structure is not provided."
+        }
+      ],
+      "notes": [
+        "Historical intake finding, before this later correction: Both narrator routes remain in a single modern reference 1115. The second route has Abi Buraydah in the digital source, while both prints have Ibn Buraydah; the correction is proposed separately and not applied.",
+        "The two complete routes and incomplete first-route question lead-in remain in one entry. Only عن أبي بريدة is explicitly corrected to عن ابن بريدة from both prints; original input remains available. Lying down renders نائما in light of the explicit next-report Abu Abdullah gloss and Ibn Hajar’s lexical discussion; no legal qualification or sleep instruction is added. The opening if he and the two half-reward clauses remain.",
+        "Modern printed reference 1115; checked Bewley displayed reference 1064, occurrence 1; pinned Khan EPUB 2.20.216. Shorter comparison chains do not replace the complete Arabic.",
+        "The illness context remains in the visible report, outside the expandable chain; all Arabic words and the complete narration remain in source order."
+      ],
+      "reviewScope": "Full-span AI-assisted working English checked against complete Arabic print pages and individually located comparison bodies. Exact occurrence matching does not certify every word. Independent Arabic, English, chapter, lexical, relationship terminology and spoken-word review remains pending.",
+      "arabicSha256": "5aa610805a18a6232be2d11756319fc046f0fb2d1eece0779f1b3a55874c4044",
+      "englishSha256": "276494b63a567c9a6a6d269eb57e159f75a5e4dce2e3779e132b63e57b1983fe",
+      "contextNotes": [
+        {
+          "id": "1064-source-wording",
+          "label": "A recorded narrator-name correction",
+          "text": "The digital source reads «عن أبي بريدة»; both Arabic prints read «عن ابن بريدة». This prototype uses Ibn Buraydah in the second chain and retains the original spelling in the source notes. Independent review remains pending.",
+          "citations": [
+            "base",
+            "brill-1862",
+            "dar-ibn-kathir-2002"
+          ],
+          "related": []
+        }
+      ],
+      "originalArabicSha256": "d37f9fc4cbeb13e34248964a5564b16bd898587a3d1bbf747fc9db4f52ae782a",
+      "arabicCorrections": [
+        {
+          "id": "shortening-1064-ibn-buraydah",
+          "status": "chosen-for-personal-prototype",
+          "reviewerKind": "ai",
+          "independentReview": "pending",
+          "paragraphId": "mwaA",
+          "originalParagraphSha256": "d37f9fc4cbeb13e34248964a5564b16bd898587a3d1bbf747fc9db4f52ae782a",
+          "start": 208,
+          "end": 220,
+          "before": "عن أبي بريدة",
+          "after": "عن ابن بريدة",
+          "correctedParagraphSha256": "5aa610805a18a6232be2d11756319fc046f0fb2d1eece0779f1b3a55874c4044",
+          "reason": "Both inspected Arabic prints read Ibn Buraydah in this second narrator route. This explicit correction retains the immutable digital original and a visible notice.",
+          "witnesses": [
+            {
+              "sourceId": "brill-1862",
+              "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+              "pdfPage": 282,
+              "reading": "عن ابن بريدة",
+              "readingSha256": "8924c469714dd5e47dd2875b9beab30ad3363a0f8345e07a83de5d0456c40bcd"
+            },
+            {
+              "sourceId": "dar-ibn-kathir-2002",
+              "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+              "pdfPage": 270,
+              "reading": "عن ابن بريدة",
+              "readingSha256": "8924c469714dd5e47dd2875b9beab30ad3363a0f8345e07a83de5d0456c40bcd"
+            }
+          ],
+          "contextNoteId": "1064-source-wording",
+          "englishSegmentId": "1064-3",
+          "englishRendering": "Ibn Buraydah"
+        }
+      ],
+      "additionalCitations": [
+        {
+          "id": "lexical",
+          "sourceId": "fath-shortening-lying",
+          "locator": "Discussion of نائما and the attributed Abu Abdullah gloss",
+          "scope": "Classical commentary consulted for this lexical choice, separate from the report and not independent approval of the working translation."
+        }
+      ],
+      "reviewRecordSha256": "54e6596ab824d3a6fa61e316cee683fb35fe891a26236bea06dd8b993fa25ad5"
+    },
+    {
+      "number": 1065,
+      "id": "bukhari:1065",
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1065",
+      "chapterId": "chapter-18",
+      "paragraphIds": [
+        "mwbA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1065-1",
+          "paragraphId": "mwbA",
+          "start": 0,
+          "end": 88,
+          "kind": "chain",
+          "arabic": "[1065] حدثنا أبو معمر قال: حدثنا عبد الوارث قال: حدثنا حسين المعلم عن عبد الله بن بريدة ",
+          "english": "Abu Ma‘mar related to us. He said: ‘Abd al-Warith related to us. He said: Husayn al-Mu‘allim related to us, from ‘Abdullah ibn Buraydah:",
+          "arabicSha256": "6fc504f9904e5e27833c8ba590451c00c5641ff5bdcc2a697237564c077d8b48",
+          "englishSha256": "2bd4245137a3a155d00220fe0d49b517136232ce621161f2fb8a722b9f196e2c"
+        },
+        {
+          "id": "1065-2",
+          "paragraphId": "mwbA",
+          "start": 88,
+          "end": 285,
+          "kind": "report",
+          "arabic": "أن عمران بن حصين وكان رجلا مبسورا، وقال أبو معمر مرة عن عمران قال: سألت النبي ﷺ عن صلاة الرجل وهو قاعد، فقال من صلى قائما فهو أفضل ومن صلى قاعدا فله نصف أجر القائم ومن صلى نائما فله نصف أجر القاعد ",
+          "english": "‘Imran ibn Husayn, who was a man with hemorrhoids—and Abu Ma‘mar once said, “from ‘Imran”—said: I asked the Prophet, may Allah bless him and grant him peace, about a man praying while sitting. He said, “Whoever prays standing, that is better. Whoever prays sitting has half the reward of one who stands, and whoever prays lying down has half the reward of one who sits.”",
+          "arabicSha256": "4bdf75e1c449a18e2914e8fa2b931bb4e8ed1a5528dda6160201c336de1bdf74",
+          "englishSha256": "ac27ec70e2aca827bcd917608037547d84ebcc511409f7f28ced5d2cd81c9a14"
+        },
+        {
+          "id": "1065-3",
+          "paragraphId": "mwbA",
+          "start": 285,
+          "end": 327,
+          "kind": "transmission-note",
+          "arabic": "قال أبو عبد الله نائما عندي مضطجعا ها هنا ",
+          "english": "Abu ‘Abdullah said: In my view, nā’iman here means lying down.",
+          "arabicSha256": "7a853653cd20e51575ced1f6786d09921b14b50fb3adb3fa248f26dc66bc29e7",
+          "englishSha256": "e6d3d2f314dbb013c20871a43ecc1fcc840cdb7f97c5456fa2b9d6b8746f0d56"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            282
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            270
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-shortening",
+          "reference": "1065",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/shortening-source-audit.json",
+            "sha256": "334513abc8fb7b3f0c81a778cc59aeecc38aa97ee1f8a6f145369f58e32f45e1",
+            "sourceSha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+            "bodySha256": "71a9fd91868119505e78287846ce2dff5f34582a2707dc0fb3743606ddb8f29b",
+            "occurrence": 1
+          },
+          "note": "The alternate Abu Mamar introduction is abridged."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.20.217",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.20.217",
+            "recordSha256": "12f2897b9d6670c1c9f1e6633d480f5f783d6f10d26fee97d86c58da33e4473c"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated'Abdullah bin Buraida: ",
+            "'Imran bin Husain had piles. Once Abu Ma mar narrated from 'Imran bin Husain had said, \"I asked the Prophet (p.b.u.h) about the prayer of a person while sitting. He said, 'It is better for one to pray standing; and whoever prays sitting gets half the reward of that who prays while standing; and whoever prays while Lying gets half the reward of that who prays while sitting.' \" "
+          ],
+          "damagedExcerpt": "half the reward of that who prays while sitting.",
+          "note": "The closing Abu Abdullah lexical comment is absent."
+        }
+      ],
+      "notes": [
+        "The Abu Mamar alternate introduction and final Abu Abdullah lexical comment remain in the selected source. The modern print includes that comment; the historical main text ends without it.",
+        "The Abu Mamar alternate from Imran introduction remains in the visible narrator framing. The final Abu Abdullah lexical comment is separately attributed and fully retained; it occurs in the selected text and modern print but not the historical main text. The term nā’iman is retained in that comment so its gloss is intelligible; it is not an inserted explanation by the app.",
+        "Modern printed reference 1116; checked Bewley displayed reference 1065, occurrence 1; pinned Khan EPUB 2.20.217. Shorter comparison chains do not replace the complete Arabic.",
+        "The illness context remains in the visible report, outside the expandable chain; all Arabic words and the complete narration remain in source order."
+      ],
+      "reviewScope": "Full-span AI-assisted working English checked against complete Arabic print pages and individually located comparison bodies. Exact occurrence matching does not certify every word. Independent Arabic, English, chapter, lexical, relationship terminology and spoken-word review remains pending.",
+      "arabicSha256": "e33fd40bbbb2ee0351921878badce3b4e9cd07b41bf2e37788f4084608252012",
+      "englishSha256": "68f20cde018376c416ae1b6f7db579bc8b89589ed5b5843a8bee94b701efe297",
+      "contextNotes": [
+        {
+          "id": "1065-source-wording",
+          "label": "A closing comment retained from the source",
+          "text": "The separate Abu Abdullah comment explains the word nā’iman. It is present in the selected Arabic and modern print, while the inspected historical main text omits it. This source comment is retained in full.",
+          "citations": [
+            "base",
+            "brill-1862",
+            "dar-ibn-kathir-2002"
+          ],
+          "related": []
+        }
+      ],
+      "reviewRecordSha256": "b6a89c8d9cf776f634cebae056818b226e74cc5f23dfa91020ac01df23657dfe"
+    },
+    {
+      "number": 1066,
+      "id": "bukhari:1066",
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1066",
+      "chapterId": "chapter-19",
+      "paragraphIds": [
+        "mwcA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1066-1",
+          "paragraphId": "mwcA",
+          "start": 0,
+          "end": 130,
+          "kind": "chain",
+          "arabic": "[1066] حدثنا عبدان عن عبد الله عن إبراهيم بن طهمان قال: حدثني الحسين المكتب عن ابن بريدة عن عمران بن حصين رضى الله تعالى عنه قال: ",
+          "english": "‘Abdan related to us, from ‘Abdullah, from Ibrahim ibn Tahman, who said: Al-Husayn al-Mukattib related to me, from Ibn Buraydah, from ‘Imran ibn Husayn, may Allah Most High be pleased with him, who said:",
+          "arabicSha256": "7dee3701a194a3b248161f97d850eec3e69c47ae79b475455fc30bab246fc39b",
+          "englishSha256": "c9e18132d50cf457819537c78ce38f1c313237156202f46c06c2120227e01ab7"
+        },
+        {
+          "id": "1066-2",
+          "paragraphId": "mwcA",
+          "start": 130,
+          "end": 226,
+          "kind": "report",
+          "arabic": "كانت بي بواسير فسألت النبي ﷺ عن الصلاة، فقال صل قائما فإن لم تستطع فقاعدا فإن لم تستطع فعلى جنب ",
+          "english": "I had hemorrhoids, so I asked the Prophet, may Allah bless him and grant him peace, about prayer. He said, “Pray standing. If you cannot, then sitting. If you cannot, then on your side.”",
+          "arabicSha256": "c5e6df0d03261f5ccb6cbccf7f7ff95f74e75f8f18b95032982c37d468b8b473",
+          "englishSha256": "b802c244867f3f168abeecfb0cefca0c40f5fddf11724e279941a8a9c3ce61ea"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            283
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            270,
+            271
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-shortening",
+          "reference": "1066"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.20.218",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.20.218",
+            "recordSha256": "a226ac369d648d9632d14f1cb5ef500c08b64ab62720f2c205f9f3d81b69b17b"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated 'Imran bin Husain: ",
+            "had piles, so I asked the Prophet about the prayer. He said, \"Pray while standing and if you can't, pray while sitting and if you cannot do even that, then pray Lying on your side.\" "
+          ],
+          "damagedExcerpt": "had piles",
+          "note": "Opening first-person pronoun is missing."
+        }
+      ],
+      "notes": [
+        "The Imran report retains his illness and the successive standing, sitting and side-position clauses. It is distinct from the reward reports before it.",
+        "The first-person illness and successive inability conditions remain. Abdullah is not expanded to Ibn al-Mubarak from the historical witness. Al-Mukattib retains the selected narrator epithet rather than replacing it with al-Muallim.",
+        "Modern printed reference 1117; checked Bewley displayed reference 1066, occurrence 1; pinned Khan EPUB 2.20.218. Shorter comparison chains do not replace the complete Arabic."
+      ],
+      "reviewScope": "Full-span AI-assisted working English checked against complete Arabic print pages and individually located comparison bodies. Exact occurrence matching does not certify every word. Independent Arabic, English, chapter, lexical, relationship terminology and spoken-word review remains pending.",
+      "arabicSha256": "c833590dbefea00cef481678ccb9bbb343407b4a600acd0c1d9a5f7032557548",
+      "englishSha256": "4630c9a9ccc4114db61759710b9fdeecda497598b3c2cbcecb1f7f051476d465",
+      "reviewRecordSha256": "ada86f292b1d5e70aac7ff0319c46624dc0e5de1e0ef2b5520080e17832b268c"
+    },
+    {
+      "number": 1067,
+      "id": "bukhari:1067",
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1067",
+      "chapterId": "chapter-20",
+      "paragraphIds": [
+        "mwdA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1067-1",
+          "paragraphId": "mwdA",
+          "start": 0,
+          "end": 124,
+          "kind": "chain",
+          "arabic": "[1067] حدثنا عبد الله بن يوسف قال: أخبرنا مالك عن هشام بن عروة عن أبيه عن عائشة رضى الله تعالى عنها أم المؤمنين أنها أخبرته ",
+          "english": "‘Abdullah ibn Yusuf related to us. He said: Malik informed us, from Hisham ibn ‘Urwah, from his father, from ‘A’ishah, may Allah Most High be pleased with her, Mother of the Believers, that she informed him:",
+          "arabicSha256": "60a7801d3d2a8b9e6e18c7bf8848872ecb6843634a340709d137bf71be90957c",
+          "englishSha256": "41c81d8bd98024defb12cc21440912f029a184631b9ab91e6f70c9a39d0b7db7"
+        },
+        {
+          "id": "1067-2",
+          "paragraphId": "mwdA",
+          "start": 124,
+          "end": 266,
+          "kind": "report",
+          "arabic": "أنها لم تر رسول الله ﷺ يصلي صلاة الليل قاعدا قط حتى أسن فكان يقرأ قاعدا حتى إذا أراد أن يركع قام فقرأ نحوا من ثلاثين آية أو أربعين آية ثم ركع ",
+          "english": "She never saw the Messenger of Allah, may Allah bless him and grant him peace, pray the night prayer sitting until he grew old. He would recite sitting until, when he wished to bow, he stood and recited about thirty verses or forty verses, then bowed.",
+          "arabicSha256": "6f406f293808895aa06e90ec0a5b098187a5fcd27e75b9f9be221dd3545ba646",
+          "englishSha256": "1180a5fba3f1eea285c190fc856aee003a09d76490eb8057644de746a73022d5"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            283
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            271
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-shortening",
+          "reference": "1067"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.20.219",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.20.219",
+            "recordSha256": "b28b1f9d8a702fee8cb6d9c4558839e11ca4fbab9fa4e98a547a89456ac7586a"
+          }
+        }
+      ],
+      "notes": [
+        "The complete Aishah route and thirty-or-forty uncertainty remain; the next report is a separate occurrence.",
+        "The Mother of the Believers designation and selected honorific position remain. Old age, night prayer and about thirty or forty verses belong to this occurrence; the third-person reporting form remains.",
+        "Modern printed reference 1118; checked Bewley displayed reference 1067, occurrence 1; pinned Khan EPUB 2.20.219. Shorter comparison chains do not replace the complete Arabic."
+      ],
+      "reviewScope": "Full-span AI-assisted working English checked against complete Arabic print pages and individually located comparison bodies. Exact occurrence matching does not certify every word. Independent Arabic, English, chapter, lexical, relationship terminology and spoken-word review remains pending.",
+      "arabicSha256": "9001137cfb1124e24c6b64459956b962c6d8e3556b42a96d639c02ce27426546",
+      "englishSha256": "83fa6e9b2d2b65620b6f9ec973c2df8e6cdf8e84668a22ce5a32f05632f645e1",
+      "reviewRecordSha256": "0000dd9a82bdd39ad80fbff3b25d2e03adf7e62de7516c9f950da5b4f26f7f24"
+    },
+    {
+      "number": 1068,
+      "id": "bukhari:1068",
+      "sourceRecordId": "wikisource-bukhari-shortening-r278144:1068",
+      "chapterId": "chapter-20",
+      "paragraphIds": [
+        "mwdg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1068-1",
+          "paragraphId": "mwdg",
+          "start": 0,
+          "end": 167,
+          "kind": "chain",
+          "arabic": "[1068] حدثنا عبد الله بن يوسف قال: أخبرنا مالك عن عبد الله بن يزيد وأبي النضر مولى عمر بن عبيد الله عن أبي سلمة بن عبد الرحمن عن عائشة أم المؤمنين رضى الله تعالى عنها ",
+          "english": "‘Abdullah ibn Yusuf related to us. He said: Malik informed us, from ‘Abdullah ibn Yazid and Abu al-Nadr, the freedman of ‘Umar ibn ‘Ubayd Allah, from Abu Salamah ibn ‘Abd al-Rahman, from ‘A’ishah, Mother of the Believers, may Allah Most High be pleased with her:",
+          "arabicSha256": "a5b98098809c4a4ef95677732c43a8d48f197fb616a2e50e86d5e5ed1b7227c3",
+          "englishSha256": "69e110bda9d3508738df20873be125e8a5a36803eb8b49302570d9019e521560"
+        },
+        {
+          "id": "1068-2",
+          "paragraphId": "mwdg",
+          "start": 167,
+          "end": 386,
+          "kind": "report",
+          "arabic": "أن رسول الله ﷺ كان يصلي جالسا فيقرأ وهو جالس فإذا بقي من قراءته نحو من ثلاثين أو أربعين آية قام فقرأها وهو قائم ثم يركع ثم سجد يفعل في الركعة الثانية مثل ذلك فإذا قضى صلاته نظر فإن كنت يقظى تحدث معي وإن كنت نائمة اضطجع ",
+          "english": "The Messenger of Allah, may Allah bless him and grant him peace, used to pray sitting, reciting while sitting. When about thirty or forty verses remained of his recitation, he would stand and recite them while standing, then bow, then prostrate. He would do the same in the second rak‘ah. When he finished his prayer, he would look: if I was awake, he would talk with me, and if I was asleep, he would lie down.",
+          "arabicSha256": "55b15761216e2c399f7f51b158f6b622c7eb2e29be9cdfaee4e68e03810b866f",
+          "englishSha256": "65c56eaf68a5974267fce6e300ed146e8318156dcfd59dbd367e867919a9ae7a"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            283
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            271
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-shortening",
+          "reference": "1068"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.20.220",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.20.220",
+            "recordSha256": "201d1a061f4112152e65c44c33fe9bb5f09e7b9333f376c117b67a32e4115bbc"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated 'Aisha: ",
+            "(the mother of the faithful believers) Allah's Apostle (in his last days) used to pray sitting. He would recite while sitting, and when thirty or forty verses remained from the recitation he would get up and recite them while standing and then he would bow and prostrate. He used to do the same in the second Raka. After finishing the Prayer he used to look at me and if I was awake he would talk to me and if I was asleep, he would lie down. "
+          ],
+          "damagedExcerpt": "(in his last days)",
+          "note": "Adds a late-life parenthetical not present in this selected report."
+        }
+      ],
+      "notes": [
+        "The final Aishah report retains both units and the concluding awake/asleep exchange; both prints then transition to Night Prayer.",
+        "Both Malik routes, the mawla relationship, sitting/standing recitation, thirty-or-forty uncertainty, both rakahs and awake/asleep conclusion remain. No last-days phrase is imported from the EPUB. Freedman is the provisional relationship rendering of mawla, with independent review pending.",
+        "Modern printed reference 1119; checked Bewley displayed reference 1068, occurrence 1; pinned Khan EPUB 2.20.220. Shorter comparison chains do not replace the complete Arabic."
+      ],
+      "reviewScope": "Full-span AI-assisted working English checked against complete Arabic print pages and individually located comparison bodies. Exact occurrence matching does not certify every word. Independent Arabic, English, chapter, lexical, relationship terminology and spoken-word review remains pending.",
+      "arabicSha256": "513dbb8743576bfc091441bc75dfe80f055b7ef5a6c769ca45eb204d9fda9b50",
+      "englishSha256": "19274bf1d28e61b23c006169fd9f873bfc8685c25e0206dcacf59d9238deb2fb",
+      "reviewRecordSha256": "24027ca5481cbd9ee305bd72aac1b643fe0624039938a568d834694d40e270c2"
+    }
+  ]
+}

@@ -11,7 +11,7 @@ import {release} from '../reader/release.mjs';
 const read=p=>JSON.parse(readFileSync(new URL('../'+p,import.meta.url),'utf8'));
 const sha=s=>createHash('sha256').update(s).digest('hex'),hash=o=>sha(JSON.stringify(o));
 const review=()=>read('content/review/shortening-first-review.json'),inv=read('content/staging/bukhari-shortening-wikisource/catalog.json'),manifest=read('content/sources/wikisource-shortening/manifest.json'),config=BOOK_CONFIGS.shortening;
-const {source,ledger}=collectionFiles(),entries=source.entries.filter(e=>e.book===config.title),book=ledger.books.find(b=>b.id==='shortening');
+const {source,ledger}=collectionFiles(),entries=source.entries.filter(e=>e.book===config.title&&e.number<=1045),book=ledger.books.find(b=>b.id==='shortening');
 const get=n=>entries.find(e=>e.number===n),text=n=>get(n).english_blocks.join('\n\n');
 const rehash=r=>{delete r.reviewRecordSha256;r.reviewRecordSha256=hash(r);};
 
@@ -91,8 +91,8 @@ test('known English limitations require the exact inspected evidence and cannot 
 });
 
 test('all eight complete chapters and their two Arabic contexts remain separate from hadith narration',()=>{
- assert.equal(book.chapters.length,8);assert.deepEqual(book.chapters.flatMap(c=>c.entryNumbers),entries.map(e=>e.number));
- assert.equal(book.chapters.reduce((s,c)=>s+c.sourceContext.introduction.arabicParagraphs,0),2);
+ assert.equal(book.chapters.slice(0,8).length,8);assert.deepEqual(book.chapters.slice(0,8).flatMap(c=>c.entryNumbers),entries.map(e=>e.number));
+ assert.equal(book.chapters.slice(0,8).reduce((s,c)=>s+c.sourceContext.introduction.arabicParagraphs,0),2);
  for(const id of ['mwFg','mwIA']){const b=inv.blocks.find(b=>b.htmlId===id);assert(!entries.some(e=>e.arabic_blocks.some(p=>p.includes(b.text))));}
  for(const change of [r=>r.chapters.splice(3,1),r=>r.chapters[4].contextIds=[],r=>r.entries.pop()]){const r=review();change(r);assert.throws(()=>buildBookBatch(inv,r,manifest,config));}
 });
@@ -102,5 +102,5 @@ test('saved sessions remain intact and all new reports and chapter source routes
  const next=startSession(source.entries,1030,5);assert.equal(next.numbers[0],1030);assert(next.numbers.every(n=>source.entries.some(e=>e.number===n)));
  const notes=read('reader/source-notes.json').books.find(b=>b.id==='shortening');for(const route of notes.routes)assert(release.files.some(f=>f.path===route.path));
  const route=notes.routes.find(r=>r.id==='hadith-1041'),html=readFileSync(new URL('../reader/'+route.path,import.meta.url),'utf8');assert(html.includes('1091 and 1092')&&html.includes('urgently called to help'));
- assert(!source.entries.some(e=>e.number===1046||e.number===1064));
+ assert.deepEqual(review().entries.map(e=>e.number),entries.map(e=>e.number));
 });
