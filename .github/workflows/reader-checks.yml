@@ -34,6 +34,7 @@ jobs:
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/check-mosques-prayer-intake.py
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/check-actions-prayer-intake.py
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/check-forgetfulness-intake.py
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/check-funerals-intake.py
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit-wikisource-layout.py --check
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/resolve-wikisource-layout.py --check
           node scripts/build-collection.mjs --check
