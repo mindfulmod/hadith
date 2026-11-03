@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T01:18:42.640974+00:00",
+  "updatedAt": "2026-11-03T01:30:53.463415+00:00",
   "objective": "Production-ready English-first Sahih al-Bukhari reader with the full collection, precise source access, Cedar narration, whole-hadith sessions and dependable offline iPhone use.",
   "status": "in-progress",
   "decisions": {
@@ -14,7 +14,7 @@
     "inheritedChainContext": "A brief note above the text, explicitly separate from the hadith wording, with a link that opens the previous narrator chain. User selected this on 20 October 2026.",
     "prototype": "User chose a clearly labelled personal prototype on 20 October 2026. AI-assisted entries may be evaluated with transparent source decisions; this is not independent certification or permission to claim production accuracy.",
     "chapterMaterial": "Daily sessions contain numbered hadith only. Chapter introductions and quotations are available separately when browsing. User confirmed this on 20 October 2026.",
-    "printedSupplementReference": "User confirmed app reference 724b with printed reference 758 kept accessible. Existing links and bookmarks remain stable; translation and source review remain separate.",
+    "printedSupplementReference": "User confirmed stable app suffixes for complete printed reports missing from the selected digital source, including 724b, 835b/835c and 983b, and approved the convention for future omissions. Keep the printed edition reference prominent and existing links/bookmarks stable. Numbering approval never substitutes for separate source, wording or admission review.",
     "sessionAdditions": "User selected: keep the saved session intact and show a newly available report separately. Original ordered entries, cursor and finished state persist; separate links do not replace Continue. Pending references are preserved in new session state and backups."
   },
   "requirements": [
@@ -81,7 +81,7 @@
   ],
   "nextActions": [
     "Keep the 699-entry approval candidate and subsequent local previews separate from the approved 632-entry live release until the specific publication is authorized.",
-    "Begin source intake for the section following Eclipses, with complete Arabic block ownership, visually inspected printed witnesses and exact English occurrence matching before any reader admission. Continue the approved stable suffix convention for future complete printed omissions. Keep 926 and 957 pending; the final Eclipses batch’s source decisions and correction remain separately reviewable.",
+    "Prepare the first Prostration wording-review batch from the complete 13-report intake (1017–1029). Keep the chapter 5 ablution variant and other recorded differences explicit. Preserve 926/957 as pending and existing saved sessions unchanged. Continue the approved stable suffix convention only for complete printed omissions; none was found in this section.",
     "Preserve the overlapping congregation source as excluded evidence. It must not add duplicate entries or replace selected Adhan wording.",
     "Measure full bilingual loading and memory costs before further substantial expansion; existing scale tests and desktop checks do not establish physical iPhone performance for the full corpus.",
     "Complete the Arabic edition/reference map using the new exact-span inventory and pinned printed-witness findings; keep combined labels distinct from missing or misassigned bodies.",
@@ -775,5 +775,36 @@
     ],
     "selectedSequenceComplete": true,
     "separateArabicContextBlocksAvailable": 7
+  },
+  "prostrationIntake": {
+    "status": "source-intake-compared-wording-review-pending",
+    "source": "content/sources/wikisource-prostration/manifest.json",
+    "inventory": "content/staging/bukhari-prostration-wikisource/catalog.json",
+    "audit": "research/prostration-source-audit.json",
+    "reviewPage": "research/prostration-source-review.html",
+    "verification": "research/prostration-intake-verification.json",
+    "reports": 13,
+    "referenceSequence": "1017–1029",
+    "chapters": 12,
+    "sourceBlocks": 30,
+    "unchangedArabicCodePoints": 3815,
+    "separateContextBlocks": 4,
+    "printedReferences": "1067–1079",
+    "missingPrintedReports": [],
+    "combinedDigitalReferences": [],
+    "readerEligible": false,
+    "readerAddedReferences": [],
+    "independentReview": "pending",
+    "unresolvedTextualDifferences": [
+      "chapter-05-ablution",
+      "1018-surah-word",
+      "1027-narrator-name"
+    ],
+    "remaining": [
+      "Prepare complete span-mapped English working drafts against both inspected prints, retaining all chains, repeated reports, closing comments and source-specific honorifics.",
+      "Resolve or explicitly retain and disclose the documented variants; keep chapter 5 context English pending.",
+      "Keep the known English comparison defects visible and do not import English-added surah numbers, explanations or omitted closing routes.",
+      "Reader admission, independent accuracy review, reuse rights, audio and publication remain separate."
+    ]
   }
 }

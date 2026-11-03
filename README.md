@@ -2,6 +2,14 @@
 
 The local personal reader at `reader/` contains 1,019 selected Bukhari entries across seventeen sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
+## Prostration source intake · 3 November 2026
+
+The next section is staged for wording review: 13 reports (1017–1029), 12 chapters and four separate context blocks. All 30 Arabic blocks and 3,815 code points remain exact. Visual comparison of Brill PDF pages 273–276 and Dar Ibn Kathir PDF pages 261–264 accounts for printed references 1067–1079 and the next-book boundary. No missing report or combined digital entry was identified. The user-approved suffix convention remains available for future complete printed omissions, with printed references prominent and wording review separate.
+
+`research/prostration-source-review.html` exposes the complete Arabic, print locations and comparison limits. The two prints differ materially in chapter 5’s ablution wording; 1018 has an additional surah word in both prints, and 1027 has a narrator-name variant. None is silently applied. The two located English sequences contain added or wrong surah references, shortened transmission notes and other wording problems. Exact comparison-body hashes and the limits of each occurrence are retained in `research/prostration-source-audit.json`. English drafting, chapter translation and independent review remain pending.
+
+Run `PYTHONDONTWRITEBYTECODE=1 python3 scripts/check-prostration-intake.py` to reproduce the source checks and review page. Its tests reject lost repeated reports, changed chains, dropped closing notes, misassigned print pages, erased variants and fabricated approval. This intake adds no reader entries or recordings: the existing 1,019-entry reader remains byte-identical. `research/prostration-intake-verification.json` records the completed checks and their scope. No external publication is included.
+
 ## Final Eclipses reports · 3 November 2026
 
 The local personal prototype now includes 1011–1016, completing all 24 selected digital Eclipses entries across 19 chapters. Their combined passages account for all 27 mapped printed occurrences. The seven Arabic chapter-context blocks remain separately browsable with English pending. All 1,013 previous entries, 32 earlier Eclipses source-note articles, six recordings and the pending references 926/957 remain unchanged. No new recording or publication is included.

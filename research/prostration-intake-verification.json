@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-03T01:32:53.034113+00:00",
+  "status": "source-intake-validated-no-reader-admission",
+  "baselineCommit": "7dd488e12ad854044adcebd182d40a26931591ba",
+  "sourceAudit": "research/prostration-source-audit.json",
+  "sourceInventory": {
+    "unchangedArabicCodePoints": 3815,
+    "blocks": 30,
+    "chapters": 12,
+    "numberedReports": 13,
+    "separateContextBlocks": 4,
+    "blankBlocks": 1
+  },
+  "comparisons": {
+    "printedPdfPagesVisuallyInspected": {
+      "brill-1862": [
+        273,
+        274,
+        275,
+        276
+      ],
+      "dar-ibn-kathir-2002": [
+        261,
+        262,
+        263,
+        264
+      ]
+    },
+    "bothPdfBytesRehashed": true,
+    "modernPrintedOccurrencesAccountedFor": 13,
+    "combinedDigitalReferences": [],
+    "missingPrintedReports": [],
+    "bewleySnapshotRehashedAndLocatorBodiesChecked": 13,
+    "khanActualEpubBodiesChecked": 13,
+    "unresolvedTextualDifferencesNotApplied": [
+      "chapter-05-ablution",
+      "1018-surah-word",
+      "1027-narrator-name"
+    ]
+  },
+  "checks": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p 'test_*.py'",
+      "passed": 153,
+      "failed": 1,
+      "scope": "All 154 Python tests ran; only the existing source-registry expected list required adding the newly registered section."
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p 'test_wikisource_book.py'",
+      "passed": 17,
+      "failed": 0,
+      "scope": "All affected source-registry tests rerun after updating the exact expected book list and count; all 154 distinct Python tests now validated."
+    },
+    {
+      "command": "node --test tests/deployment.test.mjs tests/wikisource-resolution.test.mjs tests/source-structure.test.mjs",
+      "passed": 14,
+      "failed": 0,
+      "scope": "Targeted source admission, structure and packaging checks. Reader runtime is unchanged; the full Node suite was not rerun."
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 scripts/import-wikisource-book.py --check",
+      "passed": true,
+      "registeredSources": 11
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 scripts/check-prostration-intake.py --bewley-html <retained HTML> --brill-pdf <retained PDF> --modern-pdf <retained PDF>",
+      "passed": true,
+      "scope": "Exact Arabic ownership, pinned witnesses, occurrence mapping, unresolved variants, complete EPUB bodies and generated page."
+    }
+  ],
+  "distinctAutomatedTestsValidated": 168,
+  "browser": {
+    "checkedAt": "2026-11-03T01:31:41.774Z",
+    "scope": "Isolated desktop Chromium source-review page; not physical iPhone or reader-runtime acceptance",
+    "results": [
+      {
+        "theme": "light",
+        "viewportWidth": 320,
+        "documentWidth": 320,
+        "exactReports": 13,
+        "exactChapterBlocks": 16,
+        "variantExpanded": true,
+        "allArabicAccessible": true,
+        "referenceTargetsAtLeast44px": true
+      },
+      {
+        "theme": "light",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "exactReports": 13,
+        "exactChapterBlocks": 16,
+        "variantExpanded": true,
+        "allArabicAccessible": true,
+        "referenceTargetsAtLeast44px": true
+      },
+      {
+        "theme": "dark",
+        "viewportWidth": 320,
+        "documentWidth": 320,
+        "exactReports": 13,
+        "exactChapterBlocks": 16,
+        "variantExpanded": true,
+        "allArabicAccessible": true,
+        "referenceTargetsAtLeast44px": true
+      },
+      {
+        "theme": "dark",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "exactReports": 13,
+        "exactChapterBlocks": 16,
+        "variantExpanded": true,
+        "allArabicAccessible": true,
+        "referenceTargetsAtLeast44px": true
+      }
+    ],
+    "errors": [],
+    "status": "passed",
+    "screenshots": [
+      "content/review/evidence/prostration-source-light.png",
+      "content/review/evidence/prostration-source-dark.png",
+      "content/review/evidence/prostration-variant-light.png",
+      "content/review/evidence/prostration-variant-dark.png"
+    ]
+  },
+  "preservation": {
+    "baselineCommit": "7dd488e12ad854044adcebd182d40a26931591ba",
+    "comparedTrackedFiles": 799,
+    "readerFiles": 349,
+    "audioFiles": 17,
+    "allExistingContentAndReviewFilesUnchanged": true,
+    "allComparedFilesByteIdentical": true,
+    "readerRelease": "opening-4af5d85b4b62",
+    "readerEntries": 1019,
+    "actualRecordedReferences": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "publication": {
+    "performed": false,
+    "liveApprovedEntries": 632,
+    "liveApprovedCommit": "a6d55223d3d863f2583ba67aa27edd139e9d7d6a"
+  },
+  "limitations": [
+    "Source-intake comparison by AI is not exhaustive lexical review, wording approval or independent scholarly certification.",
+    "No new English working translation, reader entry, recording or admission was created.",
+    "Desktop source-review checks do not establish physical-iPhone acceptance or new reader-runtime/offline testing; all previous reader bytes are unchanged.",
+    "Printed witnesses differ in wording; occurrence matching is not word-for-word agreement."
+  ],
+  "packaging": {
+    "command": "node scripts/build-site.mjs <new artifact directory>",
+    "passed": true,
+    "publicFiles": 610,
+    "allArtifactHashesChecked": true,
+    "unchangedReaderFiles": 347,
+    "existingPublicFilesChanged": [
+      "research/production-readiness.json"
+    ],
+    "newPublicFiles": [
+      "research/prostration-intake-verification.json",
+      "research/prostration-source-audit.json",
+      "research/prostration-source-review.html"
+    ],
+    "removedPublicFiles": [],
+    "sourceIntakeAndBuildToolsExcluded": true,
+    "readerReleaseUnchanged": "opening-4af5d85b4b62",
+    "scope": "Local checked artifact; generated before the final commit. A final clean artifact is reproduced from the committed files."
+  }
+}
