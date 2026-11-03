@@ -10,6 +10,7 @@ const describe=(path,body)=>({path,bytes:Buffer.byteLength(body),sha256:sha(body
 const articlePattern=/<article id="([a-z0-9-]+)">[\s\S]*?<\/article>/g;
 const anchors=html=>[...html.matchAll(/\s+id="([^"]+)"/g)].map(m=>m[1]);
 const hrefPattern=/\b(href|src)="([^"]+)"/g;
+const maxPageBytes=128*1024-1;
 function groupFor(id,first){
  let match=/^hadith-([0-9]+[a-z]?)$/.exec(id);
  if(match){const start=first+Math.floor((referenceBase(parseReference(match[1]))-first)/16)*16;return `hadith-${start}-${start+15}`;}
@@ -43,14 +44,30 @@ export function partitionSourceNotes(canonicalFiles){
   const prefix=html.slice(0,start),footer=html.slice(end),shell=prefix.slice(0,prefix.indexOf('<main class="review-page">')+'<main class="review-page">'.length);
   assert(shell.endsWith('<main class="review-page">'),'Missing source-note page shell');
   const title=/<h1>([\s\S]*?)<\/h1>/.exec(prefix)?.[1];assert(title,'Missing source-note title');
-  const groups=new Map(),routes=new Map();
+  let groups=new Map();const routes=new Map();
   for(const a of articles){const group=groupFor(a.id,first),path=`notes/${id}-${group}.html`;if(!groups.has(path))groups.set(path,[]);groups.get(path).push(a);routes.set(a.id,{id:a.id,path});}
-  const paths=[...groups.keys()],pages=[];
-  for(const [pageIndex,path]of paths.entries()){
+  const renderPage=(path,paths)=>{
+   const pageIndex=paths.indexOf(path);
    const selected=groups.get(path),link=(p,label)=>`<a href="${p}">${label}</a>`,navigation=`<nav aria-label="Source-note pages">${pageIndex?link(paths[pageIndex-1],'← Previous notes')+' · ':''}${link(index,'All source notes')}${pageIndex+1<paths.length?' · '+link(paths[pageIndex+1],'Next notes →'):''}</nav>`;
    // Only link destinations are relocated. Every complete article is preserved.
    const head=moveLinks(shell,index,path,routes),nav=moveLinks(navigation,index,path,routes);
    const body=`${head}<a href="../#book/${id}">← Return to this book</a><p class="eyebrow">PERSONAL PROTOTYPE · INDEPENDENT REVIEW PENDING</p><h1>${title} Source notes.</h1><p>Complete comparison notes and source wording. English translations and independent review remain pending where indicated.</p>${nav}${selected.map(a=>moveLinks(a.html,index,path,routes)).join('')}${nav}${moveLinks(footer,index,path,routes)}`;
+   return body;
+  };
+  // Keep the existing sixteen-reference URLs. Move only whole trailing articles
+  // into overflow pages, accounting for final navigation and relocated links.
+  for(;;){
+   const paths=[...groups.keys()],path=paths.find(p=>Buffer.byteLength(renderPage(p,paths))>maxPageBytes);
+   if(!path)break;
+   const selected=groups.get(path);assert(selected.length>1,'One complete source-note section exceeds the page budget: '+selected[0].id);
+   const part=Number(/-part-(\d+)\.html$/.exec(path)?.[1]||1),next=path.replace(/(?:-part-\d+)?\.html$/,`-part-${part+1}.html`),tail=selected.pop();
+   if(groups.has(next))groups.get(next).unshift(tail);
+   else groups=new Map([...groups].flatMap(([key,value])=>key===path?[[key,value],[next,[tail]]]:[[key,value]]));
+   routes.set(tail.id,{id:tail.id,path:next});
+  }
+  const paths=[...groups.keys()],pages=[];
+  for(const path of paths){
+   const selected=groups.get(path),body=renderPage(path,paths);
    published.set('reader/'+path,body);pages.push({...describe(path,body),sections:selected.map(a=>a.id)});
   }
   const indexPrefix=prefix.replace(/href="#([a-z0-9-]+)"/g,(_all,fragment)=>{const route=routes.get(fragment);assert(route,'Unknown index destination');return `id="${fragment}" data-source-note href="${route.path}#${fragment}"`;});
@@ -60,7 +77,7 @@ export function partitionSourceNotes(canonicalFiles){
  }
  assert(books.length,'No source-note books');
  for(const [path,body]of published)files.set(path,body);
- const manifest={schemaVersion:1,policy:'Complete generated articles, grouped into stable sixteen-reference pages. Existing book URLs and fragments remain valid. This changes delivery only, not source wording or review status.',books};
+ const manifest={schemaVersion:1,policy:'Complete generated articles, grouped into stable sixteen-reference ranges with whole-article overflow pages below 128 KiB. Existing book URLs and fragments remain valid. This changes delivery only, not source wording or review status.',books};
  files.set('reader/source-notes.json',publicJSON(manifest));
  return {files,manifest,published};
 }
@@ -71,8 +88,9 @@ export function checkSourceNotePublication(manifest,{read,releaseFiles}={}){
   assert(/^[a-z0-9-]+$/.test(book.id)&&book.index.path===book.id+'-review.html'&&!indexes.has(book.index.path),'Invalid source-note index');indexes.add(book.index.path);
   for(const item of [book.index,...book.pages]){
    assert(!all.has(item.path),'Duplicate source-note file');
-   assert(item===book.index||new RegExp('^notes/'+book.id+'-(?:hadith-\\d+-\\d+|chapters-\\d+-\\d+|book-introduction)\\.html$').test(item.path),'Unsafe source-note path');
+   assert(item===book.index||new RegExp('^notes/'+book.id+'-(?:hadith-\\d+-\\d+|chapters-\\d+-\\d+|book-introduction)(?:-part-(?:[2-9]|[1-9]\\d+))?\\.html$').test(item.path),'Unsafe source-note path');
    const body=read(item.path);assert.deepEqual(describe(item.path,body),{path:item.path,bytes:item.bytes,sha256:item.sha256},'Changed source-note file: '+item.path);all.set(item.path,body);
+   if(item!==book.index)assert(item.bytes<=maxPageBytes,'Source-note page exceeds the page budget: '+item.path);
    if(release){const descriptor=release.get(item.path);assert(descriptor&&descriptor.bytes===item.bytes&&descriptor.sha256===item.sha256,'Missing or stale offline source notes: '+item.path);}
   }
   const mapped=new Set();

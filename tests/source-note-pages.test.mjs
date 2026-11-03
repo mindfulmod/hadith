@@ -13,6 +13,26 @@ const hrefs=html=>[...html.matchAll(/\b(?:href|src)="([^"]+)"/g)].map(m=>m[1].re
 const withoutHrefs=html=>html.replace(/\b(href|src)="[^"]+"/g,'$1="[link]"');
 const read=path=>publication.files.get('reader/'+path);
 const sha=x=>createHash('sha256').update(x).digest('hex');
+const fixture=rows=>new Map([['reader/example-review.html','<!doctype html><html><body><main class="review-page"><h1>Example</h1><nav>'+rows.map(([id])=>`<a href="#${id}">${id}</a>`).join('')+'</nav>'+rows.map(([id,body])=>`<article id="${id}">${body}</article>`).join('')+'</main></body></html>']]);
+test('long UTF-8 evidence moves as whole articles and all cross-links resolve across overflow pages',()=>{
+ const rows=Array.from({length:16},(_,i)=>['hadith-'+(i+1),`<a href="#hadith-16">Last report</a><p lang="ar">${'ن'.repeat(i<6?30000:10)}</p>`]),files=fixture(rows),result=partitionSourceNotes(files),book=result.manifest.books[0];
+ assert(book.pages.length>=3);assert(book.pages.every(p=>p.bytes<128*1024));assert.equal(book.routes[0].path,'notes/example-hadith-1-16.html');assert(book.pages.some(p=>p.path.endsWith('-part-2.html')));
+ const original=articles(files.values().next().value);
+ for(const a of original){const route=book.routes.find(r=>r.id===a.id),current=articles(result.files.get('reader/'+route.path)).find(x=>x.id===a.id);assert.equal(withoutHrefs(current.html),withoutHrefs(a.html));}
+ checkSourceNotePublication(result.manifest,{read:p=>result.files.get('reader/'+p)});
+ assert.deepEqual(partitionSourceNotes(files),result);
+});
+test('expanding a later reference range preserves existing source-note destinations',()=>{
+ const rows=Array.from({length:16},(_,i)=>['hadith-'+(i+1),'<p>'+('ن'.repeat(i<3?30000:10))+'</p>']),before=partitionSourceNotes(fixture(rows)),after=partitionSourceNotes(fixture([...rows,['hadith-17','<p>Next complete report</p>']]));
+ assert.deepEqual(after.manifest.books[0].routes.slice(0,16),before.manifest.books[0].routes);assert.equal(after.manifest.books[0].routes[16].path,'notes/example-hadith-17-32.html');
+});
+test('chapter introductions can overflow without entering report pages or losing their full text',()=>{
+ const rows=[['hadith-1','<p>Complete report</p>'],...Array.from({length:3},(_,i)=>['chapter-'+(i+1),'<p lang="ar">'+'ن'.repeat(40000)+'</p>'])],result=partitionSourceNotes(fixture(rows)),book=result.manifest.books[0];
+ assert.equal(book.pages.filter(p=>p.path.includes('chapters-')).length,3);assert(book.routes.filter(r=>r.id.startsWith('chapter-')).every(r=>r.path.includes('chapters-')));checkSourceNotePublication(result.manifest,{read:p=>result.files.get('reader/'+p)});
+});
+test('an oversized single section is rejected rather than truncating source evidence or raising the budget',()=>{
+ assert.throws(()=>partitionSourceNotes(fixture([['hadith-1','<p>'+'ن'.repeat(65536)+'</p>']])),/One complete source-note section exceeds the page budget/);
+});
 test('every complete published source-note section preserves all text, markup and exact citation destinations',()=>{
  let count=0;
  for(const book of publication.manifest.books){

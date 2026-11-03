@@ -173,6 +173,13 @@ function validateComparisons(comparisons,config,segments,row,sources){
     const record=comparisonEvidence(p.reference,p.referenceEvidence);
     assert.notEqual(record.bodyForm,'translation-omission-notice','An omission notice cannot be a translated split part');
     assert(Array.isArray(p.segmentIds)&&p.segmentIds.length,'Split comparison needs segment coverage');
+    if(p.status==='damaged-comparison'){
+     assert(Array.isArray(p.checkedBody)&&p.checkedBody.length>=2&&p.checkedBody.every(v=>typeof v==='string')&&hash(p.checkedBody)===record.textSha256,'Damaged split comparison differs from its pinned body');
+     assert(typeof p.damagedExcerpt==='string'&&p.damagedExcerpt.trim()&&p.checkedBody.some(v=>v.includes(p.damagedExcerpt)),'Damaged split comparison needs a checked excerpt');
+     assert(typeof p.note==='string'&&p.note.trim(),'Damaged split comparison needs its coverage limits');
+     for(const key of ['referencedReference','referencedReferenceEvidence','continuedByReference','checkedReferences','part'])assert.equal(p[key],undefined,'Damaged split comparison cannot claim pointer or shared coverage');
+     continue;
+    }
     if(p.status==='inline-back-reference-only'){
      assert(Array.isArray(p.checkedBody)&&p.checkedBody.length===1&&typeof p.checkedBody[0]==='string'&&hash(p.checkedBody)===record.textSha256,'Inline pointer differs from its pinned body');
      assert(/^Narrated .+ as above\.$/.test(p.checkedBody[0].trim()),'Expected one narrator-and-pointer paragraph');
@@ -238,7 +245,9 @@ function validateComparisons(comparisons,config,segments,row,sources){
  }
 }
 function entryTranslationStatus(row){
- if(row.comparisons.filter(c=>c.status==='damaged-comparison').length===2)return 'Personal prototype: AI-assisted working translation checked against two Arabic prints. Both English comparisons contain errors or omissions; neither supplies a complete reliable rendering of this selected entry. See the specific limits in the source notes. Independent Arabic, English and context review pending.';
+ const damaged=c=>c.status==='damaged-comparison'||c.splitReferences?.some(p=>p.status==='damaged-comparison');
+ if(row.comparisons.some(c=>c.status==='not-present-in-checked-sequence')&&row.comparisons.some(damaged))return 'Personal prototype: AI-assisted working translation checked against two Arabic prints. One pinned English sequence omits this report; the other has documented comparison limitations. See source notes for these limits and any separately consulted comparison. Independent Arabic, English and context review pending.';
+ if(row.comparisons.filter(damaged).length===2)return 'Personal prototype: AI-assisted working translation checked against two Arabic prints. Both English comparisons contain errors or omissions; neither supplies a complete reliable rendering of this selected entry. See the specific limits in the source notes. Independent Arabic, English and context review pending.';
  if(row.comparisons.some(c=>c.id!=='islamhouse-khan'&&c.status==='damaged-comparison'))return 'Personal prototype: AI-assisted working translation; two Arabic prints and two English comparison families were inspected. One English comparison contains documented errors or omissions. See source notes for its limits. Independent Arabic, English and context review pending.';
  if(row.comparisons.every(c=>c.status==='not-present-in-checked-sequence'))return 'Personal prototype: a complete report transcribed from an identified Arabic print and checked against a second print. Both selected English sequences omit this occurrence. A separate online English comparison shortens the chain and uses passive wording; the full printed chain and first-person wording are retained. Independent transcription, Arabic, English and context review pending.';
  if(row.comparisons.some(c=>c.status==='damaged-comparison'))return 'Personal prototype: AI-assisted working translation; two Arabic prints and one complete English comparison were checked. The second English reference contains damaged wording and cannot confirm the missing words. Independent Arabic, English and context review pending.';
@@ -283,7 +292,7 @@ function khanCitation(record){
  if(record.status==='back-reference-only'){const [volume,book,number]=record.reference.split('.');return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Number ${number} · backward reference only`,scope:record.note};}
 
  if(record.status==='reference-only-body-absent'){const [volume,book,number]=record.reference.split('.');return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Number ${number} · reference only; statement body absent`,scope:record.note};}
- if(record.splitReferences){const [volume,book]=record.reference.split('.'),abbreviated=record.splitReferences.some(p=>p.status);return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Numbers ${record.splitReferences.map(p=>p.reference.split('.')[2]).join(', ')} · separately numbered comparison parts${abbreviated?' · includes an abbreviated part':''}`,scope:record.note+' The reader retains one complete numbered entry from its selected Arabic source.'};}
+ if(record.splitReferences){const [volume,book]=record.reference.split('.'),abbreviated=record.splitReferences.some(p=>p.status);return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Numbers ${record.splitReferences.map(p=>p.reference.split('.')[2]).join(', ')} · separately numbered comparison parts${record.splitReferences.some(p=>p.status==='damaged-comparison')?' · includes documented comparison limits':abbreviated?' · includes an abbreviated part':''}`,scope:record.note+' The reader retains one complete numbered entry from its selected Arabic source.'};}
  if(record.status==='not-present-in-checked-sequence')return {id:'khan',sourceId:'islamhouse-khan',locator:`No corresponding report in the checked sequence: ${record.checkedReferences.join(' → ')}`,scope:record.note+' This is documented absence in that sequence, not a completed English comparison or a claim about every occurrence elsewhere in the collection.'};
  const [volume,book,number]=record.reference.split('.');
  return {id:'khan',sourceId:'islamhouse-khan',locator:`Volume ${volume}, Book ${book}, Number ${number}${record.part?` · report ${record.part.index} of ${record.part.count}`:''}`,scope:record.part?'This English reference contains multiple reports. Only the identified report is matched here; the reader retains separate entries and full chains from its selected Arabic source.':'Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed.'};
@@ -349,7 +358,7 @@ export function buildBookBatch(inventory,review,manifest,config){
   for(const [i,s] of row.segments.entries()){
    const block=blockIds.indexOf(s.paragraphId);assert(block>=0&&Number.isSafeInteger(s.start)&&Number.isSafeInteger(s.end));
    assert.equal(s.arabic,Array.from(arabic_blocks[block]).slice(s.start,s.end).join(''),'Changed Arabic span');assert.equal(s.arabicSha256,sha(s.arabic));assert.equal(s.englishSha256,sha(s.english));
-   if(['chain','transmission-note'].includes(s.kind))for(const [arabic,english]of [[['حدثنا','حدثتنا'],'related to us'],[['حدثني','حدثتني'],'related to me'],[['أخبرنا','أنبأنا'],'informed us'],[['أخبرني','أخبرتني'],'informed me'],[['سمعت'],'i heard']])assert.equal(arabic.reduce((n,word)=>n+s.arabic.replace(/\p{M}/gu,'').split(word).length-1,0),s.english.toLowerCase().split(english).length-1,'Reporting verb mismatch in '+s.id);
+   if(['chain','transmission-note'].includes(s.kind))for(const [arabic,english]of [[['حدثنا','حدثتنا'],'related to us'],[['حدثني','حدثتني'],'related to me'],[['أخبرنا','أنبأنا'],'informed us'],[['أخبرني','أخبرتني'],'informed me'],[['سمعت'],'i heard']])assert.equal(arabic.reduce((n,word)=>n+s.arabic.replace(/\p{M}/gu,'').split(word).length-1,0),(english==='i heard'?['i heard','she heard']:[english]).reduce((n,verb)=>n+s.english.toLowerCase().split(verb).length-1,0),'Reporting verb mismatch in '+s.id);
    const supplement=row.arabicSupplements?.find(a=>a.id===s.paragraphId),origin=supplement?{provenance:{kind:'printed-supplement',id:supplement.id}}:{};
    presentation.arabic.push({block,start:s.start,end:s.end,kind:s.kind,...origin});presentation.english.push({block:i,start:0,end:Array.from(s.english).length,kind:s.kind,...origin});
   }
