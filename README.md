@@ -1,6 +1,18 @@
 # Hadith · MindfulMod reader
 
-The local personal reader at `reader/` contains 1,140 selected Bukhari entries across twenty-two sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The local personal reader at `reader/` contains 1,166 selected Bukhari entries across twenty-three sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+
+## Complete selected Actions during Prayer · 3 November 2026
+
+The local personal reader contains **1,166 entries across twenty-three sections**. This batch adds all **26 selected reports 1140–1165**, with 70 complete Arabic/English spans and eighteen chapters. Six separate chapter comments remain Arabic only, with English pending; the context-only chapter stays outside daily sessions. The new English is an AI-assisted working translation, not Darussalam wording or independent certification.
+
+Both complete 1141 routes remain in one report; the exact English 291 backward pointer cannot claim another report body. The unusual 297m comparison label stays mapped to 1148. All repeated calls, prayer-unit pairs, honorifics, full closing routes and the al-Nadr lexical note remain. Shortened English comparison bodies are explicitly limited, including two additional differences found during wording review.
+
+One explicit reading choice uses the **or** conjunction found in both Arabic prints before eight expeditions in 1153. The digital **and** remains in the immutable original and visible source notes. A closer inspection distinguishes the historical final spelling «ثماني» from the modern «ثمانيا»; the intake review page links to this subsequent clarification. The selected singular **related to me** in 1162 remains unchanged, with its printed alternative disclosed. No new suffix is needed.
+
+**1,052 automated tests passed: 823 Node and 229 Python.** Twenty-three integrity checks and twenty-three desktop browser checks passed. An actual offline update preserved the saved 1139 session and 983b bookmark. Every new report, full source notes, six chapter comments, printed chapter differences and exact search reopen offline. The largest text fits at 320, 390 and 1280 pixels; eleven screenshots were inspected. Reading downloads total **30,712,548 bytes**. See `research/actions-prayer-wording-review.json` and `research/actions-prayer-reader-verification.json` for evidence and limits.
+
+All earlier 1,140 entry objects, twenty-two book contexts and packs, 137 source-note pages, pinned inputs, artwork, recordings and narration jobs remain unchanged. Holds **926/957/1104/1115** remain; complete recordings are **1–6**. Cedar stays on the free demo, with the incomplete Hadith 7 recording unadmitted. Nothing was published. Next source intake begins at **1166**; independent accuracy review, full coverage, rights clearance and fresh physical-iPhone acceptance remain unfinished.
 
 ## Actions during Prayer source intake · 3 November 2026
 

@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "kind": "subsequent-wording-comparison-addendum",
+  "parentAudit": {
+    "path": "research/actions-prayer-source-audit.json",
+    "sha256": "eab0cf7920d2072b5e7e687fd76dc36ded9a77be8ccc9809f4f8ad9cfa11dc00"
+  },
+  "source": {
+    "path": "content/sources/wikisource-actions-prayer/source.html",
+    "id": "wikisource-bukhari-actions-prayer-r39529",
+    "revision": 39529,
+    "sha256": "b59d026c3bd9179bd527dc83fefc7cf5bb33ed5784f4fb70162a2d8f7d591b5d",
+    "bytes": 129420,
+    "inventorySha256": "4ee981449d152190f4ea686c491024b1d6274b5c7e6125461d153874fb5a175e",
+    "blocks": 50,
+    "codePoints": 10182,
+    "numberedReports": 26,
+    "chapters": 18,
+    "separateContextIds": [
+      "mwBg",
+      "mwIg",
+      "mwNw",
+      "mwPQ",
+      "mwRA",
+      "mwXg"
+    ],
+    "blankIds": [],
+    "arabicChanged": false
+  },
+  "englishComparisons": {
+    "bewley": {
+      "url": "https://aishabewley.org/bukhari11",
+      "sha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+      "bytes": 118517,
+      "locatorPolicy": "Split HTML p/h1-h6 boundaries, decode entities and collapse whitespace inside paragraphs. Begin at displayed 1140 and stop before the Chapter 27 Forgetfulness heading. Labels count only at paragraph starts; the next Roman-numbered chapter heading ends a body so chapter context is excluded.",
+      "locatedBodies": 26,
+      "terminalBoundary": "chapter-27-forgetfulness-heading",
+      "boundaryDifferenceIds": []
+    }
+  },
+  "records": [
+    {
+      "reference": 1154,
+      "sourceRecordId": "wikisource-bukhari-actions-prayer-r39529:1154",
+      "chapterId": "chapter-11",
+      "paragraphIds": [
+        "mwOg"
+      ],
+      "arabicSha256": "f3affd8f4efd6d9fc912481c2d8167eb143c33d2bd51c88b323f4deb7799d950",
+      "printedReferences": [
+        1212
+      ],
+      "printedPages": {
+        "brill-1862": [
+          305
+        ],
+        "dar-ibn-kathir-2002": [
+          292,
+          293
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1154",
+          "occurrence": 1,
+          "bodySha256": "cd96fe39704208c50b6582c761f62192c9371b7eb6fc8541f5cf2a777e2ea59c",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The web body makes the second bowing last until the bowing is finished. The selected Arabic instead says he bowed when he had completed it, following the second surah; the sequence is not taken from this comparison."
+          ]
+        },
+        "khan": {
+          "reference": "2.22.303",
+          "recordSha256": "41314980bf5c9cd1ccd0f8e515e2251a5a1a17ee8a8cc1496c2f5bd00ca1c9fa",
+          "bodySha256": "9f118e78553012666c8f35f7294a4a4e647ee2187e185882edc59b0d54e23e20",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The body inserts grapes and explanatory descriptions of eclipses and released animals; these are not extra selected Arabic wording."
+          ]
+        }
+      },
+      "finding": "Retain both long recitations, both bowings and prostration sequence, vision account and closing Amr ibn Luhayy statement."
+    },
+    {
+      "reference": 1160,
+      "sourceRecordId": "wikisource-bukhari-actions-prayer-r39529:1160",
+      "chapterId": "chapter-16",
+      "paragraphIds": [
+        "mwUQ"
+      ],
+      "arabicSha256": "7aae3911092e63d0ce34482e4d2e13d0e831c6e219268c68de6c9d941bf95c6f",
+      "printedReferences": [
+        1218
+      ],
+      "printedPages": {
+        "brill-1862": [
+          306,
+          307
+        ],
+        "dar-ibn-kathir-2002": [
+          294
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1160",
+          "occurrence": 1,
+          "bodySha256": "53405d0ec9f5afd335493b16bd698adc41ad4547a3553ac7821dbb51edea03a4",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The web body adds first to the selected row and has raised his hands where the selected text has singular his hand. Both selected details remain unchanged."
+          ]
+        },
+        "khan": {
+          "reference": "2.22.309",
+          "recordSha256": "b82a189733db2fee0679ca51b358c69b12b2852ea09f614e1729b44d446d2fd6",
+          "bodySha256": "29f311157c549bf24c86162aabae1f87e8ccbb981feb7b79fa1c7febeca0c0e0",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The takbir is attributed to the people rather than Abu Bakr saying it for them; Sahls embedded clapping explanation is absent. The final quotation also has no closing mark."
+          ]
+        }
+      },
+      "finding": "Preserve the complete reconciliation account, Abu Bakrs takbir, Sahls clapping comment, later instruction and the final Ibn Abi Quhafah response."
+    }
+  ],
+  "scope": "Two additional differences found on complete wording reread. Original source intake and its pinned evidence remain unchanged."
+}

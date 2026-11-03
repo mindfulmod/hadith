@@ -47,7 +47,8 @@ export const BOOK_CONFIGS=Object.freeze({
  shortening:Object.freeze({id:'shortening',number:19,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([20]),title:'Shortening the Prayer',first:1030,arabicSourceId:'arabic-shortening',bewleySourceId:'bewley-shortening',bewleyTitle:'Shortening the Prayer',revision:278144}),
  'night-prayer':Object.freeze({id:'night-prayer',number:20,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([21]),title:'Night Prayer',first:1069,arabicSourceId:'arabic-night-prayer',bewleySourceId:'bewley-night-prayer',bewleyTitle:'Night Prayer',revision:39522}),
  'voluntary-prayer':Object.freeze({id:'voluntary-prayer',number:21,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([21]),title:'Voluntary Prayer',first:1119,arabicSourceId:'arabic-voluntary-prayer',bewleySourceId:'bewley-voluntary-prayer',bewleyTitle:'Voluntary Prayer',revision:434953}),
- 'mosques-prayer':Object.freeze({id:'mosques-prayer',number:22,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([21]),title:'Mosques of Mecca and Medina',first:1132,arabicSourceId:'arabic-mosques-prayer',bewleySourceId:'bewley-mosques-prayer',bewleyTitle:'Mosques of Mecca and Medina',revision:142212})
+ 'mosques-prayer':Object.freeze({id:'mosques-prayer',number:22,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([21]),title:'Mosques of Mecca and Medina',first:1132,arabicSourceId:'arabic-mosques-prayer',bewleySourceId:'bewley-mosques-prayer',bewleyTitle:'Mosques of Mecca and Medina',revision:142212}),
+ 'actions-prayer':Object.freeze({id:'actions-prayer',number:23,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([22]),title:'Actions during Prayer',first:1140,arabicSourceId:'arabic-actions-prayer',bewleySourceId:'bewley-actions-prayer',bewleyTitle:'Actions during Prayer',revision:39529})
 });
 function bookConfig(config){assert(Object.values(BOOK_CONFIGS).includes(config),'Unknown book configuration');return config;}
 let englishInventory;
@@ -172,13 +173,19 @@ function validateComparisons(comparisons,config,segments,row,sources){
     assert(Array.isArray(p.segmentIds)&&p.segmentIds.length,'Split comparison needs segment coverage');
     if(p.status!==undefined){
      assert(Array.isArray(p.checkedBody)&&p.checkedBody.length===2&&p.checkedBody.every(v=>typeof v==='string')&&hash(p.checkedBody)===record.textSha256,'Abbreviated comparison part differs from its pinned body');
-     assert(/^Narrated .+:$/.test(p.checkedBody[0].trim())&&typeof p.note==='string'&&p.note.trim(),'Abbreviated comparison part needs a narrator and explanation');
+     assert((/^Narrated .+:$/.test(p.checkedBody[0].trim())||(p.status==='same-as-reference-only'&&/^Narrated .+$/.test(p.checkedBody[0].trim())))&&typeof p.note==='string'&&p.note.trim(),'Abbreviated comparison part needs a narrator and explanation');
      if(p.status==='back-reference-only'){
       const pointer=/^as above \(([1-9]\d*)\)\.$/.exec(p.checkedBody[1].trim());
       assert(pointer&&p.referencedReference===`${p.reference.split('.')[0]}.${p.reference.split('.')[1]}.${pointer[1]}`&&Number(pointer[1])<Number(p.reference.split('.')[2]),'Invalid split backward pointer');
       assert.equal(p.continuedByReference,undefined,'Backward pointer cannot claim a forward continuation');
       comparisonEvidence(p.referencedReference,p.referencedReferenceEvidence);
       assert(p.segmentIds.every(id=>segments.find(s=>s.id===id)?.kind==='chain'),'Backward-only part may only correspond to an abbreviated chain');
+     }else if(p.status==='same-as-reference-only'){
+      const pointer=/^the same as No\. ([1-9]\d*)\. from the Prophet$/.exec(p.checkedBody[1].trim());
+      assert(pointer&&p.referencedReference===`${p.reference.split('.')[0]}.${p.reference.split('.')[1]}.${pointer[1]}`&&Number(pointer[1])<Number(p.reference.split('.')[2]),'Invalid same-as split backward pointer');
+      assert.equal(p.continuedByReference,undefined,'Same-as pointer cannot claim a forward continuation');
+      comparisonEvidence(p.referencedReference,p.referencedReferenceEvidence);
+      assert(p.segmentIds.every(id=>segments.find(s=>s.id===id)?.kind==='chain'),'Same-as pointer may only correspond to an abbreviated chain');
      }else if(p.status==='unnumbered-back-reference-only'){
       assert.equal(p.checkedBody[1].trim(),'as above.','Unexpected unnumbered split pointer');
       assert(p.referencedReference===undefined&&p.referencedReferenceEvidence===undefined&&p.continuedByReference===undefined,'An unnumbered split pointer cannot invent a target');
