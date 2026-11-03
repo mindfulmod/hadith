@@ -11,7 +11,7 @@ const review=()=>read('content/review/funerals-second-review.json'),inv=read('co
 const {source,ledger}=collectionFiles(),book=ledger.books.find(b=>b.id==='funerals'),numbers=[1194,1195,1196,1197,1198,1199,1200,'1200b',1202,1203,1204,1205,1206,1207,1208,1209],get=n=>source.entries.find(e=>e.number===n),text=n=>get(n).english_blocks.join('\n\n');
 const rehash=e=>{delete e.reviewRecordSha256;e.reviewRecordSha256=hash(e);};
 test('second Funerals batch adds exactly sixteen reports in fifteen complete chapters',()=>{
- assert.deepEqual(review().entries.map(e=>e.number),numbers);assert.deepEqual(book.entryNumbers.slice(14),numbers);assert.equal(book.sourceEntryCount,151);assert.equal(book.chapters.length,21);assert.equal(review().entries.reduce((n,e)=>n+e.segments.length,0),42);assert.deepEqual(review().chapters.flatMap(c=>c.contextIds),['mwNg','mwSg','mwTA']);assert.equal(get(1210),undefined);assert.equal(get(1201),undefined);
+ assert.deepEqual(review().entries.map(e=>e.number),numbers);assert.deepEqual(book.entryNumbers.slice(14,30),numbers);assert.equal(book.sourceEntryCount,151);assert(book.chapters.length>=21);assert.equal(review().entries.reduce((n,e)=>n+e.segments.length,0),42);assert.deepEqual(review().chapters.flatMap(c=>c.contextIds),['mwNg','mwSg','mwTA']);assert.equal(get(1201),undefined);
 });
 test('every selected digital Arabic character and mapped source boundary is preserved',()=>{
  for(const e of review().entries.filter(e=>!e.printedReport)){const original=e.paragraphIds.map(id=>inv.blocks.find(b=>b.htmlId===id).text);assert.equal(e.segments.map(s=>s.arabic).join(''),original.join(''));assert.deepEqual(get(e.number).arabic_blocks,original);assert.equal(e.arabicCorrections,undefined);}

@@ -1,6 +1,16 @@
 # Hadith · MindfulMod reader
 
-The local personal reader at `reader/` contains 1,210 selected Bukhari entries across twenty-five sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The local personal reader at `reader/` contains 1,224 selected Bukhari entries across twenty-five sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+
+## Third Funerals reading batch · 3 November 2026
+
+The local personal reader now contains **1,224 entries across twenty-five sections**. This batch adds **fourteen reports, 1210–1223**, with 36 complete Arabic/English spans, ten complete chapters and one separate Arabic context paragraph whose English remains pending. The new English is AI-assisted working text, not independently certified or Darussalam wording.
+
+**1214** has an explicit chain correction: both Arabic prints read Hisham ibn ‘Urwah where the digital input reads Hisham, from ‘Urwah. The original remains unchanged in the source evidence; the derived reading has both witness references and a visible notice. All other selected Arabic remains unchanged. Eight additional print differences are recorded, including two chapter headings, without silently changing the text. **1216** retains both narrator asides and complete alternative wording. **1218** separates the definition dialogue and Sahl’s closing comment. **1222** retains both full repeated accounts corresponding to printed 1281/1282 within the same stable app entry.
+
+**1,182 automated tests passed: 886 Node and 296 Python**, plus 28 integrity checks and 22 desktop browser checks. The actual offline update preserved the saved 1209 session and 983b bookmark. All fourteen reports, complete source notes, the chain correction, printed references and chapter context reopened offline. Exact search and largest-text layouts at 320, 390 and 1280 pixels passed; eight screenshots were inspected. Reading downloads total **32,465,003 bytes**. See `research/funerals-third-wording-review.json` and `research/funerals-third-reader-verification.json`.
+
+All earlier **1,210 entry objects and source references**, the first twenty-one Funerals chapters and their fifty-one source articles, the other twenty-four book contexts and packs, 143 other source-note pages, source inputs, artwork, recordings and narration jobs remain unchanged. Holds **926/957/1104/1115** remain. Cedar stays at **1–6** on the ordinary free demo; incomplete Hadith 7 is unadmitted. Nothing was published. Continue complete wording review from **1224**, with 107 selected Funerals entries remaining. Independent review, reuse rights, full coverage and fresh physical-iPhone acceptance remain unfinished.
 
 ## Second Funerals reading batch · 3 November 2026
 
