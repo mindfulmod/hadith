@@ -2,6 +2,18 @@
 
 The local personal reader at `reader/` contains 1,132 selected Bukhari entries across twenty-one sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
+## Mosques of Mecca and Medina source intake · 3 November 2026
+
+The next **eight reports, 1132–1139**, are staged for complete wording review. All **14 Arabic blocks and 2,317 code points** remain unchanged, across six headings with no separate introductory paragraphs. The [source review](research/mosques-prayer-source-review.html) exposes every complete report, printed location, English comparison limit and recorded textual difference. This is source evidence only, with no reader admission or new translation.
+
+Both inspected prints account for **ten modern references, 1188–1197**. Digital 1132 contains printed 1188/1189; 1134 contains 1191/1192. No missing complete report or suffix is established. The web comparison puts 1132’s Abu Hurayrah statement under displayed 1133, before the actual thousand-prayers report. Exact body hashes and an explicit cross-label map prevent silent relabelling. All eight EPUB bodies are located at 2.21.281–288. The unfinished first introduction and route switch in 1132, paired narrator routes and closing Ibn Numayr addition remain complete.
+
+Nine recorded differences remain unapplied, including the duplicated reporting word, a chapter-heading difference and the **house/grave** variant at 1137. The selected and modern report use house; the historical print differs. Its separate grave-based heading is not substituted into the report. A classical source discussion is linked as comparison evidence, outside the hadith wording. No authenticity ruling or religious interpretation is supplied.
+
+**221 distinct automated tests passed:** all 214 Python tests, including thirteen new integrity tests, and seven deployment checks. Both retained PDFs, the web comparison and all matched EPUB bodies were rechecked. Six desktop viewport/theme checks preserve exact Arabic, usable navigation and no horizontal overflow; six screenshots were visually inspected. All **1,400 previous tracked files** outside the explicit documentation and registry updates remain byte-identical. See `research/mosques-prayer-intake-verification.json` for evidence and limits.
+
+The reader remains at **1,132 entries across twenty-one sections**, with recordings **1–6** and the incomplete Hadith 7 job preserved. Text expansion continues while Cedar stays on the free demo. No external update was published. Complete wording review for 1132–1139 comes next.
+
 ## Complete selected Voluntary Prayer · 3 November 2026
 
 The local personal reader contains **1,132 entries across twenty-one sections**. This batch adds all thirteen selected reports **1119–1131**, with 39 complete Arabic/English spans and nine chapters. Two Arabic chapter comments remain separately browseable, with English pending. The selected Arabic is unchanged; the new English is an AI-assisted working translation, not Darussalam wording or independent certification.

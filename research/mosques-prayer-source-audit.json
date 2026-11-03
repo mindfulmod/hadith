@@ -1,0 +1,834 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-03T05:17:55.449168+00:00",
+  "status": "source-intake-compared-wording-review-pending",
+  "readerAdmission": false,
+  "reviewerKind": "ai",
+  "independentReview": "pending",
+  "scope": "Complete selected source ownership and printed-occurrence mapping with individually located English comparisons. Non-exhaustive AI comparison, not independent accuracy certification, English wording approval, religious interpretation or reuse-rights clearance.",
+  "source": {
+    "path": "content/sources/wikisource-mosques-prayer/source.html",
+    "id": "wikisource-bukhari-mosques-prayer-r142212",
+    "revision": 142212,
+    "sha256": "2afa649f50244ec8d0b0d425d5b098db0d12e9f346fcf09367fb24a3a849ed6d",
+    "bytes": 93984,
+    "inventorySha256": "bc0a752fe16f0408fb82cc5cf3ce610b957d0ab5da6793bc7cded8efe90ae92e",
+    "blocks": 14,
+    "codePoints": 2317,
+    "numberedReports": 8,
+    "chapters": 6,
+    "separateContextIds": [],
+    "blankIds": [],
+    "arabicChanged": false
+  },
+  "printedComparisons": [
+    {
+      "id": "brill-1862",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+      "bytes": 28290204,
+      "inspectedPdfPages": [
+        299,
+        300,
+        301,
+        302
+      ]
+    },
+    {
+      "id": "dar-ibn-kathir-2002",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+      "bytes": 45304371,
+      "inspectedPdfPages": [
+        287,
+        288,
+        289
+      ]
+    }
+  ],
+  "printedReferenceNamespace": "Dar Ibn Kathir 2002 numbering; historical occurrences matched by contents and PDF pages, not those modern numbers.",
+  "modernPrintedOccurrencesAccountedFor": 10,
+  "englishComparisons": {
+    "commonLimitations": [
+      "Both English families generally abbreviate opening chains and may handle honorifics differently. Locating a body does not approve complete wording.",
+      "Headings, source alternatives, theological language and explanatory additions require separate review against the selected Arabic."
+    ],
+    "bewley": {
+      "url": "https://aishabewley.org/bukhari10",
+      "sha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+      "bytes": 102307,
+      "locatorPolicy": "Split HTML p/h1-h6 boundaries, decode entities and collapse whitespace inside blocks. Bound the subsection at displayed 1132 and the first HR element after it; exclude all following navigation. Numeric labels count only at paragraph starts. Following chapter headings may remain in a comparison range without becoming part of a numbered Arabic report.",
+      "locatedBodies": 8,
+      "terminalBoundary": "first-hr-after-1132",
+      "boundaryDifferenceIds": [
+        "bewley-1132-1133-boundary"
+      ]
+    },
+    "khan": {
+      "sourcePath": "content/sources/islamhouse-bukhari/source.epub",
+      "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+      "section": "OPS/section-0023.html",
+      "locatedRecords": 8,
+      "mappedArabicReports": 8,
+      "absentReferences": [],
+      "range": "2.21.281–288",
+      "irregularReferenceMap": {},
+      "allRecordedBodyHashesCheckedAgainstPinnedEpub": true
+    }
+  },
+  "records": [
+    {
+      "reference": 1132,
+      "sourceRecordId": "wikisource-bukhari-mosques-prayer-r142212:1132",
+      "chapterId": "chapter-01",
+      "paragraphIds": [
+        "mwBg"
+      ],
+      "arabicSha256": "f255288229ab49b9325688d0c28114ab991e880ca1ff0dc089dadea90850cb50",
+      "printedReferences": [
+        1188,
+        1189
+      ],
+      "printedPages": {
+        "brill-1862": [
+          299
+        ],
+        "dar-ibn-kathir-2002": [
+          287
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1132",
+          "occurrence": 1,
+          "bodySha256": "02d50b664c07adf0763b82e882d6da377c613f7d8b9abc0809b60f6a1c6c1f5e",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The displayed 1132 body stops after the Abu Said introduction and contains a stray pound-sign character. Its Abu Hurayrah three-mosques statement appears instead at the beginning of displayed label 1133, with the opening chain abbreviated. Neither label alone gives the complete selected 1132."
+          ]
+        },
+        "khan": {
+          "reference": "2.21.281",
+          "recordSha256": "4cfe7420b3810437d2542fdc86f7b9069678bbc3a5096185508b6a03a467d1f0",
+          "bodySha256": "af7cd0a96640eedaa2168c71024db1a7fb9907a7a607a904e425bf2a25959723",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "Holy battles and the parenthetical following-narrative phrase are supplied in the first introduction. Preserve the selected expedition wording, unfinished introduction and explicit route switch without these additions."
+          ]
+        }
+      },
+      "finding": "The selected paragraph contains the complete Abu Said introductory fragment followed by an explicit route switch and the Abu Hurayrah three-mosques report. Modern 1188/1189 divide these already-present passages. The web comparison misplaces the second passage under 1133; retain both Arabic routes and the fragment."
+    },
+    {
+      "reference": 1133,
+      "sourceRecordId": "wikisource-bukhari-mosques-prayer-r142212:1133",
+      "chapterId": "chapter-01",
+      "paragraphIds": [
+        "mwCw"
+      ],
+      "arabicSha256": "236c390ae83decff3fe87b0bed45fefae19a493adf9249ea275862b6d9fe4d31",
+      "printedReferences": [
+        1190
+      ],
+      "printedPages": {
+        "brill-1862": [
+          299
+        ],
+        "dar-ibn-kathir-2002": [
+          287
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1133",
+          "occurrence": 1,
+          "bodySha256": "2ca6b7762527b5f985948eb95063620c736fa1722710beff48ce91b7a0eb0ff0",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The displayed 1133 range begins with the three-mosques statement belonging to selected Arabic 1132, then gives the thousand-prayers report of selected 1133. Do not import the preceding statement or shift identities."
+          ]
+        },
+        "khan": {
+          "reference": "2.21.282",
+          "recordSha256": "e35ab01ce1c52b0656ef5a78c22efe0f06324b809f432e653e09d32599b8dcaa",
+          "bodySha256": "d876611e3362b576ba6261fab65615e2bdb908cbd3b05e7f1b0cda97e811c2a9",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The complete paired Zayd ibn Rabah and Ubayd Allah ibn Abi Abd Allah al-Agharr route leads to the thousand-prayers statement. Its web comparison is the second report under displayed 1133, after misplaced material belonging to 1132."
+    },
+    {
+      "reference": 1134,
+      "sourceRecordId": "wikisource-bukhari-mosques-prayer-r142212:1134",
+      "chapterId": "chapter-02",
+      "paragraphIds": [
+        "mwDg"
+      ],
+      "arabicSha256": "cd13319bd207d0c02c78c5a5146ebfa93a77561b651d9f3d142702402f9239d3",
+      "printedReferences": [
+        1191,
+        1192
+      ],
+      "printedPages": {
+        "brill-1862": [
+          299,
+          300
+        ],
+        "dar-ibn-kathir-2002": [
+          287
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1134",
+          "occurrence": 1,
+          "bodySha256": "2149302e1102ee4e2b5f36d54ae868931c1a0da243e4f9f4df7a5de40cc17c55",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.283",
+          "recordSha256": "43df149fcf62e1e888b9ff91fe954c013358b196afccd8d53d4fcf28907b1890",
+          "bodySha256": "9dd0d4f0172d738875ee26d7128a449710b3f489f2b130a7ab30496c170923c5",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "Kaaba and Ibrahim are supplied as identifications for the selected House and Maqam wording. Do not insert these identifiers into the selected report."
+          ]
+        }
+      },
+      "finding": "Both the full Quba/arrival account and the final statement about companions and prayer times are present. Modern 1191/1192 divide this selected paragraph. Retain every timing clause and do not replace the Maqam with an explanatory identification."
+    },
+    {
+      "reference": 1135,
+      "sourceRecordId": "wikisource-bukhari-mosques-prayer-r142212:1135",
+      "chapterId": "chapter-03",
+      "paragraphIds": [
+        "mwEQ"
+      ],
+      "arabicSha256": "501942a621b3ffdd949024d11ec4049d2a969520333d5d55edaffdb60cadb1f5",
+      "printedReferences": [
+        1193
+      ],
+      "printedPages": {
+        "brill-1862": [
+          300
+        ],
+        "dar-ibn-kathir-2002": [
+          288
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1135",
+          "occurrence": 1,
+          "bodySha256": "1824523f646e3a3ab866fa127540e92ca729ae52802598d12001e53ce2ea7a75",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.284",
+          "recordSha256": "29353c33b9dde37d063a3fff83e45998f40057b2202f5b9c466c11113fd2f5b4",
+          "bodySha256": "f4c268d97d42db21ab9e06abfd69fb268a148f62653bbf166ba0722af043e690",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "Keep the Saturday frequency, both walking/riding modes and the final Abd Allah practice clause. The historical closing identification and conjunction differ."
+    },
+    {
+      "reference": 1136,
+      "sourceRecordId": "wikisource-bukhari-mosques-prayer-r142212:1136",
+      "chapterId": "chapter-04",
+      "paragraphIds": [
+        "mwFA"
+      ],
+      "arabicSha256": "aca4cab71e0c8cdf0877090c90411c5ea9451810a5ebf84aab4ea3a3eb58bf7e",
+      "printedReferences": [
+        1194
+      ],
+      "printedPages": {
+        "brill-1862": [
+          300
+        ],
+        "dar-ibn-kathir-2002": [
+          288
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1136",
+          "occurrence": 1,
+          "bodySha256": "d9d4626c311a9a26e14ea33aa9d46fea8439d6819a20c62044c98b1fb1f99a94",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The explicit Ibn Numayr/Ubayd Allah/Nafi closing route is abbreviated to Nafi added. The complete route must remain in a new translation."
+          ]
+        },
+        "khan": {
+          "reference": "2.21.285",
+          "recordSha256": "38a326c402008c51c601ae9577ebcf91aa2dc01fc4dce89c4f45d74015fff472",
+          "bodySha256": "c5955e902f8aa9dbef7165ca7f6b7aba2b40b600acf862fe9cb9879b1108fbce",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The explicit Ibn Numayr/Ubayd Allah/Nafi closing route is abbreviated to Added Nafi, with a parenthetical another narration."
+          ]
+        }
+      },
+      "finding": "Retain the complete Ibn Numayr/Ubayd Allah/Nafi appended route and its two-unit addition. The printed chapter heading differs in mosque wording and order; it remains separate from narration."
+    },
+    {
+      "reference": 1137,
+      "sourceRecordId": "wikisource-bukhari-mosques-prayer-r142212:1137",
+      "chapterId": "chapter-05",
+      "paragraphIds": [
+        "mwFw"
+      ],
+      "arabicSha256": "8edd280088c1a6af86fbcf9f8dae19800fddd9254e970d0ad2174e2089a1ebc3",
+      "printedReferences": [
+        1195
+      ],
+      "printedPages": {
+        "brill-1862": [
+          300
+        ],
+        "dar-ibn-kathir-2002": [
+          288
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1137",
+          "occurrence": 1,
+          "bodySha256": "19a316b6000d4d0e899adfed64817d2ac8ed67b3db3524eff4539065337d15d6",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.286",
+          "recordSha256": "8dc0a7f89ad91e37ffaa078584cbfaabe9709a1f3d8da0dc88b97c7af37b3631",
+          "bodySha256": "9fa53cc21d54bedef9362061288a1eff88e254dad350a8b84f83e8bc2f499b1a",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "The selected report and modern print read my house while the historical print reads my grave. The chapter heading uses grave in all three witnesses. Keep the report and heading distinct and preserve the selected wording; this is not a ruling on variant authenticity."
+    },
+    {
+      "reference": 1138,
+      "sourceRecordId": "wikisource-bukhari-mosques-prayer-r142212:1138",
+      "chapterId": "chapter-05",
+      "paragraphIds": [
+        "mwGQ"
+      ],
+      "arabicSha256": "2d05700a990d08999842853d2a6876963c4a4e402541590ce82f0de64182ef84",
+      "printedReferences": [
+        1196
+      ],
+      "printedPages": {
+        "brill-1862": [
+          300
+        ],
+        "dar-ibn-kathir-2002": [
+          288
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1138",
+          "occurrence": 1,
+          "bodySha256": "01611306f7d8aac9efb1cb6ddbddfc99b30c0f1debf04d2296b3fb9276373c3e",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The bracketed explanation locating the grave follows the translated report but is not part of the selected Arabic. Keep it outside the hadith wording."
+          ]
+        },
+        "khan": {
+          "reference": "2.21.287",
+          "recordSha256": "3573a37eb183ea637d84e9b3fe2826f043c7d3da0e5969238e3a19ac064c1d4b",
+          "bodySha256": "71f71bd611e42536d88266c55585f292ab2253888ee123e76a6e07c937ffc84e",
+          "status": "limited-comparison-not-wording-approval",
+          "limitations": [
+            "The parenthetical identification Al-Kauthar after fountain tank is additional explanation absent from the selected report."
+          ]
+        }
+      },
+      "finding": "Keep the second separately transmitted house/pulpit report and its additional basin clause. Do not import the English comparison explanatory identifications."
+    },
+    {
+      "reference": 1139,
+      "sourceRecordId": "wikisource-bukhari-mosques-prayer-r142212:1139",
+      "chapterId": "chapter-06",
+      "paragraphIds": [
+        "mwHA"
+      ],
+      "arabicSha256": "47a7a955a74de689c70b25467e28d01fc7c61ce8f2b0d69f7682c57b01b548c6",
+      "printedReferences": [
+        1197
+      ],
+      "printedPages": {
+        "brill-1862": [
+          300,
+          301
+        ],
+        "dar-ibn-kathir-2002": [
+          288
+        ]
+      },
+      "englishComparisons": {
+        "bewley": {
+          "displayedReference": "1139",
+          "occurrence": 1,
+          "bodySha256": "d0d8ca35adb2033ddb1b83fa5a8ca62c02e85993453ca3687239cc6a7f923300",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        },
+        "khan": {
+          "reference": "2.21.288",
+          "recordSha256": "d6f0c6dfa5b2915f9742c98eb151e1627b3efa134dfdc550129b7901ea8eb4fe",
+          "bodySha256": "ad95cc25616f57bb80d917835bda17fecd773a56f78e1a4a6be5330f1ac26f9c",
+          "status": "located-body-not-wording-approval",
+          "limitations": []
+        }
+      },
+      "finding": "Keep the complete four-part statement, both prayer-time endpoints and all three mosque names. The closing sunset wording differs in the historical print. No legal interpretation is supplied by this intake."
+    }
+  ],
+  "missingPrintedReports": [],
+  "combinedDigitalReferences": [
+    {
+      "reference": 1132,
+      "paragraphId": "mwBg",
+      "sourceBlockSha256": "f255288229ab49b9325688d0c28114ab991e880ca1ff0dc089dadea90850cb50",
+      "printedReferences": [
+        1188,
+        1189
+      ],
+      "boundaries": [
+        {
+          "text": "ح حدثنا علي",
+          "start": 170
+        }
+      ],
+      "finding": "Both printed passages are already present in this selected digital paragraph. Keep the complete selected entry; no suffixed omission is established."
+    },
+    {
+      "reference": 1134,
+      "paragraphId": "mwDg",
+      "sourceBlockSha256": "cd13319bd207d0c02c78c5a5146ebfa93a77561b651d9f3d142702402f9239d3",
+      "printedReferences": [
+        1191,
+        1192
+      ],
+      "boundaries": [
+        {
+          "text": "قال: وكان يقول",
+          "start": 344
+        }
+      ],
+      "finding": "Both printed passages are already present in this selected digital paragraph. Keep the complete selected entry; no suffixed omission is established."
+    }
+  ],
+  "sharedPrintedReferences": [],
+  "printedHeadingProposals": [],
+  "proposedCorrections": [],
+  "unresolvedTextualDifferences": [
+    {
+      "id": "1132-abd-al-malik-identification",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwBg",
+      "sourceBlockSha256": "f255288229ab49b9325688d0c28114ab991e880ca1ff0dc089dadea90850cb50",
+      "sourceReading": "أخبرني عبد الملك عن قزعة",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 299,
+          "reading": "أخبرني عبد الملك بن عمير عن قزعة",
+          "readingSha256": "8ff8c2f1047cfbf8e00b638a637f8b2593b9df768de244a4677cbed66478befb",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 287,
+          "reading": "أخبرني عبد الملك عن قزعة",
+          "readingSha256": "a272bda223b0f20e1aad5b4a49a9dbb4e9bf4d022f2f535f57023253ee252719",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        }
+      ],
+      "finding": "The historical print adds Ibn Umayr to Abd al-Malik; selected and modern use the shorter name.",
+      "transcriptionPolicy": "Retain the selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "1132-repeated-said",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwBg",
+      "sourceBlockSha256": "f255288229ab49b9325688d0c28114ab991e880ca1ff0dc089dadea90850cb50",
+      "sourceReading": "أربعا قال: قال: سمعت من النبي ﷺ",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 299,
+          "reading": "أربعا قال سمعت من النبي صلى الله عليه وسلم",
+          "readingSha256": "a18948c12dd82e86b6a369273cf6518b97ed46f51dfd6ad7f891d6a392ae4f7b",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 287,
+          "reading": "أربعا قال سمعت من النبي ﷺ",
+          "readingSha256": "5c5a106dcec4906dc51adbb4ebd1e790e1e1c1fa2b6fcf8bc42521fc697d90cd",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        }
+      ],
+      "finding": "The selected introduction repeats qala twice; both inspected main texts have it once here. The digital wording remains unchanged and the duplication needs explicit wording review.",
+      "transcriptionPolicy": "Retain the selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "1133-messenger-designation",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwCw",
+      "sourceBlockSha256": "236c390ae83decff3fe87b0bed45fefae19a493adf9249ea275862b6d9fe4d31",
+      "sourceReading": "أن النبي ﷺ قال",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 299,
+          "reading": "أن رسول الله صلى الله عليه وسلم قال",
+          "readingSha256": "349241fb769d7fc51ac6e4e378582f8425c7cf71bbec2efd8c3fcdf7de0035b0",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 287,
+          "reading": "أن النبي ﷺ قال",
+          "readingSha256": "e4d76b732a89e193e9e2015da986b1b34ea79616a44e9d06bf452e737b593035",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        }
+      ],
+      "finding": "The historical print uses Messenger of Allah where selected and modern use Prophet.",
+      "transcriptionPolicy": "Retain the selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "1134-yaqub-identification",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwDg",
+      "sourceBlockSha256": "cd13319bd207d0c02c78c5a5146ebfa93a77561b651d9f3d142702402f9239d3",
+      "sourceReading": "حدثنا يعقوب بن إبراهيم حدثنا ابن علية",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 299,
+          "reading": "حدثنا يعقوب بن إبراهيم الدورقي قال حدثنا ابن علية",
+          "readingSha256": "8f1208a097687378d9ec18d8267d705f77b5e91e99f48e65ee9325d9ae51b4d7",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 287,
+          "reading": "حدثنا يعقوب بن إبراهيم حدثنا ابن علية",
+          "readingSha256": "1486931c4ec5b63dc6e6514e3e56205a3e55544b3c934b5d65708a910233ee2a",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        }
+      ],
+      "finding": "The historical opening adds al-Dawraqi and a reporting qala; selected and modern use the shorter introduction.",
+      "transcriptionPolicy": "Retain the selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "1135-closing-identification",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwEQ",
+      "sourceBlockSha256": "501942a621b3ffdd949024d11ec4049d2a969520333d5d55edaffdb60cadb1f5",
+      "sourceReading": "كان عبد الله رضى الله تعالى عنه يفعله",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 300,
+          "reading": "وكان عبد الله بن عمر يفعله",
+          "readingSha256": "6fe7e380dce4a6294129a2e46cadd93f9fe17c2213f9737c79a8e9b45fefcda4",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 288,
+          "reading": "وكان عبد الله رضي الله عنه يفعله",
+          "readingSha256": "65a4d2a24eae7e67d21a237ae1f10f69fb625b82e566453505ef52d77481772c",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        }
+      ],
+      "finding": "The selected closing lacks the initial conjunction retained by both prints. Historical names Ibn Umar, while modern and selected keep Abd Allah with differently written honorifics.",
+      "transcriptionPolicy": "Retain the selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "chapter-04-quba-heading",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "باب_إتيان_مسجد_قباء_ماشيا_وراكبا",
+      "sourceBlockSha256": "4eb1cb85b3d128bd3135ecca49082eda839a9e0d1cd9d9ed2979f2d13a2bdd70",
+      "sourceReading": "باب إتيان مسجد قباء ماشيا وراكبا",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 300,
+          "reading": "باب إتيان مسجد قباء راكبا وماشيا",
+          "readingSha256": "dda0cd0c335267bd97cbdd00b73eaa4d085401ab990c5c7d3e64d2c709839060",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 288,
+          "reading": "باب إتيان قباء ماشيا وراكبا",
+          "readingSha256": "7d7bcf2edbbb13f433a9e48ae71cb555675eac07bdcd1cfa7ff599d98cbc1db1",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        }
+      ],
+      "finding": "The historical heading places riding before walking. Modern omits mosque in this heading; selected retains mosque and places walking first. This heading difference is separate from the report.",
+      "transcriptionPolicy": "Retain the selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "1137-house-grave-reading",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwFw",
+      "sourceBlockSha256": "8edd280088c1a6af86fbcf9f8dae19800fddd9254e970d0ad2174e2089a1ebc3",
+      "sourceReading": "ما بين بيتي ومنبري",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 300,
+          "reading": "ما بين قبري ومنبري",
+          "readingSha256": "33a20ac35d0450d3b06138b31b3c73fd314730e01eed23b65b40fdcf3bbf8644",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 288,
+          "reading": "ما بين بيتي ومنبري",
+          "readingSha256": "def16fe1a14cccb9c6486ecd0f0bc4c3c9564ba458e223e0f75508804ac1d3e4",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        }
+      ],
+      "finding": "Selected and modern read my house; historical reads my grave. Preserve the selected report without harmonizing it with the separate grave-based chapter heading or later explanation.",
+      "transcriptionPolicy": "Retain the selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "1138-yahya-reporting-verb",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwGQ",
+      "sourceBlockSha256": "2d05700a990d08999842853d2a6876963c4a4e402541590ce82f0de64182ef84",
+      "sourceReading": "حدثنا مسدد عن يحيى عن عبيد الله",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 300,
+          "reading": "حدثنا مسدد قال حدثنا يحيى عن عبيد الله",
+          "readingSha256": "dc27ce175f642aaeeaca1677e9a5e089a71cc6fdc384ad6c7da68f3e59c0cddd",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 288,
+          "reading": "حدثنا مسدد عن يحيى عن عبيد الله",
+          "readingSha256": "95b79921abe668a3b29d0988ab9034fa3c373a22a704a1f3c75930921fff804c",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        }
+      ],
+      "finding": "Historical uses an explicit reporting verb from Musaddad to Yahya; selected and modern use from.",
+      "transcriptionPolicy": "Retain the selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    },
+    {
+      "id": "1139-sunset-wording",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwHA",
+      "sourceBlockSha256": "47a7a955a74de689c70b25467e28d01fc7c61ce8f2b0d69f7682c57b01b548c6",
+      "sourceReading": "وبعد العصر حتى تغرب",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 301,
+          "reading": "وبعد العصر حتى تغيب الشمس",
+          "readingSha256": "687c937883a8dc4eed77d191c852e5539166a1630616572bb5e0325478315ea2",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 288,
+          "reading": "وبعد العصر حتى تغرب",
+          "readingSha256": "ac811972ca0398baac70e22485258f51c8aa86600f9c41a643f7f04e9e1aae21",
+          "scope": "Main text; unvocalized excerpt preserving the relevant words and order."
+        }
+      ],
+      "finding": "The historical sunset clause uses taghiba al-shams; selected and modern retain taghrub without repeating the sun noun.",
+      "transcriptionPolicy": "Retain the selected Arabic unchanged. This is a recorded difference, not an applied correction, exhaustive apparatus or wording approval."
+    }
+  ],
+  "englishBoundaryDifferences": [
+    {
+      "id": "bewley-1132-1133-boundary",
+      "sourceSha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+      "affectedSelectedReferences": [
+        1132,
+        1133
+      ],
+      "displayedBodies": [
+        {
+          "label": "1132",
+          "bodySha256": "02d50b664c07adf0763b82e882d6da377c613f7d8b9abc0809b60f6a1c6c1f5e"
+        },
+        {
+          "label": "1133",
+          "bodySha256": "2ca6b7762527b5f985948eb95063620c736fa1722710beff48ce91b7a0eb0ff0"
+        }
+      ],
+      "mapping": [
+        {
+          "selectedReference": 1132,
+          "printedReferences": [
+            1188,
+            1189
+          ],
+          "displayedLabels": [
+            "1132",
+            "1133"
+          ],
+          "finding": "First introduction under 1132; Abu Hurayrah statement at the beginning of 1133, with its opening chain abbreviated."
+        },
+        {
+          "selectedReference": 1133,
+          "printedReferences": [
+            1190
+          ],
+          "displayedLabels": [
+            "1133"
+          ],
+          "finding": "The thousand-prayers report is the second report under displayed 1133."
+        }
+      ],
+      "status": "recorded-not-applied",
+      "finding": "Labels do not establish body identity. Preserve exact comparison ranges and expose the misplaced passage without relabelling the selected Arabic or inventing an omitted report."
+    }
+  ],
+  "classicalComparisonNotes": [
+    {
+      "id": "house-grave-heading",
+      "references": [
+        1137,
+        1138
+      ],
+      "url": "https://www.islamweb.net/ar/library/content/52/2202/باب-فضل-ما-بين-القبر-والمنبر",
+      "work": "Ibn Hajar, Fath al-Bari, chapter on the space between the grave and pulpit",
+      "checkedAt": "2026-11-03",
+      "finding": "The commentary explicitly distinguishes the grave-based heading from house wording in the two reports and discusses the variant. This confirms that a heading and a report must not be silently harmonized; the app makes no independent judgment resolving the variant.",
+      "role": "comparison-note-not-hadith-wording",
+      "independentReview": "pending"
+    }
+  ],
+  "chapterMaterial": [
+    {
+      "chapterId": "chapter-01",
+      "headingId": "باب_فضل_الصلاة_في_مسجد_مكة_والمدينة",
+      "headingSha256": "2c92757b7eb75ae230581430079d804aaf33e4582df91d2a3cb04938204e6d9c",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-02",
+      "headingId": "باب_مسجد_قباء",
+      "headingSha256": "56bf85f2c149736feabba4b409180db5f7d390070508594c381080e6543faf62",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-03",
+      "headingId": "باب_من_أتى_مسجد_قباء_كل_سبت",
+      "headingSha256": "a38975f8c97d04e65c0f7e4a228545ed7282eafb34ce42917dcaf0c940884b55",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-04",
+      "headingId": "باب_إتيان_مسجد_قباء_ماشيا_وراكبا",
+      "headingSha256": "4eb1cb85b3d128bd3135ecca49082eda839a9e0d1cd9d9ed2979f2d13a2bdd70",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-05",
+      "headingId": "باب_فضل_ما_بين_القبر_والمنبر",
+      "headingSha256": "2045744332cbb7d0c464161eb02ea4db1826d9c1510c5c052181b8d679e3a409",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    },
+    {
+      "chapterId": "chapter-06",
+      "headingId": "باب_مسجد_بيت_المقدس",
+      "headingSha256": "7d2bdde3fb1c914e2dd99dce01fc5c82a7c95355e9d7951520bb02035f191f59",
+      "context": [],
+      "englishStatus": "pending",
+      "readerEligible": false
+    }
+  ],
+  "sectionBoundary": {
+    "selectedLastReference": 1139,
+    "nextSelectedReference": 1140,
+    "nextHeadingArabic": "باب استعانة اليد في الصلاة إذا كان من أمر الصلاة",
+    "printedNextReferences": [
+      1198
+    ],
+    "printedPages": {
+      "brill-1862": [
+        301,
+        302
+      ],
+      "dar-ibn-kathir-2002": [
+        289
+      ]
+    },
+    "finding": "Both prints finish the four-part report before the next Actions during Prayer book. The next book begins with a separate chapter introduction and printed 1198; those passages do not belong to this intake."
+  },
+  "nextActions": [
+    "Prepare complete working English and presentation roles for all eight reports without dropping the first introductory fragment or route switch in 1132.",
+    "Preserve the exact 1132/1133 web boundary evidence and select body identities from Arabic and print mapping, not numeric labels alone.",
+    "Keep combined mappings 1132/1188–1189 and 1134/1191–1192; no missing complete report or suffix is established.",
+    "Review the nine recorded source differences, especially the duplicated qala and house/grave readings, without altering selected Arabic during intake.",
+    "Keep all six chapter headings separate from numbered reports; English, theological wording and any interpretation require their own review."
+  ]
+}
