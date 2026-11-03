@@ -2431,7 +2431,7 @@
         {
           "reference": 1239,
           "displayedReference": "1239.",
-          "bodySha256": "2c4a8d41c5595a2c2e7ca778e6ec6d35d550ca1e3672cc3fc0ae9706dbc4d6d3"
+          "bodySha256": "1775cd05f990b7ffcf061501122f5f606272e3e1606fd6ae275def8a39ca64b3"
         },
         {
           "reference": 1240,
@@ -2441,7 +2441,7 @@
         {
           "reference": 1241,
           "displayedReference": "1241.",
-          "bodySha256": "c54668b623d8d06ed0ba477c35cb075be40c5bf4aa91b88fde5a81863e225a2c"
+          "bodySha256": "46584452230754a2d79196d46605a9f4f24cdcad395bd14c4215f60a2b3bdb4f"
         },
         {
           "reference": 1242,
@@ -2897,6 +2897,22 @@
         {
           "reference": 1319,
           "finding": "This label has no following full stop; explicit recognition prevents its full body from being swallowed by 1318."
+        }
+      ],
+      "boundaryCorrections": [
+        {
+          "reference": 1239,
+          "previousBodySha256": "2c4a8d41c5595a2c2e7ca778e6ec6d35d550ca1e3672cc3fc0ae9706dbc4d6d3",
+          "correctedBodySha256": "1775cd05f990b7ffcf061501122f5f606272e3e1606fd6ae275def8a39ca64b3",
+          "excludedHeading": "XLI. CHAPTER: The time for fortitude is the first shock",
+          "finding": "The earlier locator absorbed this following chapter heading and its context paragraphs. The source snapshot is unchanged; this correction supersedes that locator in the first intake verification."
+        },
+        {
+          "reference": 1241,
+          "previousBodySha256": "c54668b623d8d06ed0ba477c35cb075be40c5bf4aa91b88fde5a81863e225a2c",
+          "correctedBodySha256": "46584452230754a2d79196d46605a9f4f24cdcad395bd14c4215f60a2b3bdb4f",
+          "excludedHeading": "XLIII Weeping in the presence of someone who is ill",
+          "finding": "The earlier locator absorbed this following chapter heading. The source snapshot is unchanged; this correction supersedes that locator in the first intake verification."
         }
       ]
     },

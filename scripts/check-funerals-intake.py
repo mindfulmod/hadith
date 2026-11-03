@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1]
 REFERENCES=[n for n in range(1180,1331)if n!=1201]
 COMPARED=[n for n in range(1180,1210)if n!=1201]
 SOURCE_SHA='6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5'
-SEALS={'records':'e730e25f116e62bc159b49039753addb4b1867100545b91824949a8432a37e0d','missingPrintedReports':'fe9bfb6a16d56b001ed400d4cb57e7aea665bf9293f1409e37915bb5be6fa3c2','unresolvedTextualDifferences':'ed480663143d2695b9f03c19c9fb4628405ad285fe676b1530953c48b661d956','additionalPresentationFindings':'df2771a2250694089016abf088956717cfd64d35025b3126d8eae7a670599f28','englishComparisons':'2361ed495fc8a95e87ca3037b76ebe3ca01ce37cb0f6f6a24dc02506a49b1424'}
+SEALS={'records':'e730e25f116e62bc159b49039753addb4b1867100545b91824949a8432a37e0d','missingPrintedReports':'fe9bfb6a16d56b001ed400d4cb57e7aea665bf9293f1409e37915bb5be6fa3c2','unresolvedTextualDifferences':'ed480663143d2695b9f03c19c9fb4628405ad285fe676b1530953c48b661d956','additionalPresentationFindings':'df2771a2250694089016abf088956717cfd64d35025b3126d8eae7a670599f28','englishComparisons':'71a22aaf2a46487f05d2e74205bad7474b62401107412ca02808d711ad6a78ed'}
 PRINTS={'brill-1862':'f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1','dar-ibn-kathir-2002':'9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098'}
 def module(name,file):
  s=importlib.util.spec_from_file_location(name,ROOT/'scripts'/file);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m
@@ -53,6 +53,11 @@ def validate(a,inv,en):
  require(a['chapterMaterial']==chapters,'Separate chapter material lost or promoted')
  return True
 
+BEWLEY_HEADING_EXCEPTIONS = ('XLI. CHAPTER: The time for fortitude is the first shock', 'XLIII Weeping in the presence of someone who is ill')
+
+def is_bewley_heading(text):
+ return bool(re.match(r'^[IVXLCDM]+:',text)) or text in BEWLEY_HEADING_EXCEPTIONS
+
 def locate_bewley(raw):
  parts=[' '.join(html.unescape(re.sub(r'<[^>]+>',' ',p)).split())for p in re.split(r'</?(?:p|h[1-6])\b[^>]*>',raw.decode('utf-8'),flags=re.I)]
  starts=[i for i,p in enumerate(parts)if p=='Chapter 28. The Book of Funerals'];require(len(starts)==1,'Missing or ambiguous English book start')
@@ -67,7 +72,7 @@ def locate_bewley(raw):
  for j,(index,match)in enumerate(labels):
   end=labels[j+1][0]if j+1<len(labels)else len(section);chunks=[section[index][match.end():]]
   for p in section[index+1:end]:
-   if re.match(r'^[IVXLCDM]+:',p):break
+   if is_bewley_heading(p):break
    if p:chunks.append(p)
   result[int(match[1])]={'reference':int(match[1]),'displayedReference':match[0].strip(),'bodySha256':sha(' '.join(chunks).strip())}
  return list(result.values())

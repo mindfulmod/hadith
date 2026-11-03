@@ -2,6 +2,18 @@
 
 The local personal reader at `reader/` contains 1,180 selected Bukhari entries across twenty-four sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
+## Further Funerals comparisons · 3 November 2026
+
+The [second review packet](research/funerals-second-source-review.html) adds **40 occurrence comparisons, 1210–1249**: **69 of the 150 selected entries** have now been located against both Arabic prints and available English bodies; **81 entries, 1250–1330, remain pending**. This stage accounts for **43 modern printed references** and checks **40 distinct EPUB records**. The selected source, reader, artwork and recordings are unchanged.
+
+The evidence preserves combined printed accounts at 1222 and 1226, two changes in historical report order, and an untitled printed chapter division absent from the digital headings. Sixteen further wording differences are recorded, including the 1214 narrator-chain discrepancy and the 1242 closing statement absent from the selected Arabic. No correction or supplement is applied. The EPUB splits the closing statement of 1230 into record 380 and has no counterpart for 1234 in this pinned section; a fixed offset would misassign neighboring reports. The English editorial narrator substitution in 1233 is recorded as a comparison limitation, not source authority.
+
+Two English web-body locators from the first intake were too broad: **1239 and 1241 included following chapter headings**, one with chapter context. Those two hashes and the parser are corrected, with the old hashes and exact excluded headings preserved in the audit. The raw snapshot and the first 29 report comparisons are unchanged. This supersedes those two locator assertions in the historical first-intake verification; it does not change any reader wording.
+
+All Funerals wording and independent review remain pending. The missing printed 1260 report still needs transcription. The reader remains **1,180 entries across twenty-four sections**, with Cedar recordings **1–6** and free-demo-only generation. Nothing is published by this stage.
+
+**277 distinct automated checks passed:** 270 source tests and seven deployment tests, plus ten integrity checks and six browser viewport/theme checks. Six screenshots were visually inspected. All 1,545 prior tracked files outside the five explicit documentation, CI, audit and parser changes remain byte-identical. See `research/funerals-second-verification.json`.
+
 ## Funerals source intake · 3 November 2026
 
 The complete selected Funerals source is staged: **150 numbered entries across 1180–1330**, with label 1201 absent, **96 chapters and 27 separate context paragraphs**. All **56,803 source code points** remain unchanged. The single paragraph containing 1208 and 1209 now has an explicit, print-supported boundary at its existing second marker; the original newline and both complete reports remain. The [review packet](research/funerals-source-review.html) distinguishes compared entries from those still pending.
