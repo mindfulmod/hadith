@@ -42,7 +42,8 @@ export const BOOK_CONFIGS=Object.freeze({
  witr:Object.freeze({id:'witr',number:15,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([16]),title:'Witr',first:946,arabicSourceId:'arabic-witr',bewleySourceId:'bewley-witr',bewleyTitle:'Witr',revision:484862}),
  'rain-prayer':Object.freeze({id:'rain-prayer',number:16,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([17]),title:'Rain Prayer',first:960,arabicSourceId:'arabic-rain-prayer',bewleySourceId:'bewley-rain-prayer',bewleyTitle:'Rain Prayer',revision:484861}),
  eclipses:Object.freeze({id:'eclipses',number:17,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([18]),title:'Eclipses',first:993,arabicSourceId:'arabic-eclipses',bewleySourceId:'bewley-eclipses',bewleyTitle:'Eclipses',revision:484860}),
- prostration:Object.freeze({id:'prostration',number:18,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([19]),title:'Prostration of Quran Recitation',first:1017,arabicSourceId:'arabic-prostration',bewleySourceId:'bewley-prostration',bewleyTitle:'Prostration of Quran Recitation',revision:484859})
+ prostration:Object.freeze({id:'prostration',number:18,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([19]),title:'Prostration of Quran Recitation',first:1017,arabicSourceId:'arabic-prostration',bewleySourceId:'bewley-prostration',bewleyTitle:'Prostration of Quran Recitation',revision:484859}),
+ shortening:Object.freeze({id:'shortening',number:19,khanVolumes:Object.freeze([2]),khanBooks:Object.freeze([20]),title:'Shortening the Prayer',first:1030,arabicSourceId:'arabic-shortening',bewleySourceId:'bewley-shortening',bewleyTitle:'Shortening the Prayer',revision:278144})
 });
 function bookConfig(config){assert(Object.values(BOOK_CONFIGS).includes(config),'Unknown book configuration');return config;}
 let englishInventory;

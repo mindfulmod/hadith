@@ -16,7 +16,8 @@ export function validateDamagedBewleyComparison(c,row,config,sources,readEvidenc
  assert(e&&/^research\/[a-z0-9-]+\.json$/.test(e.path),'Damaged web comparison needs its source audit');
  const audit=readEvidence(e.path),record=audit.records?.find(r=>r.reference===row.number),source=audit.englishComparisons?.bewley,witness=record?.englishComparisons?.bewley;
  assert.equal(hash(audit),e.sha256,'Changed damaged-comparison audit');
- assert(source&&witness&&witness.status==='damaged-or-incomplete-comparison','Audit does not identify a damaged comparison');
+ const documentedLimit=witness?.status==='limited-comparison-not-wording-approval'&&Array.isArray(witness.limitations)&&witness.limitations.length>0&&witness.limitations.every(note=>typeof note==='string'&&note.trim());
+ assert(source&&witness&&(witness.status==='damaged-or-incomplete-comparison'||documentedLimit),'Audit does not identify a damaged comparison');
  assert.equal(record.sourceRecordId,row.sourceRecordId);assert.equal(record.arabicSha256,row.originalArabicSha256??row.arabicSha256,'Damage evidence is bound to different Arabic');
  assert.equal(c.id,config.bewleySourceId);assert.equal(c.reference,witness.displayedReference);
  assert.equal(sources.find(s=>s.id===c.id)?.url,source.url,'Damaged comparison points to another source');

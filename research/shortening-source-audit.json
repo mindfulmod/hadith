@@ -154,10 +154,8 @@
           "displayedReference": "1031",
           "occurrence": 1,
           "bodySha256": "1b536444926a91a792bb7c8e280ca04f9f792ef3b847e41daf98910a9980c77d",
-          "status": "limited-comparison-not-wording-approval",
-          "limitations": [
-            "The displayed word for two is split typographically."
-          ]
+          "status": "located-body-not-wording-approval",
+          "limitations": []
         },
         "khan": {
           "reference": "2.20.187",
@@ -2273,5 +2271,17 @@
     "Resolve the 1064 narrator-name correction proposal through the separate correction workflow before admission.",
     "Register comparison limitations and chapter differences without claiming word-for-word print agreement.",
     "Keep 1057 linked to the preceding narrator route and chapter material outside daily numbered sessions."
+  ],
+  "intakeFindingCorrections": [
+    {
+      "reference": 1031,
+      "provider": "bewley",
+      "previousFinding": "The displayed word for two is split typographically.",
+      "correctedFinding": "The raw HTML has tw<I>o rak'ats</I>; the visible word is two. The space in the locator body is introduced by its documented tag-to-space normalization and is not a publisher typo.",
+      "sourceSha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+      "sourceMarkup": "tw<I>o rak'ats</I>",
+      "sourceMarkupSha256": "0ac28f68e5070a49a710a218c852dab2bd49e4812f3c6cea1f49d9c1f81138c5",
+      "arabicChanged": false
+    }
   ]
 }
