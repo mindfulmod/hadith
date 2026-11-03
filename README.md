@@ -1,6 +1,16 @@
 # Hadith · MindfulMod reader
 
-The local personal reader at `reader/` contains 1,119 selected Bukhari entries across twenty sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The local personal reader at `reader/` contains 1,132 selected Bukhari entries across twenty-one sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+
+## Complete selected Voluntary Prayer · 3 November 2026
+
+The local personal reader contains **1,132 entries across twenty-one sections**. This batch adds all thirteen selected reports **1119–1131**, with 39 complete Arabic/English spans and nine chapters. Two Arabic chapter comments remain separately browseable, with English pending. The selected Arabic is unchanged; the new English is an AI-assisted working translation, not Darussalam wording or independent certification.
+
+Full chains, honorifics, prayer counts, uncertainty, closing transmissions and the complete later verification account in 1130 remain. Combined printed references 1172/1173, 1180/1181 and 1185/1186 stay within their existing selected entries; no suffix is added. The EPUB comparison for 1125 is bound to **2.21.275t**, not the following 275. Thirteen recorded textual differences and known English comparison defects remain explicit in source notes. A second complete-span rereading checked attribution, qualifiers and the final passages.
+
+**1,001 automated tests passed: 800 Node and 201 Python.** Twenty-one integrity checks and 20 desktop browser checks passed. An actual offline update preserved the saved 1117/1118 session and 983b bookmark. Every new report, its full notes and printed references, separate chapter context and exact search reopen offline. Long text fits the largest setting at 320, 390 and 1280 pixels. Nine screenshots were visually inspected. Reading downloads total **29,820,251 bytes**. See `research/voluntary-prayer-wording-review.json` and `research/voluntary-prayer-reader-verification.json` for evidence and limits.
+
+All earlier 1,119 entry objects, twenty book contexts and book files, 133 source-note pages, source inventories, artwork, recordings and narration jobs remain unchanged. Holds **926/957/1104/1115** remain; complete recordings are **1–6**. Text expansion continues while Cedar stays on the free demo. The incomplete Hadith 7 recording remains unadmitted. Nothing was published. The next digital section begins at **1132**; independent review, full collection coverage and fresh physical-iPhone acceptance remain unfinished.
 
 ## Voluntary Prayer source intake · 3 November 2026
 

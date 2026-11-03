@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "namespace": "bukhari-opening-v1",
   "publication": "personal-prototype",
-  "sourceRecordSha256": "fdc2ce4ccd8ab5422ce53288785e53a407fd4f29822ededf05280eb774b460e7",
+  "sourceRecordSha256": "660294c2c7416f06eb4ade9693356e684cce1f4abbcd66d2ae98d980627baf36",
   "rights": {
     "status": "pending",
     "evidence": [
@@ -45,7 +45,9 @@
       "reader/shortening-inputs.json",
       "reader/shortening-review.html",
       "reader/night-prayer-inputs.json",
-      "reader/night-prayer-review.html"
+      "reader/night-prayer-review.html",
+      "reader/voluntary-prayer-inputs.json",
+      "reader/voluntary-prayer-review.html"
     ]
   },
   "books": [
@@ -16827,6 +16829,219 @@
           "notes": {
             "path": "night-prayer-review.html",
             "fragment": "hadith-1115"
+          }
+        }
+      ]
+    },
+    {
+      "id": "voluntary-prayer",
+      "number": 21,
+      "title": "Voluntary Prayer",
+      "sourceEntryCount": 13,
+      "entryNumbers": [
+        1119,
+        1120,
+        1121,
+        1122,
+        1123,
+        1124,
+        1125,
+        1126,
+        1127,
+        1128,
+        1129,
+        1130,
+        1131
+      ],
+      "chapters": [
+        {
+          "id": "chapter-01",
+          "title": "Voluntary prayer after the obligatory prayer",
+          "entryNumbers": [
+            1119
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "voluntary-prayer-review.html",
+              "fragment": "chapter-01"
+            }
+          }
+        },
+        {
+          "id": "chapter-02",
+          "title": "One who did not pray voluntarily after the obligatory prayer",
+          "entryNumbers": [
+            1120
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "voluntary-prayer-review.html",
+              "fragment": "chapter-02"
+            }
+          }
+        },
+        {
+          "id": "chapter-03",
+          "title": "The Duha prayer while travelling",
+          "entryNumbers": [
+            1121,
+            1122
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "voluntary-prayer-review.html",
+              "fragment": "chapter-03"
+            }
+          }
+        },
+        {
+          "id": "chapter-04",
+          "title": "One who did not pray Duha and considered that permissible",
+          "entryNumbers": [
+            1123
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "voluntary-prayer-review.html",
+              "fragment": "chapter-04"
+            }
+          }
+        },
+        {
+          "id": "chapter-05",
+          "title": "The Duha prayer while resident",
+          "entryNumbers": [
+            1124,
+            1125
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 1,
+              "englishStatus": "pending"
+            },
+            "notes": {
+              "path": "voluntary-prayer-review.html",
+              "fragment": "chapter-05"
+            }
+          }
+        },
+        {
+          "id": "chapter-06",
+          "title": "The two rak‘ahs before Dhuhr",
+          "entryNumbers": [
+            1126,
+            1127
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "voluntary-prayer-review.html",
+              "fragment": "chapter-06"
+            }
+          }
+        },
+        {
+          "id": "chapter-07",
+          "title": "Prayer before Maghrib",
+          "entryNumbers": [
+            1128,
+            1129
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "voluntary-prayer-review.html",
+              "fragment": "chapter-07"
+            }
+          }
+        },
+        {
+          "id": "chapter-08",
+          "title": "Voluntary prayers in congregation",
+          "entryNumbers": [
+            1130
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 1,
+              "englishStatus": "pending"
+            },
+            "textualDifferences": {
+              "count": 1,
+              "evidenceSha256": "014aa65d01399a69f16d21b547e62e8efbe8f5a4ffe3386e7b0a32505c515783",
+              "status": "unresolved",
+              "englishStatus": "pending"
+            },
+            "notes": {
+              "path": "voluntary-prayer-review.html",
+              "fragment": "chapter-08"
+            }
+          }
+        },
+        {
+          "id": "chapter-09",
+          "title": "Voluntary prayer at home",
+          "entryNumbers": [
+            1131
+          ],
+          "sourceContext": {
+            "schemaVersion": 1,
+            "headingStatus": "ai-working-translation",
+            "numberedReports": "present",
+            "introduction": {
+              "arabicParagraphs": 0,
+              "englishStatus": "not-applicable"
+            },
+            "notes": {
+              "path": "voluntary-prayer-review.html",
+              "fragment": "chapter-09"
+            }
           }
         }
       ]
@@ -35855,15 +36070,236 @@
       "contextReview": {
         "status": "pending"
       }
+    },
+    {
+      "number": 1119,
+      "id": "bukhari:1119",
+      "entrySha256": "bc4960e60622c948ab8609fc30c2626d4be02b3d7d8781b40bc178ee53ecb2fb",
+      "arabicSha256": "e31bd232f6533c7f0d641093aae1ef2a94b9044865e9e7092b7d0fe79968917d",
+      "englishSha256": "e67e1d017bcaea7afda8b53f66808a77476eafcacef4440e80952185d18c0930",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 1120,
+      "id": "bukhari:1120",
+      "entrySha256": "4bfea85f9f6c2d2458ae4e7782cc39abecc2460d19e9a3cc3401b08339d868d6",
+      "arabicSha256": "5e3359d192f76203d26b978785836c276f9518f9261b0277778aee302fa3aae1",
+      "englishSha256": "32b834922cf60a85ef9fd2420317cce74f92a76dc3ecb172984bb4123f7166eb",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 1121,
+      "id": "bukhari:1121",
+      "entrySha256": "f70b297ab16b6bce8bbb23c39ec6cd0acdd8d060e6741440e45dae64080f6bb9",
+      "arabicSha256": "480bb554ae69cce9c7a2e2e4f259718cf64f5ad607420fe405194e9c74684f76",
+      "englishSha256": "776bad415e559744d1bfdeedc94a8c0f55dd80005d0ea921a199d3365ac567e4",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 1122,
+      "id": "bukhari:1122",
+      "entrySha256": "20d4a0604b0d96492a80ecdc8214ef127d4852eb56661c0653f28fe355c64423",
+      "arabicSha256": "d1dc77958f7faf02027e42de0e65e155155f7a0a21c62af6c7c30f960fa1f45f",
+      "englishSha256": "3116003f5db7bf10e860b1c880b581961e8f323937903a2ecbd67ce46d9f8aed",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 1123,
+      "id": "bukhari:1123",
+      "entrySha256": "544d76f700b7b7064d82fe98118626d4e002ae7564642d15cb5f79c8400e349e",
+      "arabicSha256": "dd77f6dc0a62eb0d3b089df386748c7ec0d836a2de45c05e3dd264fe617fb992",
+      "englishSha256": "da26fa1db97a73bf135afed3e5f4ddd015674a8407d5912ec41332a744e7c210",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 1124,
+      "id": "bukhari:1124",
+      "entrySha256": "dc93b9d372c6ac51cfb8f68c2f746d1ad6c0662b67cc6ecc24525b1c5bea2f69",
+      "arabicSha256": "3dca9c2a8cd6eb4a333c81b630f52a5fc71711f4a38df5bab8b5e10f18ac2806",
+      "englishSha256": "e763a8173b7f759e2cd73ef0c1901ffb83fe683ff58ea06cfac1d552ee529569",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 1125,
+      "id": "bukhari:1125",
+      "entrySha256": "f1498233d7b0bd87feece4f58353476c62430decf857894d57897096f215670e",
+      "arabicSha256": "f93a35ce3ccf688c78e78342729f153a5b0e539e57d86ccf0d6efbdd7af9fd47",
+      "englishSha256": "2cba8a31913a71e31aa50718d1170d219b35dcf2392c526f92284eeef071becf",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 1126,
+      "id": "bukhari:1126",
+      "entrySha256": "09d3b5a89375bbc060c023d306c6298b00e911b815f8f2545a8427a7572c5a6b",
+      "arabicSha256": "e1ccec5aa009382883525e8aa4b8c5cf213318db1de400fd3c64b173135664a5",
+      "englishSha256": "f0e67cb75df1ba641156c319f3785ba632d0c183bf6082f7f0d178cd60a7b138",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 1127,
+      "id": "bukhari:1127",
+      "entrySha256": "8a4d6614b8ce4c22e590d62ffd36f00e0473ab5aa1240f1ae366c8aec2c59b6f",
+      "arabicSha256": "3e379da21d4b85367d030d6aef70212edcc0c63d6e21c32fd7bbf4173e2c8f48",
+      "englishSha256": "a235c0ce69c7511c3afd295af481205ab85d469fb01f1747f9c169d2abd56a98",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 1128,
+      "id": "bukhari:1128",
+      "entrySha256": "a117e04a57d308eb95f9cbe2d6141f916501992a1c9190cdd9f665ca02f25cee",
+      "arabicSha256": "d24a9a23d5e45a426b10a67925f7017782bdeae0e5b4b583136ed89731a483ce",
+      "englishSha256": "ce9d7504f64290200152576464759c3d77a71491d69523fdbbbf4089c0855215",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 1129,
+      "id": "bukhari:1129",
+      "entrySha256": "23424ecbf8f7f7bcc23f5a67f2e598578489b858da810292d8f1cdd90f516844",
+      "arabicSha256": "a4c3eb509d88f968a26b988192222dacc6fbd4a2b9071f546ac154e922c3ca4a",
+      "englishSha256": "a2860b810107862ea865e7b5b6e65fd02c4a675e3c1aaa93a9e90768aea962c6",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 1130,
+      "id": "bukhari:1130",
+      "entrySha256": "fbcdf1fba165c9bcd25adf23e9b31bc7e58091422d01c7fb83ba595ef238d94d",
+      "arabicSha256": "86a31752c53a0001e52bae5eb5245c8ae9f699e26d27d363c23529d148215072",
+      "englishSha256": "48e5de2cd1d29fd0ea2d32a9b51ec582654f9cfec05ac1a6377ffeee47a144b1",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "number": 1131,
+      "id": "bukhari:1131",
+      "entrySha256": "717c27c80b47c82ef3bb9367c2d32f4adad190f161005e3ba8b7af38a0ff3b62",
+      "arabicSha256": "e061f82a36ab1dd55284e2750b68af8b6483cc6c37493aa0f76818d95b2479ae",
+      "englishSha256": "7255116edaa0c6f2df0e59dc38aa18715ebfbaa21013ff8798cb3b050534e4fe",
+      "status": "personal-prototype-only",
+      "arabicReview": {
+        "status": "pending"
+      },
+      "englishReview": {
+        "status": "pending"
+      },
+      "contextReview": {
+        "status": "pending"
+      }
     }
   ],
-  "catalogContextSha256": "308969fec1a665131c726fd7102f75398ac15d3ea08e27ef12d7ba3aa9671711",
+  "catalogContextSha256": "c8dca5cb387fa0e74801eeac13c87870f8effd40cac69c59adefffb2ca31d6ed",
   "collectionReview": {
     "status": "pending"
   },
   "sourceReferences": {
     "schemaVersion": 1,
-    "sourceRecordSha256": "fdc2ce4ccd8ab5422ce53288785e53a407fd4f29822ededf05280eb774b460e7",
+    "sourceRecordSha256": "660294c2c7416f06eb4ade9693356e684cce1f4abbcd66d2ae98d980627baf36",
     "sources": [
       {
         "id": "arabic-base",
@@ -37614,6 +38050,48 @@
         "kind": "commentary",
         "format": "web",
         "url": "https://www.islamweb.net/ar/library/content/52/2134/باب-فضل-من-تعار-من-الليل-فصلى"
+      },
+      {
+        "id": "arabic-voluntary-prayer",
+        "label": "Arabic Wikisource · fixed revision 434953",
+        "kind": "arabic-input",
+        "format": "web",
+        "url": "https://ar.wikisource.org/w/index.php?title=%D8%B5%D8%AD%D9%8A%D8%AD_%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A%2F%D8%A3%D8%A8%D9%88%D8%A7%D8%A8_%D8%A7%D9%84%D8%AA%D8%B7%D9%88%D8%B9&oldid=434953"
+      },
+      {
+        "id": "bewley-voluntary-prayer",
+        "label": "Aisha Bewley · Voluntary Prayer",
+        "kind": "english-comparison",
+        "format": "web",
+        "url": "https://aishabewley.org/bukhari10"
+      },
+      {
+        "id": "fath-voluntary-units",
+        "label": "Ibn Hajar · Fath al-Bari · Prayer units and Hafsah continuation",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://islamweb.net/ar/library/content/52/2165/باب-التطوع-بعد-المكتوبة"
+      },
+      {
+        "id": "fath-voluntary-maghrib",
+        "label": "Ibn Hajar · Fath al-Bari · Before Maghrib wording",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://www.islamweb.net/ar/library/content/52/2183/باب-الصلاة-قبل-المغرب"
+      },
+      {
+        "id": "fath-voluntary-itban",
+        "label": "Ibn Hajar · Fath al-Bari · Mahmud and Itban wording",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://www.islamweb.net/ar/library/content/52/2188/باب-صلاة-النوافل-جماعة"
+      },
+      {
+        "id": "umdat-voluntary-itban",
+        "label": "Al-Ayni · Umdat al-Qari · Khazir and wording differences",
+        "kind": "commentary",
+        "format": "web",
+        "url": "https://www.islamweb.net/ar/library/content/303/4856/باب-صلاة-النوافل-جماعة"
       }
     ],
     "entries": [
@@ -96377,10 +96855,729 @@
           "fragment": "hadith-1118",
           "label": "Comparison notes and chapter source for this hadith"
         }
+      },
+      {
+        "id": "bukhari:1119",
+        "number": 1119,
+        "entrySha256": "bc4960e60622c948ab8609fc30c2626d4be02b3d7d8781b40bc178ee53ecb2fb",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation checked against two Arabic prints. Both English comparisons contain errors or omissions; neither supplies a complete reliable rendering of this selected entry. See the specific limits in the source notes. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-voluntary-prayer",
+            "locator": "Book of Voluntary Prayer · source entry 1119 · باب التطوع بعد المكتوبة",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-voluntary-prayer",
+            "locator": "Book of Voluntary Prayer · entry 1119",
+            "scope": "The Hafsah passage and the family-at-Isha wording are rearranged, while the named Ibn Abi al-Zinad/Musa ibn Uqbah route and Kathir ibn Farqad/Ayyub corroboration are abbreviated. Do not use this comparison to reconstruct the complete selected closing routes."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 21, Number 269 · damaged wording",
+            "scope": "The complete closing Ibn Abi al-Zinad/Musa ibn Uqbah/Nafi route and Kathir ibn Farqad/Ayyub corroboration are absent."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 295",
+            "pdfPage": 295,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 283",
+            "pdfPage": 283,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "lexical",
+            "sourceId": "fath-voluntary-units",
+            "locator": "Sajdatayn, Hafsah continuation and closing routes",
+            "scope": "Classical commentary consulted for a specific lexical or attribution question, kept separate from hadith wording; not independent approval."
+          }
+        ],
+        "contextNotes": [
+          {
+            "id": "1119-printed-division",
+            "label": "One entry, two printed references",
+            "text": "This complete selected entry contains printed references 1172 and 1173. Its passages remain together here. The source notes preserve the printed divisions and wording differences.",
+            "citations": [
+              "base",
+              "brill-1862",
+              "dar-ibn-kathir-2002"
+            ],
+            "related": []
+          }
+        ],
+        "localNotes": {
+          "path": "voluntary-prayer-review.html",
+          "fragment": "hadith-1119",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:1120",
+        "number": 1120,
+        "entrySha256": "4bfea85f9f6c2d2458ae4e7782cc39abecc2460d19e9a3cc3401b08339d868d6",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation checked against two Arabic prints. Both English comparisons contain errors or omissions; neither supplies a complete reliable rendering of this selected entry. See the specific limits in the source notes. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-voluntary-prayer",
+            "locator": "Book of Voluntary Prayer · source entry 1120 · باب من لم يتطوع بعد المكتوبة",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-voluntary-prayer",
+            "locator": "Book of Voluntary Prayer · entry 1120",
+            "scope": "Prayer names are supplied in the initial eight/seven-unit statement. The selected statement gives the counts together without those parenthetical identifications."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 21, Number 270 · damaged wording",
+            "scope": "The opening eight/seven-unit statement supplies parenthetical prayer names absent from that selected clause."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 295",
+            "pdfPage": 295,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 283",
+            "pdfPage": 283,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [
+          {
+            "id": "1120-question-context",
+            "label": "The closing question",
+            "text": "The question to Abu al-Sha‘tha’ is ‘Amr’s exchange with him. The selected wording does not repeat ‘Amr’s name there; this note supplies reading context separately from the unchanged text.",
+            "citations": [
+              "base",
+              "bewley",
+              "khan"
+            ],
+            "related": []
+          }
+        ],
+        "localNotes": {
+          "path": "voluntary-prayer-review.html",
+          "fragment": "hadith-1120",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:1121",
+        "number": 1121,
+        "entrySha256": "f70b297ab16b6bce8bbb23c39ec6cd0acdd8d060e6741440e45dae64080f6bb9",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic printed witnesses and two English translation families compared. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-voluntary-prayer",
+            "locator": "Book of Voluntary Prayer · source entry 1121 · باب صلاة الضحى في السفر",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-voluntary-prayer",
+            "locator": "Book of Voluntary Prayer · entry 1121",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 21, Number 271",
+            "scope": "Khan-family English comparison, individually matched by wording. This reference is recorded per report; no full-collection numbering equivalence is assumed."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF pages 295, 296",
+            "pdfPage": 295,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 283",
+            "pdfPage": 283,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "voluntary-prayer-review.html",
+          "fragment": "hadith-1121",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:1122",
+        "number": 1122,
+        "entrySha256": "20d4a0604b0d96492a80ecdc8214ef127d4852eb56661c0653f28fe355c64423",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation checked against two Arabic prints. Both English comparisons contain errors or omissions; neither supplies a complete reliable rendering of this selected entry. See the specific limits in the source notes. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-voluntary-prayer",
+            "locator": "Book of Voluntary Prayer · source entry 1122 · باب صلاة الضحى في السفر",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-voluntary-prayer",
+            "locator": "Book of Voluntary Prayer · entry 1122",
+            "scope": "The selected lighter-prayer wording is rendered as more rudimentary. Preserve both the lightness comparison and the completion of bowing and prostration without importing that characterization."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 21, Number 272 · damaged wording",
+            "scope": "The selected no-one-informed-us construction becomes narrated-to-me. The English also supplies Duha in a parenthesis after the eight units."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 296",
+            "pdfPage": 296,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 283",
+            "pdfPage": 283,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "voluntary-prayer-review.html",
+          "fragment": "hadith-1122",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:1123",
+        "number": 1123,
+        "entrySha256": "544d76f700b7b7064d82fe98118626d4e002ae7564642d15cb5f79c8400e349e",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic prints and one complete English comparison were checked. The second English reference contains damaged wording and cannot confirm the missing words. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-voluntary-prayer",
+            "locator": "Book of Voluntary Prayer · source entry 1123 · باب من لم يصل الضحى ورآه واسعا",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-voluntary-prayer",
+            "locator": "Book of Voluntary Prayer · entry 1123",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 21, Number 273 · damaged wording",
+            "scope": "The selected Messenger of Allah is rendered as Prophet; always is added to the final statement about performing the prayer."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 296",
+            "pdfPage": 296,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 283",
+            "pdfPage": 283,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "voluntary-prayer-review.html",
+          "fragment": "hadith-1123",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:1124",
+        "number": 1124,
+        "entrySha256": "dc93b9d372c6ac51cfb8f68c2f746d1ad6c0662b67cc6ecc24525b1c5bea2f69",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic prints and one complete English comparison were checked. The second English reference contains damaged wording and cannot confirm the missing words. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-voluntary-prayer",
+            "locator": "Book of Voluntary Prayer · source entry 1124 · باب صلاة الضحى في الحضر",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-voluntary-prayer",
+            "locator": "Book of Voluntary Prayer · entry 1124",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 21, Number 274 · damaged wording",
+            "scope": "The identification the Prophet is supplied in parentheses after my friend, although it is not explicit in this selected occurrence."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 296",
+            "pdfPage": 296,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 284",
+            "pdfPage": 284,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "voluntary-prayer-review.html",
+          "fragment": "hadith-1124",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:1125",
+        "number": 1125,
+        "entrySha256": "f1498233d7b0bd87feece4f58353476c62430decf857894d57897096f215670e",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic prints and one complete English comparison were checked. The second English reference contains damaged wording and cannot confirm the missing words. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-voluntary-prayer",
+            "locator": "Book of Voluntary Prayer · source entry 1125 · باب صلاة الضحى في الحضر",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-voluntary-prayer",
+            "locator": "Book of Voluntary Prayer · entry 1125",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 21, Number 275t · damaged wording",
+            "scope": "The selected sprinkling of the mat is rendered as washing, and the name Jarud gains the definite article. The comparison supplies a Duha parenthesis in the closing answer. Its distinct displayed label 275t must not be confused with the following 275 entry."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 296",
+            "pdfPage": 296,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 284",
+            "pdfPage": 284,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [
+          {
+            "id": "1125-comparison-label",
+            "label": "A distinct English comparison label",
+            "text": "The inspected English comparison labels this report 275t, followed by a different report numbered 275. Both remain separately referenced; this entry keeps app reference 1125.",
+            "citations": [
+              "khan"
+            ],
+            "related": []
+          }
+        ],
+        "localNotes": {
+          "path": "voluntary-prayer-review.html",
+          "fragment": "hadith-1125",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:1126",
+        "number": 1126,
+        "entrySha256": "09d3b5a89375bbc060c023d306c6298b00e911b815f8f2545a8427a7572c5a6b",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation checked against two Arabic prints. Both English comparisons contain errors or omissions; neither supplies a complete reliable rendering of this selected entry. See the specific limits in the source notes. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-voluntary-prayer",
+            "locator": "Book of Voluntary Prayer · source entry 1126 · باب الركعتين قبل الظهر",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-voluntary-prayer",
+            "locator": "Book of Voluntary Prayer · entry 1126",
+            "scope": "The selected in-his-house phrase after Isha is absent, although the house phrase after Maghrib remains."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 21, Number 275 · damaged wording",
+            "scope": "The explanation of Nawafil and an explicit house object in the no-entry clause are supplied. Retain the selected clauses without importing those expansions."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF pages 296, 297",
+            "pdfPage": 296,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 284",
+            "pdfPage": 284,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [
+          {
+            "id": "1126-printed-division",
+            "label": "One entry, two printed references",
+            "text": "This complete selected entry contains printed references 1180 and 1181. Its passages remain together here. The source notes preserve the printed divisions and wording differences.",
+            "citations": [
+              "base",
+              "brill-1862",
+              "dar-ibn-kathir-2002"
+            ],
+            "related": []
+          }
+        ],
+        "localNotes": {
+          "path": "voluntary-prayer-review.html",
+          "fragment": "hadith-1126",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:1127",
+        "number": 1127,
+        "entrySha256": "8a4d6614b8ce4c22e590d62ffd36f00e0473ab5aa1240f1ae366c8aec2c59b6f",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic prints and one complete English comparison were checked. The second English reference contains damaged wording and cannot confirm the missing words. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-voluntary-prayer",
+            "locator": "Book of Voluntary Prayer · source entry 1127 · باب الركعتين قبل الظهر",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-voluntary-prayer",
+            "locator": "Book of Voluntary Prayer · entry 1127",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 21, Number 276 · damaged wording",
+            "scope": "The complete Ibn Abi Adi and Amr corroboration from Shubah is absent."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 297",
+            "pdfPage": 297,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 284",
+            "pdfPage": 284,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "voluntary-prayer-review.html",
+          "fragment": "hadith-1127",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:1128",
+        "number": 1128,
+        "entrySha256": "a117e04a57d308eb95f9cbe2d6141f916501992a1c9190cdd9f665ca02f25cee",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic prints and one complete English comparison were checked. The second English reference contains damaged wording and cannot confirm the missing words. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-voluntary-prayer",
+            "locator": "Book of Voluntary Prayer · source entry 1128 · باب الصلاة قبل المغرب",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-voluntary-prayer",
+            "locator": "Book of Voluntary Prayer · entry 1128",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 21, Number 277 · damaged wording",
+            "scope": "The comparison supplies compulsory and an explanatory said-it-thrice parenthesis. Retain the actual quoted wording and the third-time qualifier without adding duplicated quotations."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 297",
+            "pdfPage": 297,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 284",
+            "pdfPage": 284,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "lexical",
+            "sourceId": "fath-voluntary-maghrib",
+            "locator": "The third-time qualifier and closing sunna clause",
+            "scope": "Classical commentary consulted for a specific lexical or attribution question, kept separate from hadith wording; not independent approval."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "voluntary-prayer-review.html",
+          "fragment": "hadith-1128",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:1129",
+        "number": 1129,
+        "entrySha256": "23424ecbf8f7f7bcc23f5a67f2e598578489b858da810292d8f1cdd90f516844",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation checked against two Arabic prints. Both English comparisons contain errors or omissions; neither supplies a complete reliable rendering of this selected entry. See the specific limits in the source notes. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-voluntary-prayer",
+            "locator": "Book of Voluntary Prayer · source entry 1129 · باب الصلاة قبل المغرب",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-voluntary-prayer",
+            "locator": "Book of Voluntary Prayer · entry 1129",
+            "scope": "The selected honorific following the Messenger of Allah is absent in this comparison body. Business is a narrower rendering of the closing occupation/preoccupation wording."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 21, Number 278 · damaged wording",
+            "scope": "Business narrows the selected closing occupation/preoccupation wording."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF page 297",
+            "pdfPage": 297,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF pages 284, 285",
+            "pdfPage": 284,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "voluntary-prayer-review.html",
+          "fragment": "hadith-1129",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:1130",
+        "number": 1130,
+        "entrySha256": "fbcdf1fba165c9bcd25adf23e9b31bc7e58091422d01c7fb83ba595ef238d94d",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation checked against two Arabic prints. Both English comparisons contain errors or omissions; neither supplies a complete reliable rendering of this selected entry. See the specific limits in the source notes. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-voluntary-prayer",
+            "locator": "Book of Voluntary Prayer · source entry 1130 · باب صلاة النوافل جماعة",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-voluntary-prayer",
+            "locator": "Book of Voluntary Prayer · entry 1130",
+            "scope": "The Badr clause omits the selected with-the-Messenger phrase and its honorific; another Messenger honorific is represented by an asterisk. The eyesight request adds inability to lead prayer, and the food is glossed as meat soup. Loving and advising replaces the selected affection and conversation wording. These comparison choices must not overwrite the selected occurrence."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 21, Number 279 · damaged wording",
+            "scope": "The meal is changed from being prepared to which I had prepared, with an added food recipe. The selected face-of-Allah wording is paraphrased as sake/pleasures, affection and conversation becomes helping and talking, and the first-person return becomes when he returned. Retain the complete Abu Ayyub objection and later Itban rechecking without these substitutions."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF pages 297, 298",
+            "pdfPage": 297,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF pages 285, 286",
+            "pdfPage": 285,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "lexical",
+            "sourceId": "fath-voluntary-itban",
+            "locator": "The reporting verb, complete Mahmud/Itban account and later rechecking",
+            "scope": "Classical commentary consulted for a specific lexical or attribution question, kept separate from hadith wording; not independent approval."
+          },
+          {
+            "id": "lexical-food",
+            "sourceId": "umdat-voluntary-itban",
+            "locator": "Khazir vocalization, neighbourhood use of dar and parallel wording differences",
+            "scope": "Lexical comparison only; no food recipe, theological explanation or inferred name is added to the translation."
+          }
+        ],
+        "contextNotes": [
+          {
+            "id": "1130-printed-division",
+            "label": "One entry, two printed references",
+            "text": "This complete selected entry contains printed references 1185 and 1186. Its passages remain together here. The source notes preserve the printed divisions and wording differences.",
+            "citations": [
+              "base",
+              "brill-1862",
+              "dar-ibn-kathir-2002"
+            ],
+            "related": []
+          }
+        ],
+        "localNotes": {
+          "path": "voluntary-prayer-review.html",
+          "fragment": "hadith-1130",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
+      },
+      {
+        "id": "bukhari:1131",
+        "number": 1131,
+        "entrySha256": "717c27c80b47c82ef3bb9367c2d32f4adad190f161005e3ba8b7af38a0ff3b62",
+        "translation": {
+          "label": "Personal prototype · English working translation",
+          "description": "Personal prototype: AI-assisted working translation; two Arabic prints and one complete English comparison were checked. The second English reference contains damaged wording and cannot confirm the missing words. Independent Arabic, English and context review pending. This is a new working translation, not the Darussalam translation."
+        },
+        "citations": [
+          {
+            "id": "base",
+            "sourceId": "arabic-voluntary-prayer",
+            "locator": "Book of Voluntary Prayer · source entry 1131 · باب التطوع في البيت",
+            "scope": "Exact Arabic paragraphs from the pinned revision. Source chapter grouping is retained; full chapter introductions are preserved separately in Arabic in the offline notes."
+          },
+          {
+            "id": "bewley",
+            "sourceId": "bewley-voluntary-prayer",
+            "locator": "Book of Voluntary Prayer · entry 1131",
+            "scope": "Named English comparison for the report body. The shortened chain does not replace the selected full Arabic chain."
+          },
+          {
+            "id": "khan",
+            "sourceId": "islamhouse-khan",
+            "locator": "Volume 2, Book 21, Number 280 · damaged wording",
+            "scope": "The closing Abd al-Wahhab corroboration from Ayyub is absent."
+          },
+          {
+            "id": "brill-1862",
+            "sourceId": "brill-1862",
+            "locator": "PDF pages 298, 299",
+            "pdfPage": 298,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          },
+          {
+            "id": "dar-ibn-kathir-2002",
+            "sourceId": "dar-ibn-kathir-2002",
+            "locator": "PDF page 286",
+            "pdfPage": 286,
+            "scope": "Printed Arabic comparison; narrator-name and chapter-division differences are recorded in the offline notes."
+          }
+        ],
+        "contextNotes": [],
+        "localNotes": {
+          "path": "voluntary-prayer-review.html",
+          "fragment": "hadith-1131",
+          "label": "Comparison notes and chapter source for this hadith"
+        }
       }
     ]
   },
-  "referencesSha256": "36005f0c3b0ed72b490d04132bd4c8f596973912b72acbc6695fa3a22ad41651",
+  "referencesSha256": "2ceeffca9a16f5820733eb0ee638f743fc246a59685db8e37f34feacf89141ef",
   "referencesReview": {
     "status": "pending"
   }
