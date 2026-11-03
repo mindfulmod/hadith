@@ -1,6 +1,14 @@
 # Hadith · MindfulMod reader
 
-The local personal reader at `reader/` contains 1,001 selected Bukhari entries across seventeen sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The local personal reader at `reader/` contains 1,007 selected Bukhari entries across seventeen sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+
+## Eclipses 999–1004 and explicit comparison limits · 3 November 2026
+
+The local prototype now includes six further complete reports across chapters four through nine. All 1,001 earlier entries remain exact. The new batch retains 23 complete source spans, both opening routes and the Kathir ibn Abbas note in 999, the complete closing transmission comment in 1001, both printed occurrences inside 1002, and the complete prayer descriptions and closing exchanges. Four Arabic chapter-context passages remain separately browsable, with English pending. No Arabic correction, missing-report suffix or new recording is introduced.
+
+Both selected English comparison families have documented errors or omissions in 999, 1001 and 1002. Their source panels now state this explicitly. `content/review/web-comparison-limitations.json` binds each known web defect to the exact source audit, Arabic occurrence and comparison-body hash; the builder refuses changed or missing evidence and prevents silently treating a known damaged comparison as complete. Original comparison text is not silently repaired. The working translation of the prayer terms in 1003 has a separate al-Nawawi commentary citation and explanation, without inserting commentary into the hadith.
+
+`research/eclipses-second-source-review.json` records the source comparison. `research/eclipses-second-verification.json` records 702 Node tests, 140 Python tests, 17 integrity checks and the desktop offline update from 1,001 to 1,007 entries. All nine earlier Eclipses chapter/report source-note articles are preserved exactly. Saved session membership, suffixed bookmarks, exact text rendering, four chapter-context passages, source notices and offline search were checked in the browser. These are local prototype checks, not independent content certification or physical-iPhone acceptance. Publication and reuse rights remain separate.
 
 ## Eclipses opening reports · 2 November 2026
 

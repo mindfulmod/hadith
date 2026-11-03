@@ -6,6 +6,7 @@ import {validateSourceHolds,pendingSourceEntry,pendingSourceNotes} from './sourc
 import {validatePrintedIntroductions,printedIntroductionContext,printedIntroductionDetails} from './printed-chapter-context.mjs';
 import {validateEmptyPrintedChapters,emptyPrintedChapterContext,emptyPrintedChapterNotes} from './printed-empty-chapters.mjs';
 import {validateAbsentBewleyComparison} from './absent-english-comparisons.mjs';
+import {validateDamagedBewleyComparison} from './damaged-bewley-comparisons.mjs';
 import {validateEnglishOccurrence,englishOccurrenceGroup,englishOccurrenceCitation} from './english-occurrences.mjs';
 import {buildBookIntroduction,bookIntroductionNotes} from './book-introductions.mjs';
 import {deriveArabicBlocks} from './arabic-corrections.mjs';
@@ -60,6 +61,7 @@ function validateComparisons(comparisons,config,segments,row,sources){
  assert.deepEqual(comparisons.map(c=>c.id).sort(),[config.bewleySourceId,'islamhouse-khan'].sort(),'Expected distinct English comparison records');
  const bewley=comparisons.find(c=>c.id===config.bewleySourceId),khan=comparisons.find(c=>c.id==='islamhouse-khan');
  const absentBewley=validateAbsentBewleyComparison(bewley,row,config,sources);
+ const damagedBewley=validateDamagedBewleyComparison(bewley,row,config,sources);
  if(!absentBewley)assert(parseReference(bewley.reference)!==null,'Invalid Bewley comparison');
  if(comparisons.some(c=>c.status==='parallel-occurrence-only')){
   assert.equal(row?.printedReport?.schemaVersion,2,'Parallel-only evidence is defined for explicitly sourced printed tails');
@@ -70,7 +72,7 @@ function validateComparisons(comparisons,config,segments,row,sources){
   assert(compareReferences(parseReference(bewley.reference),row.number)<0,'Parallel comparison must identify an earlier occurrence');
   return;
  }
- if(!absentBewley&&bewley.status!==undefined){
+ if(!absentBewley&&!damagedBewley&&bewley.status!==undefined){
   assert(['cross-reference-with-transmission-note','abbreviated-report'].includes(bewley.status),'Unknown Bewley comparison form');
   assert(typeof bewley.note==='string'&&bewley.note.trim(),'Abbreviated comparison needs an explanation');
   if(bewley.status==='cross-reference-with-transmission-note'||bewley.referencedReference!==undefined)assert(parseReference(bewley.referencedReference)!==null&&compareReferences(parseReference(bewley.referencedReference),parseReference(bewley.reference))<0,'Cross-reference comparison needs its earlier reference');
@@ -211,6 +213,8 @@ function validateComparisons(comparisons,config,segments,row,sources){
  }
 }
 function entryTranslationStatus(row){
+ if(row.comparisons.filter(c=>c.status==='damaged-comparison').length===2)return 'Personal prototype: AI-assisted working translation checked against two Arabic prints. Both English comparisons contain errors or omissions; neither supplies a complete reliable rendering of this selected entry. See the specific limits in the source notes. Independent Arabic, English and context review pending.';
+ if(row.comparisons.some(c=>c.id!=='islamhouse-khan'&&c.status==='damaged-comparison'))return 'Personal prototype: AI-assisted working translation; two Arabic prints and two English comparison families were inspected. One English comparison contains documented errors or omissions. See source notes for its limits. Independent Arabic, English and context review pending.';
  if(row.comparisons.every(c=>c.status==='not-present-in-checked-sequence'))return 'Personal prototype: a complete report transcribed from an identified Arabic print and checked against a second print. Both selected English sequences omit this occurrence. A separate online English comparison shortens the chain and uses passive wording; the full printed chain and first-person wording are retained. Independent transcription, Arabic, English and context review pending.';
  if(row.comparisons.some(c=>c.status==='damaged-comparison'))return 'Personal prototype: AI-assisted working translation; two Arabic prints and one complete English comparison were checked. The second English reference contains damaged wording and cannot confirm the missing words. Independent Arabic, English and context review pending.';
  if(row.printedReport?.schemaVersion===2)return 'Personal prototype: a separate occurrence transcribed from an identified Arabic print and checked against a second print. Two English comparison families cover earlier parallel accounts; their wording and attribution differences are explicit. The app and printed references remain separate. Independent transcription, Arabic, English and context review pending.';

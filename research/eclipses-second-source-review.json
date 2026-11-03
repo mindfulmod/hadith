@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "status": "ai-assisted-source-comparison-independent-review-pending",
+  "sourceAuditSha256": "5d7ffa346f8afce535cda88f304e45ae1259026b189fe6a07267b61bd91a6736",
+  "reviewSha256": "01ee5821f24ef7e5ec13377f4bebf7e512a7a4f10f602ae3c269d6d66ea17e14",
+  "references": [
+    999,
+    1000,
+    1001,
+    1002,
+    1003,
+    1004
+  ],
+  "arabicChanges": 0,
+  "exactTranslatedSpans": 23,
+  "separateArabicContextBlocks": 4,
+  "printInspection": {
+    "method": "Complete relevant rendered pages visually read, with magnified reinspection of the 1000 transmission verbs. Source-specific differences remain in the per-entry notes.",
+    "brill-1862": {
+      "pdfPages": [
+        266,
+        267,
+        268,
+        269
+      ],
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+    },
+    "dar-ibn-kathir-2002": {
+      "pdfPages": [
+        254,
+        255,
+        256,
+        257
+      ],
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+    }
+  },
+  "englishInspection": {
+    "bewley": {
+      "url": "https://aishabewley.org/bukhari10",
+      "sha256": "60cdcd2ea43481ac7a321375b6207cc0a37c11a0f0d8fa3fc279246bacc7a74c",
+      "bytes": 102307,
+      "locatorPolicy": "Decode HTML text, collapse whitespace, select from the first 993 label to Chapter 23. Each body starts after its label and ends at the next label, including intervening chapter material. Allow whitespace before a label period because linked labels 997, 1002 and 1004 separate it. Require every label 993–1016 exactly once; hashes are locators, not wording approval.",
+      "locatedReports": 24
+    },
+    "khan": {
+      "pinnedInventory": "content/staging/bukhari-en-islamhouse/catalog.json",
+      "references": [
+        "2.18.156",
+        "2.18.157",
+        "2.18.158",
+        "2.18.159",
+        "2.18.160",
+        "2.18.161"
+      ]
+    },
+    "bothLimitedReferences": [
+      999,
+      1001,
+      1002
+    ],
+    "limits": "Both located English bodies were inspected for each entry. Full chains are retained from Arabic; neither English comparison is promoted to a pristine source. Known web defects are bound to their exact inspected source occurrence."
+  },
+  "printedMapping": [
+    {
+      "reference": 999,
+      "printedReferences": [
+        1046
+      ],
+      "printedPages": {
+        "brill-1862": [
+          266
+        ],
+        "dar-ibn-kathir-2002": [
+          254,
+          255
+        ]
+      }
+    },
+    {
+      "reference": 1000,
+      "printedReferences": [
+        1047
+      ],
+      "printedPages": {
+        "brill-1862": [
+          267
+        ],
+        "dar-ibn-kathir-2002": [
+          255
+        ]
+      }
+    },
+    {
+      "reference": 1001,
+      "printedReferences": [
+        1048
+      ],
+      "printedPages": {
+        "brill-1862": [
+          267
+        ],
+        "dar-ibn-kathir-2002": [
+          255
+        ]
+      }
+    },
+    {
+      "reference": 1002,
+      "printedReferences": [
+        1049,
+        1050
+      ],
+      "printedPages": {
+        "brill-1862": [
+          267,
+          268
+        ],
+        "dar-ibn-kathir-2002": [
+          255,
+          256
+        ]
+      }
+    },
+    {
+      "reference": 1003,
+      "printedReferences": [
+        1051
+      ],
+      "printedPages": {
+        "brill-1862": [
+          268
+        ],
+        "dar-ibn-kathir-2002": [
+          256
+        ]
+      }
+    },
+    {
+      "reference": 1004,
+      "printedReferences": [
+        1052
+      ],
+      "printedPages": {
+        "brill-1862": [
+          268,
+          269
+        ],
+        "dar-ibn-kathir-2002": [
+          256,
+          257
+        ]
+      }
+    }
+  ],
+  "lexicalReference": {
+    "id": "nawawi-eclipse-prayer-terms",
+    "label": "Al-Nawawi · Commentary on Muslim · Eclipse prayer terminology",
+    "kind": "commentary",
+    "format": "web",
+    "url": "https://www.islamweb.net/ar/library/content/53/2567/باب-ذكر-النداء-بصلاة-الكسوف-الصلاة-جامعة"
+  },
+  "previousEclipsesArticlesUnchanged": 9,
+  "limits": [
+    "Personal prototype only. Independent Arabic, English, lexical, theological, chapter and reference review pending.",
+    "Complete narration scripts are prepared; no new recording is supplied.",
+    "No external publication or rights approval is implied."
+  ]
+}
