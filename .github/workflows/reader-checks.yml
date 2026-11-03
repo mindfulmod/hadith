@@ -30,6 +30,9 @@ jobs:
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/check-prostration-intake.py
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/check-shortening-intake.py
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/check-night-prayer-intake.py
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/check-voluntary-prayer-intake.py
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/check-mosques-prayer-intake.py
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/check-actions-prayer-intake.py
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit-wikisource-layout.py --check
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/resolve-wikisource-layout.py --check
           node scripts/build-collection.mjs --check

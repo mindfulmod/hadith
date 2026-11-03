@@ -2,6 +2,18 @@
 
 The local personal reader at `reader/` contains 1,140 selected Bukhari entries across twenty-two sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
 
+## Actions during Prayer source intake · 3 November 2026
+
+The next **26 reports, 1140–1165**, are staged for complete wording review. All **50 Arabic blocks and 10,182 code points** remain unchanged: eighteen headings, twenty-six numbered paragraphs and six separate chapter comments. Chapter 13 contains context but no numbered report. The [source review](research/actions-prayer-source-review.html) exposes every complete paragraph, printed location, English comparison limit and recorded textual difference. This is evidence only, with no reader admission or new translation.
+
+Both inspected prints account for **26 modern references, 1198–1223**. No missing complete report or suffix is established. One selected paragraph, 1141, contains both full narrator routes and maps to EPUB 290/291, with the latter an explicit back-reference; 1148 maps to the exact **297m** label. All 26 web bodies and 27 EPUB records are bound to their inspected bytes and body hashes. Web chapter headings and their commentary are excluded from numbered-body comparison ranges.
+
+Twenty-four recorded differences remain unapplied, including the expedition count in 1153, singular/plural reporting verb in 1162, longer historical forms and lexical commentary. Comparison limits include a lost Fajr name, missing theological clause, missing right-side prohibition, lost two-prostration count, omitted closing routes and a changed takbir actor. Full chains, repetitions and closing notes must remain in later wording review; no English comparison is treated as automatic confirmation.
+
+**236 distinct automated tests passed:** all 229 Python tests, including fifteen new integrity tests, and seven deployment checks. Both retained PDF hashes, all exact web bodies and actual EPUB bodies were checked. Six desktop viewport/theme checks preserve exact Arabic, usable navigation and no horizontal overflow; eight screenshots were visually inspected. All **1,436 previous tracked files** outside the explicit documentation, registry and CI updates remain byte-identical. The three latest section checks are now explicit CI steps. See `research/actions-prayer-intake-verification.json` for evidence and limits.
+
+The reader remains at **1,140 entries across twenty-two sections**, with complete recordings **1–6** and the incomplete Hadith 7 job preserved. Text expansion continues while Cedar stays on the free demo. No external update was published. Complete wording review for 1140–1165 comes next.
+
 ## Complete selected Mosques of Mecca and Medina · 3 November 2026
 
 The local personal reader contains **1,140 entries across twenty-two sections**. This batch adds all eight selected reports **1132–1139**, with 21 complete Arabic/English spans and six chapters. The English is an AI-assisted working translation, not Darussalam wording or independent certification.
