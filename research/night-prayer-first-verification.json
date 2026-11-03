@@ -1,0 +1,488 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-03T04:15:47.963120+00:00",
+  "status": "local-personal-prototype-reader-verified-independent-review-pending",
+  "baselineCommit": "49c4cdb70dd1bcfe90ac8031b89f9a83ce32df48",
+  "scope": {
+    "readerEntries": 1088,
+    "readerBooks": 20,
+    "newReports": 17,
+    "references": [
+      1069,
+      1070,
+      1071,
+      1072,
+      1073,
+      1074,
+      1075,
+      1076,
+      1077,
+      1078,
+      1079,
+      1080,
+      1081,
+      1082,
+      1083,
+      1084,
+      1085
+    ],
+    "newCompleteChapters": 9,
+    "exactTranslatedSpans": 38,
+    "separateArabicContextParagraphs": 3,
+    "originalArabicInputChanged": false,
+    "derivedArabicCorrections": [],
+    "recordedHadith": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "release": {
+    "id": "opening-619d291b7197",
+    "files": 247,
+    "readingBytes": 28809338
+  },
+  "checks": {
+    "node": {
+      "command": "node --test tests/*.test.mjs",
+      "passed": 776,
+      "failed": 0,
+      "logSha256": "b2bdaf159904c967ecc3677d3342314685639dbf47356646ccd0e4d69ada2568"
+    },
+    "python": {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p 'test_*.py'",
+      "passed": 186,
+      "failed": 0,
+      "logSha256": "5b3c97d3d13187287e71f485dfee6427548759be7ce123d5ba451a0465307cf9"
+    },
+    "distinctAutomatedTestsValidated": 962,
+    "integrity": [
+      {
+        "command": "/Users/main/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node scripts/prototype-admissions.mjs --check",
+        "exitCode": 0,
+        "output": "86 exact personal-prototype admissions checked; independent review and publication approval remain separate.",
+        "checkedAt": "2026-11-03T04:12:42.046473+00:00"
+      },
+      {
+        "command": "/Users/main/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node scripts/build-collection.mjs --check",
+        "exitCode": 0,
+        "output": "20 books, 1088 complete prototype source entries; source 5f8861ef90491ef89e6fcfa565a4aa64e99333f9fada35d32fbee295bb035229",
+        "checkedAt": "2026-11-03T04:12:45.105954+00:00"
+      },
+      {
+        "command": "/Users/main/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node scripts/publish-books.mjs --check",
+        "exitCode": 0,
+        "output": "personal-prototype: 20 book pack, 1088 complete entries; recorded text hashes checked.",
+        "checkedAt": "2026-11-03T04:12:42.252141+00:00"
+      },
+      {
+        "command": "/Users/main/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node scripts/build-audio.mjs --check",
+        "exitCode": 0,
+        "output": "1088 complete narration scripts; 6 recorded hadith bound to exact text; spoken-word and pronunciation reviews remain separate.",
+        "checkedAt": "2026-11-03T04:12:41.970702+00:00"
+      },
+      {
+        "command": "/Users/main/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node reader/check-content.mjs",
+        "exitCode": 0,
+        "output": "Published book packs match the complete source record; Arabic integrity hashes pass.",
+        "checkedAt": "2026-11-03T04:12:42.459550+00:00"
+      },
+      {
+        "command": "python3 scripts/import-wikisource-book.py --check",
+        "exitCode": 0,
+        "output": "faith: 51 numbered spans, 42 source headings, 163 exact blocks; candidate only\nknowledge: 76 numbered spans, 54 source headings, 178 exact blocks; candidate only\nghusl: 45 numbered spans, 29 source headings, 79 exact blocks; candidate only\nmenstruation: 37 numbered spans, 29 source headings, 74 exact blocks; candidate only\nprayer-times: 79 numbered spans, 41 source headings, 128 exact blocks; candidate only\nfear-prayer: 6 numbered spans, 6 source headings, 16 exact blocks; candidate only\ntwo-eids: 40 numbered spans, 26 source headings, 74 exact blocks; candidate only\nwitr: 14 numbered spans, 7 source headings, 23 exact blocks; candidate only\nrain-prayer: 33 numbered spans, 28 source headings, 70 exact blocks; candidate only\neclipses: 24 numbered spans, 19 source headings, 51 exact blocks; candidate only\nprostration: 13 numbered spans, 12 source headings, 30 exact blocks; candidate only\nshortening: 39 numbered spans, 20 source headings, 66 exact blocks; candidate only\nnight-prayer: 50 numbered spans, 27 source headings, 92 exact blocks; candidate only",
+        "checkedAt": "2026-11-03T04:12:42.286586+00:00"
+      },
+      {
+        "command": "python3 scripts/check-eclipses-intake.py --bewley-html /private/tmp/hadith-rain-sources/bewley.html --brill-pdf /private/tmp/hadith-friday-sources/brill.pdf --modern-pdf /private/tmp/hadith-friday-sources/modern.pdf",
+        "exitCode": 0,
+        "output": "Eclipses intake checked: 24 digital entries; 27 printed occurrences; 23 pinned EPUB bodies; no reader admission.",
+        "checkedAt": "2026-11-03T04:12:42.445507+00:00"
+      },
+      {
+        "command": "python3 scripts/audit-wikisource-layout.py --check",
+        "exitCode": 0,
+        "output": "ablution: {\"blocks\": 252, \"htmlHeadings\": 75, \"unparsedHeadings\": 1, \"numberedMarkers\": 110, \"uniqueNumericLabels\": 109, \"numericRange\": [135, 244], \"unobservedLabelsWithinRange\": [160], \"duplicateLabels\": [{\"number\": 162, \"occurrences\": 2}], \"sourceCodePoints\": 34517, \"coveredCodePoints\": 34517}; unresolved layout; not published\ntayammum: {\"blocks\": 25, \"htmlHeadings\": 7, \"unparsedHeadings\": 1, \"numberedMarkers\": 15, \"uniqueNumericLabels\": 15, \"numericRange\": [327, 341], \"unobservedLabelsWithinRange\": [], \"duplicateLabels\": [], \"sourceCodePoints\": 8062, \"coveredCodePoints\": 8062}; unresolved layout; not published\nprayer: {\"blocks\": 305, \"htmlHeadings\": 108, \"unparsedHeadings\": 0, \"numberedMarkers\": 157, \"uniqueNumericLabels\": 157, \"numericRange\": [342, 498], \"unobservedLabelsWithinRange\": [], \"duplicateLabels\": [], \"sourceCodePoints\": 56260, \"coveredCodePoints\": 56260}; unresolved layout; not published\nadhan: {\"blocks\": 224, \"htmlHeadings\": 80, \"unparsedHeadings\": 0, \"numberedMarkers\": 122, \"uniqueNumericLabels\": 121, \"numericRange\": [578, 698], \"unobservedLabelsWithinRange\": [], \"duplicateLabels\": [{\"number\": 619, \"occurrences\": 2}], \"sourceCodePoints\": 39955, \"coveredCodePoints\": 39955}; unresolved layout; not published\nprayer-description: {\"blocks\": 240, \"htmlHeadings\": 84, \"unparsedHeadings\": 0, \"numberedMarkers\": 137, \"uniqueNumericLabels\": 137, \"numericRange\": [699, 835], \"unobservedLabelsWithinRange\": [], \"duplicateLabels\": [], \"sourceCodePoints\": 45865, \"coveredCodePoints\": 45865}; unresolved layout; not published\nfriday-prayer: {\"blocks\": 115, \"htmlHeadings\": 40, \"unparsedHeadings\": 0, \"numberedMarkers\": 64, \"uniqueNumericLabels\": 64, \"numericRange\": [836, 899], \"unobservedLabelsWithinRange\": [], \"duplicateLabels\": [], \"sourceCodePoints\": 20570, \"coveredCodePo",
+        "checkedAt": "2026-11-03T04:12:42.498469+00:00"
+      },
+      {
+        "command": "python3 scripts/resolve-wikisource-layout.py --check",
+        "exitCode": 0,
+        "output": "ablution: 110 candidate reports; 76 mapped chapters; all source spans retained; not published\ntayammum: 15 candidate reports; 8 mapped chapters; all source spans retained; not published\nprayer: 157 candidate reports; 108 mapped chapters; all source spans retained; not published\nadhan: 122 candidate reports; 80 mapped chapters; all source spans retained; not published\nprayer-description: 137 candidate reports; 84 mapped chapters; all source spans retained; not published\nfriday-prayer: 64 candidate reports; 40 mapped chapters; all source spans retained; not published",
+        "checkedAt": "2026-11-03T04:12:42.722557+00:00"
+      },
+      {
+        "command": "python3 scripts/import-english.py --check",
+        "exitCode": 0,
+        "output": "{\"verified\": \"content/staging/bukhari-en-islamhouse/catalog.json\", \"audit\": {\"sectionCount\": 97, \"reportSectionCount\": 95, \"paragraphCount\": 29530, \"paragraphRoles\": {\"blank\": 191, \"body\": 14994, \"context\": 122, \"reference\": 7111, \"separator\": 7112}, \"recordCount\": 7111, \"uniqueReferences\": 7111, \"books\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93], \"duplicateReferences\": [], \"suffixedReferences\": [\"islamhouse-bukhari-epub-2010:1.3.97g\", \"islamhouse-bukhari-epub-2010:1.8.385l\", \"islamhouse-bukhari-epub-2010:1.8.385u\", \"islamhouse-bukhari-epub-2010:1.8.450f\", \"islamhouse-bukhari-epub-2010:1.8.450m\", \"islamhouse-bukhari-epub-2010:2.21.251r\", \"islamhouse-bukhari-epub-2010:2.21.251n\", \"islamhouse-bukhari-epub-2010:2.21.275t\", \"islamhouse-bukhari-epub-2010:2.22.297m\", \"islamhouse-bukhari-epub-2010:2.24.574i\", \"islamhouse-bukhari-epub-2010:2.24.574f\", \"islamhouse-bukhari-epub-2010:3.37.488r\", \"islamhouse-bukhari-epub-2010:3.37.488h\", \"islamhouse-bukhari-epub-2010:3.38.505r\", \"islamhouse-bukhari-epub-2010:3.38.505t\", \"islamhouse-bukhari-epub-2010:4.52.74i\", \"islamhouse-bukhari-epub-2010:4.52.74n\", \"islamhouse-bukhari-epub-2010:4.52.80i\", \"islamhouse-bukhari-epub-2010:4.52.80n\", \"islamhouse-bukhari-epub-2010:4.52.219c\", \"islamhouse-bukhari-epub-2010:4.52.219n\", \"islamhouse-bukhari-epub-2010:4.52.266l\", \"islamhouse-bukhari-epub-2010:4.52.266c\", \"islamhouse-bukhari-epub-2010:4.52.290d\", \"islamhouse-bukhari-epub-2010:5.57.101r\", \"islamhouse-bukhari-epub-2010:5.57.101",
+        "checkedAt": "2026-11-03T04:12:43.065825+00:00"
+      },
+      {
+        "command": "python3 scripts/import-opening.py --check",
+        "exitCode": 0,
+        "output": "7 records, 17 exact text blocks; not published",
+        "checkedAt": "2026-11-03T04:12:42.563295+00:00"
+      },
+      {
+        "command": "python3 scripts/check-opening-review.py",
+        "exitCode": 0,
+        "output": "5 drafts; 32 fully covered source segments; independent review pending",
+        "checkedAt": "2026-11-03T04:12:42.620845+00:00"
+      },
+      {
+        "command": "python3 scripts/build-opening-review.py --check",
+        "exitCode": 0,
+        "output": "Five-entry review artifact matches the pinned candidate text; reader unchanged",
+        "checkedAt": "2026-11-03T04:12:42.684429+00:00"
+      },
+      {
+        "command": "/Users/main/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node scripts/build-opening-prototype.mjs --check",
+        "exitCode": 0,
+        "output": "Personal prototype: 7 complete entries; original inputs retained; source d596d6aad6ad1f02839f3690c446d5b16791f7b7aa35c157b6e89a442db7b76a",
+        "checkedAt": "2026-11-03T04:12:42.738717+00:00"
+      },
+      {
+        "command": "/Users/main/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node scripts/import-bukhari.mjs --check",
+        "exitCode": 0,
+        "output": "{\n  \"bookCount\": 97,\n  \"recordCount\": 7390,\n  \"uniqueNumbers\": 7390,\n  \"missingNumbers\": [\n    409,\n    411,\n    436,\n    479,\n    534,\n    623,\n    872,\n    874,\n    939,\n    1166,\n    1242,\n    1243,\n    1615,\n    1660,\n    1687,\n    1695,\n    1759,\n    1919,\n    1998,\n    2061,\n    2154,\n    2179,\n    2181,\n    2202,\n    2233,\n    2243,\n    2245,\n    2248,\n    2250,\n    2255,\n    2303,\n    2308,\n    2315,\n    2347,\n    2357,\n    2360,\n    2384,\n    2417,\n    2498,\n    2502,\n    2506,\n    2516,\n    2540,\n    2556,\n    2584,\n    2608,\n    2667,\n    2670,\n    2677,\n    2696,\n    2712,\n    2725,\n    2732,\n    2789,\n    2800,\n    2878,\n    2895,\n    2963,\n    2973,\n    3079,\n    3132,\n    3187,\n    3363,\n    3454,\n    3517,\n    3518,\n    3519,\n    3520,\n    3521,\n    3522,\n    3523,\n    3524,\n    3525,\n    3526,\n    3527,\n    3723,\n    3741,\n    3940,\n    3979,\n    3981,\n    4013,\n    4018,\n    4036,\n    4061,\n    4137,\n    4158,\n    4161,\n    4179,\n    4181,\n    4204,\n    4222,\n    4224,\n    4241,\n    4245,\n    4247,\n    4249,\n    4306,\n    4308,\n    4319,\n    4327,\n    4342,\n    4345,\n    4354,\n    4375,\n    4434,\n    4444,\n    4453,\n    4456,\n    4457,\n    4465,\n    4550,\n    4835,\n    4880,\n    4958,\n    4979,\n    5111,\n    5118,\n    5215,\n    5257,\n    5291,\n    5322,\n    5324,\n    5326,\n    5328,\n    5455,\n    5472,\n    5491,\n    5526,\n    5587,\n    5642,\n    5710,\n    5711,\n    5720,\n    5721,\n    5816,\n    5898,\n    5909,\n    5912,\n    5956,\n    6028,\n    6074,\n    6075,\n    6143,\n    6283,\n    6286,\n    6379,\n    6381,\n    6601,\n    6618,\n    6634,\n    6828,\n    6836,\n    6838,\n    6843,\n    6860,\n    7051,\n    7063,\n    7103,\n    7104,\n    7106,\n    7107,\n    7169,\n    7177,\n    7185,\n    7194,\n    7200,\n    7223,\n    7259,\n    7279,\n    7285,\n    7342,\n    7351",
+        "checkedAt": "2026-11-03T04:12:43.057326+00:00"
+      },
+      {
+        "command": "python3 scripts/import-bukhari-jk.py --check",
+        "exitCode": 0,
+        "output": "{\n  \"sourceBytes\": 5524762,\n  \"coveredBytes\": 5524762,\n  \"sectionCount\": 100,\n  \"headingCount\": 3965,\n  \"reportCount\": 7129,\n  \"uniqueNumericLabels\": 7124,\n  \"missingNumericLabels\": [],\n  \"duplicateReferences\": [\n    {\n      \"label\": \"3905\",\n      \"count\": 2\n    }\n  ],\n  \"suffixedReferences\": [\n    \"619 م\",\n    \"4537 م\",\n    \"4626 م\",\n    \"6705 م\"\n  ],\n  \"numericChapterHeadings\": [\n    {\n      \"line\": 4808,\n      \"label\": \"39\",\n      \"text\": \"# 39 باب حد إتمام الركوع والاعتدال فيه والطمأنينة\"\n    },\n    {\n      \"line\": 20679,\n      \"label\": \"2\",\n      \"text\": \"# 2 باب قول الله تعالى @QB@ وإذ قال ربك للملائكة إني جاعل في الأرض خليفة\"\n    },\n    {\n      \"line\": 30190,\n      \"label\": \"192\",\n      \"text\": \"# 192 باب قوله @QB@ إلا من استرق السمع فأتبعه شهاب مبين @QE@\"\n    },\n    {\n      \"line\": 32250,\n      \"label\": \"372\",\n      \"text\": \"# 372 ms1348 باب قوله تعالى @QB@ من بعدي اسمه أحمد @QE@\"\n    },\n    {\n      \"line\": 41074,\n      \"label\": \"23\",\n      \"text\": \"# 23 باب الدعاء غير مستقبل القبلة\"\n    },\n    {\n      \"line\": 43213,\n      \"label\": \"8\",\n      \"text\": \"# 8 باب إذا أعتق في الكفارة لمن يكون ولاؤه\"\n    }\n  ],\n  \"emptyRecords\": [],\n  \"limitations\": [\n    \"A complete byte inventory is not a certification of Arabic transcription or narration completeness.\",\n    \"Section numbers and report labels belong to this edition; they are not a cross-edition reference map.\",\n    \"Heading context includes all intervening paragraphs. It is not silently folded into a report.\",\n    \"Upstream records a 2023 cleaning that removed editorial paratext and inconsistent heading annotation.\"\n  ]\n}",
+        "checkedAt": "2026-11-03T04:12:43.309101+00:00"
+      },
+      {
+        "command": "python3 scripts/check-prostration-intake.py --bewley-html /private/tmp/hadith-rain-sources/bewley.html --brill-pdf /private/tmp/hadith-friday-sources/brill.pdf --modern-pdf /private/tmp/hadith-friday-sources/modern.pdf",
+        "exitCode": 0,
+        "output": "Prostration intake checked: 13 digital reports, 13 printed occurrences, 13 pinned EPUB bodies; no reader admission.",
+        "checkedAt": "2026-11-03T04:12:43.258207+00:00"
+      },
+      {
+        "command": "python3 scripts/check-shortening-intake.py --bewley-html /private/tmp/hadith-shortening-sources/bewley.html --brill-pdf /private/tmp/hadith-friday-sources/brill.pdf --modern-pdf /private/tmp/hadith-friday-sources/modern.pdf",
+        "exitCode": 0,
+        "output": "Shortening intake checked: 39 digital reports, 40 printed occurrences, 39 exact spans in 35 pinned EPUB records; no reader admission.",
+        "checkedAt": "2026-11-03T04:12:43.283472+00:00"
+      },
+      {
+        "command": "python3 scripts/check-night-prayer-intake.py --bewley-html /private/tmp/hadith-night-sources/bewley.html --brill-pdf /private/tmp/hadith-friday-sources/brill.pdf --modern-pdf /private/tmp/hadith-friday-sources/modern.pdf",
+        "exitCode": 0,
+        "output": "Night Prayer intake checked: 50 digital reports, 52 printed references, 49 pinned EPUB bodies and one bounded absence; no reader admission.",
+        "checkedAt": "2026-11-03T04:12:43.448068+00:00"
+      },
+      {
+        "command": "/Users/main/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node scripts/narration-job.mjs --check content/audio/jobs/hadith-7-cedar-v1.json",
+        "exitCode": 0,
+        "output": "{\"id\":\"hadith-7-cedar-v1\",\"number\":7,\"total\":10,\"saved\":[1,2,3,4,5,6,7,8,9],\"missing\":[10],\"complete\":false,\"publication\":\"not-admitted\"}",
+        "checkedAt": "2026-11-03T04:12:43.435412+00:00"
+      }
+    ],
+    "initialFindings": "The first assembly rejected a Python/JavaScript audit-hash mismatch; exact bindings were regenerated with the repository JavaScript serialization method without changing historical evidence. One initial new test expected a context label in source notes rather than the actual complete review note; the assertion was corrected. Both final complete suites pass.",
+    "patchWhitespace": "passed"
+  },
+  "browser": {
+    "checkedAt": "2026-11-03T04:13:35.780Z",
+    "browser": "Isolated Playwright Chromium desktop browser, mobile viewports",
+    "physicalIPhone": false,
+    "publicationPerformed": false,
+    "testedRelease": "opening-619d291b7197",
+    "checks": [
+      {
+        "name": "Baseline downloaded with a finite saved session and a suffixed bookmark",
+        "detail": [
+          1067,
+          1068
+        ]
+      },
+      {
+        "name": "Actual service-worker update preserves the exact saved session",
+        "detail": 1088
+      },
+      {
+        "name": "Next navigation reaches the new reports and preserves the suffixed bookmark",
+        "detail": true
+      },
+      {
+        "name": "All new English, selected Arabic and per-entry comparison disclosures render exactly",
+        "detail": true
+      },
+      {
+        "name": "Complete chain and the closing corroborating route remain accessible",
+        "detail": {
+          "number": 1069,
+          "chains": 1,
+          "paragraphs": 2
+        }
+      },
+      {
+        "name": "Short report 1081 links to the full preceding chain without expanding its stored wording",
+        "detail": true
+      },
+      {
+        "name": "Largest-text layout fits 1069",
+        "detail": {
+          "width": 320,
+          "scroll": 320,
+          "client": 320
+        }
+      },
+      {
+        "name": "Largest-text layout fits 1069",
+        "detail": {
+          "width": 390,
+          "scroll": 390,
+          "client": 390
+        }
+      },
+      {
+        "name": "Largest-text layout fits 1069",
+        "detail": {
+          "width": 1280,
+          "scroll": 1280,
+          "client": 1280
+        }
+      },
+      {
+        "name": "Largest-text layout fits 1070",
+        "detail": {
+          "width": 320,
+          "scroll": 320,
+          "client": 320
+        }
+      },
+      {
+        "name": "Largest-text layout fits 1070",
+        "detail": {
+          "width": 390,
+          "scroll": 390,
+          "client": 390
+        }
+      },
+      {
+        "name": "Largest-text layout fits 1070",
+        "detail": {
+          "width": 1280,
+          "scroll": 1280,
+          "client": 1280
+        }
+      },
+      {
+        "name": "Largest-text layout fits 1075",
+        "detail": {
+          "width": 320,
+          "scroll": 320,
+          "client": 320
+        }
+      },
+      {
+        "name": "Largest-text layout fits 1075",
+        "detail": {
+          "width": 390,
+          "scroll": 390,
+          "client": 390
+        }
+      },
+      {
+        "name": "Largest-text layout fits 1075",
+        "detail": {
+          "width": 1280,
+          "scroll": 1280,
+          "client": 1280
+        }
+      },
+      {
+        "name": "All new reports, full source notes, printed references and comparison limits reopen offline",
+        "detail": true
+      },
+      {
+        "name": "Separate Arabic chapter context reopens exactly offline",
+        "detail": [
+          "chapter-01",
+          "chapter-05",
+          "chapter-06"
+        ]
+      },
+      {
+        "name": "Both chapter differences and the absent heading excerpt are explicit offline",
+        "detail": true
+      },
+      {
+        "name": "Offline search includes new narrator-chain wording",
+        "detail": "Sulayman ibn Abi Muslim"
+      },
+      {
+        "name": "Source holds and original session membership remain intact offline",
+        "detail": true
+      },
+      {
+        "name": "No uncaught page errors",
+        "detail": true
+      }
+    ],
+    "pageErrors": [],
+    "status": "passed"
+  },
+  "screenshotsVisuallyInspected": [
+    "content/review/evidence/night-prayer-first-day.png",
+    "content/review/evidence/night-prayer-first-night.png",
+    "content/review/evidence/night-prayer-first-sources-night.png",
+    "content/review/evidence/night-prayer-first-appraisal-note.png",
+    "content/review/evidence/night-prayer-first-transmission-notes.png",
+    "content/review/evidence/night-prayer-first-preceding-chain.png",
+    "content/review/evidence/night-prayer-first-chapter-differences-offline.png"
+  ],
+  "preservation": {
+    "baselineCommit": "49c4cdb70dd1bcfe90ac8031b89f9a83ce32df48",
+    "previousEntriesIdentical": 1071,
+    "previousEntrySourceReferencesIdentical": 1071,
+    "previousBookContextsIdentical": 19,
+    "previousActiveBookPackFilesIdentical": 19,
+    "previousMediaFilesIdentical": 110,
+    "previousSourceNoteFilesIdentical": 127,
+    "sourceIntakeAndAudioJobFilesIdentical": 100,
+    "readerCodeFilesIdentical": 27,
+    "readerCodeFilesChanged": [
+      "reader/library.mjs",
+      "reader/navigation.mjs"
+    ],
+    "pendingReferences": [
+      926,
+      957
+    ],
+    "actualRecordings": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scope": "Exact comparisons against the clean committed baseline. Only chapter-difference notices and their metadata validation changed in existing reader code. All previous Arabic inputs, English entry objects, book contexts, source-note pages, artwork, recordings and preserved narration jobs remain unchanged."
+  },
+  "sourceReview": {
+    "audit": "research/night-prayer-source-audit.json",
+    "auditSha256": "256b42f1fefe3df27f9bc596da4851dd2f6477159923f2fa71285e2339edcd8e",
+    "review": "content/review/night-prayer-first-review.json",
+    "reviewSha256": "a4092952aae4b8967d78a3785b0f8c5fa454f3811e6038a1a786f421fa72b097",
+    "decisions": "research/night-prayer-first-wording-review.json",
+    "additionalChapterEvidence": "research/night-prayer-first-chapter-audit.json",
+    "rawArabicRevision": 39522,
+    "printedPagesReread": {
+      "brill-1862": [
+        283,
+        284,
+        285,
+        286,
+        287
+      ],
+      "dar-ibn-kathir-2002": [
+        272,
+        273,
+        274,
+        275
+      ]
+    },
+    "englishBodiesReread": {
+      "bewley": [
+        1069,
+        1070,
+        1071,
+        1072,
+        1073,
+        1074,
+        1075,
+        1076,
+        1077,
+        1078,
+        1079,
+        1080,
+        1081,
+        1082,
+        1083,
+        1084,
+        1085
+      ],
+      "khan": [
+        "2.21.221",
+        "2.21.222",
+        "2.21.223",
+        "2.21.224",
+        "2.21.225",
+        "2.21.226",
+        "2.21.227",
+        "2.21.228",
+        "2.21.229",
+        "2.21.230",
+        "2.21.231",
+        "2.21.232",
+        "2.21.233",
+        "2.21.234",
+        "2.21.235",
+        "2.21.236",
+        "2.21.237"
+      ]
+    },
+    "sourceDifferences": "The original selected Arabic is unchanged. Both 1069 praise differences and 1078 standing/praying wording remain visible. Chapter 1 waking-gloss and chapter 6 heading/context differences bind to exact inspected evidence. The absent swollen-feet excerpt in the modern heading is explicitly absent, not supplied from its following report.",
+    "combinedAndSharedReferences": "1070 retains both modern printed references 1121/1122. Digital 1080 and 1081 remain separate despite sharing printed 1132; a separate context link opens the preceding chain.",
+    "remainingReferences": [
+      1086,
+      1087,
+      1088,
+      1089,
+      1090,
+      1091,
+      1092,
+      1093,
+      1094,
+      1095,
+      1096,
+      1097,
+      1098,
+      1099,
+      1100,
+      1101,
+      1102,
+      1103,
+      1104,
+      1105,
+      1106,
+      1107,
+      1108,
+      1109,
+      1110,
+      1111,
+      1112,
+      1113,
+      1114,
+      1115,
+      1116,
+      1117,
+      1118
+    ]
+  },
+  "publication": {
+    "performed": false,
+    "liveEntries": 632,
+    "liveCommit": "a6d55223d3d863f2583ba67aa27edd139e9d7d6a"
+  },
+  "limitations": [
+    "AI-assisted working English, Quran quotations within reports, chapter titles and references require independent Arabic, English, lexical and theological review. This is not Darussalam wording or content certification.",
+    "Source holds 926/957 remain unresolved. All three new chapter-context paragraphs are separately available in Arabic; their English remains pending.",
+    "The remaining 1086–1118 reports are staged only. The differently grouped printed Night Prayer book continues on the next digital page from 1119.",
+    "Actual Cedar recordings remain 1–6. The incomplete Hadith 7 job and original candidate segments are unchanged. No new paid generation is included.",
+    "Desktop Chromium checks do not establish fresh physical iPhone, locked-screen audio, complete-corpus memory or accessibility acceptance.",
+    "No reuse-rights clearance, external publication or independent approval is claimed."
+  ],
+  "packaging": {
+    "browserArtifactPublicFiles": 645,
+    "browserArtifact": "/private/tmp/hadith-night-prayer-first-browser-preview",
+    "readerRelease": "opening-619d291b7197",
+    "finalDocumentationPackaging": "646 public files assembled; all browser-tested reader files remain byte-identical after documentation additions.",
+    "finalPublicFiles": 646,
+    "browserTestedReaderFilesIdentical": 368
+  }
+}

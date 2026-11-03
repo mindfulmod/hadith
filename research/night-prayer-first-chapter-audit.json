@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "status": "unresolved-source-evidence-not-wording-approval",
+  "checkedAt": "2026-11-03T04:05:48.029665+00:00",
+  "source": {
+    "path": "content/sources/wikisource-night-prayer/source.html",
+    "id": "wikisource-bukhari-night-prayer-r39522",
+    "revision": 39522,
+    "sha256": "7de702821576c9be6749b4af7cc676cc6a1b67185c622c52b2473e66930c6306",
+    "bytes": 157391,
+    "inventorySha256": "457e9ade09e59547b9ea038d0b31f37e9b78305b6ff63026d7404b64311585e3",
+    "blocks": 92,
+    "codePoints": 16329,
+    "numberedReports": 50,
+    "chapters": 27,
+    "separateContextIds": [
+      "mwBg",
+      "mwHQ",
+      "mwKw",
+      "mwTA",
+      "mwWA",
+      "mwXA",
+      "mwkw"
+    ],
+    "blankIds": [
+      "mwkA"
+    ],
+    "arabicChanged": false
+  },
+  "printedComparisons": [
+    {
+      "id": "brill-1862",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+      "bytes": 28290204,
+      "inspectedPdfPages": [
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295
+      ]
+    },
+    {
+      "id": "dar-ibn-kathir-2002",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+      "bytes": 45304371,
+      "inspectedPdfPages": [
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283
+      ]
+    }
+  ],
+  "unresolvedTextualDifferences": [
+    {
+      "id": "chapter-06-standing-context",
+      "kind": "unresolved-textual-difference",
+      "paragraphId": "mwKw",
+      "sourceBlockSha256": "69bdf401e20fc7f1b711abbfb376dd87c3719c684dfdae7892ac2035dce2dda2",
+      "sourceReading": "حتى تتفطر قدماه",
+      "status": "unresolved-not-applied",
+      "independentReview": "pending",
+      "witnesses": [
+        {
+          "sourceId": "brill-1862",
+          "sourceSha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1",
+          "pdfPage": 286,
+          "reading": "قام حتى تفطر قدماه",
+          "readingSha256": "3bf72991f4df864a80922cd3e806cf7f2ad38e28b352adb2b3f54c24ac764f12"
+        },
+        {
+          "sourceId": "dar-ibn-kathir-2002",
+          "sourceSha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098",
+          "pdfPage": 274,
+          "reading": "كان يقوم حتى تفطر قدماه",
+          "readingSha256": "bb0e53491251ec4bacbe4e61ee989a9937b9ab7e70cfd1954ec8957691b87f2d"
+        }
+      ],
+      "finding": "The selected introduction begins directly with until his feet cracked after its Aishah attribution. The historical print has قام and the modern print has كان يقوم before their differently spelled feet-cracking phrase. The source is not expanded or normalized.",
+      "transcriptionPolicy": "Unvocalized excerpts preserve the relevant wording. Keep the original complete Arabic context separate; its English remains pending."
+    }
+  ]
+}

@@ -22,7 +22,8 @@ export function validateChapterDifferences(chapter,inventory,review,readEvidence
   const audit=readEvidence(binding.auditPath);assert.equal(hash(audit),binding.auditSha256,'Changed chapter difference audit');
   assert.equal(audit.source.id,inventory.sourceId);assert.equal(audit.source.sha256,inventory.sourceSha256,'Chapter difference belongs to another source');
   const item=audit.unresolvedTextualDifferences?.find(v=>v.id===binding.differenceId);
-  assert(item&&chapter.contextIds.includes(item.paragraphId),'Difference must belong to this chapter introduction');
+  const heading=item?.paragraphId===chapter.headingId;
+  assert(item&&(heading||chapter.contextIds.includes(item.paragraphId)),'Difference must belong to this chapter heading or introduction');
   const block=inventory.blocks.find(b=>b.htmlId===item.paragraphId);
   assert.equal(item.sourceBlockSha256,sha(block.text),'Changed chapter paragraph');
   assert(typeof item.sourceReading==='string'&&item.sourceReading.trim()&&block.text.includes(item.sourceReading),'Difference must retain selected source reading');
@@ -33,12 +34,14 @@ export function validateChapterDifferences(chapter,inventory,review,readEvidence
    const source=review.sources.find(s=>s.id===w.sourceId),print=audit.printedComparisons.find(p=>p.id===w.sourceId);
    assert(source?.kind==='arabic-witness'&&source.sha256===w.sourceSha256&&print?.sha256===w.sourceSha256,'Changed chapter witness');
    assert(Number.isSafeInteger(w.pdfPage)&&w.pdfPage>0&&print.inspectedPdfPages.includes(w.pdfPage),'Chapter witness page was not inspected');
-   assert(typeof w.reading==='string'&&w.reading.trim()&&sha(w.reading)===w.readingSha256,'Changed printed chapter reading');
+   if(w.reading===null)assert(heading&&w.readingSha256===null,'A missing heading excerpt must stay explicitly absent');
+   else assert(typeof w.reading==='string'&&w.reading.trim()&&sha(w.reading)===w.readingSha256,'Changed printed chapter reading');
   }
-  return structuredClone(item);
+  assert(item.witnesses.some(w=>typeof w.reading==='string'&&w.reading.trim()),'A chapter difference needs a present printed reading');
+  return {...structuredClone(item),...(heading?{sourceRole:'heading'}:{})};
  });
 }
-export function chapterDifferenceContext(items){return items.length?{textualDifferences:{count:items.length,evidenceSha256:hash(items),status:'unresolved',englishStatus:'pending'}}:{};}
+export function chapterDifferenceContext(items){return items.length?{textualDifferences:{count:items.length,evidenceSha256:hash(items),status:'unresolved',englishStatus:'pending',...(items.some(item=>item.sourceRole==='heading')?{includesHeading:true}:{})}}:{};}
 export function chapterDifferenceDetails(items,sources){
- return items.map(item=>`<section class="chapter-source-difference" data-chapter-difference="${esc(item.id)}"><h3>A difference between the printed readings</h3><p>${esc(item.finding)}</p><p>Selected source wording:</p><p class="arabic" lang="ar" dir="rtl">${esc(item.sourceReading)}</p><details><summary>Compare the two printed readings</summary>${item.witnesses.map(w=>{const source=sources.find(s=>s.id===w.sourceId),url=new URL(source.url);url.hash='page='+w.pdfPage;return `<p><a href="${esc(url.href)}" target="_blank" rel="noopener">${esc(source.label)} · PDF page ${w.pdfPage} ↗</a></p><p class="arabic" lang="ar" dir="rtl">${esc(w.reading)}</p>`;}).join('')}<p>${esc(item.transcriptionPolicy)}</p></details></section>`).join('');
+ return items.map(item=>`<section class="chapter-source-difference" data-chapter-difference="${esc(item.id)}"><h3>A difference between the printed readings</h3><p>${esc(item.finding)}</p><p>Selected source wording:</p><p class="arabic" lang="ar" dir="rtl">${esc(item.sourceReading)}</p><details><summary>Compare the two printed readings</summary>${item.witnesses.map(w=>{const source=sources.find(s=>s.id===w.sourceId),url=new URL(source.url);url.hash='page='+w.pdfPage;return `<p><a href="${esc(url.href)}" target="_blank" rel="noopener">${esc(source.label)} · PDF page ${w.pdfPage} ↗</a></p>${w.reading===null?'<p>Absent from this inspected heading.</p>':`<p class="arabic" lang="ar" dir="rtl">${esc(w.reading)}</p>`}`;}).join('')}<p>${esc(item.transcriptionPolicy)}</p></details></section>`).join('');
 }

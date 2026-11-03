@@ -38,7 +38,7 @@ export function validateChapters(book) {
    }
    if(context.textualDifferences!==undefined){
     const d=context.textualDifferences;
-    if(!d||!Number.isSafeInteger(d.count)||d.count<1||!/^[a-f0-9]{64}$/.test(d.evidenceSha256)||d.status!=='unresolved'||d.englishStatus!=='pending'||!introduction?.arabicParagraphs||introduction.englishStatus!=='pending')throw new Error('Invalid unresolved chapter wording');
+    if(!d||!Number.isSafeInteger(d.count)||d.count<1||!/^[a-f0-9]{64}$/.test(d.evidenceSha256)||d.status!=='unresolved'||d.englishStatus!=='pending'||(d.includesHeading!==undefined&&d.includesHeading!==true)||(!d.includesHeading&&!introduction?.arabicParagraphs)||(introduction?.arabicParagraphs>0&&introduction.englishStatus!=='pending'))throw new Error('Invalid unresolved chapter wording');
    }
    if(context.printedIntroduction!==undefined){
     const p=context.printedIntroduction;

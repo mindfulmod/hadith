@@ -1,6 +1,18 @@
 # Hadith · MindfulMod reader
 
-The local personal reader at `reader/` contains 1,071 selected Bukhari entries across nineteen sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+The local personal reader at `reader/` contains 1,088 selected Bukhari entries across twenty sections, with Cedar AI narration for Hadith 1–6 and separately checked reading/audio downloads. The approved live website remains the 632-entry release at `a6d5522`; later local previews require separate publication approval. It is a clearly labelled personal prototype: the English translations are AI-assisted working translations and the generated narration still needs listening review. The original non-religious audio feasibility pilot remains at the root.
+
+## Night Prayer 1069–1085 · 3 November 2026
+
+The local personal prototype now contains **1,088 entries across twenty sections**. Seventeen complete Night Prayer reports add 38 translated spans, nine complete chapters and three separate Arabic chapter-context paragraphs. The selected Arabic is unchanged. The earlier 1,071 entry objects, nineteen book contexts and active book files, 127 source-note pages, all artwork, recordings and preserved narration jobs remain unchanged.
+
+The opening invocation retains every repeated praise clause, both closing transmission notes and its alternatives. Entry 1070 keeps both opening narrator routes and printed references 1121/1122 together. Entries 1080 and 1081 remain separate despite sharing printed 1132; the shorter entry links to the preceding narrator chain without inserting names into its wording. The pre-dawn report keeps its closing attribution separate. Source-specific pronouns, uncertainties, honorifics and closing exchanges remain complete. The English is newly authored AI-assisted working translation, not Darussalam wording or independent certification.
+
+Chapter wording differences now support heading excerpts as well as introductions, with exact source ownership and registered print evidence. The modern chapter 6 heading lacks the swollen-feet phrase retained by the selected and historical headings; this absence is shown explicitly. Its separate introductory wording also differs. All three new Arabic introductions remain outside numbered sessions and narration, with English pending.
+
+**962 automated tests passed: 776 Node and 186 Python.** Twenty integrity checks and 21 desktop browser checks passed. The actual offline update preserved an existing two-report session and the 983b bookmark. All seventeen reports, complete source notes, printed references, separate chapter context and exact search reopen offline. Sampled long reports fit the largest text size at 320, 390 and 1280 pixels. Seven screenshots were visually inspected. Reading downloads total **28,809,338 bytes**. See `research/night-prayer-first-wording-review.json` and `research/night-prayer-first-verification.json` for the evidence and limits.
+
+The remaining 1086–1118 reports are staged for later wording review. Holds 926/957 remain; recordings are still 1–6. The live site is unchanged. No new physical-iPhone acceptance, independent review or publication is claimed.
 
 ## Night Prayer source intake · 3 November 2026
 
