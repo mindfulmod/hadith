@@ -1,0 +1,2983 @@
+{
+  "schemaVersion": 1,
+  "status": "personal-prototype-only",
+  "independentReview": "pending",
+  "sourceId": "wikisource-bukhari-funerals-r393137",
+  "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+  "inventorySha256": "b8fe53c6aa2ae70c52b5f14b43462f14ed9a3db2ac2f59a282e77686670dd2fe",
+  "createdAt": "2026-11-03",
+  "sources": [
+    {
+      "id": "arabic-funerals",
+      "label": "Arabic Wikisource · fixed revision 393137",
+      "kind": "arabic-input",
+      "format": "web",
+      "url": "https://ar.wikisource.org/w/index.php?title=%D8%B5%D8%AD%D9%8A%D8%AD+%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A%2F%D9%83%D8%AA%D8%A7%D8%A8+%D8%A7%D9%84%D8%AC%D9%86%D8%A7%D8%A6%D8%B2&oldid=393137"
+    },
+    {
+      "id": "bewley-funerals",
+      "label": "Aisha Bewley · Funerals",
+      "kind": "english-comparison",
+      "format": "web",
+      "url": "https://aishabewley.org/bukhari11"
+    },
+    {
+      "id": "islamhouse-khan",
+      "label": "IslamHouse · Khan-family English comparison",
+      "kind": "english-comparison",
+      "format": "web",
+      "url": "https://islamhouse.com/en/books/70510"
+    },
+    {
+      "id": "brill-1862",
+      "label": "Historical Arabic print · Brill 1862",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+    },
+    {
+      "id": "dar-ibn-kathir-2002",
+      "label": "Arabic print · Dar Ibn Kathir 2002",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+    },
+    {
+      "id": "qastallani-isolated-grave",
+      "label": "Al-Qastallani · Irshad al-Sari · the isolated-grave and foundling readings",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://ablibrary.net/book_content/b/18673/148?lang=ar"
+    },
+    {
+      "id": "ayni-story-pointer",
+      "label": "Al-Ayni · Umdat al-Qari · the separate story pointer",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://hdith.com/encyclopedia/book/b-43/h/394053"
+    },
+    {
+      "id": "ayni-turning-away",
+      "label": "Al-Ayni · Umdat al-Qari · active and passive turning-away readings",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://hadithunlocked.com/sharh/bukhari-ayni/bukhari:1338"
+    },
+    {
+      "id": "ibn-hajar-grave-responses",
+      "label": "Ibn Hajar · Fath al-Bari · the two responses and lexical alternatives",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.islamweb.net/ar/library/content/52/2528/باب-ما-جاء-في-عذاب-القبر"
+    },
+    {
+      "id": "ali-qari-qiraf",
+      "label": "Ali al-Qari · Mirqat al-Mafatih · the qiraf expression",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://islamweb.net/ar/library/content/79/3421/باب-دفن-الميت"
+    },
+    {
+      "id": "ayni-qiraf-closing",
+      "label": "Al-Ayni · Umdat al-Qari · the qiraf expression and closing attributions",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://hadithunlocked.com/sharh/bukhari-ayni/bukhari:1342"
+    },
+    {
+      "id": "ibn-hajar-grass-smith",
+      "label": "Ibn Hajar · Fath al-Bari · fresh grass, idhkhir and the smith",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://ablibrary.net/book_content/b/2608/42?lang=ar"
+    },
+    {
+      "id": "ibn-hajar-small-ear-change",
+      "label": "Ibn Hajar · Fath al-Bari · the small-change-at-the-ear wording",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://islamweb.net/ar/library/content/52/2486/باب-هل-يخرج-الميت-من-القبر-واللحد-لعلة"
+    }
+  ],
+  "scope": "Eighteen selected digital reports 1271–1288, thirteen complete chapters 65–77 and two separate Arabic context paragraphs. Later 1289–1330 remain outside this batch.",
+  "editionNote": "Newly authored AI-assisted working English, not Darussalam wording or independent certification. All selected digital Arabic and original inputs remain unchanged. Complete chains, honorifics, repetitions, uncertainty and narrator comments are retained. Earlier comparison transcription mistakes are explicitly corrected without rewriting historical audit files.",
+  "chapters": [
+    {
+      "id": "chapter-65",
+      "headingId": "باب_الصلاة_على_القبر_بعد_ما_يدفن",
+      "contextIds": [],
+      "entryNumbers": [
+        1271,
+        1272
+      ],
+      "title": "Praying over a grave after burial",
+      "titleArabic": "باب الصلاة على القبر بعد ما يدفن",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in this selected chapter."
+    },
+    {
+      "id": "chapter-66",
+      "headingId": "باب_الميت_يسمع_خفق_النعال",
+      "contextIds": [],
+      "entryNumbers": [
+        1273
+      ],
+      "title": "The dead person hears the sound of sandals",
+      "titleArabic": "باب الميت يسمع خفق النعال",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in this selected chapter."
+    },
+    {
+      "id": "chapter-67",
+      "headingId": "باب_من_أحب_الدفن_في_الأرض_المقدسة_أو_نحوها",
+      "contextIds": [],
+      "entryNumbers": [
+        1274
+      ],
+      "title": "One who wishes to be buried in the holy land or somewhere like it",
+      "titleArabic": "باب من أحب الدفن في الأرض المقدسة أو نحوها",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in this selected chapter."
+    },
+    {
+      "id": "chapter-68",
+      "headingId": "باب_الدفن_بالليل",
+      "contextIds": [
+        "mwAUs"
+      ],
+      "entryNumbers": [
+        1275
+      ],
+      "title": "Burial at night",
+      "titleArabic": "باب الدفن بالليل",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "Original Arabic chapter context retained separately; English translation pending.",
+      "contextDifferences": [
+        {
+          "auditPath": "research/funerals-seventh-wording-addendum.json",
+          "auditSha256": "3329b60c7992c75d57c46d69e13e20b8b8702523685a60d0329d9a9adc32f74b",
+          "differenceId": "chapter-68-companion-honorific"
+        }
+      ]
+    },
+    {
+      "id": "chapter-69",
+      "headingId": "باب_بناء_المسجد_على_القبر",
+      "contextIds": [],
+      "entryNumbers": [
+        1276
+      ],
+      "title": "Building a place of worship over a grave",
+      "titleArabic": "باب بناء المسجد على القبر",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in this selected chapter."
+    },
+    {
+      "id": "chapter-70",
+      "headingId": "باب_من_يدخل_قبر_المرأة",
+      "contextIds": [],
+      "entryNumbers": [
+        1277
+      ],
+      "title": "Who enters a woman’s grave",
+      "titleArabic": "باب من يدخل قبر المرأة",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in this selected chapter."
+    },
+    {
+      "id": "chapter-71",
+      "headingId": "باب_الصلاة_على_الشهيد",
+      "contextIds": [],
+      "entryNumbers": [
+        1278,
+        1279
+      ],
+      "title": "Praying over a martyr",
+      "titleArabic": "باب الصلاة على الشهيد",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in this selected chapter."
+    },
+    {
+      "id": "chapter-72",
+      "headingId": "باب_دفن_الرجلين_والثلاثة_في_قبر",
+      "contextIds": [],
+      "entryNumbers": [
+        1280
+      ],
+      "title": "Burying two and three men in a grave",
+      "titleArabic": "باب دفن الرجلين والثلاثة في قبر",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in this selected chapter.",
+      "contextDifferences": [
+        {
+          "auditPath": "research/funerals-seventh-wording-addendum.json",
+          "auditSha256": "3329b60c7992c75d57c46d69e13e20b8b8702523685a60d0329d9a9adc32f74b",
+          "differenceId": "chapter-72-heading"
+        }
+      ]
+    },
+    {
+      "id": "chapter-73",
+      "headingId": "باب_من_لم_ير_غسل_الشهداء",
+      "contextIds": [],
+      "entryNumbers": [
+        1281
+      ],
+      "title": "One who did not consider washing martyrs necessary",
+      "titleArabic": "باب من لم ير غسل الشهداء",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in this selected chapter."
+    },
+    {
+      "id": "chapter-74",
+      "headingId": "باب_من_يقدم_في_اللحد",
+      "contextIds": [
+        "mwAWE"
+      ],
+      "entryNumbers": [
+        1282,
+        1283
+      ],
+      "title": "Who is placed first in the side niche of the grave",
+      "titleArabic": "باب من يقدم في اللحد",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "Original Arabic chapter context retained separately; English translation pending."
+    },
+    {
+      "id": "chapter-75",
+      "headingId": "باب_الإذخر_والحشيش_في_القبر",
+      "contextIds": [],
+      "entryNumbers": [
+        1284
+      ],
+      "title": "Idhkhir and grass in the grave",
+      "titleArabic": "باب الإذخر والحشيش في القبر",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in this selected chapter."
+    },
+    {
+      "id": "chapter-76",
+      "headingId": "باب_هل_يخرج_الميت_من_القبر_واللحد_لعلة",
+      "contextIds": [],
+      "entryNumbers": [
+        1285,
+        1286,
+        1287
+      ],
+      "title": "Whether the dead person may be taken out of the grave and its side niche for a reason",
+      "titleArabic": "باب هل يخرج الميت من القبر واللحد لعلة",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in this selected chapter."
+    },
+    {
+      "id": "chapter-77",
+      "headingId": "باب_اللحد_والشق_في_القبر",
+      "contextIds": [],
+      "entryNumbers": [
+        1288
+      ],
+      "title": "The side niche and the central trench in a grave",
+      "titleArabic": "باب اللحد والشق في القبر",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in this selected chapter."
+    }
+  ],
+  "entries": [
+    {
+      "number": 1271,
+      "id": "bukhari:1271",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAT4:0",
+      "chapterId": "chapter-65",
+      "paragraphIds": [
+        "mwAT4"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1271-1",
+          "paragraphId": "mwAT4",
+          "start": 0,
+          "end": 125,
+          "kind": "chain",
+          "arabic": "[1271] حدثنا حجاج بن منهال حدثنا شعبة قال: حدثني سليمان الشيباني قال: سمعت الشعبي قال: أخبرني من مر مع النبي ﷺ على قبر منبوذ ",
+          "english": "Hajjaj ibn Minhal related to us: Shu‘bah related to us; he said: Sulayman al-Shaybani related to me; he said: I heard al-Sha‘bi say: One who passed with the Prophet, may Allah bless him and grant him peace, by a grave set apart informed me:",
+          "arabicSha256": "5e5e5b0d80231cde5434ab3a8d3790b1af1cb580fb9fd02330fa6b38a00e5805",
+          "englishSha256": "a317698e1a834159c0a04affd808d32c39c7404bb8b6fee01d43e31549813764"
+        },
+        {
+          "id": "1271-2",
+          "paragraphId": "mwAT4",
+          "start": 125,
+          "end": 142,
+          "kind": "report",
+          "arabic": "فأمهم وصلوا خلفه ",
+          "english": "He led them, and they prayed behind him.",
+          "arabicSha256": "4ca237f2b2349a0f7064f6986e7fb6b7f7c7a3a79962827618363491a883cddb",
+          "englishSha256": "38fd7675a01fe1db284b1c7e06dd10f8e225e5e29c0b093e5b8e0f8a3261ba73"
+        },
+        {
+          "id": "1271-3",
+          "paragraphId": "mwAT4",
+          "start": 142,
+          "end": 205,
+          "kind": "transmission-note",
+          "arabic": "قلت: من حدثك هذا يا أبا عمرو قال ابن عباس رضى الله تعالى عنهما ",
+          "english": "I asked, “Who related this to you, Abu ‘Amr?” He said, “Ibn ‘Abbas, may Allah Most High be pleased with them both.”",
+          "arabicSha256": "b042b01b7e6d791020449e6ec99dfe545855edd144475ac6eb30e747ae20684f",
+          "englishSha256": "3e862ef9999bb7caea043d44f25b0a968c2d4b34ec733da01c852949a1958965"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            335
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            322
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1271",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-seventh-wording-addendum.json",
+            "sha256": "3329b60c7992c75d57c46d69e13e20b8b8702523685a60d0329d9a9adc32f74b",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "d648ef7ec7391e370cd84112b2f81bdb6634939b504d061fd9de7b8c997f8724",
+            "occurrence": 1
+          },
+          "note": "Changes passing with the Prophet to a person who had seen him; renders praying behind him as forming rows. The earlier audit’s your Prophet description belongs to a different occurrence and is corrected here."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.420",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.420",
+            "recordSha256": "c6f666a942aaf0755689deab39106a7f4e9b83e8e24f335e145240205f10be11"
+          }
+        }
+      ],
+      "notes": [
+        "The occurrence was located by its body and chain in both inspected prints and English passages. Wording, role and honorific review remain pending.",
+        "Keep the full Sulayman al-Shaybani route, with the Prophet, led them and prayed behind him. The final question addresses Abu Amr and is a transmission exchange. The grave-set-apart reading is documented alongside the alternative foundling construction; no vocalization is silently supplied.",
+        "The historical opening transmission verb differs from selected and modern. Selected: «حدثني سليمان الشيباني». brill-1862 (PDF 335): «أخبرنا سليمان الشيباني». dar-ibn-kathir-2002 (PDF 322): «حدثني سليمان الشيباني».",
+        "The historical route says informed us; selected and modern say related to me. Selected: «حدثني سليمان الشيباني». brill-1862 (PDF 335): «أخبرنا سليمان الشيباني». dar-ibn-kathir-2002 (PDF 322): «حدثني سليمان الشيباني».",
+        "Printed reference 1336 · app reference 1271. Individually located EPUB comparison: 2.23.420. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "5e307801732ce3ddfc6e98206f08f9987e7cfa09b9a2ec4335c74604de5ff126",
+      "englishSha256": "8f4a8e394f35081c7b9a18870bc529418db782eb068bc23cb2cce45a8d847499",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1336 · app reference 1271",
+          "pdfPage": 322,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        },
+        {
+          "id": "lexical",
+          "sourceId": "qastallani-isolated-grave",
+          "locator": "Al-Qastallani · Irshad al-Sari · the isolated-grave and foundling readings",
+          "scope": "Classical lexical or transmission discussion consulted. Separate from narration and not independent approval of this working translation."
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAT4:0",
+        "sourceReference": {
+          "label": "1271",
+          "number": 1271,
+          "markerId": "mwAT4:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAT4",
+            "textSha256": "5e307801732ce3ddfc6e98206f08f9987e7cfa09b9a2ec4335c74604de5ff126",
+            "origin": {
+              "blockId": "mwAT4",
+              "blockSha256": "5e307801732ce3ddfc6e98206f08f9987e7cfa09b9a2ec4335c74604de5ff126",
+              "start": 0,
+              "end": 205
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "7ecb764f311b8d062e075c152fa3b88bf1b096261db3c2d190dfb800b6c24011"
+    },
+    {
+      "number": 1272,
+      "id": "bukhari:1272",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAUA:0",
+      "chapterId": "chapter-65",
+      "paragraphIds": [
+        "mwAUA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1272-1",
+          "paragraphId": "mwAUA",
+          "start": 0,
+          "end": 97,
+          "kind": "chain",
+          "arabic": "[1272] حدثنا محمد بن الفضل حدثنا حماد بن زيد عن ثابت عن أبي رافع عن أبي هريرة رضى الله تعالى عنه ",
+          "english": "Muhammad ibn al-Fadl related to us: Hammad ibn Zayd related to us, from Thabit, from Abu Rafi‘, from Abu Hurayrah, may Allah Most High be pleased with him:",
+          "arabicSha256": "409b0b0f476a71ba280b3fb772c2bdc4a8e97045726a68b5874ca0929bef216e",
+          "englishSha256": "390697d08cf8963edbb8dd73135347111c6f799ffd53b47b9a8432d516e8b5e1"
+        },
+        {
+          "id": "1272-2",
+          "paragraphId": "mwAUA",
+          "start": 97,
+          "end": 267,
+          "kind": "report",
+          "arabic": "أن أسود رجلا أو امرأة كان يقم المسجد فمات ولم يعلم النبي ﷺ بموته فذكره ذات يوم، فقال: ما فعل ذلك الإنسان قالوا مات يا رسول الله قال أفلا آذنتموني فقالوا إنه كان كذا وكذا ",
+          "english": "A Black person—a man or a woman—used to sweep the mosque. The person died, and the Prophet, may Allah bless him and grant him peace, did not know of his death. He mentioned him one day and asked, “What happened to that person?” They said, “He died, Messenger of Allah.” He said, “Why did you not inform me?” They said, “He was such and such”—",
+          "arabicSha256": "558d420a4a02ef0ccf075f690758d38a99bbad16fbb636a4536cc4e055969352",
+          "englishSha256": "fbf61ffaa7785028c405ae7235c539796162d2c27234c42f821c3e2a59bdbde4"
+        },
+        {
+          "id": "1272-3",
+          "paragraphId": "mwAUA",
+          "start": 267,
+          "end": 289,
+          "kind": "transmission-note",
+          "arabic": "قصته قال: فحقروا شأنه ",
+          "english": "they mentioned his story. He said: They considered him of little importance.",
+          "arabicSha256": "4a7b61b0c9ef97b2971f381bbd8755fc744ed1e78ea290f3249c4af31b7be005",
+          "englishSha256": "087d915fc482ce6dba792773657b7babb5d4d960f02b17c030cdb3d5c7d2c331"
+        },
+        {
+          "id": "1272-4",
+          "paragraphId": "mwAUA",
+          "start": 289,
+          "end": 330,
+          "kind": "report",
+          "arabic": "قال: فدلوني على قبره فأتى قبره فصلى عليه ",
+          "english": "He said, “Then show me his grave.” He came to his grave and prayed over him.",
+          "arabicSha256": "2ac832c22e6f77b638637807d9c81ca40f4db963e5571f6c318e685ad386d252",
+          "englishSha256": "34933fdc7e172a046487ff67ece7790ce7f44ec9c119a990bb2d612286bc339f"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            335
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            322
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1272",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-seventh-wording-addendum.json",
+            "sha256": "3329b60c7992c75d57c46d69e13e20b8b8702523685a60d0329d9a9adc32f74b",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "1b7e775d93b2675bc4031972a9ffdfebdc88d8401e24e1ffc78b6eda15f5ee1b",
+            "occurrence": 1
+          },
+          "note": "Absorbs the narrator’s story pointer and assessment into the reported reply. Keep the short story pointer and the separate narrator appraisal."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.421",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.421",
+            "recordSha256": "dacdb505682fcf5377490335e76dd057d786770a8617ce135a4ae56a7c282227"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Abu Huraira: ",
+            "A black person, a male or a female used to clean the Mosque and then died. The Prophet (p.b.u.h) did not know about it . One day the Prophet remembered him and said, \"What happened to that person?\" The people replied, \"O Allah's Apostle! He died.\" He said, \"Why did you not inform me?\" They said, \"His story was so and so (i.e. regarded him as insignificant).\" He said, \"Show me his grave.\" He then went to his grave and offered the funeral prayer. "
+          ],
+          "damagedExcerpt": "insignificant",
+          "note": "Places فحقروا شأنه inside an explanatory parenthesis within reported speech, obscuring its narrator role."
+        }
+      ],
+      "notes": [
+        "The occurrence was located by its body and chain in both inspected prints and English passages. Wording, role and honorific review remain pending.",
+        "Keep the man-or-woman alternative and subsequent masculine pronouns. Al-Ayni explains قصته as an elliptical they mentioned his story; retain it and the separate narrator appraisal, outside the reported reply. Do not turn the narrator’s low-importance description into a Prophetic judgment.",
+        "Printed reference 1337 · app reference 1272. Individually located EPUB comparison: 2.23.421. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "35da0e414208c3c75cdca096ff39d6a335823432af411280e13418dc3907b26c",
+      "englishSha256": "47c8bd159a2fcbede5fe1c93dae0cee75f417e3114d6b31706cc03418f9688b8",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1337 · app reference 1272",
+          "pdfPage": 322,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        },
+        {
+          "id": "lexical",
+          "sourceId": "ayni-story-pointer",
+          "locator": "Al-Ayni · Umdat al-Qari · the separate story pointer",
+          "scope": "Classical lexical or transmission discussion consulted. Separate from narration and not independent approval of this working translation."
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "1272-source-context",
+          "label": "A separate narrator comment",
+          "text": "The short story pointer and the comment about the person’s standing belong to the narration. They remain separate from the reply and the Prophet’s words.",
+          "citations": [
+            "base",
+            "printed-reference",
+            "lexical"
+          ],
+          "related": []
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAUA:0",
+        "sourceReference": {
+          "label": "1272",
+          "number": 1272,
+          "markerId": "mwAUA:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAUA",
+            "textSha256": "35da0e414208c3c75cdca096ff39d6a335823432af411280e13418dc3907b26c",
+            "origin": {
+              "blockId": "mwAUA",
+              "blockSha256": "35da0e414208c3c75cdca096ff39d6a335823432af411280e13418dc3907b26c",
+              "start": 0,
+              "end": 330
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "a4704a3ee9682d0d034f893c088f72418b7fbae7abc21bdd970175045de0e1ad"
+    },
+    {
+      "number": 1273,
+      "id": "bukhari:1273",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAUM:0",
+      "chapterId": "chapter-66",
+      "paragraphIds": [
+        "mwAUM"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1273-1",
+          "paragraphId": "mwAUM",
+          "start": 0,
+          "end": 142,
+          "kind": "chain",
+          "arabic": "[1273] حدثنا عياش حدثنا عبد الأعلى حدثنا سعيد قال، وقال لي خليفة حدثنا ابن زريع حدثنا سعيد عن قتادة عن أنس رضى الله تعالى عنه عن النبي ﷺ قال: ",
+          "english": "‘Ayyash related to us: ‘Abd al-A‘la related to us: Sa‘id related to us. He said: And Khalifah said to me: Ibn Zuray‘ related to us: Sa‘id related to us, from Qatadah, from Anas, may Allah Most High be pleased with him, from the Prophet, may Allah bless him and grant him peace, who said:",
+          "arabicSha256": "53a7e0f0d96461a805a29d649a0dca7eebe9fd8d1f61993290049b9a762e6dfb",
+          "englishSha256": "ebc557e313fedf09019fe6b524afc7a30c152afaad18fb7845494c26b5414b88"
+        },
+        {
+          "id": "1273-2",
+          "paragraphId": "mwAUM",
+          "start": 142,
+          "end": 359,
+          "kind": "report",
+          "arabic": "العبد إذا وضع في قبره وتولي وذهب أصحابه حتى إنه ليسمع قرع نعالهم أتاه ملكان فأقعداه فيقولان له ما كنت تقول في هذا الرجل محمد ﷺ فيقول أشهد أنه عبد الله ورسوله فيقال انظر إلى مقعدك من النار أبدلك الله به مقعدا من الجنة ",
+          "english": "“When the servant is placed in his grave and his companions have turned away and departed, he even hears the sound of their sandals. Two angels come to him and make him sit up. They ask him, ‘What did you use to say about this man, Muhammad, may Allah bless him and grant him peace?’ He says, ‘I testify that he is Allah’s servant and His Messenger.’ He is told, ‘Look at your place in the Fire. Allah has exchanged it for a place in the Garden.’”",
+          "arabicSha256": "576f48207207be31e764e6c656218a281367de6645e97060659d4d39b84af775",
+          "englishSha256": "20065270173514456608b5d5ed129b74455a2410c2f4a573769052eaad935cfc"
+        },
+        {
+          "id": "1273-3",
+          "paragraphId": "mwAUM",
+          "start": 359,
+          "end": 544,
+          "kind": "report",
+          "arabic": "قال النبي ﷺ فيراهما جميعا وأما الكافر أو المنافق فيقول لا أدري كنت أقول ما يقول الناس فيقال لا دريت ولا تليت ثم يضرب بمطرقة من حديد ضربة بين أذنيه فيصيح صيحة يسمعها من يليه إلا الثقلين ",
+          "english": "The Prophet, may Allah bless him and grant him peace, said, “He sees them both. As for the disbeliever—or the hypocrite—he says, ‘I do not know. I used to say what the people said.’ He is told, ‘You neither knew nor followed.’ Then he is struck once between his ears with an iron hammer. He gives a cry that those near him hear, except humans and jinn.”",
+          "arabicSha256": "60ea993c17e0bc543c76d6fe7503d344faa001b779049f49e6acb556de96f837",
+          "englishSha256": "66f993b41fd037d2a223623386d24ff7fed32f6458ce28c5fba55b179feacbc5"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            335,
+            336
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            322
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1273",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-seventh-wording-addendum.json",
+            "sha256": "3329b60c7992c75d57c46d69e13e20b8b8702523685a60d0329d9a9adc32f74b",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "55b8a39dd29d11a5d6f2819f701ebb50f08f35937834a70c257ea96b88a27d36",
+            "occurrence": 1
+          },
+          "note": "Abridges the two opening transmission routes."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.422",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.422",
+            "recordSha256": "384d96067642d786c42dac3267be26210e41b522ecf4e44dfc9c9e4763cd6924"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Anas: ",
+            "The Prophet said, \"When a human being is laid in his grave and his companions return and he even hears their foot steps, two angels come to him and make him sit and ask him: What did you use to say about this man, Muhammad ? He will say: I testify that he is Allah's slave and His Apostle. Then it will be said to him, 'Look at your place in the Hell-Fire. Allah has given you a place in Paradise instead of it.' \" The Prophet added, \"The dead person will see both his places. But a non-believer or a hypocrite will say to the angels, 'I do not know, but I used to say what the people used to say! It will be said to him, 'Neither did you know nor did you take the guidance (by reciting the Quran).' Then he will be hit with an iron hammer between his two ears, and he will cry and that cry will be heard by whatever approaches him except human beings and jinns.\" "
+          ],
+          "damagedExcerpt": "Quran",
+          "note": "Abridges opening routes and adds a Quran-recitation explanation to ولا تليت; the final hearers’ relation is also rendered more narrowly."
+        }
+      ],
+      "notes": [
+        "Preserve both opening routes, the narrator uncertainty and the two quoted responses without substituting English explanatory material.",
+        "Keep both opening routes, the unexpanded Ayyash and Ibn Zuray names, all three Prophetic honorifics and the disbeliever-or-hypocrite uncertainty. The working English uses the active companions turned away reading discussed by al-Ayni; Ibn Hajar and the modern vocalization also record a passive reading about attending to the deceased’s affairs. Do not silently vocalize the selected source. The following reading of تليت is one classical lexical analysis; Quran recitation and other explanations remain alternatives in the commentary, not extra quoted objects. Keep one iron hammer, one blow and near him.",
+        "The historical second route has a transfer marker and the name Yazid, absent from selected and modern. Selected: «وقال لي خليفة حدثنا ابن زريع». brill-1862 (PDF 335): «ح وقال لي خليفة حدثنا يزيد بن زريع». dar-ibn-kathir-2002 (PDF 322): «وقال لي خليفة حدثنا ابن زريع».",
+        "The modern occurrence has إذ where selected and historical have إذا. Both remain recorded without a source alteration. Selected: «العبد إذا وضع». brill-1862 (PDF 335): «العبد إذا وضع». dar-ibn-kathir-2002 (PDF 322): «العبد إذ وضع».",
+        "Printed reference 1338 · app reference 1273. Individually located EPUB comparison: 2.23.422. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "bcef78c5f3ed1e206ef88171a205a1b9999952e0df0c34485a734df9ae886954",
+      "englishSha256": "cf8f8321ed1ebe604b4609937ad1a20895e0a9bc8643908ce283165ac627c9e5",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1338 · app reference 1273",
+          "pdfPage": 322,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        },
+        {
+          "id": "lexical",
+          "sourceId": "ayni-turning-away",
+          "locator": "Al-Ayni · Umdat al-Qari · active and passive turning-away readings",
+          "scope": "Classical lexical or transmission discussion consulted. Separate from narration and not independent approval of this working translation."
+        },
+        {
+          "id": "lexical-2",
+          "sourceId": "ibn-hajar-grave-responses",
+          "locator": "Ibn Hajar · Fath al-Bari · the two responses and lexical alternatives",
+          "scope": "Classical lexical or transmission discussion consulted. Separate from narration and not independent approval of this working translation."
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "1273-source-context",
+          "label": "Two complete routes and a retained alternative",
+          "text": "Both opening chains remain, along with “disbeliever—or hypocrite.” The source notes record alternative grammatical and lexical readings without altering the selected Arabic.",
+          "citations": [
+            "base",
+            "printed-reference",
+            "lexical"
+          ],
+          "related": []
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAUM:0",
+        "sourceReference": {
+          "label": "1273",
+          "number": 1273,
+          "markerId": "mwAUM:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAUM",
+            "textSha256": "bcef78c5f3ed1e206ef88171a205a1b9999952e0df0c34485a734df9ae886954",
+            "origin": {
+              "blockId": "mwAUM",
+              "blockSha256": "bcef78c5f3ed1e206ef88171a205a1b9999952e0df0c34485a734df9ae886954",
+              "start": 0,
+              "end": 544
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "0a180763f5185cec778932b389a128da7153423f40d60f4e824a15601b6e90f0"
+    },
+    {
+      "number": 1274,
+      "id": "bukhari:1274",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAUg:0",
+      "chapterId": "chapter-67",
+      "paragraphIds": [
+        "mwAUg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1274-1",
+          "paragraphId": "mwAUg",
+          "start": 0,
+          "end": 104,
+          "kind": "chain",
+          "arabic": "[1274] حدثنا محمود حدثنا عبد الرزاق أخبرنا معمر عن ابن طاوس عن أبيه عن أبي هريرة رضى الله تعالى عنه قال ",
+          "english": "Mahmud related to us: ‘Abd al-Razzaq related to us: Ma‘mar informed us, from Ibn Tawus, from his father, from Abu Hurayrah, may Allah Most High be pleased with him, who said:",
+          "arabicSha256": "1153f401944523714e2ce0948bea18b44fe9848b1493247fb985b2e432adcddc",
+          "englishSha256": "1c6b48570b96d6efd0525f4646c4d2579eb92d34298f4ed3ef070da91c9d9d70"
+        },
+        {
+          "id": "1274-2",
+          "paragraphId": "mwAUg",
+          "start": 104,
+          "end": 385,
+          "kind": "report",
+          "arabic": "أرسل ملك الموت إلى موسى عليهما السلام فلما جاءه صكه فرجع إلى ربه، فقال أرسلتني إلى عبد لا يريد الموت فرد الله عليه عينه، وقال ارجع فقل له يضع يده على متن ثور فله بكل ما غطت به يده بكل شعرة سنة قال أي رب ثم ماذا قال ثم الموت قال: فالآن فسأل الله أن يدنيه من الأرض المقدسة رمية بحجر ",
+          "english": "The angel of death was sent to Musa, peace be upon them both. When he came to him, he struck him. He returned to his Lord and said, “You sent me to a servant who does not want death.” Allah restored his eye and said, “Return and tell him to place his hand on the back of an ox. For every hair his hand covers, he will have a year.” He said, “My Lord, then what?” He said, “Then death.” He said, “Then now.” He asked Allah to bring him near to the holy land, a stone’s throw away.",
+          "arabicSha256": "43508fabf3c90f4384e5bb458e8199fb8b83f875f2380f21984974b6e2923152",
+          "englishSha256": "3beb97a9d4d0faab57b5d00a239bfe49610dac73b0f7e2cb042e571f9c2ef98f"
+        },
+        {
+          "id": "1274-3",
+          "paragraphId": "mwAUg",
+          "start": 385,
+          "end": 465,
+          "kind": "report",
+          "arabic": "قال: قال رسول الله ﷺ: فلو كنت ثم لأريتكم قبره إلى جانب الطريق عند الكثيب الأحمر ",
+          "english": "He said: The Messenger of Allah, may Allah bless him and grant him peace, said, “If I were there, I would show you his grave beside the road, by the red sand dune.”",
+          "arabicSha256": "1b2e43e287ff6d4eb5a4e01f8eaf1fbcd21361535257555d8de92f6d57c8fe5f",
+          "englishSha256": "7d3904189a982d4d8a5015d153780c4d88862ff29f5d55f4f86ccf8e086a5b67"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            336
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            322,
+            323
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1274",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-seventh-wording-addendum.json",
+            "sha256": "3329b60c7992c75d57c46d69e13e20b8b8702523685a60d0329d9a9adc32f74b",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "f8dc04967e99dbb19897eb158192b22925791afdcb2430ecee36cce9d30192c4",
+            "occurrence": 1
+          },
+          "note": "Specifies a black eye beyond the selected صكه; a fuller injury clause exists in the historical print but is absent from this selected occurrence."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.423",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.423",
+            "recordSha256": "e222c9be535cb6ba4b5258229b7ceca493683be6b7a6db220d738e32872ac4e6"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Abu Huraira: ",
+            "The angel of death was sent to Moses and when he went to him, Moses slapped him severely, spoiling one of his eyes. The angel went back to his Lord, and said, \"You sent me to a slave who does not want to die.\" Allah restored his eye and said, \"Go back and tell him (i.e. Moses) to place his hand over the back of an ox, for he will be allowed to live for a number of years equal to the number of hairs coming under his hand.\" (So the angel came to him and told him the same). Then Moses asked, \"O my Lord! What will be then?\" He said, \"Death will be then.\" He said, \"(Let it be) now.\" He asked Allah that He bring him near the Sacred Land at a distance of a stone's throw. Allah's Apostle (p.b.u.h) said, \"Were I there I would show you the grave of Moses by the way near the red sand hill.\" "
+          ],
+          "damagedExcerpt": "severely",
+          "note": "Supplies severe slapping/eye injury and explanatory action beyond the selected صكه. Keep the historical injury clause as a variant, and preserve the selected dual honorific scope."
+        }
+      ],
+      "notes": [
+        "The historical print has an eye-injury clause absent from selected and modern text. English explanations must not silently insert it.",
+        "Keep the dual peace honorific for Musa and the angel, struck him without importing the historical eye-injury clause, restored his eye, each hair/year, then now, the stone’s-throw distance and the separate Messenger statement. Do not insert an angel-return scene or an explicit I want to die statement.",
+        "The historical print adds an eye-injury clause and uses a different honorific. The selected dual honorific and shorter wording remain unchanged. Selected: «إلى موسى عليهما السلام فلما جاءه صكه فرجع إلى ربه». brill-1862 (PDF 336): «إلى موسى صلى الله عليه وسلم فلما جاءه صكه ففقأ عينه فرجع إلى ربه». dar-ibn-kathir-2002 (PDF 322): «إلى موسى عليهما السلام فلما جاءه صكه فرجع إلى ربه».",
+        "The historical preposition differs from selected and modern. Selected: «فرد الله عليه عينه». brill-1862 (PDF 336): «فرد الله إليه عينه». dar-ibn-kathir-2002 (PDF 323): «فرد الله عليه عينه».",
+        "The historical opening is singular to me; selected and modern are plural to us. Selected: «حدثنا محمود». brill-1862 (PDF 336): «حدثني محمود». dar-ibn-kathir-2002 (PDF 322): «حدثنا محمود».",
+        "The historical connector is fa; selected and modern use waw. Selected: «وقال ارجع». brill-1862 (PDF 336): «فقال ارجع». dar-ibn-kathir-2002 (PDF 323): «وقال ارجع».",
+        "The historical reply includes إذن after now; selected and modern do not. Selected: «قال: فالآن». brill-1862 (PDF 336): «قال فالآن إذن». dar-ibn-kathir-2002 (PDF 323): «قال فالآن».",
+        "The historical request includes تعالى; selected and modern do not. Selected: «فسأل الله». brill-1862 (PDF 336): «فسأل الله تعالى». dar-ibn-kathir-2002 (PDF 323): «فسأل الله».",
+        "Printed reference 1339 · app reference 1274. Individually located EPUB comparison: 2.23.423. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "8884595b36cd5abfe76592b22c0220e1ad4095c207ba54bd423a7972ba09d028",
+      "englishSha256": "940075d610c448fa0c0f474c3abd3d6a5f759310bfc1f03d5fd0c87615323786",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1339 · app reference 1274",
+          "pdfPage": 322,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "1274-source-context",
+          "label": "The wording of this occurrence",
+          "text": "The selected text says that Musa struck the angel. A further eye-injury phrase occurs in the historical print; it is documented in the source notes rather than inserted here.",
+          "citations": [
+            "base",
+            "printed-reference"
+          ],
+          "related": []
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAUg:0",
+        "sourceReference": {
+          "label": "1274",
+          "number": 1274,
+          "markerId": "mwAUg:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAUg",
+            "textSha256": "8884595b36cd5abfe76592b22c0220e1ad4095c207ba54bd423a7972ba09d028",
+            "origin": {
+              "blockId": "mwAUg",
+              "blockSha256": "8884595b36cd5abfe76592b22c0220e1ad4095c207ba54bd423a7972ba09d028",
+              "start": 0,
+              "end": 465
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "ec8485c6198aaf73fc175254e04f09e999004fdd5c9ab9e9c5bec10dae141067"
+    },
+    {
+      "number": 1275,
+      "id": "bukhari:1275",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAUw:0",
+      "chapterId": "chapter-68",
+      "paragraphIds": [
+        "mwAUw"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1275-1",
+          "paragraphId": "mwAUw",
+          "start": 0,
+          "end": 101,
+          "kind": "chain",
+          "arabic": "[1275] حدثنا عثمان بن أبي شيبة حدثنا جرير عن الشيباني عن الشعبي عن ابن عباس رضى الله تعالى عنهما قال ",
+          "english": "‘Uthman ibn Abi Shaybah related to us: Jarir related to us, from al-Shaybani, from al-Sha‘bi, from Ibn ‘Abbas, may Allah Most High be pleased with them both, who said:",
+          "arabicSha256": "8fb8a367ae7c2be6a7b01bda4a033798b24274a8c621cf280d2478d9349bdd50",
+          "englishSha256": "e328d2c4c5b2210b26dd2397dad46e28ffa7d763bec613ceae08468272f007e6"
+        },
+        {
+          "id": "1275-2",
+          "paragraphId": "mwAUw",
+          "start": 101,
+          "end": 214,
+          "kind": "report",
+          "arabic": "صلى النبي ﷺ على رجل بعد ما دفن بليلة قام هو وأصحابه وكان سأل عنه، فقال من هذا فقالوا فلان دفن البارحة فصلوا عليه ",
+          "english": "The Prophet, may Allah bless him and grant him peace, prayed over a man one night after he had been buried. He and his companions stood. He had asked about him, saying, “Who is this?” They said, “So-and-so; he was buried last night.” Then they prayed over him.",
+          "arabicSha256": "dc68251cd62bbf613bf484bcf3734378e39550812e3c27f36fd2ffa544e27bdf",
+          "englishSha256": "8ef3cc182990f2af954824cc52fcacb559896b3e6a38564a51b7d4b1470bafc8"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            336
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            323
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1275",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-seventh-wording-addendum.json",
+            "sha256": "3329b60c7992c75d57c46d69e13e20b8b8702523685a60d0329d9a9adc32f74b",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "9adcb4b7a3518daf5bfe18bd487984fe59309fbc2d6aec33dcbdfef52b38fec2",
+            "occurrence": 1
+          },
+          "note": "Its burial-at-night wording can lose the selected interval بعد ما دفن بليلة; review time relations directly from the Arabic."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.424",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.424",
+            "recordSha256": "0e3dbcf48e1e0d91dcbcec09b3ea78716c22b17177f49451f7c605478143bf7c"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Ibn Abbas: ",
+            "The Prophet (p.b.u.h) offered the funeral prayer of a man one night after he was buried, he and his companions stood up (for the Prayer). He had asked them about him before standing, saying, \"Who is this?\" They said, \"He is so and so and was buried last night.\" So all of them offered the funeral prayer. "
+          ],
+          "damagedExcerpt": "standing",
+          "note": "Adds an explanatory standing relation beyond the selected report."
+        }
+      ],
+      "notes": [
+        "The occurrence was located by its body and chain in both inspected prints and English passages. Wording, role and honorific review remain pending.",
+        "Keep the interval one night after burial, stood, had asked, last night and final plural they prayed. Do not add the explanatory before standing clause.",
+        "The historical opening is singular to me; selected and modern are plural to us. Selected: «حدثنا عثمان». brill-1862 (PDF 336): «حدثني عثمان». dar-ibn-kathir-2002 (PDF 323): «حدثنا عثمان».",
+        "Printed reference 1340 · app reference 1275. Individually located EPUB comparison: 2.23.424. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "22e26eeb99c3f1b27a8aa02af4687e77fbed19977a0f1a52eb81d5a570fe9c9d",
+      "englishSha256": "1dc567dff766b6ce94b1367dd68258264dfadb8ee42aa5205b8dcd4775a939c0",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1340 · app reference 1275",
+          "pdfPage": 323,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAUw:0",
+        "sourceReference": {
+          "label": "1275",
+          "number": 1275,
+          "markerId": "mwAUw:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAUw",
+            "textSha256": "22e26eeb99c3f1b27a8aa02af4687e77fbed19977a0f1a52eb81d5a570fe9c9d",
+            "origin": {
+              "blockId": "mwAUw",
+              "blockSha256": "22e26eeb99c3f1b27a8aa02af4687e77fbed19977a0f1a52eb81d5a570fe9c9d",
+              "start": 0,
+              "end": 214
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "0edd552a0b20879150ba290f3d8e044129ea8d09a104769cb065e9d86dc8bf6f"
+    },
+    {
+      "number": 1276,
+      "id": "bukhari:1276",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAU8:0",
+      "chapterId": "chapter-69",
+      "paragraphIds": [
+        "mwAU8"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1276-1",
+          "paragraphId": "mwAU8",
+          "start": 0,
+          "end": 87,
+          "kind": "chain",
+          "arabic": "[1276] حدثنا إسماعيل قال: حدثني مالك عن هشام عن أبيه عن عائشة رضى الله تعالى عنها قالت ",
+          "english": "Isma‘il related to us; he said: Malik related to me, from Hisham, from his father, from ‘A’ishah, may Allah Most High be pleased with her, who said:",
+          "arabicSha256": "f0fecac7921a4bd1760e8bf37ae21f48f780e90ccddfb5372e18b8a87873998c",
+          "englishSha256": "0bf91f393889aa4725fb38075772b62515e9176cf7f7b714f8e1bc9f98b277dd"
+        },
+        {
+          "id": "1276-2",
+          "paragraphId": "mwAU8",
+          "start": 87,
+          "end": 368,
+          "kind": "report",
+          "arabic": "لما اشتكى النبي ﷺ ذكرت بعض نسائه كنيسة رأينها بأرض الحبشة يقال لها مارية وكانت أم سلمة وأم حبيبة رضى الله تعالى عنهما أتتا أرض الحبشة فذكرتا من حسنها وتصاوير فيها فرفع رأسه، فقال أولئك إذا مات منهم الرجل الصالح بنوا على قبره مسجدا ثم صوروا فيه تلك الصورة أولئك شرار الخلق عند الله ",
+          "english": "When the Prophet, may Allah bless him and grant him peace, was ill, some of his wives mentioned a church they had seen in the land of al-Habashah, called Mariyah. Umm Salamah and Umm Habibah, may Allah Most High be pleased with them both, had been to the land of al-Habashah. They mentioned its beauty and pictures in it. He raised his head and said, “Those people, when a righteous man among them dies, build a place of worship over his grave, then make that image in it. Those are the worst of creation before Allah.”",
+          "arabicSha256": "534996a95ed464fd07cb95a6807dba1e9da43e176ee4587891e176f5012f47c9",
+          "englishSha256": "b66264f31121c4073f6ba1e5ae92af8bbb72729804c16467b590763901802425"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            336
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            323
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1276",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-seventh-wording-addendum.json",
+            "sha256": "3329b60c7992c75d57c46d69e13e20b8b8702523685a60d0329d9a9adc32f74b",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "3f15ca5ea95d4ef901ea6b679eb6fea7a3e5b5f4864132da6263a6125822fbd0",
+            "occurrence": 1
+          },
+          "note": "Uses plural pictures where selected and modern have singular that image. The historical print does have a plural, so the comparison follows a documented alternate wording rather than an unsupported plural."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.425",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.425",
+            "recordSha256": "e8ea708c87c6c196f983386b38471ce01019af722ae6fcee0a44ec1541bbb814"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated 'Aisha: ",
+            "When the Prophet became ill, some of his wives talked about a church which they had seen in Ethiopia and it was called Mariya. Um Salma and Um Habiba had been to Ethiopia, and both of them narrated its (the Church's) beauty and the pictures it contained. The Prophet raised his head and said, \"Those are the people who, whenever a pious man dies amongst them, make a place of worship at his grave and then they make those pictures in it. Those are the worst creatures in the Sight of Allah.\" "
+          ],
+          "damagedExcerpt": "pictures",
+          "note": "Uses plural pictures where selected and modern have singular that image. The historical print does have a plural, so the comparison follows a documented alternate wording rather than an unsupported plural."
+        }
+      ],
+      "notes": [
+        "The occurrence was located by its body and chain in both inspected prints and English passages. Wording, role and honorific review remain pending.",
+        "Retain both women and their dual honorific, Mariyah, raised his head and singular that image. The historical plural has an explicit witness and remains in source notes; it is not substituted into the selected wording.",
+        "The historical image noun is plural and its ending adds عز وجل; selected and modern differ on both points. Selected: «ثم صوروا فيه تلك الصورة أولئك شرار الخلق عند الله». brill-1862 (PDF 336): «ثم صوروا فيه تلك الصور أولئك شرار الخلق عند الله عز وجل». dar-ibn-kathir-2002 (PDF 323): «ثم صوروا فيه تلك الصورة أولئك شرار الخلق عند الله».",
+        "Printed reference 1341 · app reference 1276. Individually located EPUB comparison: 2.23.425. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "879264e3b4afa6de8c2dd7863299f3632d2b7efc25fc13fb7f3572819d70e044",
+      "englishSha256": "e43ad25c13f60dd447591926bf59d7400e0e36c5bb2f0b3f9ae7743164e3a02e",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1341 · app reference 1276",
+          "pdfPage": 323,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "1276-source-context",
+          "label": "A singular image in this occurrence",
+          "text": "The selected Arabic and modern print say “that image.” The historical print has a plural, as do the English comparisons. These readings remain distinct in the source notes.",
+          "citations": [
+            "base",
+            "printed-reference"
+          ],
+          "related": []
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAU8:0",
+        "sourceReference": {
+          "label": "1276",
+          "number": 1276,
+          "markerId": "mwAU8:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAU8",
+            "textSha256": "879264e3b4afa6de8c2dd7863299f3632d2b7efc25fc13fb7f3572819d70e044",
+            "origin": {
+              "blockId": "mwAU8",
+              "blockSha256": "879264e3b4afa6de8c2dd7863299f3632d2b7efc25fc13fb7f3572819d70e044",
+              "start": 0,
+              "end": 368
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "0f13ef62f4e5519131fe72f297bba611d11192718fd0aa23c0d8a0bb6575f23c"
+    },
+    {
+      "number": 1277,
+      "id": "bukhari:1277",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAVI:0",
+      "chapterId": "chapter-70",
+      "paragraphIds": [
+        "mwAVI"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1277-1",
+          "paragraphId": "mwAVI",
+          "start": 0,
+          "end": 95,
+          "kind": "chain",
+          "arabic": "[1277] حدثنا محمد بن سنان حدثنا فليح بن سليمان حدثنا هلال بن علي عن أنس رضى الله تعالى عنه قال ",
+          "english": "Muhammad ibn Sinan related to us: Fulayh ibn Sulayman related to us: Hilal ibn ‘Ali related to us, from Anas, may Allah Most High be pleased with him, who said:",
+          "arabicSha256": "09c2c545f506f82a980a9131189053962af837610e014bfb4108bbf116763ba3",
+          "englishSha256": "0da9b5704bd62f645ae62eb0089046ec5ad8df1f839e11f89f07f42a51e9426f"
+        },
+        {
+          "id": "1277-2",
+          "paragraphId": "mwAVI",
+          "start": 95,
+          "end": 261,
+          "kind": "report",
+          "arabic": "شهدنا بنت رسول الله ﷺ ورسول الله ﷺ جالس على القبر فرأيت عينيه تدمعان، فقال هل فيكم من أحد لم يقارف الليلة، فقال أبو طلحة أنا قال: فانزل في قبرها فنزل في قبرها فقبرها ",
+          "english": "We attended a daughter of the Messenger of Allah, may Allah bless him and grant him peace. The Messenger of Allah, may Allah bless him and grant him peace, was sitting by the grave, and I saw his eyes shedding tears. He asked, “Is there anyone among you who did not have intercourse last night?” Abu Talhah said, “I.” He said, “Then go down into her grave.” He went down into her grave and buried her.",
+          "arabicSha256": "7e7394a09b86252524a5c4c704b89f4baa847f3822833a313ac6d7040cf4dbd1",
+          "englishSha256": "9456de9a38794c9e894e98e1f495864d6883e32556d265cedef4ef1d260379a0"
+        },
+        {
+          "id": "1277-3",
+          "paragraphId": "mwAVI",
+          "start": 261,
+          "end": 301,
+          "kind": "transmission-note",
+          "arabic": "قال ابن مبارك قال: فليح أراه يعني الذنب ",
+          "english": "Ibn Mubarak said: Fulayh said, “I think he means sin.”",
+          "arabicSha256": "e366f2e5c599555f078de26371e64303a462329e10432e2f6572d157b252da07",
+          "englishSha256": "e364c7bb19d140038cee551417ceefcbb5577d4b3526be39b2f3fdba06262506"
+        },
+        {
+          "id": "1277-4",
+          "paragraphId": "mwAVI",
+          "start": 301,
+          "end": 339,
+          "kind": "transmission-note",
+          "arabic": "قال أبو عبد الله ليقترفوا أي ليكتسبوا ",
+          "english": "Abu ‘Abd Allah said: “That they may acquire”—that is, “that they may earn.”",
+          "arabicSha256": "12870936026df7b69f616125271404a303114f86895f22e676604f6f620e116f",
+          "englishSha256": "3e42cd9feba11fb4e6525e7f5bff9eb92a0bf9dc8cbf1f749e4103cce10b1ec6"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            336,
+            337
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            323
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1277",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-seventh-wording-addendum.json",
+            "sha256": "3329b60c7992c75d57c46d69e13e20b8b8702523685a60d0329d9a9adc32f74b",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "cf2d3c448b2761ac1febdcb321a445f900cf7f7539d946473832492d17f54002",
+            "occurrence": 1
+          },
+          "note": "Omits the Ibn Mubarak route. The intercourse rendering is a documented classical lexical choice, while Fulayh’s tentative sin gloss remains separately attributed; neither gloss is an explicit object in the selected question."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.426",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.426",
+            "recordSha256": "a9a340449211e7cc59b26fcd8e294cc9180f2a33f24841a33210717f4b982392"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Anas: ",
+            "We were in the funeral procession of the daughter of Allah's Apostle and Allah's Apostle was sitting near the grave and I saw his eyes full of tears. He said, \"Is there anyone amongst you who did not have sexual relations with his wife last night?\" Abu Talha replied in the affirmative. And so Allah's Apostle told him to get down in her grave and he got down in her grave and buried her. "
+          ],
+          "damagedExcerpt": "wife",
+          "note": "Adds with his wife and omits both Fulayh’s closing gloss and the Abu Abd Allah lexical note."
+        }
+      ],
+      "notes": [
+        "The full selected closing contains Ibn Mubarak, Fulayh and Abu Abd Allah attributions. They need distinct roles, including the lexical note after the account.",
+        "Retain Fulayh ibn Sulayman and Anas without expanding Anas’s name. Intercourse follows the classical lexical choice already used in 1225; the object is implicit in the Arabic and the competing sin reading remains separately and tentatively attributed to Fulayh. Do not add with his wife. Preserve Ibn Mubarak without the article, I think, Abu Abd Allah and the complete short acquire/earn gloss; do not add a full Quran verse.",
+        "The historical opening shortens Fulayh’s name; the selected and modern route includes ibn Sulayman. Selected: «فليح بن سليمان». brill-1862 (PDF 336): «فليح». dar-ibn-kathir-2002 (PDF 323): «فليح بن سليمان».",
+        "Enlarged modern page 323 reads Ibn Mubarak without the article, agreeing with selected; the earlier claim that both prints include the article is corrected. The historical closing still lacks Abu Abd Allah and أي, and includes the article. Selected: «قال ابن مبارك قال: فليح أراه يعني الذنب قال أبو عبد الله ليقترفوا أي ليكتسبوا». brill-1862 (PDF 337): «قال ابن المبارك قال فليح أراه يعني الذنب ليقترفوا ليكتسبوا». dar-ibn-kathir-2002 (PDF 323): «قال ابن مبارك قال فليح أراه يعني الذنب قال أبو عبد الله ليقترفوا أي ليكتسبوا».",
+        "Printed reference 1342 · app reference 1277. Individually located EPUB comparison: 2.23.426. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "638e7a6202e6276ab6a647b9d81abfad22147d05cd7462ffc9eb850b1c265ba9",
+      "englishSha256": "53b144ac06423431b68b249c7dce247d6599416c1a6177c05edd53b0a93ef1be",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1342 · app reference 1277",
+          "pdfPage": 323,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        },
+        {
+          "id": "lexical",
+          "sourceId": "ali-qari-qiraf",
+          "locator": "Ali al-Qari · Mirqat al-Mafatih · the qiraf expression",
+          "scope": "Classical lexical or transmission discussion consulted. Separate from narration and not independent approval of this working translation."
+        },
+        {
+          "id": "lexical-2",
+          "sourceId": "ayni-qiraf-closing",
+          "locator": "Al-Ayni · Umdat al-Qari · the qiraf expression and closing attributions",
+          "scope": "Classical lexical or transmission discussion consulted. Separate from narration and not independent approval of this working translation."
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "1277-source-context",
+          "label": "A lexical choice and a narrator’s tentative gloss",
+          "text": "The working English uses the classical “intercourse” reading. Fulayh’s separate “I think he means sin” gloss remains complete. The question’s Arabic verb has no explicit object; independent review is pending.",
+          "citations": [
+            "base",
+            "printed-reference",
+            "lexical"
+          ],
+          "related": []
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAVI:0",
+        "sourceReference": {
+          "label": "1277",
+          "number": 1277,
+          "markerId": "mwAVI:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAVI",
+            "textSha256": "638e7a6202e6276ab6a647b9d81abfad22147d05cd7462ffc9eb850b1c265ba9",
+            "origin": {
+              "blockId": "mwAVI",
+              "blockSha256": "638e7a6202e6276ab6a647b9d81abfad22147d05cd7462ffc9eb850b1c265ba9",
+              "start": 0,
+              "end": 339
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "ebe462a0ba787bdc6b6f1be57edd5c64ca0cb469bf7276bc85e38d9eb09c20a7"
+    },
+    {
+      "number": 1278,
+      "id": "bukhari:1278",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAVY:0",
+      "chapterId": "chapter-71",
+      "paragraphIds": [
+        "mwAVY"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1278-1",
+          "paragraphId": "mwAVY",
+          "start": 0,
+          "end": 137,
+          "kind": "chain",
+          "arabic": "[1278] حدثنا عبد الله بن يوسف حدثنا الليث قال: حدثني ابن شهاب عن عبد الرحمن بن كعب بن مالك عن جابر بن عبد الله رضى الله تعالى عنهما قال: ",
+          "english": "‘Abd Allah ibn Yusuf related to us: Al-Layth related to us; he said: Ibn Shihab related to me, from ‘Abd al-Rahman ibn Ka‘b ibn Malik, from Jabir ibn ‘Abd Allah, may Allah Most High be pleased with them both, who said:",
+          "arabicSha256": "464bd55203a933c6fa1743fb704ee4a718fdca4733785161492580a6444454e1",
+          "englishSha256": "c7b378ee21fda5344e90ebc400b2e5be4a3eb9d8855319b15ed1b08bf365bd68"
+        },
+        {
+          "id": "1278-2",
+          "paragraphId": "mwAVY",
+          "start": 137,
+          "end": 343,
+          "kind": "report",
+          "arabic": "كان النبي ﷺ يجمع بين الرجلين من قتلى أحد في ثوب واحد ثم يقول أيهم أكثر أخذا للقرآن فإذا أشير له إلى أحدهما قدمه في اللحد، وقال: أنا شهيد على هؤلاء يوم القيامة وأمر بدفنهم في دمائهم ولم يغسلوا ولم يصل عليهم ",
+          "english": "The Prophet, may Allah bless him and grant him peace, used to bring together two of the men killed at Uhud in one garment. Then he would ask, “Which of them had learned more of the Qur’an?” When one of the two was pointed out to him, he placed him first in the side niche of the grave. He said, “I am a witness for these on the Day of Resurrection.” He ordered them to be buried in their blood. They were not washed, nor were they prayed over.",
+          "arabicSha256": "651fb353eeda4a33ddd20f5d77819b51e2b0f234ea60927e84c6bbe412721afe",
+          "englishSha256": "72d97a9fc01a4f659d03d0fa158f3dada71b82812a735fbc47f1bc0a09f02e96"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            337
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            323,
+            324
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1278",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-seventh-wording-addendum.json",
+            "sha256": "3329b60c7992c75d57c46d69e13e20b8b8702523685a60d0329d9a9adc32f74b",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "c0fa4c001f234d5b0b40052088e0c81bd56a6428445adb6a475fac867de03abe",
+            "occurrence": 1
+          },
+          "note": "Merges the final reported acts about washing and prayer into the burial instruction; keep the narrative acts separate from direct instruction."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.427",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.427",
+            "recordSha256": "78f5a5bc08e79f5ecc038e46fa1b936cbba572d5d723d508ae0f2d6cdab33fc6"
+          }
+        }
+      ],
+      "notes": [
+        "Repeated Uhud accounts have different explicit endings. Preserve reported acts separately from direct speech.",
+        "Retain one garment, killed rather than replacing it with the chapter’s martyr label, learned Quran, the side niche, Day of Resurrection and the passive not-washed/not-prayed acts separately from the burial order.",
+        "The historical question uses the dual pronoun; selected and modern use the plural. Selected: «أيهم أكثر أخذا للقرآن». brill-1862 (PDF 337): «أيهما أكثر أخذا للقرآن». dar-ibn-kathir-2002 (PDF 324): «أيهم أكثر أخذا للقرآن».",
+        "Printed reference 1343 · app reference 1278. Individually located EPUB comparison: 2.23.427. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "274abb0baf69d6aab3b4191267c240450b23d8530660d026f073a73f2b319f4c",
+      "englishSha256": "a505b22683412bdccbc4bd7e3e9682b5887e26117d19e5fe0c8eecd51980b303",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1343 · app reference 1278",
+          "pdfPage": 323,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAVY:0",
+        "sourceReference": {
+          "label": "1278",
+          "number": 1278,
+          "markerId": "mwAVY:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAVY",
+            "textSha256": "274abb0baf69d6aab3b4191267c240450b23d8530660d026f073a73f2b319f4c",
+            "origin": {
+              "blockId": "mwAVY",
+              "blockSha256": "274abb0baf69d6aab3b4191267c240450b23d8530660d026f073a73f2b319f4c",
+              "start": 0,
+              "end": 343
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "fe0bf7f0882045d2d89eb537a8bba9c9ae1ae4f0b5602bfa44a3c67872f2dffb"
+    },
+    {
+      "number": 1279,
+      "id": "bukhari:1279",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAVg:0",
+      "chapterId": "chapter-71",
+      "paragraphIds": [
+        "mwAVg"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1279-1",
+          "paragraphId": "mwAVg",
+          "start": 0,
+          "end": 94,
+          "kind": "chain",
+          "arabic": "[1279] حدثنا عبد الله بن يوسف حدثنا الليث حدثني يزيد بن أبي حبيب عن أبي الخير عن عقبة بن عامر ",
+          "english": "‘Abd Allah ibn Yusuf related to us: Al-Layth related to us: Yazid ibn Abi Habib related to me, from Abu al-Khayr, from ‘Uqbah ibn ‘Amir:",
+          "arabicSha256": "d3976b4e6e38c84206ddb1ae41c3bd60a11bc15d63bd9e35aa202cb3e58c11a4",
+          "englishSha256": "36dfd1961b9c4a28783ea734d0421052d8cefc4bd7d02afb5ec0406b1dfdde41"
+        },
+        {
+          "id": "1279-2",
+          "paragraphId": "mwAVg",
+          "start": 94,
+          "end": 350,
+          "kind": "report",
+          "arabic": "أن النبي ﷺ خرج يوما فصلى على أهل أحد صلاته على الميت ثم انصرف إلى المنبر، فقال إني فرط لكم وأنا شهيد عليكم وإني والله لأنظر إلى حوضي الآن وإني أعطيت مفاتيح خزائن الأرض أو مفاتيح الأرض وإني والله ما أخاف عليكم أن تشركوا بعدي ولكن أخاف عليكم أن تنافسوا فيها ",
+          "english": "The Prophet, may Allah bless him and grant him peace, went out one day and prayed over the people of Uhud as he prayed over the dead. Then he turned to the pulpit and said, “I am going ahead of you, and I am a witness over you. By Allah, I am looking at my basin now. I have been given the keys to the treasures of the earth—or the keys of the earth. By Allah, I do not fear that you will associate partners after me, but I fear that you will compete over it.”",
+          "arabicSha256": "2648c5538f3d4b906dfff41517aadc6a76a681bf28fc58b315d56e386ab1cb1e",
+          "englishSha256": "863d65a8c5c885ecdcefbb7f4ac723536abb0062d4b49273e38f61a3c362da27"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            337
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            324
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1279",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-seventh-wording-addendum.json",
+            "sha256": "3329b60c7992c75d57c46d69e13e20b8b8702523685a60d0329d9a9adc32f74b",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "75ae9d2a7d0ba10736ef803ad1eb5ba8c363091dc196495c1c604939728bc8bf",
+            "occurrence": 1
+          },
+          "note": "Renders تنافسوا as fighting; review the Arabic competition wording."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.428",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.428",
+            "recordSha256": "44056a9e607557e1a6f106cf8402e0f3669d6024b7d535fcd8ebb76afc1a6b5f"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated 'Uqba bin 'Amir: ",
+            "One day the Prophet went out and offered the funeral prayers of the martyrs of Uhud and then went up the pulpit and said, \"I will pave the way for you as your predecessor and will be a witness on you. By Allah! I see my Fount (Kauthar) just now and I have been given the keys of all the treasures of the earth (or the keys of the earth). By Allah! I am not afraid that you will worship others along with Allah after my death, but I am afraid that you will fight with one another for the worldly things.\" "
+          ],
+          "damagedExcerpt": "Kauthar",
+          "note": "Adds the Kauthar identification and explanatory parentheses; the competition wording needs direct Arabic review."
+        }
+      ],
+      "notes": [
+        "The occurrence was located by its body and chain in both inspected prints and English passages. Wording, role and honorific review remain pending.",
+        "Keep Uqbah ibn Amir without adding a missing honorific, both oaths, the forerunner meaning, basin without supplying Kawthar, both alternative keys phrases, after me without adding death and competition without turning it into fighting.",
+        "The historical text lacks the alternative retained by selected and modern. Selected: «وإني أعطيت مفاتيح خزائن الأرض أو مفاتيح الأرض». brill-1862 (PDF 337): «وإني أعطيت مفاتيح خزائن الأرض». dar-ibn-kathir-2002 (PDF 324): «وإني أعطيت مفاتيح خزائن الأرض أو مفاتيح الأرض».",
+        "The historical route says related to us; selected and modern say related to me. Selected: «حدثني يزيد بن أبي حبيب». brill-1862 (PDF 337): «حدثنا يزيد بن أبي حبيب». dar-ibn-kathir-2002 (PDF 324): «حدثني يزيد بن أبي حبيب».",
+        "Printed reference 1344 · app reference 1279. Individually located EPUB comparison: 2.23.428. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "4a1359fd3477133b03f407a11a347bdc4aa5ca6c11653c83dc196aa02da86db1",
+      "englishSha256": "ce0561a16781ccf63cca27de02ed0865a58ea69283013d12ab9133b0b0d764c1",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1344 · app reference 1279",
+          "pdfPage": 324,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAVg:0",
+        "sourceReference": {
+          "label": "1279",
+          "number": 1279,
+          "markerId": "mwAVg:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAVg",
+            "textSha256": "4a1359fd3477133b03f407a11a347bdc4aa5ca6c11653c83dc196aa02da86db1",
+            "origin": {
+              "blockId": "mwAVg",
+              "blockSha256": "4a1359fd3477133b03f407a11a347bdc4aa5ca6c11653c83dc196aa02da86db1",
+              "start": 0,
+              "end": 350
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "34a5a57bfacc6fefdd1bb7464b0510a7d7afb95b37bccb49a15e3fd4e712ebf8"
+    },
+    {
+      "number": 1280,
+      "id": "bukhari:1280",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAVs:0",
+      "chapterId": "chapter-72",
+      "paragraphIds": [
+        "mwAVs"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1280-1",
+          "paragraphId": "mwAVs",
+          "start": 0,
+          "end": 123,
+          "kind": "chain",
+          "arabic": "[1280] حدثنا سعيد بن سليمان حدثنا الليث حدثنا ابن شهاب عن عبد الرحمن بن كعب أن جابر بن عبد الله رضى الله تعالى عنهما أخبره ",
+          "english": "Sa‘id ibn Sulayman related to us: Al-Layth related to us: Ibn Shihab related to us, from ‘Abd al-Rahman ibn Ka‘b, that Jabir ibn ‘Abd Allah, may Allah Most High be pleased with them both, informed him:",
+          "arabicSha256": "c9e286697adaaebbe1f24c15a0cf70601647475e7c640802a7d36949bf7b0d51",
+          "englishSha256": "6f99cfe1629625d4d594630883285e336a941aec1c532550c7b8150dc54839d9"
+        },
+        {
+          "id": "1280-2",
+          "paragraphId": "mwAVs",
+          "start": 123,
+          "end": 167,
+          "kind": "report",
+          "arabic": "أن النبي ﷺ كان يجمع بين الرجلين من قتلى أحد ",
+          "english": "The Prophet, may Allah bless him and grant him peace, used to bring together two of the men killed at Uhud.",
+          "arabicSha256": "31d0170d6a056143e2993e563cd3b3db579a249f51d5fcc6cb366c510b66b898",
+          "englishSha256": "f925267a7fd44f0a1c2bec58e02419791a9bef980c0d6f5a676dacd89254f164"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            337
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            324
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1280",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-seventh-wording-addendum.json",
+            "sha256": "3329b60c7992c75d57c46d69e13e20b8b8702523685a60d0329d9a9adc32f74b",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "c54d7721e4001d9a5e773d618668d07c009c711ea752746320b02e710878ef68",
+            "occurrence": 1
+          },
+          "note": "Adds an explicit burial action to the selected يجمع wording; do not import the neighboring chapter title as report text."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.429",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.429",
+            "recordSha256": "d9967df27db42013b284346d9d82148d85f0c352badb2266afd8dccdaca23881"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Jabir bin 'Abdullah : ",
+            "The Prophet buried every two martyrs in of Uhud in one grave. "
+          ],
+          "damagedExcerpt": "grave",
+          "note": "Supplies one grave and martyr identification beyond the short selected body."
+        }
+      ],
+      "notes": [
+        "This short repeated occurrence stays separate and complete; neighboring accounts and the chapter heading do not extend its wording.",
+        "Keep the complete shortened Abd al-Rahman ibn Kab name and short body. Do not supply one garment, grave, burial action or martyr designation from the neighboring heading or parallel accounts.",
+        "The historical Layth name lacks the definite article retained by selected and modern. Selected: «حدثنا الليث». brill-1862 (PDF 337): «حدثنا ليث». dar-ibn-kathir-2002 (PDF 324): «حدثنا الليث».",
+        "The historical route adds ibn Malik; selected and modern use the shorter name. Selected: «عن عبد الرحمن بن كعب». brill-1862 (PDF 337): «عن عبد الرحمن بن كعب بن مالك». dar-ibn-kathir-2002 (PDF 324): «عن عبد الرحمن بن كعب».",
+        "Printed reference 1345 · app reference 1280. Individually located EPUB comparison: 2.23.429. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "c38d436036fedf3f184964be3a932c639df13d6cd6174d059bc2a7527a21e413",
+      "englishSha256": "1a3b257e354c465de37377b60094f73eaf8a511f68bddcb572cc27cd488d9f58",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1345 · app reference 1280",
+          "pdfPage": 324,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "1280-source-context",
+          "label": "A short, complete occurrence",
+          "text": "This report ends after bringing together two men killed at Uhud. Details present in neighboring accounts have not been added.",
+          "citations": [
+            "base",
+            "printed-reference"
+          ],
+          "related": []
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAVs:0",
+        "sourceReference": {
+          "label": "1280",
+          "number": 1280,
+          "markerId": "mwAVs:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAVs",
+            "textSha256": "c38d436036fedf3f184964be3a932c639df13d6cd6174d059bc2a7527a21e413",
+            "origin": {
+              "blockId": "mwAVs",
+              "blockSha256": "c38d436036fedf3f184964be3a932c639df13d6cd6174d059bc2a7527a21e413",
+              "start": 0,
+              "end": 167
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "5bf135cc605e05d1df2c1bd22aa5fe7db9cd7f4f4482fba094a8ef64a2fc3730"
+    },
+    {
+      "number": 1281,
+      "id": "bukhari:1281",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAV4:0",
+      "chapterId": "chapter-73",
+      "paragraphIds": [
+        "mwAV4"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1281-1",
+          "paragraphId": "mwAV4",
+          "start": 0,
+          "end": 92,
+          "kind": "chain",
+          "arabic": "[1281] حدثنا أبو الوليد حدثنا ليث عن ابن شهاب عن عبد الرحمن بن كعب عن جابر قال: قال النبي ﷺ ",
+          "english": "Abu al-Walid related to us: Layth related to us, from Ibn Shihab, from ‘Abd al-Rahman ibn Ka‘b, from Jabir, who said: The Prophet, may Allah bless him and grant him peace, said:",
+          "arabicSha256": "00ad2f0da0703deee0bea540d88db84785a11bc5cdcfb7da5086443ffea6e259",
+          "englishSha256": "4f0493d430229e67ef3b2e043f3db178242d600bdd3a659a5b82582212b692f0"
+        },
+        {
+          "id": "1281-2",
+          "paragraphId": "mwAV4",
+          "start": 92,
+          "end": 110,
+          "kind": "report",
+          "arabic": "ادفنوهم في دمائهم ",
+          "english": "“Bury them in their blood”—",
+          "arabicSha256": "200c6992faca638c6359892d7f14050dc0479d62a0c0901095cc65046227a043",
+          "englishSha256": "22922b0ef0399a0bbc2f5adaac395a3c62738d3638d30ca78378a2b2d903659a"
+        },
+        {
+          "id": "1281-3",
+          "paragraphId": "mwAV4",
+          "start": 110,
+          "end": 123,
+          "kind": "transmission-note",
+          "arabic": "يعني يوم أحد ",
+          "english": "meaning on the day of Uhud—",
+          "arabicSha256": "36f9ce77196067893c8f65d1bfa5c52cbc8cfe1bf444739c5077e7efd2fd638c",
+          "englishSha256": "02147d3f2cde7d6a66297b62de1033d74a02b7d16f25dd75f9a6cca37d2e3584"
+        },
+        {
+          "id": "1281-4",
+          "paragraphId": "mwAV4",
+          "start": 123,
+          "end": 134,
+          "kind": "report",
+          "arabic": "ولم يغسلهم ",
+          "english": "and he did not wash them.",
+          "arabicSha256": "b5c79f747fa50e849fe450132d451ccacdfa5e216395578f646c111f43d0a6c8",
+          "englishSha256": "49cf0bfed4113613c88e065ee873b5228cd4b0d8c0d3a8dba202da3434aedf8b"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            337,
+            338
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            324
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1281"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.430",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.430",
+            "recordSha256": "07719f7b0ef54a9391a0286566a3d6c4bb01f11139dc8a785e63794d8ab452bd"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Jabir: ",
+            "The Prophet said, \"Bury them (i.e. martyrs) with their blood.\" (that was) On the day of the Battle of Uhud. He did not get them washed. "
+          ],
+          "damagedExcerpt": "martyrs",
+          "note": "Adds an explanatory parenthesis expanding the meaning-on-the-day-of-Uhud gloss. Preserve the short separate gloss and the reported not-washing act."
+        }
+      ],
+      "notes": [
+        "The occurrence was located by its body and chain in both inspected prints and English passages. Wording, role and honorific review remain pending.",
+        "Keep Layth without the article, shortened Abd al-Rahman ibn Kab and Jabir names, the separate meaning-on-the-day-of-Uhud gloss and narrative he did not wash them. Do not invent a Jabir honorific or add the not-praying clause.",
+        "The historical route adds ibn Malik; selected and modern use the shorter name. Selected: «عن عبد الرحمن بن كعب». brill-1862 (PDF 337): «عن عبد الرحمن بن كعب بن مالك». dar-ibn-kathir-2002 (PDF 324): «عن عبد الرحمن بن كعب».",
+        "Printed reference 1346 · app reference 1281. Individually located EPUB comparison: 2.23.430. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "8feb5f1e337d58617374b6dfff4b26717f68a3f51baca977f1f38aab58cf2de6",
+      "englishSha256": "a4363823d5a20cd35312d2a219a60c69ce31aff984e3720878c77e0965f58bf9",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1346 · app reference 1281",
+          "pdfPage": 324,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "1281-source-context",
+          "label": "A separate narrator gloss",
+          "text": "“Meaning on the day of Uhud” remains separate from the instruction. The final not-washing statement is a reported act.",
+          "citations": [
+            "base",
+            "printed-reference"
+          ],
+          "related": []
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAV4:0",
+        "sourceReference": {
+          "label": "1281",
+          "number": 1281,
+          "markerId": "mwAV4:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAV4",
+            "textSha256": "8feb5f1e337d58617374b6dfff4b26717f68a3f51baca977f1f38aab58cf2de6",
+            "origin": {
+              "blockId": "mwAV4",
+              "blockSha256": "8feb5f1e337d58617374b6dfff4b26717f68a3f51baca977f1f38aab58cf2de6",
+              "start": 0,
+              "end": 134
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "79658c19f54684c567cd6e78abd44bd632b1e7e28603c1e018cd80f25e382f82"
+    },
+    {
+      "number": 1282,
+      "id": "bukhari:1282",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAWI:0",
+      "chapterId": "chapter-74",
+      "paragraphIds": [
+        "mwAWI"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1282-1",
+          "paragraphId": "mwAWI",
+          "start": 0,
+          "end": 144,
+          "kind": "chain",
+          "arabic": "[1282] حدثنا ابن مقاتل أخبرنا عبد الله أخبرنا الليث بن سعد حدثني ابن شهاب عن عبد الرحمن بن كعب بن مالك عن جابر بن عبد الله رضى الله تعالى عنهما ",
+          "english": "Ibn Muqatil related to us: ‘Abd Allah informed us: Al-Layth ibn Sa‘d informed us: Ibn Shihab related to me, from ‘Abd al-Rahman ibn Ka‘b ibn Malik, from Jabir ibn ‘Abd Allah, may Allah Most High be pleased with them both:",
+          "arabicSha256": "a33ba54541317b567be4992128205a7dc7fc95fd5562c974080d6bc31853b1b8",
+          "englishSha256": "f36813582bc44196dab24b3f505f9b4bebc952257414211eabc4306a89289230"
+        },
+        {
+          "id": "1282-2",
+          "paragraphId": "mwAWI",
+          "start": 144,
+          "end": 343,
+          "kind": "report",
+          "arabic": "أن رسول الله ﷺ كان يجمع بين الرجلين من قتلى أحد في ثوب واحد ثم يقول أيهم أكثر أخذا للقرآن فإذا أشير له إلى أحدهما قدمه في اللحد، وقال: أنا شهيد على هؤلاء وأمر بدفنهم بدمائهم ولم يصل عليهم ولم يغسلهم ",
+          "english": "The Messenger of Allah, may Allah bless him and grant him peace, used to bring together two of the men killed at Uhud in one garment. Then he would ask, “Which of them had learned more of the Qur’an?” When one of the two was pointed out to him, he placed him first in the side niche of the grave. He said, “I am a witness for these.” He ordered them to be buried in their blood. He did not pray over them and did not wash them.",
+          "arabicSha256": "a7677c7581df1f1ec4e0339e2a35688ea61958ddd728bcc1cb4c0b801e2cbc3c",
+          "englishSha256": "3e2346ba712ebf4ccbcc5cd7f56c0e77fb79dba7e08afa3b3dc11f6670b77750"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            338
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            324
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1282",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-seventh-wording-addendum.json",
+            "sha256": "3329b60c7992c75d57c46d69e13e20b8b8702523685a60d0329d9a9adc32f74b",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "6c8f86baa00b3de7274f8f612cf3d2964aaf7d2ed2cc2989f80a2925c4b30463",
+            "occurrence": 1
+          },
+          "note": "Adds يوم القيامة wording absent from this occurrence and turns the final reported acts into an instruction. Parallel reports must not supply missing phrases."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.431",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.431",
+            "recordSha256": "ac95e90fa57656397114554b2a1db0e30fbab5fe06218ebee40179883479533c"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Jabir bin 'Abdullah : ",
+            "Allah's Apostle shrouded every two martyrs of Uhud in one piece of cloth and then he would ask, \"Which of them knew more Quran?\" When one of them was pointed out he would put him first in the grave. He said, \"I am a witness on these.\" Then he ordered them to be buried with blood on their bodies. Neither did he offer their funeral prayer nor did he get them washed. (Jabir bin Abdullah added): Allah's Apostle used to ask about the martyrs of Uhud as to which of them knew more of the Quran.\" And when one of them was pointed out as having more of it he would put him first in the grave and then his companions. (Jabir added): My father and my uncle were shrouded in one sheet. "
+          ],
+          "damagedExcerpt": "martyrs",
+          "note": "EPUB 431 continues into the separate selected 1283 occurrence. Keep that continuation mapped separately rather than appending it to 1282. Uses shrouding and martyrs where the selected occurrence says bringing together those killed; its comparison span ends before the Jabir-added continuation.",
+          "spanEvidence": {
+            "auditPath": "research/funerals-seventh-wording-addendum.json",
+            "auditSha256": "3329b60c7992c75d57c46d69e13e20b8b8702523685a60d0329d9a9adc32f74b",
+            "appReference": 1282,
+            "span": {
+              "unit": "unicode-code-points",
+              "join": "two-newlines",
+              "start": 0,
+              "end": 400,
+              "sha256": "de69a1d3ed494d7da6d9a7d080c51e013c7ebe5abc730b90f617c05bd07d646b"
+            }
+          },
+          "part": {
+            "index": 1,
+            "count": 2
+          }
+        }
+      ],
+      "notes": [
+        "The English EPUB joins selected 1282 and 1283 in record 431. This occurrence ends before the Ouzai route and lacks the day-of-resurrection phrase found in a parallel account.",
+        "Keep Ibn Muqatil and Abd Allah unexpanded, Messenger designation, single garment and the witness statement without adding Day of Resurrection. The active not-prayed/not-washed acts remain separate from the order. EPUB 431 is bound to this exact first span, not its continuation.",
+        "The historical opening supplies Muhammad, absent from selected and modern. Selected: «حدثنا ابن مقاتل». brill-1862 (PDF 338): «حدثنا محمد بن مقاتل». dar-ibn-kathir-2002 (PDF 324): «حدثنا ابن مقاتل».",
+        "The historical question uses the dual pronoun; selected and modern use the plural. Selected: «أيهم أكثر أخذا للقرآن». brill-1862 (PDF 338): «أيهما أكثر أخذا للقرآن». dar-ibn-kathir-2002 (PDF 324): «أيهم أكثر أخذا للقرآن».",
+        "Printed reference 1347 · app reference 1282. Individually located EPUB comparison: 2.23.431. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "c37fae8dbb2a4f76837f9f36289417d45f6aac17d07f0c9c894d04f71178dc1a",
+      "englishSha256": "474f307fd74587b6ee68338cda61c72704d6b2d3f5a4f209fe5e644e334d97e6",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1347 · app reference 1282",
+          "pdfPage": 324,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "1282-source-context",
+          "label": "Distinct occurrences in a shared comparison",
+          "text": "One English comparison combines this report with the next. Their exact comparison spans are recorded separately; this occurrence does not include the Day of Resurrection phrase.",
+          "citations": [
+            "base",
+            "printed-reference"
+          ],
+          "related": []
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAWI:0",
+        "sourceReference": {
+          "label": "1282",
+          "number": 1282,
+          "markerId": "mwAWI:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAWI",
+            "textSha256": "c37fae8dbb2a4f76837f9f36289417d45f6aac17d07f0c9c894d04f71178dc1a",
+            "origin": {
+              "blockId": "mwAWI",
+              "blockSha256": "c37fae8dbb2a4f76837f9f36289417d45f6aac17d07f0c9c894d04f71178dc1a",
+              "start": 0,
+              "end": 343
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "b4636e9407df3ab9ace8d216b4a5767dfc6731bdb5c86532d378a8259b34560f"
+    },
+    {
+      "number": 1283,
+      "id": "bukhari:1283",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAWQ:0",
+      "chapterId": "chapter-74",
+      "paragraphIds": [
+        "mwAWQ"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1283-1",
+          "paragraphId": "mwAWQ",
+          "start": 0,
+          "end": 75,
+          "kind": "chain",
+          "arabic": "[1283] وأخبرنا الأوزاعي عن الزهري عن جابر بن عبد الله رضى الله تعالى عنهما ",
+          "english": "And al-Awza‘i informed us, from al-Zuhri, from Jabir ibn ‘Abd Allah, may Allah Most High be pleased with them both:",
+          "arabicSha256": "7fdbf2ef69aa229825d3383d0942be17d666e23cefe6f6250bdc73774534c3cb",
+          "englishSha256": "5178e35725ce964af78e715084481a89e34e9aca0894c30db10eb4915313f867"
+        },
+        {
+          "id": "1283-2",
+          "paragraphId": "mwAWQ",
+          "start": 75,
+          "end": 216,
+          "kind": "report",
+          "arabic": "كان رسول الله ﷺ يقول: لقتلى أحد أي هؤلاء أكثر أخذا للقرآن فإذا أشير له إلى رجل قدمه في اللحد قبل صاحبه قال جابر فكفن أبي وعمي في نمرة واحدة، ",
+          "english": "The Messenger of Allah, may Allah bless him and grant him peace, used to say about those killed at Uhud, “Which of these had learned more of the Qur’an?” When a man was pointed out to him, he placed him in the side niche of the grave before his companion. Jabir said: My father and my uncle were shrouded in a single striped cloak.",
+          "arabicSha256": "2ec76e941775bb6d86168b64d87a11446d6598f5ab15daad167638a4113e27a2",
+          "englishSha256": "c21692f27bd36f027b4e85bb6a819387a93432c007fc0613e40fee39ac48c89f"
+        },
+        {
+          "id": "1283-3",
+          "paragraphId": "mwAWQ",
+          "start": 216,
+          "end": 287,
+          "kind": "transmission-note",
+          "arabic": "وقال سليمان بن كثير حدثني الزهري حدثني من سمع جابرا رضى الله تعالى عنه ",
+          "english": "And Sulayman ibn Kathir said: Al-Zuhri related to me: One who heard Jabir, may Allah Most High be pleased with him, related to me.",
+          "arabicSha256": "f76a05bd0154818c6d6681d0da6da1c52328fded9485b704f638c75c409afb9a",
+          "englishSha256": "9b0cad4536b74e2583ee0ac5da1158a7a30cfc16b6ed519a3ef0387c6e414477"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            338
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            325
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1283",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-seventh-wording-addendum.json",
+            "sha256": "3329b60c7992c75d57c46d69e13e20b8b8702523685a60d0329d9a9adc32f74b",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "d265ab09b798b689b32f1f7b89895ac1da6eb1a1b719c52f33569be89e105bbb",
+            "occurrence": 1
+          },
+          "note": "Replaces the named Sulayman/Zuhri closing route with a generic isnad label. The opening وأخبرنا depends on preceding transmission context."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.431",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.431",
+            "recordSha256": "ac95e90fa57656397114554b2a1db0e30fbab5fe06218ebee40179883479533c"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Jabir bin 'Abdullah : ",
+            "Allah's Apostle shrouded every two martyrs of Uhud in one piece of cloth and then he would ask, \"Which of them knew more Quran?\" When one of them was pointed out he would put him first in the grave. He said, \"I am a witness on these.\" Then he ordered them to be buried with blood on their bodies. Neither did he offer their funeral prayer nor did he get them washed. (Jabir bin Abdullah added): Allah's Apostle used to ask about the martyrs of Uhud as to which of them knew more of the Quran.\" And when one of them was pointed out as having more of it he would put him first in the grave and then his companions. (Jabir added): My father and my uncle were shrouded in one sheet. "
+          ],
+          "damagedExcerpt": "companions",
+          "note": "The counterpart is the continuation of EPUB 431, not neighboring 432. It omits the full Ouzai/Zuhri route and the final Sulayman/Zuhri/unnamed-hearer route. Says companions in the plural where selected has his companion, and sheet for the striped cloak.",
+          "spanEvidence": {
+            "auditPath": "research/funerals-seventh-wording-addendum.json",
+            "auditSha256": "3329b60c7992c75d57c46d69e13e20b8b8702523685a60d0329d9a9adc32f74b",
+            "appReference": 1283,
+            "span": {
+              "unit": "unicode-code-points",
+              "join": "two-newlines",
+              "start": 400,
+              "end": 712,
+              "sha256": "1e3c5c693cca959c4bfec007f92198e462bd53eabace0174e228702e734b613c"
+            }
+          },
+          "part": {
+            "index": 2,
+            "count": 2
+          }
+        }
+      ],
+      "notes": [
+        "The source begins وأخبرنا and depends on preceding transmission context. Retain a separate occurrence and link to the preceding chain; do not manufacture an independent opening.",
+        "Keep And al-Awzai informed us as a dependent route linked to 1282. Retain his companion singular, the single striped cloak, both companion honorifics and the complete Sulayman ibn Kathir/al-Zuhri/unnamed-hearer closing. Do not import the historical Ibn al-Mubarak opening or Abu Abd Allah closing attribution.",
+        "The historical linked opening names Ibn al-Mubarak explicitly; selected and modern rely on preceding chain context. Selected: «وأخبرنا الأوزاعي». brill-1862 (PDF 338): «قال ابن المبارك أخبرنا الأوزاعي». dar-ibn-kathir-2002 (PDF 325): «وأخبرنا الأوزاعي».",
+        "The historical closing explicitly introduces Abu Abd Allah, absent from selected and modern. Selected: «وقال سليمان بن كثير». brill-1862 (PDF 338): «قال أبو عبد الله وقال سليمان بن كثير». dar-ibn-kathir-2002 (PDF 325): «وقال سليمان بن كثير».",
+        "The modern witness adds a waw before Jabir’s statement; selected and historical do not. Selected: «قال جابر». brill-1862 (PDF 338): «قال جابر». dar-ibn-kathir-2002 (PDF 325): «وقال جابر».",
+        "The historical closing says al-Zuhri related to us; selected and modern say related to me. Selected: «حدثني الزهري». brill-1862 (PDF 338): «حدثنا الزهري». dar-ibn-kathir-2002 (PDF 325): «حدثني الزهري».",
+        "Printed reference 1348 · app reference 1283. Individually located EPUB comparison: 2.23.431. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "7662a1a50f7f0fe60d9291d249a9af91238d9fb8dc8be7747b1fe32228721cfe",
+      "englishSha256": "909156f8a16587eae53882dbf2b44849049a7430c0cd01e9268a846dad1d8d32",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1348 · app reference 1283",
+          "pdfPage": 325,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "1283-source-context",
+          "label": "The preceding narrator route",
+          "text": "This entry begins “And al-Awza‘i informed us,” continuing the preceding transmission context. Its own account and complete closing route remain separate.",
+          "citations": [
+            "base",
+            "printed-reference"
+          ],
+          "related": [
+            {
+              "id": "bukhari:1282",
+              "number": 1282,
+              "target": "chain",
+              "label": "View the preceding chain · 1282"
+            }
+          ]
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAWQ:0",
+        "sourceReference": {
+          "label": "1283",
+          "number": 1283,
+          "markerId": "mwAWQ:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAWQ",
+            "textSha256": "7662a1a50f7f0fe60d9291d249a9af91238d9fb8dc8be7747b1fe32228721cfe",
+            "origin": {
+              "blockId": "mwAWQ",
+              "blockSha256": "7662a1a50f7f0fe60d9291d249a9af91238d9fb8dc8be7747b1fe32228721cfe",
+              "start": 0,
+              "end": 287
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "91f102d0fec39539417f0e560c0fa19ef99d5c020aa42f5f2d12165a20b9b831"
+    },
+    {
+      "number": 1284,
+      "id": "bukhari:1284",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAWc:0",
+      "chapterId": "chapter-75",
+      "paragraphIds": [
+        "mwAWc"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1284-1",
+          "paragraphId": "mwAWc",
+          "start": 0,
+          "end": 124,
+          "kind": "chain",
+          "arabic": "[1284] حدثنا محمد بن عبد الله بن حوشب حدثنا عبد الوهاب حدثنا خالد عن عكرمة عن ابن عباس رضى الله تعالى عنهما عن النبي ﷺ قال: ",
+          "english": "Muhammad ibn ‘Abd Allah ibn Hawshab related to us: ‘Abd al-Wahhab related to us: Khalid related to us, from ‘Ikrimah, from Ibn ‘Abbas, may Allah Most High be pleased with them both, from the Prophet, may Allah bless him and grant him peace, who said:",
+          "arabicSha256": "b1323699d8d7f302f034ee085ad9a44a22e6c856f0e73029ed7dd414c229c14c",
+          "englishSha256": "b95e82b596693984fb4f103983293a937beaf4eb98318e29697b28bc3153d3fa"
+        },
+        {
+          "id": "1284-2",
+          "paragraphId": "mwAWc",
+          "start": 124,
+          "end": 339,
+          "kind": "report",
+          "arabic": "حرم الله مكة فلم تحل لأحد قبلي ولا لأحد بعدي أحلت لي ساعة من نهار لا يختلى خلاها ولا يعضد شجرها ولا ينفر صيدها ولا تلتقط لقطتها إلا لمعرف، فقال العباس رضى الله تعالى عنه إلا الإذخر لصاغتنا وقبورنا، فقال إلا الإذخر، ",
+          "english": "“Allah made Makkah sacred. It was not made lawful for anyone before me or anyone after me. It was made lawful for me for a time during one day. Its fresh grass is not to be cut, its trees are not to be cut down, its game is not to be frightened away, and its lost property is not to be picked up except by one who makes it known.” Al-‘Abbas, may Allah Most High be pleased with him, said, “Except idhkhir, for our goldsmiths and our graves.” He said, “Except idhkhir.”",
+          "arabicSha256": "11f75892483b71098ee4060cfc7696fd097141f8cc9aa06e5c7dd5324acad085",
+          "englishSha256": "92551b6c85a11a372b6838fd04971136a10708c6ec8ed18d32a31c4a5fc3abc8"
+        },
+        {
+          "id": "1284-3",
+          "paragraphId": "mwAWc",
+          "start": 339,
+          "end": 401,
+          "kind": "transmission-note",
+          "arabic": "وقال أبو هريرة رضى الله تعالى عنه عن النبي ﷺ لقبورنا وبيوتنا، ",
+          "english": "And Abu Hurayrah, may Allah Most High be pleased with him, said, from the Prophet, may Allah bless him and grant him peace, “For our graves and our houses.”",
+          "arabicSha256": "3e669fe2997cb9dceeec9f2b9b6dfdc72e6e43f4db9bee3868865535877e3ba6",
+          "englishSha256": "bed8bc4a8264304ebe52a1042ac178704958267eb77006f4489b38138c8061e3"
+        },
+        {
+          "id": "1284-4",
+          "paragraphId": "mwAWc",
+          "start": 401,
+          "end": 472,
+          "kind": "transmission-note",
+          "arabic": "وقال أبان بن صالح عن الحسن بن مسلم عن صفية بنت شيبة سمعت النبي ﷺ مثله، ",
+          "english": "And Aban ibn Salih said, from al-Hasan ibn Muslim, from Safiyyah bint Shaybah: I heard the Prophet, may Allah bless him and grant him peace, say the same.",
+          "arabicSha256": "213766eac6981271442dc4a00b3a324607cc2f123da95b42275de37299a7564d",
+          "englishSha256": "c30270d2b5faba655e6027d12049badc71aa21c8abc077c30623d7e7ca7eaa0b"
+        },
+        {
+          "id": "1284-5",
+          "paragraphId": "mwAWc",
+          "start": 472,
+          "end": 539,
+          "kind": "transmission-note",
+          "arabic": "وقال مجاهد عن طاوس عن ابن عباس رضى الله تعالى عنهما لقينهم وبيوتهم ",
+          "english": "And Mujahid said, from Tawus, from Ibn ‘Abbas, may Allah Most High be pleased with them both, “For their smith and their houses.”",
+          "arabicSha256": "88d35e54acd17be0c914abc42e4a495d21730bc3d28543d28c09f0b702aae765",
+          "englishSha256": "291d302f24ecf020b151e55703a6dc1e94c679f35ca4f66cd41c31fc9c098235"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            338
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            325
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1284",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-seventh-wording-addendum.json",
+            "sha256": "3329b60c7992c75d57c46d69e13e20b8b8702523685a60d0329d9a9adc32f74b",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "c58d75b2afce802eee84053b9a05b9089bd2dfdb565aa8edd6e5d65d7f1703b2",
+            "occurrence": 1
+          },
+          "note": "Abridges the Aban/al-Hasan/Safiyya and Mujahid/Tawus/Ibn Abbas corroborating routes. Review the plant vocabulary directly rather than treating an English botanical gloss as Arabic wording."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.432",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.432",
+            "recordSha256": "3a6504f90dafd4348db776e275cea36c19a61b662d2247dc70707db4a14f7edd"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Ibn Abbas: ",
+            "The Prophet said, \"Allah has made Mecca a sanctuary (sacred place) and it was a sanctuary before me and will be so after me. It was made legal for me (to fight in it) for a few hours of the day. None is allowed to uproot its thorny shrubs or to cut its trees or to chase its game or to pick up its fallen things except by a person who announces it publicly.\" On that Al-Abbas said (to the Prophet), \"Except Al-Idhkhir for our goldsmiths and for our graves.\" And so the Prophet added, \"Except Al-Idhkhir. \" And Abu Huraira narrated that the Prophet said, \"Except Al-Idhkhir for our graves and houses.\" And Ibn Abbas said, \"For their goldsmiths and houses.\" "
+          ],
+          "damagedExcerpt": "thorn",
+          "note": "Omits the entire Aban/al-Hasan/Safiyya corroboration and abridges Mujahid/Tawus. Its explanatory sanctuary/fighting wording is not selected Arabic text. Uses thorn bushes/uprooting for the selected fresh-grass cutting expression. Do not import botanical or fighting explanations into the wording."
+        }
+      ],
+      "notes": [
+        "Keep every corroborating route, including Safiyya’s hearing statement omitted from the EPUB.",
+        "Keep the complete opening and all three closing corroborations, including Safiyyah’s hearing statement. Retain fresh grass/cut, game/frighten, lost-property/publicizing, goldsmiths/graves and singular smith/houses in their distinct routes. Do not supply fighting or a botanical species. Keep all companion and Prophetic honorifics.",
+        "The historical opening includes عز وجل after the divine name. Selected: «حرم الله مكة». brill-1862 (PDF 338): «حرم الله عز وجل مكة». dar-ibn-kathir-2002 (PDF 325): «حرم الله مكة».",
+        "Printed reference 1349 · app reference 1284. Individually located EPUB comparison: 2.23.432. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "f9e2cd9c5ba8401677982e4999d27b5398bf94c9d63d3314c728719651ee184a",
+      "englishSha256": "b4f238267445b5a0a292343ddd8ec7329cdb913bef16083247f01ec4bb12799c",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1349 · app reference 1284",
+          "pdfPage": 325,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        },
+        {
+          "id": "lexical",
+          "sourceId": "ibn-hajar-grass-smith",
+          "locator": "Ibn Hajar · Fath al-Bari · fresh grass, idhkhir and the smith",
+          "scope": "Classical lexical or transmission discussion consulted. Separate from narration and not independent approval of this working translation."
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAWc:0",
+        "sourceReference": {
+          "label": "1284",
+          "number": 1284,
+          "markerId": "mwAWc:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAWc",
+            "textSha256": "f9e2cd9c5ba8401677982e4999d27b5398bf94c9d63d3314c728719651ee184a",
+            "origin": {
+              "blockId": "mwAWc",
+              "blockSha256": "f9e2cd9c5ba8401677982e4999d27b5398bf94c9d63d3314c728719651ee184a",
+              "start": 0,
+              "end": 539
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "127ec6100dffce3762758a928d43d539dae7c72d12e453b0817439d20509c4d9"
+    },
+    {
+      "number": 1285,
+      "id": "bukhari:1285",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAWw:0",
+      "chapterId": "chapter-76",
+      "paragraphIds": [
+        "mwAWw"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1285-1",
+          "paragraphId": "mwAWw",
+          "start": 0,
+          "end": 97,
+          "kind": "chain",
+          "arabic": "[1285] حدثنا علي بن عبد الله حدثنا سفيان قال عمرو سمعت جابر بن عبد الله رضى الله تعالى عنهما قال ",
+          "english": "‘Ali ibn ‘Abd Allah related to us: Sufyan related to us. ‘Amr said: I heard Jabir ibn ‘Abd Allah, may Allah Most High be pleased with them both, say:",
+          "arabicSha256": "2b41dab4fa6a5d1d7ecc8a19e12a87b82315fc1e0e293651f27ded045a66b458",
+          "englishSha256": "97e97ebae8026d707a95dbfcfd7f194606756ae443e7e6353e75269dc79deab6"
+        },
+        {
+          "id": "1285-2",
+          "paragraphId": "mwAWw",
+          "start": 97,
+          "end": 209,
+          "kind": "report",
+          "arabic": "أتى رسول الله ﷺ عبد الله بن أبي بعد ما أدخل حفرته فأمر به فأخرج فوضعه على ركبتيه ونفث عليه من ريقه وألبسه قميصه ",
+          "english": "The Messenger of Allah, may Allah bless him and grant him peace, came to ‘Abd Allah ibn Ubayy after he had been placed in his burial pit. He gave an order concerning him, and he was brought out. He placed him on his knees, blew lightly on him with some of his saliva and clothed him in his shirt.",
+          "arabicSha256": "96ee9d2199fbb7d680b3d8e3310324575083b6f49dad5a2150c1ac5dba2542f5",
+          "englishSha256": "06505347e10758bf4b33544f05646622730113750ac2ba835fb4729a16fca5ee"
+        },
+        {
+          "id": "1285-3",
+          "paragraphId": "mwAWw",
+          "start": 209,
+          "end": 220,
+          "kind": "transmission-note",
+          "arabic": "فالله أعلم ",
+          "english": "Allah knows best.",
+          "arabicSha256": "ee975626c38d7957dda8b523e2297c0f43120c4e557a7cf07c623092fb2302d6",
+          "englishSha256": "1b7548ab88568a120f1361bd2c07407956a12b5fe4aaab7bb216d6f350d985ea"
+        },
+        {
+          "id": "1285-4",
+          "paragraphId": "mwAWw",
+          "start": 220,
+          "end": 241,
+          "kind": "report",
+          "arabic": "وكان كسا عباسا قميصا ",
+          "english": "He had clothed ‘Abbas in a shirt.",
+          "arabicSha256": "dcd8d17e594e3f033d6b66f9c887f9a2bcd840d467cc889348085d56ae1435e6",
+          "englishSha256": "6b9eb187789b3780131c515f59c0f9ef31a86174b3183ec8c8484b471bd3ded5"
+        },
+        {
+          "id": "1285-5",
+          "paragraphId": "mwAWw",
+          "start": 241,
+          "end": 358,
+          "kind": "transmission-note",
+          "arabic": "قال سفيان، وقال أبو هارون وكان على رسول الله ﷺ قميصان، فقال له بن عبد الله يا رسول الله ألبس أبي قميصك الذي يلي جلدك ",
+          "english": "Sufyan said: And Abu Harun said: The Messenger of Allah, may Allah bless him and grant him peace, was wearing two shirts. The son of ‘Abd Allah said to him, “Messenger of Allah, clothe my father in the shirt of yours that is next to your skin.”",
+          "arabicSha256": "20016f57788d8fb1b64aa7b6b2cdfcc3f71ef7b6bed97bb29231f7ff1a4e2dd1",
+          "englishSha256": "c40cd11e5dd071c7a4c134d6ea5b752cd2fe7473b788781525b3847ba52d5d4d"
+        },
+        {
+          "id": "1285-6",
+          "paragraphId": "mwAWw",
+          "start": 358,
+          "end": 420,
+          "kind": "transmission-note",
+          "arabic": "قال سفيان فيرون أن النبي ﷺ ألبس عبد الله قميصه مكافأة لما صنع ",
+          "english": "Sufyan said: They consider that the Prophet, may Allah bless him and grant him peace, clothed ‘Abd Allah in his shirt in return for what he had done.",
+          "arabicSha256": "3570cd0b6c1fecfb424ba269b6af58862d2429195ef6b842e69769b789fd53cb",
+          "englishSha256": "c55c6c7058e0ddb3cdb41f1a9790ccddebd0e1dc9011c4476a054276010a5a96"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            338,
+            339
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            325
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1285",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-seventh-wording-addendum.json",
+            "sha256": "3329b60c7992c75d57c46d69e13e20b8b8702523685a60d0329d9a9adc32f74b",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "b652107666af4642d13f68dc46cff4fcfa15d4088b6ddcf7eac9fc3beef200a8",
+            "occurrence": 1
+          },
+          "note": "Names Abu Hurayra where selected and modern have Abu Harun, agreeing with the historical variant. Also joins the Allah-knows statement to the next report about the shirt, obscuring its boundary."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.433",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.433",
+            "recordSha256": "ffa6ebddda2b6b22a87909727977bd249bbc1e6174d0487d88528e3793ceb5a6"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Jabir bin 'Abdullah: ",
+            "Allah's Apostle came to Abdullah bin Ubai (a hypocrite) after his death and he has been laid in his pit (grave). He ordered (that he be taken out of the grave) and he was taken out. Then he placed him on his knees and threw some of his saliva on him and clothed him in his (the Prophet's) own shirt. Allah knows better (why he did so). 'Abdullah bin Ubai had given his shirt to Al-Abbas to wear. Abu Harun said, \"Allah's Apostle at that time had two shirts and the son of 'Abdullah bin Ubai said to him, 'O Allah's Apostle! Clothe my father in your shirt which has been in contact with your skin.' ' Sufyan added, \"Thus people think that the Prophet clothed 'Abdullah bin Tubal in his shirt in lieu of what he (Abdullah) had done (for Al Abbas, the Prophet's uncle.)\" "
+          ],
+          "damagedExcerpt": "Tubal",
+          "note": "Adds explanatory parentheses and corrupts the closing Ibn Ubayy name. Keep Sufyan, Abu Harun and the unnamed group’s inference separate."
+        }
+      ],
+      "notes": [
+        "The historical print names Abu Hurayra, while selected and modern name Abu Harun. Record the difference and retain the multiple reporting voices.",
+        "Keep Messenger at the opening, burial pit, knees, light blowing with saliva and his shirt. Allah knows best remains its own narrator note. Retain he had clothed Abbas in a shirt without resolving the pronoun by adding a name. Keep Sufyan, Abu Harun, two shirts, son of Abd Allah and the final unnamed group’s consideration distinct; the historical Abu Hurayrah is a documented alternative, not an applied correction.",
+        "The historical preposition differs from selected and modern. Selected: «ونفث عليه من ريقه». brill-1862 (PDF 339): «ونفث فيه من ريقه». dar-ibn-kathir-2002 (PDF 325): «ونفث عليه من ريقه».",
+        "The historical closing names Abu Hurayra, while selected and modern name Abu Harun. The English web body follows the historical name. Selected: «وقال أبو هارون». brill-1862 (PDF 339): «وقال أبو هريرة». dar-ibn-kathir-2002 (PDF 325): «وقال أبو هارون».",
+        "The historical opening calls him the Prophet; selected and modern call him the Messenger of Allah. Selected: «أتى رسول الله ﷺ». brill-1862 (PDF 338): «أتى النبي صلى الله عليه وسلم». dar-ibn-kathir-2002 (PDF 325): «أتى رسول الله صلى الله عليه وسلم».",
+        "Printed reference 1350 · app reference 1285. Individually located EPUB comparison: 2.23.433. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "2f75531530bd259851c9ccc1732d75329ce6a9ac2a84e4bb98d98e214fd4d9f0",
+      "englishSha256": "948cc79e2b18f919fe437b58d458946d91d4feac5d2ecf9d58880ef9bba7d130",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1350 · app reference 1285",
+          "pdfPage": 325,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "1285-source-context",
+          "label": "Several reporting voices",
+          "text": "“Allah knows best,” the statement from Abu Harun and Sufyan’s account of what others considered remain separate. The alternate narrator name in the historical print is recorded in the source notes.",
+          "citations": [
+            "base",
+            "printed-reference"
+          ],
+          "related": []
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAWw:0",
+        "sourceReference": {
+          "label": "1285",
+          "number": 1285,
+          "markerId": "mwAWw:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAWw",
+            "textSha256": "2f75531530bd259851c9ccc1732d75329ce6a9ac2a84e4bb98d98e214fd4d9f0",
+            "origin": {
+              "blockId": "mwAWw",
+              "blockSha256": "2f75531530bd259851c9ccc1732d75329ce6a9ac2a84e4bb98d98e214fd4d9f0",
+              "start": 0,
+              "end": 420
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "ab86f23511f76263e030dc444a7ca6ec47d466793f6fe61f20c1623af81a4721"
+    },
+    {
+      "number": 1286,
+      "id": "bukhari:1286",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAXA:0",
+      "chapterId": "chapter-76",
+      "paragraphIds": [
+        "mwAXA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1286-1",
+          "paragraphId": "mwAXA",
+          "start": 0,
+          "end": 96,
+          "kind": "chain",
+          "arabic": "[1286] حدثنا مسدد أخبرنا بشر بن المفضل حدثنا حسين المعلم عن عطاء عن جابر رضى الله تعالى عنه قال ",
+          "english": "Musaddad related to us: Bishr ibn al-Mufaddal informed us: Husayn al-Mu‘allim related to us, from ‘Ata’, from Jabir, may Allah Most High be pleased with him, who said:",
+          "arabicSha256": "bf738158a7e64c9e62b5fb007630fb8fab8cb8540ac607d20f74ddd0e69d229a",
+          "englishSha256": "5f88331bdc9b7930bc2d1afec9b948f28b1ea88cd666a6a39a63c71e8550e3d9"
+        },
+        {
+          "id": "1286-2",
+          "paragraphId": "mwAXA",
+          "start": 96,
+          "end": 405,
+          "kind": "report",
+          "arabic": "لما حضر أحد دعاني أبي من الليل، فقال: ما أراني إلا مقتولا في أول من يقتل من أصحاب النبي ﷺ وإني لا أترك بعدي أعز علي منك غير نفس رسول الله ﷺ فإن علي دينا فاقض واستوص بأخواتك خيرا فأصبحنا فكان أول قتيل ودفن معه آخر في قبر ثم لم تطب نفسي أن أتركه مع الآخر فاستخرجته بعد ستة أشهر فإذا هو كيوم وضعته هنية غير أذنه ",
+          "english": "When Uhud approached, my father called me during the night and said, “I expect to be killed among the first of the companions of the Prophet, may Allah bless him and grant him peace, to be killed. I leave no one behind dearer to me than you, except the person of the Messenger of Allah, may Allah bless him and grant him peace. I have a debt, so pay it, and treat your sisters well.” When morning came, he was the first killed. Another was buried with him in a grave. Then I was not content to leave him with the other, so I took him out after six months. He was as he had been on the day I laid him there, except for a small change at his ear.",
+          "arabicSha256": "63df45ba234de2c7489e77eb9b65516da7eed34d032d2de741ef471161cfa050",
+          "englishSha256": "fa68f6a7963dfbda26ec9118d200cb71bccfb9a07f257effe8d297c7ee3f8730"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            339
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            325,
+            326
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1286",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-seventh-wording-addendum.json",
+            "sha256": "3329b60c7992c75d57c46d69e13e20b8b8702523685a60d0329d9a9adc32f74b",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "6939ec22e35784a4accf6eb188083e37fab71b5e480421e19d0d1ccb1ac73d7c",
+            "occurrence": 1
+          },
+          "note": "Contains an asterisk in place of a complete honorific and abridges chains; the small-change/ear phrase needs careful lexical review."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.434",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.434",
+            "recordSha256": "d105c4c7a9b9a2b447a0cfdb4002a150c6d5102ee142018554abaf3ee3f542f3"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Jabir: ",
+            "When the time of the Battle of Uhud approached, my father called me at night and said, \"I think that I will be the first amongst the companions of the Prophet to be martyred. I do not leave anyone after me dearer to me than you, except Allah's Apostle's soul and I owe some debt and you should repay it and treat your sisters favorably (nicely and politely).\" So in the morning he was the first to be martyred and was buried along with another (martyr). I did not like to leave him with the other (martyr) so I took him out of the grave after six months of his burial and he was in the same condition as he was on the day of burial, except a slight change near his ear. "
+          ],
+          "damagedExcerpt": "the first",
+          "note": "Changes the father’s expectation of being among the first killed into being the first; the later narrator statement separately says he was first."
+        }
+      ],
+      "notes": [
+        "The father’s expectation and the later report of what happened are distinct statements; do not flatten their different scope.",
+        "Keep informed us for Bishr, among the first in the father’s expectation and the first in the later narrative. Retain the actual person of the Messenger, debt, sisters, passive other burial, six months and the ear phrase. Small change at his ear follows the meaning clarified through the variant wording discussed by Ibn Hajar; no Arabic word-order correction or invented detail about which part is applied.",
+        "Both prints use و where selected has ف in this clause. Selected: «فإن علي دينا». brill-1862 (PDF 339): «وإن علي دينا». dar-ibn-kathir-2002 (PDF 326): «وإن علي دينا».",
+        "The historical route says related to us; selected and modern say informed us. Selected: «أخبرنا بشر بن المفضل». brill-1862 (PDF 339): «حدثنا بشر بن المفضل». dar-ibn-kathir-2002 (PDF 325): «أخبرنا بشر بن المفضل».",
+        "The enlarged historical witness says I buried another with him; selected and modern have another was buried with him. The selected passive is preserved. Selected: «ودفن معه آخر». brill-1862 (PDF 339): «ودفنت معه آخر». dar-ibn-kathir-2002 (PDF 326): «ودفن معه آخر».",
+        "Printed reference 1351 · app reference 1286. Individually located EPUB comparison: 2.23.434. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "3c43077c12e47525e84975a176f038cbf8a71cf6e7987c104ece0e7ed4b1d6eb",
+      "englishSha256": "28e145e8c2131909e605896b7ab59718812e448240eddcbfb5b4353b25ab9323",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1351 · app reference 1286",
+          "pdfPage": 325,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        },
+        {
+          "id": "lexical",
+          "sourceId": "ibn-hajar-small-ear-change",
+          "locator": "Ibn Hajar · Fath al-Bari · the small-change-at-the-ear wording",
+          "scope": "Classical lexical or transmission discussion consulted. Separate from narration and not independent approval of this working translation."
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "1286-source-context",
+          "label": "Expectation and the reported outcome",
+          "text": "The father says “among the first”; the later narrative says “the first.” The source notes also explain the working translation of the brief ear phrase, without changing the Arabic.",
+          "citations": [
+            "base",
+            "printed-reference",
+            "lexical"
+          ],
+          "related": []
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAXA:0",
+        "sourceReference": {
+          "label": "1286",
+          "number": 1286,
+          "markerId": "mwAXA:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAXA",
+            "textSha256": "3c43077c12e47525e84975a176f038cbf8a71cf6e7987c104ece0e7ed4b1d6eb",
+            "origin": {
+              "blockId": "mwAXA",
+              "blockSha256": "3c43077c12e47525e84975a176f038cbf8a71cf6e7987c104ece0e7ed4b1d6eb",
+              "start": 0,
+              "end": 405
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "b1df96a7a00186f77227d9c94a2896e55c960e18a1b9ed0b23146599d0f9d327"
+    },
+    {
+      "number": 1287,
+      "id": "bukhari:1287",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAXM:0",
+      "chapterId": "chapter-76",
+      "paragraphIds": [
+        "mwAXM"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1287-1",
+          "paragraphId": "mwAXM",
+          "start": 0,
+          "end": 111,
+          "kind": "chain",
+          "arabic": "[1287] حدثنا علي بن عبد الله حدثنا سعيد بن عامر عن شعبة عن ابن أبي نجيح عن عطاء عن جابر رضى الله تعالى عنه قال ",
+          "english": "‘Ali ibn ‘Abd Allah related to us: Sa‘id ibn ‘Amir related to us, from Shu‘bah, from Ibn Abi Najih, from ‘Ata’, from Jabir, may Allah Most High be pleased with him, who said:",
+          "arabicSha256": "efa07b3f9396247e2e3874a395d00bfa4c4eb1a5001192ef344ca023ddc21113",
+          "englishSha256": "9c2d5c27d59a387565a85764405d5c02aea32863723a852cdfcd86b7a55d8c8b"
+        },
+        {
+          "id": "1287-2",
+          "paragraphId": "mwAXM",
+          "start": 111,
+          "end": 172,
+          "kind": "report",
+          "arabic": "دفن مع أبي رجل فلم تطب نفسي حتى أخرجته فجعلته في قبر على حدة ",
+          "english": "A man was buried with my father. I was not content until I took him out and placed him in a grave apart.",
+          "arabicSha256": "6e623543785bf0f5995806eab32ea68295b5dd1343d12e2808b4f19b976076f1",
+          "englishSha256": "5d9ae9c32212bd6797df7ba8694f6f5ef0823b2a574dbcda4fed2c97e4fe5d12"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            339
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            326
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1287"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.435",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.435",
+            "recordSha256": "e892c81e96cda907752b57cb35d75176341037e228940ab14a38dc0f7225c001"
+          }
+        }
+      ],
+      "notes": [
+        "The occurrence was located by its body and chain in both inspected prints and English passages. Wording, role and honorific review remain pending.",
+        "Keep the complete route, separate grave and short account. Do not add the six months or ear detail from the neighboring occurrence.",
+        "Printed reference 1352 · app reference 1287. Individually located EPUB comparison: 2.23.435. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "7fe56a305ad86b9aa7b476b2215ac72fc7116057757cb74ffdd852b6ec6c2840",
+      "englishSha256": "f4d937136a26f06d79e8259b00a3a82d9935ded2a61804f51b9ca2a1e33caed2",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1352 · app reference 1287",
+          "pdfPage": 326,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAXM:0",
+        "sourceReference": {
+          "label": "1287",
+          "number": 1287,
+          "markerId": "mwAXM:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAXM",
+            "textSha256": "7fe56a305ad86b9aa7b476b2215ac72fc7116057757cb74ffdd852b6ec6c2840",
+            "origin": {
+              "blockId": "mwAXM",
+              "blockSha256": "7fe56a305ad86b9aa7b476b2215ac72fc7116057757cb74ffdd852b6ec6c2840",
+              "start": 0,
+              "end": 172
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "ea95248c5fe18d8a270d499ece8f7c0e75a53ecc2673dcff83770e9f56abba9d"
+    },
+    {
+      "number": 1288,
+      "id": "bukhari:1288",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAXU:0",
+      "chapterId": "chapter-77",
+      "paragraphIds": [
+        "mwAXU"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1288-1",
+          "paragraphId": "mwAXU",
+          "start": 0,
+          "end": 150,
+          "kind": "chain",
+          "arabic": "[1288] حدثنا عبدان أخبرنا عبد الله أخبرنا الليث بن سعد قال: حدثني ابن شهاب عن عبد الرحمن بن كعب بن مالك عن جابر بن عبد الله رضى الله تعالى عنهما قال: ",
+          "english": "‘Abdan related to us: ‘Abd Allah informed us: Al-Layth ibn Sa‘d informed us; he said: Ibn Shihab related to me, from ‘Abd al-Rahman ibn Ka‘b ibn Malik, from Jabir ibn ‘Abd Allah, may Allah Most High be pleased with them both, who said:",
+          "arabicSha256": "999b87a3eaba87d911c68269798e6e348642cc4d86f9d8602c7358ea2161f118",
+          "englishSha256": "878b8fc9f173437ca95088de4a5ca6740fe91203baecd3d3c7c5f89f40f734a7"
+        },
+        {
+          "id": "1288-2",
+          "paragraphId": "mwAXU",
+          "start": 150,
+          "end": 326,
+          "kind": "report",
+          "arabic": "كان النبي ﷺ يجمع بين رجلين من قتلى أحد ثم يقول أيهم أكثر أخذا للقرآن فإذا أشير له إلى أحدهما قدمه في اللحد، فقال: أنا شهيد على هؤلاء يوم القيامة فأمر بدفنهم بدمائهم ولم يغسلهم ",
+          "english": "The Prophet, may Allah bless him and grant him peace, used to bring together two men killed at Uhud. Then he would ask, “Which of them had learned more of the Qur’an?” When one of the two was pointed out to him, he placed him first in the side niche of the grave. He said, “I am a witness for these on the Day of Resurrection.” He ordered them to be buried in their blood, and he did not wash them.",
+          "arabicSha256": "147e0d32ca673414262eb8758a4fc9adfbcac708b53f11cecfc6b66c688f2543",
+          "englishSha256": "fe39330a22ca143e71a371c02bda87a160440d2bce5f207356009e1fdae01e40"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            339
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            326
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1288",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-seventh-wording-addendum.json",
+            "sha256": "3329b60c7992c75d57c46d69e13e20b8b8702523685a60d0329d9a9adc32f74b",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "ca6245eb394c2b91607bb78bf15fa4a9be132bf70a2a084180e1e6b8cb3902c9",
+            "occurrence": 1
+          },
+          "note": "Adds a single-garment phrase absent from this occurrence and turns the final not-washing statement into an instruction."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.436",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.436",
+            "recordSha256": "0ac546667706fea4e919b636d474efcddfa1494513b7bb7ddd6c30ba7b5cb38f"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Jabir bin 'Abdullah: ",
+            "The Prophet collected every two martyrs of Uhud (in one grave) and then he would ask, \"Which of them knew the Quran more?\" And if one of them was pointed out for him as having more knowledge, he would put him first in the Lahd. The Prophet said, \"I will be a witness on these on the Day of Resurrection.\" Then he ordered them to be buried with their blood on their bodies and he did not have them washed. "
+          ],
+          "damagedExcerpt": "grave",
+          "note": "Supplies one grave; retain the complete chain and distinction between the burial order and the reported not-washing act."
+        }
+      ],
+      "notes": [
+        "Preserve this repeated account without importing the single-garment phrase from a parallel occurrence.",
+        "Keep the complete Abdan/Abd Allah/Layth ibn Sad route, two men, learned Quran, side niche and Day of Resurrection. No single garment, one grave or not-praying statement occurs here; do not import those from parallel accounts.",
+        "The historical occurrence includes the definite article before two men; selected and modern omit it. Selected: «بين رجلين». brill-1862 (PDF 339): «بين الرجلين». dar-ibn-kathir-2002 (PDF 326): «بين رجلين».",
+        "Printed reference 1353 · app reference 1288. Individually located EPUB comparison: 2.23.436. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "5660f7de810ebf78d610f3e6c206dfc5a5ca03cd969d208e9b08212fa374b670",
+      "englishSha256": "34c920b15c10c804351c60633a5d2d45bda3d82e66d587f525decdc4cc28559e",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1353 · app reference 1288",
+          "pdfPage": 326,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "1288-source-context",
+          "label": "The ending of this occurrence",
+          "text": "This account includes the Day of Resurrection phrase and the not-washing statement. Other endings and the single-garment detail in parallel accounts remain separate.",
+          "citations": [
+            "base",
+            "printed-reference"
+          ],
+          "related": []
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAXU:0",
+        "sourceReference": {
+          "label": "1288",
+          "number": 1288,
+          "markerId": "mwAXU:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAXU",
+            "textSha256": "5660f7de810ebf78d610f3e6c206dfc5a5ca03cd969d208e9b08212fa374b670",
+            "origin": {
+              "blockId": "mwAXU",
+              "blockSha256": "5660f7de810ebf78d610f3e6c206dfc5a5ca03cd969d208e9b08212fa374b670",
+              "start": 0,
+              "end": 326
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "c49de47249b7deec295757df28bf702dd3adb21766cae078c7499e85a492e6e6"
+    }
+  ],
+  "sourceLayout": {
+    "schemaVersion": 1,
+    "sourceId": "wikisource-bukhari-funerals-r393137",
+    "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+    "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+    "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0"
+  }
+}
