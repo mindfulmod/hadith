@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-04T00:15:14.853734+00:00",
+  "status": "ai-assisted-source-comparison-independent-review-pending",
+  "sourceAuditSha256": "0dc73a4365176d62a18921e760cde5862dd4eecfd1fae88c94fd89ad62c088a2",
+  "priorAudits": [
+    {
+      "path": "research/funerals-third-source-audit.json",
+      "sha256": "0dc73a4365176d62a18921e760cde5862dd4eecfd1fae88c94fd89ad62c088a2"
+    },
+    {
+      "path": "research/funerals-final-source-audit.json",
+      "sha256": "2e3680d76cc72c6d064df52d08e1ca075bc96d05b336e123f9f9fa1ceef91d03"
+    }
+  ],
+  "addendumSha256": "2150971e39787f77f9d6ac64736da577ad38b12ba41db8fa5e1b9b4835a71c0e",
+  "reviewSha256": "73c8906c117e5df3341683953e466d3ac6d3fdc9a90ac0c36ae5ebc13431850d",
+  "reviewHashMethod": "SHA-256 of UTF-8 compact JSON preserving property order, finalized with JSON.stringify.",
+  "references": [
+    1289,
+    1290,
+    1291,
+    1292,
+    1293,
+    1294,
+    1295,
+    1296,
+    1297,
+    1298,
+    1299,
+    1300,
+    1301,
+    1302
+  ],
+  "pendingSelectedReferences": [
+    1303,
+    1304,
+    1305,
+    1306,
+    1307,
+    1308,
+    1309,
+    1310,
+    1311,
+    1312,
+    1313,
+    1314,
+    1315,
+    1316,
+    1317,
+    1318,
+    1319,
+    1320,
+    1321,
+    1322,
+    1323,
+    1324,
+    1325,
+    1326,
+    1327,
+    1328,
+    1329,
+    1330
+  ],
+  "originalDigitalArabicChanged": false,
+  "derivedArabicCorrections": [],
+  "printedSupplements": [],
+  "exactTranslatedSpans": 42,
+  "selectedChapters": 7,
+  "separateArabicContextBlocks": 4,
+  "printPagesReread": {
+    "brill-1862": [
+      339,
+      340,
+      341,
+      342,
+      343,
+      344
+    ],
+    "dar-ibn-kathir-2002": [
+      326,
+      327,
+      328,
+      329,
+      330
+    ]
+  },
+  "englishBodiesReread": {
+    "bewley": [
+      1289,
+      1290,
+      1291,
+      1292,
+      1293,
+      1294,
+      1295,
+      1296,
+      1297,
+      1298,
+      1299,
+      1300,
+      1301,
+      1302
+    ],
+    "khan": [
+      "2.23.437",
+      "2.23.438",
+      "2.23.439",
+      "2.23.440",
+      "2.23.441",
+      "2.23.442",
+      "2.23.443",
+      "2.23.444",
+      "2.23.445",
+      "2.23.446",
+      "2.23.447",
+      "2.23.448",
+      "2.23.449"
+    ]
+  },
+  "lexicalSources": [
+    {
+      "id": "qastallani-ibn-sayyad-variants",
+      "label": "Al-Qastallani · Irshad al-Sari · Ibn Sayyad wording variants",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.bukhari-pedia.net/book/ershad_sary/2231"
+    },
+    {
+      "id": "ibn-battal-birth-word",
+      "label": "Ibn Battal · Commentary on Bukhari · birth wording and sound variants",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://bukhari-pedia.net/book/shrh_batal/758"
+    },
+    {
+      "id": "ibn-qurqul-fitrah",
+      "label": "Ibn Qurqul · Matali al-Anwar · fitrah lexical discussion",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://bukhari-pedia.net/book/matale_anwar/776"
+    },
+    {
+      "id": "ayni-jundub-transmission",
+      "label": "Al-Ayni · Umdat al-Qari · Jundub transmission and wound readings",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://hadithportal.com/index.php?bab_id=854&book=33&h_id=1309&sharh=14&show=hadith&uid=0"
+    },
+    {
+      "id": "ayni-assured-word",
+      "label": "Al-Ayni · Umdat al-Qari · the meaning of wajabat",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://hadithunlocked.com/sharh/bukhari-ayni/bukhari%3A1367"
+    }
+  ],
+  "priorEvidenceClarifications": [
+    {
+      "id": "1289-additional-name-recensional-scope",
+      "supersedes": {
+        "path": "research/funerals-third-source-audit.json",
+        "sha256": "0dc73a4365176d62a18921e760cde5862dd4eecfd1fae88c94fd89ad62c088a2",
+        "reference": 1289,
+        "field": "records.1289.finding; unresolvedTextualDifferences.1289-closing-additional-narrator"
+      },
+      "status": "prior-description-qualified-no-source-change",
+      "finding": "The two print excerpts remain evidence for the additional Ishaq al-Kalbi attribution, but al-Qastallani explicitly documents transmissions without it. Its absence from the selected text is therefore not sufficient evidence for an automatic missing-material supplement.",
+      "sources": []
+    },
+    {
+      "id": "1291-historical-name-correction",
+      "supersedes": {
+        "path": "research/funerals-final-source-audit.json",
+        "sha256": "2e3680d76cc72c6d064df52d08e1ca075bc96d05b336e123f9f9fa1ceef91d03",
+        "reference": 1291,
+        "field": "records.1291.finding; unresolvedTextualDifferences.1291-chain-name"
+      },
+      "status": "prior-excerpt-corrected-no-source-change",
+      "finding": "Enlarged historical PDF page 341 reads Ubayd Allah ibn Abi Yazid, not Abd Allah ibn Abi Yazid. The modern witness still reads Abd Allah. This supersedes the earlier historical excerpt and both-prints description without altering that historical JSON or the selected Arabic.",
+      "sources": []
+    },
+    {
+      "id": "1298-preposition-recensional-scope",
+      "supersedes": {
+        "path": "research/funerals-final-source-audit.json",
+        "sha256": "2e3680d76cc72c6d064df52d08e1ca075bc96d05b336e123f9f9fa1ceef91d03",
+        "reference": 1298,
+        "field": "unresolvedTextualDifferences.1298-reporting-preposition"
+      },
+      "status": "prior-description-qualified-no-source-change",
+      "finding": "The two print excerpts remain accurate, but al-Ayni explicitly records an as a reading in the sense of transmission. The selected preposition is not silently changed to ala; its working English and separate narrator assurance follow the documented selected construction.",
+      "sources": []
+    }
+  ],
+  "chapterDifferences": {
+    "chapter-80": [
+      "chapter-80-palm-placement"
+    ],
+    "chapter-81": [
+      "chapter-81-gloss-marker"
+    ]
+  },
+  "limitations": [
+    "AI-assisted comparison and working English are not independent accuracy certification.",
+    "All selected digital Arabic remains unchanged. No printed supplement or correction is applied in this batch.",
+    "Four complete chapter introductions remain Arabic only, with English pending.",
+    "No new audio, paid access, rights clearance or external publication is implied."
+  ]
+}

@@ -1,0 +1,49 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {BOOK_CONFIGS,buildBookBatch,collectionFiles} from '../scripts/build-collection.mjs';
+import {validateChapterDifferences} from '../scripts/chapter-source-differences.mjs';
+const read=p=>JSON.parse(readFileSync(new URL('../'+p,import.meta.url),'utf8')),sha=s=>createHash('sha256').update(s).digest('hex'),hash=o=>sha(JSON.stringify(o));
+const review=()=>read('content/review/funerals-eighth-review.json'),inv=read('content/staging/bukhari-funerals-wikisource/catalog.json'),manifest=read('content/sources/wikisource-funerals/manifest.json');
+const {source,ledger}=collectionFiles(),book=ledger.books.find(b=>b.id==='funerals'),numbers=Array.from({length:14},(_,i)=>1289+i),get=n=>source.entries.find(e=>e.number===n),text=n=>get(n).english_blocks.join('\n\n');
+const rehash=e=>{delete e.reviewRecordSha256;e.reviewRecordSha256=hash(e);};
+test('eighth Funerals batch preserves complete Arabic spans, honorifics and seven whole chapters',()=>{
+ const r=review();assert.deepEqual(r.entries.map(e=>e.number),numbers);assert.deepEqual(book.entryNumbers.slice(109,123),numbers);assert.deepEqual(r.chapters.flatMap(c=>c.entryNumbers),numbers);assert.equal(r.chapters.length,7);assert.equal(r.entries.reduce((n,e)=>n+e.segments.length,0),42);assert.deepEqual(r.chapters.flatMap(c=>c.contextIds),['mwAXg','mwAZY','mwAZo','mwAaU']);
+ for(const e of r.entries){const original=e.paragraphIds.map(id=>inv.blocks.find(b=>b.htmlId===id).text);assert.deepEqual(get(e.number).arabic_blocks,original);assert.equal(e.segments.map(s=>s.arabic).join(''),original.join(''));assert.equal(e.arabicCorrections,undefined);assert.equal(e.arabicSupplements,undefined);const a=original.join(''),t=text(e.number);assert.equal((t.match(/may Allah bless him and grant him peace/g)||[]).length,(a.match(/ﷺ/g)||[]).length,e.number);assert.equal((t.match(/may Allah Most High be pleased/g)||[]).length,(a.match(/رضى الله تعالى/g)||[]).length,e.number);}
+});
+test('1289 preserves both routes, glosses, truncated answer and every named variant',()=>{
+ assert.deepEqual(get(1289).presentation.english.map(s=>s.kind),['chain','report','chain','report','transmission-note','report','transmission-note','report','transmission-note']);
+ assert.match(text(1289),/Salim ibn ‘Abd Allah informed me/);assert.match(text(1289),/And Salim said: I heard Ibn ‘Umar/);assert.match(text(1289),/fortified building of Banu Maghalah/);assert.match(text(1289),/What do you see/);assert.match(text(1289),/It is al-dukh/);assert.match(text(1289),/If he is he/);assert.match(text(1289),/ramzah—or a zamrah/);assert.match(text(1289),/Shu‘ayb said in his report: “fa-raḍḍahu”; “ramramah or zamzamah.” And ‘Uqayl said: “ramramah.” And Ma‘mar said: “ramzah.”/);assert.doesNotMatch(text(1289),/hillocks|Dajjal|Ishaq al-Kalbi|What do you think|struck him on the back/);
+});
+test('1290–1293 retain narrator identity, three voices and different Quran excerpt lengths',()=>{
+ assert.deepEqual(get(1290).presentation.english.map(s=>s.kind),['chain','transmission-note','chain','report']);assert.equal(get(1290).english_blocks[1],'he is Ibn Zayd—');assert.match(text(1290),/Obey Abu al-Qasim, may Allah bless him and grant him peace/);assert.doesNotMatch(text(1290),/father, who was sitting/);assert.match(text(1291),/‘Ubayd Allah said/);assert.doesNotMatch(text(1291),/ibn Abi Yazid|poor/);
+ assert.deepEqual(get(1292).presentation.english.map(s=>s.kind),['chain','transmission-note','chain','report','transmission-note']);assert.match(get(1292).english_blocks[0],/Ibn Shihab said/);assert.match(get(1292).english_blocks[1],/unlawful intercourse/);assert.match(get(1292).english_blocks[2],/^For Abu Hurayrah/);assert.doesNotMatch(get(1292).english_blocks[3],/Islam|prostitute/);assert.match(get(1292).english_blocks.at(-1),/created people”—the verse\.$/);assert.doesNotMatch(text(1292),/upright religion/);assert.match(get(1293).english_blocks.at(-1),/There is no alteration to Allah’s creation. That is the upright religion/);assert.doesNotMatch(text(1293),/most of|the verse/);
+});
+test('1294–1296 keep the oath, affirmation, tentative reply and abbreviated verse',()=>{
+ assert.match(text(1294),/two kept repeating that statement/);assert.match(text(1294),/By Allah, I will seek forgiveness/);assert.match(text(1294),/Allah Most High revealed/);assert.match(text(1294),/“It is not for the Prophet”—the verse/);assert.doesNotMatch(text(1294),/those who believe|cautioning/);
+ assert.match(text(1295),/They are indeed being punished/);assert.match(text(1295),/carrying tales/);assert.match(text(1295),/Perhaps it will be lightened/);assert.doesNotMatch(text(1295),/I hope|to avoid|calumn/);
+ assert.match(text(1296),/‘Uthman related to us; he said: Jarir related to me/);assert.match(text(1296),/no soul born/);assert.match(text(1296),/for whom it has not been written: wretched or happy/);assert.match(text(1296),/“As for one who gives and is God-fearing”—the verse/);assert.doesNotMatch(text(1296),/funeral prayer|best reward|believes in|Work, for/);
+});
+test('1297–1299 preserve the assurance and short reports without importing extra examples or duration',()=>{
+ assert.match(text(1297),/deliberately swears a false oath by a religion other than Islam/);assert.doesNotMatch(text(1297),/if he says|I am a Jew|for example/);assert.deepEqual(get(1298).presentation.english.map(s=>s.kind),['chain','transmission-note','report']);assert.match(text(1298),/^And Hajjaj ibn Minhal said/);assert.match(get(1298).english_blocks[1],/we have not forgotten/);assert.match(get(1298).english_blocks[1],/in reporting from the Prophet/);assert.match(text(1298),/anticipated Me with his own life/);assert.doesNotMatch(text(1298),/his way to Me|knife|arrow|blood|forever/);assert.doesNotMatch(text(1299),/forever|eternally|dagger/);
+});
+test('shared EPUB 445 comparison spans are contiguous and cannot be silently merged',()=>{
+ const r=review(),a=read('research/funerals-eighth-wording-addendum.json'),parts=r.entries.filter(e=>[1297,1298].includes(e.number));let end=0;
+ const all=parts[0].comparisons[1].checkedBody.join('\n\n');for(const e of parts){const c=e.comparisons[1],b=c.spanEvidence;assert.equal(c.reference,'2.23.445');assert.equal(b.auditSha256,hash(a));assert.equal(b.span.start,end);assert.equal(b.span.sha256,sha([...all].slice(b.span.start,b.span.end).join('')));end=b.span.end;}assert.equal(end,[...all].length);assert(all.slice(parts[0].comparisons[1].spanEvidence.span.end).startsWith('Narrated Jundab'));
+ for(const mutate of[e=>delete e.comparisons[1].spanEvidence,e=>e.comparisons[1].spanEvidence.span.start++,e=>e.comparisons[1].part.index=1]){const changed=review(),e=changed.entries.find(e=>e.number===1298);mutate(e);rehash(e);assert.throws(()=>buildBookBatch(inv,changed,manifest,BOOK_CONFIGS.funerals));}
+});
+test('1300–1302 retain first person, quotation endpoints, repeated responses and the final unasked question',()=>{
+ assert.match(text(1300),/may Allah Most High be pleased with them,/);assert.match(text(1300),/such and such on such and such a day/);assert.match(text(1300),/I was recounting/);assert.match(text(1300),/two verses from Bara’ah/);assert.match(text(1300),/“Never pray over any of them who dies,” to “while they are transgressors.”/);assert.doesNotMatch(text(1300),/stand at his grave|O Muhammad/);
+ assert.match(text(1301),/They passed with a funeral/);assert.equal((text(1301).match(/It has become assured/g)||[]).length,2);assert.match(text(1301),/You are Allah’s witnesses on earth/);
+ assert.match(text(1302),/illness had broken out/);assert.equal((text(1302).match(/may Allah Most High be pleased with him/g)||[]).length,3);assert.match(text(1302),/Abu al-Aswad said: I asked/);assert.match(text(1302),/four testify to good/);assert.match(text(1302),/And three/);assert.match(text(1302),/And two/);assert.match(text(1302),/Then we did not ask him about one/);assert.doesNotMatch(text(1302),/epidemic|piety/);
+});
+test('historical name correction and recensional qualifications do not rewrite source audits',()=>{
+ const a=read('research/funerals-eighth-wording-addendum.json'),w=read('research/funerals-eighth-wording-review.json');for(const old of a.priorAudits)assert.equal(old.sha256,hash(read(old.path)));assert.equal(w.addendumSha256,hash(a));assert.equal(w.reviewSha256,hash(review()));assert.equal(a.priorEvidenceClarifications.length,3);
+ const old=read('research/funerals-final-source-audit.json').unresolvedTextualDifferences.find(v=>v.id==='1291-chain-name'),after=a.unresolvedTextualDifferences.find(v=>v.id==='1291-chain-name-reread');assert(old.witnesses[0].reading.includes('عبد الله بن أبي يزيد'));assert(after.witnesses[0].reading.includes('عبيد الله بن أبي يزيد'));for(const v of a.unresolvedTextualDifferences)for(const wi of v.witnesses)assert.equal(wi.readingSha256,sha(wi.reading));assert.equal(a.proposedCorrections.length,0);
+ for(const stage of ['third','final'])assert(readFileSync(new URL('../research/funerals-'+stage+'-source-review.html',import.meta.url),'utf8').includes('later-eighth-batch-corrections'));
+});
+test('chapter differences and comparison limitations cannot lose their evidence bindings',()=>{
+ const r=review();for(const id of['chapter-80','chapter-81']){const c=r.chapters.find(c=>c.id===id);assert(validateChapterDifferences(c,inv,r).length>0);delete c.contextDifferences;assert.throws(()=>validateChapterDifferences(c,inv,r));}
+ for(const mutate of[e=>e.comparisons[0].damageEvidence.sha256='0'.repeat(64),e=>e.segments[1].arabic+=' ',e=>e.paragraphIds=[]]){const changed=review(),e=changed.entries.find(e=>e.number===1291);mutate(e);rehash(e);assert.throws(()=>buildBookBatch(inv,changed,manifest,BOOK_CONFIGS.funerals));}
+});

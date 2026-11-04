@@ -1,0 +1,2316 @@
+{
+  "schemaVersion": 1,
+  "status": "personal-prototype-only",
+  "independentReview": "pending",
+  "sourceId": "wikisource-bukhari-funerals-r393137",
+  "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+  "inventorySha256": "b8fe53c6aa2ae70c52b5f14b43462f14ed9a3db2ac2f59a282e77686670dd2fe",
+  "createdAt": "2026-11-04",
+  "sources": [
+    {
+      "id": "arabic-funerals",
+      "label": "Arabic Wikisource · fixed revision 393137",
+      "kind": "arabic-input",
+      "format": "web",
+      "url": "https://ar.wikisource.org/w/index.php?title=%D8%B5%D8%AD%D9%8A%D8%AD+%D8%A7%D9%84%D8%A8%D8%AE%D8%A7%D8%B1%D9%8A%2F%D9%83%D8%AA%D8%A7%D8%A8+%D8%A7%D9%84%D8%AC%D9%86%D8%A7%D8%A6%D8%B2&oldid=393137"
+    },
+    {
+      "id": "bewley-funerals",
+      "label": "Aisha Bewley · Funerals",
+      "kind": "english-comparison",
+      "format": "web",
+      "url": "https://aishabewley.org/bukhari11"
+    },
+    {
+      "id": "islamhouse-khan",
+      "label": "IslamHouse · Khan-family English comparison",
+      "kind": "english-comparison",
+      "format": "web",
+      "url": "https://islamhouse.com/en/books/70510"
+    },
+    {
+      "id": "brill-1862",
+      "label": "Historical Arabic print · Brill 1862",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/صحيح_البخاري_ر1.pdf",
+      "sha256": "f23b5c4dc56c68562b699b045eb209bcbf3708ec9dda9c56f1407f627fbaa9e1"
+    },
+    {
+      "id": "dar-ibn-kathir-2002",
+      "label": "Arabic print · Dar Ibn Kathir 2002",
+      "kind": "arabic-witness",
+      "format": "pdf",
+      "url": "https://archive.org/download/waq79565/79565.pdf",
+      "sha256": "9e32296488e37b86251cf10e71af0959aed2e1593ca876ac6f98b8366acf6098"
+    },
+    {
+      "id": "qastallani-ibn-sayyad-variants",
+      "label": "Al-Qastallani · Irshad al-Sari · Ibn Sayyad wording variants",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://www.bukhari-pedia.net/book/ershad_sary/2231"
+    },
+    {
+      "id": "ibn-battal-birth-word",
+      "label": "Ibn Battal · Commentary on Bukhari · birth wording and sound variants",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://bukhari-pedia.net/book/shrh_batal/758"
+    },
+    {
+      "id": "ibn-qurqul-fitrah",
+      "label": "Ibn Qurqul · Matali al-Anwar · fitrah lexical discussion",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://bukhari-pedia.net/book/matale_anwar/776"
+    },
+    {
+      "id": "ayni-jundub-transmission",
+      "label": "Al-Ayni · Umdat al-Qari · Jundub transmission and wound readings",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://hadithportal.com/index.php?bab_id=854&book=33&h_id=1309&sharh=14&show=hadith&uid=0"
+    },
+    {
+      "id": "ayni-assured-word",
+      "label": "Al-Ayni · Umdat al-Qari · the meaning of wajabat",
+      "kind": "commentary",
+      "format": "web",
+      "url": "https://hadithunlocked.com/sharh/bukhari-ayni/bukhari%3A1367"
+    }
+  ],
+  "scope": "Fourteen selected digital reports 1289–1302, seven complete chapters 78–84 and four separate Arabic context paragraphs. Later 1303–1330 remain outside this batch.",
+  "editionNote": "Newly authored AI-assisted working English, not Darussalam wording or independent certification. All selected digital Arabic and original inputs remain unchanged. Complete chains, honorifics, repetitions, uncertainty and narrator comments are retained. Earlier comparison transcription mistakes are explicitly corrected without rewriting historical audit files.",
+  "chapters": [
+    {
+      "id": "chapter-78",
+      "headingId": "باب_إذا_أسلم_الصبي_فمات_هل_يصلى_عليه_وهل_يعرض_على_الصبي_الإسلام",
+      "contextIds": [
+        "mwAXg"
+      ],
+      "entryNumbers": [
+        1289,
+        1290,
+        1291,
+        1292,
+        1293
+      ],
+      "title": "If a boy embraces Islam and dies, is prayer offered over him, and is Islam presented to a boy?",
+      "titleArabic": "باب إذا أسلم الصبي فمات هل يصلى عليه وهل يعرض على الصبي الإسلام",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "Original Arabic chapter context retained separately; English translation pending."
+    },
+    {
+      "id": "chapter-79",
+      "headingId": "باب_إذا_قال_المشرك_عند_الموت_لا_إله_إلا_الله",
+      "contextIds": [],
+      "entryNumbers": [
+        1294
+      ],
+      "title": "If a polytheist says at death: There is no god but Allah",
+      "titleArabic": "باب إذا قال المشرك عند الموت لا إله إلا الله",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in this selected chapter."
+    },
+    {
+      "id": "chapter-80",
+      "headingId": "باب_الجريد_على_القبر",
+      "contextIds": [
+        "mwAZY"
+      ],
+      "entryNumbers": [
+        1295
+      ],
+      "title": "Palm branches on the grave",
+      "titleArabic": "باب الجريد على القبر",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "Original Arabic chapter context retained separately; English translation pending.",
+      "contextDifferences": [
+        {
+          "auditPath": "research/funerals-eighth-wording-addendum.json",
+          "auditSha256": "2150971e39787f77f9d6ac64736da577ad38b12ba41db8fa5e1b9b4835a71c0e",
+          "differenceId": "chapter-80-palm-placement"
+        }
+      ]
+    },
+    {
+      "id": "chapter-81",
+      "headingId": "باب_موعظة_المحدث_عند_القبر_وقعود_أصحابه_حوله",
+      "contextIds": [
+        "mwAZo"
+      ],
+      "entryNumbers": [
+        1296
+      ],
+      "title": "The narrator’s exhortation at the grave and his companions sitting around him",
+      "titleArabic": "باب موعظة المحدث عند القبر وقعود أصحابه حوله",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "Original Arabic chapter context retained separately; English translation pending.",
+      "contextDifferences": [
+        {
+          "auditPath": "research/funerals-eighth-wording-addendum.json",
+          "auditSha256": "2150971e39787f77f9d6ac64736da577ad38b12ba41db8fa5e1b9b4835a71c0e",
+          "differenceId": "chapter-81-gloss-marker"
+        }
+      ]
+    },
+    {
+      "id": "chapter-82",
+      "headingId": "باب_ما_جاء_في_قاتل_النفس",
+      "contextIds": [],
+      "entryNumbers": [
+        1297,
+        1298,
+        1299
+      ],
+      "title": "What has been related about one who kills himself",
+      "titleArabic": "باب ما جاء في قاتل النفس",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in this selected chapter."
+    },
+    {
+      "id": "chapter-83",
+      "headingId": "باب_ما_يكره_من_الصلاة_على_المنافقين_والاستغفار_للمشركين",
+      "contextIds": [
+        "mwAaU"
+      ],
+      "entryNumbers": [
+        1300
+      ],
+      "title": "What is disliked of praying over hypocrites and seeking forgiveness for polytheists",
+      "titleArabic": "باب ما يكره من الصلاة على المنافقين والاستغفار للمشركين",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "Original Arabic chapter context retained separately; English translation pending."
+    },
+    {
+      "id": "chapter-84",
+      "headingId": "باب_ثناء_الناس_على_الميت",
+      "contextIds": [],
+      "entryNumbers": [
+        1301,
+        1302
+      ],
+      "title": "People’s praise of the deceased",
+      "titleArabic": "باب ثناء الناس على الميت",
+      "status": "ai-working-translation",
+      "independentReview": "pending",
+      "contextStatus": "No separate introduction in this selected chapter."
+    }
+  ],
+  "entries": [
+    {
+      "number": 1289,
+      "id": "bukhari:1289",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAXk:0",
+      "chapterId": "chapter-78",
+      "paragraphIds": [
+        "mwAXk"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1289-1",
+          "paragraphId": "mwAXk",
+          "start": 0,
+          "end": 120,
+          "kind": "chain",
+          "arabic": "[1289] حدثنا عبدان أخبرنا عبد الله عن يونس عن الزهري قال: أخبرني سالم بن عبد الله ان ابن عمر رضى الله تعالى عنهما أخبره ",
+          "english": "‘Abdan related to us: ‘Abd Allah informed us, from Yunus, from al-Zuhri, who said: Salim ibn ‘Abd Allah informed me that Ibn ‘Umar, may Allah Most High be pleased with them both, informed him:",
+          "arabicSha256": "634f002722fcb419c35dd3733ad4bfe582d048dbab93b877da85b51eaccddea3",
+          "englishSha256": "34c20fe357a7bfbe98074f964296b649c56777cea33ef63201ca9fe820628187"
+        },
+        {
+          "id": "1289-2",
+          "paragraphId": "mwAXk",
+          "start": 120,
+          "end": 707,
+          "kind": "report",
+          "arabic": "أن عمر انطلق مع النبي ﷺ في رهط قبل بن صياد حتى وجدوه يلعب مع الصبيان عند أطم بني مغالة وقد قارب بن صياد الحلم فلم يشعر حتى ضرب النبي ﷺ بيده، ثم قال لابن صياد تشهد أني رسول الله فنظر إليه بن صياد، فقال أشهد أنك رسول الأميين، فقال ابن صياد للنبي ﷺ أتشهد أني رسول الله فرفضه، وقال آمنت بالله وبرسله، فقال له ماذا ترى قال ابن صياد يأتيني صادق وكاذب، فقال النبي ﷺ خلط عليك الأمر، ثم قال له النبي ﷺ إني قد خبأت لك خبيئا، فقال ابن صياد هو الدخ، فقال اخسأ فلن تعدو قدرك، فقال عمر رضى الله تعالى عنه دعني يا رسول الله أضرب عنقه، فقال النبي ﷺ إن يكنه فلن تسلط عليه وإن لم يكنه فلا خير لك في قتله، ",
+          "english": "‘Umar set out with the Prophet, may Allah bless him and grant him peace, in a group towards Ibn Sayyad. They found him playing with the boys beside the fortified building of Banu Maghalah. Ibn Sayyad had nearly reached puberty. He did not notice until the Prophet, may Allah bless him and grant him peace, struck him with his hand. Then he said to Ibn Sayyad, “Do you testify that I am the Messenger of Allah?” Ibn Sayyad looked at him and said, “I testify that you are the messenger of the unlettered.” Ibn Sayyad said to the Prophet, may Allah bless him and grant him peace, “Do you testify that I am the Messenger of Allah?” He dismissed him and said, “I believe in Allah and His messengers.” He asked him, “What do you see?” Ibn Sayyad said, “A truthful one and a liar come to me.” The Prophet, may Allah bless him and grant him peace, said, “The matter has been confused for you.” Then the Prophet, may Allah bless him and grant him peace, said to him, “I have concealed something for you.” Ibn Sayyad said, “It is al-dukh.” He said, “Be off! You will not exceed your measure.” ‘Umar, may Allah Most High be pleased with him, said, “Let me strike his neck, Messenger of Allah.” The Prophet, may Allah bless him and grant him peace, said, “If he is he, you will not be given power over him; and if he is not he, there is no good for you in killing him.”",
+          "arabicSha256": "dbfc1a502b4f2305aa0b81a0d80d7eee05e5987e3d72459a1b0380853df5d3a7",
+          "englishSha256": "3104b883de472d6b4820a170d726eb2e0693ae1649700e5fca327fc6a1503793"
+        },
+        {
+          "id": "1289-3",
+          "paragraphId": "mwAXk",
+          "start": 707,
+          "end": 756,
+          "kind": "chain",
+          "arabic": "وقال سالم سمعت ابن عمر رضى الله تعالى عنهما يقول ",
+          "english": "And Salim said: I heard Ibn ‘Umar, may Allah Most High be pleased with them both, say:",
+          "arabicSha256": "91bc87e5e48be62ae6b2b7d5529d603c412dbf4c254fcb5e7d5cc88b98141a89",
+          "englishSha256": "b877bdb7518aa83ae62dbe16e80cccf3e2748427ddc3d1968b15d76530dadaba"
+        },
+        {
+          "id": "1289-4",
+          "paragraphId": "mwAXk",
+          "start": 756,
+          "end": 899,
+          "kind": "report",
+          "arabic": "انطلق بعد ذلك رسول الله ﷺ وأبي بن كعب إلى النخل التي فيها بن صياد وهو يختل أن يسمع من ابن صياد شيئا قبل أن يراه بن صياد فرآه النبي ﷺ وهو مضطجع ",
+          "english": "After that, the Messenger of Allah, may Allah bless him and grant him peace, and Ubayy ibn Ka‘b went to the palm trees where Ibn Sayyad was. He was trying to hear something from Ibn Sayyad without being noticed, before Ibn Sayyad saw him. The Prophet, may Allah bless him and grant him peace, saw him lying down—",
+          "arabicSha256": "e7007c652e8c3f552dc85fb447b4b0db7aaba614fbbd686e7a6265e5eab65b9a",
+          "englishSha256": "c58b1ae17ab91842fd3b5b443b512bcb51d8290f18fad4e26a0c3bcf5e462c91"
+        },
+        {
+          "id": "1289-5",
+          "paragraphId": "mwAXk",
+          "start": 899,
+          "end": 934,
+          "kind": "transmission-note",
+          "arabic": "يعني في قطيفة له فيها رمزة أو زمرة ",
+          "english": "meaning, in a shaggy cloak of his, from which came a ramzah—or a zamrah.",
+          "arabicSha256": "964a22ba2b1777447754b1875311055eeb741edc78b6afcbffec2c70411dde1f",
+          "englishSha256": "c5596d14b7b96ca4576c99296252f04202ebbad7101705f04de25d7621afd2e2"
+        },
+        {
+          "id": "1289-6",
+          "paragraphId": "mwAXk",
+          "start": 934,
+          "end": 1006,
+          "kind": "report",
+          "arabic": "فرأت أم بن صياد رسول الله ﷺ وهو يتقي بجذوع النخل فقالت لابن صياد يا صاف ",
+          "english": "Ibn Sayyad’s mother saw the Messenger of Allah, may Allah bless him and grant him peace, concealing himself behind the palm trunks. She said to Ibn Sayyad, “Saf!”—",
+          "arabicSha256": "f9faba21cfb56f56067ada84bbf6d6bbe17f1605b49a9b8947f9d8df5cd22cf6",
+          "englishSha256": "53f2c0c93224381c5b35572af8080ca09fcdb8f7bf2fe68e928f94667e2d3add"
+        },
+        {
+          "id": "1289-7",
+          "paragraphId": "mwAXk",
+          "start": 1006,
+          "end": 1022,
+          "kind": "transmission-note",
+          "arabic": "وهو اسم بن صياد ",
+          "english": "which was Ibn Sayyad’s name—",
+          "arabicSha256": "1477af3bff23b17b7fe68bcbb07e5cb98efda97f9832ca2ee2b555108c87c191",
+          "englishSha256": "a7416cd019591cf979e196e050460068d35cad96cb86749520b08c0ce1be4e71"
+        },
+        {
+          "id": "1289-8",
+          "paragraphId": "mwAXk",
+          "start": 1022,
+          "end": 1074,
+          "kind": "report",
+          "arabic": "هذا محمد ﷺ فثار بن صياد، فقال النبي ﷺ لو تركته بين، ",
+          "english": "“This is Muhammad, may Allah bless him and grant him peace.” Ibn Sayyad sprang up. The Prophet, may Allah bless him and grant him peace, said, “Had she left him, he would have made it clear.”",
+          "arabicSha256": "05ade33986b6f17b644d6a6fe8846d74d835eb28176151216854977a11f48bfd",
+          "englishSha256": "75d13552ccdbbf8ba5e410a5937c62792eee6787f09fb59191b8d0002158ccc9"
+        },
+        {
+          "id": "1289-9",
+          "paragraphId": "mwAXk",
+          "start": 1074,
+          "end": 1146,
+          "kind": "transmission-note",
+          "arabic": "وقال شعيب في حديثه فرضه رمرمة أو زمزمة، وقال عقيل رمرمة، وقال معمر رمزة ",
+          "english": "And Shu‘ayb said in his report: “fa-raḍḍahu”; “ramramah or zamzamah.” And ‘Uqayl said: “ramramah.” And Ma‘mar said: “ramzah.”",
+          "arabicSha256": "f3106f4fd74971c4ce84cd072a025b2fa57704719977b79fac45944ee90b65b3",
+          "englishSha256": "81637435511528c63adc89c722a34c097a8103bd720de3e67e96fedab28997da"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            340
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            326,
+            327
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1289",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-eighth-wording-addendum.json",
+            "sha256": "2150971e39787f77f9d6ac64736da577ad38b12ba41db8fa5e1b9b4835a71c0e",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "34d018c1f6e38b7bac4715a881fd3f23c3ba045166aad3c71a1c93f1f7f8bb61",
+            "occurrence": 1
+          },
+          "note": "Abridges the Salim attribution, renders أطم as hills, and does not preserve all selected alternatives in the murmuring phrase. The closing transmitter variants require comparison with the Arabic, not reliance on English transliteration. Uses think for see and collapses the al-dukh form to smoke; the selected form and sound-word alternatives remain distinct."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.437",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.437",
+            "recordSha256": "ed882e19e6a2d3f14b1111f2aa552a6ed60956d16ee6f89c9caf4e02108cc49f"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Ibn 'Umar: ",
+            "'Umar set out along with the Prophet (p.b.u.h) with a group of people to Ibn Saiyad till they saw him playing with the boys near the hillocks of Bani Mughala. Ibn Saiyad at that time was nearing his puberty and did not notice (us) until the Prophet stroked him with his hand and said to him, \"Do you testify that I am Allah's Apostle?\" Ibn Saiyad looked at him and said, \"I testify that you are the Messenger of illiterates.\" Then Ibn Saiyad asked the Prophet (p.b.u.h), \"Do you testify that I am Allah's Apostle?\" The Prophet (p.b.u.h) refuted it and said, \"I believe in Allah and His Apostles.\" Then he said (to Ibn Saiyad), \"What do you think?\" Ibn Saiyad answered, \"True people and liars visit me.\" The Prophet said, \"You have been confused as to this matter.\" Then the Prophet said to him, \"I have kept something (in my mind) for you, (can you tell me that?)\" Ibn Saiyad said, \"It is Al-Dukh (the smoke).\" (2) The Prophet said, \"Let you be in ignominy. You cannot cross your limits.\" On that 'Umar, said, \"O Allah's Apostle! Allow me to chop his head off.\" The Prophet (p.b.u.h) said, \"If he is he (i.e. Dajjal), then you cannot over-power him, and if he is not, then there is no use of murdering him.\" (Ibn 'Umar added): Later on Allah's Apostle (p.b.u.h) once again went along with Ubai bin Ka'b to the date-palm trees (garden) where Ibn Saiyad was staying. The Prophet (p.b.u.h) wanted to hear something from Ibn Saiyad before Ibn Saiyad could see him, and the Prophet (p.b.u.h) saw him lying covered with a sheet and from where his murmurs were heard. Ibn Saiyad's mother saw Allah's Apostle while he was hiding himself behind the trunks of the date-palm trees. She addressed Ibn Saiyad, \"O Saf ! (and this was the name of Ibn Saiyad) Here is Muhammad.\" And with that Ibn Saiyad got up. The Prophet said, \"Had this woman left him (Had she not disturbed him), then Ibn Saiyad would have revealed the reality of his case. "
+          ],
+          "damagedExcerpt": "hillocks",
+          "note": "Omits all closing Shuayb/Uqayl/Mamar reading variants and abridges Salim’s attribution. It adds a Dajjal explanation and renders أطم as hillocks; neither substitutes for selected wording."
+        }
+      ],
+      "notes": [
+        "One selected entry spans modern 1354/1355. All named closing variants remain. The prints include Ishaq al-Kalbi, while classical commentary also documents transmissions without that name; no supplement is imposed.",
+        "Keep both Salim routes, all three companion honorifics, the narrator glosses and all named closing alternatives. Atum is a fortified building, not hills. Retain the truncated al-dukh rather than inserting a complete Quran quotation or the name Dajjal. The sound words ramzah/zamrah and ramramah/zamzamah are retained distinctly; commentary relates them to low or indistinct sounds. Fa-raddahu is retained as a variant word rather than silently equated with the earlier dismissed reading. Al-Qastallani records both presence and absence of Ishaq al-Kalbi in different transmissions, so two prints alone do not justify adding that name to the selected source.",
+        "Both prints additionally name Ishaq al-Kalbi before Uqayl. The surrounding sound-word variants remain a separate wording-review task. Selected: «وقال عقيل رمرمة». brill-1862 (PDF 340): «وقال إسحق الكلبي وعقيل رمرمة». dar-ibn-kathir-2002 (PDF 327): «وقال إسحاق الكلبي وعقيل رمرمة».",
+        "The historical first question includes the interrogative alif; selected and modern leave it implicit. Selected: «تشهد أني رسول الله». brill-1862 (PDF 340): «أتشهد أني رسول الله». dar-ibn-kathir-2002 (PDF 326): «تشهد أني رسول الله».",
+        "The selected and modern explicit meaning gloss is absent from the historical excerpt. The gloss remains separately attributed. Selected: «يعني في قطيفة له». brill-1862 (PDF 340): «في قطيفة له». dar-ibn-kathir-2002 (PDF 327): «يعني في قطيفة له».",
+        "The modern mother-sighting designation has no printed honorific at this point. Selected and historical have one; it is retained. Selected: «فرأت أم بن صياد رسول الله ﷺ». brill-1862 (PDF 340): «فرأت أم ابن صياد رسول الله صلى الله عليه وسلم». dar-ibn-kathir-2002 (PDF 327): «فرأت أم ابن صياد رسول الله».",
+        "Printed references 1354 / 1355 · app reference 1289. Individually located EPUB comparison: 2.23.437. Comparison limits never replace selected Arabic wording.",
+        "The historical closing visibly places both verb forms together and has zamzamah first; the modern closing has fa-rafadahu and the two sound alternatives. The selected fa-raddahu reading is documented by al-Qastallani and retained distinctly, without supplying the additional print wording. Selected: «وقال شعيب في حديثه فرضه رمرمة أو زمزمة». brill-1862 (PDF 340): «وقال شعيب زمزمة فرضه فرفضه». dar-ibn-kathir-2002 (PDF 327): «وقال شعيب في حديثه فرفضه رمرمة أو زمزمة»."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "460cf805f199e8aee3860dc7bce2157008b8a0029ef1b8f0f674e91620890eda",
+      "englishSha256": "2cf2ea9baac9cf51f921c0d88447b593e518d1afef53ade277f6b04dc830e920",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed references 1354 / 1355 · app reference 1289",
+          "pdfPage": 326,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        },
+        {
+          "id": "lexical",
+          "sourceId": "qastallani-ibn-sayyad-variants",
+          "locator": "Al-Qastallani · Irshad al-Sari · Ibn Sayyad wording variants",
+          "scope": "Classical lexical or transmission discussion consulted. Separate from narration and not independent approval of this working translation."
+        },
+        {
+          "id": "lexical-2",
+          "sourceId": "ibn-battal-birth-word",
+          "locator": "Ibn Battal · Commentary on Bukhari · birth wording and sound variants",
+          "scope": "Classical lexical or transmission discussion consulted. Separate from narration and not independent approval of this working translation."
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "1289-source-context",
+          "label": "Preserved wording variants",
+          "text": "The word al-dukh remains unexpanded. Ramzah/zamrah and ramramah/zamzamah are distinct readings for low or indistinct sounds. The closing fa-raḍḍahu has a pressing meaning in classical commentary, distinct from the earlier dismissed reading. Both narrator glosses and all named variants remain; source notes explain the alternatives.",
+          "citations": [
+            "base",
+            "printed-reference",
+            "lexical"
+          ],
+          "related": []
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAXk:0",
+        "sourceReference": {
+          "label": "1289",
+          "number": 1289,
+          "markerId": "mwAXk:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAXk",
+            "textSha256": "460cf805f199e8aee3860dc7bce2157008b8a0029ef1b8f0f674e91620890eda",
+            "origin": {
+              "blockId": "mwAXk",
+              "blockSha256": "460cf805f199e8aee3860dc7bce2157008b8a0029ef1b8f0f674e91620890eda",
+              "start": 0,
+              "end": 1146
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "b0833a2db4d895186cb2b6b5a40da7708a2afd0871ec904beaacb17e2618c82b"
+    },
+    {
+      "number": 1290,
+      "id": "bukhari:1290",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAYU:0",
+      "chapterId": "chapter-78",
+      "paragraphIds": [
+        "mwAYU"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1290-1",
+          "paragraphId": "mwAYU",
+          "start": 0,
+          "end": 38,
+          "kind": "chain",
+          "arabic": "[1290] حدثنا سليمان بن حرب حدثنا حماد ",
+          "english": "Sulayman ibn Harb related to us: Hammad related to us—",
+          "arabicSha256": "3150265b59f56dc26f7581eeee34765c3a1f358c8e6be3c8629ba4ccf061fa7d",
+          "englishSha256": "3f931e298668121cf23ebec1205d22e82265b78a76a36758fec19bb70a399f50"
+        },
+        {
+          "id": "1290-2",
+          "paragraphId": "mwAYU",
+          "start": 38,
+          "end": 50,
+          "kind": "transmission-note",
+          "arabic": "وهو ابن زيد ",
+          "english": "he is Ibn Zayd—",
+          "arabicSha256": "0ee89259c7cf3936623d6ab91e9f3b37198bb27976f9b0e3316c1bc06140bc0e",
+          "englishSha256": "d274fcef2ca4a0f7f66569c26a69ac4e8e878fdda341687e80339d3dae56399d"
+        },
+        {
+          "id": "1290-3",
+          "paragraphId": "mwAYU",
+          "start": 50,
+          "end": 89,
+          "kind": "chain",
+          "arabic": "عن ثابت عن أنس رضى الله تعالى عنه قال: ",
+          "english": "from Thabit, from Anas, may Allah Most High be pleased with him, who said:",
+          "arabicSha256": "da34c668c075a383cdfe98f92c68c99a0844f18b9363ca7c2c952115e8411624",
+          "englishSha256": "894d6732ba744eb1a4cded6cc2c3bde1982f5960836bc15a7fd103b48a74f285"
+        },
+        {
+          "id": "1290-4",
+          "paragraphId": "mwAYU",
+          "start": 89,
+          "end": 277,
+          "kind": "report",
+          "arabic": "كان غلام يهودي يخدم النبي ﷺ فمرض فأتاه النبي ﷺ يعوده فقعد عند رأسه، فقال له أسلم فنظر إلى أبيه وهو عنده، فقال له أطع أبا القاسم ﷺ فأسلم فخرج النبي ﷺ وهو يقول الحمد لله الذي أنقذه من النار ",
+          "english": "A Jewish boy used to serve the Prophet, may Allah bless him and grant him peace. He became ill, so the Prophet, may Allah bless him and grant him peace, came to visit him and sat by his head. He said to him, “Embrace Islam.” He looked at his father, who was beside him. He said to him, “Obey Abu al-Qasim, may Allah bless him and grant him peace.” He embraced Islam. The Prophet, may Allah bless him and grant him peace, went out saying, “Praise be to Allah who saved him from the Fire.”",
+          "arabicSha256": "ef1198a822c00b990206b6ef54e8ab0f75812b7bfaf639414b98586a322d95b2",
+          "englishSha256": "8bf32fb45c1ed50c1eadeba4661260083ebce61ab9d5c23dfcc1d105aa5fdab5"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            340,
+            341
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            327
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1290",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-eighth-wording-addendum.json",
+            "sha256": "2150971e39787f77f9d6ac64736da577ad38b12ba41db8fa5e1b9b4835a71c0e",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "5c02196b8989bfd23015742b7f8f1910202c1c2b1fe9fe3e4ded6e54b40a51fc",
+            "occurrence": 1
+          },
+          "note": "Omits the selected honorific after Abu al-Qasim. The full selected route and Hammad identification remain."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.438",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.438",
+            "recordSha256": "a3bec08f32c085f1947e35f24593cd0bcdce47b2039d8fb5d71261ed424d922b"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Anas: ",
+            "A young Jewish boy used to serve the Prophet and he became sick. So the Prophet went to visit him. He sat near his head and asked him to embrace Islam. The boy looked at his father, who was sitting there; the latter told him to obey Abu-l-Qasim and the boy embraced Islam. The Prophet came out saying: \"Praises be to Allah Who saved the boy from the Hell-fire.\" "
+          ],
+          "damagedExcerpt": "sitting",
+          "note": "Adds sitting to the father’s posture and changes direct invitation into indirect speech; omits selected honorifics."
+        }
+      ],
+      "notes": [
+        "The occurrence was located by its body and chain in both inspected prints and English passages. Wording, role and honorific review remain pending.",
+        "Keep Hammad’s identification as a separate narrator gloss, the direct invitation, the father beside him without an added sitting posture, and all four Prophetic honorifics, including Abu al-Qasim’s. No wording is borrowed from the abridged English body.",
+        "The historical occurrence lacks the honorific after Abu al-Qasim, retained by selected and modern. Selected: «أطع أبا القاسم ﷺ فأسلم». brill-1862 (PDF 341): «أطع أبا القاسم فأسلم». dar-ibn-kathir-2002 (PDF 327): «أطع أبا القاسم صلى الله عليه وسلم فأسلم».",
+        "Printed reference 1356 · app reference 1290. Individually located EPUB comparison: 2.23.438. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "5f43e82af9448be6aae36c882fb0e0e3be849b94d86f2b413798d4d315b08011",
+      "englishSha256": "c36a17d7fe6a6be1ae2004d20a0761669d2b6cff8e34e62816f03f9f3a49f23e",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1356 · app reference 1290",
+          "pdfPage": 327,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAYU:0",
+        "sourceReference": {
+          "label": "1290",
+          "number": 1290,
+          "markerId": "mwAYU:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAYU",
+            "textSha256": "5f43e82af9448be6aae36c882fb0e0e3be849b94d86f2b413798d4d315b08011",
+            "origin": {
+              "blockId": "mwAYU",
+              "blockSha256": "5f43e82af9448be6aae36c882fb0e0e3be849b94d86f2b413798d4d315b08011",
+              "start": 0,
+              "end": 277
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "091f95f86067309459913ced244a71ec262d263192b3950a0e389f98acb63982"
+    },
+    {
+      "number": 1291,
+      "id": "bukhari:1291",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAYo:0",
+      "chapterId": "chapter-78",
+      "paragraphIds": [
+        "mwAYo"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1291-1",
+          "paragraphId": "mwAYo",
+          "start": 0,
+          "end": 101,
+          "kind": "chain",
+          "arabic": "[1291] حدثنا علي بن عبد الله حدثنا سفيان قال: قال عبيد الله سمعت ابن عباس رضى الله تعالى عنهما يقول: ",
+          "english": "‘Ali ibn ‘Abd Allah related to us: Sufyan related to us; he said: ‘Ubayd Allah said: I heard Ibn ‘Abbas, may Allah Most High be pleased with them both, say:",
+          "arabicSha256": "676d11b79c3a43adfb418a1d0fc9bbaebc66e069f7483624f54e8d50db363551",
+          "englishSha256": "bcc9449a1df2905e0fbe6acefea6bd34b0e51e55dd4188d7c7ea815f35c05504"
+        },
+        {
+          "id": "1291-2",
+          "paragraphId": "mwAYo",
+          "start": 101,
+          "end": 158,
+          "kind": "report",
+          "arabic": "كنت أنا وأمي من المستضعفين أنا من الولدان وأمي من النساء ",
+          "english": "“My mother and I were among the oppressed: I was among the children, and my mother was among the women.”",
+          "arabicSha256": "e7fd6a156572fc7a7fb5b835b8004116ef890ef91a8b1c1150350db2a2bc30f3",
+          "englishSha256": "fec0085538ffbc6a07d97c6098e61a1c2b77c0187db91c4dc12ec450f82619af"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            341
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            327
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1291",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-eighth-wording-addendum.json",
+            "sha256": "2150971e39787f77f9d6ac64736da577ad38b12ba41db8fa5e1b9b4835a71c0e",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "c931a540b7e4d94eb2b33ffe178c4845da4e782bc0b373e3dba03b92dbda2115",
+            "occurrence": 1
+          },
+          "note": "Adds poor to the rendering of المستضعفين; review the exact selected term without importing an additional economic description."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.439",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.439",
+            "recordSha256": "7a2f4a762bc3050ff645a77ad1196350fdcbc8815687ae872eaf1868890d1b15"
+          }
+        }
+      ],
+      "notes": [
+        "Enlarged historical page 341 reads Ubayd Allah ibn Abi Yazid, correcting the earlier Abd Allah excerpt. Modern page 327 reads Abd Allah. Selected shortened Ubayd Allah remains unchanged.",
+        "Keep the selected shortened Ubayd Allah, without adding ibn Abi Yazid from the historical witness. Enlarged inspection corrects the earlier claim that both prints read Abd Allah. The chosen oppressed rendering does not add economic poverty.",
+        "Enlarged historical inspection confirms Ubayd Allah ibn Abi Yazid. The earlier audit misread the first name as Abd Allah. Selected Ubayd Allah remains, without importing the longer identification. Selected: «قال: قال عبيد الله سمعت ابن عباس». brill-1862 (PDF 341): «قال قال عبيد الله بن أبي يزيد سمعت ابن عباس». dar-ibn-kathir-2002 (PDF 327): «قال قال عبد الله سمعت ابن عباس».",
+        "Printed reference 1357 · app reference 1291. Individually located EPUB comparison: 2.23.439. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "a1d5b21b6611e22baf8c34b71fd989e19050dd92ebcfda87ec7c3b3c4fb92599",
+      "englishSha256": "6a900274b3d4310b57fa6ccf31af2bbef3abb3020df7d16e0aa96af058578920",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1357 · app reference 1291",
+          "pdfPage": 327,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "1291-source-context",
+          "label": "A corrected comparison note",
+          "text": "An enlarged recheck of the historical print supports Ubayd Allah. The earlier comparison note misread the name; the selected Arabic has not changed.",
+          "citations": [
+            "base",
+            "printed-reference"
+          ],
+          "related": []
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAYo:0",
+        "sourceReference": {
+          "label": "1291",
+          "number": 1291,
+          "markerId": "mwAYo:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAYo",
+            "textSha256": "a1d5b21b6611e22baf8c34b71fd989e19050dd92ebcfda87ec7c3b3c4fb92599",
+            "origin": {
+              "blockId": "mwAYo",
+              "blockSha256": "a1d5b21b6611e22baf8c34b71fd989e19050dd92ebcfda87ec7c3b3c4fb92599",
+              "start": 0,
+              "end": 158
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "1471bf65903ad98a2419e23b523072248c163fcd0028241568a81150e0287e76"
+    },
+    {
+      "number": 1292,
+      "id": "bukhari:1292",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAYs:0",
+      "chapterId": "chapter-78",
+      "paragraphIds": [
+        "mwAYs"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1292-1",
+          "paragraphId": "mwAYs",
+          "start": 0,
+          "end": 49,
+          "kind": "chain",
+          "arabic": "[1292] حدثنا أبو اليمان أخبرنا شعيب قال ابن شهاب ",
+          "english": "Abu al-Yaman related to us: Shu‘ayb informed us. Ibn Shihab said:",
+          "arabicSha256": "8d7655299b004c33e8cd4894162d228640a389eee7fa66bb0eec418457a98c65",
+          "englishSha256": "602d48a89da6f0c39bcddf3a83358c92a7c8a82ba32a5b2d366cf60e4c695870"
+        },
+        {
+          "id": "1292-2",
+          "paragraphId": "mwAYs",
+          "start": 49,
+          "end": 244,
+          "kind": "transmission-note",
+          "arabic": "يصلي على كل مولود متوفى وإن كان لغية من أجل أنه ولد على فطرة الإسلام يدعي أبواه الإسلام أو أبوه خاصة وإن كانت أمه على غير الإسلام إذا استهل صارخا صلى عليه ولا يصلى على من لا يستهل من أجل أنه سقط ",
+          "english": "“Prayer is offered over every newborn who dies, even one born of unlawful intercourse, because he was born upon the natural disposition of Islam, if his parents profess Islam—or his father alone, even if his mother follows something other than Islam. If he cries out at birth, prayer is offered over him. Prayer is not offered over one who does not cry out, because he is a miscarried child.”",
+          "arabicSha256": "cc8adc3f5b169c4ee9408912b7790d8ad0ed951646137b1ceaec13f1dd4980db",
+          "englishSha256": "542d606525832e77b339a2c28f2fdb5da6f0c2927f192bacd001ed1d90e07b3e"
+        },
+        {
+          "id": "1292-3",
+          "paragraphId": "mwAYs",
+          "start": 244,
+          "end": 298,
+          "kind": "chain",
+          "arabic": "فإن أبا هريرة رضى الله تعالى عنه كان يحدث قال النبي ﷺ ",
+          "english": "For Abu Hurayrah, may Allah Most High be pleased with him, used to relate: The Prophet, may Allah bless him and grant him peace, said:",
+          "arabicSha256": "676176b257feb0dc22b6757917beefc55af5e25f6043f411d549b03f4839c0c1",
+          "englishSha256": "5bbe3ce3f1c9d9920fb8c135b1f6b4817d1ef14ccd2d3142274c2184a1562be3"
+        },
+        {
+          "id": "1292-4",
+          "paragraphId": "mwAYs",
+          "start": 298,
+          "end": 419,
+          "kind": "report",
+          "arabic": "ما من مولود إلا يولد على الفطرة فأبواه يهودانه أو ينصرانه أو يمجسانه كما تنتج البهيمة بهيمة جمعاء هل تحسون فيها من جدعاء ",
+          "english": "“No newborn is born except upon the natural disposition. Then his parents make him a Jew, a Christian or a Magian, just as an animal gives birth to a whole animal. Do you perceive any with parts cut off?”",
+          "arabicSha256": "2ee9382fe3bf11578daa51908245bcf8c75fd015274028145e4f78d2e2a2ed31",
+          "englishSha256": "a1a461c42b116d022558a7d11ac98b394a1d6287bd651c30f4ce390116f32aa0"
+        },
+        {
+          "id": "1292-5",
+          "paragraphId": "mwAYs",
+          "start": 419,
+          "end": 497,
+          "kind": "transmission-note",
+          "arabic": "ثم يقول أبو هريرة رضى الله تعالى عنه { فطرة الله التي فطر الناس عليها } الآية ",
+          "english": "Then Abu Hurayrah, may Allah Most High be pleased with him, says: “Allah’s natural disposition upon which He created people”—the verse.",
+          "arabicSha256": "3c827a208e7de912afa2cd85001b3a2f46f61e60260d568e532676acb8f331eb",
+          "englishSha256": "05fcb492c82d61ef7e5451b3b8dd73a4702850229556cca28ad01f8406c6d73b"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            341
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            327
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1292",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-eighth-wording-addendum.json",
+            "sha256": "2150971e39787f77f9d6ac64736da577ad38b12ba41db8fa5e1b9b4835a71c0e",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "34ce1d8460e863da62f60627a8371c5232d59530c291523f4acfd9ad287c0dd1",
+            "occurrence": 1
+          },
+          "note": "Narrows لغية to a child of a prostitute. Preserve Ibn Shihab’s introductory statement separately from the Prophetic report and Abu Hurayra’s closing quotation."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.440",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.440",
+            "recordSha256": "8d9664369587ad5db9355c3e80a4dd5459f93736496ef2e7627d31d85981c5bc"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Ibn Shihab: ",
+            "The funeral prayer should be offered for every child even if he were the son of a prostitute as he was born with a true faith of Islam (i.e. to worship none but Allah Alone). If his parents are Muslims, particularly the father, even if his mother were a non-Muslim, and if he after the delivery cries (even once) before his death (i.e. born alive) then the funeral prayer must be offered. And if the child does not cry after his delivery (i.e. born dead) then his funeral prayer should not be offered, and he will be considered as a miscarriage. Abu Huraira, narrated that the Prophet said, \"Every child is born with a true faith (i.e. to worship none but Allah Alone) but his parents convert him to Judaism or to Christianity or to Magainism, as an animal delivers a perfect baby animal. Do you find it mutilated?\" Then Abu Huraira recited the holy verses: 'The pure Allah's Islamic nature (true faith i.e. to worship none but Allah Alone), with which He has created human beings.' \" (30.30). "
+          ],
+          "damagedExcerpt": "prostitute",
+          "note": "Adds extensive explanatory parentheses and narrows لغية to a child of a prostitute. The Ibn Shihab introduction, Prophetic quotation and Abu Hurayra closing must retain their separate speakers."
+        }
+      ],
+      "notes": [
+        "The entry begins with Ibn Shihab’s own statement, then quotes the Prophetic report and a final Abu Hurayra Quran excerpt. Preserve all three roles.",
+        "Ibn Shihab’s opening statement is not a Prophetic quotation. Keep the newborn, unlawful-intercourse birth, professing parents or father alone, crying and miscarriage conditions, then the full Abu Hurayrah attribution and final Quran excerpt. Natural disposition renders fitrah without inserting an interpretive theological parenthesis; Islam occurs expressly in Ibn Shihab’s introduction, not in the Prophetic sentence. The verse pointer does not license filling out the verse.",
+        "The historical connector is و rather than the selected and modern أو. Selected: «يدعي أبواه الإسلام أو أبوه خاصة». brill-1862 (PDF 341): «يدعي أبواه الإسلام وأبوه خاصة». dar-ibn-kathir-2002 (PDF 327): «يدعي أبواه الإسلام أو أبوه خاصة».",
+        "The historical closing uses said; selected and modern use says. Selected: «ثم يقول أبو هريرة». brill-1862 (PDF 341): «ثم قال أبو هريرة». dar-ibn-kathir-2002 (PDF 327): «ثم يقول أبو هريرة».",
+        "Printed reference 1358 · app reference 1292. Individually located EPUB comparison: 2.23.440. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "c1598b36543b68be9a07acf23d312be84e259c5663fb505a8e08e477ba680d84",
+      "englishSha256": "596968a43b12afd6029a8165c9eab23faa1f40c33cafb305d6269055b3598511",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1358 · app reference 1292",
+          "pdfPage": 327,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        },
+        {
+          "id": "lexical",
+          "sourceId": "ibn-battal-birth-word",
+          "locator": "Ibn Battal · Commentary on Bukhari · birth wording and sound variants",
+          "scope": "Classical lexical or transmission discussion consulted. Separate from narration and not independent approval of this working translation."
+        },
+        {
+          "id": "lexical-2",
+          "sourceId": "ibn-qurqul-fitrah",
+          "locator": "Ibn Qurqul · Matali al-Anwar · fitrah lexical discussion",
+          "scope": "Classical lexical or transmission discussion consulted. Separate from narration and not independent approval of this working translation."
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "1292-source-context",
+          "label": "Three distinct reporting voices",
+          "text": "Ibn Shihab’s opening statement, the Prophetic quotation and Abu Hurayrah’s closing Qur’an excerpt remain separately attributed.",
+          "citations": [
+            "base",
+            "printed-reference",
+            "lexical"
+          ],
+          "related": []
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAYs:0",
+        "sourceReference": {
+          "label": "1292",
+          "number": 1292,
+          "markerId": "mwAYs:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAYs",
+            "textSha256": "c1598b36543b68be9a07acf23d312be84e259c5663fb505a8e08e477ba680d84",
+            "origin": {
+              "blockId": "mwAYs",
+              "blockSha256": "c1598b36543b68be9a07acf23d312be84e259c5663fb505a8e08e477ba680d84",
+              "start": 0,
+              "end": 497
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "2e985e6be4d8f1f39e766f7e8fcd3688505c1307fc70fd8ca380de11947cce9d"
+    },
+    {
+      "number": 1293,
+      "id": "bukhari:1293",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAY0:0",
+      "chapterId": "chapter-78",
+      "paragraphIds": [
+        "mwAY0"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1293-1",
+          "paragraphId": "mwAY0",
+          "start": 0,
+          "end": 141,
+          "kind": "chain",
+          "arabic": "[1293] حدثنا عبدان أخبرنا عبد الله أخبرنا يونس عن الزهري أخبرني أبو سلمة بن عبد الرحمن أن أبا هريرة رضى الله تعالى عنه قال: قال رسول الله ﷺ: ",
+          "english": "‘Abdan related to us: ‘Abd Allah informed us: Yunus informed us, from al-Zuhri: Abu Salamah ibn ‘Abd al-Rahman informed me that Abu Hurayrah, may Allah Most High be pleased with him, said: The Messenger of Allah, may Allah bless him and grant him peace, said:",
+          "arabicSha256": "d7bbb29ee96b69f6b057910a853c155983ebd40f34516cbdc835ece33ae84bc8",
+          "englishSha256": "9a837a241b889742891d6f7ba4516b0d1462911f0ea1c10fc14509bb9fc20ac7"
+        },
+        {
+          "id": "1293-2",
+          "paragraphId": "mwAY0",
+          "start": 141,
+          "end": 262,
+          "kind": "report",
+          "arabic": "ما من مولود إلا يولد على الفطرة فأبواه يهودانه أو ينصرانه أو يمجسانه كما تنتج البهيمة بهيمة جمعاء هل تحسون فيها من جدعاء ",
+          "english": "“No newborn is born except upon the natural disposition. Then his parents make him a Jew, a Christian or a Magian, just as an animal gives birth to a whole animal. Do you perceive any with parts cut off?”",
+          "arabicSha256": "2ee9382fe3bf11578daa51908245bcf8c75fd015274028145e4f78d2e2a2ed31",
+          "englishSha256": "a1a461c42b116d022558a7d11ac98b394a1d6287bd651c30f4ce390116f32aa0"
+        },
+        {
+          "id": "1293-3",
+          "paragraphId": "mwAY0",
+          "start": 262,
+          "end": 369,
+          "kind": "transmission-note",
+          "arabic": "ثم يقول أبو هريرة رضى الله تعالى عنه { فطرة الله التي فطر الناس عليها لا تبديل لخلق الله ذلك الدين القيم } ",
+          "english": "Then Abu Hurayrah, may Allah Most High be pleased with him, says: “Allah’s natural disposition upon which He created people. There is no alteration to Allah’s creation. That is the upright religion.”",
+          "arabicSha256": "dbd5935807af114cff65be8c6ff38b52f72e4a35c4b362e959bf5b7515c2bbbf",
+          "englishSha256": "df8201c64597cdcb24330862383b8dcad3f57414b1d1db3b6c53d0cdd05507ea"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            341
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            327,
+            328
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1293",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-eighth-wording-addendum.json",
+            "sha256": "2150971e39787f77f9d6ac64736da577ad38b12ba41db8fa5e1b9b4835a71c0e",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "b18337071a9f669810ee5b184cd423993752f1286b776f39819741eea6930da5",
+            "occurrence": 1
+          },
+          "note": "Omits the two final clauses of the selected Quran excerpt, after التي فطر الناس عليها."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.441",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.441",
+            "recordSha256": "8bb62369d5a4f6f5c9282d4ff7bab8b5fdfea693617bcea46a1a80a02d7137c6"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Abu Huraira : ",
+            "Allah's Apostle said, \"Every child is born with a true faith of Islam (i.e. to worship none but Allah Alone) but his parents convert him to Judaism, Christianity or Magainism, as an animal delivers a perfect baby animal. Do you find it mutilated?\" Then Abu Huraira recited the holy verses: \"The pure Allah's Islamic nature (true faith of Islam) (i.e. worshipping none but Allah) with which He has created human beings. No change let there be in the religion of Allah (i.e. joining none in worship with Allah). That is the straight religion (Islam) but most of men know, not.\" (30.30) "
+          ],
+          "damagedExcerpt": "most of men",
+          "note": "Extends the Quran quotation beyond the selected ending ذلك الدين القيم and adds interpretive parentheses."
+        }
+      ],
+      "notes": [
+        "The selected Quran excerpt is longer than the preceding occurrence. The English web body truncates it, while the EPUB extends it beyond its selected ending.",
+        "Keep the complete new route and full repeated occurrence. The closing Quran excerpt has two clauses more than 1292, but ends at the upright religion. Do not truncate it to the English web body or extend it to the EPUB ending; creation is not replaced by religion.",
+        "Printed reference 1359 · app reference 1293. Individually located EPUB comparison: 2.23.441. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "673aa177d23de95d65ac4ababe7dd82c57cf3d8a10c081665dd8308f6cd9d8b0",
+      "englishSha256": "1853c918a7a99f2984ed8d7de6746aad67dedb775b2fc925b670cec2fc914c09",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1359 · app reference 1293",
+          "pdfPage": 327,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        },
+        {
+          "id": "lexical",
+          "sourceId": "ibn-qurqul-fitrah",
+          "locator": "Ibn Qurqul · Matali al-Anwar · fitrah lexical discussion",
+          "scope": "Classical lexical or transmission discussion consulted. Separate from narration and not independent approval of this working translation."
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "1293-source-context",
+          "label": "A longer quoted excerpt",
+          "text": "This occurrence quotes more of the verse than the preceding one. Its complete selected ending remains, without extending it from a comparison translation.",
+          "citations": [
+            "base",
+            "printed-reference",
+            "lexical"
+          ],
+          "related": []
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAY0:0",
+        "sourceReference": {
+          "label": "1293",
+          "number": 1293,
+          "markerId": "mwAY0:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAY0",
+            "textSha256": "673aa177d23de95d65ac4ababe7dd82c57cf3d8a10c081665dd8308f6cd9d8b0",
+            "origin": {
+              "blockId": "mwAY0",
+              "blockSha256": "673aa177d23de95d65ac4ababe7dd82c57cf3d8a10c081665dd8308f6cd9d8b0",
+              "start": 0,
+              "end": 369
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "ae86e10cdd475d1c5edf17470ec42a09deed88ff4ab567e3f43eb332ff2d5ac9"
+    },
+    {
+      "number": 1294,
+      "id": "bukhari:1294",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAZA:0",
+      "chapterId": "chapter-79",
+      "paragraphIds": [
+        "mwAZA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1294-1",
+          "paragraphId": "mwAZA",
+          "start": 0,
+          "end": 123,
+          "kind": "chain",
+          "arabic": "[1294] حدثنا إسحاق أخبرنا يعقوب بن إبراهيم قال: حدثني أبي عن صالح عن ابن شهاب قال: أخبرني سعيد بن المسيب عن أبيه أنه أخبره ",
+          "english": "Ishaq related to us: Ya‘qub ibn Ibrahim informed us; he said: My father related to me, from Salih, from Ibn Shihab, who said: Sa‘id ibn al-Musayyab informed me, from his father, who informed him:",
+          "arabicSha256": "1e086acc4faf57bdc7897d3772a9f8010a81bfc637ae6a09f17c406020738bb7",
+          "englishSha256": "4f8ae4410d312b141d2373355952b2b9520f59ccaf9e5a1389c949d79667d841"
+        },
+        {
+          "id": "1294-2",
+          "paragraphId": "mwAZA",
+          "start": 123,
+          "end": 611,
+          "kind": "report",
+          "arabic": "أنه لما حضرت أبا طالب الوفاة جاءه رسول الله ﷺ فوجد عنده أبا جهل بن هشام وعبد الله بن أبي أمية بن المغيرة قال رسول الله ﷺ: لأبي طالب يا عم قل لا إله إلا الله كلمة أشهد لك بها عند الله، فقال أبو جهل وعبد الله بن أبي أمية يا أبا طالب أترغب عن ملة عبد المطلب فلم يزل رسول الله ﷺ يعرضها عليه ويعودان بتلك المقالة حتى قال أبو طالب آخر ما كلمهم هو على ملة عبد المطلب وأبى أن يقول لا إله إلا الله، فقال رسول الله ﷺ: أما والله لأستغفرن لك ما لم أنه عنك فأنزل الله تعالى فيه { ما كان للنبي } الآية ",
+          "english": "When death approached Abu Talib, the Messenger of Allah, may Allah bless him and grant him peace, came to him and found Abu Jahl ibn Hisham and ‘Abd Allah ibn Abi Umayyah ibn al-Mughirah with him. The Messenger of Allah, may Allah bless him and grant him peace, said to Abu Talib, “Uncle, say, ‘There is no god but Allah’—a word by which I may bear witness for you before Allah.” Abu Jahl and ‘Abd Allah ibn Abi Umayyah said, “Abu Talib, will you turn away from the religion of ‘Abd al-Muttalib?” The Messenger of Allah, may Allah bless him and grant him peace, kept presenting it to him, and the two kept repeating that statement, until the last thing Abu Talib said to them was that he was upon the religion of ‘Abd al-Muttalib. He refused to say, “There is no god but Allah.” The Messenger of Allah, may Allah bless him and grant him peace, said, “By Allah, I will seek forgiveness for you unless I am forbidden concerning you.” Then Allah Most High revealed concerning him: “It is not for the Prophet”—the verse.",
+          "arabicSha256": "e50cfac3de6adc991e99bc12dbaab026a31e6c97e046b0eac3722857845308a1",
+          "englishSha256": "76d6c1a29e4848623b4bb7f551832363b57f8037a019c6990a37d7fa2e23f49e"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            341,
+            342
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            328
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1294",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-eighth-wording-addendum.json",
+            "sha256": "2150971e39787f77f9d6ac64736da577ad38b12ba41db8fa5e1b9b4835a71c0e",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "4b7a6904d0a4f5dc01ea63d6e09cd6664f7044cfa5167f92556d912c539b0c5d",
+            "occurrence": 1
+          },
+          "note": "Renders repetition of the opposing statement as cautioning him against it; preserve the selected reporting action."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.442",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.442",
+            "recordSha256": "ada29c95f8e86552b32e0dc21d4f97a3fe3bb01e7d1535dbf70725ac4f4a1359"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Said bin Al-Musaiyab from his father: ",
+            "When the time of the death of Abu Talib approached, Allah's Apostle went to him and found Abu Jahl bin Hisham and 'Abdullah bin Abi Umaiya bin Al-Mughira by his side. Allah's Apostle said to Abu Talib, \"O uncle! Say: None has the right to be worshipped but Allah, a sentence with which I shall be a witness (i.e. argue) for you before Allah. Abu Jahl and 'Abdullah bin Abi Umaiya said, \"O Abu Talib! Are you going to denounce the religion of Abdul Muttalib?\" Allah's Apostle kept on inviting Abu Talib to say it (i.e. 'None has the right to be worshipped but Allah') while they (Abu Jahl and Abdullah) kept on repeating their statement till Abu Talib said as his last statement that he was on the religion of Abdul Muttalib and refused to say, 'None has the right to be worshipped but Allah.' (Then Allah's Apostle said, \"I will keep on asking Allah's forgiveness for you unless I am forbidden (by Allah) to do so.\" So Allah revealed (the verse) concerning him (i.e. It is not fitting for the Prophet and those who believe that they should invoke (Allah) for forgiveness for pagans even though they be of kin, after it has become clear to them that they are companions of the fire (9.113). "
+          ],
+          "damagedExcerpt": "those who believe",
+          "note": "Omits the explicit oath أما والله and expands the brief Quran citation into the full verse."
+        }
+      ],
+      "notes": [
+        "The occurrence was located by its body and chain in both inspected prints and English passages. Wording, role and honorific review remain pending.",
+        "Keep every named transmitter and both father links, every Messenger designation, repeated opposing statement, third-person account of Abu Talib’s last words, explicit oath, divine Most High honorific and abbreviated Quran citation. No full verse or explanatory argument is inserted.",
+        "The historical conclusion omits Most High; the selected and modern honorific remains. Selected: «فأنزل الله تعالى فيه». brill-1862 (PDF 342): «فأنزل الله فيه». dar-ibn-kathir-2002 (PDF 328): «فأنزل الله تعالى فيه».",
+        "Printed reference 1360 · app reference 1294. Individually located EPUB comparison: 2.23.442. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "2198ffad89583b65a68806622c14358b952b7c38289b52138af8ea02a1bec96d",
+      "englishSha256": "1c025f92aed1c0d34dfa16bad2b11c44f4c05aabd1633b37c2d239923f8a0b75",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1360 · app reference 1294",
+          "pdfPage": 328,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAZA:0",
+        "sourceReference": {
+          "label": "1294",
+          "number": 1294,
+          "markerId": "mwAZA:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAZA",
+            "textSha256": "2198ffad89583b65a68806622c14358b952b7c38289b52138af8ea02a1bec96d",
+            "origin": {
+              "blockId": "mwAZA",
+              "blockSha256": "2198ffad89583b65a68806622c14358b952b7c38289b52138af8ea02a1bec96d",
+              "start": 0,
+              "end": 611
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "6f27184853f5dc6826f7fd4cccb84eee20068e3bca8bfec2a21c6907c5bd5170"
+    },
+    {
+      "number": 1295,
+      "id": "bukhari:1295",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAZc:0",
+      "chapterId": "chapter-80",
+      "paragraphIds": [
+        "mwAZc"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1295-1",
+          "paragraphId": "mwAZc",
+          "start": 0,
+          "end": 106,
+          "kind": "chain",
+          "arabic": "[1295] حدثنا يحيى حدثنا أبو معاوية عن الأعمش عن مجاهد عن طاوس عن ابن عباس رضى الله تعالى عنهما عن النبي ﷺ ",
+          "english": "Yahya related to us: Abu Mu‘awiyah related to us, from al-A‘mash, from Mujahid, from Tawus, from Ibn ‘Abbas, may Allah Most High be pleased with them both, from the Prophet, may Allah bless him and grant him peace:",
+          "arabicSha256": "36677a20e92dec3135006b563717dd310acb9d8ce99b457dff88d23f6bbde2e1",
+          "englishSha256": "12847af91aaf315cf47d33c54bb103e1eb9fe532fb2c9797a3a7ac366e0b7e62"
+        },
+        {
+          "id": "1295-2",
+          "paragraphId": "mwAZc",
+          "start": 106,
+          "end": 353,
+          "kind": "report",
+          "arabic": "أنه مر بقبرين يعذبان، فقال إنهما ليعذبان وما يعذبان في كبير أما أحدهما فكان لا يستتر من البول وأما الآخر فكان يمشي بالنميمة ثم أخذ جريدة رطبة فشقها بنصفين ثم غرز في كل قبر واحدة فقالوا يا رسول الله لم صنعت هذا، فقال لعله أن يخفف عنهما ما لم ييبسا ",
+          "english": "He passed by two graves whose occupants were being punished. He said, “They are indeed being punished, and they are not being punished for something great. One of them did not protect himself from urine, and the other used to go about carrying tales.” Then he took a moist palm branch and split it into two halves. He fixed one in each grave. They asked, “Messenger of Allah, why did you do this?” He said, “Perhaps it will be lightened for them as long as the two have not dried out.”",
+          "arabicSha256": "014f2c05526b44af5f17aa289df2123db7f447f1da070b5c056b862c8352b5db",
+          "englishSha256": "70cd2c91c0952afd383296ca8f597985e6eb0caec505a41dbdf0ce46b616929c"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            342
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            328
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1295",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-eighth-wording-addendum.json",
+            "sha256": "2150971e39787f77f9d6ac64736da577ad38b12ba41db8fa5e1b9b4835a71c0e",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "4cacaa3e67a37c16143d9a9da3147f43fdf8948cb43e36864b358a45ddc8d8e3",
+            "occurrence": 1
+          },
+          "note": "Omits the affirmative إنهما ليعذبان from the direct speech. Its slandering wording for النميمة needs lexical review."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.443",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.443",
+            "recordSha256": "b0ab14770b3bce26c4492cde225dcd3d786a4e695eb82fc71b4981e04271d965"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Ibn Abbas: ",
+            "The Prophet once passed by two graves, and those two persons (in the graves) were being tortured. He said, \"They are being tortured not for a great thing (to avoid). One of them never saved himself from being soiled with his urine, while the other was going about with calumnies (to make enmity between friends). He then took a green leaf of a date-palm tree split it into two pieces and fixed one on each grave. The people said, \"O Allah's Apostle! Why have you done so?\" He replied, \"I hope that their punishment may be lessened till they (the leaf) become dry.\" "
+          ],
+          "damagedExcerpt": "hope",
+          "note": "Adds explanatory parentheses and changes the selected tentative لعله construction to a first-person hope. Its calumny wording needs lexical review."
+        }
+      ],
+      "notes": [
+        "The occurrence was located by its body and chain in both inspected prints and English passages. Wording, role and honorific review remain pending.",
+        "Keep the affirmative punishment statement as well as its next clause. Carrying tales renders namimah without requiring that the tales be false. Retain moist branch, two halves, each grave and perhaps, without explanatory to-avoid or first-person hope additions. The printed and selected transmission formulations remain distinct.",
+        "The historical wording places the Prophet designation after said he passed; selected and modern use from the Prophet that he passed. Selected: «عن النبي ﷺ أنه مر». brill-1862 (PDF 342): «قال مر النبي صلى الله عليه وسلم». dar-ibn-kathir-2002 (PDF 328): «عن النبي صلى الله عليه وسلم أنه مر».",
+        "Printed reference 1361 · app reference 1295. Individually located EPUB comparison: 2.23.443. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "3407c13c3386f551a5b98633b0ffcbed1e8ba5a56d110dd3d4ba8a719cb9846e",
+      "englishSha256": "5eb71d9df4a1bfc9ca8c926cc112d7024de2b4aee678c4a0ee7a0c247afa2c01",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1361 · app reference 1295",
+          "pdfPage": 328,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAZc:0",
+        "sourceReference": {
+          "label": "1295",
+          "number": 1295,
+          "markerId": "mwAZc:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAZc",
+            "textSha256": "3407c13c3386f551a5b98633b0ffcbed1e8ba5a56d110dd3d4ba8a719cb9846e",
+            "origin": {
+              "blockId": "mwAZc",
+              "blockSha256": "3407c13c3386f551a5b98633b0ffcbed1e8ba5a56d110dd3d4ba8a719cb9846e",
+              "start": 0,
+              "end": 353
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "84482d09112a4a7abbfaf8d302080e1e0ec21ea36120c87e7631541ddc261699"
+    },
+    {
+      "number": 1296,
+      "id": "bukhari:1296",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAZs:0",
+      "chapterId": "chapter-81",
+      "paragraphIds": [
+        "mwAZs"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1296-1",
+          "paragraphId": "mwAZs",
+          "start": 0,
+          "end": 108,
+          "kind": "chain",
+          "arabic": "[1296] حدثنا عثمان قال: حدثني جرير عن منصور عن سعد بن عبيدة عن أبي عبد الرحمن عن علي رضى الله تعالى عنه قال ",
+          "english": "‘Uthman related to us; he said: Jarir related to me, from Mansur, from Sa‘d ibn ‘Ubaydah, from Abu ‘Abd al-Rahman, from ‘Ali, may Allah Most High be pleased with him, who said:",
+          "arabicSha256": "24caf88fb20c72a491450af81cc337911630e898fb42d707d29b299fd3ce7687",
+          "englishSha256": "c06e7dfde03cfc03c9e22912df765b0424b915c776892fcf8e5e2b80459cc6aa"
+        },
+        {
+          "id": "1296-2",
+          "paragraphId": "mwAZs",
+          "start": 108,
+          "end": 583,
+          "kind": "report",
+          "arabic": "كنا في جنازة في بقيع الغرقد فأتانا النبي ﷺ فقعد وقعدنا حوله ومعه مخصرة فنكس فجعل ينكت بمخصرته، ثم قال: ما منكم من أحد ما من نفس منفوسة إلا كتب مكانها من الجنة والنار وإلا قد كتب شقية أو سعيدة، فقال رجل يا رسول الله أفلا نتكل على كتابنا وندع العمل فمن كان منا من أهل السعادة فسيصير إلى عمل أهل السعادة وأما من كان منا من أهل الشقاوة فسيصير إلى عمل أهل الشقاوة قال: أما أهل السعادة فييسرون لعمل السعادة وأما أهل الشقاوة فييسرون لعمل الشقاوة ثم قرأ { فأما من أعطى واتقى } الآية ",
+          "english": "We were at a funeral in Baqi‘ al-Gharqad. The Prophet, may Allah bless him and grant him peace, came to us and sat down, and we sat around him. He had a small staff with him. He lowered his head and began tapping with his staff. Then he said, “There is no one among you, no soul born, whose place in the Garden and the Fire has not been written, and for whom it has not been written: wretched or happy.” A man said, “Messenger of Allah, should we not rely upon what is written for us and leave off deeds? Whoever among us is of the people of happiness will come to the deeds of the people of happiness, and whoever among us is of the people of wretchedness will come to the deeds of the people of wretchedness.” He said, “As for the people of happiness, the deeds of happiness are made easy for them; and as for the people of wretchedness, the deeds of wretchedness are made easy for them.” Then he recited: “As for one who gives and is God-fearing”—the verse.",
+          "arabicSha256": "0ae2e8ef8c16f07be52f3fefbedb8f5d8d11fcfadd958b1d3b29b49dcee59fcc",
+          "englishSha256": "8e77f630bf334e23616c99ba316e8e3702c4ec8682fe2a73c822a62876a73488"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            342,
+            343
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            329
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1296",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-eighth-wording-addendum.json",
+            "sha256": "2150971e39787f77f9d6ac64736da577ad38b12ba41db8fa5e1b9b4835a71c0e",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "aae4cb23b5b9ab06bef7db2f0cc49d3003f779d44135c18de7d6c03a2caa671b",
+            "occurrence": 1
+          },
+          "note": "Adds prayer to the selected funeral setting. Its verse citation spans 92:5–6 although the selected quoted words stop at واتقى."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.444",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.444",
+            "recordSha256": "a8cc6e84f592312ad378fb1bd5c8974d843c837ac229643fe9263338898187bb"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated 'Ali: ",
+            "\" We were accompanying a funeral procession in Baqi-I-Gharqad. The Prophet came to us and sat and we sat around him. He had a small stick in his hand then he bent his head and started scraping the ground with it. He then said, \"There is none among you, and not a created soul, but has place either in Paradise or in Hell assigned for him and it is also determined for him whether he will be among the blessed or wretched.\" A man said, \"O Allah's Apostle! Should we not depend on what has been written for us and leave the deeds as whoever amongst us is blessed will do the deeds of a blessed person and whoever amongst us will be wretched, will do the deeds of a wretched person?\" The Prophet said, \"The good deeds are made easy for the blessed, and bad deeds are made easy for the wretched.\" Then he recited the Verses:-- \"As for him who gives (in charity) and is Allah-fearing And believes in the Best reward from Allah. \" (92.5-6) "
+          ],
+          "damagedExcerpt": "reward",
+          "note": "Extends the quoted Quran words through the next verse and supplies explanatory good/bad-deed language."
+        }
+      ],
+      "notes": [
+        "The historical print extends the Quran quotation through وصدق بالحسنى; selected and modern stop at واتقى. Both prints also differ from selected كتب in the preceding clause.",
+        "Keep to us for Uthman and to me for Jarir, funeral without an added prayer, small staff, lowered head, tapping, born soul, both written clauses and the two groups’ distinct actions. The English uses a neutral written construction without silently altering the selected verb. Do not add an instruction to work from a parallel report. The Quran excerpt ends at God-fearing; the historical longer reading remains separately documented.",
+        "Both prints have the final ت absent from the selected written-clause verb. Selected: «وإلا قد كتب شقية أو سعيدة». brill-1862 (PDF 343): «وإلا قد كتبت شقية أو سعيدة». dar-ibn-kathir-2002 (PDF 329): «وإلا قد كتبت شقية أو سعيدة».",
+        "The historical quotation continues through the next clause; selected and modern stop earlier. Selected: «فأما من أعطى واتقى». brill-1862 (PDF 343): «فأما من أعطى واتقى وصدق بالحسنى». dar-ibn-kathir-2002 (PDF 329): «فأما من أعطى واتقى».",
+        "The historical route reverses the singular and plural transmission verbs; selected and modern retain to us for Uthman and to me for Jarir. Selected: «حدثنا عثمان قال: حدثني جرير». brill-1862 (PDF 342): «حدثني عثمان قال حدثنا جرير». dar-ibn-kathir-2002 (PDF 329): «حدثنا عثمان قال حدثني جرير».",
+        "Printed reference 1362 · app reference 1296. Individually located EPUB comparison: 2.23.444. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "d0a77c1c144b77de9971f5ad944a4787afc1b80009c74a6d8419f7208a48f435",
+      "englishSha256": "15377266c295b8e60c7d63c4b9437dd109a68bdb5f170f0288e108c30ae16ef7",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1362 · app reference 1296",
+          "pdfPage": 329,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "1296-source-context",
+          "label": "The ending of this occurrence",
+          "text": "The short Qur’an excerpt remains at its selected length. The source notes record the longer historical printed reading and a grammatical variation.",
+          "citations": [
+            "base",
+            "printed-reference"
+          ],
+          "related": []
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAZs:0",
+        "sourceReference": {
+          "label": "1296",
+          "number": 1296,
+          "markerId": "mwAZs:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAZs",
+            "textSha256": "d0a77c1c144b77de9971f5ad944a4787afc1b80009c74a6d8419f7208a48f435",
+            "origin": {
+              "blockId": "mwAZs",
+              "blockSha256": "d0a77c1c144b77de9971f5ad944a4787afc1b80009c74a6d8419f7208a48f435",
+              "start": 0,
+              "end": 583
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "56b7579761d4fc15ea335a58de024d1aac6548d0fefecf14b1c616e643dc8c37"
+    },
+    {
+      "number": 1297,
+      "id": "bukhari:1297",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAZ4:0",
+      "chapterId": "chapter-82",
+      "paragraphIds": [
+        "mwAZ4"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1297-1",
+          "paragraphId": "mwAZ4",
+          "start": 0,
+          "end": 114,
+          "kind": "chain",
+          "arabic": "[1297] حدثنا مسدد حدثنا يزيد بن زريع حدثنا خالد عن أبي قلابة عن ثابت بن الضحاك رضى الله تعالى عنه عن النبي ﷺ قال: ",
+          "english": "Musaddad related to us: Yazid ibn Zuray‘ related to us: Khalid related to us, from Abu Qilabah, from Thabit ibn al-Dahhak, may Allah Most High be pleased with him, from the Prophet, may Allah bless him and grant him peace, who said:",
+          "arabicSha256": "c324ba7979cdffa1746210568bf2f963ee74b9e4c7172681ea7e9313fb3058ee",
+          "englishSha256": "689f5e23956d50f9971a9f9e7aeff20a2874e6712281286f114e70d7641c89fa"
+        },
+        {
+          "id": "1297-2",
+          "paragraphId": "mwAZ4",
+          "start": 114,
+          "end": 203,
+          "kind": "report",
+          "arabic": "من حلف بملة غير الإسلام كاذبا متعمدا فهو كما قال ومن قتل نفسه بحديدة عذب بها في نار جهنم ",
+          "english": "“Whoever deliberately swears a false oath by a religion other than Islam is as he said. Whoever kills himself with a piece of iron will be punished with it in the Fire of Jahannam.”",
+          "arabicSha256": "a6fa7ca1c09e8ea8a6374be499331c594318b0c38753c334dab5cccaec57572b",
+          "englishSha256": "d3f33778cf65db57890c5314b5bb07d8ef50f33f6cd7ce6a6c520013013d5378"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            343
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            329
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1297"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.445",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.445",
+            "recordSha256": "17d16bb5d9096eaa7bd445484dc766c47c723ec6ff5681f4ef064026af518704"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Thabit bin Ad-Dahhak: ",
+            "The Prophet (p.b.u.h) said, \"Whoever intentionally swears falsely by a religion other than Islam, then he is what he has said, (e.g. if he says, 'If such thing is not true then I am a Jew,' he is really a Jew). And whoever commits suicide with piece of iron will be punished with the same piece of iron in the Hell Fire.\" Narrated Jundab the Prophet said, \"A man was inflicted with wounds and he committed suicide, and so Allah said: My slave has caused death on himself hurriedly, so I forbid Paradise for him.\" "
+          ],
+          "damagedExcerpt": "e.g.",
+          "note": "Adds an interpretive example to the oath statement and then continues into the separate selected 1298 report. The full English body is shared, not a reason to merge the Arabic entries.",
+          "spanEvidence": {
+            "auditPath": "research/funerals-eighth-wording-addendum.json",
+            "auditSha256": "2150971e39787f77f9d6ac64736da577ad38b12ba41db8fa5e1b9b4835a71c0e",
+            "appReference": 1297,
+            "span": {
+              "unit": "unicode-code-points",
+              "join": "two-newlines",
+              "start": 0,
+              "end": 355,
+              "sha256": "2ef25a472999b7a0dbf9ba693ac45b8bc2981af78fe76f7d4a706111d96fc685"
+            }
+          },
+          "part": {
+            "index": 1,
+            "count": 2
+          }
+        }
+      ],
+      "notes": [
+        "English record 445 combines selected 1297 and 1298. Their separate source entries remain complete.",
+        "Keep the complete route, deliberate false oath, is as he said and piece of iron. Do not insert an oath example from the comparison. This is the first exact span of shared English record 445; the next report remains separate.",
+        "Printed reference 1363 · app reference 1297. Individually located EPUB comparison: 2.23.445. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "4222b81133c73500d771ca213422d20768ad92883807146f622286006b9558a4",
+      "englishSha256": "cf3516ef7df786e4520a6d005f38f9eb36fdcc2c6f8cb44699060802bc32fa11",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1363 · app reference 1297",
+          "pdfPage": 329,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "1297-source-context",
+          "label": "Two reports in one English comparison",
+          "text": "The comparison source combines this report and the next. Their exact spans are recorded separately; both Arabic occurrences remain complete.",
+          "citations": [
+            "base",
+            "printed-reference"
+          ],
+          "related": []
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAZ4:0",
+        "sourceReference": {
+          "label": "1297",
+          "number": 1297,
+          "markerId": "mwAZ4:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAZ4",
+            "textSha256": "4222b81133c73500d771ca213422d20768ad92883807146f622286006b9558a4",
+            "origin": {
+              "blockId": "mwAZ4",
+              "blockSha256": "4222b81133c73500d771ca213422d20768ad92883807146f622286006b9558a4",
+              "start": 0,
+              "end": 203
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "393401cd1f92403088a96876204013ed40ff439731db7d25a0984a9da09c3268"
+    },
+    {
+      "number": 1298,
+      "id": "bukhari:1298",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAaA:0",
+      "chapterId": "chapter-82",
+      "paragraphIds": [
+        "mwAaA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1298-1",
+          "paragraphId": "mwAaA",
+          "start": 0,
+          "end": 98,
+          "kind": "chain",
+          "arabic": "[1298] وقال حجاج بن منهال حدثنا جرير بن حازم عن الحسن حدثنا جندب رضى الله تعالى عنه في هذا المسجد ",
+          "english": "And Hajjaj ibn Minhal said: Jarir ibn Hazim related to us, from al-Hasan: Jundub, may Allah Most High be pleased with him, related to us in this mosque—",
+          "arabicSha256": "52b81a7273cd918cdb79e8e40fd81eac4093fe34f199dca1041621580dbde621",
+          "englishSha256": "91675115ab5205eb3aa327891a6cbc5631c2fd047073a7ee328152e446e9d60d"
+        },
+        {
+          "id": "1298-2",
+          "paragraphId": "mwAaA",
+          "start": 98,
+          "end": 141,
+          "kind": "transmission-note",
+          "arabic": "فما نسينا وما نخاف أن يكذب جندب عن النبي ﷺ ",
+          "english": "we have not forgotten, and we do not fear that Jundub would lie in reporting from the Prophet, may Allah bless him and grant him peace—",
+          "arabicSha256": "b65e43d5cb998ca953fa58498b1ca6146ae8b4a7aecc3f60ce6e9176f3b37024",
+          "englishSha256": "3c41d9b7d2a34a16bf47095b60b925d5f950931270ce3ebc48bce21d0da911b9"
+        },
+        {
+          "id": "1298-3",
+          "paragraphId": "mwAaA",
+          "start": 141,
+          "end": 214,
+          "kind": "report",
+          "arabic": "قال: كان برجل جراح فقتل نفسه، فقال الله بدرني عبدي بنفسه حرمت عليه الجنة ",
+          "english": "who said, “A man had wounds, and he killed himself. Allah said, ‘My servant has anticipated Me with his own life. I have forbidden the Garden to him.’”",
+          "arabicSha256": "08bc74c89073559fafb06f7129ec00f48b13dd63b50514b2eac70bfcfcbb5dde",
+          "englishSha256": "8d68fba72368fab1635310cd144e367f555624cbac64396d0783077cfedfe38a"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            343
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            329
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1298",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-eighth-wording-addendum.json",
+            "sha256": "2150971e39787f77f9d6ac64736da577ad38b12ba41db8fa5e1b9b4835a71c0e",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "b4a55c6143a55fc95a571b5e8395b77af8ae02a58f731e261853bffdcd8eb5ad",
+            "occurrence": 1
+          },
+          "note": "Abridges the full chain and places the narrator’s assurance in a parenthesis. Keep al-Hasan’s comment distinct from Jundub’s report. Hastened his way to Me changes the precedence expression into a direction-of-travel expression; no such wording is imported."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.445",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.445",
+            "recordSha256": "17d16bb5d9096eaa7bd445484dc766c47c723ec6ff5681f4ef064026af518704"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Thabit bin Ad-Dahhak: ",
+            "The Prophet (p.b.u.h) said, \"Whoever intentionally swears falsely by a religion other than Islam, then he is what he has said, (e.g. if he says, 'If such thing is not true then I am a Jew,' he is really a Jew). And whoever commits suicide with piece of iron will be punished with the same piece of iron in the Hell Fire.\" Narrated Jundab the Prophet said, \"A man was inflicted with wounds and he committed suicide, and so Allah said: My slave has caused death on himself hurriedly, so I forbid Paradise for him.\" "
+          ],
+          "damagedExcerpt": "Narrated Jundab",
+          "note": "The counterpart is the continuation of 445, not neighboring 446. It omits the complete chain and al-Hasan’s assurance about the mosque, memory and truthfulness.",
+          "spanEvidence": {
+            "auditPath": "research/funerals-eighth-wording-addendum.json",
+            "auditSha256": "2150971e39787f77f9d6ac64736da577ad38b12ba41db8fa5e1b9b4835a71c0e",
+            "appReference": 1298,
+            "span": {
+              "unit": "unicode-code-points",
+              "join": "two-newlines",
+              "start": 355,
+              "end": 546,
+              "sha256": "eb0fdda548e790c6424cc55f30be5589d6c06f22c48e7a05638f54daa9bef322"
+            }
+          },
+          "part": {
+            "index": 2,
+            "count": 2
+          }
+        }
+      ],
+      "notes": [
+        "The full Hajjaj route and al-Hasan assurance remain distinct. Classical commentary explicitly records selected an as a transmission reading alongside ala. Shared English 445 is bound to the exact continuation.",
+        "Keep And Hajjaj said, al-Hasan’s attribution, mosque, remembered transmission, assurance and short report. Al-Ayni documents an as well as ala and explains an in the sense of transmission; the working English therefore says in reporting from rather than silently changing the preposition. Wounds follows selected and modern; the historical abscess word stays in the evidence. Anticipated Me with his own life preserves the precedence expression without adding a claim about a changed lifespan or hastening towards Allah. Do not import the detailed method or story from a parallel occurrence. This is the exact second span of English 445.",
+        "Both prints have على in the narrator’s assurance rather than selected عن. Selected: «أن يكذب جندب عن النبي». brill-1862 (PDF 343): «أن يكذب جندب على النبي». dar-ibn-kathir-2002 (PDF 329): «أن يكذب جندب على النبي».",
+        "The historical noun differs from selected and modern; retain the exact readings for lexical review. Selected: «كان برجل جراح». brill-1862 (PDF 343): «كان برجل خراج». dar-ibn-kathir-2002 (PDF 329): «كان برجل جراح».",
+        "Printed reference 1364 · app reference 1298. Individually located EPUB comparison: 2.23.445. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "ac24b0abaaafa6a8021b80e111f9d3c0b66300ba33926435d0354db4a0543a40",
+      "englishSha256": "e4224c9c4eab3065a3ddf67d00ee2b4bd951e9f4d225b7b1a8d98b50ea68fc7f",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1364 · app reference 1298",
+          "pdfPage": 329,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        },
+        {
+          "id": "lexical",
+          "sourceId": "ayni-jundub-transmission",
+          "locator": "Al-Ayni · Umdat al-Qari · Jundub transmission and wound readings",
+          "scope": "Classical lexical or transmission discussion consulted. Separate from narration and not independent approval of this working translation."
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "1298-source-context",
+          "label": "A narrator’s assurance and a documented variant",
+          "text": "Al-Hasan’s comment remains separate from the report. Classical commentary records the selected reporting preposition as a known reading; both printed forms remain accessible in the source notes.",
+          "citations": [
+            "base",
+            "printed-reference",
+            "lexical"
+          ],
+          "related": []
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAaA:0",
+        "sourceReference": {
+          "label": "1298",
+          "number": 1298,
+          "markerId": "mwAaA:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAaA",
+            "textSha256": "ac24b0abaaafa6a8021b80e111f9d3c0b66300ba33926435d0354db4a0543a40",
+            "origin": {
+              "blockId": "mwAaA",
+              "blockSha256": "ac24b0abaaafa6a8021b80e111f9d3c0b66300ba33926435d0354db4a0543a40",
+              "start": 0,
+              "end": 214
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "e05b2d6a280a9e9bb2274033488b239f161d4b2b883cf8e66cacd290ec8fe018"
+    },
+    {
+      "number": 1299,
+      "id": "bukhari:1299",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAaI:0",
+      "chapterId": "chapter-82",
+      "paragraphIds": [
+        "mwAaI"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1299-1",
+          "paragraphId": "mwAaI",
+          "start": 0,
+          "end": 112,
+          "kind": "chain",
+          "arabic": "[1299] حدثنا أبو اليمان أخبرنا شعيب حدثنا أبو الزناد عن الأعرج عن أبي هريرة رضى الله تعالى عنه قال: قال النبي ﷺ ",
+          "english": "Abu al-Yaman related to us: Shu‘ayb informed us: Abu al-Zinad related to us, from al-A‘raj, from Abu Hurayrah, may Allah Most High be pleased with him, who said: The Prophet, may Allah bless him and grant him peace, said:",
+          "arabicSha256": "140b10109bbeabc623700e5b8d5bd5999684b95ce51315c72cca539ce6699b41",
+          "englishSha256": "4844700059a13b7815dbb996eff4271c749491090977d793b5f6e38bee685bc4"
+        },
+        {
+          "id": "1299-2",
+          "paragraphId": "mwAaI",
+          "start": 112,
+          "end": 172,
+          "kind": "report",
+          "arabic": "الذي يخنق نفسه يخنقها في النار والذي يطعنها يطعنها في النار ",
+          "english": "“The one who strangles himself will strangle himself in the Fire, and the one who stabs himself will stab himself in the Fire.”",
+          "arabicSha256": "22156db18918e81ae8e44a0fb097422b4514b84405bc9d009b94aed49f379317",
+          "englishSha256": "299a6fa4fdac8d0e6807f61d547ba3b3c8890633d444feebee96cab89c2c5cf7"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            343
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            329
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1299"
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.446",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.446",
+            "recordSha256": "92af8365775392c1ec07902178d69cfdf56a9489f225f35d13211ff5e1321cb5"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Abu Huraira-: ",
+            "The Prophet said, \"He who commits suicide by throttling shall keep on throttling himself in the Hell Fire (forever) and he who commits suicide by stabbing himself shall keep on stabbing himself in the Hell-Fire.\" "
+          ],
+          "damagedExcerpt": "forever",
+          "note": "Adds forever, absent from this selected occurrence."
+        }
+      ],
+      "notes": [
+        "The occurrence was located by its body and chain in both inspected prints and English passages. Wording, role and honorific review remain pending.",
+        "Keep the full route and both reflexive acts. The word forever does not occur in this selected report and is not added from the comparison. No instrument or extra method is supplied.",
+        "The historical verbs include ت, absent from selected and modern. Selected: «الذي يخنق نفسه يخنقها في النار». brill-1862 (PDF 343): «الذي يختنق نفسه يختنقها في النار». dar-ibn-kathir-2002 (PDF 329): «الذي يخنق نفسه يخنقها في النار».",
+        "Printed reference 1365 · app reference 1299. Individually located EPUB comparison: 2.23.446. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "8c7f5a0fc6d230d1e66a4373d6b55a289cf08b1c2c00e0ce74146f7dd26c9c18",
+      "englishSha256": "7686347fc7199b85a5fbd49cb45fd7f67a0e3164905ec44baa945449870d7844",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1365 · app reference 1299",
+          "pdfPage": 329,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAaI:0",
+        "sourceReference": {
+          "label": "1299",
+          "number": 1299,
+          "markerId": "mwAaI:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAaI",
+            "textSha256": "8c7f5a0fc6d230d1e66a4373d6b55a289cf08b1c2c00e0ce74146f7dd26c9c18",
+            "origin": {
+              "blockId": "mwAaI",
+              "blockSha256": "8c7f5a0fc6d230d1e66a4373d6b55a289cf08b1c2c00e0ce74146f7dd26c9c18",
+              "start": 0,
+              "end": 172
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "795223e5749b598df128c73b04ba13ff7ca3d27bb5b34dd88ae5cc58d187168e"
+    },
+    {
+      "number": 1300,
+      "id": "bukhari:1300",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAac:0",
+      "chapterId": "chapter-83",
+      "paragraphIds": [
+        "mwAac"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1300-1",
+          "paragraphId": "mwAac",
+          "start": 0,
+          "end": 140,
+          "kind": "chain",
+          "arabic": "[1300] حدثنا يحيى بن بكير حدثني الليث عن عقيل عن ابن شهاب عن عبيد الله بن عبد الله عن ابن عباس عن عمر بن الخطاب رضى الله تعالى عنهم أنه قال ",
+          "english": "Yahya ibn Bukayr related to us: Al-Layth related to me, from ‘Uqayl, from Ibn Shihab, from ‘Ubayd Allah ibn ‘Abd Allah, from Ibn ‘Abbas, from ‘Umar ibn al-Khattab, may Allah Most High be pleased with them, who said:",
+          "arabicSha256": "2a8d4b0b960cef16ac0a7e7eb415bcdd4b2e20abdfe9ffcc3a5ada327d5d5271",
+          "englishSha256": "9ec984af1fb7b3c1deae08474845c8e34f47be0a349111f4eed1e36baaeb361c"
+        },
+        {
+          "id": "1300-2",
+          "paragraphId": "mwAac",
+          "start": 140,
+          "end": 637,
+          "kind": "report",
+          "arabic": "لما مات عبد الله بن أبي بن سلول دعي له رسول الله ﷺ ليصلي عليه فلما قام رسول الله ﷺ وثبت إليه فقلت: يا رسول الله أتصلي على بن أبي وقد قال يوم كذا وكذا كذا وكذا أعدد عليه قوله فتبسم رسول الله ﷺ، وقال أخر عني يا عمر فلما أكثرت عليه قال إني خيرت فاخترت لو أعلم أني إن زدت على السبعين يغفر له لزدت عليها قال: فصلى عليه رسول الله ﷺ ثم انصرف فلم يمكث إلا يسيرا حتى نزلت الآيتان من براءة { ولا تصل على أحد منهم مات أبدا } إلى { وهم فاسقون } قال: فعجبت بعد من جرأتي على رسول الله ﷺ يومئذ والله ورسوله أعلم ",
+          "english": "When ‘Abd Allah ibn Ubayy ibn Salul died, the Messenger of Allah, may Allah bless him and grant him peace, was called to pray over him. When the Messenger of Allah, may Allah bless him and grant him peace, stood up, I sprang towards him and said, “Messenger of Allah, will you pray over Ibn Ubayy when he said such and such on such and such a day?” I was recounting his statements to him. The Messenger of Allah, may Allah bless him and grant him peace, smiled and said, “Move away from me, ‘Umar.” When I persisted with him, he said, “I was given a choice, and I chose. If I knew that, were I to go beyond seventy, he would be forgiven, I would go beyond it.” He said: The Messenger of Allah, may Allah bless him and grant him peace, prayed over him, then left. Only a short time passed before the two verses from Bara’ah were revealed: “Never pray over any of them who dies,” to “while they are transgressors.” He said: Afterwards I was astonished at my boldness towards the Messenger of Allah, may Allah bless him and grant him peace, that day. Allah and His Messenger know best.",
+          "arabicSha256": "38ee3cf0f8230ea4b3d739c460939eefb702fbe5bd2b747fd804c5e6acc7ae3d",
+          "englishSha256": "446b3c23a4e8075711b94b35152115a459081204de60797820937285b8a216ce"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            343,
+            344
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            330
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1300",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-eighth-wording-addendum.json",
+            "sha256": "2150971e39787f77f9d6ac64736da577ad38b12ba41db8fa5e1b9b4835a71c0e",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "05e72373fd191fb167849af278d67ef3334b69e1cff41296b90eb7de13a6c75d",
+            "occurrence": 1
+          },
+          "note": "Omits the specific day placeholder and changes the first-person recounting أعدد to a third-person report; the final honorific is represented by an asterisk."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.447",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.447",
+            "recordSha256": "9cd3516e40f61da33ba6fa7811a66870c5b5cd550f2ab359bd68340b08e0978c"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated 'Umar bin Al-Khattab : ",
+            "When 'Abdullah bin Ubai bin Salul died, Allah's Apostle (p.b.u.h) was called upon to offer his funeral prayer. When Allah's Apostle stood up to offer the prayer, I got up quickly and said, \"O Allah's Apostle! Are you going to pray for Ibn Ubai and he said so and so on such and such occasions?\" And started mentioning all that he had said. Allah's Apostle smiled and said, \"O 'Umar! Go away from me.\" When I talked too much he said, \"I have been given the choice and so I have chosen (to offer the prayer). Had I known that he would be forgiven by asking for Allah's forgiveness for more than seventy times, surely I would have done so.\" ('Umar added): Allah's Apostle offered his funeral prayer and returned and after a short while the two verses of Surat Bara' were revealed: i.e. \"And never (O Muhammad) pray for any of them who dies . . . (to the end of the verse) rebellion (9.84)\" -- ('Umar added), \"Later I astonished at my daring before Allah's Apostle on that day. And Allah and His Apostle know better.\" "
+          ],
+          "damagedExcerpt": "O Muhammad",
+          "note": "Adds explanatory parentheses, including an address O Muhammad absent from the selected short Quran endpoints."
+        }
+      ],
+      "notes": [
+        "The occurrence was located by its body and chain in both inspected prints and English passages. Wording, role and honorific review remain pending.",
+        "Keep related to me for al-Layth, plural companion honorific, day and saying placeholders, first-person recounting, all five Prophetic honorifics, seventy, narrator resumptions and two verses. Retain only the two endpoints of the Quran citation joined by to. No missing middle, extra address or parenthetical explanation is supplied.",
+        "The modern print expands the middle of the Quran quotation; selected and historical use an explicit scope pointer. Do not silently expand the selected wording. Selected: «ولا تصل على أحد منهم مات أبدا } إلى { وهم فاسقون». brill-1862 (PDF 344): «ولا تصل على أحد منهم مات أبدا إلى قوله وهم فاسقون». dar-ibn-kathir-2002 (PDF 330): «ولا تصل على أحد منهم مات أبدا ولا تقم على قبره إنهم كفروا بالله ورسوله وماتوا وهم فاسقون».",
+        "The historical statement includes qad; selected and modern omit it. Selected: «قال إني خيرت فاخترت». brill-1862 (PDF 344): «قال إني قد خيرت فاخترت». dar-ibn-kathir-2002 (PDF 330): «قال إني خيرت فاخترت».",
+        "Printed reference 1366 · app reference 1300. Individually located EPUB comparison: 2.23.447. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "117df96ef5f1f492d72e054f18c504615ae1e4a9b17b1926ca72eb8d357fff24",
+      "englishSha256": "2ff68e34c511c79798a79e6cb11c2f2a2b743eb62dc11cd4b32a091fccd240d0",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1366 · app reference 1300",
+          "pdfPage": 330,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "1300-source-context",
+          "label": "An abbreviated Qur’an citation",
+          "text": "The source gives the beginning and ending of its citation. The words between them have not been inserted into the report.",
+          "citations": [
+            "base",
+            "printed-reference"
+          ],
+          "related": []
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAac:0",
+        "sourceReference": {
+          "label": "1300",
+          "number": 1300,
+          "markerId": "mwAac:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAac",
+            "textSha256": "117df96ef5f1f492d72e054f18c504615ae1e4a9b17b1926ca72eb8d357fff24",
+            "origin": {
+              "blockId": "mwAac",
+              "blockSha256": "117df96ef5f1f492d72e054f18c504615ae1e4a9b17b1926ca72eb8d357fff24",
+              "start": 0,
+              "end": 637
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "1f4f45b2955b39555eaebff3f36e1be81e6bf74ed095c6f20676c0c26fdc8f39"
+    },
+    {
+      "number": 1301,
+      "id": "bukhari:1301",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAa4:0",
+      "chapterId": "chapter-84",
+      "paragraphIds": [
+        "mwAa4"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1301-1",
+          "paragraphId": "mwAa4",
+          "start": 0,
+          "end": 99,
+          "kind": "chain",
+          "arabic": "[1301] حدثنا آدم حدثنا شعبة حدثنا عبد العزيز بن صهيب قال: سمعت أنس بن مالك رضى الله تعالى عنه يقول ",
+          "english": "Adam related to us: Shu‘bah related to us: ‘Abd al-‘Aziz ibn Suhayb related to us; he said: I heard Anas ibn Malik, may Allah Most High be pleased with him, say:",
+          "arabicSha256": "31cc890af7eddd352196ab86165482ea51cf01d9968414d63adf841f8f56c947",
+          "englishSha256": "5df71a7c32a535a2576241c488ff99b1e83dd56a8a07683a0de171301cebb6e8"
+        },
+        {
+          "id": "1301-2",
+          "paragraphId": "mwAa4",
+          "start": 99,
+          "end": 338,
+          "kind": "report",
+          "arabic": "مروا بجنازة فأثنوا عليها خيرا، فقال النبي ﷺ وجبت ثم مروا بأخرى فأثنوا عليها شرا، فقال وجبت، فقال عمر بن الخطاب رضى الله تعالى عنه ما وجبت قال هذا أثنيتم عليه خيرا فوجبت له الجنة وهذا أثنيتم عليه شرا فوجبت له النار أنتم شهداء الله في الأرض ",
+          "english": "They passed with a funeral and spoke well of the deceased. The Prophet, may Allah bless him and grant him peace, said, “It has become assured.” Then they passed with another and spoke ill of the deceased. He said, “It has become assured.” ‘Umar ibn al-Khattab, may Allah Most High be pleased with him, asked, “What has become assured?” He said, “This one you spoke well of, so the Garden has become assured for him; and this one you spoke ill of, so the Fire has become assured for him. You are Allah’s witnesses on earth.”",
+          "arabicSha256": "267908ca896ccd0c906bb3a66ca772e8da6d7834061e91d91c1880a4118957c8",
+          "englishSha256": "6e890a370a043f9956f0e15233476d01863fa51caeb398e8f9b269bcd8286484"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            344
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            330
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1301",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-eighth-wording-addendum.json",
+            "sha256": "2150971e39787f77f9d6ac64736da577ad38b12ba41db8fa5e1b9b4835a71c0e",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "37ffbf3b1b01bc687ec00073f326d9477935f33609961a65bc7e13dadc52acaf",
+            "occurrence": 1
+          },
+          "note": "Changes the selected grammatical subject, people passing with a funeral, into a funeral passing by."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.448",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.448",
+            "recordSha256": "6c3b46adb81f21a001d6b4de74267503d1a3adf653e398542e22a146cae3726c"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Anas bin Malik, : ",
+            "A funeral procession passed and the people praised the deceased. The Prophet said, \"It has been affirmed to him.\" Then another funeral procession passed and the people spoke badly of the deceased. The Prophet said, \"It has been affirmed to him\". 'Umar bin Al-Khattab asked (Allah's Apostle (p.b.u.h) ), \"What has been affirmed?\" He replied, \"You praised this, so Paradise has been affirmed to him; and you spoke badly of this, so Hell has been affirmed to him. You people are Allah's witnesses on earth.\" "
+          ],
+          "damagedExcerpt": "procession",
+          "note": "Changes the selected grammatical subject to a funeral procession passing. Repeats a Prophet designation not present in the selected second response."
+        }
+      ],
+      "notes": [
+        "The occurrence was located by its body and chain in both inspected prints and English passages. Wording, role and honorific review remain pending.",
+        "Keep the selected people passing with the funeral, rather than changing the grammatical subject to a procession. Wajabat is rendered has become assured; commentary distinguishes its established-outcome sense from an imposed obligation. Retain both repeated responses, both named outcomes and witnesses on earth.",
+        "The historical second response names the Prophet again with an honorific. Selected and modern say he said, without that extra designation. Selected: «فأثنوا عليها شرا، فقال وجبت». brill-1862 (PDF 344): «فأثنوا عليها شرا فقال النبي صلى الله عليه وسلم وجبت». dar-ibn-kathir-2002 (PDF 330): «فأثنوا عليها شرا فقال وجبت».",
+        "Printed reference 1367 · app reference 1301. Individually located EPUB comparison: 2.23.448. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "f886cd8f84fee5d15afd9667f5945b35e85c70317ad108420f1a1dcdfed57480",
+      "englishSha256": "4226b422d276197a1a32ec0d7bd2a16047efe3a7d679137d14f98e3ad28f84c9",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1367 · app reference 1301",
+          "pdfPage": 330,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        },
+        {
+          "id": "lexical",
+          "sourceId": "ayni-assured-word",
+          "locator": "Al-Ayni · Umdat al-Qari · the meaning of wajabat",
+          "scope": "Classical lexical or transmission discussion consulted. Separate from narration and not independent approval of this working translation."
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAa4:0",
+        "sourceReference": {
+          "label": "1301",
+          "number": 1301,
+          "markerId": "mwAa4:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAa4",
+            "textSha256": "f886cd8f84fee5d15afd9667f5945b35e85c70317ad108420f1a1dcdfed57480",
+            "origin": {
+              "blockId": "mwAa4",
+              "blockSha256": "f886cd8f84fee5d15afd9667f5945b35e85c70317ad108420f1a1dcdfed57480",
+              "start": 0,
+              "end": 338
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "5558a8d83a1ccdf17645e61d441c38351e85343ec85f2fe82d13dce89ffc616a"
+    },
+    {
+      "number": 1302,
+      "id": "bukhari:1302",
+      "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAbA:0",
+      "chapterId": "chapter-84",
+      "paragraphIds": [
+        "mwAbA"
+      ],
+      "status": "personal-prototype-only",
+      "reviewerKind": "ai",
+      "independentReview": "pending",
+      "segments": [
+        {
+          "id": "1302-1",
+          "paragraphId": "mwAbA",
+          "start": 0,
+          "end": 90,
+          "kind": "chain",
+          "arabic": "[1302] حدثنا عفان بن مسلم حدثنا داود بن أبي الفرات عن عبد الله بن بريدة عن أبي الأسود قال ",
+          "english": "‘Affan ibn Muslim related to us: Dawud ibn Abi al-Furat related to us, from ‘Abd Allah ibn Buraydah, from Abu al-Aswad, who said:",
+          "arabicSha256": "a9323d9b86ff6e89e626d6f69d9101d72f63f429c33acd6d7781bb52d2f91b82",
+          "englishSha256": "46ecf5b031904bb9bdf60e89c6d7305e6d6d18e3a9111fc9d7b2d12155f606a6"
+        },
+        {
+          "id": "1302-2",
+          "paragraphId": "mwAbA",
+          "start": 90,
+          "end": 538,
+          "kind": "report",
+          "arabic": "قدمت المدينة وقد وقع بها مرض فجلست إلى عمر بن الخطاب رضى الله تعالى عنه فمرت بهم جنازة فأثني على صاحبها خيرا، فقال عمر رضى الله تعالى عنه وجبت ثم مر بأخرى فأثنى على صاحبها خيرا، فقال عمر رضى الله تعالى عنه وجبت ثم مر بالثالثة فأثنى على صاحبها شرا، فقال وجبت، فقال أبو الأسود فقلت: وما وجبت يا أمير المؤمنين قال: قلت: كما قال النبي ﷺ أيما مسلم شهد له أربعة بخير أدخله الله الجنة فقلنا وثلاثة قال وثلاثة فقلنا واثنان قال واثنان ثم لم نسأله عن الواحد ",
+          "english": "I came to Madinah when illness had broken out there. I sat beside ‘Umar ibn al-Khattab, may Allah Most High be pleased with him. A funeral passed them, and the deceased was spoken well of. ‘Umar, may Allah Most High be pleased with him, said, “It has become assured.” Then another passed, and the deceased was spoken well of. ‘Umar, may Allah Most High be pleased with him, said, “It has become assured.” Then a third passed, and the deceased was spoken ill of. He said, “It has become assured.” Abu al-Aswad said: I asked, “What has become assured, Commander of the Faithful?” He said, “I said as the Prophet, may Allah bless him and grant him peace, said: ‘Any Muslim for whom four testify to good, Allah will admit him to the Garden.’ We asked, ‘And three?’ He said, ‘And three.’ We asked, ‘And two?’ He said, ‘And two.’ Then we did not ask him about one.”",
+          "arabicSha256": "2b5e4d04ed7b5671ea6a920adbaf96f0227f8b359cf6a096ff83faf9ccbde987",
+          "englishSha256": "29f5665da5cccb15eb6c5a4b7afa65f6ca5b69624d15d8f12396e3d6448da15c"
+        }
+      ],
+      "printedWitnesses": [
+        {
+          "id": "brill-1862",
+          "pdfPages": [
+            344
+          ]
+        },
+        {
+          "id": "dar-ibn-kathir-2002",
+          "pdfPages": [
+            330
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "bewley-funerals",
+          "reference": "1302",
+          "status": "damaged-comparison",
+          "damageEvidence": {
+            "path": "research/funerals-eighth-wording-addendum.json",
+            "sha256": "2150971e39787f77f9d6ac64736da577ad38b12ba41db8fa5e1b9b4835a71c0e",
+            "sourceSha256": "bd5142c2c3a08e92aa24be4b438ea628ab95c3065b8819e8651a3cf6d65df657",
+            "bodySha256": "68ff4d7cdff4f38016e2d75d35736b6bca6844d184eed9c29ba6344e8fe5c83a",
+            "occurrence": 1
+          },
+          "note": "Uses epidemic for illness and repeats Umar’s name at the third response where the selected text says he said."
+        },
+        {
+          "id": "islamhouse-khan",
+          "reference": "2.23.449",
+          "referenceEvidence": {
+            "sourceSha256": "94c74a5f9c0054193fd557cd6f2ab8cdaae14bc8703ec9e26e74ee7af2344c3c",
+            "sourceRecordId": "islamhouse-bukhari-epub-2010:2.23.449",
+            "recordSha256": "01a372b9dcdade8fc0ede61d502e6c8c6e3209087d1088f2b8d824135a382e41"
+          },
+          "status": "damaged-comparison",
+          "checkedBody": [
+            "Narrated Abu Al-Aswad: ",
+            "I came to Medina when an epidemic had broken out. While I was sitting with 'Umar bin Al-Khattab a funeral procession passed by and the people praised the deceased. 'Umar said, \"It has been affirmed to him.\" And another funeral procession passed by and the people praised the deceased. 'Umar said, \"It has been affirmed to him.\" A third (funeral procession) passed by and the people spoke badly of the deceased. He said, \"It has been affirmed to him.\" I (Abu Al-Aswad) asked, \"O chief of the believers! What has been affirmed?\" He replied, \"I said the same as the Prophet had said, that is: if four persons testify the piety of a Muslim, Allah will grant him Paradise.\" We asked, \"If three persons testify his piety?\" He (the Prophet) replied, \"Even three.\" Then we asked, \"If two?\" He replied, \"Even two.\" We did not ask him regarding one witness. "
+          ],
+          "damagedExcerpt": "piety",
+          "note": "Uses epidemic for illness and narrows good to piety. Keep the selected illness wording and complete repeated exchange."
+        }
+      ],
+      "notes": [
+        "The occurrence was located by its body and chain in both inspected prints and English passages. Wording, role and honorific review remain pending.",
+        "Keep the full route, illness without imposing a specific disease, they/them perspective, three funerals, three Umar honorifics, Abu al-Aswad’s repeated attribution, and the four/three/two exchange followed by not asking about one. Good is not narrowed to piety. No qualification about which witnesses is inserted into the report.",
+        "The historical chain identifies Affan as al-Saffar. The selected and modern shorter identification remains. Selected: «حدثنا عفان بن مسلم». brill-1862 (PDF 344): «حدثنا عفان بن مسلم هو الصفار». dar-ibn-kathir-2002 (PDF 330): «حدثنا عفان بن مسلم».",
+        "The historical last noun lacks the article; selected and modern have it. Selected: «عن الواحد». brill-1862 (PDF 344): «عن واحد». dar-ibn-kathir-2002 (PDF 330): «عن الواحد».",
+        "Printed reference 1368 · app reference 1302. Individually located EPUB comparison: 2.23.449. Comparison limits never replace selected Arabic wording."
+      ],
+      "reviewScope": "AI-assisted complete-span English checked against selected Arabic, both visually inspected prints and two individually located English bodies. Classical lexical alternatives and narrator remarks remain separate. Independent linguistic, theological, chapter, honorific and spoken-word review remains pending.",
+      "arabicSha256": "5838720c5e9ace08fe97b98ef26b0881aca18b31196790e6a48bfdf9a383beff",
+      "englishSha256": "865efd536664f51929c6671dde1acf741c029414deec46bffb24cc645589e086",
+      "additionalCitations": [
+        {
+          "id": "printed-reference",
+          "sourceId": "dar-ibn-kathir-2002",
+          "locator": "Printed reference 1368 · app reference 1302",
+          "pdfPage": 330,
+          "scope": "Modern printed occurrence locator; stable app references remain distinct."
+        },
+        {
+          "id": "lexical",
+          "sourceId": "ayni-assured-word",
+          "locator": "Al-Ayni · Umdat al-Qari · the meaning of wajabat",
+          "scope": "Classical lexical or transmission discussion consulted. Separate from narration and not independent approval of this working translation."
+        }
+      ],
+      "contextNotes": [
+        {
+          "id": "1302-source-context",
+          "label": "The complete witness exchange",
+          "text": "The four, three and two responses remain, followed by the statement that they did not ask about one.",
+          "citations": [
+            "base",
+            "printed-reference",
+            "lexical"
+          ],
+          "related": []
+        }
+      ],
+      "sourceLayout": {
+        "schemaVersion": 1,
+        "sourceId": "wikisource-bukhari-funerals-r393137",
+        "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+        "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+        "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0",
+        "sourceRecordId": "wikisource-bukhari-funerals-r393137:mwAbA:0",
+        "sourceReference": {
+          "label": "1302",
+          "number": 1302,
+          "markerId": "mwAbA:0",
+          "occurrence": 1
+        },
+        "paragraphs": [
+          {
+            "id": "mwAbA",
+            "textSha256": "5838720c5e9ace08fe97b98ef26b0881aca18b31196790e6a48bfdf9a383beff",
+            "origin": {
+              "blockId": "mwAbA",
+              "blockSha256": "5838720c5e9ace08fe97b98ef26b0881aca18b31196790e6a48bfdf9a383beff",
+              "start": 0,
+              "end": 538
+            }
+          }
+        ]
+      },
+      "reviewRecordSha256": "0a50b7d35033b6069c1f31d32103e7bb1fc9e2e2b1ef0e0179ff557ec4264508"
+    }
+  ],
+  "sourceLayout": {
+    "schemaVersion": 1,
+    "sourceId": "wikisource-bukhari-funerals-r393137",
+    "sourceSha256": "6b970d39f4bfaa88efa0a002bb11a2b9667e2aa3af534cbe1a6f8fb664f244e5",
+    "layoutAuditSha256": "213434ef3206d1225300ce15c62c80e8e58449d59f9b9c2f0a787e799e356e1f",
+    "layoutReviewSha256": "44c97ed2838f0aca7edafc936f096c326684888f648866588edfad157c5e7db0"
+  }
+}
